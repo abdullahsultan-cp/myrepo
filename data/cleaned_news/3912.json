@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6036df9b-a706-42db-a8fb-f29fc38dfbfd",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "463ffc7e-5db8-4d2b-8c82-6c53351e1335",
+    "Id": 19190,
+    "Title": "Sakina Juzar"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "294a8381-a385-4409-844c-1b2b1ea0b905",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1be6001b-56dc-4d01-957c-8a219305d082",
+    "Id": 19190,
+    "Title": "Sakina Juzar",
+    "EMail": "sakina.juzar@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bebc24d1-7f24-4838-8dc9-1ef6fbfc63fb",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d46d98bc-d35e-403a-a80e-3f45ae84d0f3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "1fe647e9-6243-4e2e-9a64-c887e8afb2f6",
+      "Id": 4,
+      "Title": "Global"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4c9a22f7-8ccf-4e78-9aa6-e1fbb9347811",
+    "Id": 19190,
+    "Title": "Sakina Juzar",
+    "EMail": "sakina.juzar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3912)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aef30e1b-b258-4227-8545-f78ecfe8eb01",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3912,
+  "Title": "AKU and CAP Partner to Upgrade National Museum of Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "The partnership aims to enhance the Museum's exhibits, learning, and visitor experience",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassBA2872C3518A4676BA72EC74DEBED99E\">Aga Khan University (AKU) and The Citizens Archive of Pakistan (CAP) signed a Memorandum of Understanding (MoU) to support the upgradation of the National Museum of Pakistan. Signed on February 16, 2026, the agreement marks an important step forward in strengthening how Pakistan's cultural heritage is preserved and shared.<br><br>Through this partnership, the two institutions will work together to enhance the museum's infrastructure, exhibition design, visitor experience, and educational outreach. The goal is simple&#58; to create a space that is more engaging, accessible, and aligned with contemporary museum practices.<br><br>AKU will provide technical guidance and institutional coordination, drawing on its academic and research expertise. CAP will contribute its experience in exhibition development, oral history, archival research, and community engagement. The initiative is being undertaken with the support of the Federal Government's National Heritage and Culture Division.<br><br>The collaboration also reflects the vital role museums play in education and cultural understanding. Anjum Halai, Vice Provost at AKU, noted that faculty and students from the University's Faculty of Arts and Sciences will be actively involved in the project, bringing research and learning directly into practice.<br><br>Together, AKU and CAP aim to help shape the National Museum of Pakistan into a more dynamic, research-informed and inclusive space - one that serves today's audiences while preserving the nation's heritage for generations to come.&#160;<br></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003778",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Faculty of Arts and Sciences",
+      "TermGuid": "31a82bb7-6a60-4a88-bb9e-d65bb93c881e",
+      "WssId": 2435
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    }
+  ],
+  "ScheduleStartDate": "2026-02-17T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3912,
+  "Modified": "2026-02-17T10:45:31Z",
+  "Created": "2026-02-17T09:40:58Z"
+}

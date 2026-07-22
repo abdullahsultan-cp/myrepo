@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9c9fcd74-f1e5-429e-a669-06ca947e1780",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2bd97c52-6da3-4736-9c1f-5f3d7fa19e48",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4ed7fc2e-be5f-49da-93fc-a45c9cd7d597",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "96bc165d-8394-493f-8bb6-9b270178331f",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6e0c9f87-1711-4f42-8e60-4d1064c187ea",
+    "Id": 14,
+    "Title": "Arusha"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a0f65d91-f4ed-4e5d-9cb6-996d34c453ae",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "2398bf0a-c847-4f0b-90a8-c2c7cbcaa61b",
+      "Id": 35,
+      "Title": "Arusha Climate and Environmental Research Centre  "
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3e7e7f10-1c77-4ca8-a624-4eb0cf39828c",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3838)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e3ed04cf-f911-4f27-9eba-91b80711cd9d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3838,
+  "Title": "AI and Satellites Team Up to Track Drought More Precisely",
+  "NewsSubTitle": null,
+  "NewsSummary": "New AKU-led study uses deep learning to improve drought prediction and boost food security",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>A team of researchers from the Aga Khan University's Arusha Climate and Environmental Research Centre (AKU-ACER) is breaking new ground in how we monitor and respond to drought - a growing challenge for communities across East Africa and beyond.</p><p>In their latest study, <a href=\"https://doi.org/10.1016/j.pce.2025.104165\"><em>Drought Monitoring Using Enhanced Soil Moisture Drought Index (ESMDI) Downscaled with Deep Learning from Multi-Satellite Data,</em></a><em> </em>the team developed an innovative tool that combines artificial intelligence (AI) and satellite technology to monitor soil moisture and drought conditions with greater precision than ever before.</p><p>The new Enhanced Soil Moisture Drought Index (ESMDI) offers high-resolution insights - narrowing the scale of drought monitoring from 25 kilometres to just 1 kilometre. Using deep learning models trained on nearly 20 years of satellite and environmental data, the tool can detect early signs of drought, helping farmers and policymakers take timely action to protect crops and manage scarce water resources.</p><p>This research, led by Dr Bashir Adelodun and his collaborators from South Korea reflects AKU's commitment to homegrown innovation that addresses global challenges through local expertise. By applying advanced AI techniques to regional climate realities, the team is creating solutions designed for, and with, the communities most affected by water scarcity and food insecurity.</p><p>\"Accurate, community-focused drought monitoring is essential for protecting livelihoods in vulnerable regions,\" says Dr Adelodun. \"Our work shows how data-driven solutions can empower local decision-makers and strengthen resilience against climate change.\"</p><p>Beyond its scientific value, the ESMDI tool supports the Sustainable Development Goals on Zero Hunger and Clean Water (SDGs 2 and 6). It demonstrates how new knowledge can make societies better - helping farmers optimize irrigation, policymakers plan water management, and researchers collaborate across borders for shared impact.</p><p>The study reinforces AKU's role as a trusted regional collaborator, bringing together science, technology, and community engagement to push the boundaries of innovation for sustainable, locally grounded solutions.</p><p>As droughts become more frequent and severe, research like this ensures that the knowledge and technology driving climate resilience are developed where they are needed most - within the communities AKU serves.<br/></p><p><br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003705",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2025-11-04T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Photo credit: sedrik2007 via Envato",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3838,
+  "Modified": "2025-11-04T07:37:12Z",
+  "Created": "2025-11-04T07:35:37Z"
+}

@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cd783487-cd63-45f4-9b74-902aceef286a",
+  "odata.etag": "\"9\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "66a0942c-c915-4256-8c12-335d64bf6f2b",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1706fb81-7fbe-4575-a0a7-95a21dc55c75",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2fbd419e-563a-4d8f-b8aa-5d24be4cdc58",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "05a6faa7-70fd-430c-bb0a-22124cc4a026",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c10c0ae7-8b06-4374-b801-3e9263cefb24",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f2d768d2-37c3-46b7-abae-ccb18c17c5e6",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8339cf57-13dd-4b76-8d4e-43be95c71be5",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(127)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e55e1be6-f8a1-4062-8116-af74a9f946ec",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 127,
+  "Title": "AKU Network of Teaching and Learning leading a transformative teaching initiative in Kenya",
+  "NewsSubTitle": null,
+  "NewsSummary": "The AKU Network of Teaching and Learning (TL_net) has embarked on a new initiative in collaboration with members from other universities in Kenya",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The AKU Network of Teaching and Learning (TL_net) has embarked on a new initiative in collaboration with members from other universities in Kenya including: Kenyatta University, The United States International University, Strathmore University, Daystar University, Africa Nazarene University, Kenya Methodist University, East African School of Aviation, Multimedia University of Kenya and others. Together, they have formed the Association for Faculty Enrichment in Learning and Teaching (AFELT). The inaugural meeting of this association was hosted by AKU's TL_net with 20 members in attendance. The members discussed how to promote transformative learning in Kenyan institutions for higher education.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000096",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 127,
+  "Modified": "2017-02-22T07:14:08Z",
+  "Created": "2016-05-17T10:53:59Z"
+}

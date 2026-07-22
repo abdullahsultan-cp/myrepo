@@ -1,0 +1,186 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6660d262-a207-46ef-a91d-257e05f9db3a",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9391dd57-7f9c-44db-9af4-8fcabd2a563e",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7b8766a3-c879-4242-8f11-ee7e82606188",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "494d8670-69e1-4754-bf50-80843af29180",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "1bfe65ba-6c55-4b52-9889-08d067076af9",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a53e80f3-8503-4ed2-8b80-ce34d9414f00",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d14d37bc-593b-438d-94b6-2fa04a00402d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7a929d91-3ab7-43d7-86b5-457fdd106374",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1480)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82e40257-9239-4ca7-b46f-1e6f254c0c20",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1480,
+  "Title": "AKU organizes seminar on asthma",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"A seminar titled \"\"Update on Asthma\"\" was organized by the Aga Khan University (AKU) on December 6, to support \"\"World Asthma Day\"\" on December 11, 1998. The seminar was attended by physicians, medical students and other healthcare professionals fro",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"A seminar titled \"\"Update on Asthma\"\" was organized by the Aga Khan University (AKU) on December 6, to support \"\"World Asthma Day\"\" on December 11, 1998. The seminar was attended by physicians, medical students and other healthcare professionals from across the country."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Asthma is a serious global health problem with current estimates suggesting that over 150 million people in the world suffer from the disease. The number of children and adults with asthma has risen steadily during the 20th century and has almost doubled in the past 20 years. In Pakistan, almost 10 percent of children are effected by asthma. Lack of awareness concerning the causes and management of the disease and inadequate attention given to this life- threatening condition make it one of today's most crucial health problems."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "AKU faculty participated in the seminar to discuss and promote awareness about various asthma-related issues. Presentations laid special emphasis on the diagnostic and management problems faced by community physicians from both ambulatory care and hospital practice perspectives. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Dr Yousuf Kamal Mirza, Medical Director and Associate Dean of Clinical Affairs, in his welcome address emphasized the need for further research and training in asthma management. Providing a global perspective, Dr Javaid AKhan, Associate Professor of Medicine, outlined some of the steps that can be taken to control the rising incidence of asthma worldwide. Misconceptions relating to asthma in Pakistan were highlighted by Dr Majeed Mernon, Consultant Chest physician, who particularly discouraged the mythological association of the condition with various foods Dr Hasan Arshad, a Visiting Consultant Physician from Southampton General Hospital, UK, underscored the role of allergen avoidance in preventing asthma. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Professor of Paediatrics, Dr Ghaffar Billoo articulated the need to educate parents and relatives of asthmatic children in how to cope with the condition as this was one of the most important and often neglected aspects of its treatment. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "He also pointed to the fact that asthma remains under-diagnosed and under-treated mainly because of social stigmas and the subsequent need to dispel the fears and myths associated with the disease. While reviewing both the immediate and long-term management of childhood asthma, Dr Naseeruddin Mehmood urged the use of inhalation therapy for children. Other AKU faculty including Dr Fayyaz Hussain, Dr Zulfiqar A Bhutta, Dr Raana Haqqee and Dr Riaz Qureshi also made presentations on various asthma-related topics. The participants also had the opportunity to ask questions and actively interact with the experts in two panel discussions.\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001427",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Tobacco",
+      "TermGuid": "d2f6d8b4-7d87-4c65-86cf-59a308a46596",
+      "WssId": 1918
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "ca69fd5c-b8ff-4c4a-8794-1e751b8e682b",
+      "WssId": 1820
+    }
+  ],
+  "ScheduleStartDate": "2018-01-22T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1480,
+  "Modified": "2020-03-10T07:22:38Z",
+  "Created": "2018-01-22T10:52:13Z"
+}

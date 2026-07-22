@@ -1,0 +1,137 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cd776589-af97-4130-9d99-dd81a9f280f1",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8bd47f21-8948-47c4-bde1-b8c37980705d",
+    "Id": 5919,
+    "Title": "Fouzia Qalandershah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f7679106-052b-4627-9acd-92b54be838b0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e6a47d6d-53f4-42e9-9ded-436635ca465f",
+    "Id": 5919,
+    "Title": "Fouzia Qalandershah",
+    "EMail": "fouzia.qalandershah@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "aaac0ec1-5b25-4237-b9a3-124af2cdf9d7",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b8191383-eab8-461e-9d72-083da92b2dc1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "df131fa1-ae9e-43d6-a69f-49ef33500fab",
+    "Id": 13,
+    "Title": "Network of English Language Enhancement"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "304015fd-0187-4118-907e-eb041dd490f5",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1706)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c5260dc6-a12b-43d4-8686-5dd8d22ac94f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1706,
+  "Title": "English Club",
+  "NewsSubTitle": null,
+  "NewsSummary": "Practice using English in a relaxed and friendly setting",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "ELE_Net is starting an English club for AKU students to provide an opportunity to practise using English in a relaxed and friendly setting. This is part of a plan to develop a culture of using English for everyday communication and in so doing improve students' confidence and fluency when using English."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Students will lead the club activities.  An ELE_Net mentor will be present in all the club meetings to guide the students. ELE_Net hopes students will be able to hold an annual show by club members."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The English language Club will start soon! If you are interested in joining, sign up by emailing us at ele.net@aku.edu."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001651",
+  "LocalApproverGroup": "ELE News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "network of english language enhancement",
+      "TermGuid": "4faf2085-64a1-492d-b971-0626b65f5480",
+      "WssId": 1540
+    }
+  ],
+  "ScheduleStartDate": "2018-09-06T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1706,
+  "Modified": "2018-09-11T07:38:39Z",
+  "Created": "2018-09-06T13:26:28Z"
+}

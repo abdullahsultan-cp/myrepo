@@ -1,0 +1,293 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4ab222dd-21ff-4b9c-90c9-655e327a1304",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "301a0b57-d9d3-45f1-b199-d6993b83d098",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e6fd4df-a589-45a3-a42a-5de3739151b9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "26d1a35f-84e1-49c5-84fd-e0eec1056eca",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "0043d2c8-d082-4e1c-b448-a0f7eac96cab",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6f3f7df4-9455-496a-ae9c-199e6e197623",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "140e6eb0-e135-42e5-8fed-9f48d4a02967",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3122)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f4bffc36-f695-4466-95fe-6001ac2703f5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3122,
+  "Title": "Media study probes millennial and Gen Z consumption",
+  "NewsSubTitle": null,
+  "NewsSummary": "Report by AKU's Media Innovation Centre to help Kenyan media tailor make their content",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most young Kenyans - millennials and Generation Z (Gen Zs) - rely on TV stations as a source of information as opposed to social media and radio stations."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This is according to a study by the Aga Khan University Media Innovation Center (MiC) "
+          },
+          {
+            "type": "text",
+            "text": "'",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://mediainnovationnetwork.org/wp-content/uploads/2023/05/AKU-Youth-Survey-Kenya-Final-26052023-EMBARGOED.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Media Consumption In An Evolving Digital World: Millennials And Digital Natives' Consumption Habits And Implications For Legacy Media In East Africa'",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://mediainnovationnetwork.org/wp-content/uploads/2023/05/AKU-Youth-Survey-Kenya-Final-26052023-EMBARGOED.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              },
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study was conducted among millennials (ages 25 to 35) and Gen Zs (ages 18 to 24) living in the country's urban areas. MiC Interim Director, Ms Clare Mogere, said the report seeks to help media houses in Kenya tailor make their content for this population. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Traditional media business models have been rendered less competitive by the emergence of digital platforms that are target casting and delivering content to niche audience segments. The competition for audiences from these emergent digital platforms has not only occasioned decline in revenues for the legacy media but also audience fragmentation,\" said Clare. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"It is against this backdrop that the MiC undertook this survey to aid media houses understand millennials and Gen Zs media consumption habits as a possible pathway to developing content that would engage them and programming that will address their needs.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cabinet Secretary, Ministry of Information, Communication and Digital Economy, Mr Eliud Owalo, mentioned the role of mainstream media in addressing fake news. He also acknowledged the work that the Aga Khan University Graduate School of Media and Communications (GSMC) is doing in impacting the region's media eco-system through capacity building and data-based research."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"In the wake of the digital disruption a lot has been said about business models, information disorder and the attendant proliferation of misinformation, disinformation and malinformation. Unfortunately, we have not engaged enough on the role of legacy media in addressing the issues of fake news. Findings in the current study strongly underscore the centrality of professionalism, journalists' reputation, and the credibility of news media organisations as critical factors in discriminating which media brands to consume,\" said Mr Owalo,"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I note with satisfaction the contribution of MiC that has and continues to contribute immensely to the media development in the region through training, coaching, mentorship, and research, not just to media start-ups but also to the big media houses in the region.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Nancy Booker, Interim Dean at AKU's Graduate School of Media and Communications (GSMC), noted the importance of having such studies coming from in-depth research to provide a holistic view on media trends and help media players forge the way forward. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Over the years we have seen a great rift in legendary media with technology causing unimaginable disruption for media. It therefore needed a consolidation of efforts to understand how to go about this disruption, take advantage of it and grow our media industry rather than lose it,\" said Prof Nancy Booker. \"At GSMC, we continue to play our role of advising media players, shaping conversations, and building capacity through trainings and research. We hope this data will be utilised by the various key players in the media and shape the future of content generation for the Millennials and Gen Zs, who make up a large sum of consumers.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study surveyed 1,201 respondents with a mix of questionnaires, focus group discussions and digital tracking. The data was collected between May and July 2022. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You can access the full report "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://bit.ly/MediaYouthSurveyKenya",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003005",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Media",
+      "TermGuid": "be3802d5-5808-4923-98c0-5aed1ce08878",
+      "WssId": 2182
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2023-05-30T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3122,
+  "Modified": "2023-06-02T07:11:51Z",
+  "Created": "2023-05-30T08:55:55Z"
+}

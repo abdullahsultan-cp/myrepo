@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "aa6a3c59-e2ce-4941-aae8-5e3a9b7c3eea",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e7e6b42f-57c7-48b4-a836-637c86a56bd5",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "98ebee5f-05d8-4c18-86ec-edf81ecd2b6c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "60ec0c12-04e3-4f2b-922f-76a45f7553c4",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "ba5714a4-67c7-4f48-a82a-b58ca6002708",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8b7e3fd4-3a33-4a75-a0cd-8ae970558e70",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "05c889ff-ea5d-4305-93e0-833e93924d98",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e2bdb001-d0f2-4087-b2ef-49e8ce2216e6",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1621)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2a024883-8130-40c9-9938-3b31b623aadf",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1621,
+  "Title": "Hands-on Microscopic Repair for Peripheral Nerve Surgery and Spinal Instrumentation Workshop",
+  "NewsSubTitle": null,
+  "NewsSummary": "This workshop was designed to provide opportunities for trainees to acquire basic skills in various microsurgical repair of nerve injury and spinal instrumentation.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>This hands-on microscopic repair for peripheral nerve surgery and spinal instrumentation workshop was conducted as part of pre-symposium workshop of Neurosurgery Education &amp; Research (NEAR) symposium.</p><p>This workshop was designed to provide opportunities for trainees to acquire basic skills in various microsurgical repair of nerve injury and spinal instrumentation. A series of excellent lectures and demonstrations was performed on animal tissues by Dr. Gohar Javed and Dr. Saad Akhtar Khan. </p><p>The objectives were to provide surgeons and trainees with invaluable instruction on the intricate techniques of microscopic repair for peripheral nerve surgery and spinal instrumentation. The long term plan is to conduct this workshop every year and apply for educational grant.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001566",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Neurosurgery",
+      "TermGuid": "1e97c96e-27e2-4676-b803-cba50fc5b14d",
+      "WssId": 1429
+    }
+  ],
+  "ScheduleStartDate": "2018-05-11T05:50:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1621,
+  "Modified": "2018-05-11T08:28:32Z",
+  "Created": "2018-05-11T08:25:24Z"
+}

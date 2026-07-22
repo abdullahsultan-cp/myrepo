@@ -1,0 +1,363 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1ee54cce-8021-4dd4-b956-fc7638883eb3",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9116132a-77c9-41dc-9694-f07589d7b040",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d51c76b3-019d-4442-b7cc-d4f084c60438",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a55eddec-74f0-4299-9e35-d27fd714af0a",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "688904c3-3d1d-4ab9-889f-251e078ed942",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "de20698c-4091-432b-8d3c-aee49d6612ba",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "742724ba-f06a-46f1-bf57-69a0de041d1c",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a66e521c-fb85-4ce0-9a52-ae580607c469",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3724)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0cadea02-8087-411c-b15e-71cdad195754",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3724,
+  "Title": "Dr Mutebi Joins World Bank's Global Cancer Expert Group",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU's Dr Miriam Mutebi to shape global cancer strategy with African insights",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cancer presents a formidable and growing challenge across Africa, where healthcare systems grapple with a unique constellation of epidemics. Dr Miriam Mutebi, Assistant Professor at the Aga Khan University (AKU) and President of the African Organisation for Research and Training in Cancer (AORTIC), is at the forefront of a global effort to address this crisis. As part of an "
+          },
+          {
+            "type": "text",
+            "text": "expert group",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.kcl.ac.uk/news/institute-of-cancer-policy-to-lead-world-bank-strategic-review-of-financing-for-global-cancer",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " appointed by the World Bank, Dr Mutebi is providing a critical African perspective to a major strategic review of global cancer."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to Dr Mutebi, African governments find it hard to prioritize resources for cancer due to the multiple health challenges their nations face - infectious diseases, emerging non-communicable diseases, and daily traumas. \"Cancer care is not cheap, irrespective of where you are in the world,\" she emphasizes, highlighting the inherent challenge in building and sustaining national cancer control plans amidst competing health demands."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The traditional reliance on external aid for financing cancer control is no longer sustainable, Dr Mutebi asserts. \"We need to look inward, being deliberate about financing.\" She advocates for viewing health as an investment, not an expenditure, and developing 'homegrown solutions' with intentional investment. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A key strategy involves leveraging regional collaborations, such as the East African Community, to enhance procurement power. Dr Mutebi also reveals a stark reality: the "
+          },
+          {
+            "type": "text",
+            "text": "cost",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10496173/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of cancer drugs in sub-Saharan Africa can be three to four times higher than in comparable low- to middle-income countries. By consolidating efforts, African nations can collectively negotiate for better prices and access to essential medications and technologies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The World Bank's strategic review aims to identify existing effective interventions, address barriers, and explore opportunities for financing, collaboration, education, training, and research. Dr Mutebi stresses the importance of looking into what's working locally, to inform concrete national, regional, and continental actions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Highlighting successful African models, Dr Mutebi points to "
+          },
+          {
+            "type": "text",
+            "text": "Egypt's President's Initiative",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.sis.gov.eg/Story/208458/60-million-women-examined-as-part-of-presidential-initiative-for-women%27s-health?lang=en-us.",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " for breast cancer, which has achieved impressive screening, treatment, and access rates. "
+          },
+          {
+            "type": "text",
+            "text": "Rwanda's",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://globalhealthprogress.org/collaboration/rwandan-hpv-national-vaccination-program/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " remarkable over 90% HPV vaccination coverage for young girls, significantly reducing cervical cancer risk, also stands out as an example of deliberate investment yielding impactful results. Kenya, Nigeria, and Algeria are recognized for their intentional financing in cancer control, with Kenya's "
+          },
+          {
+            "type": "text",
+            "text": "Breast Cancer Action Plan",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.iccp-portal.org/sites/default/files/plans/Kenya%20Breast%20Cancer%20Action%20Plan%202021-2025_compressed.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " serving as an example of localized innovation in tackling its most commonly diagnosed cancer."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The economic impact of cancer in Africa is profound. With patients often diagnosed 10-15 years younger than their Western counterparts, at the peak of their productive lives, the human capital loss is immense. Dr Mutebi cites a staggering "
+          },
+          {
+            "type": "text",
+            "text": "statistic",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7758819/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": for every 100 mothers dying from breast cancer in sub-Saharan Africa, there are approximately 210 cancer orphans. She underscores the economic benefit of prioritizing preventive care and early diagnosis, as treating advanced disease is far more expensive."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For particularly vulnerable African nations, Dr Mutebi urges the World Bank to learn from past financing models and strategies that may have exacerbated debt and delayed recovery.  A pragmatic approach considering country strengths and opportunities for regional interventions will be crucial"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The persistent gap between cancer plan development and implementation in Africa is primarily driven by a lack of funding. Dr Mutebi believes that African nations, perhaps aided by the African Union and the Africa CDC, must consolidate efforts to leverage continental care and enhance homegrown production of resources."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ultimately, Dr Mutebi's measure of success for the World Bank's strategic review centres on the patient. \"How many more of our mothers, fathers, populations are actually getting their care, getting their cancers diagnosed early and completing their care?\" she asks. The goal is to shift narratives, ensuring more people are diagnosed with early-stage disease and have access to quality, affordable care that doesn't 'break the bank.' Dr Mutebi's vital role in this global endeavour underscores AKU's commitment to improving health outcomes across Africa."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003592",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Policy advocacy",
+      "TermGuid": "310d84ee-b22e-4032-bc0b-4f0ea6cb9082",
+      "WssId": 2242
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "2d1be9e0-8877-428f-8a6f-ff032c81de24",
+      "WssId": 2106
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    }
+  ],
+  "ScheduleStartDate": "2025-06-25T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3724,
+  "Modified": "2025-06-25T10:53:48Z",
+  "Created": "2025-06-25T10:50:22Z"
+}

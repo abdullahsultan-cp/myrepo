@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9165c041-0c54-42da-b8d5-4c6ed783b172",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d8f6af27-89d5-4027-9e14-21773e09a6ba",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e1deaad4-7329-46ff-927d-bc70c581e6fc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5d0d7383-9511-4ab9-a908-e81742ed5fd2",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "ab2d233b-66fd-4099-bbf7-b4093d0ec79d",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ddc9ebfc-fd3f-41ac-a7b4-a8dcae80c20e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ec419e4f-4122-44d5-bce8-3a8f0f3f8b08",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a211a7c3-dcbb-4167-9e29-a71d1817506f",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(527)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3da310e0-99f2-4ec0-a69a-3f68a6258de1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 527,
+  "Title": "6th annual environmental excellence award 2009 for Aga Khan University",
+  "NewsSubTitle": null,
+  "NewsSummary": "Based on the performance and data for the year 2007 and 2008, Aga Khan University won the 6th Annual Environmental Excellence Award 2009",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Based on the performance and data for the year 2007 and 2008, Aga Khan University won the 6th Annual Environmental Excellence Award 2009 at a ceremony held in Karachi on July 9, 2009. The Award is organised each year by the National Forum for Environment &amp; Health in collaboration with United Nations Environment Program (UNEP).</p><p>In addition to the performance and data, the criteria for the award included: the quality of Environment, Health and Safety (EHS) management programme of the organisation; leadership commitment; staff participation, goals and objectives; training programmes and progress; incident reporting and analysis; emergency preparedness, employee health monitoring programme, waste management and performance monitoring, measurement and improvement.</p><p>The University ensures the consistency of its high quality care through a meticulous process of continual quality assurance.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000485",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "Environment",
+      "TermGuid": "a3d9cd7f-e3c7-4912-82fa-26bcfa5d33a3",
+      "WssId": 1407
+    }
+  ],
+  "ScheduleStartDate": "2009-07-09T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 527,
+  "Modified": "2020-01-21T12:52:15Z",
+  "Created": "2016-12-08T09:21:32Z"
+}

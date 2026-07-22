@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c3d0016b-36d2-486f-9e92-0052b7022974",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "402e0c81-2e1a-4803-9dd3-7d73d5261e6a",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f36f5d7c-5b6b-447a-8de8-1bb54242ae9d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3f9ca15f-f65a-4ecd-81f2-6199c31123ef",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "58b776f1-fa56-45d4-8178-eda7312a694b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "118b98e5-1e7c-4ae1-81c0-8bfa29f793a0",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bca6b06b-efae-4fb9-b759-eda2e2dd6c5f",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3060)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "767968f0-a15e-4aa7-9586-83f2caec4561",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3060,
+  "Title": "New book stresses educational transformation through sound leadership",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU-IED commemorates the publication of 'Educational leadership policies and practices: Voices from the developing countries' ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>An edited book titled, 'Educational leadership policies and practices: Voices from the developing countries' was launched at a ceremony organised by the Aga Khan University Institute for Educational Development (AKU-IED) in Pakistan. \n      <br/></p><p>Published by the Oxford University Press, the book has been co-edited by education experts: Drs Jan-e-Alam Khaki, Gulab Khan, Mola Dad Shafa and Sadruddin Qutoshi; and features contributions from noted scholars hailing from Afghanistan, Nepal, Central Asia and Pakistan. </p><p>It serves as a resource for policy makers, researchers, educators, headteachers and others to lead the transformation of systems in their respective public and private educational institutions.</p><p>Addressing the ceremony, chief editor: Dr Khaki emphasised that: \"Leadership matters! And this book highlights exactly that by pulling together voices from different contexts. They each echo the need for sustainable, enabling and liberating leadership that will stimulate ideas and solutions to address age-old problems of educational leadership.\" </p><p>The book shares the experiences and lessons learned from local and international educational contexts that demonstrate positive evidence of leadership in transforming education and educational administration to make it more relevant to current needs. Furthermore, all of the book editors and contributors are either faculty, former faculty or alumni of AKU.</p><p>The launch event was attended in-person and online by an engaging audience that included several education experts, researchers, higher education faculty, doctoral scholars and others from various institutions.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002946",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2023-03-01T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3060,
+  "Modified": "2023-03-01T13:07:16Z",
+  "Created": "2023-03-01T11:34:01Z"
+}

@@ -1,0 +1,182 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "15e44e4c-fb55-447c-87b8-efcb621b5769",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9818567e-86f7-41ff-86cf-80b80211571f",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7bb05a0c-cb36-493e-ae39-62f294c08881",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3cdc3d06-5ac0-45ce-afba-bb70370b6b3b",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "96373a79-8c41-4204-a686-15279cfe724b",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bb893693-324a-4fe1-b6e8-ccb127f926bb",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d670bdf4-d1c7-430d-a044-19f3dca9cf5d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "69a5bbed-94fc-4233-82e8-75e324aa08ca",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1690)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5132402a-1c0b-4c5a-b535-48f48a7d8e9c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1690,
+  "Title": "At the cutting edge of breast cancer research ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Faculty investigate the exciting potential of testosterone in fighting breast cancer.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Faculty members are pioneering a new field in breast cancer research that could lead to treatments that are both more effective and more affordable than those currently available. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers led by Professor El-Nasir Lalani - Director of AKU's Centre for Regenerative Medicine and Stem Cell Research - are exploring the capacity of androgens to protect against breast cancer and to fight various subtypes of breast cancer. They have found that women with breast cancers that are androgen-receptor positive have enhanced survival times of up to 10 years."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The researchers' experimental work on breast cancer cell lines has demonstrated that testosterone significantly inhibits the growth of breast cancer cells driven by an onco-protein called HER-2. This inhibitory effect is as effective as utilizing Herceptin, a drug for HER-2-positive breast cancers that costs tens of thousands of dollars for a full treatment course. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The results are especially notable because treatments utilizing testosterone alone would be significantly cheaper than Herceptin - as would utilizing Herceptin in combination with testosterone, because it would lower the required Herceptin dose. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Assistant Professor Nazia Riaz, a breast surgeon and member of Professor Lalani's team, is extending the study to other breast cancer subtypes and is seeking funds to undertake a clinical trial to determine if the laboratory findings can be reproduced in a clinical setting. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our aim is that the research we undertake results in the development of affordable and optimal treatments for patients with breast cancers and other cancers,\" she said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "AKU's research could impact the diagnosis and treatment of patients with breast cancer not only in Pakistan but globally.",
+  "PullQuoteAuthor": "Professor El-Nasir Lalani ",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001635",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Breast cancer",
+      "TermGuid": "25ca5d93-ab54-4872-bc9b-35a8e2e09295",
+      "WssId": 1427
+    },
+    {
+      "Label": "regenerative medicine",
+      "TermGuid": "1a5ff913-2023-49cc-8835-fb7722cdd969",
+      "WssId": 1682
+    }
+  ],
+  "ScheduleStartDate": "2018-08-13T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Professor El-Nasir Lalani (centre) and Assistant Professor Nazia Riaz are part of a team of researchers whose work could lead to new treatments for breast cancers.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1690,
+  "Modified": "2018-08-15T11:28:48Z",
+  "Created": "2018-08-13T13:41:54Z"
+}

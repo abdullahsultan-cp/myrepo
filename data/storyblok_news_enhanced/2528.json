@@ -1,0 +1,252 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "41474b27-7b0e-47b6-8837-3be0d27458c5",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2026b4ca-c964-4110-8d25-5bb418f15ae2",
+    "Id": 8076,
+    "Title": "Haniya Javed"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c4c2c9a-a1fd-4e66-8054-c28bacaff102",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0f8c50ff-007c-4eeb-a9cf-b4e89803a6e2",
+    "Id": 8076,
+    "Title": "Haniya Javed",
+    "EMail": "haniya.javed@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "11b6b34f-6d62-42ca-9592-7b5c56083202",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9c262978-5f8b-4e76-a048-80004b55cde9",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "03e7ed8f-563e-4eef-bb6f-227537376d18",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ce94df1e-f9df-4daf-80a2-543b38d1ddea",
+    "Id": 8076,
+    "Title": "Haniya Javed",
+    "EMail": "haniya.javed@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2528)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d1e851f3-ab78-473f-8c88-b10c3fd8a1c8",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2528,
+  "Title": "Generous gift from alumni to advance paediatric research",
+  "NewsSubTitle": null,
+  "NewsSummary": "Drs Anita Zaidi and Saad Shafqat- Medical College Pakistan '88 - give back to AKU",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU alumni are known to be thriving members of the community who have always given back to AKU. Many AKU alumni show their appreciation and support to the school by providing generous gifts that help empower future generations to come."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Recently, two of our most prominent AKU alumni, Dr Anita Zaidi and Dr Saad Shafqat, graduates of the Medical College Pakistan's inaugural class of 1988, signed a gift agreement to donate to AKU Medical College's department of paediatrics and child health."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "They were both filled with excitement and joy as they finalised the agreement to support paediatric research in Karachi. Thanks to their generosity, the department of paediatrics and child health will be able to undertake research and provide better state-of-the-art clinical services and quality care to children."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For many years, both Dr Anita Zaidi and Dr Saad Shafqat have been exceptional leaders that have made significant contributions to AKU. Their generosity and leadership has touched countless lives and helped pave the way to success for future generations."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As the previous department chair of paediatrics and child health in the Medical College in Karachi, Dr Anita Zaidi was especially passionate about research and happy to contribute to the cause. Dr Zaidi is currently the President of the Bill & Melinda Gates Foundation's Gender Equality Division. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Saad Shafqat is a professor of neurology at AKU. He is known for his expert knowledge of medicine and cricket and for being a published author. He frequently appears on TV as a cricket analyst and regularly contributes to the Dawn newspaper in Pakistan and to ESPN's well-regarded cricket website, "
+          },
+          {
+            "type": "text",
+            "text": "http://www.espncricinfo.com",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.espncricinfo.com/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU is so grateful for the numerous years of support from Dr Anita Zaidi and Dr Saad Shafqat. Their gift will allow the department of paediatrics and child health to advance their research and significantly improve the lives of many others. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For more information on giving to AKU, please visit www.aku.edu/supportus or email "
+          },
+          {
+            "type": "text",
+            "text": "resource.development@aku.edu",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/resource.development@aku.edu",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002428",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "paediatrics",
+      "TermGuid": "ea94a483-4513-4825-a4e4-ba92a5e1d16a",
+      "WssId": 1839
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    }
+  ],
+  "ScheduleStartDate": "2021-01-14T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2528,
+  "Modified": "2021-01-15T11:53:19Z",
+  "Created": "2021-01-14T13:08:49Z"
+}

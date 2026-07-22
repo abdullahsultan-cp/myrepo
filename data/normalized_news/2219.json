@@ -1,0 +1,127 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "8d79500a-c2e5-4bfa-ab15-c8a95e8ade2d",
+  "odata.etag": "\"24\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9bee6fcd-48d5-4522-8f6e-6c2077930624",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6b8aea33-32a6-4bce-824b-011ebafdc935",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ff3b7b1a-f7ea-4021-8c46-e8ddb4643ad1",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi",
+    "EMail": "sarah.qureshi@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "98f53d6d-869c-4052-970a-087cf35f8c62",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e8358310-c394-4035-9691-a380f36f2be9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "4025964b-04d4-404a-a872-b23dbd402483",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "23604f2d-2046-4ddc-baf3-dd7f9367bcdc",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi",
+    "EMail": "sarah.qureshi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2219)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "60f28853-36c1-49b6-b27e-806bc94bcbdb",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2219,
+  "Title": "Protecting frontline healthcare workers from COVID-19",
+  "NewsSubTitle": null,
+  "NewsSummary": "Alumna Dr Yumna Siddiqi provides essential safety training at Karachi's isolation centre.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Yumna Siddiqi remembers the look of concern on her mother's face when she told her about her decision to volunteer at the COVID Field Isolation Centre set up by the Sindh government in Karachi. Located at Expo Centre, the facility plans to house people who are either homeless, lack the financial means to access hospital care, or who are unable to safely isolate themselves from family members at their homes.<br/></p><p>\"I understand where my mother is coming from, but I just had to step up and volunteer,\" Dr Siddiqui, MBBS '18, said. <br/></p><p>She was hoping to be placed in the Red Zone, the clinical area where she would care for incoming patients. But she's also happy to be playing a part in the Green Zone where she provides the hands-on training that will keep staff at the facility safe. She runs regular orientation sessions for doctors, nurses, technicians and cleaning staff working in the Red Zone that guides them on the safety protocols to follow and how to wear personal protective equipment. Each session takes up to two full days with each group consisting of between 10 and 40 trainees.<br/></p><p>\"I consider it to be both a professional duty and a personal obligation to serve those in need. This crisis is bigger than any of us and to be a part of the solution, in any form, is an honour,\" Dr Siddiqui adds. <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002132",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Volunteerism",
+      "TermGuid": "34a1d7ef-8f85-47ff-ab5a-48cbb88744cb",
+      "WssId": 1911
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    }
+  ],
+  "ScheduleStartDate": "2020-04-14T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2219,
+  "Modified": "2020-04-15T06:34:28Z",
+  "Created": "2020-04-14T08:03:33Z"
+}

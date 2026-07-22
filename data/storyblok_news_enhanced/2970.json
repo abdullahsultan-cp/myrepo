@@ -1,0 +1,355 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c909725b-47ad-443e-b838-4cfb92b281c9",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "acf66b54-9950-45a2-a20b-2a3e070a9137",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0169a25b-db0e-4ec5-ab41-1c848dfccf80",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "26f42ea4-897b-43f8-87c0-c830c083ff79",
+    "Id": 15367,
+    "Title": "Maura Malanga",
+    "EMail": "maura.malanga@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f8e8145f-b437-482c-b415-1aed890e8d49",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "92364065-273b-4f38-990c-32c1d9cc85f8",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "1c4426f5-ace6-4784-88e3-05e2e5005a48",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "654065f7-a366-42e9-ad5a-fc7be614d464",
+    "Id": 15367,
+    "Title": "Maura Malanga",
+    "EMail": "maura.malanga@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2970)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d0106fee-25eb-48fc-b452-d1327d311a4c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2970,
+  "Title": "AKU don elected to the U.S. National Academy of Medicine",
+  "NewsSubTitle": null,
+  "NewsSummary": "Prof Marleen Temmerman awarded one of the highest honours in health and medicine",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Dr Marleen Temmerman, Director of the Centre of Excellence in Women and Child Health, Aga Khan University, has been elected to the "
+          },
+          {
+            "type": "text",
+            "text": "U.S. National Academy of Medicine",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://nam.edu/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She was granted the honour for her numerous leadership positions at AKU and global organizations. Prof Marleen is also one of the authors of the "
+          },
+          {
+            "type": "text",
+            "text": "UN Global Strategy for Women, Children and Adolescent Health",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://dcp-3.org/resources/towards-new-global-strategy-womens-childrens-and-adolescents-health",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking on her election, Prof Marleen said, \"I am humbled and honoured to be elected to the U.S. National Academy of Medicine. I am extremely proud to join this esteemed Academy and grateful to many colleagues with whom I am sharing this with. Most of all, I am thankful to the Academy for this recognition of our work in women's health and rights. It gives meaning and purpose to what we do.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Election to the Academy is considered one of the highest honours in the fields of health and medicine. It recognizes individuals who have demonstrated outstanding professional achievement and commitment to service and made major contributions to the advancement of the medical sciences, healthcare, and public health. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This extraordinary class of new members is comprised of exceptional scholars and leaders who have been at the forefront of responding to serious public health challenges, combatting social inequities, and achieving innovative discoveries. Their expertise will be vital to informing the future of health and medicine for the benefit of us all,\" said National Academy of Medicine President Victor J. Dzau while welcoming the new members. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Marleen is one of the world's most exemplary gynaecologists and a \"polymath in reproductive health\", as stated by "
+          },
+          {
+            "type": "text",
+            "text": "The Lancet",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2812%2961869-8/fulltext",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". She beat all odds to study medicine at the Ghent University in Belgium and went ahead to become the first female professor of gynaecology in Belgium."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Throughout her diverse portfolio of medical, political, and academic work, Prof Marleen has contributed to improvements in healthcare for disadvantaged populations and for the sexual and reproductive health and rights of women and girls. She has also established a worldwide network of universities in the field of reproductive, maternal, newborn, and adolescent health. Prof Marleen continues to be a vocal and ardent champion for the rights of women, children, and adolescents globally."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The reputable professor has earned numerous awards and achievements including a "
+          },
+          {
+            "type": "text",
+            "text": "Lifetime Achievement Award",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://focusonbelgium.be/en/Do%20you%20know%20these%20Belgians/marleen-temmerman-worlds-most-meritorious-gynaecologist",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " by the British Medical Journal, the "
+          },
+          {
+            "type": "text",
+            "text": "Moran of the Order of the Burning Spear",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://icrh.org/news/marleen-temmerman-receives-moran-order-burning-spear",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " by former Kenyan president Uhuru Kenyatta, and "
+          },
+          {
+            "type": "text",
+            "text": "meritorious gynaecologist",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://focusonbelgium.be/en/Do%20you%20know%20these%20Belgians/marleen-temmerman-worlds-most-meritorious-gynaecologist",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " from FIGO, the International Federation of Gynaecologists and Midwives."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Despite her previous achievements, Prof Marleen is focused on continuing to majorly contribute towards the sexual and reproductive health and rights of women. She aspires to continue investing in research and mentoring young African researchers in health, sciences, technologies, and gender, and in knowledge translation to leverage implementation and use of available data to improve health systems and universal health coverage, as well as sexual and reproductive health and rights."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002859",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    }
+  ],
+  "ScheduleStartDate": "2022-10-21T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2970,
+  "Modified": "2022-10-24T06:40:33Z",
+  "Created": "2022-10-21T05:02:26Z"
+}

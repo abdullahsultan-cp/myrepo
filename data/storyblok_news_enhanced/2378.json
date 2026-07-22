@@ -1,0 +1,176 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "62ae8040-021f-47c4-9a14-21fd80c37707",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6fe6ee44-d995-4c48-9d2e-fb6c4e7fed1b",
+    "Id": 3461,
+    "Title": "Akber Ali"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "af29e3c1-9f5a-485c-9769-9e5df7cf9afa",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a1270799-fd96-421d-ad34-c636f222854c",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4bd8bed5-13fb-4c08-ab52-9139d12d0e0a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "30fd1dd5-2d50-4af7-b874-0cce18a8345e",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "2e1d89d8-b14b-47be-8bb1-eab6c68fda47",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ed206ecc-305c-457a-9072-6197694c0448",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2378)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cb353984-581a-4dc1-ad89-bf7d44fd0b66",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2378,
+  "Title": "Studying Maternal Nutritious Supplementation and Child Health",
+  "NewsSubTitle": null,
+  "NewsSummary": "Important publication",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For healthy pregnancy and birth outcomes, it is essential that women have adequate nutritional status during preconception, pregnancy, and postpartum. In developing countries, such as Pakistan, women experience multiple biological and social stressors including food insecurity, poor health care, inadequate diets, recurrent infections, gender inequalities, heavy work burdens, repeated pregnancies, and short intervals between pregnancies. These stressors increase their risk of malnutrition, including low BMI, anemia, and micronutrient deficiencies (vitamin A, calcium, zinc, folate, iodine, iron, and vitamin D) among women."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Maternal malnutrition (often indicated by low BMI or low MUAC) is associated with increased rates of infections, obstructed labour, and small-for-gestational-age (SGA) babies. The process of a child becoming stunted often begins in the womb or soon after birth and may continue until 2 years of age. Stunting is a consequence of inadequate nutrition, often combined with frequent infection, which also leads to increased risk of death and disease, impaired cognitive development, reduced educational achievements, reduced work productivity, and lower earnings. To view publication "
+          },
+          {
+            "type": "text",
+            "text": "click here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/coe-wch/pk/Documents/Effectiveness of supplementation to PLW.PDF",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002285",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    }
+  ],
+  "ScheduleStartDate": "2020-07-28T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2378,
+  "Modified": "2020-07-30T11:40:21Z",
+  "Created": "2020-07-28T06:15:48Z"
+}

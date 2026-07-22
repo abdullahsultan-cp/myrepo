@@ -1,0 +1,203 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "28553f44-1026-481c-bdfd-a3c29572ac4a",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a816083c-6486-4329-8da2-3b03800aa059",
+    "Id": 7746,
+    "Title": "patrick.gumo"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1b549052-de71-470e-932a-c05b5a748308",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "95b79857-bc92-4c42-a2aa-f6f088f796cb",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bad84d68-5d6f-4475-bcd6-f32af8699a8d",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0308579f-9daf-4a64-8327-24884e14da8d",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d4e64f7f-356d-49c6-86e5-d400d8fe55dc",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2437)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b606e290-ed83-41a2-8862-edc4002d279a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2437,
+  "Title": "New research to boost genetics data on mental illness in Africa",
+  "NewsSubTitle": null,
+  "NewsSummary": "NeuroGAP-Psychosis project seeks to engage 35,000 Africans in a quest to gain a deeper biological understanding of schizophrenia and bipolar disorder across a diversity of populations. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University is part of the largest study on genetics of mental illness in Africa. The four-year project known as Neuropsychiatric Genetics of African Populations-Psychosis (NeuroGAP-Psychosis) seeks to engage 35,000 Africans in a quest to gain a deeper biological understanding of schizophrenia and bipolar disorder across a diversity of populations."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The project also aims to boost research infrastructure and train a new generation of neuropsychiatric geneticists in Kenya, Uganda, Ethiopia and South Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Lukoye Atwoli, Dean at AKU's Medical College East Africa is the lead investigator in the multi-country study. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Treatment for mental illness across the world is inadequate. The medications and the interventions that are available only scratch the surface and they do not address the real problem of mental illness. In addition, when you do not have adequate mechanisms for diagnosis and treatment of severe chronic illness then stigma takes root,\" he said. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to the World Health Organization, one in four people in the world will be affected by mental or neurological disorders at some point in their lives. In addition, around 450 million people currently suffer from such conditions placing mental disorders among the leading causes of ill-health and disability worldwide."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Current genetic data on mental illness are mostly from people of European ancestry, and NeuroGAP-Psychosis aims to change that, by ensuring that African science and its people are represented in the search for genetic markers for these diseases."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Evidence suggests that the amount of genetic diversity on the African continent is greater than anywhere else in the world and we seem to be reaching an agreement now that a lot of the answers will be found in the genetic make-up of the African people. When we started thinking about the complexion of the global neuropsychiatric genetics database, we all agreed that this database was not representative of the world's populations,\" added Prof Lukoye."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participants of the NeuroGAP-Psychosis study will include individuals who are at least 18 years old with a clinical diagnosis of schizophrenia or bipolar disorder or those with no history of psychosis. Research assistants will collect data and saliva for DNA extraction. Data on mental disorders, history of physical health problems, substance use and history of past traumatic events will be collected from all participants."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The project currently involves researchers at Moi Teaching and Referral Hospital and the KEMRI-Wellcome Trust Research Programme in Kenya, Addis Ababa University in Ethiopia, Makerere University in Uganda, the University of Cape Town in South Africa, the Stanley Center for Psychiatric Research at the Broad Institute, and is led by Harvard T.H. Chan School of Public Health."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002343",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "c4348316-b0a1-4ca5-a133-b70689d66efc",
+      "WssId": 1840
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    }
+  ],
+  "ScheduleStartDate": "2020-10-13T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU is part of the largest study on genetics of mental illness in Africa. Photo: File",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2437,
+  "Modified": "2020-10-14T09:34:53Z",
+  "Created": "2020-10-13T13:12:42Z"
+}

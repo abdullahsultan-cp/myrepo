@@ -1,0 +1,410 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d9f4be5d-5980-4f22-a034-9c8c142bcf6f",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac2e3c1c-933c-4cd9-b633-ba47fa077d34",
+    "Id": 8705,
+    "Title": "evans.kituyi"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a6a159b-2b88-4390-97e1-a6193cfa78a7",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2499b96-c2a8-461e-9c05-bbd89e491d26",
+    "Id": 8347,
+    "Title": "ashnar.dholakia",
+    "EMail": "ashnar.dholakia@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "0ba3973a-8f58-4846-8c95-b7d5fec4d3bc",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "447700ef-c95f-435a-8bda-34b15c7240b2",
+    "Id": 14,
+    "Title": "East Africa Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "3cfb484b-5e8a-4820-bf72-7cf55f2cad08",
+      "Id": 14,
+      "Title": "East Africa Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4de0be7c-1dea-47a1-ac68-2eb8fe801159",
+    "Id": 8347,
+    "Title": "ashnar.dholakia",
+    "EMail": "ashnar.dholakia@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2232)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c7c303a9-1b55-45df-a9d2-0300202a80de",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2232,
+  "Title": "Food will become a big deal as crisis deepens",
+  "NewsSubTitle": null,
+  "NewsSummary": "Risk management frameworks are important for securing sustainable food systems.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As Kenya continues to grapple with Covid-19 and its citizens adjust to life in self-isolation, the far-reaching implications of this pandemic continue to unroll. Severe implications have been felt on our ways of life - massive strain on an already compromised healthcare system, millions of children sent home from school and layoffs due to the economic drop."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "But perhaps the most profound impact will be on food systems. The food supply chain is a complex web of interactions and of actors including producers, inputs, transportation, processing plants and shipping."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " As the virus spreads and regions under lockdown increase, there are countless ways food systems will be tested and strained in the coming weeks and months, mostly on the supply side. Less production is likely but not yet noticeable."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Although most planting has already taken place in mid to high-potential areas in the normal long rains season, there is a high likelihood of rapidly increased infections. The Health ministry projects about 10,000 infections by end of April."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In such a scenario, this will likely affect the family labour that is expected to manage the ongoing planting and weeding operations in most cereal production zones under the current good rainfall, with negative consequences on yields. A disruption in the food supply chain is, therefore, expected later this month."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As transport restrictions increase and quarantine and stay-home measures intensify, farmers' access to farm input and output markets will be impeded, curbing productive capacities."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to recent local media reports, fish mongers in various Lake Victoria fish landing sites are unable to sell to their traditional buyers from far-flung counties following travel restrictions and reduced demand as people stay at home."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "More impact on the beef and livestock sector are also expected as reports of reduced access to commercial animal feed and near-idle slaughterhouses due to logistical constraints and labour shortages stream in. Fresh produce and horticultural supply chains will increasingly be disrupted in the coming weeks by blockages to transport routes, as well as reduced manpower, and may also result in increased levels of harvest loss and waste."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the demand side, reduced consumption of meats in particular is likely, attributed to its zoonotic origins and reduced affordability due to loss of jobs. If lockdowns continue, we are likely to experience reduced market visits, hence reduced food consumption."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We also expect shifts in purchasing modalities with lower restaurant traffic, increased e-commerce deliveries as already being witnessed in Nairobi - where online orders and payments are on steep increase as people similarly avoid use of cash - and the rise in home-cooked food consumption. Continued lockdown and restricted freight will see less imported foods in our markets."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "About 40 per cent of fish in Kenyan markets has been coming from China, but has since stopped, while apples and oranges are imported from South Africa."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The recent closure of all pubs and clubs across the country has seen the main breweries in the county stop producing bottled beer and in some cases opting to produce only canned beverages to be easily consumed in homes."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As things stand, the main solution lies in meeting the immediate needs of the vulnerable populations, mainly those living in informal settlements and rural areas."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Not to be left out are those working in our crowded wholesale food markets, such as Marikiti and Soko Mjinga. These people need adequate information delivered using all appropriate means, as well as access to running water for handwashing, gloves, masks and sanitisers."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Financial solutions are similarly needed to rapidly cushion these vulnerable groups. Food subsidies will go a long way towards helping low-income earners have enough food stocks of maize and wheat flour, rice and pulses should there be need for a total lockdown."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The proposed tax cuts, however, had in mind employers and employees who are a small fraction of the population."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Several days later, President Uhuru Kenyatta unveiled the Covid-19 Emergency Response Fund, with seed capital drawn from the Exchequer, which money includes voluntary salary cuts undertaken by senior public officials. This fund is expected to procure foodstuffs and other basic items to be supplied to poor families reeling from the effects of the curfew."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Towards sustainable food systems during and post-Covid-19, we should put emphasis on risk management frameworks to fall back to in case of another similar pandemic in the near future."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "Dr. Evans Kituyi is the Director of the East Africa Institute at the Aga Khan University.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "*The original version of this article was posted in The Standard on 16 April 2020: ",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "https://www.standardmedia.co.ke/article/2001368118/food-will-become-big-deal-as-crisis-deepens?fbclid=IwAR2bX0qTdnuBjRI314i40c32DiSwVb8xNIGuDPRwTBGHuxJsPVICHF2vvbw",
+            "marks": [
+              {
+                "type": "italic"
+              },
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.standardmedia.co.ke/article/2001368118/food-will-become-big-deal-as-crisis-deepens?fbclid=IwAR2bX0qTdnuBjRI314i40c32DiSwVb8xNIGuDPRwTBGHuxJsPVICHF2vvbw",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002144",
+  "LocalApproverGroup": "EAI News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "east africa",
+      "TermGuid": "44643f58-c153-4aaf-912b-2181456ed941",
+      "WssId": 1823
+    },
+    {
+      "Label": "East Africa Institute",
+      "TermGuid": "11dc44af-22d3-4694-8e66-829c99cbb669",
+      "WssId": 1837
+    }
+  ],
+  "ScheduleStartDate": "2020-04-21T00:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2232,
+  "Modified": "2020-04-21T08:49:38Z",
+  "Created": "2020-04-20T23:39:40Z"
+}

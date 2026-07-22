@@ -1,0 +1,87 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b835ae53-1ea1-4f1a-95da-83a990bad1c7",
+  "odata.etag": "\"3\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e255065-b6f3-4ffc-bee5-b3366240e741",
+    "Id": 6327,
+    "Title": "stephen.musyoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/Publisher",
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b9c66846-5366-4468-b18f-abdc4a6303bf",
+    "Id": 14,
+    "Title": "Arusha"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ded768e1-13ba-48f1-9891-37dc9e2d6fb8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "669df295-7d7b-4b76-ace5-4ce7e14961fa",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3875)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "58c87152-d362-4c33-b055-90126de0b8b8",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3875,
+  "Title": "Digital Learning in Pakistan\u2019s Mountaintops",
+  "NewsSubTitle": null,
+  "NewsSummary": "QTL_net team facilitates introductory workshop on Effective Use of Technology under the University Improvement Programme. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassB6E35A46C7FD4912A92838994C252ED3\"><p>As part of our ongoing commitment to supporting institutions across the Aga Khan Development Network (AKDN) regions, the QTL_net team facilitated an introductory workshop on Effective Use of Technology at the University of Chitral, under the University Improvement Programme. The workshop was held from November 4\u20136, 2025 and guided 17 fa\u200b\u200bculty and staff through hands-on, student-centred activities.&#160;<br></p><p>The workshop was developed in direct response to the needs identified by the University of Chitral, which requested training in the effective use of Learning Management Systems, in designing engaging digital lesson plans, in creating interactive digital content, and in applying digital pedagogy and active learning strategies.&#160;</p><p>The workshop supported participants to design flexible lesson plans, create their own teaching videos, build Google Classroom spaces, and practice using LMS for teaching, while exploring interactive platforms such as Padlet and Slido. The sessions were intentionally grounded in local realities, in a region where terrain and weather frequently disrupt campus access, and used existing campus resources, such as the smart lab and low-bandwidth tools, to demonstrate how digital learning can be supported even in remote settings.</p><p>Faculty emphasized how meaningful the contextualization felt. \u201cThe facilitators didn\u2019t just teach digital tools; they modelled their effective use,\u201d shared Dr. Yasir Arafat, Director Quality Enhancement Cell, noting how the experience deepened his ability to evaluate and enhance student learning. Other faculty members echoed similar sentiments. \u201cThis workshop was a paradigm shift\u2026 it showed us how to architect truly immersive, student-centred learning experiences,\u201d said Dr. Saif Ul Mujahid Shah. Dr. Mansoor Ullah Baig added that the training \u201cstrengthened my confidence to use digital tools\u2014especially when students cannot always be on campus.\u201d</p><p>The workshop marked an encouraging step towards digital teaching and learning and the ongoing collaboration between AKU and the University of Chitral, highlighting how targeted, practical training can support faculty in adapting to the evolving educational needs of the region.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003741",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2025-12-16T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The workshop marked an encouraging step towards digital teaching and learning and the ongoing collaboration between AKU and the University of Chitral",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3875,
+  "Modified": "2025-12-16T09:10:03Z",
+  "Created": "2025-12-16T09:09:57Z"
+}

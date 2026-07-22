@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a23549a7-ebd4-4b38-9f4f-2f3c7ffdd54d",
+  "odata.etag": "\"47\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "748a02e6-92ff-4393-8787-b6421f79fd21",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93eb59b7-3b15-435c-83dc-6fefa95c4bd9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3acf32ee-c98b-4450-962e-e498acf0db7e",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "d39f4a97-325e-4072-8551-9663f2494170",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bdb65cd6-108a-43c7-878b-2c27c326326a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "28fa2915-5f57-4cf8-b92f-5084abf768d1",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e14cbc5d-c54a-4cb4-8611-0f04728ae02c",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(109)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3c434cd1-6f60-4391-aaba-99b9ed1e4b6c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 109,
+  "Title": "\u200bImproving healthcare in my hometown",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nooreen Maqsood Karim, a student in AKU\u2019s Dental Hygiene Programme, applied her studies to help residents of her hometown, Hunza, improve their dental hygiene.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass8BB8CFCCAF7543BFB8FD3255988687E3\"><p>\u200b\u200bClick <a href=\"https&#58;//view.vzaar.com/6482301/player\" target=\"_blank\">here</a> to watch&#160;\u200b\u200bher success story.</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000079",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "770165ec-c858-4c3a-b152-ff70b540aea9",
+      "WssId": 1377
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 109,
+  "Modified": "2018-08-06T12:06:11Z",
+  "Created": "2016-05-17T08:38:17Z"
+}

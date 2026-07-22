@@ -1,0 +1,247 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "627ca5b0-6d7f-4958-ac88-41156c925f09",
+  "odata.etag": "\"30\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0be3b5a2-738a-4cc8-85b7-a24fc6bee220",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bbb8345a-4afe-4b00-9c41-1c43dce0cab3",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0dd51241-a18a-4ae9-8faa-3b24cf8f3f5e",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "d9027cbe-c794-4a2a-95f5-1000c5fe8f6a",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9198e34d-61cb-4095-969f-5a4bfeca8c24",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9622dc6f-85cf-4235-8e94-66d6a99eddda",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9b775809-44de-4d34-ba51-c1be09c2faa5",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(244)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ce3738b4-c374-41fa-b396-cdbd53113325",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 244,
+  "Title": "A double triumph for the IED's PDC, North",
+  "NewsSubTitle": null,
+  "NewsSummary": "IED's new projects will support the goals of the national educational policy",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Gilgit-Baltistan has taken the bold step of developing a 15-year education strategy that aims to achieve universal primary education for girls and boys equally, and to encourage the lifelong skills needed for people to survive and thrive. In support, the University's Institute for Educational Development and its Professional Development Centre, North has secured two grants to support the public education sector."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Girls' Right to Education Programme is in partnership with UNESCO and the School Improvement Pilot alongside the Aga Khan Development Network. Both projects are based in Gilgit- Baltistan's marginalised areas and have been designed to tackle specific problems facing the local education system: unsatisfactory enrollment rates for girls and regions' with a number of underperforming schools."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Girls' Right to Education programme",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Government statistics show that one in four girls still are never enrolled in primary school and that girls lag well behind boys in literacy scores. They indicate that girls will lack the skills to excel in later schooling and even life."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "GEP will focus on 35 government primary girls' schools across Gilgit-Baltistan. In the first stage, the IED will work with people, the school management committees, village advocacy groups and mother support groups to make the case for girls' education and to improve enrollment rates."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In the next stage, physical and learning environments in the targeted girls' schools will be revamped to improve safety and accessibility for female students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In the final phase, a comprehensive capacity building programme will be implemented to train teachers, head teachers and community facilitators in effective educational models to boost teaching standards."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "PDC, North, will be building on its experience of working with schools in the conservative Diamer District under the Education Development and Improvement Programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The School Improvement Pilot",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Another 35 public and community schools across Gilgit-Baltistan will be a part of the School Improvement Pilot which will create school clusters to implement steps that will support and improve educational standards in an area. In order to promote a spirit of teamwork, teacher 'community' groups will be formed to promote regular collaboration between practitioners in different schools."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The pilot initiative, to conclude in December 2016, will generate the evidence that will help the GB Department of Education refine interventions for the underperforming areas."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mola Dad Shafa, head of PDC, North said: \"The two grants will help us solve Gilgit-Baltistan's specific educational challenges by improving female access to primary education and by engaging the local community to collaborate to improve schools in their area."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"These projects will support our goals of having more children in revamped schools and of exposing them to modern teaching methods that keep them engaged and inspire them to learn more, key skills that will help them throughout their lives.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000208",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    }
+  ],
+  "ScheduleStartDate": "2016-07-29T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 244,
+  "Modified": "2017-02-22T07:01:03Z",
+  "Created": "2016-07-29T12:36:53Z"
+}

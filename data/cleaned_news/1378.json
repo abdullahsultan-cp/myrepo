@@ -1,0 +1,121 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f1f8b98a-6a9e-4faf-9063-6fb88d9d6caa",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6bb70a1d-03f6-4874-89bb-385789b40cc3",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eb214ff1-dbcb-442d-bde1-5a84b184ec9e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "acd6e94f-4a21-4a1d-822e-5dc0fe8ec2ac",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "6754596e-9d13-4a41-b4f8-28f919f51098",
+    "Id": 11,
+    "Title": "Patient, student & alumni stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a551efc6-3b31-4b11-8657-d4fb91556871",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f71f336f-0ee8-4e17-9d43-fc541133167f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "da61d712-fd9f-4e06-8907-f23bd0c8f3e2",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1378)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f5d29c1a-7224-4d17-9490-ae3d93799c2c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1378,
+  "Title": "200 AKU alumni participate in free health camps",
+  "NewsSubTitle": null,
+  "NewsSummary": "Health camps offering free medical checkups and advice were set up in Karimabad, Federal B Area; Bilal Colony, Korangi; Sultanabad, and the New Sabzi Mandi areas of Karachi by Aga Khan University alumni, as part of their annual reunion celebrations.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass7DC4B00A40D04FFFB8C62BC5C89CDB90\"><p></p><div>Health camps offering free medical checkups and advice were set up in Karimabad, Federal B Area; Bilal Colony, Korangi; Sultanabad, and the New Sabzi Mandi areas of Karachi by Aga Khan University alumni, as part of their annual reunion celebrations.&#160; Over 200 ex-graduates from the University's School of Nursing, Institute for Educational Development and Postgraduate Medical Education (PGME), along with 100 nursing students offered basic health screening facilities and health education to more than 2,000 visitors, mostly women and children.</div><div><br></div><div>Located in various health hotspots in Karachi,&#160; the health camps provided information about basic hygiene and protection from infectious diseases such as malaria, dengue and pneumonia.</div><div><br></div><div>Serving as a reminder of the University's emphasis on community services, the visitors were also offered free screenings for blood pressure, weight, BMI, blood glucose level and anaemia. A mental health counsellor was also present to screen people for depression and offer advice on stress management.</div><div><br></div><div>In the new Sabzi Mandi area, cases of tuberculosis, skin infections, worm infestations, diarrhoea and anaemia were found. Alumni also referred patients with serious condition to the nearest health centres.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001325",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "students",
+      "TermGuid": "924138ea-95e8-482e-8e82-ca5ee2097d44",
+      "WssId": 1797
+    },
+    {
+      "Label": "Tuberculosis",
+      "TermGuid": "428575f8-ce68-412a-8338-12167502d688",
+      "WssId": 1920
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2010-12-28T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1378,
+  "Modified": "2020-05-18T07:27:08Z",
+  "Created": "2018-01-01T11:30:33Z"
+}

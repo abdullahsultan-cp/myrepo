@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3fad88e8-1ad8-4dd2-9e2b-1c2a439d20a4",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1066c659-692a-4858-8722-0cdac9fee90f",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1bd29758-a5b2-4502-98e5-dd44026896a6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3e28408c-39d2-44e2-8498-e107c9be08b4",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "7ed929dc-653c-4a21-b3f9-01c518681bfb",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e46ca9af-54d3-4161-95ae-1f77c1c71e7a",
+    "Id": 9,
+    "Title": "Kabul"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "728d5556-0891-4948-a85d-bff4efde047b",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "df8d8b0b-471a-46b2-891c-a9e8de3b4f0d",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(141)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1ff86693-d852-492f-b44c-d46849b919dd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 141,
+  "Title": "AKU conducts training on Lives Saved Tool in Afghanistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Aga Khan University and UNICEF, Afghanistan are working together to overcome obstacles that poverty, violence, disease and discrimination place in a child's path.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University and UNICEF, Afghanistan are working together to overcome obstacles that poverty, violence, disease and discrimination place in a child's path. As a part of this cooperation, the university recently conducted the first ever one day training session on Lives Saved Tool (LiST) in Kabul."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The training was part of the national 'Call to Action' programme where policymakers, technical experts and decision-makers from around the world gathered to analyze the maternal and child health situation in the country and agree on a way forward."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The session, facilitated by Dr Jai K Das, Senior Instructor and Arjumand Rizvi, Research Specialist from the Division of Women and Child Health, AKU, was conducted at the UNICEF headquarters, Kabul; thirty-five officials from the Ministry of Public Health, Kabul and regional UNICEF officials attended the session."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participants were oriented to LiST objectives, desired results and how the tool could be beneficial in planning and implementation of maternal and child health programmes. \"It is great to see the enhanced recognition of scientific evidence in policy making and this initiative would help Afghanistan set plausible policies and goals to improve maternal and child health and also to track the performance,\" said Dr Das commenting on the importance of the training."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "LiST is a computer-based tool developed by a consortium of organisations, led by the Institute for International Programs at Johns Hopkins Bloomberg School of Public Health. The tool provides a structured format for global policy makers, programmme managers or ministry of health officials to combine the best scientific information about effectiveness of interventions for maternal, neonatal and child health. The Tool can also gather information about causes of death and current coverage of interventions which will help planners and decision-makers in prioritizing investments and assessing existing programmes."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000110",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "afghanistan",
+      "TermGuid": "ca33fb2d-144a-4f66-9835-7e7fb8abd0ce",
+      "WssId": 1511
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "8af47938-e185-421e-bd51-de98296e39aa",
+      "WssId": 1384
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 141,
+  "Modified": "2017-02-22T07:15:31Z",
+  "Created": "2016-05-17T12:06:16Z"
+}

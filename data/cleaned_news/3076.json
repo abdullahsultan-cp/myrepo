@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d6d269fb-8f93-425e-92ac-58ece1860edc",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cd1dd6fc-339f-40b4-8e0b-8506b35c91d5",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d86487a5-8064-4df1-aee0-9d4a3ada233f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "80db2f3f-3ac4-4db5-a997-db469140741f",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8f58492f-bcf6-4634-af64-f0d3725014b1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c86a3cea-6206-4f53-a9e3-8bcce76b0b50",
+    "Id": 30,
+    "Title": "Centre for Regenerative Medicine and Stem Cell Research"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2a91ee75-d5ca-4a32-a80e-79108b1dddad",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3076)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb271bd6-4d09-4767-b214-1e93f95c36ba",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3076,
+  "Title": "Research shows COVID-19 infects Brain cells",
+  "NewsSubTitle": null,
+  "NewsSummary": "Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has infected more than 80 million people around the globe, systemically affecting vital organ system function and causing 1.5 million deaths worldwide. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass694D89CC02614DF1964B17252104776F\"><div>Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has infected more than 80 million people around the globe, systemically affecting vital organ system function and causing 1.5 million deaths worldwide. Although the virus initially attacks the respiratory system and disrupts respiratory functions by impairing cells in the lungs, there has been growing evidence of the virus infecting other organs including the brain.&#160; &#160;&#160;<br></div><div><br></div><div>When the first news broke in early 2020, many hospitalized COVID-19 patients were diagnosed with multiple symptoms such as sensory impairments, seizures, and neurological problems. In addition, clinical studies have further revealed a range of recurrent neurological symptoms such as headaches, stroke, dizziness, short-term memory loss, lack of focus, and encephalopathy in many COVID-19 patients, suggesting SARS-CoV-2 is responsible for these conditions. Viral RNA and antibodies have been detected in the cerebrospinal fluid of many COVID-19 patients. However, it is unclear whether these symptoms are a result of SARS-CoV-2 direct infection or an indirect consequence of a widespread infection in the human brain.&#160;<br></div><div><br></div><div>Researchers from the University of California San Francisco and Gladstone Institutes in the USA, and the Aga Khan University in Pakistan, investigated if human neural cells can be infected by SARS-CoV-2. They used primary human cortical tissues and cortical organoids derived from stem cells to test if SARS-CoV-2 can directly infect brain cells. Interestingly, the study team found significant SARS-Cov-2 infection of the astrocytes - star-shaped neural cells that hold neurons in place and help with their proper functioning while the other neural cell types showed minimal infection in the brain. This suggests that astrocytes are more susceptible to infection compared to other neural cell types. The results of the study have been published in the Proceedings of the National Academy of Sciences (PNAS), a peer-reviewed journal of the National Academy of Sciences (NAS), confirming the effect of SARS-CoV-2 virus on the human brain.<br></div><div><br></div><div>In this study, researchers also discovered another interesting finding that unlike COVID-19 infection in other organs which uses human angiotensin-converting enzyme 2 (ACE2) as the entry point, the virus uses other receptors to enter and infect the brain. They found interaction with receptors DPP4 and CD147 in infected astrocytes suggesting that they are also involved in SARS-CoV-2 infection in the human brain.<br></div><div><br></div><div>This study suggests that developing astrocytes are more susceptible to SARS-CoV-2 infection, but adult astrocytes are also vulnerable. DPP4 is abundantly expressed in astrocytes before virus infection, suggesting it may be a key receptor in astrocyte infection,\" says Dr Jahan Salma, Assistant Professor at AKU's Centre for Regenerative Medicine and Stem Cell Research. She is one of the contributors to the paper. Astrocytes are a major component of the central nervous system (CNS), comprising more than 60% of cells in the human brain, and regulate many functions in the developing and adult brain. Astrocytes play a major role in the formation and maintenance of the blood-brain barrier (BBB), regulation of neurotransmitters, control metabolic support, and inflammation in neurons. The study found that blood cells were also infected with the SARS-CoV-2 virus at a lower level than astrocytes. Blood cells are present adjacent to astrocytes which are important in BBB formation and protection of the brain from any harmful molecule entries. These findings suggest that SARS-CoV-2 may have the ability to infect astrocytes via a leaky BBB route which causes disruptions in astrocytes role that can severely impact the overall brain function resulting in seizures, inability to control motor function, and other neurological symptoms.&#160;<br></div><div><br></div><div>This study contributes to the global effort to investigate underlying mechanisms causing brain-related symptoms with the COVID-19 virus.<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002962",
+  "LocalApproverGroup": "CRM Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "2377808f-b3d0-4042-8099-f8aede5bd456",
+      "WssId": 2159
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2023-03-20T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3076,
+  "Modified": "2023-03-20T09:38:09Z",
+  "Created": "2023-03-20T09:36:24Z"
+}

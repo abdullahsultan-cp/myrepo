@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "425e06f4-cac4-456b-a5ac-88c9bcede959",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b4e27526-52b4-4ed4-9158-60f276dfc007",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb4a52a7-ee8c-43af-8a7b-2fafb420baec",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0482b3c6-12b4-4b7d-ba4e-c0604fae2ad1",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "91f00e9e-cfb5-4d74-b526-33f04a76bb52",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "fe507503-aee6-4f04-9e52-cc1673254dc9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a5b7eff4-65ac-4134-aea4-5cb5e821dcab",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2023)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e0247096-72f3-4512-a7ab-70a92d42865a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2023,
+  "Title": "WHO invites AKU expert to global panel",
+  "NewsSubTitle": null,
+  "NewsSummary": "Saleem Sayani will assist the WHO's efforts to build a digital health ecosystem.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass6952F732D4B24E089083E2A4A31EE45A\"><p>The World Health Organization (WHO) has invited Saleem Sayani, director of AKU's Technology Innovation Support Centre, to join a panel of experts that will advise and support the global health body in establishing a digital health ecosystem.</p><p>The WHO views digital technologies as a vital tool in achieving universal health coverage and has appointed a range of multidisciplinary innovators from around the world to its Digital Health Experts group. The group is part of the WHO's recently established Digital Health department that seeks to spur innovation in applications and interventions to help achieve targets under goal 3 of the sustainable development goals, Good Health and Wellbeing.<br></p><p>During his time at the University, Mr Sayani has led the introduction and expansion of a range of telemedicine and mobile health initiatives. <br></p><p>He has implemented a regional digital health programme that has enabled 50,000 teleconsultations in remote areas of Afghanistan, Pakistan, Kyrgyz Republic, Tajikistan, Kenya and Tanzania. Mr Sayani has also led the development of mobile health applications such as <a href=\"/news/Pages/News_Details.aspx?nid=NEWS-001723\">Teeko </a>and <a href=\"/news/Pages/News_Details.aspx?nid=NEWS-001680\">Nighedaasht </a>which have enhanced the delivery of routine immunisation campaigns and improved the quality of maternal, neonatal and child health services. <br></p><p>He is currently implementing another application, Hayat, in Afghanistan and Pakistan which seeks to meet each country's challenges in the provision of vaccines and maternal care.</p><p>\"People living in remote areas around the world face common barriers of distance and time which limit access to affordable healthcare,\" said Mr Sayani. \"I look forward to working on building and scaling up new digital initiatives through the World Health Organization's global expert group that will raise the quality and efficiency of health services delivery.\" <br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001946",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "8af47938-e185-421e-bd51-de98296e39aa",
+      "WssId": 1384
+    },
+    {
+      "Label": "Immunisation",
+      "TermGuid": "386ac89c-5e5a-410f-b2f1-1c43237982b1",
+      "WssId": 1434
+    }
+  ],
+  "ScheduleStartDate": "2019-10-15T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2023,
+  "Modified": "2019-10-15T11:24:49Z",
+  "Created": "2019-10-15T11:21:51Z"
+}

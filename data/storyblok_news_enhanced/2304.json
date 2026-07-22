@@ -1,0 +1,349 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a1189131-7ddc-47aa-a1f2-53b3e07f4f70",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "736699ac-d7bd-4977-b08a-826543612dbe",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "85e467f6-4605-4536-92cf-3ea64cfd5b8b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2b571567-563b-4d41-9912-057c2f6bb05a",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "66a983b5-25ab-44b8-afc8-26bcb089b239",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "54e2ee96-f1f7-43d9-ac01-cff904e5817c",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "67e4a731-cb1b-40fb-9f16-98f36980f22e",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "edbad3b8-f0c2-4fe8-a357-1e5b81628add",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2304)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "abb1da01-cb1e-4200-80d7-4a9828f5f948",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2304,
+  "Title": "Meet the 'doctor family' that lives to serve",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Zafar family has 37 doctors, ten of whom are AKU alumni.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There used to be a rotary telephone in the Zafar household that had a special message taped to it. In the days before cellphones, the house telephone was the instrument that brought the family together and the saying on the analogue-era set was a favourite of the head of the family, Syed Abu Zafar Azad."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\""
+          },
+          {
+            "type": "text",
+            "text": "Kya khaak wo jeena jo apne hi liye ho",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Khud mit kar kisi aur ko mittney sey bacha ley",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ";\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What value is a life lived for the self alone?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Surrender your self in the hope of saving another."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Abu Zafar would often repeat the saying to his children and grandchildren, urging them to put the words into practice by taking up the noble profession of medicine. His repeated reminders, alongside frequent doses of tough love, had a marked influence on his family, which now has 37 doctors, 10 of whom are graduates of Aga Khan University's Medical College. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today, his grandson, Dr Syed Arish Haider, MBBS '18, is the latest in this long line of professionals who have grown up conscious of the need to serve others. While Arish was influenced by his late grandfather's views on the role of medicine in society, he counts another relative, his maternal uncle, well-known obstetrician and philanthropist, Dr Shershah Syed, for giving him direction in the field. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Arish remembers how his uncle's visit to a ward at a public sector hospital full of new mothers suffering from obstetric fistulas fueled his desire to establish a philanthropic facility that would serve these women."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Fistulas, the result of birth complications, lead to new mothers losing the ability to control their stool and urine, and to being stigmatised within their own homes. Sadly, a fistula can be treated with a 15-minute procedure, but the humiliation associated with the condition, patriarchal attitudes that require women to seek consent to see a doctor, and a lack of awareness about treatment means that many women continue to live with the condition."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"My uncle would tell me how some women with fistulas are forced out of their homes and told to live alongside livestock,\" says Arish. \"It's a condition that robs women of their dignity and leads to them being condemned as 'unclean'. Our family rallied behind him to support the wellbeing of these women.\" "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The incident led to Arish's mentor, Dr Shershah Syed, setting up the Koohi Goth Women's Hospital, a 200-bed charity hospital, in 2006 on the family's land in Bin Qasim Town, southwest Karachi. Specialising in obstetric fistulas, it continues to provide free of cost obstetrics and gynaecology services to communities across Sindh. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "From sweeping the hospital's floor to managing files during their studies and even assisting with surgeries after they qualified as doctors, Arish and his cousins have spent a great deal of their childhood at the hospital. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"My uncle taught me how there's so much more to life than material things and the routine preoccupations that take up our day. He showed me how a lifestyle centered around service is balanced and meaningful,\" Arish recalls."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He also remembers how Dr Syed would encourage him to pursue his own path in life but always reminded him to take care of the rights of the less disadvantaged, especially women who lacked access to healthcare."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"He would say to me 'In whatever you do, be a feminist.' Throughout his career he witnessed how women have been victimised by the patriarchy and it shaped how he practiced medicine and influenced my take on the profession too,\" he adds."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Arish is currently putting these ideals into practice by serving as a part of the core team of volunteer doctors that have set up and are running the Field Isolation Centre, FIC, for coronavirus patients at the Expo Centre in Karachi.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He also volunteered to be the editor-in-chief of the FIC handbook: a 119-page manual meant to help other institutions set up and run isolation centres that can help limit the spread of COVID-19. Alongside his volunteer work, Arish is also a member of "
+          },
+          {
+            "type": "text",
+            "text": "Tehrik-e-Niswan ",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "(Women's Movement) and the Pakistan National Forum for Women's Health, that promote female empowerment. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While Arish's ultimate goal is to become a surgeon specialising in the ear, nose and throat, he knows that a part of his life will always be devoted to being a volunteer and following the example set by his grandfather and uncle."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002215",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2020-06-09T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Alumnus Dr Syed Arish Haider, grandson of Syed Abu Zafar Azad, grew up believing that medicine was all about serving humanity and is the latest in a long line of doctors in his family.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2304,
+  "Modified": "2020-06-09T11:01:44Z",
+  "Created": "2020-06-09T10:56:06Z"
+}

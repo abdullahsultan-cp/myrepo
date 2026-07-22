@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bccf9cec-937d-4809-8863-b882b8b14569",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a54e94b4-20c2-4929-860a-15348b00e658",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0f364681-4985-4050-bb89-f14e447c6f38",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5fd2f203-2119-4663-9d3f-9c97bbc45e12",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "39a02d2d-ff43-4e70-b21a-7907cf7ad8be",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "355f0343-f383-4842-885c-932b76a19044",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "01a5d8ac-70a9-47bb-819d-495576edde98",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "871ade80-80e5-40a7-a979-7be83515587b",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(942)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c718371f-0f72-4993-8b19-e739c2bec024",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 942,
+  "Title": "A landmark open heart surgery performed at Aga Khan University Hospital",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Cardiothoracic Surgery team at Aga Khan University Hospital performed a successful open heart surgery procedure on a baby weighing under four kg.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The Cardiothoracic Surgery team at Aga Khan University Hospital performed a successful open heart surgery procedure on a baby weighing under four kg. This is a major landmark in the history of cardiothoracic surgery in Pakistan as it is the first successful open heart surgery under cardiopulmonary bypass to be performed on such a small child in the country. The infant is a 3.9 kg baby from Mirpurkhas who was diagnosed to have a large ventricular septal defect and atrial septal defect with pulmonary hypertension. A successful open heart repair was performed two weeks ago and the baby has returned to Mirpurkhas with his very happy parents. He is doing very well and should be able to live a normal, healthy life no different from any other child his age.</p><p>This feat was made possible through the astute and highly professional help of our cardiologist, Dr. Mehnaz Atiq; team of anaesthesiologists, especially Dr. Iqil; perfusionists Rizvi and Ejaz; technicians and nurses; ICU nurses especially the head nurse, Laila Sukhiani; and the entire cardiothoracic surgery team. Since last year AKU has been routinely performing open heart surgeries on babies under five to six kg at Aga Khan University Hospital and soon the hospital should also be looking at neonatal open hearts.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000900",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "0b1757eb-be9e-4a08-895e-b71b2b3aada4",
+      "WssId": 1864
+    },
+    {
+      "Label": "Pulmonary",
+      "TermGuid": "e72a7b4d-96d1-4e01-a50f-97f65ad7b1df",
+      "WssId": 1934
+    },
+    {
+      "Label": "Hypertension",
+      "TermGuid": "71ae9bd1-a7f1-46cc-be82-c8dfc4bdbbd2",
+      "WssId": 1895
+    }
+  ],
+  "ScheduleStartDate": "2004-04-06T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 942,
+  "Modified": "2020-03-13T07:08:04Z",
+  "Created": "2016-12-26T09:37:45Z"
+}

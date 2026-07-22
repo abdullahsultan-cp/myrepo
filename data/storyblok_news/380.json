@@ -1,0 +1,205 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9a950169-4363-4065-964d-11ca45766058",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2efb2d71-0119-4d5b-9fc4-402647ee57c0",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b52f278a-e4aa-41f7-aedf-77ae04c2931b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "29854a61-dd02-457b-8047-5e2f27c0132a",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "4d1ce1dd-1281-498c-9d9f-2dd7d9476957",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "49c2ba4d-49b4-4557-b974-09a51c20ccdf",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0d7ac4a0-46f1-4d9d-b46d-3c9ff0d6dd47",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "373aeaea-aca1-4931-af26-a4bfe5818d10",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(380)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "49c531b7-eb94-4aaa-a393-d4b9964c1810",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 380,
+  "Title": "Mental health and old age a double-edged health care dilemma",
+  "NewsSubTitle": null,
+  "NewsSummary": "We are beginning to see an increase in the life span of our population with the increased availability of healthcare; nearly 10 per cent is over 55 years of age while another 35 per cent is between the ages of 25 and 54.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We are beginning to see an increase in the life span of our population with the increased availability of healthcare; nearly 10 per cent is over 55 years of age while another 35 per cent is between the ages of 25 and 54. An ageing population brings with it a number of challenges such as easy and affordable access to health care, improving intergenerational solidarity and providing social support to the elderly. Each year the Department of Psychiatry at Aga Khan University organises an event on World Mental Health day to promote good mental health in general and to address mental health problems in the elderly, in particular."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Changes associated with old age such as retirement, loss of spouse, declining physical health, feelings of worthlessness, and dependency put these people at risk for depression and other mental health problems,\" says Dr Murad Moosa Khan, Professor, Department of Psychiatry."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"However, mental health problems of older adults are under-identified by health care professionals, older people themselves are often reluctant to seek help,  as well as their families who perceive these problems as part of normal aging,\" he adds."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Integrating healthy habits in life such as regular physical activity, mental stimulation, healthy diet, and social interaction are helpful in the process of healthy aging."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Depression is another common problem in old age, which is currently ranked fourth among the 10 leading causes of the global burden of disease, and it is predicted that by the year 2020, it will have jumped to second place\", says Dr Ayesha Mian, Chair, Department of Psychiatry. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Symptoms of depression in elderly may include irritability, feelings of hopelessness, loss of interest in activities, concerns about physical health, weight loss, sleep problems and thoughts of death."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Primary care providers should screen elderly for depression especially those who have vague, unexplained or exaggerated physical symptoms. Appropriate psychological and pharmacological interventions should be offered as needed. Antidepressants should be prescribed with caution and in low doses to the elderly\", she added"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Loss of memory is another concern for older people usually manifesting itself in dementia, condition caused by degenerative changes in the brain due to old age. People with dementia may experience forgetfulness, personality changes, difficulty finding words, and inability to function independently."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Alzheimer's disease is the most common form of mental health disorder causing about 70 per cent of dementia cases and is a leading cause of morbidity and mortality worldwide\", says Dr Qurat ul Ain, a neuropsychiatrist."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"It is estimated that currently 2.3 million people are affected by Alzheimer's disease in Pakistan and this is expected to increase 5 fold in the next 20 years. Early recognition and appropriate treatment can reduce caregiver burden, cost of care, and improve quality of life of these patients\", she added."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000340",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Mental health",
+      "TermGuid": "a8ab9440-39d6-45ea-b7e3-554611922c80",
+      "WssId": 1404
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2013-10-09T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 380,
+  "Modified": "2017-02-22T07:31:33Z",
+  "Created": "2016-11-30T11:13:17Z"
+}

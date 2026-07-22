@@ -1,0 +1,280 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "853d8f3c-41ae-4cc0-8c63-1f7d35bfc09b",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7bb95518-9031-4dc1-9efb-8b09104a917b",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "37d7a814-e863-47d8-b3ec-78e7c569cbbd",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae74ec22-0f8e-4f47-904a-45834405f792",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7e9e8d78-5247-4c8d-9c6a-5009173e127f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "91ad5b2f-bd7d-4da3-8541-420c39668959",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f2cf75f7-ae71-48ad-b4b4-064279c29891",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2693)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9cd8242f-9326-4493-852e-fe54dda6cca2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2693,
+  "Title": "Gilgit-Baltistan to adopt and scale up innovative digital health app",
+  "NewsSubTitle": null,
+  "NewsSummary": "The app will support government efforts to build capacity and digitise healthcare delivery.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The government of Gilgit-Baltistan, GB, and Aga Khan University have signed a memorandum of understanding that will lead to the formal adoption and deployment of the University's mobile health application and web portal, Hayat, into the region's routine health services. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hayat allows lady health workers, community midwives and immunisation staff to instantly log details of mother and child health services provided during field visits and to more effectively raise awareness about preventable diseases. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the system level, the app's web portal enables health care supervisors and government officials to access essential information in real-time on the performance of health workers and campaigns. It also provides detailed reports and data to inform evidence-based decision making and policy."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over 114,000 children and adolescents, and over 200,000 adults in Gilgit-Baltistan and Khyber Pakhtunkhwa have benefited from services delivered through the Hayat digital health platform since its introduction in 2018 via a partnership between AKU, Aga Khan Health Services - the implementing partner of the project - and the GB government. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The GB government will now take over responsibility for operating the digital platform in the district of Ghizer. The agreement will also see the government replace existing paper-based processes for key reproductive, maternal, newborn and child health services - such as vaccinations, antenatal care, nutrition and preventive health services, postnatal care, child growth monitoring and family planning - with systems using Hayat's infrastructure."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about Hayat's impact, a lady health supervisor working in Ghizer said: \"What I find most exciting is the availability of all paper-based forms and checklists in a digital format in Hayat. It helps me complete my tasks in no time.\"  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The digital health application will be powered by a data centre based in Gilgit that was voluntarily established by the University and has now been handed over to the local government at no cost. The initiative will aid the government's plans to digitise the health system in order to enhance the efficiency, transparency and accountability of the provision of health services."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Gilgit-Baltistan is committed to raising key maternal, neonatal and child health indicators,\" said GB Health Secretary Mir Waqar Ahmed. \"The Hayat app will now be our primary means to collect, store and evaluate data about the health system's performance. We are also considering the rollout of the app in two more districts in Gilgit-Baltistan.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prior to the introduction of Hayat, GB's lady health workers and immunisation staff faced challenges in coordinating with one another. lady health workers would share details about children who needed vaccinations with their colleagues through paper-based systems which often led to late vaccinations and children being missed during campaigns. In contrast, the Hayat app ensures automatic and immediate coordination between health workers which has ensured that more children in Ghizer receive recommended vaccinations within 48 hours of birth. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about the Hayat app, a vaccinator in Ghizer, GB, said: \"With the app in place, we can keep a track of (vaccine) defaulters and reach out to them to get their due vaccinations. Even if the family is not in the village, I can still call them and inquire about the due vaccination status. This has not only helped me perform my duties well, but also enabled the clients to trust me and my recommendations.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Hayat has effectively demonstrated the immense potential of digital health interventions in strengthening health systems,\" said AKU President Firoz Rasul. \"The University looks forward to continued collaborations with health departments across the region to enhance the adoption, coverage, scale-up and integration of initiatives that can help achieve health targets under the sustainable development goals.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Public-private partnerships enable innovations to be implemented at scale,\" said Saleem Sayani, director of AKU's Technology Innovation Support Centre and the project's principal investigator. \"We are glad to be working with a partner that shares our belief in the power of technology to enhance access to quality healthcare.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hayat has been rolled out in health facilities across Afghanistan and Pakistan since 2018 but this is the first time that a government has agreed to incorporate the app in its operations and to ensure its sustainability by including its operational costs in its budget. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University is currently in discussions with the government of Khyber Pakhtunkhwa and Afghanistan to roll out the system in more districts."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The app's development was jointly funded by Grand Challenges Canada and the Aga Khan Foundation Canada. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition to Hayat, Aga Khan Health Services has been collaborating with AKU on multiple digital health projects in northern Pakistan with an emphasis on maternal, neonatal and child health services, and immunisation programmes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002591",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "b071e59f-c99f-4bdc-a984-7ce8c756e08f",
+      "WssId": 2228
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "1f5f9259-00ce-4800-8819-6a850f05c492",
+      "WssId": 2186
+    }
+  ],
+  "ScheduleStartDate": "2021-07-30T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2693,
+  "Modified": "2021-07-30T11:09:40Z",
+  "Created": "2021-07-30T08:23:04Z"
+}

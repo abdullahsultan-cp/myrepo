@@ -1,0 +1,151 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "caa474d7-e852-4e3b-aa39-0d93089bf37e",
+  "odata.etag": "\"4\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3b422e8e-8f01-436d-b171-b30973e0f9c3",
+    "Id": 73,
+    "Title": "Akber Iqbal"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "90c8a9e1-59c3-4375-9e80-e3b2645bd05b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "070bbb1c-bf8a-4bc4-be35-7af98ad45e61",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "221c63de-085f-41e3-9fe2-678db6f5e178",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ce9e1204-745d-42bf-bc32-9e0196b21f88",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "848d0136-3323-4bda-b1a5-21c4d6599432",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aa433fbf-311b-4221-b379-ba8da41ac5d0",
+    "Id": 73,
+    "Title": "Akber Iqbal",
+    "EMail": "akber.iqbal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(158)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aa6d726c-272a-448d-b8ac-33a97d418099",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 158,
+  "Title": "AKU Faculty wins prestigious Global Sepsis Award 2015",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Madiha Hashmi is honoured for championing improved outcomes from sepsis, promoting World Sepsis Day and the goals of the World Sepsis Declaration in Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The jury for the Global Sepsis Awards (GSA) recognized the exemplary efforts of Dr Madiha Hashmi, Assistant Professor, Department of Anaesthesiology, AKU, and President, Pakistan Society of Critical Care Medicine, in championing improved"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " outcomes from sepsis, promoting World Sepsis Day and the goals of the World Sepsis Declaration in Pakistan with the 2015 Global Sepsis Award in the category for individual nominees."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The GSA and World Sepsis Day issued the 'Global Sepsis Awards' to honour excellent sepsis awareness and education initiatives and to recognize major achievements of governments, organizations and individuals, consistent with the aims of World Sepsis Declaration and the World Sepsis Day movement. The award jury-comprising internationally recognized experts in patient safety and sepsis management-evaluated all award submissions and identified award recipients."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Hashmi will be presented with the award in a ceremony at the World Federation of Societies of Intensive and Critical Care Medicine meeting in Seoul, later this year."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000127",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "news",
+      "TermGuid": "93f629dc-877e-4a35-b39f-f340b231fb18",
+      "WssId": 726
+    },
+    {
+      "Label": "events",
+      "TermGuid": "0a69a7a8-088c-4837-a40b-33790c646285",
+      "WssId": 876
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": null,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 158,
+  "Modified": "2016-05-17T15:28:48Z",
+  "Created": "2016-05-17T13:05:06Z"
+}

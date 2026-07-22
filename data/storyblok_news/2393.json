@@ -1,0 +1,280 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "794e1229-9815-471a-82c4-6fe615bfd197",
+  "odata.etag": "\"29\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "138564d5-4b15-414c-afc1-7b622b5bff4e",
+    "Id": 7746,
+    "Title": "patrick.gumo"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a80fa4bc-244b-4716-8f56-23b6906796f5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2423098b-8a67-4e60-accc-fb77283b0175",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ad6d1e88-2a59-4bf0-b8f9-244e8c483e16",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "528a6d00-aefa-4441-99ee-4819b923e7d1",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a29592a0-c9cf-459c-ae5e-951d407539db",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2393)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e2cec150-9146-4c52-b6e1-9d94aa25f1f4",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2393,
+  "Title": "The crucial role of imaging in the management of COVID-19 patients",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Edward Chege has always been fascinated by medical imaging and non-invasive evaluation of diseases in humans. This is what drew him to pursue radiology as a career as it is purely technology-driven",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Edward Chege has always been fascinated by medical imaging and non-invasive evaluation of diseases in humans. This is what drew him to pursue radiology as a career as it is purely technology-driven. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Chege graduated from AKU's Medical College East Africa and proceeded to do an Oncology and Imaging Fellowship at the Royal Marsden NHS Foundation Trust in London. He returned to as a consultant radiologist specialist and programme coordinator of the radiology residency programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Here is his account of imaging in the management of COVID-19 patients and his active involvement in research on COVID-related pneumonia."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How is your current work responding to the COVID-19 pandemic? ",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "I report on a vast majority of the COVID-19 chest CT scans. Imaging has gained a central role in the management of COVID-19 patients. Together with the infectious disease team, we have devised a standardized reporting mechanism to provide clinically oriented reports, which indicate the degree of suspicion for COVID-19 patients and the amount of lung tissue affected by the virus. In addition, I am actively involved in ongoing research in patients with COVID-19 pneumonia.    "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How is this going to help in the fight against COVID-19?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since chest CT scan has a high sensitivity for detecting COVID-19 pneumonia and very short turnaround times, we have used chest CT scans to recognize suspicious cases early and institute appropriate management measures while awaiting the confirmatory laboratory test results. We have also been using CT scans as a supplement to clinical severity of COVID-19 pneumonia patients. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The information obtained from imaging has been particularly helpful to the infectious disease and critical care team. Based on CT scans findings and clinical symptoms, the infectious disease team can be able to sort and separate COVID-19 patients into those who can be managed from home, those who require admission to hospital and those who would require supplementary oxygen and ventilation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How do you think this pandemic will play out globally? What are the key risks for East Africa and how can it protect itself?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All indications are that the pandemic is still here with us. Significant numbers of new cases are being reported locally and in many different regions of the world. The bigger risk for East Africa is the potential risk for neglect of other healthcare needs, putting the already vulnerable members of society at an even greater risk for morbidity and mortality. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The economic impact is also unprecedented. The only way to flatten the curve during this pandemic is to keep educating our people about personal safety and hygiene measures, which includes washing our hands with soap or sanitizing, properly wearing the facemasks and maintaining social distance. In addition, we need to assure people that our hospitals are still safe for their routine medical needs. Strict hygiene measures are now in place throughout the hospital. In addition, robust measures have been put in place to protect our medical staff and we endeavor to shorten the time spent in hospital during the COVID-19 pandemic."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What are some of the key changes that will come as a result of the COVID-19 pandemic and change in human behaviour?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This pandemic will certainly teach people to take personal responsibility for their own health. The basic personal safety measures such as handwashing, use of facemasks and social distancing among others will be strongly entrenched in people. This kind of discipline can be inferred to the prevention of Non-Communicable diseases (NCDs), and I believe future generations will be more conscious and take personal responsibility for their own health."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What lessons can we learn from the COVID-19 pandemic going forward?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "It is very important for people to take personal responsibility for their own health. Importantly, there is a great need for additional healthcare workers to help manage our population especially during pandemics such as COVID-19."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002300",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-07-31T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "A patient undergoing a CT scan",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2393,
+  "Modified": "2020-08-12T08:03:43Z",
+  "Created": "2020-08-04T12:17:14Z"
+}

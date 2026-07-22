@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "673900b5-61c2-4f33-a35c-f671c6d5018f",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "04e1771e-f1c2-4f7a-bf3b-9ab5fd88dfa7",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "26175aba-d10b-4275-8ce9-fbbe0bacceaa",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "47b803a5-312e-4c1c-8ee2-aa4c69b0efb9",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "7d86e975-e3c1-41f8-a11f-bab9d554fd55",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5d0d5409-d4a9-447d-b489-1426f1d6338d",
+    "Id": 6,
+    "Title": "Mombasa"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4c3021c7-b624-44bf-86da-6e3c4e959d96",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc99a5af-4b79-42f4-b6de-c4cacb8f3911",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(916)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "07f4fbed-cb2b-4ac2-a9af-82816c45a0ba",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 916,
+  "Title": "Press coverage of AKU Board of Trustees meeting July 2004",
+  "NewsSubTitle": null,
+  "NewsSummary": "Varsity team set for talks in Mombasa Daily Nation Date: Monday, 9 July 2004 Members of the Aga Khan University (AKU) Board of Trustees have started arriving in Kenya for the board's second meeting this year, to be held in Mombasa from today until Su",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p><p><strong>Varsity team set for talks in Mombasa</strong></p><p>Daily Nation</p><p>Date: Monday, 9 July 2004</p><p>Members of the Aga Khan University (AKU) Board of Trustees have started arriving in Kenya for the board's second meeting this year, to be held in Mombasa from today until Sunday... </p><p><strong>Varsity to ease staff shortage</strong></p><p>Daily Nation</p><p>Date: Tuesday, 20 July 2004</p><p>The new Aga Khan University will go a long way to address the health staff shortage in the country, a government official has said. Health Permanent Secretary, Patrick Khaemba, said the University would especially address shortage of doctors in special fields... </p><p><strong>Varsity to open more campuses</strong></p><p>Daily Nation</p><p>Date: Wednesday, 21 July 2004</p><p>Aga Khan University will have a permenant presence in the region, it has been announced. ...</p><p><strong>Board of Trustees dinner with the Minister for Education and Culture, Tanzania</strong></p><p><strong></strong>The East African</p><p>Date: 26 July to 1 August 2004</p><p>Princess Zahra Aga Khan (left) at a dinner hosted for the Board of Trustees at Aga Khan University in Dar-es-Salaam last week... </p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000874",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2004-07-21T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 916,
+  "Modified": "2017-02-22T09:24:53Z",
+  "Created": "2016-12-26T05:32:04Z"
+}

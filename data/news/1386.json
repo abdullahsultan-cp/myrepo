@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e45f89a7-3b99-46b8-99cf-6e10ea4f2482",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "69dec2f2-168c-476c-a8d1-8a4decf68172",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7b4cc4f1-69c5-4e93-a905-533181480b27",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7538930-e7f0-4413-bb6d-0e1f74af6540",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "0b0ddfe4-bfcf-443a-8913-f4884cecec53",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c31237ee-af82-4c8a-a9dc-010738d78883",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ce55c2f5-5696-42d7-bad7-758ded71e3a4",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2b275147-3816-497e-ba68-ef1d53887fe0",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1386)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e84250b7-4085-4ab1-93a5-f292a6ab4c38",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1386,
+  "Title": "AKU Convocation 2011: Uganda",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Advanced Nursing School in Kampala, Uganda graduated 49 students. Twenty-nine students received a Bachelor of Science in Nursing and 20 students were awarded a Diploma in General Nursing.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass9555ABCD9AE14A4B9A7BE29E41FE0ECA\"><p>\u200bThe Advanced Nursing School in Kampala, Uganda graduated 49 students. Twenty-nine students received a Bachelor of Science in Nursing and 20 students were awarded a Diploma in General Nursing. An award of academic excellence was presented to Junit Annete Wakore, who graduated with a Bachelor of Science degree in Nursing and Susan Alum who graduated with a Diploma in General Nursing.<br><br>This award was presented to them for having demonstrated outstanding performance in their studies.<br><br>Professor George Wilson Kanyeihamba, Former Supreme Court Judge and Legal Advisor on Human Rights and International Affairs to President Museveni of Uganda, was the chief guest.\u200b \u200b</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001333",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "95deeea6-bd39-4a41-b839-40d28c835c8f",
+      "WssId": 1355
+    },
+    {
+      "Label": "Uganda",
+      "TermGuid": "4374c201-665a-47ec-90ab-11bef2a2b13a",
+      "WssId": 1593
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    }
+  ],
+  "ScheduleStartDate": "2018-01-02T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1386,
+  "Modified": "2018-01-02T06:54:53Z",
+  "Created": "2018-01-02T06:53:53Z"
+}

@@ -1,0 +1,180 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "298e47f1-70e7-4255-90c9-e5c2c26b4acf",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c88fc2d0-64d1-4971-8a52-ab6e5d288379",
+    "Id": 274,
+    "Title": "Sadaf Shahid"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "189695c1-7775-46dc-9f57-4de2f3b9d7c3",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8205e505-52d1-4bfe-82e3-e4726626a120",
+    "Id": 274,
+    "Title": "Sadaf Shahid",
+    "EMail": "sadaf.shahid@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "0998e2a8-8efa-4964-bbe3-23cf614c03d3",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4ce16ac2-417c-426f-b668-939b90d37fc9",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "66418b10-1651-4e59-98ca-d53e6be167e2",
+    "Id": 24,
+    "Title": "Library"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3aba78d4-9f14-40e8-b08d-e572bc7dc020",
+    "Id": 274,
+    "Title": "Sadaf Shahid",
+    "EMail": "sadaf.shahid@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1297)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4f66e33f-9fb4-4274-985f-74a8389603a6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1297,
+  "Title": "An honour for AKU Library, Kenya",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Aga Khan University Library, Nairobi, was honoured at the 2017 Library of the Year (Maktaba) awards in Kenya.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University Library, Nairobi, was honoured at the 2017 Library of the Year (Maktaba) awards in Kenya."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The award by the "
+          },
+          {
+            "type": "text",
+            "text": "Kenya Library Association",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.kenyalibraryassociation.or.ke/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " recognizes excellence in the provision of library and information services in the country. AKU library was awarded second position in the Academic Libraries category at the awards gala, held at the Nairobi National Museum on September 22, 2017. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "AKU library was recognised for its use of modern technology to serve customers and the implementation of state of the art facilities. The library staff were presented with 200 books, a trophy and cash award."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The Maktaba award judges determine the best libraries on the basis of currency, diversity and relevance of the library collection; innovation and creativity in service provision; and the application of modern technologies in library services. A total of 71 libraries across the country participated in this year's competition."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001247",
+  "LocalApproverGroup": "CA Library News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Library",
+      "TermGuid": "69495453-cc65-4d92-b8d5-08c577e53223",
+      "WssId": 1439
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "1024e6fc-541d-442c-80b4-71ea9b34dd02",
+      "WssId": 1609
+    }
+  ],
+  "ScheduleStartDate": "2017-10-12T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU Library Staff (Augustine Gitonga & Rosemary Thiongo) receiving the awards",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1297,
+  "Modified": "2017-10-12T11:43:28Z",
+  "Created": "2017-10-12T11:31:49Z"
+}

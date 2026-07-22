@@ -1,0 +1,240 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d3f5c6de-3187-4b91-9ac7-ecc82967b0bc",
+  "odata.etag": "\"24\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "74c0bd3c-86f6-40c6-8335-b9858da7a5e5",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "10df1723-ef80-489e-9213-d7efa1e5f2e9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9f89550b-00d7-4054-a8a0-450870c00902",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "4418903e-7d8b-4053-ba12-d248375fcfa0",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a47f8da4-1205-45bc-a099-7f26c6526fe9",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a717c165-8f8c-476f-96d9-3f9bee5e29fb",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8c0e28ca-87fd-4dcd-b6f0-dadab6c90d3c",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1500)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b4935ec-e3c7-4c42-be33-8324a586636f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1500,
+  "Title": "Novel molecular research enhancing cancer treatment: experts",
+  "NewsSubTitle": null,
+  "NewsSummary": "Experts from 14 countries around the world come together at our Annual Surgical Meeting. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "New research into the molecular structure and genetic make-up of tumours is enabling more targeted cancer treatment, said experts attending the 3rd Annual Surgical Meeting Surgical Oncology - Evidence and Practice at Aga Khan University."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Molecular analysis of brain tissue is revealing the distinctive 'signature' of tumours that are otherwise of a similar type and stage, according to speakers who noted that a partnership between Pakistani and Canadian researchers is resulting in the transfer of knowledge and skills stemming from this novel research. Faculty from Aga Khan University are currently working with researchers on the tumour boards of the Sick Kids Hospital in Toronto, Canada, to explore how these molecular insights can enhance the treatment of complicated cases of brain cancer."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"Insights from molecular biology are helping oncologists select the most suitable course of cancer treatment and more accurately predict the response to targeted therapy,\" said Dr Shahzad Shamim, an associate professor at AKU's department of surgery. \"This will ensure optimal treatment for each tumour and a longer, better quality of life for each patient,\" he added."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Experts from 14 countries around the world gathered at the two-day multidisciplinary conference to explore the latest developments in cancer surgery, diagnostics, pathology and treatment."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Sessions at the conference also highlighted innovations in reconstructive surgery which were helping restore the function of organs affected by the spread of cancer. Speakers noted that techniques such as intra-operative monitoring enabled surgeons to stimulate parts of the spine to quickly and painlessly detect areas that can be reconstructed. This means that damaged areas of the spine, which were previously deemed too dangerous to operate on, can now be mended and rebuilt."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Experts added that similar technological advances in orthopaedic surgery meant that high quality implants can be used to replace bones and joints damaged by the spread of cancer, thereby helping preserve essential body functions."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Robot-assisted surgery was another prominent theme of the conference. While experts noted that the use of robots in the operating theatre can enhance the precision of surgeries, they added that the process of learning how to work with technology was typically very demanding in terms of time and difficulty."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"There are about 148,000 new cases of cancer in Pakistan every year,\" said Dr Masood Umer, an associate professor in AKU's department or surgery and chair of the conference. \"Bringing together experts from around the world promotes the sharing of advances across the field of oncology which will boost our chances of detecting the disease in early stages and deliver more effective treatment for cancer patients across the country,\" he explained."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The conference's objectives are in line with global efforts to achieve targets under goal 3 of the Sustainable Development Goals: ensure healthy lives and promote well-being for all at all ages. Target 3.4.1 of the goal calls for special efforts to reduce deaths caused by cancer by a third by 2030."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The 3rd Annual Surgical Meeting was organised in collaboration with the European Society of Surgical Oncology, the American Society of Clinical Oncology (ASCO) and the International Journal of Surgery."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The conference's inaugural session was preceded by a day of 25 workshops and symposiums at the University's Centre for Innovation in Medical Education. Over 300 participants were in attendance over the two-day event which also saw the launch of a book consisting of 15 unique stories of Pakistani cancer survivors, families and physicians who have battled the disease."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001446",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Cancer",
+      "TermGuid": "6f4af867-0fd5-44fc-9d16-b5ac2034125a",
+      "WssId": 1374
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    }
+  ],
+  "ScheduleStartDate": "2018-02-02T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": {
+    "Description": "Read the book: Stories of battles against cancer",
+    "Url": "http://aku.edu/news/Documents/The%20Struggle%20Within-Stories%20of%20Battles%20Against%20Cancer.pdf"
+  },
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1500,
+  "Modified": "2018-02-04T10:35:28Z",
+  "Created": "2018-02-02T11:42:56Z"
+}

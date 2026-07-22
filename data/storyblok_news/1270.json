@@ -1,0 +1,276 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "94560fe1-4f77-4ade-b5f0-1cc4de5d5a6a",
+  "odata.etag": "\"19\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b4b00c6-6927-433d-bc66-56d7d987a671",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "398d015a-f2be-4a51-a154-7b80eb3b1212",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6d972480-57c3-4b57-ae1f-18c99c8ff73c",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "a17a9c8d-b002-4cc4-b1a5-f20777d1807e",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b8230293-3da7-4ccd-9c9f-e4c61d671598",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "903dade9-f281-4626-9e8b-5e77c9527d3f",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac18b940-e6b4-4e7f-913c-c89d7d13f977",
+    "Id": 4402,
+    "Title": "misava.edward",
+    "EMail": "misava.edward@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1270)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7f1cebe-582a-4a44-9b0c-21dccd9451ad",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1270,
+  "Title": "Rethinking Teaching: A Course Redesign Workshop",
+  "NewsSubTitle": null,
+  "NewsSummary": "Rethinking Teaching is a four day workshop for faculty to examine and develop their thinking about the course design process and their teaching practice. It was held from 25th to 28th July 2017 at AKU's Graduate School of Media and Communication in N",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Rethinking Teaching is a four day workshop for faculty to examine and develop their thinking about the course design process and their teaching practice. It was held from 25th to 28th July 2017 at AKU's Graduate School of Media and Communication in Nairobi, facilitated by Vivian Neal from Simon Fraser University (Canada) and five of AKU's Teaching and Learning Network staff. Fifteen AKU faculty, mainly from East Africa, attended the workshop.The workshop involved group interaction activities, plus individual focus time for participants to work on the designs of their courses. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participants worked in groups of four or five to design and redesign their courses starting from the perspective of the course concepts, and drafting a concept map. They designed with the benefit and feedback from two facilitators in each small group as well as their fellow participants. Participants were able to link teaching directly to student learning through a design process that involved:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Conceptualizing the course through the development of a concept map"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Drafting learning outcomes for the course"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Selecting appropriate instructional strategies aligned with the learning outcomes"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Determining suitable assessment approaches"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the last day of the workshop, each participant show-cased plans for their re-designed course in a 90 second presentation followed by an interactive session of feedback and discussion. All participants reported that they found the workshop useful for their professional development. Many commented that the small groups created an enabling learning environment, for example, "
+          },
+          {
+            "type": "text",
+            "text": "'the small group was a safe place where I could share ideas and receive honest feedback",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'. Participants also reported that they plan to improve students' learning after the workshop by incorporating the feedback from facilitators and peers and modify their teaching strategies to enhance students' learning experience in and out of class."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The excitement of participants was revealing in some of the end of workshop evaluations included:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "'"
+          },
+          {
+            "type": "text",
+            "text": "Concept based teaching-learning is the way to go.'",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "'This training should be extended to other faculty across AKU.'",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "'All faculty should be given an opportunity to use this eye opener.'",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001222",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    },
+    {
+      "Label": "learning",
+      "TermGuid": "b351e1a2-14c8-4b3f-af1d-e57118360c5f",
+      "WssId": 1498
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    }
+  ],
+  "ScheduleStartDate": "2017-08-25T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1270,
+  "Modified": "2017-08-25T09:44:45Z",
+  "Created": "2017-08-25T07:56:12Z"
+}

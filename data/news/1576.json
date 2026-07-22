@@ -1,0 +1,136 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a7d39dfe-08f3-4f71-b5b1-adb70aa74bd0",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "52751a9c-4228-4453-ab6a-3ab3a27446d7",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "654ed632-ded4-4a8b-8856-545341ee74db",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "86ada1f1-b452-47c8-af4b-77f52fcbed93",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "5862f5ce-5839-4d83-9bc1-a1bdb676af78",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c19b2cdd-e411-48ec-bf4c-1ac649becafe",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ac072521-e5c9-438e-b2e6-ba989aa86623",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e05f00f6-5769-4b03-a3a8-7fae21a06ab8",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1576)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f18c7bd7-23b7-44a7-a1f5-cb1b1537c3ed",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1576,
+  "Title": "A new piece of the typhoid \u2018puzzle\u2019 ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Discovering the genetic mystery behind an outbreak of a new typhoid strain. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass2BF1EC0D922C493F993F9345E6918DC4\"><p></p><div></div><div><div>In October 2016, researchers at the University\u2019s microbiology laboratory spotted a number of unusual organisms in blood samples from Hyderabad. Blood culture tests from the city contained a novel strain of typhoid which had developed resistance to an unprecedented range of antibiotics.&#160;</div><div><br></div><div>Over the next few months, several similar cases were detected from the city pointing to an outbreak of a form of the disease that would be especially difficult to treat.&#160;&#160;</div><div><br></div><div>The research team, led by Professor Rumina Hasan, acted quickly to alert local government, the National Institutes of Health and the World Health Organization to this development. They also contacted the UK-based Wellcome Sanger Institute to explore the genetic cause behind the emergence of this extensively drug-resistant (XDR) typhoid strain.</div><div><br></div><div>\u201cThis was the world\u2019s first outbreak of XDR typhoid,\u201d said Professor Zahra Hasan of the department of pathology and laboratory medicine. \u201cUnderstanding this new threat required high-level genome sequencing which would enable us to analyse the molecular blueprint of this new form of typhoid.\u201d</div><div><br></div><div>Over the next six months, the research team collaborated with experts at the Wellcome Sanger Institute to jointly analyse over 100 DNA samples which resulted in a striking finding. The typhoid bacteria had acquired a DNA molecule through a plasmid (an autonomous genetic element that can be transferred between bacteria) from a bacterium commonly found in contaminated water and food, making it resistant to the majority of available medications .&#160; &#160;</div><div><br></div><div>\u201cWe used to think that we had a complete picture of the typhoid \u2018puzzle\u2019,\u201d said Dr Sadia Shakoor, assistant professor in pathology and laboratory medicine at AKU. \u201cTogether with our partners, we\u2019ve found a missing piece that affects how we diagnose and treat the most complex strains of the disease.\u201d&#160; &#160;&#160;</div><div><br></div><div>Since patients with XDR typhoid do not respond to commonly prescribed antibiotics, blood culture tests have become an even more important tool for physicians, according to Dr Shakoor. Not only do these tests enable early detection but they also highlight the type of typhoid being tackled which affects the choice of antibiotic.&#160;</div><div><br></div><div>\u201cThere are currently three antibiotics available to treat XDR typhoid,\u201d Dr Shakoor stated. \u201cThese drugs are expensive and we must only prescribe them when needed. Otherwise, bacteria could develop resistance to the only medications we have left.\u201d</div><div><br></div><div>Beyond resistance, researchers also warn of the risk of the disease spreading since every patient is a potential \u2018disease carrier\u2019. The likelihood of the proliferation of the disease is especially high in developing countries where poor sanitation facilities result in the contamination of drinking water with sewage containing the typhoid bacteria.&#160;</div><div><br></div><div>A team led by Dr Farah Qamar of the AKU\u2019s department of paediatrics and child health is also working alongside Dr Hasan\u2019s team on measures to prevent the spread of this typhoid strain. Their collaboration has led to the Sindh government launching an emergency vaccination campaign in Hyderabad to immunize children from the disease. Efforts are also underway to urge the Hyderabad government to improve local water and sanitation facilities in order to tackle the root cause of the disease.</div><div><br></div><div>\u201cClinical laboratories play a vital role in the science of public health,\u201d said Professor Rumina Hasan. \u201cThey link clinical medicine with cutting-edge research into the nature of micro-organisms that reveal how pathogens such as typhoid are evolving in response to their environment. The country needs to continue upgrading our laboratory capacity so that we can identify emerging diseases before they spread and cause harm.\u201d</div><div><br></div><div>Ghazala Shaheen, a senior technologist in microbiology, and Dania Saeed, a research associate in the department of pathology and laboratory medicine, also played a key role in the research project. The team recently published their findings in the journal mBio which is produced by the American Society of Microbiology.</div><div><br></div><div>The control and prevention of water-borne diseases such as typhoid is a global health priority with targets under goal 3 of the Sustainable Development Goals calling for the eradication of such diseases by 2030 .\u200b</div></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001521",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Laboratory",
+      "TermGuid": "0ee17060-4168-4532-bdce-b6aa653e7326",
+      "WssId": 1408
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "c23d839f-4ee8-4d36-9e3b-8d73a52c2d95",
+      "WssId": 1387
+    },
+    {
+      "Label": "Infectious diseases",
+      "TermGuid": "1b9c5c5a-2d11-48c2-a267-95341d8c799f",
+      "WssId": 1516
+    }
+  ],
+  "ScheduleStartDate": "2018-03-13T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "From left to right: Professor Rumina Hasan, Ghazala Shaheen, Dania Saeed, Dr Sadia Shakoor and Professor Zahra Hasan.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1576,
+  "Modified": "2018-03-15T07:02:49Z",
+  "Created": "2018-03-13T11:43:01Z"
+}

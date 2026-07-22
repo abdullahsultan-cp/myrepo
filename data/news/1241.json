@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9887a817-7440-4862-85bc-7368bb0d766f",
+  "odata.etag": "\"33\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fe95d358-aca6-4d7e-9c95-d424eed4ac82",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3751e8fd-a895-48a5-ba02-6741a09d1654",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "40815c23-5bdc-464b-8f17-43f1b2d2b349",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "b291c791-8457-496c-88d1-d4e235dd1c3a",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ce0840c9-0918-460c-8d9d-c0955b7c1ed2",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "77aa859d-f19d-47e1-aaf9-b2e64bf11626",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a4c95942-11e2-4340-96b7-621deb47f8bc",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1241)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "463b0330-8a9a-4a27-8b8a-94c47fd44423",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1241,
+  "Title": "The Digital Library of Middle East",
+  "NewsSubTitle": null,
+  "NewsSummary": "The IIS-ISMC Library's lecture on the initiative aiming to preserve cultural heritage from the Middle East.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassB79CE00B02344DCF9F6BBA67AAA25D65\"><p>\u200bThe IIS-ISMC Library organised a public lecture about the newly established initiative aiming to preserve cultural heritage from the Middle East. The lecture was coordinated by Dr Walid Ghali, the Head Librarian and was delivered by Dr Charles Henry, president of Council on Library and Information Resources, and Dr&#160;Peter Herdrich, co-founder of The Antiquities Coalition.\u200b</p><p>Peter Herdrich said,&#160;\u201cThe DLME can only be successful if it attracts the finest institutional partners to collaboratively develop its architecture and content. We are delighted to work with the Aga Khan University as emblematic of a partnership of exemplary insight and wisdom, recognised and deeply respected both in the MENA region and globally.&quot;</p><p>He also emphasised on the significance of&#160;their presentation&#160;for&#160;the DLME and&#160;the success that has resulted from this event;\u200b&#160;\u200bthey were able to introduce their&#160;project to so many of their colleagues in the British community and reach a worldwide audience via the webcast.&#160;</p><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001195",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    }
+  ],
+  "ScheduleStartDate": "2017-06-07T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "A picture of Dr Charles Henry, Dr Peter Herdrich and Dr Walid Ghali during the lecture",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1241,
+  "Modified": "2020-11-11T08:09:49Z",
+  "Created": "2017-06-07T13:18:53Z"
+}

@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "dbb03438-68c5-48f1-987e-bece7bd40a97",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a9a9c3c7-6e0f-499b-87c8-9fbb7f72be2d",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d3204f90-4fe6-4681-9b57-e2007d48f8a2",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0f14277b-de10-4c01-9afe-94455ee22637",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1a8383d2-9eb2-43fd-bee8-f72c46f44beb",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6d970471-e980-40e2-a6cf-e79971530ecf",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8e7e459f-b797-43a1-aadd-5c0c407a5eb9",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2474)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "81fd7967-84de-475d-b0e6-4a2921861046",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2474,
+  "Title": "University completes clinical trial on 3D printed nasal swab",
+  "NewsSubTitle": null,
+  "NewsSummary": "Local production of nasal swabs to boost availability and affordability of COVID-19 testing.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass3A04FF4D6C3E4160A3861F03691158C8\"><div>Pakistan now has the ability to locally produce nasal swabs, the essential tool that collects&#160;samples for COVID-19 tests, after Aga Khan University successfully completed clinical trials on a 3D printed swab.<br></div><div><br></div><div>The COVID-19 pandemic has led to a global surge in demand for diagnostic test kits and components, including the cotton bud-shaped nasal swabs, as countries around the world ramped up testing facilities. Pakistan was no different and has had to import all nasal swabs to date.&#160;</div><div><br></div><div>Supply constraints at the peak of the pandemic in April to May 2020 led to AKU\u2019s Innovation Lab searching for a solution by designing and developing a local alternative.&#160;<br></div><div><br></div><div>A team of researchers, clinical laboratory experts and biomedical engineers, led by Saleem Sayani, principal investigator and director of AKU's Technology and Innovation Centre and Digital Health Resource Centre,&#160;used a specialised 3D printer to develop a prototype. Clinical trials on the prototype have now found the 3D printed nasal swab to be as safe, effective and user-friendly as imported swabs.&#160;<br></div><div><br></div><div>\u201cOur printer can produce over 1,000 swabs per day at a significantly lower cost than those we import,\u201d said Mr&#160;Sayani.<br><br></div><div>AKU Medical College Dean Dr Adil Haider stated that the 3D printed swab demonstrated how local innovation can solve local problems even in the midst of a pandemic.</div><div><br></div><div>\u201cThe 3D printed swab will reduce the need to import swabs for respiratory sampling,\u201d said Professor Zahra Hasan from AKU\u2019s department of pathology and laboratory medicine, the co-principal investigator on the project. \u201cThis can help increase COVID-19 diagnostic capacity across Pakistan.\u201d<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002379",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-11-10T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2474,
+  "Modified": "2020-11-10T13:52:39Z",
+  "Created": "2020-11-10T08:47:40Z"
+}

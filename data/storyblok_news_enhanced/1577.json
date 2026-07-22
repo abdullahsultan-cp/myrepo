@@ -1,0 +1,273 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "73b473a9-34e6-49d1-b8d5-fdbfa8bebf00",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c53be123-3acf-4a15-974e-8db2a791879e",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2dea236a-886f-4e6a-9c17-4f05ed986f8e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "511cedfc-5e1b-461d-a62a-985263045f90",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e0db13bd-6959-4f07-bbed-5f9ed5f53f91",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4b25a31e-2689-448c-81c2-d96a7d05dcae",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b5a613ac-ead3-4ba7-914e-3c9092662597",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a0f8732f-df3e-4754-a9b7-f7388526c777",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1577)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1f1a2793-be89-4625-95db-0ea8fcbe1643",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1577,
+  "Title": "Shaking up medical education",
+  "NewsSubTitle": null,
+  "NewsSummary": "Can mobile games and apps replace books and improve hospital rounds?  ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Can video games help students remember information better than books? What about smartphone apps: can they enable students to learn more from busy rounds? How about teachers, how can they make sure that their students are learning?"
+          }
+        ]
+      },
+      {
+        "type": "blok",
+        "attrs": {
+          "body": [
+            {
+              "_uid": "8dd853470e3e54fa",
+              "component": "video_embed",
+              "provider": "youtube",
+              "embed_url": "https://www.youtube.com/embed/videoseries?list=PL6V0_aWKW_aRAV46WolbCT7NakeBZFgFe",
+              "video_id": "videoseries"
+            }
+          ]
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Many teams focused on the challenges that students face during hospital rounds. At present, a group of students accompany an experienced doctor and observe how s/he treats a range of patients. The system aims to expose students to a variety of patients and to gain first-hand experience of how a senior physician handles different cases. However, many participants at the Hackathon noted that the busy ward environment meant that consultants had to prioritise dealing with patients over sharing knowledge with students. Others noted that the existing system of rounds could not highlight which cases students could learn the most from."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Team Hackformers recommended the use of a mobile application that enabled faculty to send mobile alerts directing students to complex cases that merited further study. Team Skilled thought of a more low-cost solution which involved students updating a spreadsheet after every round which could be easily searched. This would enable trainees to revisit patients with unusual symptoms or conditions they wanted to explore further."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Team BitMed also developed a smartphone application to help faculty track how well students were learning in rounds. The application would show a checklist of skills that students were yet to master and give teachers an overall view of which areas need further attention."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Other teams such as Hawkeye noted that video-conferencing and recording facilities could also be used to enable residents in surgery to gain feedback from faculty at a more convenient time. They noted that their system would enable young residents to gain insights that would help them work independently at an earlier stage."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The challenge of retaining medical knowledge was tackled by Medigamers and Medagogy which recommended turning lessons into educational games. Such games would provide an engaging way for students to revise which would improve their ability to remember key concepts. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"It's wonderful to see students and teachers working together to come up with innovative solutions to longstanding problems in medical education,\" said Dr Asad Mian, one of the organisers of the event and chair of the department of emergency medicine at AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The fast-paced, free-flowing nature of Hackathons lends itself to disruptive ideas,\" said Dr Walid Farooqi, CCIT's activity coordinator and also part of the organizing team. \"We hope to continue working with some of the teams within CCIT's health incubator to develop their solutions and to shake up how medical education is provided.\"  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The winning teams' ideas ranged from an app to match faculty with student researchers to an in-depth and comprehensive career counselling platform.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The audience at the Hackathon also voted for their favourite solution and chose "
+          },
+          {
+            "type": "text",
+            "text": "Totem",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.youtube.com/watch?v=DMbFBZBUh10",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", which recommended adding a discussion forum module into the University's assessment system to improve communication between faculty and students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "HackMedEd was organised by the Critical Creative Innovative Thinking forum - an educational, training and research programme seeking to foster creativity and innovation in biomedicine and healthcare - in partnership with the AKU's Department of Postgraduate Medical Education."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Around 120 hackers were joined by mentors and judges from a variety of professional backgrounds at the two-day event, HackMedEd, at the University's Centre for Innovation in Medical Education. "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001522",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "hackathon",
+      "TermGuid": "9804c90a-a211-4092-813f-e6a304e5527f",
+      "WssId": 1521
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "40de1670-6a6c-436e-b24a-5a3ba9be0b5b",
+      "WssId": 1369
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2018-03-13T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "ABC Medicine, one of the winning teams at the hackathon, pitches a mobile application aimed at improving the usefulness of lectures.  ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1577,
+  "Modified": "2018-03-14T05:59:28Z",
+  "Created": "2018-03-13T11:57:04Z"
+}

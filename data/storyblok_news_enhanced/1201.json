@@ -1,0 +1,285 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2ea92585-74b7-47d4-8bb8-b37c2fa50f6d",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1534ff1c-be94-47b3-adcc-ac5f5b33d685",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c59e3329-0eb4-4d20-a678-37f1dad065af",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fd09b1dc-58a8-4b20-bacb-41af7cda8aa1",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "399327fb-452e-411d-a07d-0da4073a4c7c",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1914ea1f-a69a-4aca-8e3b-21f49cd405e9",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "89f15600-35a1-44cd-9571-dcc96f0af14f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3733a097-3c8f-4bcf-afc1-1e883d68b0b3",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1201)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "008064d1-55c6-4d23-a424-4b214c7c9c7d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1201,
+  "Title": "Transforming children's lives",
+  "NewsSubTitle": null,
+  "NewsSummary": "GBHS Karimabad, Hunza, a beneficiary unit of EDIP, is more than just an institution of learning; it has evolved into a community organisation through which community ties are strengthened and norms of collaboration and cooperation are nurtured.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Schools reside within communities, communities develop schools, and communities develop through schools. The links between schools and communities are manifold and the relationships mutually reinforcing, the strengths of the community reverberating through the school. Through the Education Development and Improvement Programme (EDIP), an AusAID-sponsored school improvement project being implemented by "
+          },
+          {
+            "type": "text",
+            "text": "AKU-IED",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/iedpk/Pages/home.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'s "
+          },
+          {
+            "type": "text",
+            "text": "PDC,N ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/iedpk/pdc-north/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "and six other agencies of the "
+          },
+          {
+            "type": "text",
+            "text": "Aga Khan Development Network",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.akdn.org/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Government Boys High School (GBHS) Karimabad, Hunza has developed into a community unto itself and is more than just an institution of learning; it has evolved into a community organisation through which community ties are strengthened, norms of collaboration and cooperation are nurtured, and an environment conducive to a child's intellectual growth and development is cultivated."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Despite a number of previous initiatives undertaken by various non-government and government organisations over the past several decades, many Karimabad community members still lacked the training on how to transform their desire for educational improvement into concrete actions. They were unaware of their roles and responsibilities as parents and community members and how they could contribute to improving the performance of the school. As one community member stated, \"I would just send my son to school. He would leave every morning, and I never thought about what happened after he left, what happened when he went to school, and what he learned. I wasn't even aware that it was my responsibility to be concerned.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In 2010, this changed with the introduction of EDIP's initiative. In its initial stages a new School Management Committee (SMC) was elected. After the formation of the SMC, the members were provided tools and trained on techniques to help them work systematically towards school improvement, such as by maintaining proper records of their activities, setting agendas, arranging needed material and financial resources for the school, and learning how to approach the relevant stakeholders when needed to resolve school-related concerns. In addition, members of the SMC participated in week-long training sessions at the "
+          },
+          {
+            "type": "text",
+            "text": "PDC,N",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/iedpk/pdc-north/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", where they further learnt about steps they could take to support their school and their children's education.  In essence the SMC became a community resource responsible for educational improvement, to act as agents of change for the improvement of the school and their children's education. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Last year, the SMC organised a 2-day conference during which they invited high level politicians and government officials of Gilgit-Baltistan. The SMC requested the government that the school be upgraded to the higher secondary level and that a primary school be established; well-equipped science and computer laboratories be provided and that students be given opportunities to participate in the Youth Exchange Programme. The government officials publicly accepted the SMCs demands during the conference, and have delivered instructions to ensure that all demands are met. The school will soon be shifted to another location which will better accommodate the additional space that will be required when the school is upgraded. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The EDIP recognises that empowered mothers play a critical role in a child's education, and therefore has also formed Mother Support Groups (MSGs) in all project schools. Mothers in these groups received training from community mobilisers and learned about the significance of their roles as mothers in supporting their child's educational development. In addition, mothers were introduced to notions of gender equality and how to identify and address gender biases in the home, at school, and in their community."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One notable achievement of the community was providing a source of electricity generation to power the school's computer lab, which had been established by EDIP as part of the project's Learning Resource Centre (LRC). The project had equipped the school with 12 computers, a printer and internet facility in 2011, but persistent electricity shortages made the computers inoperable. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Teachers in the school have eagerly embraced the technology resources that EDIP has provided,. Aurangzeb, a Class 9 English and Biology teacher believes that using technology can help enrich the learning process for his students. For example, he now downloads videos and uses interactive and animated flash diagrams to teach students complex subject matter, such as cells and DNA structure, which are otherwise difficult for children to conceptualize and understand. He has noticed that students are more excited about learning when he uses visual diagrams and gives his students opportunities to explore more material on their own online. Secondly, Aurangzeb believes that ICT helps him reach out to more students simultaneously. \"Some students learn and remember things by listening, some by seeing, and others by doing. ICT in the classroom is inclusive of all these students because it allows children to learn in the way that best suits them.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Teachers already report that students are more eager and enthusiastic about learning; student attendance has become more regular since the children are motivated and excited about the resources given to them, and annual examination scores have increased as a result. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As the EDIP intervention nears the end, the teachers, students and the community in Karimabad will be able to continue learning and exploring, and will blossom in to a global learning community."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001155",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    },
+    {
+      "Label": "learning",
+      "TermGuid": "b351e1a2-14c8-4b3f-af1d-e57118360c5f",
+      "WssId": 1498
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2014-12-01T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1201,
+  "Modified": "2017-03-22T06:58:12Z",
+  "Created": "2017-03-22T06:56:44Z"
+}

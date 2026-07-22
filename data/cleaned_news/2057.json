@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7d3fbefa-c17f-49ca-a94d-f0602e08614b",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3858acd1-b3cc-4b82-bdf0-4111d133d914",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "df513ce7-67b0-4c4e-a2e0-b1ae76668b5b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "924ce82f-7010-4424-acb8-7ffb2f5f1411",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "dab7e56f-7aae-411c-8266-49a256dd3366",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "635fbd4b-0d8c-4338-9eea-8fa529d16c15",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "43e952c1-f817-44b3-879d-6190dd2e45c9",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5b6c7b18-f0f5-4811-a49f-63e430f50562",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2057)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f261e149-49a3-4fa7-ae7f-6baa946240fc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2057,
+  "Title": "Let's go to doctor!",
+  "NewsSubTitle": null,
+  "NewsSummary": "General Practitioners from across Pakistan, gathered in CIME to learn about updated practices and the latest thinking in infection control and to rehearse clinical scenarios to strengthen their clinical skills.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassE06FE3274F4B4849B282F16CE18D7941\"><p>General Practitioners are the true Renaissance Leaders of medicine&#58; generalist, multi skilled, with tremendous breadth of knowledge and experience, having wisdom and intuition that defy algorithmic analysis. However, from time to time their clinical skills need refreshed. </p><p>25 general practitioners from across Pakistan, gathered in CIME to learn about updated practices and the latest thinking in infection control and to rehearse clinical scenarios to strengthen skills in Basic Life Support, Suturing, Pathological heart and lung sounds identification and managing Fractures that may present at their clinic. It was a highly interactive day and a good opportunity to network and re-establish old friendships within the group.</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001978",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2019-11-18T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2057,
+  "Modified": "2019-11-18T11:32:51Z",
+  "Created": "2019-11-18T07:26:55Z"
+}

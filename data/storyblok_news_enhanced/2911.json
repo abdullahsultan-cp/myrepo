@@ -1,0 +1,223 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "36b3d6be-d539-47a9-b494-90aa8313c678",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "25e4940e-8880-48a8-a253-def67b74fe27",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8aaa63df-df35-4e7e-b60c-c38ecd0d04ea",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2bc1ccfd-8747-46a6-ba27-bebd19986ba8",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "31646263-5c1d-43df-8bea-d4013471912d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "1fe3c682-7353-4e24-baba-4e2afc1263ec",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "38181a78-cdbd-41cf-9c48-275329a63c33",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2911)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "775fa053-c569-4076-bd81-52d2a429c41b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2911,
+  "Title": "Indonesian Consul General visits AKU campus",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Hadiningrat: AKU provides opportunities for international students, exchange programmes",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Indonesian Consul General in Karachi Dr June Kuncoro Hadiningrat visited the Aga Khan University campus in Karachi."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "During the conversations with AKU President Dr Sulaiman Shahabuddin; Vice President, Finance and Chief Financial Officer Shagufta Hassan; and other University leaders, he talked about Indonesia's longstanding relationships with Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Being a university with facilities in six countries and its programmes accredited by prestigious international bodies, AKU provides great opportunities for international students and exchange programmes,\" said the Consul General."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "src": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_02.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Hadiningrat is being briefed about life-like mannequins and simulators at the Centre for Innovation in Medical Education.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"At AKU, a transparent merit-based admissions process and generous financial assistance ensure that a diverse group of high caliber students are able to attend a variety of programmes in medicine, nursing and midwifery, teacher education and leadership, journalism and communications, and Muslim cultures and civilizations. While we are selective in the students we accept, we do not discriminate on faith, gender or national origin. Up to 75 per cent of students receive financial aid or tuition remission,\" said AKU President Dr Shahabuddin."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Talking about the University's contributions and social impact, he said that AKU's mission is to improve the quality of life in the developing world and beyond, through world-class teaching, relevant research and quality health care for all. \"Being a not-for-profit institution, all resources generated by the University and its seven hospitals and 340 medical centers are invested back in education and research, and in helping over two million patients annually and improving healthcare,\" he added."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The Consul General at the Sports and Rehabilitation Centre",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Indonesian Consul General showed his keen interest in AKU's Centre for Innovation in Medical Education, a state-of-the-art facility for simulation-based learning for health professionals, and the Sports and Rehabilitation Centre for patients, students and staff."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002804",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    },
+    {
+      "Label": "President's Office",
+      "TermGuid": "fd3dd5d2-9a6b-435c-85a4-b96a88b05033",
+      "WssId": 2263
+    }
+  ],
+  "ScheduleStartDate": "2022-07-07T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The Indonesian Consul General in Karachi Dr June Kuncoro Hadiningrat receives a copy of 'The Economic Impact of the Aga Khan University in Pakistan' from AKU President Dr Sulaiman Shahabuddin. Photo: Akber Moeen / AKU",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2911,
+  "Modified": "2022-07-07T08:39:45Z",
+  "Created": "2022-07-07T08:37:28Z"
+}

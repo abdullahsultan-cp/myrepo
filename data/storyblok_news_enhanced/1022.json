@@ -1,0 +1,151 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7ac9bd4c-7b39-4f08-96c0-0dd0b2b26092",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "37ed2e38-82f3-457a-829f-93a76fa6e3d2",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2302ac15-ef04-4088-a28d-68041199a621",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b9abf03c-d01a-4435-b0c7-f649aedce475",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "87d49b1f-0a20-4317-9f1e-79185fbb73fb",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "22f70319-2c84-46e5-8200-dca69025f78d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2c9679a3-fca2-4595-9b12-01179046712b",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a205fae-d084-4779-8bbf-f1d07095b5d6",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1022)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f520ea6e-b093-45a9-9371-6582fffa43aa",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1022,
+  "Title": "Thyroid disorders: treatable illness",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"Thyroid diseases are commonly encountered disorders in the community and are treatable\", stated Dr. Najmul Islam, Consultant Endocrinologist at Aga Khan University Hospital.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Thyroid diseases are commonly encountered disorders in the community and are treatable\", stated Dr. Najmul Islam, Consultant Endocrinologist at Aga Khan University Hospital. He was giving a presentation on \"Thyroid Disorders\" at the monthly public health awareness programme, 'Signs, Symptoms and Care', on December 14, 2002."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Islam clarified that thyroid disorders could be due to \"too little\" or \"too much\" hormone production by a butterfly shaped gland situated just below the Adam's apple. It could also present itself as an enlargement of a gland called the goiter. He then went on to outline the salient features of hypothyroidism (underactive thyroid) and hyperthyroidism (overactive thyroid) as well as the detection and treatment of these conditions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Giving details regarding the numerous causes leading to developing goitre, Dr. Islam highlighted one particular root cause - iodine deficiency. He said that nearly 100 million people the world over are not getting enough iodine in their diet, required by the thyroid gland to produce balanced quantities of its hormone and hence suffer from goiter. In addition to causing goitre and its abnormal thyroid function, iodine deficiency is also responsible for a lower I.Q in young children. This problem can be prevented by widespread use of iodised salt. Dr. Islam also noted that thyroid cancer, a fairly common malignant cancer, is an important thyroid disorder in which the vast majority of patients have excellent long-term survival rates with appropriate treatment. He concluded by elaborating on the symptoms and causes of thyroid cancer and its treatment modalities."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The speaker and the panel, that included Dr. Naeemul Haque, Dr. Lubna Zuberi and Dr. M. A. Khan, participated in a question and answer session following the programme."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000980",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Thyroid",
+      "TermGuid": "6809939e-8d74-4f23-a3a9-05f08b7c820b",
+      "WssId": 1938
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2002-12-13T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1022,
+  "Modified": "2020-03-12T04:14:38Z",
+  "Created": "2016-12-28T05:09:41Z"
+}

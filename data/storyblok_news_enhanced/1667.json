@@ -1,0 +1,201 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "797a2a28-caa0-4404-b722-adf5e2abf0f0",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "928bbba9-cd56-490a-a612-6c468e769b16",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "53b54fde-255d-4ea8-8e70-0939a1ebfa7d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e087849-46d4-4617-b3e8-fc50e9750868",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "7e715e89-8112-4138-8131-6e6d926ae03e",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "884b65b1-522f-4014-8fbd-93777e4d09d7",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "51d80701-e210-439d-b5b0-c6a86c979d3e",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4bc28559-adec-4282-bb9c-f60cf88688ca",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1667)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f4ecf683-6e64-4f96-8dba-cebf708655df",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1667,
+  "Title": "Victoria Hall Wins RIBA National Award ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Victoria Hall King's Cross has won RIBA National Award for architecture in 2018.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Victoria Hall King's Cross",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.victoriahallkingscross.com/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " has won RIBA National Award for architecture in 2018. The building was among 49 projects in the UK being awarded for their architectural excellence."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "RIBA",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.architecture.com/awards-and-competitions-landing-page/awards/riba-regional-awards/riba-london-award-winners/2018/victoria-hall-kings-cross",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'s reflection on the building: \"The architect has raised the bar for the design quality of student residences where the immaculate detailing and high quality, natural finishes convey a sense of permanence as well as reference both the adobe architecture of the Middle East and the industrial heritage of King's Cross.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Victoria Hall is student accommodation in the heart of King's Cross, London. It's an 11-storey building designed by award-winning London-based "
+          },
+          {
+            "type": "text",
+            "text": "Stanton Williams ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.stantonwilliams.com/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "architects. The building houses students from AKU-ISMC and others and has stylish communal spaces, which include a gym, reading room, meeting and A/V room and a lounge area."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Victoria Hall also has two outdoor spaces - a courtyard on the first floor and a terraced garden on the eighth floor, both designed by Vladimir Djurovic who also designed the Aga Khan Park in Toronto. "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001612",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    }
+  ],
+  "ScheduleStartDate": "2018-06-21T16:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1667,
+  "Modified": "2018-06-21T16:15:26Z",
+  "Created": "2018-06-21T16:02:20Z"
+}

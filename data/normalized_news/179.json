@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5dcf309a-d343-4640-a58a-a966a63b0777",
+  "odata.etag": "\"4\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3500e73a-5384-464d-ae27-b5dcfc76c0fe",
+    "Id": 19,
+    "Title": "Hiba Khan"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1d1cfb89-0b0a-4a5c-a22f-534cb03ae249",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0216c34-b942-421f-9b06-8f22a6aae996",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "3bc7f3d2-fe2f-48fa-9bf2-671c861c18ff",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b59e7551-7a99-40e4-9496-960a5eb1f633",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "66125c05-f950-4d39-9d4c-427507d21d29",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ea044ce4-3d04-4f06-a5fb-f3e1fc0529b3",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(179)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8090daff-584a-4cbb-ab91-ba9217218498",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 179,
+  "Title": "AKU Network of Teaching and Learning leading a transformative teaching initiative in Kenya",
+  "NewsSubTitle": null,
+  "NewsSummary": "The AKU Network of Teaching and Learning (TL_net) has embarked on a new initiative in collaboration with members from other universities in Kenya.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The AKU Network of Teaching and Learning (TL_net) has embarked on a new initiative in collaboration with members from other universities in Kenya including: Kenyatta University, The United States International University, Strathmore University, Daystar University, Africa Nazarene University, Kenya Methodist University, East African School of Aviation, Multimedia University of Kenya and others. Together, they have formed the Association for Faculty Enrichment in Learning and Teaching (AFELT).</p><p>The inaugural meeting of this association was hosted by AKU's TL_net with 20 members in attendance. The members discussed how to promote transformative learning in Kenyan institutions for higher education.</p><p>For more information, contact Dr Jane Rarieya, Assistant Director, TL_net.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000147",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "networks",
+      "TermGuid": "74ce5185-ccd6-406f-9791-1c432329c7ba",
+      "WssId": 865
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "4e098e7b-daad-449a-9f75-aa273c829a6e",
+      "WssId": 752
+    },
+    {
+      "Label": "learning",
+      "TermGuid": "605ceec6-231d-4d9d-9855-91e5ca74dea4",
+      "WssId": 753
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": null,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 179,
+  "Modified": "2016-05-17T14:44:07Z",
+  "Created": "2016-05-17T14:23:46Z"
+}

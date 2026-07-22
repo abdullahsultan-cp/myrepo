@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0862a13f-4c87-4b76-b160-2f98743388cd",
+  "odata.etag": "\"27\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae7085bf-5caf-4457-9f21-1793eeef7e1e",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e9c8fd5b-d2c8-467a-a30d-23fa5b55d341",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f124d994-b6c1-45c9-96f2-9c6c2e368ca0",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "ea988938-d2b6-4472-8e86-cb6e38bdc71f",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a0eec6cf-9a99-4d69-9354-2204d7c188f8",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8c3db938-a37d-4875-bda4-2a3e47dff2c4",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "28dc73a9-f19c-4b76-93fe-ecda32398aa0",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1157)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6af77d53-33ab-494f-bcc8-332274cac554",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1157,
+  "Title": "An interview with CIME's new director",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Docherty shares his vision for CIME and his love for spicy food and the outdoors. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>In the early 1990s, Dr Charles Docherty led a team at Glasgow College of Nursing that designed a novel pilot project. The project aimed to use the latest technology to teach nurses how to take care of critically ill patients. Charles's team used one of the first models of a Macintosh computer, a mannequin, video cassette recorders (VCRs) and some of the earliest digitising software to create a six-week-long simulation course based on a patient admitted to the ICU after an accident.</p><p></p>At every stage of treatment, students watched videos about the patient's condition in which they assessed his health and then decided how to respond in light of their theoretical knowledge and nursing experience. Students logged their responses into a computer programme and instructors were able to give feedback in real-time to students. They also videoed their performance to share with their classmates. Back then this was a novel attempt at integrating new computer and video technology into problem-based learning. Feedback from students about the course was very positive with many saying that they felt confident, rather than nervous, when they began taking care of critically ill patients.<p></p>\n      <br/> \n   \n   <p>The success of the initiative led to Charles designing a number of other simulation-based courses in Scotland and Jordan and later leading the establishment of a full-scale simulation centre in Bahrain from scratch. As the Centre for Innovation in Medical Education (CIME) enters its second year of operations, Charles is keen to bring his expertise in simulation-based learning and his experience of working with people with different sets of skills to improve teaching and learning standards at AKU.</p><p>In this interview, Charles shares his vision for the CIME, some highlights of his time at AKU and his plans for putting innovation at the heart of teaching at the University.</p><p> \n      <strong>Tell us about your career in nursing and simulation</strong></p><p>I initially wanted to be a dentist. But a summer job as a healthcare assistant in an old people's home in Glasgow gave me a deep appreciation for the importance of nursing. I really enjoyed caring and assisting people with their healthcare needs and in 1976 I started studying at Glasgow Royal Infirmary: a nursing school renowned for being led by one of Florence Nightingale's pupils, Rebecca Strong. </p><p>I went onto became a charge nurse in intensive care and alongside full-time work I continued my studies to gain a diploma and master's in nursing in the mid-1980s. While working in the hospital I noticed how many nurses were just taught enough theory to inform their clinical practice and I saw how many skills were learnt through trial and error on real patients. </p><p>This made me think about how education can be improved in the discipline and in 1996 I became an instructor in nursing at Glasgow Southern General, the hospital famous for developing the Glasgow Coma Scale (a scoring scale that helps assess a person's level of consciousness). This is where I became deeply interested in how technology can enhance teaching and learning and my PhD focused on how multimedia can help instructors improve the effectiveness of teaching methods. </p><p> \n      <strong>What were your first impressions of the CIME?</strong></p><p>I've only been here a short time but I'm very impressed by the building, the equipment and videoconferencing facilities. I'm also very pleased that we have the biomedical and information technology expertise to ensure that simulations are supported and that in our 'Champions' we have clinical faculty with the advanced skills to manage the training modules. </p><p>CIME has great potential for growth and innovation in how we teach nurses and doctors and I'm looking forward to realising this advantage by working with our schools to embed simulation practices into our curricula.</p><p> \n      <strong>What projects are underway at the CIME now?</strong></p><p>We've put together a team of faculty who have been designated as 'clinical Champions'. They will lead efforts to integrate CIME's facilities into the curriculum. We've already sent some of this group to Boston's Centre for Medical Simulation, which is jointly run by Harvard and MIT, on a weeklong course on simulation-based instruction. They are back in Karachi now and are working on initiatives to incorporate simulation into our curriculum. </p><p>AKU is also in talks with the UK-based Higher Education Academy to provide a mechanism for teaching fellowships to be accessible for our clinical Champions. Courses we design in-house would certify them as instructors in simulation-based methods and enable us to scale up training of our own faculty.</p><p>Staff are also setting up a brainstorming group with students, who are often at the cutting edge of communications and information technology,  so that we understand their expectations of teaching and how we can improve our educational methods and keep them relevant to the coming generations. </p><p> \n      <strong>How do you see CIME developing in the future?</strong></p><p>The best simulation centres are seamlessly integrated into the curriculum. When you have the right combination of technology, subject matter expertise, technical skills and thoughtful teaching you can really transform the learning process. My focus is currently on linking the subject experience that faculty have with the latest teaching methods being practiced in medical schools around the world. </p><p>The AKU's programmes have a strong curriculum and simulation-based courses can be developed for each competency required of practicing professionals. Learning objectives can be achieved through using mock scenarios, videos and debriefing sessions that CIME is purpose-built for. By distancing learning from actual practice, patient safety is not compromised and students prosper knowing that if they make mistakes no-one comes to harm. There are a wide range of situations that we can develop for specialty nursing programmes and PGME students. Once established, teaching packages and courses that deliver clinical competence in a standardised way could be accredited so that we can market them to other institutions and thereby raise education standards across the board. </p><p>When it comes to some clinical skills, we have a range of mannequins on which to practice. Some of these have very sophisticated physiological modelling providing instant responses to a whole range of different interventions including pharmacological issues.  But we can also use actors (mock patients) who can demonstrate a range of needs, personality traits and unique demands that cannot be reproduced as yet through artificial means. By practicing in a situation where they aren't worried about making errors they can truly develop therapeutic communication skills that will benefit them in the real world.</p><p>Finally, CIME can make a great contribution in the area of inter-professional learning. Mock surgeries and mock wards require different specialists to work together. Importantly, we can vary conditions to test skills such as leadership, prioritisation, decision making and the application of clinical knowledge under pressure. </p><p>For example in the area of critical care, we have an ideal environment where anaesthesiologists can benefit from mock surgery scenarios in which they have to adjust their plans due to changes in blood pressure brought on by ventilation issues, or hemorrhage, or other adverse events, during surgery. This would require them to work closely with the theatre team to adjust anaesthesia, order blood, blood tests and so on while advising the surgeon on whether to proceed or not. These are situations that will help them feel more confident when they are faced with similar situations in a busy hospital setting.  </p><p> \n      <strong>When did you first hear about AKU during your time abroad? </strong></p><p>I first heard about AKU when a few colleagues and I were working on a nursing project in Bangladesh in 2006. We were looking for exemplars in nursing in the region and we kept on hearing about AKU's School of Nursing in Karachi. In Bahrain, I worked with a research assistant who was previously at AKU and he informed me of the humanitarian vision of the institution that I found to be very inspiring.  </p><p> \n      <strong>That's work, what about your other interests?</strong></p><p>Cycling and gardening are some of my hobbies.  Unusually for a Scot, I have no interest in golf nor football. Another thing that I enjoy is spicy food. My hometown of Glasgow has some wonderful curries, chapattis and tikkas and so far I've found that the food in Pakistan to not be spicy enough! I think I should get out more.</p><p> \n      <strong>How have you found your time at AKU so far?</strong></p><p>I've only been here for a few weeks but I'm surprised by how green Karachi is. I love the outdoors and the Karachi campus is so beautifully designed and pleasant to walk in. There's a surprise around every corner with beautiful courtyards and water features. I've heard good things about Lahore and the northern areas of Pakistan and I'd love to go there soon too.</p><p>I'm delighted to come and work at AKU as I'm aware of the quality of its faculty and how its graduates are spread around the world and are doing great work. </p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001115",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2017-01-16T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": "Dr Charles Docherty, Director, CIME",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1157,
+  "Modified": "2017-01-31T13:07:54Z",
+  "Created": "2017-01-16T07:59:32Z"
+}

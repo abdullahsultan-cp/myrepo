@@ -1,0 +1,211 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6904bd6b-986e-4a21-a9d0-e4feb8e6ab2a",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc393499-ae9d-4d39-89ea-c1e424cec026",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ee4dcfe5-9d8b-4193-921f-e3cef72e8ce1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "087d2c4d-1ba9-4156-bd7b-c8be10608c34",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e2a3c161-e384-411b-9230-11a45425ff98",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "88602bea-b541-42aa-87b3-62d998494955",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "aac85a27-d251-4bd9-9ef3-22bc1907c6fb",
+      "Id": 31,
+      "Title": "Brain and Mind Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e082de8a-b2ae-40ad-89fb-d48f2f2eb0f0",
+    "Id": 18650,
+    "Title": "Fiona.Wachera",
+    "EMail": "fiona.njagi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3494)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae9573ef-a2e2-43f7-af6a-47aa13645d5e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3494,
+  "Title": "Brain Resilience Kenya Study Launched",
+  "NewsSubTitle": null,
+  "NewsSummary": "New study to understand how life stressors impact brain aging and resilience in Kenyans",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In a significant step towards understanding the intricacies of brain aging and resilience, the Brain Resilience Kenya Study was officially launched on September 10, 2024. The groundbreaking research initiative, spearheaded by the Aga Khan University's Brain and Mind Institute (BMI), aims to shed light on how various life stressors impact cognitive decline and dementia in Kenyan adults."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking at the launch event, Dr Zul Merali, Founding Director of the BMI, emphasized the critical importance of understanding brain resilience in a rapidly aging population. \"Africa is projected to have the highest number of people over 60 by 2050,\" he noted. \"This presents unique challenges, including economic, social, climate, and health-related stressors. Understanding how our brains age and remain resilient to these stressors is crucial for enhancing the quality of life and economic health of our nations.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study, supported by Wellcome Leap and Temasek Trust, is pioneering in its approach, focusing on how the brain ages in response to real-life stressors, both internal and external. By examining the factors that contribute to resilient aging, researchers hope to develop targeted interventions to prevent cognitive decline and dementia."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Sulaiman Shahabuddin, AKU President and Vice Chancellor highlighted the devastating impact of dementia on individuals and their families. \"Cognitive decline and dementia are frightening,\" he said. \"To those who suffer from them and their loved ones, it's incredibly taxing, physically, mentally, and emotionally.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Brain Resilience Kenya Study will involve a comprehensive assessment of participants' brain health, cognitive function, and resilience. Researchers will also collect data on participants' experiences with stressors such as illness, poverty, substance abuse, and climate change. By combining these data with cutting-edge statistical and machine learning techniques, the study aims to identify key factors that contribute to brain resilience."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Lukoye Atwoli, Dean of the Medical College, East Africa and Associate Director, BMI emphasized the importance of culturally sensitive research in Africa. \"The diversity on the continent informs the personal care paradigm,\" he said. \"You cannot fashion a solution and then say it fits everyone.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The launch of the Brain Resilience Kenya Study marks a significant milestone in the field of brain health research in Africa. By providing valuable insights into the factors that influence brain aging and resilience, the study could pave the way for innovative interventions to improve the lives of millions of people."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003367",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "East Africa",
+      "TermGuid": "ae813152-1a93-47c0-9d57-7b3cd696635e",
+      "WssId": 2135
+    },
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    }
+  ],
+  "ScheduleStartDate": "2024-09-13T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3494,
+  "Modified": "2024-09-18T06:33:57Z",
+  "Created": "2024-09-13T06:55:57Z"
+}

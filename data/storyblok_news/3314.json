@@ -1,0 +1,216 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "81088968-b84c-4229-b216-8cc694e13732",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f2a349ad-78f7-475b-a3a4-73886dabac11",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7b09c33-c8d0-4fcb-afcf-5479ca9f29a0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "070effb6-1b7f-4d44-9dff-41693c361cd7",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "650572e2-1cd6-4520-82ce-bfc3daaeeb4a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "68cb4ec2-7e60-44b8-a211-57fa19ea44ff",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "97160559-a08c-4709-be15-fe3740a9f30a",
+      "Id": 20,
+      "Title": "Institute for Educational Development, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b00357c6-654a-4e91-9563-c8b6a5b48a14",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3314)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "53994c79-219b-4985-beb5-c7a504d8ad2c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3314,
+  "Title": "A journey from rural roots to academic triumph",
+  "NewsSubTitle": null,
+  "NewsSummary": "Tooba Noor tells her story of resilience and determination",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In the heart of a rural community, amidst the challenges and constraints of tradition, a young girl - Tooba Noor - dared to dream beyond her circumstances. This is the story of resilience, determination, and the transformative power of education:"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Raised in a middle-class family, I faced hurdles typical for girls in rural areas. Yet, armed with ambition, I pursued higher education at the Institute of Business Administration (IBA) in Sukkur, where I graduated with distinction and a bronze medal adorning my achievements."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "But the dream didn't stop there. Despite societal pressures and familial expectations of early marriage, my thirst for knowledge persisted. Before I received my acceptance letter Aga Khan University Institute for Educational Development (AKU-IED), pursuing a master's degree seemed unachievable."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "My time at AKU-IED was not just about academic pursuits; it was also a demonstration of the institution's unwavering support and nurturing environment. Despite financial constraints, AKU-IED's financial assistance programme paved the way for my MPhil journey, transforming academic aspirations into reality."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Though I initially desired international study opportunities, AKU-IED quickly became my sanctuary. The institute not only relieved financial pressures, but also provided a familial support system, especially during trying times like the floods back home."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The educational journey at AKU-IED was nothing short of transformative. Every aspect of the programme, from exploring educational philosophy to developing research skills under the guidance of a supportive supervisor, shaped my academic and personal growth."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What sets AKU-IED apart is its holistic approach to education. Access to top-notch healthcare and counselling services ensured not just physical well-being but also nurtured mental health-a crucial aspect often overlooked in academic settings."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU-IED also opened doors to global opportunities, from summer exchange courses in the USA to presenting research papers in Hawaii. Beyond academics, the institute provided support for personal growth and a sense of community."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In essence, AKU-IED is more than an educational institution; it's a beacon of hope, a nurturing haven where dreams take flight. From overcoming societal norms to forging academic connections, my time at AKU-IED was a transformative chapter that sculpted not just my academic journey but also my identity and aspirations.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003191",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "cce8a407-322b-4bb8-8a4f-df6c93c38873",
+      "WssId": 2165
+    },
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    }
+  ],
+  "ScheduleStartDate": "2024-02-08T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3314,
+  "Modified": "2024-02-08T12:53:24Z",
+  "Created": "2024-02-08T12:46:19Z"
+}

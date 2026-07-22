@@ -1,0 +1,217 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d243477b-2810-4268-a622-501cd0dfad49",
+  "odata.etag": "\"36\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b45d0b94-15ce-47ba-97d4-9f9d970fce51",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "78d3c1a5-18e7-4587-b78c-f4fc39930be6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6293c52d-a849-4465-99ce-0d30fa7c487f",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "07b18532-c2b3-4b47-828f-27f7a889c557",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a8f7b8c7-24de-4474-bab2-98ffd931fb17",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "52e44266-22f9-45c3-8257-7fe6a50a3666",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2685)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1e20448e-fbc3-4124-be36-b3abf443bf87",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2685,
+  "Title": "AKU President Firoz Rasul receives medal in Portugal",
+  "NewsSubTitle": null,
+  "NewsSummary": "Portugal's government honours AKU's president for contributions to scientific culture.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU President Firoz Rasul has been awarded Portugal's Medalha de Mérito Científico, Medal of Scientific Merit, by the Ministry of Science, Technology and Higher Education. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The award was presented by Minister for Science, Technology and Higher Education, Manuel Heitor, and the Minister of the Presidency and of Administrative Modernisation, Mariana Vieira da Silva at the opening of the Science Meeting 2021 in Lisbon on June 28, 2021."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Medalhas de Mérito Científico, launched in 2009, is an initiative of the Ministry of Science, Technology and Higher Education that rewards individuals who, due to their high professional qualities and the fulfillment of their duty, distinguished themselves by their valuable and exceptional contribution to the development of science or scientific culture in Portugal."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Rasul, who has served as president of the Aga Khan University since 2006, coordinates campuses, programmes and hospitals of the University across six countries: Pakistan, Kenya, Uganda, Tanzania, Afghanistan and United Kingdom. He has led the development of several high level projects for the Aga Khan Development Network, AKDN, including the Global Centre for Pluralism and the Aga Khan Museum. He has been closely involved in the development of social and community-based institutions in Africa.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In particular, he has helped promote the collaboration between AKDN and the "
+          },
+          {
+            "type": "text",
+            "text": "Portuguese Foundation for Science and Technology",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.fct.pt/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " on the Initiative for Development which aims at improving the quality of life, mainly in Portugal and Portuguese-speaking countries in Africa, by funding research in several areas. It has already led to the development of several projects through its two calls for proposals in 2017 and 2019, with the next call in 2021."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "See all the "
+          },
+          {
+            "type": "text",
+            "text": "2021 awardees",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://translate.google.com/translate?hl=en&sl=pt&u=https://www.encontrociencia.pt/2021/medalhas-de-merito-cientifico&prev=search&pto=aue",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002583",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    }
+  ],
+  "ScheduleStartDate": "2021-07-02T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2685,
+  "Modified": "2021-08-03T05:48:26Z",
+  "Created": "2021-07-02T04:33:58Z"
+}

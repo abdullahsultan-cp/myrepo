@@ -1,0 +1,246 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d927c456-c0e1-4249-b720-0a5f97e6376a",
+  "odata.etag": "\"39\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "713ea82a-fdb3-4042-84d9-d6dcff3ff16d",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "85cccdc5-b76a-4743-b554-c878e8ee5af4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f6b4c95f-9f4f-489e-8e7f-6288c0e0f861",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "1c9b3dfd-8605-4bd1-a4bd-ca7a762cb98e",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f27c4a17-f00d-4428-9328-d5c2410c9991",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8843ef70-4458-4e86-afb4-a0f98e989a7a",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ef0a75f5-d5cb-48cd-9a48-7323f0bbb8dd",
+    "Id": 73,
+    "Title": "Akber Iqbal",
+    "EMail": "akber.iqbal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(80)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b8ef0dc6-cbed-45d4-b20a-a27bde6d2574",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 80,
+  "Title": "AKU hosts convocation in Dar es Salaam",
+  "NewsSubTitle": null,
+  "NewsSummary": "84 graduands were conferred degrees at the ceremony which was addressed by Tanzania Commission for Universities' Executive Secretary Professor Yunus Mgaya.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The Tanzania Commission for Universities' Executive Secretary Professor Yunus Mgaya applauded the Aga Khan University's significant commitment to an ambitious expansion plan in Tanzania and East Africa to educate the future leaders the region needs to launch a new era of development."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"As AKU is confident in Tanzania's future, I am confident in the University and its future in Tanzania. We at the TCU are indeed very proud of the Aga Khan University being among the few institutions that are offering more specialized and demand driven programmes in this country,\" said Professor Mgaya."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The education offered at AKU is of the highest quality comparable to any world class university said the TCU Executive Secretary, and that graduands should be proud that they have been prepared to provide crucial leadership - to boost standards in specific areas of practice, to enhance the performance of their institutions and to contribute to the improvement of the entire health and education system in the country. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year, AKU awarded degrees to 84 graduands from the Institute for Educational Development, the School of Nursing and Midwifery and the Postgraduate Medical Education programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sixty-one graduated with a Master of Education degree, 22 with a Post-RN Bachelor of Science in Nursing, and one with Master of Family Medicine, marking 552 AKU alumni in Tanzania to date."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We thank the University Chancellor, His Highness the Aga Khan, and the Board of Trustees for their vision and direction to mold this precious academic institution which has contributed and continuously contributes to transform this world into a better place,\" said Margareth appreciating the support they received from faculty and staff during their year of study."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the occasion, AKU President Firoz Rasul talked about the University's plan to develop as a comprehensive university educating the future leaders of East Africa in a wide range of fields."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The plan includes the establishment of the University's principal East African campus in Arusha, the construction of a new campus for the Institute for Educational Development in Dar es Salaam, building a new Aga Khan University Hospital in Kampala, and the creation of new medical and nursing education programmes as well as the expansion of existing programmes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He thanked donors and supporters for their generosity and commitment to AKU's mission of educating leaders for East Africa and the developing world. Among many, he mentioned the Canadian government which is providing over $31 million to improve pre-primary and primary education in Lindi and Mtwara towards the strengthening of education systems in East Africa and the Tanzania Commission for Universities, for its guidance, support and encouragement in the development and approval of new programmes in Tanzania. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"All of the support we have received speaks loudly about the impact of the University and the trust it has earned. An example is the recent appointment by President Magufuli of one of our faculty, Professor Joyce Ndalichako, as the Minister of Education, Science, Technology and Vocational Training,\" said President Rasul."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He also lauded the role of civil society organisations in East Africa. \"When civil society is strong, communities and countries thrive. Rather than being discouraged, it should be embraced as an essential contributor to the public good. Rather than being seen as a threat to government, it should be seen as the guarantor of good governance. Rather than fearing that it threatens order and stability, we should see its diversity and peaceful disagreements as a sign of national strength and maturity.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"I have every confidence in you because the Aga Khan University has prepared you for leadership, you have learned to practice at the highest international standards, to think creatively and independently, to work effectively with individuals from many different backgrounds,\" emphasized President Rasul."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The convocation ceremony was attended by the graduating students, their parents, faculty and staff members."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000050",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    },
+    {
+      "Label": "Convocation",
+      "TermGuid": "95deeea6-bd39-4a41-b839-40d28c835c8f",
+      "WssId": 1355
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 80,
+  "Modified": "2017-02-22T07:07:20Z",
+  "Created": "2016-05-17T05:34:55Z"
+}

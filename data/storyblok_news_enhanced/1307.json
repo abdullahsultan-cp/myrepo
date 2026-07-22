@@ -1,0 +1,202 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4153f210-87fc-4587-b2e8-2c82a5448edd",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "96987747-b1a8-489e-a377-f4a4b5c9ac94",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5821342c-9762-4d95-93cc-b52838616c76",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8194a8b3-f2d7-485c-a81a-c352bbf6c057",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "67f8bfdf-d38e-41d5-8e92-f6b0c57fd749",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "35a7c342-4df4-45a7-9701-5d1934b4e73b",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8e7485db-568f-441d-9aca-0a2531f1a335",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "590dd754-9804-4167-ae1e-5e2f5dafcc67",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1307)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f8ab1b68-493f-4467-82d4-26d840086f6a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1307,
+  "Title": "Networks director represents AKU at INQAAHE Conference in Chicago",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Tashmin Khamis, Director of AKU Networks of Quality, Teaching and Learning, attended the 2015 INQAAHE (International Network for Quality Assurance Agencies in Higher Education) Conference in Chicago on March 30 to April 5.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Tashmin Khamis, Director of AKU Networks of Quality, Teaching and Learning, attended the 2015 INQAAHE (International Network for Quality Assurance Agencies in Higher Education) Conference in Chicago on March 30 to April 5."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Khamis' attendance at the conference was funded by INQAAHE and the IUCEA (Inter University Council for East Africa) in her capacity as President of EAQAN (East African Higher Education Quality Assurance Network). "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This conference, Changing Landscape of Higher Education: New Demands on Quality Assurance, was the first time an INQAAHE conference has been held in the USA in its 25-year history."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition to presenting the work of EAQAN, Tashmin presented a joint peer-reviewed paper authored with Dr Khairunnisa Dhamani entitled, \"Self-Assessment: A Catalyst for Change for the East African Higher Education Landscape,\" based on a case study from Aga Khan University."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Details about the conference can be found on the "
+          },
+          {
+            "type": "text",
+            "text": "INQAAHE website",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.inqaahe.org/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " or contact "
+          },
+          {
+            "type": "text",
+            "text": "Dr Khamis ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/Tashmin.Khamis@aku.edu",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001257",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    },
+    {
+      "Label": "learning",
+      "TermGuid": "b351e1a2-14c8-4b3f-af1d-e57118360c5f",
+      "WssId": 1498
+    }
+  ],
+  "ScheduleStartDate": "2017-10-25T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1307,
+  "Modified": "2017-10-30T10:49:53Z",
+  "Created": "2017-10-25T05:26:12Z"
+}

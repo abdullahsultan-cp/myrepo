@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7ed13225-0544-4792-9d24-a9be2acfbc8e",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bbe2fea8-1073-4e6d-90fe-953661c4c711",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a951a2b8-86e3-4a4f-8915-7d073f13b3b7",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d8d6c03b-207f-4fea-94df-ce6a06e2777f",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "dd682105-17a7-4a2c-9bb6-119b8f5f6158",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ab1b211b-6c88-4915-9751-e6cb95cd0b2e",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "90008f86-5254-4ac0-ba9c-ba3cc8c7944f",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "39519014-1539-4484-88df-7f981ea44656",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2058)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8fe9aeb3-9297-4a42-885a-f84c392ef796",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2058,
+  "Title": "So cute but so vulnerable... neonatal resuscitation",
+  "NewsSubTitle": null,
+  "NewsSummary": "Neonatal Resuscitation Programme was arranged to improve practitioner skills in supporting neonatal care.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p>These tiny babies arrive into the world with expectations of a great life, but unfortunately they have challenges ahead. Most neonates are vulnerable and need some form of resuscitation support. To improve practitioner skills in supporting neonatal care, 15 doctors and nurses from the secondary hospitals of Aga Khan University - Garden, Karimabad, Kharadar, and Hyderabad - attended an NRP workshop in CIME and practiced situations that in real life often have serious consequences if not performed competently.",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001979",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2019-11-18T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2058,
+  "Modified": "2019-11-18T11:32:17Z",
+  "Created": "2019-11-18T10:03:31Z"
+}

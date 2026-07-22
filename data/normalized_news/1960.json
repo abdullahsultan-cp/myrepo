@@ -1,0 +1,107 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "dd7765bc-8aa6-4987-931e-10b349455acf",
+  "odata.etag": "\"14\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "20cc1c1a-60a9-42df-9292-f77b6375d808",
+    "Id": 96,
+    "Title": "Safina Kousar"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57d38002-973f-43c2-a49a-59c35dff374f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0de5c76a-c408-40c1-be63-50e19461fde9",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a33eec76-2f83-4004-ba6b-7730304b0c34",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "fcb3962e-993b-49a1-a629-a241d262371b",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "9740d8d6-b441-4abb-9a90-6052f997bb2e",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7fcedd0-391d-479d-8784-d8a8a5eed446",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1960)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3da2ec62-4103-4c81-ab52-dbb0719cc99d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1960,
+  "Title": "Social capabilities and life skills of secondary school students",
+  "NewsSubTitle": null,
+  "NewsSummary": "IED's research to give new impetus to reform policies and practices of secondary school education for developing social capabilities of youth.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>A research study funded by the Higher Education Commission of Pakistan commenced at AKU-IED to  study the social capabilities and life skills of secondary school students in Sindh, Gilgit-Baltistan and Chitral. The study will involve 2,500 respondents from 60 schools in the three regions over a period of three years. </p><p> \"Our objective is to unpack the compatibility of educational investment with social gains defined regarding the social capabilities and life skills of students\", says Dr Takbir Ali, an Associate Professor and the principal investigator of the study. </p><p>The research will add to the discourse on the purpose of secondary education, giving a new impetus to reform policy and practice of secondary education with a focus on developing social capabilities and life skills of youth. </p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001889",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    }
+  ],
+  "ScheduleStartDate": "2019-03-01T04:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1960,
+  "Modified": "2019-08-07T06:16:41Z",
+  "Created": "2019-08-07T03:59:23Z"
+}

@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0f60010b-ef26-4e61-956e-bbea3f1de60d",
+  "odata.etag": "\"28\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a29a512e-12a4-4e76-aadd-8b4507647433",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3bcd03a6-c7d0-4c1e-a93b-da7ac726855b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "83501ebf-d4ed-4c71-a477-506f93c2e4e5",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b1e59570-d6c8-4a9a-bf0e-e5f938a6f75f",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "58bf3f30-13cf-44da-9357-cc39ec4c0696",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5c6ae291-b7ef-422d-a09c-917e4254c795",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2689)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e01cba7-c130-44c5-a073-23d4a116a19c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2689,
+  "Title": "A Token Frequency Counter For OpenITI Texts",
+  "NewsSubTitle": "By Dr Peter Verkinderen",
+  "NewsSummary": "Blog by AKU-ISMC's Dr Peter Verkinderen on how to find out the most frequently used words in a text.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<h4></h4><p><strong>Read this new blog post by AKU-ISMC's Dr Peter Verkinderen on <em>A Token Frequency Counter For OpenITI Texts</em>:</strong></p><p>One of the participants in our <a href=\"http://kitab-project.org/2020/07/24/call-for-participation/\" rel=\"nofollow\" target=\"_blank\">KITAB user group</a> asked for an easy way to find out which are the most frequently used words in a text.<br/></p><p>There are quite a lot of online tools that allow you to upload a file (or provide a link to a web page) and will produce a nice table with word counts.<br/></p><p>Unfortunately, this specific user group participant works with the largest text in the KITAB corpus, Ibn al-ʿAsākir's <a href=\"https://raw.githubusercontent.com/OpenITI/0575AH/master/data/0571IbnCasakir/0571IbnCasakir.TarikhDimashq/0571IbnCasakir.TarikhDimashq.JK000916-ara1.mARkdown\" rel=\"nofollow\" target=\"_blank\">Ta'rīkh Madīnat Dimashq</a>, which weighs in at about 75 MB in the OpenITI version, and none of the sites I tried out was willing to accept such a large file. Others failed to produce a frequency list even with smaller books, probably because they don't deal well with Arabic.</p><p>There are a number of other options to create frequency lists from a text, but most involve using a programming language like Python or R. Since most of our user group participants do not have any background in programming, we thought about using this question as an opportunity to show the user group how to install Python or R, and run a simple script to create the frequency list (for example, using the fantastic R.stylo library).</p><p>However, even showcasing something simple like this to people who do not have Python or R installed and are working on different platforms always takes quite some time, time we didn't have during our user group meeting.</p><p>So, after getting frustrated with a number of websites that promise to convert a text into a frequency list, I decided to build such an online tool for OpenITI myself.</p><p>This was quite straight-forward because I could build on work we have done for our <a href=\"https://pypi.org/project/openiti/\" rel=\"nofollow\" target=\"_blank\">openiti Python library</a> and other sub-projects.</p><p>The tool can be found <a href=\"https://openiti.github.io/tokenFrequency/\" rel=\"nofollow\" target=\"_blank\">here</a>. <a href=\"http://kitab-project.org/2021/07/13/a-token-frequency-counter-for-openiti-texts/\" target=\"_blank\">Continue reading</a><br/><br/></p><p><strong><a href=\"/ismc/people/Pages/peter-verkinderen.aspx\" target=\"_blank\">Dr Peter Verkinderen</a></strong></p><p>A Post-doctoral Research Fellow at AKU-ISMC's <a href=\"http://kitab-project.org/\" target=\"_blank\">KITAB</a> working on the central regions of the Islamic lands. He studied Classics and Arabic and Islamic studies at Ghent University. His PhD dissertation, also at Ghent University, was a reconstruction of the fluvial landscape of early Islamic Lower Mesopotamia, based on (mostly Arabic) texts, satellite imagery and data from archaeological and geological research. He has worked as the Assistant Director of the Netherlands-Flemish Institute in Cairo (2009-2014) and as a Research Fellow in the ERC project \"The Early Islamic Empire at Work\" (Hamburg University, 2014-2019), where he focused on the position of Fārs (SW Iran) in the early Islamic empire. <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002587",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2021-07-14T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2689,
+  "Modified": "2021-07-14T13:33:42Z",
+  "Created": "2021-07-14T13:14:28Z"
+}

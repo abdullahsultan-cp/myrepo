@@ -1,0 +1,192 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "64b893a4-8709-4ec7-92ac-030c0de94ddb",
+  "odata.etag": "\"7\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "802e4fc7-834d-49ae-85eb-d8e29cdfc560",
+    "Id": 7746,
+    "Title": "patrick.gumo"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "db9139af-81b7-48fe-adf8-028df3152850",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "45be8e2d-02ce-41d6-82f4-acd09f64a0dc",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1a834659-e0f5-4104-b272-9b7d62b3bf4a",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "67705300-9b84-4bad-be69-662b99a07d06",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c8bf160b-9968-456b-b201-ad2e7f63ae70",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3557)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "11107a37-eebc-4bdd-93d7-8c01b55bcb92",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3557,
+  "Title": "In Memoriam: Prof Sudhir Vinayak",
+  "NewsSubTitle": null,
+  "NewsSummary": "Prof Vinayak had an exemplary career in radiology and diagnostic imaging ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "It is with deep sorrow that the Aga Khan University Medical College, East Africa announces the unexpected passing of Professor Sudhir Vinayak on Saturday, November 16, 2024. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Vinayak was the Chair of the Department of Radiology and Diagnostic Imaging at the Medical College, East Africa and a Consultant Radiologist at the Aga Khan University Hospital, Nairobi. He gave dedicated service to the institution from November 1, 1988, until his demise."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Lukoye Atwoli, Dean at the Medical College, East Africa, paid his tribute stating, \"AKU will forever cherish and honour Prof Vinayak's remarkable contributions to the field of imaging and ultrasound, both within the institution and globally. A true luminary from our Department of Radiology, admired and respected by all who knew him. May his family and loved ones find comfort and strength during this difficult period.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Vinayak was the current President, Mediterranean and African Society of Ultrasound (MASU) and was to be the incoming President of the World Federation of Ultrasound in Medicine and Biology (WFUMB)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He published numerous scientific articles in international peer-reviewed journals as well as domestic scientific papers. He wrote chapters for radiology textbooks and served on various editorial boards. In addition, he delivered invited lectures in his area of expertise to international audiences and written numerous international guidelines on the use of imaging and ultrasound."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "His research focus was on the fields of Artificial Intelligence (AI), thyroid and breast imaging. He also had a keen interest in obstetric imaging. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Vinayak also served in various capacities as the past President, Kenya Association of Radiologists (KAR), past President, Kenya Society for Ultrasound in Medicine and Biology (KESUMB) and immediate past President, African Society of Radiology (ASR)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Our thoughts and prayers are with Dr Prof Vinayak's family during this time of immense loss. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003427",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "179778ec-22ad-4f97-b0c1-6a0f9532e62d",
+      "WssId": 2163
+    }
+  ],
+  "ScheduleStartDate": "2024-11-26T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Prof Sudhir Vinayak",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3557,
+  "Modified": "2024-11-26T13:22:58Z",
+  "Created": "2024-11-26T12:26:27Z"
+}

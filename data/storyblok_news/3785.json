@@ -1,0 +1,252 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7a9f57b5-9e9a-46c2-956d-f9e2c4e564a7",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d088d360-c400-4bb3-836e-9b0ef4ef5b21",
+    "Id": 7746,
+    "Title": "patrick.gumo"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1e6f417b-8f4c-4d53-b29e-6c14b7d5752b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "305119ed-5793-4f6b-8886-0dc8ae33d9d5",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "db9940cc-a0c5-4ee3-8d91-f9fb49d3ac28",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "321b66f5-87a3-44f3-be24-daac78d7c73d",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "819a3cc8-6663-4dec-b0a4-1211da46c14c",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3785)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "33d39a12-5d20-4277-8381-1a7aff543488",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3785,
+  "Title": "Healthcare experts call for safer care for newborns and children ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Healthcare experts have called for urgent action to make healthcare safer for the most vulnerable patients; newborns and children",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Healthcare experts and policy makers have called for urgent action to make healthcare safer for the most vulnerable patients; newborns and children, warning that unsafe care continues to cause preventable harm in maternity wards, neonatal units and pediatric settings not only in Kenya but across the region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The call for action was made during the World Patient Safety Day Symposium 2025 held at the Aga Khan University Centre where healthcare experts and policy makers emphasized that improving safety from birth is essential if Kenya and other countries are to reduce maternal and child mortality. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year's theme, \"Safe Care from the Start: Preventing Harm in Neonatal and Pediatric Care,\" highlights the vulnerability of newborns and children to risks and harm caused by unsafe care."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his opening remarks during the World Patient Safety Day Symposium, Ms. Mary Muthoni Muriuki, Principal Secretary, State Department for Public Health and Professional Standards, Ministry of Health said; \"This year's theme, speaks directly to the heart of our healthcare mission: to protect, to nurture, and to ensure that every child's journey into life is safe, healthy, and full of potential. This is to ensure that a child in a remote village receives the same standard of care as the child in an urban hospital.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She further said that Kenya's commitment to safeguarding the lives of mothers, newborns, and children is not new and that the government through the Ministry of Health has made significant progress in reducing child mortality, improving access to essential care, and expanding health infrastructure. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our investments in primary healthcare, the rollout of the Community Health Strategy, and the strengthening of Primary Care Networks are tangible milestones that have brought healthcare closer to where families live,\" she added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year's symposium brought together healthcare professionals, policymakers, researchers, educators, patient advocates, and community leaders in a collaborative effort to strengthen safety and quality in maternal, newborn, and pediatric care."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Abdihamid Ibrahim Ahmed, Regional Health Specialists Coordinator, United Nations Children's Fund (UNICEF) Eastern & Southern Africa Regional Office said; \"Every child deserves safe and quality care from their very first breath. Unsafe practices not only endanger lives but also undermine trust in our healthcare systems. This symposium is a call to action for policymakers, healthcare professionals, and families alike to make patient safety a shared responsibility.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Through panel discussions and workshops, participants agreed on key priorities which includes expanding workforce training, through simulation-based learning to prepare healthcare teams to respond swiftly to emergencies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Pauline Samia, Chair, Department of Paediatrics and Child Health, AKU Medical College, East Africa and Aga Khan University Hospital said, \"To keep mothers and children safe, we must go beyond treating illness, we must prevent harm before it happens. That means training our healthcare teams to respond swiftly in emergencies, strengthening systems that detect risks early, and empowering families to be active partners in care.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Healthcare experts also agreed to strengthen early detection systems for high-risk conditions in newborns and children, closing policy and resource gaps that leave maternal and child health units vulnerable to preventable harm and scaling up low-cost innovations and integrated care models and engaging families as partners in care, empowering them with knowledge and tools to demand safe, respectful services."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof John Weru, Interim Associate Dean, Clinical Services, AKU Medical College East Africa and Chief Medical Officer, Aga Khan University Hospital said; \"We cannot afford to accept preventable harm as part of the cost of care. Together, we must build a culture of safety where every mother and every child receive care that is not only effective, but safe and dignified.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Symposium also showcased innovative solutions-from low-cost technologies to integrated care models-that are making a measurable difference in outcomes for mothers and children."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003652",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "179778ec-22ad-4f97-b0c1-6a0f9532e62d",
+      "WssId": 2163
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "acd128c1-9caa-4c8a-81f7-94ec65874343",
+      "WssId": 2103
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Policy advocacy",
+      "TermGuid": "310d84ee-b22e-4032-bc0b-4f0ea6cb9082",
+      "WssId": 2242
+    }
+  ],
+  "ScheduleStartDate": "2025-09-11T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Prof Lukoye Atwoli, Dean, AKU Medical College, East Africa and Ms Mary Muthoni Muriuki, Principal Secretary, State Department for Public Health and Professional Standards, Ministry of Health during the launch of World Patient Safety Day Symposium 2025",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3785,
+  "Modified": "2025-09-11T08:16:15Z",
+  "Created": "2025-09-11T07:37:28Z"
+}

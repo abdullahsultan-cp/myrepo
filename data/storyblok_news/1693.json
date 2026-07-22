@@ -1,0 +1,152 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "8b5f7b89-82bd-4894-8be3-1092ab0d62c9",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9e04a203-bea0-4f8d-b6b0-73d03cd875fb",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "efa439a7-6e8d-4d84-b56f-aff0ed4fa908",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4d0cf89d-4ede-47b4-aa6a-9f5f4e1ea6db",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "5f15fbfb-0f23-42a9-b916-f98eb6fa1217",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4bd4685e-c432-4b66-bc8f-81e9c84366a9",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3bfab072-a6cf-4286-9aec-0b583c9ec991",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb373bec-e975-4a85-87dd-eb99ff5eabbf",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1693)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "101443ea-cc48-4c4e-9b17-a39b05cab428",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1693,
+  "Title": "Basic GI Endoscopy Skills Training Workshop",
+  "NewsSubTitle": null,
+  "NewsSummary": "The purpose of this workshop was to provide aspiring gastroenterologists and gastrointestinal surgeons a combination of theory with hands-on practical sessions.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Basic\n GI Endoscopy Skills Training Workshop was organised by CIME in \ncollaboration with Getz Pharma. Endoscopy is a minimally invasive \ndiagnostic medical procedure used to examine a person's GI tract using \nan Endoscope, a flexible tube with a light and camera attached to it. \nGastrointestinal Endoscopy is a complex skill, requiring a period of \nformal training and experience under close supervision. Only a skilled \nprofessional with ample training can provide the high standards of \npatient care, accuracy in diagnosis, and appropriate therapeutic \ninterventions with avoidance of complications."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The purpose of this\n workshop was to provide aspiring gastroenterologists and \ngastrointestinal surgeons a combination of theory with hands-on \npractical sessions. It helped  to develop an understanding of the \nimportant underlying principles of endoscope, an introduction to the \nessential core skills of endoscopy and the opportunity to gain hands-on \nexperience on the technical aspects of how to safely handle an \nendoscope."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "15 health care professionals participated in this \nworkshop. It began with an introductory lecture discussing the \ntheoretical aspects of endoscopy which includes detailed information on \nthe scope structure, design and function and also covered important \naspects of endoscopy such as consent, procedure, indications, \ncontraindications and complications. The participants were evaluated on \nthe basis of quiz (KAHOOT). They then had one-on-one hands-on experience on GI Mentor in the hi-fidelity simulation lab starting with task based exercise and then with case based normal clinical scenarios for the application and integration of knowledge\n and skills and the ability to appreciate the normal GI tract anatomy so\n that they can differentiate it with the pathologies. Later on, they were provided with complicated case base scenarios on the basis of which they were evaluated. Each of the case had its separate set of learning objectives and tasks. At the end of this workshop, the participants were evaluated on the basis of assessment on their skills and pre & post assessment form."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001638",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2018-08-24T07:55:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1693,
+  "Modified": "2018-08-24T09:18:41Z",
+  "Created": "2018-08-24T07:54:20Z"
+}

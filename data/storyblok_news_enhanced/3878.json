@@ -1,0 +1,216 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "91dca323-fd86-4253-ad0e-6eb6108cb2c9",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c897992f-97a4-47cf-9cd5-ada3a85d485e",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f06fede1-eb4f-4998-9f06-313a84dffe7f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c5a40da0-1024-4bf5-a8ce-0133deeaf945",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah",
+    "EMail": "faiza.hakim@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "032c73be-4977-4d6f-bc37-d667f230ee06",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c472bd35-2b61-4f83-8264-87b55a886465",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "74aba626-e312-49b9-8448-80ab497fc107",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah",
+    "EMail": "faiza.hakim@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3878)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "676572af-492e-4cde-b4e9-6e21f287d800",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3878,
+  "Title": "Clean Water Acts as Nutrition: Low-Cost Filter Shows Promise in Reducing Child Malnutrition in Sindh",
+  "NewsSubTitle": null,
+  "NewsSummary": "A Sindh study showed clean water can reduce infection and malnutrition in children",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "KARACHI, December 17, 2025 - Researchers from the Aga Khan University (AKU) have reported promising early results from a simple, low-cost household water filter that is dramatically reducing diarrheal disease and measurably improving nutritional status among children under five in rural Sindh, Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The non-electric, easy-to-use filter, which costs as little as USD 5-8 per year, is being hailed as a critical intervention against Pakistan's high rates of child malnutrition and preventable deaths."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Unlike complex water treatment methods, this filter requires no electricity, no fuel, and no daily chemical dosing, making it perfectly suited for poor rural households. Most remarkably, the study conducted in flood-affected Jhangara, Jamshoro, reported >98% percent adherence, with almost all participating families consistently using the filtered water."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The findings, that were presented at today's dissemination seminar, \"Water as Nutrition: How Clean Water Breaks the Malnutrition Cycle in Sindh,\" showed significant improvements over an eight-month period: 20% reduction in underweight children; 12% reduction in wasting; and 7% reduction in stunting."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is the first time we are seeing a household water intervention where adherence is nearly perfect and that is why it is working,\" said Professor Zafar Fatmi, Head of Environmental-Occupational Health & Climate Change at AKU's Community Health Sciences, and Principal Investigator of the study. \"Safe water here is acting like nutrition. By preventing diarrhea, it allows children to absorb food properly and recover faster.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The early results confirm that by breaking the diarrhea-malnutrition cycle, this simple technology offers a powerful and scalable solution."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Asking families to add chlorine to water every day is simply not realistic in rural areas without piped water,\" explained Dr Hira Tariq, Assistant Professor and Co-Principal Investigator. \"This filter works quietly in the background and communities have fully embraced it.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The seminar concluded with a policy panel, including WaterAid, Pakistan Council for Water Resources and governmental health agencies, to discuss the vast scale-up potential of the technology."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"If scaled up, this low-cost intervention could dramatically reduce diarrhea, malnutrition, and preventable child deaths across rural Pakistan,\" said Professor Asad Ali, Chair, Department of Community Health Sciences, AKU."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003744",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Child health",
+      "TermGuid": "6db413d6-a4df-4471-93de-a395835b20dd",
+      "WssId": 2154
+    },
+    {
+      "Label": "Child development",
+      "TermGuid": "d42854e9-f000-44ba-9024-556447f063f9",
+      "WssId": 2344
+    },
+    {
+      "Label": "Nutrition",
+      "TermGuid": "4bb78720-9b24-443f-8e9a-6532a328cf83",
+      "WssId": 2391
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    }
+  ],
+  "ScheduleStartDate": "2025-12-19T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3878,
+  "Modified": "2025-12-19T08:46:36Z",
+  "Created": "2025-12-19T08:00:01Z"
+}

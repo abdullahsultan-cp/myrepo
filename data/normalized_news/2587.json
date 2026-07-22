@@ -1,0 +1,120 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "8c3a7da9-cc4b-4094-8297-c4ccc52aa58d",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c33701f0-3ad5-4b31-bb45-033a2587528b",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5b565659-1452-48b1-b9ac-7968763af955",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "04e5729b-812f-4bac-8411-028a82728c11",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "384a4505-f362-400c-8907-dc265146ee52",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "aabb5f5e-75e3-4216-a067-60c567a90b85",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fd2cc033-8eda-40aa-8ad8-17e3299a9128",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2587)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "16b44336-e6a7-4bad-ae0a-f3b8e1a10ed2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2587,
+  "Title": "AKU faculty and alumni receive civil awards ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Mahmood, Dr Uyghur and Dr Khan received the Tamgha-e-Imtiaz on Pakistan Day.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The President of Pakistan Dr Arif Alvi has conferred three civil awards on AKU faculty and alumni for their contributions during the COVID-19 pandemic in Sindh and Balochistan.<br/></p><p>Dr Faisal Mahmood, an associate professor at AKU, and two graduates of AKU's postgraduate medical education programme, Dr Muhammad Farooq Uyghur, and Dr Shereen Khan received the Tamgha-e-Imtiaz, Medal of Distinction, during ceremonies in Karachi and Quetta. </p><p>Dr Mahmood, who treated Pakistan's first coronavirus patient in February 2020, has been at the forefront of public advocacy and public awareness efforts during the pandemic. He continues to be involved in provincial and national programs on the COVID-19 response providing technical advice on patient care and management, risk mitigation and policy matters.</p><p>Dr Shereen Khan, head of the pulmonology department at Fatima Jinnah General and Chest Hospital, Quetta, and Dr Muhammad Farooq Uyghur, a pulmonologist at the same hospital, played a key role in setting up intensive care facilities across the province during the pandemic. Like Dr Mahmood, they also served as frontline healthcare workers to COVID-19 patients.  </p><p>All three award winners completed their education at AKU. Dr Mahmood is an alumnus of the Medical College's MBBS class of 1997 while both Dr Uyghur and Dr Khan completed their residencies in pulmonology at the AKU.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002487",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Postgraduate medical education",
+      "TermGuid": "955304c1-87bb-4a9b-a2ab-a43548103081",
+      "WssId": 1893
+    }
+  ],
+  "ScheduleStartDate": "2021-03-24T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "LR: Dr Faisal Mahmood, Dr Muhammad Farooq Uyghur and Dr Shereen Khan",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2587,
+  "Modified": "2021-03-24T11:28:32Z",
+  "Created": "2021-03-24T11:26:41Z"
+}

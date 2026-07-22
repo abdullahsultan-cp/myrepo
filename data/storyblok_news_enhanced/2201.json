@@ -1,0 +1,223 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "90dabc1d-3dad-410e-a8e1-6e6d17faadb3",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7d313a3e-22ac-499a-80fa-8e1e3f99c419",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "52cd597b-e62b-4c22-8cee-bfee5218ed4e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dc82b56b-0561-4748-9f5e-f0c04abc55e3",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1c0afe98-21c6-41db-a762-7cdfe1a90815",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7ae54dde-297b-4464-b050-a544874c7148",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "5c88055c-ad13-4846-a54d-2196be40a50d",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93059b24-355d-475e-b6d8-103a1e52b783",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi",
+    "EMail": "sarah.qureshi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2201)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6a68f937-ee17-4d66-ab0f-98b67314302a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2201,
+  "Title": "COVID-19: preparing a vital test ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Find out how the University's laboratory took prompt action to develop a coronavirus test.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Zahra Hasan, a molecular pathologist at Aga Khan University, remembers feeling a distinct sense of unease when she first heard of a new virus emerging from Pakistan's neighbor, China, in January 2020. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Frequent travel between the two countries meant that there was a high likelihood of the novel coronavirus, SARS-CoV-2, crossing borders. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As they did during outbreaks of Middle East Respiratory Syndrome, MERS, and the Ebola virus, Prof Hasan and her colleagues in AKU's department of pathology and laboratory medicine quickly began working to develop a test. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"There is a lot of fear around the coronavirus, but until you have a clear diagnostic test you don't know what you're dealing with,\" said Prof Hasan. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Hasan's team consulted protocols from the World Health Organization and guidelines from the College of American Pathologists, obtained a control, a synthetic virus replica from the European Virus Archive with the help of Public Health England, and ordered essential chemicals needed for testing, known as reagents, from the US. This enabled AKU to develop a diagnostic test for COVID-19, making it the first private laboratory in Pakistan to do so. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When the government contacted us to assist with testing for COVID 19, we already had a diagnostic test in place,\" said Prof Hasan. \"This enabled us to play our role in the public health response to the virus as the first government-designated referral centre in the province of Sindh.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "When February saw worried Chinese employees return to Karachi after the Chinese New Year, AKU's teaching hospital was able to offer them the test. If the team at AKU had chosen to order commercial novel coronavirus testing kits - instead of taking the initiative to develop their own test - these travelers would not have had a way to get a clear answer on whether they were infected."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's laboratory continues to conduct the majority of tests for the province and is reporting summary statistics to the government on a daily basis. This data is compiled into the country's national dashboard which informs the country's public health response to the outbreak. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Hasan notes AKU's success reflects a team effort involving faculty and technical, management and administrative staff, including the University's purchasing and IT teams.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When we alerted our colleagues at AKU to the danger of the virus, the institution recognised the pressing need for a test and acted in a very responsive way,\" Prof Hasan concluded."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002115",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Laboratory",
+      "TermGuid": "d2e23aa8-5026-43de-8d0d-9daf3ad4ef70",
+      "WssId": 1869
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2020-03-26T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Professor Zahra Hasan (far right) alongside faculty and laboratory staff.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2201,
+  "Modified": "2020-03-27T11:46:03Z",
+  "Created": "2020-03-26T09:08:35Z"
+}

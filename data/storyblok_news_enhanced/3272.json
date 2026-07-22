@@ -1,0 +1,207 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5a19b77b-69c7-4e83-bb4f-77306d7af048",
+  "odata.etag": "\"31\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e77c1e31-c934-48ad-b745-9035f9abaa41",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "729ed215-2f27-415b-b7f3-b7efbd3f1bb3",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e5cc31ee-baec-4180-9d37-1895b07529c5",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8f71dc9b-9761-4d74-bacf-97891ab2153c",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "84f85f80-a543-483b-b62c-421581a0699c",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4cbd2155-883b-4eef-bc1f-b610b251f6e2",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3272)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1f8c9a1f-dd60-49ba-a2f6-e58ee627342c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3272,
+  "Title": "Global Experts Tackle AI Challenges at AKU Conference",
+  "NewsSubTitle": null,
+  "NewsSummary": "The conference event explores the interplay of technology, pedagogy and society ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University's Institute for Educational Development (AKU-IED) hosted its 12th annual conference titled \"Technology, Pedagogy, And Society: Critical Appreciation of The Present and Prospects for The Future.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Addressing the critical need for spaces where dialogue on technology's role in education can flourish, the conference brings together advocates and critics to explore revisiting traditional educational challenges, evaluating technology-supported instruction, addressing ethical concerns tied to emerging technologies, and assessing implications for workforce development and education's preparatory role for the future."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ms Rana Hussain, Chief Guest and Caretaker Minister for School Education, College Education, and Women Empowerment in Sindh, emphasized the importance of debates regarding how technology affects society and the type of society we are developing."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU-IED Dean, Dr Farid Panjwani, highlighted that \"while technology has the capacity to reshape education and society, history reminds us that potential alone does not guarantee positive outcomes. Together, let us navigate the nexus of education, technology, and society, ensuring that technology 'serves progress' rather than 'masters inequality'.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Keynote speaker Sean Michael Morris, Vice President, Academics, Course Hero, and Co-Founder, Digital Pedagogy Lab, USA, shed light on the evolution of \"Critical Digital Pedagogy\" as a beacon of hope amidst generative AI, shifts in social media dynamics, and ideological distances among educators. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Three interlinked strands formed the backbone of discussions and presentations: educational technologies for formal learning contexts, educational technologies for informal and non-formal learning contexts, and the intricate interplay of technology, pedagogy, and society."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"In the age of AI dominance, formal reasoning emerges as a crucial skill, offering a powerful antidote to the challenges posed by AI-assisted tools. The need for adeptness in constructing intricate arguments and addressing the influences of large language models becomes paramount,\" emphasised keynote speaker Dr Shah Jamal Alam, Associate Professor, Dhanani School of Science & Engineering, Habib University, Karachi, Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Asad ul Islam, Director, Centre for Development Economics and Sustainability (CDES) and Professor of Economics, Monash University, Australia, noted, \"Given the aftermath of the COVID-19 pandemic, which disrupted education globally, we find ourselves at a critical juncture. The repercussions, particularly on students in developing countries, are profound, with the United Nations estimating a setback of two decades in educational progress,\" highlighting the effectiveness of low-cost, out-of-school, and home-based educational support services in mitigating the impact of disrupted learning."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The first day of the conference will set a foundation for the overarching mission to critically appreciate the present and contemplate the prospects for the future. On the second day, participants will be involved in workshops and panel discussions. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The two-day event coincides with AKU-IED's 30th anniversary and its commitment to academic excellence, reflecting on the profound interaction between technology, pedagogy, and society."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003151",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "becfd464-5ba0-42eb-9a3f-da29906827dc",
+      "WssId": 2167
+    },
+    {
+      "Label": "Teaching",
+      "TermGuid": "3b9efa59-5e54-4510-b85d-69caf29a2c2f",
+      "WssId": 2155
+    }
+  ],
+  "ScheduleStartDate": "2023-11-30T17:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3272,
+  "Modified": "2023-12-14T11:20:30Z",
+  "Created": "2023-11-30T16:47:48Z"
+}

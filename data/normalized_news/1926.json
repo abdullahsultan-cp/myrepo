@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "60134e4e-146c-48a3-ad28-f2c1eec8c2fa",
+  "odata.etag": "\"19\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "463794b0-dd8a-4abd-ab82-2a5411003473",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "47a3e865-6262-4d68-a2bd-25d63287017a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "541fd762-6b51-42c4-868e-7fceaa5f4ad0",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "fbcc9a9f-defe-415c-86ac-4fc1b82431e3",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4418a7d9-833b-499a-a7ff-7148a405a1c6",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1f4a6727-055d-40aa-be95-d477f405fb8a",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1926)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5dcde2e9-7951-42b6-bd9b-64085a144b89",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1926,
+  "Title": "Bright students win top prize at national medical quiz",
+  "NewsSubTitle": null,
+  "NewsSummary": "Students from the medical college's class of 2020 edged out 16 teams from across Pakistan",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>After two days filled with adrenaline, anxiety and stiff competition; the Aga Khan University team celebrated winning the first-ever All Pakistan Medical Quiz Competition.</p><p>Kamlesh Mahesh and Daniyal Amir from the Medical College's class of 2020 edged out students from 16 teams from medical colleges and universities across Pakistan at the two-day event at the Jinnah Sindh Medical University (JSMU), which was organised by their student council.</p><p>\"To say that it was a roller coaster of emotions would be an understatement,\" said Daniyal Amir, who was awarded a shield and certificate for AKU alongside Kamlesh.</p><p>The tournament saw students quizzed on a variety of topics ranging from physiology, anatomy, medicine and surgery. </p><p>\"Not only was it a battle of wits, it was a battle of nerves,\" Kamlesh recalled as he shared how the AKU team recovered from an early setback to take home the top prize.</p><p>The AKU team was behind the JSMU team in the first round by 15 points, but rallied to take a commanding lead of 45 points as the competition progressed. The final round saw contestants from AKU, JSMU, Dow University of Health Sciences and Liaquat University of Medical &amp; Health Sciences compete for honours. </p><p>The panel of judges consisted of physicians such as Dr Saqib Ansari, haematologist at the National Institute of Blood Diseases, Dr Ahmer Al Ibran of the Civil Hospital Burns Centre and Dr Fowzia Siddiqui, a consultant neurologist and epileptologist at Aga Khan University Hospital. </p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001856",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "students",
+      "TermGuid": "7ae63653-ff72-4bfa-86af-c6ce13f7a2b3",
+      "WssId": 1474
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "40de1670-6a6c-436e-b24a-5a3ba9be0b5b",
+      "WssId": 1369
+    }
+  ],
+  "ScheduleStartDate": "2019-06-25T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Image courtesy of Jinnah Sindh Medical University Studios",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1926,
+  "Modified": "2019-07-23T04:03:03Z",
+  "Created": "2019-06-25T05:38:14Z"
+}

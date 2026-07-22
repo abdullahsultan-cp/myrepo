@@ -1,0 +1,152 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1be27b79-a6cf-48b1-a318-3d616303a95a",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2ff759ce-0b19-40c7-99a5-4fd0c3cce619",
+    "Id": 14331,
+    "Title": "Gloria Chemutai"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "21973ba7-dd41-4386-b0aa-edad81df16e6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "22dbc16a-c89f-4e26-a155-bd1b21656314",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c7427d4e-c437-4afe-825c-6a0e60fdb193",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "266c87c9-63e0-463a-b42d-27ad4a3986bf",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "59a16999-f92c-4178-aade-a6a59a6cc4dc",
+      "Id": 31,
+      "Title": "Brain and Mind Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bcb63806-3e35-46b9-9d0d-1a450411bcae",
+    "Id": 13235,
+    "Title": "michael.karinga",
+    "EMail": "michael.karinga@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3416)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "42fb6e55-64b2-4983-8032-01e953bd2a19",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3416,
+  "Title": "\u200bDriving brain & mental health research forward",
+  "NewsSubTitle": null,
+  "NewsSummary": "Insights from Dr Jasmit Shah on data science and research",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass547A4A6459DC4BD185A70FC2E0314C89\"><p>\u200bIn the ever-evolving field of brain and mental health research, data science plays a pivotal role in advancing our understanding and treatment of mental and neurological disorders. Dr. Jasmit Shah, a Biostatistician and Data Scientist at BMI, shares his insights on the importance of data science in biomedical research. Dr. Shah's journey from Eldoret, Kenya, to earning a Ph.D. in Biostatistics and Bioinformatics from the University of Louisville, Kentucky, has equipped him with the expertise to lead BMI\u2019s Data Science core. In this Q&amp;A, Dr. Shah discusses his role, the challenges of data collection, and the promising future of data science in brain and mental health research.<br></p><h2>Q&#58; Can you tell us about yourself and your role as a data scientist at BMI?</h2><p>A&#58; My professional journey has spanned various roles across healthcare and research sectors, applying my expertise in data science, biostatistics, and bioinformatics. At Aga Khan University in Nairobi, I am a Data Scientist and Biostatistician, responsible for integrating data science techniques into research activities, collaborating with different departments, and providing expertise in research methodology and data analysis. Currently, at the Brain and Mind Institute (BMI), I lead the Data Science pillar, supporting research projects by designing studies, determining sample sizes, selecting statistical methods, and conducting analyses. I also focus on data visualization and communication.</p><h2>Q&#58; How does your work at BMI connect with other studies in the institute?</h2><p>A&#58; High-quality biomedical research aims to answer clinically and experimentally relevant questions, and effective study design is crucial for drawing valid conclusions. Unfortunately, many studies are rejected due to poor biostatistical design. At BMI, I collaborate with researchers from various disciplines to collect and analyze data from diverse studies, experiments, and projects. This multidisciplinary approach allows us to gain deeper insights and enhance the validity of our research.</p><h2>Q&#58; Why is data collection and analysis important for researchers?</h2><p>A&#58; Data is the cornerstone of any research project. It enables informed decisions, helps identify problems, and develops accurate theories. Additionally, data supports arguments and reveals what aspects of the work are successful.</p><h2>Q&#58; In your experience, what difficulties have you faced when collecting and managing data for research?</h2><p>A&#58; Data collection presents several challenges. Participant recruitment can be difficult, raising concerns about data validity. Training individuals to collect data and ensuring rigorous quality assurance is essential for accuracy. Data quality issues, such as errors, inconsistencies, or missing values, can affect analysis validity. Adhering to ethical guidelines and data protection regulations, especially concerning sensitive information, is critical. Establishing clear data governance policies is vital for maintaining data integrity, accessibility, and compliance throughout its lifecycle.</p><h2>Q&#58; How do you stay updated with the latest research and techniques in data science, particularly as they relate to brain health research?</h2><p>A&#58; I engage in continuous learning by attending workshops, webinars, and conferences related to data science, neuroscience, and brain health research. Collaborating on publications helps me stay abreast of recent studies and emerging trends. Additionally, building and maintaining professional networks with other researchers in data science and brain health research is essential for staying informed.</p><h2>Q&#58; Looking ahead, what do you think the future holds for data science in brain health research?</h2><p>A&#58; The future of data science in brain health research is promising, driven by technological advancements, interdisciplinary collaboration, and the increasing recognition of data-driven approaches. Key trends include integrating diverse datasets from neuroimaging, genomics, electronic health records, wearable devices, and behavioral assessments. Machine learning and predictive modeling will enable personalized approaches to diagnosing and treating neurological disorders. Analyzing individual-level data, including genetic, environmental, and clinical factors, will lead to more effective and targeted treatments. Additionally, AI, particularly deep learning, will revolutionize neuroimaging analysis by automatically extracting features from brain images, identifying patterns associated with specific conditions, and predicting disease progression. This rapid evolution in AI remains understudied in low- and middle-income countries, including sub-Saharan Africa, highlighting an area of significant potential growth.</p><p><br></p><p><em>Dr. Jasmit Shah's expertise and insights underscore the critical role of data science in advancing brain health research. His work at BMI not only supports groundbreaking studies but also paves the way for future innovations in the field.</em><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003292",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "604ab977-6d10-4ef9-a237-4fb0b4a0b366",
+      "WssId": 2221
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "179778ec-22ad-4f97-b0c1-6a0f9532e62d",
+      "WssId": 2163
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "acd128c1-9caa-4c8a-81f7-94ec65874343",
+      "WssId": 2103
+    },
+    {
+      "Label": "Development",
+      "TermGuid": "c2e5f9bf-53d9-40fe-93f0-3ef8099e072c",
+      "WssId": 2168
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "eHealth",
+      "TermGuid": "1d914d4f-0618-4171-a9c9-9a79f35f455b",
+      "WssId": 2500
+    },
+    {
+      "Label": "Economic impact",
+      "TermGuid": "08626d3d-285d-41d0-9399-efbb043bb284",
+      "WssId": 2358
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2024-06-14T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3416,
+  "Modified": "2024-07-31T06:21:04Z",
+  "Created": "2024-06-14T09:07:50Z"
+}

@@ -1,0 +1,310 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "ca6eef11-c8c3-4e2c-b8f4-a57db5a9409a",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0ec0202a-0683-440f-8d17-f3c45eecf71a",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "adbc1689-b15c-42a0-a888-0afc98bc8eac",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6771f998-c339-4461-b820-5be565d58619",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1f77748f-68f6-4344-aa14-83d7ff8e742d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ac2aa020-2584-4752-9649-f8af4c728bff",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8cb4a40c-63a9-473e-9814-3a201c251661",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2208)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6128234d-48c0-4fa4-a1de-d833400dcbdf",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2208,
+  "Title": "Meet the doctor who treated Pakistan's first COVID19 patient",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Faisal Mahmood is well-known for his public advocacy work on infectious diseases.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Once the threat of the coronavirus epidemic going global was raised Dr Faisal Mahmood, an associate professor of infectious diseases at the Aga Khan University, was anticipating a healthcare emergency in Pakistan."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He and his colleagues rapidly assessed preparedness preparations and started coordinating with the provincial and federal governments."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistan's first COVID-19 patient was identified on February 26 - a 22-year-old man who had returned from Iran just a few days ago. Feeling unwell, he came to AKU to be tested."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Once he tested positive, we admitted him immediately,\" Dr Mahmood said. \"Although he had COVID symptoms, he seemed healthy and calm. Since we were all prepared to deal with patients, it was an easy decision for the team: isolate him and go for supportive treatment.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Sindh government was equally prompt. They immediately quarantined and tested the patient's family but their results were all negative."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The man soon recovered. \"It was a memorable day for the patient, his family and the healthcare team when he was discharged from the hospital,\" Dr Mahmood said with a smile on his face. \"He is now doing well, "
+          },
+          {
+            "type": "text",
+            "text": "talking to the media",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://tribune.com.pk/story/2183876/1-tales-survival-became-pakistans-first-covid-19-patient/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and spreading the message that being COVID positive is not a death sentence - you can get well.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The relieved father has written "
+          },
+          {
+            "type": "text",
+            "text": "a letter of appreciation",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://twitter.com/murtazawahab1/status/1243968935147515906",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " to Syed Murad Ali Shah, the chief minister of Sindh, praising the provincial government for its timely response and the Aga Khan University Hospital for the excellent care. He especially lauded Dr Mahmood and his team \"for showing utmost care and professionalism in the line of their duty\"."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Currently, over 1,700 confirmed COVID-19 patients have been reported in Pakistan, 58 of whom have recovered and 25 have died."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is not a fight that we can win through health workers or government measures. This is a fight that every individual has to fight for themselves: reduce the risk of getting infected to reduce the chance of others getting infected from you to win the war against the virus going viral,\" Dr Mahmood said."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mahmood is well-known for his public advocacy work on infectious diseases. An AKU alumnus of the Class of 1997, he is a Diplomate, American Board of Internal Medicine (Infectious Diseases)."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Learn about AKU's response to COVID-19: ",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "www.aku.edu/covid-19",
+            "marks": [
+              {
+                "type": "bold"
+              },
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.aku.edu/covid-19",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "<blockquote class=\"twitter-tweet\"><p lang=\"ur\" dir=\"rtl\">کرونا وائرس سے کیسے بچنا ہے آغا خان اسپتال کے ڈاکٹر فیصل کی گفتگو سنئیے اور عمل کیجئے۔ <br>ویڈیو کو شئیر کیجئے تاکہ زیادہ سے زیادہ لوگ عمل کریں <a href=\"https://twitter.com/hashtag/Coronaviruspakistan?src=hash&amp;ref_src=twsrc%5Etfw\">#Coronaviruspakistan</a> <a href=\"https://t.co/4qlqGYuPNB\">pic.twitter.com/4qlqGYuPNB</a></p>&mdash; Mudasser Iqbal (@IqbalMudasser) <a href=\"https://twitter.com/IqbalMudasser/status/1232978070157643776?ref_src=twsrc%5Etfw\">February 27, 2020</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002121",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Infectious diseases",
+      "TermGuid": "0bc46d58-587f-4d9a-9c94-f6b3cb8110c0",
+      "WssId": 1951
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2020-03-31T16:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Faisal Mahmood is well-known for his public advocacy work on infectious diseases. Photo: AKU",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2208,
+  "Modified": "2020-04-01T04:00:14Z",
+  "Created": "2020-03-31T16:28:46Z"
+}

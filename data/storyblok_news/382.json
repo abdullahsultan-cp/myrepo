@@ -1,0 +1,142 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4fcd7f63-9f96-4afe-89f2-5ee7520e6347",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0d956da-54a9-47cb-89dd-2d66aa08f957",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "351adfe9-d03e-4b8b-a650-51302150c309",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4e6e186c-58dd-433c-88ed-490b3f1010e0",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "baaa0d6c-b7af-4213-9693-9b1bc0ede0b1",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "49ae646d-5503-4ec8-b40c-5acc655e6e3a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "82b67212-c0ff-41de-a25a-07809e2a23c2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2c5eff3d-f014-4a66-b69e-b3159f0cfe08",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(382)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "99989624-af8f-4bdb-9150-6ef72c6a3565",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 382,
+  "Title": "For a healthier campus",
+  "NewsSubTitle": null,
+  "NewsSummary": "Beginning September 1, the Nutrition and Food Services Department launched its cashless service for all AKU employees forgoing the old cash based system. Employees registered for the new facility will be charged economy meal rates and the deduction w",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Beginning September 1, the Nutrition and Food Services Department launched its cashless service for all AKU employees forgoing the old cash based system. Employees registered for the new facility will be charged economy meal rates and the deduction will be made from the month's salary."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For NFSD the positive effects of the new service have been felt right away. According to Rahim Yaqub, Senior Manager, NFSD, \"among other things one of the key factors for starting this project was that it would help in stopping leakage of cash at cashiering points. Another benefit of going cashless is that every day we know the exact volume of covers and this helps us in preparing for precise numbers rather than estimates.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Besides the logistic benefits to NFSD, there is a distinct health advantage to be gained from the new service and that is reduction of infections as less cash is handled. \"Now with card system we have eliminated that risk so I would say we are better off.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000342",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Nutrition",
+      "TermGuid": "90e590b4-0f02-4564-959a-ad1e0010a709",
+      "WssId": 1389
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2013-10-01T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 382,
+  "Modified": "2017-02-22T07:31:47Z",
+  "Created": "2016-12-02T04:50:38Z"
+}

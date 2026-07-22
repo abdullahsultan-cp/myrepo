@@ -1,0 +1,215 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "422be258-fe1f-4a2c-83f2-72766597c61f",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6c89d568-a166-4c71-bdfe-9aa8ad54878e",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b00dece-ded4-4809-8897-a6b40d39d408",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e667d2f0-f3e4-4eb4-a8e4-a3d4d398da1a",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9ad5f9fc-a2ce-4afc-a386-b333cd77694a",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "69eaf243-dd47-4954-a7e5-eb2ccf68f2ba",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "2e58c52a-7d65-4e66-b34f-af6f65fbc3d4",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "d0018a30-53f3-4fb7-9723-ea5c8d369ea1",
+      "Id": 16,
+      "Title": "Office of the President"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "ae3cdf14-b72a-4e90-9ac1-a16886f4586e",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "da3301d2-d0ab-43ba-8787-08026d6129a8",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1892)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "165a1a35-1676-42b9-8e5c-329fa718a74f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1892,
+  "Title": "Building of 600-bed hospital in Kampala set to begin in July ",
+  "NewsSubTitle": null,
+  "NewsSummary": "The new facility will contribute to Uganda's healthcare and higher education agenda.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Construction of the planned Aga Khan University Hospital in Kampala, Uganda, is set to begin in July. The announcement follows a consultative meeting between Uganda's President His Excellency President Yoweri Museveni, Aga Khan University President Firoz Rasul and Diplomatic Representative of the Aga Khan Development Network Amin Mawji. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new world-class teaching hospital includes state-of-the-art medical education and housing facilities and is part of AKU's commitment to expand access to high-quality healthcare and education to the people of Uganda. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking after the meeting, Mr Rasul said: \"This is a very important initiative for us as it is for the Government of Uganda. Extensive work has gone into researching the disease burden and healthcare needs of the people of Uganda, the urban planning considerations for this thriving city of Kampala and the dire need for the development of healthcare professionals. This deep analysis has helped us to shape our design and plans and we are now ready to move to the next phase, construction.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The landmark hospital is designed to be a 600-bed facility, beginning with 100 beds in the first phase. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As an international standard tertiary hospital, the University Hospital will provide advanced forms of treatment and care. It will ensure that Ugandans have access to world-class medical and nursing services when they need it and where they need it, reducing the need for people having to travel abroad to seek treatment. This will be of enormous economic and social benefit to patients and to Uganda. In addition to treating Ugandans, the hospital is expected to attract patients from across the region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This modern hospital, which has been designed by award-winning international architects, will provide health professionals with the highly functional spaces and state-of-the-art equipment they need to deliver optimal care,\" Mr Rasul said. \"This project represents the shared vision and aspirations of His Excellency President Museveni and His Highness the Aga Khan for a world-class teaching hospital to serve the people of Uganda and the region.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University's teaching hospital will strive to educate doctors, nurses, midwives and allied health professionals who have the competence and the confidence to provide excellent care and to lead and transform healthcare institutions and systems to make them work more effectively. Access to the University Hospital for patients who cannot afford it will be provided through AKU's Patient Welfare Programme, PWP. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Hospital will seek to become the first in Uganda accredited by the U.S-based Joint Commission International. It will be located at the junction of Jinja Road and New Port Bell Road in the heart of Kampala, a central location offering easy access for patients and employees."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001824",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Uganda",
+      "TermGuid": "4374c201-665a-47ec-90ab-11bef2a2b13a",
+      "WssId": 1593
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Postgraduate medical education",
+      "TermGuid": "f1173917-0e48-4c15-b663-2496fce8f80c",
+      "WssId": 1400
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    }
+  ],
+  "ScheduleStartDate": "2019-05-14T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The new world-class teaching hospital includes state-of-the-art medical education and housing facilities and is part of AKU's commitment to expand access to high-quality healthcare and education to the people of Uganda. ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1892,
+  "Modified": "2019-05-14T08:48:23Z",
+  "Created": "2019-05-14T08:39:26Z"
+}

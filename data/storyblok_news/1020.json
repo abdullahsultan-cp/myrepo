@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "aa771739-1014-4114-9148-9ea03a23c384",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "770ee18d-7df9-488b-8673-0ddb73e06437",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6ff941ee-c4ff-410c-9487-c7c9ac8eda32",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc997431-7da7-4aaa-9f08-e26e23b49320",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "942bc2d9-0846-4323-8421-f00710f1c011",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "43c99f0b-0bf9-4c77-aab5-25a5118bded9",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7f0cf654-f0df-489d-b2ee-403835be945d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "11566f27-7e6b-40bb-a8bb-fb04dcd85600",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1020)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b8dd5335-e13b-4119-85f7-56f28a4bf453",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1020,
+  "Title": "AKU conference on advances in neurology",
+  "NewsSubTitle": null,
+  "NewsSummary": "The medical specialty of neurology is advancing at a rapid pace and several major innovations in diagnosis and treatment have recently emerged for the improved care of neurological patients.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The medical specialty of neurology is advancing at a rapid pace and several major innovations in diagnosis and treatment have recently emerged for the improved care of neurological patients. This will be the theme of a seminar on \"Advances in Neurology,\" being held at Aga Khan University (AKU) on December 23 and 24, 2002. The two-day event will bring together Pakistani neurologists established in North America with their local counterparts, to discuss clinical progress in this swiftly changing branch of medicine."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Neurology used to be seen as an uninteresting field in which one could do little for patients, but in recent years the specialty has transformed itself,\" observes Professor Wasim Jafri, Chairman, Department of Medicine at AKU. Dr. Shahid Baig, AKU's Chief of Neurology, says that such a conference with North American colleagues provides an ideal forum for neurology specialists to keep abreast of their field while also developing collaborative linkages for research and training purposes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The meeting is being organised by Dr. Saad Shafqat, Assistant Professor of Neurology at AKU. The Organising Committee also includes Professor Ashfaq Shuaib (University of Alberta, Canada), Professor Rashid Jooma (JPMC), Dr. Sarwar Siddiqui (Civil Hospital), Dr. Shaukat Ali (JPMC) as well as Dr. Shahid Baig."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Topics to be covered during the conference include stroke, Parkinson's disease, muscular diseases and a lethal form of brain hemorrhage called subarachnoid hemorrhage. One of the sessions will focus on innovations in Magnetic Resonance Imaging (MRI) of the brain, a diagnostic technology that is at the heart of modern neurology practice."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Approximately half of the speakers have been invited from North America: Dr. Zeba Vanek from University of California Los Angeles; Dr. Kazim Sheikh from Johns Hopkins University; Dr. Tahseen Mozaffar from University of California Irvine; Dr. Naveed Yousuf from Central Illinois Foundation and Professor Shuaib from Canada. The remaining talks will be delivered by distinguished Pakistani experts including Dr. Saad Bashir, Dr. Zafar Sajjad and Dr. Mohammad Wasay. The concluding talk, \"Reflections on Neurology in Pakistan,\" will be delivered by Professor Akhter Ahmed, founding chairman of the Neurology Department, Civil Hospital."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000978",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Neurological disorder",
+      "TermGuid": "7c1aa1d0-3649-4302-95d2-ee25a1a5f6af",
+      "WssId": 1912
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "3e73e453-7d46-4c2e-a34e-d0d1b4c1644b",
+      "WssId": 1819
+    }
+  ],
+  "ScheduleStartDate": "2002-12-19T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1020,
+  "Modified": "2020-03-12T04:15:02Z",
+  "Created": "2016-12-28T04:59:51Z"
+}

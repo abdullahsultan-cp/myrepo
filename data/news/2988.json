@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "691c4753-cf6b-450f-aad3-b7c2ab53f440",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2dc5983f-dfc9-4998-8d32-f901ea7ef5a3",
+    "Id": 292,
+    "Title": "soraiya.shah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0d3d7f33-2ffd-4691-80f4-96870d8032bc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "48c17067-a15c-43e7-9d73-deb65713170c",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "aa79c983-9b27-49d6-8671-e11449249300",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6f303606-8bc7-4191-b249-8f7e36f592be",
+    "Id": 15,
+    "Title": "Graduate School of Media and Communications"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "afe60e45-0a07-49d1-8fe9-950ab0f9e337",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2988)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c5f5cb34-6584-4dc9-b00b-427e4aa58d83",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2988,
+  "Title": "EMMLI participant named among 100 most influential women",
+  "NewsSubTitle": null,
+  "NewsSummary": "Jamila Mohamed was ranked among the top 100 most influential women in Africa by Avance Media.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass97845986E7814A5183DE1E4E74B9366C\"><p>\u200bJamila Mohamed, a participant of our Executive Masters in Media Leadership and Innovation Programme (EMMLI) was ranked among the top 100 most influential women in Africa by Avance Media. The 2022 list features 100 women from 36 African countries and 8 categories. The rankings selected women who have started their own businesses, climbed the corporate ladder or have been at the forefront of decision-making. &#160;Other considerations were their personal accomplishments; excellent leadership and performance; commitment to sharing knowledge and breaking the status quo.\u200b</p><p>The women ranked on the list fall under eight categories, which include&#58; business leadership, climate change, philanthropy, diplomacy, entertainment, governance, media and sports. Ms. Mohamed, who is the Managing Editor at Kenya's Citizen TV, was selected under the media category alongside Egypt's Sarah Abdelbaky and Ghana's Nana Anamoah and Peace Hyde.<br></p><p>EMMLI is a blended (online and face-to-face) programme, designed to strengthen participant's leadership and entrepreneurial skills and to provide them with the tools to successfully navigate the changing African media landscape. For more information, visit <a href=\"http&#58;//www.aku.edu/emmli\">www.aku.edu/emmli</a><br></p><p><a href=\"https&#58;//100women.avancemedia.org/\">Click here</a> to see the ranking.<br></p><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002877",
+  "LocalApproverGroup": "CA GSMC News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Graduate School of Media and Communications",
+      "TermGuid": "c8c2487d-56f1-43dd-8c2b-40968bf57336",
+      "WssId": 2161
+    }
+  ],
+  "ScheduleStartDate": "2022-11-10T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2988,
+  "Modified": "2022-12-15T09:59:25Z",
+  "Created": "2022-11-10T11:56:52Z"
+}

@@ -1,0 +1,286 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "aa396fbc-ee15-4283-a97a-287fce9ca1bc",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0dbdbc94-e9b3-4fc5-b8db-c5d6af224a03",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b9713be6-644b-44d0-a066-550fd4226838",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f61fb5a2-df8b-4609-851e-600bb2df8777",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "22f0aabf-6a53-40c8-8ad3-57ef05236dd8",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e86c4c20-727e-426e-8683-65035c1c0694",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "046fd55b-70eb-4883-9880-7947aaea49b3",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2332)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2864279f-deac-4047-bc5b-aa48eefa0979",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2332,
+  "Title": "AKU pneumonia study published in The New England Journal of Medicine",
+  "NewsSubTitle": null,
+  "NewsSummary": "Pakistan-based trial identifies gaps in treating the infectious disease.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A new study by researchers at Aga Khan University has highlighted the need to improve ways to diagnose and treat pneumonia, a leading cause of death in children under five around the world. The study was "
+          },
+          {
+            "type": "text",
+            "text": "published in The New England Journal of Medicine, NEJM, ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.nejm.org/doi/full/10.1056/NEJMoa1911998",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "the most prestigious and highly cited medical journal in the world."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Pakistan-based study, RETAPP, is the world's largest community-based assessment of the use or withholding of antibiotics in children with mild pneumonia."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pneumonia is a lung disease caused by viral or bacterial infections. It is especially common in low and middle income countries like Pakistan where malnutrition is prevalent and vaccine coverage is low."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There are currently different views on the use of antibiotics for treating the disease. While global guidelines recommend the use of antibiotics, two leading infectious diseases societies in North America - the Pediatric Infectious Diseases Society and the American Society of Tropical Medicine & Hygiene - advise against the use of antibiotics in young children with mild pneumonia."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "RETAPP followed over 4,000 children and found that antibiotics needed to be given to 44 children diagnosed with mild pneumonia, under global guidelines, in order to prevent a single child from deteriorating. This raises the risk of antibiotic resistance among children who are not suffering from pneumonia."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers noted that one of the primary symptoms to diagnose mild pneumonia in children - fast breathing - is not specific to pneumonia and can be seen with other illnesses such as fever and dehydration. This often leads to misdiagnosis or misclassification of the illness leading to antibiotics being used in too many cases."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Resistance to commonly used antibiotics is a growing concern among infectious disease specialists and other physicians,\" says Dr Fyezah Jehan, the study's lead investigator and a specialist in paediatric infectious diseases at AKU. \"Our findings lend weight to global efforts to reduce the unnecessary use of antibiotics by highlighting that we are yet to understand the symptoms of pneumonia.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers also stressed the need to reconsider prevailing thresholds of breaths per minute required to qualify for a pneumonia diagnosis, in order to better identify children who need antibiotics. They added that other factors such as fever and wheezing can also help recognise children at risk of worsening symptoms of pneumonia."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Other health researchers writing in an associated commentary in the NJEM said: \"These important trials conducted by Jehan et al. and Ginsburg et al. have contributed to our current knowledge, yet many gaps remain in our understanding of the appropriate management of pneumonia and deserve greater attention.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study's objectives are aligned with targets under Sustainable Development Goal 3 that call for efforts to reduce preventable deaths in children under the age of 5 from infectious diseases such as pneumonia. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "An international data safety and monitoring board oversaw the study. Rigorous safety procedures were put in place throughout the trial to protect children from harm."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study's co-authors include researchers at Uppsala University and the Bill & Melinda Gates Foundation. Co-authors include Dr Imran Nisar, Ms Salima Kerai, Dr Benazir Balouch, Mr Najeeb Rahman, Mr Nick Brown, Ms Arjumand Rizvi, Mr Yasir Shafiq and Dr Anita Zaidi."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002240",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Pneumonia",
+      "TermGuid": "2f6cbb2d-8ae2-4c14-bb16-7979ae04d9ed",
+      "WssId": 1928
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "23239523-9013-43f8-a959-9b25118a5980",
+      "WssId": 1886
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8dd93db8-03d4-4593-a968-f393ac14206c",
+      "WssId": 1834
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "d1fc813d-2e5d-4202-ab1e-4151d7126b69",
+      "WssId": 1816
+    }
+  ],
+  "ScheduleStartDate": "2020-07-02T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2332,
+  "Modified": "2020-07-02T20:45:58Z",
+  "Created": "2020-07-01T19:19:15Z"
+}

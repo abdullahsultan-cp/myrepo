@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9bdcc5be-a888-4bbc-afe1-c2d9df7fad2d",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f79d989a-cb9d-4417-814f-17d318007182",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "747fbbf5-d50f-40d4-9f95-c8e4cf4b1a88",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8b93efc5-436f-4714-a272-8120f213eb2e",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "2a783dce-5c19-4cfa-9548-25991f022bdc",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "805cc0ee-6e35-4659-af31-98768f1c2b21",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "13e9b1b4-6e1f-405e-9cf0-d88b5ba14303",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5bb14ad5-aa6f-4bd5-a2b7-d4a6945656df",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1727)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "26335754-0fdf-4c57-9f97-da88a70751c3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1727,
+  "Title": "New ISMC Book: The Sorrowful Muslim's Guide",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU-ISMC has published a new book; The Sorrowful Muslim's Guide by Hussein Amin.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>We are delighted to announce the publication of our new book \"The Sorrowful Muslim's Guide\" by Hussein Amin in our \"In Translation: Modern Muslim Thinkers\" series published in association with Edinburgh University Press.</p><p>The book explores the interaction between pre-Islamic tradition and modern supporters of continuity, reform and change in Muslim communities.<br/></p><p>Tarif Khalidi, Professor Emeritus of the American University of Beirut, has commented that \"no history of modern Islamic thought, especially rationalist thought, can disregard this work - that has to do with its purely scholarly importance to the historian of ideas. But its charm, its gentle persuasiveness, its succinct description of what the author identifies as the shortcomings of modern Muslim thought makes this work of major importance to any reader, specialist or general, interested in modern Islam.\"</p><p>For further information, click <a href=\"/ismc/publications/Pages/its.aspx\" target=\"_blank\">here</a>.</p><p>For purchase, click <a href=\"https://edinburghuniversitypress.com/book-the-sorrowful-muslim-039-s-guide.html\" target=\"_blank\">here</a>.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001671",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    }
+  ],
+  "ScheduleStartDate": "2018-10-15T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1727,
+  "Modified": "2018-10-15T11:25:40Z",
+  "Created": "2018-10-15T10:22:55Z"
+}

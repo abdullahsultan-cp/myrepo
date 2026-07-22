@@ -1,0 +1,143 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b91d1570-88a1-4449-8b77-da328b0249ed",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a576257e-4d2a-4482-91d8-c8144b1ce68e",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "687cfa83-1c51-493c-959a-654eb7df62e1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "70eefed7-64f8-4625-a00d-637e62c6c596",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "40672e80-27f1-403f-816a-ee8898fdfc4f",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "832b8e33-e9f7-42e4-832d-869cb9ec7fbf",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "85276276-6efc-4275-ba05-52c8a4bd0c42",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "89f5ce20-ab47-4847-915a-15f22d99e3bf",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(186)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2f060aac-f880-411d-a44a-6768b944cec1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 186,
+  "Title": "Professor Abdou Filali-Ansary honoured by AKU",
+  "NewsSubTitle": "Professor Abdou Filali-Ansary confered title of Professor Emeritus",
+  "NewsSummary": "Professor Abdou Filali-Ansary confered title of Professor Emeritus",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "ISMC is pleased to announce the conferment of the title of Professor Emeritus on Professor Abdou Filali-Ansary. Professor Filali-Ansary is a distinguished philosopher and writer who was instrumental in the establishment of the Institute for the Study of Muslim Civilisations, and who led it throughout its formative years, serving as the Institute's founding Director and more recently, lead in the Institute's project on 'Governance for the Public Good in Muslim Contexts'. This project has focused on understanding how traditions of good governance in the Muslim world can be the basis for governance in the contemporary world. Dr David Taylor, ISMC's Director said; \"We are enormously grateful for the great contribution"
+          },
+          {
+            "type": "text",
+            "text": " Professor Filali-Ansary",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/convocation/Pakistan/Pages/prof-ansari.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " has made to ISMC. Our faculty and staff work hard to ensure that our work today stays true to those founding principles of intellectual exchange and inquiry. We are reminded now, more than ever, of the importance of that mandate.\" To find out more about Professor Filali-Ansary click here to read the full citation, honouring Professor Filali-Ansary's work and contribution to AKU."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000154",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 186,
+  "Modified": "2020-11-30T08:57:16Z",
+  "Created": "2016-05-17T14:35:38Z"
+}

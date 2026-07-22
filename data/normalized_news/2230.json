@@ -1,0 +1,120 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "edb103da-3569-4809-a760-add6907e535d",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2abb2754-c7b8-4a19-9e48-5aa9a2329bc7",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2abb6e9-eeba-4c56-846a-eead1005975b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2530ff18-e9ae-4a64-ab05-8b4ae7d70782",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5c10e487-7dec-4630-99c6-c52ef1cfeb1a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2b34150f-8948-479d-b63d-0eb44499333a",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7bcf6816-53b1-48a2-9be3-2e479200d9b6",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2230)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2a36553d-9c82-4bbf-9ccc-71d0d4b8078f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2230,
+  "Title": "AKU introduces COVID-19 course for its medical students",
+  "NewsSubTitle": null,
+  "NewsSummary": "The six-week course will provide students with the latest updates on the disease.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Aga Khan University's Medical College has introduced a new COVID-19 course for students in all five years of its undergraduate programme in medicine and surgery, MBBS.<br/></p><p>The six-week course will provide students with the latest research and evidence on the structure of the disease, its development and spread, and ways to prevent and manage the coronavirus in hospital and community settings. </p><p>\"The current health crisis is unprecedented, and requires us to adapt our curriculum to provide our graduates with the necessary skill set required to deal with pandemics in general, and COVID-19 in particular,\" said Dr Sadaf Khan, associate dean of undergraduate education at AKU. </p><p>She noted that recent pandemics such as Ebola, SARS, MERS and now COVID-19 represent threats to our way of life and the long-term stability of our health systems. This requires universities to adopt a different approach to the study of pandemics. </p><p>\"This is a public health issue that will be of concern for an indeterminate period of time. It will impact the delivery of medical care at all levels. This module will better prepare our students for the challenges that lie ahead,\" Dr Khan added.</p><p>The course also includes a module on the use of artificial intelligence in pandemics as a tool for surveillance, diagnosis and drug development. Penultimate and final-year students will also study diagnostic methods as well as how to create treatment plans for patients depending on the severity of the disease.</p><p>\"This course gives students the chance to understand COVID-19 from a health systems point of view,\" Medical College Dean Dr Adil Haider said. \"This kind of cutting-edge academic work allows our students to engage in the public health response as learners as they gear up to become tomorrow's frontline healthcare leaders.\" <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002142",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "c4348316-b0a1-4ca5-a133-b70689d66efc",
+      "WssId": 1840
+    },
+    {
+      "Label": "students",
+      "TermGuid": "924138ea-95e8-482e-8e82-ca5ee2097d44",
+      "WssId": 1797
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-04-20T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2230,
+  "Modified": "2020-04-20T12:12:10Z",
+  "Created": "2020-04-20T12:10:05Z"
+}

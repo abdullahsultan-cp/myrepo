@@ -1,0 +1,479 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9463d1ad-abfe-412c-bd05-fe71a30d4559",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "92dd0894-c979-4cc0-b5c8-e55d1c177f0f",
+    "Id": 19,
+    "Title": "Hiba Khan"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e311d50-308e-430a-b17f-2235e79183ea",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "47a12967-723d-46ef-8dce-16f6f0670514",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "28177a57-71a4-4fd8-b22b-5d9b036606ab",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b8adc670-4e18-4bde-89c1-2409cfd4dd63",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "fee3c6e8-8b62-4cdf-b016-0a63f8f9670e",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1e73da15-63e5-44e0-aca6-71fbef8788a1",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1510)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ef1e18eb-4af3-46e4-b7aa-1cfbe657afb2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1510,
+  "Title": "Speech by President Firoz Rasul during the AKU Kenya Convocation 2018",
+  "NewsSubTitle": null,
+  "NewsSummary": "Graduands urged to join the 'Innovation Generation'",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Our Chief Guest, Professor Mwenda Ntarangwi, Secretary & CEO of the Commission for University Education"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Members of Government"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Members of the Diplomatic Corps"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Members of the Board of Trustees of the Aga Khan University"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Deans, Faculty and Staff of the University "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Parents, Partners, Supporters and Distinguished Guests"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "And most importantly, Graduands, "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hamjambo and Karibuni. Welcome to the 2018 Convocation Ceremony of the Aga Khan University in Kenya. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Graduands, congratulations to all of you on completing a truly arduous and rewarding task - earning a degree from AKU. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You succeeded because you are dedicated. Many of you piled your studies on top of the burden of demanding jobs, yet you did not falter beneath the weight. Though for many of you AKU was far from your homes, your jobs and your loved ones, you never wavered in the pursuit of your dreams. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You succeeded because you have the confidence that befits a leader. Some of you are the first in your family to attend university. But rather than being deterred by the unknown, you forged ahead, embracing your role as pioneers. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You succeeded not just for yourselves but for others: your family, your community, your country. And you succeeded because when you encountered obstacles, your professors and classmates were there to help you surmount them. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You have also been fortunate to attend a university that has received vital financial support from so many quarters. First and foremost, from our Founder and Chancellor His Highness the Aga Khan. But also from numerous individual donors, corporations such as Johnson & Johnson, foundations such as the Conrad N. Hilton, Rockefeller, Ford and Aga Khan Foundations, and the development agencies of Canada, France, Germany, the United Kingdom and the United States. The support we receive has helped us to subsidize your education by setting tuition fees far below the University's costs, and to offer generous scholarships. We are very grateful to all our partners. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "And we are grateful to the Government of Kenya for creating an enabling environment that allows the University to thrive.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Graduands, this is a remarkable time for you to be receiving your diploma or degree. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Across the continent, we are witnessing a surge of creative activity. People everywhere are tackling formidable problems in novel ways. The spirit of innovation is infectious. Like a song that pulls us out of our chairs and onto the dance floor, it is prompting more and more individuals to take action."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As graduates of the Aga Khan University, you are poised to join the innovation generation. You possess the knowledge, the skills and the leadership abilities needed to address some of the most important challenges facing Kenya and the East African region. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Those of you who are educators will be called upon to increase enrolments, improve learning outcomes and encourage persistence to graduation. To create schools that welcome all members of the community. To deal effectively with large classes, and to foster the spread of engaging teaching strategies, without compromising quality. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Those of you who are doctors and nurses will be asked to ensure that more women give birth safely and that children grow up healthy. To educate the public to adopt healthier lifestyles and demand higher quality health care. And to address the continuing burden of infectious diseases, while responding to the growing problem of non-communicable diseases such as heart disease, cancer and diabetes. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You will not meet such challenges by applying prefabricated solutions. Instead, you will analyze the local context, assess the knowledge and assets at your disposal, and scrutinize the challenges you face. And then you will craft creative strategies for change. In short, you will succeed by innovating. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "That you will succeed I have no doubt. But just as surely you will encounter obstacles. Hence, I want to share a few pieces of advice that you may find helpful on your journey. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Build a constituency for change. To overcome the inertia within organizations, you need to create a critical mass of support - a constituency for change. Find the people who share your outlook and work with them to increase the ranks of your allies. Remember that it is not the title that makes a leader, but the capacity to inspire and engage others to achieve a goal. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Create a culture of openness. Nothing stifles innovation like fear. And nothing inspires it like an atmosphere in which people are encouraged to speak up and share their perspective. It is the exchange of ideas and experiences that gets our creative juices flowing and sparks new approaches to long-standing dilemmas. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Expand your network. The more extensive and diverse your network of contacts, the more information you will acquire. And very often, superior access to information breeds innovation, by making it possible to perceive overlooked opportunities. Time spent expanding your network is therefore time well spent.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Be a lifelong learner. Today you are graduating. But that hardly means your education is at an end. The extent to which you succeed will reflect your capacity to continue learning, adding new knowledge and skills, and growing both as a person and a professional. So, identify your weaknesses and the gaps in your knowledge, and take steps to address them. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Broaden your horizons. Your capacity to make an impact depends on many factors. There is the profession to which you belong, and the practices embedded in it. The industry in which you work, and the policies that structure it. The community in which you live, and the culture that shapes it. The country of which you are a citizen, and its relations with other nations. How does each of these either aid or inhibit your ability to achieve your goals? Asking this question will help you to identify the areas where action is needed.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Rest assured that while you strive to innovate and improve quality of life for Kenyans of all socioeconomic backgrounds, the Aga Khan University will be doing so as well. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We will do so as a private, not-for-profit institution. And we will do so as a university that partners with the Government to help it meet the needs of citizens. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Overall, more than half of our students in East Africa come to us from government or public-sector institutions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU and Princess Margaret Cancer Centre in Toronto are collaborating with Moi Hospital, a public-sector institution, to train some of East Africa's first cancer nurses. Together with the Aga Khan Foundation and the Aga Khan Health Services, we are working with government health facilities in Kilifi and Kisii counties to improve health for 135,000 women and children. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With the support of the Ministry of Health, and in partnership with the University of Nairobi and the Toronto SickKids Centre for Global Child Health, we recently published the most comprehensive analysis of maternal and child health outcomes in Kenya over the last quarter century. That study will be an essential resource for policymakers, helping them to select the most effective strategies for achieving the Sustainable Development Goals for health. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To improve education in government schools in Kenya, our Institute for Educational Development has trained more than 900 educators in recent years, benefitting 67,000 students. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Our East Africa Institute is working to provide policymakers with new insights into the impact of Kenya's rapid urbanization on food prices and supplies, and on the aspirations and expectations of young people. AKU's Institute for Human Development will soon launch its largest field project yet, aiming to enhance early child development in marginalized areas of Nairobi. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the same time, the University is growing: adding new programmes, investing in new facilities and serving more people. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Across Kenya, the AKU Hospital and medical centres and the Aga Khan Health Services now treat approximately 900,000 patients annually. That is up from 600,000 in 2012. In the last two years, we have added fellowship training in three additional medical specialties: cardiology, cardiac surgery and infectious diseases. Soon, we will break ground on a new University Centre across the street to provide state-of-the-art facilities for all our academic programmes in Kenya. That includes our Graduate School of Media and Communications, which is launching its ground-breaking Master of Arts in Digital Journalism tomorrow."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Graduands, 35 years ago AKU was established as part of His Highness the Aga Khan's Silver Jubilee. This year, we are marking His Highness's Diamond Jubilee, commemorating his 60th year as Imam of the Ismaili Muslims. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As His Highness has observed, \"The spirit of the knowledge society is the spirit of pluralism - a readiness to accept the other, indeed to learn from him, to see difference as an opportunity rather than a threat.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As you embark on the next phase of your journey, I ask that you remember these words. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In the quest for knowledge, there is no greater resource available to us than humanity's diversity. By keeping our minds open to new ideas, new possibilities and new perspectives, the spirit of pluralism prepares us to innovate. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Carry that spirit with you, and I am confident that you will make an extraordinary difference in Kenya and beyond. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Congratulations once again, and thank you."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "The spirit of innovation is infectious. Like a song that pulls us out of our chairs and onto the dance floor, it is prompting more and more individuals to take action.",
+  "PullQuoteAuthor": "Firoz Rasul, President, Aga Khan University  ",
+  "LocallyActive": false,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001456",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "95deeea6-bd39-4a41-b839-40d28c835c8f",
+      "WssId": 1355
+    }
+  ],
+  "ScheduleStartDate": "2018-02-15T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "At the convocation 80 graduands from the Institute for Educational Development, School of Nursing and Midwifery and AKU's Medical College were awarded degrees.",
+  "MediumImageCaption": "Immaculate Wambugu, who graduated top of her class, receives her degree from the Chief Guest Professor Mwenda Ntarangwi",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1510,
+  "Modified": "2018-02-19T12:08:07Z",
+  "Created": "2018-02-15T11:50:00Z"
+}

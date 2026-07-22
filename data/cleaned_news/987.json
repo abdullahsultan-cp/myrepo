@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c6c88d18-30e3-4d47-9b13-f23e184fd57a",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d682ca79-4411-4068-b37c-fdd3fed3865e",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7af73fff-630d-4277-8baa-436c39959f79",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4e4f2a05-bc0e-4cb8-8f6b-8b3c9743ec9a",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "600db3d3-d6bd-49e7-aeb0-88482d5e0a3f",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b6f9a834-170d-4a63-9d28-e78b79958753",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ce84fcd9-d2b0-4731-ab6c-fc675a5e7fe1",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61fc7916-385c-4619-b7c2-95602e16d151",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(987)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "97ee94ca-a126-426d-a4be-2b23ae8c4f6f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 987,
+  "Title": "Dinner for AKU hospitality committee",
+  "NewsSubTitle": null,
+  "NewsSummary": "To honour the volunteer members of Aga Khan University Hospitality Committee, President Shamsh Kassim-Lakha and Khadijah Lakha organized a dinner on Tuesday August 19, 2003 in the serene environment of AKU Sports and Rehabilitation Centre.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassBBEF1E71E0F144D0A1664E378B72E520\"><div>To honour the volunteer members of Aga Khan University Hospitality Committee, President Shamsh Kassim-Lakha and Khadijah Lakha organized a dinner on Tuesday August 19, 2003 in the serene environment of AKU Sports and Rehabilitation Centre.</div><div><br></div><div>This Committee has been assisting AKU since 1994 in looking after overseas donors and other guests of the University who visit Karachi to attend AKU Convocation and other donor events held around that time.</div><div><br></div><div>The assistance provided by these volunteers includes airport facilitation; hotel accommodation and reception; transport, food and entertainment, handling the database of guests, etc.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000945",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Volunteerism",
+      "TermGuid": "34a1d7ef-8f85-47ff-ab5a-48cbb88744cb",
+      "WssId": 1911
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2003-08-19T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 987,
+  "Modified": "2020-03-12T04:23:59Z",
+  "Created": "2016-12-27T10:45:45Z"
+}

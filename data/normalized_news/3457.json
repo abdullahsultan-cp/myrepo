@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4b4a09cf-908c-4d0a-ab38-0db4fe35b7a7",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2498c01f-4d90-4d95-9aaf-ff5032892fd4",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "008c4d91-bab0-4be7-b726-e58f24e0bfad",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4ffa3a5a-864e-41f1-afbe-c1158fe464d8",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "47ecd57b-452e-40aa-8bc2-29ea4c9e643c",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c880d913-f491-4212-876d-e66107ed2bcf",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "be9ba50a-0f30-4f30-9fdb-73058069f4bc",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "150ba172-6297-4818-a5c1-47c3d66e8266",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3457)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b6f0c25c-962d-454f-90be-b304285edac1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3457,
+  "Title": "In Memoriam: Dr Sohail Asghar Dogar",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Sohail Asghar Dogar was an esteemed paediatric surgeon and alumnus of AKU",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>It is with deep sorrow that Aga Khan University announces the sudden and unexpected passing of Dr Sohail Asghar Dogar, a dedicated paediatric surgeon who made an indelible mark on our community. Dr Dogar tragically suffered a cardiac event while engaged in the work he was so passionate about - caring for his patients and educating future surgeons.</p><p>\"An irreplaceable loss! We lost a special family member and beloved surgeon,\" said Dr Adil Haider, Dean at Medical College, Pakistan. \"One of our shining stars from the Division of Paediatric Surgery, adored by all. May his loved ones find the strength to bear this loss.\"</p><p>As a young faculty member, Dr Dogar's commitment to his field was evident in every aspect of his work. He had recently enrolled in a Bioethics programme, seeking to enhance his ability to train and mentor residents and students. His contributions to the Division of Paediatric Surgery were invaluable, and he was widely respected and loved within the AKU community. His passing leaves a void that will be difficult to fill.</p><p>Dr Dogar was known not only for his exceptional skills as a surgeon but also for his generous spirit. He was always willing to go the extra mile, working late into the night to ensure his patients received the best possible care. His dedication to his profession was matched only by his devotion to his family. Colleagues often spoke of the warmth and hospitality he extended, inviting them into his home and sharing the joy he found in being a loving husband, doting father, and dutiful son.</p><p>Our thoughts and prayers are with Dr Dogar's family during this time of immense loss. The Aga Khan University community stands ready to support them in any way possible. <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003331",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Paediatrics",
+      "TermGuid": "125d0f34-a35b-4610-841d-05672a104e1e",
+      "WssId": 2189
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    }
+  ],
+  "ScheduleStartDate": "2024-08-06T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3457,
+  "Modified": "2024-08-06T07:00:53Z",
+  "Created": "2024-08-06T06:57:32Z"
+}

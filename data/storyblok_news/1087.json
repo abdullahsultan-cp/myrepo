@@ -1,0 +1,151 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "89cb5bb6-6831-4fb4-9d5e-aad2de10e079",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "75a6755d-c022-458e-a718-7694a3e0b236",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a0d4b27d-3b35-480a-834f-535ce6c89360",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3097e2e4-27fe-44ce-95a7-bb0d2806289d",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "371abf54-18ee-4c4c-a61a-37cd050007d4",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e05e3496-cc53-49c2-9b0c-bad84f75a788",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "69eb2833-1fcd-40a4-94ec-ac46690f5a3f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d68df1b-25e8-4224-9e6e-2f5cf4c72340",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1087)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9e73e244-0500-4400-af12-d994d7b38e3b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1087,
+  "Title": "Afghan minister at AKU",
+  "NewsSubTitle": null,
+  "NewsSummary": "University Offers Support in Continuous Medical and Nursing Education",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A five-team delegation, headed by the Afghan Minister for Public Health, Dr. General Sohaila Sediq, visited Aga Khan University (AKU) on 16 January 2003. This visit was part of a programme to seek expertise from Pakistan's medical, educational and training centres, and discuss various options in which assistance could be offered to improve health conditions in Afghanistan. AKU is part of Aga Khan Development Network (AKDN), a group of private international development agencies, founded by His Highness the Aga Khan, which work in the developing countries of Asia and Africa. AKDN is playing a continual role in the economic, social and culture development of Afghanistan, with US $75 million committed by His Highness the Aga Khan in 2002 towards the reconstruction of the country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Afghan delegation met with Shamsh Kassim-Lakha, President of AKU and senior leadership of the University and exchanged views on the possibilities and scope of extending support of health services to the people in Afghanistan. The Minister noted that AKDN had established credibility with the Afghan government by virtue of timely and effective implementation of various programmes.The Minister was accompanied by Dr. Abdullah Fahim, Director of the Foreign Relations Department of the Ministry of Public Health; Dr. Khalil Mossadegh, President of the Intermediate Medical Educational Institute of Kabul; Dr. Arabshah, Director of the Intermediate Medical Educational Institute of Kabul; Dr. Bashir Noormal, World Health Organisation Education and Training Coordinator; members of the Consulate of Afghanistan in Karachi and Dr. Ashfaq Ahmed, Deputy Director General, Ministry of Health, Government of Pakistan. The delegation was impressed by the physical environment, as well as the architecture of the University."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the request of the Afghan government, AKU offered help in providing postgraduate medical education through residency programmes for Afghan physicians at Aga Khan University Hospital and BScN programmes at the School of Nursing. AKU nursing programmes are already in operation in Afghanistan. To respond to the need for continuing medical and nursing education, AKU also offered to develop programmes specifically for capacity building of medical and nursing faculty in Afghanistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The delegation appreciated His Highness's long-term commitment to Afghanistan as well as the high quality of programmes and services offered by AKU."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001045",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Medical education",
+      "TermGuid": "c4348316-b0a1-4ca5-a133-b70689d66efc",
+      "WssId": 1840
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "ca69fd5c-b8ff-4c4a-8794-1e751b8e682b",
+      "WssId": 1820
+    }
+  ],
+  "ScheduleStartDate": "2003-01-16T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1087,
+  "Modified": "2020-03-12T04:16:56Z",
+  "Created": "2016-12-28T07:32:36Z"
+}

@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "52d65778-0c48-4b11-9559-08d69b5be65e",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5f93e2bc-41b8-459e-be98-20d3d7487cba",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "df343a86-b72b-4fb7-83ce-893a60929a92",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "62f628a3-9ebe-4801-a954-e544b98067db",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "205a7640-fff7-4a6a-b3a7-a6615ab141da",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "baf3eb9c-1dc2-4271-af4b-dfe1a4965b93",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "30f13cfb-623c-487b-a1bc-b4af6ea0dec0",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5bd924fa-f6c3-4567-af42-f93ac302cda5",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1111)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8cb0f0d9-54ca-4ddd-ac7c-2195b24959c5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1111,
+  "Title": "University of Central Asia",
+  "NewsSubTitle": null,
+  "NewsSummary": "During a five day trip to Central Asia, His Highness signed an international Treaty on behalf of the Ismaili Imamat with the Presidents of Tajikistan (August 28), Kyrgyzstan (August 30), and Kazakhstan (August 31) to create the University of Central ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>During a five day trip to Central Asia, His Highness signed an international Treaty on behalf of the Ismaili Imamat with the Presidents of Tajikistan (August 28), Kyrgyzstan (August 30), and Kazakhstan (August 31) to create the University of Central Asia. The Treaty will now go to the parliaments of the three \"Founding States\", and once it is approved by at least two of them, the University will come into being as an international organisation subject to international law. The treaty provides for other states in and adjoining the region to join the institution at a later date as \"Participating States\".</p><p>At each signing ceremony, His Highness announced a gift of $5 million to the University's endowment, the proceeds of which will be earmarked for expenditure in that particular country. With an initial endowment of $15 million, the University of Central Asia is probably the most highly endowed institution of higher education in the region.</p><p>The University of Central Asia will be a single legal entity with its main campus in Khorog in Tajikistan, and programmes and facilities in the eastern (and mountainous) regions of the other two countries. The first offerings of the University will be through its division of Continuing Education, and should become available within 12 months of the university's legal establishment. An interdisciplinary graduate programme leading to a Masters degree will come next. The undergraduate programme will be the last to come into being. It will offer options for concentration in the engineering sciences, the natural sciences, the social sciences, and cultural studies, but all students will be exposed to courses across all these clusters, and courses in market economics, field research methods, and institutions of civil society will be required. All of the academic programmes will make aggressive use of information and communications technologies and the primary language of instruction for the graduate and undergraduate programmes will be English.</p><p>An array of print and video materials will be developed for the next three to four months that will provide information for distinct audiences.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001069",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2000-08-28T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1111,
+  "Modified": "2017-02-22T11:20:27Z",
+  "Created": "2016-12-28T09:14:13Z"
+}

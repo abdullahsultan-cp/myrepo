@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "11be35e5-5071-43b6-9f6b-bc1c635adc3e",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e5c0a92e-873c-45d3-be1e-e24c97af56b5",
+    "Id": 16424,
+    "Title": "Syed Abbas Alamdar Jaffer"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2b6c6f4-8bcb-4d56-bab4-27e00e66727e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "16e55d25-160e-4f97-87ce-bc3dd1088537",
+    "Id": 16424,
+    "Title": "Syed Abbas Alamdar Jaffer",
+    "EMail": "abbas.jaffer@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f1bbe4af-4ffd-4e67-8de5-66a5a4fa9d41",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b1a693f3-b888-4b9a-86ac-1c4d96d4101c",
+    "Id": 28,
+    "Title": "Institute for Global Health and Development"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "e51bc4b6-d244-45ec-b2ae-d2162bee6f8f",
+      "Id": 28,
+      "Title": "Institute for Global Health and Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4eec6079-4e8a-43a6-9ab5-27a69fb8c178",
+    "Id": 16424,
+    "Title": "Syed Abbas Alamdar Jaffer",
+    "EMail": "abbas.jaffer@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3391)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3d203abb-bddf-4f57-9e17-c19338b23fe4",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3391,
+  "Title": "IGHD Celebrates Dr. Jai Das's Pivotal Role at the Inaugural GLIDE Symposium",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr. Jai Das's participation in the GLIDE Symposium highlights IGHD's commitment to global health and disease eradication efforts.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass8827E35749494C7C93FC23912114E8BA\"><p>\u200b</p><div>Dr. Jai Das, Assistant Director of the Institute for Global Health and Development (IGHD), participated in the inaugural GLIDE Symposium, held in Abu Dhabi just one week ago. This landmark event brought together over 100 participants from more than 30 countries, fostering dynamic discussions on accelerating disease elimination and eradication efforts worldwide.</div><div><br></div><div>Dr. Das provided his insights and expertise, which proved invaluable to the symposium's discussions, emphasizing the pivotal role of collaboration in disease eradication efforts. His unwavering commitment to promoting integrated approaches and his profound grasp of public health intricacies resonated throughout the event, inspiring fellow attendees and fostering meaningful connections within the field.</div><div><br></div><div>As a prominent representative of IGHD, Dr. Das exemplified IGHD's steadfast dedication to advancing global health and development endeavors. His active involvement not only showcased his leadership within the organization but also underscored IGHD's ongoing pursuit of positive change and the mitigation of health disparities on a global scale.</div><div><br></div><div>His contributions serve as a testament to IGHD's unwavering pursuit of excellence in global health research and practice.\u200b\u200b<br></div><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-003267",
+  "LocalApproverGroup": "CA IGHD News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Global Health and Development",
+      "TermGuid": "77911450-7aa0-4734-bac5-ef764837bd0a",
+      "WssId": 2281
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "b071e59f-c99f-4bdc-a984-7ce8c756e08f",
+      "WssId": 2228
+    }
+  ],
+  "ScheduleStartDate": "2024-05-24T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3391,
+  "Modified": "2024-09-05T11:13:39Z",
+  "Created": "2024-05-24T10:48:07Z"
+}

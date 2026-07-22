@@ -1,0 +1,127 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7c2b00f9-4116-4426-b556-8c6d8da57a12",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e872f3c3-cc31-497e-891a-049f89fd8a5c",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6c0bd119-92b1-4473-944d-534cbf311ded",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e35a30ad-04dc-4e27-a7f5-b23493fb305d",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "95d936f4-08d3-4b2d-bc59-2857eb62f061",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "267b3b87-d5a2-444a-b512-818f9563e0f9",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "694a853b-22bd-4bbe-9aee-92844c980e74",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "24bb7866-68d4-4f4e-bc24-e0597cc62322",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1975)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8a50ab83-9f3e-4a1a-939e-9748dffd183b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1975,
+  "Title": "Enhancing team leadership skills through simulation",
+  "NewsSubTitle": null,
+  "NewsSummary": "For the very first time in AKU, the Internal Medicine service line, in partnership with CIME, conducted a clinical simulation programme to enhance team leadership skills.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass7B2F1B9C8ECE4B4AA865470C569DE9D7\"><p>One of the key responsibilities of a leader is to develop the people who work with us, to push them to new heights, and to ensure succession planning. For the very first time in AKU, the Internal Medicine service line, in partnership with CIME, conducted a clinical simulation programme to enhance team leadership skills. The Programme was intended for senior registered nurses and team leaders working in the field of internal medicine who play a significant role in the absence of head nurses or management.</p><p>A total of 27 staff engaged in this activity. It started with theory then simulation and role play. After the simulation, participants viewed their performances in a debriefing, exploring patient safety, effective communication, team working and decision making.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001904",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "770165ec-c858-4c3a-b152-ff70b540aea9",
+      "WssId": 1377
+    },
+    {
+      "Label": "internal medicine",
+      "TermGuid": "dc1accef-76c6-4a60-aad1-19086598aa07",
+      "WssId": 1657
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    }
+  ],
+  "ScheduleStartDate": "2019-08-27T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1975,
+  "Modified": "2019-08-27T12:26:01Z",
+  "Created": "2019-08-27T12:24:54Z"
+}

@@ -1,0 +1,142 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "167c8513-98a7-4ada-b7ca-c4f0bf30d373",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e1cccef5-c854-4de4-9bca-2b673609ca4f",
+    "Id": 14331,
+    "Title": "Gloria Chemutai"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8d2631cd-f34f-4610-9a85-aa441e1471ea",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "164d95e0-2aee-4133-8a31-086e032e5f07",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ffa88cc6-b406-4d54-a5ad-98d7b26a5fbe",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "244a473c-2ad9-4efb-b377-e777482b4de1",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "adfee323-5765-4de9-adc8-2e8b0fce1cc5",
+      "Id": 31,
+      "Title": "Brain and Mind Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0e7f1914-6dd5-4437-b0e0-350c0b8009ce",
+    "Id": 13235,
+    "Title": "michael.karinga",
+    "EMail": "michael.karinga@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3464)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "58e25b01-06ce-4018-ab54-0f6f775ffad5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3464,
+  "Title": "How one Doctor is tackling biases in brain health diagnostics",
+  "NewsSubTitle": null,
+  "NewsSummary": "Meet Dr. Jasmine Kwasa, innovating fair brain diagnostics for all",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassCBED4209205A4A6284E2EC556C35757C\"><h1> \r\n   <img src=\"/bmi/about/PublishingImages/Pages/our-team/JasmineKwasat.jpg\" class=\"ms-rteImage-7 ms-rtePosition-1\" alt=\"\" style=\"margin&#58;8px;width&#58;200px;height&#58;200px;\" /> \r\n</h1><p> \r\n<em>Dr Kwasa is a passionate technologist and educator making big changes in brain technology. As a visiting US Fulbright Research Scholar at AKU's Brain and Mind Institute (BMI), she combines her skills in engineering and neuroscience to make brain health checks fair and effective for everyone. She works with BMI researchers to create new solutions that remove biases in neurotechnology. In this Q&amp;A, Dr. Kwasa talks about her journey, her projects, and her love for teaching and mentoring. Read on to learn how she is advancing brain health research.</em><br><em>\r\n</em></p><p></p><p> \r\n   <strong>Q&#58; Can you tell us about your background and how you got interested in neurotechnology?&#160;</strong><br></p><p>A&#58; I started in engineering and have always loved how technology can solve real-world problems. I got interested in brain technology during my PhD where I focused on auditory neuroscience and how we can use brain technology and data analysis techniques to understand the mechanisms of hearing in loud and noisy environments. It was here that I saw that EEG technology didn't work well for people with African hair, so I wanted to make it better for everyone.<br></p><p> \r\n   <br> \r\n</p><p> \r\n   <strong>Q&#58; What inspired you to venture into this field?&#160;</strong></p><p>A&#58; Growing up in the US, I was around teachers and scientists, which sparked my interest in becoming a professor. My family mostly worked in business or humanities, but I loved science. In biomedical engineering, I found my passion in auditory neuroscience. When I realized EEGs didn't work well for African Americans, I decided to study and create solutions that addresses this gap.<br></p><p> \r\n   <br> \r\n</p><p> \r\n   <strong>Q&#58; Can you share a memorable moment or finding from your recent work?&#160;</strong></p><p>A&#58; A big moment was during my master's graduation when my family visited my lab. I realized I couldn't demonstrate my work on their hair type because the existing EEG devices were not compatible as it would take too long and be too difficult to set up. This made me determined to create better EEG technology, leading to join my startup, Precision Neuroscopics Inc, which makes adapters for these devices.<br></p><p> \r\n   <br> \r\n</p><p> \r\n   <strong>Q&#58; Why focus on removing biases in neurotechnology?&#160;</strong></p><p>A&#58; I have seen how biased data can lead to wrong conclusions, especially for African Americans. It's not the brains that are different, but the experiences shaped by things like racism and poverty. I want neurotechnology to be fair and consider all parts of a person's background, not just their race.<br></p><p> \r\n   <br> \r\n</p><p> \r\n   <strong>Q&#58; What do you do at BMI, and how do you work with the team?&#160;</strong><br></p><p>A&#58; At BMI, I am testing my EEG technology in Kenya and looking at its use in diagnosing neuropsychological disorders. I am also working with the Brain Resilience Kenya study team to provide EEG and MRI scans to participants aiming to identify signs of brain aging and resilience. The teamwork at BMI is amazing, and I am also involved in setting up one of the first EEG research labs in East Africa.<br></p><p> \r\n   <br> \r\n</p><p> \r\n   <strong>Q&#58; How do you see the role of education and mentorship in your career?&#160;</strong></p><p>A&#58; Education and mentorship are central to my work. I'm passionate about sharing my knowledge and inspiring the next generation of scientists. I have been mentoring students, teaching short courses, and conducting workshops on machine learning and neurotechnology. It's incredibly rewarding to see my students grow and contribute to the field.<br><br></p><p> \r\n   <strong>Q&#58; What do you enjoy doing in your free time?&#160;</strong></p><p>A&#58; I love dancing and playing the violin. Music and movement help me relax and express myself. I am also learning Swahili to connect more with my Kenyan heritage and engage better with the local community.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003338",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Innovation",
+      "TermGuid": "9b1177f6-ee80-4dce-b188-94f66824c836",
+      "WssId": 2179
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "604ab977-6d10-4ef9-a237-4fb0b4a0b366",
+      "WssId": 2221
+    },
+    {
+      "Label": "University Centre",
+      "TermGuid": "af91cbea-8e91-41f1-8135-410b570e1289",
+      "WssId": 2160
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "acd128c1-9caa-4c8a-81f7-94ec65874343",
+      "WssId": 2103
+    },
+    {
+      "Label": "Teaching",
+      "TermGuid": "3b9efa59-5e54-4510-b85d-69caf29a2c2f",
+      "WssId": 2155
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "2d1be9e0-8877-428f-8a6f-ff032c81de24",
+      "WssId": 2106
+    }
+  ],
+  "ScheduleStartDate": "2024-08-15T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3464,
+  "Modified": "2024-08-15T08:18:23Z",
+  "Created": "2024-08-15T07:16:34Z"
+}

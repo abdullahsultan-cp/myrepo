@@ -1,0 +1,165 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "47acbdf1-46da-4be8-a7f2-8fb81b16aa4e",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12bd865c-836f-4419-9092-8b09522ff1cb",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "94812d4e-3471-43c6-88d0-f16e49e66c84",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0514ba16-a627-43a8-a36d-c5ea1ad0bcd2",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "5c65582a-8499-45b0-9b70-d59c58426d86",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ea7c213c-332c-44de-b899-6586f22861aa",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "337ac0b6-8795-4f35-a5ac-b64251e27536",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "83b51fad-f861-4e85-837b-683833d68411",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(546)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4c83e58e-8dec-4953-a9b4-5fb739e6a94d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 546,
+  "Title": "Take health services where they are needed",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"Health care professionals should take health services to communities when and where they are needed the most,\" said Dr Sadiqua N. Jafarey, Professor, Obstetrics and Gynaecology,",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Health care professionals should take health services to communities when and where they are needed the most,\" said Dr Sadiqua N. Jafarey, Professor, Obstetrics and Gynaecology, Ziauddin University, at a conference highlighting the serious need for implementation of emergency obstetric and neonatal care (EmONC) for newborns and their mothers. The conference was organised by the Department of Obstetrics and Gynaecology, Aga Khan University, in collaboration with the National Advisory Board for the Advanced Life Support in Obstetrics. \"Out of 1,000 babies born in Pakistan, 159 die during the first week of life, the majority in the first three days, while 1 in 11 children dies before reaching the age of five,\" said Dr Jafarey. Moreover, one mother dies every 30 to 40 minutes and the risk of a woman dying due to pregnancy related causes is 1 in 89 in Pakistan. Women in low-income and rural areas are the hardest hit."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Though child mortality rates are falling and fewer mothers are dying each year, Dr Jafarey noted that Pakistan has a long way to go to meet its Millennium Development Goals of reducing child mortality by two-thirds and maternal deaths by three-quarters by 2015 as compared to 1990. Malaysia, Sri Lanka, Thailand and Tunisia have all reduced the number of maternal deaths by half in one decade by increasing access to skilled birth attendants, emergency obstetric care and family planning service. \"What works is well documented, such as strengthening health systems and providing mothers and children with a continuum of care from home to health facilities. T he challenge in Pakistan is not what to do and how to do it, but rather implementing what is already known,\" said Dr Jafarey."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Sahib Jan Badar, Provincial Programme Manager, Sindh, described the National Maternal Neonatal and Child Health (MNCH) programme in Pakistan, which plans to provide integrated MNCH services at district levels through basic emergency obstetric and neonatal care in 550 health facilities, and more comprehensive services in 275 hospitals and health facilities in Sindh. She also mentioned that the programme is planning to increase the number of deliveries attended by skilled birth attendants (SBA) at home or in health facilities from the current 37 per cent to 70 per cent by the year 2011."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Ahmed Farah Shadoul, the representative from WHO, cited studies from Bangladesh, India, Guinea Bissau, Mali, the Dominican Republic, Sri Lanka, Malaysia, UK, which show that universal access to EmONC, increased utilisation of high quality services, an efficient referral system and effective monitoring and supervisory systems can help reduce mother and child deaths."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference also addressed the issues of providing services within communities and at health facilities, training skilled professionals, delivering family planning programmes, advocating and creating demand for quality health care as well as the importance of monitoring and evaluation. Several working groups with people from different disciplines met on the conference's second day to develop recommendations and an action plan to help consolidate the national agenda on improving maternal and child health. The honourable Minister of Health, Sindh, Dr Sagheer Ahmad, was the chief guest at the closing session."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000504",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Obs gyn",
+      "TermGuid": "e8657e7f-85a4-412d-bd51-2463f835dc8a",
+      "WssId": 1930
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "bb521654-b037-47fd-95a4-4bc1064f8d66",
+      "WssId": 1896
+    }
+  ],
+  "ScheduleStartDate": "2009-04-29T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 546,
+  "Modified": "2020-05-18T07:21:02Z",
+  "Created": "2016-12-09T04:55:04Z"
+}

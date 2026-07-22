@@ -1,0 +1,214 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7a33f0af-1db2-4604-9c16-7f957e18f799",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eb74d412-ce17-430b-a053-9fb500aadf93",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b67974a-5880-4810-9a63-a6da3eb590ad",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1a9ee22c-95fd-4fb1-a356-dd86acf386a0",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "58f02f94-47db-4a4d-831d-b9ca4b806c33",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "80641e4d-fea1-4e81-b81b-a376b2a2b575",
+    "Id": 15,
+    "Title": "Graduate School of Media and Communications"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "3122ec88-dd98-4eb8-ab18-ac2c58711713",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4abfe0f2-011e-41c3-be49-0e7aaf45eee7",
+    "Id": 9335,
+    "Title": "caleb.kimanzi",
+    "EMail": "caleb.kimanzi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2221)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c11efbdf-3ed3-4a5f-a9e9-74713962bff8",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2221,
+  "Title": "2020 Innovators-In-Residence program kicks off",
+  "NewsSubTitle": null,
+  "NewsSummary": "Two media start-ups set to benefit from a Ksh. 1.5 million grant.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University (AKU) Media Innovation Center yesterday evening kicked off its 2020 Innovators-In-Residence program that will see two media start-ups benefit from a Ksh. 1.5 million grant."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The project, funded by KfW as part of the Futures Project, aims to foster innovation and entrepreneurship to enhance media viability through a combination of research, training, mentorship, coaching, incubation/acceleration services and knowledge sharing."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking at the kick-off event, The Director of the Innovation Center Ms Njoki Chege, noted that the project has come right in time when disruptions are threatening the normal life of media."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"After a month of shortlisting over 50 exciting applications, our panel of independent judges settled on two teams, Debunk and Ludique, whose ideas we will support throughout the year 2020,\" said Njoki."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Starting next month, the two winning teams will join the Media Innovation Center accelerator program for a period of 12 months during which they will be provided with resources including mentorship, training, coaching, a start-up grant of Ksh. 1.5 million and partnership, to further develop their idea into a viable and sustainable business of product. The innovators-in-residence will form an ecosystem of innovators that will work closely with our network coaches and mentors who will work alongside them to facilitate their exploration of new innovative projects,\" added Njoki."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She further reiterated the importance of the project in helping young journalists and media founders to re-centre their strategies and work to deliver compelling journalism pegged on telling stories that educate and entertain; provoke and inspire."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Gracing the event, ICT CS, Hon Joe Mucheru, noted the need for Media players in Kenya to adjust the new technologies disrupting the industry."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The environment in which the media is working in has changed tremendous over the years so has the business environment and professional obligations for journalist. News consumption has changed and indicators show it will still change tremendously in the coming years,\" said CS Mucheru. Such initiatives will play a key role in shaping the new media environment, preparing new journalists for the drastic changes going on in our industry,\" added CS Mucheru."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Other benefits the teams are set to receive include a monthly stipend, access to free working spaces and state of the art recording and editing equipment. The over 50 applications received were from storytellers, writers, visual artists, cartoonists, illustrators, data analytics specialists, data scientists, photographers, videographers, graphic designers, coders, programmers and animators from East Africa."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002134",
+  "LocalApproverGroup": "GSMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "graduate school of media and communications",
+      "TermGuid": "03156c18-76a7-4659-b1a1-5d1ae21f236d",
+      "WssId": 1848
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "cb228285-e9f4-4712-865a-1d4768edfd32",
+      "WssId": 1826
+    },
+    {
+      "Label": "innovation",
+      "TermGuid": "7fdc44b9-ef41-4c58-b1be-6afa647e3f55",
+      "WssId": 1846
+    }
+  ],
+  "ScheduleStartDate": "2020-04-14T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2221,
+  "Modified": "2020-04-27T13:22:50Z",
+  "Created": "2020-04-14T10:17:53Z"
+}

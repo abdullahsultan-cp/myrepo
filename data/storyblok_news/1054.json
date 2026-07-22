@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9406a78c-ac0d-4b9e-aa04-2211b07a986a",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b9fc52a-4fad-4cbe-a39e-54aea74b6b9d",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "44315f37-f58b-4045-a048-3eb3ca0a519e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "72317fb0-d1ce-4fdf-b2d8-c79d18ef94ef",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "1a68ee95-a660-40c4-9da8-ad1826f39928",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f2cd5df2-ab5e-4e46-9e34-7e279d2e1a32",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6879d339-e5df-491b-9fdc-2ff757878b4f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "272a1d28-1aa7-437e-a212-54339bb4d0bf",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1054)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "625e3c48-aa4c-4f5c-a176-6c4ebccacfdd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1054,
+  "Title": "Dementia - a disease of fading memory",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"Dementia is a commonly encountered disease in the community and by one estimate about half of the population above the age of 85 are affected with some form of dementia\", stated Dr. Shahid Baig, Consultant Neurologist at Aga Khan University Hospital",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Dementia is a commonly encountered disease in the community and by one estimate about half of the population above the age of 85 are affected with some form of dementia\", stated Dr. Shahid Baig, Consultant Neurologist at Aga Khan University Hospital (AKUH). He was giving a presentation on \"What is Dementia?\" at the monthly public health awareness programme, 'Signs, Symptoms and Care', on September 7, 2002."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Baig explained that by the next few decades the population of Pakistan would almost double and the problem of care and treatment of people with loss of memory would be an enormous burden on the economy. \"By one estimate the care of people with dementia in USA costs 40 billion dollars each year and a country like Pakistan with meagre resources cannot afford the burden of that extent, therefore, there is a need to take preventive measures,\" added Dr. Baig."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Baig in his talk described the salient features of dementia, which generally are in the form of progressive memory decline and forgetfulness. The patient feels difficulty in coping with routine tasks, and slowly the forgetfulness extends to the point where the patient is unable to control urine and becomes almost bedridden."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Baig explained that the major causes of dementia are Alzheimer's disease and stroke. He highlighted details of other treatable diseases with features of dementia. He emphasised the need for timely recognition of symptoms of dementia so that optimal diagnosis and management strategy could be adopted."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The speaker and the panelists that included Dr. Saad Shafqat, Dr. Nadir Ali Syed, Dr. Mohammad Wasay and Dr. Imran Wahedna, participated in the question-and-answer session at the end of the programme."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001012",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Neurological disorder",
+      "TermGuid": "7c1aa1d0-3649-4302-95d2-ee25a1a5f6af",
+      "WssId": 1912
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2002-09-06T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1054,
+  "Modified": "2020-03-12T04:14:02Z",
+  "Created": "2016-12-28T06:42:34Z"
+}

@@ -1,0 +1,216 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f6a96e3a-c9b9-4d49-bce8-9f025f76b866",
+  "odata.etag": "\"44\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "17ded5d0-9d8f-4bcc-82a1-e725170b0461",
+    "Id": 12821,
+    "Title": "Maryam Ahmad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "15931b6b-7d9d-47a0-b20e-cb753ea85f48",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d7c4fc41-6289-449b-9ab6-356468581811",
+    "Id": 12821,
+    "Title": "Maryam Ahmad",
+    "EMail": "maryam.ahmad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e793f8d7-d9e3-4b22-8876-b451e9a932ef",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b36447b8-8f66-43fa-a7dc-29d9eb078f65",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "620588e9-b197-4b7a-addd-593cb0a42da7",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "dccbb62c-e350-49f5-932f-4ecb4e9432d8",
+      "Id": 4,
+      "Title": "Global"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d1bc4e06-4bb1-436d-b40e-32ff286420dc",
+    "Id": 12821,
+    "Title": "Maryam Ahmad",
+    "EMail": "maryam.ahmad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3144)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3dcea05a-bc89-469d-af24-234866b7de17",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3144,
+  "Title": "From Evidence to Impact in Public Health; community-based education and research.",
+  "NewsSubTitle": null,
+  "NewsSummary": "The symposium titled \"From Evidence to Impact in Public Health\" showcased the impact of the work conducted by the University's Community Health Sciences through education, training, and research.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University organized a symposium titled \"From Evidence to Impact in Public Health\", which showcased the impact of the work conducted by the University's Community Health Sciences department through education, training, and research. These initiatives have a direct impact on public policy, quality of life and health outcomes in the communities they serve."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CHS educational programmes are designed to train the next generation of leaders in public health including community health workers and junior researchers who are integral to our health system. The department's research is designed to investigate relevant issues, develop novel solutions and test interventions, for instance in the case of reducing maternal mortality."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor & Chair, Department of Community Health Sciences, Dr Sameen Siddiqui spoke of the research to policy nexus and how public health policy is informed by evidence that comes from the field. \"AKU's Community Health Sciences department has played an active role in engaging in policy and systems analysis and research that has helped inform health policies in support of primary health care, health system strengthening, and universal health coverage.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Some notable contributions are towards the global Asthana Declaration on Primary Health Care in 2018 and its influence on the renewed Primary Healthcare (PHC) approach. At the national level, the experience of developing evidence informed Essential Health Package of Services is one of the tangible outcomes of this approach, as well as the comprehensive review of the Sehat Card program in Khyber-Pakhtunkhwa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The work on child health has been exceptionally beneficial. For instance, testing innovations of minimally invasive tissue sampling techniques which has helped in identifying fetal, maternal, and placental causes of stillbirths and preterm births. Professor at the Department of Community Health Sciences, Dr Sarah Saleem's work with global partners such as Columbia University and Research Triangle Institute North Carolina has positively impacted communities in Thatta, enabled the creation of a Maternal and Newborn Health Registry and harnessed the power of high quality data to forge local solutions that are effective."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Zafar Fatmi's work zeroed in on issues native to local communities; household energy and health, air quality, eco revitalization of the river Ravi and arsenic contamination in the Indus river to name a few, and how these phenomena are intrinsically linked to human health. Focusing on the integration of Pakistan's private health sector for Universal Health Coverage (UHC), Professor of Health Policy & Systems at AKU-CHS, Dr Shehla Zaidi shared her extensive portfolio of research-based knowledge drawn from implementation pilots with the government, public-private partnership assessment studies, and formative work on private provider preferences and engagement modalities with the government to align with the country's Good Health and Well-being Sustainable Development Goal objectives."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Experts from across AKU participated in the various panels and presentations, with many renowned national and international guests also joining in such as Mr Zafar Mirza, Former Federal Health Minister, Govt. of Pakistan, Dr Awad Mataria, Director Universal Healthcare (UHC),/ Health Systems Regional Office for the Eastern Mediterranean EMRO, WHO, Dr Paul Erwin, Dean of the School of Public Health (SPH), University of Alabama at Birmingham, and Dr Zainab Samad, Chair of Medicine, AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our collaborations with institutions like AKU enable us to bridge the gap between academia and policy-making\", said Dr Mataria during his panel discussion on strengthening public health."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Chief Guest for the event was the esteemed Sindh Minister for Health, Dr Azra Pechuho. AKU works closely with local, provincial, and federal government bodies through symbiotic collaborations aimed at improving access and quality of our healthcare systems. Dr Pechuho appreciated AKU's partnership and the trust between the two entities, expressing a desire to forge stronger partnerships in the field of preventive healthcare, particularly, adolescent girls' health, nutrition, maternal health, family planning, telehealth, and skill development for women. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003027",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "604ab977-6d10-4ef9-a237-4fb0b4a0b366",
+      "WssId": 2221
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "40 years of AKU",
+      "TermGuid": "e5aba257-af6a-453d-be3d-cea4fa037bff",
+      "WssId": 2466
+    }
+  ],
+  "ScheduleStartDate": "2023-06-26T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3144,
+  "Modified": "2023-06-26T08:27:05Z",
+  "Created": "2023-06-26T06:32:33Z"
+}

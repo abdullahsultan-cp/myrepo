@@ -1,0 +1,132 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "39ac0130-3171-46c7-a2c8-fa2ded1e969e",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "34f2701a-ddfb-4d6a-8820-9ddc6ad452a1",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "517e0d34-8c5d-43c1-9827-36fd81af5419",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e944d5f9-7959-4476-b312-3ee91ceee01e",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8c986302-d3fb-4953-aeae-a84f19144c9e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6cb4d90e-5ad0-48a5-ae71-50cb688fe5c6",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "14d235c3-4e40-4931-a5a5-f7de96a4bd42",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b9bfbc6-cbb6-4500-ad6f-cbf354e17858",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2092)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9c2f1456-82f7-4ab1-98a0-a8321089b02d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2092,
+  "Title": "Pakistan Air Force Lands Again @ CIME",
+  "NewsSubTitle": null,
+  "NewsSummary": "CIME organised a simulation-based training on Medicine and Paediatric for Pakistan Air Force.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The enthusiastic medical doctors of Pakistan Air Force once again flew south to the balmy shores of Karachi and joined us at CIME to update their knowledge and improve their clinical skills, this time in Paediatrics and General Medicine.</p><p>The General Medicine group worked with broncho-mentor; with task trainers for the practice of lumbar puncture, CVP insertion and urinary catheterisation. Harvey, our ageing Auscultation Simulator entertained and challenged in equal measure. Meanwhile, the Paediatricians were keen on gaining updates in Neonatal Resuscitation and Paediatric Advanced Life Support (PALS). They also learned how to break bad news to the parents of young patients. </p><p>The second day concluded with award of certificates and group photos with the director and Dr. Khalid Siddiqui, Colonel Wing Commander, Air Force. With the promise of creating a new relationship with CIME, the team of Pakistan Air Force took to the northern skies once more.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002012",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "c23d839f-4ee8-4d36-9e3b-8d73a52c2d95",
+      "WssId": 1387
+    },
+    {
+      "Label": "paediatrics",
+      "TermGuid": "302bf399-ea7f-467a-88cc-a8832ac24c10",
+      "WssId": 1522
+    }
+  ],
+  "ScheduleStartDate": "2019-12-12T04:25:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2092,
+  "Modified": "2019-12-17T05:33:53Z",
+  "Created": "2019-12-12T04:38:36Z"
+}

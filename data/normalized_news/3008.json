@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "965b79de-cd84-4174-9b7e-dc6d29bda23c",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "725d2bfb-f36b-4a8d-9432-73d800ed9358",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "85a9beb2-6928-4b9d-9e05-60e3bc1945b1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "503d0a6a-b2e0-4ed1-a028-93c432660616",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ca7b719c-f7ad-4d95-b0ad-dd89d2c07c72",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "98b0780e-d3d0-4ecb-857c-c6b610007de8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4e6e2a06-81e7-4fb6-a0aa-6035ba1c5c3b",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3008)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "29e24b2a-dbf6-4196-ab08-760aca9b3a35",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3008,
+  "Title": "U.S. Ambassador applauds decades-long collaboration between AKU and U.S.",
+  "NewsSubTitle": null,
+  "NewsSummary": "The collaboration shares the vision of improving quality of education, health and environment",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The United States Ambassador to Pakistan Donald Blome visited the Aga Khan University's Stadium Road campus in Karachi. He was accompanied by U.S. Consul General in Karachi, Nicole Theriot.</p><p>In his conversations with AKU leaders, Ambassador Blome applauded the decades-long collaboration between AKU, and the U.S. universities and development agencies, focusing on research, training and initiatives related to education, health and environment.</p><p>\"Our shared vision in these areas is making a difference, and improving the quality of life around the world,\" he said.</p><p>\"Being a university with facilities in six countries and its programmes accredited by prestigious international bodies, AKU's graduates are well received in the U.S. and the world over,\" he added.</p><p>\"Several AKU graduates were trained in the U.S. and returned to give back to their countries. I'm proud to be one of them,\" said Dr Adil Haider, a graduate of AKU's MBBS Class of 1998 and now the Dean of the Medical College at his alma mater in Pakistan. \"There are many AKU alumni who are providing their services in the U.S.\"<br/></p><p>\n      <img alt=\"\" src=\"/news/PublishingImages/Ambassador-Blome-02-web-news.jpg\"/>\n      <br/>\n   </p><p>\n      <em>A group photo with Ambassador Blome at the Stadium Road campus in Karachi.</em><br/></p><p>While visiting the campus, Ambassador Blome took a keen interest in the services provided by Aga Khan University Hospital and AKU's Centre for Innovation in Medical Education, a state-of-the-art facility for simulation-based learning for health professionals.</p><p>Earlier, he was received by Shagufta Hassan, Vice President, Finance and Chief Financial Officer; and Dr Farhat Abbas, Interim Chief Executive Officer, AKU Health Services.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002897",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    }
+  ],
+  "ScheduleStartDate": "2022-12-02T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Ambassador Blome: AKU graduates are well received in the U.S. and the world over.  Photos: AKU/Akber Moeen",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3008,
+  "Modified": "2022-12-07T03:44:27Z",
+  "Created": "2022-12-02T10:57:13Z"
+}

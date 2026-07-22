@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d8d89d6f-2c72-47c9-95d8-ff70e0403572",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b6ef92d3-17a3-4732-b9f5-45ced334c627",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3b9ae1a1-0639-4764-8b85-95db86904afb",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b9d36830-5531-4e11-aa40-5079b64f0411",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9e2bc0dc-3027-4ff3-b3c0-b88a06aac28f",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "53f768ca-269b-418c-81b1-ceeef2887c01",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5cb1939a-c5d3-4f60-9a19-e69d8c9120de",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi",
+    "EMail": "sarah.qureshi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2263)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "df3ea117-d1b4-4a75-9a6c-d37c43cf2972",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2263,
+  "Title": "A volunteer at heart",
+  "NewsSubTitle": null,
+  "NewsSummary": "Alumnus Dr Nabeel Ashraf is a member of the core team at Karachi's Field Isolation Centre.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Nabeel Ashraf, MBBS '17, was at the forefront of relief efforts during Karachi's last public health emergency, the 2015 heat wave. A volunteer at heart, he was equally quick to sign up to be a part of the core team running the Field Isolation Centre in Karachi, which houses COVID-19 patients who need accommodation during their isolation period.<br/></p><p>His role combines healthcare and human resources as he is involved in recruiting frontline healthcare workers and training them in vital safety protocols before assigning them to roles that match their talents and interests. In the course of an 'ordinary' day, he liaises with teams from the government, the Sindh health department and the army, who are all involved in managing the Centre's logistical needs.</p><p>\"There's a great spirit of teamwork at the facility and no one never feels as though they have to do a task alone,\" he says.</p><p>While the 14-hour days can be quite tiring and he often returns home to complaints about not giving enough time to family, Nabeel is clear about where his heart lies. \"I find peace in serving people,\" he says. \"Volunteers bring so much energy to the facility and I'm proud to play a part in helping others serve those in need.\"<br/></p><p>Nabeel believes his successes are a result of prayers and guidance of his parents, elders and his mentors who have played an important role in shaping him into the dedicated volunteer he is today. <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002175",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Volunteerism",
+      "TermGuid": "34a1d7ef-8f85-47ff-ab5a-48cbb88744cb",
+      "WssId": 1911
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-05-08T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2263,
+  "Modified": "2020-05-07T10:53:57Z",
+  "Created": "2020-05-06T08:26:45Z"
+}

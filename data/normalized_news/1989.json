@@ -1,0 +1,128 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "931b6255-9b40-416b-9374-d2486b0b21bc",
+  "odata.etag": "\"19\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "75a3dc65-01ef-43cf-938e-f856219479d2",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "573fd3e4-7dfa-458f-b085-3d5446d210ec",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b8f67535-761a-498a-bea4-38c1698336c6",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1230ce95-9385-41ec-afd0-d0b3a9e2186d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "11e7799f-079b-4ef5-8584-27ae64f760af",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7cff98d-be17-4141-9bbe-31b18a5f8178",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1989)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12b637cd-57c9-4f1c-8d0e-a37a94dcc0bc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1989,
+  "Title": "Customised mobile messages boost vaccine coverage: study",
+  "NewsSubTitle": null,
+  "NewsSummary": "The use of automated voice messages delivered a 26 per cent increase in immunisation.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Results from a randomised controlled trial spanning over 3,300 households in rural and urban areas of Sindh have highlighted the usefulness of SMS and voice campaigns, targeted at parents and caregivers of infants, in increasing vaccine coverage in underserved areas. </p><p>Sindh has one of the lowest rates of routine immunisation in Pakistan with seven out of ten children at risk of contracting preventable, and often fatal, diseases such as diphtheria, pertussis and hepatitis B. Since 97 per cent of the province's population owns a mobile phone, text and voice messages represent an accessible and low-cost means to promote access to lifesaving vaccines in line with targets under Goal 3 of the sustainable development goals.<br/><br/></p><p>The Paigham-e-Sehat, a message of health, study saw researchers from Aga Khan University and the University of British Columbia partner with digital health and telecommunications specialists to develop a variety of mobile campaigns containing targeted messages on immunisation for rural and urban audiences in the province.  The study found that automated messages, delivered through an interactive voice response (IVR) system, delivered a 26 per cent increase in vaccine coverage, substantially higher than three other interventions and a control group which did not show a statistically significant increase in immunisation uptake.<br/><br/></p><p>Local insights were incorporated in the study's design through the help of focus groups. The focus groups showed that Sindhi was the language of choice for citizens in interior Sindh while text messages in Roman Urdu (Urdu written in English) would be more effective for those living in Karachi. Since only a fifth of all households enrolled in the study had access to a smartphone, text messages were written with feature phones in mind.<br/><br/></p><p>Health messages also reflected local views on the most effective content for the audience. These ranged from information on the health benefits of vaccines, religious considerations (vaccinations are compulsory for those undertaking Hajj and Umrah) to warnings on the adverse effects of avoiding immunisation. </p><p>These messages were then delivered through four different mediums to generate evidence on the most effective means to boost demand for routine immunisation. Participants in the study were divided into the following intervention arms which received:<br/><br/></p><p>1.A one-way series of SMS messages providing information on the benefits of immunisation.</p><p>2.An interactive sequence of SMS texts allowing the user to text back for more information.</p><p>3.A one-way schedule of 'robocalls' where the user listens to a pre-recorded voice message after picking up a call.</p><p>4.An interactive voice response (IVR) system, similar to customer service helplines, which allows the user to select options for more information after answering a call.<br/><br/></p><p>An online application, Paigham e Sehat portal, was developed by the Aga Khan Development Network's Digital Health Resource Centre which enabled the research team to track the response to each intervention. Field workers also verified if infants had been immunised at the 14-week stage through follow-up calls and a visit at 20 weeks of age.<br/><br/></p><p>\"Most studies on the use of mobile phone-based messages to promote health awareness have looked into the value of text-based reminders and educational messages,\" said Dr Momin Kazi, an assistant professor in paediatrics at child health at AKU. \"Our study has generated novel insights on the value of voice messages which is an innovative medium for health awareness. The study's findings are particularly useful in contexts where literacy is a challenge, where a variety of local languages and dialects are present or where users have trouble using SMS.\"<br/><br/></p><p>Researchers noted that the SMS interventions faced a variety of challenges from users complaining they never received messages to the issue of the SMS 'getting lost' in a long series of texts from friends and commercial entities. Another challenge noted in rural areas was that a single phone is shared between many family members and community members. This meant that even if the SMS was read, the message was often not passed to the child's caregiver. Researchers noted that IVR offered another advantage on SMS as data was available on the number of seconds that a person engaged with a message.<br/><br/></p><p>Overall, voice messages proved more appealing with one of the participants from the Karachi site saying: \"Automated calls are better than SMS, people are busy at work and do not read SMS. Calls are better.\" </p><p>This study was funded by a Rising Star grant from Grand Challenges Canada and a training grant from the US National Institute of Health's Fogarty International Center. </p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001918",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Immunisation",
+      "TermGuid": "386ac89c-5e5a-410f-b2f1-1c43237982b1",
+      "WssId": 1434
+    },
+    {
+      "Label": "Vaccination",
+      "TermGuid": "6e346c7b-cc74-4844-b3cd-b1cad583b54b",
+      "WssId": 1416
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "3c0b1059-67b1-4998-a106-4acc0ab2b5cd",
+      "WssId": 1367
+    }
+  ],
+  "ScheduleStartDate": "2019-09-06T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": {
+    "Description": "News in Urdu",
+    "Url": "http://aku.edu/news/Documents/PR%20-%20Urdu%20Paigham-e-Sehat.pdf"
+  },
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": "Dr Momin Kazi, an assistant professor in paediatrics at child health at AKU, presents the findings of the study during a seminar at the University.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1989,
+  "Modified": "2019-09-26T09:34:33Z",
+  "Created": "2019-09-06T10:00:41Z"
+}

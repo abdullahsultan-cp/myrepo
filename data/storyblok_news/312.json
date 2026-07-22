@@ -1,0 +1,188 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e040febb-29d9-4f7f-a81a-08cceff69f3d",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2acd9f22-034c-4736-8d31-06d54b51bde6",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57390b1e-2b5d-4bea-b8f1-365b06ae216d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "96dea1c9-ae27-4a1d-9ae9-51402e7156bf",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e9ee383e-0ad9-4c33-a2b6-c9559f964ac8",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2f3faa9a-bf9d-4a17-95af-6a897793aa17",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "dea62eb7-a230-471e-aed4-b0d66a753f8c",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "09cced21-c686-42ad-9285-1565a11b9ff9",
+    "Id": 24,
+    "Title": "Pa Test1",
+    "EMail": "pa.test1@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(312)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2c104116-fa37-45fe-8c91-e7011f9161bd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 312,
+  "Title": "Living the healthy heart lifestyle",
+  "NewsSubTitle": null,
+  "NewsSummary": "According to experts speaking during a World Heart Day event held at AKUH, the number of deaths due to heart diseases is expected to rise to 23 million in next 10-15 years with 80 per cent of these deaths occurring in low-income countries like Pakist",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Poor lifestyle is one of the primary causes of developing cardiovascular disease. According to the World Health Organization over 17 million people die of cardiovascular diseases each year, a number which could come down substantially if people adopted heart-healthy lifestyle options."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to experts speaking during a World Heart Day event held at Aga Khan University Hospital, the number of deaths due to heart diseases is expected to rise to 23 million in next 10-15 years with 80 per cent of these deaths occurring in low-income countries like Pakistan. Considering that over 60 per cent of Pakistan's population is below 25 years of age, the burden of cardiovascular disease (CVD) is likely to increase considerably as this population ages over the next 10-15 years."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Men and women are equally at risk of CVD.  Dr Khawar Kazmi, Professor and Section Head of Cardiology informed the gathering that the World Health Organization has set a goal of 25/25, i.e., reducing premature mortality from cardiovascular diseases by 25 per cent by year 2025. This resolution was passed at the World Health Assembly last year; Pakistan along with 194 other countries is a signatory to this resolution."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Addressing the audience, Dr Kazmi said, \"Tobacco use, spending long hours watching television, working on computers or playing video games, and eating junk or oily food are major causes of the increase in cases of cardiovascular disease among young people.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Even more concerning is that Pakistan has a high incidence of congenital diseases and approximately 60,000 children are born with congenital heart disease annually. Patients with congenital heart disease require centres equipped to deliver highly specialized cardiac care in paediatrics and AKUH is capable of providing such multi-disciplinary paediatric cardiac care."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cardiac surgery plays an important role in the treatment where surgeries are at times performed on infants weighing as little as 2.3 kilogrammes. In such a scenario, hospitals with a focus on research and education, with comprehensive, high quality, patient-centred clinical services, and state-of-the-art diagnostic equipment and prevention programmes will play a vital role in tackling heart diseases."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Experts concluded that individuals can reduce their risk of CVD by engaging in regular physical activity, avoiding tobacco use and second-hand tobacco smoke, choosing a diet rich in fruit and vegetables and avoiding foods that are high in fat, sugar and salt, maintaining a healthy body weight and avoiding alcohol. World Heart Day represents a great opportunity  to communicate the importance of elevating heart diseases up the national health agenda. "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000272",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "6f0bcd20-a624-4b55-a7b7-f1463b4bc779",
+      "WssId": 1391
+    },
+    {
+      "Label": "Tobacco",
+      "TermGuid": "09054626-d779-4795-972b-88e4913cdb5b",
+      "WssId": 1386
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2014-09-27T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 312,
+  "Modified": "2017-02-22T07:21:56Z",
+  "Created": "2016-11-25T10:01:09Z"
+}

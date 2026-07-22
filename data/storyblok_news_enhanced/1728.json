@@ -1,0 +1,309 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e036bfc8-6b5a-49d1-be0a-6d163309372e",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "da6afbae-6e49-4dbe-805c-a096679b35bd",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1e3b8aeb-63c1-4c64-a2e5-325af8292e4b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "36bc09a7-0979-48ba-ae4a-5e93548ad310",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "a8313bbd-be0d-435c-b244-4a0c1ba315e0",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6ff9beb2-d02a-4e88-847c-c47b5321f27e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2bf28e65-bcd2-44a1-b13c-5623a9c38ee9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d5b4c154-1773-470c-b80f-178eaf76a6af",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1728)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e133c90c-5986-476b-b037-18e2e531fa5a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1728,
+  "Title": "Prof Zulfiqar Bhutta elected to U.S. National Academy of Medicine",
+  "NewsSubTitle": null,
+  "NewsSummary": "NAM membership is considered one of the highest honors in health and medicine.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Zulfiqar Bhutta, founding director of the Aga Khan University's Centre of Excellence in Women and Child Health and Co-Director of SickKids Centre for Global Child, has been elected to the U.S. National Academy of Medicine (NAM)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Membership in the NAM is considered one of the highest honors in the fields of health and medicine and recognizes individuals who have demonstrated outstanding professional achievements and commitment to service."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The appointment of 75 new members and 10 international members was announced by the NAM at its annual meeting on October 15, 2018."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Professor Bhutta has been elected \"for his synthesis of knowledge on effective child health interventions, implementation research in marginalized populations, and strategic advocacy for improving child health and development,\" said an "
+          },
+          {
+            "type": "text",
+            "text": "official announcement",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://nam.edu/national-academy-of-medicine-elects-85-new-members/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The National Academy of Medicine, established in 1970 as the Institute of Medicine, is an independent organization of eminent professionals from diverse fields including health and medicine; the natural, social, and behavioral sciences; and beyond. It serves alongside the National Academy of Sciences and the National Academy of Engineering as an adviser locally in the U.S. and to the international community. Through its domestic and global initiatives, the NAM works to address critical issues in health, medicine, and related policy and inspire positive action across sectors."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Professor Bhutta has had a 30-year-long academic career at AKU and the global impact of his work has seen him take up prominent positions at leading universities in Canada, the UK and the United States. An expert on nutrition, newborn and child survival, and micronutrient deficiencies; he has published several books, book chapters and indexed publications."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Between 2003 and 2014, Professor Bhutta served as the Founding Chair of the National Research Ethics Committee of the Government of Pakistan. He has also been a member of the Independent Expert Review Group (iERG) appointed by the UN Secretary General to monitor global progress in maternal and child health related Millennium Development Goals between 2011 and 2015."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "He is also the recipient of "
+          },
+          {
+            "type": "text",
+            "text": "The World Academy of Sciences 2016 TWAS Prize",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/professor-bhutta-wins-2016-twas-award-in-medical-sciences",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "65b8d8de-3d11-5e13-a2ef-2fe73aefe76a",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in medical sciences, "
+          },
+          {
+            "type": "text",
+            "text": "the Geneva Forum for Health Award for 2016",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/professor-bhutta-honoured-with-geneva-forum-for-health-award",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "f8d54e17-6775-5af1-b429-ed2d9834fe93",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "text",
+            "text": "the 2015 International TÜBA Academy Prize",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/dr-bhutta-receives-2015-t-ba-academy-prize",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "319cbaff-28e2-57c2-bbf8-9a335948c757",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "the Pride of Performance Award from the President of Pakistan",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/president-of-pakistan-confers-national-awards-on-aku-faculty",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "fb12e696-f978-5858-8e66-63e1294f7f9b",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in 2017 for his contributions to healthcare education in health and life sciences."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001672",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2018-10-15T18:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "NAM membership is considered one of the highest honors in health and medicine",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1728,
+  "Modified": "2018-10-15T18:27:08Z",
+  "Created": "2018-10-15T18:18:17Z"
+}

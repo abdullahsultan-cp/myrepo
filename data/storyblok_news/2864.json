@@ -1,0 +1,247 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "080b7eb5-e64c-4582-98a3-a3e45ed3362e",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "935f9e8d-ed91-4dd6-84d8-d8af3f0e0b11",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c1bbde32-91de-4b87-b23d-44590c8007d9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bc0dadb5-a60d-4ad2-921e-52b29850bf23",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "0b8fe35d-53a7-4686-b143-1c547ec5219a",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8ad7758e-aae0-449e-898c-3a8bfc129a79",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "151e599a-bba6-4b04-bfec-c0bb6be3c270",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f8e8c82a-5802-457f-ab9f-21ef6b7d21cb",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2864)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2142e5ba-73a6-4038-a829-df7b48bc18e2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2864,
+  "Title": "Prestigious global recognition for AKU faculty",
+  "NewsSubTitle": null,
+  "NewsSummary": "Prof Marleen Temmerman elected to the American Academy of Arts and Sciences",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Marleen Temmerman, Director of the Centre of Excellence in Women and Child Health at Aga Khan University has been elected as an International Honorary Member of the prestigious "
+          },
+          {
+            "type": "text",
+            "text": "American Academy of Arts and Sciences",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.amacad.org/new-members-2022",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The "
+          },
+          {
+            "type": "text",
+            "text": "Academy",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.amacad.org/about-academy",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " is both an honorary society that recognizes and celebrates the excellence of its members and an independent research center convening leaders from across disciplines, professions, and perspectives to address significant challenges. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Marleen was elected within the medical sciences category for her scholarly work of over 600 publications and books, her clinical work in gynaecology and obstetrics with over 18,000 deliveries, her global academic and political leadership in health, rights, gender and equity, and her dedication to the most vulnerable populations in the world. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I am honoured, humbled and proud to be elected as a new member of the prestigious Academy of Arts and Sciences and eager to contribute to leveraging equity, diversity, solidarity and peace globally,\" she said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For more than 240 years, the Academy has been electing and engaging exceptional individuals. This year's election of 261 new members continues a tradition of recognizing accomplishments and leadership in academia, the arts, industry, public policy, and research."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Marleen is a recognized global leader in women, child and adolescent health. She brings academic, technical, political, governance and leadership skills to the table as well as diplomacy, advocacy, fundraising, education and clinical expertise.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In 2020, Kenya's President Uhuru Kenyatta awarded Prof Marleen the \"Moran of the order of the Burning Spear,\" MBS, for her 35-year investment in health and education in Kenya."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She has a strong track record of working with governments, multilateral organisations, academia, professional bodies, development agencies, private sector, consultancy agencies, civil society, non-governmental and faith-based organisation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Marleen has served as an Elected Senator in the Belgian Parliament and as Director of the Department of Reproductive Health and Research at the World Health Organization. She is also the AKU-UNESCO Chair of Youth Leadership in Science, Health, Gender and Education and Chair of the Pumwani Maternity Hospital Board."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002757",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2022-05-05T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2864,
+  "Modified": "2022-05-06T12:35:27Z",
+  "Created": "2022-05-05T14:25:48Z"
+}

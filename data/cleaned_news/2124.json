@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "255b27aa-17cd-490a-9e20-26d5d7c33992",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a0779006-0b5c-4c86-9fda-43afd0046d4f",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "23b93b78-ecdf-488f-90a3-bdb69caa9f27",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1ced442c-033f-44c9-a353-f17eefd85c47",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "abfae406-dfaf-4805-afda-cfd76566ce1a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e729950b-9ed1-4bfd-afc1-10143c96ee0a",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5019dba9-3a0e-4c5b-ad72-7f6f430e87cc",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2124)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0259be56-aed7-4c66-86c0-27913e83f982",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2124,
+  "Title": "Fun and games for a noble cause",
+  "NewsSubTitle": null,
+  "NewsSummary": "'Falah' raises generous funds for patient welfare in its annual bonfire",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass4DFA392B972B4957A821DD87BA68B155\"><p>A chilly Monday evening brought out some warmth and festivities on campus as a student-run organization of AKU, Falah, organised its annual bonfire.<br></p><p>The smells of fresh barbeque and hot Kashmiri chai were in the air, all to be enjoyed next to a small camp fire. Apart from games and food stalls, including a shaadi stall where students took pictures against a backdrop of a mehndi event, there were dance competitions. All five MBBS classes showed their best moves on stage with the class of 2020 winning the competition for their amazing performance.</p><p>Falah, a registered non-governmental organization managed entirely by the student body, generates funds through contributions by philanthropists both inside and out of Pakistan. Throughout the academic year, Falah organizes various activities such as carnivals, bake sales and bonfires to collect funds that are used for medical treatment and medication of non-affording patients at AKU. Falah also arranges regular blood donation drives to contribute to stocks in the hospital blood bank.</p><p>In this year's bonfire event, Falah raised a total of PKR 193,730, all of which will be used for patient welfare at AKU. Speaking about the success of the event, MBBS class of 2020 student and Falah president Mustafa Ali Khan said, \"We had a great turnout at the bonfire as everyone participated fully and contributed so generously. The shaadi stall was a huge success especially as everyone enjoyed it in good humour.\"</p><div><p>Dean Medical College, Dr Adil Haider and his family, also joined the students in their fun and encouraged them to work towards an even brighter future for the organisation.<br></p><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002042",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "students",
+      "TermGuid": "924138ea-95e8-482e-8e82-ca5ee2097d44",
+      "WssId": 1797
+    }
+  ],
+  "ScheduleStartDate": "2020-01-31T09:35:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2124,
+  "Modified": "2020-01-31T09:34:02Z",
+  "Created": "2020-01-31T09:30:55Z"
+}

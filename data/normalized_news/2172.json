@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "dea771e8-af11-4f32-b73a-848820cb8ca5",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "197b6dea-470c-4ff7-9b06-16589bdfdeca",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e390f3fb-4edc-4dfa-8e3b-e429b92ebe70",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e42e2f59-ab6b-46a4-8ebf-8bf4667a358e",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d70c6690-2985-4864-8346-8c55ee51a1cf",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "18dfc35f-9bb2-4706-8a3d-63737652f8ae",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "eb565214-4855-4ebc-8282-76fa0e4e6018",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0d0d96c1-ab61-482b-b8d2-95cad78dea87",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2172)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f45b95c2-f2c1-423b-aa0e-ba90e918b2ae",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2172,
+  "Title": "AdAsia 2019",
+  "NewsSubTitle": null,
+  "NewsSummary": "Mr. Shayan Alwani, who is responsible for CIME's business development, had an opportunity to be part of AdAsia Congress 2019. It was a full of learning experience, and showed how we can promote simulation-based education in our society.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>AdAsia 2019, the most prestigious global Advertising and Marketing Communications Conference, returned to Lahore after 30 years bringing many prominent global personalities to Pakistan from the media, marketing and advertising industry including Richard Quest, CNN anchor, Randi Zuckerberg, CEO Zuckerberg Media, and Fernando Machado, CMO Burger King, America. </p><p>Mr. Shayan Alwani, who is responsible for CIME's business development, had an opportunity to be part of AdAsia Congress 2019. <br/></p><p>It was an experience full of learning, and showed how we can promote simulation-based education in our society and how we can collaborate with different organisations in different ways..<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002087",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "d81e6f5f-db68-4899-860d-79e20d584a99",
+      "WssId": 1860
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    }
+  ],
+  "ScheduleStartDate": "2019-12-13T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2172,
+  "Modified": "2020-03-02T10:02:46Z",
+  "Created": "2020-02-28T07:24:56Z"
+}

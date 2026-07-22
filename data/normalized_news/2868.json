@@ -1,0 +1,110 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "158ae6aa-8a22-4e7e-ad2b-1ea6939c6290",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "616ee380-8f51-4194-9935-3c484a5be77e",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0e2a9f5b-1d39-4945-a9d3-47998e63d4f4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "71f0a2fc-f900-4ea0-a3cd-30200fa11ed7",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3d96a1a9-b01e-4f5f-880e-092a65aff15a",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b05a00b2-b3dd-4d03-86ed-8763f469b924",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b3267052-f02a-4234-82c3-559ef0258d19",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2868)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a5d9457a-51d3-477c-acca-f2b1b89d9518",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2868,
+  "Title": "Professor Stephane Pradines Talks about the \"Journal of Material Cultures in the Muslim World\"",
+  "NewsSubTitle": "AKU-ISMC Publications",
+  "NewsSummary": "Editor-in-chief Professor Stephane Pradines explains how the Journal  has become the go-to publication for many people and fields.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p><br/>Editor-in-chief Professor Stephane Pradines explains how the <em><a href=\"/ismc/publications/Pages/mcmw.aspx\" target=\"_blank\">Journal of Material Cultures in the Muslim World</a></em> has become the go-to publication for field archaeologists, art historians, anthropologists, curators, scholars and students of material culture in Muslim contexts.<br/></p><p><a href=\"http://www.aku.edu/ismc/people/Pages/stephane-pradines.aspx\" target=\"_blank\">Stephane Pradines</a> is an archaeologist and Professor of Islamic Art and Architecture at AKU-ISMC in London. Professor Pradines was the Director of the excavations of the Walls of Cairo (Egypt) and many other excavations in the Indian Ocean and East Africa. He is a specialist of Islamic archaeology in Sub-Saharan Africa, Indian Ocean medieval trade and Muslim material culture of war.<br/><br/></p>\n<div data-src=\"https://www.youtube.com/embed/AWrsu-JGsg8\" data-storyblok-embed=\"youtube\"></div><br/>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002761",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2022-05-20T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2868,
+  "Modified": "2022-05-20T09:06:20Z",
+  "Created": "2022-05-11T10:14:54Z"
+}

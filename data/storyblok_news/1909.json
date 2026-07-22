@@ -1,0 +1,168 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e796060c-6770-4248-8a1b-8a2f391eb460",
+  "odata.etag": "\"19\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6f31c30b-ae9a-4ae9-81c4-689f597ef337",
+    "Id": 5919,
+    "Title": "Fouzia Qalandershah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4d7ae904-0468-4707-8774-9cd331e73b17",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82acf101-c1cd-4f9c-adfa-8acbe7919369",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "31efbf3e-9db5-4034-a05a-0a866206594f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0114eb5b-54fa-4930-ba6c-58fece868e59",
+    "Id": 13,
+    "Title": "Network of English Language Enhancement"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "58d7bb5c-370c-4c26-be08-7321deb5d288",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1909)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5caea44d-2665-4fe5-9c6d-f6e46b7afc3b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1909,
+  "Title": "Business English: Improve your Communication for Work",
+  "NewsSubTitle": null,
+  "NewsSummary": "Effective communication is critical for any organisation.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Effective communication is critical for any organisation. In organisations like AKU which use English in many work-related situations, it has become imperative to be able to communicate effectively through English. Indeed, a high level of English is considered an essential global skill. ELE_net's Business English courses provide you with a great opportunity to develop your English skills for business and work-related purposes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We provide a blended learning approach integrating a British Council online course into our face-to-face classes. These classes are very interactive, engaging and, according to our previous course participants, a lot of fun!  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The language-rich content revolves around introductions and small talks, working with clients, handling feedback, discussing customer relations and networking, understanding different written communication, and giving a  presentation like a pro! You will also improve your pronunciation, fluency and accuracy when speaking in English."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Get ahead in your career and sign up for an ELE_net Business English course!"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://www.aku.edu/ele-net/staff/Pages/Business_English.aspx",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/ele-net/staff/Pages/Business_English.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001840",
+  "LocalApproverGroup": "ELE News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "network of english language enhancement",
+      "TermGuid": "7ba478cc-200e-40f5-9aa0-234ba234a3fd",
+      "WssId": 1907
+    }
+  ],
+  "ScheduleStartDate": "2019-06-06T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1909,
+  "Modified": "2020-05-11T06:14:04Z",
+  "Created": "2019-06-06T12:21:49Z"
+}

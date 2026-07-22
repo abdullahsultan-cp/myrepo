@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d03d3648-95c7-4144-a3ba-f32cf6af6ac9",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a93550a0-59cd-48b4-ade8-3ffa1567f221",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e5bef129-eb17-4bf3-85f5-531f36b0629a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "85740e01-4734-4bfa-9e34-cc5e0ce410a7",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "90dc813a-e65e-43d8-9db8-bac9e5fb4aa9",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "437c6e53-8b7b-4069-a5ad-56e85c97c7aa",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "039f035a-6b1d-4643-b4bd-bef2b0c2d6c4",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "60ea932a-41a0-46a7-84f3-f4dc8fd4d316",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1319)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5face734-f6a6-48ec-940c-f657761b914b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1319,
+  "Title": "Networking with the south on quality assurance matters",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Director of the Networks of Quality, Teaching and Learning was invited by the South African Commission for Higher Education (CHE) and the South African Quality Assurance Network (SAQAN) to give a key note address to share lessons from the EAQAN",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p><p>Dr. Tashmin Khamis, the Director of the Networks of Quality, Teaching and Learning was invited by the South African Commission for Higher Education (CHE) and the South African Quality Assurance Network (SAQAN) to give a key note address to share lessons from the East African Quality Assurance Network (EAQAN) during the 3rd Southern African Regional Conference on Quality Assurance in Higher Education which took place between 19 to 21 October 2016 in Pretoria, South Africa. </p><p>Titled \"The East African Quality Assurance Network (EAQAN): creating a quality conscious higher education community of practice in East Africa\", Dr. Khamis, the immediate past EAQAN President shared with the participants how EAQAN promotes a culture of quality in higher education, as well as develops quality assurance capacity within higher education institutions in East Africa. Dr. Khamis also highlighted the role being played by EAQAN's quality assurance conferences and the activities of the quality forum in creating a quality conscious higher education community in East Africa.</p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001269",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "TL Net",
+      "TermGuid": "a0c5ec1d-c89d-4f1f-853c-bb95a56e3b4d",
+      "WssId": 1597
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    },
+    {
+      "Label": "learning",
+      "TermGuid": "b351e1a2-14c8-4b3f-af1d-e57118360c5f",
+      "WssId": 1498
+    }
+  ],
+  "ScheduleStartDate": "2017-10-25T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1319,
+  "Modified": "2017-10-30T10:56:43Z",
+  "Created": "2017-10-25T07:06:51Z"
+}

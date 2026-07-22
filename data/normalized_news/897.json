@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3e66105e-8be2-4084-81a0-1bd9d94de63f",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d9d55aa-1676-49ef-aedf-b2ea92f6169b",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "650d65a3-1031-4eb9-bea9-d55406286c1f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "584e83d4-3298-4b2b-9766-2725d70e4536",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "305fea29-d890-465b-9d9d-3c918b260a57",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "af4a6f35-aaa8-4d27-986e-68f9f8126139",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "90da8bf7-78ae-45ae-8309-f937ea8334c5",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bcdc9f07-f0fd-4a88-87f8-3949d4a53e44",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(897)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dbb32dda-f484-4aae-8ef7-69a897085782",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 897,
+  "Title": "Quit smoking day at AKU",
+  "NewsSubTitle": null,
+  "NewsSummary": "National Quit Smoking Day will be observed in Pakistan on the 1st of Ramazan. To counsel smokers on how to quit smoking, a seminar is being held at Aga Khan University, Karachi on October 12, 2004 at 2:00 PM at Lecture Hall 2.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>National Quit Smoking Day will be observed in Pakistan on the 1st of Ramazan. To counsel smokers on how to quit smoking, a seminar is being held at Aga Khan University, Karachi on October 12, 2004 at 2:00 PM at Lecture Hall 2.</p><p>Experts will deliver lectures and recommend methods of quitting tobacco, which is known to be responsible for 100,000 deaths per year in Pakistan. Globally, some five million people die every year as a result of smoking. Lung and mouth cancer are the two leading causes of cancer deaths in Pakistan and both are considered to be strongly associated with tobacco use.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000855",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Tobacco",
+      "TermGuid": "d2f6d8b4-7d87-4c65-86cf-59a308a46596",
+      "WssId": 1918
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Cancer",
+      "TermGuid": "411d7b69-24d4-4980-b5c0-26092e650968",
+      "WssId": 1926
+    }
+  ],
+  "ScheduleStartDate": "2004-10-09T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 897,
+  "Modified": "2020-05-02T17:41:48Z",
+  "Created": "2016-12-23T06:42:01Z"
+}

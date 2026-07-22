@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4200e930-1190-4a1d-b49e-68fbc4dd281f",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fe643fd7-8958-467e-8671-6c254ba2e39e",
+    "Id": 3461,
+    "Title": "Akber Ali"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c615fb76-6e20-425c-bead-756c26881c90",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "68c8e19a-ca5e-4562-b467-37eca761846e",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3f043498-18f8-493b-a34e-48bf913435da",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "edbbc128-628f-4d47-adb3-ec78f67bbe16",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "fcf1b67f-1a06-4358-982d-38570909fac8",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b243c0de-c86c-41d7-88f8-a03e3c8b04ae",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2861)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a8435023-b5bb-4f4e-bca1-1b49792079cc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2861,
+  "Title": "Supplementary Immunization Coverage Survey in Super High Risk UCs of Pakistan",
+  "NewsSubTitle": "TPVICS-SHRUCs",
+  "NewsSummary": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass0AB20E403FE343AEA039B69C0946B172\"><p>\u200b<br></p><p>Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-preventable disease in the country. To augment this effort, Pakistan started its National Immunization Support Project (NISP) in 2016 to coordinate efforts for vaccination and reduce vaccine-preventable diseases. Additionally, to address the recurring endemic poliovirus in the country, the National and Provincial Emergency Operations Centers (NEOC and PEOCs) for polio eradication identified 40 union councils as Super-High Risk Union Councils (SHRUCs) for targeted interventions. The national EPI and the co-financing partners of NISP (the World Bank; the United States Agency for International Development (USAID); Gavi, the Vaccine Alliance; and the Bill and Melinda Gates Foundation) agreed to carry out a Union Council (UC)-specific vaccination survey in these SHRUCs.&#160;To read the report <a href=\"/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf\" target=\"_blank\">click \u200bhere</a>\u200b\u200b<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002754",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2022-04-26T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2861,
+  "Modified": "2022-04-26T08:01:15Z",
+  "Created": "2022-04-26T07:41:28Z"
+}

@@ -1,0 +1,200 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4f052cd9-5f43-4dc1-a4ac-f6ac98cd9238",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c624e6e6-84a3-4a48-b3fb-7006eb06f78e",
+    "Id": 12821,
+    "Title": "Maryam Ahmad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "72bdf38d-8116-4e30-9aa0-79dc1bd9b682",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "62da2345-1649-4725-9cb7-5b5588e84daa",
+    "Id": 12821,
+    "Title": "Maryam Ahmad",
+    "EMail": "maryam.ahmad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d55d7bea-012a-4e97-b25d-d5438a8bc261",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2970e4f2-f9e5-45e0-bcdf-05b24adb3eb7",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "afc474b5-6f2d-4530-aa88-7ce772bfb2ff",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b6dcf2ad-696b-498a-92d9-b903fb75c39f",
+    "Id": 12821,
+    "Title": "Maryam Ahmad",
+    "EMail": "maryam.ahmad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3168)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bd64c71f-b754-4c25-be33-90d696d761cd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3168,
+  "Title": "AKU's Ophthalmology Department Receives CPSP Approval for Vitreo-Retinal Programme",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Department of Ophthalmology and Visual Sciences has been granted CPSP fellowship approval for its Vitreo-Retinal Programme",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In a significant milestone, the Department of Ophthalmology and Visual Sciences at the Aga Khan University has been granted CPSP fellowship approval for its Vitreo-Retinal Programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Vitreo-Retinal Programme offers comprehensive and specialized training in vitreoretinal diseases, led by the expertise of Dr Haroon Tayyab and his dedicated team, which includes Dr Abdul Sami Memon, Dr Rehman Siddiqui, and Dr Pir Salim Mahar. This fellowship equips aspiring ophthalmologists with extensive exposure to various retinal conditions, with a particular focus on pediatric cases like retinopathy of prematurity and retinal tumors such as retinoblastoma."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The fellowship's unique hands-on curriculum incorporates AKU's teaching material, utilizing the vast resources of the Karachi campus, such as the EyeSi simulator and affiliated hospitals along with the hospital network of The Aga Khan Health Service Pakistan (AKHSP), ensuring hands-on experience for fellows to handle complex retinal surgeries. As a major referral center in Pakistan, the hospital provides an ideal setting for trainees to experience both the medical and surgical aspects of vitreoretinal diseases."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The impact of this fellowship resonates with the ophthalmological community and the broader population. With only 96 vitreoretinal surgeons serving a population of over 200 million people in Pakistan, the need for more trained specialists is evident. The programme's emphasis on pediatric retinal conditions addresses a critical healthcare challenge and equips fellows to make a significant difference in the lives of young patients."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Moreover, AKU's collaboration with the medical genetics department opens new avenues in understanding inherited retinal disorders. The integration of genotyping of these disorders offers prospects for future clinical trials and advancements in the field of ocular genetics, contributing to cutting-edge research in ophthalmology."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In collaboration with the Center for Regenerative Medicine, the department's plan to induct a translational vision scientist promises exciting research opportunities. This collaborative appointment will empower Vitreo-Retinal Programme fellows to engage in innovative research and contribute to groundbreaking discoveries. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The approval of the Vitreo-Retinal Programme by CPSP marks a pivotal moment for AKU's Department of Ophthalmology and Visual Sciences. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This approval signifies the graduation of retina subspecialists who will provide top-notch, internationally recognized medical and surgical care during a critical period of demand. Our graduates will be adept at managing complex retinal diseases, including diabetic eye disease, macular degeneration, retinal detachment, eye stroke, and inherited retinal diseases,\" remarked Chair of the Department Dr Karim Damji.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This feat not only showcases the department's commitment to excellence in ophthalmic care but also highlights its dedication to addressing the pressing healthcare needs of the region. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003049",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Ophthalmology",
+      "TermGuid": "3c5d706f-49a6-48d2-a5fb-cd91bed35bab",
+      "WssId": 2318
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    }
+  ],
+  "ScheduleStartDate": "2023-07-31T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3168,
+  "Modified": "2023-08-01T07:47:19Z",
+  "Created": "2023-07-31T10:31:33Z"
+}

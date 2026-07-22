@@ -1,0 +1,119 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3f9f6c0b-8424-4adf-b51e-843a4f7d599f",
+  "odata.etag": "\"33\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4bb0a078-67ac-4780-ab6b-af50879bba31",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bdfbc976-0583-4756-a5a3-14dac8108e5c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8bed1713-7231-4e23-b723-ae310ca505e8",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "5eecc91a-4b9e-4b89-81fc-bbc84513ebc1",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "15e8c950-2d47-413d-97c1-08b3baaee305",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2e012ad0-1085-4bff-b628-05d4ebbda579",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ff9431a5-f300-4ec2-a64f-60503f04b801",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(523)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6181ff1c-7357-4ed0-9db5-7ebff8d1f11f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 523,
+  "Title": "'Is Jinnah Relevant in Pakistan Today?'",
+  "NewsSubTitle": null,
+  "NewsSummary": "Mr Liaquat H. Merchant, the grandnephew of Mohammad Ali Jinnah, the Executive Trustee of the Quaid-e-Azam Aligarh Education Trust, the President of the Jinnah Society, and the recipient of the Sitara-e-Imtiaz",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mr Liaquat H. Merchant, the grandnephew of Mohammad Ali Jinnah, the Executive Trustee of the Quaid-e-Azam Aligarh Education Trust, the President of the Jinnah Society, and the recipient of the Sitara-e-Imtiaz, gave an engaging talk on Jinnah's vision for Pakistan as part of Aga Khan University's Special Lecture Series (SLS). Through his speech and visual presentation, Mr Merchant reminded the audience of the Quaid-e-Azam's strong belief in democracy and a representative government, his confidence in the supremacy of the rule of law, his faith in the freedom of speech and the protection of human rights. Though it was a misfortune to lose Jinnah one year after the creation of Pakistan, he is the figure around whom \"Pakistanis can rally to achieve national unity and progress in the modern world\". Mr Merchant reminded the audience that if this country is to be \"Jinnah's Pakistan\", then there is a need to revisit and recover the Quaid's vision for this nation. The talk was followed by a lively question-and answer session."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000481",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Special Lecture Series",
+      "TermGuid": "777a47fa-d29b-49dc-858f-cdcae5486bab",
+      "WssId": 1892
+    }
+  ],
+  "ScheduleStartDate": "2011-01-19T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 523,
+  "Modified": "2020-12-09T06:26:27Z",
+  "Created": "2016-12-08T07:09:28Z"
+}

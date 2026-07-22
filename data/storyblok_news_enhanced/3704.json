@@ -1,0 +1,225 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d3b9060e-b431-4cea-8fea-3db210994204",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a0616064-9dd0-4817-ad34-263efa3bacd2",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "19b00a1f-c086-4a20-8054-6eb2e9fe2b90",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c4e7d028-658b-4491-89c0-429f11d4bdc8",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "51b81fae-8fde-4055-9b6b-3203184cad0f",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "90846caf-e425-43c3-856f-d4e1cfc70bc2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "d04e607f-572b-4def-89d0-e6364ab509e0",
+      "Id": 36,
+      "Title": "Data Office"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bc63f659-39fb-42ef-af46-ebab3de849d0",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3704)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5291bc9b-2bc7-4d0d-99a1-e74eedcafff6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3704,
+  "Title": "AKU Secures Participation in Prestigious Google Accelerator",
+  "NewsSubTitle": null,
+  "NewsSummary": "The project 'Afya Gemma' will enhance clinical decision-making in Kenyan health facilities",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Afya Gemma, an innovative AI-powered clinical decision support platform developed by Aga Khan University Data Innovation Office has been selected from nearly 3,000 global applications to participate in the "
+          },
+          {
+            "type": "text",
+            "text": "2025 Google.org Accelerator: Generative AI",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://google.org/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Google.org launched an open call to find the next Accelerator cohort, providing resources to help address barriers that prevent the social sector from harnessing the power of generative AI. Participants of the Google.org Accelerator: Generative AI will receive a share of $30M alongside six months of structured support with access to dedicated pro bono assistance from Google employees, technical training, and Google Cloud credits to build socially impactful gen AI-powered solutions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With this support, Afya Gemma will scale its efforts to equip clinicians across Kenya with real-time, evidence-based guidance tailored to local healthcare realities. The platform integrates anonymized health records from a Kenyan Electronic Health Record (EHR) repository developed by Aga Khan University for research, alongside Kenya-specific clinical guidelines and a curated library of peer-reviewed research studies - enabling clinicians to make more informed decisions via natural language queries."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We're honoured to join the 2025 Google.org Accelerator,\" said Farhana Alarakhiya, Chief Data Innovation Officer, Aga Khan University and Principal Investigator for Afya Gemma. \"In Kenya, just over 10,000 doctors serve more than 52 million people-leaving vast gaps in access to specialist expertise, particularly in rural and underserved communities. Afya Gemma was built to help close this gap. By harnessing generative AI, we're democratizing clinical knowledge-making it instantly accessible to frontline healthcare workers through natural language queries in English and Swahili. With Google.org's support, we can accelerate the localization and refinement of our models, ensuring that even the most remote clinics have access to the same quality of insights as urban hospitals.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Afya Gemma will be deployed in 40 facilities across the extensive network of Aga Khan University Hospital (AKUH) and Aga Khan Health Services (AKHS) facilities focusing on bridging the research-practice gap and enhancing care quality through AI. The platform's multilingual interface ensures accessibility across Kenya's diverse healthcare workforce, and its insights are rooted in region-specific disease trends and protocols."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participating in the Generative AI Accelerator underscores AKU's commitment to innovation and improving healthcare outcomes in Kenya and beyond. This support will significantly accelerate the development and deployment of the Afya Gemma platform, a major step in scaling equitable, data-driven care across low-resource settings and ultimately leading to a healthier future for countless individuals."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Learn more about Afya Gemma "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/data-innovation-office/Pages/afya-gemma.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003572",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Innovation",
+      "TermGuid": "9b1177f6-ee80-4dce-b188-94f66824c836",
+      "WssId": 2179
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "2d1be9e0-8877-428f-8a6f-ff032c81de24",
+      "WssId": 2106
+    }
+  ],
+  "ScheduleStartDate": "2025-06-12T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3704,
+  "Modified": "2025-06-12T07:41:51Z",
+  "Created": "2025-06-12T07:38:56Z"
+}

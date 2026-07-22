@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d2eaea9a-cca5-42a8-9eb1-029b66a92d78",
+  "odata.etag": "\"4\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8db59e6f-5eb6-4bb8-8163-f793104d4084",
+    "Id": 73,
+    "Title": "Akber Iqbal"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6b1be29e-0072-493b-863a-8a86617601e2",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2247f6ff-2683-4f9e-876e-4daf2923c0fd",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "2021f279-3866-4bcc-b28c-0b81d71fc5a7",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6055a23b-0133-4724-b39b-7d2b1d00aae9",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ee765295-0ac0-4f03-9284-5bb46835c8aa",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3c5951b9-b534-45c7-a97f-ee79a196cf38",
+    "Id": 73,
+    "Title": "Akber Iqbal",
+    "EMail": "akber.iqbal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(152)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9f0dcbb3-7b9d-46a9-af82-5fb30c212453",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 152,
+  "Title": "AKU Alumnus, Dr Atiq-ur-Rehman, performs first TAVR in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Atiq-ur-Rehman (Class of `92), Director of Minimally Invasive Cardiac Surgery at Our Lady of Lourdes Medical Center, recently performed the first transcatheter aortic valve replacement in Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Dr Atiq-ur-Rehman (Class of `92), Director of Minimally Invasive Cardiac Surgery at Our Lady of Lourdes Medical Center, recently performed the first transcatheter aortic valve replacement in Pakistan.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000121",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "news",
+      "TermGuid": "93f629dc-877e-4a35-b39f-f340b231fb18",
+      "WssId": 726
+    },
+    {
+      "Label": "aga khan university",
+      "TermGuid": "3b5e0457-86af-4040-a5d6-a4aa82185fb6",
+      "WssId": 796
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": null,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 152,
+  "Modified": "2016-05-17T15:28:24Z",
+  "Created": "2016-05-17T12:57:26Z"
+}

@@ -1,0 +1,304 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7252f957-efdb-4bac-9e3a-0bd58553e3de",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "edd3177b-8db3-49fc-a391-5fbf4fdff6bd",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1f79c96c-2039-4846-b3c4-bc7ebce0f131",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2af02407-12b8-41b2-9cf6-dbf566aa1c1f",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a7821087-447c-49c2-a88e-cb782604f25a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a2f53dec-d6c4-4699-a48f-952d814cb695",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "63976861-f8f8-4daf-8e45-0bb562655e2b",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57095625-5856-4bd1-a1b5-9c0468d95c62",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2469)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4eb388e7-5750-4f24-8242-3a7de231942d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2469,
+  "Title": "Ensuring equity in the online classroom",
+  "NewsSubTitle": null,
+  "NewsSummary": "In class or on Zoom, educators must recognise the barriers to learning faced by students. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Educational equity means that each child receives what they need to develop to their full academic and social potential.\" - National Equity Project, USA. ",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Anila Wasim* teaches academic skills to her first-year university students every week. Initially she was teaching this course in-person but due to rising cases, her classes have been shifted online. The transition has dramatically affected her classroom. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She notes that many of her high-performing students are now behaving differently. One of her most enthusiastic students now rarely participates, another keeps logging in and out during class hours, while a third student has stopped attending classes altogether. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Concerned, Dr Anila reaches out to her students and finds out that each of them are facing different struggles. The first student attends classes from a bedroom shared with her sibling and feels self-conscious speaking up. The second student faces internet connectivity issues leading to Zoom frequently restarting and hence misses out on important aspects of the class. The third student has returned to her home in northern Pakistan and their hometown has no internet access whatsoever. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All these students have one thing in common: their learning has been compromised by factors outside of their control. To rectify this, Dr Anila is considering providing recordings of her lectures and encouraging her students to participate in class through the chat feature in Zoom. By doing so, she is ensuring that her classroom is an equitable environment for all students. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The principle of equity calls upon educators to identify and accommodate the different hindrances that particular students may face. The need for equitable classrooms has been especially exacerbated during the pandemic. COVID-19 and subsequent lockdowns left many institutions with no choice but to transition online. The suddenness of the switch left many students, parents and teachers struggling to acclimate. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In a traditional brick and mortar classroom, all students are physically present in the same space and have access to the same materials. The classroom environment is one that is largely controlled by teachers. Teachers can observe their students and ensure that learning objectives are being achieved. Once students are logging in from their homes, those same objectives become harder to accomplish; there are now many external factors that may be affecting their students' learning environment. Teaching pedagogy now needs to be tailored to meet all the diverse needs of the students. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To truly create an equitable online classroom, one has to be aware of the home environments of teachers and students. One factor that impacts access to the online classroom is connectivity. In Pakistan, internet access varies from region to region and the digital divide is especially large between rural and urban areas. Faculty at Aga Khan University were confronted with this dilemma as the majority of their students would be returning to areas with poor internet connectivity. Attending online classes would be a significant hurdle. To combat this issue, AKU partnered with Aga Khan Education Service, Pakistan (AKES,P) schools to allow AKU Institute of Educational Development (IED) and School of Nursing students to  access their computer labs in Gilgit-Baltistan and Chitral. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Dilshad Ashraf, an associate professor at IED who researches gender and equity, emphasises that students' \"socio-cultural contexts\" must be acknowledged and accommodated. This entails not only understanding how geography determines access but the gender roles that students are expected to fulfill in their respective communities. She shared how many male students who returned to their villages, were now expected to help out with the harvest. Similarly, many female students were expected to shoulder household or domestic chores along with attending class. For both male and female students, these responsibilities could not be avoided and took up a considerable amount of their energy and time. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Moreover while male students could travel longer distances to get internet access, female students had restricted mobility. This means that the reasons for being absent or falling behind have now widened. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In online teaching, a blend of synchronous teaching, where instruction happens in real time, and asynchronous teaching, where students are provided materials and can learn at different times, is recommended. This allows students to study at their own pace whilst also staying connected with their instructors. This can be done if the instructor is aware of the conceptual gaps that students may have or where they are in their learning journey. Dr Ashraf noted how first year students were more apprehensive about online learning as they were now expected to read critically and widely. \"They were required to be independent learners in an unconventional teaching-learning environment ,\" she said. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of the major benefits of a face to face classroom is that instructors can observe their students and use their body language cues to inform and guide their teaching. They can call on the quieter students or design group activities to ensure that everybody is heard. Peer activities are especially important because students learn from their peers as much as from their instructors. This becomes harder in an online classroom and instructors need to be creative and open to experimenting until they find something that works for them and their students. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The need for ongoing professional development becomes more pronounced. Dr Ashraf credits the training conducted by the Network of Teaching and Learning (TL_net) for helping her and her peers become familiar with technology.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Faculty at AKU have used applications like Padlet and Google Drive so that students can work together in real-time. Padlet is a virtual bulletin board while Google Drive enables students to collaborate on documents and slides together. Both Padlet and Google Drive are real-time meaning that students can not only post but observe what their peers are posting, helping create an environment of learning. It is again worth noting that access to these applications depends on students being able to access high-speed internet and devices.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ultimately, ensuring equity in online classrooms depends on students and teachers who are prepared for the online classroom. Both need to have access to, and be comfortable navigating technology and virtual learning mediums. Instructors need to be aware of how their students' gender and context affect their access to learning. Equally important, the culture of teaching and learning needs to be one where independent learning is encouraged. Only then can students feel comfortable navigating an online classroom and being part of a learning community. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In designing equitable classrooms, flexibility and reflectiveness are key. Educators need to be both aware and adaptive as their classes continue. And as educational institutions re-open, it is an ideal time to re-evaluate if the physical classroom is truly equitable. All students may have access to the same materials but are they all coming from similar circumstances? If certain students need more support then treating them like the rest of their peers would be equal but not fair. To be fair - or equitable - towards all students, would entail treating each differently as per his or her own needs."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "* Names have been changed to protect the individual's identity and privacy.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002374",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "1d65fcd6-63bb-4812-9893-7b3905594597",
+      "WssId": 1851
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-11-04T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2469,
+  "Modified": "2020-11-04T11:48:33Z",
+  "Created": "2020-11-04T11:46:24Z"
+}

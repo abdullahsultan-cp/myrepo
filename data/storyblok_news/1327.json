@@ -1,0 +1,250 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "39885863-4d2d-447b-9df5-b4e833228b0d",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aecf33bd-742d-451a-9699-1c03b514e4f5",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "07c08529-c79a-4e0b-bb14-accd04e51a47",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bdcf43a1-439d-4b96-8cb3-f396290fca3f",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "4993dd8a-c36c-4b18-81b8-28c90b66e7c8",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ef6afa43-ca3a-4de3-944a-11f19d4f6304",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "74d46091-1640-443c-82b6-f74ee5b43193",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "84a5eb86-15b0-46cd-8d2c-7627625f3680",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1327)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b577d0ff-0434-41b0-8a5f-68cdd3776b62",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1327,
+  "Title": "Bringing children with special needs back to mainstream schools",
+  "NewsSubTitle": null,
+  "NewsSummary": "The closing ceremony of the Mainstreaming Children with Special Educational Needs and Girl Child in Government and Private Schools project jointly implemented by AKU's Human Development Programme and USAID's Small Grants Ambassador Fund Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Closing Ceremony of the 'Mainstreaming Children with Special Educational Needs and Girl Child in Government and Private Schools' project was held on October 23, 2017 at the Executive Development Center Campus-II of the "
+          },
+          {
+            "type": "text",
+            "text": "Sukkur IBA University",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.iba-suk.edu.pk/ibasuk/aboutiba/wpMain.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The project was implemented by the Aga Khan University's "
+          },
+          {
+            "type": "text",
+            "text": "Human Development Programme",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcpk/hdp/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " (HDP), with the assistance of USAID's "
+          },
+          {
+            "type": "text",
+            "text": "Small Grants Ambassador Fund Pakistan",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://sgafp.org.pk/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " (SGAFP). It focused on bringing out-of-school girls, with and without special needs, into the mainstream schools. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The closing ceremony celebrated the achievements of the project in bringing nearly 100 girls to schools. It was attended by: senior government officials from the Education and Literacy Department, faculty from AKU and Sukkur IBA University, heads and senior teachers from the project and mainstreaming schools, representatives from NGOs and Special Education Schools, and several project beneficiaries including the students and their parents. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Professor Dr Nisar Siddiqui-Vice Chancellor Sukkur IBA University, Mr Abdul Aziz Hakro-Director Schools, Elementary, Secondary and Higher, Dr Ghazala Rafique-Director HDP and Dr Dilshad Ashraf-Associate Professor, at AKU, were amongst the key officials present at the event. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "During the ceremony, Dr Kausar Waqar-Project Manager and Senior Instructor, HDP, shared an overview of the project outlining the entire process of selecting girls from the community, educating them in an informal study circle, and admitting them into mainstream schools. She acknowledged the support received from USAID SGAFP in the region. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Dr Ghazala Rafique highlighted AKU's vision for working for the betterment of society through improving health and education of communities. She emphasized the significance of girls' education for the economic development of the country, and encouraged the community and stakeholders to \"continue their support and motivate other parents to educate girls.\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The ceremony also showcased some of the success stories from the project which portrayed the extent of the project's impact especially in the degree of confidence and self-esteem developed in girls. The ceremony came to a close after the distribution of awards to honor the contribution of change agents who played a vital role in making the project a success. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001277",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2017-10-31T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": "Janelle Dias, Shahina Murad\nMedical College, Pakistan",
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1327,
+  "Modified": "2017-10-31T08:53:57Z",
+  "Created": "2017-10-31T07:34:01Z"
+}

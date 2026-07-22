@@ -1,0 +1,110 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1d8c59f5-50d0-4878-a01d-ea466319b4e8",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "14eea32a-e5b7-48cc-9b66-863c06d9551b",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ece48543-6a37-4bc5-a043-e847c38835e2",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f65fdc71-4a8d-4117-8b23-2b74764b49c2",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c08c8719-5e4c-4053-be05-782cd739a6a8",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "164cc52f-a4e5-4c15-8173-7c8e6f42cfaf",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b48598ad-110c-40c1-a17b-10b989e6b34e",
+    "Id": 8076,
+    "Title": "Haniya Javed",
+    "EMail": "haniya.javed@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2048)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8e5f713e-49bb-480d-b939-089644296b8a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2048,
+  "Title": "Women in Leadership",
+  "NewsSubTitle": null,
+  "NewsSummary": "Women and wellness session emphasises on taking women physicians forward",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassA4D4A4575A7046D593E9EAA549B39802\"><p></p><p>\u200b\u200b\u201cWorldwide there is an increasing recognition as well as potential interventions to help bring qualified women to leadership positions. We need to engage, recognize, advocate and sponsor women in academia to change the current status quo,\u201d said Dr Sarah Nadeem, an assistant professor in the&#160;department of medicine at Aga Khan University.</p><p>Dr Nadeem was speaking at a women and wellness session hosted by the Working Group for Women (WGW) and Women in Medicine, a platform to support and promote Pakistani women physicians. The theme for the event was \u2018Time to focus on what matters\u2019 and brought in experts from areas of medicine and career management.</p><p>Experts talked about women\u2019s participation in medicine in Pakistan and the world over. Despite women making up over 70 per cent of medical college admissions in Pakistan, half of them never get into practice, said Dr Nadeem. She cited factors such as social importance of marriage and adherence to traditional gender roles as reasons inhibiting women to practice their professions.</p><p>Adding another dimension to the theme&#160;Dr Nargis Asad, an associate professor at the department of psychiatry, said that women have a triple burden to bear as they have domestic, societal as well as reproductive role to play. She stressed that to bring about a change in our&#160;societies, we will need change how we raise our young men and women.</p><p>Professor and Vice Provost Anjum Halai, Dean Medical College, Dr Adil Haider, and Muhammad Farhan, a human resource, business consultant were&#160;also present at the event.\u200b&#160;</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001969",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "c23d839f-4ee8-4d36-9e3b-8d73a52c2d95",
+      "WssId": 1387
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2019-11-14T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2048,
+  "Modified": "2020-01-13T06:03:17Z",
+  "Created": "2019-11-14T11:37:59Z"
+}

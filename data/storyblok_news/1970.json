@@ -1,0 +1,203 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "84610ddd-2dab-46ff-ad86-894c0b50009f",
+  "odata.etag": "\"40\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0859287e-727a-4e5d-961a-b804b31294d2",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f75ec3fa-868a-4499-9af7-8cf43f1f5dba",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "02a50a20-27bb-4543-b905-a5d78999ce0b",
+    "Id": 24,
+    "Title": "Pa Test1",
+    "EMail": "pa.test1@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ae33aa0f-947e-4469-aa13-a6b8738b0850",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "32d97f61-063d-4685-846f-80363734b3fd",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d12ea9dc-e340-47c8-87b0-24acf55cd621",
+    "Id": 8075,
+    "Title": "Ali Najib Sidiki",
+    "EMail": "ali.najib@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1970)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6e6909bd-e95f-4a7b-9c2d-1bd3672ee217",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1970,
+  "Title": "Faculty secures prestigious research grant",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Momin Kazi and team will gather data to understand the spread of infectious diseases",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Assistant Professor and researcher, Dr Abdul Momin Kazi at the Aga Khan University (AKU) has successfully secured a National Institute of Health (NIH) R01 grant. The highly prestigious grant provides support for health-related research and development based on the mission of the NIH, which is the largest public funder of biomedical research in the world. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is the first multi-site study to comprehensively profile social mixing patterns using standardized methods,\" said Dr Kazi. \"It aims to support interventions that prevent the spread of infectious diseases amongst individuals in low and middle-income countries.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Kazi, who has been with AKU's Department of Paediatrics and Child Health since 2019, will be the principal investigator in Pakistan, while the overall project is being led by AKU alumnus Dr Saad B. Omer (MBBS '98), who is currently the director for Yale's Institute for Global Health. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Working with a team of qualitative and quantitative scientists, community mobilizers, and data collectors, the study will gather data to understand the spread of infectious diseases. Over the course of 18 months, it will look into human-to-human, as well as human-to-animal contact by using a mixed-method to understand lifestyles and analyze interaction patterns amongst respondents living in urban and rural areas who will be tracked using radio frequency identification tags. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The grant is in collaboration with Emory University, with research also being led in Guatemala, Mozambique, and India. It aims to eventually prevent the spread of infectious diseases, which is part third on the list of the Sustainable Development Goals to ensure healthy lives and promote well-being for all, at all ages by 2030."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about his experience of securing the grant, Dr Kazi said, \"AKU has been extremely accommodating and supportive during the entire process. I am blessed to be working with a very competent team. In fact, I firmly believe that the people who work here have impeccable ethical standards, which is why our research is one of the best in the world.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This research is just the beginning,\" Dr Kazi said referring to the impact of the study. \"It will answer a lot of questions not only from an anthropology point of view, but also from the perspective of paedriatric healthcare. It is extremely important to understand the burden of disease in our society.\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001899",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "paediatrics",
+      "TermGuid": "302bf399-ea7f-467a-88cc-a8832ac24c10",
+      "WssId": 1522
+    },
+    {
+      "Label": "Grants",
+      "TermGuid": "002a48c6-d604-4924-bea5-293d383627d1",
+      "WssId": 1396
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "3c0b1059-67b1-4998-a106-4acc0ab2b5cd",
+      "WssId": 1367
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Infectious diseases",
+      "TermGuid": "1b9c5c5a-2d11-48c2-a267-95341d8c799f",
+      "WssId": 1516
+    }
+  ],
+  "ScheduleStartDate": "2019-07-30T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1970,
+  "Modified": "2019-09-27T11:01:03Z",
+  "Created": "2019-08-19T10:11:39Z"
+}

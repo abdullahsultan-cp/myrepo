@@ -1,0 +1,121 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d2ff7829-ba85-408a-bec0-adcdafb4b922",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cbd8c1ee-9906-4148-a765-f3211228b4b6",
+    "Id": 30,
+    "Title": "Afifa Batool"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "37c0853a-4be4-4077-8e0c-739e620e8564",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1d73b61e-b46c-4989-87f1-c21b9745fb05",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "3d01f38f-0c7e-4474-bcd2-505f37f3e60b",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "0a5f0d7f-a9fb-4661-aaea-23fc26100342",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4308317c-4779-4978-9b5a-673b218aee13",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4ec19119-b1b4-4dc1-8674-c41eb3b187ed",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(249)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2a766df5-ad79-4baa-9a4e-b2bccca15fd0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 249,
+  "Title": "President of Pakistan honours Professor Zulfiqar Bhutta",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Bhutta is awarded the Pride of Performance for his major contributions in the field of healthcare education",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassB58EC216E641484AB80426EB3B516E33\"><p>President of Pakistan Mamnoon Hussain has conferred the Pride of Performance Award on Professor Zulfiqar Bhutta, Founding Director of the Centre of Excellence in Women and Child Health at the Aga Khan University, in recognition of his major contributions in the field of healthcare education.&#160;</p><p>Professor Bhutta has had a 30-year long academic career at the University and the global impact of his work has seen him take up prominent positions at leading universities in Canada, the UK and the United States.&#160;</p><p>An expert on nutrition, newborn and child survival, and micronutrient deficiencies; he has published 8 books, 88 book chapters, and over 670 indexed publications to date, including 130 in the world's leading journal Lancet alone. &#160;</p><p>Between 2003 and 2014, Professor Bhutta served as the Founding Chair of the National Research Ethics Committee of the Government of Pakistan. He has also been a member of the Independent Expert Review Group (iERG) appointed by the UN secretary general to monitor global progress in maternal and child health Millennium Development Goals between 2011 and 2015.&#160;</p><p>Speaking about the prize, he said&#58; \"These awards while a source of great personal honor, to me reflect the hard work and dedication of many in my team - notably the young researchers, trainees and public health professionals to whom we owe so much. This is also an affirmation of the enabling environment at the Aga Khan University and the vision of our Chancellor for which I am personally deeply grateful.\"</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000213",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "aku",
+      "TermGuid": "f81baacf-1559-4d60-834b-3d7b71a350e7",
+      "WssId": 734
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "118448c6-bff0-439d-a695-38bd1ab9d603",
+      "WssId": 729
+    },
+    {
+      "Label": "pakistan",
+      "TermGuid": "24cce6aa-8a06-4c69-8674-463a1a4a529a",
+      "WssId": 724
+    },
+    {
+      "Label": "awards",
+      "TermGuid": "ced42f2f-c9c4-4c7b-a2d7-e4e430c6fb1c",
+      "WssId": 885
+    }
+  ],
+  "ScheduleStartDate": "2016-08-17T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 249,
+  "Modified": "2016-08-17T10:18:52Z",
+  "Created": "2016-08-17T10:16:29Z"
+}

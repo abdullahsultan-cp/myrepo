@@ -1,0 +1,126 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3a40b463-c180-482b-bf56-a09bfbf5a965",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2adef8e5-cff9-46f9-8a79-400fb4b00867",
+    "Id": 182,
+    "Title": "Alexandra Khan"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cfb13090-ccc8-4c9a-83a6-db2606814593",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d7f11035-bec0-4f99-85fe-82763735a133",
+    "Id": 182,
+    "Title": "Alexandra Khan",
+    "EMail": "Alexandra.khan@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6710cff2-cf60-4c19-b543-794432bb022d",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9ac38b33-c00e-4634-b730-974135be5fe6",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bbbc19de-db6f-4277-9f79-e9454ff27cb6",
+    "Id": 182,
+    "Title": "Alexandra Khan",
+    "EMail": "Alexandra.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2598)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3e6cf916-5359-4d26-9006-2e646f3d94f1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2598,
+  "Title": "Professor David Taylor - Awarded the Title of Emeritus Professor at AKU-ISMC",
+  "NewsSubTitle": null,
+  "NewsSummary": "Former Director of AKU-ISMC",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We are delighted to announce that Professor David Taylor, well-known to so many from his time as Director of AKU-ISMC, has been awarded the title of Emeritus Professor at AKU-ISMC. Responding to the honour, Professor Taylor said;  'I'm honoured by this award and delighted to be able to maintain my links with AKU and with ISMC in particular. They have meant a lot to me over the last almost twenty years.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002498",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    },
+    {
+      "Label": "People",
+      "TermGuid": "18990af3-d32b-4491-8731-00d1db29d278",
+      "WssId": 2086
+    },
+    {
+      "Label": "staff",
+      "TermGuid": "21478519-4872-4370-9925-d3a1a0dd04b2",
+      "WssId": 2092
+    }
+  ],
+  "ScheduleStartDate": "2021-03-30T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2598,
+  "Modified": "2021-03-30T14:48:12Z",
+  "Created": "2021-03-30T14:42:21Z"
+}

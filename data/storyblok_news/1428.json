@@ -1,0 +1,178 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "ea331cc3-30e1-47ff-a971-e499651f1ad3",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9be27d53-c41f-4f2d-8396-896470664102",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2e8a2ac7-801f-4584-907d-2dddf94bb62a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d875bb7b-c12b-4f54-bce1-28c61e003098",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "52f28713-4be2-44b0-a66e-5d34586205dc",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "fe8f11ab-63fb-4f35-a34a-5ba9a815edc3",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6caaa09e-29c7-48c9-b202-1e6f0db2b88e",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c223f2c7-1c3a-4003-b313-bd0c4b032580",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1428)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5ee5a572-c9d4-451a-876c-859a20e07b04",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1428,
+  "Title": "AKU Convocation 2009",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"More than ever, our country needs citizens and leaders who make public service the hallmark of their endeavours and commit themselves resolutely and single-mindedly to address the terrible burdens of poverty, disease and deprivation,\"said Dr Maleeha",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"More than ever our country needs citizens and leaders who make public service the hallmark of all that they do and commit themselves resolutely and single-mindedly to address the terrible burdens of poverty, disease and deprivation,\" said Dr Maleeha Lodhi, the former ambassador of Pakistan to the US and Britain, and recipient of the President's Hilal-e-Imtiaz award for Public Service in Pakistan, while addressing graduands as chief guest at Aga Khan University's  22nd convocation ceremony. The ceremony marked the graduation of 328 students in the fields of medicine, nursing and education from Afghanistan, Bangladesh, Kenya, Pakistan, Saudi Arabia, United Arab Emirates and the US."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about the \"challenging and testing times\" that Pakistan is facing, Dr Lodhi urged the newly graduated students to use their knowledge and skills not only for professional goals, but also to reduce the burden of inequities that blight justice and development. \"It is often the desperation in people's lives that leads them to commit desperate acts, sometimes even violent acts, and it is this desperation and hopelessness in our society that, you and I, together and individually, must become active participants to change and transform.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Lodhi also stressed on the importance of high ethical and moral standards. Encouraging students to be winners, not whiners, Dr Lodhi said that energy and commitment, not time, were the key to high performance. Along with character, conviction, conscience and compassion, the important factor for the future journey of each student, will be choice. \"There will be no doubt many choices for you to make... I hope you will choose courage over comfort, action over inertia, compassion over complacency, bridges over barriers and above all, hope over fear. You will save lives by your knowledge of how to heal, how to treat.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The notion of service and particularly community service was emphasised by Firoz Rasul, President, AKU. The University has a strong commitment to community development and \"a great strength for AKU is the ability to engage with communities and our greatest opportunity is to assist and empower these populations to improve their quality of life,\" he said. \"When I review the community-based efforts of our Medical School or the research efforts of the teachers from the Institute for Educational Development, or the grass roots connectivity of our School of Nursing graduates, I am humbled by the opportunities the communities provide us.  It is these opportunities - to learn about the issues that gravely affect us all - that allow AKU to develop programmes and services to meet these needs, and to build in our graduates a sense of community commitment and social responsibility.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year, the University's School of Nursing graduated 172 students and the Medical College 114 students, three of whom received a PhD (Doctor of Philosophy) in Health Sciences. The University's Institute for Educational Development granted degrees to 42 students, with two PhDs in Education. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The star of the evening was Dr Taimur Saleem who not only received the Best Graduate Award from the Medical College, but also the Gold Medal for achieving the highest marks in all four professional examinations; he is only the eighth recipient of the Gold Medal in the University's history. Afroz Sadiq Sajwani received the Best Graduate Award from the School of Nursing."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University also presented three other awards. The Award of Excellence in Education went to Dr Rukhsana Zuberi, for her outstanding contribution to education, the Award of Distinction to Dr Syed Husain Mohammad Jafri, while Dr Jamsheer Talati received the Professor Emeritus award."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001375",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "76d7e6c8-e7b5-4ac7-bfee-f2cc94c2f75d",
+      "WssId": 1830
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    }
+  ],
+  "ScheduleStartDate": "2009-12-12T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1428,
+  "Modified": "2021-06-18T06:37:39Z",
+  "Created": "2018-01-05T10:26:48Z"
+}

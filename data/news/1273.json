@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2d6ed602-cfb9-4b23-89da-28db8126ce70",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "30d1a0a1-c29d-434e-8495-ffa9fe70eb7d",
+    "Id": 4191,
+    "Title": "ezekiel.kimeu"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a6b92eb2-50a2-4b0a-b42f-f364b79fa0b5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a795feab-203d-4617-9877-3a19b0c3d52b",
+    "Id": 4191,
+    "Title": "ezekiel.kimeu",
+    "EMail": "ezekiel.kimeu@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "8c51ba1e-5de8-4a0a-b907-2d3202d28ebc",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e8975501-d0e0-413e-9c5a-77bd0e3c5671",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b49bd1aa-e29d-4082-bb17-99c5c38b7375",
+    "Id": 9,
+    "Title": "School of Nursing and Midwifery, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6757c03c-b293-4fac-af3e-058ac87a5adb",
+    "Id": 4191,
+    "Title": "ezekiel.kimeu",
+    "EMail": "ezekiel.kimeu@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1273)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0026b321-5b54-43da-a435-c49783794cef",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1273,
+  "Title": "Winners at the Saba Saba exhibition ",
+  "NewsSubTitle": null,
+  "NewsSummary": "University\u2019s stall among the best booths at international trade fair in Tanzania.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass91FD439AC717491FA5473F514910E994\"><p>The interactive exhibition stall set up by the Aga Khan University was judged to be one of the top booths at the 41st Dar es Salaam International Trade Fair 2017 in Tanzania.Staff from the University received the second prize in the Universities, Research and Consultancy Services category from Minister of Trade, Industry and Marketing Amina Salum Ali at the event also known as the Saba Saba exhibition. The exhibition enabled the University to showcase its programmes and events in the region to a wide range of visitors to the fair which ran from June 28th to July 13th, 2017.&#160;Professor Joe Lugalla, director of the Institute for Educational Development, East Africa, received the prize at the event. The Saba Saba exhibition is the biggest trade fair in Tanzania and has over 300 participating institutions and companies from all parts of the world showcasing their products and services</p><div><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001225",
+  "LocalApproverGroup": "Sonam EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    }
+  ],
+  "ScheduleStartDate": "2017-09-06T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Visitors gather at the Aga Khan University\u2019s stall at the 41st Dar es Salaam International Trade Fair 2017 in Tanzania.",
+  "MediumImageCaption": "Joe Lugalla, director of the Institute for Educational Development, East Africa, receives the prize certificate from Minister of Trade, Industry and Marketing Amina Salum Ali at the event.",
+  "Contact": "Victoria Nyamunga\nDirector, Regional Communications, East Africa\nAga Khan University General Office \nTel&#58; +(254) 20-366-1200 \nDirect Tel&#58; +(254) 20-366-2515; \nWork Mobile Tel&#58; +(254) 733-877-724 \nEmail&#58; victoria.nyamunga@aku.edu ; Skype&#58; victoria.nyamunga",
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1273,
+  "Modified": "2018-02-13T08:29:29Z",
+  "Created": "2017-09-06T14:17:49Z"
+}

@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a6cdeed0-7274-4a75-86f9-55b0be1bc3da",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "980fe777-c660-48a9-9180-02326edbe6f4",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fab3ad17-b997-4b2a-8940-3a7c214985e5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8eac9b12-bc44-4087-bc9b-0632c1c05671",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "945a4060-b66d-4ae4-94a0-86dae344b967",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "92ab48f0-e677-4d2f-812c-5b2e6d52d9b3",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2ad09955-9ce1-4be1-97a5-079490792471",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "09374002-002e-41a1-9d8e-f20a1a239d39",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(370)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "32c50514-4ce8-45ca-8dbc-fc95e1cf2a21",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 370,
+  "Title": "Drug Regulatory Authority of Pakistan appoints AKU expert",
+  "NewsSubTitle": null,
+  "NewsSummary": "Abdul Latif Sheikh, Director Pharmacy Services, Aga Khan University Hospital, Karachi, has been appointed as an expert member of Policy Board, Drug Regulatory Authority of Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassFB3EDD64BBDD4943B225E01410B9A2AC\"><p></p><div>Abdul Latif Sheikh, Director Pharmacy Services, Aga Khan University Hospital, Karachi, has been appointed as an expert member of Policy Board, Drug Regulatory Authority of Pakistan (DRAP).</div><div><br></div><div>DRAP was formed in 2012 by the Ministry of National Health Services, Regulations and Coordination, Government of Pakistan to regulate all aspects of pharmaceuticals including, manufacturing, storage, distribution, import, sale and advertising of therapeutic drugs.</div><div><br></div><div>The authority consists of a chief executive officer and 13 directors. The general direction, administration and monitoring is vested in the policy board, which consists of 15 members from the federation and provinces. Six of them with different specialties are appointed from the public and private sector with equal representation from each province.</div><div><br></div><div>Mr Sheikh has been appointed on the basis of his expertise in pharmacy services, health finance and health economics.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000330",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Pharmacy",
+      "TermGuid": "2063161a-2bd0-43e0-bdf6-28e043d1fa61",
+      "WssId": 1411
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2013-10-19T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 370,
+  "Modified": "2017-02-22T07:31:43Z",
+  "Created": "2016-11-29T08:56:57Z"
+}

@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e3f81c4d-e18b-48bf-8726-92cf3a0f1444",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "92fab85e-ee20-485e-bfb5-e6742ded23dc",
+    "Id": 3461,
+    "Title": "Akber Ali"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "353b2008-4959-48d5-a6a8-0707975705b9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3c2ceeeb-618a-4e86-809f-1a3e272e685d",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1cfcef25-b1de-46dc-bb7f-87aa30896752",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d61fa1bf-e064-4e86-8931-1b9461cf1597",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "6387f5c6-cd65-4428-8e9c-bc765a8eb428",
+      "Id": 28,
+      "Title": "Institute for Global Health and Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7ce485e0-8088-4395-b4f7-8cfb855c19d8",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2639)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b5920d9f-8490-42d7-be58-ed8697ca4651",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2639,
+  "Title": "Impact of Conflict on Global Health and Vulnerable Populations",
+  "NewsSubTitle": null,
+  "NewsSummary": "Please join Brown University School of Public Health and The Aga Khan University for a very special webinar",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassD5B02CF0AF9D4588A67DB858060CF35B\"><p><br></p><p style=\"box-sizing&#58;border-box;margin-top&#58;1em;margin-bottom&#58;1em;color&#58;#3b302c;font-size&#58;18.24px;background-color&#58;#ffffff;\"><span style=\"font-family&#58;&quot;open sans&quot;;\"><span style=\"font-family&#58;&quot;open sans&quot;;\">Please join Brown University School of Public Health and The Aga Khan University for a very special webinar that will explore the impact of conflict on global health as championed by the Sustainable Development Goals and within the context of the COVID crisis, with a particular focus on vulnerable populations in resource constrained and conflict settings. Speakers and panelists will comment on issues of gravest concern and where there is emerging evidence of potential advancements. Pakistan will feature as a country of focus, but the lens for the webinar is relevant to a wide range of countries and settings.</span></span></p><p style=\"box-sizing&#58;border-box;margin-top&#58;1em;margin-bottom&#58;1em;color&#58;#3b302c;font-family&#58;minion-pro, &quot;times new roman&quot;, serif;font-size&#58;18.24px;background-color&#58;#ffffff;\"><span style=\"font-family&#58;&quot;open sans&quot;;\"><span style=\"font-family&#58;&quot;open sans&quot;;\">Please register using the RSVP form below, and a Zoom link will be provided on the day of the event. </span></span><a href=\"https&#58;//events.brown.edu/public-health/event/212178-impact-of-conflict-on-global-health-and-vulnerable\" target=\"_blank\"><span style=\"font-family&#58;&quot;open sans&quot;;\"><span style=\"font-family&#58;&quot;open sans&quot;;\">To registe please click here</span></span></a><br></p><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002537",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2021-06-04T12:00:00Z",
+  "ScheduleEndDate": "2021-06-04T13:00:00Z",
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2639,
+  "Modified": "2021-05-19T07:20:19Z",
+  "Created": "2021-05-19T06:36:47Z"
+}

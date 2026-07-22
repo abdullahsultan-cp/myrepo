@@ -1,0 +1,254 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c0f69723-8bf3-42e2-aaaa-ca5039658625",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "196a12ea-2e0c-4721-84a5-bb6339385726",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "53b4c9df-3733-4be8-b72e-29aedce49f75",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2c34fc86-26eb-416e-b2a0-abb563533826",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "35460267-3fb8-4f6e-968c-047de65f6bc2",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "99faa245-5c83-4480-97d5-6e7eca618707",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "78735480-df17-4fed-87bb-621da67c43b1",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "96e83ae0-61c9-4080-bc0e-ae9f3f5beb70",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1318)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b756599f-c690-453e-9a9e-17d90205f112",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1318,
+  "Title": "Self-assessment training for Medical College graduate programmes in Nairobi",
+  "NewsSubTitle": null,
+  "NewsSummary": "QAI_net will continue to support all the entities to prepare and implement both the self-assessments and external reviews in line with the AKU Academic Quality Framework",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Network of Quality Assurance & Improvement (QAI_net) conducted a two-hour self-assessment review (SAR) training session for the Medical College graduate programmes in Nairobi and Dar es Salaam on November 23, 2015. Participants came from the following programmes:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Paediatrics & Child Health"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Pathology"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Internal Medicine"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Family Medicine"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Obstetrics & Gynaecology"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Imaging and Diagnostic Radiology"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The session was conducted by Dr Sam Scully, an Academics Without Borders (AWB) volunteer working with QAI_net. Dr Scully is also the Founding Chair of the Ontario Universities Council on Quality Assurance and Past Vice President Academic and Provost of Dalhousie University, Halifax, Nova Scotia, and University of Victoria, British Columbia. The training, which was attended by 23 participants, included chairs of the departments, chairs of the SAR Teams, SAR Team members and residents (students)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The training focused on why the SAR process is important for programmes as well as the foundation for any meaningful peer assessment review process.  Discussions also touched on the effectiveness of any self-assessment process, actions that can be taken to remedy any identified areas in the programme review and the need for an improvement plan for the six programmes that had submitted their SAR draft reports to the Dean and QAI_net.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participants appreciated the knowledge gained from the training and looked forward to improving their SAR reports, including development of an improvement plan for their respective programmes by the end of January 2016."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "QAI_net will continue to support all the entities to prepare and implement both the self-assessments and external reviews in line with the AKU Academic Quality Framework: Policies and Procedures which was approved by the Board of Trustees and Academic Council in March 2015."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001268",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    },
+    {
+      "Label": "learning",
+      "TermGuid": "b351e1a2-14c8-4b3f-af1d-e57118360c5f",
+      "WssId": 1498
+    },
+    {
+      "Label": "QAI Net",
+      "TermGuid": "48180606-5f23-4811-970d-a7395197da4c",
+      "WssId": 1670
+    }
+  ],
+  "ScheduleStartDate": "2017-10-25T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Medical College faculty participating in the Self Assessment Review Training Workshop",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1318,
+  "Modified": "2017-10-30T10:57:28Z",
+  "Created": "2017-10-25T07:00:24Z"
+}

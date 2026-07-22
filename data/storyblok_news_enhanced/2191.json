@@ -1,0 +1,304 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c268946a-4211-478c-8904-acf5bc521e69",
+  "odata.etag": "\"3\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fead93fc-6cb7-4bb4-afa4-f9caab4897b5",
+    "Id": 6327,
+    "Title": "stephen.musyoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/Publisher",
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4762fe9d-ca34-4338-85f0-299cd21eace1",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "68521c9b-7c97-45ae-9e89-305a20c996b0",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "4035fdc7-e2a9-40b1-bbcb-1544ad873733",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "12d25afa-f62e-46af-9020-c29accc9aa52",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "7066e098-e4ac-48eb-af55-2a1332fc55de",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "60075b9d-22b6-4b48-8989-e534ae293f08",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4027c413-722c-4cf6-a343-da2e2dae2294",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2191)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "421df164-83e9-4351-b35f-48d5f9e6db38",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2191,
+  "Title": "12 trainee journalists graduate from Standard Group Academy",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Sagal Salad is an alumni of AKU",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Sagal Salad carries herself with grace and humility. Do not be fooled by her demeanour, she carries a huge crown - Somali"
+          },
+          {
+            "type": "text",
+            "text": "a's first female pathologist. Dr",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/mcea/surgery/Pages/home.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " Salad graduated with a Master of Medicine degree in anatomical pathology from AKU. We caught up with her at the February convocation in Nairobi to know more about her story. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Why did you decide to pursue medicine as a career?",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "I developed an interest in health issues when I was in middle school and the interest grew until I completed high school. I then pursued an undergraduate degree in medicine and surgery at a "
+          },
+          {
+            "type": "text",
+            "text": "Chinese University. ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://akumedia.aku.edu/12-trainee-journalists-graduate-from-standard-group-academy/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Why did you decide to join AKU to pursue your postgraduate degree? ",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "I wanted hands-on clinical experience and mentorship that was relevant to the African context. I was introduced to AKU by a Somali surgical consultant who was working in Nairobi. He told me that I would get everything I needed to advance my career and specialty in pathology at the Aga Khan University. I applied and was pleased to be among the few who got selected. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "And in pathology because...",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We don't have many pathologists in Africa and in the world. Many doctors prefer other departments because of the face-to-face interaction with the patient. In pathology, you're behind-the-scenes, you don't get to meet the patient. However, I feel it is the core of medicine because without proper diagnosis you're unable to treat a patient. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How was the AKU programme? ",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The residency programme is tough (laughs) but it is worth it. The mentorship, practical experience and colleagues are all top notch. I really enjoyed my time at AKU and will miss my friends, faculty and staff at the Aga Khan University Hospital, Nairobi. One of my highlights was a research presentation I made at the 2019 Early-Career Health Researchers' Conference. I was not only exposed to research from other medical fields but received valuable insight from the keynote speakers. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Why did you decide to go back home? "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "I wanted to return to Somalia because the population is high and the pathologists are few. I want to use my knowledge and skills to serve my community and country. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Now that you've graduated, what next? "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For now, I want to practice pathology - to give proper and accurate diagnosis to patients. My long term goals include running free medical clinics for tumor patients to get proper diagnosis and treatment. I also want to open a free clinic for cancer patients.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002105",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "graduate school of media and communications",
+      "TermGuid": "03156c18-76a7-4659-b1a1-5d1ae21f236d",
+      "WssId": 1848
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "cb228285-e9f4-4712-865a-1d4768edfd32",
+      "WssId": 1826
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "44643f58-c153-4aaf-912b-2181456ed941",
+      "WssId": 1823
+    }
+  ],
+  "ScheduleStartDate": "2020-03-11T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Salad graduated with a Master of Medicine degree in anatomical pathology from AKU. ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2191,
+  "Modified": "2020-03-11T06:49:59Z",
+  "Created": "2020-03-11T06:49:59Z"
+}

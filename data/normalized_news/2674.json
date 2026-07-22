@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "fe281fe2-1119-4169-832a-50adb0771451",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9eecb9bb-7f96-4cca-8a47-4cc9eadadaf0",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "19ad582d-a7fd-435a-864b-d3c6c9ad82f5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d75847a-75e6-40e4-8551-b73958d84fcd",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "89b4773e-0c7d-471e-9843-7a326fe7a448",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c5002b64-1b74-49cf-8261-7f9517fbfb02",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "36851946-5024-4ba0-9eb1-7fbae37b72ff",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "80e70329-5bea-4e13-a60b-92a03f26f59c",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2674)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9dbee8a1-fc1d-4bb5-b373-9755f3b6dac6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2674,
+  "Title": "Simulation course for AKUH secondary hospitals",
+  "NewsSubTitle": null,
+  "NewsSummary": "A simulation-based course was designed and offered to the AKUH secondary hospitals (Garden, Karimabad, Kharadar and Hyderabad) to improve the competency of their staff in the domain of maternal and child health.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Maternal mortality is one of the major concerns of low and middle income countries as these countries share a large percentage of maternal deaths which are mostly from preventable causes. Competent health care providers are an invaluable asset in the battle to reduce the number of maternal deaths. These front line healthcare providers can identify the alarming signs, perform risk stratification and then initiate management in a timely manner or refer patient to tertiary care hospitals. By optimizing each of these steps, we can help improve both maternal and neonatal outcomes. The healthcare team, which includes midwives, nurses, and doctors, should be well-equipped with the skills to deal with unprecedented circumstances and medical complications to ensure the safety of their patients. </p><p>Thus, a simulation-based course was designed and offered to the AKUH secondary hospitals (Garden, Karimabad, Kharadar and Hyderabad) to improve the competency of their staff in the domain of maternal and child health. The participants attended a theoretical session and practical demonstrations via Zoom a day prior to the simulation. They gathered at CIME the next day for hands-on practice sessions right after a quick review of the concepts that had been discussed online. </p><p>This extensive course provided participants with lots of hands-on experience of the surgical skills required for effectively managing maternal collapse. These trained individuals are now confident that they can more effectively manage these catastrophic complications in any setting.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002572",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "1f5f9259-00ce-4800-8819-6a850f05c492",
+      "WssId": 2186
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    }
+  ],
+  "ScheduleStartDate": "2021-06-29T03:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2674,
+  "Modified": "2021-06-29T09:44:40Z",
+  "Created": "2021-06-29T07:17:03Z"
+}

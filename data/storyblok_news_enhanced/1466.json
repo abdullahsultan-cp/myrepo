@@ -1,0 +1,133 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "707092e9-97e8-42a6-b832-e6ff8f48be48",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1cebcbb8-42d0-4981-b487-a6d783191eb4",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6e55a70f-bcdb-4f7c-9245-1e6597831206",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7535c863-1bf0-4e5a-94a6-b52f91a22a7d",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "89a8228d-fe5b-4e9f-a5db-a9014a661e3e",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4b208cc0-2ce3-4e74-a0ad-17f29af94b2d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cc28c3b1-e29f-493c-a8af-f2c9915964b3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "75249ec9-f24c-4464-ab9e-4240f5d9b9d0",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1466)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "41ab6dc4-19e9-4547-be0a-7977ffe1ad94",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1466,
+  "Title": "International experts to attend AKU symposium on cardiovascular diseases",
+  "NewsSubTitle": null,
+  "NewsSummary": "Cardiovascular diseases are a leading cause of death and disability worldwide. They are currently responsible for 12 million deaths globally, with over 7 million occurring in developing countries.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cardiovascular diseases are a leading cause of death and disability worldwide. They are currently responsible for 12 million deaths globally, with over 7 million occurring in developing countries. In Pakistan, the incidence of heart disease is also very steeply on the rise. Research can play a pivotal role in developing effective preventive strategies to combat this alarming trend. For this reason, the Aga Khan University (AKU) has selected cardio-respiratory diseases as the theme for its annual research symposium this year. The Symposium on Cardiovascular and Pulmonary Diseases will be held at AKU on September 25-26, 2000. World-renowned experts in the field of cardio-respiratory medicine from Canada, Sweden and the UK will be participating in the Symposium, which will be followed by a weeklong workshop on Molecular Biology. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Increasing public awareness can be one of the most effective steps in disease control and prevention. As part of it societal commitment, the Aga Khan University in collaboration with Pakistan Cardiac Society, will also be celebrating he first World Heart Day by organising a two-hour public health awareness programme on\"Prevention of Heart Diseases,\" on Sunday, 24th September 2000, at 9:30 a.m. Eminent physicians and cardiologists from all over the country will be participating in this event, which will include presentations on the risk factors of cardiovascular diseases and an open question and answer session."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001413",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Pulmonary",
+      "TermGuid": "356b5128-5f75-4eee-8f0e-aecfac1a56fd",
+      "WssId": 1430
+    },
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "6f0bcd20-a624-4b55-a7b7-f1463b4bc779",
+      "WssId": 1391
+    }
+  ],
+  "ScheduleStartDate": "2000-09-20T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1466,
+  "Modified": "2019-12-09T12:45:41Z",
+  "Created": "2018-01-22T07:22:46Z"
+}

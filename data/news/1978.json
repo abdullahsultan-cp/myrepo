@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "20757ebc-3536-4aea-968d-848ea9e20b33",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0d49059c-cb58-46f6-8fce-3b05dfdad1c6",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "db9676cc-3c23-4449-b38f-5603076e2c99",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6e70c8f6-c2e4-45c4-adfc-1a13b97eff20",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5a2a71df-ce03-476b-8bd7-343a2bb5ed86",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3a0f6db8-315d-4998-a3d7-b2c6ec310a98",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "db36e1f2-7d45-48eb-9418-7b66b5fdb173",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cc93d6d6-ac86-49ce-8360-40bcfb8ffe7d",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1978)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b4445f60-b23d-4aa7-91e1-655e3e154841",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1978,
+  "Title": "Surgical simulation workshop",
+  "NewsSubTitle": null,
+  "NewsSummary": "A surgical simulation workshop on Laparoscopic Cholecystectomy was designed for general surgeons, fellows and residents to advance their cognitive proficiency and decisionmaking abilities as tactile skills are honed.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass1B135AEEDCD54A6F924EBD563E8CCF99\"><p style=\"text-align&#58;left;\">\u200bA surgical simulation workshop on Laparoscopic Cholecystectomy was held in CIME. It is one of the most commonly performed abdominal surgical procedures that provides faster recovery, shorter hospitalization and smaller scars than conventional surgery. This workshopwas designed for general surgeons, fellows and residents to advance their cognitive proficiency and decisionmaking abilities as tactile skills are honed. From clipping the cystic duct to removing the gall bladder, this workshop simulated each critical step in this frequently performed laparoscopic procedure.</p><p style=\"text-align&#58;left;\">Participants used LapSim, a virtual-reality based laparoscopy simulator, to develop knowledge and skills of laparoscopic cholecystectomy, and to acquire depth perception and hand-eye coordination. This provided an experiential learning in a safe environment with room to make mistakes and without the fear of harming patient.</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001907",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    }
+  ],
+  "ScheduleStartDate": "2019-08-28T04:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1978,
+  "Modified": "2019-08-28T09:45:37Z",
+  "Created": "2019-08-28T04:51:29Z"
+}

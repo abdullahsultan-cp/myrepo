@@ -1,0 +1,145 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cafd5264-7ae2-4e03-abc2-ede223ffbf6f",
+  "odata.etag": "\"35\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2be31ea-fb86-42d0-87e8-e9a21a583511",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "675c7f3b-ef05-4a22-bd4d-1f1db4ee7375",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "da6d5d35-87c9-4a89-b133-bbb548265651",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "94b0716e-8b13-4d31-81c3-10469023f711",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b023cddd-981f-4ea0-b658-c91fabad6df5",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "b820f9dd-7609-4b4e-a551-8c7ec2eff465",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dbb3fbfc-20be-405c-87b0-473e53cfeb1f",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2050)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "688ab3bc-e47f-4f9c-acc7-5e6fa8139e38",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2050,
+  "Title": "Bahadur Teachers saving lives in the classroom",
+  "NewsSubTitle": null,
+  "NewsSummary": "This course taught 87 school teachers how to handle medical emergencies in the classroom when they become a 'first responder' in a life-or-death situation while waiting on the first-aider or school nurse to arrive.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "87 School teachers packed into the venue on a quiet Saturday morning, greeting friends and colleagues while settling down in their seats for what had the trappings of a normal lecture. This was their only chance to sit comfortably that day. Suddenly: PANIC! One of the participants fell noisily from his seat and lay unconscious on the floor. GASPS! Some teachers stood up and moved back: others froze in their seats. Luckily several rushed to the victim and tried to 'help' - putting a pen between his teeth and tilting his head forward on a makeshift pillow. Others raised his legs. The audience anxiously looked around for inspiration, guidance or direction. This was, after all in AKU the best hospital in Pakistan in their Centre of Innovation in Medical Education, on a par with the best in the world. A voice boomed out: \"OK SAJID: CUT' The 'victim' opened his eyes and stood up smiling, to gasps of disbelief from his 'helpers'. Sitting now on the edge of their seats, teachers were then helped to reflect and analyse what had just happened - good points and bad - by reviewing video of the whole episode captured on our B-Line debriefing system. After a re-assuring cup of Chai, this set the scene for a full day of active learning in how to handle medical emergencies in the classroom when a teacher becomes a 'first responder' in a life-or-death situation while waiting on the first-aider or school nurse to arrive."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The full range of mannequins and technologies in CIME were harnessed by nurses from ER, Nursing Education Services, TKN volunteers, medical and nursing students who taught, demonstrated and role-played from morning till night to deliver 8 interactive workshops in 'Boot-camp' style. Enjoyable for everyone, highly evaluated by participants crying out for more. In response to high demand from schools, this course has tapped a vein of previously unmet need and will be repeated very soon."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001971",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2019-11-13T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2050,
+  "Modified": "2019-11-22T11:19:22Z",
+  "Created": "2019-11-14T12:13:38Z"
+}

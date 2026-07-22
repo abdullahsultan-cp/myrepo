@@ -1,0 +1,284 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "163f8081-0854-4fb1-9f0c-7ff982d53f5d",
+  "odata.etag": "\"32\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "98dd7a90-7aed-4da1-ad62-301e0c919682",
+    "Id": 8068,
+    "Title": "Umaima Mughal"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e1615cdb-8438-4d44-a595-aa71445f9351",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1f08114d-b729-4f07-9e8e-d13a13a5698e",
+    "Id": 8068,
+    "Title": "Umaima Mughal",
+    "EMail": "umaima.mughal@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "280b68d0-d74c-44fa-a090-77a4269ade8a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b406bc12-0fb1-4447-ba1d-2efebd60ee75",
+    "Id": 8,
+    "Title": "School of Nursing and Midwifery, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1a2afa08-36b9-4631-b57b-5eadd1e141a4",
+    "Id": 14315,
+    "Title": "Sarah Tahir",
+    "EMail": "sarah.tahir@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2838)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3f0c1e4f-f095-4198-adec-f7e5c7586aec",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2838,
+  "Title": "Faculty wins international award for research proposal in Urology",
+  "NewsSubTitle": null,
+  "NewsSummary": "Senior Instructor, Sajida Chagani, becomes the first Pakistani to receive an award in research by the European Association of Urology Nurses, EAUN.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sajida Chagani, Senior Instructor and alumna of the Aga Khan University School of Nursing and Midwifery, AKU-SONAM, received the best proposal award at a nursing research competition held by the "
+          },
+          {
+            "type": "text",
+            "text": "European Association of Urology Nurses",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://nurses.uroweb.org/#:~:text=The%20European%20Association%20of%20Urology%2cnursing%2c%20especially%20for%20the%20patient.",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", EAUN, at their 21st international meeting. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The meeting and award ceremony were attended by nursing specialists and affiliated medical professionals from 30 countries. The research proposal titled "
+          },
+          {
+            "type": "text",
+            "text": "'Enhanced Recovery After Surgery, ERAS, for patients undergoing radical cystectomy'",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " was presented by "
+          },
+          {
+            "type": "text",
+            "text": "Sajida Chagani",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/sonampk/faculty/pages/profile.aspx?ProfileID=110&Name=Sajida%20Chagani",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " at the virtual meeting. The winning research paper, which is currently under progress, has been co-authored by Dr Hammad Ather, Professor in Surgery and Head of Urology, and Dr Wajahat Aziz, Assistant Professor of Urology, Department of Surgery, at the Aga Khan University Hospital, Karachi."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On receiving the award, Sajida Chagani has become the first-ever Pakistani to have this honour. As part of the grant money, €2,500 were presented to her and the team for continuing and completing their research work. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"During my work and practice, I intended to focus on improving quality of life of patients. Protocols such as Enhanced Recovery After Surgery, ERAS, provide an evidence-based care to decrease the length of stay and improve post-operative complications. I feel that consistent implementation of ERAS protocols in surgery will lead to many benefits for patients while reducing burden on the hospital services. I also feel that the implementation will empower nurses and encourage them to follow the ERAS protocol more religiously leading to multidisciplinary team coordination and eventually contributing to improved quality of life of the patient,\" says Sajida Chagani about the scope and potential impact of her research work."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While ERAS is now in practice globally as well as in Pakistan, the literature review indicated that there is a dearth of formal evidence-based research in Pakistan on the ERAS protocol particularly in the context of Radical Cystectomy. AKUH and AKU-SONAM are collaboratively working on the capacity building of the nurses in the ERAS protocol. A workshop was recently conducted on 'Navigating the Future for Nursing in Surgical Research' at AKU's 8th Surgical Conference. Helping nurses develop such competencies is likely to improve patient outcomes."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sharing her views on the award, Dr Tazeen Ali, assistant dean for research and graduate programmes at AKU-SONAM said, \"Our faculty members getting global recognition for their research is a testament to our exceptional focus on the practice of promoting research. We, at AKU-SONAM, are proud of her achievement.  I have high expectations from this research project because it has the potential to bring ERAS implementation into the mainstream through nurse leaders.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "View the winning research proposal presentation >> ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://urosource.uroweb.org/resource-centre/EAUN21/227535/Presentation",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002731",
+  "LocalApproverGroup": "Sonam PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "d650b158-f3f2-48a2-965e-47ad7e1c910d",
+      "WssId": 2104
+    }
+  ],
+  "ScheduleStartDate": "2022-03-28T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2838,
+  "Modified": "2022-04-01T08:14:14Z",
+  "Created": "2022-03-29T05:11:33Z"
+}

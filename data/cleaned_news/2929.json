@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1ff32695-c3cd-4fd2-824d-d4a7290c2b11",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b164987d-d864-44ad-89ac-6a9383b5eae8",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "96df865f-b00f-433e-8aa8-3fe62cf16496",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc4d3a39-fb3d-4baa-b084-bcc6f1502747",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8f4839a3-0368-41fd-85af-2c8676a5713a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "5dd3a804-f658-4b4c-a3d3-a9a8f4163b46",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "302a2c76-fadc-41d7-bac7-5753baf9837a",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2929)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c10790fb-b008-4e82-8605-cb3540bac8f1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2929,
+  "Title": "AKU receives occupational health and safety certification",
+  "NewsSubTitle": null,
+  "NewsSummary": "ISO 45001:2018 awarded for construction activities on capital projects",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass31B69C17EBD341FC9AD8AFBF9928D4BF\"><div>The Aga Khan University has received the ISO 45001&#58;2018 certification for its efforts to address potential work-related occupational health and safety risks, and its strong commitment to adhere to best practices to provide a safe working environment on its campuses.<br></div><div><br></div><div>Awarded to the University's Project &amp; Construction Management Division for construction activities on capital projects on its Stadium Road campus in Karachi, the certification journey involved an in-depth assessment and review of the University's processes and alignment towards ISO 45001&#58;2018 standard requirements by SGS United Kingdom Ltd, a testing, inspection, verification and certification company.<br></div><div><br></div><div>\"Awarded following a rigorous audit, ISO 45001&#58;2018 is a testament to AKU's relentless focus on occupational health and safety management system,\" said Rizwan Karim, Director of the Project &amp; Construction Management Division. \"We aim to ensure that occupational health and safety measures are implemented across campuses in the future.\"<br></div><div><br></div><div>ISO 45001&#58;2018 is a globally recognized occupational health and safety standard developed by the International Organization of Standardization (ISO) that guides organisations on minimising the probability of accidents, illness, injury, or fatality caused by workplace hazards.<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002821",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    }
+  ],
+  "ScheduleStartDate": "2022-08-24T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2929,
+  "Modified": "2022-08-24T08:15:25Z",
+  "Created": "2022-08-24T07:21:11Z"
+}

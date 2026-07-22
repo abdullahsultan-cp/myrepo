@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9b9339c8-ec84-4da1-85d6-68d5af1eb1bb",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b6dfeeaf-3dd2-4c1b-af62-cc18b814f6c9",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a20b05f-7412-44f5-a159-44e639dfa493",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "21819f44-24b1-4afd-80fc-e1c809e3553e",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "22c8c962-92c9-4a8d-8df3-b274366e46d7",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "06df282b-6990-430e-9745-ef4e7f7b0507",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e4f7ed9a-11af-4216-85cd-b8aa4a6fd22d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a63c3d53-8e91-4e1c-a53a-5a2925d82a31",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1067)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7d440d87-2531-41a4-b6bc-f848c84b7c2f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1067,
+  "Title": "AKU a Role Model for University of Central Asia",
+  "NewsSubTitle": null,
+  "NewsSummary": "During their visit to Pakistan, Mr. Askar Aitmatov, Advisor to the President of the Kyrgyz Republic, and his delegation visited Aga Khan University and discussed with Dr. Shamsh Kassim-Lakha, President of AKU, the progress of the University of Centra",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>During their visit to Pakistan, Mr. Askar Aitmatov, Advisor to the President of the Kyrgyz Republic, and his delegation visited Aga Khan University and discussed with Dr. Shamsh Kassim-Lakha, President of AKU, the progress of the University of Central Asia, which is also being sponsored by His Highness the Aga Khan. Mr. Aitmatov was very impressed with AKU facilities and systems, which ensured that the highest standards of education were maintained, and especially with the students admission process, which is merit based, irrespective of class, colour, creed or gender. The delegation also visited Aga Khan University Institute for Educational Development at the University's Karimabad campus, which is a role model for the new school in Osh that is being built by Aga Khan Development Network. The delegation also had deliberations with the leadership of the Aga Khan Educational Service, Pakistan.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001025",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "students",
+      "TermGuid": "7ae63653-ff72-4bfa-86af-c6ce13f7a2b3",
+      "WssId": 1474
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    }
+  ],
+  "ScheduleStartDate": "2001-04-02T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1067,
+  "Modified": "2017-02-22T11:21:05Z",
+  "Created": "2016-12-28T07:02:55Z"
+}

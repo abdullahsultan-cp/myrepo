@@ -1,0 +1,274 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "36301f82-950c-4353-89f4-2794273ea7b5",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6071e9e5-b628-4235-bdeb-bacc2bcf6f2a",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5c5ab6f4-da49-42f6-8b53-0e730cfd62db",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6de338f0-a874-4ad0-8117-fd5670524549",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "37cd65a9-80ee-4d24-92a1-8f98df9f9dc0",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9db78948-1ee6-47d0-82d3-29bd1f05d1a2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "9c5aaebb-ad72-4c78-aa52-403355138332",
+      "Id": 28,
+      "Title": "Institute for Global Health and Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d74f4284-330c-4be7-acfc-990e6826e4c3",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3574)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a47868a6-e82f-4eab-9683-9938346339b8",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3574,
+  "Title": "AKU Faculty Recognised Among Highly Cited Researchers 2024",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Bhutta and Dr Das recognised for global health research impact",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University (AKU) proudly announces that Dr Zulfiqar A. Bhutta, Founding Director of the Institute for Global Health and Development (IGHD), and Dr Jai K. Das, Assistant Director of IGHD and Associate Professor of Paediatrics and Child Health, have been recognized in the Highly Cited Researchers 2024 list by Clarivate - a leading global information services provider that identifies and celebrates influential researchers through a rigorous evaluation of scholarly impact. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This prestigious recognition highlights their continued global impact in advancing health and development research. Dr Zulfiqar A. Bhutta was recognized in the Clinical Medicine category, while Dr Jai K. Das earned distinction in the Cross-Field category, reflecting his interdisciplinary contributions. Their inclusion places them among the top 0.1% of researchers worldwide, a testament to their enduring influence and excellence in the global scientific community."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The "
+          },
+          {
+            "type": "text",
+            "text": "Highly Cited Researchers list",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://clarivate.com/highly-cited-researchers/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", an annual initiative by Clarivate, celebrates scientists whose research publications rank in the top 1% of citations by field and publication year. This year's list represents over 6,600 scientists from around the globe, whose pioneering work has shaped their respective fields."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Jai K. Das",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.webofscience.com/wos/author/record/JOZ-1359-2023",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", recognized in the Cross-Field category, continues to lead impactful research spanning community trials, population-based surveys, and evidence-based systematic reviews. With over 200 peer-reviewed publications, Dr. Das exemplifies the critical role of interdisciplinary research in addressing global health challenges. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Zulfiqar A. Bhutta",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.webofscience.com/wos/author/record/ADZ-0156-2022",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", a global leader in maternal and child health, remains at the forefront of improving health outcomes worldwide. His work in intervention effectiveness, disease burden estimation, and policy advocacy has influenced global health policies and practices. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Reflecting on this milestone, Dr Sulaiman Shahabuddin, President of Aga Khan University, remarked, \"The continued recognition of Drs. Zulfiqar Bhutta and Jai Das in Clarivate's Highly Cited Researchers list speaks to their outstanding contributions to global health research. Their work embodies AKU's commitment to producing impactful, evidence-based research that addresses critical health and development challenges worldwide.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Vice Provost Research Dr Salim Virani praised this momentous milestone. \"Dr Bhutta and Dr Das' inclusion in this prestigious list underscores their pivotal role in advancing global health through research that informs policy and practice. This achievement is a testament to their dedication, innovation, and the far-reaching impact of AKU's contributions,\" said Dr Virani."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With trailblazers like Dr Bhutta and Dr Das leading the way, the Aga Khan University continues to redefine the landscape of global health research, inspiring the next generation of changemakers."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003444",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Impact",
+      "TermGuid": "213ffb74-6052-42ab-a1ba-6069928a9f80",
+      "WssId": 2220
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "1f5f9259-00ce-4800-8819-6a850f05c492",
+      "WssId": 2186
+    },
+    {
+      "Label": "Maternal health",
+      "TermGuid": "1cf5b8d7-62db-4ef9-9655-208326bd5266",
+      "WssId": 2352
+    }
+  ],
+  "ScheduleStartDate": "2024-12-16T04:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3574,
+  "Modified": "2024-12-16T04:26:01Z",
+  "Created": "2024-12-16T04:23:25Z"
+}

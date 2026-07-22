@@ -1,0 +1,229 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a0fe3f57-0a76-4eef-a7b7-8283313efbdc",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c87ca18a-3022-4bed-8cbb-e24de1645e37",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e5198310-e517-40b8-bd1c-e899c8e8996c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d48d19f6-42bb-468b-9e68-d56ca8da915a",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "2cb5c8d5-67c2-4a5a-a7b2-2cf49cebc633",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1bc5d220-2ef2-4b10-949f-98cba1e4cb1c",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "815cd346-c035-4f08-9815-18f3f664d00d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "16ac0748-bf1e-46c6-847e-0225d4b18a23",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1353)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "466aa0f5-caa4-4b8b-9306-880c00141081",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1353,
+  "Title": "New book highlights neglected set of infections in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Faculty launch fungal infections atlas at AKU's international mycology conference.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Faculty at Aga Khan University have launched a comprehensive medical atlas aimed at improving the diagnosis and treatment of fungal infections which are becoming a growing public health concern in Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new book Practical Guide and Atlas of the Diagnosis of Fungal Infections was launched at the 1st International Collaborative Mycology (ICM) Conference on Monday which was jointly organised by the global research and advocacy body, Global Action Fund for Fungal Infections (GAFFI), the Medical Microbiology and Infectious Diseases Society of Pakistan and AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Skin specialists from around Pakistan told the conference that common fungal infections affecting the skin are now the leading cause of patients visiting skin clinics and hospitals. Despite the prevalence of such infections and the fact that 3.2 million Pakistanis are living with infections such as keratitis, which can cause blindness, and the life-threatening Candida auris infection, researchers noted that there is no specific national policy on fungal disease."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Fungal disease is an area almost forgotten by public health professionals and policymakers. Since treatment options for these diseases are already limited this policy oversight has dangerous implications. Fungal infections also represent a growing threat to the livelihood of our animals and plants which harms the country's food security and biodiversity,\" said Dr Kausar Jabeen, associate professor in the department of pathology and laboratory medicine at AKU and chair of the conference."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speakers at the book launch ceremony on the first day of the conference mentioned how the book contains high resolution microscopic images of over 20 types of fungal infections caused by more than 60 fungal species that have been reported at the country's healthcare institutions. Compiled over a period of 6 years and through a series of eight intensive workshops, the publication also contains detailed instructions to guide medical professionals and students in diagnosing these infections, they added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sessions at the conference also focused on the key concern of growing fungal resistance to medications which were narrowing treatment options and leaving patients little choice beyond very expensive drugs. Commenting on the challenges in treating by a serious fungal infection, Candida auris, which can trigger sepsis (a deadly illness that causes inflammation throughout the body), speakers noted that poor availability of medicines was leading to delays in treatment. Even when medicines were present, the prohibitive cost of using second-line drugs, which can cost around Rs 13,000 per day, limited the availability of treatment, experts added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking in a global context, Professor David Denning, president of GAFFI, stated that fungal infections claim 1.6 million lives around the world every year: a death toll that exceeds malaria and is equivalent to the lives lost to tuberculosis. Similarly, fungi and fungi-like micro-organisms, oomycetes (commonly known as water mould), destroy a third of all food crops around the world which would have fed 600 million people."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The World Health Organization has no funded programmes specifically targeting fungal diseases, fewer than 10 countries have national surveillance programs for fungal infections, and fewer than 20 have fungal reference diagnostic laboratories. Many of the diagnostic tests that do exist are not available in developing countries, and well-established antifungal drugs that would cure disease are not reaching people that need them,\" Professor Denning added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Experts from various disciplines of medicine, veterinary medicine, agriculture, food and pharmaceutical industry were present at the two-day event. The conference was followed by a day of workshops at AKU's Centre for Innovation in Medical Education."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference's objectives to improve the diagnosis and treatment of fungal infections are in line with global efforts to achieve infectious disease targets under goal 3 of the Sustainable Development Goals: ensure healthy lives and promote well-being for all at all ages."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new book Practical Guide and Atlas of the Diagnosis of Fungal Infections has been edited by Professor Afia Zafar alongside co-editors Dr Kausar Jabeen and Dr Joveria Farooqi."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001300",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Infectious diseases",
+      "TermGuid": "1b9c5c5a-2d11-48c2-a267-95341d8c799f",
+      "WssId": 1516
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    }
+  ],
+  "ScheduleStartDate": "2017-12-04T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": "A session during AKU's International Collaborative Mycology conference ",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1353,
+  "Modified": "2017-12-04T11:52:20Z",
+  "Created": "2017-12-04T10:57:22Z"
+}

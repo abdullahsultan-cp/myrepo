@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cddfa0dd-a050-4f81-91ca-89d910715f96",
+  "odata.etag": "\"14\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bcf52b7d-8019-4993-88e2-2b2e2972e0f9",
+    "Id": 3461,
+    "Title": "Akber Ali"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8d95c6a6-e244-49c1-af24-05f854250533",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1803b6c3-fbac-4139-b078-4202ab8e8070",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6a626ca3-7131-4c6f-a98e-832209b35eac",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7fb024cb-7f15-4241-967e-64657885f810",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "43fffb20-5cd7-42b1-b0d1-d2e4d8643b8d",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d0ee2640-9622-42ac-a1dd-06e96cbdf3b7",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2793)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a97829a3-a8f5-4d5a-a3f9-8bd37a2af791",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2793,
+  "Title": "Third-Party Verification Immunization Coverage Survey (TPVICS)  ",
+  "NewsSubTitle": "Survey Report",
+  "NewsSummary": "The Aga Khan University is greatly privileged to undertake this Survey under the guidance of the Federal Ministry of Health (Expanded Program on Immunization (EPI), World Bank, key supporters of National Immunization Support Program (NISP)",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass35BCE002EC4D43E8B02EFA082638E733\"><p><br></p><p>Immunization programs are considered as key to avert vaccine preventable diseases in a country. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan, since then it has been delivering extensively to reduce the burden of vaccine preventable disease in the country. To augment further Pakistan started its National Immunization Support Project (NISP) in 2016 to coordinate efforts for immunization and reducing vaccine-preventable diseases. This project liaises with development partners to help coordinate fund distribution and monitors the progress of the immunization efforts. NISP includes ten Disbursement Linked Indicators (DLIs), which are the benchmark for progress monitoring of the project and triggers disbursement from the co-financing partners (the World Bank, the United States Agency for International Development (USAID), Gavi the Vaccine Alliance and the Bill and Melinda Gates Foundation).&#160;<br></p><div>To get more granular information on vaccine coverage and immunization service delivery, the Third-Party Verification of Immunization Coverage Survey (TPVICS) was done to assess the progress of four out of the ten DLIs under the NISP. The survey was conducted in all four provinces i.e. Sindh, Punjab, Khyber Pakhtunkhwa (KP), Balochistan and three federal regions i.e. Islamabad, Azad Jammu and Kashmir (AJK) and Gilgit-Baltistan (GB). The survey was conducted by the Aga Khan University with the support of EPI Pakistan from September 2020 to January 2021. To read survey&#160;report please <a href=\"/coe-wch/pk/Documents/Third%20Party%20Verification%20Immunization%20Coverage%20Survey%20-%20Round%20Two%20(TPVICS%20R-II).pdf\" target=\"_blank\">click here</a><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002687",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2022-02-09T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2793,
+  "Modified": "2023-05-08T08:39:35Z",
+  "Created": "2022-02-09T06:12:56Z"
+}

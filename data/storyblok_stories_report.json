@@ -1,0 +1,948 @@
+{
+  "summary": {
+    "files_processed": 3606,
+    "pull_quote_modes": {
+      "null": 3488,
+      "richtext": 77,
+      "twitter_embed": 38,
+      "iframe_embed": 3
+    },
+    "files_with_pull_quote_warnings": 2,
+    "slug_collisions_resolved": 153
+  },
+  "slug_collisions": [
+    {
+      "file": "1038.json",
+      "sharepoint_id": 1038,
+      "base_slug": "aku-celebrates-international-nurses-day",
+      "slug": "aku-celebrates-international-nurses-day-1038"
+    },
+    {
+      "file": "1063.json",
+      "sharepoint_id": 1063,
+      "base_slug": "akuh-organises-trauma-course",
+      "slug": "akuh-organises-trauma-course-1063"
+    },
+    {
+      "file": "1129.json",
+      "sharepoint_id": 1129,
+      "base_slug": "asthma-on-the-rise-in-pakistan",
+      "slug": "asthma-on-the-rise-in-pakistan-1129"
+    },
+    {
+      "file": "1166.json",
+      "sharepoint_id": 1166,
+      "base_slug": "aga-khan-university-language-policy-thinking-group",
+      "slug": "aga-khan-university-language-policy-thinking-group-1166"
+    },
+    {
+      "file": "1262.json",
+      "sharepoint_id": 1262,
+      "base_slug": "research-for-the-real-world",
+      "slug": "research-for-the-real-world-1262"
+    },
+    {
+      "file": "1265.json",
+      "sharepoint_id": 1265,
+      "base_slug": "addressing-a-burning-concern",
+      "slug": "addressing-a-burning-concern-1265"
+    },
+    {
+      "file": "1295.json",
+      "sharepoint_id": 1295,
+      "base_slug": "rethinking-teaching-a-course-redesign-workshop",
+      "slug": "rethinking-teaching-a-course-redesign-workshop-1295"
+    },
+    {
+      "file": "1523.json",
+      "sharepoint_id": 1523,
+      "base_slug": "the-pursuit-of-excellence",
+      "slug": "the-pursuit-of-excellence-1523"
+    },
+    {
+      "file": "1524.json",
+      "sharepoint_id": 1524,
+      "base_slug": "one-minute-video-road-to-success",
+      "slug": "one-minute-video-road-to-success-1524"
+    },
+    {
+      "file": "1538.json",
+      "sharepoint_id": 1538,
+      "base_slug": "aku-celebrates-international-nurses-day",
+      "slug": "aku-celebrates-international-nurses-day-1538"
+    },
+    {
+      "file": "1539.json",
+      "sharepoint_id": 1539,
+      "base_slug": "aku-lamplighting-ceremony",
+      "slug": "aku-lamplighting-ceremony-1539"
+    },
+    {
+      "file": "1540.json",
+      "sharepoint_id": 1540,
+      "base_slug": "the-school-of-nursing-achieves-important-landmark",
+      "slug": "the-school-of-nursing-achieves-important-landmark-1540"
+    },
+    {
+      "file": "1541.json",
+      "sharepoint_id": 1541,
+      "base_slug": "research-that-informs-policy",
+      "slug": "research-that-informs-policy-1541"
+    },
+    {
+      "file": "1542.json",
+      "sharepoint_id": 1542,
+      "base_slug": "tackling-an-old-stereotype",
+      "slug": "tackling-an-old-stereotype-1542"
+    },
+    {
+      "file": "1543.json",
+      "sharepoint_id": 1543,
+      "base_slug": "an-adventure-in-russia",
+      "slug": "an-adventure-in-russia-1543"
+    },
+    {
+      "file": "1545.json",
+      "sharepoint_id": 1545,
+      "base_slug": "discovering-science-in-the-laboratory",
+      "slug": "discovering-science-in-the-laboratory-1545"
+    },
+    {
+      "file": "1546.json",
+      "sharepoint_id": 1546,
+      "base_slug": "global-conference-sponsors-sonam-faculty",
+      "slug": "global-conference-sponsors-sonam-faculty-1546"
+    },
+    {
+      "file": "1548.json",
+      "sharepoint_id": 1548,
+      "base_slug": "uncovering-a-buried-concern",
+      "slug": "uncovering-a-buried-concern-1548"
+    },
+    {
+      "file": "1549.json",
+      "sharepoint_id": 1549,
+      "base_slug": "sonam-faculty-picks-up-phd-research-award",
+      "slug": "sonam-faculty-picks-up-phd-research-award-1549"
+    },
+    {
+      "file": "1551.json",
+      "sharepoint_id": 1551,
+      "base_slug": "advocating-for-the-elderly",
+      "slug": "advocating-for-the-elderly-1551"
+    },
+    {
+      "file": "1552.json",
+      "sharepoint_id": 1552,
+      "base_slug": "ensures-compliance-to-highest-standards-of-care-to-patients-dr-shamsh-kassim-lakha",
+      "slug": "ensures-compliance-to-highest-standards-of-care-to-patients-dr-shamsh-kassim-lakha-1552"
+    },
+    {
+      "file": "1558.json",
+      "sharepoint_id": 1558,
+      "base_slug": "a-step-ahead-from-primary-care-advance-nurse-practitioner-programme-of-akuh",
+      "slug": "a-step-ahead-from-primary-care-advance-nurse-practitioner-programme-of-akuh-1558"
+    },
+    {
+      "file": "1563.json",
+      "sharepoint_id": 1563,
+      "base_slug": "sonam-nairobi-delivers-good-news",
+      "slug": "sonam-nairobi-delivers-good-news-1563"
+    },
+    {
+      "file": "161.json",
+      "sharepoint_id": 161,
+      "base_slug": "aku-neurologist-awarded-pakistan-academy-of-sciences-medal",
+      "slug": "aku-neurologist-awarded-pakistan-academy-of-sciences-medal-161"
+    },
+    {
+      "file": "1610.json",
+      "sharepoint_id": 1610,
+      "base_slug": "a-second-chance-at-school",
+      "slug": "a-second-chance-at-school-1610"
+    },
+    {
+      "file": "1611.json",
+      "sharepoint_id": 1611,
+      "base_slug": "experts-recommend-steps-to-help-pakistan-excel-in-science-education",
+      "slug": "experts-recommend-steps-to-help-pakistan-excel-in-science-education-1611"
+    },
+    {
+      "file": "1612.json",
+      "sharepoint_id": 1612,
+      "base_slug": "promoting-tolerance-through-literature",
+      "slug": "promoting-tolerance-through-literature-1612"
+    },
+    {
+      "file": "1613.json",
+      "sharepoint_id": 1613,
+      "base_slug": "low-status-of-teachers-hurting-education-system",
+      "slug": "low-status-of-teachers-hurting-education-system-1613"
+    },
+    {
+      "file": "1614.json",
+      "sharepoint_id": 1614,
+      "base_slug": "championing-education-in-times-of-war",
+      "slug": "championing-education-in-times-of-war-1614"
+    },
+    {
+      "file": "163.json",
+      "sharepoint_id": 163,
+      "base_slug": "refocusing-on-karachi-s-fishing-communities",
+      "slug": "refocusing-on-karachi-s-fishing-communities-163"
+    },
+    {
+      "file": "164.json",
+      "sharepoint_id": 164,
+      "base_slug": "aku-s-fcps-candidate-receives-burki-gold-medal-2014",
+      "slug": "aku-s-fcps-candidate-receives-burki-gold-medal-2014-164"
+    },
+    {
+      "file": "1660.json",
+      "sharepoint_id": 1660,
+      "base_slug": "aku-faculty-awarded-sitara-i-imtiaz",
+      "slug": "aku-faculty-awarded-sitara-i-imtiaz-1660"
+    },
+    {
+      "file": "1661.json",
+      "sharepoint_id": 1661,
+      "base_slug": "aku-faculty-awarded-sitara-i-imtiaz",
+      "slug": "aku-faculty-awarded-sitara-i-imtiaz-1661"
+    },
+    {
+      "file": "1662.json",
+      "sharepoint_id": 1662,
+      "base_slug": "aku-faculty-awarded-sitara-i-imtiaz",
+      "slug": "aku-faculty-awarded-sitara-i-imtiaz-1662"
+    },
+    {
+      "file": "1664.json",
+      "sharepoint_id": 1664,
+      "base_slug": "aku-faculty-awarded-sitara-i-imtiaz",
+      "slug": "aku-faculty-awarded-sitara-i-imtiaz-1664"
+    },
+    {
+      "file": "1665.json",
+      "sharepoint_id": 1665,
+      "base_slug": "aku-faculty-awarded-sitara-i-imtiaz",
+      "slug": "aku-faculty-awarded-sitara-i-imtiaz-1665"
+    },
+    {
+      "file": "1673.json",
+      "sharepoint_id": 1673,
+      "base_slug": "fulbright-scholar-returns-to-his-roots",
+      "slug": "fulbright-scholar-returns-to-his-roots-1673"
+    },
+    {
+      "file": "1680.json",
+      "sharepoint_id": 1680,
+      "base_slug": "global-body-accredits-aku-s-teaching-excellence-programme",
+      "slug": "global-body-accredits-aku-s-teaching-excellence-programme-1680"
+    },
+    {
+      "file": "1704.json",
+      "sharepoint_id": 1704,
+      "base_slug": "english-course-for-aku-drivers",
+      "slug": "english-course-for-aku-drivers-1704"
+    },
+    {
+      "file": "1712.json",
+      "sharepoint_id": 1712,
+      "base_slug": "shaping-education-strategy",
+      "slug": "shaping-education-strategy-1712"
+    },
+    {
+      "file": "1717.json",
+      "sharepoint_id": 1717,
+      "base_slug": "the-aga-khan-university-to-advise-pumwani-maternity-hospital",
+      "slug": "the-aga-khan-university-to-advise-pumwani-maternity-hospital-1717"
+    },
+    {
+      "file": "1718.json",
+      "sharepoint_id": 1718,
+      "base_slug": "the-aga-khan-university-to-advise-pumwani-maternity-hospital",
+      "slug": "the-aga-khan-university-to-advise-pumwani-maternity-hospital-1718"
+    },
+    {
+      "file": "1751.json",
+      "sharepoint_id": 1751,
+      "base_slug": "sonam-ea-professor-takes-up-key-position-at-international-nursing-organisation",
+      "slug": "sonam-ea-professor-takes-up-key-position-at-international-nursing-organisation-1751"
+    },
+    {
+      "file": "1758.json",
+      "sharepoint_id": 1758,
+      "base_slug": "a-double-honour-for-ied-s-pdcn",
+      "slug": "a-double-honour-for-ied-s-pdcn-1758"
+    },
+    {
+      "file": "179.json",
+      "sharepoint_id": 179,
+      "base_slug": "aku-network-of-teaching-and-learning-leading-a-transformative-teaching-initiative-in-kenya",
+      "slug": "aku-network-of-teaching-and-learning-leading-a-transformative-teaching-initiative-in-kenya-179"
+    },
+    {
+      "file": "1801.json",
+      "sharepoint_id": 1801,
+      "base_slug": "faculty-to-chair-caine-prize-judging-panel",
+      "slug": "faculty-to-chair-caine-prize-judging-panel-1801"
+    },
+    {
+      "file": "1843.json",
+      "sharepoint_id": 1843,
+      "base_slug": "aku-recognised-as-mrcp-uk-examinations-centre-in-east-africa",
+      "slug": "aku-recognised-as-mrcp-uk-examinations-centre-in-east-africa-1843"
+    },
+    {
+      "file": "1847.json",
+      "sharepoint_id": 1847,
+      "base_slug": "empowering-patients-supporting-parents",
+      "slug": "empowering-patients-supporting-parents-1847"
+    },
+    {
+      "file": "1864.json",
+      "sharepoint_id": 1864,
+      "base_slug": "golf-tournament-helps-children-with-heart-defects",
+      "slug": "golf-tournament-helps-children-with-heart-defects-1864"
+    },
+    {
+      "file": "1908.json",
+      "sharepoint_id": 1908,
+      "base_slug": "3-day-course-on-grants-and-research-administration",
+      "slug": "3-day-course-on-grants-and-research-administration-1908"
+    },
+    {
+      "file": "1910.json",
+      "sharepoint_id": 1910,
+      "base_slug": "summer-english-courses-for-aku-students",
+      "slug": "summer-english-courses-for-aku-students-1910"
+    },
+    {
+      "file": "1966.json",
+      "sharepoint_id": 1966,
+      "base_slug": "teaching-and-learning-enhancement-workshop",
+      "slug": "teaching-and-learning-enhancement-workshop-1966"
+    },
+    {
+      "file": "2121.json",
+      "sharepoint_id": 2121,
+      "base_slug": "hackathon-proposes-ways-to-boost-school-emergency-preparedness",
+      "slug": "hackathon-proposes-ways-to-boost-school-emergency-preparedness-2121"
+    },
+    {
+      "file": "2195.json",
+      "sharepoint_id": 2195,
+      "base_slug": "aku-tanzania-goes-all-out-on-international-women-s-day",
+      "slug": "aku-tanzania-goes-all-out-on-international-women-s-day-2195"
+    },
+    {
+      "file": "222.json",
+      "sharepoint_id": 222,
+      "base_slug": "sonam-video-gets-honorable-mention-at-asm-global-video-challenge",
+      "slug": "sonam-video-gets-honorable-mention-at-asm-global-video-challenge-222"
+    },
+    {
+      "file": "2239.json",
+      "sharepoint_id": 2239,
+      "base_slug": "16-graduate-from-nation-media-lab",
+      "slug": "16-graduate-from-nation-media-lab-2239"
+    },
+    {
+      "file": "2288.json",
+      "sharepoint_id": 2288,
+      "base_slug": "accessing-library-resources-while-away-from-campus",
+      "slug": "accessing-library-resources-while-away-from-campus-2288"
+    },
+    {
+      "file": "2342.json",
+      "sharepoint_id": 2342,
+      "base_slug": "kenyans-need-proactive-approach-in-covid-19-fight",
+      "slug": "kenyans-need-proactive-approach-in-covid-19-fight-2342"
+    },
+    {
+      "file": "2346.json",
+      "sharepoint_id": 2346,
+      "base_slug": "a-new-dawn-for-media-startup-debunk-media",
+      "slug": "a-new-dawn-for-media-startup-debunk-media-2346"
+    },
+    {
+      "file": "2348.json",
+      "sharepoint_id": 2348,
+      "base_slug": "media-innovation-center-hosts-inaugural-fireside-chat",
+      "slug": "media-innovation-center-hosts-inaugural-fireside-chat-2348"
+    },
+    {
+      "file": "2367.json",
+      "sharepoint_id": 2367,
+      "base_slug": "medical-college-east-africa-welcomes-new-dean",
+      "slug": "medical-college-east-africa-welcomes-new-dean-2367"
+    },
+    {
+      "file": "2380.json",
+      "sharepoint_id": 2380,
+      "base_slug": "covid-19-caring-for-mothers-and-babies-amid-uncertainty",
+      "slug": "covid-19-caring-for-mothers-and-babies-amid-uncertainty-2380"
+    },
+    {
+      "file": "2404.json",
+      "sharepoint_id": 2404,
+      "base_slug": "reducing-teenage-pregnancies-in-uganda",
+      "slug": "reducing-teenage-pregnancies-in-uganda-2404"
+    },
+    {
+      "file": "2412.json",
+      "sharepoint_id": 2412,
+      "base_slug": "teaching-dossier",
+      "slug": "teaching-dossier-2412"
+    },
+    {
+      "file": "2428.json",
+      "sharepoint_id": 2428,
+      "base_slug": "the-future-of-agriculture-and-food-systems",
+      "slug": "the-future-of-agriculture-and-food-systems-2428"
+    },
+    {
+      "file": "256.json",
+      "sharepoint_id": 256,
+      "base_slug": "uganda-youth-aspirational-but-lack-opportunity-and-integrity",
+      "slug": "uganda-youth-aspirational-but-lack-opportunity-and-integrity-256"
+    },
+    {
+      "file": "2572.json",
+      "sharepoint_id": 2572,
+      "base_slug": "sdg-targets-remain-achievable-despite-pandemic-seminar",
+      "slug": "sdg-targets-remain-achievable-despite-pandemic-seminar-2572"
+    },
+    {
+      "file": "2619.json",
+      "sharepoint_id": 2619,
+      "base_slug": "celebrating-mathematics-for-a-better-world-2021",
+      "slug": "celebrating-mathematics-for-a-better-world-2021-2619"
+    },
+    {
+      "file": "2620.json",
+      "sharepoint_id": 2620,
+      "base_slug": "enhancing-access-to-continued-learning-in-a-pandemic",
+      "slug": "enhancing-access-to-continued-learning-in-a-pandemic-2620"
+    },
+    {
+      "file": "2663.json",
+      "sharepoint_id": 2663,
+      "base_slug": "aku-and-who-emro-join-hands-to-raise-lmic-healthcare-standards",
+      "slug": "aku-and-who-emro-join-hands-to-raise-lmic-healthcare-standards-2663"
+    },
+    {
+      "file": "2669.json",
+      "sharepoint_id": 2669,
+      "base_slug": "aga-khan-university-aims-to-raise-the-bar-in-university-education",
+      "slug": "aga-khan-university-aims-to-raise-the-bar-in-university-education-2669"
+    },
+    {
+      "file": "2676.json",
+      "sharepoint_id": 2676,
+      "base_slug": "training-of-trainers",
+      "slug": "training-of-trainers-2676"
+    },
+    {
+      "file": "2739.json",
+      "sharepoint_id": 2739,
+      "base_slug": "aga-khan-university-launches-ecd-workforce-online-hub",
+      "slug": "aga-khan-university-launches-ecd-workforce-online-hub-2739"
+    },
+    {
+      "file": "2796.json",
+      "sharepoint_id": 2796,
+      "base_slug": "oh-brethren-where-are-ye-how-to-search-for-words-and-phrases-in-the-openiti-corpus-demonstrated-with-the-phrase-ikhwan-al-safa",
+      "slug": "oh-brethren-where-are-ye-how-to-search-for-words-and-phrases-in-the-openiti-corpus-demonstrated-with-the-phrase-ikhwan-al-safa-2796"
+    },
+    {
+      "file": "283.json",
+      "sharepoint_id": 283,
+      "base_slug": "an-interview-with-sonam-pakistan-s-new-dean",
+      "slug": "an-interview-with-sonam-pakistan-s-new-dean-283"
+    },
+    {
+      "file": "292.json",
+      "sharepoint_id": 292,
+      "base_slug": "aga-khan-outlines-university-s-ambitious-expansion-into-liberal-arts",
+      "slug": "aga-khan-outlines-university-s-ambitious-expansion-into-liberal-arts-292"
+    },
+    {
+      "file": "299.json",
+      "sharepoint_id": 299,
+      "base_slug": "akdn-s-cahss-project-wins-manthan-award-for-ehealth",
+      "slug": "akdn-s-cahss-project-wins-manthan-award-for-ehealth-299"
+    },
+    {
+      "file": "307.json",
+      "sharepoint_id": 307,
+      "base_slug": "forging-ahead-with-blended-learning",
+      "slug": "forging-ahead-with-blended-learning-307"
+    },
+    {
+      "file": "3088.json",
+      "sharepoint_id": 3088,
+      "base_slug": "aga-khan-university-graduates-777-students-celebrates-founder-s-day-and-40th-anniversary",
+      "slug": "aga-khan-university-graduates-777-students-celebrates-founder-s-day-and-40th-anniversary-3088"
+    },
+    {
+      "file": "3116.json",
+      "sharepoint_id": 3116,
+      "base_slug": "stakeholders-call-on-justice-and-accountability-in-sudan",
+      "slug": "stakeholders-call-on-justice-and-accountability-in-sudan-3116"
+    },
+    {
+      "file": "3119.json",
+      "sharepoint_id": 3119,
+      "base_slug": "aku-kenya-launches-undergraduate-programmes",
+      "slug": "aku-kenya-launches-undergraduate-programmes-3119"
+    },
+    {
+      "file": "3135.json",
+      "sharepoint_id": 3135,
+      "base_slug": "bridging-the-human-resource-gap-in-healthcare",
+      "slug": "bridging-the-human-resource-gap-in-healthcare-3135"
+    },
+    {
+      "file": "3229.json",
+      "sharepoint_id": 3229,
+      "base_slug": "celebrating-world-teachers-day-2023",
+      "slug": "celebrating-world-teachers-day-2023-3229"
+    },
+    {
+      "file": "327.json",
+      "sharepoint_id": 327,
+      "base_slug": "going-the-extra-mile",
+      "slug": "going-the-extra-mile-327"
+    },
+    {
+      "file": "331.json",
+      "sharepoint_id": 331,
+      "base_slug": "school-of-nursing-and-midwifery-bags-top-honours",
+      "slug": "school-of-nursing-and-midwifery-bags-top-honours-331"
+    },
+    {
+      "file": "339.json",
+      "sharepoint_id": 339,
+      "base_slug": "raising-the-bar-the-fancy-foundation-provides-scholarships-for-higher-education-students-affiliated-with-aku-eb",
+      "slug": "raising-the-bar-the-fancy-foundation-provides-scholarships-for-higher-education-students-affiliated-with-aku-eb-339"
+    },
+    {
+      "file": "3419.json",
+      "sharepoint_id": 3419,
+      "base_slug": "aku-celebrates-the-closing-ceremony-of-47-education-leaders-in-tanzania",
+      "slug": "aku-celebrates-the-closing-ceremony-of-47-education-leaders-in-tanzania-3419"
+    },
+    {
+      "file": "3428.json",
+      "sharepoint_id": 3428,
+      "base_slug": "fostering-healing-through-innovative-community-based-interventions",
+      "slug": "fostering-healing-through-innovative-community-based-interventions-3428"
+    },
+    {
+      "file": "344.json",
+      "sharepoint_id": 344,
+      "base_slug": "valuing-nursing-and-midwifery",
+      "slug": "valuing-nursing-and-midwifery-344"
+    },
+    {
+      "file": "3442.json",
+      "sharepoint_id": 3442,
+      "base_slug": "gsmc-to-host-digital-media-conference-in-africa",
+      "slug": "gsmc-to-host-digital-media-conference-in-africa-3442"
+    },
+    {
+      "file": "3578.json",
+      "sharepoint_id": 3578,
+      "base_slug": "redefining-the-bottom-line",
+      "slug": "redefining-the-bottom-line-3578"
+    },
+    {
+      "file": "3651.json",
+      "sharepoint_id": 3651,
+      "base_slug": "top-kenyan-achiever-sets-her-sights-on-paediatric-cardiology",
+      "slug": "top-kenyan-achiever-sets-her-sights-on-paediatric-cardiology-3651"
+    },
+    {
+      "file": "3710.json",
+      "sharepoint_id": 3710,
+      "base_slug": "dr-zulfiqar-bhutta-joins-global-panel-on-cgtn-america-for-world-health-day-2025",
+      "slug": "dr-zulfiqar-bhutta-joins-global-panel-on-cgtn-america-for-world-health-day-2025-3710"
+    },
+    {
+      "file": "3719.json",
+      "sharepoint_id": 3719,
+      "base_slug": "gsmc-launches-report-on-sgbv-in-east-african-sports",
+      "slug": "gsmc-launches-report-on-sgbv-in-east-african-sports-3719"
+    },
+    {
+      "file": "3770.json",
+      "sharepoint_id": 3770,
+      "base_slug": "aku-s-four-residency-programmes-receive-global-recognition",
+      "slug": "aku-s-four-residency-programmes-receive-global-recognition-3770"
+    },
+    {
+      "file": "378.json",
+      "sharepoint_id": 378,
+      "base_slug": "aku-announces-admissions-with-a-new-degree-programme-for-midwives",
+      "slug": "aku-announces-admissions-with-a-new-degree-programme-for-midwives-378"
+    },
+    {
+      "file": "3790.json",
+      "sharepoint_id": 3790,
+      "base_slug": "ied-ea-initiative-advances-lifelong-digital-literacy",
+      "slug": "ied-ea-initiative-advances-lifelong-digital-literacy-3790"
+    },
+    {
+      "file": "3804.json",
+      "sharepoint_id": 3804,
+      "base_slug": "maureen-is-a-step-closer-to-a-career-in-oncology",
+      "slug": "maureen-is-a-step-closer-to-a-career-in-oncology-3804"
+    },
+    {
+      "file": "3805.json",
+      "sharepoint_id": 3805,
+      "base_slug": "two-callings-one-mission-nursing-and-service",
+      "slug": "two-callings-one-mission-nursing-and-service-3805"
+    },
+    {
+      "file": "3826.json",
+      "sharepoint_id": 3826,
+      "base_slug": "global-experts-at-aku-conference-declare-raising-children-a-societal-imperative",
+      "slug": "global-experts-at-aku-conference-declare-raising-children-a-societal-imperative-3826"
+    },
+    {
+      "file": "3839.json",
+      "sharepoint_id": 3839,
+      "base_slug": "aku-pioneers-student-led-revolution-in-higher-education-quality",
+      "slug": "aku-pioneers-student-led-revolution-in-higher-education-quality-3839"
+    },
+    {
+      "file": "3873.json",
+      "sharepoint_id": 3873,
+      "base_slug": "in-memoriam-mr-robert-hazard-edwards",
+      "slug": "in-memoriam-mr-robert-hazard-edwards-3873"
+    },
+    {
+      "file": "3876.json",
+      "sharepoint_id": 3876,
+      "base_slug": "digital-learning-in-pakistan-s-mountaintops",
+      "slug": "digital-learning-in-pakistan-s-mountaintops-3876"
+    },
+    {
+      "file": "3893.json",
+      "sharepoint_id": 3893,
+      "base_slug": "from-newsroom-to-classroom-a-strategic-transition",
+      "slug": "from-newsroom-to-classroom-a-strategic-transition-3893"
+    },
+    {
+      "file": "3895.json",
+      "sharepoint_id": 3895,
+      "base_slug": "a-graduate-programme-built-around-working-professionals",
+      "slug": "a-graduate-programme-built-around-working-professionals-3895"
+    },
+    {
+      "file": "3896.json",
+      "sharepoint_id": 3896,
+      "base_slug": "from-newsroom-to-classroom-a-strategic-transition",
+      "slug": "from-newsroom-to-classroom-a-strategic-transition-3896"
+    },
+    {
+      "file": "3897.json",
+      "sharepoint_id": 3897,
+      "base_slug": "from-newsroom-to-classroom-a-strategic-transition",
+      "slug": "from-newsroom-to-classroom-a-strategic-transition-3897"
+    },
+    {
+      "file": "3898.json",
+      "sharepoint_id": 3898,
+      "base_slug": "a-graduate-programme-built-around-working-professionals",
+      "slug": "a-graduate-programme-built-around-working-professionals-3898"
+    },
+    {
+      "file": "3907.json",
+      "sharepoint_id": 3907,
+      "base_slug": "mc-pk-medical-graduates-now-eligible-to-practice-in-singapore",
+      "slug": "mc-pk-medical-graduates-now-eligible-to-practice-in-singapore-3907"
+    },
+    {
+      "file": "3908.json",
+      "sharepoint_id": 3908,
+      "base_slug": "aku-s-ctu-named-who-collaborating-centre-for-clinical-trials",
+      "slug": "aku-s-ctu-named-who-collaborating-centre-for-clinical-trials-3908"
+    },
+    {
+      "file": "393.json",
+      "sharepoint_id": 393,
+      "base_slug": "aku-sonam-introduces-course-for-elderly-care-in-pakistan",
+      "slug": "aku-sonam-introduces-course-for-elderly-care-in-pakistan-393"
+    },
+    {
+      "file": "399.json",
+      "sharepoint_id": 399,
+      "base_slug": "a-dream-to-become-a-nurse",
+      "slug": "a-dream-to-become-a-nurse-399"
+    },
+    {
+      "file": "401.json",
+      "sharepoint_id": 401,
+      "base_slug": "over-13-million-suffer-from-hepatitis-in-pakistan",
+      "slug": "over-13-million-suffer-from-hepatitis-in-pakistan-401"
+    },
+    {
+      "file": "406.json",
+      "sharepoint_id": 406,
+      "base_slug": "sindh-government-and-aku-support-students-to-enter-nursing",
+      "slug": "sindh-government-and-aku-support-students-to-enter-nursing-406"
+    },
+    {
+      "file": "471.json",
+      "sharepoint_id": 471,
+      "base_slug": "lamp-lighting-ceremony",
+      "slug": "lamp-lighting-ceremony-471"
+    },
+    {
+      "file": "473.json",
+      "sharepoint_id": 473,
+      "base_slug": "nurses-are-the-backbone-of-the-health-care-system",
+      "slug": "nurses-are-the-backbone-of-the-health-care-system-473"
+    },
+    {
+      "file": "499.json",
+      "sharepoint_id": 499,
+      "base_slug": "expert-advice-on-combating-antimicrobial-resistance-in-pakistan",
+      "slug": "expert-advice-on-combating-antimicrobial-resistance-in-pakistan-499"
+    },
+    {
+      "file": "50.json",
+      "sharepoint_id": 50,
+      "base_slug": "nurses-and-midwives-a-force-for-change-towards-a-better-tomorrow",
+      "slug": "nurses-and-midwives-a-force-for-change-towards-a-better-tomorrow-50"
+    },
+    {
+      "file": "535.json",
+      "sharepoint_id": 535,
+      "base_slug": "nurses-innovate-ways-to-improve-patient-care",
+      "slug": "nurses-innovate-ways-to-improve-patient-care-535"
+    },
+    {
+      "file": "541.json",
+      "sharepoint_id": 541,
+      "base_slug": "lamp-lighting-ceremony-at-aga-khan-university-school-of-nursing",
+      "slug": "lamp-lighting-ceremony-at-aga-khan-university-school-of-nursing-541"
+    },
+    {
+      "file": "63.json",
+      "sharepoint_id": 63,
+      "base_slug": "aku-convocation-in-nairobi",
+      "slug": "aku-convocation-in-nairobi-63"
+    },
+    {
+      "file": "633.json",
+      "sharepoint_id": 633,
+      "base_slug": "aku-s-graduation-ceremony-for-postgraduate-trainees",
+      "slug": "aku-s-graduation-ceremony-for-postgraduate-trainees-633"
+    },
+    {
+      "file": "65.json",
+      "sharepoint_id": 65,
+      "base_slug": "ignite-4-igniting-imagination",
+      "slug": "ignite-4-igniting-imagination-65"
+    },
+    {
+      "file": "66.json",
+      "sharepoint_id": 66,
+      "base_slug": "enhancing-research-capabilities-in-east-africa",
+      "slug": "enhancing-research-capabilities-in-east-africa-66"
+    },
+    {
+      "file": "661.json",
+      "sharepoint_id": 661,
+      "base_slug": "international-nurses-day-at-aku",
+      "slug": "international-nurses-day-at-aku-661"
+    },
+    {
+      "file": "699.json",
+      "sharepoint_id": 699,
+      "base_slug": "10-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "10-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-699"
+    },
+    {
+      "file": "700.json",
+      "sharepoint_id": 700,
+      "base_slug": "8-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "8-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-700"
+    },
+    {
+      "file": "702.json",
+      "sharepoint_id": 702,
+      "base_slug": "10-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "10-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-702"
+    },
+    {
+      "file": "711.json",
+      "sharepoint_id": 711,
+      "base_slug": "19-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "19-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-711"
+    },
+    {
+      "file": "715.json",
+      "sharepoint_id": 715,
+      "base_slug": "19-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "19-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-715"
+    },
+    {
+      "file": "723.json",
+      "sharepoint_id": 723,
+      "base_slug": "25-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "25-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-723"
+    },
+    {
+      "file": "724.json",
+      "sharepoint_id": 724,
+      "base_slug": "12-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "12-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-724"
+    },
+    {
+      "file": "725.json",
+      "sharepoint_id": 725,
+      "base_slug": "27-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "27-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-725"
+    },
+    {
+      "file": "727.json",
+      "sharepoint_id": 727,
+      "base_slug": "27-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "27-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-727"
+    },
+    {
+      "file": "740.json",
+      "sharepoint_id": 740,
+      "base_slug": "43-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever",
+      "slug": "43-patients-under-treatment-at-aga-khan-university-hospital-for-viral-haemorrhagic-fever-740"
+    },
+    {
+      "file": "747.json",
+      "sharepoint_id": 747,
+      "base_slug": "akuh-s-signs-symptoms-and-care-programme",
+      "slug": "akuh-s-signs-symptoms-and-care-programme-747"
+    },
+    {
+      "file": "748.json",
+      "sharepoint_id": 748,
+      "base_slug": "akuh-s-signs-symptoms-and-care-programme",
+      "slug": "akuh-s-signs-symptoms-and-care-programme-748"
+    },
+    {
+      "file": "78.json",
+      "sharepoint_id": 78,
+      "base_slug": "aku-convocation-in-kampala",
+      "slug": "aku-convocation-in-kampala-78"
+    },
+    {
+      "file": "786.json",
+      "sharepoint_id": 786,
+      "base_slug": "akuh-s-signs-symptoms-and-care-programme",
+      "slug": "akuh-s-signs-symptoms-and-care-programme-786"
+    },
+    {
+      "file": "799.json",
+      "sharepoint_id": 799,
+      "base_slug": "worldwide-diabetes-expected-to-double-in-the-next-25-years",
+      "slug": "worldwide-diabetes-expected-to-double-in-the-next-25-years-799"
+    },
+    {
+      "file": "800.json",
+      "sharepoint_id": 800,
+      "base_slug": "aku-ied-successfully-completes-first-year-of-esra-programmes",
+      "slug": "aku-ied-successfully-completes-first-year-of-esra-programmes-800"
+    },
+    {
+      "file": "81.json",
+      "sharepoint_id": 81,
+      "base_slug": "aku-study-assesses-early-literacy-development-at-home-and-school",
+      "slug": "aku-study-assesses-early-literacy-development-at-home-and-school-81"
+    },
+    {
+      "file": "841.json",
+      "sharepoint_id": 841,
+      "base_slug": "akuh-signs-symptoms-and-care-programme",
+      "slug": "akuh-signs-symptoms-and-care-programme-841"
+    },
+    {
+      "file": "842.json",
+      "sharepoint_id": 842,
+      "base_slug": "akuh-s-signs-symptoms-and-care-programme-acute-abdominal-pain-and-common-surgical-problems-in-children",
+      "slug": "akuh-s-signs-symptoms-and-care-programme-acute-abdominal-pain-and-common-surgical-problems-in-children-842"
+    },
+    {
+      "file": "87.json",
+      "sharepoint_id": 87,
+      "base_slug": "first-world-class-operating-rooms-inaugurated-at-the-aga-khan-university-hospital",
+      "slug": "first-world-class-operating-rooms-inaugurated-at-the-aga-khan-university-hospital-87"
+    },
+    {
+      "file": "873.json",
+      "sharepoint_id": 873,
+      "base_slug": "akuh-signs-symptoms-and-care-programme",
+      "slug": "akuh-signs-symptoms-and-care-programme-873"
+    },
+    {
+      "file": "874.json",
+      "sharepoint_id": 874,
+      "base_slug": "volunteers-appreciation-evening",
+      "slug": "volunteers-appreciation-evening-874"
+    },
+    {
+      "file": "877.json",
+      "sharepoint_id": 877,
+      "base_slug": "akuh-signs-symptoms-and-care-programme-epilepsy-is-not-a-mental-disorder-but-a-neurological-disease-85-adults-experience-spinal-pain",
+      "slug": "akuh-signs-symptoms-and-care-programme-epilepsy-is-not-a-mental-disorder-but-a-neurological-disease-85-adults-experience-spinal-pain-877"
+    },
+    {
+      "file": "89.json",
+      "sharepoint_id": 89,
+      "base_slug": "one-in-three-pakistani-adults-overweight-but-reductions-in-childhood-rates-show-progress",
+      "slug": "one-in-three-pakistani-adults-overweight-but-reductions-in-childhood-rates-show-progress-89"
+    },
+    {
+      "file": "897.json",
+      "sharepoint_id": 897,
+      "base_slug": "quit-smoking-day-at-aku",
+      "slug": "quit-smoking-day-at-aku-897"
+    },
+    {
+      "file": "912.json",
+      "sharepoint_id": 912,
+      "base_slug": "aku-independence-day-celebrations",
+      "slug": "aku-independence-day-celebrations-912"
+    },
+    {
+      "file": "941.json",
+      "sharepoint_id": 941,
+      "base_slug": "asthma-on-the-rise-in-pakistan",
+      "slug": "asthma-on-the-rise-in-pakistan-941"
+    },
+    {
+      "file": "949.json",
+      "sharepoint_id": 949,
+      "base_slug": "aku-lamplighting-ceremony",
+      "slug": "aku-lamplighting-ceremony-949"
+    }
+  ],
+  "files_with_warnings": [
+    {
+      "file": "1323.json",
+      "warnings": [
+        "unsupported_inline_tag_ignored:time",
+        "unsupported_inline_tag_ignored:time"
+      ]
+    },
+    {
+      "file": "1496.json",
+      "warnings": [
+        "unsupported_inline_tag_ignored:time"
+      ]
+    }
+  ]
+}

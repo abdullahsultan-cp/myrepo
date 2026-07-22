@@ -1,0 +1,110 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1f4685a1-fdcc-46b5-8d66-eb5b0a0a1f30",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e27c93b-d99d-460a-8826-897e1c85c3fc",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ed48b219-3f85-4a3c-9dea-e379bebe2411",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd7a25cb-51cf-4ede-8225-f001ac68d002",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a0b42bab-9949-4bbe-ad1f-f5dc0114bb47",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "caf74f73-f791-488b-84f6-9ef48c3f9309",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae2c346d-6cd8-469d-9347-4f1a19961415",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3657)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57ab14c9-620f-4014-8ab9-e6a9fe1b2efd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3657,
+  "Title": "AKU is Betting on Data to Transform Healthcare in Africa",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU uses MEDITECH Expanse to uncover life-saving health insights in communities it serves",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass940C733B638D412789812E2C0FADA9BA\"><p>\u200b</p><p>\r\n   <em>This article is written by Farhana Alarakhiya, Chief Data Innovation Officer, AKU</em></p><p>The World Health Organization estimates that data-driven healthcare interventions could save nearly one million lives in Africa by 2030.</p><p>At Aga Khan University (AKU), we believe this future isn't just possible\u2014it's within reach. But in East Africa, the path to get there isn't simple.</p><p>We're operating in a landscape of deep and urgent challenges.</p><p>Every year, 213 million cases of malaria are reported across Sub-Saharan Africa\u2014and our region shoulders a significant share of that burden. HIV continues to devastate lives, with 4.8 million people living with HIV in Kenya alone, and East Africa accounting for a staggering 25% of the global HIV burden.</p><p>And it doesn't stop there.</p><p>Maternal mortality remains shockingly high\u2014556 deaths per 100,000 live births\u2014more than 250% above the global average. Meanwhile, we face a critical shortage of healthcare workers, with ratios far below WHO recommendations. And compounding all of this? Many clinical guidelines and care pathways developed in high-income countries (HICs) simply don't work here.</p><p>Take colorectal cancer&#58; while HICs recommend screening at age 50, our patients in Kenya often present before 40, and with different symptoms altogether. Standard genomic cancer tests? Often ineffective for our populations, because they weren't designed for our genetic diversity.</p><p>Bottom line?<br> We cannot borrow healthcare solutions.<br> We need to build them. Ourselves.</p><p>\r\n   <strong>Why We're Betting on Data</strong></p><p>That's why AKU is making a bold, strategic bet&#58; data is our pathway to locally grounded health innovation.</p><p>In 2019, we partnered with MEDITECH to roll out a modern, cloud-based Electronic Health Record (EHR) system across Kenya. By November 2022, Aga Khan University Hospital in Nairobi had gone fully digital with MEDITECH Expanse, capturing clinical data in real time and replacing paper-based systems.</p><p>But this wasn't just about going paperless. This data isn't just sitting in a server room.<br> We're turning it into insights that drive research, policy, and most importantly, impact \u2014not someday, but today.</p><p>We've since built one of the most comprehensive EHR data repositories for an LMIC setting with anonymized data from over 3 million unique patients across Nairobi, Kisumu, and Mombasa, spanning a decade. And we're now adding new data every 96 hours from Meditech Expanse\u2014because the insights we can draw are only as powerful as the data we feed in.</p><p>\r\n   <strong>From Raw Data to Real-World Impact</strong></p><p>Let me be blunt\u2014data without context is useless.</p><p>That's why we don't just extract EHR data\u2014we structure it, clean it, and analyze it in context. We build insights that reflect how people live, get sick, and seek care in our part of the world.</p><p>This is how we move beyond reactive care to proactive, preventative care. The holy grail&#58; stopping illness before it starts.</p><p>Better data = Better decisions = Better health.</p><p>\r\n   <strong>The Future Is Ours to Build</strong></p><p>EHR data can enable us to track diseases in real time, identify care gaps, inform public policy, and eventually build predictive models that shift healthcare toward prevention.</p><p>This is the real power of MEDITECH Expanse for us\u2014not just as a clinical tool, but as an engine of innovation.</p><p>We're not copy and pasting from high-income countries. We're building solutions that fit \r\n   <em>our</em> context, powered by \r\n   <em>our</em> data, for \r\n   <em>our</em> communities.</p><p>Watch how we're doing it with MEDITECH Expanse&#58; \u200b\u200b</p><p>\u200b<iframe width=\"560\" height=\"315\" src=\"https&#58;//www.youtube.com/embed/puC6CcB98Cg?si=8o41R-IXhmhrI_Jg\" title=\"YouTube video player\" frameborder=\"0\"></iframe>\u200b<br></p><p>\r\n   <br>\r\n</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003525",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Innovation",
+      "TermGuid": "9b1177f6-ee80-4dce-b188-94f66824c836",
+      "WssId": 2179
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "2d1be9e0-8877-428f-8a6f-ff032c81de24",
+      "WssId": 2106
+    }
+  ],
+  "ScheduleStartDate": "2025-03-26T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3657,
+  "Modified": "2025-03-26T08:09:36Z",
+  "Created": "2025-03-26T08:07:20Z"
+}

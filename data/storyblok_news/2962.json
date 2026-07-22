@@ -1,0 +1,255 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "02179731-82e5-4889-ae35-fc8067873956",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a3c41e92-4df5-47f1-af32-8122579c2c74",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c5d1a549-813f-476e-820b-b4df69a564ae",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "148310be-4066-4550-ab5a-d35a8630720f",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "44e0a2cc-9588-42e2-99a5-5eec2f26d54e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f662d1f7-bec5-49dc-8f44-8df1dba2bbef",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2db60f5c-1472-43d2-950f-fe5b1fee4441",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2962)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1ea29d5c-27d1-4870-a18b-9f3a9bb93a60",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2962,
+  "Title": "Health Minister recognises AKU for treating 300,000 people in flood areas",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU also distributed medicines of Rs 143 million in 42 districts throughout the country",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sindh Minister of Health and Population Welfare Dr Azra Pechuho has recognised the Aga Khan University for treating 300,000 people and distributing medicines of Rs 143 million in 42 districts of Sindh, Balochistan, Khyber Pakhtunkhwa and Punjab."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The way Aga Khan University gathered resources in a short period of time and joined the Government's efforts to provide relief in the flood-affected areas is commendable,\" said Dr Pechuho while addressing an event organised by AKU Flood Response Task Force."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She also acknowledged AKU's collaboration with the Government of Sindh on many fronts including COVID, infectious diseases, extensively-drug-resistant typhoid and tuberculosis, immunisation and hepatitis."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"AKU was also part of Sindh Government's COVID response task force and guided us on how to manage it. It was the Aga Khan University Hospital's laboratory that detected the first case of COVID in Pakistan. Our future collaboration with AKU may focus on mental health, which is the need of the hour. We expect no less from Aga Khan University,\" she added."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "src": "/news/PublishingImages/Flood-response-5-01-web-news2.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU President Dr Sulaiman Shahabuddin presents a shield to the Sindh Minister of Health and Population Welfare Dr Azra Pechuho.  Photos: AKU/Akber Moeen",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU President Dr Sulaiman Shahabuddin appreciated the relief efforts by the Government and public-private institutions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Being a national asset, AKU is always on the frontline when the nation needs its services. Our teams have been collaborating with the federal and provincial governments, local authorities and fellow agencies of the Aga Khan Development Network to reach out to those who need our help,\" he said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the occasion, AKU task force leads Dr Adil Haider, Dean of AKU Medical College and Dr Shahid Shafi, Chief Executive Officer of the Aga Khan University Hospital, shared an overview of the University's work and distributed appreciation certificates to the teams."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Out of 300,000 people who visited AKU camps, 80,000 were women of reproductive age, including 8,000 pregnant women, and 65,000 children under five. Over 25,000 children received routine vaccination."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most of the patients coming to AKU's healthcare camps have diarrhoea, dehydration, respiratory infections, malaria, dengue and skin problems."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The task force is also organising free capacity-building sessions for healthcare workers serving in the affected areas, which are attended by over 5,000 participants from around the country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's healthcare camps and distribution of medicines and healthcare-related supplies are supported with grants by generous donors and contributions from the University's faculty, staff, students and supporters."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's contribution is part of overall efforts by the Aga Khan Development Network in Pakistan."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002852",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "natural disaster",
+      "TermGuid": "15cae139-fd28-4c64-a408-574f1f781cd1",
+      "WssId": 2453
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    }
+  ],
+  "ScheduleStartDate": "2022-10-04T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The way Aga Khan University gathered resources in a short period of time and joined the Government's efforts to provide relief in the flood-affected areas is commendable, said the Sindh Minister of Health and Population Welfare Dr Azra Pechuho.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2962,
+  "Modified": "2022-10-06T08:40:00Z",
+  "Created": "2022-10-05T05:58:23Z"
+}

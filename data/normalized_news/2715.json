@@ -1,0 +1,127 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "71e3e964-15c9-410e-b5f6-7dbd81b2949d",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "79081df6-692d-48d6-a5c6-2729d4ac3e30",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "138ad19b-7114-4e70-8fe2-ef276d750726",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7057510-4cd7-41e6-8e55-6dfca425d5bf",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "90b787af-2108-4208-a3c8-ef6f6b567608",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ffc342b7-042f-4d54-963e-11dbe632b106",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "89d604d4-d5b9-40da-b680-3c837d8675e0",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4dcc2fea-5867-4cff-ba60-9b6d25b9276e",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2715)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5cc9ef60-b856-45d3-8fe8-f6e25d541ffc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2715,
+  "Title": "Our first simulation in Nairobi",
+  "NewsSubTitle": null,
+  "NewsSummary": "CIME Nairobi hosted the first Basic Life Support (BLS) training in the new centre on June 17th 2021, within a week of our official opening.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>CIME Nairobi hosted the first Basic Life Support (BLS) training in the new centre on June 17th 2021, within a week of our official opening. 12 participants attended this training from the phlebotomy department, surgical department as well as the children's ward of the Aga Khan University Hospital, Nairobi.</p><p>Since that first event, CIME hosted one BLS training every week for a total of 10 trainings with an average of 10 participants per session. The participants are doctors, nurses and technicians from the AKUHN, organized through the office of Continuous Medical Education.</p><p>In addition, CIME hosted the first Objective Structured Clinical Examination (OSCE) for the Department of Family Medicine, as well as one Emergency Paediatric Advance Life Support (EPALS) and three Advance Cardiac Life Support (ACLS) trainings to date.</p><p>The utilisation of CIME Nairobi spaces and equipment continues to grow even as we look forward to the upcoming semester.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002612",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "Workshop",
+      "TermGuid": "a47ffb81-453a-4844-9e93-034723b119be",
+      "WssId": 2213
+    },
+    {
+      "Label": "East Africa",
+      "TermGuid": "ae813152-1a93-47c0-9d57-7b3cd696635e",
+      "WssId": 2135
+    }
+  ],
+  "ScheduleStartDate": "2021-09-16T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2715,
+  "Modified": "2021-09-20T06:29:44Z",
+  "Created": "2021-09-16T08:16:34Z"
+}

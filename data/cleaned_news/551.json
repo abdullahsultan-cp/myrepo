@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d955aa8e-c263-4ab5-a355-521190b0cdd6",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3d564710-6229-49a3-848c-e24349d0cfbd",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ebae134a-a36c-4f5a-bdce-10d2efb9013b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd02bd2f-28af-4c8e-967a-d8b58415705b",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "6d84438e-2c00-4702-ab63-182005c3826c",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "28bfbed5-9f67-4fb3-9352-53c67e0da08d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "640b87a0-0c06-43b8-bbeb-026953caa72b",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1a788539-2816-4849-b123-185437f2c2be",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(551)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5bac7e62-6a58-494a-98a4-dec1acd988f6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 551,
+  "Title": "Ghazal maestro expected to be released soon",
+  "NewsSubTitle": null,
+  "NewsSummary": "Ghazal Maestro Expected to be Released Soon",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassD47A4B162D0E4FBB85892A98B13DD066\"> Renowned ghazal maestro Mehdi Hassan, admitted to Aga Khan University Hospital (AKUH) on February 12, 2009 for weakness, fever and disorientation, may be discharged over the next few days once doctors determine he is stable enough to return home.<div><br></div><div>Dr Aziz Sonawala, Consultant Neurologist, AKUH and Mr Hassan's physician since 2001, said \"when he arrived, Mr Hassan was diagnosed with sepsis, or a generalised infection, for which he has been treated. Multiple specialty teams cared for him, similar to his previous hospital visits. Though he remains weak, he will hopefully be discharged soon.\" The family has also arranged for a 24-hour nurse at his home.</div><div><br></div><div>Mehdi Hasan was born in 1927 in a small village, Luna, in the princely state of Rajasthan, India. Growing up in a family of singers - both his father and uncle were traditional singers - allowed him the opportunity to practise his talent daily, even when he was not singing professionally. In 1952 he received his first opportunity to sing on the radio after which he was noticed by the music industry. His passion for Urdu poetry and the influence of a number of individuals in the radio and music industries inspired him to develop his mastery of the ghazal genre. Mehdi Hassan is one of Pakistan's most prominent artists, and one of the most popular playback singers of the Pakistani film industry through the 60s, 70s and 80s. He has been awarded many honours, including the Government of Pakistan's Pride of Performance award.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000509",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Arts",
+      "TermGuid": "06fd6358-a12e-470e-b94c-823623a74f6c",
+      "WssId": 1889
+    }
+  ],
+  "ScheduleStartDate": "2009-03-19T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 551,
+  "Modified": "2020-05-18T07:19:55Z",
+  "Created": "2016-12-09T05:15:31Z"
+}

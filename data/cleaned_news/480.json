@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "38037dfc-658d-4273-b01a-4475bc39a7b3",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "397d1e67-7920-4417-8b9b-4ba0a1afae72",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e8e80d88-a3f5-4ca0-89d9-8591209f2f66",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ca0d382a-45f1-4efa-bb5a-308332e38762",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "8d14a567-833e-4891-be5e-66e21eb9b965",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d9faf738-6985-40f1-b821-a58bcb2daf0f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "599133cd-cdd9-4e2d-895e-7cd43eaff389",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4880aaf0-85c5-4945-9318-37a532dfb50c",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(480)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a3f2c4ff-defd-4833-87bb-602ff290e062",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 480,
+  "Title": "Young girl gets new lease on life",
+  "NewsSubTitle": "Doctors at AKUH conduct first ever ICD placement in a child",
+  "NewsSummary": "In a first of its kind procedure in Pakistan, doctors at Aga Khan University Hospital successfully placed a heart rhythm monitoring device - an implantable cardioverter defibrillator (ICD) - in a 14-year-old girl from Balochistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassD7570C0E929A41E6A4BF1F8D4E9D90BF\"><div>In a first of its kind procedure in Pakistan, doctors at Aga Khan University Hospital successfully placed a heart rhythm monitoring device - an implantable cardioverter defibrillator (ICD) - in a 14-year-old girl from Balochistan.</div><div><br></div><div>Naila Bugti was born with long QT syndrome, a hereditary condition which affects the heart's electrical system and causes fast heartbeats. These fast heartbeats can lead to fainting, seizures or even a sudden cardiac arrest. For three of Naila's older sisters, born with the same problem, this condition has proved fatal.</div><div><br></div><div>\"Since Naila was a high risk patient, we decided to implant the smallest-size ICD possible. She recovered well after the procedure, and the ICD is functioning optimally,\" said Dr Aamir Hameed Khan, lead cardiologist on the case. \"Although ICD placement in adults is not new in Pakistan, this is the first time this device has been implanted in such a young patient,\" he added.</div><div><br></div><div>ICD is a pacemaker with additional features - a small battery-powered device - placed in patients at risk of sudden cardiac death due to irregular heartbeats. It monitors and identifies abnormal heart rhythms before restoring the normal rhythm of the heart.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000440",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "6f0bcd20-a624-4b55-a7b7-f1463b4bc779",
+      "WssId": 1391
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2012-02-27T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 480,
+  "Modified": "2017-02-22T07:43:52Z",
+  "Created": "2016-12-07T06:12:59Z"
+}

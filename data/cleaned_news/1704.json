@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6c068e37-e7c5-46dc-a79c-c72abb5768c4",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0bd4fa95-f94b-4c0f-abee-05f23c7dc36b",
+    "Id": 287,
+    "Title": "Daniel Raynor"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7a7b791d-955b-4eab-ac58-345ed64a5fc2",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1455eb77-2eb8-4d33-999d-d71a3fce5160",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "d35755c4-1380-4127-91a7-55e64a256d97",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9ff13f3b-6145-4bec-ae79-67b8f947aba2",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "5340c830-6e84-4ef9-937d-06e2accaf6ba",
+    "Id": 13,
+    "Title": "Network of English Language Enhancement"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e8796e55-3871-4a2c-a715-a2f550ce98d4",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1704)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "105828e9-a263-4933-a477-0ce90742aaab",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1704,
+  "Title": "English Course for AKU Drivers",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU Drivers are improving their English with ELE_net",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass82D31D96F6F54578948819F22493EFFD\"><p dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;0pt;margin-bottom&#58;0pt;\"><span style=\"font-size&#58;11pt;font-family&#58;arial;color&#58;#000000;background-color&#58;transparent;font-weight&#58;400;font-style&#58;normal;font-variant&#58;normal;text-decoration&#58;none;vertical-align&#58;baseline;white-space&#58;pre-wrap;\"></span></p></div><strong><p dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;0pt;margin-bottom&#58;0pt;\"><span style=\"font-size&#58;11pt;font-family&#58;arial;color&#58;#000000;background-color&#58;transparent;font-weight&#58;400;font-style&#58;normal;font-variant&#58;normal;text-decoration&#58;none;vertical-align&#58;baseline;white-space&#58;pre-wrap;\">A group of AKU drivers are currently doing an English course. The course is being &#160;run through ELE_net's consultancy services offered to AKU departments. The content of the course is based on a series of common encounters drivers are likely to have with passengers in a typical working day. </span></p><br><p dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;0pt;margin-bottom&#58;0pt;\"><span style=\"font-size&#58;11pt;font-family&#58;arial;color&#58;#000000;background-color&#58;transparent;font-weight&#58;400;font-style&#58;normal;font-variant&#58;normal;text-decoration&#58;none;vertical-align&#58;baseline;white-space&#58;pre-wrap;\">The course prioritises the development of learners' confidence when using English in these common work-related contexts. This is done through intensive listening and speaking practice leading to role plays acting out the situations drivers are likely to face. </span></p><br><p dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;0pt;margin-bottom&#58;0pt;\"><span style=\"font-size&#58;11pt;font-family&#58;arial;color&#58;#000000;background-color&#58;transparent;font-weight&#58;400;font-style&#58;normal;font-variant&#58;normal;text-decoration&#58;none;vertical-align&#58;baseline;white-space&#58;pre-wrap;\">The drivers have been enthusiastic about the course. They are very motivated to improve their English for work and personal reasons&#58; </span></p><br><p dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;0pt;margin-bottom&#58;0pt;\"><span style=\"font-size&#58;11pt;font-family&#58;arial;color&#58;#000000;background-color&#58;transparent;font-weight&#58;400;font-style&#58;normal;font-variant&#58;normal;text-decoration&#58;none;vertical-align&#58;baseline;white-space&#58;pre-wrap;\">\" We need such opportunities to be able to communicate better with foreign clients\"- Saleh </span></p><br><p dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;0pt;margin-bottom&#58;0pt;\"><span style=\"font-size&#58;11pt;font-family&#58;arial;color&#58;#000000;background-color&#58;transparent;font-weight&#58;400;font-style&#58;normal;font-variant&#58;normal;text-decoration&#58;none;vertical-align&#58;baseline;white-space&#58;pre-wrap;\">\" I can now talk to my children in English and they say very good to me\"- Raees</span></p></strong>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001649",
+  "LocalApproverGroup": "ELE News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "network of english language enhancement",
+      "TermGuid": "4faf2085-64a1-492d-b971-0626b65f5480",
+      "WssId": 1540
+    }
+  ],
+  "ScheduleStartDate": "2018-09-06T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1704,
+  "Modified": "2018-09-08T17:38:29Z",
+  "Created": "2018-09-06T13:06:32Z"
+}

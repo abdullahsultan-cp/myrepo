@@ -1,0 +1,127 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "faea7923-0317-479d-8050-3aab75775432",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e6d342dd-1dab-419f-9d17-97e94d23d188",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d8e78797-dd16-4cb2-8560-2e3e9bcbb74e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "515064cb-537f-4ccf-b5e1-193e62b510f1",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "28059b3b-cfca-4e33-85ee-a43c9490d8b6",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "04d80591-cb4e-44d3-95fa-4f8af49bdf7a",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "8649b4f2-4a2c-448f-a75f-27e847c3dbbd",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4f1802da-981b-43e3-abea-729b269f7c5c",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2759)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "41b2563e-1b39-43f8-acad-c84b122ae13c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2759,
+  "Title": "AKU begins screening for new COVID-19 variant",
+  "NewsSubTitle": null,
+  "NewsSummary": "The University's laboratory will enable prompt detection of the new SARS-CoV-2 variant.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassF54354EAC38043A3A5241AA3BE346555\"><p>Public and private sector laboratories in Pakistan are working with the government to put in place genomic surveillance systems to detect the new omicron COVID-19 variant.</p><div>New measures will involve screening of positive COVID-19 cases with a travel history from countries where omicron has been detected. Samples from the individuals will be sent for further testing, enabling detection of the new variant in the country.<br></div><div><br></div><div>AKU has been working with the World Health Organization, Pakistan, to implement genomic surveillance for SARS-CoV-2. AKU is part of a national consortium of laboratories coordinated by the national reference public health laboratory at the National Institute of Health, Islamabad.<br></div><div><br></div><div>\"We have seen that the virus continues to evolve and we have detected multiple variants to date,\" said AKU's Professor Zahra Hasan. \"The positive news is we have the capacity to identify the new omicron variant within Pakistan and we can act fast to guide additional precautionary measures for the public.\"<br></div><div><br></div><div>AKU is one of the few laboratories in the country with genomic sequencing technology that allows researchers to study changes in the virus. Previously, researchers at the University have assisted the government in identifying variants such as the alpha, beta, gamma and delta strains of SARS-CoV-2, guiding vaccination policy across Pakistan.<br></div><div><br></div><div>Pakistan's&#160;government has already banned travel from South Africa, Mozambique, Namibia, Lesotho, Eswatini, Botswana and Hong Kong in order to limit chances of the variant's arrival in Pakistan.&#160;&#160;</div><div><br><br></div><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002654",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "2377808f-b3d0-4042-8099-f8aede5bd456",
+      "WssId": 2159
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Laboratory",
+      "TermGuid": "173bd211-5d65-4718-96a9-4de54f0094b5",
+      "WssId": 2146
+    },
+    {
+      "Label": "Infectious diseases",
+      "TermGuid": "e0ada987-93d9-44ee-8222-b332f1207836",
+      "WssId": 2314
+    },
+    {
+      "Label": "Policy advocacy",
+      "TermGuid": "310d84ee-b22e-4032-bc0b-4f0ea6cb9082",
+      "WssId": 2242
+    }
+  ],
+  "ScheduleStartDate": "2021-11-29T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2759,
+  "Modified": "2021-11-29T11:41:34Z",
+  "Created": "2021-11-29T11:32:57Z"
+}

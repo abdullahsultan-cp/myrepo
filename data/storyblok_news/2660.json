@@ -1,0 +1,223 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "37e0211c-3089-4a7a-8b14-942004438935",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ecfdefcd-65b0-4cb3-8bc1-5aa7446a7963",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9b831d19-7871-4d40-bc86-61de63fd5708",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fbfa7952-ea81-4667-9bcf-5fee3c234df1",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a6a842a3-d322-4005-ae40-ee4e3f8fc9f0",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "97f5697b-3c14-4657-95bc-9eecebc9e69f",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "f42d2c82-fdd9-4234-b43a-bac88fd67256",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "15ad30dd-bb46-4c48-93a6-215ff7f3ce72",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2660)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9d736a09-d88a-4ee9-b8f4-76821a06f3bc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2660,
+  "Title": "AKU opens healthcare simulation centre in Nairobi",
+  "NewsSubTitle": null,
+  "NewsSummary": "The new 33,000 square foot facility seeks to raise the bar for healthcare education.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Kenya's president Uhuru Kenyatta inaugurated the new, 33,000 square foot Centre for Innovation in Medical Education, CIME, at Aga Khan University's University Centre in Nairobi on Friday. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Simulation-based education represents a significant advance on traditional classroom and theory-based instruction. Designed to be an immersive 'real world' experience, simulation, in the field of healthcare, enables medical and nursing trainees and professionals to practice key skills and techniques, using virtual reality and high-fidelity patient mannequins, in a risk-free environment before working with patients."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CIME, which is one of the few simulation-focused teaching and learning centres in Kenya, represents the University's commitment to harnessing the power of technology to achieve excellence in the education of healthcare professionals."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This Centre will raise the bar for teaching, learning and clinical assessment thereby delivering higher standards of practice across the professions of medicine, nursing and allied health,\" said CIME Global Director Charles Docherty, AKU's Dr. Robert J. Buchanan Professor in Teaching and Technology. \"We seek to become a strategic asset not only for AKU but for Nairobi and the whole of Africa and to be at the forefront of efforts to improve healthcare outcomes across the board.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Besides enabling healthcare professionals to safely practice key clinical skills, CIME also seeks to develop communication, teamwork, leadership and decision-making abilities by requiring groups of healthcare professionals to collaborate while facing challenging medical scenarios together. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The facility's custom-built rooms resemble the design and layout of modern hospitals, and will enable doctors, nurses, and allied health professionals to gain experience of working in teams in a range of situations from surgery, critical care, labour, delivery, neonatal intensive care, and post-anaesthesia care. Each room is equipped with advanced patient mannequins, audio-visual equipment to monitor and record student's performance, and an individual control room to manage the scenario. Such inter-professional learning allows healthcare professionals to hone their skills in realistic environments in a step that will contribute to improved patient safety. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CIME also has 12 multipurpose clinical assessment rooms that test students' ability to apply clinical knowledge and skills in a range of patient-centered situations. CIME's approach to this method of assessment, which is known as Objective Structured Clinical Evaluation, OSCE, is unique in Africa and has only been applied in a few such centres globally. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Centre is the University's second simulation-based education centre and will build on the success of the CIME in Karachi which was inaugurated in 2017. In January 2020, CIME in Karachi became South Asia's first simulation-based educational institution to be accredited by the US-based Society for Simulation in Healthcare, SSIH, demonstrating that it met the highest standards in simulation-based education. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Once CIME in Nairobi is fully equipped, it will be the most advanced healthcare teaching and learning facility in East Africa and is expected to become a regional leader on par with the best clinical simulation centres globally."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002558",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "d81e6f5f-db68-4899-860d-79e20d584a99",
+      "WssId": 1860
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "4ef98fc0-0961-4dcf-9ea7-bdac4b6c8335",
+      "WssId": 1861
+    }
+  ],
+  "ScheduleStartDate": "2021-06-15T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2660,
+  "Modified": "2021-06-15T11:13:11Z",
+  "Created": "2021-06-15T10:54:32Z"
+}

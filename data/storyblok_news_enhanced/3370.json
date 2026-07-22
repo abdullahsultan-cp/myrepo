@@ -1,0 +1,304 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c4a9c064-2f9d-4c50-9e62-3e8751e8c8b6",
+  "odata.etag": "\"28\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "878d8443-b6c0-44c7-8024-2693d7ae31b4",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3b52a125-e677-41a4-8663-f2e4d7e8f770",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "43359566-6eb3-4c3a-b950-f9f6f7cdaa44",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "060c7dbd-1083-4998-a26e-3c33abd07552",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "1ca8bd63-b499-4456-91c9-de6588dea6e3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "64debbb7-69bf-4290-81f9-bccd06b41f0e",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "71f06090-47f0-4373-8974-0410c6a43ab3",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d68440dc-d431-4f58-9744-0eddd71873cc",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3370)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "56ea5169-1fd2-4cc5-9652-a4483770a1e3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3370,
+  "Title": "Aga Khan University Hospital Opens Nakawa Specialty Centre",
+  "NewsSubTitle": null,
+  "NewsSummary": "The centre is the first facility on the upcoming Aga Khan University Kampala campus",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ugandans can now obtain a wide range of specialised outpatient health care services at the new Aga Khan University Hospital's Nakawa Specialty Centre located on the Old Port Bell Road."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The first facility on the upcoming Aga Khan University's Kampala campus, the Centre offers chemotherapy, dialysis as well as diagnostic imaging such as CT scans, mammography, neurophysiology and ultrasound. It also offers access to an array of specialists including gynaecology, paediatrics, cardiology, neurophysiology, oncology and endocrinology, among others. Physiotherapy, mammography, dentistry and laboratory and pharmacy services are also available. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the inauguration of the Centre, Uganda's State Minister for Health Hon. Margaret Muhanga, lauded the Aga Khan University for its continued investment in the country's health and education sectors. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The opening of the Nakawa specialty centre will boost access to specialised quality healthcare to our people and reduce the need to travel abroad,\" said Hon. Muhanga."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The government is committed to providing quality healthcare to all citizens and we are happy to walk this journey with our worthy partners like the Aga Khan University. We look forward to the completion of the Main Hospital in a few years' time.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Nakawa Specialty Centre joins the Hospital's three other medical centres in Kampala, which are located at the Acacia Mall, Metroplex Mall Naalya and the DTB building."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"By opening this centre, we are restating our commitment to providing world-class health care services in Uganda,\" said Rashid Khalani, CEO of the Aga Khan University Hospital. \"We have installed state-of-the-art equipment and technology that will ensure timely, accurate and advanced diagnosis that will inform timely treatment.\"  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU is grateful to Mr & Mrs Aziz Manji and their family for their generous donation towards the establishment of the Aziz & Zubeda Manji Building that houses the new Nakawa Specialty Centre."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A seven-storey University Centre and a nine-storey student housing building are currently under construction on AKU's Kampala campus. Construction of the Aga Khan University Hospital, Kampala begins next year."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When this hospital and campus take their place alongside the many other hospitals and clinics that AKU and the Aga Khan Health Services operate in the region, we will have laid the foundations for something extraordinary,\" AKU President Sulaiman Shahabuddin said. \"Namely, an integrated network of international-quality health and education institutions that spans East Africa.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU and the Aga Khan Health Services operate five hospitals and more than 100 clinics that care for more than 2 million patients annually in Kenya, Tanzania and Uganda."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The opening of the Nakawa Specialty Centre marks an important step in our mission to bring high quality healthcare closer home for Ugandans. We are here to eliminate the days of waiting or traveling abroad to get the care you need,\" said Amb. Amin Mawji, Diplomatic Representative of the Aga Khan Development Network in Uganda."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Kampala project is one of AKU's largest investments in East Africa to date. It will enable a significant expansion of the University's existing School of Nursing and Midwifery in Kampala and will also allow the University to begin training medical specialists in various fields. The Hospital will offer care in nearly two dozen specialties. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU has been active in Uganda for 24 years. In Kampala, it has graduated 1,400 nurses and midwives who are working in government and private-sector institutions in urban and rural communities across the country. Several hundred Ugandan teachers and journalists have graduated from or are enrolled at AKU and more than 2,000 have completed short courses. In total, AKU has graduated nearly 5,000 nurses, doctors, teachers and journalists across East Africa. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "blok",
+        "attrs": {
+          "body": [
+            {
+              "_uid": "0e6606b7e1015735",
+              "component": "video_embed",
+              "provider": "youtube",
+              "embed_url": "https://www.youtube.com/embed/uNizU4hFZMQ?si=M32GIRXfAHmjzR7f",
+              "video_id": "uNizU4hFZMQ"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003246",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Uganda",
+      "TermGuid": "cf0bbf0b-88e0-410e-80f8-c1c7f30edade",
+      "WssId": 2188
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    }
+  ],
+  "ScheduleStartDate": "2024-04-27T08:30:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The Nakawa Specialty Centre joins the Hospital's three other medical centres in Kampala, which are located at the Acacia Mall, Metroplex Mall Naalya and the DTB building.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3370,
+  "Modified": "2024-07-24T09:17:09Z",
+  "Created": "2024-04-27T10:13:41Z"
+}

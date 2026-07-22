@@ -1,0 +1,151 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "127a77bc-9414-477a-a814-8ace4e54143f",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a4c89f88-d372-4aa6-90fd-37f0411a71fb",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c75dc53d-a44d-4158-b759-0904c0b8db65",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0b8c4f45-78d2-4cf9-b172-ee5b01cb77d7",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "51f0f511-f444-4fec-a5b9-1255baf3d1a0",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7f2ef3bc-c059-4782-a171-282a9c0e1e26",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "17bc5282-772a-4f47-9678-98e0246fbaed",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3333)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7ce56244-589b-45bc-bd2d-91a1adbfaee6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3333,
+  "Title": "Equity and Diversity in Education",
+  "NewsSubTitle": null,
+  "NewsSummary": "Seminar explores challenges faced by highly-educated Pakistani immigrants in Canada",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University's Institute for Educational Development (AKU-IED) recently hosted the Kazim Bac chus Research Seminar, featuring Dr Anila Zainub as the guest presenter. Dr Zainub, a distinguished scholar holding a PhD from the University of Toronto-OISE, Canada, and a Master of Science in Sociology from the University of Texas, USA, is renowned for her award-winning research on racialised immigrant communities. She has also been actively engaged with The Centre for Integrative Anti-Racism Studies (CIARS) in Toronto. Her recent publication, titled 'Decolonization and Anti-colonial Praxis: Shared Lineages*' by Brill, further underscores her expertise in the field."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The seminar shed light on the challenges faced by highly-educated Pakistani immigrants in integrating into the Canadian economy. Despite their qualifications, these immigrants encounter numerous obstacles, prompting many to re-enter educational institutions to enhance their employment prospects. She delved into the impact of the devaluation of skills and knowledge of Pakistani immigrants in Canada, drawing on qualitative data gathered from their lived experiences in educational settings. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her presentation also explored implications for learning and teaching in diverse classrooms. She emphasized the need to shift perspectives towards an anti-colonial approach in educational practices at all levels, advocating for a more inclusive and equitable system."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The seminar provided a platform for educators, researchers, and policymakers to engage with critical issues surrounding immigrant integration and educational equity. Dr. Anila's insights underscore the importance of addressing systemic barriers and fostering a more inclusive educational environment for all."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003209",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2024-02-14T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3333,
+  "Modified": "2024-02-27T09:51:12Z",
+  "Created": "2024-02-27T09:40:33Z"
+}

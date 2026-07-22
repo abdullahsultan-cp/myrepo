@@ -1,0 +1,273 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9f2e3cc2-d11c-460c-8c9e-20c7e73fa6c5",
+  "odata.etag": "\"57\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e22093c3-384c-4017-9d04-9c759019d44f",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3f373833-560e-44cb-86fe-d5fc6f93bb0e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a2519580-f4ed-40dd-accc-32bc0dcfb33f",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "52d3113c-2e47-45ea-a40b-9a03d4ebdb2d",
+    "Id": 8,
+    "Title": "Grants & Partnership"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8ed10427-0c0a-487a-bb71-5dbf9b62805f",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "60c5056d-0815-44ce-b325-61165b1360c1",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61c14b72-db66-445d-9cf8-97c7a01a0301",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(231)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "72d058d1-bc5b-432c-8ac1-3e4b525a70ca",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 231,
+  "Title": "Dr Sarah Savant receives a prestigious award",
+  "NewsSubTitle": "The award will support a project to digitise Arabic texts from 750 to 1500AD.",
+  "NewsSummary": "Dr Savant's KITAB project will receive funding under the  grant.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Sarah Bowen Savant, at the Institute for the Study of Muslim Civilisations, has been awarded the "
+          },
+          {
+            "type": "text",
+            "text": "British Academy",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.britac.ac.uk/index.cfm",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'s prestigious "
+          },
+          {
+            "type": "text",
+            "text": "Mid-Career Fellowship",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.britac.ac.uk/funding/guide/midcareer.cfm",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The fellowship consists of a one-year grant that will enable Dr Savant, a cultural historian specialising in Islamic history, to work on a pioneering digital project, "
+          },
+          {
+            "type": "text",
+            "text": "KITAB",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://kitab-project.org/kitab/About.jsp",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", that provides access to 4,500 Arabic texts from 750AD to 1500AD. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "KITAB, an online toolbox, created by an international team of experts in information technology, Arabic history and philology (the study of the development of languages) sheds light on how ideas and memory were shaped during and after this rich and influential period of history."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Led by Dr Savant, the project relies on an algorithm authored by David Smith of Northeastern University, as well as the technical expertise of four volunteers."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The British Academy's Mid-Career Fellowships are awarded to \"support outstanding individual researchers\" who are completing \"a major piece of research\" which will be communicated to the public and the academic community. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The KITAB project will empower audiences worldwide to engage meaningfully with the complexity of the Arabic textual tradition. Many aspects of Arabic and Islamic heritage are contested and often presented in simplistic ways. KITAB will help contextualise the ways that this heritage has been shaped and filtered, informing discussion about important facets of Islamic history. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "During the fellowship, Dr Savant will further her work on KITAB through five high-profile research lectures, the LUCIS Lectures at the University of Leiden that will eventually be published by Brill Publishers. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Speaking about the fellowship, Dr Savant said: \"I am delighted by this affirmation of our work on KITAB and grateful to the British Academy for its support of me, my team, and the University. I truly believe that the work we are doing will advance scholarship in ways that now we cannot even imagine.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000198",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    },
+    {
+      "Label": "Grants",
+      "TermGuid": "002a48c6-d604-4924-bea5-293d383627d1",
+      "WssId": 1396
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    }
+  ],
+  "ScheduleStartDate": "2016-06-16T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 231,
+  "Modified": "2017-02-22T07:02:50Z",
+  "Created": "2016-06-16T10:52:01Z"
+}

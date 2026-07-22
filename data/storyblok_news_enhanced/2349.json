@@ -1,0 +1,165 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a5c7e09a-4453-48de-a5a7-12ad085663d1",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f6d956f1-0db2-4a90-b2dd-7d58679d15d9",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "271b448a-c8fa-4129-9cee-5a4675d8f257",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0ee6e9b0-054a-4317-af8b-ffc00e8bc25a",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b7118e09-b146-4837-861c-c59df7109288",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ce2c837b-6287-454a-a58b-1e0d2f87935e",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "f63623a3-ca18-46fe-9ddb-236c8ea67d1c",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fa361140-1999-4776-b96a-0e0bf5a18f86",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2349)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a3e343e1-c593-42b9-9547-eb78cf71a8fb",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2349,
+  "Title": "Simulation helps frontline staff to save COVID-19 patients' lives",
+  "NewsSubTitle": null,
+  "NewsSummary": "Simulation training improves the skills and knowledge of AKU Hospital staff in 'proning' coronavirus patients.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Elephants sleep standing on their feet for good reason. When they lie down, their massive body weight crushes their lungs preventing full expansion of the chest and unless they stand up again quickly they die of hypoxia. Similarly and for some strange reason, obese patients with COVID-19 struggle to breathe when they're lying on their back, thought to be because, as with Elephants, the weight of their abdomen crushes the diaphragm, leading to rapid deterioration in oxygenation. Breaking this vicious circle is easy - although appearing at first sight to be counter-intuitive. Simply, turn the patient face down in bed, onto the 'prone' position. This can improve oxygenation immediately and patients can show significant improvement. This sounds easy - but what complicates the process is the size of the patient, the severity of their condition and the risk of extubation or accidental removal of lines. Managing all the risks involved requires a team approach, excellent coordination, and clear leadership and communication. A classic indication that practice through simulation would be required to get this right."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CIME in collaboration with the Department of Physiotherapy designed a workshop for interprofessional staff from ICU to be trained on the process of 'proning' coronavirus patients and safely adjusting head positions while intubated."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A comprehensive checklist was designed to ensure clinical teams had a consistent approach while practicing on the patient simulator Mega Code Kelly as a precursor to practicing on coronavirus patients in ICU. The protocol for proning is not difficult but as with all new procedures, the repeated practice was required to achieve co-ordinated action and competence; and workshops were repeated to fully cover all the relevant staff. A video was produced to help standardize the instructions and directions for all groups."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The participants' feedback provided an insight as to how the training was received but perhaps more importantly, it was anticipated that a measurable outcome of adopting the new procedure would be less severity of illness, fewer complications and a shorter patient stay in ICU."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002257",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "d81e6f5f-db68-4899-860d-79e20d584a99",
+      "WssId": 1860
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "4ef98fc0-0961-4dcf-9ea7-bdac4b6c8335",
+      "WssId": 1861
+    }
+  ],
+  "ScheduleStartDate": "2020-07-10T16:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2349,
+  "Modified": "2020-07-10T17:27:09Z",
+  "Created": "2020-07-10T17:23:26Z"
+}

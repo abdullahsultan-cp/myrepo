@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "8124e444-f5cf-4f3c-9139-d985093ae35a",
+  "odata.etag": "\"44\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3391f9d7-0b22-433f-ba20-ea48fbdc9239",
+    "Id": 3461,
+    "Title": "Akber Ali"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "33e70c9d-9cc7-4d8c-bbdc-9447a7381f1a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e91ef437-a92e-49fe-8787-1787d53d907d",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "432c88df-50f0-41ef-a578-619e50057bd8",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "155e9ca1-7fea-4180-be0c-70b48e0312c3",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "bb6fd47b-77da-45c0-ab06-d2ef2a1474e9",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f84c8f5c-a135-4283-80b8-5185b904f36e",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1991)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e3111648-5855-4a38-94d9-49a09da5062b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1991,
+  "Title": "Political Economy of Nutrition in Pakistan ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Article on Political Economy of Nutrition in Pakistan ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassFD1C8DE9B6E4454F9EABA78B430CB036\"><div><br>&#160;</div><ul><li><p><a href=\"/Documents/BMJ%20Nutrition%20and%20ECD%20Pakistan.pdf\" target=\"_blank\">Multisector governance for nutrition and early childhood development&#58; overlapping agendas and differing progress in Pakistan\u200b</a></p></li><li><p><a href=\"/Documents/Nutrition_Policy_in_the_Post-devolution%20Era.pdf\" target=\"_blank\">Nutrition Policy in the Post-devolution Context in Pakistan&#58; An Analysis of Provincial Opportunities and Barriers*\u200b</a></p></li><li><p><a href=\"/Documents/Nutrition%20-%20Policy%20Brief%20copy.pdf\" target=\"_blank\">Action on under-nutrition in Pakistan&#58; opportunities and barriers\u200b</a></p></li><li><p><a href=\"/Documents/Political%20Economy%20Under-Nutrition%20Balochistan%20Report%20-%20Final%20copy%202.pdf\" target=\"_blank\">Nutirition Political Economy, Pakistan\u200b&#58; Balochistan Province Report</a></p></li><li><p><a href=\"/Documents/Political%20Economy%20Under%20Nutrition%20KP%20Report%20-%20Final%20copy.pdf\" target=\"_blank\">\u200bNutirition Political Economy, Pakistan\u200b&#58; Khyber Pakhtunkhwa Province Report</a></p></li><li><p><a href=\"/Documents/Political%20Economy%20Under%20Nutrition%20Punjab%20Report%20-%20Final%20copy.pdf\" target=\"_blank\">Nutirition Political Economy, Pakistan\u200b&#58; Punjab Province Report</a></p></li><li><p><a href=\"/Documents/Political%20Economy%20Under%20Nutrition%20Sindh%20Report%20-%20Final%20copy.pdf\" target=\"_blank\">Nutirition Political Economy, Pakistan\u200b&#58; Sindh Province Report</a></p></li><li><p><a href=\"/Documents/The%20Political%20Economy%20of%20Undernutrition%20%20Pakistan%20copy.pdf\" target=\"_blank\">The Political Economy of Undernutirtion&#58; National Report - Pakistan</a></p></li><li><p><a href=\"/Documents/Governing%20multisectoral%20action%20for%20health%20in%20low%20and%20middle%20income%20countries.pdf\" target=\"_blank\">Governing Multisectoral Action for Health in Low- and Middle-Income Countries\u200b</a>\u200b</p></li><li><p><a href=\"/Documents/Lenses%20and%20levels_%20the%20why,%20what%20and%20how%20of%20measuring%20health%20system.pdf\" target=\"_blank\">Lenses and levels&#58; the why, what and how of measuring health system drivers of women\u2019s, children\u2019s and adolescents\u2019 health with a governance focus\u200b</a>\u200b\u200b</p></li></ul></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001920",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Public health",
+      "TermGuid": "5fd1a23c-10dc-4a74-b677-67ef4da50092",
+      "WssId": 1440
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    }
+  ],
+  "ScheduleStartDate": "2019-09-11T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1991,
+  "Modified": "2019-09-26T05:02:14Z",
+  "Created": "2019-09-11T06:54:28Z"
+}

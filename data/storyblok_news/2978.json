@@ -1,0 +1,196 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "ed905847-e97f-4b7b-a41a-eafe3406c626",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d62624b-faf5-4499-81fe-c258e37446a0",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6261dd68-0557-48da-8d82-5f382c7b33a4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "67a68baf-71f7-4378-bbe1-d9762544dd94",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3824d748-b257-4378-b50d-b15de54a9e5b",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "bbf785b7-b8e4-4641-87a0-283b482aa7c5",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "547071bf-322b-40d6-b6b9-ab018098816b",
+      "Id": 16,
+      "Title": "Office of the President"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "c1233e5f-3da6-41a3-bee7-08cb4c17de10",
+      "Id": 17,
+      "Title": "Office of the Provost"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4365fc6e-ed64-4fb6-a2c8-8c5b36ce00b9",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2978)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "807dbd13-aab4-422e-952c-97e7ef68fdbd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2978,
+  "Title": "Strengthening ties with education regulatory body in Kenya",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU Senior Leadership visit new CEO of the Commission for Universities Education",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University President Dr Sulaiman Shahabuddin and Provost Dr Carl Amrhein paid a courtesy call to the Commission for University Education (CUE) to meet the new Chief Executive Officer Prof Mike Kuria. They were accompanied by Prof Alfred Mutema who is a friend of AKU. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The discussions focused on quality of education in higher institutions of learning including AKU. President Shahabuddin said the University was playing its part in making Kenya a regional education hub, a sentiment shared by Prof Kuria. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Kuria said programme quality and quality assurance are core to his mandate and he would like to see this effectively embedded in university operations in Kenya. He also expressed interest in data and automation in higher education saying that AKU can be a benchmark in quality education. Prof Kuria strongly reiterated that CUE should be seen as a partner in supporting the growth of a university. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Provost Amrhein stated that AKU puts a lot of value in its digital learning environment and learning, especially from the COVID-19 experience. He mentioned the AKU OneHealth project which is expected to streamline and automate managerial, learning, communication and research aspects of the University. Prof Amrhein expressed the University's commitment to complying with CUE's regulatory expectations. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CUE will conduct a programme inspection of two undergraduate programmes in November - MBChB, undergraduate degree in medicine and direct-entry Bachelor of Science in Nursing. The academic programmes are testament to the University's growth in East Africa following the award of Charter to AKU Kenya in June 2021. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002867",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    },
+    {
+      "Label": "Provost",
+      "TermGuid": "ebcc9cef-3c5d-495b-901e-d48b58a90ccc",
+      "WssId": 2279
+    },
+    {
+      "Label": "President's Office",
+      "TermGuid": "fd3dd5d2-9a6b-435c-85a4-b96a88b05033",
+      "WssId": 2263
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "179778ec-22ad-4f97-b0c1-6a0f9532e62d",
+      "WssId": 2163
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "d650b158-f3f2-48a2-965e-47ad7e1c910d",
+      "WssId": 2104
+    }
+  ],
+  "ScheduleStartDate": "2022-11-01T16:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU President Dr Sulaiman Shahabuddin (left) and Provost Dr Carl Amrhein (right) paid a courtesy visit to CUE new CEO Prof Mike Kuria (centre)",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2978,
+  "Modified": "2022-11-01T15:22:47Z",
+  "Created": "2022-11-01T15:12:48Z"
+}

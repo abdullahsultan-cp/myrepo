@@ -1,0 +1,326 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0c42c1cd-6793-43ff-b58a-a9585df408ba",
+  "odata.etag": "\"31\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "40971718-7120-4423-959c-23460190fc57",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ffb64f4b-38ca-45fc-bc4e-d8bd9e0dbc2b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e67b4541-9ac0-4acf-8e82-ff448058c32a",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2b0d368c-2e49-4c8c-a198-fd118bab843d",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4ad6e8b1-800a-4312-8234-6920cf3b8308",
+    "Id": 32,
+    "Title": "Environmental Responsibility"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "183937e6-af33-4e02-a643-6fb12badb49b",
+    "Id": 14494,
+    "Title": "Amber Ajani",
+    "EMail": "amber.ajani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2848)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "24966ddc-a9c4-413b-a587-aa112d966f75",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2848,
+  "Title": "Innovative carbon management tool launched by AKU and AKHS",
+  "NewsSubTitle": null,
+  "NewsSummary": "This new tool makes the process easier for organizations just beginning their greenhouse gas accounting journey",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "When AKU began its "
+          },
+          {
+            "type": "text",
+            "text": "carbon management journey",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/about/environment/Pages/greenhouse-gas.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in 2019, no single tool available in the market could comprehensively measure the greenhouse gas emissions from the healthcare sector. Taking the absence of a relevant and easy to use tool as an opportunity, AKU partnered with Aga Khan Health Services (AKHS) to develop its own accounting and reporting tool in the form of an easy-to-access and offline workbook. It was developed by Jerome Baddley, seconded from the NHS to AKU and AKHS in 2020."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The tool represents a significant contribution to mitigation efforts through better carbon monitoring, certainly for AKU's own operations, but also for other organizations. It provides a one-stop solution for calculating the carbon footprint for healthcare and other sectors in any country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In more detail, it offers the following consolidated benefits in one tool:"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "It is based on international standards such as the Global Greenhouse Gas Protocol and allows data to be measured and represented reliably, in line with the best available science."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Utilizes readily available data and covers all areas related to health operations, including the supply chain."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Includes emission factors for all countries in the world."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Allows for multi-level use and accepts data from up to 30 sites, buildings, or campuses per country."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Facilitates users to measure their emissions without any prior expertise or training in the field of carbon accounting."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Automatically organizes data by different Scopes (1,2, and 3) to avoid double counting."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Contains features to tracks the costs and impacts of making changes."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "User-friendly format and provides clear instructions for data entry, educating the users as they fill out their data; also identifies and fixes errors as they arise."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Provides visual graphics to help identify emissions hotspots, highlight action areas and provide guidance on taking corrective measures."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Has added innovations in supply chain accounting, based on suppliers' own sustainability efforts."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The tool has been extensively tested and verified across 8 countries and with around 800 facilities and can be updated with the latest grid emissions factors. Furthermore, it can be requested to be uses for free by any organization. For those just commencing their decarbonization journeys, the tool will prove useful in making the process easier and accelerated. Many of the AKDN agencies are currently using the tool, and it has been endorsed by the World Health Organisation (WHO) which will be sharing it with member countries over the coming months."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To further facilitate access, AKDN has developed a detailed guide on how to use the tool which is freely accessible upon request. It outlines the purpose and scope of the tool and provides detailed instructions on how to complete the data sheets in an intuitive and easy to understand Excel format."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002741",
+  "LocalApproverGroup": "CA environment",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2022-04-14T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2848,
+  "Modified": "2025-06-04T09:52:59Z",
+  "Created": "2022-04-12T08:11:19Z"
+}

@@ -1,0 +1,147 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "90d126cf-dfb7-44f8-9096-e7bdb1088d45",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7fc59fea-4d43-4777-9f00-2290ddebff8f",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1aead15c-f434-4629-80dd-18a57bdd8bd0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7d8c0147-20cd-4b4d-a257-f83f12a91d4e",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e837eb43-2dde-475c-9fcc-575475715007",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "57e974b4-d00c-48b7-996a-1852ee6f7285",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "1dc258d2-6e2c-462b-882c-06c3db95ae24",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "557792bc-5f94-4bc6-a83b-967987aa380a",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2252)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b9f9e3bf-a6e9-433a-b0d5-ae1b7e61bd1e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2252,
+  "Title": "Strengthening midwifery education",
+  "NewsSubTitle": null,
+  "NewsSummary": "This simulation-based workshop was developed and delivered with the goal of enabling midwifery educators to provide effective teaching and learning to the midwives joining AKUH. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "High maternal mortality rates have always been a major concern in Pakistan. Midwives play a crucial role in providing effective maternal and child health care during pregnancy, childbirth, and in the important days and weeks after birth. As part of our continuous engagement in improving maternal, newborn and child health through simulation-based education, CIME is committed to working with the School of Nursing and Midwifery (SONAM) and Nursing Education Services (NES) to support the teaching and learning of midwifery workforce."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This time we have taken a step ahead to prepare NES and SONAM instructors for the training of midwives to better serve our communities. A simulation-based workshop was developed and delivered with the goal of enabling midwifery educators to provide effective teaching and learning to the midwives joining AKUH. Learners underwent this comprehensive workshop and acquired essential midwifery skills and knowledge through critical simulated cases on the most advanced birthing simulator - Victoria. The workshop was arranged in partnership with SONAM and NES to produce more educators in midwifery and eventually reduce maternal and newborn mortality, and improve health and well-being of mothers and babies."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002164",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "simulation",
+      "TermGuid": "4ef98fc0-0961-4dcf-9ea7-bdac4b6c8335",
+      "WssId": 1861
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "7c178e97-990f-4d8d-9a2a-106904f6bca6",
+      "WssId": 1822
+    },
+    {
+      "Label": "Midwifery",
+      "TermGuid": "6b76e640-c8ec-4de8-b35e-f29d6a10273e",
+      "WssId": 1824
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    }
+  ],
+  "ScheduleStartDate": "2020-05-05T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2252,
+  "Modified": "2020-05-06T07:17:14Z",
+  "Created": "2020-05-05T06:26:45Z"
+}

@@ -1,0 +1,274 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1cc7c686-1db2-451b-abdf-488a2f331faa",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "363607ad-ebc0-4c00-a4bf-aa8018290bbb",
+    "Id": 14494,
+    "Title": "Amber Ajani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "71bf4869-38f1-4eb2-a7d2-fc9585c2d599",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d9917aab-1eda-461f-bc19-26d994098aff",
+    "Id": 14494,
+    "Title": "Amber Ajani",
+    "EMail": "amber.ajani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9e0e02f5-2541-44cc-b969-6fb27c4e3075",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "5142d196-6eed-4c08-93d2-dbf3e647f6d3",
+    "Id": 32,
+    "Title": "Environmental Responsibility"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "56513b29-4860-4849-85fa-c63d5bfacd89",
+    "Id": 14494,
+    "Title": "Amber Ajani",
+    "EMail": "amber.ajani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2849)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ded2aa4c-0458-4311-8356-d6f57f7fba34",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2849,
+  "Title": "Recent AKU Global Convocation puts spotlight on sustainability",
+  "NewsSubTitle": null,
+  "NewsSummary": "The theme of sustainability was visible throughout the recent convocation",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University's global convocation ceremony, celebrated in person and live-streamed on 26 February 2022, saw the graduation of 660 students from Pakistan, Kenya, Tanzania, Uganda and the UK. In addition to featuring the inauguration of President Sulaiman Shahabuddin and important announcements regarding the launch of new programs and facilities, the convocation highlighted the theme of sustainability. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Climate change is one of the most pressing challenges facing the world today. To address and mitigate our carbon emissions, AKU, in alignment with the Aga Khan Development Network as a whole, has committed to achieving net-zero carbon in its operations by 2030. The University is among the first institutions in Pakistan and East Africa to set this ambitious target."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the occasion of the Convocation, speakers including "
+          },
+          {
+            "type": "text",
+            "text": "Princess Zahra Aga Khan",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.akdn.org/speech/princess-zahra-aga-khan/global-convocation-ceremony-aga-khan-university",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " emphasized the importance of "
+          },
+          {
+            "type": "text",
+            "text": "AKDN and AKU's sustainability priority",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/pages/News_Details.aspx?nid=NEWS-002730",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and the acute need to play a role in the battle against climate breakdown. "
+          },
+          {
+            "type": "text",
+            "text": "President Sulaiman Shahabuddin",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.akdn.org/speech/president-sulaiman-shahabuddin/global-convocation-ceremony-aga-khan-university",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " also communicated a sense of taking ownership and leadership around climate change: \"It is an ambitious goal that will require tremendous innovation. But we are committed to achieving it, and to helping other universities to follow in our footsteps.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Chief Guest for the convocation was Dr Peter Kalmus - a climate scientist, author and activist - who spoke on the importance and urgency of addressing the climate emergency. He highlighted the global, complex, and interconnected nature and scale of climate impacts which will stress all systems including, \"infrastructure systems, economic systems, energy systems, food and water systems, political systems and ecosystems.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "However, the climate daunting crisis also presents an enormous opportunity for current generations to build better, more resilient and inclusive systems, as the Chief Guest outlined in his "
+          },
+          {
+            "type": "text",
+            "text": "speech",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.akdn.org/speech/dr-peter-kalmus/global-convocation-ceremony-aga-khan-university",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": \"Climate work will be humanity's main task for the rest of this century: healing the Earth, restoring wild places, adapting to new disasters, and figuring out how to live side by side with each other and all the other species\", which will require \"a huge number of engaged, passionate, courageous climate activists\" to collectively demand and engage in climate efforts. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The AKU graduates were encouraged to carry the climate message into the world as they embark on their individual professional journeys and to become multipliers of conscious, positive, and meaningful action. The young generation has a unique opportunity and responsibility to make a change in this critical decade."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Peter Kalmus also laid out some of the expectations from graduates and current students: \"We need you, the graduates of the Aga Khan University, to devote your lives to solving the greatest crisis humanity has ever faced. Contribute to global knowledge and innovation. Demand climate justice. Have the courage to cause good trouble. Be the voice for the voiceless, for all the species that are going extinct and for future generations.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002742",
+  "LocalApproverGroup": "CA environment",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2022-04-14T04:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2849,
+  "Modified": "2022-04-13T05:36:18Z",
+  "Created": "2022-04-12T09:01:45Z"
+}

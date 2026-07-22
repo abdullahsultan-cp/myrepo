@@ -1,0 +1,67 @@
+# =============================================================================
+# AKU Academy — root .gitignore
+# storyblok-viewer/ also has its own .gitignore for paths relative to that app.
+# =============================================================================
+
+# --- Local-only inputs (see README) ------------------------------------------
+
+/assets/
+
+# Storyblok Management API token — copy from config/storyblok.example.json
+/config/storyblok.json
+
+# --- Python ------------------------------------------------------------------
+
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# --- macOS / editors ---------------------------------------------------------
+
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# --- storyblok-viewer (Next.js) ----------------------------------------------
+# Mirrors storyblok-viewer/.gitignore using repo-root paths.
+
+storyblok-viewer/node_modules/
+storyblok-viewer/.pnp
+storyblok-viewer/.pnp.*
+storyblok-viewer/.yarn/*
+!storyblok-viewer/.yarn/patches
+!storyblok-viewer/.yarn/plugins
+!storyblok-viewer/.yarn/releases
+!storyblok-viewer/.yarn/versions
+
+storyblok-viewer/coverage/
+storyblok-viewer/.next/
+storyblok-viewer/out/
+storyblok-viewer/build/
+
+storyblok-viewer/.env*
+storyblok-viewer/.vercel/
+storyblok-viewer/*.tsbuildinfo
+storyblok-viewer/next-env.d.ts
+
+storyblok-viewer/public/storyblok-cache/
+
+storyblok-viewer/npm-debug.log*
+storyblok-viewer/yarn-debug.log*
+storyblok-viewer/yarn-error.log*
+storyblok-viewer/.pnpm-debug.log*
+
+storyblok-viewer/*.pem

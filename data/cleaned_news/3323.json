@@ -1,0 +1,180 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "656d636a-b546-4c3b-947d-b3af54514389",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4cf29154-5a1e-43d0-8c11-4a66e5c6244a",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e05fc62-461e-426f-9ca6-7e8a9753b323",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f864d34d-af31-4310-9ce1-534375f94762",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "eb62c564-9a81-425c-a742-2809e9f56ca6",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "168be9d8-ede4-46eb-8e8b-ac088781d582",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "9db6ce39-2c6c-4c7a-9f16-22f61ca7898c",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "7b4e9dbe-dc5a-452b-a648-588dd1b311e1",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "f9452364-b1a1-4712-a372-2caeb2576fd5",
+      "Id": 20,
+      "Title": "Institute for Educational Development, Pakistan"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "85326a60-19e9-4615-9429-2ec6551ecda0",
+      "Id": 10,
+      "Title": "Institute for the Study of Muslim Civilisations"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "038b9286-0f2e-47fc-895e-6bc0900c9649",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "a7f21f48-c642-4625-87f0-2fb8223f2920",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "647f32d3-dd66-4c77-9728-01fabdc79b80",
+      "Id": 19,
+      "Title": "Office of the Registrar"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "fb179ee0-32c3-4a04-8ce3-1e1498e9a54a",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "47c6f405-099c-466b-ba99-247f9f9a37e6",
+      "Id": 8,
+      "Title": "School of Nursing and Midwifery, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f155bb8b-fdfa-4b9d-8e9e-f60dd4fb0a80",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3323)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ed1a3c58-08a8-400e-952e-dbe8dcdd4929",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3323,
+  "Title": "Convocation caps a historic year for the Aga Khan University",
+  "NewsSubTitle": null,
+  "NewsSummary": "Graduates awarded degrees in almost two dozen fields, nearly 70 percent are women",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass31D196262CE140B189AC61FA3E79800D\"><p>More than 730 students in four countries graduated from the Aga Khan University on Saturday at ceremonies attended by Princess Zahra Aga Khan and other dignitaries, including Kenya's Cabinet Secretary for Education, the Honorable Ezekiel Machogu, who read a speech by President of Kenya, His Excellency William Ruto.&#160;</p><p>\"On graduating, you return to a world that is full of daunting challenges but also of endless possibilities,&quot; Princess Zahra Aga Khan said in Nairobi, speaking on behalf of AKU's founder and Chancellor, His Highness the Aga Khan. \"Continue to strive with courage and optimism to grasp opportunities to serve your communities and contribute to a more pluralistic and peaceful world.&quot;&#160;</p><p>I have great faith in this group of men and women,&quot; Cabinet Secretary for Kenya's Education Ministry Hon. Machogu said in remarks he shared on behalf of President Ruto. \"The reason for my faith is simple&#58; I know what the Aga Khan University stands for. It stands for high standards, access based on merit and service to society.&quot;&#160;</p><p>At ceremonies in Kenya, Tanzania, Uganda and Pakistan, the graduates were awarded degrees in almost two dozen fields in nursing, medicine, education, journalism and the study of Muslim civilisations. Almost 70 percent of the members of the Class of 2023 are women.&#160;</p><p>The University's chief guests also included Jan Sadek, Ambassador of the European Union to Uganda; Omari Issa, Chancellor of the Nelson Mandela African Institution of Science and Technology in Tanzania; and Sabina Khatri, Founder of the Pakistan-based Kiran Foundation.&#160;</p><p>AKU celebrated its 40<sup>th</sup> anniversary on March 16, 2023. Princess Zahra detailed some of the many achievements that have made the University's 40<sup>th</sup> anniversary year one of the most consequential in its history. Four new academic programmes welcomed their first students, increasing total enrollment to more than 3,600 for the first time in the University's history. These are the Faculty of Arts and Sciences in Karachi, the Bachelor of Medicine, Bachelor of Surgery programme in Nairobi and the four-year Bachelor of Science in Nursing programmes in Nairobi and Dar es Salaam. Construction began on the University's new 60-acre campus in Uganda, which will feature an academic centre, student housing and a new Aga Khan University Hospital. In Nairobi, the Aga Khan University Hospital implemented East Africa's first integrated electronic health records system. In Tanzania, the University launched the Arusha Climate and Environmental Research Centre.&#160;</p><p>\"We are hopeful that these new and continuing programmes and facilities will make AKU an increasingly powerful platform for the education of leaders, the creation of relevant knowledge and the delivery of world-class education and health care,&quot; said Princess Zahra, who credited the Governments of Kenya, Tanzania, Uganda and Pakistan, and the East African Community, with creating an enabling environment for the University.&#160;</p><p>AKU President and Vice Chancellor Sulaiman Shahabuddin called the day a \"crowning moment&quot; for the graduates. Noting that the University has awarded nearly 20,000 diplomas, degrees and postgraduate certificates to date, he outlined AKU's plans for the future, which are contained in its new five-year strategic plan. They include launching close to a dozen new degree programmes in fields ranging from data science to teacher education; enhancing research capacity in mental health, climate change and other disciplines; expanding the AKU health system; deepening the University's partnerships with public and private institutions at home and abroad; and continuing to earn new forms of academic and health care accreditation from leading international organizations.&#160;&#160;</p><p>\"That AKU has been able to achieve so much across its four decades is above all thanks to its founder, Chancellor and chief benefactor, His Highness the Aga Khan,&quot; President Shahabuddin said. \"His Highness's vision continues to guide us and continually inspire us with the strength to make bold decisions that keep AKU at the forefront of innovation, quality and impact.&quot;&#160;</p><p>In total, 391 students graduated in Pakistan,&#160;159 in Kenya, 106 in Uganda and 67 in Tanzania. Eleven students graduated from the London-based Institute for the Study of Muslim Civilisations.&#160;<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003199",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "cce8a407-322b-4bb8-8a4f-df6c93c38873",
+      "WssId": 2165
+    },
+    {
+      "Label": "40 years of AKU",
+      "TermGuid": "e5aba257-af6a-453d-be3d-cea4fa037bff",
+      "WssId": 2466
+    },
+    {
+      "Label": "Pakistan",
+      "TermGuid": "77e41dbf-87f3-4f36-aff7-d962fe8c2125",
+      "WssId": 2107
+    },
+    {
+      "Label": "Tanzania",
+      "TermGuid": "bb312009-81c9-41d6-9081-57d28322d073",
+      "WssId": 2187
+    },
+    {
+      "Label": "Uganda",
+      "TermGuid": "cf0bbf0b-88e0-410e-80f8-c1c7f30edade",
+      "WssId": 2188
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "2d1be9e0-8877-428f-8a6f-ff032c81de24",
+      "WssId": 2106
+    }
+  ],
+  "ScheduleStartDate": "2024-02-17T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3323,
+  "Modified": "2024-03-04T04:49:51Z",
+  "Created": "2024-02-17T14:53:06Z"
+}

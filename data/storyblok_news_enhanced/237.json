@@ -1,0 +1,277 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "df2242a3-d4ae-496f-a8ab-199261bfb143",
+  "odata.etag": "\"53\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5b9557d3-5391-4c2d-9939-635a5a86ca5d",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9a74ed30-cab3-49cd-8777-444c2d2e8941",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5ae17042-c390-4762-822f-dd81a1ca9354",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "45596632-9678-4eb3-9185-474f4a74ac86",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a1aa11d7-019e-493d-9ce0-a91648f51def",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3937cc75-c3b1-4f2a-afbb-a427f92e3e5e",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae223016-8dd1-4612-831f-11da92289787",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(237)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f5902bc8-1fe0-493a-8076-ba81974cac99",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 237,
+  "Title": "Making classrooms more inclusive",
+  "NewsSubTitle": null,
+  "NewsSummary": "An IED student's research will improve teaching for children with learning difficulties.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Yasmeen Muhammad, an MPhil student at the IED, has been campaigning for the rights of disabled children for the last 27 years. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Throughout this time, she has found that people find it very difficult to interact with a person with special needs. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She recalls a particularly frightening incident in a public school where Urdu was being taught to eight-year-olds. The teacher was growing increasingly frustrated with a boy with learning difficulties, Haseeb*, who needed special attention. As the student struggled with the task, the teacher's annoyance grew to a point where she resorted to screaming and eventually beating the student."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I was appalled to see a child with obvious learning difficulties face such harsh treatment,\" Yasmeen remembers. \"The teacher just could not relate to the child and ended up punishing someone with special education needs.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The World Bank estimates that 19 million children who are not in primary school have a disability - the figure is one third of the 58 million children who are not receiving basic education."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Even though people with special needs constitute 2.5 per cent of Pakistan's population, they are made to study in separate schools. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The presence of a disabled person changes the atmosphere of a room. In schools, students are generally afraid of classmates with visible disabilities. But they aren't the only ones who look at special needs children with caution. Teachers also become apprehensive and some even make complaints to the school management,\" Yasmeen adds. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There is a long standing practice of segregating students with disabilities in their own classrooms and schools. Can these special education students with disabilities from dyslexia to autism, be mainstreamed into regular classrooms to make classrooms more 'inclusive'?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Yasmeen states: \"At present, a child with special needs is seen as being a problem - the teacher misinterprets the child's disability as disobedience and mistakes the pattern of behavior associated with the learning difficulty as being an intentional effort to disrupt the class.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since 1986, Yasmeen has worked in areas tied to early childhood education and development as a trainer, consultant, Montessori directress, and a volunteer to raise awareness among teachers, parents and communities. For Yasmeen, the status quo of separate education for those with learning difficulties is a serious problem. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her passion to work for inclusion saw her complete a master's in Special Education from Karachi University. During her research, she found that in Pakistan, pre-primary education - and Montessori methods - were not sufficiently applied to children with disabilities. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Early childhood education lays the foundation for the child's learning abilities later in life. Based on this study I designed different inclusive strategies for young children in the schools I worked with,\" she adds."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Yasmeen's current research, as part of her MPhil thesis at IED, is on the impact of inclusive teaching practices on early childhood education and development, and on ways to mainstream special needs students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"You can't sideline people and except them to prosper! You can't set them aside and except them to thrive! Children with learning difficulties aren't a burden, they deserve special care. Disability is a type of diversity that needs to be accepted and unfortunately too many people have an irrational fear of the disabled,\" she explains."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mainstreaming disabled children into regular schools enables classmates to understand how to adapt to another's needs: to learn patience and tolerance for those with a difference. Without inclusive education, children with special needs become isolated from the rest of society and their unique needs remain a mystery to society as a whole.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the IED she is exploring the use of new techniques that can help teachers to engage with special children. Yasmeen is working on a system to inform teachers about how to create individual lesson plans, teaching aids and activity-based learning. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The first step is to change society's lack of understanding on how to deal with the disabled as that is the major barrier to change. All of us have had a subject at school that we've struggled with. Let us use that experience to empathise and understand the extra help that children with special needs require to ensure that no child is left behind.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "*The student's name has been changed to protect his identity."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000203",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    }
+  ],
+  "ScheduleStartDate": "2016-06-29T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 237,
+  "Modified": "2017-02-22T07:01:28Z",
+  "Created": "2016-06-29T06:04:08Z"
+}

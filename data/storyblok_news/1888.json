@@ -1,0 +1,226 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1a3fdf2f-4dab-4427-917d-7b7748ff200b",
+  "odata.etag": "\"24\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "515ee9a5-3110-40cb-9f83-7359d508311c",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57086f17-edf2-4d0c-bfb7-ac7c7ee505ce",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "55917ee5-93ff-42e4-9241-4ee10921f1d0",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a43fa6a2-7105-4335-bad2-4eb90fc81eaa",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "feed8089-3ce7-4a16-b682-3ce9ebaf4ef6",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "cf397314-002c-4767-a06d-c9bb7d3ab689",
+      "Id": 12,
+      "Title": "Networks of Quality, Teaching and Learning"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "faa34cb6-3a0e-44a9-b503-b6af343ffe71",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1888)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93758329-99e8-4f47-9858-b9e868cef3be",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1888,
+  "Title": "Special issue of SoTL in the South published",
+  "NewsSubTitle": null,
+  "NewsSummary": "Journal edition focusses on AKU research on advancing student engagement in learning. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The importance Aga Khan University (AKU) places on research has been recognised through the publication of a special edition of the journal, Scholarship of Teaching & Learning (SoTL) in the South, which dedicated its April 2019 edition to work done by AKU faculty."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The special issue which contains articles on the theme of "
+          },
+          {
+            "type": "text",
+            "text": "Advancing Student Engagement in Learning",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://sotl-south-journal.net/?journal=sotls&page=article&op=view&path%5b%5d=102",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " is an outcome of the September 2017 SoTL Conference, hosted by AKU's Network of Teaching and Learning. It features six papers highlighting various topics such as nursing students' perspectives on clinical preceptors, rubrics to assess critical thinking in multidisciplinary contexts, mobile learning environments, blended learning in medical education, argumentation-based teaching, and indigenous environmental thought and re-education. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The journal's special issue has been edited by AKU faculty Dr Tashmin Khamis and Dr Jane Rarieya as well as Dr Geraldine Van Gyn from the University of Victoria. These papers offer innovative and reflective perspectives on education and provide recommendations to improve teaching and learning in the global South. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"AKU aims to be research-led and student-centred. A commitment to providing quality education is a core principle at the University and it is a matter of great pride that a peer-reviewed journal has recognised the scholarship and research we conduct around teaching and learning. The papers we presented for this special issue are but a few of those we publish every year,\" said Dr Khamis, director of the Network of Teaching and Learning at AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's Network of Teaching and Learning supports faculty by providing teaching and learning support, developing communities of practice around teaching excellence, promoting the scholarship of teaching and learning, and enabling evaluation, accountability and outreach on teaching and learning that is of and for the developing world.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "SoTL in the South is an online, open-access and peer-reviewed journal dedicated to fostering dialogue and research on teaching and learning in higher education in the global South, or about the global South. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You can read the April 2019 special issue by AKU faculty "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://sotl-south-journal.net/?journal=sotls&page=issue&op=view&path%5b%5d=4",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001820",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "teaching",
+      "TermGuid": "2f1a9004-a599-401b-90ee-cd4c4aff1c00",
+      "WssId": 1497
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "networks of quality, teaching and learning",
+      "TermGuid": "11629d20-ba43-407e-9033-64c924f37584",
+      "WssId": 1541
+    }
+  ],
+  "ScheduleStartDate": "2019-05-10T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Faculty and participants at the September 2017 SoTL conference hosted by AKU's Network of Teaching and Learning.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1888,
+  "Modified": "2019-05-13T05:30:49Z",
+  "Created": "2019-05-10T12:43:46Z"
+}

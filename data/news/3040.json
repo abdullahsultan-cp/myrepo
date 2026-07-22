@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b6e97b30-ddc0-45bc-8846-6de9dc339f76",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3e4cc132-a113-4aae-a6ed-3db687ae6fd7",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c54bff75-1103-49af-b86c-6934202cf001",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "75a89e59-a2fc-48c3-8ae0-139974e99237",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2d85b490-7953-4251-b20b-caa3872540e2",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9c8fedaa-819b-4abb-96c5-4bf96849b1b2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "4e91b1c7-d9ac-4960-919a-d712e305ea56",
+      "Id": 4,
+      "Title": "Global"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4d130f72-bc9f-4136-9c8c-39a72b2b6022",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3040)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "91abf47d-bce1-4730-b84d-80bc7f200a70",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3040,
+  "Title": "The future of digital education",
+  "NewsSubTitle": null,
+  "NewsSummary": "Harvard University CIO gives lecture on inclusion of technology in learning",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass726A8C77DFD54769AFCCE48FF0079315\"><p>\u200b</p><p>The rise of ChatGPT \u2013 an artificial intelligence tool \u2013 has fuelled divergent views on its use in academia. Many fear it will worsen plagiarism or take away the human element in learning institutions.</p><p><a href=\"https&#58;//huit.harvard.edu/klara-jelinkova\">Klara Jelinkova</a>, Vice President and University Chief Information Officer at Harvard University has a different perspective.</p><p>\u201cWe cannot live in a bubble and ward off technological advances such as Artificial Intelligence (AI),&quot; she says. \u201cWe should have discussions on how the proprietors can develop these products ethically and accurately incorporate them into our world.&quot;</p><p>While giving a distinguished lecture at Aga Khan University, Klara reiterated the need for universities to embrace technological advances following the COVID-19 pandemic which shifted learning online. </p><p>\u201cIt's more about what universities teach and how they prepare students to enter a world in which AI supports their decisions. Who knows, AI could make us more human!&quot;</p><p>Moderated by AKU's Chief Information Officer Shaukat Ali Khan, the lecture focused on areas in educational technologies such as learning analytics, digital transformation and artificial intelligence.</p><p>When asked if technology will replace face-to-face learning, Klara's response was&#58; </p><p>\u201cDespite many recent improvements and technological solutions, the overarching design principles of many digital platforms still seems to largely replicate face-to-face instruction and traditional classroom-style practices.&quot;</p><p>Klara is responsible for information technology strategy, policies, and services that support Harvard University's teaching, learning, and research mission, and business operations. She also leads Harvard University Information Technology (HUIT), Harvard's central IT provider that serves more than 50,000 educators, students, and staff.<br></p><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002926",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Teaching",
+      "TermGuid": "3b9efa59-5e54-4510-b85d-69caf29a2c2f",
+      "WssId": 2155
+    },
+    {
+      "Label": "Learning",
+      "TermGuid": "7bd26807-b759-462c-b48c-26b0ff6bfa13",
+      "WssId": 2158
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    }
+  ],
+  "ScheduleStartDate": "2023-01-30T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU Chief Information Officer Shaukat Ali Khan (far right) moderates the discussions",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3040,
+  "Modified": "2023-01-30T09:22:06Z",
+  "Created": "2023-01-30T09:19:08Z"
+}

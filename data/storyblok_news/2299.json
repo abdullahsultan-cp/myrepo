@@ -1,0 +1,518 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c86256f9-afb8-4fd9-8fb1-56bfc7551c6a",
+  "odata.etag": "\"90\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "74b52f79-66ac-4108-b1f4-8c37d2326eb6",
+    "Id": 96,
+    "Title": "Safina Kousar"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e0ef2f1d-ed2c-4a89-9f7d-cdbfaf1f14c0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fb5c1ee9-8d1d-46f7-ab65-2b636ed351ae",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5161660a-4885-454d-9c03-9af2787b460f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f455418d-9e4b-42fd-9162-fb8f52cd1e4e",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "708877dd-b97d-4c9b-a14d-aad031448b40",
+      "Id": 20,
+      "Title": "Institute for Educational Development, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0240ee3d-9a85-4fd0-81e4-8c7732a2b9a2",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2299)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de6edd7d-10d0-4d01-baf8-3ee071f54bbc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2299,
+  "Title": "Learning and assessment in uncertain times",
+  "NewsSubTitle": null,
+  "NewsSummary": "Education experts share opportunities and challenges arising from the pandemic.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "COVID-19 has forced the majority of countries around the world to close their schools and higher education institutions for the safety of their students. It has disrupted traditional ways of teaching and learning particularly in developing countries. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Educational institutions have been forced to either go online or find alternate ways to help their students continue the learning process, all without much preparation. Changes in teaching and learning modes have also affected assessment processes for which educational institutions are, again, ill-prepared. Pakistan, like many other countries, is also looking for ways to deal with the implications of COVID-19 on learning, teaching and assessment. As an immediate response, all high stakes exams have been cancelled and it has been decided to auto-promote school students to the next grade/level.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The "
+          },
+          {
+            "type": "text",
+            "text": "Institute for Educational Development",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/iedpk/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " engaged education experts to reflect on the challenges and possibilities for continuity of learning and assessment in the COVID-19 scenario.  The purpose of the two-part webinar was to gain expert opinion to inform changes in the policies and practices related to learning and assessment. The experts included Dr Shehzad Jeeva, Director, AKU Examination Board, Dr Fouzia Shamim, Dean, Faculty of Liberal Arts and Human Sciences at Ziauddin University in Karachi, and Dr Tashmin Khamis, Vice Provost, Quality, Teaching and Learning, Office of the Provost, Aga Khan University. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Learn more about changes to learning processes with Dr "
+          },
+          {
+            "type": "text",
+            "text": "Tashmin Khamis",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.facebook.com/akuiedpk/videos/2670640166512599/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " or find out more about issues in assessment with Dr "
+          },
+          {
+            "type": "text",
+            "text": "Fouzia Shamim",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.facebook.com/akuiedpk/videos/727147824762160/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Also, listen to Dr "
+          },
+          {
+            "type": "text",
+            "text": "Shehzad Jeeva's",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://soundcloud.com/user-189003003/assessment-in-challenging-times-its-nature-role-and-strategies?fbclid=IwAR0EA4b2cgTN8Ut0Y8CJwGQXChn0vp7fNNveqJt5nD67NIz5Ra7sKNiARZ4",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " perspective on assessment."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Here are some key takeaways from the session:",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Possibilities",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Use this opportunity to enhance your student engagement by giving them individual attention: Feedback from students and faculty at AKU suggests that online learning has enhanced engagement of students by enabling educators to give individual attention to learners in a more effective way than in a face-to-face classroom. It has also enabled independent learners to shine."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Plan well and make your online teaching more effective: As there is more transparency in online teaching, it is being scrutinised much more than face-to-face sessions to ensure it is active and engaging. Use the seven principles of good teaching by Chickening and Gamson to make your teaching more active and engaging."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Shift your focus from getting good grades to involving your students in real learning: The focus on enhancing and analysing students' skills and conceptual understanding is becoming much easier with online learning. Learning is taking centre stage. Instead of focusing on grades by asking students to regurgitate what they know, they are being asked to apply their learning through problem-solving tasks and case studies."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Develop the right checks and balances and trust the teacher's judgment when it comes to a fair assessment of what students are learning on an ongoing basis: COVID-19 has brought formative assessment to the fore. Before it was taken with a pinch of salt, now we are looking up to teachers to make a fair and valid assessment of students' learning. In the given situation, institutions need to rise to this opportunity where a teacher's judgment is trusted and not questioned. "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Challenges",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The focus should be on the learner, not the technology: Focus on the learner and the learning outcome first. Technology should be used as a tool to reach those outcomes. "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Auto-promotion of students has its limitation: The decisions made to auto-promote students based on non-standardised continuous assessment in Pakistan raises many questions around ensuring transparency, fairness and equity. "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Online high stakes exams are not the immediate solution and we are not ready for it: Going for online standardised exams e.g. for secondary and higher secondary students, may not be an immediate solution and will not enable every student to be part of the assessment process in developing contexts such as Pakistan. Why? Because Pakistan has its issues of limited resources, issues of electric supply and students' access to IT resources and internet connectivity. Online standardised assessment may still be doable for students from well-resourced backgrounds but not for the majority who come from low socio-economic backgrounds and lack access to even the very basic facilities. "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Cancellation of standardised assessment will have critical implication for students' progress: Policymakers need to review the grading policies, admission requirements and introduce flexibility in admission processes to ensure smooth transition and continuity for students to the next level. Otherwise, the delay in conducting standardised exams will have critical implications for students hoping to enter higher education institutions this year and the labour market with long-term consequences for their progression in life."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002210",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "42798a93-35ae-4572-ba14-7cf8818ce9fb",
+      "WssId": 1850
+    }
+  ],
+  "ScheduleStartDate": "2020-04-20T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2299,
+  "Modified": "2020-06-20T15:15:40Z",
+  "Created": "2020-06-04T13:19:47Z"
+}

@@ -1,0 +1,245 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "89ded36f-9cdd-47ee-a40c-ec11f1c079f3",
+  "odata.etag": "\"50\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93bebb71-ed59-4ca5-8e1f-928ace303c10",
+    "Id": 7153,
+    "Title": "Samina Wahid"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3d9d9857-3e16-43e3-bbce-f2ed71a34a9c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "37b3501b-0b0e-4a6c-b841-9a30b96e5671",
+    "Id": 7153,
+    "Title": "Samina Wahid",
+    "EMail": "samina.wahid@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d77d6db6-cc68-4e89-9166-413632264931",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d5ff43a7-c804-47a8-bb21-c4efddd9c5f2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "722d22e4-aad8-4a5e-9140-3527b870f21f",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d165ba6b-3135-43d1-aa3c-0f6f61298155",
+    "Id": 7153,
+    "Title": "Samina Wahid",
+    "EMail": "samina.wahid@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1869)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "586524c4-8e53-44aa-808a-44ee3378bbce",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1869,
+  "Title": "Not your typical career in medicine",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Walid Farooqi, Class of '16, on why he chose not to go down the clinical route.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\""
+          },
+          {
+            "type": "text",
+            "text": "Two roads diverged in a wood, and I took the one less traveled by. And that has made all the difference.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "\" - Poet Robert Frost"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of the many skills students learn during their time in medical school is how to break bad news to patients and their families. It's a skill that Dr Walid Farooqi, MBBS '16 had to use when he told friends and family he didn't want to take up clinical medicine after spending five tough years at university. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While Walid had the same ambition and drive to become a clinician as his classmates at AKU, he was also keen to explore unique solutions to healthcare problems. There was always a nagging doubt that a medical career would not be able to satisfy his urge to be an innovator. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I saw a lot of students go through burnout and I didn't want to see myself go through the same. The high stakes of making a mistake as a professional lead many medical students choosing to rehearse the 'right solution' to the point where embracing innovation becomes a secondary concern.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For Walid the study of medicine was always about putting together the pieces of a puzzle. In his mind a doctor was like a detective who had the courage to be unconventional, much like the main character on the popular American TV medical drama, House. Recalling his time as a student and his innate curiosity, Walid recalls the lengthy notes he would make on his phone during clinical rotations. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I would constantly be thinking about how to do things differently and whether there was a better way to meet a patient's needs.\" He was keen to experiment these admittedly 'whacky' ideas and was excited to hear that a group of like-minded students were planning to host a medical hackathon. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The hackathon was just what he was looking for and led to Walid meeting Dr Asad Mian, an associate professor in emergency medicine at AKU, who was working on launching a new initiative, the Critical Creative Innovative Thinking Forum (CCIT), that encouraged students to create and innovate. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "His interactions with Dr Asad inspired Walid to become a part of the first CCIT hackathon's organising committee as a volunteer. Soon afterwards, he was hired as a coordinator for the forum where he has been championing innovation and divergent thinking in medical education and healthcare."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The goal of CCIT is to facilitate people to improve the status quo. We want to engage various niche groups within the university and the hospital to promote interdisciplinary work: problem identification and solution development.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The dream, says Walid, is to establish an innovation-based healthcare center at AKU that would be open to everyone: a place where people from all walks of life have an opportunity to implement their ideas to solve every day healthcare problems. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Eventually, I hope to see CCIT create a pipeline for more people like myself, who are not afraid to ask questions and are willing to take risks that can really make a difference.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Walid is now the co-director of CCIT that adopts student-centric frameworks to channel innovation. Some of these frameworks include healthcare-themed hackathons, Ignite sessions, narrative medicine, ideation and incubation. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001802",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "innovation",
+      "TermGuid": "8709ce73-3783-493e-afa8-f9799c7e32dd",
+      "WssId": 1533
+    }
+  ],
+  "ScheduleStartDate": "2019-04-26T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": "From L to R: Saher Makhani, Dr Asad Mian, CCIT director, and Walid share a light-hearted moment during a brainstorming session.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1869,
+  "Modified": "2019-05-30T08:14:17Z",
+  "Created": "2019-04-26T08:43:08Z"
+}

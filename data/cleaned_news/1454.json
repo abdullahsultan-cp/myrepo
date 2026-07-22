@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "fd0c0af0-f97f-4b4f-a513-0fcc1f3d6461",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "17ead303-e698-48dd-9905-c0a15699b3a2",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cb588c5f-965b-473c-ab38-e67a47536b15",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5a04068e-ff10-4492-a002-336b27a132e3",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "3fc04dd8-33d8-4b90-a8a7-d54d6129e50e",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "33fab667-1c44-4b41-8efc-9eeedde0b210",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "45db4eba-b60a-43cb-8475-03b58ff7208f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c8ae118b-7a61-4d4d-9a2e-512614b88ec0",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1454)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d0330b89-76df-42b1-96ff-38b449e164f0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1454,
+  "Title": "27 patients under treatment at Aga Khan University Hospital for viral haemorrhagic fever",
+  "NewsSubTitle": null,
+  "NewsSummary": "At Aga Khan University Hospital (AKUH), 27 patients are currently hospitalized with suspect viral haemorrhagic fever; most of them were admitted during the last two weeks.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass5DA811215E1D4C65A87D26822B7B69C6\"><p></p><div>At Aga Khan University Hospital (AKUH), 27 patients are currently hospitalized with suspect viral haemorrhagic fever; most of them were admitted during the last two weeks. This obviously reflects a sudden increase in the number of such cases and is a cause of concern. So far, a total of 528 patients with ages ranging between 6 to 82 years were admitted at AKUH between June 14 to November 8, 2006 with viral haemorrhagic fever. Out of these, eleven patients expired due to severity of disease, while 490 recovered and were discharged. The patients suffered from symptoms ranging from bleeding, diarrhoea, vomiting to abdominal pain.</div><div><br></div><div>Two hundred and forty seven patients were diagnosed to have Dengue haemorrhagic fever, three patients suffered from Crimean-Congo Haemorrhagic Fever (CCHF), while in the remaining, the special serological tests were either negative or the results are pending. A total of 506 patients were received from Karachi and the remaining patients came from Larkana, Hyderabad, Thatta, Dadu, Saedabad, Nawabshah, Rahim Yar Khan, Gharo, Mirpurkhas, Sujawal, Gilgit, Baluchistan and Saudi Arabia.</div><div><br></div><div>Dr Farhat Abbas, Medical Director &amp; Associate Dean, Clinical Affairs, Aga Khan University Hospital</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001401",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Dengue",
+      "TermGuid": "3a2f3837-4a92-45d3-b278-f9715d0e0e38",
+      "WssId": 1998
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2006-11-08T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1454,
+  "Modified": "2020-05-18T07:16:35Z",
+  "Created": "2018-01-12T11:33:06Z"
+}

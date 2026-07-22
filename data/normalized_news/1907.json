@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e69a5292-331c-4fe5-b1ca-798659b76f9c",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f8dda136-b321-47d1-bb5c-9a4d2e826c4d",
+    "Id": 3461,
+    "Title": "Akber Ali"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2a32d6fa-7b6e-4e78-a0c2-3a29dde61c70",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "06510431-a922-4c31-87d1-74fd745cadb2",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "912ce826-d61c-48f1-bdfe-77bcd2cb1028",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "78afa12f-358b-42f5-8df2-b845049edd51",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8c6bc5f2-776d-4d93-bf22-c9576ce7c478",
+    "Id": 3461,
+    "Title": "Akber Ali",
+    "EMail": "akber.ali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1907)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0bb9b341-94ad-4bba-b6cf-2ea6bf224d89",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1907,
+  "Title": "3 Day Course on Grants and Research Administration",
+  "NewsSubTitle": null,
+  "NewsSummary": "The objective was to devel-op and strengthen capacity in research administration and grant management. Research Administra-tion is a specialized field and unfortunately not many trainings are available in Pakistan to develop capacity. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>Department of Paediatrics and Child Health and Centre of Excellence Women and Child Health recently organized a 3-Days course on Grants and Research Administration. The objective was to develop and strengthen capacity in research administration and grant management. Research Administration is a specialized field and unfortunately not many trainings are available in Pakistan to develop capacity. The course explained all concepts regarding research administration including the varying structures of sponsored programs, research advancement, development responsibilities and award process specifics (pre-award, award negotiation and acceptance and post-award). The course was attended by 42 participants which included representation from both within AKU and Outside AKU. Three participants were from outside AKU (2 from Indus Hospital and 1 from People's Primary Healthcare Initiative (PPHI) Sindh). The representation from AKU included a varied group which in-cluded faculty members, research administrators (from Dept. of Medicine, CHS, BBS, SONAM, Surgery, Paediatrics and Child Health, COE-WCH), and individuals from support departments (Internal audit, Finance Division, Safety &amp; Security and Pharmacy). This training consisted of nine modules that provided comprehensive training on the different areas of the sponsored programs administration profession. The modules contained detailed content, images, supplemental materials (such as, case studies, videos, games), and quizzes. The course was well received by participants and a detailed re-port will be shared with concerned stakeholder at earliest.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001839",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2019-04-24T03:00:00Z",
+  "ScheduleEndDate": "2019-06-26T12:00:00Z",
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1907,
+  "Modified": "2019-06-03T08:39:07Z",
+  "Created": "2019-06-03T07:43:51Z"
+}

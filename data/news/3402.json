@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cd5e678a-142d-4df4-a7d6-9cced8b4e6ac",
+  "odata.etag": "\"17\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "da943034-4226-4fb9-b052-394536510091",
+    "Id": 17762,
+    "Title": "Cime Marketing"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "45ffc3ab-dbb9-490c-b394-c9f9b1925577",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "835f233f-5231-4475-b72f-d5f6e7c71724",
+    "Id": 17762,
+    "Title": "Cime Marketing",
+    "EMail": "cime.marketing@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b8d65f5a-295c-438b-ac13-9362c906941d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "22a59d5d-d35e-4a76-a7ff-0994fa9784ba",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "8a94e800-8a2f-426f-8227-f3dc33866941",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12b5fc4e-4778-4e24-941e-c4089025a4f5",
+    "Id": 17762,
+    "Title": "Cime Marketing",
+    "EMail": "cime.marketing@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3402)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2a4f5886-881f-48bb-8452-00f7382d1a35",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3402,
+  "Title": "CIME Partners with HOPES and SPIE to Conduct an IV and Catheterization Simulation Workshop",
+  "NewsSubTitle": null,
+  "NewsSummary": "The IV and Catheterization Workshop at KMDC, a collaboration between CIME, SPIE, and HOPES, enhanced practical skills for 60 learners, highlighting the value of hands-on medical education.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass4617400918364EEE9A861A5FA22DF57C\"><p>\u200b<span style=\"text-align&#58;justify;\">C</span><span style=\"text-align&#58;justify;\">IME, SPIE, and HOPES collaborated to conduct an IV and Catheterization Simulation Workshop at the HOPES SKILLS EXPO on February 17, 2024, at Karachi Medical and Dental College (KMDC).</span></p><p style=\"text-align&#58;justify;\">The workshop attracted 60 learners from various institutions. Led by experienced nurses, interactive simulation exercises kicked off the workshop, providing hands-on learning opportunities. Following the simulation sessions, a comprehensive debriefing covered essential topics including indications, contraindications, proper placement, and sterility maintenance for IV and catheterization procedures. </p><p>Collaborations like this will advance medical education and foster a culture of excellence and continuous learning among aspiring healthcare professionals. Through such initiatives, we aim to equip students with essential skills and knowledge, ensuring they are ready to deliver high-quality patient care in the future.<br></p><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003278",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    }
+  ],
+  "ScheduleStartDate": "2024-06-03T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3402,
+  "Modified": "2024-06-04T11:16:57Z",
+  "Created": "2024-06-03T12:34:02Z"
+}

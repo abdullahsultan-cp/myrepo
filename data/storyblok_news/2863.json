@@ -1,0 +1,334 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1c494dfc-1ebd-479f-b902-ff0fd9df903f",
+  "odata.etag": "\"31\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0faeb97a-e234-44d3-b278-e78d6cbdf0b4",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ab1ec276-515b-48fd-bdb4-4fc871b3d776",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "28dc1997-d588-4096-94e9-91a5ebe0b3af",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d5c9cee6-d072-4903-8d96-79b32d4c1f00",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "724f9878-faed-4a92-b378-128332a23ca1",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "d9957a76-528f-4cf6-b0fb-3eb0bdf8a543",
+      "Id": 28,
+      "Title": "Institute for Global Health and Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0356b449-69ec-4d78-ae21-55de30202d60",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2863)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f3ed6d2c-6dae-44fa-85e4-d4c4d23e246a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2863,
+  "Title": "Lancet series on optimising child and adolescent health and development",
+  "NewsSubTitle": null,
+  "NewsSummary": "Global child and adolescent health targets in jeopardy without urgent, comprehensive reform, experts warn",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Despite recent progress, the world is at risk of failing to meet child and adolescent health targets, with more than 8.6 million deaths among children and adolescents (aged 0-20 years) recorded in 2019. Comprehensive, coordinated care that begins at preconception and lasts through adulthood is urgently needed to reduce childhood mortality and improve child and adolescent health, according to a new series published in "
+          },
+          {
+            "type": "text",
+            "text": "The Lancet",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The authors of the "
+          },
+          {
+            "type": "text",
+            "text": "Lancet Series on optimising child and adolescent health and development",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.thelancet.com/series/optimising-child-adolescent-health",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " called on global leaders and policymakers to replace current approaches to child and adolescent health, which are often fragmented by age groups or specific health conditions, to offer comprehensive care that spans nutrition, preventive health, education, economic, and community support across age groups from preconception through age 20. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new collection of papers also highlights how the COVID-19 pandemic has disrupted health and education services as well economies and social systems, putting recent progress toward achieving the United Nations' Sustainable Development Goals in jeopardy and increasing children's vulnerability to violence, abuse and mental health conditions. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The challenges faced in responding to the needs of children and families during the COVID-19 pandemic should serve as a wake-up call to the global community, underlining the urgent need to transform the child and adolescent health agenda on a global scale,\" said the series coordinator and author Dr Zulfiqar Bhutta, Founding Director of the Centre of Excellence in Women and Child Health, and the Institute for Global Health and Development at the Aga Khan University; and Co-Director of the SickKids Centre for Global Child Health, Toronto. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We have less than eight years to meet the UN's Sustainable Development Goals, and many child and adolescent health targets are off track. A holistic approach that supports children and their families from before birth through early adulthood is urgently needed to bring us back in line, building a foundation that will last a lifetime and improve health outcomes, economies, and society,\" added Dr Bhutta. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Read more on ",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "EurekAlert",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.eurekalert.org/news-releases/950679",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              },
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "The series launch event"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The series launch was live-streamed from the Aga Khan Centre in London and featured experts and authors including Dr Bhutta, Dr Robert Black, Dr Cesar Victora, Dr Margaret Kruk, Tyler Vaivada, Dr Maureen Black and others. An interactive panel, moderated by "
+          },
+          {
+            "type": "text",
+            "text": "The Lancet",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "'s Executive Editor Dr Jocalyn Clark, featured Dr Richard Horton, Editor-in-Chief of "
+          },
+          {
+            "type": "text",
+            "text": "The Lancet",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", Dr Jennifer Bryce of the Johns Hopkins Bloomberg School of Public Health, and Dr Ties Boerma of the University of Manitoba."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The event also included remarks from AKU's Provost and Vice President, Academic Dr Carl Amrhein, Director-General of the World Health Organization Dr Tedros Ghebreyesus, and UNICEF's Executive Director Catherine Russell."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Watch the event ",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "video recording",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.youtube.com/watch?v=N1cluJUNAvI",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              },
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002756",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Child health",
+      "TermGuid": "6db413d6-a4df-4471-93de-a395835b20dd",
+      "WssId": 2154
+    },
+    {
+      "Label": "Adolescence",
+      "TermGuid": "ef92af17-7918-4870-b2f3-a8550b689211",
+      "WssId": 2411
+    }
+  ],
+  "ScheduleStartDate": "2022-04-29T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Global child and adolescent health targets in jeopardy without urgent, comprehensive reform, experts warn",
+  "MediumImageCaption": "The series launch was live-streamed from the Aga Khan Centre in London and featured experts and authors.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2863,
+  "Modified": "2022-04-30T03:49:47Z",
+  "Created": "2022-04-29T10:09:27Z"
+}

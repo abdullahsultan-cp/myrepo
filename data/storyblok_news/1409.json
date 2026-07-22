@@ -1,0 +1,163 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7b539900-06c1-40e6-8fff-100176a7f1ff",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c1a37b0-5c50-45f4-8c77-bf2182278fa1",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb48af9b-97f3-4481-b08f-152538a9d0df",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c979be91-9481-4a1b-a20c-9d1e10dff3a3",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "768ec394-e3fd-4fe0-a653-f14a559e1184",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7fe8b902-55ac-49fc-bb5e-823aa980b71b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9af453f0-86bd-41e4-a79b-967774eeb3f2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6d00a2f2-0094-4f56-8ab2-daf4aed23860",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1409)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1c689f50-92c2-4d58-8779-12f19c0a8bfe",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1409,
+  "Title": "AKU begins construction on new Ambulatory Care Building",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University held a ground-breaking ceremony on Friday, April 16, 2010 to mark the start of construction on the US$14.5 million Ambulatory Care Building II.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Aga Khan University held a ground-breaking ceremony on Friday, April 16, 2010 to mark the start of construction on the US$14.5 million Ambulatory Care Building II (ACB II)."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The project is part of the Ambulatory Care Complex expansion plan, which envisages a series of ambulatory care buildings added along the southern end of the Stadium Road campus. The new facilities will allow Aga Khan University Hospital to dramatically expand the range of outpatient services it offers."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The proposed ACB II will accommodate a number of clinics: dentistry, ophthalmology, ENT, general surgery, gastroenterology, psychiatry, radiation therapy, medical oncology (day care expansion) and medical clinics. In addition, surgical day care facilities, including four operating rooms, will be housed in the basement level."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "ACB II will be linked to the existing Ibn Zuhr Building on all floors to accommodate future expansions to its existing oncology programmes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The three storey-building is to be located on the west side of Ibn Zuhr Building, adjacent to the main entrance gate. The entire project, including the link bridge between Service Building and ACB II, will measure a total of 129,033 square feet.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001356",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "ca69fd5c-b8ff-4c4a-8794-1e751b8e682b",
+      "WssId": 1820
+    }
+  ],
+  "ScheduleStartDate": "2018-01-03T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1409,
+  "Modified": "2020-05-18T07:24:01Z",
+  "Created": "2018-01-03T10:30:32Z"
+}

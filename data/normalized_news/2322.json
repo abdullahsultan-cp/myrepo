@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9f8c7789-16da-4d22-bfcc-e163c5dfa9a6",
+  "odata.etag": "\"27\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2b25284-51b3-45dc-8dee-e22f478c49e9",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a76a71d9-a455-47e4-9763-398a74281483",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7f033b7-86bd-47d6-b88a-7558a253615e",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e8c3a0ce-bfd5-4c39-8ebb-6fd61f50f513",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "89b1fe20-6539-486a-b4c0-ecadefec8dd8",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1f83511c-d0fa-4e0c-b69e-5fe3a7947bf8",
+    "Id": 182,
+    "Title": "Alexandra Khan",
+    "EMail": "Alexandra.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2322)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d439f12d-8b68-4968-a685-48d8f47e1cee",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2322,
+  "Title": "New version of the OpenITI Arabic corpus released by KITAB",
+  "NewsSubTitle": null,
+  "NewsSummary": "Free to download",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p><br/></p><p>A new version of the corpus used by the KITAB team is now available to download at <a href=\"https://zenodo.org/record/3891466#.XvCEKS2ZPUo\" target=\"_blank\">Zenodo</a>, an Open Science platform that supports Open Access. This is the second  release developed by the OpenITI organization. It is also accessible at <a href=\"https://github.com/OpenITI/RELEASE\" target=\"_blank\">GitHub</a>.  The current release features 7,119 books, including all versions and editions (1,464,011,669 words), of which 4,285 are unique works written by 1,833  authors. Among these, 446 books are in OpenITI mARkdown. Moreover, the project team has made corrections to the book metadata. Major corrections are noted in the release note, which also provides statistics on the corpus, as well as a list of current and past contributors to the corpus.<br/></p><p>Users will be able to read the texts in any text reader and learn to code using thousands of Arabic works.  <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002231",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    }
+  ],
+  "ScheduleStartDate": "2020-06-22T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2322,
+  "Modified": "2020-06-23T09:13:22Z",
+  "Created": "2020-06-22T10:25:40Z"
+}

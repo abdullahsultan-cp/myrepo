@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "958151cb-ed9c-4a5f-9b27-9608a016b428",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2dd00796-2113-4aec-b7f5-fd4586e9403f",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "32774317-9402-4fd9-92d9-0b3669bf53e6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ffc59fdf-cfe9-42d0-9374-8b57fd3ceac0",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bbc7f79e-be99-42b5-a7d5-08b7dc035cd5",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e9a6c745-7cbf-480b-b665-5ebbef5bad0d",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "1b78e00f-645c-4e45-95e5-53ee73896084",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "721b669e-99b0-45cb-b5cf-325053fc9800",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2258)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2e04b95c-2467-45d4-9100-f66e4d913ae2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2258,
+  "Title": "Swallowing assessment training for nurses",
+  "NewsSubTitle": null,
+  "NewsSummary": "The service line 10 in collaboration with CIME arranged a simulation-based session for the critical care nurses and technicians to equip them with the required skills and knowledge in swallowing assessment procedures. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassCCDBCC3513F44E0D877D2E442532435C\"><p>Nutrition is the fundamental human physiological need to survive. Patients in the Intensive Care Unit are one of the most vulnerable patients in hospital setting who are in great need of good nutritional support to combat critical diseases. Patients who stay long in ICU settings have swallowing problems after extubation and sometimes they do not tolerate swallowing assessment.</p><p>The service line 10 in collaboration with CIME arranged a simulation-based session for the critical care nurses and technicians to equip them with the required skills and knowledge in swallowing assessment procedures. It also made the learners competent enough to decide whether to initiate diet after extubation or to refer speech language pathologist.</p><p>Six simulated patients were used in six different stations designed at the sim ward area. The learners entered the stations and did the assessment according to hospital protocols, checked the swallowing, and then initiated further steps accordingly. The session was very well received and appreciated by the learners and has boosted their self-confidence.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002170",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "internal medicine",
+      "TermGuid": "09870590-ed80-4da5-beb0-3e1fc864afd2",
+      "WssId": 1842
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "3e549665-5368-4bcf-8be5-b9d23b0619fc",
+      "WssId": 1858
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "4ef98fc0-0961-4dcf-9ea7-bdac4b6c8335",
+      "WssId": 1861
+    }
+  ],
+  "ScheduleStartDate": "2020-05-05T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2258,
+  "Modified": "2020-05-06T07:20:58Z",
+  "Created": "2020-05-05T13:15:11Z"
+}

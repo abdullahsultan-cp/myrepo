@@ -1,0 +1,127 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "239dcb2c-c14e-423f-af28-c9aaec80f567",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e6ed3fa-2d7f-4b2d-962a-f2566efdd728",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e69bb3b7-e7aa-417a-a46a-d1be7a8a12d3",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "061c4b7a-9faf-4c4d-8816-2193f2a0066a",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c7a5b2b6-74ca-4e99-bc3f-5c3db0813434",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6c230832-4b93-450d-93c0-bc7568ffdcb5",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "298cb080-5ef0-486d-9e57-0f07459126b2",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9cb288e3-161d-49ae-a56d-9e7f46b41fb2",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2480)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a5db8298-0f1d-4582-b789-496d2d63da3c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2480,
+  "Title": "AKU's First Lactation Champions Simulation",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Breastfeeding Champions Course was offered to prepare AKU nurses and midwives with basic lactation skills so that they could assist postnatal mothers in lactation and improve breastfeeding outcomes in the hospital.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The Breastfeeding Champions Course was conducted by the International Breastfeeding Lactation consultants in partnership with CIME for the very first time for AKU nurses and midwives working in the service line 4 and 5, and secondary hospitals. The aim was to prepare the learners with basic lactation skills so that they could assist postnatal mothers in lactation and improve breastfeeding outcomes in the hospital. <br/></p><p>The course was held in three simulated stations: Prenatal clinic, Delivery room and Postnatal ward. A total of 23 nurses and midwives participated. They learnt basic lactation skills such as counselling in antenatal, intra-natal and postnatal phases, skin-to-skin contact during intra-natal phase and identifying lactation issues during breastfeeding assessment such as inverted/flat nipples, Mastitis and provide clients with strategies to resolve low milk supply and lactation issues. Additionally, in the task trainer phase, they learnt how to conduct breast massage, hand expressions and observed moulages for mastitis and inverted nipples.</p><p>The learners practiced all these skills on the simulated patients. It built confidence and improved the learners' knowledge and skills to deal with these issues in real life.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002385",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "simulation",
+      "TermGuid": "4ef98fc0-0961-4dcf-9ea7-bdac4b6c8335",
+      "WssId": 1861
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "2a72f4c7-73f4-4765-94d3-1f1b5dc0a48c",
+      "WssId": 1818
+    },
+    {
+      "Label": "Midwifery",
+      "TermGuid": "6b76e640-c8ec-4de8-b35e-f29d6a10273e",
+      "WssId": 1824
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "d81e6f5f-db68-4899-860d-79e20d584a99",
+      "WssId": 1860
+    }
+  ],
+  "ScheduleStartDate": "2020-11-17T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2480,
+  "Modified": "2020-11-17T12:09:40Z",
+  "Created": "2020-11-17T12:05:17Z"
+}

@@ -1,0 +1,121 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7f52ccd4-4600-45c6-b364-e7ecd24157b5",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c72145fb-b900-48cf-917f-32cb6d48ba2b",
+    "Id": 6327,
+    "Title": "stephen.musyoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3ed1705e-45bb-4ae6-bed3-f829e45b99b0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "31b99a40-b222-437d-bdc4-a1814d23fd13",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "da2786cd-98e8-42e6-99bc-7b28a76f127f",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d681f3e7-47f9-4ff0-82e8-b36e03210d6a",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c8da2321-43b0-4299-9c18-06c0bb8dc2ad",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c7d6a621-5778-4328-b904-eb2581834a99",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1713)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9a6bf0bb-ae42-4745-afd5-3fd94b7c42e8",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1713,
+  "Title": "AKU Kenya Sports Fiesta celebrates team spirit ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Activities included football tournament, obstacle race, tug-of-war and swimming competitions. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Excitement, sweat and tears marked the fourth edition of the annual Aga Khan University (AKU) Provost's football tournament and sports fiesta in Nairobi</p><p>The annual sporting event is part of AKU's responsibility to provide students with co-curricular activities to its students and had participation from students, staff and faculty.  </p><p>The Chief Guest at the sports event was Dr Alex Awiti (Interim Vice Provost &amp; Director, East African Institute) who commended the participants for their participation and reiterated that the event brings students, staff and faculty together to demonstrate the team spirit of the university. </p><p>\"The amazing talent displayed today goes to show the various talents we all possess, from karaoke singing which was one of my favorite to the ladies who took to the football pitch. Everybody felt comfortable and this is indeed encouraging,\" he said while congratulating the winners.  </p><p>The listed sports activities for the day included football tournament, 4X100 m relay, obstacle race, tug-of-war, karaoke and swimming competitions. </p><p>Check out the photos on our <a href=\"http://www.facebook.com/pg/AKUKenya/photos/?tab=album&amp;album_id=2153988818191071\" target=\"_blank\">Facebook page </a></p><p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001658",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Kenya",
+      "TermGuid": "1024e6fc-541d-442c-80b4-71ea9b34dd02",
+      "WssId": 1609
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    }
+  ],
+  "ScheduleStartDate": "2018-09-20T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Activities for the day included football tournament, relay, obstacle race, tug-of-war, karaoke and swimming competitions. ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1713,
+  "Modified": "2018-09-20T12:18:53Z",
+  "Created": "2018-09-20T11:48:13Z"
+}

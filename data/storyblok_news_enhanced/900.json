@@ -1,0 +1,165 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "73e52378-1213-4e39-b5dd-2b3483cc92e7",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6f9fb17e-4138-4450-8a08-29222e65422b",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d6631ac7-8db8-4deb-ac14-6a82366be3fc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ee6e1f6e-20f6-47c8-8fe2-bd795344450f",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "bf5fc306-17be-491c-918d-eeee6f703b4d",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8452be9e-b388-4369-a464-f7699089272f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "73297abb-dce0-4235-9e76-90a05899c1b9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3afca74c-bee6-4b6a-bf09-85ba252aa7f3",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(900)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c9852ed-0e9b-42c6-ba52-8bd6cff05351",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 900,
+  "Title": "AKUH's 'Signs, Symptoms and Care' programme active lifestyle can prevent diabetes",
+  "NewsSubTitle": null,
+  "NewsSummary": "Changes in lifestyle can reduce the risk of diabetes by as much as 50 per cent. Research indicates that by lowering blood sugar levels through diet and exercise, diabetes may be prevented before it develops.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Changes in lifestyle can reduce the risk of diabetes by as much as 50 per cent. Research indicates that by lowering blood sugar levels through diet and exercise, diabetes may be prevented before it develops. People with pre-diabetes could prevent the development of 'type 2' diabetes by modifying their diet and increasing their level of physical activity. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This was disclosed by Dr Abdul Jabbar, Head of Section of Endocrinology, Aga Khan University Hospital (AKUH), at 'Signs, Symptoms and Care', a public health awareness programme organised by the Hospital at its Clifton Medical Services facility in Karachi on October 6. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Describing the causes and implications of the disease, Dr Jabbar said that \"approximately nine million people in Pakistan suffer from diabetes.\" He warned that \"diabetes is spreading rapidly in country, two of the main correctable causes of which are sedentary lifestyles and people's tendency of dining out.\" He advised regular monitoring of blood sugar level, diet control and physical activity, adding that diabetic patients also need to protect their hands and feet from wounds. Dr Jabbar also stressed that patients should seek informed knowledge about the use of insulin and its affects, as well as correct dosage. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Jabbar highlighted AKUH's emphasis on intensive lifestyle interventions such as exercise, diet and weight loss in preventing or delaying the onset of diabetes. These measures, he stated, need to be targeted at individuals who are at a high risk of developing the disease. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The programme was attended, among others, by patients, families, students and professionals from the field of medicine."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000858",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    },
+    {
+      "Label": "Diabetes",
+      "TermGuid": "c1ba1283-2835-4ca1-9089-a9a539c13fd3",
+      "WssId": 1942
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "3e73e453-7d46-4c2e-a34e-d0d1b4c1644b",
+      "WssId": 1819
+    }
+  ],
+  "ScheduleStartDate": "2004-10-05T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 900,
+  "Modified": "2020-05-02T17:41:04Z",
+  "Created": "2016-12-23T07:02:04Z"
+}

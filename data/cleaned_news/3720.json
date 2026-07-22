@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d02c459e-79dc-4e80-a22b-c28139b066a4",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c66489f0-e687-42b3-ab08-802e3cfe8349",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f7c7c360-fe3e-48f9-9e02-428655d57c93",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c76e6fc1-14d9-4d9b-b145-64c90e0ce398",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "61903745-345a-4966-b5e8-e206135a8520",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7111e527-77cc-4c00-8ddf-13dd1db30fab",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "241ae37d-7d31-464f-b7b7-8a72925e9cf5",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "857af8f9-ba54-44f0-84c9-c9e6962ebcc5",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3720)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e93a895d-f8a6-4cb3-85f1-ad19bdc92249",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3720,
+  "Title": "Smart Cough Tech to Aid Disease Diagnosis",
+  "NewsSubTitle": null,
+  "NewsSummary": "SONAM, EA faculty's AI project to diagnose cough illnesses wins UKRI-MRC research grant",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass57D4066C81994A2C9AA84BB128F55593\"><p></p><p>Dr Kahabi Isangula of the Aga Khan University School of Nursing and Midwifery, East Africa, has been awarded a prestigious research grant by the United Kingdom Research and Innovation-Medical Research Council (UKRI-MRC) to lead <em>The Kikohozi Classifier</em>, a groundbreaking initiative using artificial intelligence to transform the diagnosis of respiratory diseases in Tanzania. <em>Kikohozi </em>is a Swahili word meaning cough.</p><p>Rooted in a simple but powerful idea, the project aims to develop an AI model capable of analysing cough sounds to detect conditions such as tuberculosis, asthma, pneumonia, and bronchitis. Different respiratory diseases impact the body in ways that alter the structure and acoustics of a person's cough. These differences, often too subtle for the human ear, can be recognized by machine learning algorithms trained on large, well-curated datasets.</p><p>For Dr Kahabi, the project is deeply personal. Growing up in a rural village where access to healthcare and diagnostics was extremely limited, he witnessed firsthand the challenges faced by underserved communities. These early experiences planted the seeds for a career committed to improving health systems through innovation.</p><p>The <em>Kikohozi </em>project combines scientific curiosity with practical impact. Once operational, the AI-powered tool, potentially deployed as a mobile application, could offer an accessible, non-invasive, and cost-effective method to screen for respiratory conditions, particularly in remote settings where lab tests or imaging tools are unavailable or delayed.</p><p>The journey to this milestone has been shaped by persistence. The project was first submitted for funding in 2023 but was not successful. Instead of stepping back, Dr Kahabi used the feedback to strengthen the proposal, publishing a detailed research protocol and drawing on key mentorship and support systems.</p><p>\"If you've ever witnessed the gaps in our health systems, don't let that be just a memory; let it be your motivation,&quot; says Dr Kahabi. \"You don't have to be a bystander or just a consumer of innovation. Be an active contributor. Be an innovator.&quot;</p><p>The Research Initiative for Scientific Excellence (RISE) programme played a critical role in refining the idea, while encouragement from Professor Eunice Ndirangu-Mugo, Dean of SONAM EA, and strategic support from Salim Virani, Vice Provost, Research helped build the project's momentum and global partnerships.</p><p>A major strength of the initiative lies in its diverse and cross-regional team. From the University of Warwick in the UK, the project brings together experts in artificial intelligence, machine learning, digital health, and public health. These include Professor Frances Griffiths, who specializes in health systems and the evaluation of digital health innovations; Dr Phillip Anyanwu, an infectious diseases and social epidemiology expert; and Dr Fayyaz Minhas, whose work focuses on the intersection of AI and healthcare.</p><p>In East Africa, the Emerging Technologies for Health Lab, led by Dr Deogratius Mzurikwao, provides technical leadership in AI development, while Dr Eunice Siaity Pallangyo, Associate Dean at SONAM, EA in Tanzania, brings a strong background and interest in implementation science, ensuring that the intervention remains grounded in real-world health systems.&#160;</p><p>The research will commence in selected communities and tuberculosis clinics throughout Tanzania. Backed by endorsement from the Ministry of Health, the team will collect thousands of cough samples using purpose-built recording booths designed to ensure both privacy and consistency. Alongside the audio samples, limited demographic and clinical data will be collected to support model development. To foster local innovation and capacity building, Tanzanian data scientists will also be invited to build and test their own models using the dataset.</p><p>Beyond technical outputs, the project symbolizes a shift toward context-driven digital health solutions developed by African researchers for African communities. By blending local insight with global expertise, <em>The Kikohozi Classifier</em> is poised to make a lasting impact on how respiratory diseases are detected and managed, not only in Tanzania but potentially across similar low-resource settings around the world.<br></p><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003588",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    },
+    {
+      "Label": "Tanzania",
+      "TermGuid": "bb312009-81c9-41d6-9081-57d28322d073",
+      "WssId": 2187
+    }
+  ],
+  "ScheduleStartDate": "2025-06-20T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3720,
+  "Modified": "2025-06-20T13:21:17Z",
+  "Created": "2025-06-20T13:13:53Z"
+}

@@ -1,0 +1,261 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "027cde8f-a9b8-450a-bd5b-2b7b741934eb",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae263af1-6858-47e8-9a45-e6313826fbf6",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "09dfd16d-2c1d-460f-beed-9f419308d9a3",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e1004bbd-37da-4b13-ad4a-70722e762634",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "4c2c0081-52c0-43e7-ad8a-76e583e53f21",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2c25298a-5d69-48a2-b687-ecda5e0acb39",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9e8493da-29a7-4efa-a093-bb91d1d831e7",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57e9e2c7-8384-4cdd-a8e5-357c6cd685cc",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1355)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5a990f47-1488-45db-87a0-39b584c71d1e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1355,
+  "Title": "CLIP trial demonstrates value of life-saving technology",
+  "NewsSubTitle": null,
+  "NewsSummary": "Mobile health application expands access to treatment for pre-eclampsia and eclampsia. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Every day, lady health workers go door to door in rural and urban Pakistan to provide women and children with basic healthcare services. They represent a vital source of health information and preventive care services that can help avert the onset of life-threatening complications caused by common pregnancy-related disorders. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Among these common pregnancy related disorders, pre-eclampsia accounts for a third of all maternal deaths in the country but there is little or no knowledge about its causes and warning signs.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"There is no word for pre-eclampsia in prominent regional languages like Sindhi. Unlike other childbirth complications, signs of pre-eclampsia cannot be identified easily which limits the chances of early detection and leaves many pregnant women vulnerable to its dangerous complications,\" says Dr Rahat Qureshi, an associate professor in the department of obstetrics and gynaecology at Aga Khan University."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Faculty from the department of obstetrics and gynaecology at of Aga Khan University were involved in the CLIP (Community Level Interventions for Pre-eclampsia) trial in Pakistan. The CLIP intervention sought to evaluate the feasibility of a low cost, technology-focused approach to tackling pre-eclampsia and eclampsia through lady health workers (LHWs)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over three years, 250 LHWs visited 88,000 households in Matiari and Hyderabad to screen pregnant women for symptoms of the disease. LHWs asked mothers about a variety of symptoms related to pre-eclampsia and also measured their blood pressure and oxygen saturation levels. This information was then entered on the spot into a smartphone-based mobile health application, PIERS On the Move, allowing a quick assessment of the risk of severe pre-eclampsia. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "If warnings signs were noted, LHWs were trained to provide prompt treatment by providing anti-hypertensive tablets and/or by administering magnesium sulfate injections. They also created awareness about antenatal care seeking and birth preparedness during pregnancy and referred at-risk mothers to nearby hospitals."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers noted widespread support for the initiative from the community which reached 39,444 pregnant women in the two districts of Sindh. Results from the trial showed a marked improvement in awareness of the disease and in health-seeking behaviour. More than three in four at-risk mothers  listened to LHWs by seeking a referral and nearly 60 per cent of women accepted the treatment offered by LHWs. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"CLIP demonstrates how we can enable LHWs to tackle relevant health problems through training and the use of low-cost technology. Most pregnant women were willing to follow timely advice and treatment which helped make their pregnancies safer,\" Dr Rahat added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The research team now plans to conduct a follow-up study of LHWs involved in the programme to evaluate their experiences of using technology to assess the health of pregnant women during the trial. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The objectives of the study are in line with global efforts to achieve targets under goal 3 of the Sustainable Development Goals. Goal 3: ensure healthy lives and promote well-being for all at all ages, calls for special efforts to reduce preventable deaths of mothers and newborns by 2030. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Funded by the Bill and Melinda Gates Foundation, the CLIP trial in Pakistan was conducted in partnership with faculty from the University of British Columbia in Canada and St George's, University of London, in the United Kingdom. It is part of a multi-county study that conducted similar interventions in India, Nigeria and Mozambique."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Rahat Qureshi and Dr Zulfiqar Bhutta were the primary investigators on the Pakistan component of CLIP along with Dr Sana Sadiq Sheikh and Dr Zahra Hoodbhoy, as co-investigators."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001302",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "8af47938-e185-421e-bd51-de98296e39aa",
+      "WssId": 1384
+    },
+    {
+      "Label": "Umeed-e-Nau",
+      "TermGuid": "f8c53ced-7140-4539-ad01-7563c2a1adbc",
+      "WssId": 1503
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "Grants",
+      "TermGuid": "002a48c6-d604-4924-bea5-293d383627d1",
+      "WssId": 1396
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Obs gyn",
+      "TermGuid": "9787a513-b1bc-4d38-bd94-bb15eb252e6e",
+      "WssId": 1436
+    }
+  ],
+  "ScheduleStartDate": "2017-12-11T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1355,
+  "Modified": "2017-12-12T05:44:55Z",
+  "Created": "2017-12-11T10:50:12Z"
+}

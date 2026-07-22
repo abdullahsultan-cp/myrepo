@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c95c7b66-f2ab-46c9-991f-36f062817139",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "741ad8c3-305b-4c88-8d98-e8977f152c8a",
+    "Id": 19,
+    "Title": "Hiba Khan"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "135eef3a-4716-4940-a246-9e30584b3c18",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5f8ba4e6-4873-4c2a-b103-ccf993bfaa04",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "c9b74862-b5ca-40ea-82a1-78a9206f87c6",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d4164074-c73b-4cf4-97bd-d538a4df16ca",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b3fc864b-2e46-4fc2-b37f-2c3cb0c3a71e",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "59cfd472-4392-44f8-a3e1-cbfaff123f18",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1718)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e17a5592-ea8a-4e7b-b5b1-f213033a597d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1718,
+  "Title": "The Aga Khan University to advise Pumwani Maternity Hospital",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU to advise and assist Pumwani Maternity Hospital to improve care for women and newborns.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassA0CF3B2C41AA4B13BC8A9706213CF62B\"><p></p><div>Pumwani Maternity Hospital has a long history of providing maternity and newborn care to the women of Nairobi and is an important resource for the community.&#160; The Aga Khan University (AKU) has advised and assisted several public hospitals, including Pumwani&#160;Maternity Hospital, by providing assistance in areas such as education, training and research. This is an important part of AKU\u2019s permanent mission to Kenya and East Africa.&#160;</div><div><br></div><div>AKU\u2019s Centre of <a href=\"/coe-wch/ea/Pages/home-1.aspx\">Excellence for Women and Child Health</a>, along with the AKU <a href=\"/mcea/Pages/home.aspx\">Medical College</a>, have entered discussions to advise and assist Pumwani Maternity Hospital to improve care for women and newborns.&#160; This will potentially include specialty training in nursing, obstetrics/gynaecology and paediatrics, where specialist trainees and University faculty collaborate with the Pumwani Maternity Hospital medical and nursing staff. \u200b</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001663",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "8af47938-e185-421e-bd51-de98296e39aa",
+      "WssId": 1384
+    }
+  ],
+  "ScheduleStartDate": "2018-09-24T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1718,
+  "Modified": "2018-09-24T13:33:58Z",
+  "Created": "2018-09-24T13:33:00Z"
+}

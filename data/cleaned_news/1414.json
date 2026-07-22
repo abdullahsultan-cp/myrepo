@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "833fdd17-272c-4a89-8b6c-14690c9e9531",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6a3a79c8-7aa4-4967-b84f-624b4e991988",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "32124228-8efe-4368-9e69-f334f21ab4ab",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4cb46817-1a57-4e11-b35a-1d59f1c51448",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "65a61264-72da-4e59-a166-f7c000de65ea",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c88317e8-1c75-46fa-ba06-d33e7dfecc90",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "74d1596b-57ff-4b27-8dbb-872c3bf77834",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd61d614-badc-48f0-8084-da1b875070a9",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1414)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a58cecc4-ccb5-4c72-958f-ca533f5f0e51",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1414,
+  "Title": "Lamp Lighting ceremony, 2010 at Aga Khan University",
+  "NewsSubTitle": null,
+  "NewsSummary": "Close to 100 second-year nursing students from the Diploma in Nursing and BScN programmes at Aga Khan University School of Nursing took this International Pledge, holding a lighted lamp.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass85F8022849D6444E94665EB9A61BE621\"><p></p><div>\"In full knowledge of the obligations I am undertaking, I promise to care for the sick with all the skill and understanding I possess, without regard to race, creed, colour, politics or social status, sparing no effort to conserve life, to alleviate suffering and to promote health.\" <br><br>Close to 100 second-year nursing students from the Diploma in Nursing and BScN programmes at Aga Khan University School of Nursing took this International Pledge, holding a lighted lamp. The lamp symbolises a promise to uphold the values of the nursing profession and to follow the path set by nursing pioneers, Rufayda Al Aslamiya, the first Muslim nurse, and Florence Nightingale.&quot;</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001361",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Nursing",
+      "TermGuid": "2a72f4c7-73f4-4765-94d3-1f1b5dc0a48c",
+      "WssId": 1818
+    },
+    {
+      "Label": "Midwifery",
+      "TermGuid": "6b76e640-c8ec-4de8-b35e-f29d6a10273e",
+      "WssId": 1824
+    }
+  ],
+  "ScheduleStartDate": "2018-01-03T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1414,
+  "Modified": "2020-05-18T07:23:10Z",
+  "Created": "2018-01-03T11:57:32Z"
+}

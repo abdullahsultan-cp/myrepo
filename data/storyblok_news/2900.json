@@ -1,0 +1,243 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a577b9e2-e830-4b4a-a8c3-fc14974554b8",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ca1314d7-7771-4bce-8ca4-f4d4c192166d",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57ffb4eb-3add-4186-8b73-0f295e42f9a1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a9a32d57-59b9-4912-9241-321ca1117497",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6a0f4150-a644-4dc7-aed3-434c328bd3e1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ab4d2505-49b8-411a-915c-4f389e5302f8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e971e8e5-6cb0-41a7-84f3-c137394dd2bd",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2900)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6ba06d9d-0bec-478e-a0e9-88293c1ca610",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2900,
+  "Title": "Study finds high prevalence of hereditary breast cancer in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "It was conducted by researchers from Aga Khan University and partnering hospitals.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A "
+          },
+          {
+            "type": "text",
+            "text": "study",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://hccpjournal.biomedcentral.com/articles/10.1186/s13053-022-00232-2",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " published in "
+          },
+          {
+            "type": "text",
+            "text": "BMC, Hereditary Cancer in Clinical Practice",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " journal has found a high prevalence of hereditary breast cancer (HBC) in Pakistan."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Conducted by researchers from the Aga Khan University, Karachi and partnering hospitals, the study data is based on patients who visited the HBC clinics at AKU over a three-year period and proceeded with multi-gene panel testing."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Out of all patients who met the criteria for genetic testing, 22 per cent had a positive test result. This is comparable with data from other countries, where the range was between 9.4 to 29.8 per cent. This means that almost a quarter of all those referred for genetic testing had HBC."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most breast cancers are sporadic, i.e., they occur without a known inherited/genetic or preventable cause. Thus, in majority of cases there is no risk of the cancer being passed on to children."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "HBC or genetic breast cancer is less common, but still makes up 10-30 per cent of all breast cancers. People have breast cancer genes that protect them from getting breast cancer. It is when these breast cancer genes become abnormal or mutated, that they are predisposed to breast cancer. Such inherited breast cancers may be passed down within a family from a parent, mother or father, to the children."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our study is the first to report the spectrum of genes beyond BRCA1 and 2 found in breast cancer patients from Pakistan,\" said Fizza Akbar, Genetic Counsellor at the Aga Khan University Hospital and the lead author of the study. \"A striking finding was that of all the patients with abnormal results, almost half had a mutation in a gene other than BRCA1 and 2. This highlights the importance of doing multi-gene testing involving all known breast cancer predisposition genes rather than just testing for BRCA1 and 2 alone.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study also found that patients diagnosed with breast cancer at a young age were more likely to have HBC compared to older women and that 25 per cent had no family history, but had other factors that warranted genetic testing, thus emphasizing that sometimes it is advisable to get testing done even in the absence of a family history."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our study results endorse international criteria for genetic testing as recommended by the National Comprehensive Cancer Network to improve outcomes for patients and their family members,\" stressed Dr Abida K. Sattar, one of the authors and the Head of Breast Surgery and Director of the Comprehensive Breast Surgery Programme at AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "These criteria recommend that genetic testing be offered to all women aged 45 years or younger with breast cancer even without a family history, women older than 45 years who either have a family history of breast or related cancers, recurrence of breast cancer or on both sides, or certain tumour characteristics, and all men with breast cancer."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"If you are a breast cancer patient or if you are healthy but have a family history of breast and other cancers, it is good to discuss with your doctor about the suitability of a genetic test and a referral to a genetics specialist,\" recommended Dr Azmina Valimohammed, Consultant Medical Oncologist at AKUH and one of the authors."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Salman Kirmani, Consultant Medical Geneticist, Chair of the Division of Women and Child Health at AKU and the senior author, highlighted a clear message to the public: \"Finding out that you have a genetic predisposition to breast or related cancers can improve the long-term outcomes both for patients and their family members, as well as provide opportunities to prevent the disease from being transmitted to future generations.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002793",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Breast cancer",
+      "TermGuid": "beb86836-37e2-45d4-965d-e52e7366bf59",
+      "WssId": 2142
+    }
+  ],
+  "ScheduleStartDate": "2022-06-24T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The study was conducted by researchers from Aga Khan University and partnering hospitals..",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2900,
+  "Modified": "2022-06-24T09:47:38Z",
+  "Created": "2022-06-24T09:19:56Z"
+}

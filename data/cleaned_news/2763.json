@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9b10f9a7-28dc-46a6-99d3-76a752f648d4",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ff6d5fd8-9057-4a77-86a8-3bcb05d2be70",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "83601975-c034-4c23-a110-296bae86d763",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1b51eabb-0982-427e-8136-abab7a88ae05",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "71efd064-56fc-43a8-99cd-8d18be44a97c",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c418ab35-2045-4af1-b70f-a094d8771bf0",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "bd8258d2-54bb-40a2-b24a-e332acb890e1",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "379c9fdf-617c-4078-ae81-3e862d715a8b",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2763)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9ef136d2-de25-4b0b-a656-05c07efa9121",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2763,
+  "Title": "Newborn AIMS",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nurse Instructors from AKU's secondary hospitals collaborated with the CIME team to design an activity that focused on identifying and initiating treatment for respiratory distress. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass7F28A393936E42FFAABE24E68CFBFF58\"><p>Respiratory distress in newborn babies can be effectively treated if caught early. With this in mind, Nurse Instructors from AKU's secondary hospitals collaborated with the CIME team to design an activity that focused on identifying and initiating treatment for respiratory distress. </p><p>On the 29th of October 2021, we conducted a workshop on Newborn Assessment, Identification and Management in Secondary Hospitals (also known as Newborn AIMS). Nurses from AKU's hospitals across Karachi and Hyderabad attended the event.</p><p>Participants learned and practiced newborn assessment in line with the Neonatal Resuscitation Algorithm, and put their skills to the test through a combination of task training and high-fidelity simulation modalities.</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002658",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    }
+  ],
+  "ScheduleStartDate": "2021-11-29T20:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2763,
+  "Modified": "2021-11-29T22:20:59Z",
+  "Created": "2021-11-29T22:14:57Z"
+}

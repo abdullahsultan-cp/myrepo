@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5207d629-e65a-45eb-9c23-6816ebb9c9b2",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0784baf4-d001-49f9-b161-949c80fd2d31",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7855dab-b1c3-4d8f-99f0-2d53c574a8a7",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e4ae8473-b544-4a9d-aa75-d235d497a53a",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "470ce8c5-821b-4c54-9fd1-c52556bc2d2d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "48566cfb-0614-4176-9502-ab2a4642d258",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "e6589506-9894-4504-9593-4e0e78abe4f4",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ce7edcb1-05d8-4811-8e8c-2125e9098ee0",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2891)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "39c303cf-c766-47d9-ab0a-16bd9067e639",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2891,
+  "Title": "First Responders Course for The MagnifiScience Centre staff",
+  "NewsSubTitle": null,
+  "NewsSummary": "CIME offered First Responders Courses for The MagnifiScience Centre staff.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassED52B0FF9CFA4C6983002DC0ED82EFCE\"><p><span data-contrast=\"none\" lang=\"EN-GB\"></span></p><p>CIME's highly successful 'Teachers First Responders Course' was adapted to meet the needs of the 170 staff of the MagnifiScience Centre to allow them to respond with confidence to the medical emergencies that regularly occur in visitors to the Centre.</p><p>In groups of 8-10 participants, each had hands-on sessions dealing with 8 commonly occurring situations such as asthmatic attacks, choking, bleeding, falls, safely and effectively. Three full days were required to deliver the course by a team of volunteers from the hospital, student nurses and doctors, the SPIE group, and CIME's team providing educational &amp; technical support and organisational know-how. A Magnifiscientific, Aga Khan-do achievement for the greater good.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002784",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "Workshop",
+      "TermGuid": "a47ffb81-453a-4844-9e93-034723b119be",
+      "WssId": 2213
+    }
+  ],
+  "ScheduleStartDate": "2022-06-09T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2891,
+  "Modified": "2022-06-13T11:43:52Z",
+  "Created": "2022-06-09T11:45:08Z"
+}

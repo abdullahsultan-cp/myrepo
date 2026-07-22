@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "04ceeb23-273a-4b5a-b00a-5ff18d1934fe",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "64bd858a-c82b-4e00-a5f7-7eea8a9b8284",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "99f344fa-2e45-40af-b889-eecf52011a75",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f8dd555e-342b-43a3-9789-301cb5203771",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d89136fa-b711-49e0-8e13-ef7b1a6d2cf1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "715a817e-ec1f-4dda-864b-8a69cae0bfb4",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "ca33a741-2754-4730-9245-ac7b9d4bd8de",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8533664d-5467-4639-b85b-403ea9c26b1b",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2680)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "79da7e28-0bf3-432b-bc4d-c0397a33d7cd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2680,
+  "Title": "Emergency department boot camp for nurses",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Department of Emergency Medicine in partnership with CIME organised a Boot Camp for nurses.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass8783B857B37F4B90ABE84F0F5A7CA536\"><p>The Department of Emergency Medicine accommodates patients who may require critical or non-critical care from a multitude of specialties and sub-specialties. The expected level of performance for an emergency nurse is fluid in its progression from novice to expert based on the nurse's level of learning and experience. Therefore, it is necessary for nurses to achieve competency in both skills which are very frequent, and those which are less frequent in order to achieve an expected level of performance that integrates knowledge, skills, abilities, and judgment. Proper dexterity and continuous practice sessions support nurses to refresh certain priority skills. As a result, issues such as delays in care can be avoided and potential sentinel events can be prevented.&#160;</p><p>Highlighting the challenges that nurses routinely encounter in the patient area of the emergency department, five stations were designed for certain priority skills in this boot camp. These included managing mechanical ventilators, managing portable ventilators, managing and handling CVC lines and obtaining CVP, performing ostomy care when required, and understanding the preparation required for intubation. Each station lasted for 45 minutes, allowing each participant to practise all of their skills as thoroughly as possible. A total of 24 nurses participated in this workshop. Under the supervision of experienced instructors, they gained invaluable skills and knowledge that will surely guide their future practical clinical experiences.&#160;The workshop helped to increase conﬁdence in assessment, decision making, prioritisation and critical thinking skills among the participants.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002578",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Emergency",
+      "TermGuid": "2191ea1c-936e-42a6-bcc8-eedc68d984c9",
+      "WssId": 2190
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    }
+  ],
+  "ScheduleStartDate": "2021-06-29T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2680,
+  "Modified": "2021-06-29T09:43:10Z",
+  "Created": "2021-06-29T09:34:44Z"
+}

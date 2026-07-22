@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "481a1d30-0293-4298-bcfa-b8f36f0df380",
+  "odata.etag": "\"19\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f19c9532-e47c-4490-8a0c-f9488016583e",
+    "Id": 287,
+    "Title": "Daniel Raynor"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9b4bad6d-c10e-449a-bef8-2bbc1e283a3e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "474e36e8-5019-43d5-82d9-f17889bcabf7",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3fc2f65a-f269-4175-8b30-4e8fd5bce619",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "92c16720-acf9-4d3e-b87e-8e520967dddf",
+    "Id": 13,
+    "Title": "Network of English Language Enhancement"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c5a4c512-1f50-4753-b961-a499964e2f9f",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1774)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd82f7b4-c9bd-4339-8734-f4cc99a7b61c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1774,
+  "Title": "Academic Presentation Skills Course",
+  "NewsSubTitle": null,
+  "NewsSummary": "ELE_net's new course Academic Presentation Skills is being offered to students in Nairobi, Kenya. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>ELE_net's new course <a href=\"/ele-net/students/Pages/academic_speaking.aspx\" target=\"_blank\">Academic Presentation Skills</a> is being offered to students in Nairobi, Kenya. This course aims at helping SONAM BScN students in their final year to prepare for the academic presentations they have to give for their electives. It does this by providing training in the language and skills needed for academic presentations and giving talks in professional contexts more generally.</p><p>The course is hosted on AKU's VLE and students attend weekly webinars or online lessons taught from Dar es Salaam, Tanzania. Course participants are also required to access input material including online resources and videos available on the course site, and upload video presentations on the platform.</p><p>ELE_net plans to expand the provision of 'virtual' face-to-face teaching to other AKU programmes and campuses in 2019. </p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001716",
+  "LocalApproverGroup": "ELE News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "network of english language enhancement",
+      "TermGuid": "4faf2085-64a1-492d-b971-0626b65f5480",
+      "WssId": 1540
+    }
+  ],
+  "ScheduleStartDate": "2018-12-02T20:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1774,
+  "Modified": "2019-02-27T09:56:37Z",
+  "Created": "2018-11-28T19:41:35Z"
+}

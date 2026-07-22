@@ -1,0 +1,232 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "93768300-741d-4d68-9bad-85add6cf8829",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "68d26160-2a99-4866-877e-12baed97da08",
+    "Id": 7068,
+    "Title": "martie.mtange"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bf95f730-c79e-4aa5-b4f1-c2c3ea5ba28a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6a110429-49c3-494e-bb73-176911b27f8f",
+    "Id": 7068,
+    "Title": "martie.mtange",
+    "EMail": "martie.mtange@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "66e43989-cf39-4f97-adec-15dd602bd896",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "55ad66d8-a70b-4713-8a3d-730c3078284c",
+    "Id": 9,
+    "Title": "School of Nursing and Midwifery, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "299c6b4e-c65a-4607-bade-984b6265c9b2",
+    "Id": 7068,
+    "Title": "martie.mtange",
+    "EMail": "martie.mtange@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1941)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ad49ce5e-7c68-44ad-b0bf-b886dfeef643",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1941,
+  "Title": "Working to improve adolescent health in Northern Nigeria",
+  "NewsSubTitle": "AKU-SONAM EA faculty works with international collaborators to improve the health of adolescents in Nigeria",
+  "NewsSummary": "Dr Ahmed Sarki, a senior faculty member at AKU-SONAM EA founded the Family and Youth Health Initiative (FAYOHI) to improve health indices in Nigeria. He works with families and adolescents in the country to provide access to healthcare facilities.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As if being a teenager is not difficult enough, adolescents living in Northern Nigeria have to worry about social restrictions, poor socio-economic conditions and the threat of Boko Haram attacks. This is the reality of several young men and women who live in Northern Nigeria. According to a "
+          },
+          {
+            "type": "text",
+            "text": "World Bank report ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://documents.worldbank.org/curated/en/103491483646246005/pdf/ACS19141-REVISED-PUBLIC-Pov-assessment-final.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "(2016), this region has the highest infant and maternal mortality rate in the country as well as the lowest rate of child enrolment in schools, the highest number of unemployed young people and the highest levels of poverty in Nigeria."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Ahmed Sarki is a senior instructor based out of AKU-SONAM Uganda who is originally from this region of Nigeria. \"Unfortunately, my people do not value education enough. In fact, I was probably one of the first people from my area to have a Master's degree and a PhD as well\" he shares. As a result of the multitude of challenges his community faces, Dr Sarki founded the "
+          },
+          {
+            "type": "text",
+            "text": "Family and Youth Health Initiative ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.fayohi.org/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "(FAYOHI), an organization that seeks to improve the health indices of families and youth in Nigeria. The establishment is involved in sensitization campaigns on cardiovascular disease, action against malaria, anti-tobacco, anti-shisha and hand-washing advocacy among other initiatives. The issues targeted by the campaign are those that impact young people in Kano and Jigawa states because Dr Sarki believes that the government has neglected this demographic, leaving a support and education gap that needs to be filled."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As part of his work, the AKU-SONAM faculty member is now a co-investigator on the Schools Health Promotion (SHP) Project. He works alongside representatives from the University of Hull (UK), the Global Challenges Research Fund (England) as well as the Jigawa and Kano State governments to find out how young people can influence each other positively for better health outcomes. He believes that through a peer-to-peer approach, there can be increased vaccination uptake, better health-seeking behaviour, reduced substance abuse and lower rates of underage pregnancies and maternal mortality."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": " "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "On April 24, 2019, FAYOHI hosted a research symposium on adolescent health in Kano state and invited various stakeholders (policy makers, traditional and religious leaders, development sector workers, school administrators, academics, researchers, parents and adolescents) to share their knowledge and discuss how to improve adolescent health in the area. During the symposium, Professor Smith from the University of Hull shared that, \"In this region of Nigeria, 1 in 13 women dies during pregnancy or childbirth. Some of the reasons for this are that girls marry at a young age - the average is 15 years old - and consequently get pregnant soon after. There is a high unmet need for sexual and reproductive health education and family planning services.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Similarly, on May 14-15, 2019, Dr Sarki presented an abstract on the SHP initiative at the "
+          },
+          {
+            "type": "text",
+            "text": "Global Perspectives on Improving Population Health 2019: A Public Health Approach",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.phe-events.org.uk/hpa/frontend/reg/thome.csp?pageID=359406&eventID=834&traceRedir=2",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " conference that was hosted by WHO at the Liverpool John Moores University. These are the sizeable steps Dr Sarki is taking to ensure that young mothers and babies in Nigeria stay alive, young people receive adequate healthcare and are educated to make wiser choices for their future and the future of their country."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001870",
+  "LocalApproverGroup": "Sonam EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    },
+    {
+      "Label": "Midwifery",
+      "TermGuid": "04c22a46-cc85-4657-85d3-c8826c1615a6",
+      "WssId": 1376
+    },
+    {
+      "Label": "Adolescence",
+      "TermGuid": "7b917015-19d6-46f5-88c1-20ac55f2e8e6",
+      "WssId": 1501
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2019-07-22T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Ahmed Sarki speaking during a recent event",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1941,
+  "Modified": "2019-07-23T06:48:17Z",
+  "Created": "2019-07-22T14:54:31Z"
+}

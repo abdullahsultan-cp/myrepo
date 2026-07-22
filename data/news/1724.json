@@ -1,0 +1,103 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0521635a-06c9-4e26-968e-639a53d5e469",
+  "odata.etag": "\"3\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f0e6bcc2-344a-43f3-90b1-19f7da2c36b8",
+    "Id": 7153,
+    "Title": "Samina Wahid"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/Publisher",
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "1dac036a-a41a-4ca4-ace7-fe9c4d0ad1ff",
+    "Id": 11,
+    "Title": "Patient, student & alumni stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "dafecd2e-8130-4863-96a9-4513e033190c",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b16dabad-2d75-4c56-8346-fe35d497b165",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "14f42fd9-d98d-481c-a652-7a1ecb93d762",
+    "Id": 7153,
+    "Title": "Samina Wahid",
+    "EMail": "samina.wahid@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1724)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "50554777-3e03-4d03-9c42-665f96a3268a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1724,
+  "Title": "A nurse's journey",
+  "NewsSubTitle": null,
+  "NewsSummary": "A Tanzanian nurse explains the importance of effective communication with patients",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass496629AB164748FF81152D4929CA7C32\"><div>Tanzania\u2019s Esther Mwalugala, BScN \u201905, is one of many nursing alumni interviewed for a study of the impact of the 15-year partnership between the Johnson &amp; Johnson Corporate Citizenship Trust and AKU. This is her story, in her own words&#58;&#160;</div><div>\u201cWhen I worked on Pemba Island, I built the capacity of healthcare providers caring for pregnant mothers and newborns. We made sure nurses knew the signs of dangerous labour, how to handle emergencies and when to arrange transfer to the district hospital. We educated local people on the need to deliver in facilities. I also asked community leaders to ensure every expecting mama had transport, and when the pregnancy is advanced, for mama to stay near the hospital. I also motivated my colleagues to apply for further education.&#160;</div><div>Since then, I have been managing as well as training healthcare providers and community leaders to prevent HIV/AIDS and other diseases. I have worked with several different NGOs in different regions of Tanzania. Today, I am working in the Southern Highlands. My focus is preventing transmission of HIV from mothers to babies, and making sure all HIV-positive people receive quality care.&#160;</div><div>Something important I learned at AKU is to explain to people why things are necessary. You have to make them understand for themselves, to empower them. During harvest season, a woman might think, \u2018Why should I go to the health facility and stay waiting for a test?\u2019 But when they understand the importance, they will go.&#160;</div><div>Aga Khan University prepared us to be teachers and role models. It helped me in communication issues, building concepts based on what you observe, in public speaking, in teaching others to understand my mind and feelings. It taught me that everybody has something to offer, so give chances for others to speak. It really prepared us at a high level.\u201d</div><div><br></div><br></div>",
+  "PullQuote": "\u200bSomething important I learned at AKU is to explain to people why things are necessary. You have to make them understand for themselves, to empower them.\u200b",
+  "PullQuoteAuthor": "Esther Mwalugala",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001668",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Nursing",
+      "TermGuid": "770165ec-c858-4c3a-b152-ff70b540aea9",
+      "WssId": 1377
+    },
+    {
+      "Label": "Impact",
+      "TermGuid": "dfaf5f0f-b252-4969-9d20-aa4dec3ede08",
+      "WssId": 1689
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "0594c307-e9dc-4878-875e-573062629e64",
+      "WssId": 1483
+    }
+  ],
+  "ScheduleStartDate": "2018-10-16T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1724,
+  "Modified": "2018-10-11T08:04:24Z",
+  "Created": "2018-10-11T08:04:24Z"
+}

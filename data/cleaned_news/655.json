@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bd8cdf53-620f-458c-a1a3-90a71141b29b",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0cf4f28-298e-4836-bdfe-ca14213040d1",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61340255-7de4-49da-9dde-b5e2b87aa3b1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a56b44a-16c6-4f67-a14a-d420537d7dc8",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "b224db3d-ebb9-4bb4-999b-3a41f18bfe2f",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b7a4c944-59eb-49c1-9a25-88223a0620cc",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c6354d5d-af12-446f-a209-640b0a56db57",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ff0efaff-649c-412a-8def-c35b02edecda",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(655)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dad69fd3-1551-4a0d-9ada-d2433137de78",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 655,
+  "Title": "Heart diseases more common in women than in men",
+  "NewsSubTitle": "Study by AKU Researchers",
+  "NewsSummary": "A large population based study conducted in Karachi revealed that heart disease may be more common in women compared to men.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass0E9DC986D4F64886BDEFFECFF02720E2\"><div>A large population based study conducted in Karachi revealed that heart disease may be more common in women compared to men. Published as an early release in this week's issue of the international scientific journal, Heart , this study is one of the largest community based studies conducted in the South Asian region, on over 3,000 men and women aged 40 years or above.&#160;</div><div><br></div><div>All subjects underwent standardised physical examination and laboratory tests including electrocardiograms, which were sent to the United Kingdom for coding. Evidence of abnormalities on electrocardiograms suggestive of heart disease, which have been linked with greater chances of death, were more common in women (one in three) than in men (one in six).</div><div><br></div><div>The risk factors contributing to a high prevalence of these ominous changes were presence of high blood pressure, diabetes, elevated cholesterol and obesity. In addition, smoking was a strong contributing factor in men.&#160;</div><div>&#160;&#160;</div><div>The lead investigator of the study, Dr Tazeen Jafar, Director of Clinical Epidemiology Unit and Associate Professor, Departments of Medicine and Community Health Sciences at Aga Khan University , commented that, \"Worldwide evidence demonstrates that women with heart disease are more likely to be misdiagnosed than men. Consequently, women are at greater risk of being under-treated and dying after a heart attack. Our findings underscore the importance of alerting the public and the general physicians to the high probability of heart disease in Pakistani women. &#160;In addition, efforts are needed at a population level to reduce the burden of hypertension, diabetes, high cholesterol, lack of exercise, tobacco use, unhealthy diets, and obesity in both women and men\". Funded by the Wellcome Trust, UK , Dr Jafar's research team is testing cost effective population strategies for prevention of these conditions.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000613",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Hypertension",
+      "TermGuid": "ac7fa6bd-3fce-4011-b456-13fc1fa3f6fd",
+      "WssId": 1433
+    }
+  ],
+  "ScheduleStartDate": "2007-07-28T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 655,
+  "Modified": "2017-02-22T08:53:55Z",
+  "Created": "2016-12-15T05:55:26Z"
+}

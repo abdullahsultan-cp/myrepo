@@ -1,0 +1,209 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "252c9ff4-6d79-4268-a32b-5104281b9c6f",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fa1730e0-68d1-4a86-89e1-72f268819198",
+    "Id": 18650,
+    "Title": "Fiona.Wachera"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1c6bef5c-80cb-4b1a-832d-cd77d9ee94a0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a4101408-839f-4041-ab98-69d53fd4664f",
+    "Id": 18650,
+    "Title": "Fiona.Wachera",
+    "EMail": "fiona.njagi@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c60328b3-a1b9-4b2d-a354-2925e75c300a",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6b091031-f912-4ad7-b896-b2f9e70262e3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "d3f59e8e-7ae8-4136-9608-0d3ccc923e8e",
+      "Id": 35,
+      "Title": "Arusha Climate and Environmental Research Centre  "
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "43f2b42c-1374-46ed-90be-48a024cde31f",
+    "Id": 18650,
+    "Title": "Fiona.Wachera",
+    "EMail": "fiona.njagi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3702)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "34bae64c-0933-4382-99c8-41e03a5b9a0d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3702,
+  "Title": "AKU-ACER & TH Köln Partner for Global Climate Action",
+  "NewsSubTitle": null,
+  "NewsSummary": "Collaboration on urban food forests spearheads innovative research and sustainability",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University Arusha Climate and Environmental Research Centre (AKU-ACER) is rapidly emerging as a significant force in climate and environmental research, both regionally and globally. Through strategic partnerships, AKU-ACER is boosting its impact, driving innovation, and nurturing future environmental leaders."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Operating from a nearly 4,000-acre \"living laboratory\" in Arusha, Tanzania, AKU-ACER is dedicated to tackling critical global challenges like climate change and environmental sustainability, with collaboration at its core."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A notable international partnership is developing with TH Köln (Cologne University of Applied Sciences) in Germany. Supported by the City of Cologne, a team from five TH Köln faculties is creating \"SpeiseWald Süd,\" an Urban FoodForest planned for Cologne's Parkstadt Süd in the early 2030s."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "SpeiseWald Süd, designed as a Living Lab, will serve as a dynamic platform for research and collaboration, engaging local citizens and organizations. This initiative aligns with the Cologne Food Council's \"Edible City\" concept. Through collaborations with local initiatives like NeuLand e.V., the project will explore innovative ways to involve stakeholders in creating an urban FoodForest based on permaculture principles."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The SpeiseWald Süd project deeply aligns with AKU-ACER's mission. It emphasizes co-creation and citizen engagement by designing spaces that encourage collaboration and explore innovative governance models. The project also investigates proximity food systems, analyzing local food networks to identify crucial points for sustainable urban agriculture in partnership with local farmers. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Furthermore, it focuses on ecosystem understanding and nature-based solutions through studying local flora and fauna, assessing soil quality, and using edible plants to improve soil health, aligning with goals of climate resilience and biodiversity. Data monitoring and impact assessment are integral, employing sensors, citizen science, Digital Twins, and AI to quantify ecosystem performance and inform policy, while also understanding the human impact of engaging with the FoodForest."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The project champions food education by collaborating with local schools to develop programmes for diverse backgrounds, fostering inclusion and intergenerational learning. It also builds transdisciplinary collaborations with various actors like cafés, restaurants, and chefs to promote safe, healthy, and environmentally friendly food. Finally, SpeiseWald Süd is committed to knowledge transfer and network creation, sharing best practices and connecting different living labs and EU-funded projects to build a Global Urban Food Systems Network."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Emmanuel Sulle, Assistant Professor and Director of AKU-ACER, is a key international contact for this project, underscoring the direct link for collaborative learning and knowledge exchange.. \"Such partnerships are vital for AKU-ACER as it addresses complex environmental challenges through transdisciplinary research, community engagement, and innovative education.\", Dr Sulle shared. By uniting global experts and fostering the exchange of best practices, AKU-ACER aims to unlock innovative solutions for improving human and animal health while promoting environmental sustainability."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003570",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Arusha Climate Environmental Research",
+      "TermGuid": "2ac96631-9cb0-487b-89d1-9a3ca8b1afba",
+      "WssId": 2552
+    },
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    }
+  ],
+  "ScheduleStartDate": "2025-06-10T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3702,
+  "Modified": "2025-06-11T06:27:00Z",
+  "Created": "2025-06-10T13:08:06Z"
+}

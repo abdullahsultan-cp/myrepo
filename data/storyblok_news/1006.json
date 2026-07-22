@@ -1,0 +1,169 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1f2114e1-e161-42b1-8350-fb6a985263f5",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dbf6c176-c2f0-421e-b1c2-27fae4be2c53",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ba388fe9-1a00-4157-b6bb-7a8c4f6cb65b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "33b5d970-cfba-478d-ad77-7d81b90a1907",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e50f7395-d039-45e1-8fcb-aca9785b164f",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d3bce5e0-ce47-4aa8-b25f-46213779bd0e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f07ba47c-5a27-4254-9361-62a0c145e5e8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2c31ed4b-2d35-49a8-a746-22e775f9f5cf",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1006)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e8f48ecc-2e2b-4847-bbb0-367614c78bdf",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1006,
+  "Title": "AKU Postgraduate Medical Education conference",
+  "NewsSubTitle": "Medical Experts Recommend Leadership and Communications Skills as Integral Part of Postgraduate Training",
+  "NewsSummary": "It is being internationally recognised that producing technically proficient and professionally competent doctors means not only the acquisition of professional skills but also the abilities of critical thinking, communication, effective management o",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "It is being internationally recognised that producing technically proficient and professionally competent doctors means not only the acquisition of professional skills but also the abilities of critical thinking, communication, effective management of personal and external resources and of innovation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This was stated by Dr. Saad Bashir Associate Professor and Chief of Neurosurgery at Aga Khan University (AKU), at the postgraduate medical education conference titled 'Service and Scholarship: Striking the Balance in Postgraduate Medical Education' at AKU on May 30, 2003."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Bashir added that trainee doctors are so occupied in providing clinical services that the areas of critical thinking, communications, and skills in effective management, are never given the importance they deserve. \"The issue is how to incorporate all this in the training of young doctors,\" he suggested."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference brought together national experts including, Dr. Camer Vellani of AKU, Dr. Fozia Qureshi, Ziauddin Medical University, Dr. Azher Ahmed, Baqai Medical College, Dr. Tasleem Akhter, PMRC, and Dr. Syeda Kauser, CPSP, to discuss this issue that is being debated all over the world.  Ideas were discussed and recommendations made, that would be incorporated in postgraduate medical training programmes, so that universities and colleges produce doctors of the highest standards, researchers, teachers and trainers who are better able to cope with and lead the changes occurring in the field of medicine."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Experts recommended that scholarships should be recognised as an integral part of medical practice not only by trainees but also by the trainers and the institutions where they work. This will allow an enabling environment to develop researchers, thinkers and leaders.  \"In this regard, it is of fundamental importance that as professionals, and as a society, we give value to critical thinking, a spirit of inquiry and jettison the centuries-old baggage of blind obedience to authority,\" added Dr. Bashir. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference, a collaborative effort, should lead to the formulation of concrete proposals which could become part of postgraduate medical training programmes not only in the institutions that participated in this conference but also in those across Pakistan."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000964",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Medical education",
+      "TermGuid": "c4348316-b0a1-4ca5-a133-b70689d66efc",
+      "WssId": 1840
+    },
+    {
+      "Label": "Postgraduate medical education",
+      "TermGuid": "955304c1-87bb-4a9b-a2ab-a43548103081",
+      "WssId": 1893
+    }
+  ],
+  "ScheduleStartDate": "2003-05-30T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1006,
+  "Modified": "2020-03-12T04:24:52Z",
+  "Created": "2016-12-27T11:52:31Z"
+}

@@ -1,0 +1,151 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "fbf5342a-3343-4abd-b7ff-35ada93658bd",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "400e9190-2bba-4529-8c0c-fdd3a273e4e1",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "55063fe5-daae-4c8c-a351-9c43a75a4a66",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "28c65eae-f482-41b4-b170-05408bcee751",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "9f878b12-b301-4103-b24a-a726958c5271",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "560a5174-3a28-41db-95b1-6e47dadbe8b2",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "96db764d-2ac3-4fa0-9adb-f367d2145929",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2b943caf-ee30-4955-aa1b-19ef55573dde",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1463)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4fff80ac-21ba-4733-9aeb-ec1a7b94a240",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1463,
+  "Title": "Viral hemorrhagic fever in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Different varieties of viral hemorrhagic fevers are found throughout the world. The one most prevalent to this region is the Congo Crimean virus. Symptoms include high fever and body aches, followed within a few days by bleeding from the nose, mouth.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Different varieties of viral hemorrhagic fevers are found throughout the world. The one most prevalent to this region is the Congo Crimean virus. Symptoms include high fever and body aches, followed within a few days by bleeding from the nose, mouth, ears, lungs or rectum. The virus has been most prevalent in Balochistan. It call be contracted through infected animals and patients' blood and body fluid secretions. There is currently no proven cure for the disease, and most patients die of bleeding complications."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A blood sample of a nursing assistant at the Aga Khan University Hospital was recently sent to the Centre of Disease Control, Atlanta, USA. It confirmed on Friday November 3, 2000, that death had occurred due to the virus. The nursing assistant had been caring for a patient from Balochistan who had also died of the virus before it was diagnosed. The Hospital is taking strict precautionary measures needed to ensure immediate detection and containment of those with suspected symptoms, prevention and dissemination of information in the Hospital."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Patients, staff and visitors who come in direct contact with such infected patients are appropriately protected, and are safe and are not at risk of acquiring this disease."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All hospitals in Karachi are advised to undertake extreme vigilance by immediately isolating those patients showing symptoms of high fever and bleeding. Strict isolation of the patients, the use of gowns, gloves and masks for all health care workers coming in contact with a patient's blood or body fluids is an essential requirement for controlling the spread of the virus."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001410",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2000-11-06T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1463,
+  "Modified": "2019-12-09T10:12:00Z",
+  "Created": "2018-01-22T07:01:26Z"
+}

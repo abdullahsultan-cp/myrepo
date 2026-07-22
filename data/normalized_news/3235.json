@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b32ea6fe-8621-44ad-a35c-6055e6b937d1",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5b6351db-4528-4655-b8d8-57e352a9ce7a",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "631ea1ed-37c4-4c2c-908a-d49db06e2a9d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a9fd9d7b-01d3-462e-be4c-cc0ca90e532f",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "88110342-89be-41ea-8cbe-af2062788f8f",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "770502fa-4ecd-484a-9efa-76fb6531ee6f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "25b7c692-633b-4039-b739-537da42d552a",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6cdbdf0a-5d5a-42ea-b9b0-9f18c2e3d35a",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3235)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "43ed6559-8dac-4949-81d5-e1c86d745749",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3235,
+  "Title": "AKU, Center for Global Health Equity awarded NIH Grant",
+  "NewsSubTitle": null,
+  "NewsSummary": "The NIH grant will be used for colorectal cancer diagnostic research",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>Aga Khan University (AKU) in Kenya, a valued partner of the <a href=\"https://globalhealthequity.umich.edu/\" target=\"_blank\">Center for Global Health Equity</a> (CGHE) at the University of Michigan, was recently awarded a $750,000 research grant from the National Institutes of Health (NIH) to study the use of AI technology to overcome barriers in specialized training required for diagnosing and predicting outcomes in cases of colorectal cancer in Africa. The project marks a significant milestone in the joint efforts of CGHE and AKU to enhance and fortify the healthcare system in Kenya through a shared commitment to high quality research and human capacity strengthening. </p><p>Colorectal cancer is a significant public health concern across Africa, where specialized training and access to advanced diagnostic technologies have posed substantial barriers to early diagnosis and effective treatment. This grant from NIH will enable Aga Khan University, supported by CGHE, to investigate the use of artificial intelligence and machine learning technologies to improve the speed and accuracy of colorectal cancer diagnosis. </p><p>The NIH-funded research initiative will be led by an interdisciplinary team of oncologists, pathologists, surgeons, statisticians, and informaticians from Aga Khan University, CGHE, and Tenwek Hospital-a community-based public hospital in Bomet, Kenya. </p><p>The project's leadership includes: Mansoor Saleh, Founding Director of the Cancer Centre, Aga Khan University (PI); Shahin Sayed,  Associate  Professor of Pathology, Aga Khan University (PI); Abdallah Abdulkarim, Chair, Department of Surgery, Aga Khan University (Co-I); Michael Mwachiro, Chair, Education, Research, and Scientific Committee, College of Surgeons of East, Central and Southern Africa (COSECSA) (Co-I); Robert Parker, Head of Research, Tenwek Hospital (Consultant); Akbar Waljee, Department of Learning Health Sciences, U-M (PI); Ulysses G J. Balis, Professor of Pathology Informatics, U-M (PI); and Arvind Rao,  Associate Professor, Computational Medicine and Bioinformatics, U-M (PI). </p><p>This new project builds on ongoing collaborative research efforts between AKU and CGHE, including the Utilizing Health Information for Meaningful impact in East Africa through Data Science (UZIMA-DS) Research Hub. The <a href=\"https://globalhealthequity.umich.edu/news-events/news/aga-khan-university-receives-grant-establish-novel-research-hub\" target=\"_blank\">UZIMA-DS Research Hub</a> aims to create a scalable, sustainable platform to apply novel approaches to data assimilation and advanced artificial intelligence- and machine learning-based methods to serve as early warning systems to improve health outcomes in Africa. </p><p>Dr Mansoor Saleh, Founding Director of the <a href=\"/cru/Pages/home.aspx\">Cancer Centre</a>, expressed the importance of this collaborative project which will leverage the expertise across the three organizations of AKU, Tenwek Hospital, and CGHE saying: \"I am thrilled with this NIH grant, which will enable us to make meaningful strides in addressing the challenges of colorectal cancer diagnosis and prognostication in Africa. Our ultimate goal is to create a future where diagnostic limitations, especially in the area of histo- and molecular-pathology, can be overcome through the use of artificial intelligence and machine learning.\" </p><p>CGHE member and U-M Professor Akbar Waljee- director of the Aga Khan University and University of Michigan collaboration-remarked on the strength of the partnership between the two institutions: \"This NIH grant is a testament to the incredible research collaboration between the Center for Global Health Equity at the University of Michigan and Aga Khan University in Kenya. It highlights the potential of research originating in Kenya to make a lasting impact on global health. Together, we are committed to advancing healthcare and promoting equity in health outcomes for all.\" </p><p>The Center for Global Health Equity and Aga Khan University are dedicated to making healthcare more accessible, affordable, and effective for communities in Africa and around the world. This NIH grant represents a significant step forward in achieving this mission, and both institutions look forward to the positive impact this research will have on colorectal cancer diagnosis and treatment in Africa.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003114",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Grants",
+      "TermGuid": "e28388d0-f201-414a-a997-952723c8bd2f",
+      "WssId": 2200
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Cancer",
+      "TermGuid": "b3303c12-15b7-4289-8f43-f35626de1d32",
+      "WssId": 2141
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    }
+  ],
+  "ScheduleStartDate": "2023-10-17T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3235,
+  "Modified": "2023-10-18T08:10:36Z",
+  "Created": "2023-10-17T07:30:04Z"
+}

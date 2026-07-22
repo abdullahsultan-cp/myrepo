@@ -1,0 +1,231 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7d57011a-3882-4cd1-96b2-98361d21c0c5",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d8704c14-3266-4d21-8f93-e5f968347ebe",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b5d7e0f-5f04-49d6-8aa9-7175fe3250c5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0dd66baa-6532-4a2b-ba39-975c7541270a",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d82a1ef4-3411-4df3-8050-eb59b6609924",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e20ceac0-eccd-43cf-8b49-c88d3c7cf374",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "cc34d135-5ca2-4734-a743-2d839dfa8d09",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "931a9db9-8436-4527-98bb-4bfd26d333d6",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3170)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61afb065-fe28-424b-b0f8-5687a9caec90",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3170,
+  "Title": "New leadership at the Centre for Innovation in Medical Education",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Faisal Ismail and Dr Michael Moneypenny appointed Regional Directors",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Faisal Wasim Ismail and Dr Michael Moneypenny have been appointed Regional Directors for the Centre for Innovation in Medical Education (CIME) in South Asia and East Africa respectively. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Ismail served as the Interim Director for CIME since February 2023. He is an Associate Professor and Gastroenterologist, as well as the Vice-Chair of Education in the Department of Medicine at AKU. Additionally, he is also the Director of the Endoscopic retrograde cholangiopancreatography (ERCP) fellowship program in the Gastroenterology department."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Ismail is a Certified Healthcare Simulation Educator (CHSE), a qualification bestowed by the Society for Simulation in Healthcare (SSH) and has a Masters' degree in Healthcare Simulation from the University of Alabama in Birmingham. A passion for excellence in teaching and learning led Dr Ismail to become a Senior Fellow of the Higher Education Academy of the UK, and a trained Assessor of the Advance Higher Education - AKU TEACH (Teaching Enhancement Accredited Certification of the HEA) Scheme. He is also an Inaugural Member of the Haile T. Debas Teachers Academy at AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "An example of world-class homegrown talent, Dr Ismail has a long history with the Aga Khan University.  He completed his MBBS in 1997 and is an alumnus of AKU`s postgraduate medical education programme. He pursued a residency in Internal Medicine (1999-2003) and a fellowship in Gastroenterology and Hepatology (2003-2006) at AKU and served as chief resident in both programmes.  Subsequently, Dr Ismail has served in key leadership roles in under and post-graduate medical education at AKU. He has also won several awards for excellence in teaching and has numerous publications in peer-reviewed journals in clinical medicine and medical education to his credit. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With a strong clinical foundation, Dr Ismail was drawn to simulation from CIME's inception in 2015 and was involved in developing and revising many of the Centre's initial policies and procedures. At a time of change in interprofessional education in health services, Dr Ismail champions teamwork between nurses and physicians as the Director of Pakistan's only Interprofessional Simulation Certificate course in liver diseases, where physicians and nurses learn as equal team members. This award-winning course serves to build local capacity to treat liver diseases. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Reflecting the growing importance of healthcare simulation in East Africa, in 2021, CIME launched in Nairobi, with new sites scheduled to open in Kampala, Uganda and Dar es Salaam, Tanzania in due course."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Moneypenny's involvement in simulation-based learning (SBL) extends back to his clinical research fellowship at the University of Liverpool in 2010.  Early research interests in teamwork, leadership, and authority gradients continue to inform his vision of simulation-based learning in low- and middle-income countries. This vision includes the use of simulation to design the training and conditions which will allow healthcare workers to flourish in their professions and provide the best possible care to patients. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over the last two decades, Dr Moneypenny has developed a wide range of leadership experience, both in acute emergency settings and at the strategic level. He has served as the Associate Postgraduate Dean for Skills and Simulation at NHS Education for Scotland and as the Senior Clinical Lead for the Clinical Skills Managed Educational Network (CSMEN) for the last seven years.  In 2019, CSMEN received the prestigious Association for Medical Education in Europe's (AMEE) Aspire award in simulation-based education. CSMEN was the first simulation network in the world to receive this award and the first organisation to receive this award in the United Kingdom.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Moneypenny graduated with an honours degree in Biochemistry from the University of Bath in England (1997).  At the University of Dundee in Scotland, he graduated with honours in Medicine (2002). While working as a clinical research fellow at the Centre for Excellence in Developing Professionalism based within the Medical School of the University of Liverpool, he received a postgraduate certificate in medical education from Edge Hill University (2010). He was awarded an MD in Medical Education from the University of Liverpool (2015) after taking up his post as a Consultant Anaesthetist at Forth Valley Royal Hospital in Larbert, Scotland."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As a consultant anaesthetist with a special interest in emergency surgery, Dr Moneypenny understands the quotidian operations of a busy hospital. As a lead significant adverse event reviewer, he aims to improve the systems in which healthcare practitioners work, making them safer for both staff and patients. As an educational coordinator at Scotland's national simulation centre, he has honed his skills in creating, running, and debriefing learning events for a wide variety of healthcare workers.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The two Regional Directors will work together to advance AKU's vision and mission for healthcare simulation and innovation in the regions we operate."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003051",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2023-08-03T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Faisal Ismail (left) and Dr Michael Moneypenny (right) will work together to advance healthcare simulation ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3170,
+  "Modified": "2023-08-03T05:53:20Z",
+  "Created": "2023-08-03T05:49:41Z"
+}

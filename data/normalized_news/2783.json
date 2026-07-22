@@ -1,0 +1,110 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "62b1df54-b02d-4506-8b3e-97be5b1f23af",
+  "odata.etag": "\"31\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4685a6af-71fb-4283-8fad-c378d609e0d7",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e9a9251-e62e-4e10-88cc-fa7ffc905950",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "045a76ec-9771-409c-8334-76ef68775563",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2904f6b2-0128-4d18-b481-73c34562d5b3",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "65d5705f-e91f-4d08-b614-fe4eb8440134",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "abffd6e4-8b51-4f39-b046-787c6df0b740",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2783)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a6280c58-1144-4afe-afe5-5b2d74402476",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2783,
+  "Title": "The Great Divide in Legal Discourse",
+  "NewsSubTitle": null,
+  "NewsSummary": "A new publication by AKU-ISMC's Professor Gianluca Parolin and Professor Badouin Dupret.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>AKU-ISMC's Professor <a href=\"/ismc/people/Pages/gianluca-parolin.aspx\" target=\"_blank\">Gianluca Parolin</a> has published a new chapter with Professor Badouin Dupret on <a href=\"https://brill.com/view/book/9789004498716/BP000002.xml\" target=\"_blank\"><em>The Great Divide in Legal Discourse: Towards a Global Historical Ontology of the Concept of Positive Law</em></a><em> </em>in the book <a href=\"https://brill.com/view/title/61137\" target=\"_blank\"><em>State Law and Legal Positivism</em></a>.<br/></p><p>It is the opening chapter in an edited volume dedicated to the global rise of a new legal paradigm in the 19th century, i.e. legal positivism. In it, Professor Dupret articulates an argument around the concept of 'law' within the Foucauldian 'field of stabilisation and usage,' while Professor Parolin sketches the trajectory of such a field (and the concept of 'law') in a case study-19th century Egypt.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002678",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2022-01-19T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2783,
+  "Modified": "2022-01-20T10:59:03Z",
+  "Created": "2022-01-19T15:29:27Z"
+}

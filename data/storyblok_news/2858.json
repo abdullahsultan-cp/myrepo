@@ -1,0 +1,233 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "866a8948-cd3a-453b-9746-8356c89d6606",
+  "odata.etag": "\"40\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9f1f542b-baa2-40eb-b223-a0d329a7e9ca",
+    "Id": 14494,
+    "Title": "Amber Ajani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d4960f75-04e3-4633-be81-4ee5c8fe19e0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "37744db5-86b2-4399-b9aa-5c2960b3ee6d",
+    "Id": 14494,
+    "Title": "Amber Ajani",
+    "EMail": "amber.ajani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1aa965c4-9350-4768-a467-414054356ea1",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "45585635-9d8f-4b2d-a34f-98c638b40628",
+    "Id": 32,
+    "Title": "Environmental Responsibility"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a62340d4-8ddc-47c0-8b71-ad89532045da",
+    "Id": 14494,
+    "Title": "Amber Ajani",
+    "EMail": "amber.ajani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2858)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8cef574c-1804-4291-bdc2-78cef4e207a5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2858,
+  "Title": "AKU students plant indigenous trees in celebration of Earth Day",
+  "NewsSubTitle": null,
+  "NewsSummary": "Students from Pakistan and Uganda join hands to plant trees on this Earth Day",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To celebrate Earth Day, AKU's Office of Environment and Sustainability, for the first time, partnered with students to plant trees on its Stadium Road campus in Karachi and Kampala campus in Uganda. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Earth Day is an annual event that honors the environmental movement which was started in the 1970s. It aims to spread environmental awareness with civil society engagement all over the world. The theme for 2022 is \"Invest in our planet\". "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU believes in supplementing environmental awareness raising with opportunities to make an impact on the ground and is striving to develop and implement an inclusive, effective, and action-oriented sustainability strategy. The Earth Day celebrations at AKU adopted a two-prong approach where students planted trees to take action on the ground and awareness materials were shared with staff and students."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "src": "/news/PublishingImages/pages/News_Admin/Kampala.JPG",
+          "alt": "Kampala.JPG"
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The small-scale planting of trees with students on our global campuses is symbolic of the seriousness of "
+          },
+          {
+            "type": "text",
+            "text": "AKU's commitment to sustainability",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/Pages/News_Details.aspx?nid=NEWS-002730",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and implementing an inclusive and on-ground approach."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sustainability has been identified as a core strategic priority for AKU and is recognized as a cross-cutting agenda across mandates, geographies, and expertise within the institution. Climate change in particular directly relates to the health subjects that many AKU students are studying. Therefore, it is crucial that students are engaged as partners to address environmental challenges and further climate action. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The students showed great enthusiasm and willingness to participate in the plantation activity and contribute to campus greening. As part of the activity, 10 Neem trees were planted in Karachi and 10 trees were planted in Kampala. Neem tree is native to the subcontinent and is an evergreen and fast-growing tree, ideal for arid climates as it can withstand drought conditions. Neem products are found to be virtually non-toxic and are compatible with beneficial insects, pollinators and bees. In Uganda, a diversity of trees was planted: 3 African Mahogany trees,  2 Mango trees, Palm tree, Orange tree, Pinus patula, Prunus Africana and Albizia coriaria. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition to promoting the plantation activity on social media, a 'guide to action' was shared with all AKU staff and students with the aim to promote awareness and inspire action. The guide contains simple actionable steps to encourage everyone to start taking mindful environmental action in their daily life. Even though sustainability encompasses a broad spectrum of action and themes, the guide highlighted the sub-themes of planting trees, reducing food waste and initiating climate conversations, as starting points. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Read more on AKU's environmental work "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/about/environment/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and stay tuned for more sustainability related events and activities!"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002751",
+  "LocalApproverGroup": "CA environment",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2022-04-22T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2858,
+  "Modified": "2022-04-26T15:40:41Z",
+  "Created": "2022-04-22T08:03:02Z"
+}

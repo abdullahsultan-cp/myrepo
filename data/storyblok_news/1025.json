@@ -1,0 +1,214 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f183e2ae-af04-40e5-b4ff-80742d716c61",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ca146743-7fb7-4a8f-a410-30a91cd68bf5",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "17bcfce2-8c6a-42c5-b17e-2a0dcac38750",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "426c8d95-faa8-4821-bb15-0454a230b5b1",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "b9a643cc-3200-4f15-b95b-4311bc17dc1e",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "19a7c736-a16c-4641-a35d-0566f10dfa16",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2af3aa96-4838-4f06-9131-6b6228f73a9c",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eca802e8-0001-4ea0-bc59-9ddeeeff54a0",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1025)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "72cb3af2-57a3-4b9a-a397-9df80725e8da",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1025,
+  "Title": "International Breastfeeding Day: Only 20% of newborns are breastfed",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University Hospital (AKUH) celebrated the International Breastfeeding Day as part of the international breastfeeding week on August 7, 2001, in line with the global theme 'Breastfeeding in the Information Age'.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University Hospital (AKUH) celebrated the International Breastfeeding Day as part of the international breastfeeding week on August 7, 2001, in line with the global theme 'Breastfeeding in the Information Age'. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The objective of the event was to promote breastfeeding, highlight its importance and create awareness of exclusive breastfeeding among mothers and healthcare providers. The event was organised by the Paediatrics, Obstetrics/Gynaecology. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The programme began with a welcome speech by Khurshid Khowaja, Director Nursing Services, AKUH, who introduced the audience to the breastfeeding concept and highlighted its importance to the mother as well as the child. She said, \"Breastfeeding provides optimum nourishment to the child and reduces chances of disease. It is important to educate mothers and families to breastfeed babies for two years.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Rahat Qureshi, Acting Chair of Obstetrics/Gynaecology Department, perspective of breastfeeding and explained its growing importance worldwide. In line with the World Breastfeeding Week 2001 goals, Dr. Qureshi suggested that it was necessary to highlight various modes of communications and ways of using them to improve core breastfeeding. \"Breastfeeding is good for the mother as well as for the child. it causes better intellectual development of the child.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Gaffar Billo, Chair of Paediatrics Department at AKUH, explained that \"every year over five million babies are born and to date only 20% are exclusively breastfed. This leaves a very big challenge for all of us - to reach the remainder 80%, that is four million mothers who are not exclusively breastfeeding. Of these, 20% are bottle-feeding. This leads to a colossal loss of life as a result of diarrhoea and pneumonia, which occur more frequently in bottle-fed babies. Additionally, Pakistan has to import formula milk, the cost of which had gone from Rs. 200 million in 1990 to Rs. 1,200 million in 2000, in spite of the fact that Pakistan is an agriculture country. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Billo proposed that \"if we could look after the nutrition of mothers and educate and encourage them to breastfeed their babies, we will not only save millions, but will also save"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "thousands of children dying of diarrhoea and pneumonia in the first year of their lives. Dr. Billo said it was imperative to \"join hands and wage war against the bottle, as you can see, that breastfeeding is the best investment in the future of our nation.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Farida Datto, Head Nurse of Consulting Clinics/Community Health Centre, AKUH, explained how AKUH overcame the obstacles to acquiring baby-friendly certificate. She said, \"Nurses are fully trained and bottles have been removed from the proximity of the Hospital, which ensures proper breastfeeding practices.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The chief guest of the occasion was Professor Noor Jehan Samad, former Professor and Head of Obstetrics/Gynaecology at Dow Medical College, and Chairperson of Sindh Provincial Breastfeeding Steering Committee. She has been instrumental in leading "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "baby-friendly initiative in Sindh, which resulted in 48 hospitals in Sindh being declared baby-friendly, out of a total of 66 in Pakistan. She suggested that AKUH should pass the message on to other hospitals and healthcare institutions. Commending the role of nurses, Prof. Samad said: \"Nurses are closest to the patients, and the nursing component at AKUH is very strong, which is the sole reason why AKUH has been successful in the baby-friendly initiative.\" She requested the government to pass an already pending legislation that is in favour of breastfeeding, and not the infant formula industry.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The event was attended by over 450 people, including the staff and faculty of AKU and Mother and Child hospitals in Garden, Karimabad and Kharadar. A panel discussion with mothers was followed by a prize distribution for poster and quiz competitions, which highlighted the importance of breastfeeding."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000983",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Obs gyn",
+      "TermGuid": "9787a513-b1bc-4d38-bd94-bb15eb252e6e",
+      "WssId": 1436
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2001-08-07T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1025,
+  "Modified": "2019-12-11T12:10:01Z",
+  "Created": "2016-12-28T05:24:20Z"
+}

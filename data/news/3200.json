@@ -1,0 +1,127 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "db346cbc-6b5e-43a2-800b-e1ecdc3700e6",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b08660af-fdb1-4f45-993a-9d2e21f88bb1",
+    "Id": 15367,
+    "Title": "Maura Malanga"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d1d07ad2-7341-4f00-b1b0-0176fb27d8de",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "824d7afd-c55a-4d23-9621-ecce2d680f26",
+    "Id": 15367,
+    "Title": "Maura Malanga",
+    "EMail": "maura.malanga@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "36276d03-2d3d-4ff2-8d67-8f8ffd53bc56",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "80534001-c72e-43b5-8562-144be0572dd1",
+    "Id": 11,
+    "Title": "Centre of Excellence in Women and Child Health"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "7188adb5-b082-4e1d-bea2-756a13c67246",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8a8c1240-c3b7-4061-a574-886c2d360513",
+    "Id": 15367,
+    "Title": "Maura Malanga",
+    "EMail": "maura.malanga@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3200)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "04c21be4-ddd2-4a5b-8b01-62d3a59b9d9c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3200,
+  "Title": "Lancet Series calls for urgent commitments to save millions of newborn lives",
+  "NewsSubTitle": null,
+  "NewsSummary": "Low-cost pregnancy interventions could prevent small vulnerable newborns and stillbirths",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass889072800ADB4B3A8BA15D3B798E747A\"><p>\u200b<span style=\"text-align&#58;justify;\">An estimated 566,000 stillbirths and 5.2 million preterm or underweight births could be prevented each year by implementing eight accessible and cost-effective pregnancy interventions in low-and-middle-income countries, as revealed by the <a href=\"https&#58;//preventsvn.org/series/\" target=\"_blank\">Lancet Series on Small Vulnerable Newborns</a> (SVN). The estimated cost of implementing these measures is $1.1 billion by the year 2030.</span></p><p style=\"text-align&#58;justify;\">The Series, created through an international collaboration of a group of scientists, presents a new conceptual framework that brings preterm birth, small for gestational age (SGA), and low birthweight (LBW) together under the umbrella term \u201csmall vulnerable newborns\u201d (SVN). This new terminology and framework gives global and local actors a shared terminology and framing of the issue, allowing them to work together to implement change.</p><p style=\"text-align&#58;justify;\">One in every four babies in the world is either 'born too small' or 'born too soon' accounting for 1.9 million stillbirths and 1.4 million newborn deaths annually across the world. Sub-Saharan Africa has the highest rate of SVN babies at 20% of newborns born too small or too soon, second to only Southern Asia. The survivors are vulnerable to health problems throughout their life course, affecting human capital, economic productivity, and healthcare costs. Furthermore, while the situation is the most challenging in Sub-Saharan Africa and Southern Asia, rates of data availability are also the lowest in these regions, making it difficult for decision makers to meaningfully address this issue.</p><p style=\"text-align&#58;justify;\">The Series provides low-cost, evidence-based pregnancy interventions for the prevention of SVNs and stillbirths. These interventions include multiple micronutrient supplements, treatment of syphilis, and treatment of asymptomatic bacteriuria (a bacterial infection of the urine) for all women. The targeted interventions provided include low-dose aspirin, balanced protein energy supplements, prevention of malaria in pregnancy, progesterone provided vaginally, and smoking cessation. In addition, implementing girls\u2019 and women\u2019s reproductive rights is key to preventing pregnancy complications and poor pregnancy outcomes.</p><p style=\"text-align&#58;justify;\">Although addressing the issue of SVNs has been on the global agenda for years, global trends show that the situation has not improved. This indicates a pressing need for national actors, along with global partners, to commit to providing high quality of care for all women during pregnancy and at birth. This includes implementing the World Health Organization (WHO) antenatal care guidelines that include a screening ultrasound for all pregnant women.&#160;</p><p style=\"text-align&#58;justify;\">Prof Marleen Temmerman, Director of Aga Khan University\u2019s Centre of Excellence in Women and Child Health, East Africa (CoEWCH EA) says, \u201cOne out of 4 babies is born too early, to small, or stillborn. It is our moral duty to invest in prevention of small vulnerable newborns through early and high quality antenatal and childbirth care and through girls and women reproductive rights.\u201d</p><p style=\"text-align&#58;justify;\">As part of the advocacy efforts to prevent SVNs, Aga Khan University\u2019s Centre of Excellence in Women and Child Health, East Africa (CoEWCH EA) in collaboration with the Small Vulnerable Newborn Consortium hosted the regional launch of the Lancet Series on Small Vulnerable Newborns in Nairobi.&#160; The launch brought together academics, healthcare professionals, policy experts, and parents of SVNs to share findings from the Lancet SVN series, advocate for SVN prevention, and discuss local opportunities and priorities to catalyse a movement for change.</p><p style=\"text-align&#58;justify;\">The launch called for relevant actors to urgently prioritise action, advocate for, and invest in the prevention of SVNs to reverse the current trend, reduce SVN outcomes and ultimately save the lives of millions of babies. \u201c20% of babies born in Sub-Saharan Africa are small vulnerable newborns, yet prevention is possible.&#160; This is the challenge we all need to tackle, the Nairobi launch aims to help us do this,\u201d says Dr Abdu Mohiddin, Physician Scientist and Assistant Professor at the Aga Khan University.</p><p style=\"text-align&#58;justify;\">The five-paper Series and the regional launches were funded by Children\u2019s Investment Fund Foundation (CIFF) and Bill and Melinda Gates Foundation (BMGF) and involves experts from the Aga Khan University, Tampere University, Johns Hopkins University, London School of Hygiene &amp; Tropical Medicine, University College London, and University of Botswana.\u200b\u200b<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003081",
+  "LocalApproverGroup": "COE WCH News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Maternal health",
+      "TermGuid": "1cf5b8d7-62db-4ef9-9655-208326bd5266",
+      "WssId": 2352
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "6db413d6-a4df-4471-93de-a395835b20dd",
+      "WssId": 2154
+    },
+    {
+      "Label": "Stillbirth",
+      "TermGuid": "f1e428a2-1bb5-46c2-bb46-c3437c903725",
+      "WssId": 2486
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "1f5f9259-00ce-4800-8819-6a850f05c492",
+      "WssId": 2186
+    }
+  ],
+  "ScheduleStartDate": "2023-09-21T09:50:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3200,
+  "Modified": "2023-09-21T11:41:59Z",
+  "Created": "2023-09-21T10:53:57Z"
+}

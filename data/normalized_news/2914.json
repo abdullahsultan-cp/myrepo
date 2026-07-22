@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e1ff1c37-c907-4b68-b530-94c5152c8339",
+  "odata.etag": "\"44\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e6e66d05-cf1a-45a2-b1b5-6637658157f5",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8de890e0-9dd4-47ca-99ca-1736703c5dc1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c3003c81-34dc-4f7a-be08-8c0751d3ae42",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a54a8c86-ef2a-4260-b21e-ad148df82960",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "49cd5e5d-1db1-47ed-97fb-e7eebb33aaad",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "27900909-d1f0-491d-9ffa-b25f94d9681e",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2914)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4df6d7e2-990d-4d03-ae22-4d44dfc9dc71",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2914,
+  "Title": "Mellon Grant Funds Continuation of Islamicate Text Digitisation Project",
+  "NewsSubTitle": "Press Release",
+  "NewsSummary": "The Grant supports the research project to expand digital access to manuscripts and books from the premodern Islamicate world.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p><br/></p><h2>A $1.75 million grant will help expand digital access to Arabic, Persian, Ottoman Turkish and Urdu manuscripts and books.<br/><br/></h2><p>The University of Maryland has received a $1.75 million grant from the Mellon Foundation to continue development of open-source technology to expand digital access to manuscripts and books from the premodern Islamicate world in Arabic, Persian, Ottoman Turkish and Urdu.</p><p>Matthew Thomas Miller, assistant professor in the Roshan Institute for Persian Studies in the School of Languages, Literatures, and Cultures, leads the interdisciplinary team of researchers, including David Smith from Northeastern University, Sarah Bowen Savant from Aga Khan University (AKU) in London, Taylor Berg-Kirkpatrick from the University of California, San Diego, and Raffaele Viglianti from the Maryland Institute for Technology in the Humanities at Maryland. The Mellon Foundation has been funding the project, known as \"<a href=\"https://openiti.org/\" target=\"_blank\">OpenITI AOCP</a>,\" since 2019.</p><p>\"Over the past four years we have made incredible progress on the creation of digital infrastructure for Islamicate studies, and that is thanks in large part to the Mellon Foundation,\" Miller said. \"We are honored that the foundation continues to support our efforts to expand access to and digitally preserve such a rich and important cultural tradition.\"</p><p>There are currently hundreds of thousands-perhaps even millions-of premodern Islamicate books and manuscripts that are not able to be accessed digitally by academics or the public, Miller said.</p><p>Thus far, the project team-made up of computer science and humanities experts-has successfully improved the accuracy of open-source Persian and Arabic optical character recognition (OCR) software, which is a system that turns physical, printed documents into machine-readable text. Under the new grant, they will use this OCR software to produce 2,500 new digitized Persian and Arabic texts, as well as expand the OCR system's capabilities into Ottoman Turkish and Urdu.</p><p>They also aim to improve the accuracy of open-source handwritten text recognition (HTR) for Arabic-script manuscripts. A subfield of OCR technology, HTR tools are designed to read a diversity of human handwriting types with high levels of accuracy.</p><p>The team will also roll out a user-friendly redesign of its <a href=\"https://www.escriptorium.uk/\" target=\"_blank\">eScriptorium</a> platform, which hosts the open-source tools. This latest Mellon grant will last three years. (Last year, Miller <a href=\"https://arhu.umd.edu/news/arhu-researchers-earn-neh-grants-digital-humanities-efforts\" target=\"_blank\">also received a grant</a> from the National Endowment for the Humanities to support the project.)</p><p>Though he hopes its next phase of developments mark a major improvement for Arabic, Persian, Ottoman Turkish and Urdu texts, Miller said the goal ultimately is for the open-source tools to be used across a wide variety of languages.</p><p>\"We really hope the technology will be reused by other users, especially those working in other under-resourced languages,\" he said. \"It's designed to meet the needs of varied users.\"<br/><br/></p><p><em>Press Release Source: </em><a href=\"https://arhu.umd.edu/news/mellon-grant-funds-continuation-islamicate-text-digitization-project\" target=\"_blank\"><em>By Jessica Weiss, University of Maryland</em></a><em>.</em><br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002806",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "United Kingdom",
+      "TermGuid": "70207756-0466-4733-98c6-f1892ee3c011",
+      "WssId": 2172
+    }
+  ],
+  "ScheduleStartDate": "2022-07-14T06:30:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Persian ruba'i (quatrain) calligraphy dating between circa 1610 and circa 1620.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2914,
+  "Modified": "2022-07-14T11:38:02Z",
+  "Created": "2022-07-14T10:35:10Z"
+}

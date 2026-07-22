@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b955e1d6-ebb1-4224-bcb1-b8fbed34e60c",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "72db7f54-a2f2-4870-a4ce-20cfb5c2a6e1",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f6f30cef-6640-4fc7-8215-56ac0821c0a0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "94cbb2e4-5ad5-4fe2-b920-599ca5d2d9f9",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah",
+    "EMail": "faiza.hakim@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7eaced9a-1609-45da-9144-ba26c59831cd",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "07258975-cd6d-4c41-b864-373654d19367",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ef59a76e-25a3-4d06-b7d4-4c5ada854141",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah",
+    "EMail": "faiza.hakim@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3594)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "86b61f1b-1208-4cb5-a838-a0412fa24dc4",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3594,
+  "Title": "AKU Paediatrics Faculty Attends WHO Workshop in Istanbul ",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU faculty attends WHO workshop on data analysis & manuscript writing in Istanbul for global PSBI study.  ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassE890519224064E7BB8645ED360CDA181\"><p>Aga Khan University's Paediatrics Department recently participated in a significant WHO workshop held in Istanbul, Turkey. The workshop focused on data analysis and manuscript writing for a research project studying the optimal hospitalization duration for young infants with signs of serious bacterial infection (PSBI). This global research project involves multi-country clinical trials aimed at improving the management of young infants at risk of PSBI, a condition with significant mortality risk.&#160; &#160;<br></p><p>The World Health Organization (WHO) is coordinating these clinical trials in partnership with the Bill &amp; Melinda Gates Foundation, with trials being conducted across 3 African countries (Ethiopia, Nigeria, and Tanzania) and 3 Asian countries (Bangladesh, India, and Pakistan). The goal of the trials is to determine whether young infants under 2 months old with moderate-risk signs of PSBI should be hospitalized or treated on an outpatient basis, with early home care as an option for those who improve quickly.&#160; &#160;</p><p>The study has 2 randomized controlled trials (RCT), which aim to compare 2 treatment approaches for these infants. The AKU team, which contributed valuable input to the study, included Drs. Imran Nisar, Fyezah Jehan, Benazir Baloch, and their collaborators. These experts presented findings from the Pakistan site of the study and the workshop aimed to build the capacity of site investigators, particularly from low- and middle-income countries, to interpret data, perform analysis, and draft manuscripts based on their findings.&#160; &#160;</p><p>As this multi-country study progresses, it is expected to yield critical insights into the management of PSBI in infants, which could shape future treatment protocols globally. This research holds immense promise in improving health outcomes and reducing unnecessary hospitalizations for young infants in resource-limited settings. This workshop and the ongoing research are examples of how global collaboration in healthcare research can lead to more effective, targeted interventions that can save lives and enhance healthcare systems in underserved regions.&#160;&#160;</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-003463",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Paediatrics",
+      "TermGuid": "125d0f34-a35b-4610-841d-05672a104e1e",
+      "WssId": 2189
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2025-01-15T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3594,
+  "Modified": "2025-01-15T10:50:52Z",
+  "Created": "2025-01-15T10:25:10Z"
+}

@@ -1,0 +1,338 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c2a4e0c4-7698-498c-9cf4-760cc44e3fc4",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6192c858-1453-46ca-a3bc-3b52b58af2a9",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "99e81017-db33-4710-bc77-b515aa265b5b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d9849a45-06ab-4c30-9c97-c37580b7e9b5",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "35523480-67e1-48d2-acd3-dac489a29c27",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4f4847dc-7658-425f-b893-853e0ae763cb",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "e004f86f-3e75-4371-a55a-5e15cea7a838",
+      "Id": 32,
+      "Title": "Environmental Responsibility"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "15fa0f6f-f2ef-4783-a331-3e7ecea91714",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3109)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aea314db-f605-41ee-83f7-871045b060d1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3109,
+  "Title": "AKU Kenya wins Green Building Award",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Energy Management Awards recognises industry players in environmental stewardship",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University in Kenya has won the 'Green Building Award - Best New Entrant' at the "
+          },
+          {
+            "type": "text",
+            "text": "19th Energy Management Awards",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://kam.co.ke/kam-hosts-19th-energy-management-awards/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". The awards, hosted by the Kenya Association of Manufacturers, recognises industry players who have made contributions towards environmental stewardship and conservation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking during the awards ceremony, the Cabinet Secretary, Ministry of Energy and Petroleum Hon Davis Chirchir, highlighted the place of energy in the country's socio-economic prosperity and called for its responsible production and consumption. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU Kenya was nominated for the award by the Green Building Society and Azmeena Bhanji, Chairperson and Regional General Manager, Real Estate Developments at PDM Holdings Limited."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While receiving the award, Interim Associate Vice Provost Gitonga M'Mbijjewe said, \"This award demonstrates the value of 'future proofing' the building for energy conservation and environmental conservation purposes, and touches on the importance of investing in such opportunities.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In 2022, the University Centre in Nairobi achieved "
+          },
+          {
+            "type": "text",
+            "text": "EDGE Advanced certification",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://edgebuildings.com/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " for its multiple sustainability features. The certification was made possible through verification by independent EDGE auditors, "
+          },
+          {
+            "type": "text",
+            "text": "Sintali",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.sintali.com/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "EDGE Advanced requires that at least 40 percent energy is saved in the building operation in contrast to an average new construction in the respective area, and at least 20 percent savings in both water and embodied energy in materials."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "From inception, the "
+          },
+          {
+            "type": "text",
+            "text": "University Centre",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/uc-nbi/Pages/home.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " has considered sustainability aspects while designing with the user in mind and making the most of the very small site of less than two acres. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan Development Network (AKDN), and with it AKU, has set itself the ambition to attain net "
+          },
+          {
+            "type": "text",
+            "text": "zero carbon operations by 2030",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/about/environment/Pages/home.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Detailed greenhouse gas accounting of AKU's operations has found that over 80 percent of energy is consumed by and in buildings. The AKDN's "
+          },
+          {
+            "type": "text",
+            "text": "Green Building Policy",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " mandates a number of measures, including new buildings to achieve at EDGE Advanced or even EDGE Zero standards, regular energy audits, or that each year five percent of existing building space becomes carbon neutral to operate."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002993",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    },
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    },
+    {
+      "Label": "University Centre",
+      "TermGuid": "af91cbea-8e91-41f1-8135-410b570e1289",
+      "WssId": 2160
+    }
+  ],
+  "ScheduleStartDate": "2023-05-15T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU Kenya Interim Associate Vice Provost Gitonga M'Mbijjewe received the award",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3109,
+  "Modified": "2023-05-15T12:34:01Z",
+  "Created": "2023-05-15T12:30:54Z"
+}

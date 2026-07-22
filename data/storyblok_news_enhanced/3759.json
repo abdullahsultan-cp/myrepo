@@ -1,0 +1,271 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "794dd591-80ab-4629-9265-b3e6eb951f73",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "35304c89-0f12-4247-815e-cac3a601bc10",
+    "Id": 19933,
+    "Title": "Maxwel Anekea"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c2318c9d-223a-4e5b-b749-4a0fefb6b879",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0af7e630-b79c-415c-91ad-7a31769a2c2b",
+    "Id": 19933,
+    "Title": "Maxwel Anekea",
+    "EMail": "maxwel.anekea@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "623b91b8-97f9-4596-b3e5-193ba596a786",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f7667835-d3b6-42da-a4eb-ca4315395c73",
+    "Id": 9,
+    "Title": "School of Nursing and Midwifery, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "73333766-cd9a-416a-840a-9f0af433d5c7",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "f4bc04e2-f50f-4af6-9992-d0036da13d18",
+      "Id": 4,
+      "Title": "Global"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f0af016f-732a-4feb-9bc8-81766bd2a21e",
+    "Id": 19933,
+    "Title": "Maxwel Anekea",
+    "EMail": "maxwel.anekea@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3759)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8396017f-5802-422c-9e82-8f8c4eda2390",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3759,
+  "Title": "Building healthier futures beyond the bedside",
+  "NewsSubTitle": null,
+  "NewsSummary": "From Kawempe to leadership, an AKU alumna's journey of care and community",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Growing up in the crowded streets of Kawempe Division in Kampala, Uganda, Kaziro Nakiboneka Moureen often saw women giving birth at home, without medical assistance. It was a harsh reality, and one that quietly sparked a dream in her. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "That dream carried her through years of nursing and midwifery training and ultimately to The Aga Khan University, where she earned a Bachelor of Science degree in Midwifery. Today, Moureen is not only a respected midwife but also a mentor, entrepreneur, and advocate for more compassionate, inclusive healthcare in Uganda."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I didn't just want to be a nurse,\" she says. \"I wanted to bring hope and be a safe space for women when they had nowhere else to go.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her journey began with psychiatric nursing at Butabika School of Psychiatric Nursing, where she developed an appreciation for the emotional weight patients often carry. She later trained in midwifery at Mulago School of Nursing and Midwifery, learning how to care for both the physical and emotional needs of mothers and newborns. For her, caring for a mother goes beyond the delivery room; it also means addressing her mental and emotional well-being. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "It was at AKU where her perspective and confidence deepened. The hands-on training, exposure to leadership, and strong emphasis on ethics helped her refine not only her clinical skills but also her voice. AKU reinforced her belief that nurses and midwives can be leaders, not just in hospital settings, but in communities and policy spaces. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since then, Moureen's work has spanned in some of Uganda's busiest healthcare facilities, including Kampala Hospital, Kasangati Health Centre IV, Hoima Regional Referral Hospital, Aga Khan University Clinics, and now Entebbe Regional Referral Hospital, where she leads the maternity general ward."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At Hoima during the COVID-19 pandemic, she managed both medical and mental health departments. Her role extended beyond clinical care; she provided emotional support to patients and colleagues, helping them remain resilient through one of the most challenging times in recent history."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While in Hoima, she also encountered an alarming number of young mothers struggling to feed their children. In response, she founded MOR's Nutrition, a small business that produces affordable porridge flour to fight childhood malnutrition. The initiative now supports dozens of families and has grown into a model for nutrition-based community care."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition to her clinical work, Moureen leads workshops through REMI East Africa, training other health professionals in digital skills, mental health awareness, and storytelling. Mentorship has become one of the most rewarding aspects of her work, as she helps shape the next generation of nurses and midwives, many of whom continue to seek her guidance."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her commitment to professional growth has led her to undertake short courses in neonatal care, postpartum care, leadership, family planning, and patient-centred care. She is also a fellow of the Young African Leaders Initiative (YALI) and the Oaks & Crown Leadership Academy and hopes to pursue a master's degree soon."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Balancing her roles as a mother, healthcare professional, and entrepreneur has come with financial pressures, emotional fatigue, and moments of self-doubt. But she draws strength from a deep sense of purpose, which keeps her grounded and focused."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"To me, healthcare is not just a job. It's a promise to care, to lift others, and to build a healthier, more hopeful future.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Moureen's next objective is to shape health policy, emphasizing the importance of maternal and mental healthcare. Her story is a testament to how AKU alumni are not only serving their communities but also helping to shape the future of healthcare in East Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003626",
+  "LocalApproverGroup": "Sonam EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    },
+    {
+      "Label": "Caregiving",
+      "TermGuid": "1a3c836d-3757-44d1-9d61-3ec0b49912ee",
+      "WssId": 2447
+    }
+  ],
+  "ScheduleStartDate": "2025-08-07T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3759,
+  "Modified": "2025-08-11T12:38:24Z",
+  "Created": "2025-08-07T09:01:08Z"
+}

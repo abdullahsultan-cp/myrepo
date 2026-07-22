@@ -1,0 +1,249 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "66988892-2178-4d84-847b-f1666a7c2c0a",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "85ea13fd-c260-4ad4-8d58-0b1505b99de4",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0546d347-9d76-423f-9de0-98a37769d6d3",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a98f5b0-0937-4b04-8f85-ef1d50264dd9",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "cc0ce900-a9e4-4db7-8c5c-5178a7cfec6f",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "fc0fbb0c-47d2-473d-9c11-1dedec70da98",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "9c991c15-a788-4df2-b1d3-f1090aba9011",
+      "Id": 18,
+      "Title": "Institute for Human Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "706e8771-268c-4cf5-bc38-348d302c5fd6",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3582)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c58fa986-2176-4614-9442-68d12c4208d5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3582,
+  "Title": "Dr Zulfiqar Bhutta Honoured with Order of Canada",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Bhutta's recognition an inspiration to Pakistan and healthcare professionals globally",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In a moment of immense pride for Pakistan and the global academic community, "
+          },
+          {
+            "type": "text",
+            "text": "Dr Zulfiqar Ahmed Bhutta",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/about/officers/Pages/founding-director-ighd.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", one of the world's foremost authorities on maternal and child health, has been appointed as an Officer of the Order of Canada, one of the country's highest civilian honours. This recognition not only highlights his exceptional contributions to global health but also cements his position as a source of inspiration to healthcare professionals worldwide. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Established in 1967 by Queen Elizabeth II, the Order of Canada celebrates individuals who have made outstanding contributions to society. Dr Bhutta's groundbreaking research and leadership in maternal, newborn, and child health have improved the lives of millions worldwide, particularly in underserved and marginalized communities. His work has influenced public health policies globally, from the corridors of the World Health Organization to grassroots programmes in South Asia and sub-Saharan Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about this honour, Dr Bhutta humbly acknowledged his roots, saying, \"I am greatly honoured by this recognition and deeply grateful to a generation of students and colleagues who have worked with me over the years on challenges of women and children in Pakistan and other low-income countries.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Bhutta is no stranger to accolades. As the Founding Director of the Institute for Global Health and Development (IGHD) at Aga Khan University (AKU) and its Centre of Excellence in Women and Child Health from 2021 to 2024, his work has earned him global recognition. He also holds leadership positions at The Hospital for Sick Children (SickKids) in Toronto, serving as "
+          },
+          {
+            "type": "text",
+            "text": "Co-Director",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.sickkids.ca/en/staff/b/zulfiqar-bhutta/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " of the SickKids Centre for Global Child Health and the Lawson Centre Distinguished Fellow in Climate Change, Food Systems and Child and Adolescent Nutrition . From the Sitara-e-Imtiaz and the President's Pride of Performance Award in Pakistan to the prestigious John Dirks Canada Gairdner Global Health Award, his list of achievements speaks to his dedication to serve the underserved. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Reflecting on this milestone, Dr Sulaiman Shahabuddin, President of AKU, remarked, \"Dr Bhutta's achievements inspire us to pursue innovation and make a tangible impact in global health. His work embodies AKU's commitment to advancing evidence-based research that tackles the world's most pressing health and development challenges.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Bhutta's influence extends far beyond the academic world. He has led groundbreaking research in disease burden estimation, intervention effectiveness, and community health systems. His work on lady health worker programmes in Pakistan has become a model for community-based interventions globally, empowering frontline health workers and saving countless lives. Internationally, his research has shaped WHO policies and provided a blueprint for tackling malnutrition and preventable childhood diseases in fragile health systems."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Recently, Dr Bhutta was recognised in the highest tier of Highly Cited Researchers 2024 list by Clarivate - with over 1,400 indexed publications, Dr Bhutta's academic contributions are unparalleled. He is also a Distinguished University Professor at AKU, the highest honour the University can bestow, reflecting his enduring connection to an institution that has played a pivotal role in shaping his career."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In honouring Dr Zulfiqar Bhutta, we acknowledge not just an individual's accomplishments but the promise of what dedication, expertise, and compassion can achieve. For Pakistan, he stands as a true national hero whose work inspires hope for healthier generations to come."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003451",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "1f5f9259-00ce-4800-8819-6a850f05c492",
+      "WssId": 2186
+    },
+    {
+      "Label": "Maternal health",
+      "TermGuid": "1cf5b8d7-62db-4ef9-9655-208326bd5266",
+      "WssId": 2352
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "6db413d6-a4df-4471-93de-a395835b20dd",
+      "WssId": 2154
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    }
+  ],
+  "ScheduleStartDate": "2024-12-19T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3582,
+  "Modified": "2024-12-19T07:21:39Z",
+  "Created": "2024-12-19T05:01:58Z"
+}

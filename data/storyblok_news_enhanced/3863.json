@@ -1,0 +1,219 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b13ae5af-020e-4c8a-9d3d-76c0d43aa53a",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3a65108f-bd69-4cde-9c53-3b7f12405b87",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb433b6f-8248-42cb-acf5-e1ff3a11e18e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e5699ff2-8fa3-47ff-ace6-a1e0e2c9ed1e",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4df71d72-df61-4117-a41f-f1d4482d8ccd",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "47c476aa-3a08-42b5-9eb7-206c7df17ac0",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "dd2a1a4d-7461-4fa8-8556-5144ceb3122d",
+      "Id": 28,
+      "Title": "Institute for Global Health and Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d52e9c46-ba32-488c-a4dc-f187d9f9b6fa",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3863)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12b4c539-240f-4b48-88b2-38b317396dec",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3863,
+  "Title": "IGHD Conference Highlights Climate Threats and Responses",
+  "NewsSubTitle": null,
+  "NewsSummary": "Experts share climate findings and solutions to support Pakistan's infrastructure and health",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The IGHD Annual Conference on Climate Change and the Built Environment concluded today after two days of high-level scientific presentations, policy dialogue, and cross-sector collaboration aimed at strengthening Pakistan's resilience to the climate crisis."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hosted by the Aga Khan University's Institute for Global Health and Development (IGHD) in collaboration with Sustainable Development Solutions Network (SDSN) Pakistan, the conference brought together experts in architecture, engineering, environmental sciences, public health, urban planning, and policy to examine how Pakistan can best protect itself in a rapidly changing world."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Throughout the conference, presenters shared new evidence on rising sea levels along Karachi's coastline, climate-resilient housing prototypes from Sindh, indigenous design solutions, heat-resilient health systems, and data-driven adaptation strategies for vulnerable populations. Their findings painted a detailed picture of urgent threats facing communities and the opportunities available for action."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The Future is with the young people in the audience, people in their 20s and 30s who are starry-eyed and not cynical - who believe the world can be changed. We need to give them the opportunity, from universities like LUMS, Aga Khan University, and Jam Shoro University who have ideas and knowledge about new technologies,\" urged Chief Guest Dr Musadik Malik, Federal Minister for Climate Change and Environmental Coordination."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers especially highlighted the threat rising sea-levels posed to settlements along Sindh's coastline; significant adaptation gaps in unplanned settlements that face extreme heat, water scarcity, and poor infrastructure; and the strains existing on health systems with evidence showing increasing climate-linked illness and limited resilience capacity."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Among these revelations emerged several promising solutions, such as innovations in rural housing including featuring earthquake- and heat-resilient designs piloted in Matiari and interior Sindh, and community-led adaptation models demonstrating the effectiveness of indigenous techniques when aligned with scientific evidence."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The research shared over these past two days demonstrates what is possible when communities, scientists, and policymakers work together,\" said Professor Zulfiqar A. Bhutta, Founding Director of IGHD, highlighting the central role of evidence-based collaboration. \"Our goal now is to translate this evidence into action across Pakistan.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference concluded with a national policy panel featuring leading experts from academia, government, and international development, producing a set of priority recommendations for climate-resilient infrastructure, housing, and health systems."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"AKU is committed to advancing climate research that directly informs practice and policy,\" said Dr Sulaiman Shahabuddin, President of the Aga Khan University, emphasizing institutional commitment. \"The insights generated here will help strengthen Pakistan's climate readiness for years to come.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The IGHD Annual Conference reaffirms AKU's leadership in driving multidisciplinary, evidence-based solutions to help strengthen communities to withstand a rapidly changing climate."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003729",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    }
+  ],
+  "ScheduleStartDate": "2025-11-30T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3863,
+  "Modified": "2025-12-02T06:24:48Z",
+  "Created": "2025-12-02T06:20:22Z"
+}

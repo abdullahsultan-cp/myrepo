@@ -1,0 +1,183 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bb5b515d-9600-4ff8-803c-7ff183f663c6",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cbad0eaf-3532-47bb-9335-e42246445f7e",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "94572d5a-8848-4d85-af56-a48077a6b41b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7dad14a8-003c-4df8-901a-89b37d8888bc",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "95a5dee0-886a-40c6-9f29-7b318fbfca65",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4cd6dd91-8c10-4b7e-88e6-e43815b39279",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0374ee48-29bf-4c19-b7d0-b35d816c6346",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f97fc325-a20a-42df-9c74-a0854b5d204a",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(465)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cad0b7e9-7195-4702-aa1a-38cd58561229",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 465,
+  "Title": "Fight hepatitis: get tested - get treated",
+  "NewsSubTitle": null,
+  "NewsSummary": "Early detection and effective treatment are the keys to combatting viral hepatitis. Research conducted at Aga Khan University suggests that nearly 70 per cent of patients suffering from Hepatitis C - younger patients with hepatitis C genotype 3 infe",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Early detection and effective treatment are the keys to combatting viral hepatitis. Research conducted at Aga Khan University suggests that nearly 70 per cent of patients suffering from Hepatitis C - younger patients with hepatitis C genotype 3 infections - had the best chance of a cure provided they are diagnosed early and treated effectively. The data was shared by doctors at an event organised at Aga Khan University in collaboration with Pakistan Society for the Study of Liver Diseases to mark World Hepatitis Day."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Many people are chronic carriers of hepatitis viruses B and C in Pakistan, show no symptoms, and yet develop severe liver problems later in life. Dr Saeed Hamid, Chair, Department of Medicine, Aga Khan University added that according to recent national surveys, it is estimated that 10 to 12 million Pakistanis are infected with hepatitis B and C. \"Hepatitis can affect anyone; therefore know it, confront it and get tested,\" urged Dr Hamid. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Wasim Jafri, Associate Dean, Department of Continuing Professional Education, Aga Khan University elaborated that \"Hepatitis B can be easily diagnosed and effectively controlled through medication that usually needs to be taken regularly over a long period of time.\" Unfortunately the Hepatitis B virus can be transferred from an infected mother to her newborn during birth. But an infection can be prevented by giving the baby a Hepatitis B immune globulin shot and a series of vaccinations starting at birth."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Patients who develop severe liver disease as a result of chronic hepatitis are at risk of developing liver cancer. According to Dr Faisal Wasim, Assistant Professor Gastroenterology, Department of Medicine, AKU, such cases require regular ultrasound screening of the liver. Failure to do so could prove fatal, warned Dr Wasim."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Stressing the role of diagnostics in fighting hepatitis, Dr Shahab Abid, Head, Section of Gastroenterology, AKU, lauded the work of the Aga Khan University Hospital's Clinical Laboratory in facilitating early diagnosis as well as helping monitor treatment. \"State of the art and quality laboratory testing gives AKU the leading edge in the treatment of viral hepatitis,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Both Hepatitis B and C are transmitted through blood that has not been screened properly, contaminated needles and drug injection equipment. Providing screened blood for transfusions, using sterile needles and surgical instruments and the safe disposal of medical waste would lead towards a hepatitis-free Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Rozina Roshan, Manager, Nursing Practices, stressed that prevention is the key to controlling viral infections that cause hepatitis. She highlighted the effectiveness of the hepatitis B vaccine which is fortunately part of the routine immunization of infants in Pakistan."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000425",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Hepatitis",
+      "TermGuid": "57097c07-b9f5-4881-a5f7-4ac72e78ac7a",
+      "WssId": 1373
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "c23d839f-4ee8-4d36-9e3b-8d73a52c2d95",
+      "WssId": 1387
+    }
+  ],
+  "ScheduleStartDate": "2013-08-27T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 465,
+  "Modified": "2017-02-22T07:42:30Z",
+  "Created": "2016-12-07T05:06:02Z"
+}

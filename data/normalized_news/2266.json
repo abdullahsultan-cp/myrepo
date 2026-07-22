@@ -1,0 +1,110 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b5171f44-dd3d-49d2-acf6-678bf4f4c54c",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2bf4b51a-dac0-41f9-a656-ae4e595244d2",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f708bfb6-b9ba-48f0-afdf-20f878e89641",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a6ee0ef7-2c07-4257-bce1-0791977056be",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1ea9be2e-cad6-4e7f-8e67-b03dcca33714",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8f94af96-8dc9-48b8-bc08-07ca4bbe7001",
+    "Id": 8,
+    "Title": "School of Nursing and Midwifery, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e0c5a9b-6573-4f85-a45d-12c01aa35b46",
+    "Id": 8068,
+    "Title": "Umaima Mughal",
+    "EMail": "umaima.mughal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2266)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2b38f2dd-dc25-43ef-9b6f-e55e97cebf00",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2266,
+  "Title": "Maira Nizam, MScN '22: The endless opportunities to learn and grow",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nursing student shares her journey as an undergraduate student at AKU and how it inspired her to pursue master's in the field.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>My journey with AKU's School of Nursing and Midwifery began seven years ago when I had joined the undergraduate programme. I was always keen about participating in forums that would help me channelise my creative skills and boost my critical thinking ability, and I was given many such opportunities at #akusonam. From participating in Hackathons to receiving sponsorship for a leadership conference in Russia, I've enjoyed every opportunity that the School offers its students.</p><p>After my BScN, I got a chance to do a three-month internship at the Aga Khan Medical Centre in Gilgit - which was a completely different experience! Along with my colleagues, I conducted need-based training and mentorship sessions on resource management, infection control and early warning signs for the nurses, and contributed in deliberations on expanding healthcare services in the region.\" - Maira Nizam, MScN '22 and BScN '17.</p><p>Maira has enrolled in a master's degree programme, opted to study part-time and is continuing to work as a Registered Nurse with elderly patients in the orthopaedics department at Aga Khan University Hospital.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002178",
+  "LocalApproverGroup": "Sonam PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Admission",
+      "TermGuid": "0c3578d8-5c03-4b60-9de6-7253fadf8710",
+      "WssId": 1817
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "2a72f4c7-73f4-4765-94d3-1f1b5dc0a48c",
+      "WssId": 1818
+    },
+    {
+      "Label": "students",
+      "TermGuid": "924138ea-95e8-482e-8e82-ca5ee2097d44",
+      "WssId": 1797
+    }
+  ],
+  "ScheduleStartDate": "2020-05-02T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2266,
+  "Modified": "2021-02-15T06:55:52Z",
+  "Created": "2020-05-07T08:24:37Z"
+}

@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "aeb9388a-1e46-4c40-871c-cb32b05d8213",
+  "odata.etag": "\"17\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a4a3d3d9-f57d-4406-9b51-4f7220629b55",
+    "Id": 4322,
+    "Title": "Dawn Barnes"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f1eb0878-d1fc-4cdc-8169-1ec5c6d46733",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82e2ee57-cb57-44a1-acb7-0060ecdbaa56",
+    "Id": 4322,
+    "Title": "Dawn Barnes",
+    "EMail": "dawn.barnes@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "100793a0-c8db-4968-85c4-ff37c88b3fc1",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "98ab4375-15e3-4d99-879d-1e1a0ff24522",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ccea3ef7-ac8e-4f28-af65-33f5d0ea9a73",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4db03c24-3d06-4a84-a5ff-a8959d50c41a",
+    "Id": 4322,
+    "Title": "Dawn Barnes",
+    "EMail": "dawn.barnes@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1257)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5003f645-210c-4b12-b831-f19689f4751c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1257,
+  "Title": "10th Anniversary Celebrated with Learning",
+  "NewsSubTitle": null,
+  "NewsSummary": "ISMC hosts event with Simon Fraser Univeristy",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Saturday 1 July saw people from different academic communities and walks of life come to a workshop on Citizenship, Islam and identity.</p><p>The Aga Khan University's Institute for the Study of Muslim Civilisations (ISMC) hosted the event at its London campus with its longstanding partner, the Centre for the Comparative Study of Muslim Societies and Cultures (CCSMSC) at Simon Fraser University in Vancouver. The event marked the 10th anniversary of the collaboration.</p><p>The focus of the event was changing notions of citizenship and identity in different contexts, historical and contemporary. Papers were presented on the contemporary experiences of Canada, the US and the UK, on patriarchy within Muslim legal traditions, and on the impact of a millennial movement in Gujarat and Sindh on notions of identity.</p><p>\"Questions of identity and citizenship are crucial to our future as plural societies in which diversity is a strength, not a problem,\" commented Dr David Taylor of the ISMC. \"ISMC and CCSMSC are delighted to have hosted this workshop to take the conversation forward on these crucial issues.\"</p><p>The event consisted of presentations from the following academics:</p><p><ul><li>Malik Ajani, University of Maryland, University College Europe (UK)<br/></li><li>Derryl MacLean, Centre for the Comparative Study of Muslim Societies and Cultures, Simon Fraser University<br/></li><li>Ziba Mir-Hosseini, Centre for Islamic and Middle Eastern Law, School of Oriental and African Studies, University of London<br/></li><li>Amyn B. Sajoo, Centre for the Comparative Study of Muslim Societies and Cultures, Simon Fraser University<br/></li></ul></p>",
+  "PullQuote": "Questions of identity and citizenship are crucial to our future as plural societies in which diversity is a strength, not a problem.",
+  "PullQuoteAuthor": "Dr David Taylor",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001209",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    },
+    {
+      "Label": "united kingdom",
+      "TermGuid": "4b58515c-1b08-4db9-bd3a-a180761cddbb",
+      "WssId": 1506
+    }
+  ],
+  "ScheduleStartDate": "2017-07-03T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1257,
+  "Modified": "2017-07-18T15:57:44Z",
+  "Created": "2017-07-18T14:52:06Z"
+}

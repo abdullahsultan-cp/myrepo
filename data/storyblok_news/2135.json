@@ -1,0 +1,622 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a2ff44f6-481a-487a-9b84-3ebb3df70b06",
+  "odata.etag": "\"47\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "feb7869e-e3d2-4173-aae3-fe5a3d0f34cd",
+    "Id": 8347,
+    "Title": "ashnar.dholakia"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0203e8f-2345-41c3-85be-e85a1c0e3cf7",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9e472701-c07e-4db0-974b-0868c109bdc7",
+    "Id": 8347,
+    "Title": "ashnar.dholakia",
+    "EMail": "ashnar.dholakia@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2786c3c3-4c91-4eb5-a7bd-fb2bd7348b46",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "51a9241b-93d8-41bb-a4d7-24fef45dd32e",
+    "Id": 14,
+    "Title": "East Africa Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "231a7efe-14e9-4801-8af3-6edde9a450dc",
+    "Id": 8347,
+    "Title": "ashnar.dholakia",
+    "EMail": "ashnar.dholakia@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2135)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b64d5aaa-110e-4e7d-a82d-b0d2da5fb8de",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2135,
+  "Title": "The role of malnutrition in stunting childhood development",
+  "NewsSubTitle": "Where does Kenya stand? ",
+  "NewsSummary": "26 per cent of Kenyan children under 5 years suffer from chronic malnutrition.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to a meta-analysis of malnutrition health surveys, \""
+          },
+          {
+            "type": "text",
+            "text": "Sub-Saharan Africa has one of the highest levels of child malnutrition globally",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177338&type=printable",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ".\" The three major indicators of malnutrition are: stunting, wasting and being underweight. Stunting is measured by comparing a child's height for their age and is an indicator of linear growth and the cumulative growth deficits in children. Wasted growth is another measure for mortality in children under five and correlates weight to height caused by significant food insecurity. Being underweight is determined by an imbalance between a child's weight and age, its determinants take into account country context, and is the most commonly used measure of malnutrition since weight is easy to measure."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The African region accounts "
+          },
+          {
+            "type": "text",
+            "text": "for 39.4 per cent of stunted, 24.9 per cent of underweight and 10.3 per cent of wasted children under 5 yrs of age",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177338&type=printable",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". In Kenya, the population of children under 5 years is 7 million, with 26 per cent of those suffering from chronic malnutrition, as measured by stunting. While Kenya has made significant strides in reducing neonatal, infant, child and under-5 mortality, \n      "
+          },
+          {
+            "type": "text",
+            "text": "1 in every 26 Kenyan children",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.usaid.gov/sites/default/files/documents/1864/Kenya-Nutrition-Profile-Mar2018-508.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " will die before reaching 1 year of age, and 1 in 19 children will never have the chance to celebrate their 5th birthday.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "The first one thousand days of a child's life",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177338&type=printable",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " are critical to combatting stunting and establishes the foundation for healthy growth and development. \n      "
+          },
+          {
+            "type": "text",
+            "text": "Stunting that occurs in the first 2-3 years of a child's life",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0177338&type=printable",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " is associated with poorer brain development, which negatively affects cognitive development, educational performance and economic productivity in adulthood. \n      "
+          },
+          {
+            "type": "text",
+            "text": "Structurally, research has linked malnutrition",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2519065/pdf/1744-9081-4-31.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " to tissue damage, growth retardation, disorderly differentiation and a reduction in synaptic neurotransmitters. It is important to recognise \n      "
+          },
+          {
+            "type": "text",
+            "text": "the importance of investing in children's health and nutrition",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5726774/pdf/nihms895341.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", most importantly for the first 2-3 years of their life, as this is when a majority of a child's cognitive, mental and physical development occurs. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The 2019 \n      "
+          },
+          {
+            "type": "text",
+            "text": "Cost of Hunger in Africa (COHA) - Kenya Study",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.health.go.ke/kenya-pledges-to-end-child-undernutrition-as-study-reveals-its-costing-the-economy-billions/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " revealed that undernutrition in Kenya cost the economy Ksh 373.9 \n      "
+          },
+          {
+            "type": "text",
+            "text": "billion",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.kenyanews.go.ke/undernutrition-costing-the-countrys-economy-billions-study-says/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", representing a loss of 6.9 per cent of GDP in 2014. Stunting rates in Kenya successfully decreased from \n      "
+          },
+          {
+            "type": "text",
+            "text": "35 per cent in 2008 to 26 per cent in 2014",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.usaid.gov/sites/default/files/documents/1864/Kenya-Nutrition-Profile-Mar2018-508.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", however, findings from the COHA - Kenya study pressed the government to further commit to reducing the stunting rate to 14.5 per cent by 2030. As \n      "
+          },
+          {
+            "type": "text",
+            "text": "President Kenyatta noted in his address",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.health.go.ke/kenya-pledges-to-end-child-undernutrition-as-study-reveals-its-costing-the-economy-billions/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ": \"Recognising that children are the greatest asset of our nation, my government is committed to ending child undernutrition.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " The complexities of malnutrition are most prominent in low and middle-income countries, where \n      "
+          },
+          {
+            "type": "text",
+            "text": "household wealth and a parent's education level",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5726774/pdf/nihms895341.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " play a pivotal role in determining a child's nutritional health. Some studies suggest undertaking a multi-dimensional approach that focuses on policy change and interventions that improve household income. Improving a family's quality of life directly correlates with improved nutrition and in turn, improved \n      "
+          },
+          {
+            "type": "text",
+            "text": "cognitive development",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5726774/pdf/nihms895341.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " \n      "
+          },
+          {
+            "type": "text",
+            "text": "A joint study",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://pakobserver.net/new-study-launched-on-leveraging-social-protection-system/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " by the Aga Khan University, Pakistan, the UN World Food Programme, and other significant international research organisations [that focus on child health and nutrition] revealed a 15 per cent reduction in stunting using a multifaceted approach of specialised nutrition foods, cash-based transfers, and social and behavioural change communication. This study focused on the critical period of a child's development between 6 to 23 months. As a result, stunting prevention programmes that leverage existing social protection and health systems are proven cost-effective methods to protect mothers and their children from malnutrition. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Upon review of \n      "
+          },
+          {
+            "type": "text",
+            "text": "the 2010 Kenyan Social protection policy",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://socialprotection.or.ke/images/downloads/kenya-national-social-protection-policy.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", there are some \n      "
+          },
+          {
+            "type": "text",
+            "text": "safety net programmes",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/PublishingImages/pages/News_Admin/safety%20net%20programmes.png",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in place such as Inua Jamii (\"empowering the community\" in Swahili), a cash transfer program available to vulnerable persons in Kenya. However, the policy indicated that these efforts were inadequate as they have kept people alive but did not reduce poverty. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " \n      "
+          },
+          {
+            "type": "text",
+            "text": "The Nutritional Improvements through Cash and Health Education (NICHE)",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.unicef.org/evaldatabase/index_103510.html",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " programme is a UNICEF led initiative in Kenya's Kitui and Machakos counties that aims to improve the nutritional status of children in the first one thousand days of their life. The program consists of nutritional counselling through community health volunteers and an additional cash-top up to households that currently receive Inua Jamii. Upon evaluation of the programme in 2018, it was found that the incremental effect of cash and counselling combined resulted in universally positive outcomes among the treatment group. This included a 44 per cent increase in the probability of obtaining a minimum acceptable diet and a 40 per cent increase in treating drinking water. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Finally, while malnutrition may be considered an entrenched point of contention in Kenya and many East African countries, research shows effective ways to battle this issue -- for example, the NICHE programme. The next and most crucial step in combatting child malnutrition is implementing such programs, and scaling them countrywide, so that all families that need services have the opportunity to benefit from them. Overall, extensive work still needs to be done with respect to hunger, as hunger has been identified as the root cause for malnutrition."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " \n      "
+          },
+          {
+            "type": "text",
+            "text": "Amina Inaara Kassam is a research assistant at the Aga Khan University Hospital's Department of Paediatrics and Child Health, conducting research on pediatric epilepsy and cerebral palsy.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002052",
+  "LocalApproverGroup": "EAI News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "east africa",
+      "TermGuid": "44643f58-c153-4aaf-912b-2181456ed941",
+      "WssId": 1823
+    },
+    {
+      "Label": "East Africa Institute",
+      "TermGuid": "11dc44af-22d3-4694-8e66-829c99cbb669",
+      "WssId": 1837
+    },
+    {
+      "Label": "Malnourished",
+      "TermGuid": "330db2fe-54ab-4a2d-9aa0-db16d71b99a8",
+      "WssId": 1885
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "23239523-9013-43f8-a959-9b25118a5980",
+      "WssId": 1886
+    },
+    {
+      "Label": "Child mortality",
+      "TermGuid": "d0bf74f3-85c3-4274-9ff3-96115f8b468b",
+      "WssId": 1887
+    },
+    {
+      "Label": "Child nutrition",
+      "TermGuid": "b70c4326-a113-49b7-89a6-e76d8c562cb6",
+      "WssId": 1888
+    },
+    {
+      "Label": "paediatrics",
+      "TermGuid": "ea94a483-4513-4825-a4e4-ba92a5e1d16a",
+      "WssId": 1839
+    }
+  ],
+  "ScheduleStartDate": "2020-02-12T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Photo from UNICEF's NICHE Programme",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2135,
+  "Modified": "2020-02-12T08:32:01Z",
+  "Created": "2020-02-12T06:56:56Z"
+}

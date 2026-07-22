@@ -1,0 +1,313 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "58584fa0-ff82-45d1-9666-3c281da47fb2",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d0cb1a68-5685-49e3-a4bf-dc6b259cb361",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0946b074-9450-4b7f-b045-d48f8c52ad10",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "21b47432-64d9-4233-b5e8-bef89c5d6772",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "5327bf90-1a74-4781-8709-e3ff0e7dea92",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "904fff16-a6c7-4357-8a97-fb29b0e5848b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cd2c6149-9c27-4ead-a393-793fa97bc280",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5d78eb66-f47b-4642-a16a-be4b300317b7",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(419)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "04955d7a-d0af-4ef8-92cc-0e18a1e5bf9a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 419,
+  "Title": "Declaration on polio eradication signed",
+  "NewsSubTitle": null,
+  "NewsSummary": "Distinguished scientists and experts from 75 countries signed the Scientific Declaration on Polio Eradication on April 10 to endorse the Eradication and Endgame Strategic Plan that aims to eliminate polio by 2018.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Distinguished scientists and experts from 75 countries signed the Scientific Declaration on Polio Eradication on April 10 to endorse the Eradication and Endgame Strategic Plan that aims to eliminate polio by 2018."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The scientific declaration was drafted and led by Professor Zulfiqar Bhutta of the Aga Khan University in collaboration with Professor Walter Orenstein of Emory University, USA. The declaration links and supports the new Global Strategic Plan for Polio Eradication, drawn up by the Global Polio Eradication Initiative, a public-private partnership of national governments and international health bodies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There are 350 signatories that include AKU faculty members Professors William Macharia and Anita Zaidi among Nobel laureates, immunisation and infectious diseases experts, public health schools deans, paediatricians and health authorities."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The signing of the declaration comes at a time when there is irrefutable evidence that ending the disease is feasible and possible."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In 1988, there were an estimated 350,000 cases of polio and the disease was endemic in more than 125 countries. By the end of 2012, 223 cases were reported globally but only three countries, Nigeria, Afghanistan and Pakistan, still remained endemic; the fourth country on the list, India, was declared polio-free two years ago."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Similarly, one of the three types of wild polio virus (type 2) was entirely eliminated more than a decade ago."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The time to eradicate polio is now as endemic countries have reported the lowest number of polio cases on record,\" said Professor Bhutta, Founding Director, Centre of Excellence in Women and Child Health, AKU. \"This means that there are fewer human-to-human polio transmission chains to break to achieve eradication throughout the world.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Calling attention to cancelled and scaled-back vaccination campaigns in 24 countries, due to a lack of funding in 2012, Professor Bhutta warned of disastrous consequences. He said that if the focus is placed on controlling the disease rather than eliminating it, at least 200,000 new polio cases can emerge worldwide every year."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To ensure the success of the Eradication and Endgame Strategic Plan, the signatories have highlighted eight action points:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Scientists to develop new and better tools to accelerate and sustain eradication, including low-cost inactivated polio vaccine options, and to continue providing technical support to endemic countries."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Partners, including GPEI and vaccine manufacturers, to ensure sufficient supply of and access to different types of vaccines required for eradication, including IPV use in resource-poor countries."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Endemic country leaders and international programme officials to stay fully committed and accountable to stop transmission. They can build on emergency plans to increase accountability and strengthen campaign quality, and continue to develop regional- and community-specific solutions to bottlenecks such as vaccine refusals."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Endemic country governments and partners to strengthen security measures and deepen engagement with community and religious leaders to promote demand and protect vaccination teams and volunteers, in light of recent attacks on health workers across Pakistan and Nigeria."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "International partners and national programmes to strengthen linkages across polio vaccination efforts, routine immunisation and other initiatives, including measles prevention, maternal and child health and nutrition, to address the broad health needs of communities."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Partners as well as national and global programmes to commit to strengthen routine immunisation with the same urgency, robust technical and financial support and clear measurement indicators."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Partners to fully fund the Strategic Plan."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the end, the signatories reiterated: \"Polio eradication can be our generation's legacy to all future generations. Only working together can we make history and end polio.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000379",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Polio",
+      "TermGuid": "fb6941ff-ee9e-42cb-b945-a092dfcf47a0",
+      "WssId": 1380
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "8af47938-e185-421e-bd51-de98296e39aa",
+      "WssId": 1384
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2013-07-16T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 419,
+  "Modified": "2017-02-22T07:36:16Z",
+  "Created": "2016-12-06T05:38:49Z"
+}

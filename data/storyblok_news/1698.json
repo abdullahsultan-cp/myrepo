@@ -1,0 +1,185 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "dd2a204c-671a-4287-824d-ada79d014f51",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "40e9f42f-2024-4f0e-9ee8-fc305fe45297",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b153b2f5-8ab4-429f-a090-0bd8b1db71f6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f0b552a8-6380-4ee1-842b-34766aa46876",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "7ac3d5a8-57d8-4b0a-8127-84e763436460",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "eeaef076-95b3-4eeb-9f72-58b6b999cd8f",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "341517fa-fdf5-4fab-82b4-d708ee55ffbb",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac8355af-22eb-4b83-a168-2214d37cb72f",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1698)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9406697a-09a5-4ce1-a28f-8e15dae7f8af",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1698,
+  "Title": "Training East Africa's first oncology nurses",
+  "NewsSubTitle": null,
+  "NewsSummary": "New programme to develop cadre of nurses ready to provide compassionate care to patients.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With an estimated 100,000 people losing their lives to cancer in East Africa every year, AKU launched the region's first programme to train oncology nurses, and helped Moi Teaching and Referral Hospital, a public institution in Kenya, to establish a similar programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The knowledge that trained cancer nurses have is really critical,\" Assistant Professor Tayreez Mushani said. \"They can detect breast cancer early through manual exams. They can safely administer chemotherapy and other treatments. They can manage side effects and counsel patients so they feel comfortable continuing their treatment.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition to working with patients at the bedside, graduates will be leaders who expand access to skilled cancer care. For example, Immaculate Wambugu has been asked to establish an oncology nursing training programme at Nairobi Hospital's Cicely McDonell College of Health Science after she graduates. \"I think the course is a very good thing for our country,\" Wambugu said. \"I want to help more people get this kind of training.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Princess Margaret Cancer Centre of Toronto played an essential role in developing the Diploma in Oncology Nursing at AKU in Nairobi and Moi. The Centre initially reached out to the University about collaborating to train cancer nurses, and helped to develop the diploma curriculum."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Centre also supports Mushani in her work and in assisting faculty at Moi. \"A cancer diagnosis changes your life,\" said Pamela Savage, Director of Professional Practice at Princess Margaret. \"East Africa needs nurses who can address the challenges patients face.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "It's thrilling to be able to make this kind of difference for people on the other side of the world.",
+  "PullQuoteAuthor": "Pamela Savage, Princess Margaret Cancer Centre, Toronto",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001643",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Cancer",
+      "TermGuid": "6f4af867-0fd5-44fc-9d16-b5ac2034125a",
+      "WssId": 1374
+    },
+    {
+      "Label": "Non-communicable diseases",
+      "TermGuid": "ff0c9347-14b5-433b-84ac-4e6dbc856c23",
+      "WssId": 1458
+    },
+    {
+      "Label": "Tanzania",
+      "TermGuid": "5a6d31f1-21a8-4c0b-bd6d-b608eaf4ec1c",
+      "WssId": 1611
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "770165ec-c858-4c3a-b152-ff70b540aea9",
+      "WssId": 1377
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    }
+  ],
+  "ScheduleStartDate": "2018-08-28T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Oncology nurses learn to use an implanted venous access device for chemotherapy. As the first such nurses trained in East Africa, they will be key to addressing the region's cancer burden.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1698,
+  "Modified": "2018-08-29T10:11:19Z",
+  "Created": "2018-08-28T14:01:55Z"
+}

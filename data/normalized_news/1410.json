@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "895888f0-45da-4d83-bdee-2ac79952d6da",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0ba9f08-a2aa-4641-a55b-a39ba78b1745",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "529136e7-2ce9-4e86-b5bb-1f1a8a4b7fd4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "67308851-fe53-4f54-bcfc-0a90f21f72d1",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "43c3c970-4693-4339-8e2b-ad99d383cb1c",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "48adb0bc-b211-45cd-94ee-dd5f5cbb2c1f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c4ccc16f-9e96-4bb2-87f0-de99df584f10",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "50f77e86-1190-4ec8-9192-0ef0342d314b",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1410)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7c3daeaa-c426-4d81-a635-388f958793d0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1410,
+  "Title": "AKU wins Occupational Safety Health and Environment Award for 2009",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University Faculty of Health Sciences (AKU-FHS) is proud to announce having won the Occupational Safety Health and Environment (OSHE) Award for 2009.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>\"Aga Khan University Faculty of Health Sciences (AKU-FHS) is proud to announce having won the Occupational Safety Health and Environment (OSHE) Award for 2009.<br/><br/>The award was conferred at a distribution ceremony held on Wednesday, April 28, 2010 at Marriot Hotel, Karachi on the occasion of World Day on Safety and Health at Work. The event was arranged by the Employers' Federation of Pakistan in collaboration with the International Labour Organization (ILO).<br/><br/>AKU was selected as having the best OHSE performance from among a total of twenty-six organizations that submitted nominations to the nationwide competition. The decision was made by an independent panel of judges, which assessed participants using relevant data and records collected from 2008 and 2009.<br/><br/>The criteria for the award include the quality of Environment Health and Safety (EHS) management program; leadership commitment; staff participation; goals and objectives; training programs and progress; EHS departmental setup; incident reporting and analysis; emergency preparedness; employee health monitoring program; and performance monitoring, measurement and improvement.\"</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001357",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    }
+  ],
+  "ScheduleStartDate": "2018-01-03T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1410,
+  "Modified": "2020-05-18T07:23:40Z",
+  "Created": "2018-01-03T10:33:07Z"
+}

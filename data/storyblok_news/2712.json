@@ -1,0 +1,210 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "eec60286-7d89-4b97-835e-87e4eb4e81cf",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "99a6c653-7b17-4572-893d-a09853d5e4d7",
+    "Id": 292,
+    "Title": "soraiya.shah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "343cc4d5-1288-4486-a092-59fa7711da8e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bbbe3bfa-0332-4fb6-b9be-26e931879b14",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "aed8ba19-aeac-448f-8019-fffc80c64d7b",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "116d79c7-9315-4f19-bddc-8152b7bc816d",
+    "Id": 15,
+    "Title": "Graduate School of Media and Communications"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "62c18342-5cf5-46ab-b411-746639ed3839",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a747c5b8-bd96-4f45-85f6-233df585bca1",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2712)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b599045f-4379-4050-91f8-2c65551bcd76",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2712,
+  "Title": "Nation Media Group partners with Aga Khan University to offer journalism trainee programme ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nation Media Lab Training Programme Launched ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University Graduate School of Media and Communications (GSMC) together with Nation Media Group (NMG) launched the"
+          },
+          {
+            "type": "text",
+            "text": " Nation Media Lab Graduate Trainee Programme",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " on Friday, September 3, 2020 at the Aga Khan University Centre, Nairobi. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This marks the third time NMG has collaborated with the university to offer this unique programme to early career journalists from East Africa. The four-month programme will equip the trainees with in-depth and practical skills in print, broadcast and digital journalism. The curriculum is designed to specifically deal with issues that are particular to newsrooms in East Africa, while at the same time giving insight into global practices, technologies and standards to ameliorate these.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking at the launch, Prof Lawrence Pintak, Dean of GSMC recognised that learning is a lifelong endeavour and commended Nation Media Group for embracing education to cope with the constant change facing the industry. He further congratulated the trainees for joining an organization committed to ongoing change and learning, and being selected to join the programme. \"This is a great opportunity for you because you are being given the chance to work for NMG and to learn multimedia platform agnostic skills, so you can report for any platform.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over 2,900 journalists from East Africa applied to the programme and only 17 were selected after a rigorous application process. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Stephen Gitagama, Group CEO, NMG acknowledged the reason for creating the media lab arose from the need to build a talent pool. He noted that the lab enabled the media house to create a talent pipeline and build professionalism and excellence in journalism. He challenged the trainees to inject new knowledge and understanding of the youth market who make up the largest segment of the population. \"You have a great opportunity to take over the newsrooms and leadership of the organisation and we expect more content and insights from you.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Upon graduation, the trainees will be attached to NMG's digital, print and broadcast platforms across the region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Graduate School of Media and Communications in Nairobi, Kenya, is the region's premier journalism training programme, offering a Master's in Digital Journalism to early-career journalists and an Executive Master's in Media Leadership and Innovation for the region's top editors and media managers. It is also home to a media Innovation Centre and a training unit offering an array of short courses for communications professionals."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002609",
+  "LocalApproverGroup": "CA GSMC News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Graduate School of Media and Communications",
+      "TermGuid": "c8c2487d-56f1-43dd-8c2b-40968bf57336",
+      "WssId": 2161
+    }
+  ],
+  "ScheduleStartDate": "2021-09-10T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2712,
+  "Modified": "2021-09-10T09:03:53Z",
+  "Created": "2021-09-10T07:51:28Z"
+}

@@ -1,0 +1,217 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c737e6a9-3ee4-4499-91d6-84a995d15d47",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "97812708-5856-4aca-ae0c-84bba6daf019",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "90fdcf83-592a-4873-8214-4e8a76254c27",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0077f820-c926-4344-9845-1a5579f8b1fe",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "81d47371-b01d-44b9-a2c3-e022b70b401d",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "93ac7b92-4eb8-4af6-9c3d-86e16e8418f3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "74f537cf-7fc4-47f1-8f26-51b039640d37",
+      "Id": 19,
+      "Title": "Office of the Registrar"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "1ac4b097-6b92-42bd-9325-146bc2fb68e8",
+      "Id": 26,
+      "Title": "Student Affairs and Services"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "08f47ef1-cc3e-4dac-9b9c-281cb4c33c16",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3334)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5082e051-f2b5-486b-b7d0-ce7547f41625",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3334,
+  "Title": "AKU Uganda welcomes new student body",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Student Executive Committee is the first in the history of AKU Uganda ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University (AKU) in Uganda has launched the Students Executive Council(SEC) that seeks to give students an interactive platform to engage the university community."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The inauguration ceremony was presided by Dr Joseph Mwizerwa, Associate Vice Provost, AKU Uganda and attended by the legal team, faculty, staff and the entire student body. This is the first SEC in the history of AKU Uganda. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The SEC will give students a voice and an opportunity to participate in university affairs and events. SEC members will also develop leadership experience while fostering partnerships among students, professors, and the community."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU Uganda Registrar Nicholas Katende who represented the University Registrar Dr Laila Akbarali, encouraged the SEC members to be proactive and champion the ideas and needs of all students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The SEC Chair, David Wamoto congratulated the newly elected members and thanked the entire student body saying, \"I appreciate the team for the trust put in us to serve, I pledge to serve with due diligence, and I call for cooperation from everyone to work with us.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Members of the SEC are from the Diploma and Bachelors in nursing and midwifery programmes: David Wamoto is the Chairperson; Allen Natongo, Vice Chair; Lucy Chekwoti, Secretary-General; Chris Okoth, Treasurer; Mutoni Suhamu, Academic Secretary; Fredrick Muhindo, Sports and Entertainment Secretary; and Gloria Namakoola as the Pluralism Secretary."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The SEC is a transitional governing body following nominations from class representatives. Going forward, elections will be held in October as per the "
+          },
+          {
+            "type": "text",
+            "text": "Aga Khan University Students Association",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/admissions/Pages/student-life-ea.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " (AKUSA) constitution. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003210",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Student life",
+      "TermGuid": "234d0706-cfeb-4f91-8bf6-4debd5ddd9ab",
+      "WssId": 2178
+    },
+    {
+      "Label": "Uganda",
+      "TermGuid": "cf0bbf0b-88e0-410e-80f8-c1c7f30edade",
+      "WssId": 2188
+    }
+  ],
+  "ScheduleStartDate": "2024-02-27T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3334,
+  "Modified": "2024-02-27T13:28:59Z",
+  "Created": "2024-02-27T13:26:41Z"
+}

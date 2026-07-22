@@ -1,0 +1,252 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1e0c33c7-08bf-4a21-bf32-387635e8b0d3",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9e9974ed-ca14-4c77-b54d-a80808dd6e18",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "08adb18f-547a-46c8-b264-447fdcff4315",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a32dd500-6699-478f-b366-d51a6e2ed5e3",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "28eab778-b319-4f69-9ed4-56557d15e6cc",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c82eaa1e-52c5-472a-97b8-4dabe3e8ce90",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b19f82b9-7d29-432e-ab82-4a913167282a",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2014)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6397f015-39d6-42b9-b4ec-0980590705b6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2014,
+  "Title": "Seminar sheds light on Pakistan's unusual suicide problem",
+  "NewsSubTitle": null,
+  "NewsSummary": "A week of awareness sessions and events highlights need to promote mental health.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Married women and single men under the age of 30 in Pakistan are among the groups most likely to commit suicide, according to speakers at a panel session Wellness in the Workplace at Aga Khan University."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The event was part of a week of sessions and themed activities aimed at spreading awareness of the importance of suicide prevention: the theme for World Mental Health Day 2019."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Speakers noted that research showed that Pakistan's highest-risk groups for suicide were different to those in other parts of the world. In the West, single men between the age of 50 and 60 are most likely to take their own lives."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "But in Pakistan, youth of working age, under the age of 30, are most likely to commit suicide. This suggests that employers have a role to play in tackling the public health threat of suicide, which claims about 800,000 lives a year globally, according to data from the "
+          },
+          {
+            "type": "text",
+            "text": "World Health Organization",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.who.int/health-topics/suicide#tab=tab_1",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". According to global figures, one person dies by suicide every 40 seconds with three out of four suicides occurring in low and middle income countries."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Speakers at the event stated that companies needed to establish a culture where people could speak about their challenges and daily stresses without the fear of being judged. Forums where employees can openly share their concerns promote wellness in the workplace and reduce the threat of issues such as anxiety and burnout."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Shagufta Hassan, interim CEO of Aga Khan University Hospital, added that companies should launch professional mentorship programmes so that vulnerable youth had someone they could seek advice from. She also highlighted the importance of offices having counselling services where employees facing challenges could access additional help or be referred to professionals."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Speaking at the event, Atiya Naqvi, a clinical psychologist, noted the importance of friends and family in supporting those going through a difficult time. Ms Naqvi said that the mere act of listening to a person's problems helps reduce anxiety.  She also spoke of the need to monitor one's thought patterns and to communicate one's concerns with those around them."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Dr Ayesha Mian, chair of the Department of Psychiatry at AKU, noted that hopelessness and despair are feelings that often exist in people with suicidal ideation. She noted that being unable to cope with financial pressures, academic stresses, dysfunctional relationships and bullying were some of the determinants known to lead to passive or active thoughts of suicide."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"There is a myth that only those patients with mental health disorders will commit suicide,\" said Dr Ayesha. \"While more often than not, patients who die of suicide have a diagnosed psychiatric illness, there may be those who do not have a mental health disorder. We know that for every one person who takes their life there are ten people actively planning suicide and a 100 with suicidal ideation, which is why prevention efforts are so vital.\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "She also spoke about how compassionate words and actions can help ease feelings of despondency that may lead to pervasive feelings of hopelessness and suicidality in those vulnerable."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"Talking about suicide doesn't promote suicide,\" Dr Ayesha explained. \"We often underestimate the importance of listening and acting with compassion even though they help protect against a number of self-harming actions. It is important to listen with sincerity and without fear; if you don't know what to do, ask the person, 'how would you like me to help?'\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Over the course of the week, students and staff at the University participated in support group sessions and wellness camps designed to promote mental wellbeing. Students also held a Kindness Walk and organised a Wall of Compassion to showcase the importance of empathy and kindness in preventing harmful thoughts and actions."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001937",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Suicide",
+      "TermGuid": "26182d93-24d3-47ae-948b-d7dfba034ef9",
+      "WssId": 1695
+    },
+    {
+      "Label": "Mental health",
+      "TermGuid": "a8ab9440-39d6-45ea-b7e3-554611922c80",
+      "WssId": 1404
+    }
+  ],
+  "ScheduleStartDate": "2019-10-09T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Speakers at a panel session 'Wellness in the Workplace' at Aga Khan University.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2014,
+  "Modified": "2019-10-09T10:33:12Z",
+  "Created": "2019-10-09T10:31:34Z"
+}

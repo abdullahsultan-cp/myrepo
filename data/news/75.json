@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1001dd35-9710-4654-a19b-253fd819a31f",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1c28ba08-edd6-4974-b393-69345e4f2152",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6ed48b4a-11c8-41d6-a856-6cf69c1a6d53",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fb3bc8cf-e28d-40ce-9db6-e08da00134d8",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "556204f3-5c00-47d4-9a60-14d187488fbd",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bc52343a-32a0-4d9a-a025-82281d5a3f36",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "38872072-b311-4995-b495-96f0eeb008f4",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f14ed017-4249-4c62-8ec0-0e2844bcde08",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(75)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e1fdbad1-80a5-454f-8e16-05a4e08a9e59",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 75,
+  "Title": "Discovering Pre-Islamic Arabia\u200b",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Philip Wood, Associate Professor, Institute for the Study of Muslim Civilisations",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass01617AC7ACE143D7B6A1695A34CC8991\">The history of the Arabs in the Near East and the Middle East before the advent of Islam is now available. Arabs and Empires before Islam, published by the Oxford University Press, contains commentary and analysis from more than 20 international experts, including Dr Philip Wood, Associate Professor at Aga Khan University\u2019s Institute for the Study of Muslim Civilisations.<div><br></div><div>Dr Wood wrote the sections on Christianity among the Arabs in the fifth, sixth and seventh centuries. \u201cI\u2019m very pleased to have been involved in this major project that promises to provide source materials for the study of pre-Islamic Arabia. So far this has been very difficult because the relevant published material is either inaccessible or did not exist in English,\u201d said Dr Wood.\u200b<br><br>Pre-Islamic Arabia has often been a neglected topic for research. This book brings together a host of material that has never before been collected into a single volume \u2013 and some of which appears in English for the very first time. It provides a single point of reference for the politics, culture and religion of the Arabs before the emergence of Islam. The translations of ancient sources, dating as far back as the eighth century BC all the way to the Middle Ages, include texts written in Greek, Latin, Syriac, Persian, and Arabic, inscriptions in a variety of languages and alphabets, and material from archaeological sites from the Near East.<br><br>Dr Wood\u2019s areas of interest include culture and politics of the contemporary Middle East, especially Syria, eastern Turkey and northern Iraq. His research revolves around the intersection of political and religious ideas in the late antiquity Middle East.<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000045",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 75,
+  "Modified": "2017-02-22T07:10:27Z",
+  "Created": "2016-05-17T05:23:58Z"
+}

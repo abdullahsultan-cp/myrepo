@@ -1,0 +1,169 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1a036972-d076-4e48-bdb9-9051f6fdafe5",
+  "odata.etag": "\"28\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d3562700-766c-4b34-ac86-5db698d0f6ee",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8c92dfbd-12d6-4e6a-9030-8eccd430206d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6d6e3998-c420-4d1c-a967-d52b9c8ee6e4",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "d4a175d5-6a44-402b-9894-ee742cf745c8",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "736dfacc-250b-4511-a2ef-8c5e2f92637b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "36445ce9-9064-4d27-a665-97e62c8dcfe3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bc9c4a7d-0665-4e43-9fea-2fd25277e5fd",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1034)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "377d8ab9-8675-48db-8aed-e4b80dd81c18",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1034,
+  "Title": "AKU Special Lecture Series - Zia Mohyeddin on \"my unwanted classics\"",
+  "NewsSubTitle": null,
+  "NewsSummary": "Zia Mohyeddin, renowned actor, compere and broadcaster, addressed students, faculty, staff and distinguished guests on \"My Unwanted Classics\" at a lecture at Aga Khan University (AKU).",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Zia Mohyeddin, renowned actor, compere and broadcaster, addressed students, faculty, staff and distinguished guests on \"My Unwanted Classics\" at a lecture at Aga Khan University (AKU). This programme was part of a Special Lecture Series (SLS), which aims to provide students with a broad-based education by enriching their understanding and appreciation of the humanities and social sciences."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The community at large also benefits from this interaction with outstanding personalities. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Welcoming the eminent speaker, Shamsh Kassim-Lakha, President of AKU, applauded him for being one of the few Pakistani actors today who has worked internationally both on the stage and screen. The President continued that Zia Mohyeddin's mastery of both the Urdu and English language was an attribute that all those in the audience should aspire to."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mohyeddin commenced his talk with a general discourse on his own creative efforts and the manipulation of language. He said, \"It is amazing how well I write in my sleep. The style is lucid and the writing is revealing and elegant. It is a pity I cannot recall much of this ingenious prose in my waking hours.\" He continued saying that, \"A word combines the meaning of reason, thought, discourse and all the events in the human mind that are set in action by language.Don't look a word that you don't know straight in the eye, or you will be embarrassed.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Defining a classic as \"A work about whose value it is assumed there can be no argument.it is all that is laudable, soul-lifting and enriching,\" Mohyeddin went on to list some of his least favourite works amongst the great literary giants such as Gibbons and Dickens. Conversely, he went on to portray as an \"unwanted classic\" all of those tomes kept on the bookshelf to make a room appear more high-brow. Among such works, Mohyeddin included Thomas Mann, Melville, Hawthorne, Charlotte Bronte and those by the poets Tennyson and Byron, whom he described as \"the epitome of tedium.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mohyeddin regaled the audience with a scholarly and sometimes irreverent analysis of numerous works widely regarded as masterpieces and encouraged the listeners to read extensively in order to form their own conclusions to add to their list of \"unwanted classics.\" "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000992",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Arts",
+      "TermGuid": "06fd6358-a12e-470e-b94c-823623a74f6c",
+      "WssId": 1889
+    },
+    {
+      "Label": "Special Lecture Series",
+      "TermGuid": "777a47fa-d29b-49dc-858f-cdcae5486bab",
+      "WssId": 1892
+    }
+  ],
+  "ScheduleStartDate": "2002-10-23T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1034,
+  "Modified": "2020-11-24T06:48:39Z",
+  "Created": "2016-12-28T05:47:25Z"
+}

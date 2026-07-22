@@ -1,0 +1,250 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a6645be7-71f7-4442-a6e3-359f01f95aaa",
+  "odata.etag": "\"7\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5f48c93c-32f7-4167-8c5e-51c484e0a55b",
+    "Id": 12859,
+    "Title": "Suroor Ansari"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0a2a8d98-6533-4a5b-8387-f82110672cf8",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "882bc324-9cd7-4dc7-9b46-34d8b1163974",
+    "Id": 12859,
+    "Title": "Suroor Ansari",
+    "EMail": "suroor.ansari@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5c408eb3-6fb7-4bbe-a976-3d22e6ac9389",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "5c806057-b266-459e-b795-11d9b4bc9754",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "c27564e8-f2ac-4c1e-b847-35f0b04695d2",
+      "Id": 4,
+      "Title": "Global"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "10e0e3b5-516b-4739-b968-47d1fc59e701",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f11cc494-bfc2-49c5-bca2-17b3454a5cad",
+    "Id": 12859,
+    "Title": "Suroor Ansari",
+    "EMail": "suroor.ansari@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2964)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "575750ae-99ab-4c82-be47-a359367a1e0c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2964,
+  "Title": "New £7.6 m research centre launched to improve mental and physical health in Pakistan and Afghanistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Center jointly established by AKU and University of York will focus on tackling non-communicable diseases",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University of York and the Aga Khan University (AKU) in Karachi will jointly lead the establishment of a new research centre to improve mental and physical health in Pakistan and Afghanistan. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Centre which will focus on tackling non-communicable diseases (NCDs) including depression and anxiety, heart conditions and diabetes, is one of a number of NCD research centres globally funded by the National Institute for Health and Care Research (NIHR) and Department of Health and Social Care, UK."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The NIHR Global Health Research Centre for Improving Mental and Physical Health Together will include collaboration with Rawalpindi Medical University, Pakistan, Khyber Medical University, Pakistan and international NGO HealthNet-TPO in Afghanistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "NCDs are rapidly increasing and are now responsible for 64% of deaths and disabilities globally. In Pakistan and Afghanistan, they account for almost a million deaths every year. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There is an urgent need for new interventions that are effective and can be delivered at scale in low-resource, conflict-affected settings. Researchers say the five-year £7.6m initiative provides new opportunities to develop, test and embed evidence-based treatments that address NCDs. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new Centre, which will be based at AKU and the University of York, will engage with patients and families through Community Advisory Panels, which will help design, conduct, and disseminate research findings. At least 60% of the new Centre's research trainees will be women."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Faith Osier, President of the International Union of Immunological Societies and Chair of the NIHR Global Health Research Centres Funding Committee, said: \"These new Centres are truly ground-breaking - it's the first time we've seen anything like this level of investment in non-communicable disease research in low-and-middle income countries and we're excited to see the advances that the next five years will bring.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Zainab Samad, Professor and Chair of the Department of Medicine at AKU and Director of the Centre for Impact said: \"Contextual research for non-communicable diseases that is locally led is a priority for the Centre and necessary to the development of the next generation of research leaders in Pakistan and Afghanistan.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Kamran Siddiqi, Professor in Public Health at the University of York and Co-Director of the Centre for Impact, added: \"We will train researchers, particularly women scholars, to become tomorrow's research leaders. Over time, we will develop strong, diverse academic leadership and our research will grow and get adopted, bringing wider health, societal, and economic benefits to the region.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new centre will officially be launched at an event in Islamabad on 1 November 2022."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This research was funded by the NIHR using UK aid from the UK Government to support global health research. The views expressed in this publication are those of the author(s) and not necessarily those of the NIHR or the UK government."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002854",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Non-communicable diseases",
+      "TermGuid": "ed18bdf9-dac6-4fa9-9152-c696c0ddd1a0",
+      "WssId": 2250
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Afghanistan",
+      "TermGuid": "eb4ca7a3-387f-4470-b891-0b47d5b05cdd",
+      "WssId": 2455
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "604ab977-6d10-4ef9-a237-4fb0b4a0b366",
+      "WssId": 2221
+    },
+    {
+      "Label": "United Kingdom",
+      "TermGuid": "70207756-0466-4733-98c6-f1892ee3c011",
+      "WssId": 2172
+    }
+  ],
+  "ScheduleStartDate": "2022-10-10T09:45:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2964,
+  "Modified": "2022-10-10T09:23:52Z",
+  "Created": "2022-10-10T08:59:17Z"
+}

@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "980d33a3-6ebb-4b37-ab53-8cf6ea822d0f",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f2336527-7e42-4904-85a2-e301287bd576",
+    "Id": 287,
+    "Title": "Daniel Raynor"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "98d00952-ea02-4cce-af9f-6b709a41eef9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc867681-88ff-4848-9afc-c93f4d213d93",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "44bddc0c-6e6c-4a3f-8530-5925b0e0d0dc",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2f8b6924-e5e2-4172-8367-32c349046ec2",
+    "Id": 13,
+    "Title": "Network of English Language Enhancement"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ba875674-4f0a-4f3e-a959-1223f98cf2fe",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1773)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "438dd78d-de7e-4c79-8838-3506233775a1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1773,
+  "Title": "Business English Course",
+  "NewsSubTitle": null,
+  "NewsSummary": "Develop the skills you need to cope better in using English for business communication at work.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassCAA3F3A5E98F4DE68D209DDDBE12CF28\">\n   <p>The Business English course is \n      <a href=\"/ele-net/staff/Pages/Business_English.aspx\" target=\"_blank\">currently being offered at Level B1 and Level B2</a>. Both the courses are designed to develop the skills needed to communicate effectively in English in business and work-related contexts. </p><p>The Level B1 course structure revolves around speaking and writing in English in work-related situations. A particular feature is expanding English vocabulary and skills you can apply to business negotiations, telephone conversations, written reports and emails, and professional presentations. The Level B2 course focuses on developing the communication skills needed to meet clients, write business proposals and make recommendations, present product concepts and project plan, organise staff training and discuss costs and budgets.</p><p>Our goal is to provide you the best English Language experience possible. The Business English course incorporates small class sizes, more opportunities to learn, practice, improve and excel in English communication. Come and join us by booking yourself a business class seat in 2019!<br><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001715",
+  "LocalApproverGroup": "ELE News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "network of english language enhancement",
+      "TermGuid": "4faf2085-64a1-492d-b971-0626b65f5480",
+      "WssId": 1540
+    }
+  ],
+  "ScheduleStartDate": "2018-11-28T20:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1773,
+  "Modified": "2018-11-30T15:21:23Z",
+  "Created": "2018-11-28T19:22:35Z"
+}

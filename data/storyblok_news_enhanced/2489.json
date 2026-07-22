@@ -1,0 +1,167 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "44c4a709-3106-43ca-90df-09a835bcadbd",
+  "odata.etag": "\"19\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de9e1e71-5d68-4e55-bb22-964860098640",
+    "Id": 8547,
+    "Title": "christine.madoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6fa2bd3e-5e0b-4035-8da6-f6af05f3e1ff",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "392d2209-1677-40ad-b1a7-f91f47370bb9",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "aa63c48f-b73b-449e-a3fa-1521b463229f",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "59044536-0e48-4470-bcc5-39d8da30301b",
+    "Id": 15,
+    "Title": "Graduate School of Media and Communications"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "270a6add-9b77-428d-b5c8-bf8e7c6e69d4",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e02844b-6b3b-4193-b18a-bcaf56d91af0",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2489)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9aa8a394-e74b-4ae4-bfe6-5773d4f90611",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2489,
+  "Title": "GSMC Faculty appointed to Complaints Commission",
+  "NewsSubTitle": null,
+  "NewsSummary": "Director of Academic Affairs joins Media Council of Kenya's Complaints Commission for a period of three years",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Nancy Booker, Director of Academic Affairs at the Aga Khan University Graduate School of Media and Communications has been appointed as a member of the Media Council of Kenya's Complaints Commission for a period of three years. The appointment was made via a Gazette Notice dated October 14, 2020 by the Cabinet Secretary, Ministry of ICT, Innovation and Youth Affairs Mr Joe Mucheru."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The seven-member team was sworn in at the Supreme Court in November 2020 and comprises of media leaders and journalists."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The core function of the Commission is to mediate or adjudicate in disputes between the government and the media, the public and the media and intra media on ethical issues, ensure the adherence of high standards of journalism as provided for in the code of conduct for the practice of journalism in Kenya and achieve impartial, speedy and cost-effective settlement of complaints against journalists and media enterprises, without fear of favour."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Booker is an Assistant Professor and has had a distinguished career as an academic, teacher, researcher and media practitioner with over 18 years teaching and academic administration experience. She specializes in broadcast journalism, multimedia storytelling, media management and health communication, and has several academic publications in these areas. She has also been trained in leadership at Harvard University."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002394",
+  "LocalApproverGroup": "CA GSMC News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "graduate school of media and communications",
+      "TermGuid": "03156c18-76a7-4659-b1a1-5d1ae21f236d",
+      "WssId": 1848
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2020-11-24T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2489,
+  "Modified": "2021-05-10T08:30:37Z",
+  "Created": "2020-11-24T09:00:46Z"
+}

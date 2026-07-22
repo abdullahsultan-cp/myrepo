@@ -1,0 +1,180 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6f09ee25-f957-4b56-9a7c-77d0bf45135d",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a5c2aa4e-3cda-4ac0-ad6f-90434256af0b",
+    "Id": 8311,
+    "Title": "emma.rono"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "733aa8a3-b930-47de-bafe-6b9487600506",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "633657a3-60b1-448a-9ef9-e64b501425f5",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ed30f963-afea-4964-b5b0-14c5b27a530b",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "10e96cab-2c82-4258-9fec-ffd9fd423141",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2e3250b-debc-467d-a214-c974b814f732",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2547)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fd6a903a-f6a6-4047-a950-cc997220f823",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2547,
+  "Title": "AKU faculty appointed to Global Cancer Board",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Miriam Mutebi is the first African oncologist on the UICC Board",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Miriam Mutebi, a consultant breast surgical oncologist and assistant professor in surgery at AKU Medical College, East Africa has been appointed to the board of directors of the Union for International Cancer Control (UICC). "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The appointment was announced by the UICC Board President Anil D'Cruz following a competitive election by the UICC General Assembly. Dr Mutebi, a breast cancer surgeon, clinical epidemiologist and alumni of AKU is the first African oncologist to sit on the board."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Acknowledging her appointment, Dr Mutebi said: \"This is an excellent opportunity for those living in Kenya and sub-Saharan Africa to ensure that the global discussion on cancer policy and strategy, patient care and advocacy, is afro-centric as much as possible.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She aims to develop robust regional collaborations that leverage collective resources that will help improve available care and treatment options for patients in Sub-Saharan Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our central aim is to bridge the gap between awareness and action in order to reduce the overall cancer burden for everyone. This is a major feat and we acknowledge will necessitate public and private sector health practitioners working together.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mutebi will join the UICC board of 17 directors that will steer the third largest organization globally in driving cancer prevention and control strategy and policy for the foreseeable future. She will serve on the board for two years until December 2022. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "UICC is a global body representing the world's major cancer societies, ministries of health, patient groups, policy makers, researchers and cancer experts from 170 countries.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002447",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "c4348316-b0a1-4ca5-a133-b70689d66efc",
+      "WssId": 1840
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2021-02-03T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Miriam Mutebi appointed to the board of directors of the Union for International Cancer Control.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2547,
+  "Modified": "2021-02-04T06:12:10Z",
+  "Created": "2021-02-03T12:31:54Z"
+}

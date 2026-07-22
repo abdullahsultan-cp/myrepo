@@ -1,0 +1,227 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d44c45b0-8eea-421b-9007-506d163bf49b",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f49394f2-bb0e-468c-9fc6-a072117c5077",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5ce9480a-164b-4938-bdaa-77151f906315",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e8bcf5c9-3516-4eb1-9094-539e54d94518",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "def494fe-d047-4723-9d18-e64f4759bdcf",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "0f0d47a9-ec14-459c-ba03-0ef39255c807",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e04a0ce4-8d3d-426b-bbfb-e9a2df717245",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8ef84eb8-3766-4a6c-ac2b-846ca7ada11a",
+    "Id": 182,
+    "Title": "Alexandra Khan",
+    "EMail": "Alexandra.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1639)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7fcc9d1-0558-43fd-99a8-640314db1ba7",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1639,
+  "Title": "ISMC Professor Stephane Pradines' Research Featured in TV Documentary",
+  "NewsSubTitle": null,
+  "NewsSummary": "Professor Speaks About His Work in Kilwa on Arte Channel",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Stephane Pradine's work in Kilwa was recently featured for a documentary on the history of the Swahili coast.  The film is on ARTE Channel in French & German. Short clips have been released with the full documentary available online after June 14"
+          },
+          {
+            "type": "text",
+            "text": "th",
+            "marks": [
+              {
+                "type": "superscript"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Pradines is a widely recognised expert on Muslim Archaeology and teaches at "
+          },
+          {
+            "type": "text",
+            "text": "AKU-ISMC",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/ismc/faculty/pages/profile.aspx?ProfileID=4&Name=Stephane%20Pradines",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ".  He obtained his PhD from the Sorbonne and has published extensively."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Links to the documentary are avialble below with the full version available from June 14."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://www.arte.tv/fr/videos/072420-010-A/enquetes-archeologiques/",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.arte.tv/fr/videos/072420-010-A/enquetes-archeologiques/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "https://www.arte.tv/de/videos/072420-010-A/abenteuer-archaeologie/",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.arte.tv/de/videos/072420-010-A/abenteuer-archaeologie/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "ISMC Director, Dr Leif Stenberg commented; \"This is indeed exciting news and of course we are all looking forward to watching the full  programme on the 14th!  It's especially pleasing to have Stephane's work recognised in this way  and for his research to reach a wider audience through the medium of TV.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001584",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    }
+  ],
+  "ScheduleStartDate": "2018-06-06T22:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Professor Pradines",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1639,
+  "Modified": "2018-06-12T10:22:28Z",
+  "Created": "2018-06-06T22:05:43Z"
+}

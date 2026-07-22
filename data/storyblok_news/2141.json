@@ -1,0 +1,248 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "ecd825c4-854c-464e-96ea-525458928a8c",
+  "odata.etag": "\"37\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "74aa35c2-4917-4cf4-acf5-5bd2502d8df6",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f34da640-1f0d-4698-9463-d0ed48bbb094",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dad29283-870f-4ca2-bbb4-f6b41b860f48",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a3ddf712-642c-4c50-91db-ad163c4f80db",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "615f9155-a57e-47f4-a838-c3296c8d5356",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b95d00fc-967b-42de-9c4c-e6355e47b70f",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2141)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4979d7e7-34a3-4e1b-afd1-39661e89fe13",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2141,
+  "Title": "Experts call for systematic approach to reduce injury deaths",
+  "NewsSubTitle": null,
+  "NewsSummary": "Annual Surgical Conference brought together national and international speakers on trauma",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Thousands of injury deaths every year in Pakistan can be averted by taking safety measures on one side and by adopting a systematic approach to improve trauma care on the other, said experts while speaking at the inaugural session of the 5th AKU Annual Surgical Conference Trauma: Striving for Change."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A systematic approach ensures that life-saving interventions are performed in a timely manner and that no life-threatening conditions are missed, speakers at the event noted."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As per WHO guidelines, such an approach could consist of emergency care in the form of first aid being provided by a trained bystander, who can also call an ambulance - equipped with necessary life support and at least two personnel - one to monitor and manage the patient and the other to drive."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ambulance personnel should be able to communicate to a relevant hospital prior to arrival, if needed. During the handover, the ambulance provider should share critical information with hospital personnel, who then triage patients to different areas based on the seriousness of their condition."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Research from the conference was published in a special supplement of the "
+          },
+          {
+            "type": "text",
+            "text": "Journal of the Pakistan Medical Association",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.jpma.org.pk/supplement-details/17",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". During the event, Professor Syed Ather Enam, chair of the Department of Surgery at AKU, referred to a case report of a two and half-year old boy, who sustained three gunshots at point-blank range. The child was unresponsive when the terrified family brought him to the emergency department of the Aga Khan University Hospital after trying two nearby hospitals. When the patient did not respond to initial resuscitation efforts, a team of paediatric, cardiothoracic and orthopaedic surgery, and paediatric anesthesiology specialists was taken on board and he was moved to the operating room immediately."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Today, he is a healthy four-and-a-half-year old schoolgoing child. There could be thousands of people who were not lucky like him. That's because our hospitals lack multidisciplinary teams of specialists and the emergency care system as a whole is short of fully equipped ambulances and trained bystanders,\" Professor Enam said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's Annual Surgical Conference brought together national and international experts with expertise in pre-hospital care, mass casualty, rehabilitation, prevention and disaster management."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Since blood loss is the leading cause of preventable death following injury, rapid control of bleeding at the scene of an event can be lifesaving, especially if bystanders can step in to help before emergency responders arrive,\" said Eileen Bulger, a professor of surgery at the University of Washington."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the second day of the conference, AKU's upcoming Centre of Excellence for Trauma and Emergencies, and partners will launch a national life-saving initiative focused on bystander training in life support."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Emergency care is essential to many targets of the United Nations' Sustainable Development Goals. Under SDG 3, good health and wellbeing: Post-crash emergency care and rehabilitation has been estimated to play a role in preventing 40 per cent of road traffic deaths. Also, timely emergency care access is critical to effective universal health coverage."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Emergency care can also contribute to efforts to achieve targets under 10 more SDGs by addressing non-communicable diseases, obstetric complications, child health issues, and injuries related to disasters and violence, informed Hasan Badre Alam, a professor of surgery at the University of Michigan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU Vice Provost Anjum Halai, Medical College Dean Adil Haider and chair of the event's organising committee Hasnain Zafar also spoke at the conference."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Annual AKU Surgical Conference, organised by the Department of Surgery at the Aga Khan University in Karachi, offers unparalleled hands-on and didactic learning opportunities, timely discourse on the most relevant surgical practices and research, and networking with peers. The last year's conference focused on the global surgery."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002056",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Emergency Care",
+      "TermGuid": "251a26c1-d1c5-4530-93ec-106423593583",
+      "WssId": 1873
+    }
+  ],
+  "ScheduleStartDate": "2020-02-14T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": {
+    "Description": "Read in Urdu",
+    "Url": "http://aku.edu/news/Documents/News_Release_5th_AASC_Urdu_PDF.pdf"
+  },
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU's Annual Surgical Conference brought together national and international experts, including Eileen Bulger, a professor of surgery at the University of Washington. Photo: Akber Moeen / AKU",
+  "MediumImageCaption": "LR: Drs Adil Haider, Eileen Bulger, Hasan Badre Alam, Syed Ather Enam and Hasnain Zafar. Photo: Akber Moeen / AKU",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2141,
+  "Modified": "2020-02-20T06:59:22Z",
+  "Created": "2020-02-14T13:27:10Z"
+}

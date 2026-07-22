@@ -1,0 +1,330 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7e4fc7a2-bd02-4b97-b73c-0d7a6b0af235",
+  "odata.etag": "\"17\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b89e1b72-b122-4028-a763-4a2a586ec17f",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "59d4a8fc-8321-4268-936f-b48478e920b6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "428cb9f8-e328-481e-8e2b-f441b0a11889",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c2ff0dbd-b78e-4a17-8ba4-1a36e96a834e",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9a909d2e-71ed-4607-a494-989a2f6cb1ca",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "e1ed86dc-4767-4349-9b14-89bac74c5143",
+      "Id": 20,
+      "Title": "Institute for Educational Development, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "183f03a9-ac3d-4a6b-87f6-f30db975c0aa",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2455)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "08d85ac2-18ca-41bd-b0ec-8a6a03eb7462",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2455,
+  "Title": "Course on 'Histories and Cultures of Muslims'",
+  "NewsSubTitle": null,
+  "NewsSummary": "'A Window into the Histories and Cultures of Muslims' is being offered by AKU's IED and ISMC.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The opening ceremony of the certificate course in education, 'A Window into the Histories and Cultures of Muslims', was held today at the Aga Khan University's Institute for Educational Development (AKU-IED). The programme, the first of its kind, is being jointly conducted by the faculty of AKU's IED and the Institute for the Study of Muslim Civilisations."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The course seeks to promote a cultural and civilisational understanding of Muslim societies through an intellectually-stimulating and ethically-inspiring survey of the history of Muslims. It will promote thoughtful explorations of the challenges faced by Muslim societies and the role of teachers and education in general in meeting these challenges. It will help the course participants to understand and rethink issues, experiences and discourses in contemporary Muslim societies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his welcome address Dr Sadrudin Pardhan, Director of Outreach Programmes at AKU-IED, acknowledged the combined efforts of the two academic centres of the University in developing the certificate course. He noted the importance of the course's aim: to study the rich cultural aspects of Muslim societies, from Morocco to Indonesia, and their impact on the people of respective regions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Referring to the recently-concluded Citizenship Education programme, Dr Pardhan stated that the programme helped AKU-IED to know how teachers think and helped the course participants understand that they should work to \"help our children grow up as responsible citizens\". A similar impact was sought for the certificate course. \"We will be offering such interesting programmes and, hopefully, these programmes will enrich our curriculum.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his remarks Dr Abdou Filali-Ansary, Director of AKU-ISMC, noted that ISMC was the outcome of a long process of studies and surveys that aimed to find ways of disseminating scholarly work on Muslim civilizations. He clarified that ISMC was not a school of theology but an academic institution."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "About the programme, Dr Filali said discussions with AKU-IED led to the development and offering of this programme that would focus on the cultures and traditions of Muslims. He further added that \"the 21st century has brought to light the immense need for undertaking research and conducting educational courses on various aspects of Muslim societies\"."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Talking about the activities of AKU-ISMC, Dr Filali outlined the work of the Institute as three inter-related areas:"
+          }
+        ]
+      },
+      {
+        "type": "ordered_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Education that includes degree programmes and short academic courses as well as the development of educational material on various aspects of Muslim civilisations;"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Research that includes issues that are critical to all contemporary societies but that remain relatively unexplored within Muslim environments; and"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Dissemination of modern scholarship on Muslim civilisations in different languages."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He said through this programme \"we will share with you our knowledge and learn from your knowledge on Muslim traditions and cultures. We will learn together how to mobilize knowledge in the best possible ways.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Moncef Ben Abdeljelil, Associate Professor at AKU-ISMC, said the programme would provide an opportunity for interaction between different peoples having different perspectives. Further, he added, an emphasis would be laid on the diversity of Muslim cultures and histories."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Abdeljelil said the programme would study both the past and present of Muslim societies. He stated the objectives of the programme as:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "To think critically about Muslim heritage and cultures;"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "To assess the approaches used to study the cultures and heritage of Muslims; and"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "To engage in current debates and discussions about events affecting Muslim societies."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Al-Karim Datoo, Instructor at AKU-IED, and Farid Panjwani,Senior Instructor at AKU-ISMC, outlined the salient features of the programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The ceremony was attended by the course participants as well as numerous faculty and staff of AKU-IED and AKU-ISMC."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002360",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "42798a93-35ae-4572-ba14-7cf8818ce9fb",
+      "WssId": 1850
+    }
+  ],
+  "ScheduleStartDate": "2004-07-05T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2455,
+  "Modified": "2020-11-30T09:00:30Z",
+  "Created": "2020-10-28T06:50:36Z"
+}

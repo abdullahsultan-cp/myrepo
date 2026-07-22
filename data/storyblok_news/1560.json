@@ -1,0 +1,359 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "de845ad2-0872-40f7-9ff4-90f0a4566d60",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6fa06dbc-a75b-4ab1-b357-4d8a795ea8b9",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82583db9-cd48-4cc9-8652-336974176cb7",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61004727-1d95-4d6e-8987-be649ce85c8a",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "670e7bdf-a506-4c86-abb9-a3dfcb22fc0a",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9232b6e1-bbdf-478a-a88a-4d5e0da3259e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "1c723beb-5d6e-45ab-b155-5c3e3bfe42b0",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "58ece28d-bc00-456b-8a69-9d646507b3f7",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1560)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "16c056e2-a51b-47ac-94b8-5bb3bc314a22",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1560,
+  "Title": "Research awards for AKU faculty ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Six faculty members at Aga Khan University have been recognised in the 2017-2018 Research Productivity Awards conferred by the PCST",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Six faculty members at Aga Khan University have been recognised in the 2017-2018 Research Productivity Awards conferred by the "
+          },
+          {
+            "type": "text",
+            "text": "Pakistan Council for Science and Technology (PCST)",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.pcst.org.pk/index.php",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The awards honour the country's top scientists across 12 different fields and the University's researchers were appreciated for making high-impact contributions to the disciplines of Health Sciences, Biological Sciences and Pharmaceutical Sciences."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Four faculty members were appreciated in the Health Sciences category: "
+          },
+          {
+            "type": "text",
+            "text": "Professor Zulfiqar A. Bhutta",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcpk/faculty/pages/profile.aspx?ProfileID=333&Name=Zulfiqar%20Ahmed%20Bhutta",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and "
+          },
+          {
+            "type": "text",
+            "text": "Dr Asad Ali",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcpk/faculty/pages/profile.aspx?ProfileID=331&Name=Syed%20Asad%20Ali",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " from the department of paediatrics and child health, "
+          },
+          {
+            "type": "text",
+            "text": "Professor Mohammad Wasay",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcpk/faculty/pages/profile.aspx?ProfileID=128&Name=Mohammad%20Wasay",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " from the department of medicine, and "
+          },
+          {
+            "type": "text",
+            "text": "Professor Bushra Moiz",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcpk/faculty/pages/profile.aspx?ProfileID=176&Name=Bushra%20Moiz",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " from the department of pathology and laboratory medicine. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Two other researchers, Professor Anwar-ul-Hassan Gilani and "
+          },
+          {
+            "type": "text",
+            "text": "Dr Abdul Manan Baig",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcpk/faculty/pages/profile.aspx?ProfileID=32&Name=Abdul%20Mannan%20Baig",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", of the department of biological and biomedical sciences, were recognised for their contributions to Pharmaceutical Sciences and Biological Sciences."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"Being acknowledged by the Pakistan Council for Science and Technology is indeed an honour,\" said Dr Asad Ali, associate dean, research, at the University's Medical College. \"It complements our credibility as researchers not just at a personal level, but in fact highlights the contribution of our University, nationally. It also showcases to the international community that Pakistani scientists are highly productive and are actively contributing to the body of scientific knowledge,\" he added."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The awards saw researchers ranked on the basis of the number of books published and edited, patents and research grants secured, number of doctoral students supervised, applied research outputs and innovations, number of citations and the total articles published in high-impact journals."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "A total of 2,493 scientists working in public and private sector universities, colleges, and research and development organisations across the country were assessed by the PCST for the award. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "In 2017, the PCST published the "
+          },
+          {
+            "type": "text",
+            "text": "2016 Productive Scientists of Pakistan directory",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/Pages/News_Details.aspx?nid=NEWS-001215",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " which saw the University's faculty take up seven spots among the country's top 10 researchers in Health Sciences. Twenty-three AKU faculty were recognised for their work by being included in the nationwide directory of 78 researchers.  "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The PCST is an advisory body on issues related to research in the sciences that works under the Ministry of Science and Technology. Its council includes the chair of the Higher Education Commission, the Pakistan Academy of Sciences and the Pakistan Science Foundation as well as leading officials from other public and private sector organisations."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001506",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2018-02-20T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1560,
+  "Modified": "2018-02-20T04:30:01Z",
+  "Created": "2018-02-20T04:14:04Z"
+}

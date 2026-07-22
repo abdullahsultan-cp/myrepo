@@ -1,0 +1,178 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "875565b1-9482-4807-b7a5-d2a5022e7b04",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6c5e0f62-eeeb-4627-97d8-35073e733695",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "64076a83-e22b-4ec1-870a-f7cd5b0fc0cc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c3ae0dde-a362-44e8-979b-6ac6de56fbe6",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "69b2579d-fccb-4021-921f-7f1fb813a0a7",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1554cce0-c902-4351-be1d-bd078e245e61",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a0dbe41e-328c-42e2-90e3-83f841a942d1",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f1a82105-0f3a-4b85-bccc-38491397e527",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(615)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb01cd9e-46b4-4b3e-8795-916c5097fc41",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 615,
+  "Title": "Violence on the rise in Pakistani society",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"The explosion we saw on our streets recently is the result of years of pent up frustration and anger. It only requires a fuse to be lit.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The explosion we saw on our streets recently is the result of years of pent up frustration and anger. It only requires a fuse to be lit. This time it was provided by events in Liaquat Bagh, Rawalpindi,\" stated Professor Murad Moosa Khan, Consultant Psychiatrist and Chairman, Department of Psychiatry at Aga Khan University (AKU). He was discussing aspects of violence in Pakistani society at Aga Khan University Hospital's (AKUH) 'Signs, Symptoms and Care' programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistani society is becoming increasingly violent and aggressive. A major reason is that a large majority of people have been completely marginalised and excluded from the social, political and economic process. They are disenfranchised and deprived of basic needs. Rampant poverty, unemployment, lack of civic facilities and precarious law and order situation has led to very high stress levels in the Pakistani population."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Consultant Psychiatrist Dr Ehsan Ullah Syed informed the audience that violence (homicide, suicide and trauma) is a leading cause of death for children, adolescents and young adults, more prevalent than disease, cancer or congenital disorders. He discussed violence in media: how it affects children and families."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "American children, ages 8 to 18, spend more time (44.5 hours per week - 6.5 hours daily) in front of computer, television, and game screens than any other activity in their lives except sleeping. \"Do we know if our children are spending any less time than this?\" he asked parents. Children who spend too much time watching TV and playing video games tend to have more aggressive thoughts, feelings and behaviors and tend to assume the worst in their interaction with peers. Children who are hooked to the media (TV, movies, Internet, etc.) most of the time develop violent tendencies with time and are less sensitive to blood, mayhem and disasters. Parents should make sure that their children are watching programmes without violent content and find alternate activities for them such as sports."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Nargis Asad, Consultant Psychologist, AKU said that violence takes multiple forms at personal and social levels. Research indicates that extended exposure to violence serves to magnify the physical and psychological health risks such as injuries, increased tolerance for violent behaviours, depression, anxiety and other psychological symptoms to dangerous levels."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All social agencies such as parents, school, health professionals, state supported programmes for children and youth, religious scholars, politicians and the civil society have to play essential roles in creating a more peaceful \"tomorrow.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As part of its outreach programme and societal commitment of creating awareness of early diagnosis and timely treatment, AKUH has organised over 250 'Signs, Symptoms and Care' programmes in Karachi, Hyderabad, Quetta and UAE, benefiting more than 50,000 people. The Hospital's Patient Welfare Programme reaches out to patients by providing assistance to those patients who are unable to afford the medical cost of their treatment. 73 per cent of all patients treated at the AKUH are from low- to middle-income areas. Since the inception of this welfare programme in 1986, over PKR 1.6 billion has been disbursed to more than 300,000 needy patients."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000573",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2008-01-13T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 615,
+  "Modified": "2017-02-22T08:48:36Z",
+  "Created": "2016-12-14T07:31:04Z"
+}

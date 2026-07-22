@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "05807d98-52ca-40aa-b5ae-e0486d72428d",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e794e532-4258-4d5a-87bb-d7b21e5b6f88",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "13273af3-033d-4f2f-a554-29cab9e573fe",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e092802-2899-44cf-b7e3-e523b7e86568",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6d390b41-c245-485d-bd9a-015f9f2b010b",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c87a8d20-a780-41ae-9aa8-08fad88abc36",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "d328ff97-2f85-41ad-91f5-b95d27b74911",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e18fe840-ada3-45a8-a32c-56e0026e630d",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1748)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f403121a-0284-4baa-921c-10e91a04ff71",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1748,
+  "Title": "AKU partners with Tsinghua University for fellowship programme",
+  "NewsSubTitle": null,
+  "NewsSummary": "Course will explore how Kenya and China can collaborate to achieve the Sustainable Development Goals for health. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassACAD2A5E010D4B108D59ACE4C672C3A3\"><p>Twenty-two scholars from Chinese universities are expanding their knowledge of population health and Kenya's healthcare system through a two-week course taught by Aga Khan University faculty and professionals from other agencies of&#160; the Aga Khan Development Network.&#160;</p><p>The scholars are participating in Tsinghua University's Silk Road Global Health Fellowship Program, which aims to increase China's capacity to help solve global health problems by orchestrating educational visits to various countries. The course, which will be held in Nairobi and Mombasa, is the latest collaboration between AKU and Chinese universities&#58; in February, AKU joined with fellow agencies of the Aga Khan Development Network, Tsinghua University and Fudan University&#160;for a two-day Population Health Symposium in Mombasa.&#160;&#160;</p><p>Course participants will be exposed to a wide range of interactive learning sessions, case studies, site visits and group work. Professor Robert Armstrong, Dean of the AKU Medical College in East Africa, said the course offers an opportunity to explore how Kenya and China can work together to achieve the Sustainable Development Goals for health.&#160;</p><p>\"The world is focused on the Sustainable Development Goals and what can be achieved by 2030, whether in a low-resource country such as Kenya or a country such as China that has experienced rapid economic growth,\" Armstrong said. \"We look forward to a two-way dialogue allowing us to discover ways to build collaborations between the two countries.\"</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001692",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    }
+  ],
+  "ScheduleStartDate": "2018-11-07T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Twenty-two scholars from Chinese universities are expanding their knowledge of population health and Kenya's healthcare system. ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1748,
+  "Modified": "2018-11-07T07:35:46Z",
+  "Created": "2018-11-07T07:08:50Z"
+}

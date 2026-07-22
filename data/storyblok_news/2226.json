@@ -1,0 +1,330 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2668d631-7031-4bc8-ba45-a8a1157eb672",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "180b0c82-62df-425b-b080-916aa7ca0301",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1879c83a-c358-4252-ad7c-e4ecb3920ae9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1766e150-5d3b-47fc-9f25-25413088b41d",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3c3dfcd3-22f7-4bc0-a212-efb3c3ba0d2b",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "09e652ac-1e82-4f2b-94c6-bb216c5cb4d4",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "3b187cc0-032c-4ad1-bcf8-006118116c1e",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ea0d22f2-65f2-4cfb-8962-58d6dbb0dbe0",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2226)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6f46e59d-2f32-4f4e-87b0-62047752e221",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2226,
+  "Title": "COVID-19: Innovative ways of delivering neurological healthcare ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Harnessing ICT to deliver essential healthcare during the COVID-19 pandemic.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The imposition of lockdowns following the COVID-19 pandemic has required doctors to adapt how they serve patients. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On March 16, Dr Dilraj Sokhi, assistant professor in adult clinical neurology at AKU, landed in Nairobi and immediately quarantined himself in line with the Kenyan health ministry's guidelines for all travellers.  "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Sokhi had to think quickly and innovatively about how to reach his patients while in isolation. His account of using technology to provide telemedicine services while in quarantine is below. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I work as a neurologist at a Nairobi hospital, and there are only 18 of us in the country, looking after patients with strokes, headaches, epilepsy and other nervous system disorders. Within hours of being carted off home, my patients reached out to me, first - in true Kenyan spirit - to check that I was ok, but also to ask how they would now seek my services since I was unavailable. The flood of requests called for an urgent solution, and within 24 hours I embarked on setting up a temporary tele-neurology service for my patients from the confines of my quarantine room at home."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Teleneurology, similar to telemedicine, is the application of information and communication technology to care for patients with neurological disorders, and has become a standard part of neurology practice in some parts of the world such as North America. However in sub-Saharan Africa (SSA) there has been poor uptake of telemedicine due to numerous economic, political and infrastructural factors. The few SSA countries which have implemented some aspects of telemedicine demonstrated that there needs to be significant support from both governmental and non-governmental organizations. Such efforts have also highlighted significant limitations e.g. clinical information has to be shared with a specialist overseas given the low number of neurologists in the country, and usually would not cater for more than a handful of neurological conditions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "My pilot teleneurology process was simple: send a text message to the patient outlining the service and request consent to a phone call; set a date and time convenient to speak with the patient; hold the audio teleconsultation and document the salient points in a password-protected anonymised spreadsheet; email back prescriptions or laboratory/radiology requests to the patient; and, finally, organise a follow-up review to close the loop. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To assess the effectiveness of this new service, I then sent out a brief post hoc online survey to all patients, which was adapted (with the author's' prior permission) from elements of a similar teleneurology endeavour undertaken in Chile. Altogether, I reached out to 58 patients: 31 agreed to take part in the pilot; 12 declined as they felt they could wait for another appointment; and the rest did not respond. The survey was completed by 26 patients and the results are summarised below:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "All the patients were satisfied with the teleconsultation, with 96 per cent stating they felt their health issued had been addressed, 92 per cent were happy to have future teleconsultations, and 96 per cent saying they would recommend teleconsultations to their family and friends."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "86 per cent felt that the consultation was similar to a face-to-face consultation, and only 8 per cent felt they would have preferred it in person."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "92 per cent stated that the teleconsultation had not intruded on their day's routine; indeed, for 85% of the patients at least half a day was saved which would have been spent physically getting to the hospital for a face-to-face consultation."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "66 per cent of patients stated the service saved them a travel distance of over 10 kilometres (half of them were coming from distances over 20km away)."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "92 per cent said they would be happy to have their prescriptions emailed to them; we did email prescriptions to 18 patients by email and they all responded saying this additional service was convenient and efficient."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The results from my pilot study are very positive, and show that even in resource-limited settings, harnessing ICT to deliver essential healthcare is feasible and well received by patients. Now officially out of self-quarantine, I am helping lead the "
+          },
+          {
+            "type": "text",
+            "text": "Internal Medicine",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcea/medicine/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " department at Aga Khan University in establishing a wider telemedicine service across disciplines, especially as we face an exponential rise in coronavirus cases in the country. My hope is that this initiative will encourage neurologists and other physicians across the country and region to set up their own telemedicine service which will allow them to continue serving their communities, during and maybe even beyond the pandemic.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Dilraj Sokhi is an assistant professor in adult clinical neurology at the Aga Khan University.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002139",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "44643f58-c153-4aaf-912b-2181456ed941",
+      "WssId": 1823
+    }
+  ],
+  "ScheduleStartDate": "2020-04-15T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Harnessing ICT to deliver essential healthcare is feasible during this Covid-19 pandemic, says AKU Faculty Dr Dilraj Singh Sokhi",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2226,
+  "Modified": "2020-04-29T15:56:59Z",
+  "Created": "2020-04-15T13:34:25Z"
+}

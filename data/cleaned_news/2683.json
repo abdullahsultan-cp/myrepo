@@ -1,0 +1,110 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "13c18f4e-da45-47cf-9e66-dbf10a8e632c",
+  "odata.etag": "\"30\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ec8f3943-1086-46a0-aeb2-0b8cad095f80",
+    "Id": 5336,
+    "Title": "Fazila Methani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1a657634-ea82-4d4a-a705-9559210dda60",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e78360dd-1727-495d-8bca-8a2c310cc929",
+    "Id": 5336,
+    "Title": "Fazila Methani",
+    "EMail": "fazila.afrozali@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1c962a84-6e9b-4a69-94da-3fbd53570864",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "dc486daa-aac7-4e52-844a-9832e34307af",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2f863f71-47f2-4879-b7b7-152666a7ddc7",
+    "Id": 5336,
+    "Title": "Fazila Methani",
+    "EMail": "fazila.afrozali@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2683)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "72338362-ef88-47af-a717-d614e814aa11",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2683,
+  "Title": "Faculty to join global expert group on teaching and learning",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Jane Rarieya is the second AKU expert to advise Advance HE",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassDAE3C062266D451E9AAD07B11D97D6F8\"><p><br></p><p>Dr Jane Rarieya, director of teaching and learning at AKU's Network of Quality, Teaching and Learning (QTL_net),&#160;has been appointed to Advance HE's Expert Advisory Group on Fellowship and Accreditation.</p><div>Advance HE works with higher education institutions around the world to promote excellence in teaching and learning. Dr Rarieya will help shape Advance HE body's policy and processes with a view of enhancing the professional development of all those who teach and support learning in the sector.</div><div><br></div><div>Dr Rarieya is the second AKU faculty member to provide guidance and expertise to Advance HE. In 2020, Professor Tashmin Khamis, vice-provost Quality,&#160;Teaching and Learning, was appointed to Advance HE's Global Perspectives Strategic Advisory Group which works in consultation with members to shape the future direction of the organisation.</div><div><br></div><div>In 2019, AKU became the first University in South Asia and East Africa to gain accreditation by Advance HE (UK).&#160;All universities in the UK are subscribers to Advance HE which has strategic partnerships with Higher Education Institutions in 23 other countries.&#160;</div><div><br><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002581",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Networks of Quality, Teaching and Learning",
+      "TermGuid": "923ab1e1-325f-42c1-a4d9-d431cfa7dc8b",
+      "WssId": 2174
+    },
+    {
+      "Label": "Global health",
+      "TermGuid": "249f293c-9ca1-48f5-9dd0-cfd04e7ebfac",
+      "WssId": 2202
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2021-06-30T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2683,
+  "Modified": "2021-07-02T10:51:43Z",
+  "Created": "2021-06-30T13:23:15Z"
+}

@@ -1,0 +1,224 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "41975464-cc6c-4334-b543-3b85c55ab5d9",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ddfc04bc-ddfb-4f9b-aab0-92f9b8a8492a",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "782bc57f-5b3d-40d3-aaad-1e6257e42159",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd21a209-8e25-4411-974d-71bbf3927441",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "da902e39-7d11-48c2-921b-efe9d9203bbf",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ecb65eea-4994-4716-a117-c4e51721f418",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "df530873-7df6-4f95-b4ed-aab6dd50b3a4",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cb6e62a2-875a-4158-a503-baed94772935",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1503)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3940163c-8a73-466b-9329-01584a00e981",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1503,
+  "Title": "Cyclists and doctors launch special fund for heart patients",
+  "NewsSubTitle": null,
+  "NewsSummary": "Initiative will expand access to high-quality cardiac care at AKU's teaching hospital. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University Hospital (AKUH) partnered with Critical Mass Karachi (CMK), a community of cyclists, to launch a special fund for underserved adult cardiology patients, with a Ride for a Healthy Heart on Sunday. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over 100 members of CMK participated, cycling from Delawalla in Clifton to the Sports and Rehabilitation Centre at the Aga Khan University's Stadium Road Campus to raise awareness of the benefits associated with cycling and to support a charitable cause. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cardiovascular disease (CVD), which is often misunderstood as a condition only affecting rich countries, is a leading cause of death in Pakistan. Often referred to as lifestyle disease, CVD, which is a general term for all diseases of the heart and circulation, including coronary heart disease, angina, heart attack, congenital heart disease and stroke, is associated to the growing problems of obesity, unhealthy eating habits, diabetes, high blood pressure, high cholesterol, and high levels of tobacco use in the country. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Across the developing world, where 80% of all CVD fatalities occur, CVD inflicts individuals at a younger age in comparison to their counterparts in high-income countries."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As the cyclists finished their ride at AKUH, they were greeted at the Sports Centre with a wholesome breakfast. Dr Saulat Fatimi, a cyclist and an acclaimed cardiac surgeon who heads the Heart, Lungs and Vascular service line at AKUH, said: \"Given the scale of the CVD problem, there is an urgent need to reduce the risk of coronary heart disease deaths in Pakistan\". He noted that \"over half of the deaths caused by CVD can be prevented by adopting a healthy lifestyle that includes a balanced diet and regular exercise, including cycling or walking\". "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ironically, the poorest are often the most vulnerable. Dr Fatimi said that, \"poor communities get all the burdens and none of the amenities life has to offer... while treatment of cardiovascular disease can be expensive, and poor communities also suffer the indirect costs of CVD such as premature mortality, morbidity and lost earning potential.\" The only way to cope with the imminent tidal wave of heart failure patients, he said, is to pay greater attention to preventive efforts and provide a financial safety-net for those who cannot afford treatment. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Aneela Darbar, a member of the executive committee of the Patients' Behbud Society at AKUH (PBS) and a cycling enthusiast, commented on AKUH's efforts to make quality cardiac care accessible for underserved and lower-income communities, saying that \"good health is not equally distributed, as socio-economic status is associated with substantial disparities in health outcomes\". She said AKUH and PBS are \"committed to addressing the barriers to good health, including ensuring that quality cardiac treatment is available to ill mustehiq patients.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001449",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "heart diseases",
+      "TermGuid": "e83fa6f3-f669-4154-ba16-4ed1f586a217",
+      "WssId": 1686
+    },
+    {
+      "Label": "Giving",
+      "TermGuid": "3f8ebefc-b933-4548-ab94-11bc70fa71da",
+      "WssId": 1383
+    },
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "6f0bcd20-a624-4b55-a7b7-f1463b4bc779",
+      "WssId": 1391
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    }
+  ],
+  "ScheduleStartDate": "2018-02-11T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Participants at the Ride for a Healthy Heart event.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1503,
+  "Modified": "2018-02-13T08:29:22Z",
+  "Created": "2018-02-11T06:44:35Z"
+}

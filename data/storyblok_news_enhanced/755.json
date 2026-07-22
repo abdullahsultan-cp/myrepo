@@ -1,0 +1,205 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cae8c808-2622-426d-8712-f4d8d7619d97",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2c9ede2-9824-4217-acf4-b6c2bbb2bddb",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eff4db34-f2a7-4143-a964-19ea5e43a75a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4121f5e5-38d4-4df4-93bf-0bbc74519ff7",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "550c94ca-13c0-44c8-96f6-bf6190ac568b",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "88c30207-ea94-4669-a310-a50540bbf34b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cbdb0b3d-ad9f-45f1-8318-20a8e2030ffb",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "482ca250-dfdd-4e79-9244-cb73551e96a9",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(755)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "492907ac-60f7-4b88-b968-f3df96115099",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 755,
+  "Title": "Urban slum dwellers suffer from an urban penalty: they are as badly if not worse off than their rural relatives",
+  "NewsSubTitle": null,
+  "NewsSummary": "On August 29th the National Urban Poverty Alleviation Program-UNDP (United Nations Development Program) and the Aga Khan University's Department of Community Health Sciences held the second day of a conference at AKU campus in Karachi to address urba",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On August 29th the National Urban Poverty Alleviation Program-UNDP (United Nations Development Program) and the Aga Khan University's Department of Community Health Sciences held the second day of a conference at AKU campus in Karachi to address urban poverty and its consequences."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Gregory Pappas, Chairman of the Department of Community Health Sciences, Aga Khan University said. \"This conference will help us understand that there are two cities within one city - one part of the urban population that has all the benefits of urban living, and the other part, the katchi abadi, where the poor often live under worse conditions than their rural relatives.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The second day of the conference focused on policy gaps and solutions. In the morning session speakers deliberated \"Urbanization and Policy Frameworks\" . The session was chaired by Prof . Mehtab S. Karim who in his remarks mentioned that in the next 10years over 50% of Pakistan's population will be living in urban areas and Karachi's population may hit 20 million by 2015, while numbers may be different for Lahore, Faisalabad, Peshawar, Quetta, Hyderabad and even for smaller cities the growth rates are equally alarming for all. \"We must address immediately the issues of urbanization and its consequences particularly poverty and also solve these problems.\" He also mentioned that in the past that the Government of Pakistan has made good policies to address poverty but has been largely unable to implement these policies. Dr. Karim emphasized that best policy options are often constrained by, shortage of time and resources, non-technical background of policy makers and pressures from different stake holders such as vested interests, social, economic and even global groups."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Parvez Tahir, former chief economics of Pakistan, in his remarks told the conference participants that cities are the wealth of a nation, and engine of progress. \"Cities differ in the country. Look at Lahore for some positive examples of how cities can address their problems and move forward.\" Dr. Kaiser Bengali discussed 'Policy Gaps in Education' and said that of all 20 universities in Sindh, 10 in Punjab and six in the NWFP none offered programs in subjects that could help students learn to generate fresh knowledge. \"They on the contrary are churning out technicians and/or salesmen for western technology,\" and related it to the slow development in the cities of the country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The discussion also focused on poverty and disease caused by migration. HIV/AIDS, having fast shifted from a low prevalence stage to a concentrated epidemic phase in the country, calls for adequately timed interventions to combat poverty aggravation and counter growing public vulnerability to the deadly and highly contagious disease, said Dr. Asma Bukhari, Program Manager, National AIDS Control Program. \"It has to be realized that HIV/AIDS is not merely a health issue but also a major developmental matter,\" she said. The surge in the disease's prevalence was also attributed to frequent migration from within and outside the country and also to growing pressures on available infrastructure in urban sectors, failing to meet social, economic and healthcare needs of the resource-less segments of society."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Mohammad Irfan of former Joint Director of Pakistan Institute of Development Economics discussed \"Gaps in Migration Policy\". He said that urbanization must not be taken as a phenomenon leading to poverty as it is not only illiterate people moving to cities but many educated and skilled individuals also migrate in search of employment. \"Organization is a prerequisite for improved GNP/GDP,\" he said that developed countries across the globe are more urbanized. Ms. Irma Malik, COP - Development Consultants - NWFP, discussed 'Challenges in Urban Governance in the Wake of Decentralization' and Dr Inayatullah Faizi from Chitral talked about the loss of cultural traits in the wake of migration"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The second day of the conference focused on solutions. While Government must act to address the root causes and consequences, the conference focused on how coalitions that include NGOs, industry, educational institutions, and the media might be able to make a contribution. Dr, Gregory Pappas said, \"We must not only look to the government to solve our problems. Coalitions in communities must work together to finds solutions.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Representatives from cities in Punjab, Sindh, and NWFP meet in working groups to address formulate priority areas, to consider composition of the coalitions, and to plan next step. Naib Nazim of Multan is Syed Wajid Ali Shah said, \"Priorities for coalition action can not ignore the fact that poverty must be combated on all front to succeed. We need to work on income generation, health, and education simultaneously.\" Nazimaz Jacobabad, Ms. Saeeeda Soomro, told the conference that NGOs are very weak in her city and may not be able to contribute to a coalition. \"NGOs need capacity building before the can contribute. This is our ground reality.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Conference ended with pledge from Mr Mr. Shakeel Ahmad, Representative from Poverty Reduction and Gender Unit, UNDP Islamabad, stating that coalition building/partnership is the hallmark of UNDP's operational modalities. \"UNDP implements its projects/programmes through national institutions especially the Governments for enhanced ownership and sustainability. Citing the example of clusters approach for Earthquake affected areas; he said that it helped in addressing the problems in a more holistic way and avoids duplications.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Ata ul Mohsin, National Project Coordinator NUPAP-UNDP, while expressing the concluding remarks, appreciated the efforts of the CHS-Aga Khan University, Karachi in jointly organizing the 1st National Conference on Urban Poverty. He added that the meeting was unusual and encouraging for Pakistan because it brought together both a diverse group of stakeholders to sit together, diagnosing the problem, devise measures and suggest recommendation regarding poverty alleviation and sustainable development of the slums/katchi abadies in our urban centers. He added that AKU and the UNDP will continue collaboration with all other segments of society this agenda. Dr. Ata ul Mohsin said, \"Working with the representatives of provinces and cities we hope support and encouraged this coalition building for urban development at provincial and national level.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000713",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "HIV-AIDS",
+      "TermGuid": "ffb82573-cdd6-4bea-86e9-e477e4c2acfd",
+      "WssId": 1370
+    }
+  ],
+  "ScheduleStartDate": "2006-08-30T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 755,
+  "Modified": "2017-02-22T09:06:06Z",
+  "Created": "2016-12-20T05:25:00Z"
+}

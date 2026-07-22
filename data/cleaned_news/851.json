@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "204392e6-4604-45c5-acc5-557ff5226834",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d79defad-018c-4860-9c6a-9daa53fd4572",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "62568449-f737-43ad-9761-de9a15c48381",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e63f3839-507d-4996-aa02-42b7f909af06",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "9c018b17-081d-4961-9a05-f677b3e6a86e",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5cade8e5-67df-4d7e-8042-3586b11e1f55",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4c414154-b975-443d-af76-0c73e0e0fced",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dff4a33b-5fee-475f-8fd2-802ef7facafc",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(851)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "21030232-4fad-4ad6-90e4-8dac85692ee3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 851,
+  "Title": "AKU graduates its first PhD in Health Sciences",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Anila Yasmeen has earned the distinction of becoming the first PhD in Health Sciences from Aga Khan University (AKU).",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassA5733868291049F89CC4EED417851B14\"><div>Dr Anila Yasmeen has earned the distinction of becoming the first PhD in Health Sciences from Aga Khan University (AKU). Her thesis titled 'The Hepatitis C Virus Persistence&#58; Virus and Host Related Factors' was evaluated by an external evaluator from Bonn University, Germany, and was defended successfully in the presence of internal and external evaluators. A part of her thesis has also been accepted for publication in the 'Journal of Viral Hepatitis' during 2005.&#160;</div><div><br></div><div>Dr Yasmeen attained her Masters and M.Phil degrees in Biochemistry from the University of Karachi. In 1999, through a competitive process, she was offered a place in AKU's PhD Programme, during the course of which she also did part of her research at Karolinska Institute, Stockholm, Sweden, under a sponsorship programme. The research project, which was the basis of her dissertation, was funded by a grant from the University Research Council of AKU. The University focuses on the development of quality human resources who are trained to respond to the unique needs of the developing world. Both faculty and students at AKU are given an enabling environment to conduct research for needs that are widespread.&#160;</div><div><br></div><div>In addition to its MBBS and Master's programmes, AKU Faculty of Health Sciences offers a PhD degree programme that provides students with excellent preparation for rewarding careers. The degree offered is Doctor of Philosophy in Health Sciences and is designed to be completed within 4-5 years after the Master's degree. PhD degree students are also expected to participate in laboratory research rotations during the first year and select a laboratory and dissertation mentor at the end of that year.&#160;</div><div><br></div><div>The University appreciates that the endemic problems of a region beset with financial difficulties and low development indicators can be addressed only through relevant research focusing on low cost, accessible and innovative solutions.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000809",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Hepatitis",
+      "TermGuid": "53324a30-4d5d-42ff-852e-2fb2a9f7a9d5",
+      "WssId": 1894
+    },
+    {
+      "Label": "Laboratory",
+      "TermGuid": "d2e23aa8-5026-43de-8d0d-9daf3ad4ef70",
+      "WssId": 1869
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    }
+  ],
+  "ScheduleStartDate": "2005-06-25T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 851,
+  "Modified": "2020-05-03T08:36:50Z",
+  "Created": "2016-12-21T10:13:49Z"
+}

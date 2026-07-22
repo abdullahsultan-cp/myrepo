@@ -1,0 +1,123 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "70be05a7-b23b-481a-91d4-555b989b0c96",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a69989bb-e8bd-4d95-9d81-079826ff774a",
+    "Id": 17762,
+    "Title": "Cime Marketing"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f21cde6d-b2e8-4807-85cc-c841cb80ee68",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "78b1af20-e319-42ca-9638-af53ec292e16",
+    "Id": 17762,
+    "Title": "Cime Marketing",
+    "EMail": "cime.marketing@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "24578f52-90cb-4625-995f-521889c3910e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f16bc4fa-4d6e-4427-abc6-c6343c9b6b18",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "b782ab1c-7a4a-4ccd-9a00-444bad2fc255",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "5ba896a3-ea6d-41f6-8b5a-822a56cbb7c9",
+      "Id": 35,
+      "Title": "Arusha Climate and Environmental Research Centre  "
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "76c839fe-4d34-4faf-8728-cfa5491edc11",
+    "Id": 17762,
+    "Title": "Cime Marketing",
+    "EMail": "cime.marketing@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3401)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "10472d39-eb87-4cab-af1d-061b62e934b6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3401,
+  "Title": "GlobalSurgBox: The Simulator Every Surgeon-In-Training Need to Have",
+  "NewsSubTitle": null,
+  "NewsSummary": "The successful workshops in Nairobi showcased GlobalSurgBox's impactful role in surgical education, prompting plans for expanded training in Kenya. The CIME Nairobi team thanks Yihan, Nicole, and Vongai for their dedication to enhancing skills.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass1B56BE3377884D1788D2F9CE026F88B5\"><div class=\"ExternalClassDE6B81DCD14547E49DA24F88F7FA2B70\" style=\"text-align&#58;left;\"><p><span>Gl</span><span>o</span><span>balSurgBox, a portable surgical simulator designed for surgical trainees worldwide, was highlighted in a recent paper co-authored by Michael Kirsch. Following a successful workshop organized by the GlobalSurgBox team at CIME, Nairobi, it became evident that reaching out to individuals and fostering collaboration in simulation-based learning is invaluable.</span></p><p>Yihan Lin, a cardiothoracic surgeon at Stanford University School of Medicine, along with her team, including Nicole Lin, a cardiothoracic resident, and Vongai Mlambo, a medical student, demonstrated their dedication by navigating logistical challenges to conduct workshops in Nairobi. Despite initial setbacks, the workshops proved to be highly beneficial, offering both novice and advanced learners the opportunity to enhance their suturing skills using simple materials and surgical instruments provided by the GlobalSurgBox. With overwhelming demand for such low-resource training, discussions are underway to expand the reach of GlobalSurgBox in Kenya. <br></p><p>The team at CIME Nairobi extends their gratitude to Yihan, Nicole, and Vongai for their generosity and commitment to advancing surgical education.<br></p></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003277",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    }
+  ],
+  "ScheduleStartDate": "2024-06-03T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3401,
+  "Modified": "2024-06-04T11:17:09Z",
+  "Created": "2024-06-03T12:28:28Z"
+}

@@ -1,0 +1,254 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d122cb89-3ed4-4c4c-9b78-f6541ea960f6",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c2e5e3cd-f4df-4087-b6fd-ef0701cd4644",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a2e62ee3-dbd2-4b1c-b86a-9a8f724c21b8",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c4a146bf-20ec-4b32-a82f-69ee535786ae",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "66249592-540b-41de-a02b-6b82471680b8",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "147fa54d-15f3-4016-b3da-09b807ea7efa",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "717fb995-570f-40c6-97f2-7ff8e688510a",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a983d2f0-ceda-4c96-9975-fc5d29f3629b",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2234)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d4ef0b36-803d-46ac-bc80-da6346c639ba",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2234,
+  "Title": "Creating allies during the coronavirus crisis",
+  "NewsSubTitle": null,
+  "NewsSummary": "Student start-up Project Alloy was recognised at a Johns Hopkins University hackathon.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A team of five medical students at Aga Khan University is working on a start-up that seeks to address a critical shortcoming in Pakistan's healthcare system: the challenge of providing medical supplies during a crisis to where they are needed the most."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Personal protective equipment, ventilators and other equipment and items needed to treat the coronavirus are in short supply across the country. Coordination and communication is the need of the hour and that's where Project Alloy* comes in. Like an alloy, the start-up seeks to take elements of the healthcare system that are currently operating in isolation and bring them together into a stronger whole."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The inspiration for the initiative came from discussions between the project's founders, NGOs and AKU alumni involved in COVID-19 relief efforts. They noticed that while there was a lot of activity, there was little coordination leading to multiple organisations working independently rather than collaboratively. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of Alloy's team members, Kaleem Ahmed, notes that hospitals rarely communicate with each other on confidential matters such as inventory and procurement requirements. Since each hospital has a responsibility to first cater to its own needs, better-funded hospitals are more likely to be well-stocked. This means that typically under-resourced public sector hospitals and organisations, which are likely catering to the most patients, will have to operate under even greater constraints.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Alloy seeks to act like a system of logistical triage,\" Kaleem said. \"We want to make the data on the availability of healthcare items transparent and easily accessible to all so that scarce supplies go where patient needs are the most pressing.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Alloy consists of a dashboard, updated in real-time, to show which resources are most in demand and where shortages are appearing. This is done by pooling together data on existing stocks as well as anticipated shortfalls to highlight where supplies need to be allocated. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The team has tapped into the 700-strong Student Taskforce Against COVID-19, also set up AKU students, to assist with its expansion plans. Many of its members are helping the startup build contacts with community organisations, manufacturers, welfare groups, medical equipment suppliers and hospitals to enable Alloy to act as a centralised platform for information sharing and informed resource allocation and prioritisation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our ambition is to create a national resource that enhances the efficiency of the healthcare system as a whole,\" Kaleem said. \"Healthcare professionals are our greatest asset and they need the tools to be able to their job safely and effectively.\"  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Alloy participated in the recent Johns Hopkins University CBID COVID-19 Design Challenge  which aimed to develop innovations to address challenges posed by the COVID-19 crisis. Over 2,300 participants from 25 countries took part in the event and Alloy received an honourable mention, ranking amongst the top 20 out of 235 teams for their solution, which encouraged them to continue to develop their idea."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We're particularly determined to make this startup work as the need hits close to home,\" Kaleem added. \"As final-year students we'll be on the frontlines next year and we know that such a network can make the challenge of providing quality healthcare easier whether we're facing a pandemic or not.\" "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To learn more about Project Alloy and to register as a hospital or a supplier, please refer to their website:  https://theprojectalloy.org/"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "*"
+          },
+          {
+            "type": "text",
+            "text": "Project Alloy's co-founders are Anam N. Ehsan, Huzaifa Zafar, Ali Aahil Noorali and Faiza Urooj.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002146",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "students",
+      "TermGuid": "924138ea-95e8-482e-8e82-ca5ee2097d44",
+      "WssId": 1797
+    },
+    {
+      "Label": "innovation",
+      "TermGuid": "7fdc44b9-ef41-4c58-b1be-6afa647e3f55",
+      "WssId": 1846
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2020-04-22T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2234,
+  "Modified": "2020-04-22T09:52:18Z",
+  "Created": "2020-04-22T08:22:08Z"
+}

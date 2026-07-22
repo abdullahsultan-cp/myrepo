@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "50e46939-05cb-4bdd-891e-1bb98cb86b0d",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2c990608-587b-491e-a932-3ff9c21af59c",
+    "Id": 8547,
+    "Title": "christine.madoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "80178dad-f01b-4d79-93b9-a1bc46fe3c52",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6bcaf6ae-5c58-4184-8376-e856a0c36198",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f3e022eb-8ff1-42e1-a026-cdac42a2ee6e",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cf32a646-5778-4ac0-9e48-6cdae7a98d13",
+    "Id": 15,
+    "Title": "Graduate School of Media and Communications"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc5d60f5-c9e5-44ef-9b3f-7d008e63c14a",
+    "Id": 8547,
+    "Title": "christine.madoka",
+    "EMail": "christine.madoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3247)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de38079a-732f-4acf-9c23-d714b02bc07f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3247,
+  "Title": "Aga Khan University signs MOU with Marketing Africa",
+  "NewsSubTitle": null,
+  "NewsSummary": "GSMC signed a Memorandum of Understanding with Marketing Africa to co-create and offer media, communications, and leadership courses and events",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass9520F1532E5649058B22C663BEA6F278\"><p>The Aga Khan University Graduate School of Media and Communications (GSMC) signed a Memorandum of Understanding with Marketing Africa Ltd (MA Ltd) to co-create and offer media, communications, and leadership courses and events that are aimed at upskilling and building the professional capacity of MA Ltd. members. The signing was held at the Aga Khan University Campus in Nairobi on 31<sup>st</sup> October 2023.</p><p>Speaking at the signing, Prof. Nancy Booker, Dean, GSMC expressed her delight in the partnership terming its occurrence as timely since it was bringing together two institutions of strength to redefine possibilities and shape a new narrative for the industry. \"Through this MOU, we embark on a journey of collaboration that will enrich the industry with cutting edge knowledge that will be based on research and practical industry trends.&quot;</p><p>William Kalombo, Manager, Marketing Africa Ltd. also reiterated his excitement at the opportunity to collaborate with GSMC to provide insights and training, relevant to the market. \"This partnership will bridge the gap between academia and industry, fostering excellence and opening doors to new possibilities.&quot;</p><p>The partnership will also allow MA Ltd. members the use of GSMC's television and radio studios, and will use the school as a convening space for events. GSMC students and alumni will in turn be able to attend MA Ltd. events at discounted rates.</p><p>Marketing Africa Limited offers marketing consultancy services, publishing, promotion, research, training and event management across East Africa.<br><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-003126",
+  "LocalApproverGroup": "CA GSMC News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Graduate School of Media and Communications",
+      "TermGuid": "c8c2487d-56f1-43dd-8c2b-40968bf57336",
+      "WssId": 2161
+    }
+  ],
+  "ScheduleStartDate": "2023-11-03T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3247,
+  "Modified": "2023-11-03T13:14:25Z",
+  "Created": "2023-11-03T13:12:51Z"
+}

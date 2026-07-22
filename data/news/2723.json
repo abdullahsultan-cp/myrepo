@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4db30278-3644-420f-a632-728dd42712a8",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "53004f6c-24f0-41ba-9b5e-159fe92338b0",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "efe0d6e6-5ae8-4766-92fc-10d62b4d5ea8",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b42ef8c4-47e3-417c-a569-1bf796fcb964",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "764f5144-8d4b-46fd-bd2c-1cd35b64ea16",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "16652d7f-40df-4ce3-83c1-45771e8b3d29",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "8b82026c-0f7c-420b-ab69-04285c8a9f88",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "87981a4f-d022-4148-a733-4a06fead93c5",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2723)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "485b75c3-e36a-4c7f-87a0-063bc1b18054",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2723,
+  "Title": "CIME Nairobi becomes the first in AKU to introduce an automated system to manage OSCEs",
+  "NewsSubTitle": null,
+  "NewsSummary": "The 12 rooms Assessment and Communication suite in CIME Nairobi is now fully equipped with the B-line Medical Debriefing System. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassD1DCF68186DB4907A89321DE27AFC7AE\"><p></p><p>The 12 rooms Assessment and Communication suite in CIME Nairobi is now fully equipped with the B-line Medical Debriefing System. This advance system provides faculty and staff with a one-window solution in planning, managing, and evaluating student performance during simulated practice and Objective Structured Clinical Examinations (OSCEs). With this implementation, CIME Nairobi&#160;becomes the first to introduce an automated system throughout AKU global campuses to manage OSCEs.</p><p>The system allows faculty to work from a distance while still being able to evaluate student performance in an OSCE at their convenience, reducing the time and effort required by administrators to plan OSCEs. A control room present within the suite, allows technical and administrative staff to observe and provide support when required. With video recording, evidence of student performance can be shared with external evaluators and the students themselves to improve transparency of the process.</p><p>For those in Nairobi, the system can be explored by visiting CIME Nairobi or can avail a short training course on 6th October 2021 by contacting Ms. Caroline Kago (<a href=\"mailto&#58;caroline.kago@aku.edu\">caroline.kago@aku.edu</a>).\u200b\u200b\u200b\u200b<br><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002620",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "East Africa",
+      "TermGuid": "ae813152-1a93-47c0-9d57-7b3cd696635e",
+      "WssId": 2135
+    }
+  ],
+  "ScheduleStartDate": "2021-09-17T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2723,
+  "Modified": "2021-09-20T06:28:16Z",
+  "Created": "2021-09-17T12:16:37Z"
+}

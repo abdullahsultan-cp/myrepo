@@ -1,0 +1,227 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7ae728e6-5ada-4aa9-a3fa-3bf3d31e02a0",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "97456b38-428d-4971-b961-b8c2e291b8ac",
+    "Id": 8347,
+    "Title": "ashnar.dholakia"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4d403600-f782-4272-9989-7b0d74334402",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "489225ea-2ab5-4ed1-b2c1-a07b7f0f1e59",
+    "Id": 8347,
+    "Title": "ashnar.dholakia",
+    "EMail": "ashnar.dholakia@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "04d2a770-a8c2-43dd-82e1-e28ae4dcbd66",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ddecb0d3-dd4b-4756-b6f0-1586e398c9dd",
+    "Id": 14,
+    "Title": "East Africa Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "ba367bcc-d1b8-48ba-a016-287536ada58e",
+      "Id": 14,
+      "Title": "East Africa Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0109798e-d0c6-45a4-8af4-2af4eee8ea43",
+    "Id": 8347,
+    "Title": "ashnar.dholakia",
+    "EMail": "ashnar.dholakia@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2179)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bf56065c-5eb3-485b-8339-3e6b62863e04",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2179,
+  "Title": "The search for clean energy sources",
+  "NewsSubTitle": null,
+  "NewsSummary": "EAI convenes stakeholders in the energy sector to discuss research gaps.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Statistics from the Government of Kenya indicate that over 20,000 Kenyans die every year as a result of ailments related to smoke exposure from traditional sources of energy used for cooking."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Paul Mbuthi, a renewable energy specialist in Kenya's Ministry of Energy says more than half (55.1 per cent) of Kenyan households use wood as their primary source of cooking fuel, followed by liquified petroleum gas (LPG) at 23.9 per cent. This is according to the "
+          },
+          {
+            "type": "text",
+            "text": "2019 Kenya Population and Housing Census",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/C:/Users/ashnarmaita/Downloads/VOLUME IV KPHC 2019.pdf",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Consequently, the impact of smoke from these particular fuels on human health is concerning, especially as it pertains to women and children."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This sizeable number of deaths attributed to indoor air pollution generated by traditional fuels and cookstoves calls for informed, evidence-based research on alternative energy sources for cooking,\" argues Mr. Mbuthi. \"It is crucial that solutions consider the situational, environmental and socio-economic context of impacted consumers.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He was speaking at an energy stakeholder's forum hosted by the Aga Khan University's East Africa Institute (EAI) and the Clean Cooking Alliance of Kenya (CCAK) in February 2020. The forum was held to identify research gaps towards achieving sustainable energy for all and strategies for best aligning research evidence to policy and practice."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Although some research is being done by different actors in the energy sector, the effort, findings and purpose for conducting research itself is compromised when there is a failure to link the research to policy and practice. Additionally, there is a need for financial investment in the research and development of new, health-friendly, energy-efficient products, backed by environmental scientists, academics, technology experts and inventors. Well-researched, context-specific products not only promote the introduction of environmentally conscious technology into the Kenyan market - thus boosting the local economy - but also reduces Kenya's reliance on imported technology."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"It is important that we embrace research partnerships as best practice in sustainable energy development research, since no single industry player has all the answers,\" said EAI Director Dr Evans Kituyi."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sector stakeholders identified research gaps within the energy sector and highlighted context-specific product innovation, financial innovation and the potential for collaborating with private and public stakeholders. They also noted the importance of investing in incentives to attract the youth and general reforms within the sector as key solutions to preparing for the future and ultimately achieving sustainable energy."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ultimately, this forum presented key stakeholders in the energy sector with a platform to collaborate, identify and compile pressing research gaps in the sector that require urgent attention by policymakers, academics and innovators. Said gaps are to be addressed in future projects that will help eliminate uncoordinated, out-of-context and irrelevant research that does not align with the energy sector's needs. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002094",
+  "LocalApproverGroup": "EAI News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "east africa",
+      "TermGuid": "44643f58-c153-4aaf-912b-2181456ed941",
+      "WssId": 1823
+    },
+    {
+      "Label": "East Africa Institute",
+      "TermGuid": "11dc44af-22d3-4694-8e66-829c99cbb669",
+      "WssId": 1837
+    }
+  ],
+  "ScheduleStartDate": "2020-03-04T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "[From left to right]  Joan Sang (Embassy of Sweden), Paul Mbuthi (Ministry of Energy), Daniel Wanjohi (Clean Cooking Alliance), Tim Mwangi (Practical Action) and Eric Naivasha (Equity Group Foundation) at the EAI energy stakeholders forum.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2179,
+  "Modified": "2020-03-05T09:07:24Z",
+  "Created": "2020-03-04T12:11:01Z"
+}

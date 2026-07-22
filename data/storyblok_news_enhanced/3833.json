@@ -1,0 +1,197 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "ea1d8d88-18f4-4377-ba03-f57ac12e48b8",
+  "odata.etag": "\"7\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8696f702-f6ab-4456-a959-b8a51b0053fb",
+    "Id": 8068,
+    "Title": "Umaima Mughal"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "039b7130-22ba-4f12-9dbd-f2a5fdca0815",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "70b259d2-79ce-4c19-920a-f6866b07bc86",
+    "Id": 8068,
+    "Title": "Umaima Mughal",
+    "EMail": "umaima.mughal@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f9377470-b0e5-46b8-8bb0-b81b4a93bc25",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d206030e-4124-4985-bf5e-9612eec3ddc2",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7a9eff5-9ac0-48e0-a002-90fc1988899d",
+    "Id": 8068,
+    "Title": "Umaima Mughal",
+    "EMail": "umaima.mughal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3833)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cfc2f198-c4e4-430f-9676-1eeda2f4bfd4",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3833,
+  "Title": "AKU Hosts Karachi's First-Ever MRCP PACES Exam",
+  "NewsSubTitle": null,
+  "NewsSummary": "The exam was conducted at CIME Karachi for the Federation of the Royal Colleges of Physicians, UK.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University's Medical College and Centre for Innovation in Medical Education (CIME) proudly hosted the first-ever MRCP PACES (Practical Assessment of Clinical Examination Skills) exam in collaboration with the Federation of the Royal Colleges of Physicians of the UK. This milestone establishes CIME as an approved MRCP PACES exam site in Karachi, offering physicians a globally recognised pathway to advance their medical careers without the need to travel abroad."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Earlier this year, CIME conducted a pathfinder (mock) MRCP PACES examination for the Federation. The successful execution of this pilot led to AKU being awarded the status of an approved MRCP exam site. In parallel, 14 faculty members from the AKU Medical College, Pakistan, were certified by the Federation as official examiners. Dr Muhammed Tariq, Professor and Vice Dean, Medical College, led this collaborative effort from AKU, whereas Dr Tanzeem H Raza, International Medical Director for PACES, chaired the exam."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over a span of three days, 44 candidates were examined, marking a strong start for Karachi as a new centre for this international assessment. \"The MRCP PACES exam is one of the most prestigious and rigorous postgraduate clinical assessments for doctors worldwide,\" said Dr Tariq. \"Becoming an official MRCP(UK) PACES exam site and having 14 faculty members on board as international PACES examiners is a proud moment for AKU. We look forward to extending our venues and expertise to more international partners in the future!\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"Hosting the MRCP PACES exam in Karachi reflects our commitment to raising the bar for medical education in Pakistan,\" said Dr Faisal Ismaili, Director, CIME Pakistan. \"This opportunity allows our physicians to access international qualifications locally while showcasing CIME's all-around capability as a global-standard exam hub.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The successful conduct of the MRCP PACES exam at CIME marks an important step forward in strengthening AKU`s and Pakistan's position in global medical education and expanding opportunities for healthcare professionals in the region."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Watch Video: AKU Hosts Karachi's First-Ever MRCP PACES Exam >>",
+            "marks": [
+              {
+                "type": "italic"
+              },
+              {
+                "type": "bold"
+              },
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://youtu.be/GNwGY_dps4I?si=B_fs4P1A3E44BhSo",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003700",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    }
+  ],
+  "ScheduleStartDate": "2025-10-24T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3833,
+  "Modified": "2025-10-24T09:30:27Z",
+  "Created": "2025-10-24T09:07:38Z"
+}

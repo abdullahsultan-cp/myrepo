@@ -1,0 +1,201 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e0cd9ab0-fdcf-4d2b-911f-c328949f9506",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "698d0269-e7b8-441b-a3de-1abe8fb71481",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ca1322f2-e81f-44b8-b734-398b91a54748",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bcb58e23-5fe7-4ef5-a2f5-25b6903ba73d",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "bc87bd6c-0282-43ba-9e7e-76b355882629",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1449d59a-fa18-4228-b224-ceb1b41cbf5d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f87580d4-b461-4bc6-a1ec-daf8cf15642e",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a6679499-131b-41f4-a587-2b9eccefba28",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(364)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ee4f2815-8d7b-48a9-8fd5-d3a9320e1f56",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 364,
+  "Title": "AKU-EB recognizes high achievers",
+  "NewsSubTitle": "Celebrates a decade of academic excellence",
+  "NewsSummary": "The annual High Achievers Awards ceremony organised by Aga Khan University Examination Board was doubly special this year, as it coincided with the Board's 10th  anniversary.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The annual High Achievers Awards ceremony organised by Aga Khan University Examination Board was doubly special this year, as it coincided with the Board's 10th  anniversary."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The ceremony not only recognises the outstanding performance of secondary and higher secondary students but this time around, marks the accomplishments of its first decade"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"AKU-EB started with a mission to prepare its candidates for higher education through quality assessment of their understanding and thinking abilities rather than how accurately they can reproduce textbook materials. And it has continued to accomplish this goal year after year,\" said Dr Thomas Christie, Director AKU-EB."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Commending the high achievers, Dr Christie also mentioned that through the years, AKU-EB's HSSC graduates have earned admissions to around 180 universities in Pakistan and almost 50 abroad, and the numbers keep growing."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While talking to the young graduates, Chief Guest, Syed Talat Hussain, renowned TV anchor, journalist and foreign policy commentator, said, \"AKU Examination Board has set up a top-notch internationally acclaimed the standard of education in Pakistan\"."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"High achievers, who have earned laurels through this exceedingly competitive and totally fair system, deserve double praise for their competence and hard-work. They are a beacon of light and hope for the country,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year, AKU-EB awarded 150 distinctions in different subjects and streams of studies to SSC and HSSC candidates from 40 cities across Pakistan, including Karachi, Hyderabad, Larkana, Sukkur, Daharki, Naushero Feroz, Khairpur, Lahore, Islamabad, Peshawar, Gilgit-Baltistan and Chitral. Cash prizes were also awarded to the top three SSC and HSSC position holders."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Among the top SSC [Matric] candidates were Rutaba Nadeem (1st) of ETN High School, Karachi, Maruim Zehra and Mehdia Nadeem Rajab (2nd), and Kizra Fatima (3rd) of Al-Murtaza School (Girls), Karachi. The top HSSC [Intermediate] candidates were Maleeka Mehmood of Habib Girls' Higher Secondary School, Komal Zehra Zaidi of Aga Khan Higher Secondary School, and Muhammad Sameer Kayani, ETN High School, Karachi, respectively."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his closing remarks, President Firoz Rasul, Aga Khan University, highlighted the factors necessary to prepare a generation of thinkers who can address the challenges our country faces in every area of development. \"It takes providing the right conditions, continuous investment in teachers and other resources associated with learning; it takes building bridges between the problems and qualified human resource who can find creative solutions to these problems.\" "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000324",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "examination board",
+      "TermGuid": "55da8b15-92a2-44dc-8f2d-c7bf93e3e641",
+      "WssId": 1520
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2013-11-01T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 364,
+  "Modified": "2017-02-22T07:31:18Z",
+  "Created": "2016-11-29T07:16:35Z"
+}

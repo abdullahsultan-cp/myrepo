@@ -1,0 +1,242 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2dc8eb4f-5d2e-481b-89a3-ca58238b3b60",
+  "odata.etag": "\"27\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d7d52922-a961-471a-8004-43c1f5c12334",
+    "Id": 16322,
+    "Title": "Salema Ahmed"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3c54537b-57ef-435b-8df0-626dd934e7a8",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2ad162ab-07dc-4d9d-b71a-ca182037ad5d",
+    "Id": 16322,
+    "Title": "Salema Ahmed",
+    "EMail": "salema.ahmed@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "109eab96-6657-4931-a881-860f81273f26",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a51269c9-4226-4eaa-be1e-e162d96599e8",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "5eb72e0f-b67f-47dd-a740-fce82dd2aa33",
+      "Id": 10,
+      "Title": "Institute for the Study of Muslim Civilisations"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c3d7ea52-25ef-42e1-b3d0-439c5779fce6",
+    "Id": 16322,
+    "Title": "Salema Ahmed",
+    "EMail": "salema.ahmed@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3412)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61cacb24-ae5c-45c3-b491-73dbc8186d6c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3412,
+  "Title": "Success at \"How Far Has It Gone?\" workshop",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Aga Khan University, Institute for the Study of Muslim Civilisations, organised a two-day seminar on the legacy of Muhammad Abduh (d. 1905). ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How Far has it gone? "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University, Institute for the Study of Muslim Civilisations, organised a two-day seminar on the legacy of Muhammad Abduh (d. 1905). The conference was convened by Walid Ghali, Professor of Arabic and Islamic Studies. Scholars from different universities were invited to this seminar and presented on various subjects related to the intellectual legacy of Abduh. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Muhammad Abduh (1849-1905) is an Egyptian philosopher, sociologist, and reformer ranked one of the most remarkable ﬁgures in the contemporary Muslim world. At his death in 1323/1905, he left numerous disciples and works of genuine interest and inestimable value. He was, and still is, commonly given the honorific title \""
+          },
+          {
+            "type": "text",
+            "text": "al-Ustādh al-Imām",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "\" (The Master and Guide); this title alone shows his inﬂuence upon his contemporaries."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference's main aim was to discuss Muhammad Abduh as one of the most influential figures in the modern history of Muslim societies and the reform movement. Although his demise was at an early age (53 years) and over a century ago, his thoughts and ideas are still discussed in different spheres. In the chaotic political, social and religious circumstances of the post-Arab Spring, we find ourselves, thinkers and scholars increasingly turning to the work of some great reformers who appeared in the late 19"
+          },
+          {
+            "type": "text",
+            "text": "th",
+            "marks": [
+              {
+                "type": "superscript"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " century. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Muhammad Abduh was one of those reformers who tried to explain the reasons for the decline of Muslims and their cultures. Muhammad Abduh was born in Egypt, an autonomous province of the ancient Ottoman Empire. He was instrumental in developing one of the first political parties in Egypt (The National Party); he participated in a failed attempt at revolution ("
+          },
+          {
+            "type": "text",
+            "text": "'Urabi",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", 1881), went into exile, and died in Egypt under British occupation. He had many careers: journalist, teacher, writer, politician, and the Grand Muftī of Egypt. Politically, he lived through extraordinary eventful times, and politics occupied him throughout his life."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference was funded initially by the University Research Grant to analyse newly discovered documents attributed to Muhammad Abduh, which was acquired by the Institute for the Study of Muslim Civilisation in 2007. After the completion of the collection's digitisation, it was decided that we should share it with scholars and specialists on Muhammad Abduh so that we could start a conversation about his reform program. Hence, the idea of this conference. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The conference was inaugurated by Professor Anjum Halai, Vice-Provost of the AKU, who invited the speakers to continue to work on the Muslim reformers from the Muslim world and connect their thoughts to the current challenges of Muslims. Also, two keynote speakers addressed the conference: Professor Abdou Filali Ansari, Professor emeritus and the founding Director of the ISMC. The second keynote speaker was Professor Ahmad S. Dallal, the President of the American University in Cairo. Moreover, the speakers presented their thoughts about Muhammad Abduh over two days through his biography, and intellectual legacy on education, philosophy and Quran hermeneutics. The conference was concluded by a round table discussion where the outcomes of the conference were discussed, including the publication of the proceedings. Also, there has been a display of the rare collection attributed to Muhammad Abduh and acquired by ISMC. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "If scholars of Islamic studies and Muslims, in general, wanted to know the intellectual dynamics and Islamic reform in the 19th and 20th centuries, we would have to revisit the history of the figures who contributed to this movement and flourished during this time. Undoubtedly, Muhammad Abduh was one of those contributors and influential figures in Egypt and beyond. He bravely fought the battle on many fronts. He connected the dots between two pioneers, Rifa al-Tahtawy, who was a strong advocate of women's liberation through education and Jamal al-Din al-Afghani, through his method of Islamic reform. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This school of thought, if I may call it so, had many things in common: they refused Taqlid (imitation) and invited for Ijtihad and reason. They also refused to submit to colonial powers under the call for modernity completely. They called for reforming Islam (I call it reforming studying Islam) to enhance the quality of life. They also encouraged connecting with other civilisations in a way that builds a strong Muslim individual while preserving his identity according to them. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-003288",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    }
+  ],
+  "ScheduleStartDate": "2024-06-11T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3412,
+  "Modified": "2024-06-11T14:13:43Z",
+  "Created": "2024-06-11T13:18:47Z"
+}

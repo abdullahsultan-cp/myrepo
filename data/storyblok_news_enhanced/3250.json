@@ -1,0 +1,213 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "56a2c58f-c11d-4692-9d25-f88d0f2cc87d",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "250aa0e1-fc13-4793-97c1-e0eb56bfcc54",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7fbf03d3-dbc9-44c4-8670-3c71b78b10e0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c78eee86-3662-4d84-9845-6c21d569c050",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "164c6aa8-ecaa-44fe-b694-e82e88dd9546",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0617ca8b-1bd0-41ac-b0a6-3b27cfbe1f9a",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "b4921e35-bcbf-4094-a951-12b82bd61fba",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "01ace95f-88d2-4b89-b589-7d4ba59e6338",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3250)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9056df4f-d28c-480f-9c05-0c3585ebd8f0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3250,
+  "Title": "Celebrating excellence: CIME receives awards at SoTL conference",
+  "NewsSubTitle": null,
+  "NewsSummary": "CIME, in collaboration with other partners at AKU, received three awards at the 5th Biennial Scholarship of Teaching and Learning (SoTL) Conference.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CIME, in collaboration with other partners at AKU, received three awards at the 5th Biennial Scholarship of Teaching and Learning (SoTL) Conference. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The first award, the \"Award for Collaborative Practices\", was presented to our high-fidelity interprofessional simulation-based training course. This innovative programme was developed through a partnership between CIME, the Department of Neurology, and the Department of Emergency Medicine. It focuses on the management of acute stroke in the emergency room (ER) settings, with Professor Ayeesha Kamran Kamal leading the project. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "CIME and SONAM were honored with the \"Teaching and Learning Innovation Showcase Award\". This award recognized our contribution to the SoTL conference sub-theme of \"Enhancing Synergies through Collaborative Partnership in Higher Education\". The awarded paper, titled 'Immersive Clinical Experience through Simulation: Partnership of SONAM and CIME', showcases a simulation-based teaching solution designed to address the challenges faced by nursing students in learning paediatric health nursing, led by Ms. Nimira Asif. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The third award, the \"SoTL Grant for Research Project\", is a highly coveted intramural grant awarded this year to a multidisciplinary team working on using high-fidelity simulation for critical care nursing education with Ms. Zahira Amirali leading the project. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "These awards reflect our dedication to fostering collaboration and partnerships, which are essential for advancing teaching and learning practices in the ever-evolving field of healthcare. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We extend our heartfelt gratitude to our partners at the university, our dedicated faculty, and all those who have contributed to these achievements. We remain dedicated to our mission of providing innovative and effective healthcare simulation-based education, and we are excited about the future as we continue to lead the way in the field of scholarship and teaching."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003129",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Teaching",
+      "TermGuid": "3b9efa59-5e54-4510-b85d-69caf29a2c2f",
+      "WssId": 2155
+    },
+    {
+      "Label": "Learning",
+      "TermGuid": "7bd26807-b759-462c-b48c-26b0ff6bfa13",
+      "WssId": 2158
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "d650b158-f3f2-48a2-965e-47ad7e1c910d",
+      "WssId": 2104
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "acd128c1-9caa-4c8a-81f7-94ec65874343",
+      "WssId": 2103
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    }
+  ],
+  "ScheduleStartDate": "2023-11-06T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3250,
+  "Modified": "2023-11-06T10:34:46Z",
+  "Created": "2023-11-06T10:13:10Z"
+}

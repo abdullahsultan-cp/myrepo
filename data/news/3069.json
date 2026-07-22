@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b980853b-600f-4206-ac44-961657e493d3",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "71e964a7-1a09-470f-8a8a-fc5a5054681a",
+    "Id": 7737,
+    "Title": "Amin Lakhani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e9cdefcf-4854-4a6b-a1ff-b3352c9346b5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "771f4dce-c2f1-40f8-8157-8478914f4eff",
+    "Id": 15201,
+    "Title": "Talha Bin Nadeem",
+    "EMail": "talha.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d4c2c02a-b3a4-4558-b332-876c5bf60ce3",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e34309c1-b944-40c3-a71e-123b894f6d72",
+    "Id": 26,
+    "Title": "Student Affairs and Services"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "e6300961-0cd1-4e5a-a624-88d4eeb6f627",
+      "Id": 26,
+      "Title": "Student Affairs and Services"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "edfab58b-e815-4b38-8133-3fb38b5f11db",
+    "Id": 15201,
+    "Title": "Talha Bin Nadeem",
+    "EMail": "talha.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3069)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5ff77fc2-a65a-4ac7-aaff-c9b60e4573ce",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3069,
+  "Title": "Introducing the Provost \u200bExperiential Learning Fund Programme\u200b\u200b\u200b",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Office of Student Experience held a townhall for students from all three entities that introduced the PELFP in great detail",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassB1B1BB9777EA4C90B0B4F22C317AE8D2\"><p>\u200bThe Office of Student Experience conducted its first townhall of 2023 for students of AKU's Medical College, School of Nursing and Midwifery, and Institute of Educational Development&#160;with over 300 students were in attendance.&#160;Dr. Laila Akbarali, Interim&#160;Vice Provost - Student Affairs and Services and University Registrar, conducted the townhall and introduced the \u200b<a href=\"/students/pelfp/Pages/home.aspx\" target=\"_blank\">Provost Experiential Learning Fund Programme</a>\u200b\u200b\u200b. Danish Imtiaz, Associate Director, Student Experience, gave an overview of the program along with the eligibility criteria.<br></p><p>The&#160;Registrar's office addressed&#160;the updated policy on outstanding accounts with&#160;the university along with the launch of the online facilitation system for student services. Students were invited to&#160;\u200bvoice their questions and concerns as the townhall wrapped up with a promise to conduct more in the future.&#160;<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002955",
+  "LocalApproverGroup": "CA Students",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    },
+    {
+      "Label": "Student life",
+      "TermGuid": "234d0706-cfeb-4f91-8bf6-4debd5ddd9ab",
+      "WssId": 2178
+    }
+  ],
+  "ScheduleStartDate": "2023-03-14T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr. Laila Akbarali, Interim Vice Provost - Student Affairs and Services and University Registrar, addressing the townhall",
+  "MediumImageCaption": "A student addressing the University Registrar and Office of Student Experience during the Q&A session",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3069,
+  "Modified": "2023-03-14T07:32:33Z",
+  "Created": "2023-03-14T07:19:54Z"
+}

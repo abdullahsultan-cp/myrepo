@@ -1,0 +1,197 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a0e4d19d-2a3b-401d-a146-6d13d4f13230",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "389bf345-8b6f-4233-a7ca-eeed60d5cce2",
+    "Id": 14437,
+    "Title": "Maureen Anyango Ooko"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "062ff77c-1973-45e2-bff8-88cda12cccc4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7f2e8f26-72ca-4aa2-93d1-36eee3c2f4fc",
+    "Id": 14437,
+    "Title": "Maureen Anyango Ooko",
+    "EMail": "maureen.ooko@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7f5edb20-ba5a-47c0-84e7-2e8e7f4a32ac",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8fabfc61-566a-4f63-8149-64157930a2d6",
+    "Id": 18,
+    "Title": "Institute for Human Development"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9f79e07e-05ae-41d1-a19e-6b0afd833c5c",
+    "Id": 14437,
+    "Title": "Maureen Anyango Ooko",
+    "EMail": "maureen.ooko@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2963)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0a7ba52b-349a-4d3e-81ec-9233dab35cff",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2963,
+  "Title": "Aga Khan University launches Women Leadership Academy",
+  "NewsSubTitle": null,
+  "NewsSummary": "The academy seeks to empower upcoming women leaders within civil society",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University's Institute for Human Development (IHD) has launched a programme that aims to enhance women's leadership and decision-making capacity within civil society."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The "
+          },
+          {
+            "type": "text",
+            "text": "Women Leadership Academy",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/ihd/Programmes/Pages/women-leadership-academy.aspx?fbclid=IwAR1BnnWtRUR80lsnzmU6tn6eaFMDzmrTa4sOQCl3HLaZ1vzNCLggC2dYP3g",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " will help upcoming women leaders to effectively communicate their vision, advance their creativity, and ignite their community to achieve the best in a continuously changing environment. The Academy will also equip them with leadership expertise, tools, support and networks that will be useful in advancing their work."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Funded by Global Affairs Canada and Aga Khan Foundation Canada, the programme is targeted at mid-level female professionals working in civil society organisations in East Africa (Kenya, Uganda, Tanzania, Madagascar and Mozambique) and Asia, (Pakistan, Tajikistan, Kyrgyzstan, Afghanistan and India). "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The Women Leadership Academy provides an exceptional opportunity for upcoming female leaders in the health and education sectors to hone their leadership skills and expand the impact of the great work that they do. It is also an opportunity for them to come together, share best practices and help each other through the challenges that they face,\" said Prof Amina Abubakar, IHD Director."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The programme will be delivered over six months as blended learning, with modules delivered online and in-person. It will launch in Kenya and Uganda first, then roll out in phases to the other East African and Asian countries."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The first cohort of female leaders from Kenya and Uganda have already been selected. Upon successful completion of the course, certificates will be awarded to the participants followed by enrolment into the alumni network where they will continue to interact and have discussions on mutually agreed topics. The alumni network will also create a platform for mentorship, coaching and exchange of programmes whenever possible. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002853",
+  "LocalApproverGroup": "CA IHD news",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Human Development",
+      "TermGuid": "7703132b-7687-4e37-a43b-92b266f13214",
+      "WssId": 2240
+    }
+  ],
+  "ScheduleStartDate": "2022-10-05T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2963,
+  "Modified": "2022-10-05T08:03:23Z",
+  "Created": "2022-10-05T06:57:42Z"
+}

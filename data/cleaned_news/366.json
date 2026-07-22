@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "40e1c2cb-ac76-4b4a-9c4a-2dac4f517b9a",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b497b47f-49ab-4b1f-99fb-2c41c549d0cd",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "90dfc327-5243-413e-b722-0748cf207d62",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e773cbf2-f49e-4ace-bae0-314e54111727",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "4fd76d26-8136-49ef-aec0-a95c59f6630a",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d21cace3-6793-47fb-bb0d-e13ad6b60025",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a4f53b80-a87b-477d-bf9d-67ee9c6abce7",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "39ed14e4-c344-4912-821e-573322d61a28",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(366)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "86db4040-0fe1-419f-9936-4892cda8b848",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 366,
+  "Title": "AKU's Institutional Digital Repository goes global",
+  "NewsSubTitle": null,
+  "NewsSummary": "The eCommons initiative of the Aga Khan University Libraries may not be behemoth as the more famous Google Books project or Project Gutenburg, but it can certainly compete for the ambition factor.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassEEE57F81D39944B1A05A165C787C2FB1\"><div>The eCommons initiative of the Aga Khan University Libraries may not be behemoth as the more famous Google Books project or Project Gutenburg, but it can certainly compete for the ambition factor. For the first time in 30 years, AKU can lay claim to a consolidated repository of written works produced by its staff, faculty and students. The range of content goes from scientific papers, abstracts and dissertations, right down to internal newsletters and eventually even flyers.<br><br>The project started off small in late 2012 with Systems Librarian Ashraf Sharif as the Project Leader supported by Khawaja Mustafa and Qammer Naveed in Karachi, Peter Gatiti in East Africa and Walid Ghali in London; eCommons was officially unveiled in February 2014.<br><br>eCommons allows users to search for information based on campus location, faculty or department. Once users have logged in, they can access PDF files directly from the retrieval screen for which full copyright clearances have been acquired by the authorities responsible for setting up the eCommons.<br><br>In the year-and-a-half-long testing period, eCommons added 2,901 works and 105,819 publications were downloaded. Visitors from 152 countries accessed the portal, mostly from Pakistan, India, the UK, Philippines, Australia, Canada, Malaysia, Egypt, Nigeria and Hong Kong.</div><div><br></div><div>Now that the repository has been launched and linked directly from the AKU website, traffic is expected to rise even more. eCommons is very well indexed in Google, Google Scholar and other search engines.</div><div><br></div><div>In the next phase of the project, a new interface called \"Selected Works\" will be installed. This will allow faculty and researchers at AKU to create personalised web profiles with links to their major publications.</div><div><br></div><div>Over time, conference papers, research reports, presentations and teaching materials will be added to the repository.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000326",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Library",
+      "TermGuid": "69495453-cc65-4d92-b8d5-08c577e53223",
+      "WssId": 1439
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    }
+  ],
+  "ScheduleStartDate": "2014-02-20T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 366,
+  "Modified": "2017-02-22T07:28:16Z",
+  "Created": "2016-11-29T07:29:01Z"
+}

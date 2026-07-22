@@ -1,0 +1,156 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "fef46668-00a0-4c51-a903-d6814b4f8ea7",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8b96fdb8-1f69-40ae-95e2-04381f786605",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "13894cb5-546a-4f62-9c02-6ef2de40cc82",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5fab0bd8-d09e-4166-8866-e3a1491cf6bd",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "28228324-6ac9-4bb8-9065-dc244ed10e06",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3290476a-9aaf-4477-bd76-8e99e5ee8400",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e4f70e60-608e-402f-bda4-86bba0763bd9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a13a1b3-8e71-4857-828d-3f2935724146",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1436)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "baa9b845-b01d-4b26-abb9-4ed9f8869b14",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1436,
+  "Title": "AKU-EB's first batch of HSSC students confident of success at university level",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University Examination Board (AKU-EB) celebrated a milestone at its High Achievers 2009 Awards Ceremony",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University Examination Board (AKU-EB) celebrated a milestone at its High Achievers 2009 Awards Ceremony, recognising the outstanding results of the first batch of Higher Secondary School Certificate (HSSC), and the second batch of Secondary School Certificate (SSC) students. Subject-wise awards were also presented to high achieving SSC and HSSC students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Students are now applying to leading local and international universities, confident that their schooling has equipped them with independent learning and critical thinking skills. \"Higher education is based on the conceptual approach, and AKU-EB has prepared us for that,\" said Muhammad Sheraz Ahmed, the top HSSC Part II position holder in Pakistan. \"This type of learning has helped us in understanding through the application of knowledge. I feel that students from the AKU-EB system can go forward with confidence, knowing that they have been put through an enriching experience.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking on the occasion, Aga Khan University President Firoz Rasul said, \"The AKU Examination Board is distinguished by its credibility and reliability as an independent examiner of the highest standards.\" Agreeing with his comments, chief guest, Dr Sohail Naqvi, Executive Director, Higher Education Commission (HEC), Pakistan also appreciated AKU-EB's positive role in helping to raise the overall quality of education across Pakistan.He called for students to focus beyond marks, to achieving excellence in education, and to look at all the subjects that were available at the university level."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU-EB is moving ahead with new initiatives to continue the groundbreaking progress it has made since its establishment in 2003, when it launched its innovative computerised examination system, introducing the first e-marking service in Asia. The service supplements quick turn-around time for the delivery of results and enables full transparency in the marking process. \"We are looking forward to an upcoming year of new technological advances to support the professional development of our teachers, as well as establishing a greater presence throughout the country in response to a growing number of affiliated schools across Pakistan,\" said Dr Thomas Christie, Director, AKU-EB. \"We are proud of the achievements of our High Achievers and the vision of high quality education they carry forward for AKU-EB.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001383",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "examination board",
+      "TermGuid": "55da8b15-92a2-44dc-8f2d-c7bf93e3e641",
+      "WssId": 1520
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    }
+  ],
+  "ScheduleStartDate": "2009-10-22T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1436,
+  "Modified": "2020-01-21T14:09:13Z",
+  "Created": "2018-01-09T12:23:04Z"
+}

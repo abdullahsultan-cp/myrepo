@@ -1,0 +1,207 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5188f697-e7e4-4e8b-b9cf-d1c3c91135fb",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dc756bf1-cf27-4d91-9cfc-7ce51be44108",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f47ab43e-0643-428e-9d24-a3fbf3472054",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fcbae059-441c-4a68-8ca8-8db428a4b2a0",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "31140761-a503-422b-99af-7edb015f0959",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "86b6243d-ba9b-4c20-bc3e-5d9f597308f1",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6bbda122-7430-48a1-80c4-bb67caa1ecc6",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7f30f1b3-0fac-4b44-a65e-e3de05ff3912",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1050)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "009bd0e8-0511-4040-ab31-0b4a5825dd9f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1050,
+  "Title": "First Aga Khan University graduation in Uganda",
+  "NewsSubTitle": null,
+  "NewsSummary": "At a ceremony held in Kampala, Uganda, 57 Ugandan students of Aga Khan University (AKU) received their degrees, diplomas and certificates at the University's first graduation ceremony outside Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At a ceremony held in Kampala, Uganda, 57 Uganda students of Aga Khan University received their degrees, diplomas and certificates at the University's first graduation ceremony outside Pakistan. Chartered in 1983 as Pakistan's first private, international University, AKU launched programmes of Advanced Nursing Studies and teacher education in Uganda in 2001. Uganda's Minister in Charge of the Presidency, Honourable Professor Gilbert Bukenya, the chief guest at the ceremony, said, \"Uganda was fortunate to be a partner of Aga Khan Development Network and Aga Khan University in the development of its human resources,\" and offered every support for future programmes of AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Addressing the graduates and guests, Professor Bukenya said this graduation was an important milestone in the government's efforts to upgrade the quality of education and healthcare in Uganda. He said, \"We are delighted that AKU has established its academic programmes in Uganda. The future growth of our country is strongly linked to the development of our human resources. Uganda needs educated, committed and caring nurses and teachers to ensure healthy bodies and healthy minds in all our citizens.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Welcoming over 300 guests and family members of the graduates, AKU President, Shamsh Kassim-Lakha recalled the words of AKU's Chancellor, His Highness the Aga Khan, at convocation ceremonies in Karachi in 2000. Announcing plans to open its first campus overseas, His Highness said, \"The establishment of the Advanced Nursing Studies programme in East Africa, and the Institute for the Study of Muslim Civilisations in London, will give life to the University as a Pakistani institution with an international mandate, reaching out as an expression of Pakistan into the international community.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Kassim-Lakha said nurse and teacher education programmes established in Uganda last year were part of a regional initiative in Eastern Africa aimed at developing skills and career advancement opportunities for professionals in Uganda, Kenya and Tanzania. He said the Advanced Nursing Studies programme enables practising nurses and nursing managers to continue their professional education without leaving their work places or homes for extended periods. Kassim-Lakha said AKU's teacher education programme, developed jointly in Pakistan and Uganda, was established in consultation with the Ugandan government to introduce new teaching and learning methods and philosophies to the country. He further stated, \"The authorities in Uganda showed great foresight in facilitating and encouraging higher education programmes that both upgrade human resources and, at the same time, contribute to the quality of healthcare and education in the country.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Now also accredited in Kenya and Tanzania, the University is expanding its nurse and teacher education programmes, and planning is underway to offer Postgraduate Medical Education for doctors at Aga Khan Hospitals in Nairobi and Dar-es-Salaam."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Ugandan Minister in charge of the Presidency, Honourable Professor Gilbert Bukenya, was the Chief Guest who presented certificates to 57 nurses, teachers and school administrators, including two who earned their Master of Education degrees following studies at Aga Khan University in Pakistan."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Attending the graduation was Dr. Robert Buchanan, former Dean of Cornell University Medical College in Ithaca, and a founding Trustee of AKU. He said, \"The graduates today are a manifestation of the vision of His Highness the Aga Khan that focuses on preparing talented young people for leadership, with a special emphasis on programmes for women.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The launching of overseas programmes in the last two years has established AKU as an international institution. It has seven teaching sites in five countries, representing a network of campuses and programmes in South and Central Asia, East Africa, Europe and the Middle East. AKU is an important component of Aga Khan Development Network, a group of private, non-denominational development agencies and institutions working to improve living conditions and opportunities in 20 countries of the developing world."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's most recent initiative is an Institute for the Study of Muslim Civilisations in London. Its mission is to develop a better understanding of different Muslim civilisations throughout the world, the contributions made by Muslim scholars and scientists to contemporary society, and the special challenges faced by Muslim societies in developing countries. Planning has begun for a new Faculty of Arts and Sciences on a new 500-acre campus just outside Karachi. A regional institution offering high quality liberal arts programmes, it will move AKU beyond professional education to become a comprehensive university in its classical form."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001008",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "76d7e6c8-e7b5-4ac7-bfee-f2cc94c2f75d",
+      "WssId": 1830
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    },
+    {
+      "Label": "Uganda",
+      "TermGuid": "f873aa35-d4f5-44ba-9ee5-0805d628d860",
+      "WssId": 1827
+    }
+  ],
+  "ScheduleStartDate": "2002-09-17T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1050,
+  "Modified": "2020-10-28T14:18:01Z",
+  "Created": "2016-12-28T06:35:30Z"
+}

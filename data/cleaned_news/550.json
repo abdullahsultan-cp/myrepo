@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3ded9d70-969c-4c96-ae28-340127074407",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "db5fa339-7df1-4707-88e9-895a1f957435",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bbb54fdf-2e28-47c4-be70-0d46aac4e71e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac65d98c-caad-4d98-b766-b7169c0885c9",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "72f96a64-fd6a-43ed-89ef-00b25d566cf7",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "30bf5bcb-7f4c-470c-b217-ba63239e8846",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d21f7014-ed4d-4cc2-aec7-13646bf10332",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "670c022a-cb3d-4d94-805b-86d314cb5c81",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(550)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "23b838e1-1f4d-481f-b2fa-7e15f2af708f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 550,
+  "Title": "Only five per cent of women in Karachi can access higher education",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"Only five per cent of women in Karachi, the country's largest urban centre, can access higher education and of these women, only about two per cent enter the job market\"",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass08F0C9608E6F41A0AD934C6564889B6B\"> <div>\"Only five per cent of women in Karachi, the country's largest urban centre, can access higher education and of these women, only about two per cent enter the job market\" said Dr Zaira Wahab, Head Phil/PhD programme, Iqra University. She and other women professionals and educators spoke at an interactive session Women Inc. organised by Aga Khan University Working Group for Women to celebrate International Women's Day. Her research highlighted the lack of opportunities available to women graduating from colleges and universities.<br></div><div><br></div><div>\"Pakistan has the second largest number of school dropouts in the world and in Sindh alone 50 per cent of children of school going age are out of school. In some areas this figure goes up to 72 per cent,\" said Ms Alia Shahid, Chief Program Manager, Reform Support Unit, Education, and Literacy Department, Government of Sindh, noting that the challenges women face in accessing education begin at an early stage in life.</div><div><br></div><div>Because higher education serves as the entry point to gainful employment and because women are unable to easily access higher education in Pakistan they have fewer options when it comes to making a living and supporting a family. Women from poorer socio-economic backgrounds have to work much harder to access educational opportunities similar to those open to women in higher social positions. Meanwhile, women in rural areas of Pakistan tend not to apply to higher education programmes in fields like information technology, law, management science, medicine or engineering, creating another gap in the type of job opportunities women are trained for in Pakistan.</div><div><br></div><div>Aga Khan University Working Group for Women is an interdisciplinary group that aims to promote a supportive environment for working women by conducting research and creating awareness and by supporting networking among professional women groups.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000508",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    }
+  ],
+  "ScheduleStartDate": "2009-04-01T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 550,
+  "Modified": "2020-05-18T07:20:39Z",
+  "Created": "2016-12-09T05:12:03Z"
+}

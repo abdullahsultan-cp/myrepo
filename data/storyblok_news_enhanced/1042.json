@@ -1,0 +1,156 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "798d5a76-9884-4e05-8ef9-939930657b78",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4db2b3c1-be29-43a2-97f4-ddb13872e417",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e9c0ab8d-8419-4518-9ed6-6786fbd5689a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2ea1ef14-2502-48a0-9c85-cf9cd39760d3",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "94789006-75b6-420b-967c-486b0a3f6eb3",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5e405339-2fa0-46b9-93e0-479c05f70cd4",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cb88cfca-aac1-40ad-bab4-9f5dc892dea6",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0bff8ac5-2b02-4e13-9b0b-999b56e8fe09",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1042)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c9aa4181-f70e-4199-872f-4d2250e8e3b2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1042,
+  "Title": "Rotary Club of Karachi honours Shamsh Kassim-Lakha",
+  "NewsSubTitle": null,
+  "NewsSummary": "Rotary Club of Karachi honours Shamsh Kassim-Lakha by conferring an award. Presented by Abdul Hafeez Sheikh, Minister for Finance, Planning and Development, Government of Sindh, this award recognises Kassim-Lakha's exceptional achievement and contrib",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Rotary Club of Karachi honours Shamsh Kassim-Lakha by conferring an award presented by Abdul Hafeez Sheikh, Minister for Finance, Planning and Development, Government of Sindh, this award recognises Kassim-Lakha's exceptional achievement and contribution in the field of health and education."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Abdul Hafeez Sheikh, Minister for Finance, Planning and Development, Government of Sindh, presents an award to Shamsh Kassim-Lakha, President AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Shamsh Kassim-Lakha is the President and Founding Trustee of Aga Khan University (AKU). AKU is a component of Aga Khan Development Network, which comprises a group of agencies, founded by His Highness the Aga Khan, that work in developing countries of Asia and Africa, focusing on health, education, rural and economic development and the enhancement of non-governmental organisations. Chartered in 1983 as Pakistan's first private international university, AKU commenced operations with a US $300 million academic Health Services Centre, whose Faculty of Health Sciences comprises a Medical College, a School of Nursing and a teaching hospital. Today, the University also has an Institute for Educational Development in Karachi and an Institute for the Study of Muslim Civilisations in London, England. An international institution, AKU has seven teaching sites in five countries on three continents."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Kassim-Lakha has served on the boards of several governmental, professional, research and private organisations, including the Pakistan Medical Research Council, Habib Bank Limited, Pakistan Centre for Philanthropy, whose Board he chairs, and numerous senior governmental advisory panels in areas of finance, energy, environmental protection, health and education. In March 2002, President Pervez Musharraf appointed him Chairman of the Steering Committee on Higher Education with the status of Minister of State, to oversee reforms in Pakistan's higher education. Educated at South Bank and Westminster Universities in London and the University of Minnesota, USA, Kassim-Lakha is the recipient of several awards. In recognition of his leadership and extensive contribution towards the cause of education and health in Pakistan and the developing world generally, he has received both national and international awards, including the degree of Doctor of Laws, honoris causa from McMaster University of Canada (1984), the Sitara-i-Imtiaz from the government of Pakistan (1999), the award of Officer in the French National Order of Merit from President Jacques Chirac of France (2001), and in August this year the award of Hilal-i-Imtiaz for public services from the President of Pakistan."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001000",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2002-10-20T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1042,
+  "Modified": "2020-10-28T14:18:02Z",
+  "Created": "2016-12-28T06:20:09Z"
+}

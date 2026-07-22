@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e8072313-3507-4331-ab8f-d33979338ab0",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3803c233-6882-4d72-a086-e09cb6030617",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "70df6237-8414-4ff2-b714-1fc586b9cf1f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c8da54c9-6315-4b1d-abfa-d85278663518",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "29e736d0-82d1-41cd-ab0e-1d61e7e5f6ad",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "4b2ade91-5809-422f-9fc1-87c35b8ec977",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8ecdba70-d691-402a-b059-b400cfb9f920",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dafdfdb3-6112-4c62-9afc-c4647dbff929",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(180)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5b95e499-5baf-4bf2-9a6a-a0a4196e3adb",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 180,
+  "Title": "\u200bPhilip Wood awarded prestigious British Academy grant",
+  "NewsSubTitle": "\u200bBritish Academy Rising Star Engagement Awards 2016",
+  "NewsSummary": "\u200b\u200bISMC receives BARSEA award",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass13051B0A0FEC4D63B8B500F00ECD5EC4\"><div>\u200bISMC is delighted to announce that Philip Wood has been awarded a British Academy Rising Star Engagement Award. The award will be used to support a two-day workshop later this year to train academics in how to communicate their research via digital media.</div><div><br></div><div>ISMC\u2019s Director, David Taylor, said; \u201cCongratulations to Philip on a major mark of recognition by the UK\u2019s most senior body in the humanities and social sciences. Our colleague, Sarah Savant received the same award a year ago. For a small institution like ours to receive two of these highly competitive awards is a remarkable achievement.\u201d</div><div><br></div><div>The British Academy\u2019s Rising Star Engagement Awards (BARSEA) enables established early career scholars to actively engage in the work of the Academy and to enhance their own skills and career development through the organisation of events, training, and mentoring activities for a wide range of other early career researchers.<br></div><div><br></div><div>Philip Wood summed up what the award will mean; \u201cThe support from the British Academy will enable ISMC to early to mid-career academics an opportunity to improve their knowledge and understanding of digital media - an increasingly important avenue for all of us to ensure our work is publicised.\u201d<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000148",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 180,
+  "Modified": "2020-11-30T08:57:05Z",
+  "Created": "2016-05-17T14:24:58Z"
+}

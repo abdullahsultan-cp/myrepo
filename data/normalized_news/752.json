@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bcc5df17-a712-4dcc-8673-a70c6cb6dff7",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7da0af89-0383-4d1e-909b-9b279480bb53",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "61bca51a-b3dd-4225-947a-630bc08387e4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "03d5315b-3b97-49b8-871e-0ef76fcac770",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "0ba065b9-1400-4f49-b93e-0d3a8da3fa5c",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9feaa976-27e9-460f-a225-07cb3f57ea13",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "19715b02-72f8-4c62-9eee-28d649fb3701",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f18adcd4-aaa2-4684-8955-f2d2aa6f7c41",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(752)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "33cb1934-08fc-484b-a7f2-1cdd3bf8658d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 752,
+  "Title": "Pain is one of the most underestimated health care problems in the world",
+  "NewsSubTitle": null,
+  "NewsSummary": "Pain is one of the most underestimated health care problems in the world today, particularly in this region,\" Dr Gauhar Afshan, Chair, Organising Committee of the 11th National Health Sciences Research Symposium held in Aga Khan University.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>\"Pain is one of the most underestimated health care problems in the world today, particularly in this region,\" Dr Gauhar Afshan, Chair, Organising Committee of the 11th National Health Sciences Research Symposium held in Aga Khan University.</p><p>The theme for this year's Symposium was \"Understanding and managing pain; multidisciplinary approach\". Speaking at the inaugural session, Dr Gauhar Afshan emphasised the urgent need to raise the profile of \"pain management\" in Pakistan. She also elaborated upon the objectives of the yearly research symposium of Aga Khan University.</p><p>Chief Guest Mr Firoz Rasul, President, Aga Khan University welcomed the participants and delegates of 13 different countries and appreciated the organizing committee's efforts for holding elaborative symposium on a universal but neglected subject of \"Pain.\"</p><p>Mr. Patric McGown from UK and Professor Ramani Vijayan from Malaysia also delivered plenary lectures in the sessions. A large number of anaesthesiologists, oncologists, neurologists and other health care professionals attended the two-day symposium in which many important areas of pain management were highlighted. A total of 66 research papers were presented on various issues of pain. The first mega event on pain management in Pakistan was very well appreciated by all participants and attendees.</p><p>The National Health Sciences Research Symposium (NHSRS) is an annual event by AKU on a topic relevant to Pakistan and the region. In the recent past, symposia have focused on reproductive health, mental health and health sciences education. The University appreciates that the endemic problems of a region beset with financial difficulties and low development indicators can be addressed only through relevant research focusing on producing low cost, accessible and innovative solutions.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000710",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    },
+    {
+      "Label": "Pain management",
+      "TermGuid": "3841030a-8299-4145-b084-142f63ee6325",
+      "WssId": 1997
+    }
+  ],
+  "ScheduleStartDate": "2006-09-10T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 752,
+  "Modified": "2020-05-18T07:19:01Z",
+  "Created": "2016-12-20T05:08:12Z"
+}

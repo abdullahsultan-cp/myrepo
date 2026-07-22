@@ -1,0 +1,246 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "993aa134-0969-40fc-8bed-152ae8f94211",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "180fcfca-0b1f-4e84-97b0-97866d5740bf",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "646c7171-8be7-42bb-ade5-72f1deb1b4c6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "db253f7f-b69e-460d-804e-367488a82ee7",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah",
+    "EMail": "faiza.hakim@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b5928b1d-098b-4e6b-8a01-982ea5d7d62b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "19ae62f7-9cf1-495b-8a88-b63d955048c6",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "95252207-9191-4b99-b3fe-617f2c0a526b",
+    "Id": 18636,
+    "Title": "Faiza Hakim Shah",
+    "EMail": "faiza.hakim@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3522)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "934c43e6-8de4-4d44-bd18-8c53982c7c0e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3522,
+  "Title": "Clinical and Translational Research Incubator (CITRIC) Turns 4! ",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU's Clinical and Translational Research Incubator (CITRIC) celebrated its fourth anniversary with fanfare.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's Clinical and Translational Research Incubator (CITRIC) celebrated its fourth anniversary with fanfare. Established in 2020, CITRIC serves as a dedicated space for clinical and translational research, marking a significant step towards fulfilling His Highness the Aga Khan's vision of AKU as a globally recognized research institution. CITRIC has 9 specialized centres, each fostering collaborative research on a diverse range of subjects and areas."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre of Oncological Research in Surgery: At the forefront of tackling global health disparities, the Centre of Oncological Research in Surgery is focused on making essential surgical care accessible and affordable for those in resource constrained environments. Under the leadership of Dr Syed Ather Enam, the centre strives to improve the quality of surgical care around the world, empowering health systems to deliver lifesaving interventions to communities in need. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre for Ageing Gracefully: Our newest centre, the Centre for Ageing Gracefully is taking the lead in creating a holistic, evidence-based approach to elderly care. Collaborating with both internal and external stakeholders, the centre is innovating ways to support elderly individuals, their families, and communities, ensuring they are prepared for the journey of healthy aging.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre for Clinical Best Practices: Launched in May 2020, the Centre for Clinical Best Practices is on a mission to elevate healthcare standards through evidence-based care. With a clear focus on implementing international clinical best practices across AKU's operational regions, the centre is building a comprehensive manual of clinical therapeutics and an online repository of resources, rooted in our local context.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre for Global Surgical Care: Dedicated to pushing the boundaries of cancer research, the Centre combines cutting edge science with clinical trials that aim to transform cancer care at AKU and beyond. Under the leadership of Dr Sadaf Khan, this centre is pioneering basic science, translational, and epidemiological research that seeks to leave a lasting impact on global health. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre for Bioinformatics and Computational Biology: with the power of data, the centre addresses complex health issues in low- and middle-income countries through a multidisciplinary lens. From pathogen genomics to cancer research, this shared resource supports vital research projects, ensuring that cutting edge tools like metagenomics and transcriptomics are utilized to their full potential. The centre ensures that ample storage and computational power are available to drive discoveries that can change lives. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre for Patient Safety: Patient safety is at the heart of healthcare, and AKU's Centre for Patient Safety, led by Dr Asad Latif, is leading the charge in ensuring that every patient receives care in the safest possible environment. By identifying medical errors, promoting systemic safety measures, and implementing preventive strategies, the centre works tirelessly to make healthcare safer for everyone. Its research focuses on reducing risks, enhancing outcomes, and setting new standards for patient care. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "National COVID Tele-ICU: In the fight against the COVID-19 pandemic, AKU's National COVID Tele-ICU initiative played a vital role in strengthening Pakistan's critical care capacities. Partnering with the Ministry of Health, this program, under the leadership of Dr Asad Latif, provides remote training, tele consultations, and assessments of ICU and HDU facilities nationwide."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Health Data Science Centre: As Pakistan's first health data science initiative, the Health Data Science Centre is making strides in understanding the social determinants of health and disease prevalence. Under the guidance of Dr Zainab Samad, the centre's groundbreaking research is shaping the future of healthcare policy, providing critical insights that will inform decisions for generations to come. By leveraging data, this centre is helping bridge the gap between research and actionable health solutions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Centre of Excellence for Trauma and Emergencies: CETE is focused on addressing the urgent need for improved emergency response in low- and middle-income countries. Led by Dr Junaid Razzak, one of CETE's ambitious goals is to train 10 million citizens in life-saving skills through the Pakistan Lifesavers Programme. The centre is working tirelessly to build a resilient emergency care system that saves lives when every second counts."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To mark CITRIC's anniversary, Dr. Timothy Pawlik, Chair of Surgery at Ohio State University, delivered an inspiring lecture on building impactful academic medical programs. He said that \"clinical excellence is a non-negotiable\" and highlighted the critical roles of education, research, and administrative leadership in reinforcing the mission of CITRIC. Dr. Pawlik encouraged attendees to embrace mentorship, ask insightful questions, and prioritize the hiring of exceptional talent as a means to drive progress. As CITRIC continues to evolve, its commitment to advancing research and fostering collaboration remains steadfast, contributing significantly to the global healthcare landscape. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003394",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Surgery",
+      "TermGuid": "b0443c13-b5c8-47f8-b638-e3639711ed42",
+      "WssId": 2307
+    },
+    {
+      "Label": "Centre of Excellence for Trauma & Emergencies",
+      "TermGuid": "f49e531a-9687-42e6-9fd1-bfef0de15a7a",
+      "WssId": 2549
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "2377808f-b3d0-4042-8099-f8aede5bd456",
+      "WssId": 2159
+    },
+    {
+      "Label": "Development",
+      "TermGuid": "c2e5f9bf-53d9-40fe-93f0-3ef8099e072c",
+      "WssId": 2168
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Emergency",
+      "TermGuid": "2191ea1c-936e-42a6-bcc8-eedc68d984c9",
+      "WssId": 2190
+    },
+    {
+      "Label": "Emergency care",
+      "TermGuid": "7b986b82-d175-45c1-a2f1-c6730d853621",
+      "WssId": 2201
+    },
+    {
+      "Label": "Learning",
+      "TermGuid": "7bd26807-b759-462c-b48c-26b0ff6bfa13",
+      "WssId": 2158
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2024-10-09T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3522,
+  "Modified": "2024-10-09T06:30:38Z",
+  "Created": "2024-10-09T05:37:05Z"
+}

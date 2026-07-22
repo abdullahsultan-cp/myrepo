@@ -1,0 +1,286 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6a817c9b-13f5-483c-a061-73dbb6309c84",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "19434ce1-65c8-42d5-9e70-16425939afde",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9551d406-26b7-404f-ba8a-dc1104b121f1",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "853b3fa1-856b-4e69-8d83-5783bfad8f7a",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "6cd67357-5678-43d9-819d-7ae59f11ec2a",
+    "Id": 11,
+    "Title": "Patient, student & alumni stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9876a0be-72c8-4d2f-9882-896dff43a1ba",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3476e25a-8ec5-46e2-86d8-ae8cb0ac17db",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7fc92dcb-1b06-4a83-8449-0b51c01da84a",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(220)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bd55710e-687c-4008-9ae0-712405a75101",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 220,
+  "Title": "An hour to change a life",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKUH has entered into an agreement with Smile Train to provide free-of-cost cleft lip and palate corrective surgeries to patients who require financial assistance. So far 16 individuals have had their lives turned around.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University Hospital has entered into an agreement with Smile Train to provide free-of-cost cleft lip and palate corrective surgeries to patients who require financial assistance. So far 16 individuals have had their lives turned around."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In Balochistan, folklore has it that a baby born during a lunar eclipse would have the half-bitten face of the moon. When Shamsa was born with a deep cleft on her face, her family would often hear this myth repeated by visitors."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Neither convinced by these consolations nor deterred by the challenge of changing her fate, Shahjahan, her father, decided to travel to Karachi."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He may not have known that a cleft is caused by a blend of genetic and environmental factors but he was determined to get help. He was neither ashamed of his child's disfigurement nor blamed anyone."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The government-run Civil Hospital in Turbat does not offer corrective surgery facilities,\" Shahjahan recalled. \"What could I do? I drive a tractor and could not afford the cost of private surgery. But I knew of another child in Turbat who had come to Aga Khan University Hospital and been treated,\" he said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "His one-year-old daughter was provided free surgery by AKUH under its agreement with Smile Train, an international organisation that since 1999 has been liaising with local plastic surgeons in more than 85 countries to offer corrective surgeries."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I am happy with my decision to bring her here. She can now smile and eat with no trouble,\" said a relieved Shahjahan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Cleft lips and palates are common birth defects in Pakistan with an estimated incidence of one in every 523 birth. They have profound physical and psychological effects. Drinking and feeding is difficult and ear and throat infections are common. Left untreated, a child with a cleft may have speech and language problems, poor growth due to poor nutrition, often be ignored and lack confidence."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Many of these children grow up without any corrective surgery as their family is unaware that the malformation can be repaired or, if they do know, they cannot find a suitable facility or are deterred by the cost of surgery."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Zoha, who also hails from Balochistan's Panjgur area, was treated under the AKUH-Smile Train partnership too. Her father Parvaiz was equally relieved.  \"We are very happy and satisfied with the treatment she received.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"One hour of surgery can change the life of a cleft patient,\" said Dr Fazulr Rehman, consultant plastic surgeon at AKUH and project leader. \"We can restore the function of the mouth and appearance, allowing a child to enjoy a normal, healthy future.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The ideal time for surgery is 3 months for cleft lips and 6 months for cleft palates,\" added Dr Rehman."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Under the agreement, a multidisciplinary team involving a paediatric cardiologist, anaesthetist and plastic surgeon provides care. Since the signing of agreement in April 2015, 16 patients with cleft lip and palate have been treated."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Though Smile Train has been in Pakistan for 10 years, the country representative Mahmood Tahir said that the organisation is very selective when it chooses its partners."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Individuals with lip and cleft palate face a lot of discrimination in the society and our utmost priority is the impact it can have on improving the lives of our patients, and the quality and safety of the procedures performed,\" Mr Tahir elaborated. \"We are not interested in numbers.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We have chosen to enter into a partnership with AKUH because it has two highly competent surgeons, excellent facilities and a paediatric intensive care unit.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since most cleft palate and lip abnormalities are associated with other medical conditions including heart defects, a patient will also receive free workup prior to surgery. \"Clefts patients can suffer from simple defects like a hole in heart to more complex heart lesions requiring cardiac interventions,\" said Dr Babar Hasan, head of paediatric cardiology at AKUH."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For cleft lip surgeries, Smile Train and AKUH's patient welfare department provide financial assistance. For cleft palate treatments, the NGO Ulphat provides additional support."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "By working together these institutions have helped many underprivileged children with cleft lips and palates lead a more normal life."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000188",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2016-05-19T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 220,
+  "Modified": "2017-02-22T07:07:40Z",
+  "Created": "2016-05-19T08:18:23Z"
+}

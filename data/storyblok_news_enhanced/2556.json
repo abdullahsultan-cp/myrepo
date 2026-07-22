@@ -1,0 +1,268 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4c09a6b9-a704-47d4-8c69-63cff28d6271",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cd76936b-5967-4b75-978d-5c04118161a5",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4f923a5e-1246-4202-b65b-a86091ada798",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ba79a0d0-be30-4fbf-aed2-3e58b8b5a15c",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "fe6217d1-6ee7-4d17-9fe9-b885ed80a106",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "45aa07b0-8e78-4065-a8eb-3e9e66967438",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "a4fc86ee-578e-4f1d-98d6-3b67882e814e",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ba1e9d08-8306-4eb8-a46d-d6232f1ee55e",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2556)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3dad5eb1-fcff-4887-b321-7d64abe477d8",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2556,
+  "Title": "The challenge of teaching maths and science online ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Teaching strategies need to be adjusted to keep students engaged in online classes.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The annual science fair is one of the highlights of a school's calendar. The competitive event gives students a chance to apply their knowledge in interesting ways and to bring concepts in the sciences to life through projects. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Students often spend weeks transforming plastic bottles into 'volcanoes' to demonstrate a chemical reaction or creating games with coins to highlight key concepts in probability. But the closure of schools during the pandemic has resulted in the cancellation of many science fairs and also raised a number of issues about the best way to teach the subject. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For example: how can teachers keep students, who are used to learning through experiments in the laboratory, engaged through online learning? Also how do you know if a pupil has grasped a complicated concept until they demonstrate their learning through a project? "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Science is a doing subject,\" explains Professor Nelofer Halai from AKU's Institute for Educational Development, IED. \"Children need to muddle through and experience it themselves.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Halai notes that the tendency to 'transmit' content to students online reduces their ability to think and engage with content. For example, instead of observing the different characteristics of solids, liquids and gases through experiments, science students are now simply being told about the characteristics of each state. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This means that student learning is less involved and less effective as assumptions cannot be tested in a real-world setting and comprehension of concepts cannot be easily assessed through project-based activities. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Instead of simply communicating content, IED faculty believe teachers should encourage students to engage with the subject by utilising resources at home. Rather than displaying pictures on Zoom and describing the parts of plants, teachers should encourage pupils to explore and observe plants around them, whether at home or in the park, and to pay attention to the different stages of growth.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Activity-based learning helps in not only strengthening concepts but empowers children's independent thinking and problem-solving skills,\" said Dr Munira Amirali, an assistant professor at the IED, who specialises in mathematics education."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mathematics teachers are also likely to face similar challenges while teaching online. IED faculty recommend that teachers should resist the temptation to assign exercises until they are sure that students have grasped key concepts. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Amirali urges teachers to engage learners in exploring concepts using objects wherever possible that can be developed by students at home. Pictorial representations should be used before introducing learners to symbolic representations and abstract concepts. For example, early year learners who are being taught how to count, should first engage with physical objects. Once they can distinguish between different quantities of items, teachers should familiarise children with pictorial representations of numbers before introducing numeral symbols. Dr Amirali noted that in some of the online classes, children were being assigned lengthy assignments before they had sufficient conceptual knowledge. This led to children struggling with exercises with their parents having to step in to either re-explain or to seek outside help, making online teaching laborious for both."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Passive and below par learning in mathematics and science can have repercussions long after school ends. Research suggests that STEM (science, technology, engineering and mathematics) are vitally important for twenty-first century students as proficiency in STEM can open up a wide range of careers. Professor Halai states that the disruption caused by the pandemic can lead to fewer students being interested in pursuing pursue STEM careers and it is vital that this be remedied as soon as possible."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Commenting on how teachers should adjust as schools begin to reopen, IED Assistant Professor Dr Taseem Anwar recommends that teachers make the most of in-class time. One workable solution would be to devote school hours towards activity-based learning and experiments while using online classes to go over concepts. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On a positive note, Dr Anwar says that virtual teaching of science has given confidence to teachers to explore kitchen science or home-based science projects. This could offer two fold benefits to science teachers; first, it will engage students along with their families in science inquiry, and second, it will address the long lasting issue of lack of science resources and equipment in schools."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The thrill of discovery is at the heart of science,\" said Professor Halai. \"The scientific method depends on observation and experimentation and students should continue to be pushed to learn for themselves. When this happens, their interest deepens and they gradually become truly invested in their learning.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002456",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "1d65fcd6-63bb-4812-9893-7b3905594597",
+      "WssId": 1851
+    },
+    {
+      "Label": "science",
+      "TermGuid": "2d98100d-98ce-41fa-a18d-b903377e7d5f",
+      "WssId": 1960
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "42798a93-35ae-4572-ba14-7cf8818ce9fb",
+      "WssId": 1850
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2021-02-23T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The pandemic has disrupted laboratory-based lessons for science students.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2556,
+  "Modified": "2021-02-25T09:44:02Z",
+  "Created": "2021-02-23T13:02:04Z"
+}

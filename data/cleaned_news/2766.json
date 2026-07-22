@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e88830e2-52c3-46bc-a8d8-49048f5aad89",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "03dea415-191a-49b4-bc24-05183db56cf2",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "20524f69-b7fa-4b7b-b028-e7901d107830",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8fbc5930-ce92-4ff4-b368-3cb845b2e400",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "12620937-7dea-44cf-9818-852eba67495d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0bc776ad-dafb-4e78-9fd2-2394583d3b5a",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0321a268-e0dd-497c-80b4-8661e0abb5f5",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2766)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb7d805c-7bb0-46b3-b3d1-abd836eb3dc2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2766,
+  "Title": "Prof Bhutta celebrated at 2021 Roux Prize ceremony",
+  "NewsSubTitle": null,
+  "NewsSummary": "Professor Bhutta has been awarded the Roux Prize for turning evidence into health impact.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass931699D60C9A4197B3D9EA79779E4EA7\"><p></p><div>Professor Zulfiqar Bhutta's impact on global health was celebrated at the 2021 Roux Prize seminar attended by members of the health community from around the globe.</div><div><br></div><div>Professor Bhutta has been awarded the Roux Prize, a US$100,000 award, for turning evidence into health impact. He is the founding director of the Centre of Excellence in Women and Child Health and the Institute for Global Health and Development at the Aga Khan University; and Co-Director of the SickKids Centre for Global Child Health, Inaugural Robert Harding Chair in Global Child Health and Policy, and a Senior Scientist in the Child Health Evaluative Sciences programme at The Hospital for Sick Children. His work has made an integral contribution to global policy to improve maternal, fetal and newborn health.</div><div><br></div><div>Moderated by 2019 prize winner and editor-in-chief of The Lancet Dr Richard Horton, the ceremony featured a presentation by Professor Bhutta on his life and work, as well as responses from a distinguished panel including Dr Bob Black, Professor at the Johns Hopkins Bloomberg School of Public Health; Dr Samira Asma, Assistant Director-General for Data, Analytics and Delivery at WHO; and Dr Adil Haider, Dean of the AKU Medical College in Pakistan.</div><div><br></div><div>The panelists were joined by the Institute for Health Metrics and Evaluation director Dr Christopher J. L. Murray and Roux Prize founders David Roux and his wife, Barbara.</div><div><br></div><div>Launched in 2013 and administered by IHME at the University of Washington, the Roux Prize is the world's largest award for evidence-based public health achievement and has drawn nominations from across the globe.<br></div></div>",
+  "PullQuote": "<iframe width=\"400\" height=\"315\" src=\"https://www.youtube.com/embed/G476R4XCwVc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002661",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2021-12-07T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Professor Bhutta has been awarded the Roux Prize for turning evidence into health impact.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2766,
+  "Modified": "2021-12-07T08:38:37Z",
+  "Created": "2021-12-07T08:25:08Z"
+}

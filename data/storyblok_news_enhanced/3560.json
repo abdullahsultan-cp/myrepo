@@ -1,0 +1,302 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1b1437e2-7107-4750-a5ea-2e0aaabe0fb6",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b177e9e9-4056-4e6f-a91d-d57cef4e8e13",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0d109664-95a6-43c5-adfb-42a557959680",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "84e4eb58-3a92-4767-af62-9569d272bc49",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b97d1fa2-6333-40be-868b-382acfe36823",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "1157fd29-8248-46ff-92f6-dfd061145743",
+    "Id": 32,
+    "Title": "Environmental Responsibility"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "a97de9c0-183d-49bd-8241-d7f26f0876e8",
+      "Id": 32,
+      "Title": "Environmental Responsibility"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8b440765-cd02-40a2-b0d2-264dcfd9e5a4",
+    "Id": 12978,
+    "Title": "Miriam Kugele",
+    "EMail": "miriam.kugele@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3560)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c72de85c-61a6-45cb-a027-4cdf5311dc7d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3560,
+  "Title": "AKU trains suppliers on carbon accounting",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU trains Kenyan suppliers on carbon accounting",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan Development Network (AKDN) operates one of the largest non-profit, private healthcare systems in the developing world.  Sustainability is a core strategic priority and cross-cutting theme for the AKDN. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As part of AKDN, the Aga Khan University (AKU) is "
+          },
+          {
+            "type": "text",
+            "text": "committed",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/about/environment/Pages/our-commitment.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " to have net zero emissions from our operations within this decade, in recognition of the importance of protecting the environment and mitigating climate change."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since 2020, AKU has been working on our own, comprehensive emissions footprinting exercise. It has shown that around 70 percent of AKU's emissions are a direct result of our supply chain and activities therein, from manufacturer to gate (see image below). It is in this context that AKU looks to its suppliers to be working in the same direction of climate mitigation."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To specifically support our suppliers in low and middle income countries (LMICs) to be equipped and understand and take climate mitigation action, AKU is taking bold steps to understand supplier needs (see e.g. workshops held in "
+          },
+          {
+            "type": "text",
+            "text": "Karachi",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/aku-brings-together-40-organizations-for-partnering-for-climate-action",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "b2703749-9567-58f7-a3f5-614a169c7113",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "text",
+            "text": "Karachi",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/sustainability-seminar-for-suppliers-and-vendors-as-collaborative-effort-of-hbl-and-aku",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "5d7ac8f5-587d-5924-a199-8a8a2ccb773c",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", and Islamabad), to provide support to get started, as well as to develop incentives."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In this context, AKU's Office of Environment and Sustainability together with the Purchasing and Supply Chain Management Division, organised a first training on greenhouse gas emissions accounting for Kenya-based manufacturers in Nairobi on the 28th of November 2024. This opportunity gained much attention, with 16 participants from 14 manufacturers joining the in-person training, which involved extensive practical exercises using real data entry and analysis. The training was based on the innovative "
+          },
+          {
+            "type": "text",
+            "text": "AKDN Carbon Management Tool",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.atachcommunity.com/resources/resource-repository/aga-khan-development-networks-tool-to-calculate-health-operations-emissions/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", whereas examples were also provided from other available tools."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Emissions accounting is a crucial first step for any organisation or company to understand their baseline, identify emissions hotspots, and ideate opportunities for both emissions and often cost reduction. While focusing on operational emissions, the training underscored the importance of scope 3 emissions, and that contrary to popular belief, accounting for procurement emissions can also be very do-able even for small companies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The training also explained the theory and concepts behind emissions accounting, as well as contextualised the larger sustainability context, including ESG (environment, social and governance) processes that are rapidly becoming required even in LMICs."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU aims to send a strong message to suppliers and the market about the importance of sustainability and planetary health."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Read more about AKU's dedicated supplier engagement in LMICs "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.atachcommunity.com/resources/first-wins-library/healthcare-supplier-engagement-to-scale-sustainability-action-in-lmics/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003430",
+  "LocalApproverGroup": "CA environment",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Environment",
+      "TermGuid": "4c7a3335-6158-4e34-958d-25b9cbb3e78d",
+      "WssId": 2331
+    }
+  ],
+  "ScheduleStartDate": "2024-11-29T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3560,
+  "Modified": "2024-11-29T12:04:11Z",
+  "Created": "2024-11-29T09:38:09Z"
+}

@@ -1,0 +1,142 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2f138902-2ca3-4fd3-838b-52e25c6ecc98",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "41774235-c061-4bf9-bc63-608a53c0040a",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7fefc2e3-2da0-4cfc-8dee-a6ac752234d2",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6de63104-a860-42d2-ac97-e7c7fe9ba396",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "786e7c48-7ac3-4742-a3b0-32a4f06a93ad",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d5131288-959b-4134-ae96-d5c7ef0e374a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8b9cef65-d660-4981-b188-09c50c6c25dd",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4f6963f9-1076-49e5-99e0-bfb8e94b6750",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1481)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93b77859-e25b-489a-8a1d-b791ab6303e4",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1481,
+  "Title": "Inauguration of new maternal childhealth centre in Nara Desert",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Hadi Bux Jatoi, Director General Health of Sindh, inaugurated the Maternal and Child Health (MCH) Centre, established by Aga Khan University (AKU) in conjunction with the local community, in Nara Taluka of district Khairpur.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Hadi Bux Jatoi, Director General Health of Sindh, inaugurated the Maternal and Child Health (MCH) Centre, established by Aga Khan University (AKU) in conjunction with the local community, in Nara Taluka of district Khairpur. The Centre aims to benefit the community of this remote and underdeveloped area and was funded by a multinational, Lasmo Oil Pakistan Limited, which is operating in the same area. The MCH Centre establisment is one of the initiatives of the Lasmo funded Rural Community Development Project run by AKU's Department of Community Health Sciences. The project seeks to establish a primary health care network with the Centre as its focal point of village based activities "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On what is considered a\"diamond\" approach, the local community, the Red Crescent Society, Khairpur, and AKU will collectively manage tile Centre. To ensure sustainability, AKU's technical input and Lasmo funding will gradually decrease over a five-year period, as the local community with the help of Red Crescent Society, develops its own capacity to manage the project. A Memorandum of Agreement was signed between all the concerned parties, and was presided over by Dr Roger Sutton, Dean of Faculty of Health Sciences, and AKU. The MCH Centre also has the collaboration of Department of Health, Sindh, which is making it a reporting centre for its female staff and health workers. At a time when there is increasing demand for innovation with Private-NGO-Public Partnership, tile MCH centre can be regarded as a pioneer effort. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The inauguration ceremony of MCH Centre took place in a colorful manner in Nara amidst overwhelming participation from the local community and was well attended by the Commissioner, Sukkur, he Deputy Commissioner, Khairpur and active members of Red Crescent, local doctors and AKU faculty members."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001428",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Inauguration",
+      "TermGuid": "ceb8fff3-1d37-4bcb-b4a9-fb1bb33f50e7",
+      "WssId": 1921
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "bb521654-b037-47fd-95a4-4bc1064f8d66",
+      "WssId": 1896
+    }
+  ],
+  "ScheduleStartDate": "1999-06-24T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1481,
+  "Modified": "2020-03-10T09:22:57Z",
+  "Created": "2018-01-22T10:54:17Z"
+}

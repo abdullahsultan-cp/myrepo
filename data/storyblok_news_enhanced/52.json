@@ -1,0 +1,178 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f30d2929-59fc-42ab-8a69-85cffbc5f837",
+  "odata.etag": "\"29\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "26011b5e-333d-4dd1-973c-2146e7e059e1",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "adf52c88-3799-4a2e-9cfc-9e4f23e9fa60",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6d6bd3ab-f6a0-4a30-bf10-6deff77f7597",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "0bdf34e8-cb7a-46e8-bcab-8621b36f63bd",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2a23a4d0-8408-41ae-b465-27d90fb7eb74",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "edaad9de-95ef-46c3-ac84-269412974b8f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d7c7986-fcaf-4750-bcde-0b5e2c9d567e",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(52)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e22eea73-98e0-45a0-aeaf-f9768e370d23",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 52,
+  "Title": "Kenya Youth Survey reveals integrity crisis",
+  "NewsSubTitle": null,
+  "NewsSummary": "Findings of the Kenya Youth Survey were released and a data portal launched at an event in Nairobi. The survey was commissioned by AKU's East Africa Institute to understand aspirations, attitudes, concerns and values of Kenya's youth.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There's bad news and good news in a recent survey of 1,854 rural and urban Kenyan youth. The bad news: Far too many are willing to be corrupt in order to be wealthy. And the good news: Those same youth have cherished values and beliefs that may indicate a willingness to change their minds and ultimately turn the tide of corruption in the next generation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Half of the youth surveyed said it doesn't matter how a person makes money, as long as they do not end up in jail. And 35 percent said they would easily take or give a bribe."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"There is no doubt. We have a huge reservoir of corrupt or corruptible youth in this country,\" says Alex Awiti, Director of the East Africa Institute, a part of Aga Khan University, who commissioned the survey. \"And they have a penchant for impunity.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the same time, these youth say their faith is their most cherished value (85%), followed by family and work. They view the future with optimism and high expectations, with many more wishing to go into business (46%) than traditional careers (26%) or farming (11%)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our youth need to hear the truth about corruption, especially from the people and institutions they trust the most, such as family, faith leaders and educators,\" says Dr Awiti. \"They need to be told that Kenya's recent economic growth would've been greater if corruption were absent, that corruption inhibits opportunity rather than enables it. And that integrity is a fundamental requirement of people in virtually any faith group.\"  Dr Awiti believes the survey supports the increased focus on anti-corruption measures taken by the government and civil society, but \"our anti-corruption messages to youth should be coupled with education to fuel and guide their dreams of starting businesses and succeeding-while playing by the rules and being rewarded for it.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking at an event where the survey report findings were released and a data portal launched, the Chief Guest, Professor Gituro Wainaina, Acting Director General, Kenya Vision 2030 Delivery Secretariat said that the Kenya youth need to be knowledge based and globally competitive. \"This can only be achieved through instilling of cognitive skills, interpersonal skills, values and character\" he said.  Prof Wainaina commended the University for its efforts in youth focused research adding that the data will be useful in informing policies that affect the youth."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The launch was attended by elected representatives, diplomats, civil society leaders, development partners, government, academician, business, media and faith leaders. Round table discussions were also held that stimulated dialogue and further debate that could generate practical policy ideas and actions to help prepare the youth for the future."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000022",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "East Africa Institute",
+      "TermGuid": "0053265c-548e-4bbb-98dd-e7861324fc9e",
+      "WssId": 1693
+    }
+  ],
+  "ScheduleStartDate": "2016-05-16T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 52,
+  "Modified": "2018-01-25T11:14:13Z",
+  "Created": "2016-05-16T12:07:42Z"
+}

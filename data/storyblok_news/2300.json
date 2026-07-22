@@ -1,0 +1,370 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5295034a-c47f-4d76-8e34-435e44283984",
+  "odata.etag": "\"40\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "043c73f5-bcf4-4c74-b2e7-7963a620b22f",
+    "Id": 96,
+    "Title": "Safina Kousar"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b0505cea-95ee-4587-9df3-36ed82aed7f0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c598ddd4-5261-409f-8712-48afca2a44d7",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d5f2f870-0d25-4ad5-a8d7-6796ff6464f9",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "29e230f4-bc6c-4eb3-b967-b68774ac534b",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "2b161fea-a69d-4e16-b695-01482f52b1ea",
+      "Id": 20,
+      "Title": "Institute for Educational Development, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2b95944d-4862-4378-a9bf-c6ec668e9c7e",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2300)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c69d6e41-c3fc-4396-8b27-16a3cc3a9e29",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2300,
+  "Title": "Engaging parents as active partners in their child's learning",
+  "NewsSubTitle": null,
+  "NewsSummary": "Here are some useful tips from Dr Ayesha Mian, associate professor and chair of the Psychiatry Department at AKU.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The disruption to classroom-based teaching by the COVID-19 pandemic has meant that parents are now expected to support their children with online and other modes of distance learning. Many schools were forced to go online or adopt other modes of distance education without much time for preparation. This change in teaching practices continues to unsettle teachers, learners and parents. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's "
+          },
+          {
+            "type": "text",
+            "text": "Institute for Education Development",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/iedpk/Pages/home.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Pakistan organised an online dialogue to help schools and teachers effectively engage parents in the learning process of their children during COVID-19. The event was part of the IED's dialogue series which seeks to highlight changes in educational policies and practices during these uncertain times."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of the experts in the dialogue was Dr Ayesha Mian, associate professor and chair of the Psychiatry Department at AKU. Drawing on her experience of working with parents, schools and learners in the area of child and adolescent psychiatry, she shared some useful tips for schools and teachers."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "You can watch  her full talk "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.facebook.com/akuiedpk/videos/626052131323294/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " Here are some key points from the session:"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Know what you want the parents to do: Clearly define the role of the parent. Tell them in simple terms what you want them to do to facilitate their children to learn at home. Keep it simple - remember they are not teachers. The expectations will vary depending on the age and grade of a child, the coursework being taught, nature of learning tasks and assignments."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Listen to them to understand their needs: Do a quick needs-assessment to understand what kind of help parents need to engage in the learning process of their children. Assess their readiness to facilitate their children with online/distance learning. Are parents literate? Do they have the required skills and expertise? Do they have access to technology, internet and steady electric supply?"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Respond to their needs: Based on the needs-assessment, arrange orientations and online sessions and develop video tutorials to help parents build their understanding of the simple techniques of online and distance learning. "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Don't just use them as worker bees, show that you care for their wellbeing and are interested in engaging them. Bring expert advice through online session sessions for parents to address their anxieties. Ask about their mental and emotional wellbeing to keep them engaged.  "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Give them feedback: Once you have given parents clear instructions on how and in what ways you want them to engage, give them feedback as they start working with you. Appreciate them for their valuable ideas and contribution."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002211",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "42798a93-35ae-4572-ba14-7cf8818ce9fb",
+      "WssId": 1850
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    }
+  ],
+  "ScheduleStartDate": "2020-04-22T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2300,
+  "Modified": "2020-06-08T11:47:38Z",
+  "Created": "2020-06-07T15:10:20Z"
+}

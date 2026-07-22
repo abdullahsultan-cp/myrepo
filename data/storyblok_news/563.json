@@ -1,0 +1,197 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "48291b95-3f92-4250-aac4-e1478c990d93",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9177198e-98b8-4c26-8afc-b66221605811",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "544c2463-fcff-45ec-9912-8a53f104c22b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de4d93c7-5182-479c-b8a8-4e5a8842b2dc",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "cae07135-b5c6-4396-aa76-0e6114ca0044",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f48ba9b7-05bf-4536-9f3a-7d4b597045c0",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4e77e99d-51c4-444a-b99e-b55cd6b90d50",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3568a1fb-fdb1-4857-a053-6b6be625d741",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(563)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dc0e9315-cc5e-4eb7-8189-9f2d768174b0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 563,
+  "Title": "New nutrient powder can fight undernutrition in children",
+  "NewsSubTitle": null,
+  "NewsSummary": "Food supplemented at home with powders containing vitamins and minerals for even short periods of time can reduce anaemia in young children suffering from undernutrition in Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Food supplemented at home with powders containing vitamins and minerals for even short periods of time can reduce anaemia in young children suffering from undernutrition in Pakistan. This was the result of a study conducted in Naushero Feroze District, Sindh by Dr Zulfiqar A Bhutta and his team of researchers at Aga Khan University, in collaboration with the National Programme for Family Planning and Primary Health Care, Ministry of Health, Pakistan, with funding from the Micronutrient Initiative. These findings are consistent with the recommendations of British medical journal, The Lancet's Series on Maternal and Child Undernutrition; an abridged Urdu version of the Series was launched in Pakistan today."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Undernutrition is one of the major causes of child illnesses and deaths with almost half of infants between the ages of six and 23 months in the rural areas of Pakistan suffering from anaemia, and about 35 per cent of deaths of under-five children linked to undernutrition. Deficiencies occur when people do not have access to foods such as fruits, vegetables or animal source foods, either because these are too expensive to buy or unavailable locally. In young children, a poor diet contributes to childhood anaemia accompanied by fatigue, stunted growth, and in severe cases, death."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A powder, Sprinkles, containing iron, zinc, vitamins A, C and D, folic acid and iodine, in single-dose sachets that can be easily sprinkled onto any food prepared in a household, was tested in Naushero Feroze. The government's Lady Health Workers programme was used to distribute Sprinkles to mothers who were advised to sprinkle a packet a day of the tasteless powder onto a child's main meal for two months. Moderate to severe anaemia was reduced by a quarter in children receiving the home fortification, a stark contrast to a 36 per cent increase in anaemia in the control group not given any fortified food."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sprinkles was developed by researchers at the Hospital for Sick Children in Toronto, Canada, to deliver iron and other micronutrients to children at risk of undernutrition. It has been used worldwide and is seen as a cost-effective and feasible strategy for addressing childhood anaemia. \"In populations where diet is known to be low in iron, anaemia is widespread and screening is difficult, adding food supplements like Sprinkles for short periods of time may significantly improve the health of young children and iron status,\" said Dr Bhutta. \"Scaling-up to the national level by distributing Sprinkles through the existing Lady Health Workers Programme, the largest primary health care programme in the country, should be the next possible step to address widespread childhood anaemia.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Rashid Jooma, Director General, Health Services, Pakistan, was the chief guest at the event, which was attended by representatives from the Ministry of Health, Pakistan, local NGOs, health care professionals and students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Notes:",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU was chartered in 1983 as Pakistan's first private university. Its objective is to promote human welfare in general, and the welfare of the people of Pakistan in particular, by disseminating knowledge and providing instruction, training, research and service in the health sciences, education and such other branches of learning as the University may determine. AKU also has programmes in Kenya, Tanzania, Uganda, the United Kingdom, Afghanistan, Syria and Egypt."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000521",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Nutrition",
+      "TermGuid": "90e590b4-0f02-4564-959a-ad1e0010a709",
+      "WssId": 1389
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "3c0b1059-67b1-4998-a106-4acc0ab2b5cd",
+      "WssId": 1367
+    }
+  ],
+  "ScheduleStartDate": "2008-11-14T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 563,
+  "Modified": "2017-02-22T07:54:30Z",
+  "Created": "2016-12-09T06:57:35Z"
+}

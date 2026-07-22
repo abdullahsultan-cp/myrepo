@@ -1,0 +1,231 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "abf22de8-2847-4aab-ae56-3c420ceb25d0",
+  "odata.etag": "\"27\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e9cbba51-6960-46df-920f-177499c3562f",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dda1f606-e7a1-4282-8b4f-e81928059617",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7965209-c52c-4be3-9f24-24f60acb5133",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a07aa6db-c2dd-46ff-a26b-03c349263d12",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "71229e82-ed33-4a42-b77f-e66ddd9c684c",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "1e849a3f-4ce1-49c4-8fbf-68c1071be615",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "7332cb1d-425f-4fda-9561-f4dfb37627b5",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "04896de9-c2ab-4afd-8d20-b8f35e943b85",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1804)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ce365f5d-079a-4204-bffa-96fcdce373a3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1804,
+  "Title": "AKU graduates challenged to impact their communities",
+  "NewsSubTitle": null,
+  "NewsSummary": "A total of 39 students received degrees at the 14th convocation ceremony in Tanzania.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University has affirmed its commitment to continue contributing to Tanzania's social economic development through the provision of high quality education for teachers and nurses. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The commitment was made during the university's 14th convocation ceremony held at the Diamond Jubilee Hall in Dar es Salaam. A total of 39 students were conferred degrees: 26 received Master's degrees in Education while 13 were awarded Bachelor of Science in Nursing degrees. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Every day, AKU is improving quality of life for the people of Tanzania, and helping government to meet its health and education goals,\" AKU President Firoz Rasul said. \"We are working hard to develop a new Diploma in Education to support the government's goal of up skilling primary school teachers.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since inception in Tanzania, the Aga Khan University has graduated over 3,000 students, who have proceeded to become leaders in their professions and role models in their communities. Nurses trained at the Aga Khan University attend to more than 500,000 patients across the country. In Mwanza, the University is collaborating with government facilities and fellow agencies of the Aga Khan Development Network to improve healthcare for more than 700,000 women and children. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "President Rasul added: \"We have helped to reduce hospital mortality, increased the number of women giving birth in health facilities, helped write new nursing regulations, and much more. Our students are taught to be courageous, to challenge things, and always ask what the outcome would be if we did things in a different way.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to a recent audit by the Tanzania Commission for Universities, AKU's programmes offer an education that enables graduates to be leaders in their chosen fields. A graduate of the Institute for Educational Development in Dar es Salaam received Kenya's 2018 Teacher of the Year Award. Another graduate working in Kenya recently became the second AKU alumnus to be named a finalist for the $1 million Global Teacher Prize. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The ceremony's Chief Guest Hon. Anne Makinda, former Speaker of Tanzania's National Assembly, reiterated the quality of AKU's courses and called on the graduates to make an impact in their communities."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Graduates, you have been educated for leadership - and there's nothing more powerful than a leader. True leadership is not an office, it's an art.\" Hon. Makinda said, \"Your education has given you the skills to make change in our schools, hospitals and institutions - making them more responsive and effective.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In the last five years, AKU has greatly expanded its reach in the region, launching new schools, institutes and centres which are all integral to AKU's quest to foster the spirit of anticipation, adaptation and adventure in new generations of young people. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We have been equipped so we have a responsibility to put into practice all that we have been taught in our places of work,\" Abdallah Shaaban Hoza, the valedictorian said. \"Be the person that makes the difference in your office, be the person that people go to for professional guidance.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The convocation ceremony was attended by graduating students, their families, faculty, university partners and government officials."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Abdallah Shaaban Hoza, MEd '18, gave the valedictory speech at the 2019 <a href=\"https://twitter.com/hashtag/AKUConvocation?src=hash&amp;ref_src=twsrc%5Etfw\">#AKUConvocation</a> in <a href=\"https://twitter.com/hashtag/Tanzania?src=hash&amp;ref_src=twsrc%5Etfw\">#Tanzania</a>. Hear the highlights. <a href=\"https://twitter.com/hashtag/AKUIED?src=hash&amp;ref_src=twsrc%5Etfw\">#AKUIED</a> <a href=\"https://t.co/NLGHCFF5np\">pic.twitter.com/NLGHCFF5np</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1093431107226296320?ref_src=twsrc%5Etfw\">February 7, 2019</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\n\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">AKU President Firoz Rasul shared \"a milestone in AKU's history\" at the 2019 <a href=\"https://twitter.com/hashtag/AKUConvocation?src=hash&amp;ref_src=twsrc%5Etfw\">#AKUConvocation</a> in <a href=\"https://twitter.com/hashtag/Tanzania?src=hash&amp;ref_src=twsrc%5Etfw\">#Tanzania</a> <a href=\"https://t.co/Ij7gsY3jVE\">pic.twitter.com/Ij7gsY3jVE</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1093763649443950592?ref_src=twsrc%5Etfw\">February 8, 2019</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001746",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "95deeea6-bd39-4a41-b839-40d28c835c8f",
+      "WssId": 1355
+    },
+    {
+      "Label": "Tanzania",
+      "TermGuid": "5a6d31f1-21a8-4c0b-bd6d-b608eaf4ec1c",
+      "WssId": 1611
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    }
+  ],
+  "ScheduleStartDate": "2019-02-06T16:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "A total of 39 students received degrees at the 14th convocation ceremony in Tanzania.",
+  "MediumImageCaption": "Hon. Anne Makinda, former speaker of Tanzania's National Assembly, was the chief guest at the ceremony ",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1804,
+  "Modified": "2019-02-08T09:21:46Z",
+  "Created": "2019-02-06T17:35:12Z"
+}

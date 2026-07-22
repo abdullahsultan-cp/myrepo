@@ -1,0 +1,280 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "30fef682-bfe0-4196-8e7e-7a17762dce26",
+  "odata.etag": "\"37\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6e3b0b28-7e23-46dc-9342-a282dcfd9f3f",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a451b316-3558-4187-8a85-660f9ea7144d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e2ea558c-e804-485f-9fb4-e287645d645f",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "63c11b16-212d-4a73-b750-8f7f99c602c5",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a35351f5-1062-445c-9275-8cd581d2e248",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "edcc2225-f108-451f-bfca-fad5fc037068",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0aa80bc-b5d1-435a-8b92-b53cd9b9ee83",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(210)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bcc71105-792a-4dd0-8238-2d9f220e8163",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 210,
+  "Title": "Major misconceptions about asthma still persist, study finds",
+  "NewsSubTitle": null,
+  "NewsSummary": "The findings of the two-month long study 'Knowledge and misconceptions of asthma in local population' were discussed at a public awareness session on World Asthma Day, May 3, at the Aga Khan University.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Even though one in ten children in Pakistan suffer from asthma, false beliefs about the chronic lung disease are still common in the country, according to a study conducted at four major hospitals in Karachi."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The findings of the two-month long study 'Knowledge and misconceptions of asthma in local population' were discussed at a public awareness session on World Asthma Day, May 3, at the Aga Khan University."
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Researchers found widespread confusion about asthma amongst the public."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Almost half the people surveyed, 45 per cent, believed that asthma was an infectious disease."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Nearly half of people, 47 per cent believed that regular exercise, such as swimming, could cure asthma."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "42 per cent asserted that drinking milk could trigger asthma."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "One in five, 19 per cent, thought of the disease as a psychological disorder rather than a respiratory disease."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Outlining facts about the disease, Dr Nousheen Iqbal, consultant pulmonologist at AKU was very clear that asthma is a respiratory disorder with \"5 per cent of adults and 10 per cent of children in Pakistan suffering from the disease\"."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Asthma causes inflammation of the airways leading to the lungs and results in coughing, breathlessness and discomfort in the chest. It can be caused by genetic and environmental factors, and cannot be transmitted from one person to another. Nor can it be caused by eating or drinking certain products such as milk or rice,\" she added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of the researchers on the study, Dr Javaid Khan, professor of medicine at AKU, added that results pointed to worrying notions about how to treat the disease."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Khan said: \"Inhalers are the best and safest way of treating asthma. But in Pakistan people have serious reservations about using inhalers. Here 57 per cent of people incorrectly associate the use of inhalers with serious side effects while 66 per cent wrongly think that inhaling steam is the best remedy for asthma.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Even though asthma can be effectively managed with the use of inhalers, 69 per cent of people thought that asthmatics could not take part in normal physical activity such as sports. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Khan added: \"Recent research on asthma has shown that treatment helps nearly all asthma patients gain control over their condition. After that, they can participate in school, work and other normal physical activities.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "During the seminar, physicians demonstrated the use of common treatments against the disease such as inhalers, spacers and peak flow meters and discussed effective treatment plans."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Data for the study was collected from 400 adults at the outpatient departments of four urban hospitals in Karachi: the Aga Khan University Hospital, Civil Hospital, Jinnah Hospital and Dow University of Health Sciences, Ojha Campus."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000178",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "5fd1a23c-10dc-4a74-b677-67ef4da50092",
+      "WssId": 1440
+    }
+  ],
+  "ScheduleStartDate": "2016-05-03T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 210,
+  "Modified": "2017-02-22T07:03:55Z",
+  "Created": "2016-05-19T06:19:57Z"
+}

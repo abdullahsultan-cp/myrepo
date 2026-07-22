@@ -1,0 +1,289 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e83f946d-502c-48ac-add3-dccbd15064fb",
+  "odata.etag": "\"64\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cd6703aa-a287-43d7-9910-64f3b8731c40",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c77fc787-7134-428c-a254-1cb03a094e51",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fa677f60-8e77-4303-9247-23120cb6c221",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "15dcd9cd-a2d8-4adf-bf76-eab6f447c8b7",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2088a779-1bc2-46eb-8ffd-24168810c9a0",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "06693d46-0039-4ea2-be0f-b12ebc3fbf0d",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2551)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7bb6fadd-7c5e-4ae5-bb1e-cb72ad0c418d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2551,
+  "Title": "Journal of Material Cultures in the Muslim World",
+  "NewsSubTitle": "Editor-in-Chief, Professor Stephane Pradines",
+  "NewsSummary": "This first issue of the journal MCMW is now online and accessible to everyone.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We are excited to announce and warmly congratulate the Editor-in-Chief, "
+          },
+          {
+            "type": "text",
+            "text": "Stephane Pradines",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.aku.edu/ismc/faculty/Pages/profile.aspx?ProfileID=4&Name=Stephane+Pradines",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " on the publication of the new "
+          },
+          {
+            "type": "text",
+            "text": "Journal of Material Cultures in the Muslim World (MCMW)",
+            "marks": [
+              {
+                "type": "italic"
+              },
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://brill.com/view/journals/mcmw/1/1-2/mcmw.1.issue-1-2.xml",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", a result of fruitful collaboration between the Aga Khan University's Institute for the Study of Muslim Civilisations and the"
+          },
+          {
+            "type": "text",
+            "text": " Aga Khan Museum",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.agakhanmuseum.org/index.html",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Toronto."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "MCMW aims to be a new reference for field archaeologists, (art) historians, anthropologists, curators, and scholars and students of the (art) history, archaeology, architecture, anthropology and ethnography of the Muslim world. This readership represents a new broader definition of material culture that includes not only artefacts, architectural structures and monuments, but also crafts. The journal also aims to inform (other) disciplines and historiographies, by including (unreviewed) archaeological field surveys for example. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The journal focuses on un(der)explored Muslim regions outside of the Middle East and North Africa: Sub-Saharan Africa, the Indian Ocean, Central Asia, India, South-East Asia and Europe. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The journal accepts submissions in English, French, German and Spanish and short reports in Arabic, Persian and Turkish with an English abstract. Submissions should be sent to the Editor-in-Chief, Stephane Pradines at: "
+          },
+          {
+            "type": "text",
+            "text": "Stephane.Pradines@aku.edu",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/Stephane.Pradines@aku.edu",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All the articles are free and available online, and you can access the first issue by clicking"
+          },
+          {
+            "type": "text",
+            "text": " here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://brill.com/view/journals/mcmw/1/1-2/mcmw.1.issue-1-2.xml?fbclid=IwAR2APjJ-J_DUUMmHC8eyh0jcKyvqB3mkgvkVX89gr72gNCHboYvk9nlkI10",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002451",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    },
+    {
+      "Label": "united kingdom",
+      "TermGuid": "b08b96fa-1406-436c-8cb3-6196da4f5f05",
+      "WssId": 1835
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    }
+  ],
+  "ScheduleStartDate": "2021-02-15T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2551,
+  "Modified": "2021-02-16T10:49:02Z",
+  "Created": "2021-02-15T14:18:18Z"
+}

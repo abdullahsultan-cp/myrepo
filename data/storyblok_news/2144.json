@@ -1,0 +1,176 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "324b198a-6d48-4b2b-a6d5-3891e18755d9",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a081ccde-40fd-4fd3-88da-e509ecf137c9",
+    "Id": 7747,
+    "Title": "Henry Ndirangu"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "89ea7a2c-5c2b-4ca8-92de-1d5c9b400a8b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "30dec924-a8e9-43cb-810c-57d002b55298",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "29bc462f-6787-4aab-97e1-a4f0c444e0a3",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ffc30c01-a942-4702-bd99-93abbb282d99",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "dc3c8842-593c-4fb4-942e-171b2601d4a5",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e9ad0d4e-d4e4-4646-8e4b-4690b69167c3",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2144)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "20879400-668c-460a-ada7-d611b06d3d1e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2144,
+  "Title": "Prof Marleen Temmerman receives the Fellowship of Honoris Causa Award",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Award recognises Prof Marleen's dedication and achievements towards the advancement of Obstetrics and Gynaecology and development of women's healthcare in Kenya and the region",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof Marleen Temmerman, Director of the Centre of Excellence in Women and Child Health, at the Aga Khan University Medical College in East Africa has been awarded the Fellowship of Honoris Causa Award by the Royal College of Obstetricians and Gynaecologists (RCOG)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The honorary award is in recognition of Prof Marleen's highest level of dedication and achievement towards the advancement of Obstetrics and Gynaecology and the development of women's healthcare in Kenya and the region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I am very humbled and honoured to have received this prestigious Fellowship of Honoris Causa Award,\" said Prof Marleen, \"I look forward to working with the Royal College of Obstetricians and Gynaecologists (RCOG) and other key stakeholders towards policy prioritisation and improved service delivery for women and children's health which is critical to a nation's sustainability and economic growth.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The honorary fellowships are the highest awards by the RCOG and are given following rigorous ex screening and vetting by the Council."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "RCOG awards the Fellowships of honoris causa in recognition of the work of individuals who are not members of the global association but who have contributed to the advancement of 0bstetrics and gynaecology, women's health services or work of the RCOG."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In 2017, Kenya's First Lady Margaret Kenyatta was awarded with the prestigious Fellowship of Honoris Causa Award in recognition of her efforts to reduce mother-to-child HIV transmission under the Beyond Zero Initiative."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002059",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2020-02-17T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Prof Marleen Temmerman, Director of the Centre of Excellence in Women and Child Health, at the Aga Khan University Medical College in East Africa receives the Fellowship of Honoris Causa Award ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2144,
+  "Modified": "2020-02-19T13:34:06Z",
+  "Created": "2020-02-17T12:33:21Z"
+}

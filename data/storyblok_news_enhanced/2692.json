@@ -1,0 +1,309 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9d100299-129b-4cdd-889f-8d519455e3bb",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dabe7a1d-c4d8-4992-8ead-e7b00fce92e4",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0bd751a8-623d-405c-99a7-8c382b21564a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7737b547-2111-45c9-8f12-99af9564ed56",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3b0c2122-3afb-4a9b-bc01-b9a2f2ae5d6c",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "30b6c8c3-ced2-41c9-aa2d-37801b1313bb",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "4d9a5351-a43b-493d-b724-55b064185a5b",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6d555185-3d99-46c7-ac5d-cc4995b45bcd",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2692)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "98ac77e1-cf6e-4976-8e11-f88eb33659de",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2692,
+  "Title": "Realising the full scope of dental hygiene ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Elia Nasim is determined to raise oral health standards in her village in north Pakistan.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Dental care is about much more than just emergency care,\" says student Elia Nasim of AKU's Associate of Science in Dental Hygiene programme. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Elia hails from a village in the Garam Chashma Valley in Chitral in northern Pakistan, where she's witnessed how most people only pay attention to their oral health when the pain becomes intolerable."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"They rush to the dentist and just want to remove the cause of their pain. They rarely ask themselves what caused the pain or how they can avoid such a situation in the future,\" she says."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Elia's academic and career ambitions have been deeply influenced by the experiences of friends and family in her hometown. She remembers her own mother frequently warning her about the dangers of taking daily oral hygiene for granted. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When I was a child, my mother would tell me over and over again: 'You will only know the value of teeth when you lose them.'\" "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her mother's warnings came from painful, personal experience as she needed to have all her teeth removed due to the searing pain of sensitive teeth. Looking back, she remembers how her mother's oral health challenges changed the family's routine with her elder sister putting off her studies to cook a soft diet for her mother, her father frequently accompanying her mother to the hospital, and Elia herself constantly reassuring her mother that everything would work out for the best."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Thankfully, dentures have helped Elia's mother return to leading a normal life but other people in her village haven't been so fortunate. Elia recalls how a 60-year-old resident of her village lost his life due to poor infection control practices shortly after a procedure to treat oral cancer at the local clinic."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The death was shocking news for us all and it really made me think about the underlying causes of the oral health challenges around us. Uncle's case was by no means unique.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Oral cancer is the most prevalent form of cancer among men in Pakistan and the consumption of "
+          },
+          {
+            "type": "text",
+            "text": "naswar",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", an addictive form of chewable tobacco, is a visible habit in the area. It is also common for children and adults to consume "
+          },
+          {
+            "type": "text",
+            "text": "paan",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", betel leaf and areca nut, which damages the teeth, and to avoid regularly brushing their teeth."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Through her degree, Elia has learned about the causes of prominent oral diseases and gained experience in conducting infection control procedures such as sterilising instruments and using gloves during procedures. While she's keen to gain more experience in the clinic, she's also interested in acting as an advocate for preventive healthcare."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"So much pain and so much disease can be avoided if people just gave a few minutes of time to their dental health every day,\" says Elia. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "After completing her studies, Elia is determined to return to her hometown to address another gap in the healthcare system."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I remember overhearing a conversation in a clinic between two women that had a great impact on me. They were discussing how they avoided visiting the dentist as they felt uncomfortable being treated by a man. There are currently no women dental practitioners in my area, and by returning home I hope to not only address this issue but to also look at the wider problems in my community. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Dental hygienists are educated to play many roles as clinicians, educators, community outreach workers, preventive healthcare advocates and administrators. My education has opened my eyes to the full scope of a career as a dental hygienist and I'm keen on playing as many roles as I can to encourage people around me to prioritise their oral health.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002590",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Oral Care",
+      "TermGuid": "ffdf82b4-e5a4-44c4-9c43-4c3622584e05",
+      "WssId": 2249
+    },
+    {
+      "Label": "Dentistry",
+      "TermGuid": "dee8e5a9-8bdf-4ae9-a827-0bd546fbb743",
+      "WssId": 2177
+    },
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    },
+    {
+      "Label": "Non-communicable diseases",
+      "TermGuid": "ed18bdf9-dac6-4fa9-9152-c696c0ddd1a0",
+      "WssId": 2250
+    }
+  ],
+  "ScheduleStartDate": "2021-07-27T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2692,
+  "Modified": "2021-07-29T07:25:44Z",
+  "Created": "2021-07-27T09:45:03Z"
+}

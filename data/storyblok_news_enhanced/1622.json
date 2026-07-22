@@ -1,0 +1,257 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5ddfe093-1d28-40ec-ac21-1187682838b1",
+  "odata.etag": "\"37\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e8df5ca-1d85-4644-bad6-111f84b9d9f3",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cf3f91a0-1e8d-4c03-8808-c6358cfa2842",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "399469af-d6aa-4921-a901-4f59b4b86c04",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e6a51f19-bfc8-4c7f-b1ba-49ca4b983159",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "72b2e525-cde6-4268-ba0d-0b62c73cf62d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "41bd1dbc-4d71-4265-a2fc-c0c2d94b3048",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7d8ad2f0-3a0f-4fac-b689-e7515b3b40cc",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1622)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "57b2e60b-b386-48e6-acaf-b0bfe3108cca",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1622,
+  "Title": "IED marks 25 years of impact ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Government officials, education experts and alumni from across the country join series of seminars to celebrate the 25 years of IED.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's "
+          },
+          {
+            "type": "text",
+            "text": "Institute for Educational Development Pakistan",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/iedpk/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " (IED) celebrated\nits 25th year of raising standards in Pakistan's education system\nthrough a series of education seminars that brought together alumni, government\nofficials and education experts from across the country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Two of the seminars took place at IED's Professional\nDevelopment Centres (PDCs) in Gilgit Baltistan and Chitral and highlighted how\nIED has educated more than 36,000 teachers, teacher educators, school leaders,\neducation managers and researchers in Pakistan since 1993, while also\nsupporting high quality research and school improvement practices in the field.\n"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his welcome address, Dr Sarfaroz Niyozov, AKU-IED\ndirector, spoke about the philosophy that has guided the institute for all\nthese years."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Since its inception, the institute has used an integrated\napproach where capacity building of education professionals and institutions,\nresearch and educational development activities go hand in hand to improve the\nquality of education for children in schools across Pakistan,\" he said. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about IED's impact, Dr Moladad Shafa, head of the\nPDCs, mentioned that the centres in both regions were the first of their kind. He\nsaid that the PDCs have enhanced access and equity, improved the quality of\neducation in areas where teachers have limited opportunities to further their\neducation. The centres have also equipped schools with resources to improve\ntheir performance."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over 20,000 education professionals have benefited from the\nnon-degree field-based professional development opportunities offered by both\nPDCs, he noted."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Inayatullah Faizi, a renowned columnist and social\nscientist from Chitral, during the seminar in Chitral said that \"AKU is the\nleader in introducing reforms and its best practices have been adopted by other\neducational institutions in Pakistan.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Gilgit-Baltistan's Chief Secretary Dr Kazim Niaz also\nrecognised IED's impact on the people of the region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I have learned with pride that a significant number of\nAKU-IED graduates come from Gilgit-Baltistan who contribute to the cause of\neducation in different capacities, which is making a significant impact on the\nsocioeconomic status of their families and communities,\" he said. \"The government\nof Gilgit-Baltistan deeply commends AKU-IED endeavours to produce quality human\nresources direly needed to accelerate the socioeconomic development processes\nin our area.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With the support of donor agencies, IED's PDCs have worked\nwith government bodies to mobilise communities to help the cause of education.\nThe Whole School Improvement Programme and School Improvement in Multi-grade\nSituations by the PDCs have benefited a large number of government,\ncommunity-based and not-for-profit schools. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Currently, both centres are implementing a School\nimprovement Programme, commissioned by the Aga Khan Foundation, in 120 schools\nin under-served valleys of Chitral and Gilgit, which is helping over 12,000\nstudents. The centre in GB is also leading the Girls' Right to Education\nProject, funded by UNESCO, to develop a conducive environment for girls in 34\npublic sector schools."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Research has remained an integral part of all the academic\nand developmental work of IED. More than 150 research projects, completed by\nthe IED and its PDCs, have helped in improving the curriculum, teaching,\nlearning and management practices in their beneficiary schools. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Some of these projects have also provided insights for\npolicy and strategy formulation at the highest levels. A few examples are the\nNational Education Policy 2009, the Gilgit-Baltistan Education Strategy and the\nmonitoring framework for the teachers of public sector schools in GB."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The overall contribution of the IED has widely been\nacknowledged by international development agencies as well as independent\nexternal evaluation bodies. In 2006, the European Commission monitoring team stated:\n\"AKU-IED has reached a high degree of maturity and functions in a way which\nmatches the practices of other established institutions in Europe and elsewhere\n... it is now well established as a national resource for increased educational\nquality, effectiveness, relevance and outreach.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": "European Commission monitoring team",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001567",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    }
+  ],
+  "ScheduleStartDate": "2018-05-11T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "IED Director Dr Sarfaroz Niyozov (right) presents a memento to Gilgit-Baltistan Chief Secretary Dr Kazim Niaz during the event.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1622,
+  "Modified": "2018-11-13T06:15:54Z",
+  "Created": "2018-05-11T10:13:39Z"
+}

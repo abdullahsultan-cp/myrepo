@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f282a8f0-bb7b-4d87-940b-9a38b5440663",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c79c037c-62f5-45d4-8e0c-8e7579b40b3c",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "07d49fd3-7795-40c0-ba88-6206638e9664",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f014bc8b-a22e-4f79-80ba-2578e699c7dc",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "47830df5-3114-44a5-8b05-c18bc43e0026",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f70bb342-9003-499b-a4a9-c2b64d96d250",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d69991d5-f884-4899-9efc-af0671ed0e34",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "913c9a19-335b-4120-991f-608874acd759",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1047)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac7dc5d0-69e1-4f70-8a49-8244a6fd8741",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1047,
+  "Title": "AKU National Symposium: Early childhood care and development",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nations that fail to acknowledge the importance of early childhood care and development are faced with an ever-growing burden of health, behavioural and educational problems in later years.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Nations that fail to acknowledge the importance of early childhood care and development are faced with an ever-growing burden of health, behavioural and educational problems in later years. Early brain development casts profound influences on the cognition, behaviour and health of an individual and generally that of the population. Poor nutrition for the mother, foetus and infant, and its implications in the first few years of the child's life cannot be reversed by any remedial measures."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "These issues will be brought to focus at the National Symposium on \"Early Childhood Care and Development (ECCD) - Best Investment for the Future\", which is being organised by Aga Khan University on September 23 - 24, 2002 in Karachi. His Excellency Mohammedmian Soomro, Governor of Sindh, will be the Chief Guest at the inaugural session at 9:00 A.M. on Monday, September 23, 2002."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The first keynote speech on \"Experience Based Brain Development - The Effects on Health, Learning and Behaviour\" will be delivered at the inaugural session by Dr. J. Fraser Mustard, Companion of the Order of Canada, Founding President and Fellow, the Canadian Institute for Advanced Research (CIAR). The second keynote speech focusing on \"Economics of ECCD\", will be delivered on the second day by Professor Jacques van der Gaag, Professor of Development Economics and Dean of the Faculty of Economics and Econometrics, University of Amsterdam. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Symposium will also have scientific sessions on nutrition, education, psychosocial aspects, health economics and on the outcomes of ECCD. Other internationally-reputed speakers include Dr. Mushtaq Khan from Islamabad (Nutrition); Dr. Fehmida Jalil from Lahore (Outcomes in ECCD); Dr. Zulfiqar A. Bhutta from Karachi (Foetomaternal Nutrition); Dr. Kathy Bartlett from Geneva (Investing in Leadership); Professor Arshad Husain from USA (Child Mental Health); and Dr. Jim Irvine from Australia (The High Price of Low Quality Education). Participants will also present their research works during the Symposium.                                                                         "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Workshops on Brain Development, Health Economics and Psychosocial Aspects will be held on the second day of the Symposium, and will be followed by an interactive session between the participants and a panel of experts. The proceedings of the workshops will crystallise a set of recommendations targeted at the country's national needs regarding early childhood care and development."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001005",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Child development",
+      "TermGuid": "e3b93b72-a06f-4f30-9945-c56094b195aa",
+      "WssId": 1913
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "23239523-9013-43f8-a959-9b25118a5980",
+      "WssId": 1886
+    }
+  ],
+  "ScheduleStartDate": "2002-09-19T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1047,
+  "Modified": "2020-03-12T04:13:39Z",
+  "Created": "2016-12-28T06:32:00Z"
+}

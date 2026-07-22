@@ -1,0 +1,323 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b24a0ed4-660c-4049-825e-ec4e470264d9",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a918b894-f2d2-4901-b2dd-e6f52aaf7c02",
+    "Id": 18650,
+    "Title": "Fiona.Wachera"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd0bc577-22cf-45d2-acba-d2c777845bab",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6817ac93-4309-455d-ac1c-723ab2b849eb",
+    "Id": 18650,
+    "Title": "Fiona.Wachera",
+    "EMail": "fiona.njagi@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "490d429b-f37d-4b00-aee1-3c1e058812ff",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d0de8242-56b8-4e71-9906-6b1bdef18e37",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "a850f030-aadf-4512-b26b-7d0fe8517e0b",
+      "Id": 31,
+      "Title": "Brain and Mind Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0e09b73f-9f2d-4003-be09-146a42bd2eb8",
+    "Id": 18650,
+    "Title": "Fiona.Wachera",
+    "EMail": "fiona.njagi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3726)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e6818750-d0f8-486f-beed-f1c998247277",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3726,
+  "Title": "Rethinking Aging in Africa",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Cyprian Mostert studies how economics can transform brain health",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mental health and aging are often treated as separate policy concerns, but Dr Cyprian M. Mostert, a mental health economist at Aga Khan University (AKU), is bridging those worlds. His work reveals a powerful truth: the economic well-being of older adults is inextricably linked to their brain health, particularly in Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Brain health economics is a relatively new but urgent field,\" Dr Mostert explains. \"It helps governments build strong arguments for investing in conditions like dementia and depression, leading to smarter, more sustainable policies.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "His approach combines complex data analysis, predicting economic trends, and advocating for policies on the ground. This might sound like a mouthful, but in simpler terms, Dr Mostert's work ensures that brain health becomes a national priority, especially in under-resourced regions like Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mostert's academic path is as diverse as his research. He's moved from clinical medicine to financial engineering, and then into global policy design, culminating in a PhD in health economics. His early career at Johannesburg's The Chris Hani Baragwanath Hospital and later with the World Bank showed him a consistent pattern: treating symptoms in a hospital wasn't enough to solve what were fundamentally economic and social health crises."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"You can treat symptoms,\" he says, \"but if people go back to poverty, hunger, and hopelessness, we're not solving the root cause.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of his key areas of focus is pension reform. Dr Mostert's research highlights how weak or non-existent pension systems in Africa worsen brain health "
+          },
+          {
+            "type": "text",
+            "text": "outcomes for older adults",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.researchgate.net/publication/387856260_Investing_in_Healthy_Brain_Aging_Why_Africa_Must_Reform_Social_Pension_Programs",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". He points to a stark contrast: in Latin American countries, social investment and expanded pensions have led to a decline in dementia-related deaths. Meanwhile, Africa has seen a concerning 3% annual increase in such deaths since 1981."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When older adults live in poverty,\" he argues, \"we cannot expect improved brain health.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "So, what needs to change?"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "First, Dr Mostert emphasizes that Africa must stop importing Eurocentric policy models. \"Raising pension eligibility to 67 doesn't make sense when life expectancy in many African countries is below 60,\" he notes. \"Many die before ever receiving benefits.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Instead, Dr Mostert calls for three urgent reforms tailored to the African context: Firstly, lowering the pension eligibility age: South Africa's 2008 reform, for instance, reduced poverty among older men by 24% and significantly decreased depression and suicide."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Secondly, paying pensions before health declines: This model, successfully used in Mauritius, ensures funds are received when they can have the most impact on well-being. Thirdly, adopt a lifespan approach to healthy aging: This means looking beyond just old age and including support from early childhood, unemployment grants, and debt relief-strategies that have worked in countries like Cuba and Costa Rica."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Based at AKU's Brain and Mind Institute in Nairobi, Dr Mostert finds the University's Afro-Asian reach provides a unique vantage point. \"AKU allows us to conduct globally informed, yet deeply localized research that responds to the real lives of African communities,\" he says."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Looking ahead, his next frontier is ensuring inflation-indexed pensions. In simpler terms, this means pensions that are adjusted regularly so they don't lose their buying power due to rising costs of living. \"Even well-designed pensions become meaningless if they lose value each year,\" he warns. \"We need the UN and WHO to mandate inflation adjustment as part of any social protection policy.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mostert's work is a crucial call to rethink how we approach mental health and aging-not just as medical challenges, but as fundamentally economic and social ones."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Ultimately,\" he says, \"our job is to ensure that people can age with dignity. And that starts with smart, equitable, and deeply human policy.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For more research updates from Dr Cyprian Mostert and the Brain and Mind Institute, visit "
+          },
+          {
+            "type": "text",
+            "text": "www.aku.edu/BMI",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.google.com/search?q=http://www.aku.edu/BMI",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003594",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2025-06-27T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3726,
+  "Modified": "2025-06-27T08:57:15Z",
+  "Created": "2025-06-27T08:43:39Z"
+}

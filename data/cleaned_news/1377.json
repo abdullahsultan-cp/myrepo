@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "78fb4d51-fd98-434d-964a-527085846ccf",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "609f56e3-e98b-472b-9c0a-4001adf99e1e",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ca1b1948-81e1-4bec-9db0-d1093f187aab",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a4217e8b-af32-456d-9724-f0112b9a2999",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "7684558d-10d5-4403-8498-e35b0ea16d65",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1c1b6253-ad45-4b09-bef1-909ea5906096",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ed2fc2fc-da6f-443a-8b9e-ade58382643e",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aba5fa4c-23de-4d87-9aa5-4ef5bec4ec03",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1377)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b315d9b7-ebaa-4837-a33b-9ec876abfa39",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1377,
+  "Title": "Discovering art in medicine",
+  "NewsSubTitle": null,
+  "NewsSummary": "On January 24, the courtyard of the medical college became an impromptu art gallery as students from the class of 2016 put on display a collection of photographs, calligraphy and pencil sketches. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassF08F8CFFB3134C29983DE94BFCB728CD\"><p></p><div>On January 24, the courtyard of the medical college became an impromptu art gallery as students from the class of 2016 put on display a collection of photographs, calligraphy and pencil sketches. This marked the end of the first five-week Humanities and Social Sciences (HASS) module.</div><div>&#160;</div><div>Designed to provide medical students with a holistic education, students are required to take three compulsory courses; Religions of Pakistan, Silent Stories of Pakistan and Urdu Conversation - along with two electives from an array of 10 courses such as Anatomy of Art, Music of South Asia, Introduction to Social Sciences, Introduction to Digital Photography, Introduction to Documentary Film Making, English and Urdu Literature as well as language courses in Arabic, Persian and Spanish.</div><div>&#160;</div><div>The exhibition proved a fitting conclusion to the stimulating HASS module for the class of 2016, bringing hidden artistic talents of the students to the forefront. Creative photographs depicting university buildings and everyday campus life from different perspectives was a profound reflection of the students' creativity. Interesting shots of urban wildlife on campus, such as a cat licking its paws, crows eating leftovers and ducks in the lake piqued the interest of many visitors as did the sketch of a baby with a joyful expression and vibrant laughter in the eyes.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001324",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    }
+  ],
+  "ScheduleStartDate": "2017-01-24T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1377,
+  "Modified": "2021-10-22T12:03:32Z",
+  "Created": "2018-01-01T09:49:24Z"
+}

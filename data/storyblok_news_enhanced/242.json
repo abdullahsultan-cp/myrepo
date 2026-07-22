@@ -1,0 +1,237 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "36a0a3f6-a751-4f9c-a492-3d6fc56c3948",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "560c3f31-f302-4a9c-a849-6495ab1be5dd",
+    "Id": 251,
+    "Title": "Amirali Virani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "68f95028-4ef9-4c80-b362-6b4ead0d1921",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c6747ad-fe63-49fa-aaa5-5984601bf6b8",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "ae998352-a2ef-4b44-80f7-fe64567287ce",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ecd386ca-9d32-4513-be1d-45dab341633d",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f19d9ecc-33b4-49fc-a9c6-01f5fb6e06a2",
+    "Id": 12,
+    "Title": "Networks of Quality, Teaching and Learning"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cf01b7b0-1115-4ad3-92a4-14876d2d711c",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(242)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12b96517-9825-446e-bec0-3b6a59cc64af",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 242,
+  "Title": "TL_net Holds First ever AKU Teaching and Learning Enhancement Workshop in Dar es Salaam, Tanzania",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Network of Teaching and Learning  held the first ever AKU teaching and learning enhancement workshop for faculty in East Africa in Dar es Salaam, Tanzania on July 25-28, 2016 ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Following the successful completion of the facilitators' development workshop by 9 AKU faculty facilitators last week in Dar es Salaam Tanzania, another group of 27 faculty members from East Africa began  a 3 day (July 25-27, 2016) teaching and learning enhancement workshop based on the internationally certified Instructional Skills Workshop. The workshops aimed at supporting participants develop increased competence and confidence as facilitators of learning as well as provide them with resources to be more reflective about their teaching. It engaged faculty in real teaching experiences so as to provide them with the opportunity to translate their knowledge about teaching into practice."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Trainers, Dr. Debra Dawson Director of the teaching Support Centre and Dr. Mike Atkinson, National Award winning teacher from University of Western Ontario have been facilitating and mentoring the group. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This is what one trainer had to say about the workshop:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As faculty members, we are used to getting feedback on everything we write-papers, books, reports, and so on.  But rarely do we invite, or receive feedback on our teaching.  The Instructional Skills Workshop (ISW) is transformative.  It provides you with the skills and the methods to become a more reflective instructor and to enhance student learning.   A friend of mine once commented that \"Teaching is a sacred activity.  Its power to affect people's lives-positively and negatively-is overwhelming.  To be a good teacher you need love, energy, clarity, idealism and reality.  Something of the spirit and something of the earth.\"  ISW embodies these qualities and reminds you that education must be student-focused if we want our learners to become critical thinkers-"
+          },
+          {
+            "type": "text",
+            "text": "Dr. Mike Atkinson, Trainer from Western University.",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Faculty members also had the following to say about this first ever AKU teaching and learning enhancement workshop that brings together faculty across disciplines:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I have seen a dramatic change in the way my peer faculty taught\" - IED Participant"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is the best course I have ever attended to improve my teaching\" - PGME participant"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\" All new faculty should take this course before they teach\" - AKUSONAM participant"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\" We have become a community of practice that will champion quality teaching at AKU\" - faculty facilitator"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The next teaching and enhancement workshop for  AKU faculty from Karachi, Pakistan will be held in September 2016. For more details about teaching and learning enhancement workshop please "
+          },
+          {
+            "type": "text",
+            "text": "click here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/qtl/Documents/Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000206",
+  "LocalApproverGroup": "QTL News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "workshops",
+      "TermGuid": "92fd96b8-d275-40a8-a45e-3f6176bf07d6",
+      "WssId": 1052
+    }
+  ],
+  "ScheduleStartDate": "2016-07-29T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 242,
+  "Modified": "2016-07-29T06:14:34Z",
+  "Created": "2016-07-29T04:57:10Z"
+}

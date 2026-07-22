@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bf7df0dc-302d-42a8-ae4e-723945e72a6c",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c594aace-94cf-4ca4-bd4f-5eea77c6276e",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5312610e-bfcc-4bca-b2f6-e4853cc5298a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b8ad36d5-c2fc-4f80-ba23-dc5710fe5553",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "cb9d36df-5dbc-47c9-a491-34b4c3976c1e",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8d86a822-d608-4e2a-9124-7bf32d52d1fa",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "13a08299-48b0-4b8b-96f4-5cdc5a3ad848",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7f6638ae-a7ad-4961-9c16-d47911f8b257",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1900)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5bad4629-fde0-4940-b703-684ec9abc09e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1900,
+  "Title": "Helping men age easier",
+  "NewsSubTitle": "Surgical skills workshop on TURP",
+  "NewsSummary": "CIME organised a surgical skills workshop on Transurethral Resection of the Prostate (TURP).",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass82C258FD000A4B6C86537CA15F9A15D3\"><p>Clinical benign prostatic hyperplasia (BPH) is almost unavoidable and one of the most common ailments in ageing men, where the prevalence is seen to increase after the age of 40 years, rising to 60% at the age of 90 years. It can be appreciated that Transurethral Resection of the Prostate (TURP), being the most effective treatment for BPH, is a very common procedure in hospital. Even so, it is not without its risks and complications, and not something that can be treated with complacency. It is in a very \u2018delicate\u2019 part of the male anatomy and on the very rare occasion when things don\u2019t go to plan it may have profound psychological implications for self-image and expressing sexuality as well as having a devastating effect on all aspects of daily life in the extremely rare event that incontinence occurs. </p><p>But not to worry! To provide reassurance to all ageing men out there (and no-one is getting any younger) CIME is providing a helping hand by ensuring that urology surgeons across Karachi had the opportunity to attend a one-day workshop on TURP delivered by the AKU Urology section head. This used a mixture of educational methods, from didactic lectures on the complications and procedural skills, revisiting relevant anatomy, and an overview of techniques and protocols for effective resection while controlling excessive bleeding. Most importantly, participants practiced in the comfort and safety of high fidelity simulation, and through realistic cases were able to master different techniques, all the while receiving Haptic feedback from the simulator on their instrumentation skills. The overall feedback from participants was that the workshop was very positive with the participants applauding the efforts of CIME to decrease male morbidity.</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001832",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2019-05-24T04:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1900,
+  "Modified": "2019-05-24T04:34:27Z",
+  "Created": "2019-05-24T04:32:37Z"
+}

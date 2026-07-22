@@ -1,0 +1,187 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3ac237a3-a493-4f76-8acc-d3999759d444",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fbcc0916-37c2-4bfa-b154-474fc4e0c577",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c75e03dc-fc7f-4b29-80fa-374c8bfa29ca",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a475021c-9b6e-4f9f-80ab-cef50ed9d609",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "dfde78b2-e6bb-44e7-b8be-97832fc4cd10",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "cee99f2d-d244-4ebe-9c6e-21c1fec4632a",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "df75b04a-3a3e-417e-9930-a1937c857fb3",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fae94b3f-296b-4afe-b0d8-9d41f1014924",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(101)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c5e4134a-3750-4a2d-ad8f-c927b1fd9c56",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 101,
+  "Title": "First PGME Open Day in East Africa",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Postgraduate Medical Education programme organised its first Open Day, in Nairobi, on July 15, 2015.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Postgraduate Medical Education programme organised its first Open Day, in Nairobi, on July 15, 2015 to provide graduating doctors with information about the various specialist medical training disciplines available at their doorstep in East Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Trainees can choose between nine specialities in anaesthesiology, anatomic pathology, clinical pathology, family medicine, general surgery, imaging and diagnostic radiology, internal medicine, obstetrics and gynaecology, paediatrics and child health before graduating with a Master of Medicine degree."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The programme offerings are set to almost double when several more specialities - cardiology, critical care, infectious diseases, neonatology, neurology and oncology - are introduced in the near future."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Open Day provided participants with an opportunity to interact with lecturers as well as with their peers, currently enrolled PGME residents, to understand the academic and more practical side of the programmes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Dorothy Kamya, Director, PGME said, \"We hope that the information provided will help the participants make more informed choices about their careers.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The event also provides a platform for participants to familiarise themselves with the University and how it operates within East African region and beyond,\" Dr Kamya added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "PGME currently has 96 trainees, based in Nairobi and Dar es Salaam. They will join 111 highly skilled specialists from across the East Africa region who have graduated from the programme and offer quality and patient-centred care for which AKU is well known."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The PGME programme will also hold a similar Open Day at the Dar es Salaam campus later this month. "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000071",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Postgraduate medical education",
+      "TermGuid": "f1173917-0e48-4c15-b663-2496fce8f80c",
+      "WssId": 1400
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 101,
+  "Modified": "2017-02-22T07:10:57Z",
+  "Created": "2016-05-17T06:57:35Z"
+}

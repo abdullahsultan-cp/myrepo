@@ -1,0 +1,246 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0114e17e-2c5e-40cb-97f8-8a32deab1634",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ab7c0e94-62d8-4dd7-a08a-5d0edc20465f",
+    "Id": 14331,
+    "Title": "Gloria Chemutai"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9d9ed26b-95ba-42a9-86fd-78f5ee049261",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aa8bf57f-6325-4eb2-8839-42283761b866",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "41cab2b3-c5be-4f9d-b224-057b32de1262",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4c58211c-926a-4f00-bc93-ca2f722e0759",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "3c3286e6-5c31-4dcd-a686-804675c93e45",
+      "Id": 31,
+      "Title": "Brain and Mind Institute"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "34def40d-c72f-4f9c-89b5-d5e38657531f",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4aa06e17-1822-4064-99df-2c8e8d04b945",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2913)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c230df3f-2fdb-4904-8b5c-2afb3005722b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2913,
+  "Title": "Enhancing mental health through sports",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU partners with Futbol Mas to reach disadvantaged communities ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University's Brain and Mind Institute, BMI and the Centre of Excellence in Women and Child Health have formed a unique partnership with Fútbol Más to enhance mental health care for children and young people in Kenya's underserved populations."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Fútbol Más is a non-profit organization from Chile that promotes children's well-being and happiness in communities living in socially vulnerable environments. The organization uses play and sport to engage children in ten countries across Africa, Europe and Latin America. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"With this partnership, we hope to improve our model to impact the mental health and well-being of children and young people in disadvantaged communities\", said Seppe Verbist, Regional Director and Board Chairperson, Fútbol Más. \"This will further allow us to learn more about what we are doing and our impact, thus improving our program and communicating with stronger evidence.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Although Fútbol Más is relatively new to the African space, it has already established a strong presence in the local communities where it operates. The opportunity to work together with AKU is essential to pilot innovative approaches at the community level and identify new platforms to expand programmatic reach and impact by utilizing sports as a platform and tool for engagement."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Through this collaboration, we hope to bring easily implementable interventions into the communities of high need. This involvement will greatly impact children's mental health and well-being,\" said Professor Zul Merali, Founding Director of BMI."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The partnership hopes to drive positive social change and integrate mental and neuroscience in sports and physical development. This also includes strengthening leadership abilities, strategic thinking, and teamwork in children and young people."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU and Fútbol Más will also share best practices in implementing community programs. This includes training that promotes critical thinking, problem-solving, and gender responsiveness in educational programming. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Marleen Temmerman, Director, Centre of Excellence in Women and Child Health, believes the collaboration will benefit all parties concerned. \"We believe in working with the communities. We have complementary skills, and we hope to join forces to ensure that Fútbol Más has an impact on a much higher level. As a university, we also hope to learn from what they do.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"It is our aim to partner with effective community groups to advance our goal further and find ways to impact the people in the countries we serve,\" said Carl Amrhein, Provost & Vice-President, Academics."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The two organizations hope to influence policy and practice on children and adolescent mental health, as well as collaborate on academic publications. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002805",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "6db413d6-a4df-4471-93de-a395835b20dd",
+      "WssId": 2154
+    },
+    {
+      "Label": "Child development",
+      "TermGuid": "d42854e9-f000-44ba-9024-556447f063f9",
+      "WssId": 2344
+    }
+  ],
+  "ScheduleStartDate": "2022-07-07T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2913,
+  "Modified": "2022-07-28T10:18:43Z",
+  "Created": "2022-07-07T13:21:58Z"
+}

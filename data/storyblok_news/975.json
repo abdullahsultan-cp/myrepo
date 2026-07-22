@@ -1,0 +1,182 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1c9df618-602a-4131-b2e2-f34e4ca10ba8",
+  "odata.etag": "\"28\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d03219ce-7d5f-404a-8f4d-ca5d0d2aab0d",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c920a485-03be-44b5-bafc-9f8a9447ceb4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d4fe8d07-588c-438a-911e-b47522bd86a8",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "76688a3f-bdde-42d2-88ea-7c5a6c631853",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b4b89446-de07-44b5-9474-dff393a17597",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6139dc0c-f91b-4a3a-baf2-ea6feb5cc9f9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c0a365e5-3ac7-4f12-90be-86943f0d152e",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(975)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e1d982c8-8c1b-4ed7-aab8-6592e035f553",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 975,
+  "Title": "AKU to launch a Faculty of Arts and Sciences",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University , which is operating 11 campuses in six countries on three continents, is establishing a Faculty of Arts and Sciences on a new 550 acre campus on the outskirts of Karachi .",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University, which is operating 11 campuses in six countries on three continents, is establishing a Faculty of Arts and Sciences on a new 550 acre campus on the outskirts of Karachi ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This was stated by Shamsh Kassim-Lakha, H.I, S.I, President, Aga Khan University, during a meeting with Riaz Ahmed Tata, President, Federation of Pakistan Chambers of Commerce & Industry at Federation House on 6 October 2003 ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With the launch of academic programmes outside Pakistan, the University has established itself as an international institution. It now has a permanent presence in some regions, such as East Africa and is focusing on intermediary capacity building in others, including Bangladesh, Nepal, Afghanistan and Tajikistan. Kassim-Lakha informed that the University, which is operating a Medical College, School of Nursing, Teaching Hospital and the Institute for Educational Development, also recently established the Institute for the Study of Muslim Civilisations in London."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University President said that the 500-bed University Teaching Hospital is equipped to handle medical, surgical, obstetric and gynaecology, paediatric and psychiatric patients. He said that the Hospital continues to expand its services to meet the growing need for high quality comprehensive care.   "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Kassim-Lakha said that the University Hospital, as part of its overall policy to provide accessibility to all members of society, also operates a Patient Welfare Programme, under which Rs.160 million was spent in 2002 for needy patients. Additionally, he said that in 2001, a group of well wishers started The Patient Behbud Society for Aga Khan University Hospital, through which zakat contributions are collected for the treatment of poor patients."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "FCPPI President, Riaz Ahmed Tata, greatly appreciated the noble aims and objectives of Aga Khan University and its teaching hospital, which is ISO 9001 certified."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000933",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Arts",
+      "TermGuid": "06fd6358-a12e-470e-b94c-823623a74f6c",
+      "WssId": 1889
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    },
+    {
+      "Label": "teaching",
+      "TermGuid": "1d65fcd6-63bb-4812-9893-7b3905594597",
+      "WssId": 1851
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2003-10-06T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 975,
+  "Modified": "2020-10-28T14:18:04Z",
+  "Created": "2016-12-27T09:44:02Z"
+}

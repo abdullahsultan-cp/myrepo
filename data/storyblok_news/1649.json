@@ -1,0 +1,170 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c0736a62-742c-4e88-83b6-4cdd0ed8bf58",
+  "odata.etag": "\"39\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0395f094-78d9-407a-ba06-b84bc480ac1f",
+    "Id": 4191,
+    "Title": "ezekiel.kimeu"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "90cd555a-36e2-42a1-b408-ad7fa3f1c720",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "67e38fbd-0d6b-46d7-9412-9da62743b55a",
+    "Id": 4191,
+    "Title": "ezekiel.kimeu",
+    "EMail": "ezekiel.kimeu@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "3caf07c2-3df8-49f9-ad0d-07a2b95a5538",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "abec9b3f-735a-45cd-8ebc-49ac34fad358",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f5b0244b-e361-4843-bf61-3ebde3a1df74",
+    "Id": 9,
+    "Title": "School of Nursing and Midwifery, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ffe60829-fde9-477b-b682-b99bc8001611",
+    "Id": 4191,
+    "Title": "ezekiel.kimeu",
+    "EMail": "ezekiel.kimeu@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1649)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "88888458-fc8e-4734-81e7-ca9804b956df",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1649,
+  "Title": "SONAM EA professor receives national midwifery award",
+  "NewsSubTitle": null,
+  "NewsSummary": "Professor Grace Edwards is awarded a Fellowship from the Royal College of Midwives",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Grace Edwards from the Aga Khan University's School of Nursing and Midwifery in East Africa  (AKU-SONAM EA) has received a national award from the Royal College of Midwives (RCM) for her dedication to midwifery"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She received the acclaimed RCM Fellowship; an honour reserved for a few midwives who \"make an outstanding contribution, or give outstanding service, to midwifery, maternity services, services for women and their families or to the RCM\". She was presented with the Fellowship on 12 June at the Royal College of Midwives Education Conference in London."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Grace is the Foundation Professor for Midwifery Education and Practice at SONAM EA. She is based in Uganda but works across East Africa in various capacities. Professor Edwards was one of the pioneer consultant midwives in the UK as well as the first professor of midwifery in East Africa. She has worked in several midwifery capacities over a career spanning 41 years and sustains her clinical practice at Kawempe Mulago hospital in Kampala, Uganda."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Regarding the award, Grace shared, \"I am honoured to receive this award from the Royal College of Midwives which is presented to individuals who have made an exceptional contribution to midwifery. I was very proud to be able to highlight the work that AKU SONAM is doing in East Africa to develop critical thinking midwifery leaders who are making a positive contribution to reduce maternal and perinatal mortality.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Loveluck Mwasha, senior instructor in midwifery at SONAM Tanzania was recognized by the International Confederation of Midwives through the \"Midwife for Life Award\" in 2017. This year SONAM EA is happy once again to have a member of faculty being recognised for their contribution to the midwifery profession. This outlines the institution's commitment to consistently prioritise having well-intentioned faculty who deliver quality education to the next generation of nurses and midwives. In so doing, the next generation of nurses and midwives will continue to prioritise the care of women and their families, as their predecessors did."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001594",
+  "LocalApproverGroup": "Sonam EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    },
+    {
+      "Label": "Midwifery",
+      "TermGuid": "04c22a46-cc85-4657-85d3-c8826c1615a6",
+      "WssId": 1376
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2018-06-13T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Kathryn Gutteridge, the RCM President (Left), Professor Grace Edwards (middle) and Gill Walton, RCM Chief Executive and General Secretary (right)",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1649,
+  "Modified": "2018-08-06T09:12:15Z",
+  "Created": "2018-06-13T11:48:02Z"
+}

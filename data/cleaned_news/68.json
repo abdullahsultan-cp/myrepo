@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3e4dbf8d-19a2-4dc1-bf68-a9b4e71717a1",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a3fecc16-af76-422f-a923-3a459a996da1",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1378a121-0e93-4ce4-b325-d30c7cb46dcd",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6f9f6fc4-e7b9-43e9-911c-a9cdd2334182",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "46646a7d-b2ca-48a6-a576-0bed33c2fdea",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "71a9e4d2-674a-4cb8-8a03-83cedf80d6b4",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a284a8b6-1916-441e-badb-2b83c4d30d9b",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fade0057-a52b-4142-8275-8cd661ceee81",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(68)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "100c921d-a64c-44f5-8b2c-59005ae95b0f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 68,
+  "Title": "A time to bid farewell",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Bentil speaks about Professor Rea-Dickins",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass502F1722BD9E4B5096AECF36606CAA3A\"><p></p><div><div>Recently, at an event at the New Africa Hotel in Dar es Salaam about 130 faculty, staff, students and friends of AKU, and IED, EA celebrated Professor Pauline Rea-Dickins' five year tenure as director of the Institute and bid her farewell. The occasion was also used to welcome the incoming director, Professor Joe Lugalla. The University was represented by Vice Provost Kweku Bentil who delivered the welcome address and read a personal message from Provost Greg Moran to Dr Rea-Dickins and colleagues at IED, EA.</div><div><br></div><div>Along with Dr Bentil, other speakers included Assistant Professor, Dr Nicholas Wachira, MEd student, Natasha Kassam, IT Manager, Arbogast Fabian, incoming Director, Joe Lugalla, Head of Research, Professor Anjum Halai, and Dr Rea-Dickins who delivered a short but emotional farewell speech.&#160;</div><div><br></div><div>Dr Rea-Dickins was presented with a plaque from her colleagues and she and her partner, James Dickins, were given a gift of a set of Tanzanian-made bed linens. The highlight of the evening was a 10-minute slide show, \"Down Memory Lane with Pauline,\" featuring a collection of her photos. The slide show and the entire programme were developed by a planning committee consisting of IED, EA faculty, staff, and student representatives, with oversight and support from the Office of the Provost.</div><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000038",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    },
+    {
+      "Label": "students",
+      "TermGuid": "7ae63653-ff72-4bfa-86af-c6ce13f7a2b3",
+      "WssId": 1474
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 68,
+  "Modified": "2017-02-22T07:19:29Z",
+  "Created": "2016-05-17T04:58:38Z"
+}

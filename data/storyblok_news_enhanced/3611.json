@@ -1,0 +1,212 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4e8132bf-9e85-4162-a8a6-4b2ab4c73292",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "39f3b639-b32a-4ddd-a5f2-e3394371261f",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1c39ed48-39a2-4594-9ccc-9af78ab15895",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e3e58eb2-014f-48fd-8d58-494b0a989f13",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "196d5b46-bd89-4f21-8ac6-6ec3f744973a",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6927b95a-75b3-4ea9-a3df-e57534ddfe56",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "13502269-0432-4b2f-b3a5-9470c1eb5d18",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3dc501f3-2d22-4b14-9898-5afa027ee232",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3611)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fbd865d7-465d-4a9f-82bf-c6c9d928f25c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3611,
+  "Title": "How Irene Maganga is Changing Education in Tanzania",
+  "NewsSubTitle": null,
+  "NewsSummary": "Irene's passion has propelled her to make significant impact on English language teaching",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Irene Maganga, a dedicated educator, embarked on a transformative journey at Aga Khan University (AKU) in 2023. Her one-year master's degree programme in Language and Literacy Education ignited a passion within her, propelling her to make a significant impact on English language teaching. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Before joining AKU, Irene was already a recognized leader in the field. She held key positions in the Tanzanian English Language Teachers' Association (TELTA) and the African English Language Teachers' Association (Africa ELTA), driven by the mentorship of Dr Samuel Andema, IED EA faculty member. Her passion and dedication led her to become the Secretary of Africa English Language Association and the Academic Representative for her cohort at AKU. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's nurturing environment played a pivotal role in shaping Irene's leadership perspective. Inspired by transformational and servant leadership theories, she embraced introspection and recognized her potential. The university's emphasis on service and volunteerism further propelled her to chair the TELTA Annual Conference in Arusha, Tanzania. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"AKU has undeniably moulded my perspective on leadership, prompting me to question the leader within myself and prompting introspection on what I can and cannot accomplish. This institution has challenged me to go beyond my limits, aiming to make a positive impact not only on myself but also on fellow teachers, students, and the nation. To me, AKU will always be a cherished home,\" Irene shared. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As an AKU alumna, Irene embodies the role of a change agent. Collaborating with fellow alumni, she empowers teachers and students to embrace innovation and excellence. Her journey at AKU is a testament to the power of education and the potential to inspire generations to come. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Armed with the knowledge and skills acquired at AKU, I am committed to bringing positive transformations within the English Language Teaching field. Together with my fellow alumni, we are building a brighter future for education and empowering teachers and students to embrace change wholeheartedly,\" she added. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Irene's story is a reminder of the transformative power of education and the potential to inspire positive change. Her journey at AKU has equipped her with the tools to make a lasting impact and a commitment to creating opportunities for others in the pursuit of educational excellence. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003480",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Teaching",
+      "TermGuid": "3b9efa59-5e54-4510-b85d-69caf29a2c2f",
+      "WssId": 2155
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "becfd464-5ba0-42eb-9a3f-da29906827dc",
+      "WssId": 2167
+    },
+    {
+      "Label": "Tanzania",
+      "TermGuid": "bb312009-81c9-41d6-9081-57d28322d073",
+      "WssId": 2187
+    },
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    },
+    {
+      "Label": "Convocation",
+      "TermGuid": "cce8a407-322b-4bb8-8a4f-df6c93c38873",
+      "WssId": 2165
+    }
+  ],
+  "ScheduleStartDate": "2025-01-27T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3611,
+  "Modified": "2025-01-27T11:43:17Z",
+  "Created": "2025-01-27T11:40:51Z"
+}

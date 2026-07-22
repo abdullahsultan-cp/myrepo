@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9c56ab48-d757-4300-b5c5-290d2f9160cd",
+  "odata.etag": "\"17\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "134cd997-5fbb-458f-b9c2-c9e854a19431",
+    "Id": 17581,
+    "Title": "grace.njuguna"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4cd2a917-296d-45ff-89c4-c8647ab91ee0",
+    "Id": 17581,
+    "Title": "grace.njuguna",
+    "EMail": "grace.njuguna@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "39323ccd-d1e1-4583-97d0-3edbb93386e8",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3e3c2ab2-be5b-4bd1-be76-c22f29d80da7",
+    "Id": 15,
+    "Title": "Graduate School of Media and Communications"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "b5bd3e71-b6d6-43f8-a07f-c581d6287be7",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8fdd90d1-c660-4c2f-9fed-4ada72bbeb75",
+    "Id": 17581,
+    "Title": "grace.njuguna",
+    "EMail": "grace.njuguna@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3394)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5feb6dd6-4cf8-482c-8cc8-0703f48d4319",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3394,
+  "Title": " Annual Journalism Awards",
+  "NewsSubTitle": null,
+  "NewsSummary": "Our alumni students were recognized as winners for their excellence in their craft and for upholding the vital role of journalism in a democratic society.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Join us as we celebrate the impressive achievements of our students and alumni at the Annual Journalism Excellence Awards,2024 presented by Media Council of Kenya. This remarkable award was presented to some of our MADJ students and Media Lab team alumnus as well. These extraordinary students epitomized the highest standards of the craft, captivating audiences with their compelling storytelling, and unwavering commitment to truth. Their accomplishment is a testament to the exceptional training and mentorship provided by the Graduate School of Communication."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Dean of the Graduate School of Communication, Prof Nancy Booker expressed immense pride in the achievements of the school's representatives. She also expressed how these awards and nominations are a resounding affirmation of the Caliber of journalism being produced by our students and alumni. We are committed to nurturing the next generation of truth-seekers and storytellers, and these accolades serve as a testament to the success of our mission."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The entire Graduate School of Media and Communications community extends its warmest congratulations to the award winners and their accomplishments not only bring honour to the school but also inspire future journalists to pursue excellence in their craft, upholding the vital role of journalism in a democratic society."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As the Graduate School of Communication continues to shape the minds and skills of aspiring journalists, its shining stars will undoubtedly continue to illuminate the path toward journalistic greatness, leaving an indelible mark on the industry and the world."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003270",
+  "LocalApproverGroup": "CA GSMC News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2024-05-27T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3394,
+  "Modified": "2024-05-27T08:46:00Z",
+  "Created": "2024-05-27T08:18:20Z"
+}

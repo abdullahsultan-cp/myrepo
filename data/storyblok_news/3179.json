@@ -1,0 +1,210 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "880ac465-4738-4781-8e7e-68c399a14af6",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e18a2923-1816-42a6-8a2e-f3730bab501d",
+    "Id": 12821,
+    "Title": "Maryam Ahmad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bef49132-164f-4f6d-a4cb-879b0a400dbc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c75f7d61-f7a1-439a-92fa-5702004c8183",
+    "Id": 12821,
+    "Title": "Maryam Ahmad",
+    "EMail": "maryam.ahmad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "15300ae2-c9d1-4c67-a6a0-2d0f98e35a75",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "93587721-3df5-40bf-9b7c-e3d43dcc5894",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "5bef6f41-c120-41c5-a1ae-cd7ff88f488b",
+      "Id": 4,
+      "Title": "Global"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "b54e8fad-248f-4b47-9e9f-c6218605960d",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9b7e2f31-bade-4130-84ac-edc8b8fcc88f",
+    "Id": 12821,
+    "Title": "Maryam Ahmad",
+    "EMail": "maryam.ahmad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3179)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "00aa04eb-d78c-40bf-b35e-17b6cb5be2b3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3179,
+  "Title": "AKUH introduces newborn screening for inherited disorders",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKUH introduces a powerful lab tool for the first time in a clinical setting in Pakistan.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Screening newborn babies for inherited metabolic disorders well before symptoms surface is crucial for early detection and timely treatment. The Aga Khan University Hospital, Karachi (AKUH, K) has expanded its newborn screening process to include inherited metabolic disorders, marking the introduction of a powerful lab tool for the first time in a clinical setting in Pakistan."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Simply put, metabolic disorders refer to abnormal chemical reactions in the body which, for example, can disrupt a baby's intellectual or physical growth and potential. Elsewhere in the developed world, newborn babies are put through mandatory screening for such disorders-but this has not been the case in Pakistan, until now. AKUH, K has already been screening newborn babies for two non-inherited disorders, but researchers and faculty from paediatrics, genetics and pathology at AKU identified the need for investigating inherited disorders. If inherited metabolic disorders are not treated, most of them result in death. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"From August 14, 2023, we will begin screening for 12 inherited metabolic disorders,\" said Associate Professor Dr Bushra Afroze, a clinical and biochemical geneticist who led the teams. This is in addition to the testing for hearing impairment and congenital heart disease. This development ramps up the potential for AKU researchers to assess the prevalence of disorders and disease burden in Pakistan.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The decision to work on newborn screening by clinical, research and laboratory teams, began back in February, according to Chair of Paediatrics and Child Health Dr Fyezah Jehan. \"Collectively, we decided to do what was morally, legally and ethically right,\" she said. \"We always want to provide hope rather than hopelessness [to families].\" She thanked Dr Lena Jafri, Dr Salman Kirmani, Dr Azeema Jamil, Dr Ghulam Zainab and their colleagues for pushing this innovation through. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to Dr Farhat Abbas, the CEO of AKUH, K and a renowned urologist, the ease of use of this test as well as its innovation will greatly aid in early detection and potentially save lives. \"When I was a resident,\" he said, to add some historical perspective, \"you needed a syringe to draw blood for a TSH (Thyroid-Stimulating Hormone) test.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU President Dr Sulaiman Shahabuddin said that such an effort exemplified a core strength of the University: the ability of AKU researchers, faculty and AKUH clinicians to identify a need, acquire the technology and capability and use this to impact the population at large."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Nurses, who play a crucial role, will conduct the test as a simple heel prick to collect a few drops of blood on a special piece of paper. The blood analysis is done through Liquid Chromatograph Triple Quadrupole Mass Spectrometer (LC-MS/MS), a powerful analytical technique. It identifies chemical properties of metabolite molecules in the blood, and this is the first time LC-MS/MS is being done in a clinical setting in Pakistan. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "It is recommended that parents speak to their doctor first to evaluate the reason for choosing this newborn screening and get it done in a hospital setting where the baby is born. It takes five days to get the result."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003060",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "1f5f9259-00ce-4800-8819-6a850f05c492",
+      "WssId": 2186
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Paediatrics",
+      "TermGuid": "125d0f34-a35b-4610-841d-05672a104e1e",
+      "WssId": 2189
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2023-08-18T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3179,
+  "Modified": "2023-08-28T11:28:50Z",
+  "Created": "2023-08-18T08:50:41Z"
+}

@@ -1,0 +1,332 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "c53ea3f3-e2fe-4a4b-8300-9fc7b2070708",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d66e5bf0-28a5-4bd3-92e8-8fae699814b1",
+    "Id": 7746,
+    "Title": "patrick.gumo"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "29bc1c12-1ee0-4750-bfb0-ccabfcd2abab",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7ff4f9da-f102-44e0-8281-e9cb3a4ca8a4",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bb6ef300-6ced-4793-b916-baf1df3c5924",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "66752473-d530-4488-ae32-351da8d359b3",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "90be2a35-f8ff-41a4-85b7-02d84f217fbd",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2391)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "59d22d52-2dca-4692-92e8-02fe7c43cfec",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2391,
+  "Title": "Collaborative efforts are crucial to winning the war on COVID-19 ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Paediatric rheumatology is an important yet neglected field despite the mortality and social stigma associated with diseases among children",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Paediatric rheumatology is an important yet neglected field despite the mortality and social stigma associated with diseases among children. AKU alumna and full-time faculty at the Department of Paediatrics and Child Health Dr Angela Migowa chose this field due to her love for children. She believes there is need to invest in children and safeguard their health as she calls them 'the prosperity of our future'."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Children have been largely spared from the direct health effects of COVID-19 but they are still at risk. Dr Migowa gives an account of how the pandemic has brought together specialists from all over the world to find solutions on care of rheumatology patients in Africa."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How is your current work responding to the COVID-19 pandemic?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Currently, we have embraced telemedicine, which will outlive the COVID-19 pandemic as a modality to reach out to our patients in remote areas. We are also constantly advocating for the basic fundamental principles of personal hygiene in our daily clinical practice such as routine handwashing, wearing of masks and encouraging compliance with vaccination clinics to ensure our children can still benefit from proven prevention strategies to diseases such as vaccines."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition, the current pandemic has led to a paradigm shift in how we practice medicine. We have gone back to basics and compelled to join the global community in finding solutions to the current COVID-19 pandemic. This has led to collaborative research efforts with our colleagues in Kenya and Africa as a whole. Consequently, we are about to release our African Recommendations for Care of Rheumatology Patients in Africa during COVID-19, a collaborative initiative of over 500 clinicians all made possible through the digital media platform."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How are these initiatives going to help towards the fight against COVID-19?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The collaborative research approach to finding solutions will help ensure we formulate strategies that are acceptable, feasible and sustainable to the populace we serve. To ensure we do not lose the gains we have made in health, which could potentially overburden an already strained health ecosystem, ongoing healthcare provided to cater for other healthcare needs is paramount and should continue through the digital platforms or in person in accordance with stipulated guidelines and recommendations by the Ministry of Health and World Health Organization (WHO)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How do you think this pandemic will play out globally? What are the key risks for East Africa and how can it protect itself?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Globally, should we fail to adhere to the proposed COVID-19 mitigation measures, the cases will continue to rise until a plateau when the decline will begin. Moving forward, healthcare improvements and understanding the factors that incubate pandemics such as modifying man-made environmental changes have been known as powerful tools in mitigating the impact of pandemics. Personal hygiene and contact tracing will be key in curbing the COVID-19 pandemic and ultimately the discovery of a vaccine will help significantly."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In East Africa, the belief that the COVID-19 pandemic is not really in existence could contribute to the rapid spread of the virus. It will be prudent to partner with community and religious leaders to help spread key messaging regarding prevention measures and strategies during this pandemic. Our porous borders makes it paramount to help ensure all member states synchronize their efforts to curbing the spread of COVID-19. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition, our critical care facilities are currently not sufficient to manage massive numbers of critical care patients, hence, the need to emphasize on prevention strategies. It will be important that all member states come up with strategies that complement the efforts towards curbing the pandemic if we are to win this war. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What are some of the key changes that will come as a result of COVID-19?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We exist in a global health ecosystem. Consequently, we can no longer exist in isolation and the health for all is linked to the individual health of everyone. In the long term, we shall take a more global responsibility towards healthcare and work on promoting prevention strategies in healthcare such as hand washing, sanitizing and wearing of masks, which will still be very essential during this period."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Telemedicine and digital learning shall become the norm. This brings with it the possibility of a larger audience with more impact while you are in the comfort of your residence."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition, the human race will have to grapple with anti-social behaviors like avoidance of social gatherings and handshakes altogether during this period."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What key lessons can we learn from the COVID-19 pandemic going forward?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Firstly, is to ensure that as healthcare professionals, we should work together and ensure that we champion for an integrated and inclusive multi-sectoral approach in order to promote universal healthcare in our respecting countries."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Secondly, we should develop appropriate pay models to ensure universal access to health for all irrespective of age, gender, disease or geographical region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Lastly, we should preserve the environment to mitigate against the upsurge of new epidemics and pandemics by investing in specialists and skilled community health workers in our respective ecosystem."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002298",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "paediatrics",
+      "TermGuid": "ea94a483-4513-4825-a4e4-ba92a5e1d16a",
+      "WssId": 1839
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "23239523-9013-43f8-a959-9b25118a5980",
+      "WssId": 1886
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-08-04T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Angela Migowa, is a paediatric rheumatology specialist, Department of Paediatrics and Child Health at AKU",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2391,
+  "Modified": "2020-08-12T08:04:14Z",
+  "Created": "2020-08-04T11:37:38Z"
+}

@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a689a4d3-c96f-450b-bf20-2f3ed7f22fa4",
+  "odata.etag": "\"4\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "85c81394-f06e-4af9-9191-90abd107e256",
+    "Id": 251,
+    "Title": "Amirali Virani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6adf20d4-5043-4b0e-bcdd-8e7feba9ca8f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b4677248-27a9-44b7-8730-3204ff633707",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "dd558141-f497-4f52-9951-0082a9cb275c",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b07ea71c-0566-44c3-b4e1-3202fc23d8b2",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e849b4ad-2440-4b64-924e-4ad2d1eedb4f",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93f567ee-db02-4968-b5fe-4dc26c1edb37",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(167)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f6889801-6303-49bd-ab84-4ca0c4ceb2c2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 167,
+  "Title": "ISMC hosts a sell-out evening at 2015 Nour Festival",
+  "NewsSubTitle": null,
+  "NewsSummary": "ISMC's talk on Islamic parks and gardens",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The UK may be under a grey cloud until March, but this week saw Londoner's attention turn to the sunny skies of Morocco, East Africa and Egypt as ISMC hosted a sell-out evening as part of the 2015 </p><p>Nour Festival of Arts.  </p><p>Over 70 people gathered at Kensington's Leighton House to hear three renowned experts speak on Islamic parks and gardens as vehicles of social change. </p><p>The evening's Chair, Philip Wood, introduced fascinating presentations from Jurjen van der Tas: Deputy Director of the Historic Cities Program of the Aga Khan Trust for Culture, Tom Stuart-Smith: </p><p>Internationally-renowned landscape gardener and RHS Chelsea Gold medallist and Mark Bryant: Development Officer for the Centre for the Study of Islam, University of Cardiff.  </p><p>The ensuing discussion was wide-ranging and included thoughts on how to usefully include traditional Islamic water features in London gardens, to ideas on how to maintain the beauty and tranquility of Al-Azhar Park in Cairo.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000136",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "ismc",
+      "TermGuid": "5e625a7c-a2ca-416d-876b-555356a7df33",
+      "WssId": 928
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": null,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 167,
+  "Modified": "2016-05-17T15:19:13Z",
+  "Created": "2016-05-17T13:41:07Z"
+}

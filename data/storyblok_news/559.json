@@ -1,0 +1,147 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e37c818f-0e53-44c0-8351-87d9c0426751",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "27c30880-582a-4452-a68d-923a8828c93f",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c1a7a66e-1d02-44b2-a901-cf9c9ba8f67f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d472b68-9062-4ec4-b46b-dc7927297c13",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "a55e3665-38fc-439b-813f-6ccdc09746dc",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5306eceb-48c3-4deb-9283-e63a7fc940dd",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "bbb86fdd-2304-4fe7-968d-0a980547cc1c",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "789d6c17-f197-4079-ac7f-25bb6a5d0aba",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(559)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f33250f4-d8e1-48ec-97f5-11bb2e729879",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 559,
+  "Title": "Department of Continuing Professional Education launched",
+  "NewsSubTitle": null,
+  "NewsSummary": "In early 2008, the Board of Trustees of Aga Khan University identified Continuing Medical and Professional Education as one of the strategic goals for the University. The Board advised to develop effective means for strengthening the existing Continu",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In early 2008, the Board of Trustees of Aga Khan University identified Continuing Medical and Professional Education as one of the strategic goals for the University. The Board advised to develop effective means for strengthening the existing Continuing Medical and Professional Development initiatives and to generate new ideas for further improving the quality of education and services of the University in particular, and the country in general."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Provost appointed Dr Wasim Jafri, Professor and Ex-Chair, Department of Medicine as Associate Dean and Head of the Department of Continuing Professional Education in July 2008."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On Monday, December 15, 2008, the University formally inaugurated the Department of Continuing Professional Education by organising a workshop in collaboration with department of Community Health Sciences on Leadership development in Family Planning and Reproductive Health with Dr Babar Shaikh as coordinator. The department of CPE will ensure the content, quality and academic rigour of the various continuing medical and professional education seminars, courses and workshops offered under its umbrella. The new department will also develop a framework for standardisation of the Continuing Medical and Professional Education credit hours and points, and ensure that these are at par with international standards."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000517",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "40de1670-6a6c-436e-b24a-5a3ba9be0b5b",
+      "WssId": 1369
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "469409fa-01a7-4f2d-ac0f-2441e2ae59bb",
+      "WssId": 1480
+    }
+  ],
+  "ScheduleStartDate": "2008-12-16T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 559,
+  "Modified": "2017-02-22T07:54:18Z",
+  "Created": "2016-12-09T06:09:43Z"
+}

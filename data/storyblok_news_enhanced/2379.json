@@ -1,0 +1,180 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "8a6b6d0d-005d-4f51-9a0d-273a5dc61b8f",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f73f3a7c-5033-42bf-85d4-b1f8b4db4c67",
+    "Id": 8076,
+    "Title": "Haniya Javed"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "19c7d030-6bc0-42ed-b044-07db4db4295d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "32ee9f31-61be-454c-8613-7e5c342922f6",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "68b20d8b-91a0-4c07-9d96-821530ee2ce6",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0302b40b-e132-4fd9-b4fd-4f5099913c3a",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "016bf9e7-2546-4fe3-b77e-c8f58c7c9930",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2379)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a0c932b5-ff67-4a94-a931-87e182e66d9b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2379,
+  "Title": "Participants praise AKU's COVID-19 educational seminars",
+  "NewsSubTitle": null,
+  "NewsSummary": "Our COVINAR course was rated excellent by 70 percent of participants who attended all modules",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over 4,000 frontline healthcare workers from over 200 public and private sector healthcare institutions across Pakistan have attended Aga Khan University's COVID-19 webinars, COVINAR, to obtain the latest evidence on how to treat and manage the disease."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The novel nature of the coronavirus meant there was a lack of knowledge about the disease and its complications in the early stages of the pandemic. To meet the challenge, the University offered free, online courses in collaboration with the Sindh government to healthcare providers such as consultants, postgraduate trainees and medical students. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "COVINAR, which consisted of a variety of sessions organised into six themes, was rated as excellent by 70 per cent of participants and covered topics ranging from the latest research on the pandemic, donning and doffing of personal protective equipment, and how to treat patients with co-morbidities such as cancer and cardiovascular diseases."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"One of the key aspects of the pandemic on education has been the cancellation of in-person continued professional education opportunities for healthcare providers,\" said Dr Natasha Ali, interim associate dean, continuing professional education, and section head of haematology in the department of pathology and laboratory medicine.  \"The COVINAR courses were able to address the needs of healthcare workers at a time when the pandemic was new and unfamiliar in Pakistan. While keeping the doors of learning open during this pandemic, we are grateful and proud of the impact it has generated in such a short time.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Topics like environmental safety during the pandemic, storage and transportation of samples, and safe disposable of medical waste were greatly appreciated by attendees. Participants urged the organisers to conduct more courses on topics related to nursing as well as pathophysiological and pharmacological aspects of the disease."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Medical students from across Pakistan who were home-bound due to the lockdown also found the courses to be refreshing and useful. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"While my university is closed, I am really hoping to use all the knowledge and motivation from this experience when I complete my degree,\" said Aiman Athar, a fourth-year medical student from Jinnah Sindh Medical University."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002286",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "c4348316-b0a1-4ca5-a133-b70689d66efc",
+      "WssId": 1840
+    },
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    }
+  ],
+  "ScheduleStartDate": "2020-07-28T12:35:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2379,
+  "Modified": "2020-08-18T11:17:58Z",
+  "Created": "2020-07-28T12:31:49Z"
+}

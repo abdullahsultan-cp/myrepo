@@ -1,0 +1,385 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "fb939f66-bb04-42b8-8dd7-e320f97e56cd",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "69c0e4d0-13ea-4552-9c31-be5f3f8c6e34",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "140f2353-c334-418b-857e-299ce27bbe53",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "80325fa3-12ff-4eee-adc4-44abed7bfd76",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "17432ce0-98b5-40ca-a957-92dc8f62e6e5",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1c4425e2-c67c-4fff-836a-5821c84dbba5",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c2001907-acb4-484f-a680-7d8c97729b8f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "79d15a68-2d52-4832-b7e6-67275229cb11",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(67)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d5897d39-c1b7-4390-88b6-da4b74bb7fb5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 67,
+  "Title": "AKU contributes to global initiatives for women's, children's and adolescents' health",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Aga Khan University is involved in supporting and advocating for the integration of newborns', children's and adolescents' health in the new global goals and in the development of major international reports.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the historic occasion of the United Nations General Assembly's 70th session from September 15-27, 193 UN states will formally adopt 17 Sustainable Development Goals which will replace eight Millennium Development Goals as the new global goals to be accomplished by 2030. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University is involved in supporting and advocating for the integration of newborns', children's and adolescents' health in the new global goals and in the development of major international reports that are being launched this week at the United Nations."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Zulfiqar Bhutta, Founding Director, Centre for Excellence in Women and Child Health, AKU is a contributing author of major international reports related to maternal, newborn, child and adolescent health, including the following:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "World Health Organization (WHO) Accountability for Women's and Children's Health 2015 Progress Report",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://www.who.int/woman_child_accountability/en/",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "2015 Global Nutrition Report",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://globalnutritionreport.org/",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "BMJ special supplement: Towards a new Global Strategy for Women's, Children's and Adolescents' Health",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://www.bmj.com/content/351/bmj.h4414",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Partnerships for Maternal Newborn and Child Health (PMNCH) 2015 Accountability Report",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://www.who.int/pmnch/en/",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Independent Expert Review Group (iERG) Report",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://www.who.int/woman_child_accountability/ierg/en/",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Lancet Commission: Reframing NCDs and injuries for the poorest billion",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2815%2900278-0/abstract",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Updated Global Strategy for Women's, Children's, and Adolescents' Health",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "http://www.everywomaneverychild.org/",
+                          "target": "_blank",
+                          "linktype": "url",
+                          "uuid": null,
+                          "anchor": null,
+                          "custom": {}
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Several countries still do not have systems of civil registration and vital statistics monitoring or functioning national health accounts and information systems. To ensure accountability, a minimum standardised reporting system is needed that enables comparison of progress across countries and regions,\" said Dr Bhutta."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The new global strategy gives us a once in a lifetime opportunity to change the discourse regarding the health of women, children, and adolescents. It is clear that business as usual will not work,\" he added."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000037",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Maternal and child health",
+      "TermGuid": "8af47938-e185-421e-bd51-de98296e39aa",
+      "WssId": 1384
+    },
+    {
+      "Label": "Adolescence",
+      "TermGuid": "7b917015-19d6-46f5-88c1-20ac55f2e8e6",
+      "WssId": 1501
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 67,
+  "Modified": "2017-02-22T07:11:03Z",
+  "Created": "2016-05-17T04:42:08Z"
+}

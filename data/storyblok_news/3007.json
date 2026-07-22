@@ -1,0 +1,219 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2d213779-4d3b-4005-8547-02e3ce72d085",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "38c95177-1191-4982-b0a6-b85566066c1d",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac1e3e0b-3ceb-4565-a560-76480cd59217",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "51ed1b44-2a39-4e22-b680-944d1edd67d6",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "aa4aaae2-55e8-40fb-8e0f-4a2ee9ad4b06",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "01242c19-1fc1-4112-98cd-abe0b4d256fa",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "40c58c60-27bd-4eca-a417-f485b8a98506",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3007)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "40e36547-3098-419f-a5db-079468ca13ce",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3007,
+  "Title": "Experts emphasise need for optimising use of education data for school improvement",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU-IED and SAHE jointly organise a policy dialogue on the optimal and ethical use of education data",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University's Institute of Education (AKU-IED) and the Society for the Advancement of Education (SAHE) jointly conducted a policy dialogue on the optimal and ethical use of education data for driving school level improvements."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The dialogue, titled 'Improving schools in Sindh: Optimal and ethical use of education data', focused on the need for policymakers to make evidence-based policies and strategic decisions, that bring about improvements at the level of the school."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In Pakistan, information is routinely collected through the education census, school profiling, students' learning records, and pedagogical quality checks at national and provincial levels. However, there remains a gap in practice, as the information is not optimally utilised."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The event commenced with an overview of the research project 'Data-driven School Improvement (DSI)' being conducted by SAHE in Sindh, Punjab and Khyber Pakhtunkhwa provinces in Pakistan, and in its regional counterpart, Nepal."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Data is central to research! How to use it for school improvement optimally and ethically has to be a central discourse as we make crucial decisions,\" shared Dr Sajid Ali, Associate Professor and Director, Research and Publications, AKU-IED, as one of the discussants invited to share deeper insights into data-driven school improvement practices, similar initiatives in different regions, and factors more specifically relevant to the landscape of the Sindh province."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Other esteemed discussants included: Professor Farid Panjwani (Dean, AKU-IED), Dr Zaigham Qadeer (Director General, Pakistan Institute of Education), Mr Aftab Alam (Senior Programme Manager, Reform Support Unit) and Mr Sohail Raza (senior development professional in the public sector)."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Sharing his thoughts on the significance of the proceedings of the day, Dr Zaigham Qadeer positively reflected that, \"The different provinces can learn from the best stories and lessons of other provinces. We can rebuild our own experience, and even refine our practices.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Amna Ansari, DSI project team lead, added that, \"The key ingredients for data-driven school improvement are already present in Sindh. We need to focus on how they can be further enriched to improve organisation, integration and interpretation across provincial, district, sub-district, and the school levels.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The broad stakeholder engagement in the dialogue is expected to lay the foundation for furthering the effort for effective use of data in the improvement of schools not just in provinces like Punjab, Sindh and KP, but also beyond Pakistan.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002896",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Policy advocacy",
+      "TermGuid": "310d84ee-b22e-4032-bc0b-4f0ea6cb9082",
+      "WssId": 2242
+    }
+  ],
+  "ScheduleStartDate": "2022-12-02T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3007,
+  "Modified": "2023-02-02T10:32:18Z",
+  "Created": "2022-12-02T09:28:54Z"
+}

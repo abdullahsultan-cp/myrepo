@@ -1,0 +1,143 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0000dad0-c108-4304-8cc8-bc4ddb0b2450",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "52daa103-987e-41d3-ab45-841f91384477",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8f675ae2-ef1c-4490-b337-3152bb3f4d73",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1edb11c2-9f01-4e7b-a035-b1d6a5e4b7a3",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b8c9e0b1-5209-493e-a6b6-66bbb66b641f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3fcadf51-e7f6-4917-8629-325ba82927b3",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "9718ff65-e385-434c-8c4c-2b6809592442",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b9f1f8f5-0e90-4e82-a9a9-92abadd957e5",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1961)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "89780c4a-d2c1-415a-95cd-531d5b07b7a3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1961,
+  "Title": "Enhancing teachers' status: a national study",
+  "NewsSubTitle": null,
+  "NewsSummary": "The survey will help identify barriers hindering efforts to boost education indicators. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers from AKU's Institute for Educational Development will conduct a comprehensive study on the assessment of teachers' status following a review of global and local perspectives on the topic, which included ideological, socio-cultural, economic, professional and personal perspectives. The subsequent conceptual and noticeable gaps in literature identified a need for a rigorous research and nationwide study, which not only conceptualises teacher status from broader perspectives taking into account views of various stakeholders, but also investigates the measures which have been taken in the past and are currently being taken to enhance the status of the public and private school teachers in Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Funded by the Higher Education Commission of Pakistan, the quantitative study will employ a cross-sectional survey to yield data on teachers' status from four provinces and other territories including Punjab, Sindh, KPK, Baluchistan, Azad Jammu Kashmir and Gilgit Baltistan. The study team has planned to collect data from over 3,000 elementary and secondary school level teachers, students, parents, school principals and community members."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Quantitative data will be analysed to unpack the perceptions relating to teachers' status and the measures for the enhancement of teachers' status in the public and private schools which can enable educational leaders and teacher educators working at various universities, including AKU, learn what meaning various stakeholders attach to the concept of teacher status and how this meaning can be expanded to fulfil the goals of further enhancing teacher quality. The project will contribute towards fulfilling SDG 4 targets that seek to substantially increase the supply of qualified teachers"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001890",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    }
+  ],
+  "ScheduleStartDate": "2019-08-07T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1961,
+  "Modified": "2019-09-26T06:42:32Z",
+  "Created": "2019-08-07T04:43:16Z"
+}

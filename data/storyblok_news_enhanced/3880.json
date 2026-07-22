@@ -1,0 +1,150 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7e77d38e-0957-4186-8a8b-fb501300c1c8",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7a3399e7-f82e-47fe-a0e8-b29cc584da16",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f3f6d810-61a2-4aa2-a0c5-802e04ac6dfc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c8c3142a-3d2a-43c5-898d-c2dbba014c56",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "687806c1-cb82-495b-9ef5-7e0eb5607f30",
+    "Id": 14,
+    "Title": "Arusha"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ee750fe3-b181-4011-bbb6-4a1728adae31",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "84240dda-7c3a-44ae-9a02-c70710375004",
+      "Id": 35,
+      "Title": "Arusha Climate and Environmental Research Centre  "
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "043cdfa6-45cd-4883-885a-6835e9a31906",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3880)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "37390f8e-4b6b-447e-a1d7-592e5e3f4cf5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3880,
+  "Title": "Seven Years of Saturday Fun and Learning",
+  "NewsSubTitle": null,
+  "NewsSummary": "Children under 13 enjoy English, arts, crafts, and football every Saturday morning",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For over seven years, the big green gate of the playschool at AKU Arusha under the Community Outreach Centre has opened every Saturday morning, welcoming the happiest little explorers from the neighbourhood. From 9 am to 11 am, children under thirteen rush in for a morning packed with laughter, learning, and fun, a tradition that has positively impacted the community for years."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year, 2025, the programme hosted 25 vibrant Saturday sessions, attended by 70 pupils (36 girls and 34 boys), each participating at least once. The children dive into diverse and engaging activities designed to nurture their minds and bodies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Teacher Siben Takeh leads the English sessions, helping children learn to read, speak, and write, assisted by Eda Dyausa, Freddy Kivuyo, and Principal Azmina Jivan. The morning also features captivating Story Telling, lively Singing and Music, and creative Arts and Crafts with Mwalimu Farida, where colourful masterpieces are born. For active fun, coaches Patrick Ramadhan and Godson Rumisha oversee exciting Football sessions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The learning and playing is always capped off with delicious Snacks, including warm porridge, tea, and cookies, with a special extended meal once a month. This weekly gathering truly is a place where children come to learn, play, and make lasting friendships."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003746",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Arusha Climate Environmental Research",
+      "TermGuid": "2ac96631-9cb0-487b-89d1-9a3ca8b1afba",
+      "WssId": 2552
+    }
+  ],
+  "ScheduleStartDate": "2025-12-19T16:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3880,
+  "Modified": "2025-12-19T15:10:27Z",
+  "Created": "2025-12-19T15:06:30Z"
+}

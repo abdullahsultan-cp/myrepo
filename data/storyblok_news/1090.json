@@ -1,0 +1,169 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f0d400f5-9d61-44a6-8077-8248f1cd2306",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4f59e0ed-1acd-4435-9b43-893f318966ba",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4ff024fb-3a43-4c0b-a1de-3a2251f70fca",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9c3c0d69-ccef-4685-b2e0-20e8302bbc23",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "2ab7176b-c09f-4c4a-9f26-e25ce4b1cd32",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ffe956fa-02b7-4109-9be3-00b390b3f97a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f0d6f764-b2ca-4850-9d5e-5e4196fe5ea7",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "47518e75-e9e2-4f17-a355-ac1f21b0cf7b",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1090)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac895507-66c3-4572-bb3c-c8d42f09dcd7",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1090,
+  "Title": "Lack of awareness causes dental problems",
+  "NewsSubTitle": null,
+  "NewsSummary": "\"Dental diseases have afflicted mankind since the dawn of recorded history and dentistry exists to serve the public, however due to lack of awareness, the disease is left to progress resulting in poor prognosis,\" commented Dr. Ninette Banday, Consult",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Dental diseases have afflicted mankind since the dawn of recorded history and dentistry exists to serve the public, however due to lack of awareness, the disease is left to progress resulting in poor prognosis,\" commented Dr. Ninette Banday, Consultant Dental Surgeon and Chief of Dental Section at Aga Khan University Hospital (AKUH). She was giving a presentation on \"Common Dental Problems and their Management\" at the monthly public health awareness programme, 'Signs, Symptoms and Care' on January 4, 2003."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Sarah Anwar ul Haque, Dental Officer at AKUH, explained that, \"the two most common dental problems are dental caries (tooth decay) and periodontal disease (gum disease). These conditions often progress un-noticed, without symptoms and by the time any change is noticed, a significant tooth decay, gingivitis (early stage of gum disease) or even periodontitis (severe gum disease) would have been developed. These are serious infections, if left untreated can lead to tooth loss. The key to winning the battle against these problems is prevention, which includes a combination of good dental habit (oral hygiene), improved nutrition and regular check-ups by the dentists.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Mubassar Fida, Consultant Orthodontist at AKUH, informed the audience about the prevention and management of irregular or crooked teeth. The problems that are associated with having crooked teeth may be psychosocial (discrimination, confidence, self esteem, etc), functional (chewing, speech, etc) and susceptibility to injury, gum disease and tooth decay. He highlighted the known preventive measures, which can control gum disease and related problems, such as timely fillings of baby teeth, control of habits like thumb sucking, mouth breathing, etc. Regarding the management of crooked teeth, he talked about various divisions of the specialty of orthodontics and the state-of-the-art cosmetic options that are now available to treat such patients. He also informed the audience about the painless nature of the treatment with braces and stressed that there is no age limit. The duration of treatment, however, depends upon the age of the patient, severity of the problem and patient's cooperation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Munawar Rahman, Consultant Dental Surgeon at AKUH, briefed on the subject of fixed crown and bridgework and stated that natural dentition was created and designed by nature to easily last a lifetime. He explained further by adding that, \"proper brushing and flossing combined with regular dental visits is the key to prevention of dental disease, which requires a life long maintenance of oral hygiene measures. If neglected, tooth decay (cavities) and gum disease will eventually prevail leading to loss of teeth. The dentist then has no choice but to restore and replace the natural dentition with artificial crowns, bridges and implants. Fortunately, today excellent bio-restorative materials are available. The new dental ceramic porcelain materials can re-create and restore damaged teeth back to the near original natural form and function.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In conclusion, Dr. Banday elaborated on dental implants, which have accelerated in the rehabilitation of functionally and aesthetically compromised dental patients.    "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The speakers participated in the question and answer session at the end of the programme."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001048",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2003-01-04T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1090,
+  "Modified": "2020-03-12T04:16:53Z",
+  "Created": "2016-12-28T07:34:46Z"
+}

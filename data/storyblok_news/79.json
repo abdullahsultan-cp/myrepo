@@ -1,0 +1,305 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b1e2bf13-3ceb-4c9d-86e7-649d5b4bfdd6",
+  "odata.etag": "\"9\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8b76ead3-f69d-4f40-92d2-12800e070d4e",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "48a75e51-cfe2-42c4-9aab-e5dfad846d69",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "02a0d851-3bfa-454a-9861-37cf32a968f8",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "9e62f5ba-d03a-44f4-a855-78aef1b00237",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "464fd4ee-de4d-4394-a3f3-598314adf7c0",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6b24c1e0-8014-43d2-8de8-1495c13eda32",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "be930d1e-aa3a-47a8-81a3-9049b03a893b",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(79)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b97a53c7-4981-45eb-a5ab-c6ac256bc1c6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 79,
+  "Title": "Convocation in Uganda: AKU graduates to have a \"Multiplier Effect\" in civil society",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU marks 15th anniversary in East Africa",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"In a speech marking the graduation of 49 students from the School of Nursing and Midwifery and 8 students from the Institute for Educational Development in Uganda, His Highness the Aga Khan spoke of the \"multiplier effect\" that they would have in building civil society."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The most important point is the multiplier effect that you can have,\" he remarked, \"as you pass along your skills and your standards. I think, for example, of programmes which have trained almost 1,000 head-teachers of secondary schools - just in the last year - a striking example of this powerful multiplier potential.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"In the end, however, our most important accomplishments are not measured by quantity,\"\" he continued, \"\"but by quality. It's not so much that twelve thousand people were educated at AKU, but rather that one person was educated here - and that this individual life-transforming story has happened - now - some twelve thousand times.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"A healthy Civil Society is a meritocratic one, where ethics are honored, and excellence is valued. And the great question now confronting us in Africa is how rapidly the institutions of a healthy Civil Society can be established and reinforced,\" he said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan was presiding over his second Aga Khan University convocation in East Africa. The ceremony also marked 15 years of the University's presence on the continent, and was attended by senior faculty and AKU trustees, including Princess Zahra Aga Khan, the founder's daughter."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In today's ceremony, the Bachelor of Science in Nursing degree was conferred on 22 graduates and a Diploma in General Nursing was awarded to 27 graduates. Eight graduates from the Master of Education degree programme were also presented their degrees at this ceremony. The valedictorian speech was presented by Ms Betty Masengere, a BScN graduate."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University, which spans three countries in East Africa alone, has announced plans to invest over US$ 1.1 billion in the region over the next 15 years - the largest investment in higher education in the history of the region. The ambitious plan envisages the opening of a teaching hospital in Kampala, staffed by exceptional physicians and nurses and equipped with the latest technology. In addition, AKU will also be increasing the number of medical centres already established, as well as adding an executive, professional and continuing education school."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan, who is the University's Chancellor and its founder, said decades of experience in the developing world showed that sound civil society institutions like the Aga Khan University were key to Africa's future."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On February 23, Tanzania's government awarded the Aga Khan University a charter under the country's laws, marking the first time a foreign institution has been granted such status. The unprecedented move reinforced the University's position in Tanzania and East Africa at a time when AKU is embarking on an ambitious expansion plan across the region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan hailed the charter as a major development in AKU's history. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University, originally founded in Pakistan more than three decades ago as the country's first private institution of higher learning, has since expanded considerably to include an array of colleges, schools, institutes and teaching hospitals on three continents."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his speech, AKU President Mr Firoz Rasul, who has led the school's expansion in East Africa, urged the graduates to work together to contribute to East Africa's development in a period of regional and global integration."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Your education has equipped each of you for leadership,\" he said. \"And the hallmark of a leader is the understanding that real change happens when like-minded individuals are united in pursuit of the same goal.\"."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today there are \"both unprecedented challenges and extraordinary opportunities on a planet more connected and complex than ever before,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is a time in which you can achieve extraordinary things. I have no doubt that our pride in you will only grow as we learn of your achievements in the years to come.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Notes:"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Founded by His Highness the Aga Khan in 1983, the University's objective is \"to be on the frontiers of scientific and humanistic knowledge\" while inspiring students to be independent learners and researchers imbued with a spirit of service and respect for others. In the 26 years since its founding, Aga Khan University's major focus has been in the fields of health and education. For the decades ahead the University plans to step beyond success in these areas and become a more diversified university, both geographically and scholastically."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University currently has programmes in eight countries spread over three continents. In East Africa, the University offers Advanced Nursing Studies programmes in Kenya, Uganda and Tanzania; and Postgraduate Medical Education in Kenya and Tanzania. These programmes are supported by a 250-bed teaching hospital, the Aga Khan University Hospital in Nairobi. The Institute for Educational Development, East Africa offers Master of Education degrees and certificate courses out of Dar es Salaam. In Pakistan, there is a Medical College; a School of Nursing; and a 560-bed teaching hospital, Aga Khan University Hospital; an Institute for Educational Development that includes Professional Development Centres in Gilgit-Baltistan and Chitral; and an Examination Board in Karachi. In London, UK, there is the Institute for the Study of Muslim Civilisations that offers a graduate degree in Muslim Cultures."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University is also working with the governments of Syria, Egypt and Afghanistan to improve nursing and medical education curriculum, teaching standards and clinical practice.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000049",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    },
+    {
+      "Label": "Convocation",
+      "TermGuid": "95deeea6-bd39-4a41-b839-40d28c835c8f",
+      "WssId": 1355
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 79,
+  "Modified": "2017-02-22T07:12:33Z",
+  "Created": "2016-05-17T05:33:39Z"
+}

@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9c1677bd-07cb-40c7-8141-f2aeaf9f65c0",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4b8d28f3-5f10-4e7c-9752-d9354e8e6493",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9f2251b0-d8ba-4ccc-b118-de7800575bd4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8671bfa8-7a3f-4bb0-8b7b-85377a93c99c",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi",
+    "EMail": "sarah.qureshi@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2e126a21-0714-43d6-90a9-ac2f1b53dd0d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3a5646a1-089c-49e5-aede-6bbbb35c30f6",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c04c416d-40c8-48ec-ae41-d8398b328a1a",
+    "Id": 8766,
+    "Title": "Sarah Ilyas Qureshi",
+    "EMail": "sarah.qureshi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2189)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "614d4a08-16db-490c-8a1d-c95bca9e5dfc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2189,
+  "Title": "Recognising colleagues for their committed service",
+  "NewsSubTitle": null,
+  "NewsSummary": "Long Service Awards Ceremony appreciates exceptional service by AKU staff and faculty.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Employees across the University came together to appreciate the achievements of their colleagues at AKU's annual Long Service Awards Ceremony. \n      <br/></p><p>Awards were presented to 225 members of staff and faculty who accomplished milestones ranging from two decades of service to up to 35 years of service to AKU. </p><p>Some of the University's longest-serving employees were featured in a special video in which they shared their pride at being able to contribute to AKU's mission of enabling access to high quality healthcare and education.       </p><p>Prakash Mangal Das, a housekeeping assistant at AKU's secondary hospital in Kharadar said: \"I have received a mother's love here [at AKU]. I got it all here. I am telling you that I wasn't educated, whatever I have learnt is because of people around me. This is my school, my college and in all honesty, this is a very big part of my life.\"</p><p>Professor Mushtaq Ahmed, association dean of the Medical College in Pakistan, noted that the University's collaborations with other institutions under the Aga Khan Development Network enabled employees to make a broader impact on society. </p><p>\"We are honoured and humbled to have such dedicated colleagues who come into work every morning with the same zeal and vigour and work towards a better society for all,\" said Carol Ariano, AKU's vice-president of human resources. </p><p>President Firoz Rasul distributed shields to long-serving colleagues at the event and commended the commitment shown by employees and volunteers associated with the University.  </p><p>This year 114 employees were recognised for 20 years of service, 56 for 25 years, 41 for 30 years and 14 for 35 years of service. <br/></p><div data-src=\"https://www.youtube.com/embed/dLhvHpa3kkQ\" data-storyblok-embed=\"youtube\"></div>\n <br/>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002103",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    }
+  ],
+  "ScheduleStartDate": "2020-03-10T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2189,
+  "Modified": "2020-03-10T12:42:32Z",
+  "Created": "2020-03-10T04:27:04Z"
+}

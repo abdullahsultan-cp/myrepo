@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0291ae7f-5d7c-432c-adde-0453da6569f7",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "73fab598-5b1e-4cf6-a4ca-e0bee026365a",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d7cf7921-813d-44cb-85ba-4516ee88f7a2",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "482551fb-c6da-4ecc-a2ff-ee03fbb962b4",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "64294de5-e8ac-463e-a2b2-37bbc8120fd9",
+    "Id": 5,
+    "Title": "Donor news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "03cbde98-5ff0-4e96-97ad-11d6eda5ffcc",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "561a5f92-3c0d-4e14-bafc-df68582f2e72",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "903673e9-628a-4173-b608-961a398ce161",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1060)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "70259195-cb32-480b-8575-826942a51b12",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1060,
+  "Title": "Donors' Day 2002",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University (AKU) organises donor dialogues both locally and internationally, to inform the donors about the progress and growth of the University and to provide a platform to the donors for exchange of views.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University (AKU) organises donor dialogues both locally and internationally, to inform the donors about the progress and growth of the University and to provide a platform to the donors for exchange of views. A Donors' Day was held at Karachi on Sunday, September 01, 2002, which was attended by a large number of donors, Ambassador Saidullah Khan Dehlavi, Chairman of the AKU Board of Trustees, President Shamsh Kassim-Lakha, members of the AKU Resource Development Committee for Pakistan, and AKU senior management."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The highlights of the day included an address by the Chairman, BOT as well as by the AKU President. Ambassador S.K. Dehlavi in his first ever address to the Ismaili donors spoke of his high regard for the Chancellor's leadership and His Highness' keen interest in national and international issues in education and health. He acknowledged the support of the donors and informed them that with their help Aga Khan University has been able to achieve significant growth and development, which has now acquired national importance and achieved an international status. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The programme included screening of a video recording of the AKU Convocation and donor events held in October 2000. Dr. Shaista Khan, Professor, Department of Surgery and Dr. Amyn Alidina, an Oncology consultant at AKU, made a very useful and informative presentation on cancer and its treatment and the state-of-the-art facilities being created for radiotherapy at AKUH, one of the finest in Karachi, and indeed in Pakistan. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mr. Shamsh Kassim-Lakha in his presentation informed the donors about the overall progress and growth witnessed by the University and about details of current and future programmes and services in the field of education and health. He fielded questions and observations from the donors on subjects pertaining to AKU. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The donors expressed great interest in AKU's programmes and plans for the future. \"Very impressed with the substantial growth at AKU. We are proud of the professional manner in which the University is working for improvement of quality of education and health in the country\", a donor commented. Another guest noted, \"It is heartening to note that donors other than Ismailis are also donating generously to AKU\"."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001018",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2002-08-30T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1060,
+  "Modified": "2017-02-22T11:27:29Z",
+  "Created": "2016-12-28T06:51:15Z"
+}

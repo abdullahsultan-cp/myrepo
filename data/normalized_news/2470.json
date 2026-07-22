@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2c93338c-af3b-4f50-95e2-2868840c9111",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a9d04e99-94ef-46bc-88dc-8d65e2da6a04",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e40a04f-36a1-41a4-b811-f963fdbdcc72",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c2fe3a49-8b04-4bf1-b683-b5735dbd6adf",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "fec201a4-ae1f-4085-afcb-543e3ecec778",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cec812ac-56fb-4a65-a15d-36791c717279",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "7594fc68-5a63-4c84-aa35-8720a8e45b5f",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0091c9e7-2071-4715-920d-110e4a303202",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2470)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7089acdb-5fad-40fd-a950-53eca460a60e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2470,
+  "Title": "AKU's First Paediatric Boot Camp",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Paediatric Boot Camp was conducted to provide simulation-based hands-on training to improve novice airway providers' skills and confidence in a challenging but safe learning environment.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>The Paediatric Boot Camp was conducted by the Department of Paediatrics &amp; Child Health in collaboration with CIME to provide simulation-based hands-on training to improve novice airway providers' skills and confidence in a challenging but safe learning environment. A total of 17 paediatric residents, fellows and nurses participated. </p><p>High fidelity simulation scenarios were included in this camp such as Intubating a neonate with a seizure disorder, displaced endotracheal/tracheostomy tube, upper airway obstruction, and anterior mediastinal mass-difficult airway anticipation. These highly realistic scenarios helped prepare learners to deal with airway management cases in high-pressure, high-risk environments.</p><p>We aim to reach many more staff through a series of boot camps, using the \"the train to success\" concept with repetitive practice.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002375",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "paediatrics",
+      "TermGuid": "ea94a483-4513-4825-a4e4-ba92a5e1d16a",
+      "WssId": 1839
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "d30d303d-275a-46b2-8ead-5b3a1d60efbc",
+      "WssId": 1859
+    },
+    {
+      "Label": "workshop",
+      "TermGuid": "3e549665-5368-4bcf-8be5-b9d23b0619fc",
+      "WssId": 1858
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "d81e6f5f-db68-4899-860d-79e20d584a99",
+      "WssId": 1860
+    }
+  ],
+  "ScheduleStartDate": "2020-11-05T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2470,
+  "Modified": "2020-11-05T09:10:19Z",
+  "Created": "2020-11-05T09:07:00Z"
+}

@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d4fee87c-a648-4ec1-80c9-634784d7eeca",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "93a60aab-aeaa-46c7-9f8a-a0618bb1f51d",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7333d2ab-d436-4f74-b9da-321cebef297d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b1a1f76a-ede1-4539-9c86-7424f91c41aa",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "a86ba44f-4d7a-45c3-a3dd-58fb599a8a1f",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d7068c10-20ab-4fa8-b581-4ef6adc2e4f1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7605a75a-44d9-4a3f-ae5d-d2493068dcd2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "be22267a-2006-4c5b-8728-7ca3935bb397",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1146)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d513f687-2550-4aec-84a4-f42612538603",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1146,
+  "Title": "\u200bLatest technique for cataract surgery introduced at AKUH",
+  "NewsSubTitle": null,
+  "NewsSummary": "\u200bDr Azam Ali, Assistant Professor and Consultant Ophthalmic Surgeon of the Aga Khan University (AKUH) have introduced the state-of-the-art in Cataract surgery at the Hospital. It is the latest procedure in Cataract Surgery in the western world and no",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassBFCF387E57DB4721934EBAC74FB50A00\"><div>\u200bDr Azam Ali, Assistant Professor and Consultant Ophthalmic Surgeon of the Aga Khan University (AKUH) have introduced the state-of-the-art in Cataract surgery at the Hospital. It is the latest procedure in Cataract Surgery in the western world and now for the first time it is available in Karachi.&#160;</div><div><br></div><div>Dr Azam graduated with honours with the first batch of students of the Aga Khan University in 1988. He spent over five years in the UK learning advanced ophthalmic surgical skills at the world-renowned Moorfields Eye Hospital.&#160;</div><div><br></div><div>This procedure involves taking the cataract out by the keyhole approach and the technical name for this procedure is &quot;sutureless, clear cornea, temporal approach, phacoemulsification procedure with a foldable implant&quot;. For this particular procedure, a patient does not require any local or general anaesthesia and only eye drops are used. This avoids the risk of giving an injection behind the eye, which at times can lead to complications like haemorrhage.\u200b</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001104",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Ophthalmology",
+      "TermGuid": "a5f89f51-a9f8-43b7-b493-b03d7ab9ae2b",
+      "WssId": 1916
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "0d73e86a-c409-4652-adf8-6eed90e01384",
+      "WssId": 1821
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "1999-05-27T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1146,
+  "Modified": "2020-03-10T07:22:38Z",
+  "Created": "2016-12-28T10:31:48Z"
+}

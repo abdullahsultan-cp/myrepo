@@ -1,0 +1,831 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5bd10d32-e0a2-4fc2-84fd-a923c3d69e1d",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "45a4fa65-0c24-4aee-9121-b0ddeb1009b5",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e0b984b0-51d5-41ec-97f9-dc77356b602d",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8578e730-957d-4745-8874-fec9161e1aa9",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "dd7b891d-5ca2-4f21-8d98-132ff1ab8b27",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ca84cd88-2b80-4ef1-911c-a12fd72f2caa",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "5726e656-2e00-4157-9bf1-013e26511a68",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "afbdf7ce-f4d7-45b1-b0c6-9ab61c6f79a0",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(792)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "afb44122-b754-4d71-95e8-7e6a3bf54795",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 792,
+  "Title": "AKU Bird Flu committee: Public service message",
+  "NewsSubTitle": null,
+  "NewsSummary": "Bird flu has recently been identified in Pakistan . In an effort to alert and educate the public, Aga Khan University (AKU) has prepared this public service message.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Bird flu has recently been identified in Pakistan .  In an effort to alert and educate the public, Aga Khan University (AKU) has prepared this public service message. AKU is working with the Government of Pakistan to address the threat of bird flu.  This message is based on the best science available on bird flu draw from the WHO and the Centers for Disease Control.    "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Avian influenza A (H5N1) viruses usually affect wild birds but now are infecting and causing serious disease among poultry, such as chickens. Human infections with H5N1 viruses are rare, but have occurred during 2003 - 2006 in Cambodia , China , Indonesia , Iraq , Thailand , Turkey and Vietnam , with many cases resulting in death."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most cases of H5N1 infection in humans are thought to have occurred from direct contact with infected poultry in affected countries. Therefore, when possible, care should be taken to avoid contact with live, well-appearing, sick, or dead poultry and with any surfaces that may have been contaminated by poultry or their faeces or secretions. Transmission of H5N1 viruses to two persons through consumption of uncooked duck blood may also have occurred in Vietnam in 2005. Uncooked poultry or poultry products, including blood, should not be consumed.  Cooking poultry products kills the virus."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Countries that have experienced confirmed outbreaks of H5N1 infection among poultry and other birds in 2005-2006 include Pakistan, Austria, Azerbaijan, Bulgaria, Cambodia, China (including Hong Kong SAR), Croatia, Egypt, Germany, Greece, India, Indonesia, Iran, Italy, Kazakhstan, Mongolia, Nigeria, Romania, Russia, Slovenia, Thailand, Turkey, Ukraine, and Vietnam.. Poultry outbreaks were also reported in Japan , Laos , and Malaysia during 2004."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Below are some common questions asked about bird flu and answers provide by the Centers for Disease Control of the US government. The information here also is true for Pakistan .   "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What is avian influenza (bird flu)?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Bird flu is an infection caused by avian (bird) influenza (flu) viruses.  These flu viruses occur naturally among birds. Wild birds worldwide carry the viruses in their intestines, but usually do not get sick from them. However, bird flu is very contagious among birds and can make some domesticated birds, including chickens, ducks, and turkeys, very sick and kill them."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Infection with avian influenza viruses in domestic poultry causes two main forms of disease that are distinguished by low and high extremes of virulence. The \"low pathogenic\" form may go undetected and usually causes only mild symptoms (such as ruffled feathers and a drop in egg production). However, the \"highly pathogenic\" form spreads more rapidly through flocks of poultry. This form may cause disease that affects multiple internal organs and has a mortality rate that can reach 90-100%, often within 48 hours."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How does avian influenza spread among birds?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Infected birds shed influenza virus in their saliva, nasal secretions, and faeces. Susceptible birds become infected when they have contact with contaminated excretions or with surfaces that are contaminated with excretions or secretions. Domesticated birds may become infected with avian influenza virus through direct contact with infected waterfowl or other infected poultry or through contact with surfaces (such as dirt or cages) or materials (such as water or feed) that have been contaminated with the virus."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Do bird flu viruses infect humans?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Bird flu viruses do not usually infect humans, but more than 100 confirmed cases of human infection with bird flu viruses have occurred since 1997."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How do people become infected with avian influenza viruses?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most cases of avian influenza infection in humans have resulted from direct or close contact with infected poultry (e.g., domesticated chicken, ducks, and turkeys) or surfaces contaminated with secretions and excretions from infected birds. The spread of avian influenza viruses from an ill person to another person has been reported very rarely, and transmission has not been observed to continue beyond one person. During an outbreak of avian influenza among poultry, there is a possible risk to people who have direct or close contact with infected birds or with surfaces that have been contaminated with secretions and excretions from infected birds."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What are the symptoms of avian influenza in humans?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Symptoms of avian influenza in humans have ranged from typical human influenza-like symptoms (fever, cough, sore throat, and muscle aches) to eye infections, pneumonia, severe respiratory diseases (such as acute respiratory distress syndrome), and other severe and life-threatening complications. The symptoms of avian influenza may depend on which specific virus subtype and strain caused the infection."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How is avian influenza detected in humans?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A laboratory test is needed to confirm avian influenza in humans. This test is only available in a few specialty hospitals in the country at the current time. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What are the implications of avian influenza to human health?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Two main risks for human health from avian influenza are 1) the risk of direct infection when the virus passes from the infected bird to humans, sometimes resulting in severe disease; and 2) the risk that the virus - if given enough opportunities - will change into a form that is highly infectious for humans and spreads easily from person to person."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How is avian influenza in humans treated?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Studies done in laboratories suggest that the prescription medicines approved for human influenza viruses should work in treating avian influenza infection in humans. However, influenza viruses can become resistant to these drugs, so these medications may not always work. Additional studies are needed to determine the effectiveness of these medicines."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Does the current seasonal influenza vaccine protect me from avian influenza?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "No. Influenza vaccine for the 2005-06 season does not provide protection against avian influenza."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Should I wear a surgical mask to prevent exposure to avian influenza?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Currently, wearing a mask is not recommended for routine use (e.g., in public) for preventing influenza exposure. In the United States , disposable surgical and procedure masks have been widely used in health-care settings to prevent exposure to respiratory infections, but the masks have not been used commonly in community settings, such as schools, businesses, and public gatherings."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Is there a risk for becoming infected with avian influenza by eating poultry?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There is no evidence that properly cooked poultry or eggs can be a source of infection for avian influenza viruses"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What precautions can be taken to reduce the risk for infection from wild birds in the Pakistan ?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As a general rule, the public should observe wildlife, including wild birds, from a distance. This protects you from possible exposure to pathogens and minimizes disturbance to the animal. Avoid touching wildlife. If there is contact with wildlife do not rub eyes, eat, drink, or smoke before washing hands with soap and water. Do not pick up diseased or dead wildlife."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What precautions can people working with poultry to reduce the risk for infection when hunting birds in the Pakistan ?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Poultry farmers and those who butcher poultry should take protective measure like wearing gloves, gowns, and boots.  Washing body and clothing after contact with poultry is essential.  More comprehensive measures are recommended by occupational health and safety officials because poultry workers are at higher risk than the general population of contacting bird flu."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What precautions can hunters take to reduce the risk for infection when hunting birds in Pakistan ?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hunters should follow routine precautions when handling game, including wild birds. Recommendation for hunters include:"
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Do not handle or eat sick game."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Wear rubber or disposable latex gloves while handling and cleaning game, wash hands with soap and water (or with alcohol-based hand products if the hands are not visibly soiled), and thoroughly clean knives, equipment and surfaces that come in contact with game."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Do not eat, drink, or smoke while handling animals."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Cook all game thoroughly."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Avian Influenza A (H5N1)",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What is the avian influenza A (H5N1) virus that has been reported in Asia and Europe?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Influenza A (H5N1) virus - also called \"H5N1 virus\" - is an influenza A virus subtype that occurs mainly in birds, is highly contagious among birds, and can be deadly to them."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Outbreaks of avian influenza H5N1 occurred among poultry in eight countries in Asia ( Cambodia , China , Indonesia , Japan , Laos , South Korea , Thailand , and Vietnam ) during late 2003 and early 2004. At that time, more than 100 million birds in the affected countries either died from the disease or were killed in order to try to control the outbreaks. By March 2004, the outbreak was reported to be under control."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since late June 2004, however, new outbreaks of influenza H5N1 among poultry have been reported by several countries in Asia ( Cambodia , China [ Tibet ], Indonesia , Kazakhstan , Malaysia , Mongolia , Russia [Siberia], Thailand , and Vietnam ). It is believed that these outbreaks are ongoing. Influenza H5N1 infection also has been reported among poultry in Turkey and Romania and among wild migratory birds in Croatia ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Human cases of influenza A (H5N1) infection have been reported in Cambodia , China , Indonesia , Thailand , Turkey , and Vietnam ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What are the risks to humans from the current H5N1 outbreak in Asia and Europe?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "H5N1 virus does not usually infect people, but more than 140 human cases have been reported. Most of these cases have occurred from direct or close contact with infected poultry or contaminated surfaces; however, a few cases of human-to-human spread of H5N1 virus have occurred."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "So far, spread of H5N1 virus from person to person has been rare and has not continued beyond one person. Nonetheless, because all influenza viruses have the ability to change, scientists are concerned that H5N1 virus one day could be able to infect humans and spread easily from one person to another. Because these viruses do not commonly infect humans, there is little or no immune protection against them in the human population."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "If H5N1 virus were to gain the capacity to spread easily from person to person, an influenza pandemic (worldwide outbreak of disease) could begin. No one can predict when a pandemic might occur. However, experts from around the world are watching the H5N1 situation in Asia and Europe very closely and are preparing for the possibility that the virus may begin to spread more easily from person to person."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How does H5N1 virus differ from seasonal influenza viruses that infect humans?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Of the few avian influenza viruses that have crossed the species barrier to infect humans, H5N1 virus has caused the largest number of reported cases of severe disease and death in humans. In the current situation in Asia, more than half of the people infected with the virus have died. Most cases have occurred in previously healthy children and young adults. However, it is possible that the only cases currently being reported are those in the most severely ill people and that the full range of illness caused by the H5N1 virus has not yet been defined."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Unlike seasonal influenza, in which infection usually causes only mild respiratory symptoms in most people, H5N1 infection may follow an unusually aggressive clinical course, with rapid deterioration and high fatality. Primary viral pneumonia and multi-organ failure have been common among people who have become ill with H5N1 influenza."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "How is infection with H5N1 virus in humans treated?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most H5N1 viruses that have caused human illness and death appear to be resistant to amantadine and rimantadine, two antiviral medications commonly used for treatment of patients with influenza. Two other antiviral medications, oseltamivir and zanamavir, would probably work to treat influenza caused by H5N1 virus, but additional studies are needed to demonstrate their current and ongoing effectiveness."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Is there a vaccine to protect humans from H5N1 virus?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There currently is no commercially available vaccine to protect humans against the H5N1 virus that is being detected in Asia and Europe. However, vaccine development efforts are taking place. Research studies to test a vaccine that will protect humans against H5N1 virus began in April 2005, and a series of clinical trials is under way."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Can a person become infected with avian influenza A (H5N1) virus by cleaning a bird feeder?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the present time, the risk of becoming infected with H5N1 virus from bird feeders is low. Generally, perching birds (Passeriformes) are the predominate type of birds at feeders. While there are documented cases of H5N1 causing death in some Passeriformes (e.g., house sparrow, Eurasian tree-sparrow, house finch), in both free-ranging and experimental settings, most of the wild birds that are traditionally associated with avian influenza viruses are waterfowl and shore birds."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Influenza Pandemic Preparedness",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What changes are needed for H5N1 or another avian influenza virus to cause a pandemic?",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Three conditions must be met for a pandemic to start: 1) a new influenza virus subtype must emerge; 2) it must infect humans and causes serious illness; and 3) it must spread easily and sustainedly (continue without interruption) among humans. The H5N1 virus in Asia and Europe meets the first two conditions: it is a new virus for humans (H5N1 viruses have never circulated widely among people), and it has infected more than 100 humans, killing over half of them."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "However, the third condition, the establishment of efficient and sustained human-to-human transmission of the virus, has not occurred. For this to take place, the H5N1 virus would need to improve its transmissibility among humans. This could occur either by \"reassortment\" or adaptive mutation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Reassortment occurs when genetic material is exchanged between human and avian viruses during co-infection (infection with both viruses at the same time) of a human or pig. The result could be a fully transmissible pandemic virus-that is, a virus that can spread easily and directly to humans. A more gradual process is adaptive mutation, where the capability of a virus to bind to human cells increases during infections of humans."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Source: "
+          },
+          {
+            "type": "text",
+            "text": "Centers for Disease Control and Prevention",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000750",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Public health",
+      "TermGuid": "ca69fd5c-b8ff-4c4a-8794-1e751b8e682b",
+      "WssId": 1820
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2006-03-01T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 792,
+  "Modified": "2020-05-18T07:16:48Z",
+  "Created": "2016-12-20T09:26:49Z"
+}

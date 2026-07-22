@@ -1,0 +1,417 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d4c92f86-928d-4220-8205-421dcb7d4b5f",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "531c644b-814d-4af9-a024-a274b546f11f",
+    "Id": 13235,
+    "Title": "michael.karinga"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5edeef21-f818-4929-8177-405b74cf591f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e870d39f-6f21-43cc-b602-22c6f0caf773",
+    "Id": 13235,
+    "Title": "michael.karinga",
+    "EMail": "michael.karinga@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a5ebcfae-bb37-4ea2-bf1d-36cc23e46fc2",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "589763e0-9179-4341-ac84-55d7c9737d15",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d169bbb-cb68-4e1e-a2c3-5aab206b55b2",
+    "Id": 13235,
+    "Title": "michael.karinga",
+    "EMail": "michael.karinga@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3511)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3d7b2f8a-f8e1-404b-9fcb-2af84fb00a44",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3511,
+  "Title": "Building momentum",
+  "NewsSubTitle": null,
+  "NewsSummary": "Advancing global brain and mental health through collaboration and innovation",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As I sit down to write this message, I find myself reflecting on the whirlwind of the past few months. It has been a deeply fulfilling yet busy season for us at the Brain and Mind Institute (BMI), and I am both proud and excited to share some of our recent advancements and achievements with you."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Brain Resilience Kenya Study"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "One of the standout moments for me personally was the launch of our Brain Resilience Kenya Study. This initiative holds special significance as it reflects our growing understanding that brain health is at the core of human health. After all when the brain does not work well, nothing else matters. The study explores how individuals in different environments can maintain brain resilience in the face of adversity-an urgent question in today's rapidly changing world. You can read more about this exciting project "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/Pages/News_Details.aspx?nid=NEWS-003367",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "First Nature Conference in Africa"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Another significant milestone for AKU and our institute was the first ever conference to be hosted by Nature, in the continent of Africa. This groundbreaking conference entitled,  \""
+          },
+          {
+            "type": "text",
+            "text": "Future of Dementia in Africa\"",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", was co-hosted with Nature Conferences, the Aga Khan University and Davos Alzheimer's Collaborative. This was a global call for action for research, care and policies in dementias and Alzheimer's disease, an impending 'tsunami' facing low- and middle-income countries. This event showcased our research across Africa and the globe, fostering deeper collaborations with fellow scientists, policymakers, and global and community leaders across the continent. It was a vivid reminder that the future of dementia care need not be just doom and gloom, but that there is a lot of hope in how the underserved global south will manage the onslaught of dementias - but it will require concerted effort and innovation. You can learn more about the discussions from this event "
+          },
+          {
+            "type": "text",
+            "text": "here",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://natureconferences.streamgo.live/the-future-of-dementia-in-africa/register#:~:text=Brought%20to%20you%20by%20Nature%2ccatalyze%20collaboration%20and%20drive%20change",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Alzheimer's Association International Conference (AAIC)"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In July, our journey took us to the "
+          },
+          {
+            "type": "text",
+            "text": "Alzheimer's Association International Conference (AAIC)",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Philadelphia, USA. Alongside our talented research team, we had the honor of presenting our work on Dementias and Alzheimer's in Kenya. It was inspiring to meet others who share our passion for understanding and addressing these pressing issues. The discussions that emerged have opened new doors for collaboration and strengthened our resolve to make a tangible impact in brain health research. I left the conference with a sense of deep hope-hope that our combined efforts can indeed lead to breakthroughs in dementia science and care."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "Living Labs in Pakistan"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Our work is also continuing to expand in Pakistan. Together with the BMI team in Pakistan, I had the opportunity to visit the northern regions of Pakistan again, including Chitral. This was a heart-warming and an eye-opening experience where we engaged with local underserved communities to better understand their mental health needs and the existing educational and health infrastructure. Like in East Africa, we are establishing \"Living Lab\" hubs in certain rural and urban sites. This real-world ecosystem (longitudinal cohorts) will use common brain health assessment tools and metrics across continents; to monitor brain health (e.g. depression, suicidal ideation, anxiety, dementia, etc.), physical health (cardiovascular health and diabetes) and psychosocial determinants (including education, economic well-being, climate change impacts and family violence). We have been on this journey to establish living labs for mental and brain health research and care, leveraging the rich cultural and community platforms of the selected hubs, in partnership with AKDN (Aga Khan Health Services - Pakistan). This initiative, is a testament to our belief that effective research can-and must-be rooted in local realities. Hence our motto, \"from the neuron to the neighbourhood\"."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "The United Nations General Assembly"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This September, I had the privilege of being part of the"
+          },
+          {
+            "type": "text",
+            "text": " Science Summit",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " at the 79th United Nations General Assembly (UNGA) in New York. Our "
+          },
+          {
+            "type": "text",
+            "text": "panel discussion",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.braincouncil.eu/event/unga79/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " which focused on implementing the International Global Action Plan for Brain Health through national strategies, was a powerful reminder of the global commitment to this cause. The exchange of insights from countries like Chile, India, Finland, and Kenya underscored the shared nature of this challenge and the collective strength we possess to address it."
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": {
+          "level": 2
+        },
+        "content": [
+          {
+            "type": "text",
+            "text": "African High-Level Summit on Brain Economy, Brain Health, and Brain Capital in Yaoundé, Cameroon"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Earlier this year, I also had the distinct pleasure of virtually joining the "
+          },
+          {
+            "type": "text",
+            "text": "African High-Level Summit on Brain Economy, Brain Health, and Brain Capital",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Yaoundé, Cameroon. This gathering was monumental, culminating in the adoption of the "
+          },
+          {
+            "type": "text",
+            "text": "Yaoundé Declaration,",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " a bold statement of intent from global and regional brain health leaders. As brain health increasingly becomes a central pillar in global health conversations, I am filled with optimism that this collaborative approach will unlock new opportunities for innovation and change across Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The momentum we are building together, whether in research, education, innovation, or global engagement, is truly inspiring. Every study, conference, summit, and field visit reaffirms the critical role we play in shaping a healthier future, both for individuals and for our societies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What drives our innovative research, educational initiatives and policy engineering, is our incredible team of scientists. It is their excellence, diversity and commitment that makes everything we do possible; thank you, team! As we look ahead to the coming months in advancing AKU's strategic directions, I am filled with hope that our team efforts will continue to bear fruit and that, together, we will make a lasting difference in the field of brain and mental health, that carry the largest burden of any medical condition (including all cancers and/or cardiovascular disease)."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003383",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Cancer",
+      "TermGuid": "b3303c12-15b7-4289-8f43-f35626de1d32",
+      "WssId": 2141
+    }
+  ],
+  "ScheduleStartDate": "2024-09-27T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3511,
+  "Modified": "2024-10-08T10:42:47Z",
+  "Created": "2024-09-27T08:34:30Z"
+}

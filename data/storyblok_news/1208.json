@@ -1,0 +1,217 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a13d520b-224d-4fec-8c40-e4f143050d8e",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6ad074b6-86b5-46e0-a388-b7af53f5a3ac",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a9d0927e-5349-48d8-89c9-9dc1f99b0c36",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dc00e6b2-6857-4535-ace7-aa3b1119e748",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "cf05e7a6-29f4-46f0-ac2d-119cb0be301c",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9332e167-fb39-4ee7-b4ef-5cf929273fb0",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f9e90aa7-8dfe-419e-935d-a4a25733f86d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4982ccf2-858c-4313-bec0-c2c91f53d20b",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1208)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0e007e44-f12f-4fcc-8e45-dfc8475c8277",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1208,
+  "Title": "Why can't your child read or write?",
+  "NewsSubTitle": null,
+  "NewsSummary": "For Dr Mariotte Ngwaru, Associate Professor at IED, EA, when UNESCO says that 36 per cent of primary school-aged children in sub-Saharan Africa are out of school, the responsibility for this dismal statistic falls on every single individual, organisa",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Between April 2013 and March 2014, IED, EA faculty conducted a survey of parents and teachers to understand reasons for low enrolment and literacy in Lindi, southern Tanzania."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For Dr Mariotte Ngwaru, Associate Professor at IED, EA, when UNESCO says that 36 per cent of primary school-aged children in sub-Saharan Africa are out of school, the responsibility for this dismal statistic falls on every single individual, organisation and the government."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In March 2014, Dr Ngwaru along with IED, EA faculty members Mary Oluga and Dr Mweru Mwingi finished a year-long literacy baseline study in Lindi Region, a coastal area 450 kilometres south of Dar es Salaam. Part of a sparsely populated area, its people are either fishers or farmers and literacy levels are low."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "After surveying 688 parents and teachers in 101 schools, the three investigators found that the barriers to early literacy development were unsurprising as locals tied education to socio-economic conditions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As Ms Oluga, co-principal investigator says that the attitudes of parents towards their child's education continue to have a strong bearing on retention and continuity of children in school."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"To a great extent, that also determines what children will do after a specified school level. It is therefore the onus of respective stakeholders to consider the factors that adversely affect parents' attitudes in order to bring them on board about their children's education,\" she adds."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The investigators' recommendations are that government, development entities and NGO partners should prioritise early literacy to see social development and transformation. This can be through intensive community-based projects that empower women; adult education that can transform parental attitudes; employment creation for young people; and civic campaigns to promote the welfare of children from home to school."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Ngwaru hopes that the findings from his study will be used in the formulation of national policies. The study is part of Strengthening Education Systems in East Africa, a five-year joint Aga Khan Development Network  project designed to strengthen teacher education and support systems to improve and sustain learning outcomes for boys and girls in pre-primary and primary schools in target areas of East Africa."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For further information about the project please contact Dr Marriote Ngwaru at "
+          },
+          {
+            "type": "text",
+            "text": "marriote.ngwaru@aku.edu",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "mailto:marriote.ngwaru@aku.edu",
+                  "target": "_blank",
+                  "linktype": "email",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001162",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    }
+  ],
+  "ScheduleStartDate": "2014-04-15T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1208,
+  "Modified": "2017-03-22T08:58:05Z",
+  "Created": "2017-03-22T08:56:29Z"
+}

@@ -1,0 +1,219 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bafec82f-28ca-473f-aaf4-81be21e78d75",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ff2cbe6e-d139-4efb-9cad-a4eff813492b",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5da0bd79-2798-4c0d-8282-deb0038f0591",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9265b34d-42da-4ac9-a368-c68a3c8a56d5",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a01d95bb-8e71-4ba0-84c3-fb54cb81501d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "85ce81b9-4021-4959-9e94-c4b34bb2f438",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "4228b99c-2c53-4e46-84c5-f0e5f751de54",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8765c3bd-c8a1-4500-8ba2-a21573298b55",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3654)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "609bf7ec-703e-4de2-ba6e-3afbfcc0ac5c",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3654,
+  "Title": "PM Lauds Efforts to Eliminate Hepatitis C in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "PM Shehbaz hails AKDN, AKU for Hepatitis C pilot; plans nationwide expansion",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prime Minister Shehbaz Sharif has called for coordinated efforts among all stakeholders to eradicate Hepatitis C from Pakistan, emphasizing the urgency of addressing this major public health challenge. He made these remarks during a recognition ceremony celebrating the successful completion of the pilot phase of the PM's National Hepatitis C Elimination Programme in Gilgit-Baltistan (GB). "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The initiative, which was supported by the Aga Khan Development Network (AKDN), Aga Khan Foundation (AKF), Aga Khan Health Services Pakistan (AKHSP), and Aga Khan University (AKU), is set to expand nationwide over the next three years."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The pilot project in Gilgit-Baltistan successfully screened 14,000 individuals in a record time of 10 days-a remarkable feat. Notably, the programme's screening took place at the community level, ensuring that those diagnosed were promptly connected to treatment. The initiative demonstrated that when multiple sectors collaborate, large-scale health interventions can be executed efficiently."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistan bears the highest burden of Hepatitis C worldwide, accounting for 10 million of the 60 million global cases. Without intervention, this figure is projected to rise to over 11 million cases by 2035, leading to a surge in liver cancer, cirrhosis, and hundreds of thousands of preventable deaths. The economic impact is estimated at a staggering $285 million annually, placing immense strain on health care resources and the nation's workforce."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Gilgit-Baltistan was chosen as the pilot site due to its manageable population size, close-knit communities, and proactive local government. The pilot was financially supported by AKF, while AKU and AKHSP provided technical public health expertise, including programme design, monitoring, and evaluation. Moving forward, the programme will be scaled up across all provinces."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "During the ceremony, the Prime Minister recognized key contributors to the Gilgit-Baltistan pilot project. Among those honoured were AKU President Dr Sulaiman Shahabuddin, Dr Asad Ali, Chair of AKU's Community Health Services, and AKU team members Dr Zahid Memon, Dr Shifa Habib, Dr Muslima Ejaz, and community medicine resident Dr Bilal Lashari."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This pilot's success has proven that strategic collaboration and evidence-based interventions can drive large-scale public health solutions. It sets a strong precedent for nationwide Hepatitis C elimination, and AKU remains committed to supporting this important mission.\" said Dr Sulaiman Shahabuddin."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Asad Ali echoed this sentiment, \"Our partnership in this initiative reflects our commitment to public health. The results in Gilgit-Baltistan are just the beginning-we now have a model to scale nationwide.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With sustained collaboration between the government, private sector, and health care organizations, Pakistan is poised to take significant steps toward the elimination of Hepatitis C, ensuring a healthier future for millions. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003522",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Hepatitis",
+      "TermGuid": "ebc801a7-5f2b-484a-893a-7ecf777396a0",
+      "WssId": 2567
+    }
+  ],
+  "ScheduleStartDate": "2025-03-24T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3654,
+  "Modified": "2025-03-24T06:25:58Z",
+  "Created": "2025-03-24T06:23:41Z"
+}

@@ -1,0 +1,184 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a8df7431-ee93-4904-8178-6a2dd251a30c",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "91f7983a-3576-4323-9ddf-668cd7fc0c09",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "578d16ed-4b43-46d6-aae4-385e60d85f17",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a3ec9bd5-d425-4434-9d19-b4ea3cbb58b0",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e0d0be19-947d-4a43-a19c-ae633c751cf5",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bf6f8113-6816-4799-9352-0d139c6c1948",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "aa562d2f-38f7-4375-b11d-5676d4a94149",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a0c26e1e-9016-4c7a-8f1e-091530543f65",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1411)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3b441d61-50ba-4b49-bb86-382848b61e1e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1411,
+  "Title": "Asthma? only you can control it!",
+  "NewsSubTitle": null,
+  "NewsSummary": "You can control your asthma! Doctors, speaking on World Asthma Day at Aga Khan University Hospital (AKUH), told the audience that once the lung disease is diagnosed, it can be managed",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"You can control your asthma! Doctors, speaking on World Asthma Day at Aga Khan University Hospital told the audience that once the lung disease is diagnosed, it can be managed by using medication and inhalers, and avoiding allergens like pollen and dust mites."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Asthma is a lung disease that causes recurring breathlessness, wheezing, coughing at night or in the early morning, and chest tightness. Nearly 10 per cent of children and 5 per cent of adults in Pakistan suffer from asthma and the disease is on the rise. Speaking on the possible reasons for the rising trend, Professor Javaid A. Khan, Professor and Head, Section of Pulmonary and Critical Care Medicine, Department of Medicine, AKU said that indoor tobacco smoke pollution is the single most important risk factor responsible for asthma prevalence and morbidity. He mentioned that almost 70 per cent of Pakistani children get exposed to second-hand smoking at home, restaurants, or in public transport. The government must implement a law that prohibits smoking in all public places to protect the young and the old from its side effects. Aside from tobacco smoke, Dr Syed Zeeshan Waheed, Consultant Pulmonologist, AKUH pointed that other inhaled allergens such as dust mites and pollen, cockroaches, and even emotional upsets can lead to an asthma attack."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " Asthma is hard to diagnose, especially in children under five, but regular physical and allergy checkups can help identify it. Dr Ali Bin Sarwar Zubairi, Consultant Pulmonologist, AKUH said that a review of a person's medical history, a physical examination, and lung function tests can provide the information needed to diagnose the disease. Using a spirometer to measure the largest amount of air you can breathe out can also help spot asthma, monitor it and identify a person's level of control. Dr Zubairi also cleared the misconception that blood tests can diagnose the condition. "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Though asthma cannot be cured, it can be effectively treated. Each person with asthma reacts to different factors. Identifying and avoiding these factors can help an individual learn how to treat and control their disease, and to lead a normal lifestyle. The first step is control and Dr Muhammad Irfan, Consultant Pulmonologist, AKUH said that asthma medication, and inhalers, are the initial line of defense. Dr Babar Dildar, Resident, AKUH demonstrated how an inhaler, spacer and peak flow meter should be used while Dr Waheed informed the audience about the measures that can be taken to reduce indoor asthma triggers."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mehrunnissa Kabani, Head Nurse, AKUH cleared myths about the disease. Asthma cannot be brought on by eating rice, yogurt, banana or other similar foods and inhalers are not habit forming. She said that public education about asthma is key to clearing misconceptions.\""
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001358",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Pulmonary",
+      "TermGuid": "e72a7b4d-96d1-4e01-a50f-97f65ad7b1df",
+      "WssId": 1934
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2018-01-03T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1411,
+  "Modified": "2020-05-18T07:23:33Z",
+  "Created": "2018-01-03T10:40:14Z"
+}

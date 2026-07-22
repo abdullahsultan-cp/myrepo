@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4d095953-b372-4057-871d-731e6c97a2a9",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "17ecc69b-5989-4a2f-8fdf-f2d6a12db5ea",
+    "Id": 8068,
+    "Title": "Umaima Mughal"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "115d960b-3b5f-45bb-9ea5-6f2f08dbe976",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cfe6ba81-7e36-4523-a919-a553a7f81ca4",
+    "Id": 8068,
+    "Title": "Umaima Mughal",
+    "EMail": "umaima.mughal@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e6c24161-af5a-4243-8e37-86ec3cb737c4",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "efa9df89-62c8-493a-a404-1495434ea587",
+    "Id": 8,
+    "Title": "School of Nursing and Midwifery, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d612078d-dedc-44c7-b468-257425f6b03e",
+    "Id": 8068,
+    "Title": "Umaima Mughal",
+    "EMail": "umaima.mughal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2854)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae442326-03d4-41d0-8951-b37a84984297",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2854,
+  "Title": "Alumna wins leadership award for women in management",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Zeenat Sulaiman has been awarded the Women in Management Africa Award in Leadership",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "Dr Zeenat Sulaiman, alumna of the Aga Khan University School of Nursing and Midwifery, class of 1991, has been awarded the Women in Management Africa, WIMA Award, in the category of Women Leaders in NGO, at a ceremony held in Dar es Salam, Tanzania. <p open=\"\" sans\",=\"\" sans-serif;white-space:pre-wrap;background-color:#ffffff;\"=\"\"><p>Dr Khan has been recognised for her exceptional leadership skills in the field of nursing. Throughout her career, she has encouraged both ordinary women and professionals to work hard and take great interest in everything they do. She continues to counsel fellow women to aspire for impact leadership and become role models to those that they lead as well as the young generation.<br/></p><p>She is currently leading Aga Khan Health Service, AKHS, East Africa as Regional CEO, and holds the dual position of Global Head of Quality, Clinical Programs, and Projects at AKHS. She is also a consultant with Joint Commission International, JCI.</p><p>\"As a woman leader, you must be persistent. There is no substitute for hard work. I started as a registered nurse. I got my degrees, I changed my thinking, I learned constantly, and I think it's important to speak up and not shy away from putting your points forward,\" she emphasised.<br/></p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002747",
+  "LocalApproverGroup": "Sonam PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    }
+  ],
+  "ScheduleStartDate": "2022-04-18T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2854,
+  "Modified": "2022-04-18T06:09:08Z",
+  "Created": "2022-04-18T05:56:22Z"
+}

@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6578d948-a332-4b02-baeb-7191d8cf5a8f",
+  "odata.etag": "\"37\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "67a262ff-7130-4dce-af7e-5047e2184b01",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5c35bd5b-f3e1-42a7-a524-40af4a451c2c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7b550572-b91e-48ff-9683-7a70088016bb",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "450afc74-dbd4-49e6-b541-0f171060f9a2",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "e7467497-c107-4a8b-a45d-53d1c5205e77",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "00981272-84e7-445f-ad2d-f0357ef1eb08",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2420)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "456cb4b0-e79e-4c06-8751-56416b9b389b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2420,
+  "Title": "AKU-ISMC Alumni  Set Up \"Be-khudi\"",
+  "NewsSubTitle": "A New Platform for Meditation and Mindfulness",
+  "NewsSummary": "AKU-ISMC's alumni set up a platform for meditation in English and Urdu.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>In these complicated times, more and more people are looking online to help them find a sense of calm and wellbeing. AKU-ISMC alumni, Tehmina Mansoor and Zohaib Zuby have responded to this by setting up a platform sharing guided meditations in Urdu and English. <a href=\"https://www.youtube.com/watch?v=GwRl4KpDoVI\" target=\"_blank\">Be-khudi </a>combines wisdom from their native South Asia with the discipline of Mindfulness and is the first platform to offer meditations in both languages. Tehmina explains how Be-khudi is developing during the pandemic; \"We launched in January of this year right before lockdown and posted our free Urdu and English Meditations as an album.\"</p><p>As lockdown continued Tehmina started receiving requests for more support. This led to the creation of a new meditation - specially addressing the frightening effects of the pandemic; the \"<a href=\"https://www.youtube.com/watch?v=3R51ZrX0eMY&amp;t=142s\" target=\"_blank\">Mindful Conversation</a>\" series which launched in July and is especially aimed at people feeling affected by the post-covid life. Tehmina adds; \"Most of the people registering wrote about having trouble in their new post-covid life. Some are having a problem with routine, some have a problem with managing children; and so on. This is a free service, just like all the meditations we have posted online. We have since gotten a very good response.\"</p><p><br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002326",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+      "WssId": 1833
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    }
+  ],
+  "ScheduleStartDate": "2020-09-08T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2420,
+  "Modified": "2020-09-08T15:43:46Z",
+  "Created": "2020-09-08T14:19:31Z"
+}

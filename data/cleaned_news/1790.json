@@ -1,0 +1,105 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "76c5d5a4-9cfc-4841-b70b-36cd5310bf9a",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a7ec089c-17d9-4518-bf61-68ed8907aa93",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "64e8edb2-9bc5-49c8-98fe-e2a963b1d477",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "71ef6691-b6c3-4463-9db0-2060dcb5dce7",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "eb90db50-c4d2-4e20-9e9d-b3f11035521f",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "98e91156-f284-4851-8ada-c53d2078c994",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8acc0a2e-d055-4e59-b912-5a0279738d41",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1790)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7682f2b5-6780-47ae-aa32-9f1f28392906",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1790,
+  "Title": "Sarah Bowen Savant Promoted to Full Professor",
+  "NewsSubTitle": null,
+  "NewsSummary": "Sarah Bowen Savant has been promoted to full professor at AKU-ISMC",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassFA94C7EBD243468AAF2B7559834D7484\"><p>We are very pleased to announce that Sarah Bowen Savant has been promoted to full professor!</p><div>Sarah Bowen Savant is a cultural historian specialising in early Islam, the study of religion, historiography, late antique Iran and Iraq and prophetic biography. She is also the Principle Investigator of <a href=\"http&#58;//kitab-project.org/?fbclid=IwAR3gcVlLODx-_SPvi1PcYk2TRbLxCI42J1FAXx6XR8-5t-Y04ZrnBpPUZJE\" target=\"_blank\">KITAB</a> Project.</div><div><br></div><div>Professor Savant&#160; received her MA from the University of Chicago and her PhD from Harvard University. Prior to joining AKU-ISMC in 2007, she was a Sultan Post-Doctoral Fellow at the University of California, Berkeley. She is the author of <em>The New Muslims of Post-Conquest Iran&#58; Tradition, Memory, and Conversion </em>(Cambridge&#58; Cambridge University Press, 2013), which won the Saidi-Sirjani Book Award, given by the International Society for Iranian Studies on behalf of the Persian Heritage Foundation.&#160;</div><div><br></div><div>For further information about Professor Savant, please click <a href=\"/ismc/faculty/pages/profile.aspx?ProfileID=1&amp;Name=Sarah%20Bowen%20Savant\" target=\"_blank\">here</a>.<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001732",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "e0c0de08-d5d6-4354-94fb-5eb74638a12c",
+      "WssId": 1471
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2019-01-14T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1790,
+  "Modified": "2019-01-14T14:47:46Z",
+  "Created": "2019-01-14T12:27:52Z"
+}

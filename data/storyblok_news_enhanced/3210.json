@@ -1,0 +1,169 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d627b69a-04a9-4c30-bc79-70db53e43b22",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "da4c3d3c-a5d7-4cc7-88c5-48428a4b4001",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "502cf5e0-ce60-4fff-b7aa-832b26b3e010",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d61d3639-334d-4617-b876-fc22dbc4e337",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "051ec77a-cef8-48c9-b7d9-0afb28a6dd4b",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cd344d8f-401b-43e0-804b-5d44dc8c9b2b",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "ede0ca4c-b5ca-454e-9972-b109d989e327",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "55487db0-5c77-4ff3-8d84-bc0a82d5de96",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3210)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0800697e-4c5e-44be-8305-53eebed9a8fb",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3210,
+  "Title": "AKU CIME celebrates Healthcare Simulation Week",
+  "NewsSubTitle": null,
+  "NewsSummary": "Our centres in Karachi and Nairobi hosted events to showcase the power of simulation.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In a testament to the vital role of healthcare simulation in modern healthcare education, the Aga Khan University's Centre for Innovation in Medical Education (CIME) recently concluded Healthcare Simulation Week, spanning both its Karachi and Nairobi Centres."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Throughout the week, both Centres hosted a captivating array of events, showcasing the transformative power of simulation. In Nairobi, exhibitions drew acclaim from hospital and university entities, and clinical simulation experts. In Karachi, an exhilarating Escape Room challenge tested the skills and confidence of medical students, resident doctors, and clinical nurses. The Simulation Relay Race in Karachi brought together nurses and nursing students. This unique challenge emphasized teamwork, quick decision-making, and the ability to navigate complex healthcare scenarios within a time-sensitive environment."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Additional highlights included a hands-on moulage workshop in Nairobi, adding realism to simulations, and an Open House in Karachi, offering a glimpse into the centre's state-of-the-art facilities. Furthermore, Karachi saw the launch of a thrilling CPR competition and an EyeSurg Tournament, igniting enthusiasm among undergraduate students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The week culminated in a heartfelt Closing Ceremony, where gratitude flowed to students, faculty, staff, and esteemed stakeholders for their exceptional support. Special recognition was given to our students society SPIE, Nursing Education Services, the Department of Ophthalmology and Visual Science, and all other departments. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Healthcare Simulation Week at CIME reaffirmed the essential role of simulation in preparing future healthcare professionals to meet the evolving challenges of tomorrow. The commitment to innovation and excellence in healthcare education remains at the core of CIME's mission."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003091",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    }
+  ],
+  "ScheduleStartDate": "2023-09-25T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3210,
+  "Modified": "2023-09-26T05:47:58Z",
+  "Created": "2023-09-25T12:40:53Z"
+}

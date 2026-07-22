@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f9fed94c-7908-4327-9d35-08cb95bbeba1",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9ade369c-f517-4183-a8bf-0751041c98ab",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7acd5b9-f64d-4a6c-84ee-b4723f073c3b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "971c3648-7d4a-4662-bf05-1341f40dda20",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6b14bf0b-2d06-4eb8-ad40-faf166a61661",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ba71483e-fda9-410c-9d9f-1b0c566acc94",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "e1c5d205-09e9-421f-ac98-6edd082e5f59",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ed39e343-8da0-4ba0-bca4-13e27747a5a0",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2269)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7ee271af-422e-490e-b670-5b60a84ee43e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2269,
+  "Title": "COVID-19: creating national treatment guidelines",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU faculty helped draft the handbook that\u2019s been adopted by the federal health ministry. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass8BDC79EC378E4AA38B70FA3B329DD60A\"><p>\u200bInfectious disease experts from Aga Khan University and public and private sector hospitals across the country have come together to prepare treatment guidelines for adult COVID-19 patients following a request from the National Institute of Health, a part of Pakistan\u2019s federal health ministry.\u200b<br></p><div>The <a href=\"http&#58;//www.nhsrc.gov.pk/SiteImage/Misc/files/ClinicalManagemen.pdf\">guidelines </a>combine the latest evidence on effective treatment processes from the World Health Organization and other sources, as well as insights from treating local patients, a\u200bnd will act as a single point of reference for healthcare professionals across Pakistan.</div><div><br></div><div>\u200bThe Clinical Management Guidelines for COVID-19 Infections handbook specifies when healthcare providers should conduct a test for the virus and guides physicians on how to adopt different treatment processes. For example, the guidelines distinguish between mild coronavirus symptoms such as fatigue and a sore throat, and moderate signs that will require admission such as oxygen saturation levels dropping below 94 per cent and traces of pneumonia appearing on a chest x-ray.&#160;</div><div><br></div><div>\u201cThese guidelines will help healthcare professionals streamline and standardise the management of COVID-19 patients,\u201d says Dr Nosheen Nasir, assistant professor, adult infectious diseases at AKU\u2019s department of medicine. \u201cThis enables us to make the best use of scarce facilities such as testing kits, and to promptly treat patients who need advanced care.\u201d&#160;</div><div><br></div><div>Dr Faisal Mahmood, section head of adult infectious diseases at AKU, led the consultative process drawing on faculty from AKU, the Indus Hospital, the Sindh Institute of Urology &amp; Transplantation and the National Institute of Cardiovascular Diseases. This was followed by a peer review process by healthcare professionals from Shaukat Khanum Memorial Cancer Hospital &amp; Research Centre and the National Institute of Health, Pakistan.&#160;<br></div><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002181",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Covid19",
+      "TermGuid": "5072fa55-cd2f-4499-949e-e1e92456cbac",
+      "WssId": 1955
+    },
+    {
+      "Label": "Infectious diseases",
+      "TermGuid": "0bc46d58-587f-4d9a-9c94-f6b3cb8110c0",
+      "WssId": 1951
+    },
+    {
+      "Label": "Policy advocacy",
+      "TermGuid": "87e8d7bb-840d-4e9b-8d8b-0c1d34de0982",
+      "WssId": 1995
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    }
+  ],
+  "ScheduleStartDate": "2020-05-11T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2269,
+  "Modified": "2020-05-11T05:20:59Z",
+  "Created": "2020-05-11T05:16:46Z"
+}

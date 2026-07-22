@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f53345cd-63fe-4ab3-a3e9-d81d3be90d53",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8711ecac-4133-4081-af06-6c5c3dad5ef1",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cc0e5403-ab06-4c64-844b-2a8acfe75117",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2ab2f06a-2eb5-4ffd-a322-ad7175e26735",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "044bd5e9-7da1-4018-b3fc-083b79b82591",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "05573de2-7f86-44a6-8f68-8b0862e7e919",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "38d5d84c-a80d-4ceb-84e5-ea09800cc046",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "51e1d1a5-3529-4496-804e-6ebcc3d94185",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1109)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bba642bc-4656-4ca6-9fb8-37ff0ce23dbf",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1109,
+  "Title": "Asthma on the rise in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Asthma is on the rise in Pakistan and, according to estimates, up to 10% of the population is suffering from this disorder, revealed Dr. Javaid A. Khan, Consultant Chest Physician, at Aga Khan University (AKU).",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Asthma is on the rise in Pakistan and, according to estimates, up to 10% of the population is suffering from this disorder, revealed Dr. Javaid A. Khan, Consultant Chest Physician, at Aga Khan University (AKU)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He was speaking at a seminar held on March 29, 2002 to educate asthma patients and their families on the various aspects of this disease. Dr. Khan said that modern lifestyle, atmospheric pollution, smoking, increased use of carpets, sofa sets, keeping pets inside the house and decreased consumption of fruits and vegetables, are some of the reasons for the rise in asthma cases in Pakistan. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Naheed Nabi of the Department of Family Medicine highlighted several misconceptions about asthma and its treatment in Pakistan. \"Use of Inhalers is the safest way to deliver asthma medication to the lungs, as inhalers are much safer than tablets or syrup,\" she explained. Inhalers are not habit-forming as is commonly perceived in this country, she added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Breast-feeding in the first six months of the infant's life protects the child from future asthma attacks, said Farhana Abbas, an asthma nurse at Aga Khan University Hospital. Regarding smoking, she said that if any of the parents is a smoker then the children have an increased risk of developing asthma. \"Children should be protected from environment tobacco smoke at all cost,\" she stressed. Underlining the importance of exercise in asthma, she suggested that the child should be allowed to take part in physical activities and sports."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking on diet and its affect on asthma, Yasmin Mithani, a senior nurse at AKU said that contrary to common belief dietary items like milk, banana, egg and fish do not precipitate asthma attacks. \"Patient with asthma should have a balanced diet which includes fruits and vegetables,\" she added. Quoting a study done at AKU, Dr. Javaid Iqbal said that only 10% pf patients in Pakistan were using inhalers according to recommended methods. He later demonstrated the correct technique of using inhalers. A question and answer session with a panel of experts was also held at the end of the programme."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001067",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Family medicine",
+      "TermGuid": "19354fc3-7dae-4b88-af25-0f174ce97f02",
+      "WssId": 1932
+    }
+  ],
+  "ScheduleStartDate": "2002-03-28T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1109,
+  "Modified": "2020-03-12T04:13:41Z",
+  "Created": "2016-12-28T09:08:50Z"
+}

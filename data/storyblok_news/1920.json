@@ -1,0 +1,274 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "64383f2a-bc80-4a82-9576-da0411e73de3",
+  "odata.etag": "\"70\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b1784715-e2e7-4aa7-bd4c-44bc9c313c18",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "178eab4b-236a-458f-bc3b-f95233e6386a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1a3bd0b2-8131-4bc1-ba9f-3abd3715fe06",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f14c89de-5aa8-4dd0-802d-68f2bb666723",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "67f9aced-4541-4a44-b808-a552de1a4ae5",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de9d9166-a2bf-47a6-b576-390471d40890",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1920)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f500edb7-a516-4f35-87fd-e81254487ae1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1920,
+  "Title": "Ethical debate must catch up with new stem cell discoveries",
+  "NewsSubTitle": null,
+  "NewsSummary": "Experts discuss emerging concerns at a symposium co-hosted by NOVA and AKU.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "New discoveries from stem cell research have raised hope among scientists for breakthrough cures for common diseases ranging from heart disease to diabetes. However, with the new discoveries have come new ethical and regulatory questions, said experts at a symposium co-hosted by NOVA University and the Aga Khan University (AKU) in Lisbon."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Self-renewing and able to duplicate, stem cells are used to halt or even reverse chronic diseases by repairing or replacing tissues or organs. The most extensively used and legitimate stem cell treatment is bone marrow transplantation, used for treating certain blood and immune system disorders. Some bone, skin and corneal or eye injuries and diseases can be treated by grafting or implanting tissues."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Since these cells offer a tremendous hope for alleviating human suffering, researchers, industry and multicultural societies need to be on the same page with agreed-upon regulatory policy and guidelines that ensure ethical activities, transparency and best practice,\" said Professor Arnold Kriegstein, founding director of the Eli and Edythe Broad Center of Regenerative Medicine and Stem Cell Research at the University of California, San Francisco (UCSF)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Although there has been amazing progress in stem cell science during the last 10 years, most of the advances lead to many ethical challenges, said Dr Azim Surani, director of Germline and Epigenomics Research. \"For example, if a heritable monogenic disease can be treated, should we use gene editing or not? These are the questions that society needs to address.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Should there be a red line around human functions in animals? How much we should tolerate when we put human cells into animal models? I think it is very timely for us to consider these issues now before we reach the threshold of actually doing these experiments,\" added Prof Kriegstein."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The new ethical questions relate to extending culture of surplus human embryos generated for in-vitro fertilisation or test-tube babies, generating gametes (reproductive cells) and artificial embryos from stem cells, making animal-human chimeras, and genetically editing the human embryo."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "And then there's the rising tide of victims, unsuspecting subjects of risky experimentation and customers paying for unproven or outright quack treatments. Professor Timothy Caulfield, research director at the Health Law Institute, University of Alberta, calls this \"scienceploitation\": \"Now you see stem cell, genetic, and increasingly, microbiome research being exploited to sell a host of ridiculous products.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While scienceploitation has been taking place for years in wealthy countries and is increasing, the same is now true in the developing world. Ironically, countries with high poverty rates stand to benefit the most from ethically responsible progress in the field, said Professor El-Nasir Lalani, founding director of AKU's Centre for Regenerative Medicine and Stem Cell Research. \"It would be unethical if equal access to new therapies were not possible in developing countries at the outset.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Lalani also spoke about a research capacity building partnership between AKU and UCSF in developing a comprehensive and integrated research programme in stem cell biology and regenerative medicine. \"Being a research-led University, we believe that investing in stem cell research is a step forward toward achieving the United Nations' Sustainable Development Goals.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Humanity must come to grips with the host of new discoveries and immense opportunity this presents,\" said Lalani. \"Now we as a global community are tasked with making sure this doesn't become a runaway train leaving behind the ethical considerations. To stop the train completely would also be unethical, as the hope for breakthrough cures from stem cell research is greater than ever.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "More on the "
+          },
+          {
+            "type": "text",
+            "text": "event website",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://stemcellsymposium-aku-nova.com/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "MoU between NOVA and AKU:",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " On the occasion, the NOVA University Rector João Sàágua and the Aga Khan University President Firoz Rasul signed a Memorandum of Understanding to facilitate collaboration in a variety of areas, including health sciences, humanities and social sciences, and media and communications. They expressed their commitment to foster and strengthen the partnership in order to improve the quality of life of vulnerable populations, to advance knowledge through cutting-edge research, and to promote international and cross-cultural cooperation and understanding."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speech by AKU President Firoz Rasul",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/speech/Pages/stem-cell-symp-2019-firoz-rasul.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">.<a href=\"https://twitter.com/NovaUnl?ref_src=twsrc%5Etfw\">@NovaUnl</a> Rector João Sàágua and AKU President Firoz Rasul sign an MoU to facilitate collaboration in a variety of areas, including health sciences, humanities and social sciences, and media and communications. <a href=\"https://twitter.com/hashtag/AKUPartnerships?src=hash&amp;ref_src=twsrc%5Etfw\">#AKUPartnerships</a><a href=\"https://twitter.com/hashtag/StemCells?src=hash&amp;ref_src=twsrc%5Etfw\">#StemCells</a> symp in Lisbon <a href=\"https://t.co/6pBKHfqRv1\">pic.twitter.com/6pBKHfqRv1</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1139202763878010880?ref_src=twsrc%5Etfw\">June 13, 2019</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Equal access to new stem cell therapies - a panel discussion<a href=\"https://twitter.com/hashtag/StemCells?src=hash&amp;ref_src=twsrc%5Etfw\">#StemCells</a> symp in Lisbon. Learn more <a href=\"https://t.co/NQWdONq1mW\">https://t.co/NQWdONq1mW</a> <a href=\"https://t.co/70Lf6k16dQ\">pic.twitter.com/70Lf6k16dQ</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1141626666072064001?ref_src=twsrc%5Etfw\">June 20, 2019</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001851",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "stem cell research",
+      "TermGuid": "df868134-0dab-4382-8641-8323ce5dd593",
+      "WssId": 1681
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    }
+  ],
+  "ScheduleStartDate": "2019-06-13T17:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "LR: Ilhan Ilkiliç, Istanbul University; Azim Surani, University of Cambridge; Jorge Soares, Portuguese National Council of Ethics for the Life Science; Arnold Kriegstein, University of California; and Helena Pereira de Melo, NOVA. AKDN/JoseFernandes",
+  "MediumImageCaption": "Prof Timothy Caulfield, Research Director, Health Law Institute, University of Alberta. AKDN/JoseFernandes",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1920,
+  "Modified": "2019-06-24T03:55:10Z",
+  "Created": "2019-06-13T17:47:15Z"
+}

@@ -1,0 +1,354 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "3aee2910-6cf4-4130-b5e2-ed1c83b6c049",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7543f363-8d2d-4ec0-bd5c-0c163f5c65d6",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "567f1eda-a1b5-4946-bc64-c30c20c4b10f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8cb84bd7-21c9-4956-80eb-181932607c6d",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5c507988-fc36-4fbc-abd0-d58de1ad9bbe",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4dfb4028-a24e-4388-8938-3ebfa1041172",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "970808f8-689e-4bfe-bcb4-50b20ed7a0b1",
+    "Id": 7153,
+    "Title": "Samina Wahid",
+    "EMail": "samina.wahid@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1904)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bad4f4e3-f7d3-452a-84d9-9605ab1e397d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1904,
+  "Title": "Sindh government rolls out typhoid conjugate vaccine",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU's research and policy advocacy work has been central to the vaccine's scale-up.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "* Nationwide immunisation campaign to begin in October 2019.",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Children in the Lyari neighbourhood of Karachi, one of the areas worst-hit by the typhoid outbreak in Sindh, are receiving their first dose of the typhoid conjugate vaccine (TCV), the latest vaccine to be included in Pakistan's routine immunisation programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Staff from Aga Khan University, working in partnership with the Sindh government, will inoculate over 100,000 infants and children - between the ages of 6 months and 15 years - by administering the vaccine at public and private sector schools and hospitals based in one of the city's most densely populated towns. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is the first step in a mass immunisation campaign for Sindh,\" said Dr Azra Fazal Pechuho, Sindh health minister. \"The vaccine is the most effective way to curb new cases and to protect children from a disease which is becoming increasingly expensive and difficult to treat.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "Pakistan is the first country",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/tackling-the-threat-of-typhoid",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "5390b452-67f0-5a0e-84dd-136d0eca8c22",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " among low-income nations eligible for funding from GAVI - a global, public-private partnership committed to increasing access to immunisation - to include TCV in its nationwide schedule of vaccines against 11 preventable diseases. The decision is in line with the country's commitment to end outbreaks of water-borne and communicable diseases in its efforts to meet goal 3 of the Sustainable Development Goals. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Deaths and complications from typhoid were rare over the past 15 years but the ongoing outbreak has put an unprecedented number of children at risk,\" said Farah Qamar, an associate professor in paediatrics and child health at AKU. \"Efforts are underway to address the root cause of the outbreak - failings in our water and sanitation system - but in the meantime this vaccine represents the best way to save lives.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers from Aga Khan University will analyse data from the Lyari drive to understand factors determining the acceptability and efficacy of the vaccine which, in turn, will enable its successful rollout across the country from October 2019. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The"
+          },
+          {
+            "type": "text",
+            "text": " World Health Organization",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.who.int/csr/don/27-december-2018-typhoid-pakistan/en/",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " has disclosed that over 5,000 cases of XDR typhoid have been reported in the province to date. The scale of the outbreak led the Sindh government and private sector partners, such as Aga Khan University and the Bill and Melinda Gates Foundation, collaborating to launch an "
+          },
+          {
+            "type": "text",
+            "text": "emergency vaccination drive in Hyderabad in January ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/sindh-government-and-aku-partner-to-tackle-typhoid-outbreak",
+                  "target": "_self",
+                  "linktype": "story",
+                  "uuid": "e156fb50-c5cd-5f4a-be74-963c856ca7da",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "\n      "
+          },
+          {
+            "type": "text",
+            "text": "2018.",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/sindh-government-and-aku-partner-to-tackle-typhoid-outbreak",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "e156fb50-c5cd-5f4a-be74-963c856ca7da",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Faculty and staff at Aga Khan University's microbiology laboratory first "
+          },
+          {
+            "type": "text",
+            "text": "detected the typhoid outbreak in blood culture tests from Hyderabad",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/a-new-piece-of-the-typhoid-puzzle",
+                  "target": "_self",
+                  "linktype": "story",
+                  "uuid": "3c5a9830-d3ae-5b1c-85c8-7fc0a5dbbed3",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in October 2016. They collaborated with epidemiologists and infectious disease specialists from the University's department of paediatrics to bring the matter to the attention of local government, the World Health Organization, the US National Institutes of Health, the Sabin Vaccine Institute and the UK-based Wellcome Sanger Institute. Since then, the University's researchers and its partners have collaborated on a number of studies to understand the genetic make-up of the typhoid strain, to ascertain risk factors for its geographic spread and to assess the safety and efficacy of TCV in an emergency outbreak situation.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Data and policy implications stemming from these studies were shared with the Drug Regulatory Authority of Pakistan and the federal government's National Technical Advisory Group. This led to a successful application for funding from GAVI and the Bill and Melinda Gates Foundation resulting in the permanent inclusion of TCV in the country's nationwide \n      "
+          },
+          {
+            "type": "text",
+            "text": "immunisation programme",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/pakistan-approves-vaccine-against-typhoid",
+                  "target": "_blank",
+                  "linktype": "story",
+                  "uuid": "cd7df995-2d4f-597e-8da0-99c630da7532",
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", a win-win situation for stopping the spread of a preventable disease."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001836",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Immunisation",
+      "TermGuid": "386ac89c-5e5a-410f-b2f1-1c43237982b1",
+      "WssId": 1434
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "paediatrics",
+      "TermGuid": "302bf399-ea7f-467a-88cc-a8832ac24c10",
+      "WssId": 1522
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2019-05-27T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": "Officials at the May 2019 launch of the typhoid conjugate vaccine roll-out campaign in Lyari.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1904,
+  "Modified": "2019-05-28T09:53:35Z",
+  "Created": "2019-05-27T08:43:28Z"
+}

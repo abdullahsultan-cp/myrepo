@@ -1,0 +1,203 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5482eb45-dbf9-4f36-bd73-524298826bee",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1d42cbc0-66fe-4a59-8a51-f9de39e860fa",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "992a6c98-62b7-4635-aa06-1cd570fcb32f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "473f64ac-ebe4-4e83-8c34-2e3fea287dfd",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bdb93116-2c24-4ab8-bd21-3bc913bd0e36",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "93bdd88a-bffa-4940-a6f2-0d4d948cd3af",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "55c18807-39de-40ac-bf67-bee9fbee5e9f",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8dd31667-bd65-4b0c-b713-4f32a313aee5",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1899)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d6aaa398-d9d9-42a4-8e42-67dc2d5ad78d",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1899,
+  "Title": "New born babies - beautiful but vulnerable",
+  "NewsSubTitle": null,
+  "NewsSummary": "With the aim of improving infant morbidity and mortality, CIME in collaboration with the Department of Emergency delivered a Neonatal Resuscitation Programme to enhance the knowledge, skills and expertise of General Practitioners from around Karachi.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "It is estimated that of the 130 million infants born each year worldwide, 4 million die in the first 28 days of life. Two-thirds of the world's neonatal deaths occur in just 10 countries, mostly in Asia. Pakistan is number three among these countries. 298,000 neonatal deaths occur every year at a rate of 49 per 1000 live births, with Pakistan accounting for 7% of global neonatal deaths overall"
+          },
+          {
+            "type": "text",
+            "text": "[1]",
+            "marks": [
+              {
+                "type": "superscript"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". These are shocking statistics."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With the aim of improving infant morbidity and mortality, CIME in collaboration with the Department of Emergency Medicine delivered a Neonatal Resuscitation Programme to enhance the knowledge, skills and expertise of 20 General Practitioners from around Karachi. The programme utilised a mixed approach, including interactive lectures and hands-on simulated practice to bridge the gap between theory and practice. The key focus was on imparting knowledge and experience to the participants so that they could identify, manage and apply appropriate techniques for the resuscitation of a neonate in distress."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The feedback received acknowledged that the workshop was much needed and participants appreciated the quality of the programme, stating the need for further opportunities to augment their abilities in emergency situations."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "[1] ",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "https://www.who.int/bulletin/volumes/87/2/08-050963/en/",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.who.int/bulletin/volumes/87/2/08-050963/en/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              },
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001831",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "paediatrics",
+      "TermGuid": "302bf399-ea7f-467a-88cc-a8832ac24c10",
+      "WssId": 1522
+    },
+    {
+      "Label": "simulation",
+      "TermGuid": "83a5ebdc-7a12-494d-85e7-e739c8c6d668",
+      "WssId": 1651
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "b4ba3663-c99a-4c5e-ab1a-e551b698c047",
+      "WssId": 1472
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "4fe8c9b6-21f5-4b68-8a32-d622bca70584",
+      "WssId": 1482
+    }
+  ],
+  "ScheduleStartDate": "2019-05-24T03:50:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1899,
+  "Modified": "2019-05-24T04:02:17Z",
+  "Created": "2019-05-24T04:00:47Z"
+}

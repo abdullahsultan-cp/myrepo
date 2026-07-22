@@ -1,0 +1,283 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6c797da7-8f51-46e0-95bc-2cb5a3312a86",
+  "odata.etag": "\"22\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8617837b-cbf1-4964-b121-80375b086036",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3af7ef55-ca20-44e2-b8a6-f8f5fc0646dc",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1d89c7bd-a979-43fd-8f66-3d981e34c408",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "90c0658d-2079-4cb8-9027-401331dcffb6",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "330d6a96-b6e9-4c5c-856f-7ada8b4a15fb",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "5b829393-533c-4aef-aaa4-b810eb6650fe",
+      "Id": 4,
+      "Title": "Global"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5ffffe03-f4a2-402a-9609-fa7aff149361",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1754)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e313cfd1-358d-4e61-818b-9ba18cc5a652",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1754,
+  "Title": "Pakistan needs integrated emergency care systems: AKU symposium",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU's 21st National Health Sciences Research Symposium focuses on emergency care.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The global Disease Control Priorities Project estimates that nearly half of deaths and over a third of disability in low- and middle-income countries can be addressed by the implementation of effective emergency care."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The solution is to establish integrated emergency and trauma care systems with pre- and post-emergency department care nationwide,\" said Dr Junaid Razzak, director of the Center for Global Emergency Care and professor of emergency medicine and international health at the Johns Hopkins University School of Medicine."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Razzak was the keynote speaker at the inaugural ceremony of the Aga Khan University's 21st National Health Sciences Research Symposium that is focusing, this year, on 'emergency care: time and life matter'."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He recalled how he played a vital role in the establishment of emergency medicine as a specialty in Pakistan and became the founding chair of the department of emergency medicine at AKU - his alma mater - in 2008."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Although College of Physicians and Surgeons Pakistan recognised emergency medicine as a specialty in 2011, there are not more than nine qualified emergency medicine specialists in the country today. Studies have also found significant gaps in the availability of essential resources, accessibility, patient-centricity and staff training,\" said Dr Razzak."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is an alarming situation in the country with a population of over 220 million. The impact on saving lives can only be achieved through a health system that is sponsored by the state with support from public and private institutions.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He stated that emergency care demands highly functional integrated health system, and complex and prompt care decisions. \"We need a multi-prong strategy: predict the potential path of emergency care development if we follow the trajectory followed by the high income, more developed countries; and explore how new technologies such as telemedicine, artificial intelligence and machine learning can augment and impact the future of emergency care in low resource settings.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He stressed that emergency departments should aim to provide a safe, committed, compassionate and caring service."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"AKU and other academic institutions in Pakistan can play a significant role in developing and testing innovations for futuristic emergency care system,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The second keynote speaker was Dr Scott Newton, a graduate of the Johns Hopkins University's Doctor of Nursing Practice programme and the vice president of Care Model Solutions. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Globally, emergency medicine is innovating to meet the demands of a growing population for care,\" said Dr Newton. \"Increased demands do require an agile workforce ready for high-touch and high-tech practice.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"A well-established emergency care system can help achieve the United Nations' Sustainable Development Goals: Goal 3 on good health and well-being; Goal 11 on sustainable cities and communities; and Goal 16 on peace, justice and strong institutions,\" said Dr Asad Mian, head of the organising committee and the chair of AKU's department of emergency medicine, in his welcoming address. \"Overall, good emergency care can improve outcomes in no less than 10 SDG targets,\" he said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On the occasion, Dr David Arthur, dean of AKU's School of Nursing and Midwifery, and Dr Mushtaq Ahmed, interim dean of the Medical College; and Hans Kedzierski, chief executive officer of the Aga Khan University Hospital, also addressed the audience."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "More news from 21st NHSRS:",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "bullet_list",
+        "content": [
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Day 2: "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "list_item",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Day 3: "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\"><a href=\"https://twitter.com/hashtag/EmergencyMedicine?src=hash&amp;ref_src=twsrc%5Etfw\">#EmergencyMedicine</a>: Dr Junaid Razzak explains how big the problem is. <a href=\"https://twitter.com/hashtag/NHSRS?src=hash&amp;ref_src=twsrc%5Etfw\">#NHSRS</a> <a href=\"https://twitter.com/jrazzak?ref_src=twsrc%5Etfw\">@jrazzak</a> <a href=\"https://twitter.com/JohnsHopkinsEM?ref_src=twsrc%5Etfw\">@JohnsHopkinsEM</a> <a href=\"https://t.co/iKLwLGwR3i\">pic.twitter.com/iKLwLGwR3i</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1061259671825195008?ref_src=twsrc%5Etfw\">November 10, 2018</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Dr Scott Newton: Globally, emergency medicine is innovating to meet the demands of a growing population for care. Increased demands do require an agile workforce ready for high-touch and high-tech practice. <a href=\"https://twitter.com/hashtag/NHSRS?src=hash&amp;ref_src=twsrc%5Etfw\">#NHSRS</a> <a href=\"https://twitter.com/hashtag/EmergencyMedicine?src=hash&amp;ref_src=twsrc%5Etfw\">#EmergencyMedicine</a> <a href=\"https://twitter.com/DrScottNewton?ref_src=twsrc%5Etfw\">@DrScottNewton</a> <a href=\"https://twitter.com/JHUNursing?ref_src=twsrc%5Etfw\">@JHUNursing</a> <a href=\"https://t.co/Dup5NAYHJV\">pic.twitter.com/Dup5NAYHJV</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1061228029547085824?ref_src=twsrc%5Etfw\">November 10, 2018</a></blockquote>\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001698",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Emergency Care",
+      "TermGuid": "39305958-daf9-4cbb-b29e-f75f928c9919",
+      "WssId": 1758
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2018-11-09T12:45:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": {
+    "Description": "Read in Urdu",
+    "Url": "http://aku.edu/news/Documents/Urdu%20version_NHSRS_Day1_PDF.pdf"
+  },
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The first keynote speaker Dr Junaid Razzak addresses the symposium. Photo: AKU",
+  "MediumImageCaption": "A group photo with the speakers. Photo: AKU",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1754,
+  "Modified": "2018-11-26T12:30:32Z",
+  "Created": "2018-11-09T07:13:50Z"
+}

@@ -1,0 +1,234 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "783e893c-704e-4f62-a9bb-aa950a96859f",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4ad94f3f-316b-49aa-86db-7f2bc698a04a",
+    "Id": 7882,
+    "Title": "carol.oyola"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f5086df6-b713-4aa6-919f-e411e29d18a0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "20e2f74d-9298-419f-adfe-1a600a1f87e9",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6f7cd76f-6441-433f-9d27-54d72107976c",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7413e09c-0a9f-4202-a168-73d6aba323e2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c2604dcb-9337-45bf-805b-5dd514c912ac",
+    "Id": 7882,
+    "Title": "carol.oyola",
+    "EMail": "carol.oyola@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3234)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2cfbe765-13f4-44ae-9482-ba0ce23b65ff",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3234,
+  "Title": "AKU's Dr Asad Mian conferred Ambassador Liaison Award",
+  "NewsSubTitle": null,
+  "NewsSummary": "The award recognises his innovation in teaching, mentorship and practice",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's Dr Asad Mian has been granted the Ambassador Liaison Award by the "
+          },
+          {
+            "type": "text",
+            "text": "American College of Emergency Physicians",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.acep.org/",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " (ACEP) for his dedication, commitment, and reliability to the roles and responsibilities of an International Liaison."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mian is a Professor of Emergency Medicine, Director of AKU's "
+          },
+          {
+            "type": "text",
+            "text": "Critical Creative Innovative Thinking (CCIT) Forum",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/ccit/Pages/home.aspx",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " and an MBBS alumnus of AKU. He has been part of the ACEP International Ambassador Programme as the liaison for Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Within his role at CCIT, he closely monitors AKU residents, faculty and staff in their journey of innovation, creativity and entrepreneurship. He has also developed novel courses for his students of Emergency Medicine. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dedicating the award to his teammates, Dr Mian said \"I proudly receive this award on behalf of my 'teams': CCIT and the Emergency Department. I realize that I am merely standing on the shoulders of giants. None of this is possible without the brilliance of my team members.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Asad Mian's work extends beyond the classroom. During COVID-19, he integrated his medical expertise with his passion for physical wellbeing to introduce 'Zalsa', "
+          },
+          {
+            "type": "text",
+            "text": "a blend of Zumba and Salsa",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.aku.edu/blogs/pages/detail-page.aspx?pid=42",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", at AKU. Dr Mian regularly hosts sessions where he gives Zalsa lessons to the AKU community, free of charge. His choice to provide Zalsa as a pro bono service further exemplifies his intrapreneurial and entrepreneurial mindset. He shares, \"I am doing pro bono work because I am not only enthusiastic about the creative process, but it also gives me an opportunity to engage with my human fellow travellers in a different manner.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mian's multifaceted accomplishments have not only elevated the reputation of the Aga Khan University but have also contributed significantly to the advancement of emergency medicine and healthcare diplomacy at a global level. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003113",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "a28f60ed-ca5d-4703-ae16-18c54b4840ec",
+      "WssId": 2180
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Innovation",
+      "TermGuid": "9b1177f6-ee80-4dce-b188-94f66824c836",
+      "WssId": 2179
+    }
+  ],
+  "ScheduleStartDate": "2023-10-16T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3234,
+  "Modified": "2023-10-16T11:59:29Z",
+  "Created": "2023-10-16T11:58:02Z"
+}

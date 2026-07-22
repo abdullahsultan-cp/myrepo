@@ -1,0 +1,187 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1f4f1dd8-2c16-47b2-93e9-e5f966bee270",
+  "odata.etag": "\"10\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e5148a44-2875-4c14-83a8-b0ac60fb4f71",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb2ff57b-765d-44b1-9fe9-494627c09572",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b275491f-1dce-4bc5-a319-29e587cc4b60",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "d639e9b6-0fbf-4c1d-8f31-7a2632aff2bb",
+    "Id": 12,
+    "Title": "Research"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7560721a-198f-42bd-a4ab-a598e4149833",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b9628127-a36e-48b9-b3bb-c5d04e932c75",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8100aa16-9210-4536-9df9-2c3072113f4b",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1685)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3d030c0b-878f-47b9-abdb-bae0b22aad0b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1685,
+  "Title": "Fighting lung disease in textile mills ",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU's research is helping protect textile workers from a range of workplace hazards.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In Pakistan's vast textile industry, lung ailments from cotton dust are common and include byssinosis, which disabled an estimated 30,000 workers in the United States in the decades prior to the introduction of safety measures in the 1970s."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Assistant Professor Asaad Nafees and his team are working with six textile mills that employ approximately 9,000 people to reduce lung problems by training management and workers on limiting exposure to cotton dust, including through the use of face masks, improved ventilation and safe disposal of waste."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Before-and-after measurements of air quality and workers' lung function, as well as improvements in their knowledge and practices, will make clear the extent of the project's impact. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "But Khairoonnissa Merchant, Head of Human Resources and Compliance at International Textile Ltd., said the company is already losing fewer days to illness and injury as a result of AKU's training sessions. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When the Aga Khan team talks to the workers, it is like they are talking to a friend, and the workers really listen to them,\" she said, echoing sentiments expressed by other managers participating in the study. \"We are looking forward to continuing this relationship.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Though the study - called MultiTex for short - is ongoing, government and industry are already interested in expanding it. \"Nothing like MultiTex has been done in Pakistan,\" said Dr Hasan Nawaz Tahir, who is working on the study with Dr Nafees. \"It's a win-win situation for everyone.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "We've seen a visible improvement in health and safety. Workers now have the sense that their health is very important to them.",
+  "PullQuoteAuthor": "Khairoonnissa Merchant, head of human resources and compliance at International Textile Ltd. ",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001630",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "5fd1a23c-10dc-4a74-b677-67ef4da50092",
+      "WssId": 1440
+    },
+    {
+      "Label": "Pollution",
+      "TermGuid": "73cea987-dd0a-42ae-ad27-b36e2e41069d",
+      "WssId": 1508
+    }
+  ],
+  "ScheduleStartDate": "2018-07-26T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1685,
+  "Modified": "2018-07-31T04:12:01Z",
+  "Created": "2018-07-26T13:21:17Z"
+}

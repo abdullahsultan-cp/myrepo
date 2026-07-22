@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bbecab60-36b6-4326-9fdd-32b2f1a3019a",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ee294f6d-279b-4052-addf-467fca2228ce",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f8ca6b2e-53f1-4948-989a-84b222cd92d4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7e9e8a3e-0837-4252-99b1-5f8c928368d9",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "85b0545c-c237-4ced-9675-57c92a478062",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6384f8f3-5c2f-43d7-8391-b619a4d7476f",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "905d557d-2a8e-4bd7-a2fc-02938f76c349",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "91107697-ac95-4430-ad40-5e7bb58a1874",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1150)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a8035fed-ab02-4456-a30b-2a33602befff",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1150,
+  "Title": "\u200bAKUH wins award for its computerized physician order entry system",
+  "NewsSubTitle": null,
+  "NewsSummary": "\u200bAKUH's award - winning project was its Physician Order Entry (POE) System. Developed by the Pharmacy Department, this computerized system checks drug interaction, dosage and route of administration",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass9507180DAAC846D192D0BC3E48626F31\"><div>\u200bManagerial innovation in healthcare won the Aga University Hospital (AKUH) the prestigious Arthur Andersen I Dr Ed Crosby International runners-up award for 1999.&#160;</div><div><br></div><div>AKUH's award - winning project was its Physician Order Entry (POE) System. Developed by the Pharmacy Department, this computerized system checks drug interaction, dosage and route of administration. AKUH physicians now prescribe drugs for patients by directly entering the drug name in the hospital computers and the pharmacist reviews the drug orders on the computer screen before dispensing drugs. This prestigious managerial innovation award is an international recognition for the quality of services provided by AKUH. Mr Abdul Latif Sheikh, Director of AKUH's Pharmacy Services, received the award at an impressive ceremony attended by 400 delegates from all over the world at the International Hospital Federation in Copenhagen, Denmark.&#160;</div><div><br></div><div>The International Hospital Federation (IHF) is a key international agency responsible for promoting good practices in hospitals, health services management, training, healthcare policy and planning systems. Arthur Andersen is a global leader in the delivery of professional services and serves as consultants, auditors and financial advisors to the world's leading healthcare delivery organizations. The Award for Managerial Innovation honors select international institutions from the healthcare field that have demonstrated outstanding managerial innovation beyond their primary healthcare activity. A distinguished international selection committee known for their expertise and leadership in the healthcare industry chose this year's finalists.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001108",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Pharmacy",
+      "TermGuid": "dc5584ec-975c-44a7-8be7-1d3337377b33",
+      "WssId": 1933
+    }
+  ],
+  "ScheduleStartDate": "1999-07-22T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1150,
+  "Modified": "2020-03-10T09:24:09Z",
+  "Created": "2016-12-28T10:45:41Z"
+}

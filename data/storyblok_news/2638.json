@@ -1,0 +1,291 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "36fc10de-6dbc-4255-bea6-fa61afbe3731",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "76fc1246-3651-47ad-9546-8475b1f5aef0",
+    "Id": 6327,
+    "Title": "stephen.musyoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "83a38c59-092d-4df8-a979-fcc89ee82a78",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eef5a59f-8a94-45fb-9d27-ac588f2f6bf2",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8aa55a4d-f2c1-42a3-9f22-d9e5bbd5f732",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "691982aa-94f8-4c65-bf04-1c92e0c14d8d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "20de9e7e-1b59-4857-9b93-438e9dd5e6d4",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "db728886-b2c0-46a7-adbd-ff233099b1d4",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2638)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cab6afee-57dc-42f2-956d-651100b2b56b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2638,
+  "Title": "A childhood interest that morphed into a career ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Mary's love for science has blossomed into a career in diagnostic pathology. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Mary Achakolong is preparing for the University's first-ever virtual convocation ceremony. The pandemic struck during the crucial final years of her degree and Mary is relieved to finally see the rewards of four hard years of effort."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"It has been a tough journey of constant learning and training but it is definitely worth it in the end. I am excited to have come to the end of it successfully.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "From her formative years, Mary always had an interest in science. Born and raised in Entebbe, central Uganda, she was fascinated by astronomy, chemical reactions and how things work. It is the biological sciences that eventually won her over. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Classroom dissection activities during biology classes were often followed by microscopy to which Mary took an early keen interest. She was also happy to share information and ideas freely with classmates and took a leadership role during her A-levels, managing a science club which involved troubleshooting discussions around Physics, Biology and Chemistry problems. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "These interests that started from a young age, led her to pursue an undergraduate degree in medicine at Makerere University. Early into her undergraduate training, Mary demonstrated good fine motor skills and an eagerness to amass surgical skills. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We (myself, family and colleagues) all thought I would make a good surgeon or internal medicine physician when I got to my clinical years of undergraduate training,\" Mary said. \"I would refer to the books and practically apply the concepts easily. I even tried my hand at obstetrics and gynecology, as well as pediatrics while a general practitioner. But I did not find any of these fulfilling - I knew these specialisations were not for me, and I needed to find my path.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A love for the basic sciences, however, could not be shaken off and this led her to a pathology case conference which was held at the morgue during her fourth year of undergraduate training. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"While at the case presentation I watched with envy as one pathology graduate student supervised by a highly reputed professor of pathology, discussed in cellular detail a disease process which led to a patient's demise. It is at that moment that I knew pathology would trump all other aspirations I had because it has the capacity to inform and transform other practices. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Pathology builds a story, putting all pieces of a medical puzzle together.Pathology to this day is still frowned upon by several individuals including health professionals. I remember when I told the world around me what my final choice for specialisation was and a colleague offered to pay for counselling services.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Looking back, Mary now sees how her childhood interests in microscopy and basic sciences have connected to her love for pathology. While weighing her postgraduate school options, she wanted a change of location and exposure to different culture. She'd even considering going to study as far as South Africa. Dr Lukande Robert, a renowned pathologist and mentor however referred her to Aga Khan University's campus in Nairobi. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"As I looked into AKU, I saw the exciting promise of an internationally suited pathology career. The curriculum was very comprehensive and I scrolled through the website and read the alumni stories. I knew that could be my story too. Also, the fact that I could get a quality postgraduate education across the border, AKU was a perfect fit. I applied but unfortunately did not pass the admissions test the first time.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This was a huge disappointment for Mary and it took a toll on her. She went back home to Uganda and worked a few more years as a general practitioner. Mary remained determined to join the AKU postgraduate programme and teamed up with a friend for more intensive preparations for the next interview she would attend."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I believe there is no shame in trying again. I'm so glad I did because in 2017 I was accepted into AKU. All I needed was to prepare myself harder than before and I'm thankful for supportive friends. Moving to Nairobi also presented an adjustment challenge as I had not realised the cultural shock that would come with simply crossing a border. But the support from the faculty, staff and colleagues at AKU's Medical College, East Africa, helped me cope with the changes.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her future plans are to return to her home country, Uganda, to serve her community. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I intend to add my skills and knowledge to the currently small community of regional pathologists and change patient's lives through safe, timely and accurate diagnostic pathology. I also hope to contribute to worthwhile work that will influence policies surrounding pathology practices positively.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002536",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "76d7e6c8-e7b5-4ac7-bfee-f2cc94c2f75d",
+      "WssId": 1830
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    },
+    {
+      "Label": "Kenya",
+      "TermGuid": "cb228285-e9f4-4712-865a-1d4768edfd32",
+      "WssId": 1826
+    }
+  ],
+  "ScheduleStartDate": "2021-05-19T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Born and raised in Entebbe, central Uganda, Mary was fascinated by astronomy, chemical reactions and how things work. It is the biological sciences that eventually won her over. ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2638,
+  "Modified": "2021-05-19T05:48:37Z",
+  "Created": "2021-05-19T05:46:41Z"
+}

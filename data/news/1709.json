@@ -1,0 +1,121 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "d8606faf-2d8b-4136-87a8-29bb6cae65b7",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fd5b3c9a-fd6d-4e3a-a03f-07270dfac012",
+    "Id": 6327,
+    "Title": "stephen.musyoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "757e9e67-0f23-4ef1-ade0-44195f65009c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1fb4a7fb-f552-4a37-a8d1-ffb4162f07cb",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "b51c347a-a255-47ea-83a8-809a9103ff0e",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6bf22dab-4505-48ee-b6a8-cda31a5a228a",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "90842339-b81c-498a-94c5-488663ed482e",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f87e39c1-e435-4624-bfe9-b10587f17b76",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1709)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "27281a19-1ee4-4905-a8f5-f1dbab7a0c70",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1709,
+  "Title": "Medical College, EA, approved as PACES centre by MRCP(UK)",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU has become the only postgraduate, practical exam centre in Sub-Saharan Africa.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassA18CB7B2629C47FB9B8A598408F8A897\"><div><div><span style=\"font-size&#58;13px;\">\u200bAga Khan University\u2019s Medical College in East Africa (MCEA), through its Department of Internal Medicine, has been confirmed as a practical examination centre for postgraduate medical examinations for the Membership of the Royal Colleges of Physicians of the United Kingdom, <a href=\"https&#58;//www.mrcpuk.org/news/mrcpuk-part-1-now-available-kenya\" target=\"_blank\">MRCP(UK)</a>\u200b, a programme run on behalf of the three Royal Colleges of Physicians of the UK.&#160;</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">This makes the University the first examination centre in Sub-Saharan Africa that can assess the clinical skills, knowledge and interpersonal skills of internal medicine specialists seeking to become members of the renowned UK-based body.&#160;</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">\u201cWe are delighted to be opening our first PACES centre in sub-Saharan Africa,\u201d said MRCPUK\u2019s International Associate Medical Director Dr Donald Farquhar, \u201cMCEA has proven an excellent partner for our organisation and will be able to deliver PACES to the same high standard as is seen in our other multiple international centres.\u201d</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">The approval of MCEA in Nairobi as the 15th international PACES centre came after the chair of the Department of Internal Medicine, Professor Michael Chung, hosted delegates from MRCP(UK) for a \u2018Pathfinder\u2019 mock PACES examination. This involved rigorous training and examining of AKU MCEA faculty at the hospital site, and was led by faculty member Dr Dilraj Singh Sokhi who is the federation lead for East Africa.&#160;</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">Additionally, Dr Sokhi worked with MRCP(UK) to achieve confirmation of a written examinations centre to open in Nairobi in early 2019. This, together with the PACES centre, will allow candidates in the region to sit all elements of the MRCP qualification locally, and to be examined by local physicians on local patients.</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">Commenting on the achievement, MCEA Dean Professor Robert Armstrong said&#58; \u201cThere are a number of advantages to being an exam centre including recognition of the quality of our faculty and institution, the potential in attracting the best candidates to our residency programme, and the fact that candidates who pass this exam can compete for term-limited fellowship positions in the UK.\u201d</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">MCRPUK sets internationally acknowledged standards in the practice of internal medicine. The Federation tests the skills, knowledge and behaviour of physicians via the Membership of the Royal Colleges of Physicians (UK) Diploma, commonly known as the post-nominal MRCP(UK).&#160; This is an internationally recognised qualification and is valued as a significant professional distinction.&#160;</span></div><div><br></div><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001654",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    }
+  ],
+  "ScheduleStartDate": "2018-09-10T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Michael Chung (left), chairman of the department of medicine at AKU, East Africa, and Dr Donald Farquhar, MRCP(UK)'s international associate medical director finalise the agreement. ",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1709,
+  "Modified": "2018-10-11T06:56:45Z",
+  "Created": "2018-09-10T06:54:47Z"
+}

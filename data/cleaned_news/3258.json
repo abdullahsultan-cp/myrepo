@@ -1,0 +1,125 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "9fdd5ca3-70e0-4fff-aee3-f2875795d7b6",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "628ca0a6-ecec-4e18-8a96-92197ecb03bc",
+    "Id": 12827,
+    "Title": "Saman Qureshi"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1b42bbb2-7cdb-448f-a8b4-31d12c7a4050",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "46c029cd-45fe-4065-a0f5-8917d6117b0d",
+    "Id": 12827,
+    "Title": "Saman Qureshi",
+    "EMail": "saman.qureshi@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "898b1a2b-b1be-4190-a44f-d1623d523531",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "bf0a222a-365e-4e1d-b90e-5f03bb9e8b77",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aea8e48e-a4e0-494d-bf1c-3168cbaa7dfa",
+    "Id": 17391,
+    "Title": "Mahnoor Anwar Chaudhry",
+    "EMail": "mahnoor.chaudhry@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3258)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e41357e8-6cf3-4c2c-807e-eff9a84e06cc",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3258,
+  "Title": "AKU alumnus appointed at American Academy of Pediatrics",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr. Saleem Islam appointed as the first Pakistani Chair of AAP Surgery Section.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass4ED4207F69AE43CFBD4C7121BB050EC3\"><div class=\"ExternalClass8CAE362B0C854B49A30E50A9BFF0A411\" style=\"text-align&#58;left;\"><p>Dr Saleem Islam, Chair of the Department of Surgery at the Aga Khan University (AKU) and a distinguished alumnus of our MBBS Class of 1992, has secured his place in history as the first Pakistani to become the Chair of the Surgery Section at the American Academy of Pediatrics.<br></p><p>The Rehbein Statue received by Dr Islam, is traditionally handed down from each Chair to the next, recognizing excellence and leadership within the field. The Academy, boasting a rich legacy spanning 75 years, stands as the oldest pediatric surgery organization in North America.</p><p>Dr Islam's impressive journey, from his medical education at AKU to achieving significant success in pediatric surgery in the US, highlights the global impact of AKU alumni. This distinguished appointment is a testament to his commitment to healthcare and marks a proud moment for the entire AKU community.</p><p>Expressing his gratitude, Dr Islam shared that &quot;<em>t</em><em>he AAP Section in Surgery has a rich and long history of supporting Pediatric Surgical issues - my hope is to be able to move the needle forward in that aspect. I plan to work closely with the many other sections in the AAP to help create new collaborations which will serve our members in the best way possible - as well as ensuring that we have the best plans to tackle the challenging issues facing children's care around the globe! Our motto is \"Together, We heal Children&quot; - we will work hard to make that happen!</em><em>&quot;</em></p></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003137",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "40 years of AKU",
+      "TermGuid": "e5aba257-af6a-453d-be3d-cea4fa037bff",
+      "WssId": 2466
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "6db413d6-a4df-4471-93de-a395835b20dd",
+      "WssId": 2154
+    },
+    {
+      "Label": "Children",
+      "TermGuid": "5debcccf-48ec-46f8-b2cf-3469dc1f30f4",
+      "WssId": 2311
+    },
+    {
+      "Label": "Paediatrics",
+      "TermGuid": "125d0f34-a35b-4610-841d-05672a104e1e",
+      "WssId": 2189
+    },
+    {
+      "Label": "Surgery",
+      "TermGuid": "b0443c13-b5c8-47f8-b638-e3639711ed42",
+      "WssId": 2307
+    }
+  ],
+  "ScheduleStartDate": "2023-11-16T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3258,
+  "Modified": "2023-11-17T06:26:47Z",
+  "Created": "2023-11-16T08:47:05Z"
+}

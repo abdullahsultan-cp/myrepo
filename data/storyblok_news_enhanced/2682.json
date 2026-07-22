@@ -1,0 +1,325 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cecf6785-3cad-407b-abb4-2d38838dcbb4",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "91514266-56ed-4874-ae7e-3d5e0d0cfeac",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2288b641-d4c9-40c1-babb-2873eb26a79c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "441e904f-b9ef-402a-96a2-efedce84aeb7",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3c4dbcce-82aa-4860-991d-dd8e5f8056bd",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "ff5a03d7-46b2-4857-befb-942c1181b514",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "26e839bf-e65b-4b85-a065-5e18cf9ab350",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2682)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4207ce47-9066-42b7-b628-d4679903ec21",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2682,
+  "Title": "Improving critical care by revamping vital signs monitoring ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Startup incubated at AKU seeks to address longstanding problems in vital signs monitoring.  ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Every second counts when treating a critically-ill patient and their vital signs provide valuable real-time insights into whether a patient's health is deteriorating, what treatment should be provided or whether treatment is working."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Despite their essential role in healthcare; the process of measuring, assessing and evaluating vital signs - such as blood pressure, breaths per minute, heartbeats per minute or pulse, and oxygen saturation or oxygen levels present in blood -  is beset by a range of challenges that can potentially harm a patient's health. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The problem with vital signs monitoring is three-fold and relates to hardware, software and the efficiency of workflows,\" says Dr Naveed Pasha, one of the founding members of a startup, Algos Healthcare, incubated at the University's i2S incubator, that is working to improve patient outcomes by revamping the entire system underpinning vital signs."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Take the example of 23-year-old Danish Nawaz* who has been rushed to the emergency room in an ambulance after falling off his motorcycle while driving at high speed. The accident led to Danish fracturing his left leg and suffering from internal bleeding near the wound. While in the ambulance, Danish has suffered a drop in blood pressure due to severe bleeding and an acceleration in his pulse which indicate that he needs a blood transfusion. But since most ambulances in Pakistan do not have vital signs monitors the deterioration in these vitals is only picked up in the emergency room, 10 minutes after the accident. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In the emergency room, nurses place a cuff on his arm for blood pressure, an oximeter on his finger, a series of wires near his pulse and arrange another device to measure his temperature. At this point, a still unconscious Danish is surrounded by a range of devices with nurses and doctors hastily observing and recording readings on a file."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Thankfully his condition hasn't deteriorated, but on average it takes staff a cumbersome five minutes to record vital signs data. These findings then have to be communicated to senior colleagues before treatment can begin. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The ER is already a busy place but the multiple wires, bulky devices and people involved in recording and evaluating vital signs makes coordination and communication more difficult than it should be. \"It would be so much so much easier if there was a single, wearable device, similar to a smartwatch that could capture all vital signs,\" added Dr Naveed."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Once the blood transfusion is complete and Danish's vitals stabilise, he is shifted to the intensive care unit, ICU, for observation and is later taken for an x-ray on his leg and an MRI to rule out head injuries. While vital signs monitoring is continuous in the ICU, Danish is not connected to vital signs monitors when he is shifted for tests."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This leads to gaps in monitoring occurring when a patient is moved between facilities which mean that doctors have no insights into the patient's condition during transit. \"If there is a delay in administering a test or if a test takes longer than anticipated, then there are large periods of time when the patient's vitals could have been deteriorating. Healthcare professionals need systems to ensure continuous vital signs monitoring so that complications can be treated in a timely manner,\" Dr Naveed notes."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The following day Danish regains consciousness and is shifted to a private room where his wound in bandaged and he is administered painkillers. In the room, his vital signs are measured every four hours. While his vital signs were normal when he was shifted to the room, since then his temperature has risen, his pulse rate has accelerated and his blood pressure has fallen. These could be early warnings signs of sepsis -  a common but dangerous infection - or a heart condition. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At Danish's next check-up, the busy doctor quickly looks over the file with his baseline vital signs and deems the existing readings to be within the normal range. While the nurse communicates that his temperature has increased, the doctor has just been paged about a critically ill patient and has to leave."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "On his return, the doctor notices that Danish's temperature has increased further while his blood pressure readings have also fallen. The doctor calls for intravenous fluids and antibiotics to be administered and orders a series of blood tests. The blood work confirms that Danish has contracted sepsis which will require an extended hospital stay."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Most hospitals lack the software and servers that can enable vital signs data to be stored online for instant access by doctors anywhere in the hospital. The availability of these systems would enable doctors to easily interpret real-time trends about a patient's health instead of going through handwritten files which only have readings taken at particular intervals. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Naveed says: \"Improved access to information can reduce the chance of medical error, reduce the length of hospital stay and lower the risk of readmissions.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Over the past two years, Dr Naveed and his team of doctors and engineers have analysed the strengths and weaknesses in existing vital signs monitoring systems. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "They are currently developing a wearable prototype device that seeks to capture all vital signs on a single screen. The device consists of a cuff worn around the wrist, which measures pulse and breathing rate, that is connected to a ring on a patient's index finger via a single wire which measures blood pressure and oxygen saturation. Importantly, this device records data automatically, in real-time. It takes just 30 seconds to capture all vital signs and is being developed to relay data to nearby devices in under a minute.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We foresee each patient wearing this device throughout their hospital stay thereby enabling uninterrupted monitoring of vital signs,\" said Dr Mehdia Nadeem, MBBS '20 and team lead at Algos Healthcare. \"By using bluetooth technology, we hope to transmit this information to nearby devices or a hospital server so that physicians can evaluate the data promptly and conveniently.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The team notes that a similar vital signs monitoring system has been developed in North America which costs hospitals US $5,000 per device. \"The cost of this device is unaffordable for hospitals in low and middle income countries and so we're looking to develop a system that will be available for under US $300 per device,\" Dr Mehdia adds."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Algos Healthcare's team consists of doctors and software engineers from AKU, Habib University and the National Institute of Cardiovascular Diseases who have been working with mentors at AKU's i2S incubator over the past two years."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"We've achieved so many milestones in the development of our project thanks to the connections and expertise that we've accessed through i2S,\" said Dr Mehdia. \"They continue to be an invaluable source of support as we work on perfecting our prototype device.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " * "
+          },
+          {
+            "type": "text",
+            "text": "The individual's name has been changed to protect his identity.",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002580",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Emergency care",
+      "TermGuid": "7b986b82-d175-45c1-a2f1-c6730d853621",
+      "WssId": 2201
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "d4232fec-579a-4466-90f8-21a799d21141",
+      "WssId": 2100
+    },
+    {
+      "Label": "Innovation",
+      "TermGuid": "9b1177f6-ee80-4dce-b188-94f66824c836",
+      "WssId": 2179
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    }
+  ],
+  "ScheduleStartDate": "2021-06-30T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2682,
+  "Modified": "2021-06-30T10:04:18Z",
+  "Created": "2021-06-30T09:57:48Z"
+}

@@ -1,0 +1,93 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "16db8051-4be0-4a34-b537-8bdf34055cb9",
+  "odata.etag": "\"7\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eb9f7365-b685-4766-8d83-ff378231777a",
+    "Id": 6327,
+    "Title": "stephen.musyoka"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/Publisher",
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "81baaf6b-62f6-4b0d-97b2-ada8dc3e5112",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c9925f86-252e-4bec-8858-a7c9a7e3604d",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0b5ceff9-d5d3-44f4-b9c2-0582b89532a8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "359bd627-46b9-47f7-947d-ef6164d3877a",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1573)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d8f6d0db-d16a-4430-b53d-0d717541fef7",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1573,
+  "Title": "Support our expansion in Kenya",
+  "NewsSubTitle": null,
+  "NewsSummary": "Construction contractors invited to submit expressions of interest for our latest project.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassAF1D5DCD529B42C8A7C4817347AABA4A\"><div><span style=\"font-size&#58;13px;\">\u200bAga Khan University is inviting expressions of interest for its new University Centre in Parklands Avenue, Nairobi.&#160;</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">The University Centre development will consist of two multi-storey buildings of twelve and seven floors respectively as well as three basement levels. The new project will support the University\u2019s plans to add new programmes and facilities as it launches new schools of liberal arts and professional education.</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">Expressions of interests are invited from construction companies that have a proven track record in building high-rise institutional projects involving structural, civil, finishing, services and infrastructure work.</span></div><div><span style=\"font-size&#58;13px;\"><br></span></div><div><span style=\"font-size&#58;13px;\">For more details of opportunities, click <a href=\"/news/Documents/AKU-EA-EOI.pdf\" target=\"_blank\">here&#160;\u200b\u200b\u200b\u200b</a></span></div><div><br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001518",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Draft",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2018-03-09T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1573,
+  "Modified": "2018-03-14T12:50:45Z",
+  "Created": "2018-03-09T08:37:33Z"
+}

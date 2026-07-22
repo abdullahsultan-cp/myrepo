@@ -1,0 +1,272 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "66a4a251-98e3-44b4-a242-ed7b6c3611f1",
+  "odata.etag": "\"7\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ad308661-7ead-4355-bc2e-fc36306647ea",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "456f66e8-57a0-44b9-9044-ab9c63b72500",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b7a0d0ca-26dd-4245-b1bf-82f28e969c4d",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d0b3d42f-3232-4f5a-8df7-2690ad1c552b",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c0b28038-56f4-4ac8-8068-f3ddf751787f",
+    "Id": 37,
+    "Title": "Research"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b54ee626-53e2-40c6-87a9-53840ae6c951",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3859)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "71b74b97-f789-44d8-91df-5ab48e9fb19b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3859,
+  "Title": "Pakistan's Heart Crisis - A Window for Prevention",
+  "NewsSubTitle": null,
+  "NewsSummary": "Pakistan faces CVD crisis but young population offers chance for prevention",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistan is facing an alarming cardiovascular disease (CVD) crisis. According to a new viewpoint titled "
+          },
+          {
+            "type": "text",
+            "text": "Pakistan's Growing Heartache",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.jacc.org/doi/10.1016/j.jacc.2025.08.091",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " published in the Journal of the American College of Cardiology (JACC), authored by Dr Unaiza Naeem, a Research Associate at AKU, along with AKU faculty members Drs Sana Sheikh, Unab Khan, Zainab Samad, and Salim S. Virani, reveals that the country has the highest rates of heart disease in South Asia-and among the worst globally."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistan's age-standardised CVD incidence is 648.6 per 100,000 people, while ischemic heart disease incidence is 188.1 per 100,000-both the highest in the region. Cardiovascular disease kills more Pakistanis than any other condition, accounting for 262.4 age-standardised deaths per 100,000."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This is a public health emergency,\" says Dr Salim S. Virani, Professor of Cardiology and the senior author. \"Pakistanis are developing heart disease earlier, often without realising it. Risk factors like high blood pressure, diabetes, obesity, and air pollution are colliding with weak health care infrastructure, creating a storm that threatens the country's future.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Yet researchers argue Pakistan's young population offers a rare window of opportunity. The median age is just 20, projected to rise to 26 by 2050. Preventing risk factors now could avert decades of suffering later."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Today's young people could either become tomorrow's CVD epidemic-or tomorrow's prevention success story,\" notes Dr Unaiza Naeem. \"If we act early, we can save millions of lives and billions in economic losses.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Simple interventions could make a major difference: universal blood pressure screening, affordable medicines, reducing salt and trans fats, and leveraging community health workers for awareness campaigns. Pakistan's recently launched "
+          },
+          {
+            "type": "text",
+            "text": "Programme for the Prevention and Control of Diabetes (2024-2029)",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.pmo.gov.pk/press_release_detailes.php?pr_id=5551",
+                  "target": "_self",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " is being closely watched; if successful, it could expand to address hypertension and other risks."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The burden is compounded by poverty and education. Poor households often rely on cheap, unhealthy food and cannot afford long-term medication. Women in rural areas face extra barriers to care. Air pollution, a leading but under-recognised driver of CVD mortality, affects entire communities, making prevention harder."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Meanwhile, health care remains fragmented. With just 0.9% of GDP allocated to health, most care is private and paid out-of-pocket-pushing families deeper into poverty when faced with chronic disease."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While the crisis is urgent, Pakistan's struggle offers lessons for other low- and middle-income countries (LMICs). It shows how quickly heart disease can spiral if prevention is neglected-but also what is possible when existing community health structures are leveraged, solutions adapted to local realities, and action taken early."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Repurposing the vast Lady Health Worker network for non-communicable disease prevention, experimenting with mobile health camps, and piloting large-scale screening programmes are pragmatic innovations other countries can study."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The authors stress that prevention is the most effective strategy. Citizens, too, have a role: get screened early, eat healthier, stay active, and challenge myths about heart health."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The next decade will decide whether Pakistan turns the tide,\" Dr Virani concludes. \"This is not just a story of crisis-it is a story of opportunity. If we act now, Pakistan can chart a path that other nations can follow.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003725",
+  "LocalApproverGroup": "CA Research Office",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "a6604243-15b8-4aaa-807c-f93aef9763df",
+      "WssId": 2243
+    },
+    {
+      "Label": "Heart diseases",
+      "TermGuid": "9d3570c1-77a9-40a0-af5b-25ecc7620b17",
+      "WssId": 2502
+    },
+    {
+      "Label": "Non-communicable diseases",
+      "TermGuid": "ed18bdf9-dac6-4fa9-9152-c696c0ddd1a0",
+      "WssId": 2250
+    }
+  ],
+  "ScheduleStartDate": "2025-11-26T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3859,
+  "Modified": "2025-11-26T09:38:06Z",
+  "Created": "2025-11-26T07:51:32Z"
+}

@@ -1,0 +1,137 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "8dd4969f-4091-4048-9d7c-f922498e3d8b",
+  "odata.etag": "\"26\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0bcaddbe-db13-41ca-82f1-fe24ceeb122e",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6dbd6abe-9fcd-4cbf-b47e-8c7e01ca1f28",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "14a25efe-9812-416f-b4b0-459b82782192",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "cf1966f9-b971-45eb-ab4b-51bbfb1cd659",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "350241ef-340d-4f18-a8f8-a0713891695f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "57e4698a-dc72-4ed7-9709-f9f59be7e6e5",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "35f11a51-1cc4-4645-8cdb-87f305fbfb62",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(880)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0761ec47-8e6c-48e0-9fe6-c61e52517573",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 880,
+  "Title": "Under-19 basketball, throwball tournaments at AKU",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University (AKU) will host its 3rd Under-19 Inter School/Collegiate Boys Basketball and Girls Throwball tournaments from Friday, February 11, 2005 onwards with an opening ceremony at 3:00 PM at AKU Sports and Rehabilitation Centre. Dr David ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University (AKU) will host its 3rd Under-19 Inter School/Collegiate Boys Basketball and Girls Throwball tournaments from Friday, February 11, 2005 onwards with an opening ceremony at 3:00 PM at AKU Sports and Rehabilitation Centre. Dr David Taylor, Acting Provost, AKU, will be the chief guest."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As many as 16 basketball and 12 throwball teams from various educational institutions in Karachi will participate in the tournaments. Teams will be divided into pools and the tournaments will be played on a league basis with matches being held throughout the week."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Institutions participating in the tournaments are Karachi Grammar School, Aga Khan Higher Secondary School, St. Michael's Convent School, Sultan Mohamad Shah Aga Khan School, The Lyceum,, Muhammadi Girls Secondary School, DA Public School, Foundation Public School, Shahwilayat Public School, Bay View High School, St Patrick's High School, The City School (Darakshan Campus), The City School (Gulshan A-Levels), The City School (PAF Chapter), The City School (Gulshan Senior Girls), St Joseph's Convent School, The Hampton School, Aureole College of Higher Studies, The Educators (Progressive Campus 1) and College of Business Management."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000838",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "aku",
+      "TermGuid": "e5c3ca6a-48c8-406f-86d4-d3cd70856268",
+      "WssId": 1796
+    }
+  ],
+  "ScheduleStartDate": "2005-02-10T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 880,
+  "Modified": "2020-05-03T08:35:38Z",
+  "Created": "2016-12-22T09:36:07Z"
+}

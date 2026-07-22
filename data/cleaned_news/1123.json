@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "fe1aab40-25e5-4a76-925c-c8acd8e4ed8d",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bb2e952d-690e-4ca4-957b-7edb8908d849",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "43bc5988-6848-45bb-bbd8-e792fcc44bfe",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8fb16c92-b522-47fa-bbc5-650e11f1639d",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e4310941-6930-49e1-9711-0e4b784e6c37",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b41a6d13-37b7-4031-8dc8-be30adc041be",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0b6419a3-0dfd-409b-b666-10af1605cb5b",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0d14f0f9-71f1-49fa-a4ff-b494e5501456",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1123)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3a667a16-bfb4-4d55-bbf4-8ee13e4563d5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1123,
+  "Title": "First successful grafting operation of plastic cornea in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr. Asad Abbas performed the first ever successful grafting operation of Plastic Cornea in Pakistan. Dr. Asad Abbas, Senior Instructor, Department of Ophthalmology, Aga Khan University Hospital, operated on a patient whose vision had been impaired du",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassD3FE5ECB8B484531A5C5120D82703D90\"><div>Dr. Asad Abbas performed the first ever successful grafting operation of Plastic Cornea in Pakistan. Dr. Asad Abbas, Senior Instructor, Department of Ophthalmology, Aga Khan University Hospital, operated on a patient whose vision had been impaired due to an accident involving acid.</div><div><br></div><div>Keratoprosthesis, as it is technically termed, is a surgery, which is first of its kind in the subcontinent. Prior to this, the grafting of plastic cornea was done only in a few developed countries.</div><div><br></div><div>Very few centres around the world are geared to perform this surgery either because of lack of training in this field or lack of access to the hardware. Dr. Abbas's recent successful endeavor has placed Pakistan alongside the developed centres of the world.</div><div><br></div><div>Dr. Abbas is trained in Ophthalmology from USA with special interest in corneal grafting and in the grafting of plastic corneas. He also specializes in advanced &quot; PHACO/ NO STITCH &quot; cataract surgery.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001081",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Ophthalmology",
+      "TermGuid": "a5f89f51-a9f8-43b7-b493-b03d7ab9ae2b",
+      "WssId": 1916
+    }
+  ],
+  "ScheduleStartDate": "2002-01-03T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1123,
+  "Modified": "2020-03-10T12:53:02Z",
+  "Created": "2016-12-28T09:40:12Z"
+}

@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "7ecfb3e0-602e-4a61-b89a-f2f2093fd868",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "226e9519-6d2e-4756-ba2b-1c0542b28dda",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ada7a27d-1acc-4397-bc7e-0887b4cdd3cf",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d3ffac84-ca6d-4b72-bde3-b6e17b91d915",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7d84b8c4-5044-4d17-bef3-e6eb7f729a63",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0293ef50-3dc0-418b-b42e-f052fd1cf199",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "67329b8c-c671-4c85-a618-bcf0ce61ddeb",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2430)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cfdc3259-a5f6-4d98-b6f8-2e70d21d13a0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2430,
+  "Title": "IBA and AKU sign MoU",
+  "NewsSubTitle": null,
+  "NewsSummary": "Collaboration to focus on research and innovation initiatives in education and healthcare.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassA95CDD129D184E8D8F4E2CB10153CA1C\"><p></p><div>The Institute of Business Administration (IBA), Karachi and the Aga Khan University (AKU) have signed a memorandum of understanding to collaborate on research and innovation initiatives in education and healthcare. The agreement was signed by IBA Executive Director Dr S. Akbar Zaidi and AKU Vice-Provost Dr Anjum Halai.&#160;&#160;</div><div>\r\n   <br>\r\n</div><div>The MoU will provide opportunities for faculty, researchers, students and innovators at IBA and AKU to explore potential activities ranging from joint research projects and training to professional development programmes and the creation of a shared pool of mentors.&#160;</div><div>\r\n   <br>\r\n</div><div>Dr Zaidi welcomed the agreement between both institutions as it offers enormous opportunities for research, student training and development and innovations. \"Our institutions will have the 'space' to collaborate on projects focusing on big data, knowledge, training expertise and human resources, that can be potentially beneficial locally, nationally and even globally.\"</div><div>\r\n   <br>\r\n</div><div>While addressing the ceremony, Dr Halai emphasised that IBA Karachi and AKU recognise the importance of partnership, of positive academic engagement and the contributions that institutions of higher education can make to the society. \"We share a mutual desire to collaborate on initiatives that can positively contribute and expand upon creativity, innovation and entrepreneurship in education and healthcare.\"&#160;</div><div>\r\n   <br>\r\n</div><div>In closing remarks, Mr Farhan Sabzaali, AKU's Chief Data and Analytics Officer said, \"This agreement should enable both institutions to leverage their expertise in machine learning and data analytics to expand the number and breadth of projects in areas of common interest.\"<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002336",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8dd93db8-03d4-4593-a968-f393ac14206c",
+      "WssId": 1834
+    }
+  ],
+  "ScheduleStartDate": "2020-09-30T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The collaboration will focus on research and innovation initiatives in education and healthcare",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2430,
+  "Modified": "2020-09-30T11:53:19Z",
+  "Created": "2020-09-30T11:49:20Z"
+}

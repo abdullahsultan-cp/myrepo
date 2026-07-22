@@ -1,0 +1,165 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "502167e8-760b-4859-b2af-16ebf62e8a4f",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "24647fc9-e22a-41da-8229-9b4943326f73",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "23ace74e-7e8a-4a6d-b485-dcfea7f960d8",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "defda83e-ca58-4a0f-8a5c-f8987cfe7d4a",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "408d143a-b06d-4e53-a264-2b0682dbb191",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e2c1d460-6e76-4018-a501-1da271be389f",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "71579e80-7040-4246-acc0-d94a144c458c",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "44b71357-5d18-4c65-8e5b-1be5511f8167",
+    "Id": 256,
+    "Title": "Iqra Paintern",
+    "EMail": "Iqra.paintern@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1003)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2ec3a6b7-949b-4266-966c-437164e4e555",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1003,
+  "Title": "The need for physicians specialising in Family Health care",
+  "NewsSubTitle": null,
+  "NewsSummary": "The World Health Organization (WHO) has identified unequal access to disease prevention and care, rising costs of health care, inefficient health care system and lack of emphasis on generalist training as major barriers to equitable health care in de",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The World Health Organization (WHO) has identified unequal access to disease prevention and care, rising costs of health care, inefficient health care system and lack of emphasis on generalist training as major barriers to equitable health care in developing countries. It also acknowledges the central role of Family Physicians in overcoming these barriers,\" said Professor Riaz Qureshi, Family Medicine Consultant and Chair, Department of Family Medicine at Aga Khan University Hospital (AKUH). He was giving a presentation on \"The Central Role of Family Medicine in your Health\" at the monthly public health awareness programme, 'Signs, Symptoms and Care' on June 14, 2003."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Riaz Qureshi said, \"a trained family physician combines knowledge and skills from various medical specialties with a caring and holistic approach, offering accessible high quality and cost-effective care to individuals, family and the community. Challenges in quality health care in Pakistan over the next decade and beyond, require a focussed approach by the relevant governmental and non-governmental institutions in allocating significant funds in their budgets to establish Family Medicine training programs across the country. This strategy will produce the required manpower to provide quality health care at reduced costs in public as well as private health care sectors in the not too distant future.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Qureshi suggested that there is a great need to upgrade the knowledge and skills of the present day practicing general practitioners / family physicians and other specialists on an ongoing basis, with introduction of a fair system of re-certification by the PMDC."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All the four provinces with or without federal support could establish a Medical Education Centre with responsibilities of providing or supervising the infrastructure needed for Continuing Medical Education (CME), including a reliable monitoring system. The funds required for this purpose would be an excellent example of money well spent to raise standards of medical care in Pakistan."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A panel of consultant Family Physicians of AKU, wahich included Dr. Badar Sabir Ali, Dr. Aziz Jiwani, Dr. Marie Andrades and Dr. Raheem Dhanani participated in the questions and answers session at the end of the programme.In his lecture, Professor Qureshi also highlighted the 10 essential qualities of a trained Family Physician, each starting with the letter C."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000961",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Medicine",
+      "TermGuid": "3e73e453-7d46-4c2e-a34e-d0d1b4c1644b",
+      "WssId": 1819
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Family medicine",
+      "TermGuid": "19354fc3-7dae-4b88-af25-0f174ce97f02",
+      "WssId": 1932
+    }
+  ],
+  "ScheduleStartDate": "2003-06-14T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1003,
+  "Modified": "2020-03-12T04:24:52Z",
+  "Created": "2016-12-27T11:43:31Z"
+}

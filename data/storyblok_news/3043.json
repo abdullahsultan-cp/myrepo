@@ -1,0 +1,169 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "30cc5f8c-b0b6-460a-9150-569509dc9f8c",
+  "odata.etag": "\"44\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f232c607-0702-4c81-bf6c-91f1659623b9",
+    "Id": 15201,
+    "Title": "Talha Bin Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "73437b3f-ec85-4aec-94fb-577521c9a595",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0267625d-5834-4b05-ac17-0e8e22fd058d",
+    "Id": 15201,
+    "Title": "Talha Bin Nadeem",
+    "EMail": "talha.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7ce1c263-f8f0-4081-8249-68ce2bf4b075",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cea6004f-e3ef-4793-86de-2f6d5ee9ef6b",
+    "Id": 26,
+    "Title": "Student Affairs and Services"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "57e68f2e-28ac-4d0f-bf6b-06fd1a46bbd5",
+      "Id": 26,
+      "Title": "Student Affairs and Services"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d20c350d-499a-4dc0-bc70-cdcacc51ad00",
+    "Id": 15201,
+    "Title": "Talha Bin Nadeem",
+    "EMail": "talha.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3043)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d3ec9338-3411-475c-b140-bf457a0433cd",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3043,
+  "Title": "MBBS Virtual Orientation 2023",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Office of Student Experience welcomed the MBBS Class of 2027 to the AKU family. They participated in a Virtual Orientation",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Orientation for the MBBS Class of 2027 was held on January 23-25, 2023, in a virtual session. During the three-day Orientation, students were welcomed by the Office of Student Experience - Pakistan. Students were informed of University Policies and Guidelines as well as the Student Code of Conduct and Counselling Services, among others."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dean Adil Haider, Medical College, warmly welcomed the students on Day One and offered words of advice and encouragement. Students then participated in several interactive sessions that addressed their questions, concerns and thoughts. Dr Laila Akbarali, Interim Vice Provost - Student Affairs and Services and University Registrar, expressed her enthusiasm as she concluded the Orientation with hearty congratulations."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The virtual orientation commenced with a Day Zero induction, where students were introduced to AKU's online facilities and Blended and Digital Learning. Students were taught about AKU's student portal and the navigation for AKUROSS. Day One was headlined by the welcome notes by Dean Adil Haider and Dr Laila Akbarali as well as sessions from the Registrar's Office and the Counselling and Service Wellness Office. Day Two was conducted by the Undergraduate Medical Education (UGME)."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Orientation will continue for the students when they arrive in person on campus. It will be taking place from February 22, 2023."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002929",
+  "LocalApproverGroup": "CA Students",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Student life",
+      "TermGuid": "234d0706-cfeb-4f91-8bf6-4debd5ddd9ab",
+      "WssId": 2178
+    },
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    }
+  ],
+  "ScheduleStartDate": "2023-02-06T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dean Adil Haider, Medical College and Dr Laila Akbarali, Interim Vice Provost - Student Affairs and Services and University Registrar",
+  "MediumImageCaption": "Dr. Laila Akbarali, Interim Vice Provost - Student Affairs and Services and University Registrar, welcoming the MBBS Class of 2027.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3043,
+  "Modified": "2023-03-14T07:31:54Z",
+  "Created": "2023-02-06T06:22:09Z"
+}

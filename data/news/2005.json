@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4381b31e-480c-42bf-9b33-2e15f3f705a4",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "931c1492-1483-4c79-9e07-b87c50d6046b",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cd87ed84-b10b-41d8-9596-f0322ecf9627",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "464bae80-2500-48f3-9623-7d43943067b7",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a52919c6-3598-4f12-b81c-dc1903923ef1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "96455622-6515-4e00-817f-2aca0b12efae",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3cbdc3b6-4fc7-4748-b750-cde4a3d32909",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2005)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dc6d0122-7772-4fc3-8104-de4e418c07e9",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2005,
+  "Title": "AKU President receives honorary degree",
+  "NewsSubTitle": null,
+  "NewsSummary": "President Firoz Rasul recognised for his contribution to global education and business.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass5CDBA7C70F4C4B86989BA7BEFF496A13\"><p>\u200bAKU President Firoz Rasul has been awarded an honorary doctorate from the University of Hertfordshire in recognition of his contribution to education and business in the developing world and beyond.&#160;<br></p><p>He was awarded with a Doctor of Science at a ceremony on September 4, 2019 at St Albans Cathedral in the United Kingdom.<br></p><p>President Rasul completed his undergraduate studies at the University of Hertfordshire, graduating with a BSc (Hons) in industrial engineering in 1974, and went on to graduate from the MBA programme at McGill University in Montreal.&#160;<br></p><p>Following this, he held positions with a number of high-profile engineering companies, making a significant contribution in the field of fuel cell technology. In 2006, he was appointed as President of the Aga Khan University. AKU has expanded significantly under President Rasul\u2019s leadership, and now operates campuses, medical centres and teaching hospitals in more than five developing countries, as well as in the United Kingdom.</p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001930",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    }
+  ],
+  "ScheduleStartDate": "2019-09-24T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "President Firoz Rasul recognised for his contribution to global education and business. Photo: University of Hertfordshire",
+  "MediumImageCaption": "President Rasul was awarded with a Doctor of Science by the University of Hertfordshire at a ceremony at St Albans Cathedral. Photo: University of Hertfordshire",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2005,
+  "Modified": "2019-09-24T06:21:49Z",
+  "Created": "2019-09-24T06:19:18Z"
+}

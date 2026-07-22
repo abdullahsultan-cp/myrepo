@@ -1,0 +1,149 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b54b98b5-8514-4bdd-a183-e43521113967",
+  "odata.etag": "\"28\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f1dbc726-3712-4dfd-81e5-86368f0667af",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "568696fa-c989-4b9d-80f4-228d15c84b5f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12d26892-ee75-410e-b2ce-a49d63a11fd2",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3207b3fd-75c1-470f-b5a3-04ff1562281d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "bf018d87-8023-4973-bab4-06177ff21c6f",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "99b049eb-c258-4ee2-90f6-9cb456f160c9",
+      "Id": 15,
+      "Title": "Graduate School of Media and Communications"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "2b4e84e8-de5f-415a-aa1c-b6c0bd18e279",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "19f15f41-89a9-4be3-a4d9-ea85ac8fec27",
+      "Id": 20,
+      "Title": "Institute for Educational Development, Pakistan"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "4d258d3b-d052-41df-a92a-0c62c49518c5",
+      "Id": 10,
+      "Title": "Institute for the Study of Muslim Civilisations"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "0692e6a6-f380-4af3-87d7-99b63c88e99a",
+      "Id": 7,
+      "Title": "Medical College, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "40b75567-62f3-4017-86f1-945fbb34c9e8",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "ad7faa78-04f7-47ca-b8e1-635e0cbc23a5",
+      "Id": 9,
+      "Title": "School of Nursing and Midwifery, East Africa"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "bbdf9e65-476f-4dbc-97fe-1f6749d09f3f",
+      "Id": 8,
+      "Title": "School of Nursing and Midwifery, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9df7a7a6-6010-4327-81bf-86f5ebf9b11c",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2804)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dcd87336-3210-4d22-a368-beaf89f4f366",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2804,
+  "Title": "More than 660 students graduate at AKU's global convocation",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU has committed to be carbon neutral by 2030, announced President AKU Sulaiman Shahabuddin",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>More than 660 students in Pakistan, Kenya, Tanzania and Uganda graduated from the Aga Khan University in a live-streamed Global Convocation Ceremony that was watched by viewers around the world. The ceremony in Nairobi was attended in-person by Princess Zahra Aga Khan and saw the University commit to becoming carbon neutral in its operations by 2030. Climate scientist, author and activist Dr Peter Kalmus addressed the convocation as its chief guest.</p><p>Speaking on behalf of the University's Chancellor, His Highness the Aga Khan, Princess Zahra Aga Khan praised the graduates for the resilience and agility they demonstrated throughout the pandemic and highlighted AKU's contributions to the countries it serves. </p><p>\"Globally, AKU has educated 18,000 individuals,\" Princess Zahra said. \"It cares for more than 2 million patients every year from internationally accredited hospitals and was recently ranked among the top 100 universities in the world in public health. It also serves as a trusted advisor to government and is a powerful advocate for pluralism and women's empowerment. During the pandemic, the value of the University's capacity for cutting-edge inquiry has never been clearer.\"</p><p>The urgency of addressing climate change was emphasized by the speakers. AKU has committed to becoming carbon neutral in its operations by 2030, as has the Aga Khan Development Network as a whole. The University is among the first institutions in Pakistan and East Africa to commit to achieving carbon neutrality. Together with the Aga Khan Health Services, it has developed a unique accounting tool for analyzing its emissions that it is making available to other universities and hospitals at no cost. </p><p>\"We need a huge number of engaged, passionate, courageous climate activists,\" Peter Kalmus said. \"We need to come together, with courage, conviction, and creativity, to stop the meteor that's hurtling toward us. No one is safe from global heating. There is no hiding from it, on this tiny, connected, pale blue dot of a planet.\"</p><p>The Global Convocation Ceremony also featured the inauguration of President Sulaiman Shahabuddin, who became the third president in AKU's 39-year history. </p><p>Calling himself \"profoundly honoured to have been chosen to serve by our Chancellor, His Highness the Aga Khan,\" President Shahabuddin pledged to carry forward the University's mission of creating and applying knowledge to the solution of pressing problems in Africa, Asia and beyond. He cited AKU's cutting-edge research in artificial intelligence, stem cell science, gene editing and child health. He also noted that AKU will be launching new medical and nursing degree programmes in East Africa, building a new Aga Khan University Hospital and University Centre in Kampala and launching a Faculty of Arts and Sciences in Karachi. </p><p>Addressing the members of the Class of 2021 in all four countries, Princess Zahra said: \"No AKU class has worked harder for this moment than you have. The last two years challenged you with lockdowns, quarantines and isolation. In the years to come, you will always be able to look back and draw strength from your achievements during this momentous period.\" </p><p>Adnan Ali Khan, a graduate of the Medical College in Karachi, echoed that sentiment in his valedictory speech. </p><p>\"I can safely say that this class of AKU graduates will be one of the most tenacious, resilient and open-minded groups of professionals to come from this institution,\" he said. \"I think I speak for my entire class when I say this: We are ready.\"</p><p>Students received diplomas and degrees from AKU's Medical Colleges, Schools of Nursing and Midwifery, Institutes for Educational Development, Graduate School of Media and Communications and Institute for the Study of Muslim Civilisations.<br/></p>",
+  "PullQuote": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\"><a href=\"https://twitter.com/hashtag/AKUConvocation?src=hash&amp;ref_src=twsrc%5Etfw\">#AKUConvocation</a> featured the installation of President Sulaiman Shahabuddin, who is the third president in AKU's 39-year history.<br><br>Congratulations, President Shahabuddin <a href=\"https://t.co/8l7L8p1fXk\">pic.twitter.com/8l7L8p1fXk</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/1498285607348412419?ref_src=twsrc%5Etfw\">February 28, 2022</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002698",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "cce8a407-322b-4bb8-8a4f-df6c93c38873",
+      "WssId": 2165
+    }
+  ],
+  "ScheduleStartDate": "2022-02-26T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Princess Zahra Aga Khan, chief guest Peter Kalmus and President AKU Sulaiman Shahabuddin addressed the convocation ceremony",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2804,
+  "Modified": "2022-03-11T05:50:37Z",
+  "Created": "2022-02-26T14:02:26Z"
+}

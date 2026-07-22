@@ -1,0 +1,160 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "29efce8a-139b-4d00-99f8-768a7d18059d",
+  "odata.etag": "\"14\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5dbbd465-40bd-494a-b631-9055644eb45f",
+    "Id": 19,
+    "Title": "Hiba Khan"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5d402bc7-4b01-458d-8c03-609ee9876984",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c9a797b-828b-4593-aed9-f8ae2ae2ad99",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "23c8e66a-d5be-4b6d-be55-fc8a562e44c0",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "2d256a33-0413-4be7-b202-567df98ede7b",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "cda4b34b-7198-4f94-b9d4-61b28c3f8547",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f7d4741f-2c15-4a39-8ad7-6d4460f325fe",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(245)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "eb0b7c39-c0b1-44eb-9545-2c93d70f80f9",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 245,
+  "Title": "AKU Faculty invited as global faculty for FAIMER Institute ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Muhammad Tariq is invited to serve as a Global Faculty for the FAIMER Institute as a Project Advisor for FAIMER fellows",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr. Muhammed Tariq, Associate Professor at AKU, has received an invitation to be part of the Global Faculty at the prestigious Foundation for Advancement of International Medical Education and Research (FAIMER Institute) for the period March 2017- February 2019. In his role as a Global Faculty, Dr Tariq will serve as a Project Advisor for FAIMER fellows during residential and distance learning periods."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Tariq has also previously been associated with FAIMER having received the International Fellowship in Medical Education award from FAIMER to pursue a Master's Degree in health professions education from Maastricht University, Netherlands in February 2012. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In recent years, Dr Tariq has been working collaboratively with University leadership, colleagues in Pakistan and FAIMER, with an aim to establish a FAIMER Regional Institute in Pakistan to support and strengthen health professions educators and their institutions in the region, with a focus on personalized learning, mentoring and network-building, using real-life projects as laboratories for applying knowledge and skills."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Tariq currently serves as the Head of the Section of Internal Medicine in the Department of Medicine; Interim Associate Dean-Education of the Faculty of Health Sciences; and the Interim Chair of the Department for Educational Development at AKU. He has been actively involved in academic and teaching activities for postgraduate trainees and undergraduate medical students and has received AKU's Outstanding Teacher Award (2007 and 2014) and the Best Teacher Award from the Department of Medicine (2007, 2011 and 2016) in recognition of his efforts."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The FAIMER Institute is a non-profit foundation committed to improving world health through education. It was established in 2000 by the Educational Commission for Foreign Medical Graduates (ECFMG®). In partnership with ECFMG, FAIMER promotes excellence in international health professions education through programmatic and research activities."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000209",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "medical college",
+      "TermGuid": "118448c6-bff0-439d-a695-38bd1ab9d603",
+      "WssId": 729
+    },
+    {
+      "Label": "pakistan",
+      "TermGuid": "24cce6aa-8a06-4c69-8674-463a1a4a529a",
+      "WssId": 724
+    }
+  ],
+  "ScheduleStartDate": "2016-08-09T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 245,
+  "Modified": "2016-08-09T09:41:14Z",
+  "Created": "2016-08-09T05:46:25Z"
+}

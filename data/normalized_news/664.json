@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "af43c7dd-fea3-4cfa-baed-12df07a7da59",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "77947717-42f2-4a9c-ba89-7c1d31a46a2e",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c4c1746c-68fa-4fc4-9f25-036ff487c4be",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "79cec526-c4d1-4573-a141-248d850777f7",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "b5570cbe-9dd2-43d3-9703-aff788962521",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c28be6df-d6a2-4225-817e-aea0a1d02b91",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "144fedc5-d40b-425b-9cf5-26035186ea0d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a45557a-7316-466b-a38d-a3a1edd79d0e",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(664)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a1624a6b-c483-47f9-834c-1403ef20760f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 664,
+  "Title": "Dr Waris Qidwai selected as the Vice-Chairman of International Federation of Primary Care Research Networks (IFPCRNs)",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Waris Qidwai, Associate Professor, Department of Family Medicine, Aga Khan University (AKU) has been selected as the Vice-Chairman of International Federation of Primary Care Research Networks (IFPCRNs).",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Dr Waris Qidwai, Associate Professor, Department of Family Medicine, Aga Khan University (AKU) has been selected as the Vice-Chairman of International Federation of Primary Care Research Networks (IFPCRNs). The Federation is set up under the Task Force on Research of World Body of Family Doctors (WONCA). It has over 150 members from around the world and its mandate is to promote Primary Care Research around the globe.</p><p>Dr Qidwai is a founding member of IFPCRN and has remained a Member of the Steering Committee till his recent selection as Vice-Chairman. He represented Middle East and South Asia region on the Steering Committee and promoted Primary Care Research in the region with setting up of research networks in Bangladesh , India , Sri Lanka and the UAE. Several research papers have come out of these initiatives.</p><p>Dr Qidwai has led a group of 37 IFPCRNs members that has written a paper on the present status and future role of family doctors. He earlier contributed in the writing of a paper on the role of family doctors in Primary Care Research, also written at the federation.</p><p>Dr Qidwai's selection as Vice-Chairman, International Federation of Primary Care Research Networks (IFPCRNs) is an honour for Pakistan as well as AKU.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000622",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Family medicine",
+      "TermGuid": "a5df69d4-3933-4cb6-bd4c-94a5a38894f7",
+      "WssId": 1507
+    }
+  ],
+  "ScheduleStartDate": "2007-06-06T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 664,
+  "Modified": "2017-02-22T08:54:42Z",
+  "Created": "2016-12-15T07:05:00Z"
+}

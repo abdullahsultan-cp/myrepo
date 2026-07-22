@@ -1,0 +1,183 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "17c254e2-2517-4284-b769-18a9788097fa",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4a979c2f-2ac0-4898-8a3b-1f761d3ab0d4",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d54744c3-fc21-45b2-a4cd-37d77861cc0e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7ae9cb92-77b0-4fff-8223-e78de2b537b1",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "f40c8894-2483-430a-9267-fab629aaeb31",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "81d040b2-fcb2-45b7-8775-e974f4fcbf90",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "15a28a40-dc6a-4315-a5f5-eebd7bef0104",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6beda6b7-871e-4996-8a2b-9fed8f9d8dd3",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(104)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f675e664-e888-4fe6-b275-ded6601d70ca",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 104,
+  "Title": "SESEA project: 57 educators awarded certificates",
+  "NewsSubTitle": null,
+  "NewsSummary": "Fifty-seven school teachers from Kwale & Kilifi were awarded a Certificate in Education by AKU's Institute for Educational Development, East Africa under the SESEA project.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Fifty-seven pre-primary and primary school teachers from Kwale and Kilifi were awarded a Certificate in Education by the Aga Khan University's Institute for Educational Development, East Africa under the Strengthening Education Systems in East Africa (SESEA) project funded by the Government of Canada and the Aga Khan Foundation Canada. The education certificates were for Teaching, Learning and Assessment and for Literacy and Numeracy in Early Years specializations."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "SESEA has so far supported the professional development of 170 pre-school and lower primary school teachers and head teachers in Kilifi and Kwale Counties, with the aim of training additional 90 education professionals to sustainably improve learning outcomes and strengthen the overall education system in coastal Kenya."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Kwale County has seen improved access, gender parity, increased pre-primary units and enrollment, improved teacher qualifications which has had a major impact on the levels of literacy and numeracy,\" said Professor Joe Lugalla, Director, IED, speaking at the graduation ceremony. \"We will soon see 261,000 pre-primary and primary pupils putting their new skills into practice in schools along the coast of Kenya,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Government of Kenya, through the Ministry of Education, has been providing support in delivering these education initiatives, which started in Kilifi in early 2013 and in Kwale in 2014. \"We appreciate the support of the Aga Khan Development Network, the University and the Foundation and the change it has brought to our county through the SESEA project. The results are already visible,\" said Mr. Bernard Kimachas, Director, Kwale Teachers Service Commission who was also the guest of honor."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Abdallah Mwasuntu, a graduate from Kwale, was very positive about the training. \"The SESEA project offers courses that address gender imbalances in education where gender is integrated in the teaching, learning and assessment. This helps increase the performance as well as the number of women and men pre-primary and primary educators.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When SESEA AKU found you, you may have the skills needed but you must have realized with the short courses and knowledge that you have received, you are now able to break away from the struggles in your schools and your power is immense\" said Mr. Patrick Sikana, Director, SESEA Project Coordination Unit citing Moses' story from the bible reminding graduates that they now have the knowledge in their hands and must use that because that is what SESEA is all about."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his closing remarks, the AKU-IED, EA Director congratulated all who completed the certificate courses, urging them to use the new skills they attained to make a difference in their communities.\""
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000074",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "3c7fe025-1b57-4d4f-9730-a98e0e1c388b",
+      "WssId": 1478
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 104,
+  "Modified": "2017-02-22T07:06:11Z",
+  "Created": "2016-05-17T07:14:55Z"
+}

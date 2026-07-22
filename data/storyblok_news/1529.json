@@ -1,0 +1,225 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "415538ea-b2c1-4193-b669-fa578fe4162d",
+  "odata.etag": "\"13\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "15cff306-c41b-4eed-b394-6758eb2daf99",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e12fb885-9e33-4b1b-bf22-fad4d833adb9",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de9ca6c8-0c51-404f-93dc-85f8b18f1e2f",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "1a3e4a28-af9a-48b0-aacf-94a37441f927",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "df823339-0971-4ab2-a7a6-383dcac885b9",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b7188e29-9d08-44eb-9adc-7a8a26ac3b7b",
+    "Id": 8,
+    "Title": "School of Nursing and Midwifery, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8877220b-831d-4b3f-ab21-ab54ba7d98ca",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1529)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8a61e81e-fe09-4d35-8a1b-d681e20e8639",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1529,
+  "Title": "AKU announces admissions with a new degree programme for midwives",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aga Khan University has announced admissions to its various academic programmes, including the recently added Bachelor of Science in Midwifery (BScM) that is Pakistan's first higher education midwifery programme.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University has announced admissions to its various academic programmes, including the recently added Bachelor of Science in Midwifery (BScM) that is Pakistan's first higher education midwifery programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The BScM programme will prepare its graduates to provide mothers with care through pregnancy, childbirth, and post-delivery besides sharing advice on newborn and infant care, and family planning."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This programme is aimed at nurses who have completed a Diploma in Midwifery and are looking to improve their knowledge and advance their career in this field. Women are eligible to apply regardless of their age or marital status. The University is committed to women's development and is geared to provide additional preparation to candidates who the University feels will benefit from the extra help before the start of the formal BScM programme,\" said Dr Rafat Jan, Director, BScM."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Other programmes offered include Master of Science in Health Policy and Management, Epidemiology and Biostatistics, and Nursing; Master of Education; and Master of Health Professions Education; Advanced Diploma in Health Professions Education, and Human Development; Bachelor of Science, and Post-RN Bachelor of Science in Nursing; and Bachelor of Medicine and Bachelor of Surgery."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's Registrar Lou Ariano said that the University operates a needs/means blind admission policy, that is, admissions to all its programmes are based on individual merit and leadership potential. These attributes are assessed for each candidate and comprise test scores, interview evaluations, interests, student's individuality and distinctive qualities, which are all taken into consideration in comparison with the student's peers. During the entire selection process, no reference is made to a candidate's financial background. There are no quotas or reserved seats, and no admissions against donations."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The University also operates a generous financial assistance programme for students who are unable to afford the tuition and other expenses. The University subsidizes the cost of tuition. Tuition fees are, on average, at a quarter of the actual cost. This means that, on average, every student receives a 75 per cent tuition fee subsidy. Besides the subsidy, almost half of the current students receive some form of assistance,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Mumtaz Khosani, a nursing student, said that she chose AKU because it is an international university that offers high standard education with an ideal environment for learning."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Student and campus life at AKU isn't all about the classroom. Student activities are an integral part and are usually organized by the student committees,\" said the Senior Associate Registrar, Dr Laila Akbarali."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The University has a Sports and Rehabilitation Centre on campus, which offers a health and fitness gymnasium; basketball, badminton, volley ball and net ball gymnasium; tennis and squash courts; an aerobic studio offering a diverse range of classes; swimming pool; and football and cricket grounds. The University also provides hostel facilities for over 500 students who live outside Karachi."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year, the University has made special arrangements for individual counselling by AKU career guidance officers on January 28, 29 and 30 from 10:00 am till 5:00 pm at the Admission Office on the Stadium Road Campus in Karachi."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001475",
+  "LocalApproverGroup": "Sonam PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Midwifery",
+      "TermGuid": "04c22a46-cc85-4657-85d3-c8826c1615a6",
+      "WssId": 1376
+    },
+    {
+      "Label": "Admission",
+      "TermGuid": "06ba9f07-b61d-4641-84be-4541a5c2abba",
+      "WssId": 1441
+    },
+    {
+      "Label": "students",
+      "TermGuid": "7ae63653-ff72-4bfa-86af-c6ce13f7a2b3",
+      "WssId": 1474
+    },
+    {
+      "Label": "Nursing",
+      "TermGuid": "770165ec-c858-4c3a-b152-ff70b540aea9",
+      "WssId": 1377
+    },
+    {
+      "Label": "pakistan",
+      "TermGuid": "21c19a09-76d4-43e6-b824-01639d49334e",
+      "WssId": 1490
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "1b91e832-4981-4505-9dc2-3803fc8ce3f5",
+      "WssId": 1499
+    }
+  ],
+  "ScheduleStartDate": "2014-01-20T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1529,
+  "Modified": "2018-02-19T09:09:35Z",
+  "Created": "2018-02-16T07:13:46Z"
+}

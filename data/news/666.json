@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "efee8865-e47d-4c69-bd28-edb04eed77ce",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fb0dd50e-72ef-4685-9f13-bbbef0528684",
+    "Id": 20,
+    "Title": "volunteer.pa"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d40508f5-5d99-4f33-8ae7-5c6d14128cd4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "df21a8ab-be8a-4824-8811-bdc458376500",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "fc3d6e21-bedd-4374-bbad-3995e2f0f599",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c0ba7f85-39ad-455d-a47c-2c1c81a188d0",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6bd748c2-c5d8-47af-950b-a8523e94aa45",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f5a3678b-ffac-4b7b-b92d-fb277c755149",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(666)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f24dbbc2-e2ee-4550-8526-68444b89b3e4",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 666,
+  "Title": "Seminar on English Language and Empowerment in Developing World at AKU",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU's Centre for English Language has organised the seminar with the objective of addressing issues related to the critical role of English language and empowerment.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassC3C4EB4297D64FAAAF70688E44CCBCA2\"><div>\u200bAga Khan University (AKU) will host a two-day seminar on 'English and Empowerment in the Developing World' on June 9 and 10, 2007. Dr Atta-ur-Rahman, Advisor to the Prime Minister on Science and Technology and Chairman Higher Education Commission, will be the chief guest on the occasion.&#160;</div><div><br></div><div>AKU's Centre for English Language has organised the seminar with the objective of addressing issues related to the critical role of English language and empowerment. Sub-themes of the seminar include English in the global perspective, links between English language and employment, economic factors in language planning, language and gender, politics in language teaching, language and culture, English for specific purposes, teacher education, Integrated Communication Technology (ICT) and language education, and cross cultural communication.</div><div><br></div><div>Researchers and teachers involved in various aspects of English Language Teaching (ELT) will share their experiences, challenges and research; critique new ideas and approaches; and establish links with other universities teaching English in Pakistan and abroad. Eminent ELT experts from Pakistan and abroad who will be participating include Dr Tariq Rehman, Mr Ghazi Salahuddin and Mr Faisal Karim Siddiqi from Pakistan; Dr Bahman Gorjian from Iran; Ms Hazel Owen from UAE; Professor Maya Pandit from India; and Dr Edith M. Esch, Mr Tony Wright, Dr Richard Smith and Mr Graham Hall from UK.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000624",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "aku",
+      "TermGuid": "c05306ff-7fa0-4de9-897f-297f0c8c6db3",
+      "WssId": 1475
+    }
+  ],
+  "ScheduleStartDate": "2007-06-02T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 666,
+  "Modified": "2017-02-22T08:54:52Z",
+  "Created": "2016-12-15T07:09:24Z"
+}

@@ -1,0 +1,169 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "194abf01-7b20-448d-83b6-67ecc15646af",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "591560a4-6c0c-45cc-aa64-d1afdd8285b5",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "32d9d4ec-a233-4854-a234-b99286b12972",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "59a20907-279b-47bf-9fca-a6f145310397",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "229511d7-88f0-42af-aade-c307c71b008d",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "81f19b35-341d-4222-aad5-966a04f1b544",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "8a2f21c7-4042-4224-b0f0-b20492649637",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7805f683-f400-4b1d-be17-d0308c954d63",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(911)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8509d93e-7ad9-47cb-8e6e-9c1122fe1fa0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 911,
+  "Title": "Fourth congress of Pakistan Society of Hepatology Hepatitis B and C Endemic to Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Pakistan is an endemic country for both hepatitis B and C. Roughly five per cent of Pakistanis are carriers of hepatitis B and the figure for hepatitis C is even larger. These findings were disclosed during the opening day of the 4th Annual Meeting o",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistan is an endemic country for both hepatitis B and C. Roughly five per cent of Pakistanis are carriers of hepatitis B and the figure for hepatitis C is even larger. These findings were disclosed during the opening day of the 4th Annual Meeting of the Pakistan Society of Hepatology, held at Hotel Pearl Continental, Karachi, on September 3 2004. The theme of this two-day Congress is chronic viral hepatitis."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "National and international speakers attributed the rising incidence of hepatitis B and C to poor awareness and lack of basic health care and screening facilities. Speakers in the morning session pointed to the multiple use of disposable needles and syringes, substandard transfusion services, quackery and poor dental health care. The experts stressed that if blood banks were better organised, syringes were discarded properly and dental treatment was performed with sterilised equipment, incidence of the two diseases would decline dramatically."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participants were informed that the effective vaccine now available for hepatitis B should be administered to all newborns on the day of birth. \"If this were done, incidence of hepatitis B would decrease substantially over the next decade or so,\" a speaker added. \"Otherwise the epidemic will persist in the long term and the population at large will suffer.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The afternoon session was dedicated to a symposium on the current management of hepatitis C. Leading physicians maintained that if the disease is detected in time, chances of effecting a cure with the currently available treatment, which is based on Interferon and Ribavarin, stand at almost 80 to 90 per cent. This treatment is, however, expensive. \"But the disease cannot be cured if it progresses to the cirrhotic stage, and all the complications associated with cirrhosis will develop over time,\" a speaker said. \"Emphasis, therefore, should be placed on timely diagnosis and appropriate treatment.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Formally inaugurating the Congress early in the evening, chief guest Professor Jan Mohammad Memon, Vice Chancellor of Liaquat University of Health Sciences, Jamshoro, stressed prevention aspects as well as the role of doctors and health care facilities in Pakistan. This session, attended by over 400 participants, was also addressed by Professor Sibtul Hasnain Syed of Allama Iqbal Medical University, Lahore; Professor Mohammad Umar of Holy Family Hospital, Rawalpindi; and Professor Wasim Jafri, Dr Hasnain Ali Shah and Dr Shahab Abid of the Section of Gastroenterology, Department of Medicine, Aga Khan University Hospital, Karachi."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "All speakers reiterated the need to improve the country's health infrastructure and urged both the government and NGOs to play a larger role in the control of viral hepatitis. This was followed by a symposium comprising two teleconferences with speakers in India and the UK who highlighted various aspects of the treatment of hepatitis."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000869",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Hepatitis",
+      "TermGuid": "53324a30-4d5d-42ff-852e-2fb2a9f7a9d5",
+      "WssId": 1894
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2004-09-02T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 911,
+  "Modified": "2020-05-02T17:39:45Z",
+  "Created": "2016-12-23T10:28:50Z"
+}

@@ -1,0 +1,187 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "038ab575-394c-4b4b-88b2-38fb70e067ee",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b32952f2-8589-44f3-be8c-176763fd87b1",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "99f1da80-3a24-4cda-bb4e-95e8c4bd539f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c9af53eb-18aa-4b7b-a2f7-33c6e17543b2",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "f7c092f4-6c49-4047-aee4-0038010a5210",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "c730d515-9f3e-459d-84c4-429c45c453cc",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4b3b1bc1-180f-4e98-b99a-e6613cee9b52",
+    "Id": 14,
+    "Title": "East Africa Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "00ccb550-275b-4f28-a166-3e163ccf7830",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(269)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fd4ee172-0f56-4d95-81ad-f8d057a67f53",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 269,
+  "Title": "Tanzania's entrepreneurial and optimistic youth lack opportunity",
+  "NewsSubTitle": null,
+  "NewsSummary": "East Africa Institute releases Tanzania Youth Survey report",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There's good news and bad news in a recent survey of 1,939 rural and urban Tanzanian youth. The good news: Tanzanian youth are not freeloaders, waiting upon government for jobs; a majority of them are entrepreneurial and would like to start and own business. The bad news: far too many are willing to be corrupt in order to be wealthy. About 60% of the youth surveyed said it doesn't matter how a person makes money, as long as they do not end up in jail. And 44 % said they would easily take or give a bribe."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Clearly, we have a huge reservoir of corrupt or corruptible youth, who are not beholden to the ideals of the founding fathers of Tanzania\" says Dr Alex Awiti, Director of the East Africa Institute, a part of The Aga Khan University, who commissioned the survey; \"And they have a penchant for impunity.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the same time, these youth say their faith is their most cherished value (75%), followed by hard work and family. They view the future with optimism and high expectations, with many more wishing to go into business (50%), than traditional careers (25%), or farming (20%)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Our youth need to hear the truth about corruption, especially from the people and institutions they trust the most: government, faith leaders and family,\" says Awiti. \"They need to be told that Tanzania's recent economic growth would've been greater if corruption were absent, that corruption inhibits opportunity rather than enables it, and that integrity is a fundamental, universal value.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With a need to share and establish the basis for critical, evidence-based research President of the Aga Khan University, Mr Firoz Rasul acknowledged the pressing need for an entity like the EAI asserting that a unique and dynamic regional platform for research, capacity building and public engagement is not only necessary but the mandate of an academic institution that wants to positively influence and develop policies for progress. With the capacity to bring together people, institutions and tools necessary to harness East Africa's opportunities and grapple with its urgent challenges including the youth bulge, young cities, food systems, growth and inequality, and extractive resource endowments, the EAI as an entity focused on East Africa strives to accord not only well explored and developed research, but also provide a platform for multiple -levels of dialogue to take place; the core to develop a thriving, pluralistic society ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Awiti believes the survey supports the increased focus on anti-corruption measures taken by the government of President John Magufuli and civil society, but \"our anti-corruption messages to youth should be coupled with education to channel their dreams of starting businesses and succeeding-while playing by the rules and being rewarded for it.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The East Africa Institute released additional survey data and hosted a roundtable discussion with Awiti and other young leaders from the public and private today at the 11th of October 2016 from 9am to 2pm at the Julius Nyerere International Convention Center in Dar es Salaam, Tanzania."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Reinstating the mission of the EAI the President Rasul asserted that the aim of the data and the launch is to provide a coherent and impartial evidence-based platform to inform policy formulation, decision-making and action to address the challenges and harness the opportunities for adaptive and sustainable social and economic development while ensuring a resilient environmental resource base."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000232",
+  "LocalApproverGroup": "EAI News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Tanzania",
+      "TermGuid": "5a6d31f1-21a8-4c0b-bd6d-b608eaf4ec1c",
+      "WssId": 1611
+    },
+    {
+      "Label": "East Africa Institute",
+      "TermGuid": "0053265c-548e-4bbb-98dd-e7861324fc9e",
+      "WssId": 1693
+    }
+  ],
+  "ScheduleStartDate": "2016-10-11T13:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 269,
+  "Modified": "2018-01-25T11:25:57Z",
+  "Created": "2016-10-11T18:43:00Z"
+}

@@ -1,0 +1,346 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f3084d17-300d-4cd1-b0d6-d4ed752d15ee",
+  "odata.etag": "\"44\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "65bc0346-3e67-483e-9777-31e8fc71b44a",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "55070bc8-5c50-4b2a-84ab-3cf91fb4617c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "39119f1a-4f78-4717-991a-531e4dbe0824",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "f1904f56-e705-4d2f-b072-b58633f155d4",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d14c898d-d992-48da-b8dd-9f66e80c2c2c",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2e8f52a4-87ec-4276-86a7-c3442727f8b2",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a6f8238c-2e8b-4ac4-80b3-ac87bc7cc189",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1213)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3aa4a478-e8f9-4079-960c-8c1d49985442",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1213,
+  "Title": "President of Pakistan confers national awards on AKU faculty",
+  "NewsSubTitle": null,
+  "NewsSummary": "Sitara-i-Imtiaz and Pride of Performance Award for Professors Enam and Bhutta",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As part of national celebrations on Pakistan Day on 23 March 2017, President Mamnoon Hussain conferred national awards to those who have made exceptional contributions to the country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The recipients included two faculty members of the Aga Khan University: Professor Syed Ather Enam, Chair, Department of Surgery, and Professor Zulfiqar Bhutta, Founding Director, Centre of Excellence in Women and Child Health, AKU and Co-Director, SickKids Centre for Global Child Health, Toronto."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Enam has been awarded Pakistan's third highest civilian award, the Sitara-i-Imtiaz, for his work in the field of medicine.",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He received his award from the President of Pakistan at the ceremony in Islamabad."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since Professor Bhutta was in Canada, he was conferred the President's Pride of Performance Award by Tariq Azim Khan, the High Commissioner for Pakistan, at a special ceremony on the occasion of Pakistan's National Day in Ottawa. The event was attended by a large number of diplomats and representatives of the Canadian government and civil society."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Enam honed his surgical expertise in the US for 12 years before returning to Pakistan to join AKU as an associate professor in Neurosurgery in 2003, and developed a state-of-the-art neurosurgery programme that has trained a new generation of surgeons for Pakistan. Dr Enam has published acclaimed research on brain tumours and is an expert in minimally invasive spine surgery."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Enam has previously been awarded the Excellence Award in Neurosurgery by the Pakistan Society of Neurosurgery in 2004, the Physician of the Year Medallion Award by St Joseph's Mercy of Macomb Hospital, USA, in 2002 and the Outstanding Resident Award by Henry Ford Hospital, USA, in 1998. He is a life member of Sigma Xi, a scientific research honor society, as well as founding president of the Pakistan Society of Basic and Applied Neuroscience."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I'm honoured to receive the award and glad to have laid the foundations for neurosurgical research and training at one of Pakistan's leading hospitals,\" said Dr Enam. \"The award may be given to an individual but it actually reflects on the institution and each member of AKU family.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Bhutta has been honoured with a Pride of Performance Award for his contributions to healthcare education.",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Bhutta has had a 30-year long academic career at the University and the global impact of his work has seen him take up prominent positions at leading universities in Canada, the UK and the United States. An expert on nutrition, newborn and child survival, and micronutrient deficiencies; he has published several books, book chapters and indexed publications."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Between 2003 and 2014, Professor Bhutta served as the Founding Chair of the National Research Ethics Committee of the Government of Pakistan. He has also been a member of the Independent Expert Review Group (iERG) appointed by the UN secretary general to monitor global progress in maternal and child health Millennium Development Goals between 2011 and 2015."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He is also the recipient of"
+          },
+          {
+            "type": "text",
+            "text": " The World Academy of Sciences 2016 TWAS Prize",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/Pages/News_Details.aspx?nid=NEWS-000244",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in medical sciences, "
+          },
+          {
+            "type": "text",
+            "text": "the Geneva Forum for Health Award for 2016",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/Pages/News_Details.aspx?nid=NEWS-000196",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", and "
+          },
+          {
+            "type": "text",
+            "text": "the 2015 International TÜBA Academy Prize",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/Pages/News_Details.aspx?nid=NEWS-000073",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in health and life sciences."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking at the ceremony in Ottawa, Professor Bhutta underscored the need for global justice and equity in child health and the enormous support from AKU and the Government of Pakistan that made it possible for his team to work in deprived areas of the country."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Ather Enam receives his award from the President of Pakistan: ",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "Video",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "http://www.ptv.com.pk/public/userView/ptvNews/urduVideoDetail/3114",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              },
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " 46:14",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "<blockquote class=\"twitter-tweet\" data-lang=\"en-gb\"><p lang=\"en\" dir=\"ltr\">Profs Enam &amp; Bhutta receive their awards at President House in Pakistan &amp; Pak High Commission in Canada <a href=\"https://t.co/JRFUQNOi5x\">https://t.co/JRFUQNOi5x</a> <a href=\"https://twitter.com/hashtag/PakistanDay?src=hash\">#PakistanDay</a> <a href=\"https://t.co/lLldsKvqY0\">pic.twitter.com/lLldsKvqY0</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/845260546979086336\">24 March 2017</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n\n<blockquote class=\"twitter-tweet\" data-lang=\"en-gb\"><p lang=\"en\" dir=\"ltr\">Prof Bhutta received President's Pride of Performance Award from the High Commissioner for Pakistan at a <a href=\"https://twitter.com/hashtag/PakistanDay?src=hash\">#PakistanDay</a> ceremony in Ottawa <a href=\"https://t.co/Zbf3pwFfYL\">pic.twitter.com/Zbf3pwFfYL</a></p>&mdash; Aga Khan University (@AKUGlobal) <a href=\"https://twitter.com/AKUGlobal/status/845341472866099206\">24 March 2017</a></blockquote>\n<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001167",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    }
+  ],
+  "ScheduleStartDate": "2017-03-24T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "President of Pakistan confers Sitara-i-Imtiaz on Professor Syed Ather Enam (left) and Pride of Performance Award on Professor Zulfiqar Bhutta (right).",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1213,
+  "Modified": "2018-06-20T05:15:09Z",
+  "Created": "2017-03-24T09:02:45Z"
+}

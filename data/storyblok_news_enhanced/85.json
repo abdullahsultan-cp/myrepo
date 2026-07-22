@@ -1,0 +1,222 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "bada2688-1e87-4538-826b-90a0fe4278ef",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5ba98e36-745e-4089-8eee-bdc5d70d6467",
+    "Id": 256,
+    "Title": "Iqra Paintern"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ee8a9b8f-ed77-41a7-9e3a-2b737e53ba2c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f7db7820-a2df-4a27-8763-684b7fc0bf14",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "99138e21-9c39-4372-8429-5ed56ae29355",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "82fe7335-e122-407c-a96a-1b68848a0872",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7b22395f-6e10-473d-8da1-0d1638070e07",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6fe3701b-5ab4-4779-8cf4-db8634cf545d",
+    "Id": 73,
+    "Title": "Akber Iqbal",
+    "EMail": "akber.iqbal@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(85)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b671801d-68c2-43ce-a720-92f8d955bb52",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 85,
+  "Title": "Alumnus's research sheds light on eye disease",
+  "NewsSubTitle": null,
+  "NewsSummary": "Since graduating from the Aga Khan University in 2013, Dr Tahreem Aman Mir has been researching eye disease with the goal of countering factors that can cause vision loss and even blindness.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since graduating from the Aga Khan University in 2013, Dr Tahreem Aman Mir has been investigating eye diseases, which can cause disability and even blindness."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Based at Johns Hopkins University's Wilmer Eye Institute, Dr Mir has been part of the clinical trial team looking into retinal vein occlusion (RVO), a blood clot in the vein leading from the retina, and a leading cause of vision loss that affects 16 million people worldwide."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Until recently, several questions regarding the treatment of RVO have remained unanswered. The RELATE study enrolled 81 patients and sought to find answers to these very important questions. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Commenting on the findings of the trial, Dr Mir said: \"The research team was able to demonstrate that a higher dose of VEGF* antagonist does not show a greater efficacy in this patient population. Furthermore, there is no evidence of long-term benefit from scatter photocoagulation (one type of treatment for RVO), contrary to what has been previously believed and practiced.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"This study raises interesting questions for ophthalmologists regarding the use of laser in this patient population.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking about how her studies at the AKU helped shape her career, Dr Mir said: \"My clinical experience in ophthalmology was enriched by my interaction and learning from all the faculty members in the ophthalmology department.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"My interest in research however, was first stirred by my communication and work with Dr Adil Haider, who himself is an AKU graduate and extremely accomplished trauma surgeon and public health researcher. Working with his team equipped me with the necessary skill set that turned out to be invaluable as I pursued my interest in vision research under the mentorship of Dr Peter A Campochiaro at Johns Hopkins,\" she added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Findings of the RELATE trial were presented at the prestigious annual meeting of The Association for Research in Vision and Ophthalmology (ARVO) in 2015, an organisation whose members include 12,000 eye researchers from 75 countries. Furthermore, Dr Mir's research paper on RVO was deemed to be in the top 6 per cent of all abstracts submitted that year at ARVO's annual meeting."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Among her ongoing projects, Dr Mir is working on a gene therapy trial for the treatment of patients with age-related macular degeneration - an eye condition that affects the central area of the retina that allows for sharp, detailed vision, necessary for daily activities such as reading and driving. On her future plans, Dr Mir states that she is committed to improving eye care for patients with retinal vascular diseases worldwide and in restoring the precious gift of sight. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Are you one of AKU's alumni who is making a difference in the world. Share your story with us by writing to public.affairs@aku.edu"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "*VECF or vascular endothelial growth factor. Its presence contributes to the creation of new, abnormal blood vessels in the eye."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000055",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "0594c307-e9dc-4878-875e-573062629e64",
+      "WssId": 1483
+    },
+    {
+      "Label": "ENT",
+      "TermGuid": "65bc02bc-e8ea-438d-9809-dcf80abd7b65",
+      "WssId": 1446
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 85,
+  "Modified": "2017-02-22T07:03:46Z",
+  "Created": "2016-05-17T05:50:03Z"
+}

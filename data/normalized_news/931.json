@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a6dc1092-b3ad-49f6-bc1b-6ed05c95992c",
+  "odata.etag": "\"25\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fbc5e09d-9db6-4a6c-afff-2a4c331bc8ca",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c07393e2-5302-42c7-8e1f-d14eeb932be0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1bbcfa12-7242-4952-9187-e6ca7143d113",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "15cd3ed3-8528-4e01-804d-363307e6bd8b",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "9e974672-930c-41b0-981a-974292d78ea7",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3b569a95-8d9e-455e-a30f-a026c2872921",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "31013e08-ffe6-4371-8abf-1e3507142292",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(931)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c1789b2-a691-4bca-b219-7d6b87ed965e",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 931,
+  "Title": "International Nurses' Day at AKU nurses target poverty on International Nurses Day",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nurses worldwide have drawn the attention of public and policy-makers towards investing in education, health care and sound social policy for alleviating poverty. In line with this call by the international nursing community, Aga Khan University (AKU",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Nurses worldwide have drawn the attention of public and policy-makers towards investing in education, health care and sound social policy for alleviating poverty. In line with this call by the international nursing community, Aga Khan University (AKU) celebrated International Nurses Day on May 15, 2004.</p><p>This year's theme, 'Nurses: working with the poor against poverty', encompasses issues relating to health and poverty in light of the fact that one billion of the world's six billion people remain deprived of their basic needs of food, water, sanitation, health care, housing, and education.</p><p>The day acknowledges nurses' role in alleviating poverty, and increased awareness amongst the nursing community in particular and people in general of the vicious cycle of poverty in Pakistan, as well as in the developing world. The event was also a tribute to the hundreds and thousands of nurses whose contributions made over the years helped improve the quality of lives of people through implementation of sustainable projects in communities.</p><p>Dr. Ruth Pfau, Head, Marie Adelaide Leprosy Centre was the chief guest and Dr. Asma Fauzia Qureshi, Dean, Public Health, Department of Medical Education, College of Physicians &amp; Surgeons of Pakistan, was the keynote speaker. National nursing leaders and government officials also attended the programmes held on May 15, 2004 at 4:00 PM at the AKU Auditorium. A family mela, held at the AKU Football Ground after the programme, was also well-attended and much appreciated.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000889",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Nursing",
+      "TermGuid": "2a72f4c7-73f4-4765-94d3-1f1b5dc0a48c",
+      "WssId": 1818
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    }
+  ],
+  "ScheduleStartDate": "2004-05-14T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 931,
+  "Modified": "2020-05-02T17:38:08Z",
+  "Created": "2016-12-26T07:40:18Z"
+}

@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "520e0726-032d-4606-89b2-64b1b9ed87a4",
+  "odata.etag": "\"35\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "14997dee-fd4b-4cb7-9f70-6ef42c90b21d",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d0775dbc-9ab8-4a7e-a962-54c5112f201a",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "efbabb98-7a32-4ede-a306-7e05c21b448b",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "7f90355d-dc2d-4768-9cbb-232a997aa622",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "35e192f3-385e-4aa8-823d-010418a6a150",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5949a48a-9dd5-4d32-a292-9c10e86d0c3d",
+    "Id": 5591,
+    "Title": "Layal.N.Mohammad",
+    "EMail": "layal.n.mohammad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2877)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f9e4c76b-50e9-4ded-80a6-936dc8c0cfd6",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2877,
+  "Title": "Aga Khan Library Launches Arkoun Archive",
+  "NewsSubTitle": null,
+  "NewsSummary": "The collection incorporates Professor Arkoun's personal and professional papers.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p><br/>Professor Mohammed Arkoun (1928 - 2010) was one of the most influential and innovative scholars in Islamic Studies. As a Professor of History of Islamic Thought, he promoted a more critical study of Islamic history and contemporary interpretations of theological and classical academic texts in the field. His scholarly pursuits made him a controversial figure in Algeria, his country of birth, and other Muslim countries; however, he was well respected by his academic peers and other intellectual and political figures in the West.</p><p>The archive includes documents tracing his early childhood, education, academic career, and involvement with global institutions. In addition, it also contains preparatory work for his teaching and lecturing activities and countless research notes and drafts of his publications. In the archive, there is a good proportion of documents and ephemera originating in conferences he attended, organised, or were organised in his honour. Furthermore, the more substantial part of the archive is his professional correspondence with fellow scholars, religious and political leaders, and personal letters to family and friends. <br/></p><p><em><strong>\" Personal archives of academics are rich sources of information that can tell us many stories not only about their academic credentials but also about the journey of developing their thoughts. We are fortunate to have been given Professor Arkoun's archive which is the first archival project at the Aga Khan Library, London, and will not be the last. An important part of our mission is to preserve academic archives and make them accessible.\"</strong></em></p><p><strong>-Dr Walid Ghali, Head Librarian</strong><br/><br/></p><h4><a href=\"https://www.agakhanlibrary.org/\" target=\"_blank\">Aga Khan Library</a></h4><h4><a href=\"https://arkoun.iis.ac.uk/ais/home\" target=\"_blank\">Arkoun Archive</a></h4>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002770",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    },
+    {
+      "Label": "Library",
+      "TermGuid": "ee3916a8-417c-4dbe-94c8-bf0a056b90ad",
+      "WssId": 2173
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "United Kingdom",
+      "TermGuid": "70207756-0466-4733-98c6-f1892ee3c011",
+      "WssId": 2172
+    }
+  ],
+  "ScheduleStartDate": "2022-05-20T05:30:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2877,
+  "Modified": "2022-05-20T09:30:24Z",
+  "Created": "2022-05-19T13:33:27Z"
+}

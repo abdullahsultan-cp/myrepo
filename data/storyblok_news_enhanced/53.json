@@ -1,0 +1,214 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e624bc5d-8407-4cb0-8e58-c099ae7ef91e",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4c2bc9a4-68bb-48b9-92c8-f6b99d654f98",
+    "Id": 268,
+    "Title": "Sana Jindani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9b513fc3-1861-49b6-9f36-ebd3a448a19e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1e9a6f1d-a0ae-496f-9b55-9796bcb955d5",
+    "Id": 268,
+    "Title": "Sana Jindani",
+    "EMail": "sana.jindani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "78e00222-83ba-4b43-8974-cdbd202a4e90",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e62a3451-f82e-4ed8-a1a5-ca0c32d6d818",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "bcd186c3-0761-4fbb-bcde-8d8375f97153",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1289dd78-e68a-4afb-93bf-e7f9f5d5fc2b",
+    "Id": 30,
+    "Title": "Afifa Batool",
+    "EMail": "afifa.batool@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(53)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "722a24e2-f546-4279-8657-d3bec5ea95e9",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 53,
+  "Title": "Health Department officials receive training at AKU",
+  "NewsSubTitle": null,
+  "NewsSummary": "Twenty-four of the Sindh Health Department's mid level and senior officers, who have successfully completed two courses on health management offered by the Aga Khan University while continuing to work, attended a grade distribution event.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Twenty-four of the Sindh Health Department's mid level and senior officers, who have successfully completed two courses on health management offered by the Aga Khan University while continuing to work, attended a grade distribution event."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "These courses were offered as part of an agreement - signed in April this year - by the Government of Sindh, John Snow Inc. and the Aga Khan University, which made it possible for 95 officers from the Sindh Health Department to participate in a graduate training programme in health policy and management offered by AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The unique programme allowed officers to continue to work while studying on weekends and is part of the initiative to build capacity to improve the health delivery system in the province as part of the Health Systems Strengthening component of the Maternal and Child Health programme supported by USAID."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Durrenaz Jamal, previously Deputy Programme Manager, EPI (Expanded Programme on Immunization) - who has completed three standalone courses and is now continuing as an MSc student - felt that the training has changed her approach to work. \"Whatever we are doing now is like going from A to Z. Before that, we used to work haphazardly; now, our focus is more on timeliness, completeness and following a plan.\" Her new skills have been put to use in drafting the Comprehensive Multiyear National Immunization Strategy for Sindh. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For others, the courses have encouraged a different approach to old issues. \"We have found a difference in ourselves. The courses have opened up the thinking process in us ... the day is not far away when our potential to resolve issues will be recognized,\" said Dr Saqib Shaikh serving in the Health Secretariat. His experience was used to draft Sindh's Action Plan for Non-Communicable Diseases and Mental Health and to technically review the new Lady Health Worker's programme being developed."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To date 68 officers have completed a variety of courses. These have included health sector reform, quality management in health services, programme monitoring and evaluation, strategic planning, and injury control. Twenty-five trainees are currently enrolled in courses, while 85 are to be trained next year. In addition seven have been admitted to the two-year MSc in Health Policy and Management programme."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The challenge now for the Sindh Health Department is to ensure that these highly trained officers remain in their posts, are allowed planning work in addition to routine administration work and, in the long-term, a health management cadre is institutionalized."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Commending the participants, Dr Shehla Zaidi, associate professor, AKU and director of the programme said, \"We were pleasantly surprised by the dedication of the Department of Health enrollees: they are among our top scorers. There is a public perception that department of health has unwilling workers but we found this not to be true. It has been challenging for them to work and study because these are busy people, yet they are persevering and we hope their senior leadership will use the new skills developed in this workforce to good use.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The provincial health managers were drawn from a number of different sections of the Sindh Health Department - the Health Secretariat, Director General Office, Preventive Programmes, Provincial Health Development Centre, and Sindh Government Hospital. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Courses for district health officers are expected to start next year."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Nabeela Ali, Chief of Party, John Snow Inc., Syed Hassan Murad Shah, Director General, Sindh Health Department, and Dr Fauziah Rabbani, professor and chair, Department of Community Health Sciences, AKU attended the event and handed out the transcripts."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000023",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Immunisation",
+      "TermGuid": "386ac89c-5e5a-410f-b2f1-1c43237982b1",
+      "WssId": 1434
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2016-05-16T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 53,
+  "Modified": "2017-02-22T07:10:21Z",
+  "Created": "2016-05-16T12:11:40Z"
+}

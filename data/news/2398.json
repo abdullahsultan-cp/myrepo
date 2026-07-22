@@ -1,0 +1,107 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "5c2bea1d-34c6-4037-8853-331416c4b413",
+  "odata.etag": "\"34\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cfcd146b-742a-4061-9575-e124c0dd1c25",
+    "Id": 96,
+    "Title": "Safina Kousar"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "76837cc8-cbd1-4be6-a9a4-a98caf15d64c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a181eee8-5c8d-4211-af96-38b693a2a941",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "bd306a54-e6c3-4cd1-95d4-8beb0d3e0cf4",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "2bccb839-dd7d-4809-99b1-a62fb3f4d52f",
+    "Id": 20,
+    "Title": "Institute for Educational Development, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "a02030be-dbfb-4bc6-86f0-4bc77dac92f2",
+      "Id": 21,
+      "Title": "Institute for Educational Development, East Africa"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aff37cc9-0e96-4d2c-8161-b6f2412a62fc",
+    "Id": 96,
+    "Title": "Safina Kousar",
+    "EMail": "safina.kousar@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2398)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e05d0920-456d-4f32-920c-9081b59943b2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2398,
+  "Title": "IED welcomes new dean",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Farid Panjwani joins the Institute for Educational Development, Pakistan as the new dean.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassCA1E983687024E898315236BBA4EB830\"><p>\u200bDr Farid Panjwani joined the Aga Khan University as the dean of the Institute for Educational Development, Pakistan on August 10, 2020.&#160;<br></p><p>With a DPhil in philosophy of education from the University of Oxford, Dr Panjwani holds an MA in Education and International Development from the Institute of Education, University College London. He also has an MBA and a BBA degree from the Institute of Business Administration, University of Karachi.</p><p>Dr Panjwani is driven to improve the quality of education, particularly in developing countries and in Muslim contexts. He has an interdisciplinary approach and has published widely in the areas of philosophy of education, citizenship, teacher education, imagination, religious education, hermeneutics and Islamic Studies. His recent publications have explored the role of imagination in fostering care, compassion and criticality amongst students. He has worked on several educational projects around the world and has acted as a consultant to many research projects and organisations, including the International Baccalaureate, the Adyan Foundation in Lebanon, the Islamic Religious Council in Singapore, the Aga Khan Academies, and the government of Punjab, Pakistan. In 2016, Dr Panjwani was appointed on the Commission on Religious Education, UK which was tasked to come up with policy recommendations for the future of religious education in the country.&#160;<br></p><p>From 2012, Dr Panjwani served as the Founding Director of the Centre for the Study of Education in Muslim Contexts at UCL Institute of Education (IOE), University College London.&#160; The Centre was first of its kind in any British University, dedicated to the promotion of sound and critical research and scholarship in Muslim contexts.<br></p><p>Dr Farid Panjwani is well known to the academic community at the AKU as, before joining the UCL in 2012, he was an Assistant Professor at our Institute for the Study of Muslim Civilisations in London. At AKU-ISMC, he was involved, among other projects, in the conception and initiation of the master's degree programme.\u200b\u200b<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-002305",
+  "LocalApproverGroup": "IED PK News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "42798a93-35ae-4572-ba14-7cf8818ce9fb",
+      "WssId": 1850
+    }
+  ],
+  "ScheduleStartDate": "2020-08-10T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2398,
+  "Modified": "2020-08-11T09:10:16Z",
+  "Created": "2020-08-10T14:51:23Z"
+}

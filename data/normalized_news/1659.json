@@ -1,0 +1,126 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1bad52a9-56ec-421c-8d07-7b51dca15ed9",
+  "odata.etag": "\"21\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cc464c60-1406-46c2-a0e5-21672d040740",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1aa084a6-dd2b-4420-ad6e-f77aad579cfe",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1d8037e3-e4db-428a-95a1-fec84dfda165",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "da1c5bf2-eb14-4b76-9758-461d0e792fcf",
+    "Id": 2,
+    "Title": "Achievements and awards"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1ef02f9a-f26c-48e6-a4f6-422cf69bd816",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "dabb0e50-c902-4599-960c-654e4fa54615",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "399cd10c-53a8-497b-a1e9-b470ecb41a9e",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1659)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c8c2e381-dae6-460d-90a6-c56590e96804",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1659,
+  "Title": "Pride of performance award for Dr Khurshid",
+  "NewsSubTitle": null,
+  "NewsSummary": "Pakistan's president has conferred the award on Professor Mohammad Khurshid.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Pakistan's President General Pervez Musharraf has conferred the Pride of Performance Award on AKU's Professor Mohammad Khurshid. Professor Khurshid has been a faculty member and clinical practitioner at AKU since 1985. </p><p>While working as the director of the Aga Khan University Laboratory Services from 1985 to 2000, he set up a modem scientific clinical laboratory at the University Hospital with laboratory specimen collection units across Pakistan. Professor Khurshid also has a distinguished academic record and has excelled in teaching and research. His research contributions in the field of haematology, particularly leukaemia, are well documented in renowned international journals. </p><p>Based on his national role in the development of haematology, he was elected President of the Pakistan Society of Haematology (2001 -2003) and European Council Member of the International Society of Haematology. With over 73 research papers to his credit, he holds the second highest rank on the list of scientists in Health Sciences, as published by the Pakistan Council for Science and Technology. </p><p>Speaking about the award, Professor Khurshid said: \"I feel happy that such an honour will be in actuality a recognition of the efforts of all my colleagues at Aga Khan University ... that in some way we are making a contribution to society.\" <br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001604",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    },
+    {
+      "Label": "Cancer",
+      "TermGuid": "411d7b69-24d4-4980-b5c0-26092e650968",
+      "WssId": 1926
+    }
+  ],
+  "ScheduleStartDate": "2003-03-23T05:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1659,
+  "Modified": "2020-03-12T04:15:22Z",
+  "Created": "2018-06-19T04:53:36Z"
+}

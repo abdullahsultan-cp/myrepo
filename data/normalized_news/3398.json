@@ -1,0 +1,117 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "41a4876b-21c2-4b87-927f-00aedee1d6db",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4629c435-370d-4182-abf7-b25c8753262d",
+    "Id": 17762,
+    "Title": "Cime Marketing"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e5cc781-2c6b-4ded-b30c-9d387e253f5e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6d6651a9-fb14-4929-8601-140ea0f7aaed",
+    "Id": 17762,
+    "Title": "Cime Marketing",
+    "EMail": "cime.marketing@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "751273d7-2104-4987-94a4-12bce34d57c1",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "16ceba29-95e0-481a-9f79-4ef45a204ec4",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "338096bd-4958-4157-89ae-60e9d98a3f1c",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6a52bfba-5439-4edf-ac0f-e4de8f5fddcb",
+    "Id": 17762,
+    "Title": "Cime Marketing",
+    "EMail": "cime.marketing@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3398)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5c3c7dea-d41e-4c73-b8d9-640e94b17a3b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3398,
+  "Title": "Honouring Professor Charles Docherty: Donation of Gaumard Scientific",
+  "NewsSubTitle": null,
+  "NewsSummary": "CIME applauds Gaumard Scientific for donating three Hololens 2 units to enhance obstetric emergency training honoring Professor Docherty's legacy. This donation supports CIME mission of advancing simulation-based healthcare education in both Centre's",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p><p><p>CIME would like to applaud Gaumard Scientific for their generous donation of three units of the Obstetric Mixed Reality Microsoft Hololens 2 technology to enhance obstetric emergency training. This cutting-edge methodology will complement the Victoria birthing simulators owned by AKU, further advancing simulation-based education at CIME. As we accept this donation under the Professor Charles Docherty Memorial Fund, we honour his dedication to advancing healthcare education and look forward to continuing his legacy through innovative technologies and initiatives.<br/></p><p>The Aga Khan University's Centre for Innovation in Medical Education (CIME) stands as a beacon of simulation-based healthcare teaching and learning in Pakistan and East Africa, dedicated to training healthcare professionals to deliver quality patient care. Since its inception in 2017, CIME has been at the forefront of simulation-based education, providing opportunities for physicians, nurses, students, and allied healthcare providers to enhance their skills and knowledge.<br/></p><p>Professor Charles Docherty, the Inaugural Director of CIME, played a pivotal role in its growth and development. A passionate educator and advocate for healthcare simulation education, his leadership led CIME to expand its operations into East Africa and achieve accreditation by the Society for Simulation in Healthcare, a first in South Asia. Professor Docherty's contributions are significant, and his memory continues to inspire.<br/></p><p>In honour of Professor Docherty's legacy, The Charles Docherty Memorial Fund has been established to perpetuate his vision and commitment to simulation. This fund will continue to support various initiatives aligned with CIME's goals, including staff professional development, innovative education projects, excellence awards, simulation research, and other endeavours beneficial to CIME and AKU.<br/></p></p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003274",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    },
+    {
+      "Label": "Centre for Innovation in Medical Education",
+      "TermGuid": "28c032a7-0650-4e14-8eb1-5075222f1b01",
+      "WssId": 2184
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    }
+  ],
+  "ScheduleStartDate": "2024-06-03T10:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3398,
+  "Modified": "2024-06-04T11:16:58Z",
+  "Created": "2024-06-03T11:56:54Z"
+}

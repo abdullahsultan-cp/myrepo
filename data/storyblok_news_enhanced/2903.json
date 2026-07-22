@@ -1,0 +1,190 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b93d7230-6a84-47f2-a0cd-7104661a0dce",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "77c8e534-9440-43c0-a091-25b24ccdf477",
+    "Id": 14331,
+    "Title": "Gloria Chemutai"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8ddafd77-66a0-4e9d-870f-4ea4e104afa5",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1cc90db8-a601-4163-8404-745714c446bf",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "222a7f31-3938-46dc-93e4-2dd057c1ff5c",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b1a26dcc-263a-435a-9d78-bc77326fd58a",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f1f2290d-6601-4c27-b8dd-e3178e8accba",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2903)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "edb99220-8a9d-4780-9b1d-492c66f74d1f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2903,
+  "Title": "Partnership to improve mental health in informal settlements ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Nivishe Foundation and BMI to boost mental health interventions in Kenyan slum",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Brain and Mind Institute, BMI, and Nivishe Foundation have formed a unique partnership to enhance mental health care within Kibera, the largest informal settlement in Kenya."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Nivishe Foundation is a women and youth-led organisation whose mission is to promote a paradigm shift in how mental well-being correlates to the quality of life and provide individuals with essential technical know-how and resources to improve their mental health. They use a community-based approach in providing training, workshops and counselling services for women and youth. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "However, they noted a gap in reporting, monitoring, analysing, and evaluating its interventions resulting in little understanding on how its work affects and benefits the community they serve. Nivishe will use BMI's network to promote their work through expert support in training and research. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"When we start to analyse our data, we will be able to see the impact we have in the community, thereby changing more lives in the process,\" said Amisa Rashid, Executive Director at Nivishe Foundation."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The two organisations will collaborate to improve mental health services by integrating science-based approaches to clinical practice, research, and community-based support programs. The primary focus will be on building community resilience and enhancing community cohesion in informal settlements and marginalised communities. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "BMI founding director, Dr Zul Merali said, \"One of our philosophies is that what we do; we do for the community. So, therefore, it is imperative for us to provide the help that people need in the communities they live in.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Brain and Mind Institute and the Nivishe Foundation will collaborate to support the design and development of scalable and replicable models for implementation in similar populations. Additionally, this partnership will inform mental health research, policy, and practice."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since 2019, Nivishe has benefited over 4000 women and over 10,000 youth with their interventions. They have created safe spaces at the grassroot level with more individuals seeking mental health treatment."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002796",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    }
+  ],
+  "ScheduleStartDate": "2022-06-18T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2903,
+  "Modified": "2022-06-29T07:57:33Z",
+  "Created": "2022-06-27T09:17:17Z"
+}

@@ -1,0 +1,288 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "16dcc82f-5279-4f2a-8e9a-390e1582c626",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "de7da4b6-ce79-4b10-873b-64312b880189",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3db0ca6d-baf3-4f52-9364-73e2e0e912ad",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "daeb1104-05d3-48ab-87db-17343bdede86",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "965eba84-cf29-4cf3-936c-43f10033dcd2",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a120b804-81e2-4611-8d98-f77a07861b13",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "00ee03c9-6389-4b8c-abf1-e2961df6be8e",
+      "Id": 11,
+      "Title": "Centre of Excellence in Women and Child Health"
+    },
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "589b52f5-d215-4b00-84d0-b721e3b69b23",
+      "Id": 18,
+      "Title": "Institute for Human Development"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6dc2256a-9c90-4022-82af-fa640f7330e2",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1789)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b3e0f897-e9b5-4052-b6ff-bd1ef14af61a",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1789,
+  "Title": "AKU faculty joins African Academy of Sciences ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Fellowship recognises Professor Marleen's contributions to policy and mentoring of scholars. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor "
+          },
+          {
+            "type": "text",
+            "text": "Marleen Temmerman",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/mcea/faculty/pages/profile.aspx?ProfileID=81&Name=Marleen%20Temmerman",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " from the Aga Khan University's (AKU) "
+          },
+          {
+            "type": "text",
+            "text": "Centre of Excellence in Women and Child Health in East Africa",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/coe-wch/Pages/home.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " has been inducted as a fellow to the prestigious African Academy of Sciences (AAS), a pan-African scientific organisation that recognises leading scientists working in the region and promotes research across the continent."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Fellows are elected on the basis of achievements such as their publication record, innovations, leadership roles as well as their contributions to policy and the development of science on the continent."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I am proud and honoured to be selected,\" Professor Marleen said, \"This is a good motivation for me, having worked in the field of women's health in the country for the last 32 years with many African colleagues.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Marleen, chair of the department of obstetrics and gynaecology at AKU in East Africa, has previously served as the Director of the Department of Reproductive Health and Research at the World Health Organization."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "During her career, she has published over 500 articles and books in the area of women and child health and mentored over 50 PhD students who are now in leadership positions in academic, global or governing bodies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Marleen joins Professor Amina Abubakar from AKU's Institute of Human Development who was electedto the AAS in 2017 and was elected as the treasurer for the Africa-wide scientists' organization at their 11th General Assembly. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Speaking at the time, Professor Abubakar said: \"This is an opportunity to interact and learn from accomplished scientists in Africa. It is also an opportunity to contribute to the development of science in Africa by contributing to the strategic thinking around the work of the academy and by mentoring young and upcoming scientists.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Professor Amina's "
+          },
+          {
+            "type": "text",
+            "text": "research work",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://www.researchgate.net/profile/Amina_Abubakar4",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " has contributed to the development of open access psychological measures for use in low and middle-income countries, earning her "
+          },
+          {
+            "type": "text",
+            "text": "the Royal Society Africa Prize",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "https://twitter.com/royalsociety/status/755431689355132928",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " (formerly known as the Royal Society Pfizer Prize) in 2016."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001731",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1f8abb8b-4057-4b9e-a6ec-fc227c7f54b2",
+      "WssId": 1364
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "3c0b1059-67b1-4998-a106-4acc0ab2b5cd",
+      "WssId": 1367
+    }
+  ],
+  "ScheduleStartDate": "2019-01-14T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Professor Marleen Temmerman (left) and Professor Amina Abubakar at the African Academy of Sciences Assembly.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1789,
+  "Modified": "2019-01-14T09:13:24Z",
+  "Created": "2019-01-14T08:47:05Z"
+}

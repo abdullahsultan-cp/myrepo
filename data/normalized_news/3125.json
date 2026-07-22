@@ -1,0 +1,109 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "ef399930-8e8c-41e1-b96b-5e4d2fbf674e",
+  "odata.etag": "\"5\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c6d79366-47c6-426d-84d5-79486eecd5c8",
+    "Id": 16143,
+    "Title": "Nderaisho Mshila"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/ContentApprover",
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0c24de45-adf8-433f-82b5-8f73a3cbc33f",
+    "Id": 16143,
+    "Title": "Nderaisho Mshila",
+    "EMail": "Nderaisho.Mshila@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "ce9e3e78-70f3-45d4-9cc4-4dea6abe2f17",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "02fc5a3f-6b40-4f75-8885-7366eab8c041",
+    "Id": 9,
+    "Title": "School of Nursing and Midwifery, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6afe235b-a1eb-44f9-8e30-781927e48400",
+    "Id": 16143,
+    "Title": "Nderaisho Mshila",
+    "EMail": "Nderaisho.Mshila@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3125)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5582c6b8-ec88-41aa-bbd5-3134513c26d0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3125,
+  "Title": "Student Profile: Winnie Kinyanjui",
+  "NewsSubTitle": null,
+  "NewsSummary": "The BSc Nursing student wants nurses supported to further their education",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>As a child, Winnie Kinyanjui saw nurses in white uniforms walking around the hospital near her home. Winnie found them fascinating, sparking a dream that she would eventually pursue. A high school experience where she assisted a fellow student during childbirth cemented this dream further. That said, a diploma in nursing was not enough; she chose to apply to AKU-SONAM EA for the Bachelor of Science in Nursing upgrading programme. </p><p>\"Quality at AKU ranks up there with oxygen,\" she says. \"I knew AKU was renowned for providing quality education, and I believe it will equip me with the necessary skills and knowledge to excel in my career.\" It hasn't been an easy road, though. Being a nursing student while working and caring for her family has been challenging for Winnie, and she credits her education at AKU for helping her manage her time and think critically. I have learned to plan my time to cater for work, school, and my kids at home.\" </p><p>The education I received at AKU has also changed my perspective on my job. I'm now able to question \"why\". If a patient comes with a complaint and there is a diagnosis, I am curious to learn more.\" Winnie thinks highly of the faculty at AKU. She describes them as understanding and wanting to see their students grow. Her classmates are equally amazing and always willing to lend a supportive hand. Her future goals include venturing into research and mentoring other nurses. </p><p>As nurses continue to play a vital role in the healthcare industry, Winnie believes that nurses should be celebrated by providing a good working environment and allowing them to return to school to further their education.<br/></p><p><br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003008",
+  "LocalApproverGroup": "Sonam EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Submitted",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Nursing",
+      "TermGuid": "d650b158-f3f2-48a2-965e-47ad7e1c910d",
+      "WssId": 2104
+    },
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "fde4b4d4-be58-47ff-911b-06e01b2b21d4",
+      "WssId": 2162
+    },
+    {
+      "Label": "Students",
+      "TermGuid": "6d4ef60e-cbee-4806-a0d5-f9ab917162a5",
+      "WssId": 2110
+    },
+    {
+      "Label": "Student life",
+      "TermGuid": "234d0706-cfeb-4f91-8bf6-4debd5ddd9ab",
+      "WssId": 2178
+    }
+  ],
+  "ScheduleStartDate": "2023-06-02T09:15:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Picture showing Winnie Kinyanjui, an AKU-SONAM EA student pursuing a Bachelor of Science in Nursing upgrading degree.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3125,
+  "Modified": "2023-06-02T10:21:29Z",
+  "Created": "2023-06-02T10:20:42Z"
+}

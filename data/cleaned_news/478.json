@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "6187a1d5-6341-4060-a111-6bfd1848e76d",
+  "odata.etag": "\"18\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5e3a86f3-235f-4a63-bb8e-186b1652f124",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e052335a-eff8-48b1-9dc3-e53f0089012f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "05562d84-ab82-4c1a-96fe-25b637c91e92",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "232854df-1f97-4e0d-9084-f255c16f2e14",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "338322fa-4fe3-4ddd-b26a-cf967851ddb3",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9254aacc-a9ac-4e3e-82db-ab58911f2df9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5737d89f-b0f7-4bd7-8610-155d889a9ce2",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(478)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f0de328e-d1cf-4d82-87cc-3d4d50a561ed",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 478,
+  "Title": "AKUH celebrates the spirit of young people fighting cancer",
+  "NewsSubTitle": null,
+  "NewsSummary": "Survivors of childhood cancer will gather at Aga Khan University Hospital on March 9, to offer hope and encouragement to children still fighting the disease. ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassBDFC571D1B14491E9B055BD352F7B917\"><div>Survivors of childhood cancer will gather at Aga Khan University Hospital on March 9, to offer hope and encouragement to children still fighting the disease. The annual haematology/oncology party will be a day of fun activities and games for survivors and patients to enjoy in the company of their friends, families and the hospital staff.</div><div><br></div><div>\"This will also be an opportunity for patients and families to create support groups to help themselves in a difficult phase of their lives. Children enjoy the day especially as they come to the hospital only for fun and games, without being poked by syringes,\" said Dr Zehra Fadoo, paediatric haematologist and oncologist, AKUH, and organiser of the event.</div><div><br></div><div>Cancer can be fully cured among children, if diagnosed and treated at an early stage. \"Treatment of childhood cancer has improved manifold as better drugs and other supportive-care are available. Today, up to 70 per cent of all children with cancer can be cured,\" she added.</div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000438",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Childhood cancer",
+      "TermGuid": "addbf8a2-06a4-4ef1-939a-430527487bd4",
+      "WssId": 1525
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "3c0b1059-67b1-4998-a106-4acc0ab2b5cd",
+      "WssId": 1367
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2012-03-07T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 478,
+  "Modified": "2017-02-22T07:43:40Z",
+  "Created": "2016-12-07T06:06:00Z"
+}

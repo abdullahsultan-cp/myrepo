@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "59dbdcf0-4b4d-4b5d-89c8-1c8464a6bc1a",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aa837d27-c384-4aaa-bc92-d8e63efb4230",
+    "Id": 287,
+    "Title": "Daniel Raynor"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "737a435e-eb44-4424-89a9-27abb2c4d560",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0cbdadb0-141e-499d-9e90-91b1139eaee0",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "40f04798-05d5-47e0-9339-0f6026ff7c7e",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "89285793-ba42-47c3-8659-c6eea90e0ab4",
+    "Id": 10,
+    "Title": "Global"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "82e312d7-5662-4025-b649-7e05ec1cc82d",
+    "Id": 13,
+    "Title": "Network of English Language Enhancement"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d3895252-96c8-4a2a-8141-4ed97bba165c",
+    "Id": 287,
+    "Title": "Daniel Raynor",
+    "EMail": "daniel.raynor@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1282)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "60c41fb0-3e3b-4f08-896d-389d7cbdcafb",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1282,
+  "Title": "Integrating Academic Reading into Writing",
+  "NewsSubTitle": "\u200bELE_net's new course Integrating Academic Reading into Writing is offered in blended and online modes.",
+  "NewsSummary": "\u200bELE_net's new course Integrating Academic Reading into Writing is offered in blended and online modes.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass412A23A36D584510831CAAC55BF1C0DE\"><p>\u200bELE_net's new course Integrating Academic Reading into Writing is offered in blended and online modes.</p><p>This new course is part of our Academic Writing Hub. It aims to provide students with the language skills required to effectively read and integrate academic source materials into their writing.</p><p>The first group to take the blended version in Tanzania has just finished this six-week course. The participants&#160; are now waiting for their results after submitting the final assignments. <br></p><p>The participants gave positive feedback about the course. For example, Lola Kamaghe felt &#58;</p><p>&quot;The course was of great help to me. I can't mention here all the academic writing skills I learned, but apart from enjoying all the activities in both face-to-face and online modes, learning took place. Each activity found in every course week gave me an opportunity to learn and practice new skills. Thank you very much for this course, I have surely gained a lot.&quot;</p><p>The online course entered in its fifth week, and has students from Pakistan, Kenya and Uganda. The next online course is scheduled to start on 13 November 2017. You can book your place on the <a href=\"/ele-net/students/Pages/Courses.aspx#Integrating%20Academic%20Reading%20Into%20Writing%20-%20B2\" target=\"_blank\">ELE_net Student Courses page</a>.<br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-001233",
+  "LocalApproverGroup": "ELE News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "network of english language enhancement",
+      "TermGuid": "4faf2085-64a1-492d-b971-0626b65f5480",
+      "WssId": 1540
+    }
+  ],
+  "ScheduleStartDate": "2017-09-19T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1282,
+  "Modified": "2017-09-20T08:06:53Z",
+  "Created": "2017-09-19T13:37:06Z"
+}

@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f0824599-00e0-483a-94a2-2c10c8c019c9",
+  "odata.etag": "\"30\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ee7b46ab-d969-43a2-b22e-733f5c1599ef",
+    "Id": 267,
+    "Title": "Fabeha Pervez"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5a8fef27-cff3-4ccd-9e9a-67f622a12641",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b0af6bbe-775a-41f4-a4fd-7879b1fe145a",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "6d31f09f-3ab3-46e1-a070-00fbad2d7895",
+    "Id": 13,
+    "Title": "Topical issues"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "dcdde4eb-229c-4f71-b47a-09a9a24dc82a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "42f0429e-0c33-4c05-b8bb-978b0fb3ecfc",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "accc6674-33cd-48ab-9b0b-14a725e94985",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1063)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "558b2290-9d8e-4064-978c-f0c4caf2a7b9",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1063,
+  "Title": "AKUH organises trauma course",
+  "NewsSubTitle": "Proper Trauma Management Critical to Patient Care",
+  "NewsSummary": "Trauma, one of the main causes of death, often strikes the younger and potentially the most productive members of the society. Generally, the pattern of delivery of care to patients with traumatic conditions is unclear and inconsistent in most health",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Trauma, one of the main causes of death, often strikes the younger and potentially the most productive members of the society. Generally, the pattern of delivery of care to patients with traumatic conditions is unclear and inconsistent in most health care institutions in the developing world. There is no systemic approach or a protocol which ensures that all life-threatening conditions have been adequately dealt with in their order of priority.</p><p>To address this issue, Aga Khan University Hospital (AKUH) conducted its first Trauma Course, under the supervision of multidisciplinary teams comprising physicians from Departments of Anaesthesia, Surgery, and Section of Emergency Medicine.</p><p>The objective was to design a single, reliable, safe and reproducible approach to the management of severely injured patients, including children and pregnant women, the minute they arrive in the emergency room. The course addressed such issues as initial assessment and management, trauma airway and management, shock and vascular access, paediatric trauma, trauma in pregnancy, and transfer to definitive care.</p><p>Besides lectures, the course provided hands-on training to participants on the four-skill stations - reading trauma radiology, airway management including intubation and cricothyroidotomy, chest tube placement, diagnostic peritoneal lavage and vascular access.</p><p>While this course comprised participants from AKUH, future programmes are expected to be open for candidates from other hospitals as well.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001021",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "95d0a012-3a90-4c42-8d3b-331f76af7a0e",
+      "WssId": 1825
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "3e73e453-7d46-4c2e-a34e-d0d1b4c1644b",
+      "WssId": 1819
+    },
+    {
+      "Label": "Emergency Care",
+      "TermGuid": "251a26c1-d1c5-4530-93ec-106423593583",
+      "WssId": 1873
+    }
+  ],
+  "ScheduleStartDate": "2002-08-27T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1063,
+  "Modified": "2020-03-10T12:47:02Z",
+  "Created": "2016-12-28T06:56:23Z"
+}

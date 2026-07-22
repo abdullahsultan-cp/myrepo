@@ -1,0 +1,192 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e93dc68f-e75f-4f30-a508-dd8c9776c36d",
+  "odata.etag": "\"17\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e987cef0-3280-41c7-9d5e-17cf971a4bda",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4e0b2273-bf7c-407a-b7df-ecaddc11052f",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f3437107-3bab-4998-83b0-8fcac9e7fb68",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "10998b96-1e0a-4219-a727-3a7802080ecd",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "f7ad9b6d-4266-4172-9cd8-5a3f96626f28",
+    "Id": 7,
+    "Title": "Dar es Salaam"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "53a47ab2-7341-47cd-a2ae-267015cde4ab",
+    "Id": 21,
+    "Title": "Institute for Educational Development, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "0bcc3d9b-8dfe-4655-95cb-45584d925cf7",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1675)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8ea508d2-bf5b-4a17-b056-3cf3dc86f7ad",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1675,
+  "Title": "Aga Khan University continues to expand impact in Tanzania",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU plans to offer a master's degree in maternal and reproductive health",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The Aga Khan University (AKU) has reached another milestone in its long-term commitment to the people of Tanzania. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In its formative years in Tanzania in the early 2000s, the University established itself as Tanzania Institute of Higher Education. Since that time AKU achieved charter status and went on to become a full-fledged accredited University registered with the Tanzania Commission for Universities. With its new status, this week AKU announced that it is now able to shed the old corporate name and structure. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The announcement was a symbolic milestone for us, a chance to reflect on the impact of this University in just a few years, and to make clear our resolve to build on our success under a new charter,\" said Prof. Joe Lugalla, the director for AKU's Institute for Educational Development (IED). "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU currently has three schools in Dar es Salaam:  The Medical College and the School of Nursing and Midwifery offer a total of 14 programmes, and IED offers a Master of Education and Continuous Education for Life-long Learning. To date, IED has trained more than 1,000 government educators improving the quality of pre-primary and primary education and benefitting at least 75,000 students."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's impact in Tanzania supports economic, social, and policy-related issues. The University has worked with the Ministry of Education and the Nelson Mandela Africa Institute of Science and Technology to create a Higher Education hub in Arusha.  This initiative was modeled on similar knowledge quarters in San Francisco and Boston areas in the United States and Cambridge in the United Kingdom.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In February 2018, AKU set up a community centre in Arusha to increase opportunities for income, savings, food security, social engagement and access to health and life skills services. It is expected that the programme will expand into multi-sector initiatives such as the Pamoja and Community Engagement Programme, to be implemented and managed by the Aga Khan Foundation Trust in close coordination with AKU. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to Prof. Lugalla, AKU is planning to offer a Master's in maternal and reproductive health in Tanzania by 2019 with the hope that graduates will provide skilled care to pregnant women. In 2020, the University is planning to graduate its first surgeons and internal medicine specialists in Tanzania, helping to increase access to much-needed care. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU's current and planned social development investments are closely aligned with Tanzania's Development Vision 2025, the National Strategy for Growth and Reduction of Poverty, and with the East Africa Community's fourth regional strategy, all of which emphasize investment in education. The University continues its mission in complementing government's efforts to offer quality higher education in Tanzania. "
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001620",
+  "LocalApproverGroup": "IED EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for Educational Development",
+      "TermGuid": "42798a93-35ae-4572-ba14-7cf8818ce9fb",
+      "WssId": 1850
+    },
+    {
+      "Label": "Tanzania",
+      "TermGuid": "fc886895-c404-4bf4-9022-39fce235d400",
+      "WssId": 1828
+    },
+    {
+      "Label": "Impact",
+      "TermGuid": "107cb3f7-66d1-4c64-86ae-35da5596f7b2",
+      "WssId": 2083
+    }
+  ],
+  "ScheduleStartDate": "2018-06-29T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Professor Joe Lugalla, Director, AKU's Institute for Educational Development in East Africa",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1675,
+  "Modified": "2020-12-07T11:28:05Z",
+  "Created": "2018-06-29T13:27:31Z"
+}

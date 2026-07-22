@@ -1,0 +1,219 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a4353082-c479-4e9e-8366-69e53c4a6e63",
+  "odata.etag": "\"20\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5d18d342-c531-47d3-98e8-e9d9af3aa2c1",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6ac3e676-3407-4ade-9fb1-0510ce157b14",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9a8dc73f-ef49-4898-984a-e2b166cf522b",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "e98e2f34-34aa-465e-9dc2-acf972c08e2c",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "292bc0af-9138-4361-930c-d64abcf2b4b4",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "02382f42-5539-435b-8f86-dab11184ae01",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "509e989a-6306-46ed-92cc-238550f4c870",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(453)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9e46068d-7286-4af2-9d2b-1358413ff459",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 453,
+  "Title": "Pneumonia vaccine free across sindh ",
+  "NewsSubTitle": null,
+  "NewsSummary": "A new vaccine to protect children against deadly pneumonia and meningitis is being included in the routine immunisation programme by the Government of Sindh from November 10. The pneumococcal vaccine campaign was launched in the federal capital and ",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A new vaccine to protect children against deadly pneumonia and meningitis is being included in the routine immunisation programme by the Government of Sindh from November 10. The pneumococcal vaccine campaign was launched in the federal capital and the Punjab on October 10, followed by Sindh. The campaign will be extended to the rest of the country early next year."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To build support for this vaccine and the fight against pneumonia and meningitis, the first of a series of programmes for healthcare providers, community representatives and district health stakeholders was held in Thatta by Aga Khan University's Department of Paediatrics and Child Health in collaboration with GAVI CSO Alliance Pakistan, and the federal Expanded Programme on Immunization (EPI)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pneumonia is the leading cause of death in children worldwide. In Pakistan, over 350,000 children under five die every year, and almost one in five of these deaths are due to pneumonia."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Almost two-thirds of all children who die of pneumonia in this country die at home because of lack of access to appropriate and timely care,\" said Dr Asad Ali, Assistant Professor, Paediatrics, AKU. \"The best prevention is vaccination. With access to this vaccine, we need to make sure that all children under one year of age are inoculated.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While the new vaccine cannot prevent every single case of pneumonia, it does prevent a significant proportion of cases - so having the potential to save many thousands of lives from preventable sickness and death."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Asif Raza Khowaja, Senior Instructor, Research, AKU, referred to a study recently conducted by AKU and the EPI Sindh that shows that pneumococcal meningitis results in a high rate of deaths and long-term disability in children. Now these cases can be prevented by pneumococcal conjugate vaccine (PCV)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He also stressed the need to educate communities about vaccination, and improve vaccine delivery infrastructure at the union council and district levels."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Addressing the session, Dr Agha Iftikhar, District Health Officer, Thatta and Zahoor Memon Baloch, Additional Director, EPI, Sindh, assured their full support in educating communities to fight pneumonia and meningitis. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The session was well attended by local doctors, health workers, and community and media representatives. School children also presented a skit about pneumonia and pneumococcal vaccine ."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Pakistan is the first country in South Asia to introduce this vaccine as part of EPI; the immunisation programme will now cover nine vaccine-preventable diseases: polio, measles, childhood tuberculosis, diphtheria, pertussis, tetanus, hepatitis, haemophilus influenza type b and pneumococcus."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Similar workshops are to be held in Naushero Feroz, Hyderabad and Sukkur on October 30, 31 and November 1 respectively."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000413",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Pneumonia",
+      "TermGuid": "1b8e8f98-b2a2-4f90-87cf-39cee3729c00",
+      "WssId": 1381
+    },
+    {
+      "Label": "Vaccination",
+      "TermGuid": "6e346c7b-cc74-4844-b3cd-b1cad583b54b",
+      "WssId": 1416
+    },
+    {
+      "Label": "Child health",
+      "TermGuid": "3c0b1059-67b1-4998-a106-4acc0ab2b5cd",
+      "WssId": 1367
+    }
+  ],
+  "ScheduleStartDate": "2012-10-22T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 453,
+  "Modified": "2017-02-22T07:40:21Z",
+  "Created": "2016-12-06T09:50:53Z"
+}

@@ -1,0 +1,224 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "a9a540a8-ce6f-486c-bd2d-07bcb72e28f9",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "49e4feeb-b706-46eb-9ce2-54e67ac3ca00",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9df1333b-4a1f-4071-be5f-34940682b7d6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b2fedb70-165c-4508-a7fd-9d262c5955f5",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "def7b74c-e769-49c7-9553-c30a1c13e7c5",
+    "Id": 8,
+    "Title": "Grants & Partnership"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "0db9a0e6-0f17-4f17-b5fa-3c7333962335",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9ae33fb2-91fc-49f5-9088-6042a6cfb0d8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "8b86f2c0-2c7b-44e8-9296-00d1cf902ac7",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1264)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "35840ea5-c96d-48cf-9162-f9e52bd0d4c0",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1264,
+  "Title": "Exploring the fallout of unplanned urban growth  ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Researchers set to be a part of regional study into the health risks in urban slums. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "More than half of the world's population currently resides in urban areas, according to the United Nations. Cities are prominent parts of the urban landscape and are often described as being 'magnets' for individuals seeking economic opportunity and improved access to healthcare and education."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "While relocating to urban areas offers the promise of a better quality of life, the pace of migration often outstrips planning capacity resulting in the rise of informal settlements: poorly organised residential areas where poverty, poor sanitation and environmental hazards pose a wide array of health risks. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "By 2050, two in three people are forecast to live in such planned and unplanned urban areas with the majority of this growth expected to take place in countries in Africa and Asia, raising concerns about the healthcare implications of these urbanization trends. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Researchers from AKU are part of a team of global health scientists seeking to understand the healthcare implications of this global trend. Faculty from three departments at the University are working on a multi-country study  exploring the health risks faced by those living in informal settlements (or slums) based in fast-growing cities in Pakistan, Bangladesh, Kenya and Nigeria. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study will see the University's researchers collect and analyse data on the health status of those dwelling in slums such as Azam Basti and Neelum Colony in Karachi, the world's 12th largest city by population. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Overcrowding in slums coupled with poor water and sanitation facilities creates conditions favourable to the spread of infectious diseases such as pneumonia, tuberculosis and diarrhea. Widespread poverty also raises the likelihood of substance abuse and mental illness. Besides assessing the burden of such health issues in these areas, researchers will also map out available health services and facilities, and identify the costs of accessing these services. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Forecasts by the United Nations state that 95 per cent of the growth in urban populations will take place in the developing world. At present, there is a dearth of data on the health of those living in such informal settlements,\" said Dr Romaina Iqbal, an associate professor at AKU who is the study's principal investigator."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Through this study we hope to gather evidence that can be used to support a broad range of development initiatives, particularly those seeking to investigate the healthcare services most suited to the particular challenges of these areas. Since informal settlements are densely populated areas, research that results in better healthcare has the potential to benefit many people at once,\" Dr Iqbal added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The study's findings will inform efforts to achieve targets under goal 3 and goal 11 of the Sustainable Development Goals (SDGs). Goal 3 of the SDGs, ensure healthy lives and promote wellbeing for all at all ages, calls for steps to boost the capacity of developing countries to manage health risks. Similarly, goal 11 of the SDGs places special emphasis on enhancing \"inclusive and sustainable urbanization\" and on providing basic services to those living in slums."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Funding for the initiative comes from the UK's National Institute of Health Research which has pledged GBP 122 million to advance global health research focused on low and middle-income countries."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Khawar Kazmi, Dr Zahra Hoodbhoy and Dr Iqbal Azam are co-investigators on the Pakistan portion of the study."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001216",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "8258d8fc-dfbe-45d9-bbb7-bddd8c7251dd",
+      "WssId": 1390
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2f459b5-880f-477f-b143-42e85af523b9",
+      "WssId": 1539
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "0ca576ea-342a-4e1e-bffa-b828ada1bfea",
+      "WssId": 1368
+    }
+  ],
+  "ScheduleStartDate": "2017-08-15T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "From left to right: Dr Iqbal Azam, Dr Zahra Hoodbhoy, Dr Romaina Iqbal, Dr Khawar Kazmi and Dr Arslan Khan.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1264,
+  "Modified": "2017-08-28T11:54:38Z",
+  "Created": "2017-08-15T13:22:43Z"
+}

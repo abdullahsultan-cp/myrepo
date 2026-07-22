@@ -1,0 +1,222 @@
+{
+  "name": "Can Digital Humanities Be Informed by Bioinformatics? Visualising Passim Data for Multiple-Book Relationships",
+  "slug": "can-digital-humanities-be-informed-by-bioinformatics-visualising-passim-data-for-multiple-book-relationships",
+  "tag_list": [
+    "Institute for the Study of Muslim Civilisations",
+    "Research"
+  ],
+  "is_startpage": false,
+  "parent_id": 0,
+  "meta_data": {
+    "sharepoint_id": 2631,
+    "sequence_number": "NEWS-002530",
+    "story_uuid": "a3d228c8-3703-5abb-8b92-1d3cd6eb99a9"
+  },
+  "content": {
+    "component": "news_article",
+    "_uid": "2631-root",
+    "title": "Can Digital Humanities Be Informed by Bioinformatics? Visualising Passim Data for Multiple-Book Relationships",
+    "subtitle": "By Mathew Barber",
+    "summary": "Blog by AKU-ISMC's Mathew Barber on using data for understanding book relationships.",
+    "media": [
+      {
+        "_uid": "6477c972c4d55007",
+        "component": "news_media",
+        "role": "banner",
+        "filename": "2631-BannerImage.jpg",
+        "src": "/news-media/2631-BannerImage.jpg",
+        "media_type": "image",
+        "caption": null,
+        "alt": "Can Digital Humanities Be Informed by Bioinformatics? Visualising Passim Data for Multiple-Book Relationships"
+      }
+    ],
+    "body": {
+      "type": "doc",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "As "
+            },
+            {
+              "type": "text",
+              "text": "KITAB",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://kitab-project.org/",
+                    "target": "_blank",
+                    "linktype": "url",
+                    "uuid": null,
+                    "anchor": null,
+                    "custom": {}
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": "'s research has shown, passim is an incredibly powerful tool for answering a variety of questions about book history and history in general. The algorithm produces a huge amount of data, which we can utilise in our research in many ways. At present, we typically investigate text reuse in the corpus at the level of relationships between pairs of books. That is, we look at statistics that tell us what percentage of one book is reused in another and we visualise alignments between two books. This approach is great for understanding how two books are related, but once we start comparing multiple books these approaches become quite cumbersome."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "To note a couple of examples: what if we wanted to investigate how one particular book was disseminated across tens or even hundreds of later works? Or, what if we wanted to know about how one particular unit of information (perhaps a narrative about a major event) circulated throughout our corpus? To help deal with these kinds of questions the team has been developing new applications for understanding multiple-book relationships. In this blog, I will take the opportunity to introduce some of the applications under development. To do so, however, this requires a short tangent on bioinformatics."
+            },
+            {
+              "type": "hard_break"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The computational analysis of text reuse has developed and advanced alongside that of genomics. This is a fact noted explicitly by David Smith, when he acknowledges that passim utilises the Smith-Waterman alignment algorithm, which is also used in the analysis of genes.[1] Text reuse and genetics are both concerned with problems in sequencing. Put simply, when biologists wish to analyse genes, they convert genetic material into a sequence of letters (A, C, G, T), each of which represent a chemical nucleotide base (adenine, cytosine, guanine, thymine). Three-letter words termed 'codons' specify the amino acids that are used by the body to build proteins.[2] There are also 'stop codons' that mark the end of the sequence. Similarities in sequences of letters between parts of a chromosome or with other chromosomes, or even similarities between the genomes of different animals, might indicate (for example) similar biological functionality. In short, important biological questions can be resolved by identifying similar sequences of letters and alignment algorithms like Smith-Waterman are used to undertake this task. "
+            },
+            {
+              "type": "text",
+              "text": "Read more",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://kitab-project.org/2021/04/29/can-digital-humanities-be-informed-by-bioinformatics-visualising-passim-data-for-multiple-book-relationships/",
+                    "target": "_blank",
+                    "linktype": "url",
+                    "uuid": null,
+                    "anchor": null,
+                    "custom": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Mathew Barber",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://www.aku.edu/ismc/people/Pages/mathew-barber.aspx",
+                    "target": "_blank",
+                    "linktype": "url",
+                    "uuid": null,
+                    "anchor": null,
+                    "custom": {}
+                  }
+                },
+                {
+                  "type": "bold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Research Associate for KITAB at AKU-ISMC. Mathew Barber's research is concerned with the practice of history writing and remembering in the Medieval Islamicate world. He is interested in particular in history writing under the Fatimids in Egypt, the preservation and dispersal of Fatimid-era historical texts, and what this preservation (or lack thereof) means for how later historians viewed and understood the Egyptian past. He is concerned with answering such research questions using a combination of digital and traditional methods, in particular using computational text reuse detection to identify so-called 'lost' texts."
+            },
+            {
+              "type": "hard_break"
+            },
+            {
+              "type": "hard_break"
+            }
+          ]
+        }
+      ]
+    },
+    "alternate_title": null,
+    "alternate_subtitle": null,
+    "alternate_summary": null,
+    "alternate_banner_caption": null,
+    "pull_quote": null,
+    "pull_quote_author": null,
+    "banner_caption": null,
+    "medium_image_caption": null,
+    "category": null,
+    "city": {
+      "id": 3,
+      "title": "London"
+    },
+    "entity": {
+      "id": 10,
+      "title": "Institute for the Study of Muslim Civilisations"
+    },
+    "additional_entities": [],
+    "author": {
+      "id": 5591,
+      "title": "Layal.N.Mohammad",
+      "email": "layal.n.mohammad@aku.edu"
+    },
+    "publisher": {
+      "id": 5591,
+      "title": "Layal.N.Mohammad",
+      "email": "layal.n.mohammad@aku.edu"
+    },
+    "content_writer": {
+      "id": 5591,
+      "title": "Layal.N.Mohammad",
+      "email": null
+    },
+    "content_approver": {
+      "id": -1,
+      "title": null,
+      "email": null
+    },
+    "editor": {
+      "id": 1073741823,
+      "title": "System Account",
+      "email": null
+    },
+    "tags": [
+      {
+        "label": "Institute for the Study of Muslim Civilisations",
+        "term_guid": "40186b8a-23fd-4b7d-bcda-c2917926e740",
+        "wss_id": 1833
+      },
+      {
+        "label": "Research",
+        "term_guid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+        "wss_id": 1811
+      }
+    ],
+    "global_news": false,
+    "locally_active": true,
+    "globally_active": true,
+    "local_approver_group": "ISMC Approver",
+    "global_approver_group": "Global Approvers",
+    "is_published": "Published",
+    "is_globally_approved": false,
+    "is_locally_approved": true,
+    "is_modified_by_global": false,
+    "news_in_urdu": null,
+    "contact": null,
+    "secondary_language_2": null,
+    "secondary_language_3": null,
+    "schedule_start_date": "2021-04-30T09:40:00Z",
+    "schedule_end_date": null,
+    "sequence_number": "NEWS-002530",
+    "sharepoint_id": 2631,
+    "sharepoint_sequence_number": "NEWS-002530",
+    "sharepoint_modified": "2021-04-30T13:41:48Z",
+    "sharepoint_created": "2021-04-30T13:33:03Z"
+  }
+}

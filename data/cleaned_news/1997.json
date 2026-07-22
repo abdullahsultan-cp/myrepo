@@ -1,0 +1,100 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "05d52bc5-ccf6-4aa1-b1f9-636a91b2b0c1",
+  "odata.etag": "\"51\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fd92ea3a-7b17-4bf9-b250-cd5738dd08dd",
+    "Id": 234,
+    "Title": "Rasool Sarang"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c3ab255a-33a3-4184-b9b5-772745be5289",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2c74c790-f64e-4d03-a8f5-9034b398e687",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "18af1792-58bb-4e51-b20e-3559ade63a28",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "27f70d46-c6e5-49af-9768-7a479f0ccda7",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "54867905-de16-41b6-844a-5b78a5a4b789",
+    "Id": 234,
+    "Title": "Rasool Sarang",
+    "EMail": "rasool.sarang@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1997)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "541b8051-be99-4379-acb3-162e62ed9b22",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1997,
+  "Title": "AKU to launch international standard health record system",
+  "NewsSubTitle": null,
+  "NewsSummary": "The system will reduce costs, prevent error and help identify warning signs.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass5A7D09CDF0164D0188AFC7DFB01595D7\"><div>The Aga Khan University has signed an agreement with US-based <a href=\"https&#58;//ehr.meditech.com/\" target=\"_blank\">MEDITECH</a> to implement a state-of-the-art Enterprise Health Record (EHR) system that will enable better patient outcomes and support vital medical research in the developing world.<br>&#160;<br>The initial deployment will be at AKU's academic medical centre and clinics in Nairobi and across Kenya with subsequent deployments in Karachi, Pakistan; Kabul, Afghanistan and Kampala, Uganda. Launch of the system is expected in 2020. <br>&#160;<br>The system, called Expanse, will be the first comprehensive, integrated EHR to be deployed in East Africa. Such systems have a track record of preventing medical errors, reducing readmissions, detecting early warning signs, shortening the length of hospital stays, improving access to health information by healthcare providers, researchers and patients, and reducing costs. <br>&#160;<br>\"The benefits of integrated EHR will be particularly significant in the countries we serve,\" says AKU President Firoz Rasul. \"AKU serves 2.2 million patients annually. The access to an abundance of data will enable us to ask better questions and find better solutions to specific diseases and chronic issues in all the communities we serve. The information gained will be of value not only within our own healthcare system but also to the population of the region as a whole-and through our research, will inform health outcomes in related populations across the globe.\"<br>&#160;<br>\"This is one of my proudest days at MEDITECH,\" says Howard Messing, CEO. \"It is truly an honour to partner with Aga Khan University, and to align ourselves with their commitment to providing quality healthcare to underserved populations, as well as to their deeper mission of advancing education, culture, and overall quality of life for their communities.\"<br></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001926",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    }
+  ],
+  "ScheduleStartDate": "2019-09-19T12:05:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "The system will prevent medical errors, detect early warning signs and reduce costs.",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1997,
+  "Modified": "2019-09-28T15:08:02Z",
+  "Created": "2019-09-19T12:21:31Z"
+}

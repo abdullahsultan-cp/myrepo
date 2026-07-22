@@ -1,0 +1,241 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "39f16241-a8f0-4d66-a47d-662f50efc8be",
+  "odata.etag": "\"12\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2087b9c4-19c9-4641-9c8b-bc7fe979f2b5",
+    "Id": 7068,
+    "Title": "martie.mtange"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1ac3f492-901c-4e82-b12a-07460ad94348",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a1fa56bd-8c83-426e-988b-9ff9b0e48959",
+    "Id": 7068,
+    "Title": "martie.mtange",
+    "EMail": "martie.mtange@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "3389a9ea-1920-46f7-b4ec-482877bd67c1",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "beef8728-08d3-4811-a15f-0db21feedba7",
+    "Id": 9,
+    "Title": "School of Nursing and Midwifery, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e0b9b210-3b46-4fa0-98a9-7684e63d1c52",
+    "Id": 7068,
+    "Title": "martie.mtange",
+    "EMail": "martie.mtange@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2509)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "840d43ce-85a4-4b93-b2a8-0e1d0282a23b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2509,
+  "Title": "SONAM alumna receives grant to reduce teenage pregnancy",
+  "NewsSubTitle": null,
+  "NewsSummary": "SONAM Uganda alumna receives funding from International Confederation of Midwives",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "When Aga Khan University School of Nursing and Midwifery (AKU-SONAM) Uganda alumna, Harriet Nayiga, started MILCOT in 2017, she was excited but also knew that it would involve commitment and a lot of hard work. Most of her effort paid off earlier this year when her research was published, and now she has more to celebrate after receiving a seed grant of ₤2,500 from the International Confederation of Midwives in recognition of her work in sexual and reproductive health in Wakiso district, Central Uganda."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Harriet graduated from AKU-SONAM in 2019 and has not looked back since. She is an International Confederation of Midwives (ICM) Young Midwifery Leader, Director of Midwife-led Community Transformation (MILCOT) and a recipient of the \"Innovative Midwife\" recognition by Nursing Now."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "What is MILCOT?",
+            "marks": [
+              {
+                "type": "bold"
+              },
+              {
+                "type": "italic"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Midwife-led Community Transformation (MILCOT) was established by Harriet as an indigenous organization as a result of witnessing teenagers in the poorest and most marginalised areas become pregnant. MILCOT, therefore, situated itself in one of the poorest areas of Kampala: Nansana Municipality in Wakiso District, north-west of Kampala City."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "There are very few midwives outside hospital settings who work with the youth in communities to provide sexual and reproductive health information to adolescents and young adults. This leaves many young people vulnerable to myths and misconceptions from peers, traditional birth attendants and herbalists. The organization is supported by a committed team of volunteer midwives, programme officers, social workers and a clinical psychologist. It provides the necessary sexual reproductive health information to young people to reduce teenage pregnancies and the deaths of mothers and babies."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "To date, MILCOT has provided 420 adolescents and young adults with information and counselling services, particularly on sexual reproductive health rights. Additionally, the organization has counselled and educated 15 mothers on psychotherapy to deal with post-natal stress, post-miscarriage stress and depression associated with domestic violence and severe poverty."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The funding will be used to empower twenty-five teenage girls who have been marginalized. We will provide family planning and Sexually Transmitted Infection (STI) information, promote condom use as a way of preventing STIs, provide emergency STI screening and treatment as well as provide appropriate referrals,\" elaborated Harriet. She added: \"The funding will help us research and learn more about the Sexual Reproductive Health Rights issues among marginalized adolescents and young women in my community alongside the local authorities. The marginalized young women will be able to make informed health choices based on our findings.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU faculty, Prof Grace Edwards and Cliff Aliga have been with her every step of the way. Harriet shared that: \"They offer the MILCOT team arm's length technical support to ensure that quality assurance is effective through continuous monitoring and evaluation and quality control measures are in place.\" Prof Edwards, who has been her formal ICM mentor was excited by Harriet's recent milestone: \"Since graduating from the BScM programme in Uganda, Harriet has gone from strength to strength. Her charity MILCOT is gaining local and global recognition for her work with vulnerable adolescents and has been recognised and appreciated by the WHO and the International Confederation of Midwives as one of only 10 Global Midwifery Young Leaders."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": " She is a great ambassador for AKU.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU-SONAM joins Prof Grace Edwards in congratulating Harriet Nayiga on her new project."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002413",
+  "LocalApproverGroup": "Sonam EA News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "School of Nursing and Midwifery",
+      "TermGuid": "7c178e97-990f-4d8d-9a2a-106904f6bca6",
+      "WssId": 1822
+    },
+    {
+      "Label": "Midwifery",
+      "TermGuid": "6b76e640-c8ec-4de8-b35e-f29d6a10273e",
+      "WssId": 1824
+    },
+    {
+      "Label": "Awards",
+      "TermGuid": "1b471d94-b04f-406d-a871-a750066aed29",
+      "WssId": 1829
+    },
+    {
+      "Label": "Grants",
+      "TermGuid": "f3f12133-afd2-40b3-bd0a-0e42c16212bd",
+      "WssId": 1884
+    },
+    {
+      "Label": "alumni",
+      "TermGuid": "a3eac32e-03aa-459c-9e70-4677b95965f7",
+      "WssId": 1836
+    }
+  ],
+  "ScheduleStartDate": "2020-12-17T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "AKU Senior instructors pose with Harriet and the MILCOT team",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2509,
+  "Modified": "2021-01-05T10:17:10Z",
+  "Created": "2020-12-17T10:40:42Z"
+}

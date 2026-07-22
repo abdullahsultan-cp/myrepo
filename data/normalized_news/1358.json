@@ -1,0 +1,111 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f0d239dd-8e6f-41d6-84b1-e3bf7214adcb",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ae6159f2-89a5-4bb2-8fef-77dc70fe1143",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "668c2ea4-d971-4b28-8817-7828e2500d3b",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "14098bed-cf50-47ab-b321-974f99111736",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "1ad65ca4-3ce9-49ab-8be4-4e7783fb076c",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e27c1895-b441-44b9-8156-54dee596a0c2",
+    "Id": 13,
+    "Title": "Other"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "f12819d3-417b-4948-8c0a-fbcc1a0818b8",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4add1666-e843-4c83-aa59-f184c5c5cc53",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1358)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "fc964a61-4217-4e19-8d1e-551e921b63de",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1358,
+  "Title": "In memoriam:  Professor Calestous Juma",
+  "NewsSubTitle": null,
+  "NewsSummary": "The University mourns the death of the renowned academic and thought leader. ",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Professor Calestous Juma passed away on 15 December 2017 in Boston, at the age of 64. He is survived by his wife, Alison and son, Eric.</p><p>Dr. Juma served on the Aga Khan University's Board of Trustees from 2013 to 2015. He enriched the University's governance with his insight on issues of the developing world, particularly Africa, and through his extensive knowledge and experience in the application of science and technology to serve global development goals, for which he is internationally renowned.</p><p>At the Harvard Kennedy School, Dr. Juma led an illustrious career as Professor of the Practice of International Development and Director of the Science, Technology, and Globalization Project. Prior to his tenure at Harvard, Dr. Juma was Executive Secretary of the UN Convention on Biological Diversity and Founding Director of the African Centre for Technology Studies in Nairobi. </p><p>For his advancements made in science, engineering and technology, Dr. Juma was elected to several scientific academies including UK's Royal Academy of Engineering and the African Academy of Sciences. </p><p>Through his tireless service to academia, his inspiring publications, his commitment to advising civil society and governments globally, and for the many individuals and groups he mentored so passionately, we remember Calestous Juma as an eminent thought leader whose contribution of knowledge and practice will continue to guide sustainable global development for years to come.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001305",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Obituary",
+      "TermGuid": "d6816264-24b3-45ca-9a0e-a612a9c2b8a0",
+      "WssId": 1347
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    }
+  ],
+  "ScheduleStartDate": "2017-12-19T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1358,
+  "Modified": "2017-12-20T04:57:54Z",
+  "Created": "2017-12-19T09:25:48Z"
+}

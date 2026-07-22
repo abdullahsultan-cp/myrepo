@@ -1,0 +1,272 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "cf53979b-9c84-48d3-8f04-79d421990fcc",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "628a3585-49b8-4435-913a-2d1099f3eaf0",
+    "Id": 6135,
+    "Title": "Faisal Imtiaz"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "29b8c623-fb42-4f68-88cd-47de6755af5e",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cfa83b88-82a6-4ffb-a25b-afb7715a48cb",
+    "Id": 6135,
+    "Title": "Faisal Imtiaz",
+    "EMail": "faisal.imtiaz@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "3572bb1c-0ac5-441b-bab5-cfe3c7fb59ee",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "377d1286-0cab-47b5-a50c-fc4ab4010b5d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7cbb8bcc-a271-437c-837a-09c0206fa577",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "52631889-c315-4067-afcf-699d47a8e32e",
+    "Id": 6135,
+    "Title": "Faisal Imtiaz",
+    "EMail": "faisal.imtiaz@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1366)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d090c41b-1d96-4a7c-b899-f376cd5e2d1b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1366,
+  "Title": "Over 13 million suffer from hepatitis in Pakistan",
+  "NewsSubTitle": null,
+  "NewsSummary": "Globally, 500 million people are living with chronic hepatitis B or C. Pakistan alone has 13 million hepatitis sufferers, many of whom are unaware that they are carriers of the deadly virus.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Every 30 seconds, one person dies from hepatitis in the Asia Pacific region."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This death rate is three times as high as HIV/AIDS,\" revealed Dr Saeed Hamid at a public awareness session held to mark World Hepatitis Day at the Aga Khan University Hospital. He was basing his statements on figures released in the Global Burden of Disease Study by the Institute for Health Metrics and Evaluation, University of Washington."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This year's theme \"This is hepatitis. Know it. Confront it\" focuses on the real-life impact that viral hepatitis has on patients and families."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Globally, 500 million people are living with chronic hepatitis B or C. Pakistan alone has 13 million hepatitis sufferers, many of whom are unaware that they are carriers of the deadly virus."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "About nine million of these people suffer from hepatitis C and 4.5 million from hepatitis B,\" stated Dr Hamid, Chair, Department of Medicine."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Commenting on the lack of awareness about the disease, Dr Hamid said: \"In spite of the high death rates, most people with chronic infection are unaware that they carry the virus. They are therefore at high risk of developing severe chronic liver disease and can unknowingly transmit the virus to other people.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "According to him, despite advances in local blood banks, the major risk factors for transmission remain reuse of needles and syringes, and contaminated blood and blood products."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Access to reliable healthcare facilities is a necessity,\" said Dr Faisal Ismail, Assistant Professor and consultant gastroenterologist."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Ismail stated that chronic carriers often do not experience any symptoms in the early weeks and months of getting infected."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Commonly in an acute illness, a patient may experience visible jaundice, dark urine, extreme fatigue, nausea, vomiting and abdominal pain. In such cases, they should immediately go to the doctor, as the symptoms may subside but the virus will remain,\" he explained."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Talking on the theme of the World Hepatitis Day 2013, Dr Ismail said that 'the silent killer' impacts not only the patients but also their families emotionally and physically."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Taking care of a sick patient of hepatitis is not an easy job,\" he added."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Viral hepatitis is controllable with proper treatment, but delay in diagnosis invariably means that the treatment options are limited."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Getting early detection and proper treatment is important and the only way, because the faster your hepatitis is under control, the better your liver will be,\" said Dr Shahab Abid, Head, Section of Gastroenterology."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Treatment is specific to its cause, which means that your physician will choose the best therapy based on your diagnosis. In the case of viral hepatitis, there are number of treatments available. Now, hepatitis C is generally considered as curable by treatment. In certain acute cases, no drug is needed,\" he further explained."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Meanwhile, Dr Saeed Hamid and Dr Zaigham Abbas, representing The Coalition for the Eradication of Viral Hepatitis in Asia Pacific (CEVHAP) in Pakistan at the event urged the government to take notice of deaths from the diseases."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Even though the death toll from viral hepatitis is high, governments have often been at a loss about how to tackle these diseases, lacking the technical expertise, resources and even evidence to justify the investments needed to confront viral hepatitis,\" Dr Abbas said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "We now have the evidence as well as a new framework from the World Health Organization, and as members of CEVHAP we urge all governments across the region to form national strategies and ensure viral hepatitis receives the attention it needs,\" they added."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001313",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Hepatitis",
+      "TermGuid": "57097c07-b9f5-4881-a5f7-4ac72e78ac7a",
+      "WssId": 1373
+    }
+  ],
+  "ScheduleStartDate": "2017-12-29T06:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1366,
+  "Modified": "2017-12-29T05:47:06Z",
+  "Created": "2017-12-29T05:44:10Z"
+}

@@ -1,0 +1,276 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2d7ec754-3fed-4a7f-998d-544281bd03d3",
+  "odata.etag": "\"15\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "31aa28b3-3e8f-4df6-85d7-9b638c7b74a2",
+    "Id": 19,
+    "Title": "Hiba Khan"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ce85f506-9b74-4584-b6a1-df56c58389a0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dffecde4-65de-4a58-a7c1-699f724ecf76",
+    "Id": 19,
+    "Title": "Hiba Khan",
+    "EMail": "hiba.khan@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "a551d506-f2c9-42fc-9cf6-17dd75e30f20",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b4ebe8e2-2953-43be-9e68-650a4835e5aa",
+    "Id": 8,
+    "Title": "Kampala"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a77e670b-0aa6-4cc4-8aff-80b8dee6c233",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cf6db5f3-eb0b-4d8f-9aff-aee2b1bc9aa2",
+    "Id": 6327,
+    "Title": "stephen.musyoka",
+    "EMail": "stephen.musyoka@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1502)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "638802cb-a170-4ef6-8eb9-77c33cc366b1",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1502,
+  "Title": "Graduands urged to transform Uganda by leading from the front ",
+  "NewsSubTitle": null,
+  "NewsSummary": "103 graduands awarded degrees at AKU's Convocation.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Graduands at the Aga Khan University (AKU) 15th Convocation ceremony were today urged to take up leadership roles to find solutions to Uganda's most pressing problems."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In her speech at the ceremony, Chief Guest Honourable Dr Jane Ruth Aceng, Minister of Health, stated that while convocation marks the \"culmination of one phase of life\", it also heralds the start of a journey of self-discovery and service. \"You will be expected to significantly contribute not just to the development of self, but also to societal development.\" "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Uganda and Africa as a whole, desperately needs men and women who will not be afraid to dream and who are determined to work towards enabling a sustainable future for all,\" Dr Ruth said. \"Let me remind you of your national and moral duty to uphold the highest levels of ethics, integrity, patriotism and timeless values. I urge you to be men and women of honor, no matter the circumstances. Let humility and discipline, which may be required of you as you begin your careers, become your lifetime companions.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Highlighting the contribution that universities play in developing a skilled workforce of doctors, nurses and educators, Dr Ruth mentioned that the government would continue to encourage investment in the higher education sector. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In his welcome address, AKU President Firoz Rasul also challenged graduands to use their skills and knowledge to provide contextual solutions to challenges that face the society. \"Uganda needs you to provide transformative leadership to guide her through providing solutions to her problems that enhance social and economic development of her people,\" he said. \"Those of you who are educators will be called upon to increase enrolments, improve learning outcomes and encourage persistence to graduation. To create schools that welcomes all members of the community. To deal effectively with large classes, and to foster the spread of engaging teaching strategies, without compromising quality. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"Those of you who are nurses and midwives will be asked to ensure that more women give birth safely and that children grow up healthy. To educate the public to adopt healthier lifestyles and demand higher quality health care. And to respond to the growing burden of non-communicable diseases such as heart disease, cancer and diabetes,\" Mr. Rasul continued."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He also highlighted the efforts that AKU has taken to improve the lives of Ugandans in partnership with the Government.  \"An outstanding example of our efforts to complement the Government's efforts in serving the public is the new Aga Khan University Hospital that we will build in Kampala. This is the largest project the University has ever undertaken in Uganda, and it would not be possible without the Government's encouragement and support,\" he said."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"The University Hospital will be a transformational force in Ugandan health care. It will save countless lives by providing international-quality care where it is needed most: right here in Uganda as well as serve as a teaching hospital, it will educate outstanding nurses, midwives, doctors and allied health professionals who will elevate the quality of health care across the country, and develop new strategies for preventing and treating diseases that kill tens of thousands of Ugandans every year,\" he concluded.  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Atim Irene, this year's valedictorian reiterated the words of the President and the Chief Guest in her speech as she urged her fellow graduands to be exemplary leaders of the future. \"As you prepare to go out in underprivileged communities in Uganda as AKU alumni and volunteer your services in organizing desperately needed health camps and screening mechanisms for diseases and mold the education sector which will undoubtedly contribute to improving the socioeconomic status and well-being of our fellow citizens, I urge you to be transformative leaders and AKU ambassadors.\"  "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "At the convocation 103 graduands were awarded degrees. The Institute for Educational Development saw 20 graduate with a master's degree and the School of Nursing and Midwifery awarded 32 Bachelor of Science in Nursing degrees, 15 Bachelor of Science in Midwifery degrees and 36 diplomas in General Nursing. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Welcome Address by President Firoz Rasul",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/convocation/ug/Pages/president-speech-2018.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Valedictorian Speech by Atim Irene",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/convocation/ug/Pages/valedictory-speech-2018.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Address by the Chief Guest Dr Jane Ruth Aceng, Minister of Health ",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/convocation/ug/Pages/chief-guest-speech-2018.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": "Uganda and Africa as a whole, desperately needs men and women who will not be afraid to dream and who are determined to work towards enabling a sustainable future for all",
+  "PullQuoteAuthor": "Dr Jane Ruth Aceng, Minister of Health",
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001448",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Convocation",
+      "TermGuid": "95deeea6-bd39-4a41-b839-40d28c835c8f",
+      "WssId": 1355
+    },
+    {
+      "Label": "Uganda",
+      "TermGuid": "4374c201-665a-47ec-90ab-11bef2a2b13a",
+      "WssId": 1593
+    },
+    {
+      "Label": "east africa",
+      "TermGuid": "b6b77241-de6e-4500-8f71-66c2d9daab2d",
+      "WssId": 1479
+    }
+  ],
+  "ScheduleStartDate": "2018-02-10T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "103 graduands were awarded degrees at AKU's 15th Convocation ceremony ",
+  "MediumImageCaption": "The Institute for Educational Development saw 20 graduate with a master's degree and the School of Nursing and Midwifery awarded 32 Bachelor of Science in Nursing degrees, 15 Bachelor of Science in Midwifery degrees and 36 diplomas in General Nursing.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1502,
+  "Modified": "2018-02-19T08:10:40Z",
+  "Created": "2018-02-10T11:56:19Z"
+}

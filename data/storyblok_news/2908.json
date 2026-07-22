@@ -1,0 +1,330 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "efd91c28-ef86-42db-9221-034946154fd1",
+  "odata.etag": "\"16\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dae8d6db-5676-4326-b58a-b9cd770448a3",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dd62dcaa-0055-48b5-a1b2-ae970e6baaca",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "36338f16-78f1-4b01-8b23-1b928d9e17bf",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "b7a6dbd3-7f27-4fc1-b2bd-4c1029f5ddaf",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "127cdb24-3afd-449d-ba90-0633944c6bd4",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "daf1921f-ab02-42df-94c4-299e744d2434",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2908)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2296c31c-95ee-4eef-922a-0e9fee9260e2",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2908,
+  "Title": "Mental health care should be for all, not a luxury!",
+  "NewsSubTitle": null,
+  "NewsSummary": "Using implementation science to bring about the much-needed paradigm shift.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Unlike many other medical conditions, mental illness and suicides are on the rise; we are not reaching and/or treating the vast majority of people affected with mental ill health. It is clear we need to do better. But how do we do that, especially in resource and capacity constrained settings?  The Brain and Mind Institute (BMI) plans affect change through implementation (or delivery) science. BMI's "
+          },
+          {
+            "type": "text",
+            "text": "Implementation Science Team",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/bmi/about/Pages/our-people.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " consists of over 20 prominent researchers and practitioners, with exciting and multidisciplinary skillset, including expertise in psychiatry, psychology, neuroscience, social and medical anthropology, mental health, suicide prevention, health economics, data science, public policy, and instructional design. This team will help move science from the 'bench' to the 'community' (as per BMI's ethos of 'from neuron to the neighborhood'). We aim to identify gaps in service and/or knowledge, while developing effective strategies to help improve access to care, overcoming disparities. This will be achieved through innovative, culturally sensitive solutions, engaging interdisciplinary teams (at the community level) to build action networks, while disseminating findings to communities and stakeholders for maximum impact."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "In order to address the knowledge gap, BMI will launch a series of micro-certification courses to raise awareness about mental health. Due to its localized context, participants will be able to recognize mental illness, resulting in early detection and reduced stigma. As a result, more people will likely seek treatment or support those suffering in silence in an environment with less stigma and better understanding. These courses will start in September and will deploy innovative engagement strategy that includes a webinar series, module facilitation, culminating in peer discussion sessions. They are designed for a broad audience with no registration prerequisites. Stay tuned for the launch of this 'Mental Health Ambassadorship' courses!"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "With education comes awareness. As part of BMI's efforts to build a National "
+          },
+          {
+            "type": "text",
+            "text": "Self-Harm Registry",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/bmi/about/Pages/selfharm-registry-committee.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", we in partnership with the Aga Khan University Hospital, will integrate screening tools for depression and suicidal ideation into electronic health records (EHR). Such integration, continuous monitoring and assessment, is a pilot project that we intend to expand to other Kenyan hospitals and potentially contribute to developing a National Self-harm Registry, in partnership with Kenya's Ministry of Health, Division of Mental Health."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Another effort that we are pursuing closely is the student mental health survey, for evaluating the mental well-being of university students at Aga Khan University campuses and other Kenyan universities. This will help us better understand mental health needs of college students, and to develop predictive models (early warning indicators) for depression, anxiety disorders and suicidal acts."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "BMI follows a One AKU model, and as such, is developing networks across various countries and campuses. The newly established Karachi hub will serve South and Central Asia, where implementation projects are already under way. For instance, BMI is working with Aga Khan Health Services - Pakistan, to implement our"
+          },
+          {
+            "type": "text",
+            "text": " Integrated Mental Health Framework",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/bmi/about/Pages/integrated-framework.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " in Northern Pakistan. This model of care empowers and deploys community health workers, nurses, and psychologists together with psychiatrists to provide a continuum of care."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "At the BMI, one of our platforms of activity include partnership building. We are striving to build a 'Big Tent' and NOT an 'Ivory Tower'. As such, we are not only building partnerships across various AKU Colleges, Schools, Centers, departments and Institutes, but also with various academic and community organizations, including Harvard University, University of Michigan,"
+          },
+          {
+            "type": "text",
+            "text": " Befrienders Kenya",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/bmi/engagement/Pages/befrienderskenya.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", "
+          },
+          {
+            "type": "text",
+            "text": "Taskeen",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/bmi/engagement/Pages/taskeen.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", the "
+          },
+          {
+            "type": "text",
+            "text": "Davos Alzheimer's Collaborative",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/news/pages/News_Details.aspx?nid=NEWS-002772",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ", and "
+          },
+          {
+            "type": "text",
+            "text": "Princess Margaret Cancer Centre",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/bmi/engagement/Pages/UHN-PMCC.aspx",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". Stay tuned for descriptions of various exciting projects and initiatives in future Newsletters and/or our website."
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002801",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Neurosurgery",
+      "TermGuid": "4770c690-7346-4e11-8c94-3c50e477acc7",
+      "WssId": 2195
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "Psychiatry",
+      "TermGuid": "0cf13e57-d54a-4a5e-953c-e8034e4072fd",
+      "WssId": 2300
+    },
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    }
+  ],
+  "ScheduleStartDate": "2022-06-29T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2908,
+  "Modified": "2022-06-30T10:05:13Z",
+  "Created": "2022-06-29T15:19:50Z"
+}

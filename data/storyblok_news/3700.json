@@ -1,0 +1,184 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "e9ddeaa8-f89a-4122-bcdc-e4123f508493",
+  "odata.etag": "\"8\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3ddedcba-7c9c-4679-97b8-2605b2ebc46b",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "dff00365-7533-4b35-b8b9-46fbfc872392",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "124116fb-a608-4b7f-94c4-0511fa44863a",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "5b6b2c9b-4ef5-401f-8e35-1ddbb60d17ba",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "9bd50d27-5f2d-4752-ad19-438ae27229dc",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "45a03b17-bef5-41fb-8e5f-14ed0b758909",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3700)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ce19666a-0349-4b13-8fe8-f1ee72b17117",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3700,
+  "Title": "AKU LEADS: Micro-Credentials for Lifelong Learning",
+  "NewsSubTitle": null,
+  "NewsSummary": "Online programme offers skills for work, growth and lifelong learning",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today, the world is changing rapidly more so than ever before with disruptive technological development driving change in the nature and future of work, and the workplace. It is recognised that in the course of a career youth would have to re-invent themselves, learn new skills or change jobs several times.  Consequently, online short courses leading to micro-credentials have emerged as a response to the need for continuous re-skilling and up-skilling in the wake of a widening skills gap in the labour market. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Aga Khan University (AKU) is excited to bring you LEADS - an online and hybrid programme for continuing education enabling participants to earn micro-credentials. Designed to meet the evolving demands of the job market and also address concerns related to equity and access, LEADS offers everyone a path to growth, anytime and anywhere. Each micro-credential represents a course that offers clear standards and assessment, ensuring that achievements are credible, portable and bear the mark of quality valued by AKU."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Since its launch last year, LEADS has introduced a variety of courses that serve poor and marginalized youth who may not have the benefit of higher education and for professionals hoping to upgrade their knowledge. For example, those in the rapidly expanding service industry in the country such as the call centres benefit from the programme's courses on enhancement of English language skills development. Women entrepreneurs who run small business ventures from home are often unable to participate in the more traditional in-person professional development programmes. They could seek financial and digital literacy so essential to run small business ventures such as running Day Care Centres. Likewise, professionals such as teachers and educators who may have received their initial teacher education degree but need to upgrade their knowledge and skills such as in teaching robotics or use of artificial intelligence could take courses on the LEADS platform and earn micro-credentials."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "LEADS is designed to offer learning solutions that match today's digital realities. The programme is affordable and accessible via readily available devices - including basic mobile phones with limited internet bandwidth. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For more information about the LEADS a programme for Lifelong Learning Education and Development of Skills, visit the Aga Khan University "
+          },
+          {
+            "type": "text",
+            "text": "website",
+            "marks": [
+              {
+                "type": "link",
+                "attrs": {
+                  "href": "/leads",
+                  "target": "_blank",
+                  "linktype": "url",
+                  "uuid": null,
+                  "anchor": null,
+                  "custom": {}
+                }
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": ". "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003568",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Learning",
+      "TermGuid": "7bd26807-b759-462c-b48c-26b0ff6bfa13",
+      "WssId": 2158
+    },
+    {
+      "Label": "Education",
+      "TermGuid": "f1bdfaa1-d16d-4d8d-9ebb-4ae7121e9e50",
+      "WssId": 2102
+    }
+  ],
+  "ScheduleStartDate": "2025-06-04T08:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3700,
+  "Modified": "2025-06-04T10:04:33Z",
+  "Created": "2025-06-04T10:01:27Z"
+}

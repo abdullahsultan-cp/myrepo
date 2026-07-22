@@ -1,0 +1,115 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "2b90d3e9-bb8b-47d3-8066-f3174078707f",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "7fccaa77-a13b-4c9c-85fb-6a25c1af4061",
+    "Id": 7746,
+    "Title": "patrick.gumo"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "68294159-0b10-41b0-a7a2-eb45f8deb0a6",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1c0aa7fc-30c2-4bcc-aa3e-634d3f4e20e5",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "1a0a89a3-2dd2-465e-b27b-b86348a46a24",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "d97bf7bf-2f41-49bd-9270-96566818a1d7",
+    "Id": 7,
+    "Title": "Medical College, East Africa"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "787e3116-0262-469c-a131-9b7e0ed8a0f3",
+    "Id": 7746,
+    "Title": "patrick.gumo",
+    "EMail": "patrick.gumo@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3033)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f351ec1b-822a-419a-9240-a7eb8c5e4c8f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3033,
+  "Title": "AKU faculty receives an international award",
+  "NewsSubTitle": null,
+  "NewsSummary": "Dr Sokwala acknowledged for his contribution to nephrology",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p></p><p>Dr Ahmed Sokwala, Assistant Professor in the Department of Medicine has been awarded the distinction of Fellow of the International Society of Nephrology (ISN) in recognition of his distinguished career in the field.</p><p>The award is an internationally recognizable seal status the ISN grants its members who have demonstrated outstanding professional accomplishments in research, service, teaching, or through their other contributions to nephrology.<br/></p><p>\"It is a great honour to be awarded as a Fellow of the ISN. This accolade is dedicated to patients suffering from kidney disease in Kenya and all around the world. Kidney diseases are on the rise in our region and we need more education and research to tackle this epidemic,\" said Dr Sokwala. </p><p>Nephrology is the study of normal kidney function and disease, the preservation of kidney health, and the treatment of kidney disease from diet and medication to renal replacement therapy. </p><p>According to a statement from the President of ISN, Prof Agnes Fogo, \"It is my distinct pleasure to congratulate you on being awarded the Fellow of the International Society designation. You are part of the inaugural group of ISN members to receive this recognition, and we hope it will help to highlight your distinguished professional career.\"</p><p>Dr Sokwala joins the pool of highly specialized medical faculty at AKU Medical College in East Africa who are providing world-class care to our population, high-quality education to students, and research that is helping solve problems that are prevalent in this region.</p><p>The official announcement will be made during the Presidential Address at the World Congress of Nephrology (WCN23) on March 30, 2023 in Bangkok, Thailand.</p><p>The ISN, through its members and in collaboration with national and regional societies, engages 30,000 health professionals from across the globe to reduce the burden of kidney diseases and provide optimal health care for patients. </p><p><br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002919",
+  "LocalApproverGroup": "MC EA News Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "Medicine",
+      "TermGuid": "acd128c1-9caa-4c8a-81f7-94ec65874343",
+      "WssId": 2103
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "179778ec-22ad-4f97-b0c1-6a0f9532e62d",
+      "WssId": 2163
+    },
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    }
+  ],
+  "ScheduleStartDate": "2023-01-25T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": "Dr Ahmed Sokwala, Assistant Professor in the Department of Medicine",
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3033,
+  "Modified": "2023-01-25T10:27:54Z",
+  "Created": "2023-01-25T08:38:47Z"
+}

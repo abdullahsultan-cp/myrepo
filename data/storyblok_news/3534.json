@@ -1,0 +1,442 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "1e0e37e0-7501-4bd2-9a96-808c6b1de3e1",
+  "odata.etag": "\"32\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f581c2bd-29ff-4b55-9591-1338dfba6fee",
+    "Id": 16322,
+    "Title": "Salema Ahmed"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82f2f824-0947-496d-b0d4-59506d2d414c",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6fe0197a-798e-4273-89af-0a096a195ea6",
+    "Id": 16322,
+    "Title": "Salema Ahmed",
+    "EMail": "salema.ahmed@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "cf8fc0bd-ca26-49ef-a3bf-e30a27064450",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "4cfe2067-86d7-4815-ba29-37ea5472ec5f",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "027add95-5b01-46a2-a75a-20af50f32db9",
+      "Id": 10,
+      "Title": "Institute for the Study of Muslim Civilisations"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "560922d3-9278-44a4-8b5c-4c4417149570",
+    "Id": 16322,
+    "Title": "Salema Ahmed",
+    "EMail": "salema.ahmed@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3534)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82073309-d346-4245-8220-1c4e92e56348",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3534,
+  "Title": "Tracing Footsteps Across Oceans: A Journey of Culture, History, and Connections",
+  "NewsSubTitle": null,
+  "NewsSummary": "Conversation with AKU-ISMC alumnus Umang Kochhar",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Tracing Footsteps Across Oceans: A Journey of Culture, History, and Connections",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": " In a conversation with Umang Kochhar, an AKU-ISMC alumnus (Class of 2019-2021) and a scholar in Malay Studies at the National University of Singapore (NUS), we explore his career path, inspirations, and the memories that continue to shape his academic pursuits. From chai-and-biryani bonding in London to tracing cultural exchanges across the Indian Ocean, Umang's journey reflects a passion for history, travel, and learning."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Navigating through the Pandemic: From London to Hyderabad",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Umang's time at AKU-ISMC was marked by unexpected challenges when the COVID-19 pandemic disrupted the rhythm of life. \"Things were smooth until March 2020. I was able to access archives at the British Library, but after April, everything became difficult. Staying in London was challenging, but living at Victoria Halls made it bearable. We bonded over chai and biryani-it became a core part of the ISMC experience.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "After graduation, Umang joined the Aga Khan Trust for Culture as a Research Assistant, contributing to India's largest conservation project at the Qutb Shahi Heritage Park in Hyderabad. His primary task was documenting material objects for a new interpretation center at the Qutb Shahi Tombs. \"It was amazing to see my studies come to life-handling everything from manuscripts and porcelain to arms and coins. That hands-on experience made everything I'd learned feel real.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Inspired by the Spirit of Ibn Battuta",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "When asked about what inspires him, Umang chuckles and says, \""
+          },
+          {
+            "type": "text",
+            "text": "Ibn-e-Batutah (bagal mein juta).",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "\" Much like the 14th-century traveler, Umang finds joy in exploring new places, societies, and cuisines. \"Travel has always been my passion. I want to understand different societies, especially across the Indian Ocean region, and how food and culture intertwine with history.\" This wanderlust and curiosity drive his ongoing research and career choices."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "AKU-ISMC: Building Foundations for Lifelong Learning",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Umang credits AKU-ISMC as a key pillar in his journey, not just for academic insights but also for invaluable experiences. \"AKU-ISMC's library was an incredible resource, especially for anyone researching South Asia. The access I had to its collection is something I deeply value, and I intend to explore more of this in the future.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "He also highlights AKU-ISMC's growing focus on Indian Ocean studies, which has been instrumental in shaping his research path. \"The research at ISMC on the Indian Ocean is expanding, and it's incredibly beneficial for students like me who are interested in the region's historical networks and exchanges.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The mentorship of Dr. Topan, Dr. Pradines, and Dr. Alimia played a pivotal role in his academic development. \"Their expertise across different regions gave me a multi-dimensional view of the Indian Ocean World. These discussions have been invaluable and continue to guide my research today.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Exploring New Horizons: Research on India and the Malay World",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Umang's current work focuses on the connections between India and the Malay World through the lens of the Persianate World. \"The Malay World is an underexplored area, especially in the context of the Persianate influence. With my research, I aim to contribute to the broader literature on the Indian Ocean World and shed a light on these cultural exchanges.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In addition to historical research, Umang has developed a growing interest in food histories. \"Food stories connect cultures in fascinating ways. I'm particularly interested in tracing these narratives across the Indian Ocean region, which offers a unique perspective on cultural exchange.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "A Lifelong Network of Support",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Throughout his journey, Umang has stayed connected with the AKU-ISMC community, especially with Dr. Topan. \"His wisdom and support have been invaluable. He's been a guiding force throughout my career, and I continue to rely on his insights.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Looking back, Umang cherishes the friendships he formed at AKU-ISMC. \"I miss the "
+          },
+          {
+            "type": "text",
+            "text": "mehfils",
+            "marks": [
+              {
+                "type": "italic"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": " with friends from across the border. These moments, along with the academic experiences, are among my most treasured memories from ISMC.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Advice to Future Graduates: Stay Curious and Connected",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "For current students and recent graduates, Umang offers some practical advice: \"Explore every opportunity and stay curious. AKU-ISMC provides a unique environment for learning-make the most of it. Also, build relationships with your professors and alumni. Networking and meaningful conversations can open unexpected doors.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Looking Ahead: Goals and Future Plans",
+            "marks": [
+              {
+                "type": "bold"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "As Umang continues to navigate his academic and professional path, he remains focused on understanding India-Malay connections through a broader Indian Ocean perspective. \"I hope my research will not only fill gaps in existing literature but also foster greater understanding of the historical networks that connect these regions.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "With a passion for exploration and a love for learning, Umang Kochhar exemplifies the spirit of a modern-day Ibn Battuta-charting new territories through history, culture, and food. From pandemic challenges to cultural discoveries, his journey reflects the power of curiosity and resilience, reminding us that knowledge is a journey, not a destination"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": false,
+  "SequenceNumber": "NEWS-003406",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Institute for the Study of Muslim Civilisations",
+      "TermGuid": "07d43bf7-eb91-4492-880c-d03d97296f5b",
+      "WssId": 2143
+    }
+  ],
+  "ScheduleStartDate": "2024-10-30T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3534,
+  "Modified": "2024-10-30T12:22:08Z",
+  "Created": "2024-10-30T10:46:53Z"
+}

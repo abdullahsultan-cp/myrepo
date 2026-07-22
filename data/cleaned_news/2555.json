@@ -1,0 +1,112 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "4f1c6b45-1d65-478e-aed5-867c16bce3cf",
+  "odata.etag": "\"11\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f0fe46fe-6d66-44f9-a971-68f07acbcc29",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "2d52cc71-e6f8-4b0f-8ff9-42924650a546",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5cdd4874-bb64-44f4-b29e-ded78b5f502c",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a2d0061c-4445-4bcd-b1fb-deff80ddb078",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "6d29e01a-a26d-480e-86ad-08d992e3a3d5",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "8a4a4342-3c41-41e2-ac44-8df3988f2188",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "58500a35-b331-437c-a804-32b260072557",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2555)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "24d5871c-90b4-47a3-b94d-521221b43729",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2555,
+  "Title": "Startup to tackle challenge of serious surgical complications",
+  "NewsSubTitle": null,
+  "NewsSummary": "Aiman's platform offers remote monitoring and tailored counselling to postoperative patients.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClass693BB18639BC419885A72FB20D0191BB\"><p>Most people who undergo surgery recover without complications. But up to one in five patients, research shows, experience serious complications within a month of their procedure that can endanger their health.&#160;<br></p><div>These advanced complications -which include life-threatening conditions such as sepsis and disability-causing gangrene - require patients to return to hospital for emergency care or seek readmission for treatment.</div><div><br></div><div> Besides being costly and inconvenient for patients, repeat hospitalisations from complications place an added strain on healthcare systems.</div><div><br></div><div>\"The majority of serious postoperative complaints can be addressed if patients receive more attentive follow-up care in the crucial 30 days after surgery,\" says Aiman Chippa, a postgraduate student* at AKU and founder of Maseeha Health (Health Saviour), a telemedicine platform that aims to improve the recovery process after surgeries.&#160;</div><div><br></div><div>Aiman has spent the last two years developing Maseeha Health at the University's i2S incubator, run by the Critical Creative Innovative Thinking Forum, CCIT. During this time, she has spoken to a range of patients, caregivers and healthcare professionals involved in the post-operative period.&#160;</div><div><br></div><div>\"There's a lot of anxiety when a family member returns from a surgery,\" Aiman adds. \"Most patients are recommended complete bed rest which means that caregivers have to adjust to looking after all their basic needs just like a parent has to learn how to take care of a newborn.\"&#160;</div><div><br></div><div>Aiman's research has seen her looking into the recovery process for a wide range of surgeries&#58; from common procedures such as appendix removal and bone fracture repair, right through to open-heart surgeries, and she's noticed a range of issues that can determine the success of a patient's recovery.</div><div><br></div><div>The first challenge is to educate patients and caregivers about possible complications at the time of discharge. Discharge summaries are typically written in very technical language and even though patients typically receive counselling on the recovery process, many leave hospital with inadequate information about the warning signs to look out for. This means that they fail to pay attention to unusual smells, warmer than usual skin around the incision, or changes to the colour of their wound, which are worrying symptoms.&#160;</div><div><br></div><div>Even if patients have sufficient information, many tend to put off making appointments, which leads to delays in seeking care. Finally, many patients, who feel the need for counselling, fail to receive it in a timely way as they grow frustrated due to difficulties in reaching their surgeon or the long wait times on hospital helplines.<br></div><div><br></div><div>Maseeha Health helps address these problems by improving the connection between patients and medical experts by implementing a formal follow-up process. The platform requires patients to sign up to a website where they upload their discharge summary and enter details about their procedure. While signing up, patients are required to review pictures of different complications which helps raise awareness of the most serious complications.</div><div><br></div><div>Once the form is submitted, Maseeha Health judges the patient's risk of complications and sets up a series of follow up calls at regular intervals to screen for symptoms that could quickly worsen without timely care such as excessive pain, fever, and redness or pus around the incision.&#160;&#160;</div><div><br></div><div>\"Our goal is to identify symptoms at an early stage when care can be most effective,\" says Aiman. \"Addressing complications in a timely way is not only good for patients but it also helps reduce the volume of readmissions which is a key indicator for a health system's performance.\"&#160;</div><div><br></div><div>Aiman is now ready to pilot Maseeha Health and is currently seeking funding for the project. She credits the team of innovators at CCIT - especially CCIT Director Dr Asad Mian and her mentor at the i2S, Mr Rafeh Ahmed - for introducing her to surgeons and experts in fields such as business development and information technology that have helped her develop her startup.</div><div><br></div><div>She says&#58; \"CCIT has played a huge role in my life. I was able to turn my idea into a full-blown prototype because of the support I received at i2S. I always found someone who would open a door for me at CCIT's incubator and I couldn't imagine making the same progress on my startup anywhere else.\"</div><div><br></div><div>Aiman was so inspired by the support she received that she decided to joined CCIT in 2020 as an innovation fellow to help other startups. During her year as an innovation fellow, where she worked under the supervision of her mentors, she helped CCIT's 15 other incubates meet milestones relating to market research, developing their business model and prototyping their ideas.&#160;</div><div><br></div><div>\"My mentors really looked after my startup and I wanted to be as generous with my time and support to other startups at CCIT. That is why I joined as an innovation fellow.&#160;Like other entrepreneurs, I consider my startup to be like my baby. I'm looking forward to seeing how my venture grows and to helping others achieve their dreams too!\"</div><div><br></div><div>* <em>Aiman is currently enrolled in the MSc Epidemiology and Biostatistics Programme and is set to graduate in 2021.&#160;</em></div><div><br><br></div><p><br></p></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002455",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "students",
+      "TermGuid": "924138ea-95e8-482e-8e82-ca5ee2097d44",
+      "WssId": 1797
+    },
+    {
+      "Label": "Surgery",
+      "TermGuid": "ffc3c74f-60e1-45bb-8264-d87c86e1c65b",
+      "WssId": 2070
+    }
+  ],
+  "ScheduleStartDate": "2021-02-23T09:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2555,
+  "Modified": "2021-02-24T11:47:20Z",
+  "Created": "2021-02-23T08:58:46Z"
+}

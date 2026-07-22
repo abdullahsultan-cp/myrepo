@@ -1,0 +1,267 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0fdc3855-b32b-4671-a31e-f7188ae19a36",
+  "odata.etag": "\"37\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1a5096e4-63e0-4645-8756-9c776eb245f1",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f00693d8-7bd8-44c6-911c-72ab1cf6e9ed",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9eeb4a3b-b1ab-4c2a-8848-cd1751c07f66",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "352e99bc-bb89-4d36-bdf4-f529252cf6b9",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "82da9dae-3eb3-48c0-b5a3-f00f86674dc5",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "a4519f16-c6c4-4a85-9073-bbff6cba8dbf",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "345896c3-95da-4fd4-b9e9-ed347b664c7a",
+    "Id": 267,
+    "Title": "Fabeha Pervez",
+    "EMail": "fabeha.pervez@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(1331)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b623753f-a5be-4637-8d71-ca8ba64de590",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 1331,
+  "Title": "Heart and lung innovations improving treatment options: experts",
+  "NewsSubTitle": null,
+  "NewsSummary": "NHSRS brings together heart and lung researchers to discuss a global health priority",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The availability of new life-saving techniques in Pakistan promises quicker diagnosis and better treatment options for those suffering from chronic cardiovascular and pulmonary diseases, said experts at the National Health Sciences Research Symposium at the Aga Khan University."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Hospitals in Karachi and Islamabad have recently introduced cardiac procedures such as TAVI, transcatheter aortic valve implantation, and EVAR, endovascular aneurysm repair, which were previously only available in leading hospitals in the developed world. Both procedures enable the treatment of late-stage patients whose delicate health and advanced symptoms meant that open heart surgery is too risky to pursue."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Together, TAVI and EVAR represent a new way to treat complex heart and vascular disease, according to speakers at the three-day conference Heart and Lung: From Prevention to Regeneration."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "\"TAVI and EVAR are minimally invasive procedures that require small incisions in the leg rather than opening up a patient's chest. Pakistan now has a handful of trained specialists who can practice these advanced techniques. The challenge is to understand how to make these treatments more widely available in a cost-effective manner for all our patients,\" said Dr Osman Faheem, assistant professor of cardiology at AKU and an expert in the field of structural heart disease."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Specialists in pulmonology, the study of the respiratory system, added that minimally invasive techniques such as video-assisted thoracic surgery and bronchoscopy have brought vast improvements in the quality of care offered to lung cancer patients in the country. Both procedures require only tiny cuts to the body and enable surgeons to detect and tackle tumours in a more precise, less painful way for the patient."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Pulmonology specialists also discussed developments in how to treat lung cancer without surgery, through radiotherapy and medical regimes."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The results of new stem-cell based therapies for patients suffering from heart failure were also presented at the conference. While still at experimental stages, speakers noted that the placement of stem cells into damaged and diseased hearts offered a way to 'regenerate' and thereby regain lost function."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Improvements in existing technology and diagnostic methodology were also explored. For instance, 3D echos and cardiac MRIs presented a much more detailed picture of the heart to all healthcare providers."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "When combined with 3D printers, they offer the ability to create accurate heart models which provide surgeons and physicians with the best information to tackle chronic and acute heart disease.  "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Experts also pointed out the important role played by nurses, working in hospital and community settings, in the care for those suffering with cardiopulmonary diseases. In addition to understanding the physical, psychological and social needs through research, nurse practitioners are actively involved in areas such as cardiac rehabilitation and in advising patients on lifestyle changes that will boost their quality of life."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "These were some of the discussions at the event which saw specialists in cardiopulmonary medicine from around the world share cutting edge research and discuss the most effective ways to treat the threat posed by such diseases. Special sessions on a wide variety of topics spanning the fields of critical care, basic sciences, cardiothoracic surgery, family medicine and the humanities were also held at the conference."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "Speaking about the goals of the event, Conference Chair Professor Saulat Fatimi said: \"Our goal is to establish a range of collaborative projects at the University so that cutting edge research and clinical innovations from around the world can benefit Pakistani patients. To this end, we are setting up collaboration committees with our international speakers so that this conference has a long-term impact.\" "
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The conference's objectives are in line with global efforts to achieve targets under goal 3 of the Sustainable Development Goals: ensure healthy lives and promote well-being for all at all ages. Target 3.4.1 of the goal calls for special efforts to reduce premature deaths caused by cardiovascular conditions by a third by 2030."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "text",
+            "text": "The conference was preceded by a day of workshops at the University's Centre for Innovation in Medical Education where participants gained advanced skills on state-of-the-art simulators. Over 500 participants were in attendance over the event."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-001280",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Cardiac disease",
+      "TermGuid": "6f0bcd20-a624-4b55-a7b7-f1463b4bc779",
+      "WssId": 1391
+    },
+    {
+      "Label": "Chronic obstructive pulmonary disease",
+      "TermGuid": "3dfdb877-a50d-40da-a2d4-9f3d3b553796",
+      "WssId": 1421
+    },
+    {
+      "Label": "innovation",
+      "TermGuid": "8709ce73-3783-493e-afa8-f9799c7e32dd",
+      "WssId": 1533
+    },
+    {
+      "Label": "Sustainable Development Goals",
+      "TermGuid": "9d248ec7-b459-44ea-91d9-a54e40d4e59a",
+      "WssId": 1435
+    }
+  ],
+  "ScheduleStartDate": "2017-11-03T12:30:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": "Conference co-chair Dr Rubina Barolia addresses the inaugural session of the conference.",
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 1331,
+  "Modified": "2017-11-07T11:11:46Z",
+  "Created": "2017-11-03T05:59:21Z"
+}

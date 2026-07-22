@@ -1,0 +1,227 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "425001c0-1391-431d-8fb2-0f219cd9d2c0",
+  "odata.etag": "\"41\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "3195eff0-f5c7-42af-a5c5-a6744f454b76",
+    "Id": 12827,
+    "Title": "Saman Qureshi"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "1cc45ec7-5684-4ad5-9946-4bc53912fad4",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "32ac67dc-88ab-4e19-9f80-d43643a1e460",
+    "Id": 8075,
+    "Title": "Ali Najib Sidiki",
+    "EMail": "ali.najib@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "e7e93246-39d9-48f2-bf0f-1cb8febc2d4d",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "0f782450-2b1c-4ba1-b75e-e02ac660fca8",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "a0db8b81-220d-47e2-ab03-6a9a8258e028",
+      "Id": 6,
+      "Title": "Medical College, Pakistan"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a97f5200-4005-410c-b49d-25a5329940c6",
+    "Id": 12827,
+    "Title": "Saman Qureshi",
+    "EMail": "saman.qureshi@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2737)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "12d38cbe-9b16-4d6e-8471-dd25257a1d0f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2737,
+  "Title": "Dr Anita Zaidi elected to the U.S. National Academy of Medicine",
+  "NewsSubTitle": null,
+  "NewsSummary": "The appointment recognises Dr Zaidi's groundbreaking work in newborn and child health.",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Anita K.M. Zaidi, MBBS, SM, president, gender equality and director of vaccine development, surveillance and enteric and diarrheal diseases, Bill & Melinda Gates Foundation, has been elected to the U.S. National Academy of Medicine (NAM)."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Membership in the NAM is considered one of the highest honors in the fields of health and medicine and recognises individuals who have demonstrated outstanding professional achievements and commitment to service."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The election of 90 regular members and 10 international members was announced by the NAM at its annual meeting held on October 18, 2021."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Zaidi has been elected \"for global leadership in paediatric infectious disease research and capacity development relevant to improving newborn and child survival in developing countries.\" "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The National Academy of Medicine, established in 1970 as the Institute of Medicine, is an independent organisation of eminent professionals from diverse fields including health and medicine; the natural, social, and behavioral sciences; and beyond. It serves alongside the National Academy of Sciences and the National Academy of Engineering as an adviser locally in the United States of America and to the international community. Through its domestic and global initiatives, the NAM works to address critical issues in health, medicine, and related policy and inspire positive action across sectors."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "\"I am deeply honoured by the recognition from the National Academy of Medicine. I am also delighted as an Aga Khan University (AKU) alum, and very grateful for all the educational opportunities AKU provided to set me on this path,\" said Dr Zaidi."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Dr Zaidi is a paediatrician/scientist, global health researcher, non-profit founder, academic administrator, strategic investor in global health research and development. She grew up in Pakistan, graduating first in the inaugural medical class of AKU in 1988. After training and further education in the US (Duke University, and Boston Children's Hospital, Harvard School of Public Health), she returned to Pakistan, rising through the academic ranks to become the first woman chair of paediatrics at AKU. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Her seminal research contributions have been in newborn sepsis where her work on antimicrobial therapy in low-resource settings has informed global guidelines and helped save hundreds of thousands of newborn lives. A second research focus has been demonstrating the value of vaccines. She was recruited to the Gates Foundation in 2014 where she led teams funding work for innovative solutions for high burden paediatric and maternal disorders, as well as novel vaccines. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "She was awarded the $US 1 million Caplow Children's Prize for her work in saving newborn lives in the coastal areas of Karachi. The Aga Khan University recognized her research contributions in 2013 by awarding her the Aga Khan University Distinguished Faculty Award for Excellence in Research. She will also be awarded the Jimmy and Rosalynn Carter Humanitarian Award in December 2021."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002634",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Medical College",
+      "TermGuid": "826c7f89-599c-4f15-9314-56c65141c19e",
+      "WssId": 2133
+    },
+    {
+      "Label": "Alumni",
+      "TermGuid": "e162a8b5-d98a-4634-bb37-da9bc85bebf3",
+      "WssId": 2166
+    },
+    {
+      "Label": "Faculty",
+      "TermGuid": "91cebc3d-2611-4c6e-b573-50c9bf568128",
+      "WssId": 2108
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    }
+  ],
+  "ScheduleStartDate": "2021-10-21T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2737,
+  "Modified": "2021-10-22T05:18:29Z",
+  "Created": "2021-10-21T10:15:51Z"
+}

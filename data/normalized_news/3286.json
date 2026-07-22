@@ -1,0 +1,122 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "efc39914-1dc3-4c58-a6f7-a151469548d2",
+  "odata.etag": "\"56\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ac0d9078-308c-42da-b9b9-1db9ea4f4f3d",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a5b5a026-0722-4d40-830d-0cca41d915e0",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f6444aa2-0494-46c2-981a-9320bc6ae952",
+    "Id": 5682,
+    "Title": "Ambreen Nadeem",
+    "EMail": "ambreen.nadeem@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "6851ec06-05ec-4c30-86f3-83d3d0393153",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3880e96c-3a91-4e4e-9824-f4659b1c7316",
+    "Id": 30,
+    "Title": "Centre for Regenerative Medicine and Stem Cell Research"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "b1075a92-dc08-402a-a557-dbe1cd660ed1",
+      "Id": 30,
+      "Title": "Centre for Regenerative Medicine and Stem Cell Research"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "e065f785-aa64-49fa-b635-82f8fcf805a3",
+    "Id": 6490,
+    "Title": "Sjjawal Ahmad",
+    "EMail": "sjjawal.ahmad@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3286)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "f6e36493-0592-414d-98c9-1ea7683e67a3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3286,
+  "Title": "AKU receives $1.5m for innovative gene therapy development",
+  "NewsSubTitle": null,
+  "NewsSummary": "The Wellcome Leap grant will revolutionize treatment of β-Thalassemia and SCD",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Aga Khan University has received a $1.5 million grant from Wellcome Leap, that will\nsupport a project that seeks to transform the treatment of β-Thalassemia and\nSickle Cell Disease (SCD), which have plagued South Asia, particularly Pakistan.\nThis competitive grant provides a significant\nboost to the development of innovative gene therapies. </p><p>Both β-Thalassemia and SCD are hereditary conditions, arising from genetic anomalies affecting the production of hemoglobin, an important protein responsible for transporting oxygen in our bloodstream. In Pakistan, where many marriages occur within families (such as cousins), more than 70% of marriages involve relatives. This increases the chances of inheriting these genetic errors. In Pakistan, more than 7% of the population carries the β-Thalassemia gene, while the prevalence of SCD is estimated to be 2%. Due to these high carrier rates, Pakistan has a large population of over 100,000 registered Thalassemia patients with approximately 9,000 children born with the severe form known as Thalassemia Major. Treatment of these patients is incredibly costly, requiring frequent blood transfusions and iron chelation therapy. Sadly, the current treatment options are challenging to sustain, with less than one percent of patients surviving beyond the age of 20.</p><p>Thalassemia varies worldwide, with over 300 different mutations in various regions, including Pakistan. Due to this diversity, the increasing focus on personalized treatments or therapies developed in one country may not effectively address the unique challenges faced by patients in another. Thus, localized research is crucial to understand region-specific mutations and develop tailored solutions.</p><p>Dr Afsar Mian, Assistant Professor at Aga Khan University, and the principal investigator of the project, explains the limitations of the only known curative therapy, allogenic hematopoietic stem cell (HSC) transplantation, which is dependent on donor compatibility, is expensive and can result in treatment failure. Dr Mian states, \"This limits access to treatment and highlights the need for alternative therapies.\" </p><p>In recent years, the introduction of transplantation of genetically modified stem cells offers hope for treating β-Thalassemia and SCD. Recent advancements in gene editing technologies such as CRISPR-Cas9, offer hope to correct genetic mutations. This involves editing stem cells taken from patients using CRISPR-Cas9 before transplanting into the same patient. </p><p>The research team at AKU aims to explore two advanced gene editing techniques: base editing and prime editing. These techniques have gained popularity due to their precision, specificity, and minimal unintended side effects compared to CRISPR-Cas9 technology. </p><p>\"CRISPR is a remarkable technology that allows scientists to make changes in our DNA. However, prime editing takes gene editing to the next level,\" says Dr Mian. \"It offers even more precision and versatility in fixing genetic errors, reduces the chances of unintended effects, and increases the effectiveness of the editing process.\" </p><p>The initial testing phase of this new gene editing therapy will take place in the laboratory, where stem cells with the remarkable ability to develop into any cell type will be collected from Thalassemia and SCD patients. If laboratory tests prove successful, the next step will involve pre-clinical trials on animals. These trials will aim to assess the safety of the proposed treatments before they can be tested on patients. This careful progression from laboratory testing to pre-clinical trials ensures that the potential therapies are thoroughly examined and meet the necessary safety and ehtical standards before further advancement.</p><p>The study team at AKU includes Dr Afsar Mian, Dr Salman Kirmani, Dr Ambreen Fatima, Dr Fawad Ur Rehman, and Dr Irfan Hussain.<br/></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003165",
+  "LocalApproverGroup": "CRM Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Stem Cell Research",
+      "TermGuid": "859b6bed-1b7a-4592-abb9-fcb1b5d3b554",
+      "WssId": 2150
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "6e94bff1-5ccd-4ebd-927c-db5589183636",
+      "WssId": 2101
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Grants",
+      "TermGuid": "e28388d0-f201-414a-a997-952723c8bd2f",
+      "WssId": 2200
+    }
+  ],
+  "ScheduleStartDate": "2023-12-22T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3286,
+  "Modified": "2024-03-04T04:34:04Z",
+  "Created": "2023-12-22T06:28:48Z"
+}

@@ -1,0 +1,106 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "57b9d364-9d4b-4535-8d59-6a0e3a538c06",
+  "odata.etag": "\"4\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "54fb90a9-6503-4be7-a752-28794b2b3551",
+    "Id": 251,
+    "Title": "Amirali Virani"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5a6d6d44-9c95-4ebd-acbf-60494cb5df16",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4246cbd7-bad8-4bbf-8c43-ef500e55df6c",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "354532bf-ccee-4af5-b455-7f6863a2674b",
+    "Id": 9,
+    "Title": "other"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "115463ef-b064-40b7-85e7-b2d3a0e1d1d7",
+    "Id": 3,
+    "Title": "London"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "3e2135d2-2f4e-48b5-befc-63022499ab3a",
+    "Id": 10,
+    "Title": "Institute for the Study of Muslim Civilisations"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "934d0ddc-9fd4-40f6-a925-c653d7229c16",
+    "Id": 251,
+    "Title": "Amirali Virani",
+    "EMail": "amirali.virani@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(183)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aef1a2e6-7f94-48d9-accc-c1ebe4979f4f",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 183,
+  "Title": "When is cap more than just a cap?",
+  "NewsSubTitle": "Taking us beyond the camera lens",
+  "NewsSummary": "A blog by the editor of The Political Aesthetics of Global Protest that illustrates how political aesthetics can give us fresh insight into news and current affairs.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Click here to read <a href=\"http://www.focaalblog.com/2015/04/23/martin-webb-contemporary-indian-anti-corruption-movements-and-political-aesthetics/#more-1157\" target=\"_blank\">Martin Webb's</a> (editor of) The Political Aesthetics of Global Protest the Arab Spring and Beyond thought-provoking blog. </p><p>Taking contemporary Indian anti-corruption movements such as the recently-formed Aam Aadmi party as its inspiration, the article shows how examining aesthetics can take us beyond the camera lens or the newspaper page and offer insight and deepen our understanding.</p><p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000151",
+  "LocalApproverGroup": "ISMC Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "ismc",
+      "TermGuid": "5e625a7c-a2ca-416d-876b-555356a7df33",
+      "WssId": 928
+    }
+  ],
+  "ScheduleStartDate": "2016-05-17T15:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": null,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 183,
+  "Modified": "2016-05-17T15:17:54Z",
+  "Created": "2016-05-17T14:32:23Z"
+}

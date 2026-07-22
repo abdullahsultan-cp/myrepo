@@ -1,0 +1,121 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "292887e4-a6b8-448d-9287-5ae124424242",
+  "odata.etag": "\"29\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bcac9823-2a6f-486b-8559-e4a8b6f2b30f",
+    "Id": 5140,
+    "Title": "Iqra Azmat"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a5d5a22f-d75a-42ce-a6cd-475632bb1791",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a55289c6-f509-4d3d-a4d6-d66d0de2557c",
+    "Id": 5140,
+    "Title": "Iqra Azmat",
+    "EMail": "iqra.azmat@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "0da8aa66-c16f-4aca-90ba-913df49a827d",
+    "Id": 6,
+    "Title": "Event coverage"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "21ef8b0e-bb27-49c0-a396-4793bae39966",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "b5a1bafe-2acb-42bd-b580-41ad653109d9",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "662728f4-3f59-40eb-8110-c98d6b430092",
+    "Id": 20,
+    "Title": "volunteer.pa",
+    "EMail": "volunteer.pa@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(356)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "aae9cca5-8f6e-46a0-81be-bcfdcf1639d5",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 356,
+  "Title": "Dr Jabeen Fayyaz Visits Johns Hopkins University ",
+  "NewsSubTitle": null,
+  "NewsSummary": "On March 27, AKU faculty member Dr Jabeen Fayyaz will give a presentation at the Bloomberg School of Public Health on her blended learning course on paediatric emergency care in Pakistan.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>On March 27, AKU faculty member Dr Jabeen Fayyaz will give a presentation at the Bloomberg School of Public Health on her blended learning course on paediatric emergency care in Pakistan.</p><p>Dr Fayyaz, Assistant Professor, Department of Emergency Medicine, AKUH, is visiting the Johns Hopkins International Injury Research Unit. During her stay, Dr Fayyaz will meet with key faculty in JH-IIRU, including director Adnan Hyder, and associate directors Abdulgafoor Bachani and Kent Stevens. She will also spend time observing the Paediatric Emergency Department at the Johns Hopkins School of Medicine to see how the department functions in order to enhance growth and development in the Aga Khan Department of Emergency Medicine.</p><p>Currently, Dr Fayyaz is working towards a master's in health from AKUH and participating in a faculty development program on blended learning, through which she developed a paediatric emergency care course. She has also been involved in training health care professionals at various levels in paediatric emergency medicine in cities in Pakistan, as well as training in neonatal resuscitation and early newborn care at the Ministry of the Interior in Sindh.</p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000316",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Medicine",
+      "TermGuid": "c23d839f-4ee8-4d36-9e3b-8d73a52c2d95",
+      "WssId": 1387
+    },
+    {
+      "Label": "Healthcare",
+      "TermGuid": "e2d2fa9b-c8de-40c2-a67c-1a1e16252b10",
+      "WssId": 1382
+    },
+    {
+      "Label": "Public health",
+      "TermGuid": "5fd1a23c-10dc-4a74-b677-67ef4da50092",
+      "WssId": 1440
+    },
+    {
+      "Label": "Emergency Care",
+      "TermGuid": "39305958-daf9-4cbb-b29e-f75f928c9919",
+      "WssId": 1758
+    }
+  ],
+  "ScheduleStartDate": "2014-03-25T19:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 356,
+  "Modified": "2018-11-12T11:44:28Z",
+  "Created": "2016-11-29T06:40:50Z"
+}

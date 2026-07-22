@@ -1,0 +1,116 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "492b577d-8083-43af-b41a-a3c5e2c82efd",
+  "odata.etag": "\"36\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "d8e60f9b-84f2-4491-b91e-fbe1bb65621f",
+    "Id": 260,
+    "Title": "Muhammad Altamash"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "869c8ddd-cc87-4f87-9019-e80eadb0fb13",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "5c4c211d-4156-47cd-91af-25d579509140",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/Category",
+  "Category": {
+    "odata.type": "SP.Data.News_x0020_CategoriesListItem",
+    "odata.id": "403712a8-cc7c-4f09-a49d-6ad09ea5ce30",
+    "Id": 1,
+    "Title": "Academic news and stories"
+  },
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "a618af3f-97ba-4cd9-a554-da85d82fe3a2",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "7fea5071-4c0e-4baa-8bc7-870f88e91e1d",
+    "Id": 4,
+    "Title": "Global"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "164efe48-7b31-4bbd-a641-0b66b477f0c4",
+    "Id": 260,
+    "Title": "Muhammad Altamash",
+    "EMail": "muhammad.altamash@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(46)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "ff0e317a-7e46-44b6-9a23-776e9bbf9e04",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 46,
+  "Title": "AKU tops HEC ranking for medical universities in 2014",
+  "NewsSubTitle": null,
+  "NewsSummary": "AKU has maintained its position as the top medical university in Pakistan in HEC rankding",
+  "GlobalNews": true,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<p>Aga Khan University is the top medical university in Pakistan in the Higher Education Commission's <a href=\"http://hec.gov.pk/english/services/universities/Ranking/2014/Documents/2014%20doc.pdf\" target=\"_blank\">ranking of Pakistani universities in 2014</a>.</p><p>The parameters considered in a comprehensive selection process included quality assurance, teaching quality, research, finance and facilities, and social integration or community development.</p><p>Announcing the rankings at a ceremony on May 24th, Dr Mukhtar Ahmed, Chairman, HEC, said that ranking universities was a global practice undertaken to fuel competition in education, research and innovation.<br/></p><p>To demonstrate standing by subject, HEC ranked universities in six categories, which included general, engineering and technology, business education, agriculture and veterinary, medical, and arts and design.</p><p>In the medical category, AKU was ranked the best followed by the University of Health Sciences, Dow University of Health Sciences, Khyber Medical University, Riphah International University, Isra University, King Edward Medical University, Liaquat University of Medical and Health Sciences, and Ziauddin University.</p><p><p>More details: <a href=\"https://www.dawn.com/news/1184156\" target=\"_blank\">https://www.dawn.com/news/1184156</a></p><p><em>News amended</em></p></p>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-000016",
+  "LocalApproverGroup": "Global Approvers",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": true,
+  "IsLocallyApproved": false,
+  "Tags": [
+    {
+      "Label": "Education",
+      "TermGuid": "155da613-837e-4bb2-907b-78827cdcc971",
+      "WssId": 1348
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "fbcfdbca-840f-4b64-ae66-71f3a3c0917d",
+      "WssId": 1473
+    },
+    {
+      "Label": "Medical education",
+      "TermGuid": "40de1670-6a6c-436e-b24a-5a3ba9be0b5b",
+      "WssId": 1369
+    }
+  ],
+  "ScheduleStartDate": "2016-05-16T12:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": true,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 46,
+  "Modified": "2018-07-23T10:33:19Z",
+  "Created": "2016-05-16T11:57:40Z"
+}

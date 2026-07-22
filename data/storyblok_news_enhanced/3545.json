@@ -1,0 +1,228 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "f30c6f9a-d06c-4f16-8501-6cd317bd47cf",
+  "odata.etag": "\"23\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4473f8b7-2ca0-4a0a-8216-5cf776f0ff25",
+    "Id": 14331,
+    "Title": "Gloria Chemutai"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "852d33bd-2c72-4d68-a1be-2a94a45fd366",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "84ea25da-b91e-4bc1-b4f1-73f129e39fcd",
+    "Id": 14331,
+    "Title": "Gloria Chemutai",
+    "EMail": "gloria.chemutai@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "d0dfa529-9153-400b-a5f0-84d62d5f0250",
+    "Id": 5,
+    "Title": "Nairobi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "dc0ea569-9517-4a55-a945-40b59086688b",
+    "Id": 31,
+    "Title": "Brain and Mind Institute"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "65a4abc6-943e-453b-97bb-272975e20c7a",
+      "Id": 31,
+      "Title": "Brain and Mind Institute"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "65a1ee76-d0a0-4e74-b9bd-8053a33e2e51",
+    "Id": 13235,
+    "Title": "michael.karinga",
+    "EMail": "michael.karinga@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(3545)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "393dc700-dc24-4c2c-bb6e-ffb88869e829",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 3545,
+  "Title": "Building bridges to mental wellness",
+  "NewsSubTitle": null,
+  "NewsSummary": "Community leaders trained to drive mental health support",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "In a bid to address the mental health crisis at the grassroots level, over 50 community leaders including spiritual leaders from 10 countries across East Africa and South Asia came together for a unique, intensive Training-of-Trainers on mental health first response, held from November 1 to 6, 2024 at the Aga Khan University. "
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The training in collaboration with the Global Mental Health Resource Group, aimed to equip these leaders with essential skills to identify and support individuals in distress, marking a significant step toward normalizing mental health discussions in underserved communities. The program's curriculum covered mental health basics, trauma-informed care, effective communication, and the integration of technology, all aimed at building capacity for ongoing, high-quality mental health support within communities."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "src": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers2.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Prof. Zul Merali, Founding Director of the Brain and Mind Institute, highlighted the program's broader goal, stating, \"We are training community leaders to empower them with the knowledge to recognize and address mental health challenges. Our hope is for participants to take these lessons home and spark meaningful changes in mental health awareness.\""
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The training featured expert insights from leading figures, including Dr. Zohray Talib, an Associate Professor of Medical Education and Medicine, California University of Science and Medicine, who underscored the urgency of early detection at the community level. \"As mental health issues surge globally, we need a community-driven approach to detect and connect people to the care they need,\" Talib emphasized, calling for integrated support systems."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "attrs": {
+          "src": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers3.jpg",
+          "alt": ""
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Zarafsheen Veerjee, the lead trainer from AKU's Brain and Mind Institute, highlighted the significance of the program, stating, \"The impact of this program is huge. Based on the feedback from participants, learning how to address mental health issues, use the right language, and normalize the challenges associated with them is truly making a big difference in our communities.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Participants left inspired, equipped with tools to tackle stigma in their regions. \"This training taught me that you don't have to be a mental health professional to offer support; compassion and the right language can make a huge difference,\" shared Dr. Nazira Mawji, a participant from Kenya. Another trainee, Dr. Khairullah Ahmadi from Afghanistan, echoed this sentiment, noting, \"When I return to my community, I will be able to recognize those who are suffering and help in a meaningful way.\""
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This training forms part of the ongoing Mental Health First Response Training program, which has reached over 450 leaders in regions where the Aga Khan University operates. By empowering community leaders to become first responders in mental health, the program is breaking down stigma and building mental health resilience in culturally tailored ways that resonate deeply at the community level."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-003415",
+  "LocalApproverGroup": "CA BMI News",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Mental health",
+      "TermGuid": "bc27a72f-1c86-4d50-8ff0-a8efd172201a",
+      "WssId": 2194
+    },
+    {
+      "Label": "Teaching",
+      "TermGuid": "3b9efa59-5e54-4510-b85d-69caf29a2c2f",
+      "WssId": 2155
+    },
+    {
+      "Label": "AKU",
+      "TermGuid": "90ef50c3-3766-4c6e-843e-56b0185a4dec",
+      "WssId": 2109
+    },
+    {
+      "Label": "Partnerships",
+      "TermGuid": "a0718565-ef3a-4d32-b43d-92429a57ffd9",
+      "WssId": 2105
+    },
+    {
+      "Label": "Global health",
+      "TermGuid": "249f293c-9ca1-48f5-9dd0-cfd04e7ebfac",
+      "WssId": 2202
+    },
+    {
+      "Label": "Brain and Mind Institute",
+      "TermGuid": "1302a12d-f14a-401a-bddf-1ac41cfdfb3a",
+      "WssId": 2394
+    }
+  ],
+  "ScheduleStartDate": "2024-11-12T14:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 3545,
+  "Modified": "2024-11-13T10:56:52Z",
+  "Created": "2024-11-12T13:58:35Z"
+}

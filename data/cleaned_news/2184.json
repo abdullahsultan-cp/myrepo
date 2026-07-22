@@ -1,0 +1,120 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "b789dd5d-0dba-42cf-a344-4bce5fdb3416",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "9fda4f77-f95f-4a15-ab30-8ec3474f5123",
+    "Id": 187,
+    "Title": "Janelle Dias"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "543ec803-9563-44dc-985a-fa90a07c9af7",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "4e67d2b9-54a5-40a5-9765-54b78cb70b28",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "8fe8de67-05ce-4957-bd99-c891cfd150da",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "77940f23-36ab-4a2e-b0f6-6c7f13ec7eff",
+    "Id": 6,
+    "Title": "Medical College, Pakistan"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/AdditionalEntity",
+  "AdditionalEntity": [],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "cb4e2ea1-1124-4766-9db5-60cdc925ad6b",
+    "Id": 187,
+    "Title": "Janelle Dias",
+    "EMail": "janelle.dias@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2184)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "82170f68-041c-4728-bb7d-d0d715cb74e3",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2184,
+  "Title": "Dire need of trained paediatric neurologists in Pakistan ",
+  "NewsSubTitle": null,
+  "NewsSummary": "Conference stresses on subspeciality training to tackle the neurological disease burden",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": "<div class=\"ExternalClassF27F177CA4A04E01A0E2C17EEE088504\"><p>Pakistan faces a severe dearth of paediatric neurology specialists. There is only one neurologist per one million population, according to Pakistan Journal of Neurological Scientists. The alarming situation calls for urgent measures to train medical students and residents in this subspecialty area, speakers said at the 11th Paediatric Neurology Conference held at Aga Khan University.&#160;</p><p>Titled, Exploring New Frontiers, experts in the conference discussed new findings and lessons learned from paediatric neurology around the world. Speakers also stressed the role of diagnostics and genetics in assuring targeted treatment of children with neurological disorders.&#160;</p><p>The overall mortality in children in Pakistan due to neurological diseases is about 17.6 per cent. Epilepsy prevalence is 7 per 1000 children with seizure disorders, cerebral palsy and central nervous infections being some of the other common disorders. \"Developing linkages and liaisons with paediatric neurologists across the world is needed to meet the challenges of the burden of neurological disorders in the world,\" said Dr Shahnaz Ibrahim, a paediatric neurologist and professor at the department of paediatrics and child health, AKU.</p><p>AKU's role in the establishment of a fellowship programme focused on paediatric neurology to meet the national demand of neurologists was also highlighted. AKU's fellows are trained to specialize in treating children with spine and brain, and contribute towards the advancement of the science of paediatric neurology.&#160;&#160;</p><div><p>The three-day event was attended by students, residents, nurses, physicians, neurologists and paediatric neurologists. The conference was organised by the department of paediatrics and child health in collaboration with Pakistan Paediatric Association.&#160;<br></p></div></div>",
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002098",
+  "LocalApproverGroup": "MC_PK_NEWS_Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "paediatrics",
+      "TermGuid": "ea94a483-4513-4825-a4e4-ba92a5e1d16a",
+      "WssId": 1839
+    },
+    {
+      "Label": "Neurological disorder",
+      "TermGuid": "7c1aa1d0-3649-4302-95d2-ee25a1a5f6af",
+      "WssId": 1912
+    },
+    {
+      "Label": "faculty",
+      "TermGuid": "f2e38598-468d-449c-a85f-9efc871874b6",
+      "WssId": 1863
+    },
+    {
+      "Label": "medical college",
+      "TermGuid": "40aedb33-cb33-40cb-b476-7a915bcf5e09",
+      "WssId": 1798
+    },
+    {
+      "Label": "Research",
+      "TermGuid": "d48b7db9-a4bf-4e17-8ec7-c932ed0334ea",
+      "WssId": 1811
+    }
+  ],
+  "ScheduleStartDate": "2020-03-06T11:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2184,
+  "Modified": "2020-03-06T11:09:28Z",
+  "Created": "2020-03-06T11:07:02Z"
+}

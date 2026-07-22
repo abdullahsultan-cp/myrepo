@@ -1,0 +1,176 @@
+{
+  "odata.type": "SP.Data.NewsListItem",
+  "odata.id": "0f6ece52-1256-4434-a311-016e8ac14ee0",
+  "odata.etag": "\"6\"",
+  "odata.editLink": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)",
+  "ContentWriter@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/ContentWriter",
+  "ContentWriter": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "b74f1f1f-57a1-44c5-bf29-a552f776d5c9",
+    "Id": 3849,
+    "Title": "Ghulam Nabie"
+  },
+  "ContentApprover@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/ContentApprover",
+  "ContentApprover": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "bee41dae-8cd9-49a1-ba66-0bcd41ff2602",
+    "Id": -1,
+    "Title": null
+  },
+  "Publisher@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/Publisher",
+  "Publisher": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "c19a48bc-546f-47d4-8e94-eadd97dfb127",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Category@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/Category",
+  "City@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/City",
+  "City": {
+    "odata.type": "SP.Data.AKUCityListItem",
+    "odata.id": "eb35f739-d710-4d70-b257-229f95e22c2a",
+    "Id": 1,
+    "Title": "Karachi"
+  },
+  "Entity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/Entity",
+  "Entity": {
+    "odata.type": "SP.Data.EntitiesListItem",
+    "odata.id": "c738002b-62f7-42da-9576-8fe59b18c55c",
+    "Id": 22,
+    "Title": "Centre for Innovation in Medical Education"
+  },
+  "AdditionalEntity@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/AdditionalEntity",
+  "AdditionalEntity": [
+    {
+      "odata.type": "SP.Data.EntitiesListItem",
+      "odata.id": "11a10581-d0bd-4c61-925b-48be53389fff",
+      "Id": 22,
+      "Title": "Centre for Innovation in Medical Education"
+    }
+  ],
+  "Author@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/Author",
+  "Author": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "a3432b32-20e5-4c0e-b403-e9329f5652ad",
+    "Id": 3849,
+    "Title": "Ghulam Nabie",
+    "EMail": "ghulam.nabie@aku.edu"
+  },
+  "Editor@odata.navigationLinkUrl": "Web/Lists(guid'c8995003-4c86-4b76-8e89-00e8688c03d1')/Items(2719)/Editor",
+  "Editor": {
+    "odata.type": "SP.Data.UserInfoItem",
+    "odata.id": "6b9f0eaa-54c2-48ad-9fed-acf6c8e3244b",
+    "Id": 1073741823,
+    "Title": "System Account",
+    "EMail": null
+  },
+  "Id": 2719,
+  "Title": "Paediatric Simulation Training for Emergency Medicine Residents (PEDSTER)",
+  "NewsSubTitle": null,
+  "NewsSummary": "PEDSTER was a one-of-a-kind workshop aimed at providing our Emergency Medicine postgraduate trainees an opportunity to learn about and practice skills pertaining to various paediatric emergencies.",
+  "GlobalNews": false,
+  "AlternateNewsTitle": null,
+  "AlternateNewsSubtitle": null,
+  "AlternateNewsSummary": null,
+  "NewsContent": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "PEDSTER was a one-of-a-kind workshop aimed at providing our Emergency Medicine postgraduate trainees an opportunity to learn about and practice skills pertaining to various paediatric emergencies."
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The workshop was held on 2nd and 3rd June 2021 and was directed by Dr Maaz Salahuddin, Instructor, Emergency Medicine. The workshop comprised of three high fidelity stations and five case discussions that were supervised by the hospital's esteemed Emergency Medicine faculty."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The department's residents and fellows got the chance to practice airway management, teamwork and family counselling through simulation across a variety of stations. They also got to participate in high fidelity stations based on paediatric cardiac arrest and paediatric trauma cases, which are two uncommon presentations that Emergency Medicine trainees rarely encounter."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The workshop was a resounding success, and we look forward to organising and conducting many more such workshops with the department of Emergency Medicine."
+          },
+          {
+            "type": "hard_break"
+          },
+          {
+            "type": "hard_break"
+          }
+        ]
+      }
+    ]
+  },
+  "PullQuote": null,
+  "PullQuoteAuthor": null,
+  "LocallyActive": true,
+  "GloballyActive": true,
+  "SequenceNumber": "NEWS-002616",
+  "LocalApproverGroup": "CIME News Approver",
+  "GlobalApproverGroup": "Global Approvers",
+  "IsPulished": "Published",
+  "IsGloballyApproved": false,
+  "IsLocallyApproved": true,
+  "Tags": [
+    {
+      "Label": "Emergency care",
+      "TermGuid": "7b986b82-d175-45c1-a2f1-c6730d853621",
+      "WssId": 2201
+    },
+    {
+      "Label": "Paediatrics",
+      "TermGuid": "125d0f34-a35b-4610-841d-05672a104e1e",
+      "WssId": 2189
+    },
+    {
+      "Label": "Simulation",
+      "TermGuid": "60fb9253-adb1-45ab-b115-981669754fdb",
+      "WssId": 2185
+    },
+    {
+      "Label": "Workshop",
+      "TermGuid": "a47ffb81-453a-4844-9e93-034723b119be",
+      "WssId": 2213
+    },
+    {
+      "Label": "CIME",
+      "TermGuid": "303aaef7-4a6f-4ac2-8c15-cee4cca4f84b",
+      "WssId": 2183
+    }
+  ],
+  "ScheduleStartDate": "2021-09-16T07:00:00Z",
+  "ScheduleEndDate": null,
+  "IsModifiedByGlobal": false,
+  "NewsInUrdu": null,
+  "AlternateBannerCaption": null,
+  "BannerCaption": null,
+  "MediumImageCaption": null,
+  "Contact": null,
+  "SecondaryLanguage2": null,
+  "SecondaryLanguage3": null,
+  "ID": 2719,
+  "Modified": "2021-09-20T06:28:32Z",
+  "Created": "2021-09-16T09:36:30Z"
+}
