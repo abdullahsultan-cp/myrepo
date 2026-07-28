@@ -101,8 +101,17 @@ export function fmtDate(iso: string) {
   });
 }
 
-export function readTime(words: number) {
-  return `${Math.max(1, Math.ceil(words / 200))} min read`;
+/**
+ * Must match scripts/migrate/build_payload.py exactly, or the viewer disagrees
+ * with what was uploaded. 238 wpm is the meta-analytic mean for silent reading
+ * of English non-fiction (Brysbaert 2019); each image adds 12s.
+ */
+export const WPM = 238;
+export const SECONDS_PER_IMAGE = 12;
+
+export function readTime(words: number, images = 0) {
+  const seconds = (words / WPM) * 60 + images * SECONDS_PER_IMAGE;
+  return `${Math.max(1, Math.ceil(seconds / 60))} min read`;
 }
 
 /** Newest-first, then by id so ordering is stable. */

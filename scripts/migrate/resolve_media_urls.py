@@ -35,6 +35,7 @@ import os
 import re
 import sys
 import threading
+import time
 import urllib.parse
 
 try:
@@ -93,9 +94,24 @@ def is_youtube(u):
     return "youtube.com" in u or "youtu.be" in u
 
 
-def scrape(nid):
+def scrape(nid, tries=3):
+    """Fetch one story page.
+
+    SharePoint times out under concurrency rather than refusing: every failure
+    seen so far is a ReadTimeout, never a 404. Retrying with backoff clears them
+    in the same pass instead of needing another run.
+    """
     url = PAGE.format(nid=nid)
-    r = requests.get(url, headers=UA, timeout=35)
+    last = None
+    for attempt in range(tries):
+        try:
+            r = requests.get(url, headers=UA, timeout=45)
+            break
+        except (requests.Timeout, requests.ConnectionError) as e:
+            last = e
+            if attempt == tries - 1:
+                raise
+            time.sleep(1.5 * (attempt + 1))
     if r.status_code != 200:
         return {"page": url, "http": r.status_code, "images": [], "iframes": [],
                 "fetched": False}
@@ -165,7 +181,7 @@ def main():
                     help="do the interesting stories first: with-media = has "
                          "any media at all; rich = 3+ media or an embed; "
                          "recent = newest first")
-    ap.add_argument("--workers", type=int, default=5)
+    ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--limit", type=int)
     ap.add_argument("--refresh", action="store_true",
                     help="re-fetch pages already cached")

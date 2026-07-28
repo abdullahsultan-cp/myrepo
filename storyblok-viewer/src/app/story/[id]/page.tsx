@@ -103,7 +103,7 @@ export default function StoryPage() {
           <div className="story-by">
             {d.writer && <span className="who">{d.writer}</span>}
             <span className="when">
-              {fmtDate(d.date) || "no date"} · {readTime(d.counts.words)}
+              {fmtDate(d.date) || "no date"} · {readTime(d.counts.words, d.media.filter((m) => m.media_type === "image" || m.media_type === "gif").length)}
             </span>
           </div>
           <ShareRail />

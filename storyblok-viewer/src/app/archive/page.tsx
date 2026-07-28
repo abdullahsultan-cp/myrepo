@@ -60,7 +60,7 @@ function Card({ s, feature }: { s: Story; feature?: boolean }) {
         <div className="card-foot">
           <span>{fmtDate(s.date) || "—"}</span>
           <span>·</span>
-          <span>{readTime(s.counts.words)}</span>
+          <span>{readTime(s.counts.words, s.counts.media)}</span>
           {s.writer && (
             <>
               <span>·</span>

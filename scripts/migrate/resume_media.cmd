@@ -18,7 +18,7 @@ set "PY=d:\AKU News\.venv\Scripts\python.exe"
 REM -u keeps stdout unbuffered so progress shows live instead of in bursts
 set "PYFLAGS=-u"
 set "SCRIPT=%REPO%\scripts\migrate\resolve_media_urls.py"
-set "WORKERS=10"
+set "WORKERS=6"
 
 title AKU media resolver
 

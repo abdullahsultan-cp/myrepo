@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Nav from "./Nav";
 import "./globals.css";
 import "./pages.css";
+import "./tree3d.css";
 
 export const metadata: Metadata = {
   title: "AKU News — migration review",

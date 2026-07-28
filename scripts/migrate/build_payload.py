@@ -39,7 +39,17 @@ from datetime import datetime
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 
-WORDS_PER_MINUTE = 200
+# ---------------------------------------------------------------- read time
+# 238 wpm is the meta-analytic mean for silent reading of English non-fiction
+# (Brysbaert 2019, 190 studies). Medium's 265 assumes skimming; 200 is a
+# round number with nothing behind it.
+#
+# Images cost time too, so each one adds 12s — Medium's convention.
+#
+# For reference, the demo story's hand-typed "28 min read" is 447 words, i.e.
+# 16 wpm. It is a placeholder, not a value to reproduce.
+WORDS_PER_MINUTE = 238
+SECONDS_PER_IMAGE = 12
 
 EMPTY_ASSET = {"id": None, "alt": "", "name": "", "focus": "", "title": "",
                "source": "", "filename": "", "copyright": "",
@@ -113,9 +123,21 @@ def plain_text(doc):
     return " ".join(out)
 
 
-def read_time(text):
-    words = len(re.findall(r"\S+", text))
-    return f"{max(1, math.ceil(words / WORDS_PER_MINUTE))} min read"
+def count_words(text):
+    r"""Words, not whitespace-separated tokens.
+
+    \S+ counts "—" and "1." as words and inflates short articles. This wants a
+    letter or digit to start, and allows apostrophes and hyphens inside.
+    """
+    return len(re.findall(r"[^\W\d_][\w'’‐-―-]*|\d[\d.,]*",
+                          text or "", re.UNICODE))
+
+
+def read_time(text, *, images=0, extra_text=""):
+    """Minutes to read the prose, plus 12s per image, rounded up."""
+    words = count_words(text) + count_words(extra_text)
+    seconds = (words / WORDS_PER_MINUTE) * 60 + images * SECONDS_PER_IMAGE
+    return f"{max(1, math.ceil(seconds / 60))} min read"
 
 
 def format_date(iso):
@@ -337,7 +359,13 @@ def build(story, route, *, assets=None, entity_slug=None, warn=None):
         "date": format_date(c.get("schedule_start_date")
                             or c.get("sharepoint_created")),
         "author": ((c.get("author") or {}).get("title") or ""),
-        "read_time": read_time(text),
+        "read_time": read_time(
+            text,
+            # the lede is on the page, so it counts toward the read
+            extra_text=c.get("summary") or "",
+            # inline images + banner/medium; each adds 12s
+            images=len([m for m in (c.get("media") or [])
+                        if m.get("media_type") in ("image", "gif")])),
         "description": (c.get("summary") or "").strip(),
         "body": body,
         "banner_image": banner or dict(EMPTY_ASSET),

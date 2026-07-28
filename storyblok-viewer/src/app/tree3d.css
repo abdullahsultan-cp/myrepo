@@ -1,0 +1,160 @@
+/* 3D folder tree.
+   Each depth gets its own translateZ plane, so the hierarchy reads as stacked
+   layers. CSS transforms only — no canvas, no WebGL. */
+
+.l3-stage {
+  perspective: 1700px;
+  perspective-origin: 50% 34%;
+  height: 72vh;
+  min-height: 480px;
+  margin-bottom: 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background:
+    radial-gradient(120% 90% at 50% 0%,
+      color-mix(in srgb, var(--accent) 7%, transparent) 0%, transparent 62%),
+    repeating-linear-gradient(0deg, var(--line-soft) 0 1px, transparent 1px 46px),
+    repeating-linear-gradient(90deg, var(--line-soft) 0 1px, transparent 1px 46px),
+    var(--panel);
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.l3-stage:active { cursor: grabbing; }
+
+.l3-world {
+  transform-style: preserve-3d;
+  transition: transform .1s linear;
+  padding: 60px 40px;
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+}
+
+/* flat mode: a normal indented tree, no perspective */
+.l3-stage.flat { perspective: none; cursor: default; height: auto; min-height: 0; }
+.l3-stage.flat .l3-world { transform: none !important; padding: 16px 14px; }
+.l3-stage.flat .l3-card { box-shadow: none; }
+.l3-stage.flat .l3-kids { margin-left: 24px; padding-left: 10px; }
+
+.l3-branch { transform-style: preserve-3d; }
+
+.l3-card {
+  transform-style: preserve-3d;
+  transform: translateZ(var(--z));
+  width: var(--w);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 3px 0;
+  padding: 8px 12px;
+  border-radius: 9px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--c);
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, .10),
+    0 10px 22px -12px color-mix(in srgb, var(--c) 45%, transparent);
+  font-size: 13px;
+  cursor: pointer;
+  transition: transform .16s cubic-bezier(.2, .7, .3, 1),
+              box-shadow .16s, border-color .16s;
+}
+.l3-card:hover {
+  transform: translateZ(calc(var(--z) + 26px));
+  border-color: var(--c);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, .14),
+    0 22px 40px -16px color-mix(in srgb, var(--c) 60%, transparent);
+}
+.l3-card.picked {
+  border-color: var(--c);
+  background: color-mix(in srgb, var(--c) 11%, var(--panel));
+  transform: translateZ(calc(var(--z) + 34px));
+}
+
+.l3-ico { color: var(--c); font-size: 12px; flex-shrink: 0; }
+.l3-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 550;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lv-region > .l3-name { font-weight: 750; font-size: 14.5px; letter-spacing: -.01em; }
+.lv-entity > .l3-name { font-weight: 680; }
+.lv-news > .l3-name,
+.lv-entities-root > .l3-name,
+.lv-departments-root > .l3-name { color: var(--dim); font-weight: 450; }
+
+.l3-short {
+  flex-shrink: 0;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: var(--violet);
+  background: var(--violet-soft);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+.l3-n {
+  flex-shrink: 0;
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--faint);
+  background: var(--sunk);
+  padding: 1px 7px;
+  border-radius: 10px;
+}
+.l3-n.live {
+  background: color-mix(in srgb, var(--amber) 20%, transparent);
+  color: var(--amber);
+  font-weight: 700;
+}
+.l3-caret {
+  flex-shrink: 0;
+  width: 15px;
+  text-align: center;
+  color: var(--faint);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.l3-kids {
+  transform-style: preserve-3d;
+  margin-left: 30px;
+  padding-left: 12px;
+  border-left: 1px dashed color-mix(in srgb, var(--line) 80%, transparent);
+}
+
+/* -------------------------------------------------------------- detail card */
+.l3-panel {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  padding: 18px 20px;
+  margin-bottom: 70px;
+  box-shadow: var(--shadow);
+  max-width: 640px;
+}
+.l3-panel h3 { margin: 4px 0 14px; font-size: 19px; letter-spacing: -.016em; }
+.l3-panel .btn { margin-top: 14px; }
+.l3-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: 0;
+  color: var(--faint);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+.l3-close:hover { color: var(--fg); }
+
+@media (max-width: 700px) {
+  .l3-stage { height: 60vh; }
+}
