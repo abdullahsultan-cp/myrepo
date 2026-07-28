@@ -1,0 +1,2604 @@
+{
+  "stories_scanned": 3606,
+  "components": {
+    "news_media": 3621,
+    "news_article": 3606,
+    "video_embed": 69,
+    "twitter_embed": 38
+  },
+  "component_fields": {
+    "news_article": {
+      "title": 3606,
+      "summary": 3606,
+      "body": 3606,
+      "city": 3606,
+      "entity": 3606,
+      "author": 3606,
+      "content_writer": 3606,
+      "editor": 3606,
+      "tags": 3606,
+      "global_news": 3606,
+      "locally_active": 3606,
+      "globally_active": 3606,
+      "local_approver_group": 3606,
+      "global_approver_group": 3606,
+      "is_published": 3606,
+      "is_globally_approved": 3606,
+      "is_locally_approved": 3606,
+      "sequence_number": 3606,
+      "sharepoint_id": 3606,
+      "sharepoint_sequence_number": 3606,
+      "sharepoint_modified": 3606,
+      "sharepoint_created": 3606,
+      "schedule_start_date": 3601,
+      "publisher": 3561,
+      "is_modified_by_global": 3558,
+      "content_approver": 3529,
+      "media": 3099,
+      "category": 1609,
+      "additional_entities": 946,
+      "banner_caption": 707,
+      "subtitle": 278,
+      "medium_image_caption": 130,
+      "pull_quote": 118,
+      "richtext_media": 116,
+      "pull_quote_author": 77,
+      "news_in_urdu": 44,
+      "contact": 30,
+      "schedule_end_date": 26,
+      "secondary_language_2": 8,
+      "secondary_language_3": 3,
+      "alternate_summary": 2,
+      "alternate_title": 1
+    },
+    "news_media": {
+      "role": 3621,
+      "filename": 3621,
+      "src": 3621,
+      "media_type": 3621,
+      "alt": 3621,
+      "caption": 912,
+      "source_key": 200
+    },
+    "twitter_embed": {
+      "tweet_url": 38
+    },
+    "video_embed": {
+      "provider": 69,
+      "embed_url": 69,
+      "video_id": 69
+    }
+  },
+  "richtext_node_types": {
+    "text": 35270,
+    "paragraph": 30280,
+    "hard_break": 8190,
+    "list_item": 631,
+    "bullet_list": 142,
+    "heading": 130,
+    "blok": 66,
+    "image": 35,
+    "ordered_list": 21,
+    "tableCell": 8,
+    "blockquote": 4,
+    "tableRow": 3,
+    "table": 2
+  },
+  "richtext_node_attrs": {
+    "blok": {
+      "body": 66
+    },
+    "heading": {
+      "level": 130
+    },
+    "image": {
+      "src": 35,
+      "alt": 35
+    }
+  },
+  "richtext_marks": {
+    "link": 1991,
+    "bold": 1022,
+    "italic": 931,
+    "superscript": 40
+  },
+  "richtext_mark_attrs": {
+    "link": {
+      "href": 1991,
+      "target": 1991,
+      "linktype": 1991,
+      "uuid": 1991,
+      "anchor": 1991,
+      "custom": 1991
+    }
+  },
+  "pull_quote_modes": {
+    "richtext": 77,
+    "embed": 41
+  },
+  "embed_kinds": {
+    "twitter_embed": 38,
+    "iframe_embed": 3
+  },
+  "content_fields": {
+    "component": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "_uid": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "title": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "subtitle": {
+      "total": 3606,
+      "populated": 278
+    },
+    "summary": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "media": {
+      "total": 3606,
+      "populated": 3099
+    },
+    "body": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "alternate_title": {
+      "total": 3606,
+      "populated": 1
+    },
+    "alternate_subtitle": {
+      "total": 3606,
+      "populated": 0
+    },
+    "alternate_summary": {
+      "total": 3606,
+      "populated": 2
+    },
+    "alternate_banner_caption": {
+      "total": 3606,
+      "populated": 0
+    },
+    "pull_quote": {
+      "total": 3606,
+      "populated": 118
+    },
+    "pull_quote_author": {
+      "total": 3606,
+      "populated": 77
+    },
+    "banner_caption": {
+      "total": 3606,
+      "populated": 707
+    },
+    "medium_image_caption": {
+      "total": 3606,
+      "populated": 130
+    },
+    "category": {
+      "total": 3606,
+      "populated": 1609
+    },
+    "city": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "entity": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "additional_entities": {
+      "total": 3606,
+      "populated": 946
+    },
+    "author": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "publisher": {
+      "total": 3606,
+      "populated": 3561
+    },
+    "content_writer": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "content_approver": {
+      "total": 3606,
+      "populated": 3529
+    },
+    "editor": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "tags": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "global_news": {
+      "total": 3606,
+      "populated": 1244
+    },
+    "locally_active": {
+      "total": 3606,
+      "populated": 3573
+    },
+    "globally_active": {
+      "total": 3606,
+      "populated": 3359
+    },
+    "local_approver_group": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "global_approver_group": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "is_published": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "is_globally_approved": {
+      "total": 3606,
+      "populated": 2303
+    },
+    "is_locally_approved": {
+      "total": 3606,
+      "populated": 1780
+    },
+    "is_modified_by_global": {
+      "total": 3606,
+      "populated": 2043
+    },
+    "news_in_urdu": {
+      "total": 3606,
+      "populated": 44
+    },
+    "contact": {
+      "total": 3606,
+      "populated": 30
+    },
+    "secondary_language_2": {
+      "total": 3606,
+      "populated": 8
+    },
+    "secondary_language_3": {
+      "total": 3606,
+      "populated": 3
+    },
+    "schedule_start_date": {
+      "total": 3606,
+      "populated": 3601
+    },
+    "schedule_end_date": {
+      "total": 3606,
+      "populated": 26
+    },
+    "sequence_number": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "sharepoint_id": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "sharepoint_sequence_number": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "sharepoint_modified": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "sharepoint_created": {
+      "total": 3606,
+      "populated": 3606
+    },
+    "richtext_media": {
+      "total": 116,
+      "populated": 116
+    }
+  },
+  "media": {
+    "news_media_summary": {
+      "news_items": 3606,
+      "news_with_media": 3077,
+      "news_without_media": 529,
+      "media_references": 3421,
+      "unique_media_files_referenced": 3421,
+      "media_files_on_disk": 3421,
+      "missing_references": 0,
+      "orphan_files": 0,
+      "download_failed_cells": 11385,
+      "empty_cells": 10436,
+      "file_type_counts": {
+        "image": 3345,
+        "gif": 73,
+        "video": 3
+      },
+      "references_by_role": {
+        "Medium image": 338,
+        "Banner image": 3072,
+        "Video1": 4,
+        "Thumbnail image": 7
+      },
+      "file_types_by_role": {
+        "Banner image": {
+          "image": 3011,
+          "gif": 61
+        },
+        "Medium image": {
+          "image": 326,
+          "gif": 12
+        },
+        "Thumbnail image": {
+          "image": 7
+        },
+        "Video1": {
+          "image": 1,
+          "video": 3
+        }
+      },
+      "download_failed_by_role": {
+        "Video1": 3602,
+        "Video2": 3606,
+        "Video3": 3606,
+        "Banner image": 534,
+        "Medium image": 33,
+        "Thumbnail image": 4
+      },
+      "empty_cells_by_role": {
+        "Thumbnail image": 3595,
+        "Alternate banner image": 3606,
+        "Medium image": 3235
+      },
+      "validation_passed": true
+    },
+    "buckets": {
+      "thumbnail": 7,
+      "gif": 62,
+      "video_file": 3,
+      "video_embed": 62
+    },
+    "richtext_media_summary": {
+      "unique_media_references": 257,
+      "missing_assets": 70,
+      "present_assets": 187,
+      "story_references": 381,
+      "stories_with_missing_media": 51,
+      "media_files_on_disk": 3609,
+      "media_type_counts": {
+        "other": 169,
+        "image": 88
+      },
+      "sharepoint_base_url": "https://www.aku.edu"
+    },
+    "richtext_media_extensions": {
+      "(none)": 257
+    }
+  },
+  "special_characters": [
+    {
+      "codepoint": "U+2019",
+      "char": "’",
+      "name": "RIGHT SINGLE QUOTATION MARK",
+      "unicode_category": "Pf",
+      "classification": "sharepoint_artifact",
+      "total_count": 10844,
+      "file_count": 2185,
+      "normalize_recommended": true,
+      "ascii_replacement": "'",
+      "fields": [
+        "AlternateNewsSummary",
+        "BannerCaption",
+        "MediumImageCaption",
+        "NewsContent",
+        "NewsSubTitle",
+        "NewsSummary",
+        "PullQuote",
+        "PullQuoteAuthor",
+        "Tags[2].Label",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+200B",
+      "char": "​",
+      "name": "ZERO WIDTH SPACE",
+      "unicode_category": "Cf",
+      "classification": "sharepoint_artifact",
+      "total_count": 7997,
+      "file_count": 3004,
+      "normalize_recommended": true,
+      "ascii_replacement": "",
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSubTitle",
+        "NewsSummary",
+        "PullQuote",
+        "PullQuoteAuthor",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+201C",
+      "char": "“",
+      "name": "LEFT DOUBLE QUOTATION MARK",
+      "unicode_category": "Pi",
+      "classification": "sharepoint_artifact",
+      "total_count": 7201,
+      "file_count": 2110,
+      "normalize_recommended": true,
+      "ascii_replacement": "\"",
+      "fields": [
+        "BannerCaption",
+        "MediumImageCaption",
+        "NewsContent",
+        "NewsSubTitle",
+        "NewsSummary",
+        "PullQuote",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+201D",
+      "char": "”",
+      "name": "RIGHT DOUBLE QUOTATION MARK",
+      "unicode_category": "Pf",
+      "classification": "sharepoint_artifact",
+      "total_count": 5823,
+      "file_count": 1737,
+      "normalize_recommended": true,
+      "ascii_replacement": "\"",
+      "fields": [
+        "BannerCaption",
+        "MediumImageCaption",
+        "NewsContent",
+        "NewsSubTitle",
+        "NewsSummary",
+        "PullQuote",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+000A",
+      "char": "\n",
+      "name": "LINE FEED",
+      "unicode_category": "Cc",
+      "classification": "control_whitespace",
+      "total_count": 2875,
+      "file_count": 236,
+      "normalize_recommended": false,
+      "ascii_replacement": "\\n",
+      "fields": [
+        "Contact",
+        "NewsContent",
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+2013",
+      "char": "–",
+      "name": "EN DASH",
+      "unicode_category": "Pd",
+      "classification": "sharepoint_artifact",
+      "total_count": 1779,
+      "file_count": 839,
+      "normalize_recommended": true,
+      "ascii_replacement": "-",
+      "fields": [
+        "BannerCaption",
+        "MediumImageCaption",
+        "NewsContent",
+        "NewsSummary",
+        "PullQuote",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+2018",
+      "char": "‘",
+      "name": "LEFT SINGLE QUOTATION MARK",
+      "unicode_category": "Pi",
+      "classification": "sharepoint_artifact",
+      "total_count": 1154,
+      "file_count": 612,
+      "normalize_recommended": true,
+      "ascii_replacement": "'",
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSubTitle",
+        "NewsSummary",
+        "PullQuote",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+000D",
+      "char": "\r",
+      "name": "CARRIAGE RETURN",
+      "unicode_category": "Cc",
+      "classification": "control_whitespace",
+      "total_count": 1099,
+      "file_count": 100,
+      "normalize_recommended": false,
+      "ascii_replacement": "",
+      "fields": [
+        "NewsContent",
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+2014",
+      "char": "—",
+      "name": "EM DASH",
+      "unicode_category": "Pd",
+      "classification": "sharepoint_artifact",
+      "total_count": 444,
+      "file_count": 203,
+      "normalize_recommended": true,
+      "ascii_replacement": "-",
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+2026",
+      "char": "…",
+      "name": "HORIZONTAL ELLIPSIS",
+      "unicode_category": "Po",
+      "classification": "typography",
+      "total_count": 135,
+      "file_count": 100,
+      "normalize_recommended": true,
+      "ascii_replacement": "...",
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+0009",
+      "char": "\t",
+      "name": "TAB",
+      "unicode_category": "Cc",
+      "classification": "control_whitespace",
+      "total_count": 102,
+      "file_count": 30,
+      "normalize_recommended": false,
+      "ascii_replacement": " ",
+      "fields": [
+        "Contact",
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00E9",
+      "char": "é",
+      "name": "LATIN SMALL LETTER E WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 96,
+      "file_count": 57,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSubTitle",
+        "NewsSummary",
+        "PullQuoteAuthor",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+202F",
+      "char": " ",
+      "name": "NARROW NO-BREAK SPACE",
+      "unicode_category": "Zs",
+      "classification": "typography",
+      "total_count": 77,
+      "file_count": 12,
+      "normalize_recommended": true,
+      "ascii_replacement": " ",
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+2022",
+      "char": "•",
+      "name": "BULLET",
+      "unicode_category": "Po",
+      "classification": "typography",
+      "total_count": 76,
+      "file_count": 18,
+      "normalize_recommended": true,
+      "ascii_replacement": "*",
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0101",
+      "char": "ā",
+      "name": "LATIN SMALL LETTER A WITH MACRON",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 72,
+      "file_count": 12,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00A0",
+      "char": " ",
+      "name": "NO-BREAK SPACE",
+      "unicode_category": "Zs",
+      "classification": "sharepoint_artifact",
+      "total_count": 47,
+      "file_count": 23,
+      "normalize_recommended": true,
+      "ascii_replacement": " ",
+      "fields": [
+        "BannerCaption",
+        "MediumImageCaption",
+        "NewsSubTitle",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+012B",
+      "char": "ī",
+      "name": "LATIN SMALL LETTER I WITH MACRON",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 41,
+      "file_count": 11,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+02BF",
+      "char": "ʿ",
+      "name": "MODIFIER LETTER LEFT HALF RING",
+      "unicode_category": "Lm",
+      "classification": "legitimate_content",
+      "total_count": 29,
+      "file_count": 9,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+FB01",
+      "char": "ﬁ",
+      "name": "LATIN SMALL LIGATURE FI",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 25,
+      "file_count": 12,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+016B",
+      "char": "ū",
+      "name": "LATIN SMALL LETTER U WITH MACRON",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 22,
+      "file_count": 6,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00F6",
+      "char": "ö",
+      "name": "LATIN SMALL LETTER O WITH DIAERESIS",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 19,
+      "file_count": 8,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00E8",
+      "char": "è",
+      "name": "LATIN SMALL LETTER E WITH GRAVE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 17,
+      "file_count": 10,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00A3",
+      "char": "£",
+      "name": "POUND SIGN",
+      "unicode_category": "Sc",
+      "classification": "legitimate_content",
+      "total_count": 16,
+      "file_count": 10,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00FC",
+      "char": "ü",
+      "name": "LATIN SMALL LETTER U WITH DIAERESIS",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 16,
+      "file_count": 9,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00E7",
+      "char": "ç",
+      "name": "LATIN SMALL LETTER C WITH CEDILLA",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 14,
+      "file_count": 11,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+20AC",
+      "char": "€",
+      "name": "EURO SIGN",
+      "unicode_category": "Sc",
+      "classification": "legitimate_content",
+      "total_count": 14,
+      "file_count": 10,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00B0",
+      "char": "°",
+      "name": "DEGREE SIGN",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 13,
+      "file_count": 9,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0131",
+      "char": "ı",
+      "name": "LATIN SMALL LETTER DOTLESS I",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 13,
+      "file_count": 5,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+02BE",
+      "char": "ʾ",
+      "name": "MODIFIER LETTER RIGHT HALF RING",
+      "unicode_category": "Lm",
+      "classification": "legitimate_content",
+      "total_count": 12,
+      "file_count": 5,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0627",
+      "char": "ا",
+      "name": "ARABIC LETTER ALEF",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 12,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+06CC",
+      "char": "ی",
+      "name": "ARABIC LETTER FARSI YEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 12,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+FFFD",
+      "char": "�",
+      "name": "REPLACEMENT CHARACTER",
+      "unicode_category": "So",
+      "classification": "data_quality",
+      "total_count": 12,
+      "file_count": 12,
+      "normalize_recommended": true,
+      "ascii_replacement": "",
+      "fields": [
+        "Tags[0].Label",
+        "Tags[1].Label",
+        "Tags[3].Label",
+        "Tags[4].Label",
+        "Tags[5].Label"
+      ]
+    },
+    {
+      "codepoint": "U+00E1",
+      "char": "á",
+      "name": "LATIN SMALL LETTER A WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 11,
+      "file_count": 5,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+00E4",
+      "char": "ä",
+      "name": "LATIN SMALL LETTER A WITH DIAERESIS",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 10,
+      "file_count": 4,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+06A9",
+      "char": "ک",
+      "name": "ARABIC LETTER KEHEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 10,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1E25",
+      "char": "ḥ",
+      "name": "LATIN SMALL LETTER H WITH DOT BELOW",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 10,
+      "file_count": 6,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00DC",
+      "char": "Ü",
+      "name": "LATIN CAPITAL LETTER U WITH DIAERESIS",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 9,
+      "file_count": 5,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00E0",
+      "char": "à",
+      "name": "LATIN SMALL LETTER A WITH GRAVE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 9,
+      "file_count": 7,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0169",
+      "char": "ũ",
+      "name": "LATIN SMALL LETTER U WITH TILDE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 9,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00E3",
+      "char": "ã",
+      "name": "LATIN SMALL LETTER A WITH TILDE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 8,
+      "file_count": 7,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0648",
+      "char": "و",
+      "name": "ARABIC LETTER WAW",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 8,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+06D2",
+      "char": "ے",
+      "name": "ARABIC LETTER YEH BARREE",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 8,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1E62",
+      "char": "Ṣ",
+      "name": "LATIN CAPITAL LETTER S WITH DOT BELOW",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 8,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+1E6D",
+      "char": "ṭ",
+      "name": "LATIN SMALL LETTER T WITH DOT BELOW",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 8,
+      "file_count": 3,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00EE",
+      "char": "î",
+      "name": "LATIN SMALL LETTER I WITH CIRCUMFLEX",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 7,
+      "file_count": 7,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+011F",
+      "char": "ğ",
+      "name": "LATIN SMALL LETTER G WITH BREVE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 7,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSummary",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+2010",
+      "char": "‐",
+      "name": "HYPHEN",
+      "unicode_category": "Pd",
+      "classification": "typography",
+      "total_count": 7,
+      "file_count": 2,
+      "normalize_recommended": true,
+      "ascii_replacement": "-",
+      "fields": [
+        "BannerCaption",
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00FA",
+      "char": "ú",
+      "name": "LATIN SMALL LETTER U WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 6,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0631",
+      "char": "ر",
+      "name": "ARABIC LETTER REH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 6,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0633",
+      "char": "س",
+      "name": "ARABIC LETTER SEEN",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 6,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+2028",
+      "char": " ",
+      "name": "LINE SEPARATOR",
+      "unicode_category": "Zl",
+      "classification": "typography",
+      "total_count": 6,
+      "file_count": 4,
+      "normalize_recommended": true,
+      "ascii_replacement": "\\n",
+      "fields": [
+        "Contact",
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+FF06",
+      "char": "＆",
+      "name": "FULLWIDTH AMPERSAND",
+      "unicode_category": "Po",
+      "classification": "data_quality",
+      "total_count": 6,
+      "file_count": 6,
+      "normalize_recommended": true,
+      "ascii_replacement": "&",
+      "fields": [
+        "Tags[0].Label",
+        "Tags[1].Label",
+        "Tags[3].Label",
+        "Tags[4].Label"
+      ]
+    },
+    {
+      "codepoint": "U+00AD",
+      "char": "­",
+      "name": "SOFT HYPHEN",
+      "unicode_category": "Cf",
+      "classification": "typography",
+      "total_count": 5,
+      "file_count": 5,
+      "normalize_recommended": true,
+      "ascii_replacement": "",
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00B7",
+      "char": "·",
+      "name": "MIDDLE DOT",
+      "unicode_category": "Po",
+      "classification": "inferred",
+      "total_count": 5,
+      "file_count": 3,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00ED",
+      "char": "í",
+      "name": "LATIN SMALL LETTER I WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 5,
+      "file_count": 4,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+03B2",
+      "char": "β",
+      "name": "GREEK SMALL LETTER BETA",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 5,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+0626",
+      "char": "ئ",
+      "name": "ARABIC LETTER YEH WITH HAMZA ABOVE",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 5,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0644",
+      "char": "ل",
+      "name": "ARABIC LETTER LAM",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 5,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1E24",
+      "char": "Ḥ",
+      "name": "LATIN CAPITAL LETTER H WITH DOT BELOW",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 5,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+1E63",
+      "char": "ṣ",
+      "name": "LATIN SMALL LETTER S WITH DOT BELOW",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 5,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00D7",
+      "char": "×",
+      "name": "MULTIPLICATION SIGN",
+      "unicode_category": "Sm",
+      "classification": "legitimate_content",
+      "total_count": 4,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00EF",
+      "char": "ï",
+      "name": "LATIN SMALL LETTER I WITH DIAERESIS",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 4,
+      "file_count": 4,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0646",
+      "char": "ن",
+      "name": "ARABIC LETTER NOON",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 4,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+06C1",
+      "char": "ہ",
+      "name": "ARABIC LETTER HEH GOAL",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 4,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+2500",
+      "char": "─",
+      "name": "BOX DRAWINGS LIGHT HORIZONTAL",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 4,
+      "file_count": 3,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00EA",
+      "char": "ê",
+      "name": "LATIN SMALL LETTER E WITH CIRCUMFLEX",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 3,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00F1",
+      "char": "ñ",
+      "name": "LATIN SMALL LETTER N WITH TILDE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 3,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00F3",
+      "char": "ó",
+      "name": "LATIN SMALL LETTER O WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 3,
+      "file_count": 3,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+062A",
+      "char": "ت",
+      "name": "ARABIC LETTER TEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 3,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+06AF",
+      "char": "گ",
+      "name": "ARABIC LETTER GAF",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 3,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+00B4",
+      "char": "´",
+      "name": "ACUTE ACCENT",
+      "unicode_category": "Sk",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent",
+        "NewsSummary"
+      ]
+    },
+    {
+      "codepoint": "U+00C1",
+      "char": "Á",
+      "name": "LATIN CAPITAL LETTER A WITH ACUTE",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00E2",
+      "char": "â",
+      "name": "LATIN SMALL LETTER A WITH CIRCUMFLEX",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0129",
+      "char": "ĩ",
+      "name": "LATIN SMALL LETTER I WITH TILDE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+03C0",
+      "char": "π",
+      "name": "GREEK SMALL LETTER PI",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+062C",
+      "char": "ج",
+      "name": "ARABIC LETTER JEEM",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+062F",
+      "char": "د",
+      "name": "ARABIC LETTER DAL",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0632",
+      "char": "ز",
+      "name": "ARABIC LETTER ZAIN",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0639",
+      "char": "ع",
+      "name": "ARABIC LETTER AIN",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0641",
+      "char": "ف",
+      "name": "ARABIC LETTER FEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0645",
+      "char": "م",
+      "name": "ARABIC LETTER MEEM",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0688",
+      "char": "ڈ",
+      "name": "ARABIC LETTER DDAL",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+4F53",
+      "char": "体",
+      "name": "CJK UNIFIED IDEOGRAPH-4F53",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+5B8B",
+      "char": "宋",
+      "name": "CJK UNIFIED IDEOGRAPH-5B8B",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+FB02",
+      "char": "ﬂ",
+      "name": "LATIN SMALL LIGATURE FL",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 2,
+      "file_count": 2,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00AC",
+      "char": "¬",
+      "name": "NOT SIGN",
+      "unicode_category": "Sm",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00AE",
+      "char": "®",
+      "name": "REGISTERED SIGN",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00B5",
+      "char": "µ",
+      "name": "MICRO SIGN",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00B8",
+      "char": "¸",
+      "name": "CEDILLA",
+      "unicode_category": "Sk",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00BA",
+      "char": "º",
+      "name": "MASCULINE ORDINAL INDICATOR",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "Title"
+      ]
+    },
+    {
+      "codepoint": "U+00C9",
+      "char": "É",
+      "name": "LATIN CAPITAL LETTER E WITH ACUTE",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+00F8",
+      "char": "ø",
+      "name": "LATIN SMALL LETTER O WITH STROKE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0151",
+      "char": "ő",
+      "name": "LATIN SMALL LETTER O WITH DOUBLE ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+015E",
+      "char": "Ş",
+      "name": "LATIN CAPITAL LETTER S WITH CEDILLA",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0160",
+      "char": "Š",
+      "name": "LATIN CAPITAL LETTER S WITH CARON",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+02BB",
+      "char": "ʻ",
+      "name": "MODIFIER LETTER TURNED COMMA",
+      "unicode_category": "Lm",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+02BC",
+      "char": "ʼ",
+      "name": "MODIFIER LETTER APOSTROPHE",
+      "unicode_category": "Lm",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+02DA",
+      "char": "˚",
+      "name": "RING ABOVE",
+      "unicode_category": "Sk",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0323",
+      "char": "̣",
+      "name": "COMBINING DOT BELOW",
+      "unicode_category": "Mn",
+      "classification": "inferred",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+0622",
+      "char": "آ",
+      "name": "ARABIC LETTER ALEF WITH MADDA ABOVE",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0628",
+      "char": "ب",
+      "name": "ARABIC LETTER BEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+062E",
+      "char": "خ",
+      "name": "ARABIC LETTER KHAH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0634",
+      "char": "ش",
+      "name": "ARABIC LETTER SHEEN",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0635",
+      "char": "ص",
+      "name": "ARABIC LETTER SAD",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+063A",
+      "char": "غ",
+      "name": "ARABIC LETTER GHAIN",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0679",
+      "char": "ٹ",
+      "name": "ARABIC LETTER TTEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+067E",
+      "char": "پ",
+      "name": "ARABIC LETTER PEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+0686",
+      "char": "چ",
+      "name": "ARABIC LETTER TCHEH",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+06BA",
+      "char": "ں",
+      "name": "ARABIC LETTER NOON GHUNNA",
+      "unicode_category": "Lo",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+06D4",
+      "char": "۔",
+      "name": "ARABIC FULL STOP",
+      "unicode_category": "Po",
+      "classification": "inferred",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1E0F",
+      "char": "ḏ",
+      "name": "LATIN SMALL LETTER D WITH LINE BELOW",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+1E2B",
+      "char": "ḫ",
+      "name": "LATIN SMALL LETTER H WITH BREVE BELOW",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+1E34",
+      "char": "Ḵ",
+      "name": "LATIN CAPITAL LETTER K WITH LINE BELOW",
+      "unicode_category": "Lu",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+1F1E6",
+      "char": "🇦",
+      "name": "REGIONAL INDICATOR SYMBOL LETTER A",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1F1F0",
+      "char": "🇰",
+      "name": "REGIONAL INDICATOR SYMBOL LETTER K",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1F1FA",
+      "char": "🇺",
+      "name": "REGIONAL INDICATOR SYMBOL LETTER U",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+1F447",
+      "char": "👇",
+      "name": "WHITE DOWN POINTING BACKHAND INDEX",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "PullQuote"
+      ]
+    },
+    {
+      "codepoint": "U+2009",
+      "char": " ",
+      "name": "THIN SPACE",
+      "unicode_category": "Zs",
+      "classification": "typography",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": true,
+      "ascii_replacement": " ",
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+2015",
+      "char": "―",
+      "name": "HORIZONTAL BAR",
+      "unicode_category": "Pd",
+      "classification": "typography",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": true,
+      "ascii_replacement": "-",
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+2082",
+      "char": "₂",
+      "name": "SUBSCRIPT TWO",
+      "unicode_category": "No",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+20A4",
+      "char": "₤",
+      "name": "LIRA SIGN",
+      "unicode_category": "Sc",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "NewsContent"
+      ]
+    },
+    {
+      "codepoint": "U+2122",
+      "char": "™",
+      "name": "TRADE MARK SIGN",
+      "unicode_category": "So",
+      "classification": "legitimate_content",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "fields": [
+        "BannerCaption"
+      ]
+    },
+    {
+      "codepoint": "U+FEFF",
+      "char": "﻿",
+      "name": "BYTE ORDER MARK",
+      "unicode_category": "Cf",
+      "classification": "sharepoint_artifact",
+      "total_count": 1,
+      "file_count": 1,
+      "normalize_recommended": true,
+      "ascii_replacement": "",
+      "fields": [
+        "NewsContent"
+      ]
+    }
+  ],
+  "html_tags_in_source": [
+    {
+      "tag": "div",
+      "total_count": 34785,
+      "file_count": 3606,
+      "classification": "sharepoint_artifact",
+      "attributes": [
+        "class",
+        "data-block",
+        "data-editor",
+        "data-message-author-role",
+        "data-message-id",
+        "data-offset-key",
+        "dir",
+        "style",
+        "unselectable"
+      ]
+    },
+    {
+      "tag": "br",
+      "total_count": 23055,
+      "file_count": 3330,
+      "classification": "sharepoint_artifact",
+      "attributes": [
+        "data-text",
+        "style"
+      ]
+    },
+    {
+      "tag": "p",
+      "total_count": 13712,
+      "file_count": 2388,
+      "classification": "structural",
+      "attributes": [
+        "class",
+        "dir",
+        "lang",
+        "style"
+      ]
+    },
+    {
+      "tag": "span",
+      "total_count": 2757,
+      "file_count": 247,
+      "classification": "inline_formatting",
+      "attributes": [
+        "class",
+        "data-ccp-charstyle",
+        "data-ccp-charstyle-defn",
+        "data-ccp-parastyle",
+        "data-ccp-props",
+        "data-contrast",
+        "data-offset-key",
+        "data-preserver-spaces",
+        "data-state",
+        "data-teams",
+        "data-text",
+        "dir",
+        "id",
+        "lang",
+        "spellcheck",
+        "style"
+      ]
+    },
+    {
+      "tag": "a",
+      "total_count": 2056,
+      "file_count": 865,
+      "classification": "link",
+      "attributes": [
+        "_ga",
+        "_rdc",
+        "act",
+        "actid",
+        "adm2id",
+        "aff",
+        "album_id",
+        "aqs",
+        "article",
+        "author_access_token",
+        "c",
+        "catid",
+        "cc",
+        "chosenpaperid",
+        "cmd",
+        "code",
+        "conference",
+        "content_id",
+        "context",
+        "data",
+        "data-cke-saved-href",
+        "dgcid",
+        "display",
+        "eventid",
+        "faculty_id",
+        "fbclid",
+        "feature",
+        "file",
+        "get",
+        "hl",
+        "href",
+        "httpsredir",
+        "id",
+        "ie",
+        "igshid",
+        "index",
+        "institution",
+        "isallowed",
+        "itemid",
+        "journal",
+        "journalcode",
+        "lang",
+        "language",
+        "limitstart",
+        "list",
+        "locale",
+        "locations",
+        "mc_id",
+        "media",
+        "mibextid",
+        "most_recent_value_desc",
+        "name",
+        "nid",
+        "op",
+        "option",
+        "oq",
+        "origin",
+        "ouid",
+        "oyyae25k1fzaabcnxrjz4c-crs0ak3wutjefzok1m2jemwvdgyvkdbfqya_ybzesxwoerfqjhnsfhk7ogybfdwinm5b8ktdsecit7k4r2ng",
+        "p",
+        "paaoytxa6ktze9yyd0oegvsw291ql_uawqvcx8-racbg2mhtqus2n8qsnmiby6xnsrtcrtugq_3c9yakhylxt0sqyr9t4gg0bricybpe5uk",
+        "page",
+        "page_id",
+        "pageid",
+        "phpsessid",
+        "pid",
+        "postcount",
+        "pr_id",
+        "prev",
+        "profileid",
+        "program_focus",
+        "pto",
+        "q",
+        "query",
+        "qxmsqavelvsvges1schxbhf4-tjhh-ycqlnmtebt-0ydhqzoixgncdzs5jlcxz8q92mv-8inetcwci_zfksgdkzq8bmh7r5g-8z8u46knbw",
+        "qxmsqavelvsvges1schxbm4palliq3nsyvrmypo68msap4-mqk-fluei9aysmujcnjp52jxftqmfncjiekh7zogl7ecb5k_fw3_s0q4kgqq",
+        "qxmsqavelvsvges1schxbnhcniom9t-eeszblas10ykxeph7sgffumhf5atdpu1xpx8pgqbv4aok04lwz96zi7ofoor-7ydbjjiamgpjozo",
+        "rcit2sq",
+        "ref",
+        "ref_src",
+        "referer",
+        "rel",
+        "reserved",
+        "rlz",
+        "row",
+        "rss",
+        "rtpof",
+        "s",
+        "sd",
+        "sdata",
+        "search",
+        "seq",
+        "sequence",
+        "sessionid",
+        "showall",
+        "si",
+        "sl",
+        "sort",
+        "source",
+        "sourceid",
+        "src",
+        "start",
+        "style",
+        "t",
+        "tab",
+        "tags",
+        "target",
+        "term",
+        "text",
+        "themerefresh",
+        "time_continue",
+        "title",
+        "traceredir",
+        "tspd_101_r0",
+        "tsrc",
+        "type",
+        "u",
+        "ua",
+        "uoqsu3apbyafykas5vjzl9nnjnhgeeman-kf4wjjl-a-xrp7h8vstlms7v71bmrjspifswxnwnuq_2p1_8zzzss8zefronzqvl_o34vux5dvnusalyjyt2pfr0acgyhlbiak2n45z5n99eycweajcw",
+        "url",
+        "usp",
+        "utm_medium",
+        "utm_source",
+        "v",
+        "view",
+        "wpdmpro",
+        "zone"
+      ]
+    },
+    {
+      "tag": "strong",
+      "total_count": 1121,
+      "file_count": 275,
+      "classification": "inline_formatting",
+      "attributes": [
+        "style"
+      ]
+    },
+    {
+      "tag": "em",
+      "total_count": 1030,
+      "file_count": 452,
+      "classification": "inline_formatting",
+      "attributes": [
+        "style"
+      ]
+    },
+    {
+      "tag": "li",
+      "total_count": 659,
+      "file_count": 104,
+      "classification": "structural",
+      "attributes": [
+        "style"
+      ]
+    },
+    {
+      "tag": "ul",
+      "total_count": 146,
+      "file_count": 89,
+      "classification": "structural",
+      "attributes": [
+        "class",
+        "dir",
+        "style"
+      ]
+    },
+    {
+      "tag": "img",
+      "total_count": 88,
+      "file_count": 37,
+      "classification": "media",
+      "attributes": [
+        "alt",
+        "class",
+        "src",
+        "style"
+      ]
+    },
+    {
+      "tag": "h3",
+      "total_count": 68,
+      "file_count": 25,
+      "classification": "structural",
+      "attributes": []
+    },
+    {
+      "tag": "iframe",
+      "total_count": 66,
+      "file_count": 62,
+      "classification": "media",
+      "attributes": [
+        "class",
+        "frameborder",
+        "height",
+        "list",
+        "si",
+        "src",
+        "title",
+        "width"
+      ]
+    },
+    {
+      "tag": "td",
+      "total_count": 47,
+      "file_count": 7,
+      "classification": "structural",
+      "attributes": [
+        "class",
+        "colspan",
+        "rowspan",
+        "style"
+      ]
+    },
+    {
+      "tag": "style",
+      "total_count": 43,
+      "file_count": 31,
+      "classification": "embedded",
+      "attributes": []
+    },
+    {
+      "tag": "h2",
+      "total_count": 41,
+      "file_count": 13,
+      "classification": "structural",
+      "attributes": []
+    },
+    {
+      "tag": "b",
+      "total_count": 40,
+      "file_count": 15,
+      "classification": "inline_formatting",
+      "attributes": []
+    },
+    {
+      "tag": "sup",
+      "total_count": 40,
+      "file_count": 30,
+      "classification": "inline_formatting",
+      "attributes": [
+        "style"
+      ]
+    },
+    {
+      "tag": "ol",
+      "total_count": 21,
+      "file_count": 18,
+      "classification": "structural",
+      "attributes": [
+        "style"
+      ]
+    },
+    {
+      "tag": "tr",
+      "total_count": 21,
+      "file_count": 7,
+      "classification": "structural",
+      "attributes": [
+        "class"
+      ]
+    },
+    {
+      "tag": "h4",
+      "total_count": 19,
+      "file_count": 11,
+      "classification": "structural",
+      "attributes": []
+    },
+    {
+      "tag": "table",
+      "total_count": 12,
+      "file_count": 7,
+      "classification": "structural",
+      "attributes": [
+        "border",
+        "cellspacing",
+        "class",
+        "style",
+        "width"
+      ]
+    },
+    {
+      "tag": "tbody",
+      "total_count": 12,
+      "file_count": 7,
+      "classification": "structural",
+      "attributes": []
+    },
+    {
+      "tag": "font",
+      "total_count": 9,
+      "file_count": 3,
+      "classification": "inline_formatting",
+      "attributes": [
+        "color",
+        "face",
+        "style"
+      ]
+    },
+    {
+      "tag": "i",
+      "total_count": 6,
+      "file_count": 5,
+      "classification": "inline_formatting",
+      "attributes": []
+    },
+    {
+      "tag": "blockquote",
+      "total_count": 4,
+      "file_count": 2,
+      "classification": "structural",
+      "attributes": [
+        "class",
+        "style"
+      ]
+    },
+    {
+      "tag": "h1",
+      "total_count": 3,
+      "file_count": 2,
+      "classification": "structural",
+      "attributes": []
+    }
+  ]
+}
