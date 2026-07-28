@@ -1,0 +1,22 @@
+{
+  "name": "aku-news-review-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Faceted browser over the 3606 migrated AKU news stories — filter by structural element, writer, date, taxonomy and status to work out which Storyblok components are needed.",
+  "scripts": {
+    "dev": "next dev -p 4000",
+    "build": "next build",
+    "start": "next start -p 4000",
+    "reindex": "python ../scripts/migrate/build_viewer_index.py"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.7",
+    "@types/react": "19.0.7",
+    "typescript": "5.7.3"
+  }
+}
