@@ -45,6 +45,40 @@ EMPTY_ASSET = {"id": None, "alt": "", "name": "", "focus": "", "title": "",
                "source": "", "filename": "", "copyright": "",
                "fieldtype": "asset", "meta_data": {}}
 
+# ---------------------------------------------------------------- spacing
+# `spacing` is a spacing-field-plugin value. It is NOT optional in practice:
+# every blok in the pixel-perfect demo sets it, and a blok without it renders
+# with no vertical rhythm at all. These are the demo's exact values, so the
+# migrated articles match the Figma spacing rather than collapsing.
+#
+# Read from the live demo story:
+#   rich_text     mobile mb 24, px 20   | desktop mb 56, px 176
+#   media_section mobile mb 24          | desktop mb 56
+#   quote_banner  mobile mb 24          | desktop mb 56
+
+
+def _box(top=None, left=None, right=None, bottom=None):
+    return {"top": top, "left": left, "right": right, "bottom": bottom}
+
+
+def spacing(*, mobile_x=None, desktop_x=None, mobile_mb=24, desktop_mb=56):
+    return {
+        "unit": "px",
+        "mobile": {"margin": _box(bottom=mobile_mb),
+                   "padding": _box(left=mobile_x, right=mobile_x)},
+        "desktop": {"margin": _box(bottom=desktop_mb),
+                    "padding": _box(left=desktop_x, right=desktop_x)},
+    }
+
+
+# The article text column is inset; full-width media is not.
+SPACING_RICH_TEXT = spacing(mobile_x=20, desktop_x=176)
+SPACING_FULL_WIDTH = spacing()
+
+# rich_text background-pattern defaults, also taken from the demo
+PATTERN_HEIGHT = "500"
+PATTERN_MOBILE_HEIGHT = "0"
+
 
 def empty_multilink(url=""):
     return {"id": "", "url": url, "linktype": "url" if url else "story",
@@ -126,7 +160,11 @@ def has_visible_content(nodes):
 
 def rich_text_blok(sid, idx, nodes):
     return {"_uid": uid(sid, "rt", idx), "component": "rich_text",
-            "content": doc_of(nodes)}
+            "content": doc_of(nodes),
+            "bg_pattern": dict(EMPTY_ASSET),
+            "pattern_height": PATTERN_HEIGHT,
+            "pattern_mobile_height": PATTERN_MOBILE_HEIGHT,
+            "spacing": SPACING_RICH_TEXT}
 
 
 def media_section_video(sid, idx, *, video_url="", thumbnail=None, title="",
@@ -143,6 +181,7 @@ def media_section_video(sid, idx, *, video_url="", thumbnail=None, title="",
         "auto_play": False, "show_controls": True,
         "bg_pattern": dict(EMPTY_ASSET),
         "pattern_position": "top", "pattern_opacity": False,
+        "spacing": SPACING_FULL_WIDTH,
     }
 
 
@@ -160,6 +199,7 @@ def media_section_images(sid, idx, assets, *, title="", description=""):
         "auto_play": False, "show_controls": True,
         "bg_pattern": dict(EMPTY_ASSET),
         "pattern_position": "top", "pattern_opacity": False,
+        "spacing": SPACING_FULL_WIDTH,
     }
 
 
@@ -171,6 +211,7 @@ def quote_banner_blok(sid, quote, attribution, date, category):
         "date": date or "", "category": category or "",
         "portrait": dict(EMPTY_ASSET),
         "background_image": dict(EMPTY_ASSET),
+        "spacing": SPACING_FULL_WIDTH,
     }
 
 

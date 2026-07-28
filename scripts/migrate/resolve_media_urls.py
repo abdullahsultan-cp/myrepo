@@ -161,6 +161,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ids")
     ap.add_argument("--sample", action="store_true")
+    ap.add_argument("--priority", choices=["with-media", "rich", "recent"],
+                    help="do the interesting stories first: with-media = has "
+                         "any media at all; rich = 3+ media or an embed; "
+                         "recent = newest first")
     ap.add_argument("--workers", type=int, default=5)
     ap.add_argument("--limit", type=int)
     ap.add_argument("--refresh", action="store_true",
@@ -189,6 +193,33 @@ def main():
     else:
         ids = sorted((n[:-5] for n in os.listdir(STORIES)
                       if n.endswith(".json")), key=int)
+
+    if a.priority:
+        # Rank so the stories worth reviewing resolve first. A story with no
+        # media has nothing to resolve, so leaving it for last costs nothing.
+        def rank(sid):
+            p = os.path.join(STORIES, f"{sid}.json")
+            try:
+                with open(p, encoding="utf-8") as f:
+                    c = json.load(f).get("content") or {}
+            except Exception:
+                return (9, "")
+            media = (c.get("media") or []) + (c.get("richtext_media") or [])
+            n = len(media)
+            has_embed = "video_embed" in json.dumps(c.get("body") or {}) \
+                or bool(c.get("pull_quote"))
+            date = (c.get("schedule_start_date") or "")[:10]
+            if a.priority == "with-media":
+                return (0 if n else 1, "" if n else date)
+            if a.priority == "rich":
+                return (0 if (n >= 3 or has_embed) else (1 if n else 2), date)
+            return (0, date)                      # recent
+        ids = sorted(ids, key=rank)
+        if a.priority == "with-media":
+            keep = [s for s in ids if rank(s)[0] == 0]
+            print(f"  priority 'with-media': {len(keep)} of {len(ids)} "
+                  f"stories have media")
+            ids = keep
 
     # sequence number per story, needed for the page URL
     seqs = {}
