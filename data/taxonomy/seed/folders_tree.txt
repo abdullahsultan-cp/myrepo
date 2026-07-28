@@ -1,0 +1,350 @@
+AKU NEWS — STORYBLOK FOLDER STRUCTURE
+============================================================
+346 folders  |  6 regions  |  19 entities  |  60 region-entity nodes  |  89 department folders
+
+├── global/
+│   └── news/
+└── Regions/
+    ├── Afghanistan/
+    │   ├── Entities/
+    │   │   ├── East Africa Institute/
+    │   │   │   └── Departments/
+    │   │   │       └── Public Health/
+    │   │   │           └── News/
+    │   │   ├── Institute for Educational Development/
+    │   │   │   └── News/
+    │   │   ├── Institute for Human Development/
+    │   │   │   └── News/
+    │   │   └── Medical College/
+    │   │       └── Departments/
+    │   │           └── Medical Education/
+    │   │               └── News/
+    │   └── News/
+    ├── Kenya/
+    │   ├── Entities/
+    │   │   ├── Brain and Mind Institute/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Psychiatry & Mental Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Public Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre for Innovation in Medical Education/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Nursing/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre of Excellence in Women and Child Health/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Public Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── East Africa Institute/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Nutrition/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Environmental Responsibility/
+    │   │   │   └── News/
+    │   │   ├── Graduate School of Media and Communications/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Governance/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Institute for Educational Development/
+    │   │   │   └── News/
+    │   │   ├── Institute for Human Development/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Nutrition/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Institute for the Study of Muslim Civilisations/
+    │   │   │   └── News/
+    │   │   ├── Medical College/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Internal Medicine/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nursing/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Obstetrics & Gynaecology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Oncology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Network of English Language Enhancement/
+    │   │   │   └── News/
+    │   │   ├── Networks of Quality, Teaching and Learning/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Midwifery/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   └── School of Nursing and Midwifery/
+    │   │       ├── Departments/
+    │   │       │   ├── Governance/
+    │   │       │   │   └── News/
+    │   │       │   ├── Midwifery/
+    │   │       │   │   └── News/
+    │   │       │   ├── Nursing/
+    │   │       │   │   └── News/
+    │   │       │   ├── Oncology/
+    │   │       │   │   └── News/
+    │   │       │   └── Psychiatry & Mental Health/
+    │   │       │       └── News/
+    │   │       └── News/
+    │   └── News/
+    ├── Pakistan/
+    │   ├── Entities/
+    │   │   ├── Arusha Climate and Environmental Research Centre/
+    │   │   │   └── News/
+    │   │   ├── Brain and Mind Institute/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Psychiatry & Mental Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Public Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre for Innovation in Medical Education/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Family Medicine/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Internal Medicine/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Midwifery/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Neurosurgery/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nursing/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Obstetrics & Gynaecology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Paediatrics & Child Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre for Regenerative Medicine and Stem Cell Research/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Oncology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Regenerative Medicine/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre of Excellence for Trauma and Emergencies/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Nursing/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre of Excellence in Women and Child Health/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Public Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Environmental Responsibility/
+    │   │   │   └── News/
+    │   │   ├── Faculty of Arts and Sciences/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Graduate School of Media and Communications/
+    │   │   │   └── News/
+    │   │   ├── Institute for Educational Development/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Midwifery/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nursing/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Public Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Institute for Global Health and Development/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Nutrition/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Paediatrics & Child Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Institute for Human Development/
+    │   │   │   └── Departments/
+    │   │   │       └── Paediatrics & Child Health/
+    │   │   │           └── News/
+    │   │   ├── Institute for the Study of Muslim Civilisations/
+    │   │   │   └── News/
+    │   │   ├── Medical College/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Cardiology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Family Medicine/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Neurosurgery/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nursing/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nutrition/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Oncology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Psychiatry & Mental Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Public Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Regenerative Medicine/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Network of English Language Enhancement/
+    │   │   │   └── News/
+    │   │   ├── Networks of Quality, Teaching and Learning/
+    │   │   │   └── News/
+    │   │   ├── School of Nursing and Midwifery/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Geriatrics & Gerontology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Medical Education/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Midwifery/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nursing/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nutrition/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Oncology/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Psychiatry & Mental Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Public Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   └── Surgery Interest Group/
+    │   │       └── News/
+    │   └── News/
+    ├── Tanzania/
+    │   ├── Entities/
+    │   │   ├── Arusha Climate and Environmental Research Centre/
+    │   │   │   └── News/
+    │   │   ├── Brain and Mind Institute/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Centre for Innovation in Medical Education/
+    │   │   │   └── News/
+    │   │   ├── East Africa Institute/
+    │   │   │   └── News/
+    │   │   ├── Environmental Responsibility/
+    │   │   │   └── News/
+    │   │   ├── Graduate School of Media and Communications/
+    │   │   │   └── News/
+    │   │   ├── Institute for Educational Development/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Institute for Human Development/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Institute for the Study of Muslim Civilisations/
+    │   │   │   └── News/
+    │   │   ├── Medical College/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Family Medicine/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Paediatrics & Child Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Network of English Language Enhancement/
+    │   │   │   └── News/
+    │   │   ├── Networks of Quality, Teaching and Learning/
+    │   │   │   └── News/
+    │   │   ├── School of Nursing and Midwifery/
+    │   │   │   ├── Departments/
+    │   │   │   │   ├── Midwifery/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Nursing/
+    │   │   │   │   │   └── News/
+    │   │   │   │   ├── Paediatrics & Child Health/
+    │   │   │   │   │   └── News/
+    │   │   │   │   └── Psychiatry & Mental Health/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   └── Surgery Interest Group/
+    │   │       └── News/
+    │   └── News/
+    ├── Uganda/
+    │   ├── Entities/
+    │   │   ├── Centre of Excellence in Women and Child Health/
+    │   │   │   └── News/
+    │   │   ├── East Africa Institute/
+    │   │   │   └── News/
+    │   │   ├── Graduate School of Media and Communications/
+    │   │   │   └── News/
+    │   │   ├── Institute for Educational Development/
+    │   │   │   └── News/
+    │   │   ├── Institute for Human Development/
+    │   │   │   └── Departments/
+    │   │   │       └── Psychiatry & Mental Health/
+    │   │   │           └── News/
+    │   │   ├── Medical College/
+    │   │   │   ├── Departments/
+    │   │   │   │   └── Medical Education/
+    │   │   │   │       └── News/
+    │   │   │   └── News/
+    │   │   ├── Networks of Quality, Teaching and Learning/
+    │   │   │   └── News/
+    │   │   └── School of Nursing and Midwifery/
+    │   │       ├── Departments/
+    │   │       │   ├── Midwifery/
+    │   │       │   │   └── News/
+    │   │       │   ├── Nursing/
+    │   │       │   │   └── News/
+    │   │       │   └── Paediatrics & Child Health/
+    │   │       │       └── News/
+    │   │       └── News/
+    │   └── News/
+    └── United Kingdom/
+        ├── Entities/
+        │   ├── Institute for the Study of Muslim Civilisations/
+        │   │   ├── Departments/
+        │   │   │   ├── Governance/
+        │   │   │   │   └── News/
+        │   │   │   └── Psychiatry & Mental Health/
+        │   │   │       └── News/
+        │   │   └── News/
+        │   ├── Networks of Quality, Teaching and Learning/
+        │   │   └── News/
+        │   └── School of Nursing and Midwifery/
+        │       └── Departments/
+        │           └── Midwifery/
+        │               └── News/
+        └── News/

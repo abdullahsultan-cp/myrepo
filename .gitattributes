@@ -1,0 +1,26 @@
+# Normalise line endings so a Windows checkout does not show every file as
+# modified. Text is stored LF in the repo and checked out native.
+* text=auto
+
+*.py     text eol=lf
+*.md     text eol=lf
+*.json   text eol=lf
+*.csv    text eol=lf
+*.txt    text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.sh     text eol=lf
+
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.svg    text eol=lf
+*.pdf    binary
+*.mp4    binary
+*.mov    binary
+*.zip    binary
+*.ico    binary

@@ -1,0 +1,78 @@
+# Taxonomy stage
+
+Derives **Region → Entity → Department** for all 3606 news items and emits the
+Storyblok folder structure.
+
+The main pipeline (`scripts/`) converts *content*. This stage decides *where each
+story goes*. It reads `data/cleaned_news/` and writes `data/taxonomy/`.
+
+Full spec and every decision: [`docs/MIGRATION_DECISIONS.md`](../../docs/MIGRATION_DECISIONS.md).
+
+---
+
+## Run it
+
+```bash
+python scripts/taxonomy/run_taxonomy.py            # all steps, in order
+python scripts/taxonomy/run_taxonomy.py status     # what exists so far
+python scripts/taxonomy/run_taxonomy.py tree       # one step by name
+```
+
+Input is `data/cleaned_news/`, which is gitignored. After a fresh clone:
+
+```bash
+python scripts/run_pipeline.py extract-news
+python scripts/run_pipeline.py clean-news
+python scripts/taxonomy/run_taxonomy.py
+```
+
+Stdlib only — nothing here needs `requirements.txt`.
+
+---
+
+## Steps
+
+| Step | Script | Produces |
+|---|---|---|
+| `lookups` | `harvest_lookups.py` | city / entity / tag inventory + drift report |
+| `regions` | `build_structure.py` | region per item, with the rule that fired |
+| `abbrev` | `build_entity_abbrev.py` | short form per entity, from approver-group names |
+| `recover` | `recover_entity.py` | entity for the 2048 items whose `Entity` is `"Global"` |
+| `departments` | `build_departments.py` | department per item, derived from `Tags` |
+| `crossrefs` | `build_crossrefs.py` | cross-entity share links from `AdditionalEntity` |
+| `tree` | `build_folder_tree.py` | folder structure + per-item destination |
+| `seed` | `build_seed_json.py` | folders + stories, one JSON for the backend |
+| `folders` | `build_folders_only.py` | folders only, for creating the tree |
+
+`tree` needs `regions`, `abbrev`, `recover`, `departments` and `crossrefs`.
+`seed` and `folders` need `tree`.
+
+Each step is a separate script on purpose: any one can be re-run and audited
+alone, and every derived field records which rule produced it
+(`region_source`, `entity_source`, `department_source`).
+
+---
+
+## Other files
+
+| File | Purpose |
+|---|---|
+| `paths.py` | every input and output location; move a directory, edit this only |
+| `resolve_taxonomy.py` | the original exploratory script. **Not in the chain** — kept because `build_departments.py` imports its `DEPARTMENTS` vocabulary |
+| `resolve_taxonomy_sample.py` | random-sample variant of the above, for spot checks |
+| `fetch_sp_lookups.py` | pulls authoritative lookup lists from SharePoint. **Not in the chain** — needs `SP_COOKIE` / `SP_TOKEN` and network. Use it if AKU ever exposes a Departments list |
+
+---
+
+## Two things to know before changing anything
+
+**Departments are inferred.** No department field exists anywhere in the export —
+41 fields, none of them a department, and none of the 33 main-pipeline scripts
+mentions one. Departments come from `Tags`, so a tag can mean "from this
+department" or merely "about this subject" and nothing distinguishes the two.
+Roughly 40 of the 89 department folders may not correspond to a real unit.
+
+**Some entities and regions are inferred too.** 678 entities were recovered for
+items that had none, and 20 regions could not be read from the `City` field. The
+`provenance` block on every story in the seed says which — check it before
+treating a placement as authoritative.

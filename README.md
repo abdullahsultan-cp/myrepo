@@ -29,9 +29,11 @@ Dependencies: `beautifulsoup4`, `html5lib`, `requests`.
 ```
 aku-academy/
 ├── assets/              Local SharePoint media export (not in Git)
-├── config/              Storyblok API settings
+├── config/              Storyblok API settings + hand corrections
 ├── data/                Pipeline inputs, outputs, and reports
+├── docs/                Migration spec and decisions
 ├── scripts/             Python migration pipeline
+│   └── taxonomy/        Region / Entity / Department + folder structure
 ├── storyblok-viewer/    Next.js app to preview stories + serve media
 └── tests/               Pipeline tests
 ```
@@ -39,11 +41,33 @@ aku-academy/
 | Folder | Purpose |
 |--------|---------|
 | **`assets/`** | SharePoint media bundle: `Metadata.csv`, image/video files, optional zip backup. Required for media validation, injection, and the viewer. **Gitignored** — you must add this locally after cloning. |
-| **`config/`** | Storyblok Management API config. Copy `storyblok.example.json` → `storyblok.json` when uploading or importing. |
-| **`data/`** | Raw news export, per-story JSON at each pipeline stage, and generated report files. Most of this is produced by running the pipeline. |
+| **`config/`** | Storyblok Management API config. Copy `storyblok.example.json` → `storyblok.json` when uploading or importing. Also `region_overrides.csv` — hand corrections for the taxonomy stage. |
+| **`data/`** | Raw news export, per-story JSON at each pipeline stage, generated reports, and `data/taxonomy/` (folder structure + routing). The per-stage story folders are **gitignored** — rebuild them from `data/news.json`. |
+| **`docs/`** | `MIGRATION_DECISIONS.md` — the full spec: structure, every rule, and what is inferred rather than read from the source. |
 | **`scripts/`** | All pipeline steps. Start with `run_pipeline.py`. |
+| **`scripts/taxonomy/`** | Where each story goes in Storyblok. Start with `run_taxonomy.py`; see its [README](scripts/taxonomy/README.md). |
 | **`storyblok-viewer/`** | Browse `data/storyblok_stories/` and serve files from `assets/News/media/` at `/news-media/…`. |
 | **`tests/`** | Run with `python3 -m pytest tests/`. |
+
+### Two stages
+
+| | Converts | Entry point |
+|---|---|---|
+| **Content pipeline** | SharePoint HTML → Storyblok rich text + story payloads | `scripts/run_pipeline.py` |
+| **Taxonomy stage** | Region / Entity / Department → the Storyblok folder tree | `scripts/taxonomy/run_taxonomy.py` |
+
+The content pipeline puts every story flat at `/news/{slug}`. The taxonomy stage
+works out the real destination:
+
+```
+global/news/{item}                                                 250
+Regions/{region}/News/{item}                                      1284
+Regions/{region}/Entities/{entity}/News/{item}                    1499
+Regions/{region}/Entities/{entity}/Departments/{dept}/News/{item}   573
+```
+
+**346 folders · 6 regions · 19 entities · 89 department folders.** Hand
+`data/taxonomy/seed/folders.json` to the backend to create the structure.
 
 ---
 
@@ -184,6 +208,27 @@ python3 scripts/run_pipeline.py all              # Run every step (long)
 | `validate-metadata` | `validate_storyblok_metadata.py` | Metadata coverage check |
 | `extract-viewer-filters` | `extract_storyblok_filter_constants.py` | Generate viewer filter constants |
 | `import-storyblok` | `import_storyblok.py` | Push stories to Storyblok (needs API) |
+
+### Taxonomy steps
+
+Run after `clean-news`. Details in [`scripts/taxonomy/README.md`](scripts/taxonomy/README.md).
+
+```bash
+python3 scripts/taxonomy/run_taxonomy.py status     # what exists so far
+python3 scripts/taxonomy/run_taxonomy.py            # every step, in order
+```
+
+| Step | Script | What it does |
+|------|--------|--------------|
+| `lookups` | `harvest_lookups.py` | City / entity / tag inventory + drift report |
+| `regions` | `build_structure.py` | Region per item (country), with the rule that fired |
+| `abbrev` | `build_entity_abbrev.py` | Short form per entity, from approver-group names |
+| `recover` | `recover_entity.py` | Entity for the 2048 items whose `Entity` is `"Global"` |
+| `departments` | `build_departments.py` | Department per item, derived from `Tags` |
+| `crossrefs` | `build_crossrefs.py` | Cross-entity share links from `AdditionalEntity` |
+| `tree` | `build_folder_tree.py` | Folder structure + per-item destination |
+| `seed` | `build_seed_json.py` | Folders + stories → one JSON for the backend |
+| `folders` | `build_folders_only.py` | Folders only → `data/taxonomy/seed/folders.json` |
 
 ### Typical workflows
 

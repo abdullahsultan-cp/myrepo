@@ -1,0 +1,220 @@
+items: 3606   (of 3606 files)
+regions: 7   entities: 26
+
+------------------------------------------------------------
+ROUTING
+------------------------------------------------------------
+   2048  ->  global/news/          (Entity = Global, no owner)
+   1558  ->  Regions/.../News/     (has an owning entity)
+   1244      also surface on the global site (GlobalNews flag)
+    500      carry view-only cross-references
+
+  Entity=Global x GlobalNews (they disagree on 1432 items)
+   1244      Entity=Global:False  GlobalNews:False
+    314      Entity=Global:False  GlobalNews:True
+   1118      Entity=Global:True   GlobalNews:False
+    930      Entity=Global:True   GlobalNews:True
+
+------------------------------------------------------------
+REGION > ENTITY
+------------------------------------------------------------
+
+Pakistan  [2194 items, 20 entities]
+     1487  Global
+      183  Medical College
+      172  Centre for Innovation in Medical Education
+      116  Institute for Educational Development
+      108  School of Nursing and Midwifery
+       29  Networks of Quality, Teaching and Learning
+       23  Centre of Excellence in Women and Child Health
+       20  Institute for Global Health and Development
+       13  Network of English Language Enhancement
+       13  Centre for Regenerative Medicine and Stem Cell Research
+        8  Surgery Interest Group
+        6  Centre of Excellence for Trauma and Emergencies
+        5  Environmental Responsibility
+        3  Student Affairs and Services
+        2  Faculty of Arts and Sciences
+        2  Brain and Mind Institute
+        1  News training
+        1  Office of the Provost
+        1  Institute for the Study of Muslim Civilisations
+        1  Research
+
+Kenya  [646 items, 16 entities]
+      239  Global
+       96  Graduate School of Media and Communications
+       86  Medical College
+       56  School of Nursing and Midwifery
+       53  East Africa Institute
+       46  Brain and Mind Institute
+       22  Institute for Human Development
+       17  Networks of Quality, Teaching and Learning
+       15  Centre for Innovation in Medical Education
+        8  Centre of Excellence in Women and Child Health
+        3  Institute for Educational Development
+        1  Library
+        1  Institute for the Study of Muslim Civilisations
+        1  Network of English Language Enhancement
+        1  Data Office
+        1  News training
+
+Global  [237 items, 11 entities]
+      129  Global
+       52  Brain and Mind Institute
+       13  Network of English Language Enhancement
+       12  Networks of Quality, Teaching and Learning
+       10  Environmental Responsibility
+        8  Research
+        7  Centre for Innovation in Medical Education
+        2  Institute for Global Health and Development
+        2  Centre of Excellence in Women and Child Health
+        1  School of Nursing and Midwifery
+        1  Institute for the Study of Muslim Civilisations
+
+Tanzania  [234 items, 16 entities]
+      116  Global
+       64  Institute for Educational Development
+       14  School of Nursing and Midwifery
+       10  Networks of Quality, Teaching and Learning
+        6  Graduate School of Media and Communications
+        5  Network of English Language Enhancement
+        4  East Africa Institute
+        3  Institute for Human Development
+        3  Medical College
+        2  News training
+        2  Brain and Mind Institute
+        1  Office of the Provost
+        1  Surgery Interest Group
+        1  Institute for the Study of Muslim Civilisations
+        1  Arusha Climate and Environmental Research Centre
+        1  Centre for Innovation in Medical Education
+
+United Kingdom  [205 items, 4 entities]
+      189  Institute for the Study of Muslim Civilisations
+       13  Global
+        2  School of Nursing and Midwifery
+        1  Networks of Quality, Teaching and Learning
+
+Uganda  [75 items, 8 entities]
+       49  Global
+       20  School of Nursing and Midwifery
+        1  Centre of Excellence in Women and Child Health
+        1  East Africa Institute
+        1  Networks of Quality, Teaching and Learning
+        1  Graduate School of Media and Communications
+        1  Institute for Human Development
+        1  News training
+
+Afghanistan  [15 items, 1 entities]
+       15  Global
+
+------------------------------------------------------------
+ENTITIES SPANNING >1 REGION (19)
+------------------------------------------------------------
+   2048  Global
+            1487  Pakistan
+             239  Kenya
+             129  Global
+             116  Tanzania
+              49  Uganda
+              15  Afghanistan
+              13  United Kingdom
+    272  Medical College
+             183  Pakistan
+              86  Kenya
+               3  Tanzania
+    201  School of Nursing and Midwifery
+             108  Pakistan
+              56  Kenya
+              20  Uganda
+              14  Tanzania
+               2  United Kingdom
+               1  Global
+    195  Centre for Innovation in Medical Education
+             172  Pakistan
+              15  Kenya
+               7  Global
+               1  Tanzania
+    193  Institute for the Study of Muslim Civilisations
+             189  United Kingdom
+               1  Kenya
+               1  Pakistan
+               1  Global
+               1  Tanzania
+    183  Institute for Educational Development
+             116  Pakistan
+              64  Tanzania
+               3  Kenya
+    103  Graduate School of Media and Communications
+              96  Kenya
+               6  Tanzania
+               1  Uganda
+    102  Brain and Mind Institute
+              52  Global
+              46  Kenya
+               2  Tanzania
+               2  Pakistan
+     70  Networks of Quality, Teaching and Learning
+              29  Pakistan
+              17  Kenya
+              12  Global
+              10  Tanzania
+               1  United Kingdom
+               1  Uganda
+     58  East Africa Institute
+              53  Kenya
+               4  Tanzania
+               1  Uganda
+     34  Centre of Excellence in Women and Child Health
+              23  Pakistan
+               8  Kenya
+               2  Global
+               1  Uganda
+     32  Network of English Language Enhancement
+              13  Pakistan
+              13  Global
+               5  Tanzania
+               1  Kenya
+     26  Institute for Human Development
+              22  Kenya
+               3  Tanzania
+               1  Uganda
+     22  Institute for Global Health and Development
+              20  Pakistan
+               2  Global
+     15  Environmental Responsibility
+              10  Global
+               5  Pakistan
+      9  Surgery Interest Group
+               8  Pakistan
+               1  Tanzania
+      9  Research
+               8  Global
+               1  Pakistan
+      5  News training
+               2  Tanzania
+               1  Pakistan
+               1  Uganda
+               1  Kenya
+      2  Office of the Provost
+               1  Pakistan
+               1  Tanzania
+
+------------------------------------------------------------
+NEEDS A DECISION (1176)
+------------------------------------------------------------
+   1111  no owning entity AND not flagged global news
+     19  city 'Other' — region needs hand-coding
+      7  city 'Other' — region needs hand-coding; no owning entity AND not flagged global news
+      7  entity says 'Pakistan' but city 'Arusha' is Tanzania
+      5  city 'Other' — region needs hand-coding; no country determinable — Networks of Quality, Teaching and Learning splits across Pakistan(29) | Kenya(17) | Tanzania(10) | Global(7); filed under Global
+      5  city 'Other' — region needs hand-coding; no country determinable — Environmental Responsibility splits across Global(5) | Pakistan(5); filed under Global
+      5  city 'Other' — region needs hand-coding; region inferred: Centre of Excellence in Women and Child Health is Pakistan in 62% of its 29 located items
+      5  city 'Other' — region needs hand-coding; region inferred: Institute for Human Development is Kenya in 81% of its 21 located items
+      4  entity says 'Pakistan' but city 'Dar es Salaam' is Tanzania
+      3  city 'Other' — region needs hand-coding; no country determinable — Brain and Mind Institute splits across Global(49) | Kenya(46) | Tanzania(2) | Pakistan(2); filed under Global
+      2  entity says 'East Africa' but city 'London' is United Kingdom
+      1  city 'Other' — region needs hand-coding; no country determinable — School of Nursing and Midwifery splits across Pakistan(108) | Kenya(56) | Uganda(20) | Tanzania(14); filed under Global
+      1  city 'Other' — region needs hand-coding; region inferred: Institute for Global Health and Development is Pakistan in 90% of its 21 located items
+      1  city 'Other' — region needs hand-coding; region inferred: Institute for Educational Development is Pakistan in 63% of its 182 located items
