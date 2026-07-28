@@ -89,3 +89,7 @@ storyblok-viewer/*.pem
 
 # --- Migration tracking DB credentials ---------------------------------------
 /config/database.json
+
+# --- Media reconstructed from SharePoint by download_media.py ----------------
+# 64 MB+ of binaries, regenerable: resolve_media_urls.py then download_media.py.
+# assets/ was already ignored above; this is the explicit reason.

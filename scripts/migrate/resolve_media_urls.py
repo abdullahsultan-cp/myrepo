@@ -163,7 +163,11 @@ def local_roles(sid):
                  "caption": m.get("caption") or "",
                  "alt": m.get("alt") or ""}
         if sk:
-            entry["url"] = quote(SP + sk)
+            # A few source_keys are already absolute URLs; prefixing the host
+            # produced "www.aku.eduhttp://..." and a ConnectionError.
+            entry["url"] = quote(sk if sk.lower().startswith(("http://",
+                                                              "https://"))
+                                 else SP + sk)
             entry["source"] = "source_key"
         else:
             entry["url"] = ""

@@ -44,27 +44,39 @@ echo   Progress so far:
 "%PY%" %PYFLAGS% "%REPO%\scripts\migrate\media_progress.py"
 echo.
 
-echo [1/3] uploaded sample stories ...
+echo [1/5] resolving URLs - uploaded sample ...
 "%PY%" %PYFLAGS% "%SCRIPT%" --sample --workers %WORKERS%
 if errorlevel 1 goto failed
 
 echo.
-echo [2/3] stories that have media ...
+echo [2/5] resolving URLs - stories that have media ...
 "%PY%" %PYFLAGS% "%SCRIPT%" --priority with-media --workers %WORKERS%
 if errorlevel 1 goto failed
 
 echo.
-echo [3/3] the remaining stories ...
+echo [3/5] resolving URLs - the remaining stories ...
 "%PY%" %PYFLAGS% "%SCRIPT%" --workers %WORKERS%
 if errorlevel 1 goto failed
 
 echo.
-echo   Rebuilding the viewer index ...
+echo [4/5] downloading every resolved file to assets\News\media ...
+REM Download once, upload from disk. Uploading straight from aku.edu would hit
+REM the site again story by story and meet the same rate limiting mid-upload,
+REM with a half-finished Storyblok space to clean up.
+"%PY%" %PYFLAGS% "%REPO%\scripts\migrate\download_media.py" --workers %WORKERS%
+if errorlevel 1 goto failed
+
+echo.
+echo [5/5] rebuilding the viewer index ...
 "%PY%" %PYFLAGS% "%REPO%\scripts\migrate\build_viewer_index.py"
 
 echo.
+echo   Anything that failed:
+"%PY%" %PYFLAGS% "%REPO%\scripts\migrate\report_failures.py" --csv
+
+echo.
 echo ==========================================================
-echo   DONE. All media URLs resolved.
+echo   DONE. Media resolved AND downloaded to assets\News\media
 echo   Refresh the viewer at http://localhost:4000
 echo ==========================================================
 echo.

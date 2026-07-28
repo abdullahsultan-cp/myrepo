@@ -1,114 +1,124 @@
 "use client";
 
 import Link from "next/link";
-import React, { useMemo, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useFolders, useIndex, type FolderNode } from "../lib";
 
 /**
- * The folder structure in 3D.
+ * Folder structure as a branching tree.
  *
- * Each depth sits on its own Z plane, so the hierarchy reads as physical layers
- * rather than indentation. Drag to orbit, scroll to zoom. CSS 3D transforms
- * only — no WebGL, so it stays light and works without a canvas.
+ * Left-to-right, with drawn elbow connectors between a parent and its children,
+ * so it reads like a file tree / org chart. Click a node to open or close that
+ * branch. Nothing is 3D — the branches are the point.
  */
 
-const LEVEL_COLOR: Record<string, string> = {
-  root: "var(--fg)",
-  region: "var(--accent)",
-  "entities-root": "var(--faint)",
-  entity: "var(--violet)",
-  "departments-root": "var(--faint)",
-  department: "var(--green)",
-  news: "var(--amber)",
-};
-
-const ICON: Record<string, string> = {
-  root: "◈", region: "◉", "entities-root": "▤", entity: "▣",
-  "departments-root": "▤", department: "◧", news: "▸",
+const LEVEL: Record<string, { color: string; icon: string; label: string }> = {
+  root: { color: "var(--fg)", icon: "◈", label: "Root" },
+  region: { color: "var(--accent)", icon: "◉", label: "Region" },
+  "entities-root": { color: "var(--faint)", icon: "▤", label: "Entities" },
+  entity: { color: "var(--violet)", icon: "▣", label: "Entity" },
+  "departments-root": { color: "var(--faint)", icon: "▤", label: "Departments" },
+  department: { color: "var(--green)", icon: "◧", label: "Department" },
+  news: { color: "var(--amber)", icon: "▸", label: "News" },
 };
 
 function deepCount(n: FolderNode): number {
   return (n.story_count ?? 0) + (n.children ?? []).reduce((s, c) => s + deepCount(c), 0);
 }
 
-/** One card, positioned on its own Z plane. */
-function Card3D({
+function matches(n: FolderNode, q: string): boolean {
+  if (!q) return true;
+  const s = q.toLowerCase();
+  return (
+    n.name.toLowerCase().includes(s) ||
+    (n.children ?? []).some((c) => matches(c, s))
+  );
+}
+
+function Branch({
   n,
-  depth,
   q,
+  openSet,
+  toggle,
   onPick,
   picked,
+  isLast,
 }: {
   n: FolderNode;
-  depth: number;
   q: string;
+  openSet: Set<string>;
+  toggle: (slug: string) => void;
   onPick: (n: FolderNode) => void;
   picked: string | null;
+  isLast: boolean;
 }) {
-  const [open, setOpen] = useState(depth < 1);
-  const kids = n.children ?? [];
+  if (!matches(n, q)) return null;
+
+  const kids = (n.children ?? []).filter((c) => matches(c, q));
+  const hasKids = kids.length > 0;
+  // searching opens the path to every hit; otherwise honour the click state
+  const open = q ? true : openSet.has(n.full_slug);
+  const meta = LEVEL[n.level] ?? { color: "var(--dim)", icon: "•", label: n.level };
   const total = deepCount(n);
-
-  const hit = (node: FolderNode): boolean => {
-    if (!q) return true;
-    return (
-      node.name.toLowerCase().includes(q.toLowerCase()) ||
-      (node.children ?? []).some(hit)
-    );
-  };
-  if (!hit(n)) return null;
-
-  const show = open || (!!q && depth < 5);
   const isNews = n.level === "news";
-  const w = Math.max(150, 340 - depth * 26);
 
   return (
-    <div className="l3-branch">
-      <div
-        className={`l3-card lv-${n.level}${picked === n.full_slug ? " picked" : ""}`}
-        style={{
-          ["--z" as any]: `${depth * 26}px`,
-          ["--w" as any]: `${w}px`,
-          ["--c" as any]: LEVEL_COLOR[n.level] ?? "var(--dim)",
-        }}
-        onClick={(e) => {
-          e.stopPropagation();
-          onPick(n);
-          if (kids.length) setOpen((o) => !o);
-        }}
-      >
-        <span className="l3-ico">{ICON[n.level] ?? "•"}</span>
-        <span className="l3-name">
-          {q
-            ? n.name
-                .split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "ig"))
-                .map((p, i) =>
-                  p.toLowerCase() === q.toLowerCase() ? <mark key={i}>{p}</mark> : p
-                )
-            : n.name}
-        </span>
-        {n.entity_short && <span className="l3-short">{n.entity_short}</span>}
-        {total > 0 && (
-          <span className={`l3-n${isNews ? " live" : ""}`}>{total}</span>
-        )}
-        {kids.length > 0 && <span className="l3-caret">{show ? "−" : "+"}</span>}
+    <li className={`br${isLast ? " last" : ""}`}>
+      <div className="br-line">
+        <button
+          className={`br-knob${hasKids ? "" : " leaf"}${open ? " open" : ""}`}
+          onClick={() => hasKids && toggle(n.full_slug)}
+          aria-label={hasKids ? (open ? "Collapse" : "Expand") : undefined}
+          style={{ ["--c" as any]: meta.color }}
+        >
+          {hasKids ? (open ? "−" : "+") : "•"}
+        </button>
+
+        <button
+          className={`br-node lv-${n.level}${picked === n.full_slug ? " picked" : ""}`}
+          style={{ ["--c" as any]: meta.color }}
+          onClick={() => {
+            onPick(n);
+            if (hasKids) toggle(n.full_slug);
+          }}
+        >
+          <span className="br-ico">{meta.icon}</span>
+          <span className="br-name">
+            {q
+              ? n.name
+                  .split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "ig"))
+                  .map((p, i) =>
+                    p.toLowerCase() === q.toLowerCase() ? <mark key={i}>{p}</mark> : p
+                  )
+              : n.name}
+          </span>
+          {n.entity_short && <span className="br-short">{n.entity_short}</span>}
+          {total > 0 && (
+            <span className={`br-n${isNews ? " live" : ""}`}>
+              {total.toLocaleString()}
+            </span>
+          )}
+          {hasKids && !open && <span className="br-more">{kids.length}</span>}
+        </button>
       </div>
 
-      {show && kids.length > 0 && (
-        <div className="l3-kids">
-          {kids.map((c) => (
-            <Card3D
+      {hasKids && open && (
+        <ul className="br-kids">
+          {kids.map((c, i) => (
+            <Branch
               key={c.full_slug}
               n={c}
-              depth={depth + 1}
               q={q}
+              openSet={openSet}
+              toggle={toggle}
               onPick={onPick}
               picked={picked}
+              isLast={i === kids.length - 1}
             />
           ))}
-        </div>
+        </ul>
       )}
-    </div>
+    </li>
   );
 }
 
@@ -116,12 +126,23 @@ export default function TreePage() {
   const { doc, err } = useFolders();
   const { idx } = useIndex();
   const [q, setQ] = useState("");
-  const [rx, setRx] = useState(52);
-  const [rz, setRz] = useState(-38);
-  const [zoom, setZoom] = useState(0.78);
-  const [flat, setFlat] = useState(false);
   const [picked, setPicked] = useState<FolderNode | null>(null);
-  const drag = useRef<{ x: number; y: number; rx: number; rz: number } | null>(null);
+  const [openSet, setOpenSet] = useState<Set<string>>(
+    () => new Set(["global", "regions"])
+  );
+
+  const toggle = (slug: string) =>
+    setOpenSet((prev) => {
+      const s = new Set(prev);
+      if (s.has(slug)) s.delete(slug);
+      else s.add(slug);
+      return s;
+    });
+
+  const allSlugs = useMemo(
+    () => (doc ? doc.folders.map((f) => f.full_slug) : []),
+    [doc]
+  );
 
   const stats = useMemo(() => {
     if (!doc) return null;
@@ -141,21 +162,6 @@ export default function TreePage() {
     );
   if (!doc) return <div className="hollow">Loading structure…</div>;
 
-  const onDown = (e: React.PointerEvent) => {
-    if (flat) return;
-    drag.current = { x: e.clientX, y: e.clientY, rx, rz };
-    (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
-  };
-  const onMove = (e: React.PointerEvent) => {
-    if (!drag.current) return;
-    const d = drag.current;
-    setRx(Math.max(0, Math.min(84, d.rx - (e.clientY - d.y) * 0.32)));
-    setRz(d.rz + (e.clientX - d.x) * 0.32);
-  };
-  const onUp = () => {
-    drag.current = null;
-  };
-
   return (
     <>
       <div className="hero-band">
@@ -163,20 +169,15 @@ export default function TreePage() {
           <h1 className="big">Folder structure</h1>
           <p className="lede">
             {doc.folders.length} folders holding{" "}
-            {idx?.story_count.toLocaleString() ?? "3,606"} stories. Each depth is
-            its own plane — drag to orbit, scroll to zoom, click to expand.
+            {idx?.story_count.toLocaleString() ?? "3,606"} stories. Click a branch
+            to open it.
           </p>
           {stats && (
             <div className="statrow">
-              {[
-                ["region", "regions"],
-                ["entity", "entity folders"],
-                ["department", "department folders"],
-                ["news", "news folders"],
-              ].map(([k, label]) => (
+              {(["region", "entity", "department", "news"] as const).map((k) => (
                 <div className="stat" key={k}>
-                  <b style={{ color: LEVEL_COLOR[k] }}>{stats[k] ?? 0}</b>
-                  <span>{label}</span>
+                  <b style={{ color: LEVEL[k].color }}>{stats[k] ?? 0}</b>
+                  <span>{LEVEL[k].label.toLowerCase()} folders</span>
                 </div>
               ))}
             </div>
@@ -192,73 +193,51 @@ export default function TreePage() {
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
-          <button className="ghost" onClick={() => setFlat((f) => !f)}>
-            {flat ? "3D view" : "Flat view"}
+          <button className="ghost" onClick={() => setOpenSet(new Set(allSlugs))}>
+            Expand all
           </button>
-          {!flat && (
-            <>
-              <button
-                className="ghost"
-                onClick={() => { setRx(52); setRz(-38); setZoom(0.78); }}
-              >
-                Reset angle
-              </button>
-              <span className="hint">
-                {Math.round(rx)}° / {Math.round(rz)}° · {Math.round(zoom * 100)}%
-              </span>
-            </>
-          )}
+          <button
+            className="ghost"
+            onClick={() => setOpenSet(new Set(["global", "regions"]))}
+          >
+            Collapse all
+          </button>
         </div>
 
         <div className="legend">
-          {[["region", "Region"], ["entity", "Entity"],
-            ["department", "Department"], ["news", "News folder"]].map(([k, l]) => (
+          {(["region", "entity", "department", "news"] as const).map((k) => (
             <span key={k}>
-              <span style={{ color: LEVEL_COLOR[k] }}>{ICON[k]}</span> {l}
+              <span style={{ color: LEVEL[k].color }}>{LEVEL[k].icon}</span>{" "}
+              {LEVEL[k].label}
             </span>
           ))}
         </div>
 
-        <div
-          className={`l3-stage${flat ? " flat" : ""}`}
-          onPointerDown={onDown}
-          onPointerMove={onMove}
-          onPointerUp={onUp}
-          onPointerLeave={onUp}
-          onWheel={(e) => {
-            if (flat) return;
-            e.preventDefault();
-            setZoom((z) => Math.max(0.32, Math.min(1.7, z - e.deltaY * 0.0011)));
-          }}
-        >
-          <div
-            className="l3-world"
-            style={
-              flat
-                ? undefined
-                : {
-                    transform:
-                      `rotateX(${rx}deg) rotateZ(${rz}deg) scale(${zoom})`,
-                  }
-            }
-          >
-            {doc.tree.map((n) => (
-              <Card3D
+        <div className="treewrap">
+          <ul className="br-root">
+            {doc.tree.map((n, i) => (
+              <Branch
                 key={n.full_slug}
                 n={n}
-                depth={0}
                 q={q}
+                openSet={openSet}
+                toggle={toggle}
                 onPick={setPicked}
                 picked={picked?.full_slug ?? null}
+                isLast={i === doc.tree.length - 1}
               />
             ))}
-          </div>
+          </ul>
         </div>
 
         {picked && (
           <div className="l3-panel">
-            <button className="l3-close" onClick={() => setPicked(null)}>×</button>
-            <span className="rv-label">{picked.level.replace("-", " ")}</span>
+            <button className="l3-close" onClick={() => setPicked(null)}>
+              ×
+            </button>
+            <span className="rv-label">
+              {(LEVEL[picked.level] ?? { label: picked.level }).label}
+            </span>
             <h3>{picked.name}</h3>
             <dl className="kv">
               <dt>Path</dt>
@@ -267,11 +246,13 @@ export default function TreePage() {
               <dd><code>{picked.full_slug}</code></dd>
               {picked.region && (<><dt>Region</dt><dd>{picked.region}</dd></>)}
               {picked.entity && (<><dt>Entity</dt><dd>{picked.entity}</dd></>)}
-              {picked.department && (<><dt>Department</dt><dd>{picked.department}</dd></>)}
+              {picked.department && (
+                <><dt>Department</dt><dd>{picked.department}</dd></>
+              )}
               <dt>Stories here</dt>
-              <dd>{picked.story_count ?? 0}</dd>
+              <dd>{(picked.story_count ?? 0).toLocaleString()}</dd>
               <dt>Including children</dt>
-              <dd>{deepCount(picked)}</dd>
+              <dd>{deepCount(picked).toLocaleString()}</dd>
             </dl>
             {(picked.story_count ?? 0) > 0 && (
               <Link className="btn primary" href="/archive">
