@@ -65,6 +65,17 @@ CHROME = re.compile(
 
 IMG_RE = re.compile(r"<img[^>]+src=([\"'])(.*?)\1", re.I)
 IFRAME_RE = re.compile(r"<iframe[^>]+src=([\"'])(.*?)\1", re.I)
+# <video src>, <source src>, and <object data> — hosted video lives in these,
+# never in an <img>, which is why video1 roles never resolved.
+VIDEO_RE = re.compile(
+    r"<(?:video|source|embed)[^>]+src=([\"'])(.*?)\1"
+    r"|<object[^>]+data=([\"'])(.*?)\3", re.I)
+# any anchor pointing at a downloadable file: PDFs, Word docs, mp4s
+HREF_RE = re.compile(r"<a[^>]+href=([\"'])(.*?)\1", re.I)
+ASSET_EXT = re.compile(
+    r"\.(jpe?g|png|gif|webp|bmp|tiff?|svg"
+    r"|pdf|docx?|xlsx?|pptx?|zip|rtf"
+    r"|mp4|mov|m4v|webm|avi|wmv|mp3|wav)(\?|$)", re.I)
 # The article body sits inside this publishing field on AKU's template.
 BODY_RE = re.compile(
     r"(<div[^>]+class=\"[^\"]*ExternalClass[^\"]*\".*?)(?=<div[^>]+id=\"aku-)",
@@ -136,8 +147,29 @@ def scrape(nid, tries=3):
         if u not in iframes:
             iframes.append(u)
 
+    # hosted video: <video>/<source>/<embed>/<object>, never <img>
+    videos = []
+    for m in VIDEO_RE.finditer(scope):
+        u = absolute(m.group(2) or m.group(4))
+        if u and not CHROME.search(u) and u not in videos:
+            videos.append(quote(u))
+
+    # downloadable files linked from the body, on our own host only
+    files = []
+    for _, href in HREF_RE.findall(scope):
+        u = absolute(href)
+        if not u or CHROME.search(u) or not ASSET_EXT.search(u):
+            continue
+        # an editor pasted local Windows paths into a few hrefs; skip those
+        if re.search(r"[A-Za-z]:[/\\]|file://", u):
+            continue
+        if "aku.edu" not in u:
+            continue                      # someone else's file, link not host
+        if u not in files:
+            files.append(quote(u))
+
     return {"page": url, "http": 200, "images": images, "iframes": iframes,
-            "fetched": True}
+            "videos": videos, "page_files": files, "fetched": True}
 
 
 def local_roles(sid):
@@ -300,8 +332,24 @@ def main():
                 if not e["url"] and spare:
                     e["url"] = spare.pop(0)
                     e["source"] = "page-scrape"
+
+        # hosted video comes from <video>/<source>, so it never appeared in the
+        # image list — this is why every video1 role stayed unresolved.
+        vids = [u for u in (entry.get("videos") or []) if u not in used]
+        for role, lst in by_role.items():
+            if not str(role).startswith("video"):
+                continue
+            for e in lst:
+                if not e["url"] and vids:
+                    e["url"] = vids.pop(0)
+                    e["source"] = "page-video"
+
         entry["by_role"] = by_role
         entry["unmatched_page_images"] = spare
+        # everything else on the page worth keeping: leftover video sources and
+        # linked documents that no export record claims
+        entry["extra_files"] = sorted(set(vids) | set(entry.get("page_files")
+                                                      or []) - used)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:

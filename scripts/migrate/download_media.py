@@ -28,8 +28,10 @@ import hashlib
 import json
 import os
 import sys
+import re
 import threading
 import time
+import urllib.parse
 
 try:
     import requests
@@ -90,20 +92,43 @@ def fetch(url, dest, tries=3):
     return None, "exhausted retries"
 
 
-def plan(cache, ids):
-    """(filename, url, [(sharepoint_id, role)]) — one entry per distinct file."""
+def name_from_url(sid, url):
+    """A stable local filename for an asset the export never declared."""
+    base = urllib.parse.unquote(url.split("?")[0].rsplit("/", 1)[-1])
+    base = re.sub(r"[^A-Za-z0-9._-]+", "-", base).strip("-") or "asset"
+    return f"{sid}-extra-{hashlib.sha1(url.encode()).hexdigest()[:10]}-{base}"
+
+
+def plan(cache, ids, include_extras=True):
+    """(filename, url, [(sharepoint_id, role)]) — one entry per distinct file.
+
+    Covers three sources, because the export's media list is not the whole set:
+      by_role                declared media (banner/medium/thumbnail/video/richtext)
+      unmatched_page_images  content images on the page with no export record
+      extra_files            hosted video and linked documents found on the page
+    """
     jobs = {}
+
+    def add(fn, url, sid, role):
+        if not url or not fn:
+            return
+        j = jobs.setdefault(fn, {"url": url, "refs": [], "role": role})
+        j["refs"].append((sid, role))
+        # prefer a source_key URL: it is exact, not inferred from a page
+        if role == "declared" and j.get("source") != "source_key":
+            j["url"] = url
+
     for sid in ids:
-        for role, lst in (cache.get(sid, {}).get("by_role") or {}).items():
-            for e in lst:
-                url, fn = e.get("url"), e.get("filename")
-                if not url or not fn:
-                    continue
-                j = jobs.setdefault(fn, {"url": url, "refs": []})
-                j["refs"].append((sid, role))
-                # prefer a source_key URL: it is exact, not inferred from a page
-                if e.get("source") == "source_key":
-                    j["url"] = url
+        e = cache.get(sid) or {}
+        for role, lst in (e.get("by_role") or {}).items():
+            for x in lst:
+                add(x.get("filename"), x.get("url"), sid, role)
+        if not include_extras:
+            continue
+        for u in (e.get("unmatched_page_images") or []):
+            add(name_from_url(sid, u), u, sid, "page-image")
+        for u in (e.get("extra_files") or []):
+            add(name_from_url(sid, u), u, sid, "page-file")
     return jobs
 
 
@@ -181,6 +206,8 @@ def main():
             digest = sha256_of(dest) if (a.verify or fn in
                                          {o[0] for o in ok}) else None
             for sid, role in j["refs"]:
+                if role in ("page-image", "page-file"):
+                    continue        # no asset row exists for undeclared extras
                 rows.append((dest, os.path.getsize(dest), digest,
                              int(sid), role, fn))
         with tracking.connect() as c:

@@ -5,11 +5,14 @@ import React, { useMemo, useState } from "react";
 import { useFolders, useIndex, type FolderNode } from "../lib";
 
 /**
- * Folder structure as a branching tree.
+ * Folder structure as a top-to-bottom organisation chart.
  *
- * Left-to-right, with drawn elbow connectors between a parent and its children,
- * so it reads like a file tree / org chart. Click a node to open or close that
- * branch. Nothing is 3D — the branches are the point.
+ * Parents sit above their children with a centred stem, a horizontal bar
+ * spanning the row, and a drop line into each child — the classic nested-list
+ * org-chart technique, drawn entirely with borders on the <li>.
+ *
+ * 346 folders will not fit on screen at once, so branches start collapsed
+ * below the region level and open on click.
  */
 
 const LEVEL: Record<string, { color: string; icon: string; label: string }> = {
@@ -23,89 +26,83 @@ const LEVEL: Record<string, { color: string; icon: string; label: string }> = {
 };
 
 function deepCount(n: FolderNode): number {
-  return (n.story_count ?? 0) + (n.children ?? []).reduce((s, c) => s + deepCount(c), 0);
+  return (
+    (n.story_count ?? 0) +
+    (n.children ?? []).reduce((s, c) => s + deepCount(c), 0)
+  );
 }
 
 function matches(n: FolderNode, q: string): boolean {
   if (!q) return true;
   const s = q.toLowerCase();
   return (
-    n.name.toLowerCase().includes(s) ||
-    (n.children ?? []).some((c) => matches(c, s))
+    n.name.toLowerCase().includes(s) || (n.children ?? []).some((c) => matches(c, s))
   );
 }
 
-function Branch({
+function Node({
   n,
   q,
   openSet,
   toggle,
   onPick,
   picked,
-  isLast,
 }: {
   n: FolderNode;
   q: string;
   openSet: Set<string>;
-  toggle: (slug: string) => void;
+  toggle: (s: string) => void;
   onPick: (n: FolderNode) => void;
   picked: string | null;
-  isLast: boolean;
 }) {
   if (!matches(n, q)) return null;
 
   const kids = (n.children ?? []).filter((c) => matches(c, q));
   const hasKids = kids.length > 0;
-  // searching opens the path to every hit; otherwise honour the click state
   const open = q ? true : openSet.has(n.full_slug);
   const meta = LEVEL[n.level] ?? { color: "var(--dim)", icon: "•", label: n.level };
   const total = deepCount(n);
-  const isNews = n.level === "news";
 
   return (
-    <li className={`br${isLast ? " last" : ""}`}>
-      <div className="br-line">
-        <button
-          className={`br-knob${hasKids ? "" : " leaf"}${open ? " open" : ""}`}
-          onClick={() => hasKids && toggle(n.full_slug)}
-          aria-label={hasKids ? (open ? "Collapse" : "Expand") : undefined}
-          style={{ ["--c" as any]: meta.color }}
-        >
-          {hasKids ? (open ? "−" : "+") : "•"}
-        </button>
-
-        <button
-          className={`br-node lv-${n.level}${picked === n.full_slug ? " picked" : ""}`}
-          style={{ ["--c" as any]: meta.color }}
-          onClick={() => {
-            onPick(n);
-            if (hasKids) toggle(n.full_slug);
-          }}
-        >
-          <span className="br-ico">{meta.icon}</span>
-          <span className="br-name">
-            {q
-              ? n.name
-                  .split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "ig"))
-                  .map((p, i) =>
-                    p.toLowerCase() === q.toLowerCase() ? <mark key={i}>{p}</mark> : p
-                  )
-              : n.name}
-          </span>
-          {n.entity_short && <span className="br-short">{n.entity_short}</span>}
+    <li>
+      <button
+        className={`oc-node lv-${n.level}${picked === n.full_slug ? " picked" : ""}${
+          hasKids && !open ? " closed" : ""
+        }`}
+        style={{ ["--c" as any]: meta.color }}
+        onClick={() => {
+          onPick(n);
+          if (hasKids) toggle(n.full_slug);
+        }}
+      >
+        <span className="oc-top">
+          <span className="oc-ico">{meta.icon}</span>
+          <span className="oc-kind">{meta.label}</span>
           {total > 0 && (
-            <span className={`br-n${isNews ? " live" : ""}`}>
+            <span className={`oc-n${n.level === "news" ? " live" : ""}`}>
               {total.toLocaleString()}
             </span>
           )}
-          {hasKids && !open && <span className="br-more">{kids.length}</span>}
-        </button>
-      </div>
+        </span>
+        <span className="oc-name">
+          {q
+            ? n.name
+                .split(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})`, "ig"))
+                .map((p, i) =>
+                  p.toLowerCase() === q.toLowerCase() ? <mark key={i}>{p}</mark> : p
+                )
+            : n.name}
+        </span>
+        {n.entity_short && <span className="oc-short">{n.entity_short}</span>}
+        {hasKids && (
+          <span className="oc-toggle">{open ? "−" : `+${kids.length}`}</span>
+        )}
+      </button>
 
       {hasKids && open && (
-        <ul className="br-kids">
-          {kids.map((c, i) => (
-            <Branch
+        <ul>
+          {kids.map((c) => (
+            <Node
               key={c.full_slug}
               n={c}
               q={q}
@@ -113,7 +110,6 @@ function Branch({
               toggle={toggle}
               onPick={onPick}
               picked={picked}
-              isLast={i === kids.length - 1}
             />
           ))}
         </ul>
@@ -126,6 +122,7 @@ export default function TreePage() {
   const { doc, err } = useFolders();
   const { idx } = useIndex();
   const [q, setQ] = useState("");
+  const [zoom, setZoom] = useState(0.85);
   const [picked, setPicked] = useState<FolderNode | null>(null);
   const [openSet, setOpenSet] = useState<Set<string>>(
     () => new Set(["global", "regions"])
@@ -143,6 +140,20 @@ export default function TreePage() {
     () => (doc ? doc.folders.map((f) => f.full_slug) : []),
     [doc]
   );
+
+  /** Open every region, but stop before entities — that stays readable. */
+  const openRegions = () => {
+    if (!doc) return;
+    setOpenSet(
+      new Set([
+        "global",
+        "regions",
+        ...doc.folders
+          .filter((f) => f.level === "region" || f.level === "entities-root")
+          .map((f) => f.full_slug),
+      ])
+    );
+  };
 
   const stats = useMemo(() => {
     if (!doc) return null;
@@ -169,8 +180,8 @@ export default function TreePage() {
           <h1 className="big">Folder structure</h1>
           <p className="lede">
             {doc.folders.length} folders holding{" "}
-            {idx?.story_count.toLocaleString() ?? "3,606"} stories. Click a branch
-            to open it.
+            {idx?.story_count.toLocaleString() ?? "3,606"} stories. Click a box to
+            open or close its branch.
           </p>
           {stats && (
             <div className="statrow">
@@ -193,6 +204,9 @@ export default function TreePage() {
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
+          <button className="ghost" onClick={openRegions}>
+            Open regions
+          </button>
           <button className="ghost" onClick={() => setOpenSet(new Set(allSlugs))}>
             Expand all
           </button>
@@ -200,8 +214,13 @@ export default function TreePage() {
             className="ghost"
             onClick={() => setOpenSet(new Set(["global", "regions"]))}
           >
-            Collapse all
+            Collapse
           </button>
+          <span className="zoomctl">
+            <button onClick={() => setZoom((z) => Math.max(0.35, z - 0.1))}>−</button>
+            <span>{Math.round(zoom * 100)}%</span>
+            <button onClick={() => setZoom((z) => Math.min(1.4, z + 0.1))}>+</button>
+          </span>
         </div>
 
         <div className="legend">
@@ -211,23 +230,25 @@ export default function TreePage() {
               {LEVEL[k].label}
             </span>
           ))}
+          <span className="hint">scroll sideways to pan</span>
         </div>
 
-        <div className="treewrap">
-          <ul className="br-root">
-            {doc.tree.map((n, i) => (
-              <Branch
-                key={n.full_slug}
-                n={n}
-                q={q}
-                openSet={openSet}
-                toggle={toggle}
-                onPick={setPicked}
-                picked={picked?.full_slug ?? null}
-                isLast={i === doc.tree.length - 1}
-              />
-            ))}
-          </ul>
+        <div className="oc-scroll">
+          <div className="oc-chart" style={{ zoom }}>
+            <ul>
+              {doc.tree.map((n) => (
+                <Node
+                  key={n.full_slug}
+                  n={n}
+                  q={q}
+                  openSet={openSet}
+                  toggle={toggle}
+                  onPick={setPicked}
+                  picked={picked?.full_slug ?? null}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
 
         {picked && (
