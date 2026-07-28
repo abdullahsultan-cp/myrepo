@@ -362,6 +362,31 @@ def main():
     with open(p, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
 
+    # ---- folder tree, for the structure page
+    # After the repo reorg this lives under data/taxonomy/seed/; the other two
+    # are where it was before, kept as fallbacks.
+    folders_src = next(
+        (p for p in (
+            os.path.join(BASE, "data", "taxonomy", "seed", "folders.json"),
+            os.path.join(BASE, "out_folders", "folders.json"),
+            os.path.join(os.path.dirname(BASE), "out_folders", "folders.json"),
+        ) if os.path.exists(p)),
+        "")
+    if folders_src:
+        tree = load(folders_src)
+        counts = Counter()
+        for s in index:
+            if s["folder"]:
+                counts[s["folder"]] += 1
+        for f_ in tree.get("folders", []):
+            f_["story_count"] = counts.get(f_.get("display_path"), 0)
+        with open(os.path.join(out_root, "folders.json"), "w",
+                  encoding="utf-8") as f:
+            json.dump(tree, f, ensure_ascii=False, separators=(",", ":"))
+        print(f"  folder tree -> {len(tree.get('folders', []))} folders")
+    else:
+        print("  (no out_folders/folders.json — structure page will be empty)")
+
     print(f"  {len(index)} stories -> {p}  "
           f"({os.path.getsize(p) / 1024 / 1024:.1f} MB)")
     print(f"  detail files -> {os.path.join(out_root, 'stories')}")

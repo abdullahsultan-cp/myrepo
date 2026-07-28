@@ -63,7 +63,7 @@ a:hover { text-decoration: underline; }
 button { font: inherit; }
 
 /* ================================================================ layout */
-.shell { display: flex; height: 100vh; overflow: hidden; }
+.shell { display: flex; height: calc(100vh - 57px); overflow: hidden; }
 
 .sidebar {
   width: 296px; min-width: 296px;

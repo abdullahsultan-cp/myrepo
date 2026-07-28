@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Nav from "./Nav";
 import "./globals.css";
+import "./pages.css";
 
 export const metadata: Metadata = {
-  title: "AKU news — migration review",
+  title: "AKU News — migration review",
   description:
-    "Faceted browser over the 3606 migrated AKU news stories: filter by structural element, writer, date and taxonomy.",
+    "Reader, archive, folder structure and inspector for the 3606 migrated AKU news stories.",
 };
 
 export default function RootLayout({
@@ -12,7 +14,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav />
+        <main className="page">{children}</main>
+      </body>
     </html>
   );
 }
