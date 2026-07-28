@@ -1,0 +1,3128 @@
+{
+  "name": "Aga Khan University",
+  "domain": "https://aku-dev.vercel.app/",
+  "uniq_domain": null,
+  "uniq_subdomain": "46557409",
+  "plan": "starter",
+  "plan_level": 1500,
+  "limits": {
+    "activities_type_filter": true,
+    "max_workflow_stages": -1,
+    "min_character_search": 1,
+    "plan_level": 1500
+  },
+  "created_at": "2026-01-13T12:04:34.377Z",
+  "id": 289824742951963,
+  "role": "admin",
+  "user_accessible_languages": null,
+  "owner_id": 72447508353668,
+  "story_published_hook": null,
+  "environments": [
+    {
+      "name": "preview",
+      "location": "https://localhost:3010/"
+    }
+  ],
+  "stories_count": 19,
+  "parent_id": null,
+  "origin_id": null,
+  "short_description": null,
+  "show_environment_identification_bar": false,
+  "duplication_status": null,
+  "color": null,
+  "assets_count": 30,
+  "searchblok_id": null,
+  "duplicatable": null,
+  "request_count_today": 1537,
+  "api_requests": 1000,
+  "exceeded_requests": 0,
+  "billing_address": {},
+  "routes": [],
+  "euid": null,
+  "trial": false,
+  "default_root": "page",
+  "has_slack_webhook": false,
+  "traffic_limit": 10995116277760,
+  "ai_text_generator_disabled": false,
+  "ai_text_generator_feature_disabled": false,
+  "monthly_ai_tokens_traffic": 0,
+  "monthly_ai_tokens_traffic_limit": 500000,
+  "yearly_ai_credits_limit": 9600000,
+  "yearly_ai_credits_used": 9664178,
+  "monthly_ai_credits_traffic": 0,
+  "using_custom_ai_configuration": false,
+  "strata_available": false,
+  "has_pending_tasks": false,
+  "options": {
+    "is_demo": false,
+    "languages": [],
+    "mobile_size": 400,
+    "strong_auth": false,
+    "hosted_backup": false,
+    "hide_flag_icons": false,
+    "onboarding_step": "1",
+    "track_statistics": true,
+    "encode_preview_urls": false,
+    "stripe_trial_status": "pending_subscription",
+    "default_ai_lang_code": "en",
+    "dimensions_app_folders": [],
+    "required_assest_fields": [],
+    "use_translated_stories": false,
+    "flag_icons_display_mode": "language",
+    "onboarding_tour_disabled": false,
+    "is_stories_limit_exceeded": false,
+    "translatable_asset_fields": [],
+    "ai_text_generator_disabled": false,
+    "inherit_org_ai_configuration": false,
+    "asset_custom_meta_data_schema": [],
+    "show_stories_alternative_versions": false,
+    "show_environment_identification_bar": false,
+    "enable_dimensions_app_ai_translation": false,
+    "enable_extended_char_set_in_stories_slug": false
+  },
+  "assistance_mode": false,
+  "crawl_config": {},
+  "org": {
+    "name": "The Aga Khan University",
+    "ai_text_generator_disabled_in_org": false,
+    "custom_upload_limit_in_mb": null
+  },
+  "asset_aws_role": null,
+  "asset_region": null,
+  "asset_signature": {},
+  "required_assest_fields": [],
+  "is_demo": false,
+  "rev_share_enabled": false,
+  "use_translated_stories": false,
+  "backup_time": null,
+  "strong_auth": false,
+  "stage_changed_hook": null,
+  "release_merged_hook": null,
+  "branch_deployed_hook": null,
+  "datasource_entry_saved_hook": null,
+  "story_saved_hook": null,
+  "custom_s3_asset_bucket": null,
+  "personal_s3_asset_bucket": null,
+  "asset_cdn": null,
+  "s3_bucket": null,
+  "aws_arn": null,
+  "backup_frequency": null,
+  "backup_week_day": null,
+  "languages": [],
+  "maintenance": null,
+  "hosted_backup": false,
+  "published_is_links_default": false,
+  "webhook_token": null,
+  "private_assets": false,
+  "private_assets_token": null,
+  "onboarding_step": "1",
+  "cloudinary_cloud_name": null,
+  "cloudinary_api_key": null,
+  "asset_custom_meta_data_schema": [],
+  "tablet_size": null,
+  "mobile_size": 400,
+  "visual_mode_disable": null,
+  "default_lang_name": null,
+  "default_ai_lang_code": "en",
+  "region": "eu-central-1",
+  "track_statistics": true,
+  "no_cc_community": false,
+  "ui_blocked": false,
+  "blocked": false,
+  "pending_traffic_boosts": null,
+  "pending_limit_boosts": null,
+  "space_subscription_interval": null,
+  "subscription_status": "active",
+  "space_type": null,
+  "enable_extended_char_set_in_stories_slug": false,
+  "duplicated_from": null,
+  "custom_upload_limit_in_mb": null,
+  "feature_limits": [
+    {
+      "key": "activity_log_period_in_days",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "additional_user_monthly_fee",
+      "origin": null,
+      "limit": null,
+      "limit_type": "float",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "ai_additional_pack_size",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "ai_branding",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ai_credits_monthly",
+      "origin": "SubscriptionPlan",
+      "limit": "800000",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ai_style_org_groups",
+      "origin": "SubscriptionPlan",
+      "limit": "5",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ai_style_org_rules",
+      "origin": "SubscriptionPlan",
+      "limit": "100",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ai_style_space_groups",
+      "origin": "SubscriptionPlan",
+      "limit": "3",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ai_style_space_rules",
+      "origin": "SubscriptionPlan",
+      "limit": "30",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ai_tokens_monthly_limit",
+      "origin": "SubscriptionPlan",
+      "limit": "500000",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": [
+        {
+          "id": 2,
+          "key": "ai_powered_feature",
+          "name": "AI-Powered Feature",
+          "version": "1.0",
+          "url": null
+        }
+      ]
+    },
+    {
+      "key": "api_requests_monthly_limit",
+      "origin": "Org",
+      "limit": "999999999",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "approval_app",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "asset_custom_metadata",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "assets",
+      "origin": "Org",
+      "limit": "999999999",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_add_extra_users",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "can_clone_projects",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_clone_projects_deep",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_edit_sb_default_ai_setup",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_force_two_factor_authentication",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_have_favourite_stories",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_lock_story_editing_by_stage",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_select_server_region",
+      "origin": "Org",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "can_use_external_credential_on_custom_ai_setup",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "components",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "concurrent_rate_limits_enforced",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "content_folders",
+      "origin": "SubscriptionPlan",
+      "limit": "2000",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "content_folders_translatable_slugs_app_variation",
+      "origin": "SubscriptionPlan",
+      "limit": "2000",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "custom_ai_setup_org_level",
+      "origin": "SubscriptionPlan",
+      "limit": "3",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "custom_ai_setup_space_level",
+      "origin": "SubscriptionPlan",
+      "limit": "2",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "custom_roles",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "custom_stages",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "custom_workflows",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "datasources",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "default_stages",
+      "origin": "SubscriptionPlan",
+      "limit": "3",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "default_workflows",
+      "origin": "SubscriptionPlan",
+      "limit": "1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "extra_traffic_fee",
+      "origin": null,
+      "limit": null,
+      "limit_type": "float",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "fine_grained_access_control",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "free_seats_included",
+      "origin": "SubscriptionPlan",
+      "limit": "10",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_ab_testing_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_access_token_scopes_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_activity_log_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_activity_log_filter_by_type",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_activity_log_filter_by_user",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_additional_usage_ai_credits",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_additional_usage_api_requests",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_additional_usage_assets",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_additional_usage_locales",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_additional_usage_stories",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_additional_usage_traffic_volume",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_admin_role",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "has_advanced_paths_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_ai_seo_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_akeneo_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_algolia_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_anthropic_sb_default_ai_setup",
+      "origin": "Org",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_api_whitelabeling",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_api_whitelabeling_cname",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_assets_folders",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_asset_whitelabeling",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "has_autosave_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_backup_app",
+      "origin": "SubscriptionPlan",
+      "limit": "daily",
+      "limit_type": "string",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_bigcommerce_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_broken_links_checker_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_bynder_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_centra_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_clipboard_history_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_cloudinary_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_codeblock_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_collaboration",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_colorpicker_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_commercelayer_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_commercetools_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_content_locking_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_custom_apps",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_custom_field_types",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_custom_max_upload_size",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_custom_tools",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_dimensions_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_dimensions_app_folder_config",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_discussion",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_editor_role",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "has_field_conditional_settings",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_gemini_sb_default_ai_setup",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_graphql",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_history_compare",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_history_visual",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_image_service",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_image_service_whitelabeling",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "has_inriver_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_lang_export_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_lang_import_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_lokalise_app",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_multi_space_content_distribution",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_nacelle_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_netlify_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_openai_sb_default_ai_setup",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_optimizely_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_owner_role",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "has_palette_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_release_permission",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_replace_assets_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_restricted_ip_address_range",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_saleor_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_salesforce_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_sap_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_semrush_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_seo_meta_tags_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_shared_components_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_shopify_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_shopify_v2_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_shopware_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_slack_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_slider_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_smartling_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_spotlight",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_spryker_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_swell_app",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "has_sylius_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_task_manager",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_translatable_asset_metadata",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_translatable_slugs_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_trash_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_unpublished_dependencies_alert",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_vendure_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_vercel_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_vwo_app",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_webhook_secret",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_wire_transfer_payment",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "has_workflow_deadline_notification",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "ideation_room",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": [
+        {
+          "id": 1,
+          "key": "idea_room_beta",
+          "name": "Free Use & Trial of Beta Version",
+          "version": "1.0",
+          "url": null
+        }
+      ]
+    },
+    {
+      "key": "locales",
+      "origin": "Org",
+      "limit": "10",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "max_additional_usage_ai_credits",
+      "origin": null,
+      "limit": null,
+      "limit_type": "integer",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "max_additional_usage_api_requests_monthly_limit",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "max_additional_usage_assets",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "max_additional_usage_locales",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "max_additional_usage_stories",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "max_additional_usage_traffic_monthly_in_gb",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "max_asset_size_in_mb",
+      "origin": "SubscriptionPlan",
+      "limit": "5000",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "max_assets_storage_in_tb",
+      "origin": "SubscriptionPlan",
+      "limit": "0",
+      "limit_type": "integer",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "max_collaborators",
+      "origin": "Org",
+      "limit": "99999",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "max_environments",
+      "origin": "SubscriptionPlan",
+      "limit": "1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "pipelines",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "preview_urls",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "publishings_per_day",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "releases",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "responsive_preview",
+      "origin": null,
+      "limit": null,
+      "limit_type": "boolean",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "save_stories_webhook",
+      "origin": "SubscriptionPlan",
+      "limit": "false",
+      "limit_type": "boolean",
+      "is_available": false,
+      "terms": []
+    },
+    {
+      "key": "schedule_single_story",
+      "origin": "SubscriptionPlan",
+      "limit": "100",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "shared_asset_libraries_per_region",
+      "origin": "SubscriptionPlan",
+      "limit": "1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "shared_asset_pct",
+      "origin": "SubscriptionPlan",
+      "limit": "20",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "spaces_included",
+      "origin": "Org",
+      "limit": "4",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "spaces_pro_included",
+      "origin": null,
+      "limit": null,
+      "limit_type": "integer",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "spaces_standard_included",
+      "origin": null,
+      "limit": null,
+      "limit_type": "integer",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "sso",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "stacked_view",
+      "origin": "SubscriptionPlan",
+      "limit": "7",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "stories",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "story_history_retention_in_days",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "traffic_monthly_in_gb",
+      "origin": "Org",
+      "limit": "10240",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "two_factor_authentication",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "uptime_sla_garantee",
+      "origin": null,
+      "limit": null,
+      "limit_type": "float",
+      "is_available": null,
+      "terms": []
+    },
+    {
+      "key": "version_visibility_days",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "webhook_log_retention_in_days",
+      "origin": "SubscriptionPlan",
+      "limit": "-1",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "webhooks",
+      "origin": "SubscriptionPlan",
+      "limit": "15",
+      "limit_type": "integer",
+      "is_available": true,
+      "terms": []
+    },
+    {
+      "key": "workflow_stages_per_language",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    }
+  ],
+  "verified": null,
+  "translatable_asset_fields": [],
+  "stripe_trial_status": "subscribed",
+  "stripe_trial_end": null,
+  "be_version": null,
+  "customer_id": null,
+  "canceled_at": null,
+  "unpaid_at": null,
+  "blocked_at": null,
+  "feature_limit_exceeded_flags": {
+    "roles": false,
+    "assets": false,
+    "folders": false,
+    "datasources": false,
+    "stories": false,
+    "preview_urls": false,
+    "api_requests": false,
+    "locales": false
+  },
+  "auto_delete_old_versions_after_days": null,
+  "encode_preview_urls": false,
+  "partner_id": null,
+  "development_mode": false,
+  "collaborators": [
+    {
+      "user": {
+        "avatar": null,
+        "id": 76308248618853,
+        "firstname": "Abbas",
+        "lastname": "Haider",
+        "disabled": false,
+        "userid": "abbas.haider@cloudprimero.com",
+        "friendly_name": "Abbas Haider"
+      },
+      "role": "editor",
+      "user_id": 76308248618853,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175816548630734,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 123345796365719,
+        "firstname": "Abdurrahman",
+        "lastname": "Hassan",
+        "disabled": false,
+        "userid": "abdurrahman.hassan@cloudprimero.com",
+        "friendly_name": "Abdurrahman Hassan"
+      },
+      "role": "admin",
+      "user_id": 123345796365719,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 186642321328592,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 131161334179305,
+        "firstname": "Abdullah",
+        "lastname": "Sultan",
+        "disabled": false,
+        "userid": "abdullah.sultan@cloudprimero.com",
+        "friendly_name": "Abdullah Sultan"
+      },
+      "role": "admin",
+      "user_id": 131161334179305,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 202580728759509,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 131176408045053,
+        "firstname": "Muhammad Rabee",
+        "lastname": "Amir",
+        "disabled": false,
+        "userid": "rabee.amir@cloudprimero.com",
+        "friendly_name": "Muhammad Rabee Amir"
+      },
+      "role": "admin",
+      "user_id": 131176408045053,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 202580531995860,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 148565033419218,
+        "firstname": "Muhammad Shumail",
+        "lastname": "Ansari",
+        "disabled": false,
+        "userid": "shumail.ansari@cloudprimero.com",
+        "friendly_name": "Muhammad Shumail Ansari"
+      },
+      "role": "editor",
+      "user_id": 148565033419218,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175816572960978,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 161955565856272,
+        "firstname": "Maaz",
+        "lastname": "Khan",
+        "disabled": false,
+        "userid": "ebzvtvmf-vdfvam46zz5g0v2fthap_tye5tsgmzmabk|azureactivedirectory|cauth@storyblok.com",
+        "friendly_name": "Maaz Khan (SSO)"
+      },
+      "role": "multi",
+      "user_id": 161955565856272,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175813813547165,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [
+        175712611351394
+      ],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 163053796706015,
+        "firstname": null,
+        "lastname": null,
+        "disabled": false,
+        "userid": "onowutmicwgvb9z_k2c_omtffbcuxcpxjptt3as8u8i|azureactivedirectory|cauth@storyblok.com",
+        "friendly_name": "onowutmicwgvb9z_k2c_omtffbcuxcpxjptt3as8u8i|azureactivedirectory|cauth@storyblok.com (SSO)"
+      },
+      "role": "multi",
+      "user_id": 163053796706015,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 176786184147867,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [
+        175712612715363
+      ],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 167957553073732,
+        "firstname": "Talha",
+        "lastname": "Imran",
+        "disabled": false,
+        "userid": "talha.imran@cloudprimero.com",
+        "friendly_name": "Talha Imran"
+      },
+      "role": "editor",
+      "user_id": 167957553073732,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175816538353868,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 168977851007037,
+        "firstname": "Muhammad",
+        "lastname": "Shareyar",
+        "disabled": false,
+        "userid": "esucuzlsixdc0ia46ewpjjkxh1aynpia2eofmt3-_gk|azureactivedirectory|cauth@storyblok.com",
+        "friendly_name": "Muhammad Shareyar (SSO)"
+      },
+      "role": "multi",
+      "user_id": 168977851007037,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 178532342781634,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [
+        175712611351394
+      ],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 176040331061898,
+        "firstname": "Jahanzaib",
+        "lastname": "Akhter",
+        "disabled": false,
+        "userid": "jahanzaib.akhter@cloudprimero.com",
+        "friendly_name": "Jahanzaib Akhter"
+      },
+      "role": "admin",
+      "user_id": 176040331061898,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 192726685611343,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 176165937130197,
+        "firstname": null,
+        "lastname": null,
+        "disabled": false,
+        "userid": "vgbc3yw5-sbfpchpnga6r-93hvmxiy2xs4_5nkbijkw|azureactivedirectory|cauth@storyblok.com",
+        "friendly_name": "vgbc3yw5-sbfpchpnga6r-93hvmxiy2xs4_5nkbijkw|azureactivedirectory|cauth@storyblok.com (SSO)"
+      },
+      "role": "multi",
+      "user_id": 176165937130197,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 176165937681133,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [
+        175712611351394
+      ],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 183609275049673,
+        "firstname": "Ali",
+        "lastname": "Muhammad",
+        "disabled": false,
+        "userid": "ph66sbvihrxneqkwmztb9zofwnksq83i9f_xagldbmk|azureactivedirectory|cauth@storyblok.com",
+        "friendly_name": "Ali Muhammad (SSO)"
+      },
+      "role": "multi",
+      "user_id": 183609275049673,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 183609275588743,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [
+        175712611351394
+      ],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 190244273750428,
+        "firstname": "Shahzaib",
+        "lastname": "Imran",
+        "disabled": false,
+        "userid": "shahzaib.imran@cloudprimero.com",
+        "friendly_name": "Shahzaib Imran"
+      },
+      "role": "admin",
+      "user_id": 190244273750428,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 202647931905347,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817708327192,
+      "space_role_id": null,
+      "invitation": {
+        "email": "mubashir.altaf@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:05.208Z",
+        "is_expired": true,
+        "rid": "2b03d807-152f-439d-960e-3395d43b53a1"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817916256568,
+      "space_role_id": null,
+      "invitation": {
+        "email": "hassan@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:55.974Z",
+        "is_expired": true,
+        "rid": "4cfd595e-3d38-4aac-8103-cab497c50d6f"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817672921363,
+      "space_role_id": null,
+      "invitation": {
+        "email": "cloudprimero.azure_gmail.com#ext#@cloudprimeroazuregmail.onmicrosoft.com",
+        "expires_at": "2026-05-19T19:23:56.567Z",
+        "is_expired": true,
+        "rid": "46660c13-fd4a-48f1-9cd7-ed2116fef995"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817649525007,
+      "space_role_id": null,
+      "invitation": {
+        "email": "ali.muhammad@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:50.852Z",
+        "is_expired": true,
+        "rid": "312fe2d3-bb70-4fbd-8ed0-4980dafe7d30"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817679126804,
+      "space_role_id": null,
+      "invitation": {
+        "email": "arham.abbas@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:58.079Z",
+        "is_expired": true,
+        "rid": "e0c95dce-54f9-4bff-afe6-d9f13933a00a"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817774063906,
+      "space_role_id": null,
+      "invitation": {
+        "email": "baseer.siraj@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:21.258Z",
+        "is_expired": true,
+        "rid": "217e5162-798e-40c7-8d6d-a58f8c530b9e"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817843560749,
+      "space_role_id": null,
+      "invitation": {
+        "email": "abdullah.khan@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:38.224Z",
+        "is_expired": true,
+        "rid": "a70d0688-3dab-4c34-a660-ab6cc047cdfe"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817721635098,
+      "space_role_id": null,
+      "invitation": {
+        "email": "kiera.verburg@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:08.456Z",
+        "is_expired": true,
+        "rid": "2442f016-b9ad-41b0-9af3-1233e425aacd"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817750384926,
+      "space_role_id": null,
+      "invitation": {
+        "email": "muhammad.mawiz@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:15.473Z",
+        "is_expired": true,
+        "rid": "6765bed6-1466-43ad-b950-17789dcfd86a"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817852342574,
+      "space_role_id": null,
+      "invitation": {
+        "email": "faljohani@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:40.369Z",
+        "is_expired": true,
+        "rid": "7bf8850c-8f93-4d3a-8a2e-de219bf5818a"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817756401951,
+      "space_role_id": null,
+      "invitation": {
+        "email": "abdul.aleem@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:16.948Z",
+        "is_expired": true,
+        "rid": "4d3e453b-a304-476b-8ecf-2c4b0ade48d8"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817780105507,
+      "space_role_id": null,
+      "invitation": {
+        "email": "abbas.haider.test@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:22.733Z",
+        "is_expired": true,
+        "rid": "ca1e6c08-fee6-4a25-96f1-4705384a06dc"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817811104040,
+      "space_role_id": null,
+      "invitation": {
+        "email": "engineer_3@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:30.298Z",
+        "is_expired": true,
+        "rid": "7d5108a7-20be-4135-a5e2-a01c6d40f89a"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817786138916,
+      "space_role_id": null,
+      "invitation": {
+        "email": "imtithal.kteich@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:24.203Z",
+        "is_expired": true,
+        "rid": "49c41ceb-9618-4220-b16c-4df443f83b4b"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817837941036,
+      "space_role_id": null,
+      "invitation": {
+        "email": "zainab.ahmed@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:36.850Z",
+        "is_expired": true,
+        "rid": "48dd49df-1cf9-4edf-a2e7-64b729fba3fa"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817873822001,
+      "space_role_id": null,
+      "invitation": {
+        "email": "ahatwari@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:45.610Z",
+        "is_expired": true,
+        "rid": "9d98d1e3-75d1-4104-a8fd-23f6b7a2b74c"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817895125301,
+      "space_role_id": null,
+      "invitation": {
+        "email": "aalnumran@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:50.811Z",
+        "is_expired": true,
+        "rid": "a229052e-d078-49d6-b893-a62089a8f136"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817901035830,
+      "space_role_id": null,
+      "invitation": {
+        "email": "nalhaythami@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:52.253Z",
+        "is_expired": true,
+        "rid": "038db58e-4bea-4f60-b1ec-1d7edeee8651"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817804878119,
+      "space_role_id": null,
+      "invitation": {
+        "email": "engineer_2@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:28.778Z",
+        "is_expired": true,
+        "rid": "056e4d67-ce51-46ce-b522-7381390538b5"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817867764016,
+      "space_role_id": null,
+      "invitation": {
+        "email": "talganem@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:44.130Z",
+        "is_expired": true,
+        "rid": "b54fada0-1881-46aa-83e5-bfb338cdaade"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817907142967,
+      "space_role_id": null,
+      "invitation": {
+        "email": "maldosri@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:53.748Z",
+        "is_expired": true,
+        "rid": "be8f3fe9-544c-409e-9121-3b3995a6c0aa"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817987825986,
+      "space_role_id": null,
+      "invitation": {
+        "email": "amar.s@kafaa.sa",
+        "expires_at": "2026-05-19T19:25:13.447Z",
+        "is_expired": true,
+        "rid": "689468f2-27a4-4dea-ad33-b2356f7fa7f5"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817922027833,
+      "space_role_id": null,
+      "invitation": {
+        "email": "saad@primero.group",
+        "expires_at": "2026-05-19T19:24:57.381Z",
+        "is_expired": true,
+        "rid": "48410c11-be88-44fd-aece-6ca5b0185c37"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817661002001,
+      "space_role_id": null,
+      "invitation": {
+        "email": "samia.hashmi@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:53.651Z",
+        "is_expired": true,
+        "rid": "47ae910d-689b-4aad-baf8-7ddc5809ebf7"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817943359804,
+      "space_role_id": null,
+      "invitation": {
+        "email": "mahmoud.a@kafaa.sa",
+        "expires_at": "2026-05-19T19:25:02.589Z",
+        "is_expired": true,
+        "rid": "fd633e78-f1b1-47f0-9258-ff9e5024595f"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175818002755908,
+      "space_role_id": null,
+      "invitation": {
+        "email": "nalshehri@asda.gov.sa",
+        "expires_at": "2026-05-19T19:25:17.087Z",
+        "is_expired": true,
+        "rid": "fd81fc91-49e1-45dc-bf50-90562ee62d07"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817952010557,
+      "space_role_id": null,
+      "invitation": {
+        "email": "hammad.khan@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:25:04.700Z",
+        "is_expired": true,
+        "rid": "0bd59990-1a50-4c05-8504-1dce3bfb98cb"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817888751924,
+      "space_role_id": null,
+      "invitation": {
+        "email": "aalqahtani@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:49.258Z",
+        "is_expired": true,
+        "rid": "76cc9686-23c1-4f3e-8d60-b20a3f876f24"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817966973247,
+      "space_role_id": null,
+      "invitation": {
+        "email": "faizan.bhutto@cloudprimeroazuregmail.onmicrosoft.com",
+        "expires_at": "2026-05-19T19:25:08.352Z",
+        "is_expired": true,
+        "rid": "abed706d-b9d3-4ab3-913a-b33108c45e30"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817880572210,
+      "space_role_id": null,
+      "invitation": {
+        "email": "amushabab@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:47.260Z",
+        "is_expired": true,
+        "rid": "dbf2598a-51fb-49bc-aab6-471aa94f6e11"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817981829441,
+      "space_role_id": null,
+      "invitation": {
+        "email": "adel.j@kafaa.sa",
+        "expires_at": "2026-05-19T19:25:11.982Z",
+        "is_expired": true,
+        "rid": "568201bd-7cb2-49a5-a2a7-2be0e8285ded"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817997160771,
+      "space_role_id": null,
+      "invitation": {
+        "email": "alzanbagi.m@kafaa.sa",
+        "expires_at": "2026-05-19T19:25:15.725Z",
+        "is_expired": true,
+        "rid": "b47f0810-9d2d-4433-99b5-b0ac04754e43"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175818008518981,
+      "space_role_id": null,
+      "invitation": {
+        "email": "abdullah.wasay@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:25:18.497Z",
+        "is_expired": true,
+        "rid": "98ad3343-5247-4773-9e1e-0d922aef76ea"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817744544029,
+      "space_role_id": null,
+      "invitation": {
+        "email": "aurangzaib.najam@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:14.046Z",
+        "is_expired": true,
+        "rid": "445da538-ebfc-449f-a30b-bfe558acc6d2"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817825882410,
+      "space_role_id": null,
+      "invitation": {
+        "email": "super_admin_1@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:33.905Z",
+        "is_expired": true,
+        "rid": "e6810308-3cbd-4fac-8f23-e6c31501a0f3"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817762615584,
+      "space_role_id": null,
+      "invitation": {
+        "email": "talha.imran@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:18.462Z",
+        "is_expired": true,
+        "rid": "0dfeec89-500f-4d0a-817b-5c4fbb893d7e"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817768104225,
+      "space_role_id": null,
+      "invitation": {
+        "email": "4thfloormeetingroom@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:19.802Z",
+        "is_expired": true,
+        "rid": "cdfc21bd-04d7-4fde-94ee-79770d63e2cf"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817715634457,
+      "space_role_id": null,
+      "invitation": {
+        "email": "asad.ali@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:06.989Z",
+        "is_expired": true,
+        "rid": "a76e5199-6162-40a9-bbf3-969a0f442a9d"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817798762790,
+      "space_role_id": null,
+      "invitation": {
+        "email": "engineer_1@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:27.284Z",
+        "is_expired": true,
+        "rid": "e7176cb8-cdaf-4e8b-a69e-b6148d1a87c2"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817666625810,
+      "space_role_id": null,
+      "invitation": {
+        "email": "rohail.shahid@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:55.028Z",
+        "is_expired": true,
+        "rid": "67eafc7b-3868-47f7-b871-62f347b016e8"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817936519483,
+      "space_role_id": null,
+      "invitation": {
+        "email": "karim.s@kafaa.sa",
+        "expires_at": "2026-05-19T19:25:00.917Z",
+        "is_expired": true,
+        "rid": "804b84c5-4b42-42a6-8547-090a480cd6b7"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817626788108,
+      "space_role_id": null,
+      "invitation": {
+        "email": "waleed.ahmed@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:45.302Z",
+        "is_expired": true,
+        "rid": "1b6a0b5d-f6c6-4628-abef-f7f193dafe25"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817831719211,
+      "space_role_id": null,
+      "invitation": {
+        "email": "syed.abbas@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:35.334Z",
+        "is_expired": true,
+        "rid": "5226a647-da7e-497e-8cdf-a110e43ef034"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817730392347,
+      "space_role_id": null,
+      "invitation": {
+        "email": "tariq.ahmed@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:10.595Z",
+        "is_expired": true,
+        "rid": "d6346751-69d6-40c4-8378-edbfdc5e832f"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817959457086,
+      "space_role_id": null,
+      "invitation": {
+        "email": "thinkshuraim221@outlook.com",
+        "expires_at": "2026-05-19T19:25:06.520Z",
+        "is_expired": true,
+        "rid": "050ef3c3-63a8-414e-bf44-facce08c6108"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817792975141,
+      "space_role_id": null,
+      "invitation": {
+        "email": "executivemeeting@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:25.875Z",
+        "is_expired": true,
+        "rid": "a01f9d68-2b52-4729-ad27-efa15593a1ef"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817632215309,
+      "space_role_id": null,
+      "invitation": {
+        "email": "arham@iniox.ch",
+        "expires_at": "2026-05-19T19:23:46.627Z",
+        "is_expired": true,
+        "rid": "968f000b-41a2-4aa1-ad4c-5c0bda249df1"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817928454458,
+      "space_role_id": null,
+      "invitation": {
+        "email": "waleed.ahmed@cloudprimero.com",
+        "expires_at": "2026-05-19T19:24:58.951Z",
+        "is_expired": true,
+        "rid": "b2f39abb-c010-41ae-8d30-9e890da927b1"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817817334057,
+      "space_role_id": null,
+      "invitation": {
+        "email": "manager_1@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:31.821Z",
+        "is_expired": true,
+        "rid": "187f0751-0e2d-4ac4-8ffb-7cb995546c72"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817701994775,
+      "space_role_id": null,
+      "invitation": {
+        "email": "faiz.akhter@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:03.660Z",
+        "is_expired": true,
+        "rid": "d805c588-a3f0-479f-9879-5f5ebbd6ab71"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817860239663,
+      "space_role_id": null,
+      "invitation": {
+        "email": "ralabbas@asda.gov.sa",
+        "expires_at": "2026-05-19T19:24:42.293Z",
+        "is_expired": true,
+        "rid": "11c6db0f-f917-4dd5-9b69-b6040f361b9b"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817736958236,
+      "space_role_id": null,
+      "invitation": {
+        "email": "faizan.k@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:12.198Z",
+        "is_expired": true,
+        "rid": "e725dad5-dc41-432c-9a41-fea3829a333e"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817973301568,
+      "space_role_id": null,
+      "invitation": {
+        "email": "faizan.b@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:25:09.899Z",
+        "is_expired": true,
+        "rid": "5f95089e-71df-4bf6-a153-12fa4d5cd54a"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "multi",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175813366939804,
+      "space_role_id": null,
+      "invitation": {
+        "email": "maaz.khan@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:06:25.300Z",
+        "is_expired": true,
+        "rid": "371bb103-acc7-46c3-8504-6064115a467c"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817687724309,
+      "space_role_id": null,
+      "invitation": {
+        "email": "abbas.haider@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:00.178Z",
+        "is_expired": true,
+        "rid": "0e69920a-c569-45a9-9c9f-b022ce237ade"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817640882446,
+      "space_role_id": null,
+      "invitation": {
+        "email": "saad.ahmed@cloudprimero.com",
+        "expires_at": "2026-05-19T19:23:48.741Z",
+        "is_expired": true,
+        "rid": "d7616017-1415-4698-8a68-eefa3b4e380d"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817695822102,
+      "space_role_id": null,
+      "invitation": {
+        "email": "hassan.sachwani@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:02.156Z",
+        "is_expired": true,
+        "rid": "1c575059-5bea-464e-a4f4-848f324f5547"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817655005456,
+      "space_role_id": null,
+      "invitation": {
+        "email": "fatima.ali@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:52.191Z",
+        "is_expired": true,
+        "rid": "cd64a2ef-0543-45a4-b4e0-e9c0d549d229"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    }
+  ],
+  "disclaimer_ids": [],
+  "dimensions_app_folder_ids": [],
+  "dimensions_app_folders": [],
+  "enable_dimensions_app_ai_translation": false,
+  "show_stories_alternative_versions": false,
+  "repository_url": null,
+  "blueprint_reference": null,
+  "inherit_org_ai_configuration": false,
+  "allow_space_ai_styles": true,
+  "onboarding_tour_disabled": false,
+  "joyride_trial": false,
+  "joyride_trial_expires_at": null,
+  "joyride_trial_started_at": null,
+  "space_roles": [
+    {
+      "id": 175712611351394,
+      "ext_id": "23a2e647-a8e4-4209-afa3-a3217656afe1",
+      "resolved_allowed_paths": [],
+      "allowed_paths": [],
+      "resolved_blocked_paths": null,
+      "blocked_paths": [],
+      "field_permissions": [],
+      "allowed_field_permissions": [],
+      "readonly_field_permissions": [],
+      "permissions": [
+        "publish_stories",
+        "publish_folders",
+        "unpublish_stories",
+        "unpublish_folders",
+        "read_stories",
+        "save_stories",
+        "edit_datasources",
+        "delete_stories",
+        "access_tasks",
+        "view_language",
+        "act_as_editor"
+      ],
+      "role": "All Company",
+      "subtitle": null,
+      "datasource_ids": [],
+      "blocked_datasource_ids": [],
+      "component_ids": [],
+      "allowed_component_ids": [],
+      "branch_ids": [],
+      "blocked_branch_ids": [],
+      "allowed_languages": [],
+      "blocked_languages": [],
+      "asset_folder_ids": [],
+      "blocked_asset_folder_ids": [],
+      "managed_component_ids": [],
+      "blocked_manage_component_ids": [],
+      "managed_component_group_uuids": [],
+      "blocked_manage_component_group_uuids": [],
+      "component_group_uuids": [],
+      "blocked_component_group_uuids": []
+    },
+    {
+      "id": 175712612715363,
+      "ext_id": "90d36e45-5ab4-43fc-ae6f-41d0d9ccc539",
+      "resolved_allowed_paths": [],
+      "allowed_paths": [],
+      "resolved_blocked_paths": null,
+      "blocked_paths": [],
+      "field_permissions": [],
+      "allowed_field_permissions": [],
+      "readonly_field_permissions": [],
+      "permissions": [
+        "publish_stories",
+        "publish_folders",
+        "unpublish_stories",
+        "unpublish_folders",
+        "read_stories",
+        "save_stories",
+        "edit_datasources",
+        "delete_stories",
+        "access_tasks",
+        "view_language",
+        "act_as_editor"
+      ],
+      "role": "All Users Group",
+      "subtitle": null,
+      "datasource_ids": [],
+      "blocked_datasource_ids": [],
+      "component_ids": [],
+      "allowed_component_ids": [],
+      "branch_ids": [],
+      "blocked_branch_ids": [],
+      "allowed_languages": [],
+      "blocked_languages": [],
+      "asset_folder_ids": [],
+      "blocked_asset_folder_ids": [],
+      "managed_component_ids": [],
+      "blocked_manage_component_ids": [],
+      "managed_component_group_uuids": [],
+      "blocked_manage_component_group_uuids": [],
+      "component_group_uuids": [],
+      "blocked_component_group_uuids": []
+    },
+    {
+      "id": 175712614075236,
+      "ext_id": "a17a86c1-2b09-49e1-8af8-264985ead348",
+      "resolved_allowed_paths": [],
+      "allowed_paths": [],
+      "resolved_blocked_paths": null,
+      "blocked_paths": [],
+      "field_permissions": [],
+      "allowed_field_permissions": [],
+      "readonly_field_permissions": [],
+      "permissions": [
+        "publish_stories",
+        "publish_folders",
+        "unpublish_stories",
+        "unpublish_folders",
+        "read_stories",
+        "save_stories",
+        "edit_datasources",
+        "delete_stories",
+        "access_tasks",
+        "view_language",
+        "act_as_editor"
+      ],
+      "role": "AllUsers",
+      "subtitle": null,
+      "datasource_ids": [],
+      "blocked_datasource_ids": [],
+      "component_ids": [],
+      "allowed_component_ids": [],
+      "branch_ids": [],
+      "blocked_branch_ids": [],
+      "allowed_languages": [],
+      "blocked_languages": [],
+      "asset_folder_ids": [],
+      "blocked_asset_folder_ids": [],
+      "managed_component_ids": [],
+      "blocked_manage_component_ids": [],
+      "managed_component_group_uuids": [],
+      "blocked_manage_component_group_uuids": [],
+      "component_group_uuids": [],
+      "blocked_component_group_uuids": []
+    },
+    {
+      "id": 202627403891717,
+      "ext_id": null,
+      "resolved_allowed_paths": [],
+      "allowed_paths": [],
+      "resolved_blocked_paths": null,
+      "blocked_paths": [],
+      "field_permissions": [],
+      "allowed_field_permissions": [],
+      "readonly_field_permissions": [],
+      "permissions": [
+        "read_stories",
+        "save_stories",
+        "publish_stories",
+        "unpublish_stories",
+        "publish_folders",
+        "unpublish_folders",
+        "deploy_stories",
+        "delete_stories",
+        "view_draft_json",
+        "view_published_json",
+        "private_releases_full_access",
+        "access_tasks",
+        "execute_tasks",
+        "create_tasks",
+        "delete_tasks",
+        "edit_tasks",
+        "manage_concepts",
+        "manage_tags",
+        "edit_datasources",
+        "edit_datasource_keys",
+        "manage_block_library",
+        "apply_to_block_subfolders",
+        "view_content",
+        "view_folders",
+        "hide_asset_folders"
+      ],
+      "role": "Super Admin",
+      "subtitle": null,
+      "datasource_ids": [],
+      "blocked_datasource_ids": [],
+      "component_ids": [],
+      "allowed_component_ids": [],
+      "branch_ids": [],
+      "blocked_branch_ids": [],
+      "allowed_languages": [],
+      "blocked_languages": [],
+      "asset_folder_ids": [],
+      "blocked_asset_folder_ids": [],
+      "managed_component_ids": [],
+      "blocked_manage_component_ids": [],
+      "managed_component_group_uuids": [],
+      "blocked_manage_component_group_uuids": [],
+      "component_group_uuids": [],
+      "blocked_component_group_uuids": []
+    },
+    {
+      "id": 202967272031246,
+      "ext_id": null,
+      "resolved_allowed_paths": [],
+      "allowed_paths": [],
+      "resolved_blocked_paths": null,
+      "blocked_paths": [],
+      "field_permissions": [],
+      "allowed_field_permissions": [],
+      "readonly_field_permissions": [],
+      "permissions": [
+        "read_stories",
+        "view_content",
+        "view_folders",
+        "hide_asset_folders"
+      ],
+      "role": "Default Role",
+      "subtitle": null,
+      "datasource_ids": [],
+      "blocked_datasource_ids": [],
+      "component_ids": [],
+      "allowed_component_ids": [],
+      "branch_ids": [],
+      "blocked_branch_ids": [],
+      "allowed_languages": [],
+      "blocked_languages": [],
+      "asset_folder_ids": [],
+      "blocked_asset_folder_ids": [],
+      "managed_component_ids": [],
+      "blocked_manage_component_ids": [],
+      "managed_component_group_uuids": [],
+      "blocked_manage_component_group_uuids": [],
+      "component_group_uuids": [],
+      "blocked_component_group_uuids": []
+    }
+  ],
+  "hide_flag_icons": false,
+  "flag_icons_display_mode": "language",
+  "settings": []
+}

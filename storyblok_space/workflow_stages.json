@@ -1,0 +1,96 @@
+[
+  {
+    "allow_publish": true,
+    "is_default": true,
+    "id": 201481682618331,
+    "user_ids": [],
+    "space_role_ids": [],
+    "workflow_stage_ids": [
+      201481684744156
+    ],
+    "name": "Draft",
+    "color": "#832930",
+    "allow_all_stages": false,
+    "allow_admin_publish": false,
+    "allow_all_users": true,
+    "allow_admin_change": false,
+    "allow_editor_change": false,
+    "position": 1,
+    "after_publish_id": null,
+    "workflow_id": 133596266085524,
+    "story_editing_locked": false,
+    "allow_none_for_next_stages": false,
+    "auto_remove_assignee": false
+  },
+  {
+    "allow_publish": false,
+    "is_default": false,
+    "id": 201481684744156,
+    "user_ids": [],
+    "space_role_ids": [],
+    "workflow_stage_ids": [
+      201481690167262,
+      201481687443421,
+      201481682618331
+    ],
+    "name": "Ready For Approval",
+    "color": "#6402cd",
+    "allow_all_stages": false,
+    "allow_admin_publish": false,
+    "allow_all_users": true,
+    "allow_admin_change": false,
+    "allow_editor_change": false,
+    "position": 2,
+    "after_publish_id": null,
+    "workflow_id": 133596266085524,
+    "story_editing_locked": true,
+    "allow_none_for_next_stages": false,
+    "auto_remove_assignee": false
+  },
+  {
+    "allow_publish": true,
+    "is_default": false,
+    "id": 201481687443421,
+    "user_ids": [],
+    "space_role_ids": [],
+    "workflow_stage_ids": [
+      201481682618331
+    ],
+    "name": "Publish",
+    "color": "#79ebd6",
+    "allow_all_stages": false,
+    "allow_admin_publish": false,
+    "allow_all_users": true,
+    "allow_admin_change": false,
+    "allow_editor_change": false,
+    "position": 3,
+    "after_publish_id": 201481682618331,
+    "workflow_id": 133596266085524,
+    "story_editing_locked": false,
+    "allow_none_for_next_stages": false,
+    "auto_remove_assignee": false
+  },
+  {
+    "allow_publish": true,
+    "is_default": false,
+    "id": 201481690167262,
+    "user_ids": [],
+    "space_role_ids": [],
+    "workflow_stage_ids": [
+      201481682618331
+    ],
+    "name": "Deletion",
+    "color": "#90d984",
+    "allow_all_stages": false,
+    "allow_admin_publish": false,
+    "allow_all_users": true,
+    "allow_admin_change": false,
+    "allow_editor_change": false,
+    "position": 4,
+    "after_publish_id": null,
+    "workflow_id": 133596266085524,
+    "story_editing_locked": false,
+    "allow_none_for_next_stages": false,
+    "auto_remove_assignee": false
+  }
+]
