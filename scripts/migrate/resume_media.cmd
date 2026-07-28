@@ -1,26 +1,27 @@
 @echo off
 REM ===================================================================
-REM  AKU news - resume SharePoint media URL resolution
+REM  AKU news - resolve, download and map every asset
 REM
-REM  Safe to close the laptop and double-click this again: the cache is
-REM  written every 200 stories and already-fetched pages are skipped, so
-REM  it always picks up where it stopped.
+REM  Double-click any time. Safe to close the laptop mid-run: every
+REM  stage is resumable, so this always continues where it stopped.
 REM
-REM  Order of work:
-REM    1. the 20 uploaded sample stories   (already done, seconds)
-REM    2. stories that HAVE media          (the ones worth reviewing)
-REM    3. everything else
+REM    1  resolve URLs for stories that have media
+REM    2  resolve URLs for everything else
+REM    3  download every resolved file to assets\News\media\
+REM    4  export the asset map + failure report
+REM    5  rebuild the viewer index
+REM
+REM  Runs as ONE process behind a lock file. Two resolver passes share
+REM  media_urls.json and the slower one rewrites the whole file from its
+REM  own memory - that silently reverted corrected entries once already.
 REM ===================================================================
 setlocal
 
 set "REPO=d:\AKU News\aku-data-transformation-pipeline-news-master"
 set "PY=d:\AKU News\.venv\Scripts\python.exe"
-REM -u keeps stdout unbuffered so progress shows live instead of in bursts
-set "PYFLAGS=-u"
-set "SCRIPT=%REPO%\scripts\migrate\resolve_media_urls.py"
 set "WORKERS=6"
 
-title AKU media resolver
+title AKU media - resolve, download, map
 
 if not exist "%PY%" (
   echo.
@@ -35,49 +36,21 @@ cd /d "%REPO%" || (echo ERROR: cannot cd to %REPO% & pause & exit /b 1)
 
 echo.
 echo ==========================================================
-echo   AKU news - resolving SharePoint media URLs
+echo   AKU news - media resolve, download and map
 echo   repo    : %REPO%
 echo   workers : %WORKERS%
 echo ==========================================================
-echo.
-echo   Progress so far:
-"%PY%" %PYFLAGS% "%REPO%\scripts\migrate\media_progress.py"
-echo.
 
-echo [1/5] resolving URLs - uploaded sample ...
-"%PY%" %PYFLAGS% "%SCRIPT%" --sample --workers %WORKERS%
+REM -u keeps output unbuffered so progress shows live
+"%PY%" -u "%REPO%\scripts\migrate\run_media_all.py" --workers %WORKERS%
 if errorlevel 1 goto failed
-
-echo.
-echo [2/5] resolving URLs - stories that have media ...
-"%PY%" %PYFLAGS% "%SCRIPT%" --priority with-media --workers %WORKERS%
-if errorlevel 1 goto failed
-
-echo.
-echo [3/5] resolving URLs - the remaining stories ...
-"%PY%" %PYFLAGS% "%SCRIPT%" --workers %WORKERS%
-if errorlevel 1 goto failed
-
-echo.
-echo [4/5] downloading every resolved file to assets\News\media ...
-REM Download once, upload from disk. Uploading straight from aku.edu would hit
-REM the site again story by story and meet the same rate limiting mid-upload,
-REM with a half-finished Storyblok space to clean up.
-"%PY%" %PYFLAGS% "%REPO%\scripts\migrate\download_media.py" --workers %WORKERS%
-if errorlevel 1 goto failed
-
-echo.
-echo [5/5] rebuilding the viewer index ...
-"%PY%" %PYFLAGS% "%REPO%\scripts\migrate\build_viewer_index.py"
-
-echo.
-echo   Anything that failed:
-"%PY%" %PYFLAGS% "%REPO%\scripts\migrate\report_failures.py" --csv
 
 echo.
 echo ==========================================================
-echo   DONE. Media resolved AND downloaded to assets\News\media
-echo   Refresh the viewer at http://localhost:4000
+echo   DONE.
+echo   Files : assets\News\media\
+echo   Map   : data\migrate\asset_map.csv
+echo   Viewer: http://localhost:4000
 echo ==========================================================
 echo.
 pause
@@ -86,8 +59,11 @@ exit /b 0
 :failed
 echo.
 echo ==========================================================
-echo   Stopped with an error. Nothing is lost - the cache is
-echo   saved as it goes. Just run this file again.
+echo   Stopped with an error. Nothing is lost - every stage saves
+echo   as it goes. Run this file again to continue.
+echo.
+echo   If it says another run is already going and you know it is
+echo   dead, delete:  data\migrate\.media.lock
 echo ==========================================================
 echo.
 pause

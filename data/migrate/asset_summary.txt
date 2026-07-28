@@ -1,0 +1,28 @@
+
+==================================================================
+  ASSET MAP
+==================================================================
+  declared asset uses      : 54
+  distinct files declared  : 54
+  on disk                  : 49
+  still missing            : 5
+  undeclared page extras   : 4
+  bytes on disk            : 111.7 MB
+
+  by role -> target field:
+        33      33 on disk   richtext    -> inline in rich_text.content
+        16      14 on disk   banner      -> content.banner_image
+         2       1 on disk   medium      -> body[] media_section(type=image)
+         2       1 on disk   video1      -> body[] media_section(type=video)
+         1       0 on disk   thumbnail   -> content.thumbnail
+
+  by kind:
+        45  image
+         6  document
+         2  gif
+         1  video
+
+  by upload status:
+        49  pending
+         5  missing
+         4  extra
