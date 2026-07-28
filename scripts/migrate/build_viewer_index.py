@@ -165,6 +165,16 @@ def main():
         print(f"  (tracking DB unavailable: {type(e).__name__}) — "
               f"status columns will be blank")
 
+    # live SharePoint URLs, resolved by resolve_media_urls.py
+    media_urls = {}
+    mu_path = os.path.join(BASE, "data", "migrate", "media_urls.json")
+    if os.path.exists(mu_path):
+        media_urls = load(mu_path)
+        n = sum(1 for v in media_urls.values() if v.get("fetched"))
+        print(f"  media URLs available for {n} stories")
+    else:
+        print("  (no media_urls.json — run resolve_media_urls.py to show images)")
+
     index, facets = [], defaultdict(Counter)
     files = sorted(n for n in os.listdir(STORIES) if n.endswith(".json"))
     for name in files:
@@ -278,8 +288,45 @@ def main():
         for e in el:
             facets["elements"][e] += 1
 
+        # ---- attach live URLs so the viewer shows real pictures
+        mu = media_urls.get(sid) or {}
+        by_role = mu.get("by_role") or {}
+        url_by_file = {e.get("filename"): e.get("url")
+                       for lst in by_role.values() for e in lst
+                       if e.get("filename") and e.get("url")}
+        url_by_srckey = {}
+        for m in media + rt_media:
+            sk = m.get("source_key")
+            if sk:
+                url_by_srckey[m.get("filename") or ""] = "https://www.aku.edu" + \
+                    re.sub(r" ", "%20", sk)
+
+        def live_url(m):
+            fn = m.get("filename") or m.get("local_filename") or ""
+            return url_by_file.get(fn) or url_by_srckey.get(fn) or ""
+
+        media_out = [{**m, "live_url": live_url(m)} for m in media]
+        rtm_out = [{**m, "live_url": live_url(m)} for m in rt_media]
+        # inline <image> nodes: map their local src to a live URL by filename
+        src_to_live = {}
+        for m in media + rt_media:
+            s = m.get("src") or m.get("local_src") or ""
+            u = live_url(m)
+            if s and u:
+                src_to_live[s] = u
+
+        rec["hero"] = next((m["live_url"] for m in media_out
+                            if m.get("role") == "banner" and m["live_url"]), "")
+        rec["thumb"] = rec["hero"] or next(
+            (m["live_url"] for m in media_out if m["live_url"]), "")
+
         detail = {
             **rec,
+            "media_urls_fetched": bool(mu.get("fetched")),
+            "sharepoint_page": mu.get("page") or "",
+            "page_iframes": mu.get("iframes") or [],
+            "unmatched_page_images": mu.get("unmatched_page_images") or [],
+            "src_to_live": src_to_live,
             "summary": c.get("summary") or "",
             "subtitle": c.get("subtitle") or "",
             "banner_caption": c.get("banner_caption") or "",
@@ -289,8 +336,8 @@ def main():
                                             story=rec["sb_story_id"])
                               if rec["sb_story_id"] else ""),
             "richtext": body,
-            "media": media,
-            "richtext_media": rt_media,
+            "media": media_out,
+            "richtext_media": rtm_out,
             "links": links,
             "shares": shares.get(sid, []),
             "node_counts": dict(nodes),

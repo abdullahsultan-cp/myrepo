@@ -29,6 +29,10 @@ export type Story = {
   sb_story_id: number | null;
   sb_slug: string;
   excerpt: string;
+  /** live SharePoint URL of the banner image, when resolved */
+  hero?: string;
+  /** first resolvable image, used for the list thumbnail */
+  thumb?: string;
 };
 
 export type Index = {
@@ -48,24 +52,7 @@ export type MediaItem = {
   caption?: string;
   alt?: string;
   source_key?: string;
-};
-
-export type Detail = Story & {
-  summary: string;
-  subtitle: string;
-  banner_caption: string;
-  sharepoint_url: string;
-  sb_editor_url: string;
-  richtext: RichNode;
-  media: MediaItem[];
-  richtext_media: MediaItem[];
-  links: { href: string; text: string }[];
-  shares: string[];
-  node_counts: Record<string, number>;
-  mark_counts: Record<string, number>;
-  blok_counts: Record<string, number>;
-  extensions: Record<string, number>;
-  pull_quote: { type?: string; component_type?: string; author?: string } | null;
+  live_url?: string;
 };
 
 export type RichMark = { type: string; attrs?: Record<string, unknown> };
@@ -78,10 +65,33 @@ export type RichNode = {
   content?: RichNode[];
 };
 
-/** Facets rendered in the sidebar, in display order. */
-export const FACET_ORDER: { key: keyof Story | "elements"; label: string }[] = [
-  { key: "elements", label: "Elements / components" },
-  { key: "region", label: "Region" },
+export type Detail = Story & {
+  summary: string;
+  subtitle: string;
+  banner_caption: string;
+  sharepoint_url: string;
+  sb_editor_url: string;
+  sharepoint_page: string;
+  media_urls_fetched: boolean;
+  richtext: RichNode;
+  media: MediaItem[];
+  richtext_media: MediaItem[];
+  links: { href: string; text: string }[];
+  shares: string[];
+  page_iframes: string[];
+  unmatched_page_images: string[];
+  src_to_live: Record<string, string>;
+  node_counts: Record<string, number>;
+  mark_counts: Record<string, number>;
+  blok_counts: Record<string, number>;
+  extensions: Record<string, number>;
+  pull_quote: { type?: string; component_type?: string; author?: string } | null;
+};
+
+/** Facet groups, in sidebar order. `open` = expanded on first load. */
+export const FACET_ORDER: { key: string; label: string; open?: boolean }[] = [
+  { key: "elements", label: "Elements / components", open: true },
+  { key: "region", label: "Region", open: true },
   { key: "entity", label: "Entity" },
   { key: "department", label: "Department" },
   { key: "placement", label: "Placement" },
@@ -89,4 +99,21 @@ export const FACET_ORDER: { key: keyof Story | "elements"; label: string }[] = [
   { key: "category", label: "SharePoint category" },
   { key: "year", label: "Year" },
   { key: "status", label: "Migration status" },
+];
+
+/** Element keys worth surfacing as a chip on a list row. */
+export const HERO_ELEMENTS = [
+  "video_embed",
+  "video_file",
+  "twitter_embed",
+  "iframe_embed",
+  "gallery",
+  "gif",
+  "table",
+  "pdf",
+  "doc",
+  "inline_image",
+  "urdu",
+  "thumbnail",
+  "no_media",
 ];
