@@ -86,3 +86,6 @@ storyblok-viewer/yarn-error.log*
 storyblok-viewer/.pnpm-debug.log*
 
 storyblok-viewer/*.pem
+
+# --- Migration tracking DB credentials ---------------------------------------
+/config/database.json

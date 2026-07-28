@@ -1,0 +1,679 @@
+{
+  "chosen": [
+    "2198",
+    "1177",
+    "3288",
+    "1534",
+    "3134",
+    "3252",
+    "760",
+    "1761",
+    "2536",
+    "2664",
+    "1711",
+    "357",
+    "1673",
+    "3286",
+    "1752",
+    "2160",
+    "1160",
+    "1941",
+    "3405",
+    "3236"
+  ],
+  "feature_counts": {
+    "flag_global": 1244,
+    "media_medium": 338,
+    "media_banner": 3072,
+    "has_category": 1609,
+    "place_region": 1284,
+    "has_subtitle": 278,
+    "size_very_short": 51,
+    "place_global": 250,
+    "place_entity": 1499,
+    "entity_recovered": 678,
+    "char_accented": 85,
+    "rt_bold": 267,
+    "rt_bullet_list": 89,
+    "size_very_long": 12,
+    "rt_link": 837,
+    "link_external": 586,
+    "lang_urdu": 44,
+    "link_document": 117,
+    "place_entity-department": 573,
+    "has_department": 573,
+    "rt_italic": 449,
+    "rt_ordered_list": 18,
+    "link_internal": 382,
+    "has_share_targets": 946,
+    "has_banner_caption": 707,
+    "pull_quote_richtext": 77,
+    "embed_twitter": 38,
+    "pull_quote_embed": 41,
+    "char_greek": 3,
+    "embed_video": 65,
+    "rt_hard_breaks": 511,
+    "media_none": 507,
+    "media_pdf": 81,
+    "media_richtext": 116,
+    "char_currency_symbol": 30,
+    "media_gif": 62,
+    "rt_table": 2,
+    "media_video_file": 4,
+    "rt_superscript": 30,
+    "media_thumbnail": 7,
+    "char_transliteration": 18,
+    "media_doc": 1,
+    "rt_heading": 49,
+    "rt_inline_image": 23,
+    "char_ligature": 13,
+    "media_gallery": 15,
+    "char_bullet_ellipsis": 3,
+    "rt_blockquote": 2
+  },
+  "coverage": {
+    "2198": [
+      "char_ligature",
+      "has_banner_caption",
+      "has_share_targets",
+      "has_subtitle",
+      "link_document",
+      "link_external",
+      "link_internal",
+      "media_banner",
+      "media_gallery",
+      "media_richtext",
+      "place_entity",
+      "rt_bold",
+      "rt_hard_breaks",
+      "rt_italic",
+      "rt_link"
+    ],
+    "1177": [
+      "embed_twitter",
+      "embed_video",
+      "flag_global",
+      "has_category",
+      "lang_urdu",
+      "media_banner",
+      "media_medium",
+      "place_region",
+      "pull_quote_embed"
+    ],
+    "3288": [
+      "has_department",
+      "has_share_targets",
+      "link_document",
+      "link_external",
+      "link_internal",
+      "media_banner",
+      "media_gallery",
+      "media_pdf",
+      "media_richtext",
+      "place_entity-department",
+      "rt_hard_breaks",
+      "rt_heading",
+      "rt_inline_image",
+      "rt_link",
+      "rt_table"
+    ],
+    "1534": [
+      "entity_recovered",
+      "flag_global",
+      "has_banner_caption",
+      "has_category",
+      "has_share_targets",
+      "media_banner",
+      "media_video_file",
+      "place_entity",
+      "pull_quote_richtext",
+      "rt_ordered_list"
+    ],
+    "3134": [
+      "char_accented",
+      "char_currency_symbol",
+      "flag_global",
+      "media_banner",
+      "place_global",
+      "rt_bullet_list"
+    ],
+    "3252": [
+      "flag_global",
+      "has_share_targets",
+      "link_internal",
+      "media_none",
+      "place_global",
+      "rt_italic",
+      "rt_link",
+      "rt_superscript"
+    ],
+    "760": [
+      "has_category",
+      "media_banner",
+      "place_region",
+      "rt_blockquote",
+      "size_very_short"
+    ],
+    "1761": [
+      "entity_recovered",
+      "flag_global",
+      "has_banner_caption",
+      "has_department",
+      "has_share_targets",
+      "link_document",
+      "link_external",
+      "media_banner",
+      "media_gif",
+      "media_medium",
+      "place_entity-department",
+      "rt_bold",
+      "rt_link"
+    ],
+    "2536": [
+      "char_accented",
+      "char_bullet_ellipsis",
+      "embed_video",
+      "flag_global",
+      "has_banner_caption",
+      "link_external",
+      "media_banner",
+      "place_region",
+      "pull_quote_embed",
+      "rt_hard_breaks",
+      "rt_heading",
+      "rt_link"
+    ],
+    "2664": [
+      "char_accented",
+      "char_transliteration",
+      "has_subtitle",
+      "link_external",
+      "link_internal",
+      "media_banner",
+      "place_entity",
+      "rt_bold",
+      "rt_hard_breaks",
+      "rt_heading",
+      "rt_italic",
+      "rt_link"
+    ],
+    "1711": [
+      "embed_video",
+      "flag_global",
+      "has_category",
+      "link_internal",
+      "media_banner",
+      "media_doc",
+      "media_richtext",
+      "place_region",
+      "rt_link"
+    ],
+    "357": [
+      "has_banner_caption",
+      "has_category",
+      "has_subtitle",
+      "media_banner",
+      "place_region",
+      "rt_bold",
+      "rt_bullet_list",
+      "size_very_long"
+    ],
+    "1673": [
+      "has_category",
+      "link_external",
+      "media_banner",
+      "media_thumbnail",
+      "place_entity",
+      "rt_italic",
+      "rt_link"
+    ],
+    "3286": [
+      "char_greek",
+      "flag_global",
+      "has_department",
+      "has_share_targets",
+      "media_banner",
+      "place_entity-department"
+    ],
+    "1752": [
+      "entity_recovered",
+      "flag_global",
+      "has_share_targets",
+      "link_document",
+      "media_banner",
+      "media_gif",
+      "media_pdf",
+      "media_richtext",
+      "place_entity",
+      "rt_link"
+    ],
+    "2160": [
+      "flag_global",
+      "media_richtext",
+      "place_entity",
+      "rt_bold",
+      "rt_inline_image",
+      "rt_italic",
+      "rt_ordered_list",
+      "rt_superscript"
+    ],
+    "1160": [
+      "embed_twitter",
+      "flag_global",
+      "has_banner_caption",
+      "has_category",
+      "lang_urdu",
+      "link_internal",
+      "media_banner",
+      "place_region",
+      "pull_quote_embed",
+      "rt_italic",
+      "rt_link"
+    ],
+    "1941": [
+      "has_banner_caption",
+      "has_department",
+      "has_subtitle",
+      "link_document",
+      "link_external",
+      "media_banner",
+      "media_pdf",
+      "media_richtext",
+      "media_video_file",
+      "place_entity-department",
+      "rt_link"
+    ],
+    "3405": [
+      "link_external",
+      "link_internal",
+      "media_gallery",
+      "media_richtext",
+      "place_global",
+      "rt_bold",
+      "rt_hard_breaks",
+      "rt_inline_image",
+      "rt_italic",
+      "rt_link"
+    ],
+    "3236": [
+      "embed_video",
+      "entity_recovered",
+      "flag_global",
+      "has_share_targets",
+      "link_document",
+      "link_external",
+      "link_internal",
+      "media_pdf",
+      "media_richtext",
+      "place_global",
+      "rt_italic",
+      "rt_link"
+    ]
+  },
+  "uncovered": [],
+  "stats": {
+    "2198": {
+      "chars": 5095,
+      "media": 6,
+      "links": 11,
+      "nodes": {
+        "paragraph": 16,
+        "text": 44,
+        "hard_break": 12
+      },
+      "marks": {
+        "link": 11,
+        "bold": 7,
+        "italic": 1
+      },
+      "link_kinds": {
+        "internal": 6,
+        "external": 4,
+        "document": 1
+      },
+      "images": []
+    },
+    "1177": {
+      "chars": 3924,
+      "media": 2,
+      "links": 0,
+      "nodes": {
+        "paragraph": 15,
+        "text": 15,
+        "blok": 1
+      },
+      "marks": {},
+      "link_kinds": {},
+      "images": []
+    },
+    "3288": {
+      "chars": 9886,
+      "media": 10,
+      "links": 10,
+      "nodes": {
+        "heading": 5,
+        "text": 42,
+        "hard_break": 17,
+        "paragraph": 23,
+        "image": 4,
+        "table": 1,
+        "tableRow": 1,
+        "tableCell": 4
+      },
+      "marks": {
+        "link": 10
+      },
+      "link_kinds": {
+        "external": 8,
+        "document": 1,
+        "internal": 1
+      },
+      "images": [
+        "/news-media/3288-richtext-24ed831f87-AKU-Leadership-Conference.jpg",
+        "/news-media/3288-richtext-4aeb9659f9-AKU-AKUH-BMI-Conference1.jpg",
+        "/news-media/3288-richtext-8c65b33365-AKU-AKUH-BMI-Conference-Multiresearch-interaction.jpg",
+        "/news-media/3288-richtext-e61a8ab342-AKU-AKUH-BMI-Conference-Investment-case.jpg"
+      ]
+    },
+    "1534": {
+      "chars": 10479,
+      "media": 2,
+      "links": 0,
+      "nodes": {
+        "paragraph": 30,
+        "text": 30,
+        "ordered_list": 1,
+        "list_item": 3
+      },
+      "marks": {},
+      "link_kinds": {},
+      "images": []
+    },
+    "3134": {
+      "chars": 3962,
+      "media": 1,
+      "links": 0,
+      "nodes": {
+        "paragraph": 15,
+        "text": 15,
+        "hard_break": 4,
+        "bullet_list": 1,
+        "list_item": 6
+      },
+      "marks": {},
+      "link_kinds": {},
+      "images": []
+    },
+    "3252": {
+      "chars": 2793,
+      "media": 0,
+      "links": 1,
+      "nodes": {
+        "paragraph": 8,
+        "text": 12,
+        "hard_break": 2
+      },
+      "marks": {
+        "link": 1,
+        "superscript": 1,
+        "italic": 1
+      },
+      "link_kinds": {
+        "internal": 1
+      },
+      "images": []
+    },
+    "760": {
+      "chars": 248,
+      "media": 1,
+      "links": 0,
+      "nodes": {
+        "paragraph": 2,
+        "text": 1,
+        "blockquote": 3,
+        "hard_break": 1
+      },
+      "marks": {},
+      "link_kinds": {},
+      "images": []
+    },
+    "1761": {
+      "chars": 5484,
+      "media": 2,
+      "links": 3,
+      "nodes": {
+        "paragraph": 16,
+        "text": 22
+      },
+      "marks": {
+        "link": 3,
+        "bold": 3
+      },
+      "link_kinds": {
+        "document": 1,
+        "external": 2
+      },
+      "images": []
+    },
+    "2536": {
+      "chars": 10387,
+      "media": 1,
+      "links": 2,
+      "nodes": {
+        "paragraph": 24,
+        "text": 32,
+        "hard_break": 7,
+        "heading": 4
+      },
+      "marks": {
+        "link": 2
+      },
+      "link_kinds": {
+        "external": 2
+      },
+      "images": []
+    },
+    "2664": {
+      "chars": 2394,
+      "media": 1,
+      "links": 4,
+      "nodes": {
+        "paragraph": 10,
+        "hard_break": 10,
+        "text": 46,
+        "heading": 1
+      },
+      "marks": {
+        "italic": 18,
+        "link": 4,
+        "bold": 2
+      },
+      "link_kinds": {
+        "external": 2,
+        "internal": 2
+      },
+      "images": []
+    },
+    "1711": {
+      "chars": 4359,
+      "media": 2,
+      "links": 1,
+      "nodes": {
+        "paragraph": 15,
+        "text": 17,
+        "blok": 1
+      },
+      "marks": {
+        "link": 1
+      },
+      "link_kinds": {
+        "internal": 1
+      },
+      "images": []
+    },
+    "357": {
+      "chars": 15932,
+      "media": 1,
+      "links": 0,
+      "nodes": {
+        "paragraph": 44,
+        "text": 44,
+        "hard_break": 1,
+        "bullet_list": 1,
+        "list_item": 7
+      },
+      "marks": {
+        "bold": 5
+      },
+      "link_kinds": {},
+      "images": []
+    },
+    "1673": {
+      "chars": 3303,
+      "media": 2,
+      "links": 1,
+      "nodes": {
+        "paragraph": 12,
+        "text": 14
+      },
+      "marks": {
+        "link": 1,
+        "italic": 1
+      },
+      "link_kinds": {
+        "external": 1
+      },
+      "images": []
+    },
+    "3286": {
+      "chars": 3856,
+      "media": 1,
+      "links": 0,
+      "nodes": {
+        "paragraph": 9,
+        "text": 9,
+        "hard_break": 1
+      },
+      "marks": {},
+      "link_kinds": {},
+      "images": []
+    },
+    "1752": {
+      "chars": 1842,
+      "media": 3,
+      "links": 2,
+      "nodes": {
+        "paragraph": 7,
+        "text": 11
+      },
+      "marks": {
+        "link": 2
+      },
+      "link_kinds": {
+        "document": 2
+      },
+      "images": []
+    },
+    "2160": {
+      "chars": 3510,
+      "media": 1,
+      "links": 0,
+      "nodes": {
+        "paragraph": 13,
+        "text": 20,
+        "image": 1,
+        "ordered_list": 1,
+        "list_item": 4,
+        "hard_break": 2
+      },
+      "marks": {
+        "italic": 2,
+        "superscript": 2,
+        "bold": 5
+      },
+      "link_kinds": {},
+      "images": [
+        "/news-media/2160-richtext-dbdc402af4-Graph---FSS.png"
+      ]
+    },
+    "1160": {
+      "chars": 4473,
+      "media": 1,
+      "links": 2,
+      "nodes": {
+        "paragraph": 14,
+        "text": 18
+      },
+      "marks": {
+        "link": 2,
+        "italic": 1
+      },
+      "link_kinds": {
+        "internal": 2
+      },
+      "images": []
+    },
+    "1941": {
+      "chars": 3323,
+      "media": 3,
+      "links": 3,
+      "nodes": {
+        "paragraph": 4,
+        "text": 12,
+        "hard_break": 2
+      },
+      "marks": {
+        "link": 3
+      },
+      "link_kinds": {
+        "document": 1,
+        "external": 2
+      },
+      "images": []
+    },
+    "3405": {
+      "chars": 5657,
+      "media": 13,
+      "links": 2,
+      "nodes": {
+        "paragraph": 18,
+        "text": 27,
+        "hard_break": 22,
+        "image": 1
+      },
+      "marks": {
+        "bold": 3,
+        "link": 2,
+        "italic": 8
+      },
+      "link_kinds": {
+        "external": 1,
+        "internal": 1
+      },
+      "images": [
+        "/news-media/3405-richtext-25644d4383-WED_speakers.jpg"
+      ]
+    },
+    "3236": {
+      "chars": 2811,
+      "media": 1,
+      "links": 6,
+      "nodes": {
+        "paragraph": 10,
+        "text": 22,
+        "hard_break": 2,
+        "blok": 1
+      },
+      "marks": {
+        "link": 6,
+        "italic": 1
+      },
+      "link_kinds": {
+        "document": 2,
+        "external": 2,
+        "internal": 2
+      },
+      "images": []
+    }
+  }
+}
