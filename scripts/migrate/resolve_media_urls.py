@@ -225,11 +225,16 @@ def main():
                     help="GET each resolved image to confirm it loads")
     a = ap.parse_args()
 
+    # Always load the cache. --refresh means "re-fetch the stories I named", not
+    # "throw away everything already resolved": skipping the load here once wiped
+    # 731 resolved entries, because the run then saved only the 20 it touched.
     cache = {}
-    if os.path.exists(OUT) and not a.refresh:
+    if os.path.exists(OUT):
         with open(OUT, encoding="utf-8") as f:
             cache = json.load(f)
-        print(f"  cache has {len(cache)} stories")
+        print(f"  cache has {len(cache)} stories"
+              + ("  (--refresh: re-fetching the requested ones)"
+                 if a.refresh else ""))
 
     ids = []
     if a.ids:
