@@ -1,16 +1,16 @@
 {
   "name": "Treatment beyond the wards",
-  "parent_id": 203068490265483,
-  "group_id": "42e2fb9c-460f-4c21-9b3b-054b650327c3",
+  "parent_id": 200436757260291,
+  "group_id": "69fdd173-ab44-43fd-9408-4191c4729730",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:42.418Z",
+  "created_at": "2026-07-29T19:19:26.211Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:51.606Z",
-  "published_at": "2026-07-29T08:22:51.589Z",
-  "id": 203068712661913,
-  "uuid": "f2445449-6b18-4f77-9c66-0d86613bd9da",
+  "updated_at": "2026-07-29T19:19:26.289Z",
+  "published_at": "2026-07-29T19:19:26.276Z",
+  "id": 203420328830254,
+  "uuid": "7a2b7c37-4275-4375-8573-0ee66e3c09f1",
   "is_folder": false,
   "content": {
     "_uid": "32142062-1cc4-426e-f607-9dc1a9c42a1f",
@@ -20,36 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "The Aga Khan University Hospital (AKUH), Nairobi, ",
-                  "type": "text"
-                },
-                {
-                  "text": "Princess Zahra Pavilion",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "link",
-                      "attrs": {
-                        "href": "https://hospitals.aku.edu/nairobi/ServicesAndFacilities/Pages/Princess%20Zahra%20Pavilion.aspx",
-                        "uuid": null,
-                        "anchor": null,
-                        "custom": {},
-                        "target": "_blank",
-                        "linktype": "url"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": " (PZP) is a premier inpatient facility that has been specifically designed to provide patients with a comfortable healing environment.  PZP has 61 private rooms with a choice of three options: Standard Room, VIP Room, and Executive Suites, all equipped with advanced medical technology.",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -537,34 +507,174 @@
         },
         "pattern_height": "500",
         "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "3974d413-1378-4bba-11c9-5dab1a8cf8cb",
+        "type": "gallery",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203419452116060,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/23533/9886b95dfc/2198-richtext-b6e13503fd-building-materials.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203419411905619,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/14875/2377271c3e/2198-richtext-30a7d3f242-incorporation-of-nature.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203419465989213,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/15184/0e3077c997/2198-richtext-9a9aeafda4-octogram-title.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203419425270869,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/7576/174e32afd3/2198-richtext-568bbe432c-octogram-dado-rail.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203419438492759,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/14653/a0995e816f/2198-richtext-951df23f19-octogram-reception-lobby.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "gallery_layout": "simple",
+        "pattern_height": "",
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": "",
+        "pattern_mobile_height": ""
       }
     ],
     "date": "Mar 18, 2020",
     "title": "Treatment beyond the wards",
     "author": "ashnar.dholakia",
-    "entities": "east-africa-institute",
+    "entities": [
+      "203313683827810"
+    ],
     "isGlobal": false,
     "component": "news_article",
     "languages": [],
-    "read_time": "5 min read",
-    "show_share": true,
-    "description": "Gardens, proportionate windows, building materials and patterns in hospitals influence patient healing.",
-    "show_social": true,
-    "banner_image": {
-      "id": 203258307489944,
-      "alt": "Treatment beyond the wards",
-      "name": "",
-      "focus": "",
-      "title": "Hospital windows in AKUH's Princess Zahra Pavillion facing the octagram-shaped fountain in the courtyard",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/289824742951963/750974/183ba1b16a/2198-bannerimage.jpg",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
-    },
-    "show_similar": true,
-    "background_pattern": {
+    "read_time": "6 min read",
+    "thumbnail": {
       "id": null,
       "alt": "",
       "name": "",
@@ -576,21 +686,51 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
-    "social_show_header": true,
+    "show_share": true,
+    "description": "The Aga Khan University Hospital (AKUH), Nairobi,  Princess Zahra Pavilion  (PZP) is a premier inpatient facility that has been specifically designed to provide patients with a comfortable healing environment.  PZP has 61 private rooms with a choice of three options: Standard Room, VIP Room, and Executive Suites, all equipped with advanced medical technology.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203419395439698,
+      "alt": "Treatment beyond the wards",
+      "name": "",
+      "focus": "",
+      "title": "Hospital windows in AKUH's Princess Zahra Pavillion facing the octagram-shaped fountain in the courtyard",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/750974/4e27840a5e/2198-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "treatment-beyond-the-wards",
   "path": null,
-  "full_slug": "news/rabee/treatment-beyond-the-wards",
+  "full_slug": "news/treatment-beyond-the-wards",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -598,8 +738,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c1480f4806d93afda5d00da8c88a3a2b0a47931",
-    "timestamp": "1785322300"
+    "token": "34f59728810dca58ae30ef069ddaadb814d36ca3",
+    "timestamp": "1785352814"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -612,21 +752,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:42.490Z",
+  "first_published_at": "2026-07-29T19:19:26.276Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -639,30 +769,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 80,
+  "position": -130,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258968222090,
+  "current_version_id": 203420329000156,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068712661913,
+    "story_id": 203420328830254,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:42.444Z",
+    "created_at": "2026-07-29T19:19:26.233Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068712661913,
+      "story_id": 203420328830254,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:42.444Z",
+      "created_at": "2026-07-29T19:19:26.233Z",
       "language": null
     }
   ],

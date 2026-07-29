@@ -1,16 +1,16 @@
 {
   "name": "Increased investment in nursing key to achieving health for all",
-  "parent_id": 203068490265483,
-  "group_id": "6f000977-801b-40d3-a088-fdb0e941fef9",
+  "parent_id": 200436757260291,
+  "group_id": "7ef0c59e-631a-4ef8-957b-7a101bd32353",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:38.034Z",
+  "created_at": "2026-07-29T19:19:21.762Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:47.962Z",
-  "published_at": "2026-07-29T08:22:47.948Z",
-  "id": 203068694705045,
-  "uuid": "852633c5-98dc-4a80-a1eb-fd06ba0c628f",
+  "updated_at": "2026-07-29T19:19:21.847Z",
+  "published_at": "2026-07-29T19:19:21.834Z",
+  "id": 203420310614509,
+  "uuid": "b947cb70-6f0a-4ff0-8e98-e404bfdce997",
   "is_folder": false,
   "content": {
     "_uid": "0ee11165-cd5e-ffec-62a4-c58d0c28985a",
@@ -20,15 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "Countries that invest in and develop their nursing and midwifery workforce can achieve a rapid, cost-effective expansion of high-quality universal healthcare (UHC). ",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -292,8 +283,27 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "e30dde3f-fa34-7d91-e3ac-a63f24470b82",
-        "type": "image",
+        "_uid": "bf9c8785-afd2-a462-30b2-09bcc7f56372",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419205004358,
+          "alt": "Increased investment in nursing key to achieving health for all",
+          "name": "",
+          "focus": "",
+          "title": "The authors of the report: Dr Charlotte Refsum, (left), Lord Nigel Crisp (middle) and AKU's Professor Sharon Brownie (right) at the WISH 2018 summit.",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/984668/a2746854d0/1761-bannerimage.gif",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
         "title": "",
         "spacing": {
           "unit": "px",
@@ -306,8 +316,8 @@
             },
             "padding": {
               "top": null,
-              "left": null,
-              "right": null,
+              "left": 20,
+              "right": 20,
               "bottom": null
             }
           },
@@ -320,104 +330,29 @@
             },
             "padding": {
               "top": null,
-              "left": null,
-              "right": null,
+              "left": 80,
+              "right": 80,
               "bottom": null
             }
           }
         },
-        "cta_link": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "auto_play": false,
-        "component": "media_section",
+        "variant": "image",
+        "component": "image",
         "cta_label": "",
-        "highlight": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "video_url": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "bg_pattern": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": "The authors of the report: Dr Charlotte Refsum, (left), Lord Nigel Crisp (middle) and AKU's Professor Sharon Brownie (right) at the WISH 2018 summit. ",
-        "media_cards": [],
-        "video_title": "",
-        "show_controls": true,
-        "gallery_images": [
-          {
-            "id": 203258161696910,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/984668/b3a1c94e6b/1761-bannerimage.gif",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          }
-        ],
-        "pattern_opacity": false,
-        "pattern_position": "top",
-        "video_description": ""
+        "description": ""
       }
     ],
     "date": "Nov 13, 2018",
     "title": "Increased investment in nursing key to achieving health for all",
     "author": "stephen.musyoka",
-    "entities": "school-of-nursing-and-midwifery",
+    "entities": [
+      "203313696783474"
+    ],
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
     "read_time": "4 min read",
-    "show_share": true,
-    "description": "Professor Brownie, Dean of SONAM in East Africa, is one of the co-authors of the report.",
-    "show_social": true,
-    "banner_image": {
-      "id": 203258161696910,
-      "alt": "Increased investment in nursing key to achieving health for all",
-      "name": "",
-      "focus": "",
-      "title": "The report has been published in coordination with the Nursing Now campaign, which has a three-year mission to promote and empower nurses and midwives worldwide. Photo courtesy: @WISHQatar",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/289824742951963/984668/b3a1c94e6b/1761-bannerimage.gif",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
-    },
-    "show_similar": true,
-    "background_pattern": {
+    "thumbnail": {
       "id": null,
       "alt": "",
       "name": "",
@@ -429,21 +364,51 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
-    "social_show_header": true,
+    "show_share": true,
+    "description": "Countries that invest in and develop their nursing and midwifery workforce can achieve a rapid, cost-effective expansion of high-quality universal healthcare (UHC).",
+    "show_social": false,
+    "banner_image": {
+      "id": 203419205004358,
+      "alt": "Increased investment in nursing key to achieving health for all",
+      "name": "",
+      "focus": "",
+      "title": "The report has been published in coordination with the Nursing Now campaign, which has a three-year mission to promote and empower nurses and midwives worldwide. Photo courtesy: @WISHQatar",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/984668/a2746854d0/1761-bannerimage.gif",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "increased-investment-in-nursing-key-to-achieving-health-for-all",
   "path": null,
-  "full_slug": "news/rabee/increased-investment-in-nursing-key-to-achieving-health-for-all",
+  "full_slug": "news/increased-investment-in-nursing-key-to-achieving-health-for-all",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -451,8 +416,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "41f4bff1f8b6d8a704bb1026ffdc28f194e9a665",
-    "timestamp": "1785322301"
+    "token": "2b114b8a49f8608e39de2836e474e1c0639e12a6",
+    "timestamp": "1785352815"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -465,21 +430,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:38.101Z",
+  "first_published_at": "2026-07-29T19:19:21.834Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -492,30 +447,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 110,
+  "position": -100,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258953337208,
+  "current_version_id": 203420310785236,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068694705045,
+    "story_id": 203420310614509,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:38.060Z",
+    "created_at": "2026-07-29T19:19:21.785Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068694705045,
+      "story_id": 203420310614509,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:38.060Z",
+      "created_at": "2026-07-29T19:19:21.785Z",
       "language": null
     }
   ],

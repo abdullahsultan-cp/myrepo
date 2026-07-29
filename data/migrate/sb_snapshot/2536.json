@@ -1,16 +1,16 @@
 {
   "name": "New estimates reveal extent of health burden of armed conflict",
-  "parent_id": 203068490265483,
-  "group_id": "6f598374-28ad-4b43-88a5-a61e02beee7e",
+  "parent_id": 200436757260291,
+  "group_id": "fb7dd6e4-f2d8-432b-b891-0021bc1a1f60",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:43.756Z",
+  "created_at": "2026-07-29T19:19:27.499Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:52.642Z",
-  "published_at": "2026-07-29T08:22:52.625Z",
-  "id": 203068718146459,
-  "uuid": "51f0e9da-14b9-444b-b74d-a2360d585509",
+  "updated_at": "2026-07-29T19:19:27.603Z",
+  "published_at": "2026-07-29T19:19:27.588Z",
+  "id": 203420334118383,
+  "uuid": "a3a42a7c-3a79-4440-b5ad-033bb8684725",
   "is_folder": false,
   "content": {
     "_uid": "65c86d94-2062-37cb-d928-0c745ba46907",
@@ -20,39 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "Armed conflicts are becoming increasingly complex and protracted and a growing threat to humanitarian access and the delivery of essential health services, affecting at least 630 million women and children-over 8% of the world's population-in 2017, according to \n      ",
-                  "type": "text"
-                },
-                {
-                  "text": "a new four-paper Series",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "link",
-                      "attrs": {
-                        "href": "https://www.thelancet.com/series/conflict-health",
-                        "uuid": null,
-                        "anchor": null,
-                        "custom": {},
-                        "target": "_blank",
-                        "linktype": "url"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": " exposing the far-reaching effects of modern warfare on women's and children's health, published today in The Lancet.",
-                  "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -397,26 +364,16 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "a39b7d87-03ab-8055-2ac9-f6c0b652a69c",
-        "content": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "blok",
-              "attrs": {
-                "body": [
-                  {
-                    "_uid": "142eaf7561345230",
-                    "provider": "youtube",
-                    "video_id": "O6MQ9o697YI",
-                    "component": "video_embed",
-                    "embed_url": "https://www.youtube.com/embed/O6MQ9o697YI"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "src": "https://www.youtube.com/embed/O6MQ9o697YI",
+        "_uid": "ab0c573a-2300-4853-b6cd-93920e2165c7",
+        "allow": "",
+        "title": "",
+        "height": "",
+        "caption": "",
+        "heading": "",
+        "loading": "lazy",
+        "rounded": true,
+        "sandbox": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -442,14 +399,15 @@
             },
             "padding": {
               "top": null,
-              "left": 176,
-              "right": 176,
+              "left": 80,
+              "right": 80,
               "bottom": null
             }
           }
         },
-        "component": "rich_text",
-        "bg_pattern": {
+        "component": "iframe",
+        "cta_label": "",
+        "thumbnail": {
           "id": null,
           "alt": "",
           "name": "",
@@ -461,36 +419,29 @@
           "fieldtype": "asset",
           "meta_data": {}
         },
-        "pattern_height": "500",
-        "pattern_mobile_height": "0"
+        "description": {
+          "type": "doc",
+          "content": []
+        },
+        "aspect_ratio": "16:9",
+        "display_mode": "inline",
+        "content_align": "left",
+        "referrer_policy": "",
+        "allow_fullscreen": true,
+        "show_play_overlay": true,
+        "show_external_link": false,
+        "external_link_label": ""
       }
     ],
     "date": "Jan 25, 2021",
     "title": "New estimates reveal extent of health burden of armed conflict",
     "author": "Rasool Sarang",
-    "entities": "",
+    "entities": [],
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
     "read_time": "7 min read",
-    "show_share": true,
-    "description": "The Lancet series on women's and children's health is led by Professor Zulfiqar Bhutta.",
-    "show_social": true,
-    "banner_image": {
-      "id": 203258392420539,
-      "alt": "New estimates reveal extent of health burden of armed conflict",
-      "name": "",
-      "focus": "",
-      "title": "The Lancet series on women's and children's health is led by Professor Zulfiqar Bhutta.",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/289824742951963/116238/c3537afbc3/2536-bannerimage.jpg",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
-    },
-    "show_similar": true,
-    "background_pattern": {
+    "thumbnail": {
       "id": null,
       "alt": "",
       "name": "",
@@ -502,21 +453,51 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
-    "social_show_header": true,
+    "show_share": true,
+    "description": "Armed conflicts are becoming increasingly complex and protracted and a growing threat to humanitarian access and the delivery of essential health services, affecting at least 630 million women and children-over 8% of the world's population-in 2017, according to \n       a new four-paper Series  exposing the far-reaching effects of modern warfare on women's and children's health, published today in The Lancet.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203419482057823,
+      "alt": "New estimates reveal extent of health burden of armed conflict",
+      "name": "",
+      "focus": "",
+      "title": "The Lancet series on women's and children's health is led by Professor Zulfiqar Bhutta.",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/116238/f7b5de5b2d/2536-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
   "path": null,
-  "full_slug": "news/rabee/new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
+  "full_slug": "news/new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -524,8 +505,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c1480f4806d93afda5d00da8c88a3a2b0a47931",
-    "timestamp": "1785322300"
+    "token": "34f59728810dca58ae30ef069ddaadb814d36ca3",
+    "timestamp": "1785352814"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -538,21 +519,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:43.828Z",
+  "first_published_at": "2026-07-29T19:19:27.588Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -565,30 +536,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 70,
+  "position": -140,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258972395918,
+  "current_version_id": 203420334349536,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068718146459,
+    "story_id": 203420334118383,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:43.785Z",
+    "created_at": "2026-07-29T19:19:27.526Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068718146459,
+      "story_id": 203420334118383,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:43.785Z",
+      "created_at": "2026-07-29T19:19:27.526Z",
       "language": null
     }
   ],

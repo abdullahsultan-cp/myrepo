@@ -1,16 +1,16 @@
 {
   "name": "QTL_net 'Walks the Talk' ",
-  "parent_id": 203068490265483,
-  "group_id": "18921390-0f11-4d0c-89d4-a1809ded4133",
+  "parent_id": 200436757260291,
+  "group_id": "efeaca56-e971-4895-9a65-ed1d91da137e",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:40.998Z",
+  "created_at": "2026-07-29T19:19:24.737Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:50.338Z",
-  "published_at": "2026-07-29T08:22:50.324Z",
-  "id": 203068706837400,
-  "uuid": "fb3eb16a-3033-4beb-b807-8e976a918159",
+  "updated_at": "2026-07-29T19:19:24.816Z",
+  "published_at": "2026-07-29T19:19:24.803Z",
+  "id": 203420322800829,
+  "uuid": "dd4001a7-adf4-47dd-9fd1-d6e7e84acb40",
   "is_folder": false,
   "content": {
     "_uid": "700282ef-8f3c-3883-1408-576462c976ad",
@@ -20,54 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "The Network of Quality, Teaching and Learning decided to 'walk the talk' and self-initiated a unit review at the end of its first 5-year strategic plan. A self-assessment was conducted, using the STLHE's (Society for Teaching and Learning in Higher Education) self-study guide on Centre Reviews (2018) and ACUE's (Association of College and University Educators) framework input measures, (",
-                  "type": "text"
-                },
-                {
-                  "text": "Proposed accountability method for evaluating the efficacy of faculty development and its impacts on student outcomes (2018)",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "text": ")., which included a faculty satisfaction survey (FSS).  This self-study report was a basis for the external peer-review which took place between 22",
-                  "type": "text"
-                },
-                {
-                  "text": "nd",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "superscript"
-                    }
-                  ]
-                },
-                {
-                  "text": " April and 1",
-                  "type": "text"
-                },
-                {
-                  "text": "st",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "superscript"
-                    }
-                  ]
-                },
-                {
-                  "text": " May 2019. The Canadian peer reviewers, well known leaders in the fields of education development (Deb Dawson, founding Director Teaching and Learning Centre, University of Western Ontario), teaching with technology (Janet Welch, Provost, Yukon College) and Quality Assurance (Art Quinney, Co-Chair Campus Alberta Quality Council) respectively, were appointed by the Provost. During their site visits to Pakistan and Kenya they met with over a 100 stakeholders at AKU, including faculty, staff, students and University leadership. They also received commentary on the self-study report from external reviewers in the UK (UCL and Advance HE) and Pakistan (LUMS).",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -103,14 +55,120 @@
                   "type": "text"
                 }
               ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
             },
-            {
-              "type": "image",
-              "attrs": {
-                "alt": "Graph - FSS.png",
-                "src": "/news-media/2160-richtext-dbdc402af4-Graph---FSS.png"
-              }
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
             },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "5027d253-5457-f718-f99b-c485247d3965",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419379379281,
+          "alt": "Graph - FSS.png",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/38910/09a8ae5a30/2160-richtext-dbdc402af4-graph-fss.png",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
+      },
+      {
+        "_uid": "38d37331-af3a-1a04-47c4-23fbfb77d463",
+        "content": {
+          "type": "doc",
+          "content": [
             {
               "type": "paragraph",
               "content": [
@@ -301,14 +359,28 @@
     "date": "Feb 26, 2020",
     "title": "QTL_net 'Walks the Talk' ",
     "author": "Anjiya Nuruddin",
-    "entities": "networks-of-quality-teaching-and-learning",
+    "entities": [
+      "203313675508754"
+    ],
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
     "read_time": "3 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
     "show_share": true,
-    "description": "The Network of Quality, Teaching and Learning decided to 'walk the talk' and self-initiated a unit review at the end of its first 5-year strategic plan",
-    "show_social": true,
+    "description": "The Network of Quality, Teaching and Learning decided to 'walk the talk' and self-initiated a unit review at the end of its first 5-year strategic plan. A self-assessment was conducted, using the STLHE's (Society for Teaching and Learning in Higher Education) self-study guide on Centre Reviews (2018) and ACUE's (Association of College and University Educators) framework input measures, ( Proposed accountability method for evaluating the efficacy of faculty development and its impacts on student outcomes (2018) )., which included a faculty satisfaction survey (FSS).  This self-study report was a basis for the external peer-review which took place between 22 nd  April and 1 st  May 2019. The Canadian peer reviewers, well known leaders in the fields of education development (Deb Dawson, founding Director Teaching and Learning Centre, University of Western Ontario), teaching with technology (Janet Welch, Provost, Yukon College) and Quality Assurance (Art Quinney, Co-Chair Campus Alberta Quality Council) respectively, were appointed by the Provost. During their site visits to Pakistan and Kenya they met with over a 100 stakeholders at AKU, including faculty, staff, students and University leadership. They also received commentary on the self-study report from external reviewers in the UK (UCL and Advance HE) and Pakistan (LUMS).",
+    "show_social": false,
     "banner_image": {
       "id": null,
       "alt": "",
@@ -323,32 +395,33 @@
     },
     "show_similar": true,
     "background_pattern": {
-      "id": null,
+      "id": 202607823391189,
       "alt": "",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
-    "social_show_header": true,
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "qtl-net-walks-the-talk",
   "path": null,
-  "full_slug": "news/rabee/qtl-net-walks-the-talk",
+  "full_slug": "news/qtl-net-walks-the-talk",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -356,8 +429,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c1480f4806d93afda5d00da8c88a3a2b0a47931",
-    "timestamp": "1785322300"
+    "token": "34f59728810dca58ae30ef069ddaadb814d36ca3",
+    "timestamp": "1785352814"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -370,21 +443,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:41.063Z",
+  "first_published_at": "2026-07-29T19:19:24.803Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -397,30 +460,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 90,
+  "position": -120,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258963077505,
+  "current_version_id": 203420322970840,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068706837400,
+    "story_id": 203420322800829,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:41.020Z",
+    "created_at": "2026-07-29T19:19:24.759Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068706837400,
+      "story_id": 203420322800829,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:41.020Z",
+      "created_at": "2026-07-29T19:19:24.759Z",
       "language": null
     }
   ],

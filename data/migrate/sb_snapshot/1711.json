@@ -1,16 +1,16 @@
 {
   "name": "Behind the scenes of the National Nutrition Survey",
-  "parent_id": 203068490265483,
-  "group_id": "4b575107-3299-4c4c-904c-377e6a4130fe",
+  "parent_id": 200436757260291,
+  "group_id": "6ff1a1b4-a8d4-49c0-9bbc-406d4b48640c",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:35.319Z",
+  "created_at": "2026-07-29T19:19:17.867Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:45.842Z",
-  "published_at": "2026-07-29T08:22:45.829Z",
-  "id": 203068683580307,
-  "uuid": "492fbf97-0798-4d47-bcc5-78578d0e5760",
+  "updated_at": "2026-07-29T19:19:17.967Z",
+  "published_at": "2026-07-29T19:19:17.953Z",
+  "id": 203420294672290,
+  "uuid": "e6f11e71-5b15-4f09-ae9c-a7bd060303d3",
   "is_folder": false,
   "content": {
     "_uid": "e6f2e22a-3951-1ae1-e2d0-c2e70983dffc",
@@ -20,36 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "It's been six months since the launch of field work on the 2018 National Nutrition Survey (NNS), \n      ",
-                  "type": "text"
-                },
-                {
-                  "text": "Pakistan's largest-ever survey",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "link",
-                      "attrs": {
-                        "href": "https://www.aku.edu/news/https://www.aku.edu/news/Pages/News_Details.aspx?nid=NEWS-001450",
-                        "uuid": null,
-                        "anchor": null,
-                        "custom": {},
-                        "target": "_blank",
-                        "linktype": "url"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": " into the health and nutrition status of its women and children. To date, research teams have gathered data at the doorsteps of over 28,000 homes across the country but they are facing an unusual challenge in the country's most populous city, Karachi. ",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -369,29 +339,12 @@
     "date": "Sep 10, 2018",
     "title": "Behind the scenes of the National Nutrition Survey",
     "author": "Muhammad Altamash",
-    "entities": "",
+    "entities": [],
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
     "read_time": "4 min read",
-    "show_share": true,
-    "description": "Find out how our field teams are developing creative solutions to real research challenges.",
-    "show_social": true,
-    "banner_image": {
-      "id": 203258090303620,
-      "alt": "Behind the scenes of the National Nutrition Survey",
-      "name": "",
-      "focus": "",
-      "title": "",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/289824742951963/71646/1f4f6ac2f4/1711-bannerimage.jpg",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
-    },
-    "show_similar": true,
-    "background_pattern": {
+    "thumbnail": {
       "id": null,
       "alt": "",
       "name": "",
@@ -403,21 +356,51 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
-    "social_show_header": true,
+    "show_share": true,
+    "description": "It's been six months since the launch of field work on the 2018 National Nutrition Survey (NNS), \n       Pakistan's largest-ever survey  into the health and nutrition status of its women and children. To date, research teams have gathered data at the doorsteps of over 28,000 homes across the country but they are facing an unusual challenge in the country's most populous city, Karachi.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203419134999616,
+      "alt": "Behind the scenes of the National Nutrition Survey",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/71646/4b0cbc0471/1711-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "behind-the-scenes-of-the-national-nutrition-survey",
   "path": null,
-  "full_slug": "news/rabee/behind-the-scenes-of-the-national-nutrition-survey",
+  "full_slug": "news/behind-the-scenes-of-the-national-nutrition-survey",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -425,8 +408,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "71218bb52da44872347354433e396016532d3577",
-    "timestamp": "1785322302"
+    "token": "119a833c6a3463e06df88035a4f29a104daa5e00",
+    "timestamp": "1785352816"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -439,21 +422,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:35.387Z",
+  "first_published_at": "2026-07-29T19:19:17.953Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -466,30 +439,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 130,
+  "position": -80,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258944678249,
+  "current_version_id": 203420294909134,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068683580307,
+    "story_id": 203420294672290,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:35.342Z",
+    "created_at": "2026-07-29T19:19:17.890Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068683580307,
+      "story_id": 203420294672290,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:35.342Z",
+      "created_at": "2026-07-29T19:19:17.890Z",
       "language": null
     }
   ],

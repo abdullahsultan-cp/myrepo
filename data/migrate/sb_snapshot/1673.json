@@ -1,16 +1,16 @@
 {
   "name": "Fulbright scholar returns to his roots",
-  "parent_id": 203068490265483,
-  "group_id": "51ac675a-9c56-4ec7-b7a1-650212436c89",
+  "parent_id": 200436757260291,
+  "group_id": "ab36a966-ae06-427d-aadb-97e42b2a7e71",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:33.811Z",
+  "created_at": "2026-07-29T19:19:16.319Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:44.754Z",
-  "published_at": "2026-07-29T08:22:44.741Z",
-  "id": 203068677424018,
-  "uuid": "9623ab07-697f-43c7-a542-01e4fca57549",
+  "updated_at": "2026-07-29T19:19:16.406Z",
+  "published_at": "2026-07-29T19:19:16.391Z",
+  "id": 203420288323265,
+  "uuid": "0abfa137-4be4-470e-ae68-4a03569982a1",
   "is_folder": false,
   "content": {
     "_uid": "d553be3a-b366-5e1e-d0d5-dd779001de5a",
@@ -20,15 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "From a remote village in Gilgit-Baltistan to Oxford University in England and the University of Massachusetts, Amherst, (UMass Amherst) in the United States; Dr Haji Karim Khan has travelled the world to become a better teacher. ",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -207,14 +198,28 @@
     "date": "May 04, 2018",
     "title": "Fulbright scholar returns to his roots",
     "author": "Safina Kousar",
-    "entities": "institute-for-educational-development",
+    "entities": [
+      "203313671322588"
+    ],
     "isGlobal": false,
     "component": "news_article",
     "languages": [],
     "read_time": "3 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
     "show_share": true,
-    "description": "Starting his journey at IED as an MEd student, Dr Haji Karim has travelled the world to become a better teacher.",
-    "show_social": true,
+    "description": "From a remote village in Gilgit-Baltistan to Oxford University in England and the University of Massachusetts, Amherst, (UMass Amherst) in the United States; Dr Haji Karim Khan has travelled the world to become a better teacher.",
+    "show_social": false,
     "banner_image": {
       "id": null,
       "alt": "",
@@ -229,32 +234,33 @@
     },
     "show_similar": true,
     "background_pattern": {
-      "id": null,
+      "id": 202607823391189,
       "alt": "",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
-    "social_show_header": true,
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "fulbright-scholar-returns-to-his-roots-1673",
   "path": null,
-  "full_slug": "news/rabee/fulbright-scholar-returns-to-his-roots-1673",
+  "full_slug": "news/fulbright-scholar-returns-to-his-roots-1673",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -262,8 +268,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "71218bb52da44872347354433e396016532d3577",
-    "timestamp": "1785322302"
+    "token": "119a833c6a3463e06df88035a4f29a104daa5e00",
+    "timestamp": "1785352816"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -276,21 +282,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:33.878Z",
+  "first_published_at": "2026-07-29T19:19:16.391Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -303,30 +299,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 140,
+  "position": -70,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258940189019,
+  "current_version_id": 203420288511179,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068677424018,
+    "story_id": 203420288323265,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:33.837Z",
+    "created_at": "2026-07-29T19:19:16.344Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068677424018,
+      "story_id": 203420288323265,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:33.837Z",
+      "created_at": "2026-07-29T19:19:16.344Z",
       "language": null
     }
   ],

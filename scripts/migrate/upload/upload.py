@@ -261,20 +261,67 @@ def assets_for(sid):
             for r in rows}
 
 
+def entity_folder_ids():
+    """{(region_slug, entity_slug): folder_id} from the live-tree snapshot.
+
+    `entities` on news_article is a list of entity FOLDER IDS, so the ids have
+    to come from the space rather than be derived. dump_sb_tree.py writes the
+    snapshot; it is read here rather than re-fetched so a story upload cannot
+    silently depend on a live listing call.
+    """
+    p = os.path.join(BASE, "data", "migrate", "sb_folder_tree.json")
+    if not os.path.exists(p):
+        sys.exit("missing data/migrate/sb_folder_tree.json — run\n"
+                 "  python scripts/migrate/review/dump_sb_tree.py")
+    with open(p, encoding="utf-8") as f:
+        folders = json.load(f)["folders"]
+    out = {}
+    for x in folders:
+        parts = x["full_slug"].split("/")
+        # regions/<region>/entities/<entity>
+        if len(parts) == 4 and parts[0] == "regions" and parts[2] == "entities":
+            out[(parts[1], parts[3])] = x["id"]
+    return out
+
+
+def entities_for(sid, region, entity, folder_ids, warn):
+    """The story's own entity folder plus every entity it is shared into."""
+    ids, seen = [], set()
+
+    def add(reg, ent):
+        if not reg or not ent:
+            return
+        key = (slugify(reg), slugify(ent))
+        fid = folder_ids.get(key)
+        if fid is None:
+            warn.append(f"no entity folder for {key[0]}/{key[1]}")
+            return
+        if fid not in seen:
+            seen.add(fid)
+            ids.append(fid)
+
+    add(region, entity)
+    with tracking.connect() as c:
+        c.execute("SET search_path TO migration, public")
+        for reg, ent in c.execute("""SELECT ref_region, ref_entity
+                                     FROM share_target
+                                     WHERE sharepoint_id=%s""",
+                                  (sid,)).fetchall():
+            add(reg, ent)
+    return ids
+
+
 def cmd_stories(sb, args, run_id):
     folder_cache = {}
     parent_id = ensure_folder(sb, args.folder, folder_cache)
+    folder_ids = entity_folder_ids()
+    print(f"  {len(folder_ids)} entity folders available for 'entities'")
 
     with tracking.connect() as c:
         c.execute("SET search_path TO migration, public")
-        q = """SELECT sharepoint_id, title, entity, entity_short, target_slug,
-                      sb_story_id, payload_hash
-               FROM story
-               WHERE (%s OR is_sample)
-                 AND status <> 'uploaded' OR sb_story_id IS NOT NULL
-               ORDER BY sharepoint_id"""
-        rows = c.execute("""SELECT sharepoint_id, title, entity, entity_short,
-                                   target_slug, sb_story_id, payload_hash
+        rows = c.execute("""SELECT sharepoint_id, title, region, entity,
+                                   target_slug, sb_story_id, payload_hash,
+                                   surface_global
                             FROM story WHERE (%s OR is_sample)
                             ORDER BY sharepoint_id""",
                          (args.all_stories,)).fetchall()
@@ -285,7 +332,8 @@ def cmd_stories(sb, args, run_id):
         rows = rows[:args.limit]
 
     ok = fail = skipped = 0
-    for sid, title, entity, short, slug, sb_id, old_hash in rows:
+    for (sid, title, region, entity, slug, sb_id, old_hash,
+         surface_global) in rows:
         try:
             st = load_story(sid)
         except FileNotFoundError:
@@ -293,9 +341,11 @@ def cmd_stories(sb, args, run_id):
             fail += 1
             continue
 
-        entity_slug = slugify(entity) if entity else ""
+        warns = []
+        ents = entities_for(sid, region, entity, folder_ids, warns)
         content, warns = build(st, None, assets=assets_for(sid),
-                               entity_slug=entity_slug)
+                               entities=ents, is_global=bool(surface_global),
+                               warn=warns)
         slug = slug or slugify(title) or f"news-{sid}"
         payload = {"story": {"name": content["title"][:255], "slug": slug,
                              "parent_id": parent_id, "content": content},

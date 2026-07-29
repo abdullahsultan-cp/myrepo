@@ -1,16 +1,16 @@
 {
   "name": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
-  "parent_id": 203068490265483,
-  "group_id": "61fbe796-60e2-4071-a402-729b323203a5",
+  "parent_id": 200436757260291,
+  "group_id": "5fe375ee-f158-4bc6-b2d8-6d45a629041b",
   "alternates": [],
-  "created_at": "2026-07-28T19:27:49.663Z",
+  "created_at": "2026-07-29T19:19:13.433Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:42.741Z",
-  "published_at": "2026-07-29T08:22:42.725Z",
-  "id": 203068496569228,
-  "uuid": "2ce61664-1585-452e-bf18-112196e01240",
+  "updated_at": "2026-07-29T19:19:13.518Z",
+  "published_at": "2026-07-29T19:19:13.504Z",
+  "id": 203420276514195,
+  "uuid": "e3b78d18-a50e-4e97-aaac-35f3f20feb2c",
   "is_folder": false,
   "content": {
     "_uid": "a79f549a-9f84-c244-1a44-cc59358d6959",
@@ -20,15 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "The \n   ",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -149,6 +140,65 @@
         },
         "pattern_height": "500",
         "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "31fad168-04e3-092b-c09e-944b90e40e7f",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419106511934,
+          "alt": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/143474/c559341ac6/1177-mediumimage.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
       },
       {
         "_uid": "63a8e1e8-0129-0cac-2bc0-c184dafbf31d",
@@ -345,24 +395,16 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "86161a3b-4f2e-c71e-2baf-bda46867dd1c",
-        "content": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "blok",
-              "attrs": {
-                "body": [
-                  {
-                    "_uid": "3d61dec8d37b5a04",
-                    "component": "twitter_embed",
-                    "tweet_url": "https://twitter.com/i/status/836649650140557312"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "src": "https://twitter.com/i/status/836649650140557312",
+        "_uid": "0eb4cf74-418e-6f75-c394-9f329a2ee1c2",
+        "allow": "",
+        "title": "",
+        "height": "",
+        "caption": "",
+        "heading": "",
+        "loading": "lazy",
+        "rounded": true,
+        "sandbox": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -388,74 +430,14 @@
             },
             "padding": {
               "top": null,
-              "left": 176,
-              "right": 176,
+              "left": 80,
+              "right": 80,
               "bottom": null
             }
           }
         },
-        "component": "rich_text",
-        "bg_pattern": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "pattern_height": "500",
-        "pattern_mobile_height": "0"
-      },
-      {
-        "_uid": "14d1054d-a52b-fb5c-9623-3b7732476a13",
-        "type": "image",
-        "title": "",
-        "spacing": {
-          "unit": "px",
-          "mobile": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 24
-            },
-            "padding": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": null
-            }
-          },
-          "desktop": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 56
-            },
-            "padding": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": null
-            }
-          }
-        },
-        "cta_link": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "auto_play": false,
-        "component": "media_section",
+        "component": "iframe",
         "cta_label": "",
-        "highlight": "",
         "thumbnail": {
           "id": null,
           "alt": "",
@@ -468,58 +450,29 @@
           "fieldtype": "asset",
           "meta_data": {}
         },
-        "video_url": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
+        "description": {
+          "type": "doc",
+          "content": []
         },
-        "bg_pattern": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": "",
-        "media_cards": [],
-        "video_title": "",
-        "show_controls": true,
-        "gallery_images": [
-          {
-            "id": 203258059022462,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/143474/05634ddcfa/1177-mediumimage.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          }
-        ],
-        "pattern_opacity": false,
-        "pattern_position": "top",
-        "video_description": ""
+        "aspect_ratio": "16:9",
+        "display_mode": "inline",
+        "content_align": "left",
+        "referrer_policy": "",
+        "allow_fullscreen": true,
+        "show_play_overlay": true,
+        "show_external_link": false,
+        "external_link_label": ""
       }
     ],
     "date": "Feb 28, 2017",
     "title": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
     "author": "Rasool Sarang",
-    "entities": "",
+    "entities": [],
     "isGlobal": true,
     "component": "news_article",
     "languages": [
       {
-        "_uid": "3d72fd72-20dc-656c-0bc2-6ada8f2a1e0e",
+        "_uid": "349a5d5a-0f76-4570-bf36-f4929384310f",
         "link": {
           "id": "",
           "url": "http://aku.edu/news/Documents/CAPAccreditation.pdf",
@@ -532,24 +485,7 @@
       }
     ],
     "read_time": "3 min read",
-    "show_share": true,
-    "description": "For patients, this means timely and more accurate diagnosis.",
-    "show_social": true,
-    "banner_image": {
-      "id": 203258045055101,
-      "alt": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
-      "name": "",
-      "focus": "",
-      "title": "",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/289824742951963/286680/ae56c355e1/1177-bannerimage.jpg",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
-    },
-    "show_similar": true,
-    "background_pattern": {
+    "thumbnail": {
       "id": null,
       "alt": "",
       "name": "",
@@ -561,21 +497,51 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
-    "social_show_header": true,
+    "show_share": true,
+    "description": "The",
+    "show_social": false,
+    "banner_image": {
+      "id": 203419092982845,
+      "alt": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/286680/3776802a53/1177-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "path": null,
-  "full_slug": "news/rabee/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
+  "full_slug": "news/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -583,8 +549,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "453966282fabb378e4f816173571ba77290a1984",
-    "timestamp": "1785322304"
+    "token": "119a833c6a3463e06df88035a4f29a104daa5e00",
+    "timestamp": "1785352816"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -597,21 +563,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:27:49.729Z",
+  "first_published_at": "2026-07-29T19:19:13.504Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -624,30 +580,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 190,
+  "position": -50,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258931951946,
+  "current_version_id": 203420276690118,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068496569228,
+    "story_id": 203420276514195,
     "due_date": null,
-    "created_at": "2026-07-28T19:27:49.685Z",
+    "created_at": "2026-07-29T19:19:13.459Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068496569228,
+      "story_id": 203420276514195,
       "due_date": null,
-      "created_at": "2026-07-28T19:27:49.685Z",
+      "created_at": "2026-07-29T19:19:13.459Z",
       "language": null
     }
   ],

@@ -1,16 +1,16 @@
 {
   "name": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
-  "parent_id": 203068490265483,
-  "group_id": "047aad31-fba5-4d82-9a0c-0ee58868841d",
+  "parent_id": 200436757260291,
+  "group_id": "73ae48e6-378e-4662-b764-cc418a6e16aa",
   "alternates": [],
-  "created_at": "2026-07-28T19:28:30.665Z",
+  "created_at": "2026-07-29T19:19:11.815Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T08:22:41.618Z",
-  "published_at": "2026-07-29T08:22:41.601Z",
-  "id": 203068664521616,
-  "uuid": "405938e5-9833-4710-a28c-c341f161462d",
+  "updated_at": "2026-07-29T19:19:11.890Z",
+  "published_at": "2026-07-29T19:19:11.878Z",
+  "id": 203420269870382,
+  "uuid": "9486183e-c8d4-47c9-9956-152bad0de7fe",
   "is_folder": false,
   "content": {
     "_uid": "fa700d0c-28db-5ffc-0c89-70d639dfefdd",
@@ -20,15 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "One hundred members of civil society came together over a game of golf to support the Aga Khan University (AKU)'s efforts in Mending Kids' Hearts on Sunday.",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -241,24 +232,16 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "10dabeaf-1be7-e329-1c68-a087a5f85452",
-        "content": {
-          "type": "doc",
-          "content": [
-            {
-              "type": "blok",
-              "attrs": {
-                "body": [
-                  {
-                    "_uid": "f07066580d2d5e21",
-                    "component": "twitter_embed",
-                    "tweet_url": "https://twitter.com/i/status/825670001126469632"
-                  }
-                ]
-              }
-            }
-          ]
-        },
+        "src": "https://twitter.com/i/status/825670001126469632",
+        "_uid": "c6afb823-fee7-198a-154c-2fbfec28e221",
+        "allow": "",
+        "title": "",
+        "height": "",
+        "caption": "",
+        "heading": "",
+        "loading": "lazy",
+        "rounded": true,
+        "sandbox": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -284,14 +267,15 @@
             },
             "padding": {
               "top": null,
-              "left": 176,
-              "right": 176,
+              "left": 80,
+              "right": 80,
               "bottom": null
             }
           }
         },
-        "component": "rich_text",
-        "bg_pattern": {
+        "component": "iframe",
+        "cta_label": "",
+        "thumbnail": {
           "id": null,
           "alt": "",
           "name": "",
@@ -303,19 +287,29 @@
           "fieldtype": "asset",
           "meta_data": {}
         },
-        "pattern_height": "500",
-        "pattern_mobile_height": "0"
+        "description": {
+          "type": "doc",
+          "content": []
+        },
+        "aspect_ratio": "16:9",
+        "display_mode": "inline",
+        "content_align": "left",
+        "referrer_policy": "",
+        "allow_fullscreen": true,
+        "show_play_overlay": true,
+        "show_external_link": false,
+        "external_link_label": ""
       }
     ],
     "date": "Jan 29, 2017",
     "title": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
     "author": "Rasool Sarang",
-    "entities": "",
+    "entities": [],
     "isGlobal": true,
     "component": "news_article",
     "languages": [
       {
-        "_uid": "65581a49-bf6a-0525-3bb4-acddba280dd4",
+        "_uid": "2d3f40dc-8c4a-9777-d133-628422975ac7",
         "link": {
           "id": "",
           "url": "http://aku.edu/news/Documents/Urdu_NewsRelease_AKUGolf2017.pdf",
@@ -325,27 +319,22 @@
         },
         "label": "Urdu",
         "component": "article_language_link"
+      },
+      {
+        "_uid": "ee59b300-6175-e87d-9d0a-225a636547c2",
+        "link": {
+          "id": "",
+          "url": "http://aku.edu/news/Documents/Sindhi_NewsRelease_AKUGolf2017.pdf",
+          "linktype": "url",
+          "fieldtype": "multilink",
+          "cached_url": "http://aku.edu/news/Documents/Sindhi_NewsRelease_AKUGolf2017.pdf"
+        },
+        "label": "Sindhi",
+        "component": "article_language_link"
       }
     ],
     "read_time": "4 min read",
-    "show_share": true,
-    "description": "AKUH has created a place where congenital heart disease patients can find help and hope",
-    "show_social": true,
-    "banner_image": {
-      "id": 203258027708540,
-      "alt": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
-      "name": "",
-      "focus": "",
-      "title": "AKUH has created a place where congenital heart disease patients can find help and hope",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/289824742951963/356185/16c784078f/1160-bannerimage.jpg",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
-    },
-    "show_similar": true,
-    "background_pattern": {
+    "thumbnail": {
       "id": null,
       "alt": "",
       "name": "",
@@ -357,21 +346,51 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
-    "social_show_header": true,
+    "show_share": true,
+    "description": "One hundred members of civil society came together over a game of golf to support the Aga Khan University (AKU)'s efforts in Mending Kids' Hearts on Sunday.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203419078122556,
+      "alt": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
+      "name": "",
+      "focus": "",
+      "title": "AKUH has created a place where congenital heart disease patients can find help and hope",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/356185/169be658dc/1160-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
     "similar_show_header": true
   },
   "published": true,
   "slug": "aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "path": null,
-  "full_slug": "news/rabee/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
+  "full_slug": "news/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 203068490265483,
-    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-    "name": "Rabee",
-    "slug": "rabee",
+    "id": 200436757260291,
+    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
+    "name": "news",
+    "slug": "news",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -379,8 +398,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "79ede61f4bfadbec47d5f4e84f557e5b832b7dbc",
-    "timestamp": "1785322303"
+    "token": "d7999062772a1465fcf6b2127713eb6a932cfb56",
+    "timestamp": "1785352817"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -393,21 +412,11 @@
       "path": null,
       "slug": "news",
       "translated_slugs": []
-    },
-    {
-      "id": 203068490265483,
-      "name": "Rabee",
-      "parent_id": 200436757260291,
-      "disble_fe_editor": false,
-      "disable_fe_editor": false,
-      "path": null,
-      "slug": "rabee",
-      "translated_slugs": []
     }
   ],
   "publish_at": null,
   "expire_at": null,
-  "first_published_at": "2026-07-28T19:28:30.727Z",
+  "first_published_at": "2026-07-29T19:19:11.878Z",
   "last_author": {
     "id": 131176408045053,
     "userid": "rabee.amir@cloudprimero.com",
@@ -420,30 +429,30 @@
   "space_role_ids": [],
   "translated_slugs": [],
   "localized_paths": [],
-  "position": 160,
+  "position": -40,
   "translated_stories": [],
   "can_not_view": false,
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203258927339841,
+  "current_version_id": 203420270030020,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
     "workflow_id": 133596266085524,
     "workflow_stage_id": 201481682618331,
-    "story_id": 203068664521616,
+    "story_id": 203420269870382,
     "due_date": null,
-    "created_at": "2026-07-28T19:28:30.687Z",
+    "created_at": "2026-07-29T19:19:11.836Z",
     "language": null
   },
   "stages": [
     {
       "workflow_id": 133596266085524,
       "workflow_stage_id": 201481682618331,
-      "story_id": 203068664521616,
+      "story_id": 203420269870382,
       "due_date": null,
-      "created_at": "2026-07-28T19:28:30.687Z",
+      "created_at": "2026-07-29T19:19:11.836Z",
       "language": null
     }
   ],
