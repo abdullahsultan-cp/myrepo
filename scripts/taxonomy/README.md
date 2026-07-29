@@ -47,6 +47,38 @@ Stdlib only — nothing here needs `requirements.txt`.
 `tree` needs `regions`, `abbrev`, `recover`, `departments` and `crossrefs`.
 `seed` and `folders` need `tree`.
 
+Not part of the pipeline, run on demand:
+
+| Script | Does |
+|---|---|
+| `export_dev_tree.py` | projects the tree into the front end's nested `region → entities → departments` shape |
+| `validate_dev_tree.py` | compares a dev-supplied tree against ours, level by level |
+
+## Short names
+
+**All 155 named folders have one** — 6 regions, 60 entity folders, 89 department
+folders. Nothing is null.
+
+| Level | Source | File |
+|---|---|---|
+| Entity | **derived** from AKU approver-group names | `intermediate/entity_abbrev.csv` (generated) |
+| Entity override | for the one with no usable group name | `config/entity_abbrev_overrides.csv` |
+| Department | hand-authored — `Tags` carry no abbreviation | `config/department_abbrev.csv` |
+| Region | ISO 3166-1 alpha-2 — `City` carries no code | `config/region_abbrev.csv` |
+
+To change one, edit the relevant CSV and re-run `tree`. **Never edit
+`folders.json` directly** — it is generated.
+
+**`AERR`** for the Arusha centre looks wrong and is not — it comes from the group
+`CA AERR`, so do not "correct" it to ACERC.
+
+Short names are emitted as codes: **whitespace is hyphenated on the way out**, so
+AKU's `COE WCH` becomes `COE-WCH`. Edit the CSVs to match AKU's real wording; the
+builder handles the normalising.
+
+Each folder ends up with `region_short`, `entity_short`, `department_short`, and a
+`short_name` resolving to the deepest level it names.
+
 Each step is a separate script on purpose: any one can be re-run and audited
 alone, and every derived field records which rule produced it
 (`region_source`, `entity_source`, `department_source`).

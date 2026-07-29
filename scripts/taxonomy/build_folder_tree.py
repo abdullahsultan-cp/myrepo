@@ -49,6 +49,9 @@ SRC_STRUCT = paths.NEWS_STRUCTURE
 SRC_RECOVER = paths.RECOVERED_ENTITIES
 SRC_DEPT = paths.ITEMS_DEPARTMENTS
 SRC_ABBREV = paths.ENTITY_ABBREV
+SRC_DEPT_ABBREV = paths.DEPARTMENT_ABBREV
+SRC_REGION_ABBREV = paths.REGION_ABBREV
+SRC_ENT_OVERRIDES = paths.ENTITY_ABBREV_OVERRIDES
 SRC_REFS = paths.CONNECTIONS
 # Hand corrections, applied last. Only ever used to fix a region that was
 # INFERRED (region_source = entity-majority); a region taken from the City field
@@ -107,7 +110,8 @@ def slug_path(path):
 
 def w(path, header, rows):
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
-        cw = csv.DictWriter(f, fieldnames=header, extrasaction="ignore")
+        cw = csv.DictWriter(f, lineterminator="\n",
+                            fieldnames=header, extrasaction="ignore")
         cw.writeheader()
         cw.writerows(rows)
     print(f"  {len(rows):>5}  {os.path.basename(path)}")
@@ -118,8 +122,28 @@ def main(outdir):
 
     struct = read(SRC_STRUCT)
     dept_of = {r["news_id"]: (r.get("department") or "") for r in read(SRC_DEPT)}
-    short_of = {r["entity_long"]: (r.get("entity_short") or "")
+    def short(v):
+        """Short names are codes, so no spaces: 'COE WCH' -> 'COE-WCH'.
+
+        AKU's approver group really is spelled with a space, and the derived
+        value is faithful to it, but a code with a space in it is awkward for
+        every consumer. Hyphenate on the way out rather than editing the source.
+        """
+        return re.sub(r"\s+", "-", (v or "").strip())
+
+    short_of = {r["entity_long"]: short(r.get("entity_short"))
                 for r in read(SRC_ABBREV)}
+    # Overrides win: entity_abbrev.csv is regenerated from approver-group names,
+    # so an entity whose group yields nothing usable is fixed here instead.
+    for r in read(SRC_ENT_OVERRIDES):
+        if (r.get("entity_short") or "").strip():
+            short_of[r["entity_long"]] = short(r["entity_short"])
+    # Departments and regions have no derivable source at all -- no abbreviation
+    # exists anywhere in the export -- so both lookups are versioned in config/.
+    dept_short_of = {r["department_long"]: short(r.get("department_short"))
+                     for r in read(SRC_DEPT_ABBREV)}
+    region_short_of = {r["region_long"]: short(r.get("region_short"))
+                       for r in read(SRC_REGION_ABBREV)}
     recovered = {r["news_id"]: r["recovered_entity"]
                  for r in read(SRC_RECOVER)
                  if r["recovery_rule"] in USED_RECOVERY
@@ -249,9 +273,11 @@ def main(outdir):
             "published_date": r["published_date"],
             "title": r["title"],
             "region": region,
+            "region_short": region_short_of.get(region, "") if region else "",
             "entity": entity,
             "entity_short": short_of.get(entity, ""),
             "department": dept,
+            "department_short": dept_short_of.get(dept, "") if dept else "",
             "level": level,
             "entity_source": src,
             "region_source": region_src,
@@ -298,9 +324,12 @@ def main(outdir):
             "sb_path": slug_path(path),
             "folder_name": path.rsplit("/", 1)[-1],
             "folder_slug": slugify(path.rsplit("/", 1)[-1]),
-            "region": region, "entity": entity,
+            "region": region,
+            "region_short": region_short_of.get(region, "") if region else "",
+            "entity": entity,
             "entity_short": short_of.get(entity, "") if entity else "",
             "department": dept,
+            "department_short": dept_short_of.get(dept, "") if dept else "",
             "news_count": news_folder.get(path, 0),
         })
 
@@ -332,11 +361,12 @@ def main(outdir):
 
     w(os.path.join(outdir, "folder_structure.csv"),
       ["level", "path", "sb_path", "folder_name", "folder_slug", "region",
-       "entity", "entity_short", "department", "news_count"], folders)
+       "region_short", "entity", "entity_short", "department",
+       "department_short", "news_count"], folders)
 
     # ---------------- readable tree ---------------------------------------
     tp = os.path.join(outdir, "folder_tree.txt")
-    with open(tp, "w", encoding="utf-8") as f:
+    with open(tp, "w", encoding="utf-8", newline="\n") as f:
         f.write("AKU NEWS — STORYBLOK FOLDER STRUCTURE\n")
         f.write("=" * 66 + "\n")
         f.write(f"items: {len(routing)}   folders to create: {len(folders)}\n\n")

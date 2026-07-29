@@ -183,17 +183,75 @@ to `global/news`:
 
 ### 3.2 Short form ↔ long form
 
-No abbreviation field exists in the export, but `LocalApproverGroup` is 1:1 with
-`Entity` and uses AKU's own shorthand (`MC_PK_NEWS_Approver`,
-`Sonam EA News Approver`). Stripping the boilerplate recovers 18. **Nothing is
-guessed** — `Environmental Responsibility` has no recovered abbreviation and uses
-its full name. Sheet: `out_final/entity_abbrev.csv`.
+**Entities — derived, never guessed.** No abbreviation field exists in the export,
+but `LocalApproverGroup` is 1:1 with `Entity` and uses AKU's own shorthand
+(`MC_PK_NEWS_Approver`, `Sonam EA News Approver`). Stripping the boilerplate
+recovers 18. `Environmental Responsibility` and two others have no recovered
+abbreviation and use their full name. Sheet:
+`data/taxonomy/intermediate/entity_abbrev.csv`, with a `short_source` column on
+every row.
 
 MC · SONAM · CIME · ISMC · IED · GSMC · BMI · QTL · EAI · COE WCH · ELE · IHD ·
 IGHD · CRM · SIG · CETE · FAS · AERR
 
-Short forms are for identification only. **URLs use the full form** —
-`regions/pakistan/entities/medical-college/news/`.
+`AERR` looks like a typo for the *Arusha Climate and Environmental Research
+Centre* — it is not. It comes from the approver group literally named `CA AERR`,
+so it is AKU's own abbreviation. **Do not "correct" it to ACERC.**
+
+One entity has no recoverable abbreviation: `Environmental Responsibility`. Its
+approver group is `CA environment`, so it takes **ENV** — AKU's own wording, not
+an invention. Applied via `config/entity_abbrev_overrides.csv`, which is layered
+on top of the generated file so a rebuild cannot lose it.
+
+**Departments and regions — hand-authored, because nothing derives them.**
+Departments come from `Tags`, which carry no abbreviation. Regions come from
+`City`, which carries no code. Neither has a source to recover from, so both are
+versioned in `config/`, each row carrying its own `short_source`.
+
+Regions — ISO 3166-1 alpha-2 (`config/region_abbrev.csv`). AKU's own approver
+groups use `PK` for Pakistan (`MC_PK_NEWS_Approver`), which confirms the family:
+
+| AF | KE | PK | TZ | UG | UK |
+|---|---|---|---|---|---|
+| Afghanistan | Kenya | Pakistan | Tanzania | Uganda | United Kingdom |
+
+`UK` rather than ISO's `GB`: it is the exceptionally-reserved code and the form in
+common use.
+
+Departments — all 16 (`config/department_abbrev.csv`):
+
+| Department | Short | Department | Short |
+|---|---|---|---|
+| Cardiology | CARD | Nursing | NURS |
+| Family Medicine | FM | Nutrition | NUTR |
+| Geriatrics & Gerontology | GERI | Obstetrics & Gynaecology | OBGYN |
+| Governance | GOV | Oncology | ONC |
+| Internal Medicine | IM | Paediatrics & Child Health | PAEDS |
+| Medical Education | MEDED | Psychiatry & Mental Health | PSYCH |
+| Midwifery | MW | Public Health | PH |
+| Neurosurgery | NSURG | Regenerative Medicine | REGMED |
+
+Uppercase, to match the entity style. `NSURG` rather than `NS`, which is
+ambiguous. To change one, edit the CSV and re-run `build_folder_tree.py` — never
+edit `folders.json` by hand.
+
+**Every one of the 155 named folders has a short name — nothing is null.**
+6 regions, 60 entity folders (19 distinct names), 89 department folders.
+
+**Short forms are for identification only. URLs use the full form** —
+`regions/pakistan/entities/medical-college/departments/public-health/news/`.
+
+Each folder carries `region_short`, `entity_short`, `department_short`, and a
+`short_name` resolving to the deepest level the folder actually names, so a
+consumer reads one field instead of choosing between three.
+
+**No short name contains whitespace.** `build_folder_tree.py` hyphenates it on the
+way out, so `COE WCH` — which is genuinely how AKU's approver group spells the
+Centre of Excellence in Women and Child Health — is emitted as **`COE-WCH`**. The
+source CSVs stay faithful to AKU's wording; only the emitted code is normalised,
+which means a future group name with a space cannot leak through either.
+
+`AERR` needs no such treatment and must not be "corrected" to ACERC — see above.
 
 ### 3.3 Entity recovery for the no-owner items
 
@@ -329,6 +387,8 @@ Decided: do not correct. Recorded so they are known.
 | True duplicate stories | 67 groups | Same title **and** identical body (`1008/1538`, `106/1523`; some groups have three). Both copies migrate at different slugs. A further 67 groups share a title but differ in body and are legitimately distinct. |
 | Department assignment | 573 items | Tag-derived. A tag can mean "from this department" or merely "about this subject" and nothing distinguishes them, so a public-awareness piece tagged `Cardiac disease` files under Cardiology. Concentrated in the 1–2 item folders; ~40 of 89 may be fictional. |
 | City-driven oddities | 3 items | `365` Afghanistan/IED, `351` Afghanistan/IHD read as East Africa; `2385` Tanzania/SIG reads as Pakistan. Region comes from the real `City` field, so left alone. |
+| `Pakistan / Arusha Climate and Environmental Research Centre` | 1 folder | Arusha is in Tanzania and this folder receives **0 stories** — the only one of 60 entity folders that does. Routing places Arusha exclusively under Tanzania (30 stories). Reviewed and **kept as-is**; recorded in `config/tree_accepted_exceptions.csv`. |
+| `Afghanistan / East Africa Institute` | 1 item | An East Africa institute filed under Afghanistan. The entity was *inferred* by a recovery rule, not read from the source, so it is probably a bad inference. Reviewed and **kept as-is**. |
 | Thin entity nodes | ~10 | `Kenya/ISMC` (1), `United Kingdom/QTL` (1), `Tanzania/CIME` (1). Each becomes a real permission scope. `Tanzania/CIME` is **genuine** — *"CIME Inaugurates New Campus in Dar es Salaam"*. |
 | `entity-majority` region | 6 items | Still inferred after the 6 corrections in §2. |
 | `fallback-global` region | 14 items | Genuinely not tied to one country. |
@@ -350,9 +410,33 @@ Decided: do not correct. Recorded so they are known.
 
 The flat list is ordered **parent before child** — walk it once and resolve
 `parent_full_slug` against folders already created. Each folder carries
-`region` / `entity` / `entity_short` / `department` for metadata and permissions.
+`region` / `entity` / `entity_short` / `department` / `department_short` /
+`short_name` for metadata and permissions.
 `expected_news_count` is informational; 32 folders are legitimately 0
 (`Departments/` wrappers and entities whose news all sits in departments).
+
+### Folder creation — front end
+
+`data/taxonomy/seed/regions_entities_departments.json` — the same tree projected
+into the nested `region -> entities -> departments` shape the front end consumes,
+with `name`, `slug`, `short_name`, `has_news` at each level. Generated by
+`export_dev_tree.py` from the same `folders.json` that computes every upload path,
+so the two cannot drift.
+
+`has_news` is honest per folder: `false` on an entity with populated departments
+means the stories live one level down, not that the entity is empty.
+
+**Validate any hand-maintained copy before folders are created:**
+
+```bash
+python scripts/taxonomy/validate_dev_tree.py their.json --csv diff.csv
+```
+
+It compares all three levels set-for-set and reports `MISSING` (stories would
+have nowhere to go), `EXTRA`, `RENAMED`, and `SHORT_NAME` separately, plus the
+file's internal consistency. Reviewed-and-kept oddities live in
+`config/tree_accepted_exceptions.csv` so an accepted decision is not re-reported
+as a failure on every run — currently one entry, the Pakistan/Arusha folder.
 
 ### Full seed — folders + stories
 

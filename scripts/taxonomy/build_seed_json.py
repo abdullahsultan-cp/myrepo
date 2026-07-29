@@ -40,6 +40,16 @@ def read(path):
         return list(csv.DictReader(f))
 
 
+def short_for(r):
+    """The short name of the deepest level this folder actually names."""
+    for key, level in (("department_short", "department"),
+                       ("entity_short", "entity"),
+                       ("region_short", "region")):
+        if (r.get(level) or "").strip():
+            return (r.get(key) or "").strip() or None
+    return None
+
+
 def parent_of(full_slug):
     return full_slug.rsplit("/", 1)[0] if "/" in full_slug else None
 
@@ -61,8 +71,11 @@ def main(treedir, outpath):
             "display_path": r["path"],
             "region": r["region"] or None,
             "entity": r["entity"] or None,
+            "region_short": r.get("region_short") or None,
             "entity_short": r["entity_short"] or None,
             "department": r["department"] or None,
+            "department_short": r.get("department_short") or None,
+            "short_name": short_for(r),
             "is_folder": True,
             "direct_news_count": int(r["news_count"] or 0),
         })
@@ -161,7 +174,7 @@ def main(treedir, outpath):
     doc["stories"] = stories
 
     os.makedirs(os.path.dirname(os.path.abspath(outpath)), exist_ok=True)
-    with open(outpath, "w", encoding="utf-8") as f:
+    with open(outpath, "w", encoding="utf-8", newline="\n") as f:
         json.dump(doc, f, indent=2, ensure_ascii=False)
 
     size = os.path.getsize(outpath) / 1024

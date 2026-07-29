@@ -78,6 +78,8 @@ data, trust the data and update the doc.
 ```bash
 # taxonomy
 python scripts/taxonomy/run_taxonomy.py status | tree | <step>
+python scripts/taxonomy/export_dev_tree.py          # tree in the front end's shape
+python scripts/taxonomy/validate_dev_tree.py their.json --csv diff.csv
 
 # media (Flow A) — one process, behind a lock
 python scripts/migrate/download/run_media_all.py --workers 6
@@ -102,6 +104,11 @@ python -m pytest tests/
 
 - **Slugs**: lowercase-hyphenated; entities use the **full name**, never the
   abbreviation — `regions/pakistan/entities/medical-college/news/`.
+- **Short names are metadata, never paths.** All 155 named folders have one.
+  Entity shorts are derived from AKU approver-group names; department shorts
+  (`config/department_abbrev.csv`) and region shorts (`config/region_abbrev.csv`,
+  ISO 3166-1 alpha-2) are hand-authored because nothing in the export derives
+  them. Edit the CSV and re-run `tree` — never edit `folders.json` by hand.
 - **Provenance is mandatory.** Any derived field records the rule that produced
   it (`region_source`, `entity_source`, `department_source`). Add a new
   derivation, add its provenance column.
@@ -154,6 +161,20 @@ Never present a department as authoritative.
 
 **678 entities and 20 regions are inferred.** Check `provenance` before treating
 a placement as fact.
+
+**`AERR` is not a typo** — it comes straight from the approver group `CA AERR`, so
+it is AKU's own abbreviation. Do not "correct" it to ACERC.
+
+**Short names never contain whitespace.** `build_folder_tree.py` hyphenates it, so
+AKU's `COE WCH` is emitted as `COE-WCH`. Keep the source CSVs faithful to AKU's
+wording and let the builder normalise — that way a new group name with a space
+cannot leak into the JSON.
+
+**Two odd placements were reviewed and deliberately kept**, so do not "fix" them:
+`Pakistan / Arusha Climate and Environmental Research Centre` (0 stories, Arusha
+is Tanzanian) and `Afghanistan / East Africa Institute` (1 story, inferred
+entity). The first is recorded in `config/tree_accepted_exceptions.csv` so
+`validate_dev_tree.py` reports it as accepted rather than as a failure.
 
 **`Entity = "Global"` means "no faculty owns this"** — it is exactly the set
 `LocalApproverGroup = "Global Approvers"` (2048/2048), i.e. central comms

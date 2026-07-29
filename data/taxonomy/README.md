@@ -14,7 +14,18 @@ Spec: [`docs/MIGRATION_DECISIONS.md`](../../docs/MIGRATION_DECISIONS.md).
 | **`folders.json`** | 346 folders, no stories. Flat list ordered **parent before child**, plus the same nested as `tree`. This is the one for creating the structure. |
 | `folders_tree.txt` | the same as an ASCII tree |
 | `folders.csv` | the same flat list as a spreadsheet |
+| `regions_entities_departments.json` | the same tree in the **front end's** nested shape — `region → entities → departments`, each with `name`, `slug`, `short_name`, `has_news`. From `export_dev_tree.py`. |
 | `storyblok_seed.json` | folders **and** all 3606 stories, with destination, share targets and provenance |
+
+Every folder carries `entity_short`, `department_short` and a `short_name` that
+mirrors its own level. Entity shorts are derived from AKU approver-group names;
+department shorts are hand-authored in `config/department_abbrev.csv`.
+
+Check a hand-maintained copy before anyone creates folders from it:
+
+```bash
+python scripts/taxonomy/validate_dev_tree.py their.json --csv diff.csv
+```
 
 Both JSON files are validated on generation and the generator exits non-zero
 rather than writing a broken file: every folder parent resolves and precedes its

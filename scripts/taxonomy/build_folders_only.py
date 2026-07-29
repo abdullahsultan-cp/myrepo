@@ -34,6 +34,21 @@ def read(path):
         return list(csv.DictReader(f))
 
 
+def short_for(r):
+    """The short name of the deepest level this folder actually names.
+
+    A department folder is identified by its department, an entity folder by its
+    entity, a region folder by its region. Deepest-first, because a department
+    row also carries region and entity for permissions.
+    """
+    for key, level in (("department_short", "department"),
+                       ("entity_short", "entity"),
+                       ("region_short", "region")):
+        if (r.get(level) or "").strip():
+            return (r.get(key) or "").strip() or None
+    return None
+
+
 def parent_of(full_slug):
     return full_slug.rsplit("/", 1)[0] if "/" in full_slug else None
 
@@ -53,8 +68,13 @@ def main(treedir, outdir):
             ("display_path", r["path"]),
             ("region", r["region"] or None),
             ("entity", r["entity"] or None),
+            ("region_short", r.get("region_short") or None),
             ("entity_short", r["entity_short"] or None),
             ("department", r["department"] or None),
+            ("department_short", r.get("department_short") or None),
+            # short_name mirrors whichever level this folder is, so a consumer
+            # reads one field instead of picking between the three above.
+            ("short_name", short_for(r)),
             ("expected_news_count", int(r["news_count"] or 0)),
         ]))
     folders.sort(key=lambda f: (f["full_slug"].count("/"), f["full_slug"]))
@@ -109,13 +129,14 @@ def main(treedir, outdir):
     doc["tree"] = roots
 
     jp = os.path.join(outdir, "folders.json")
-    with open(jp, "w", encoding="utf-8") as f:
+    with open(jp, "w", encoding="utf-8", newline="\n") as f:
         json.dump(doc, f, indent=2, ensure_ascii=False)
 
     cp = os.path.join(outdir, "folders.csv")
     with open(cp, "w", newline="", encoding="utf-8-sig") as f:
         cols = [k for k in folders[0] if k != "children"]
-        cw = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
+        cw = csv.DictWriter(f, lineterminator="\n",
+                            fieldnames=cols, extrasaction="ignore")
         cw.writeheader()
         cw.writerows(folders)
 
@@ -139,7 +160,7 @@ def main(treedir, outdir):
                  f"{c['department_folders']} department folders")
     lines.append("")
     walk(roots)
-    with open(tp, "w", encoding="utf-8") as f:
+    with open(tp, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + "\n")
 
     print(f"  {os.path.basename(jp):<22} {os.path.getsize(jp)/1024:,.0f} KB")
