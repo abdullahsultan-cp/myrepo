@@ -1,14 +1,14 @@
 {
   "name": "New estimates reveal extent of health burden of armed conflict",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "6f598374-28ad-4b43-88a5-a61e02beee7e",
   "alternates": [],
   "created_at": "2026-07-28T19:28:43.756Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.145Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:52.642Z",
+  "published_at": "2026-07-29T08:22:52.625Z",
   "id": 203068718146459,
   "uuid": "51f0e9da-14b9-444b-b74d-a2360d585509",
   "is_folder": false,
@@ -349,7 +349,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       },
       {
         "_uid": "a39b7d87-03ab-8055-2ac9-f6c0b652a69c",
@@ -372,7 +417,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Jan 25, 2021",
@@ -382,21 +472,22 @@
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
-    "read_time": "8 min read",
+    "read_time": "7 min read",
     "show_share": true,
     "description": "The Lancet series on women's and children's health is led by Professor Zulfiqar Bhutta.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258392420539,
+      "alt": "New estimates reveal extent of health burden of armed conflict",
       "name": "",
       "focus": "",
-      "title": "",
+      "title": "The Lancet series on women's and children's health is led by Professor Zulfiqar Bhutta.",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/116238/c3537afbc3/2536-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -417,15 +508,15 @@
   "published": true,
   "slug": "new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
   "path": null,
-  "full_slug": "news/new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
+  "full_slug": "news/rabee/new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -433,8 +524,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "e382792a8c695bd7b76d06c68ee6b15ac2fb9ad4",
-    "timestamp": "1785268753"
+    "token": "1c1480f4806d93afda5d00da8c88a3a2b0a47931",
+    "timestamp": "1785322300"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -446,6 +537,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -470,7 +571,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071315249955,
+  "current_version_id": 203258972395918,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

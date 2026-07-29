@@ -1,14 +1,14 @@
 {
   "name": "AKU Independence Day celebrations",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "6b7da109-78ba-4aa1-b380-227f3ccd7dd5",
   "alternates": [],
   "created_at": "2026-07-28T19:28:29.478Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.420Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:40.378Z",
+  "published_at": "2026-07-29T08:22:40.366Z",
   "id": 203068659667855,
   "uuid": "133426a5-2f78-4905-807a-45dea481d79d",
   "is_folder": false,
@@ -54,7 +54,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Aug 13, 2006",
@@ -69,16 +114,17 @@
     "description": "In keeping with its tradition, Aga Khan University (AKU) celebrated the 59th Independence Day of Pakistan on Wednesday, August 14, 2006. Jubilant guests, faculty, staff and students marked their presence with renewed hopes of a prosperous Pakistan.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258013933691,
+      "alt": "AKU Independence Day celebrations",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/51466/d368563bda/760-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -99,15 +145,15 @@
   "published": true,
   "slug": "aku-independence-day-celebrations-760",
   "path": null,
-  "full_slug": "news/aku-independence-day-celebrations-760",
+  "full_slug": "news/rabee/aku-independence-day-celebrations-760",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -115,8 +161,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "67e98e85cc57801c84a58c3b0db69d1df74047c0",
-    "timestamp": "1785268757"
+    "token": "79ede61f4bfadbec47d5f4e84f557e5b832b7dbc",
+    "timestamp": "1785322303"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -128,6 +174,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -152,7 +208,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071312943896,
+  "current_version_id": 203258922305852,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -1,14 +1,14 @@
 {
   "name": "Working to improve adolescent health in Northern Nigeria",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "14ec327b-e793-4707-9abc-a3d64985349b",
   "alternates": [],
   "created_at": "2026-07-28T19:28:39.519Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.219Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:49.309Z",
+  "published_at": "2026-07-29T08:22:49.294Z",
   "id": 203068700812183,
   "uuid": "5d556f14-55d3-425a-97d9-33f6000b5d23",
   "is_folder": false,
@@ -135,12 +135,88 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       },
       {
         "_uid": "942acc97-668c-0565-0738-3713b3de3fbe",
         "type": "video",
         "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          }
+        },
         "cta_link": {
           "id": "",
           "url": "",
@@ -166,10 +242,10 @@
         },
         "video_url": {
           "id": "",
-          "url": "",
-          "linktype": "story",
+          "url": "https://a.storyblok.com/f/289824742951963/49848895/5d283b1264/1941-video1.MOV",
+          "linktype": "url",
           "fieldtype": "multilink",
-          "cached_url": ""
+          "cached_url": "https://a.storyblok.com/f/289824742951963/49848895/5d283b1264/1941-video1.MOV"
         },
         "bg_pattern": {
           "id": null,
@@ -205,16 +281,17 @@
     "description": "Dr Ahmed Sarki, a senior faculty member at AKU-SONAM EA founded the Family and Youth Health Initiative (FAYOHI) to improve health indices in Nigeria. He works with families and adolescents in the country to provide access to healthcare facilities.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258179551375,
+      "alt": "Working to improve adolescent health in Northern Nigeria",
       "name": "",
       "focus": "",
-      "title": "",
+      "title": "Dr Ahmed Sarki speaking during a recent event",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/539121/cea600a2d8/1941-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -235,15 +312,15 @@
   "published": true,
   "slug": "working-to-improve-adolescent-health-in-northern-nigeria",
   "path": null,
-  "full_slug": "news/working-to-improve-adolescent-health-in-northern-nigeria",
+  "full_slug": "news/rabee/working-to-improve-adolescent-health-in-northern-nigeria",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -251,8 +328,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "6d34dcda49abd4b8adebcb6713f502920155393e",
-    "timestamp": "1785268754"
+    "token": "1c1480f4806d93afda5d00da8c88a3a2b0a47931",
+    "timestamp": "1785322300"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -264,6 +341,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -288,7 +375,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071314488096,
+  "current_version_id": 203258958866814,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

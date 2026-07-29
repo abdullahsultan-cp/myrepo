@@ -1,14 +1,14 @@
 {
   "name": "AKU President and Leadership visit the United States",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "c39c8090-0e8d-49cf-b9c3-a3c727b22603",
   "alternates": [],
   "created_at": "2026-07-28T19:28:49.543Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.044Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:57.616Z",
+  "published_at": "2026-07-29T08:22:57.598Z",
   "id": 203068741837727,
   "uuid": "87a1d0e6-5215-4b1f-a57f-fca104347cc1",
   "is_folder": false,
@@ -139,7 +139,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Nov 08, 2023",
@@ -149,7 +194,7 @@
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
-    "read_time": "3 min read",
+    "read_time": "2 min read",
     "show_share": true,
     "description": "Strengthen existing partnerships, reconnect with AKU friends and alumni",
     "show_social": true,
@@ -184,15 +229,15 @@
   "published": true,
   "slug": "aku-president-and-leadership-visit-the-united-states",
   "path": null,
-  "full_slug": "news/aku-president-and-leadership-visit-the-united-states",
+  "full_slug": "news/rabee/aku-president-and-leadership-visit-the-united-states",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -200,8 +245,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "062aa31acee5011764d00c4871ed00c16a9ca4f9",
-    "timestamp": "1785268752"
+    "token": "0cf9928b3e04453f32a98272f096582bacb2a214",
+    "timestamp": "1785322298"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -213,6 +258,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -237,7 +292,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071316044584,
+  "current_version_id": 203258992740775,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -1,14 +1,14 @@
 {
   "name": "The Mise-en-Scène of the Investigation in Diary of a Country Prosecutor from the 1937 Novel to the 1969 Film",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "274ba625-29fe-49d2-a83c-3179d1fc25f4",
   "alternates": [],
   "created_at": "2026-07-28T19:28:45.241Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.118Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:54.083Z",
+  "published_at": "2026-07-29T08:22:54.063Z",
   "id": 203068724233116,
   "uuid": "526553d8-3ccc-4e96-a749-15ee6759bd1f",
   "is_folder": false,
@@ -442,7 +442,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Jun 17, 2021",
@@ -457,16 +502,17 @@
     "description": "New publication by AKU-ISMC's Professor Gianluca Parolin.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258406838460,
+      "alt": "The Mise-en-Scène of the Investigation in Diary of a Country Prosecutor from the 1937 Novel to the 1969 Film",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/265754/c3d06a1c7f/2664-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -487,15 +533,15 @@
   "published": true,
   "slug": "the-mise-en-sc-ne-of-the-investigation-in-diary-of-a-country-prosecutor-from-the-1937-novel-to-the-1969-film",
   "path": null,
-  "full_slug": "news/the-mise-en-sc-ne-of-the-investigation-in-diary-of-a-country-prosecutor-from-the-1937-novel-to-the-1969-film",
+  "full_slug": "news/rabee/the-mise-en-sc-ne-of-the-investigation-in-diary-of-a-country-prosecutor-from-the-1937-novel-to-the-1969-film",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -503,8 +549,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "e382792a8c695bd7b76d06c68ee6b15ac2fb9ad4",
-    "timestamp": "1785268753"
+    "token": "3d6122f763fa723bf74c8c7e041e3297ec274475",
+    "timestamp": "1785322299"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -516,6 +562,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -540,7 +596,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071315495716,
+  "current_version_id": 203258978191768,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

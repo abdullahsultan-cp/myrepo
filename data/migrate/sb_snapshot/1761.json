@@ -1,14 +1,14 @@
 {
   "name": "Increased investment in nursing key to achieving health for all",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "6f000977-801b-40d3-a088-fdb0e941fef9",
   "alternates": [],
   "created_at": "2026-07-28T19:28:38.034Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.242Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:47.962Z",
+  "published_at": "2026-07-29T08:22:47.948Z",
   "id": 203068694705045,
   "uuid": "852633c5-98dc-4a80-a1eb-fd06ba0c628f",
   "is_folder": false,
@@ -244,7 +244,152 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "e30dde3f-fa34-7d91-e3ac-a63f24470b82",
+        "type": "image",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "The authors of the report: Dr Charlotte Refsum, (left), Lord Nigel Crisp (middle) and AKU's Professor Sharon Brownie (right) at the WISH 2018 summit. ",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203258161696910,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/984668/b3a1c94e6b/1761-bannerimage.gif",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": ""
       }
     ],
     "date": "Nov 13, 2018",
@@ -254,21 +399,22 @@
     "isGlobal": true,
     "component": "news_article",
     "languages": [],
-    "read_time": "5 min read",
+    "read_time": "4 min read",
     "show_share": true,
     "description": "Professor Brownie, Dean of SONAM in East Africa, is one of the co-authors of the report.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258161696910,
+      "alt": "Increased investment in nursing key to achieving health for all",
       "name": "",
       "focus": "",
-      "title": "",
+      "title": "The report has been published in coordination with the Nursing Now campaign, which has a three-year mission to promote and empower nurses and midwives worldwide. Photo courtesy: @WISHQatar",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/984668/b3a1c94e6b/1761-bannerimage.gif",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -289,15 +435,15 @@
   "published": true,
   "slug": "increased-investment-in-nursing-key-to-achieving-health-for-all",
   "path": null,
-  "full_slug": "news/increased-investment-in-nursing-key-to-achieving-health-for-all",
+  "full_slug": "news/rabee/increased-investment-in-nursing-key-to-achieving-health-for-all",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -305,8 +451,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "a50a2a2b171be724917042831b44b1ab0b4bc18b",
-    "timestamp": "1785268755"
+    "token": "41f4bff1f8b6d8a704bb1026ffdc28f194e9a665",
+    "timestamp": "1785322301"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -318,6 +464,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -342,7 +498,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071314311967,
+  "current_version_id": 203258953337208,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

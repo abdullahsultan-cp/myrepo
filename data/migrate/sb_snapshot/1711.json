@@ -1,14 +1,14 @@
 {
   "name": "Behind the scenes of the National Nutrition Survey",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "4b575107-3299-4c4c-904c-377e6a4130fe",
   "alternates": [],
   "created_at": "2026-07-28T19:28:35.319Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.288Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:45.842Z",
+  "published_at": "2026-07-29T08:22:45.829Z",
   "id": 203068683580307,
   "uuid": "492fbf97-0798-4d47-bcc5-78578d0e5760",
   "is_folder": false,
@@ -70,12 +70,88 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       },
       {
         "_uid": "efb160e8-7d7f-1318-6a90-a94f18bae746",
         "type": "video",
         "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          }
+        },
         "cta_link": {
           "id": "",
           "url": "",
@@ -242,7 +318,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Sep 10, 2018",
@@ -257,16 +378,17 @@
     "description": "Find out how our field teams are developing creative solutions to real research challenges.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258090303620,
+      "alt": "Behind the scenes of the National Nutrition Survey",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/71646/1f4f6ac2f4/1711-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -287,15 +409,15 @@
   "published": true,
   "slug": "behind-the-scenes-of-the-national-nutrition-survey",
   "path": null,
-  "full_slug": "news/behind-the-scenes-of-the-national-nutrition-survey",
+  "full_slug": "news/rabee/behind-the-scenes-of-the-national-nutrition-survey",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -303,8 +425,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "a50a2a2b171be724917042831b44b1ab0b4bc18b",
-    "timestamp": "1785268755"
+    "token": "71218bb52da44872347354433e396016532d3577",
+    "timestamp": "1785322302"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -316,6 +438,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -340,7 +472,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071313840924,
+  "current_version_id": 203258944678249,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

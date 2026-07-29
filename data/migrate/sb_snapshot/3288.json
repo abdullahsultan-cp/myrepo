@@ -1,14 +1,14 @@
 {
   "name": "AKU BMI Champions Brain Health as a Human Right",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "377069dc-1f25-46d2-99a9-56f18db506cc",
   "alternates": [],
   "created_at": "2026-07-28T19:28:52.593Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:41:59.993Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:59.713Z",
+  "published_at": "2026-07-29T08:22:59.696Z",
   "id": 203068754375585,
   "uuid": "100f4aff-ba88-41bf-8cc1-fa29962b042e",
   "is_folder": false,
@@ -584,7 +584,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Dec 28, 2023",
@@ -599,16 +644,17 @@
     "description": "Reflections on the Healing the Brain Conference",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258476187846,
+      "alt": "AKU BMI Champions Brain Health as a Human Right",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/350465/34287ce7fa/3288-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -629,15 +675,15 @@
   "published": true,
   "slug": "aku-bmi-champions-brain-health-as-a-human-right",
   "path": null,
-  "full_slug": "news/aku-bmi-champions-brain-health-as-a-human-right",
+  "full_slug": "news/rabee/aku-bmi-champions-brain-health-as-a-human-right",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -645,8 +691,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "18a9d481f7750c725dbcdf7ef30fe12219e549e7",
-    "timestamp": "1785268751"
+    "token": "0cf9928b3e04453f32a98272f096582bacb2a214",
+    "timestamp": "1785322298"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -658,6 +704,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -682,7 +738,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071316437802,
+  "current_version_id": 203259001432496,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

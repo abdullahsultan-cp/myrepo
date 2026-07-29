@@ -1,14 +1,14 @@
 {
   "name": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "61fbe796-60e2-4071-a402-729b323203a5",
   "alternates": [],
   "created_at": "2026-07-28T19:27:49.663Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.468Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:42.741Z",
+  "published_at": "2026-07-29T08:22:42.725Z",
   "id": 203068496569228,
   "uuid": "2ce61664-1585-452e-bf18-112196e01240",
   "is_folder": false,
@@ -103,12 +103,88 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       },
       {
         "_uid": "63a8e1e8-0129-0cac-2bc0-c184dafbf31d",
         "type": "video",
         "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          }
+        },
         "cta_link": {
           "id": "",
           "url": "",
@@ -221,7 +297,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       },
       {
         "_uid": "86161a3b-4f2e-c71e-2baf-bda46867dd1c",
@@ -242,7 +363,152 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "14d1054d-a52b-fb5c-9623-3b7732476a13",
+        "type": "image",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203258059022462,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/143474/05634ddcfa/1177-mediumimage.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": ""
       }
     ],
     "date": "Feb 28, 2017",
@@ -270,16 +536,17 @@
     "description": "For patients, this means timely and more accurate diagnosis.",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258045055101,
+      "alt": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
       "name": "",
       "focus": "",
       "title": "",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/286680/ae56c355e1/1177-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -300,15 +567,15 @@
   "published": true,
   "slug": "aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "path": null,
-  "full_slug": "news/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
+  "full_slug": "news/rabee/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -316,8 +583,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "67e98e85cc57801c84a58c3b0db69d1df74047c0",
-    "timestamp": "1785268757"
+    "token": "453966282fabb378e4f816173571ba77290a1984",
+    "timestamp": "1785322304"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -329,6 +596,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -353,7 +630,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071312317206,
+  "current_version_id": 203258931951946,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

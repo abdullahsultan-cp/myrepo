@@ -7,7 +7,7 @@
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start -p 4000",
-    "reindex": "python ../scripts/migrate/build_viewer_index.py"
+    "reindex": "python ../scripts/migrate/review/build_viewer_index.py"
   },
   "dependencies": {
     "next": "15.1.6",

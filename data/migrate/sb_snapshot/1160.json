@@ -1,14 +1,14 @@
 {
   "name": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
-  "parent_id": 200436757260291,
+  "parent_id": 203068490265483,
   "group_id": "047aad31-fba5-4d82-9a0c-0ee58868841d",
   "alternates": [],
   "created_at": "2026-07-28T19:28:30.665Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-28T19:42:00.398Z",
-  "published_at": "2026-07-28T19:39:16.950Z",
+  "updated_at": "2026-07-29T08:22:41.618Z",
+  "published_at": "2026-07-29T08:22:41.601Z",
   "id": 203068664521616,
   "uuid": "405938e5-9833-4710-a28c-c341f161462d",
   "is_folder": false,
@@ -193,7 +193,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       },
       {
         "_uid": "10dabeaf-1be7-e329-1c68-a087a5f85452",
@@ -214,7 +259,52 @@
             }
           ]
         },
-        "component": "rich_text"
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Jan 29, 2017",
@@ -242,16 +332,17 @@
     "description": "AKUH has created a place where congenital heart disease patients can find help and hope",
     "show_social": true,
     "banner_image": {
-      "id": null,
-      "alt": "",
+      "id": 203258027708540,
+      "alt": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
       "name": "",
       "focus": "",
-      "title": "",
+      "title": "AKUH has created a place where congenital heart disease patients can find help and hope",
       "source": "",
-      "filename": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/356185/16c784078f/1160-bannerimage.jpg",
       "copyright": "",
       "fieldtype": "asset",
-      "meta_data": {}
+      "meta_data": {},
+      "is_external_url": false
     },
     "show_similar": true,
     "background_pattern": {
@@ -272,15 +363,15 @@
   "published": true,
   "slug": "aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "path": null,
-  "full_slug": "news/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
+  "full_slug": "news/rabee/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
-    "slug": "news",
+    "id": 203068490265483,
+    "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
+    "name": "Rabee",
+    "slug": "rabee",
     "disble_fe_editor": false
   },
   "is_startpage": false,
@@ -288,8 +379,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "c0d69b8f351cfba1ff45b92af91dae9a13772be2",
-    "timestamp": "1785268756"
+    "token": "79ede61f4bfadbec47d5f4e84f557e5b832b7dbc",
+    "timestamp": "1785322303"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -301,6 +392,16 @@
       "disable_fe_editor": false,
       "path": null,
       "slug": "news",
+      "translated_slugs": []
+    },
+    {
+      "id": 203068490265483,
+      "name": "Rabee",
+      "parent_id": 200436757260291,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "rabee",
       "translated_slugs": []
     }
   ],
@@ -325,7 +426,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203071313206041,
+  "current_version_id": 203258927339841,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
