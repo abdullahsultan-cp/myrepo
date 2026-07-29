@@ -91,7 +91,8 @@ class PhaseTwoTests(unittest.TestCase):
         self.assertEqual(blok["type"], "blok")
 
     def test_build_story_payload_shape(self):
-        with open(join(DATA_DIR, "cleaned_news", "35.json"), "r") as f:
+        with open(join(DATA_DIR, "cleaned_news", "35.json"), "r",
+                  encoding="utf-8") as f:
             item = json.load(f)
         item["NewsContent"] = {"type": "doc", "content": []}
         story, notes = build_story_payload(item, load_config())
@@ -103,7 +104,8 @@ class PhaseTwoTests(unittest.TestCase):
 
 
 def load_fixture_pullquote(filename):
-    with open(join(DATA_DIR, "cleaned_news", filename), "r") as f:
+    with open(join(DATA_DIR, "cleaned_news", filename), "r",
+              encoding="utf-8") as f:
         return json.load(f)["PullQuote"]
 
 

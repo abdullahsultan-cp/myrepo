@@ -91,5 +91,13 @@ storyblok-viewer/*.pem
 /config/database.json
 
 # --- Media reconstructed from SharePoint by download_media.py ----------------
-# 64 MB+ of binaries, regenerable: resolve_media_urls.py then download_media.py.
+# 1.8 GB of binaries, regenerable: scripts/migrate/download/run_media_all.py.
 # assets/ was already ignored above; this is the explicit reason.
+
+# --- Transient run state, not results ----------------------------------------
+# run_media_all.py holds this lock for the duration of a media run; a leftover
+# file means a dead run, and the README says to delete it.
+/data/migrate/.media.lock
+
+# Ad-hoc id lists fed to --ids during a recovery pass. Throwaway by nature.
+/data/migrate/*_ids.txt

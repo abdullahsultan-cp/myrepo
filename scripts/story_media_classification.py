@@ -104,7 +104,8 @@ def build_classification_report(stories_dir):
     filter_counts = {key: 0 for key in MEDIA_FILTER_DEFINITIONS}
 
     for story_filename in story_files:
-        with open(join(stories_dir, story_filename), "r") as handle:
+        with open(join(stories_dir, story_filename), "r",
+                  encoding="utf-8") as handle:
             story = load(handle)
         entry = classify_story_media(story, story_filename)
         stories.append(entry)
@@ -234,14 +235,14 @@ if __name__ == "__main__":
     report = build_classification_report(stories_dir)
     print_report(report)
 
-    with open(report_path, "w") as handle:
+    with open(report_path, "w", encoding="utf-8") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
 
-    with open(index_path, "w") as handle:
+    with open(index_path, "w", encoding="utf-8") as handle:
         dump(build_media_index(report), handle, indent=2, ensure_ascii=False)
 
     makedirs(dirname(constants_path), exist_ok=True)
-    with open(constants_path, "w") as handle:
+    with open(constants_path, "w", encoding="utf-8") as handle:
         handle.write(render_media_types_constants())
 
     if args.filters:

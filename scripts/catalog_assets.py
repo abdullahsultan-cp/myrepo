@@ -15,7 +15,7 @@ def scan_html_assets(folder_path):
     for filename in listdir(folder_path):
         if not filename.endswith(".json"):
             continue
-        with open(join(folder_path, filename), "r") as f:
+        with open(join(folder_path, filename), "r", encoding="utf-8") as f:
             html = load(f).get("NewsContent") or ""
         if not isinstance(html, str):
             continue
@@ -31,7 +31,7 @@ def scan_richtext_assets(folder_path):
     for filename in listdir(folder_path):
         if not filename.endswith(".json"):
             continue
-        with open(join(folder_path, filename), "r") as f:
+        with open(join(folder_path, filename), "r", encoding="utf-8") as f:
             payload = load(f)
         _walk_richtext_images(payload.get("NewsContent"), filename, assets)
     return assets
@@ -110,7 +110,7 @@ if __name__ == "__main__":
         config["sharepoint_base_url"],
     )
 
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         dump(catalog, f, indent=2, ensure_ascii=False)
 
     asset_map = {
@@ -121,7 +121,7 @@ if __name__ == "__main__":
         }
         for item in catalog["assets"]
     }
-    with open(asset_map_path, "w") as f:
+    with open(asset_map_path, "w", encoding="utf-8") as f:
         dump(asset_map, f, indent=2, ensure_ascii=False)
 
     summary = catalog["summary"]

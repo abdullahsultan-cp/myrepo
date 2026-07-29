@@ -148,7 +148,7 @@ def load_existing_map(map_path):
         return {}
     from json import load
 
-    with open(map_path, "r") as handle:
+    with open(map_path, "r", encoding="utf-8") as handle:
         payload = load(handle)
 
     existing = {}
@@ -314,7 +314,8 @@ def build_catalog(stories_dir, normalized_dir, media_dir, map_path=None, config=
         for filename in sorted(listdir(stories_dir)):
             if not filename.endswith(".json"):
                 continue
-            with open(join(stories_dir, filename), "r") as handle:
+            with open(join(stories_dir, filename), "r",
+                      encoding="utf-8") as handle:
                 story = load(handle)
             raw_refs.extend(collect_story_references(story, filename))
 
@@ -323,7 +324,8 @@ def build_catalog(stories_dir, normalized_dir, media_dir, map_path=None, config=
             if not filename.endswith(".json"):
                 continue
             story_id = filename[:-5]
-            with open(join(normalized_dir, filename), "r") as handle:
+            with open(join(normalized_dir, filename), "r",
+                      encoding="utf-8") as handle:
                 item = load(handle)
             html_refs = extract_html_references(item.get("NewsContent"), story_id)
             raw_refs.extend(html_refs)
@@ -383,7 +385,7 @@ def load_download_failures(download_report_path):
         return {}
     from json import load
 
-    with open(download_report_path, "r") as handle:
+    with open(download_report_path, "r", encoding="utf-8") as handle:
         payload = load(handle)
 
     failures = {}
@@ -684,7 +686,7 @@ def load_attachable_assets(map_path, media_dir):
     from json import load
 
     if isfile(map_path):
-        with open(map_path, "r") as handle:
+        with open(map_path, "r", encoding="utf-8") as handle:
             payload = load(handle)
         assets = payload.get("assets") or []
     else:
@@ -730,7 +732,7 @@ def attach_richtext_media_to_stories(
         if not filename.endswith(".json"):
             continue
         story_path = join(stories_dir, filename)
-        with open(story_path, "r") as handle:
+        with open(story_path, "r", encoding="utf-8") as handle:
             story = load(handle)
 
         before_media_count = len((story.get("content") or {}).get("media") or [])
@@ -750,7 +752,7 @@ def attach_richtext_media_to_stories(
             stories_with_media_bloks += 1
             total_media_bloks_added += after_media_count - before_media_count
 
-        with open(story_path, "w") as handle:
+        with open(story_path, "w", encoding="utf-8") as handle:
             dump(updated_story, handle, indent=2, ensure_ascii=False)
         updated_stories += 1
 

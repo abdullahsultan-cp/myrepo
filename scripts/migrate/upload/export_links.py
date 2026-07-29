@@ -11,7 +11,7 @@ SharePoint exposed two URLs per item. Both are emitted:
     friendly   /news/{slug}                                    (rewrite)
 
 Usage:
-    python scripts/migrate/export_links.py [out.csv] [--all] [--internal-links FILE]
+    python scripts/migrate/upload/export_links.py [out.csv] [--all] [--internal-links FILE]
 
 Default output: data/migrate/links.csv  (only stories that have been uploaded)
 --all                 include stories not yet uploaded, with blank SB columns
@@ -23,16 +23,15 @@ import csv
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.abspath(os.path.join(
-    os.path.dirname(__file__), "..")))
 
 import json
 
-import db as tracking
-from storyblok_config import load_config
+# paths puts scripts/migrate/ and scripts/ on sys.path, so it comes first.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+import db as tracking  # noqa: E402
+from storyblok_config import load_config  # noqa: E402
 
 SHAREPOINT_BASE = "https://www.aku.edu"
 EDITOR = "https://app.storyblok.com/#/me/spaces/{space}/stories/0/0/{story}"

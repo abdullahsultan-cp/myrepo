@@ -12,11 +12,11 @@ survive — and every missing file is recorded as 'missing' so a later run fills
 them in and republishes.
 
 Usage:
-    python scripts/migrate/upload.py plan                 # what would happen
-    python scripts/migrate/upload.py assets               # upload media only
-    python scripts/migrate/upload.py stories              # upload stories
-    python scripts/migrate/upload.py all
-    python scripts/migrate/upload.py verify               # re-read from the API
+    python scripts/migrate/upload/upload.py plan                 # what would happen
+    python scripts/migrate/upload/upload.py assets               # upload media only
+    python scripts/migrate/upload/upload.py stories              # upload stories
+    python scripts/migrate/upload/upload.py all
+    python scripts/migrate/upload/upload.py verify               # re-read from the API
 
 Options:
     --folder news/rabee     parent folder path      (default news/rabee)
@@ -34,25 +34,20 @@ import os
 import sys
 import time
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.join(
-    os.path.dirname(os.path.abspath(__file__)), "..", ""))
 
 try:
     import requests
 except ImportError:
     sys.exit("pip install -r requirements.txt")
 
-import db as tracking
-from build_payload import build, load_story, slugify
+# paths puts scripts/migrate/ and scripts/ on sys.path, so this has to come
+# before the sibling and cross-stage imports below.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE, MEDIA_DIR  # noqa: E402
 
-SCRIPTS = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if SCRIPTS not in sys.path:
-    sys.path.insert(0, SCRIPTS)
-from storyblok_config import load_config, management_api_base
-
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-MEDIA_DIR = os.path.join(BASE, "assets", "News", "media")
+import db as tracking  # noqa: E402
+from build_payload import build, load_story, slugify  # noqa: E402
+from storyblok_config import load_config, management_api_base  # noqa: E402
 
 THROTTLE = 0.35          # seconds between write calls; starter plan is modest
 

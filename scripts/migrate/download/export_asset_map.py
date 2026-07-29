@@ -8,7 +8,7 @@ file shared by several stories appears once per use but is only uploaded once â€
 the sha256 column is what makes that safe.
 
 Usage:
-    python scripts/migrate/export_asset_map.py [--csv] [--json]
+    python scripts/migrate/download/export_asset_map.py [--csv] [--json]
 
 Outputs (data/migrate/):
     asset_map.csv        one row per story/role/file
@@ -24,7 +24,8 @@ import sys
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BASE = os.path.abspath(os.path.join(HERE, "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 CACHE = os.path.join(BASE, "data", "migrate", "media_urls.json")
 MEDIA_DIR = os.path.join(BASE, "assets", "News", "media")
 OUT_DIR = os.path.join(BASE, "data", "migrate")
@@ -84,7 +85,6 @@ def main():
     # sha256 / upload state from the tracking DB, if reachable
     db_state = {}
     try:
-        sys.path.insert(0, HERE)
         import db as tracking
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")

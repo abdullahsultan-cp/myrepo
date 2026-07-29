@@ -18,7 +18,7 @@ Every stage is resumable: fetched pages are skipped, files already on disk are
 not fetched twice. Killing this and re-running continues from where it stopped.
 
 Usage:
-    python scripts/migrate/run_media_all.py [--workers 6] [--skip-resolve]
+    python scripts/migrate/download/run_media_all.py [--workers 6] [--skip-resolve]
 """
 
 import argparse
@@ -28,14 +28,15 @@ import sys
 import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-BASE = os.path.abspath(os.path.join(HERE, "..", ".."))
-LOCK = os.path.join(BASE, "data", "migrate", ".media.lock")
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import LOCK, MIGRATE  # noqa: E402
 
 
 def run(label, script, args):
+    """Run a stage as its own process. `script` is relative to scripts/migrate/."""
     print(f"\n{'=' * 70}\n  {label}\n{'=' * 70}", flush=True)
     t0 = time.time()
-    r = subprocess.run([sys.executable, "-u", os.path.join(HERE, script)]
+    r = subprocess.run([sys.executable, "-u", os.path.join(MIGRATE, script)]
                        + [str(a) for a in args])
     mins = (time.time() - t0) / 60
     print(f"  -- {label}: exit {r.returncode} in {mins:.1f} min", flush=True)
@@ -64,23 +65,24 @@ def main():
 
     started = time.time()
     try:
-        run("progress before", "media_progress.py", [])
+        run("progress before", "download/media_progress.py", [])
 
         if not a.skip_resolve:
-            run("1/5  resolve — stories that have media", "resolve_media_urls.py",
+            run("1/5  resolve — stories that have media",
+                "download/resolve_media_urls.py",
                 ["--priority", "with-media", "--workers", a.workers])
-            run("2/5  resolve — everything else", "resolve_media_urls.py",
-                ["--workers", a.workers])
+            run("2/5  resolve — everything else",
+                "download/resolve_media_urls.py", ["--workers", a.workers])
 
         if not a.skip_download:
-            run("3/5  download every resolved file", "download_media.py",
+            run("3/5  download every resolved file", "download/download_media.py",
                 ["--workers", a.workers])
 
-        run("4/5  export the asset map", "export_asset_map.py", ["--csv"])
-        run("4/5  failure report", "report_failures.py", ["--csv"])
-        run("5/5  rebuild the viewer index", "build_viewer_index.py", [])
+        run("4/5  export the asset map", "download/export_asset_map.py", ["--csv"])
+        run("4/5  failure report", "download/report_failures.py", ["--csv"])
+        run("5/5  rebuild the viewer index", "review/build_viewer_index.py", [])
 
-        run("progress after", "media_progress.py", [])
+        run("progress after", "download/media_progress.py", [])
         print(f"\n  ALL DONE in {(time.time() - started) / 60:.0f} min",
               flush=True)
     finally:

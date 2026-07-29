@@ -26,7 +26,7 @@ them. That is the only placement available without a schema change.
 
 Used as a library by upload.py; run directly to inspect one story:
 
-    python scripts/migrate/build_payload.py 2198
+    python scripts/migrate/upload/build_payload.py 2198
 """
 
 import json
@@ -36,7 +36,8 @@ import re
 import sys
 from datetime import datetime
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 
 # ---------------------------------------------------------------- read time
@@ -406,8 +407,9 @@ def load_story(sid):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        sys.exit("usage: build_payload.py <sharepoint_id>")
+    if len(sys.argv) != 2 or sys.argv[1] in ("-h", "--help"):
+        sys.exit("usage: build_payload.py <sharepoint_id>\n"
+                 "  prints the news_article payload for one story, e.g. 2198")
     sid = sys.argv[1]
     st = load_story(sid)
     content, warns = build(st, None, entity_slug="medical-college")

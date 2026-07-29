@@ -225,7 +225,7 @@ def validate_news_json():
         return errors
 
     try:
-        with open(NEWS_JSON_PATH, "r") as f:
+        with open(NEWS_JSON_PATH, "r", encoding="utf-8") as f:
             data = load(f)
     except OSError as exc:
         errors.append(f"Could not read {NEWS_JSON_PATH}: {exc}")
@@ -273,7 +273,7 @@ def validate_unicode_report():
         return errors
 
     try:
-        with open(UNICODE_REPORT_PATH, "r") as f:
+        with open(UNICODE_REPORT_PATH, "r", encoding="utf-8") as f:
             report = load(f)
     except OSError as exc:
         errors.append(f"Could not read {UNICODE_REPORT_PATH}: {exc}")

@@ -16,7 +16,7 @@ from storyblok_utils import slugify, story_uuid
 
 
 def load_json(path):
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return load(f)
 
 
@@ -251,7 +251,7 @@ def build_story_files(source_folder, output_folder, config):
     used_slugs = set()
 
     for filename in json_files:
-        with open(join(source_folder, filename), "r") as f:
+        with open(join(source_folder, filename), "r", encoding="utf-8") as f:
             item = load(f)
         sharepoint_id = item.get("Id") or item.get("ID")
         base_slug = slugify(item.get("Title") or f"News {sharepoint_id}", fallback=f"news-{sharepoint_id}")
@@ -273,7 +273,7 @@ def build_story_files(source_folder, output_folder, config):
                 {"file": filename, "warnings": notes["pull_quote_warnings"]}
             )
 
-        with open(join(output_folder, filename), "w") as f:
+        with open(join(output_folder, filename), "w", encoding="utf-8") as f:
             dump(story, f, indent=2, ensure_ascii=False)
 
     return {
@@ -297,7 +297,7 @@ if __name__ == "__main__":
     config = load_config()
     report = build_story_files(source_folder, output_folder, config)
 
-    with open(report_path, "w") as f:
+    with open(report_path, "w", encoding="utf-8") as f:
         dump(report, f, indent=2, ensure_ascii=False)
 
     summary = report["summary"]

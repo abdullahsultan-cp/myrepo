@@ -10,7 +10,7 @@ def load_config(config_path=None):
     path = config_path or environ.get("STORYBLOK_CONFIG") or DEFAULT_CONFIG_PATH
     file_config = {}
     if exists(path):
-        with open(path, "r") as f:
+        with open(path, "r", encoding="utf-8") as f:
             file_config = load(f)
 
     return {

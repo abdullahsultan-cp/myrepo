@@ -8,7 +8,7 @@ the component inventory.
 ## Run
 
 ```bash
-python ../scripts/migrate/build_viewer_index.py   # generate public/data/
+python ../scripts/migrate/review/build_viewer_index.py   # generate public/data/
 npm install
 npm run dev                                       # http://localhost:4000
 ```

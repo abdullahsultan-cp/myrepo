@@ -15,7 +15,7 @@ from storyblok_utils import absolute_sharepoint_url
 
 
 def load_json(path):
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return load(f)
 
 
@@ -141,7 +141,7 @@ def enhance_news_files(source_folder, output_folder, link_map_path, asset_map_pa
     warning_categories = {}
 
     for filename in json_files:
-        with open(join(source_folder, filename), "r") as f:
+        with open(join(source_folder, filename), "r", encoding="utf-8") as f:
             item = load(f)
         enhanced, warnings = enhance_news_item(item, url_lookup, asset_map, config)
         if warnings:
@@ -149,7 +149,7 @@ def enhance_news_files(source_folder, output_folder, link_map_path, asset_map_pa
             for warning in warnings:
                 warning_categories[warning] = warning_categories.get(warning, 0) + 1
 
-        with open(join(output_folder, filename), "w") as f:
+        with open(join(output_folder, filename), "w", encoding="utf-8") as f:
             dump(enhanced, f, indent=2, ensure_ascii=False)
 
     return {
@@ -175,7 +175,7 @@ if __name__ == "__main__":
         source_folder, output_folder, link_map_path, asset_map_path, config
     )
 
-    with open(report_path, "w") as f:
+    with open(report_path, "w", encoding="utf-8") as f:
         dump(report, f, indent=2, ensure_ascii=False)
 
     summary = report["summary"]

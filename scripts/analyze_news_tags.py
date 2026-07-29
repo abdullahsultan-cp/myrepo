@@ -171,7 +171,7 @@ CLASSIFICATION_SUMMARY = {
 
 
 def load_news_data(file_path):
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         return load(f)
 
 
@@ -386,7 +386,7 @@ def export_report(findings, output_path, files_scanned, files_with_newscontent):
         "tags": items,
     }
 
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         dump(payload, f, indent=2, ensure_ascii=False)
 
 

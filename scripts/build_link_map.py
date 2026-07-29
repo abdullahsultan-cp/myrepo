@@ -15,7 +15,9 @@ def load_news_items(folder_path):
     for filename in listdir(folder_path):
         if not filename.endswith(".json"):
             continue
-        with open(join(folder_path, filename), "r") as f:
+        # encoding is explicit: on Windows the default is cp1252, which raises
+        # on the first accented name in the corpus.
+        with open(join(folder_path, filename), "r", encoding="utf-8") as f:
             item = load(f)
         items[filename] = item
     return items
@@ -201,7 +203,7 @@ if __name__ == "__main__":
     output_path = join(base_path, "data", "storyblok_link_map.json")
 
     link_map = build_link_map(news_folder)
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         dump(link_map, f, indent=2, ensure_ascii=False)
 
     summary = link_map["summary"]

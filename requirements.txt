@@ -1,3 +1,11 @@
+﻿# Content pipeline (SharePoint HTML -> Storyblok rich text)
 beautifulsoup4>=4.12.0
 html5lib>=1.1
 requests>=2.31.0
+
+# Migration tracking database (scripts/migrate/)
+# psycopg 3 with the bundled libpq, so no separate PostgreSQL client install.
+psycopg[binary]>=3.1
+
+# Tests
+pytest>=8.0

@@ -11,9 +11,9 @@ Four kinds of failure, kept apart because they need different fixes:
   story      a Storyblok upload failed (from the tracking DB, if reachable)
 
 Usage:
-    python scripts/migrate/report_failures.py            # summary
-    python scripts/migrate/report_failures.py --verify   # also HEAD every URL
-    python scripts/migrate/report_failures.py --csv out.csv
+    python scripts/migrate/download/report_failures.py            # summary
+    python scripts/migrate/download/report_failures.py --verify   # also HEAD every URL
+    python scripts/migrate/download/report_failures.py --csv out.csv
 """
 
 import argparse
@@ -24,7 +24,8 @@ import os
 import sys
 from collections import Counter
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 CACHE = os.path.join(BASE, "data", "migrate", "media_urls.json")
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 OUT_DEFAULT = os.path.join(BASE, "data", "migrate", "failures.csv")
@@ -123,7 +124,6 @@ def main():
     # ---- 5. failed Storyblok uploads
     upload_fail = []
     try:
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import db as tracking
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")

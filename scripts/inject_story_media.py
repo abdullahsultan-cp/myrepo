@@ -127,7 +127,7 @@ def inject_media_into_stories(stories_dir, metadata_path):
         story_path = join(stories_dir, story_filename)
         sharepoint_id = story_filename[:-5]
 
-        with open(story_path, "r") as handle:
+        with open(story_path, "r", encoding="utf-8") as handle:
             story = load(handle)
 
         metadata_row = metadata_by_id.get(sharepoint_id)
@@ -143,7 +143,7 @@ def inject_media_into_stories(stories_dir, metadata_path):
 
         story["content"] = insert_media_before_body(story.get("content") or {}, media_bloks)
 
-        with open(story_path, "w") as handle:
+        with open(story_path, "w", encoding="utf-8") as handle:
             dump(story, handle, indent=2, ensure_ascii=False)
 
         updated += 1
@@ -205,6 +205,6 @@ if __name__ == "__main__":
     report = inject_media_into_stories(stories_dir, metadata_path)
     print_report(report)
 
-    with open(output_path, "w") as handle:
+    with open(output_path, "w", encoding="utf-8") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
     print(f"Report exported to {output_path}")

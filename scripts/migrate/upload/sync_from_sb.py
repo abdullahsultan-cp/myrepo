@@ -13,8 +13,8 @@ editorial changes can be diffed against what the migration generated.
 Read-only against Storyblok. GET requests only.
 
 Usage:
-    python scripts/migrate/sync_from_sb.py            # reconcile
-    python scripts/migrate/sync_from_sb.py --snapshot # also save content JSON
+    python scripts/migrate/upload/sync_from_sb.py            # reconcile
+    python scripts/migrate/upload/sync_from_sb.py --snapshot # also save content JSON
 """
 
 import argparse
@@ -22,15 +22,15 @@ import json
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, os.path.abspath(os.path.join(
-    os.path.dirname(__file__), "..")))
 
-import db as tracking
-from storyblok_config import load_config
-from upload import SB
+# paths puts scripts/migrate/ and scripts/ on sys.path, so it comes first.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+import db as tracking  # noqa: E402
+from storyblok_config import load_config  # noqa: E402
+from upload import SB  # noqa: E402
+
 SNAP_DIR = os.path.join(BASE, "data", "migrate", "sb_snapshot")
 
 

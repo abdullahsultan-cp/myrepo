@@ -9,7 +9,7 @@ links, pull quotes, ...) then greedily picks the smallest set that covers all of
 them, so a 20-story test run leaves nothing untested.
 
 Usage:
-    python scripts/migrate/select_scenarios.py [--count 20] [--json out.json]
+    python scripts/migrate/upload/select_scenarios.py [--count 20] [--json out.json]
 
 Reads  data/storyblok_stories/ and data/taxonomy/routing/news_routing.csv
 Writes a table to stdout and, with --json, the chosen ids plus a coverage matrix.
@@ -23,7 +23,8 @@ import re
 import sys
 from collections import Counter, defaultdict
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 ROUTING = os.path.join(BASE, "data", "taxonomy", "routing", "news_routing.csv")
 

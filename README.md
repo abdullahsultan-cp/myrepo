@@ -1,310 +1,291 @@
-# AKU Academy — News Migration Pipeline
+# AKU News — SharePoint to Storyblok migration
 
-Tools for migrating AKU news content from SharePoint into Storyblok-shaped JSON, managing local media assets, and previewing the results in a local viewer.
+Migrates **3,606 news stories** from AKU's SharePoint site into Storyblok: the
+article content, the folder structure they live in, and every image, video and
+document they reference.
 
-The workflow is: **raw SharePoint export → cleaned/normalized HTML → Storyblok rich text → full story payloads → local media attachment → optional Storyblok import**.
+The work splits into three stages that can be run and re-run independently:
+
+| Stage | Turns | Into | Entry point |
+|---|---|---|---|
+| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `scripts/run_pipeline.py` |
+| **2 · Taxonomy** | City / Entity / Tags | the Region → Entity → Department folder tree | `scripts/taxonomy/run_taxonomy.py` |
+| **3 · Migration** | payloads + assets | live stories and assets in Storyblok | `scripts/migrate/` |
+
+Everything is resumable and idempotent. Nothing in stages 1–2 touches the
+network; stage 3 does, and says so before it writes.
 
 ---
 
-## Prerequisites
-
-- **Python 3.10+**
-- **Node.js 20+** (for the Storyblok viewer)
-- **pnpm** or **npm**
-
-### Python setup
+## Quick start
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+# 1. Python 3.10+ environment
+python -m venv .venv
+.venv\Scripts\activate          # Windows;  source .venv/bin/activate elsewhere
 pip install -r requirements.txt
+
+# 2. Content: split the export and normalise it
+python scripts/run_pipeline.py extract-news
+python scripts/run_pipeline.py clean-news
+python scripts/run_pipeline.py normalize-html
+python scripts/run_pipeline.py convert-richtext
+python scripts/run_pipeline.py build-link-map
+python scripts/run_pipeline.py enhance-richtext
+python scripts/run_pipeline.py build-stories
+
+# 3. Taxonomy: work out where every story belongs
+python scripts/taxonomy/run_taxonomy.py
+
+# 4. Media: find every asset on the live site and download it
+python scripts/migrate/download/run_media_all.py            # ~3.5 hours, resumable
+
+# 5. Storyblok: create the folders and the stories
+python scripts/migrate/db.py init
+python scripts/migrate/db.py load
+python scripts/migrate/upload/upload.py plan               # dry run first
+python scripts/migrate/upload/upload.py assets
+python scripts/migrate/upload/upload.py stories
 ```
 
-Dependencies: `beautifulsoup4`, `html5lib`, `requests`.
+Windows users: `scripts/migrate/download/resume_media.cmd` runs step 4 with live
+progress behind a lock, and can be double-clicked to resume after a reboot.
+
+| Stage | Runtime | Network |
+|---|---|---|
+| 2 · content, all 7 steps | ~6 min | none |
+| 3 · taxonomy | ~30 s | none |
+| 4 · media resolve + download | **~3.5 h** | reads aku.edu |
+| 5 · Storyblok upload | ~40 min | **writes** to Storyblok |
+
+---
+
+## What you need before starting
+
+| Requirement | Notes |
+|---|---|
+| **Python 3.10+** | `requirements.txt` — bs4, html5lib, requests, psycopg |
+| **PostgreSQL** | any local instance; used only to track migration state |
+| **Node 20+** and pnpm/npm | only for the review viewer |
+| **`data/news.json`** | the SharePoint OData export. **In Git.** |
+| **Storyblok token** | `config/storyblok.json`, from `storyblok.example.json`. **Gitignored.** |
+| `assets/News/media/` | **not** required — stage 4 rebuilds it from the live site |
+
+### Configuration
+
+```bash
+cp config/storyblok.example.json config/storyblok.json
+# then set space_id and management_token
+```
+
+Database connection comes from `config/database.json` (gitignored) or the
+standard `PGHOST` / `PGUSER` / `PGPASSWORD` / `PGDATABASE` variables. The default
+is `postgres@localhost/aku_news_migration`.
 
 ---
 
 ## Repository layout
 
 ```
-aku-academy/
-├── assets/              Local SharePoint media export (not in Git)
-├── config/              Storyblok API settings + hand corrections
-├── data/                Pipeline inputs, outputs, and reports
-├── docs/                Migration spec and decisions
-├── scripts/             Python migration pipeline
-│   └── taxonomy/        Region / Entity / Department + folder structure
-├── storyblok-viewer/    Next.js app to preview stories + serve media
-└── tests/               Pipeline tests
+config/                Storyblok + database credentials, region_overrides.csv
+data/
+  news.json              INPUT — the SharePoint export (tracked)
+  news/ … storyblok_stories/    per-stage story JSON (GITIGNORED, regenerable)
+  taxonomy/              folder tree, per-story routing, lookups
+  migrate/               asset map, media URLs, failure reports
+assets/News/media/     every downloaded image, video and document (GITIGNORED)
+docs/                  the specs — read these before changing behaviour
+
+scripts/               STAGE 1 · the content pipeline (33 scripts)
+scripts/taxonomy/      STAGE 2 · Region / Entity / Department
+scripts/migrate/       STAGE 3 · shared: paths.py, db.py, schema.sql
+scripts/migrate/download/   Flow A · find and fetch every asset
+scripts/migrate/upload/     Flow B · build payloads and write to Storyblok
+scripts/migrate/review/     QA · layout samples, viewer index
+
+storyblok-viewer/      Next.js app for reviewing the result
+tests/                 pytest
 ```
 
-| Folder | Purpose |
-|--------|---------|
-| **`assets/`** | SharePoint media bundle: `Metadata.csv`, image/video files, optional zip backup. Required for media validation, injection, and the viewer. **Gitignored** — you must add this locally after cloning. |
-| **`config/`** | Storyblok Management API config. Copy `storyblok.example.json` → `storyblok.json` when uploading or importing. Also `region_overrides.csv` — hand corrections for the taxonomy stage. |
-| **`data/`** | Raw news export, per-story JSON at each pipeline stage, generated reports, and `data/taxonomy/` (folder structure + routing). The per-stage story folders are **gitignored** — rebuild them from `data/news.json`. |
-| **`docs/`** | `MIGRATION_DECISIONS.md` — the full spec: structure, every rule, and what is inferred rather than read from the source. |
-| **`scripts/`** | All pipeline steps. Start with `run_pipeline.py`. |
-| **`scripts/taxonomy/`** | Where each story goes in Storyblok. Start with `run_taxonomy.py`; see its [README](scripts/taxonomy/README.md). |
-| **`storyblok-viewer/`** | Browse `data/storyblok_stories/` and serve files from `assets/News/media/` at `/news-media/…`. |
-| **`tests/`** | Run with `python3 -m pytest tests/`. |
+Stage 3 is split by flow because the two halves fail differently and are run at
+different times: **download** talks to aku.edu and is safe to interrupt,
+**upload** talks to Storyblok and writes. `paths.py` and `db.py` stay at the
+`migrate/` root because both flows use them — `paths.py` locates the repo root by
+walking up, so a script's directory depth never has to be encoded in its source.
 
-### Two stages
+**Gitignored on purpose:** the six per-stage story folders (21,636 files,
+167 MB) and `assets/` (3,902 files, 1.8 GB). Both are regenerable — the first
+from `data/news.json`, the second from the live site. Tracked size is ~45 MB.
 
-| | Converts | Entry point |
+---
+
+## Stage 3 in detail — the two flows
+
+### Flow A · Download media
+
+The export renamed media on the way out (`2198-BannerImage.jpg`), so the local
+filename says nothing about where the file lives on aku.edu. Two resolution
+paths:
+
+* rich-text assets carry a `source_key`, and `https://www.aku.edu{source_key}`
+  resolves directly
+* banner / medium have no `source_key` and the real name is unguessable
+  (`2198-BannerImage.jpg` is really `/news/PublishingImages/CapBanner.jpg`), so
+  the story page is read once and cached
+
+```bash
+python scripts/migrate/download/run_media_all.py --workers 6
+```
+
+That runs, behind a lock file:
+
+| # | Script | Does |
 |---|---|---|
-| **Content pipeline** | SharePoint HTML → Storyblok rich text + story payloads | `scripts/run_pipeline.py` |
-| **Taxonomy stage** | Region / Entity / Department → the Storyblok folder tree | `scripts/taxonomy/run_taxonomy.py` |
+| 1–2 | `download/resolve_media_urls.py` | reads all 3,606 pages, caches every asset URL |
+| 3 | `download/download_media.py` | fetches each distinct file **once** into `assets/News/media/` |
+| 4 | `download/export_asset_map.py` | writes `asset_map.csv` — file → story → target field |
+| 4 | `download/report_failures.py` | writes `failures.csv` |
+| 5 | `review/build_viewer_index.py` | refreshes the review viewer |
 
-The content pipeline puts every story flat at `/news/{slug}`. The taxonomy stage
-works out the real destination:
+Current state: **3,606/3,606 pages read, 3,413 asset URLs resolved, 3,902 files
+(1.8 GB) on disk.** 208 declared media have no URL — the page renders one image
+where the export declares two or three, plus 19 hard 404s. `report_failures.py`
+lists them.
 
-```
-global/news/{item}                                                 250
-Regions/{region}/News/{item}                                      1284
-Regions/{region}/Entities/{entity}/News/{item}                    1499
-Regions/{region}/Entities/{entity}/Departments/{dept}/News/{item}   573
-```
+**Run it as one process.** Two resolver passes share `media_urls.json`, and the
+slower one rewrites the file from its own memory — that silently reverted
+corrected URLs once. The lock refuses a second run rather than letting them fight.
 
-**346 folders · 6 regions · 19 entities · 89 department folders.** Hand
-`data/taxonomy/seed/folders.json` to the backend to create the structure.
-
----
-
-## Required files & folders
-
-After cloning, set up these paths before running the full pipeline or viewer with media.
-
-| Required | Path | In Git? | Notes |
-|----------|------|---------|-------|
-| News export | `data/news.json` | Yes | SharePoint OData export (`value` array or plain list). Minimum fields: `Id`, `NewsContent`. |
-| Media metadata | `assets/News/Metadata.csv` | **No** | CSV mapping story IDs to banner/medium/thumbnail/video filenames. |
-| Media files | `assets/News/media/` | **No** | All images and videos, e.g. `{id}-BannerImage.jpg`, `{id}-Video1.mp4`. Rich-text downloads also land here. |
-| Storyblok config | `config/storyblok.json` | **No** | Create from `config/storyblok.example.json`. Gitignored — do not commit API tokens. |
-
-### Setting up `assets/` (not pushed to GitHub)
-
-The entire `assets/` folder is listed in `.gitignore`, so it will **not** be included when you push to GitHub. Each developer (or CI machine) needs their own copy.
-
-1. Obtain the SharePoint media export (zip or folder).
-2. Place files under `assets/News/`:
-
-```
-assets/
-└── News/
-    ├── Metadata.csv
-    ├── News-All-Items.json    # optional; pipeline uses data/news.json instead
-    └── media/
-        ├── 100-BannerImage.jpg
-        ├── 100-MediumImage.jpg
-        └── …
-```
-
-3. Or unzip a bundle such as `News-*.zip` into `assets/` and confirm `Metadata.csv` and `media/` end up under `assets/News/`.
-
-Without `assets/`, content-only pipeline steps still run, but media validation, media injection, rich-text downloads, and image/video preview in the viewer will be incomplete.
-
-### Generated by the pipeline (no manual setup)
-
-These are created under `data/` when you run pipeline steps — you do not need to add them by hand:
-
-| Output | Path | Used by |
-|--------|------|---------|
-| Per-story extracts | `data/news/`, `data/cleaned_news/`, … | Next pipeline stages |
-| Storyblok payloads | `data/storyblok_stories/` | Viewer, Storyblok import |
-| Reports & indexes | `data/*.json` | Debugging, viewer filters (`story_media_index.json`) |
-
-See [Pipeline data](#pipeline-data) below for the full list of `data/` folders and reports.
-
----
-
-## Pipeline data
-
-| Path | Description |
-|------|-------------|
-| `data/news.json` | **Input** — raw SharePoint news export |
-| `data/news/` | One JSON file per story (`{Id}.json`) |
-| `data/cleaned_news/` | Unicode-normalized news items |
-| `data/normalized_news/` | Semantic HTML (SharePoint markup cleaned) |
-| `data/storyblok_news/` | Storyblok rich-text JSON (body only) |
-| `data/storyblok_news_enhanced/` | Rich text with resolved links and asset URLs |
-| `data/storyblok_stories/` | **Final story payloads** — one `{Id}.json` per story |
-| `data/*.json` | Reports, maps, and indexes (see below) |
-
-### Key report files
-
-| File | Purpose |
-|------|---------|
-| `unicode_report.json` | Characters needing normalization |
-| `newscontent_tags_report.json` | HTML tag inventory |
-| `html_normalization_report.json` | HTML cleanup summary |
-| `richtext_conversion_report.json` | HTML → Storyblok richtext results |
-| `storyblok_link_map.json` | SharePoint URL → story slug lookup |
-| `storyblok_asset_catalog.json` | Inline images cataloged from content |
-| `storyblok_stories_report.json` | Story build summary |
-| `news_media_report.json` | Metadata.csv vs on-disk media validation |
-| `storyblok_media_map.json` | Story ↔ media file mapping |
-| `richtext_media_catalog.json` | Embedded rich-text media not yet local |
-| `richtext_media_verify_report.json` | Downloaded vs missing rich-text assets |
-| `story_media_classification_report.json` | Stories grouped by thumbnail/GIF/video |
-| `story_media_index.json` | Compact index for viewer media filters |
-
-Intermediate folders (`news/`, `cleaned_news/`, etc.) are regenerated by pipeline steps. **`storyblok_stories/`** is what the viewer and Storyblok import step consume.
-
----
-
-## Configuration — `config/`
-
-For Storyblok Management API steps (`upload-assets`, `import-storyblok`):
+Recovery helpers, for when something did not resolve:
 
 ```bash
-cp config/storyblok.example.json config/storyblok.json
+python scripts/migrate/download/retry_failed_media.py      # transient errors only
+python scripts/migrate/download/guess_media_variants.py    # derive medium from banner name
+python scripts/migrate/download/media_progress.py          # progress bar
 ```
 
-Edit `config/storyblok.json` with your space ID and management token. You can also use environment variables:
+Downloading rather than linking is deliberate: uploading straight from aku.edu
+would hit the site a second time story by story, and the rate limiting that
+caused 69 timeouts during resolution would return mid-upload — with a
+half-finished Storyblok space to clean up.
 
-- `STORYBLOK_SPACE_ID`
-- `STORYBLOK_MANAGEMENT_TOKEN`
-- `STORYBLOK_REGION` (`eu`, `us`, `cn`, `ap`)
-- `STORYBLOK_DRY_RUN` (`true` / `false`)
-
-By default, upload and import scripts run in **dry-run** mode until you set `dry_run: false` or pass execute flags where supported.
-
----
-
-## Running the pipeline
-
-The orchestrator validates prerequisites and runs steps in order:
+### Flow B · Upload to Storyblok
 
 ```bash
-python3 scripts/run_pipeline.py status          # Check what's ready / blocked
-python3 scripts/run_pipeline.py extract-news    # Run a single step
-python3 scripts/run_pipeline.py all              # Run every step (long)
+python scripts/migrate/db.py init      # create the database + schema
+python scripts/migrate/db.py load      # load 3606 stories, assets, links
+python scripts/migrate/db.py sample    # flag the 20-story scenario sample
+python scripts/migrate/db.py status    # progress
+
+python scripts/migrate/upload/upload.py plan                    # what would happen
+python scripts/migrate/upload/upload.py assets                  # from local disk
+python scripts/migrate/upload/upload.py stories --folder news/rabee
+python scripts/migrate/upload/upload.py verify                  # read back from the API
 ```
 
-### Pipeline steps (in order)
+Useful flags: `--all-stories` (the whole corpus, not the sample), `--ids 2198,1177`,
+`--limit N`, `--draft`.
 
-| Step | Script | What it does |
-|------|--------|--------------|
-| `extract-news` | `analyze_news.py` | Split `news.json` → `data/news/` |
-| `analyze-unicode` | `analyze_unicode.py` | Scan for Unicode issues |
-| `clean-news` | `clean_news.py` | Normalize Unicode |
-| `analyze-news-tags` | `analyze_news_tags.py` | Inventory HTML tags |
-| `normalize-html` | `normalize_news_html.py` | Clean SharePoint HTML |
-| `convert-richtext` | `convert_news_richtext.py` | HTML → Storyblok richtext |
-| `build-link-map` | `build_link_map.py` | Internal link lookup map |
-| `catalog-assets` | `catalog_assets.py` | Catalog inline content images |
-| `upload-assets` | `upload_assets.py` | Upload to Storyblok (needs API) |
-| `enhance-richtext` | `enhance_storyblok_news.py` | Resolve links/assets in richtext |
-| `build-stories` | `build_storyblok_stories.py` | Build full story JSON |
-| `validate-news-media` | `validate_news_media.py` | Check Metadata.csv vs `assets/News/media` |
-| `map-storyblok-media` | `map_storyblok_media.py` | Map stories to media files |
-| `inject-story-media` | `inject_story_media.py` | Add `news_media` bloks from Metadata.csv |
-| `catalog-richtext-media` | `catalog_richtext_media.py` | Find embedded media missing locally |
-| `download-richtext-media` | `download_richtext_media.py` | Download missing assets (dry-run by default) |
-| `verify-richtext-media` | `verify_richtext_media.py` | Report download status |
-| `attach-richtext-media` | `attach_richtext_media.py` | Wire downloads into stories |
-| `classify-story-media` | `story_media_classification.py` | Tag stories (thumbnail/GIF/video) |
-| `validate-metadata` | `validate_storyblok_metadata.py` | Metadata coverage check |
-| `extract-viewer-filters` | `extract_storyblok_filter_constants.py` | Generate viewer filter constants |
-| `import-storyblok` | `import_storyblok.py` | Push stories to Storyblok (needs API) |
+**Idempotent without any Storyblok schema change.** The tracking table holds
+`sb_story_id`, so a second run PUTs instead of POSTing; if the database is lost,
+the slug is looked up before creating. A payload hash skips unchanged stories.
 
-### Taxonomy steps
-
-Run after `clean-news`. Details in [`scripts/taxonomy/README.md`](scripts/taxonomy/README.md).
+After anyone edits stories in the Storyblok UI:
 
 ```bash
-python3 scripts/taxonomy/run_taxonomy.py status     # what exists so far
-python3 scripts/taxonomy/run_taxonomy.py            # every step, in order
-```
-
-| Step | Script | What it does |
-|------|--------|--------------|
-| `lookups` | `harvest_lookups.py` | City / entity / tag inventory + drift report |
-| `regions` | `build_structure.py` | Region per item (country), with the rule that fired |
-| `abbrev` | `build_entity_abbrev.py` | Short form per entity, from approver-group names |
-| `recover` | `recover_entity.py` | Entity for the 2048 items whose `Entity` is `"Global"` |
-| `departments` | `build_departments.py` | Department per item, derived from `Tags` |
-| `crossrefs` | `build_crossrefs.py` | Cross-entity share links from `AdditionalEntity` |
-| `tree` | `build_folder_tree.py` | Folder structure + per-item destination |
-| `seed` | `build_seed_json.py` | Folders + stories → one JSON for the backend |
-| `folders` | `build_folders_only.py` | Folders only → `data/taxonomy/seed/folders.json` |
-
-### Typical workflows
-
-**Content only (no network):**
-
-```bash
-python3 scripts/run_pipeline.py extract-news
-python3 scripts/run_pipeline.py clean-news
-python3 scripts/run_pipeline.py normalize-html
-python3 scripts/run_pipeline.py convert-richtext
-python3 scripts/run_pipeline.py build-link-map
-python3 scripts/run_pipeline.py enhance-richtext
-python3 scripts/run_pipeline.py build-stories
-```
-
-**After placing `Metadata.csv` and files in `assets/News/media/`:**
-
-```bash
-python3 scripts/run_pipeline.py validate-news-media
-python3 scripts/run_pipeline.py inject-story-media
-```
-
-**Rich-text embedded media (PDFs, inline images):**
-
-```bash
-python3 scripts/run_pipeline.py catalog-richtext-media
-python3 scripts/download_richtext_media.py --execute    # downloads to assets/News/media
-python3 scripts/run_pipeline.py verify-richtext-media
-python3 scripts/attach_richtext_media.py --execute    # updates storyblok_stories
-```
-
-Download and attach scripts default to **dry-run**. Always review reports before passing `--execute`.
-
-**Media type filters (thumbnail, GIF, video file, embedded video):**
-
-```bash
-python3 scripts/run_pipeline.py classify-story-media
-
-# List stories matching filters
-python3 scripts/story_media_classification.py --filter gif
-python3 scripts/story_media_classification.py --filter video_file --filter video_embed
+python scripts/migrate/upload/sync_from_sb.py --snapshot   # reconcile moves/renames
+python scripts/migrate/upload/export_links.py --check      # SharePoint/SB review sheet
 ```
 
 ---
 
-## Storyblok viewer
-
-Local preview app — no Storyblok API token required. It reads directly from `data/storyblok_stories/`.
+## Design review — the smallest set of pages that shows everything
 
 ```bash
-cd storyblok-viewer
-pnpm install    # or npm install
-pnpm run dev    # http://localhost:3000
+python scripts/migrate/review/layout_samples.py --csv
 ```
 
-After running `classify-story-media` or `extract-viewer-filters`, restart the dev server so filter constants and `story_media_index.json` are picked up.
+Greedy set-cover over 21 layout-bearing features (hero, second image, gallery,
+inline image, YouTube, hosted video, tweet, iframe, pull quote, table, lists,
+headings, blockquote, PDF, GIF, RTL, superscript, long, short, no-media). **Eight
+live pages cover all 21** — written to `data/migrate/layout_samples.csv` with the
+SharePoint URL and the list of layouts each one demonstrates. Use those eight for
+the design sign-off instead of browsing the archive.
 
-See [`storyblok-viewer/README.md`](storyblok-viewer/README.md) for viewer-specific details.
+**There are no buttons in SharePoint.** All 3,606 stories were scanned: zero
+`<button>` tags, zero `role="button"`, zero `btn`/`cta` classes, zero
+`<input type=submit>`. What exists is 14 stories whose link *text* reads like a
+call to action ("click here", "read more", "learn more") and 5 with a link
+carrying an inline background or border style. So a `button` blok is a new-design
+decision, not migrated content — the migration emits those 19 as ordinary links
+unless the design says otherwise.
+
+---
+
+## Review viewer
+
+```bash
+python scripts/migrate/review/build_viewer_index.py
+cd storyblok-viewer && npm install && npm run dev     # localhost:4000
+```
+
+Four pages: **Overview** (counts and the element inventory), **Archive**
+(faceted listing), **Structure** (the folder tree as an org chart), **Inspector**
+(per-story data). Images come from the live SharePoint site, so a story renders
+as it does today. See `storyblok-viewer/README.md`.
+
+---
+
+## Things that will bite you
+
+**No department field exists.** 41 fields in the export, none of them a
+department. Departments are inferred from `Tags`, so roughly 40 of the 89
+department folders may not correspond to a real unit. Never present a department
+as authoritative.
+
+**Some entities and regions are inferred too.** 678 entities were recovered for
+stories whose `Entity` was `"Global"`; 20 regions could not be read from `City`.
+Every story carries `region_source` / `entity_source` — check them before
+treating a placement as fact.
+
+**A story lives in exactly one Storyblok folder.** "Show on global" and "share to
+another entity" are reference fields resolved at query time, never a second
+folder.
+
+**Dedupe tags by label, never by GUID.** 228 tag labels, most carrying 2–4
+different `TermGuid`s for the same label.
+
+**Send UTF-8; do not transliterate.** The pipeline already normalises every
+SharePoint artefact (17,000+ curly quotes, 7,997 zero-width spaces) while
+preserving 711 legitimate occurrences — accented names, Arabic/Urdu, `£`, `°`.
+
+**On Windows**, PowerShell 5.1 reads UTF-8 files as ANSI; use Python for anything
+containing non-ASCII, or box-drawing characters become mojibake. PowerShell has
+no heredoc — write long strings to a file. Every `open()` in the pipeline passes
+`encoding="utf-8"` explicitly, because Python's Windows default is cp1252 and it
+raises on the first accented name in the corpus — keep it that way in new code.
+
+**Buttons do not exist in the source.** See the design-review section: 3,606
+stories contain no button markup at all, only 19 CTA-styled or CTA-worded links.
+
+---
+
+## Documentation
+
+| Doc | Read it when |
+|---|---|
+| `docs/MIGRATION_DECISIONS.md` | anything about structure, regions, entities, departments |
+| `docs/STORYBLOK_TARGET_SCHEMA.md` | the live component schema vs what the migration produces |
+| `docs/STORYBLOK_COMPONENTS.md` | components, media roles, rich-text schema, characters |
+| `docs/STORYBLOK_FIELDS_NEEDED.md` | fields the front-end still has to add |
+| `scripts/taxonomy/README.md` | running or changing the taxonomy stage |
+| `data/taxonomy/README.md` | what each output file contains |
+| `CLAUDE.md` | conventions and gotchas, for AI assistants and new joiners alike |
 
 ---
 
 ## Tests
 
 ```bash
-source .venv/bin/activate
-python3 -m pytest tests/
+python -m pytest tests/
 ```
-
----
-
-## Media roles explained
-
-- **Banner / medium** — primary and secondary listing images from Metadata.csv.
-- **Thumbnail** — separate small preview image (rare; only a handful of stories have one).
-- **Video file** — hosted `.mp4` / `.mov` from Metadata.csv `Video1`–`Video3`.
-- **Embedded video** — YouTube or iframe bloks inside the story body (not a file in `media/`).
-- **Rich-text media** — PDFs and inline SharePoint images embedded in `NewsContent`, downloaded and attached separately from Metadata.csv media.
-
-Use `story_media_classification.py` or the viewer **Media type** filter to find stories by these properties.

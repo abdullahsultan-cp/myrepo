@@ -17,7 +17,7 @@ except ImportError:
 
 
 def load_json(path):
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return load(f)
 
 
@@ -101,7 +101,7 @@ def import_stories(stories_folder, config, limit=None, sleep_seconds=0.2):
 
     results = []
     for filename in json_files:
-        with open(join(stories_folder, filename), "r") as f:
+        with open(join(stories_folder, filename), "r", encoding="utf-8") as f:
             story = load(f)
         result = import_story(
             session,
@@ -137,7 +137,7 @@ if __name__ == "__main__":
     config = load_config()
     report = import_stories(stories_folder, config)
 
-    with open(report_path, "w") as f:
+    with open(report_path, "w", encoding="utf-8") as f:
         dump(report, f, indent=2, ensure_ascii=False)
 
     summary = report["summary"]

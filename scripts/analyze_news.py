@@ -4,7 +4,7 @@ from os import makedirs
 
 
 def load_news_data(file_path):
-    with open(file_path, "r") as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         return load(f)
 
 
@@ -25,7 +25,9 @@ def print_news_items(news_items):
 def create_news_item_json(news_item, folder_path):
     print(news_item)
     news_id = news_item["Id"]
-    with open(join(abspath(dirname(__file__)), "..", "data", "news",f"{news_id}.json"), "w") as f:
+    out_path = join(abspath(dirname(__file__)), "..", "data", "news",
+                    f"{news_id}.json")
+    with open(out_path, "w", encoding="utf-8") as f:
         dump(news_item, f, indent=2, default=str)
 
 

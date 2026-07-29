@@ -3,8 +3,10 @@
 
 import json
 import os
+import sys
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 CACHE = os.path.join(BASE, "data", "migrate", "media_urls.json")
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 

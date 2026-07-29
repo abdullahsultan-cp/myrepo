@@ -225,7 +225,8 @@ def main(indir, outdir, sample=SAMPLE_SIZE, seed=SAMPLE_SEED):
     else:
         print(f"scoring all {population} files")
 
-    with open(os.path.join(outdir, "_sample_files.txt"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "_sample_files.txt"), "w",
+              encoding="utf-8") as f:
         f.write(f"# {len(files)} of {population} files, seed={seed}\n")
         f.writelines(os.path.basename(p) + "\n" for p in files)
 
@@ -374,7 +375,8 @@ def main(indir, outdir, sample=SAMPLE_SIZE, seed=SAMPLE_SEED):
       [{"path": p, "item_count": c} for p, c in paths.most_common()])
 
     n = len(rows)
-    with open(os.path.join(outdir, "_coverage.txt"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "_coverage.txt"), "w",
+              encoding="utf-8") as f:
         f.write(f"items: {n}   (sampled from {population} files, seed={seed})\n"
                 f"\nRESOLVED\n")
         for k in ("region", "entity", "department", "news_type"):

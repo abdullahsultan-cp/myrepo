@@ -42,7 +42,7 @@ echo   workers : %WORKERS%
 echo ==========================================================
 
 REM -u keeps output unbuffered so progress shows live
-"%PY%" -u "%REPO%\scripts\migrate\run_media_all.py" --workers %WORKERS%
+"%PY%" -u "%REPO%\scripts\migrate\download\run_media_all.py" --workers %WORKERS%
 if errorlevel 1 goto failed
 
 echo.

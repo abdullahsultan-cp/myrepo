@@ -4,7 +4,7 @@ from os.path import abspath, dirname, join
 
 
 def load_replacement_map(report_path):
-    with open(report_path, "r") as f:
+    with open(report_path, "r", encoding="utf-8") as f:
         report = load(f)
 
     replacements = {}
@@ -82,14 +82,14 @@ def clean_news_files(source_folder, output_folder, replacements):
 
     for filename in json_files:
         source_path = join(source_folder, filename)
-        with open(source_path, "r") as f:
+        with open(source_path, "r", encoding="utf-8") as f:
             news_item = load(f)
 
         before_counts = count_replacements_in_object(news_item, replacements)
         cleaned_item = clean_object(news_item, replacements)
 
         output_path = join(output_folder, filename)
-        with open(output_path, "w") as f:
+        with open(output_path, "w", encoding="utf-8") as f:
             dump(cleaned_item, f, indent=2, ensure_ascii=False)
 
         if before_counts:

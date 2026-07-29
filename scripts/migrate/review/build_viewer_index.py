@@ -10,13 +10,14 @@ AKU site: every structural element is counted per story, so the facet counts are
 the component inventory.
 
 Usage:
-    python scripts/migrate/build_viewer_index.py [viewer_dir]
+    python scripts/migrate/review/build_viewer_index.py [viewer_dir]
 
 Outputs (default storyblok-viewer/public/data/):
     index.json          one compact record per story + facet vocabularies
     stories/{id}.json   full detail: richtext, media, links, taxonomy, SB links
 """
 
+import argparse
 import csv
 import json
 import os
@@ -24,7 +25,8 @@ import re
 import sys
 from collections import Counter, defaultdict
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 RAW = os.path.join(BASE, "data", "news")
 ROUTING = os.path.join(BASE, "data", "taxonomy", "routing", "news_routing.csv")
@@ -128,8 +130,15 @@ def analyse(doc):
 
 
 def main():
-    out_root = sys.argv[1] if len(sys.argv) > 1 else os.path.join(
-        BASE, "storyblok-viewer", "public", "data")
+    ap = argparse.ArgumentParser(
+        description="Build the static data files for the review viewer.")
+    # argparse rather than sys.argv[1]: a bare positional happily accepted
+    # "--help" as a directory name and wrote 31 MB into a folder called --help.
+    ap.add_argument("viewer_dir", nargs="?",
+                    default=os.path.join(BASE, "storyblok-viewer", "public",
+                                         "data"),
+                    help="output directory (default: the viewer's public/data)")
+    out_root = ap.parse_args().viewer_dir
     os.makedirs(os.path.join(out_root, "stories"), exist_ok=True)
 
     routes = {}
@@ -148,9 +157,6 @@ def main():
     space = ""
     try:
         # db lives beside this file; storyblok_config one level up in scripts/
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-        sys.path.insert(0, os.path.abspath(os.path.join(
-            os.path.dirname(__file__), "..")))
         import db as tracking
         from storyblok_config import load_config
         space = load_config().get("space_id") or ""

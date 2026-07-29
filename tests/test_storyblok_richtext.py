@@ -15,7 +15,8 @@ DATA_DIR = abspath(join(dirname(__file__), "..", "data"))
 
 
 def load_fixture(name):
-    with open(join(DATA_DIR, "cleaned_news", name), "r") as f:
+    with open(join(DATA_DIR, "cleaned_news", name), "r",
+              encoding="utf-8") as f:
         return json.load(f)
 
 

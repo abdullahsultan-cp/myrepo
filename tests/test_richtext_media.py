@@ -155,7 +155,8 @@ class RichtextMediaUtilsTests(unittest.TestCase):
                     }
                 },
             }
-            with open(join(stories_dir, "999.json"), "w") as handle:
+            with open(join(stories_dir, "999.json"), "w",
+                      encoding="utf-8") as handle:
                 json.dump(story, handle)
 
             catalog = build_catalog(
@@ -207,11 +208,12 @@ class RichtextMediaUtilsTests(unittest.TestCase):
                     }
                 },
             }
-            with open(join(stories_dir, "100.json"), "w") as handle:
+            with open(join(stories_dir, "100.json"), "w",
+                      encoding="utf-8") as handle:
                 json.dump(story, handle)
 
             map_path = join(temp_dir, "map.json")
-            with open(map_path, "w") as handle:
+            with open(map_path, "w", encoding="utf-8") as handle:
                 json.dump(
                     {
                         "assets": [
@@ -224,7 +226,8 @@ class RichtextMediaUtilsTests(unittest.TestCase):
                     },
                     handle,
                 )
-            with open(join(media_dir, "100-richtext-a.jpg"), "w") as handle:
+            with open(join(media_dir, "100-richtext-a.jpg"), "w",
+                      encoding="utf-8") as handle:
                 handle.write("fake")
 
             report = build_verification_report(
@@ -294,7 +297,8 @@ class RichtextMediaUtilsTests(unittest.TestCase):
                     },
                 },
             }
-            with open(join(stories_dir, "100.json"), "w") as handle:
+            with open(join(stories_dir, "100.json"), "w",
+                      encoding="utf-8") as handle:
                 json.dump(story, handle)
 
             assets = [
@@ -327,7 +331,8 @@ class RichtextMediaUtilsTests(unittest.TestCase):
             self.assertEqual(summary["stories_updated"], 1)
             self.assertEqual(summary["media_bloks_added"], 1)
 
-            with open(join(stories_dir, "100.json")) as handle:
+            with open(join(stories_dir, "100.json"),
+                      encoding="utf-8") as handle:
                 updated = json.load(handle)
 
             media = updated["content"]["media"]

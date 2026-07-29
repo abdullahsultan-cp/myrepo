@@ -84,7 +84,7 @@ def build_storyblok_media_map(stories_dir, metadata_path, media_dir):
         story_path = join(stories_dir, story_filename)
         file_id = story_filename[:-5]
 
-        with open(story_path, "r") as handle:
+        with open(story_path, "r", encoding="utf-8") as handle:
             story = load(handle)
 
         sharepoint_id = story_sharepoint_id(story)
@@ -298,6 +298,6 @@ if __name__ == "__main__":
     report = build_storyblok_media_map(stories_dir, metadata_path, media_dir)
     print_report(report)
 
-    with open(output_path, "w") as handle:
+    with open(output_path, "w", encoding="utf-8") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
     print(f"Mapping exported to {output_path}")

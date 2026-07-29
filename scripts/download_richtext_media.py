@@ -248,11 +248,11 @@ def run(base_path, dry_run=True, limit=None, skip_story_updates=False):
         download_summary["stories_updated"] = updated_stories
         map_payload["summary"]["stories_updated"] = updated_stories
 
-    with open(catalog_path, "w") as handle:
+    with open(catalog_path, "w", encoding="utf-8") as handle:
         dump(merged_catalog, handle, indent=2, ensure_ascii=False)
-    with open(map_path, "w") as handle:
+    with open(map_path, "w", encoding="utf-8") as handle:
         dump(map_payload, handle, indent=2, ensure_ascii=False)
-    with open(report_path, "w") as handle:
+    with open(report_path, "w", encoding="utf-8") as handle:
         dump(
             {
                 "summary": map_payload["summary"],

@@ -142,11 +142,11 @@ def validate_metadata(source_folder, stories_folder):
     field_issue_counts = Counter()
 
     for filename in json_files:
-        with open(join(source_folder, filename), "r") as f:
+        with open(join(source_folder, filename), "r", encoding="utf-8") as f:
             item = load(f)
         story_path = join(stories_folder, filename)
         try:
-            with open(story_path, "r") as f:
+            with open(story_path, "r", encoding="utf-8") as f:
                 story = load(f)
         except FileNotFoundError:
             files_with_issues.append(
@@ -222,6 +222,6 @@ if __name__ == "__main__":
     report = validate_metadata(source_folder, stories_folder)
     print_report(report)
 
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         dump(report, f, indent=2, ensure_ascii=False)
     print(f"Report exported to {output_path}")

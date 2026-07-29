@@ -12,9 +12,9 @@ Separates the retryable from the permanent, because they need different answers:
              absolute URL. Not fetchable by anyone.
 
 Usage:
-    python scripts/migrate/retry_failed_media.py            # transient only
-    python scripts/migrate/retry_failed_media.py --all      # 404s too
-    python scripts/migrate/retry_failed_media.py --delay 2  # slower
+    python scripts/migrate/download/retry_failed_media.py            # transient only
+    python scripts/migrate/download/retry_failed_media.py --all      # 404s too
+    python scripts/migrate/download/retry_failed_media.py --delay 2  # slower
 """
 
 import argparse
@@ -24,10 +24,10 @@ import re
 import sys
 import time
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from download_media import MEDIA_DIR, MIN_BYTES, fetch, sha256_of
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 REPORT = os.path.join(BASE, "data", "migrate", "download_report.json")
 OUT = os.path.join(BASE, "data", "migrate", "retry_report.json")
 

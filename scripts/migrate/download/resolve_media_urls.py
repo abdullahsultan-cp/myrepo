@@ -18,10 +18,10 @@ so it can be interrupted and re-run.
 Read-only. GET requests against the public site.
 
 Usage:
-    python scripts/migrate/resolve_media_urls.py            # every story
-    python scripts/migrate/resolve_media_urls.py --ids 2198,1177
-    python scripts/migrate/resolve_media_urls.py --sample   # the 20-story sample
-    python scripts/migrate/resolve_media_urls.py --workers 6 --verify
+    python scripts/migrate/download/resolve_media_urls.py            # every story
+    python scripts/migrate/download/resolve_media_urls.py --ids 2198,1177
+    python scripts/migrate/download/resolve_media_urls.py --sample   # the 20-story sample
+    python scripts/migrate/download/resolve_media_urls.py --workers 6 --verify
 
 Output: data/migrate/media_urls.json
     {"<sharepoint_id>": {"page": url, "images": [...], "iframes": [...],
@@ -43,7 +43,8 @@ try:
 except ImportError:
     sys.exit("pip install -r requirements.txt")
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 STORIES = os.path.join(BASE, "data", "storyblok_stories")
 OUT = os.path.join(BASE, "data", "migrate", "media_urls.json")
 
@@ -61,7 +62,12 @@ CHROME = re.compile(
     r"|Style(?:%20|[\s_])*Library"
     r"|AKU[_%\d]*logo"
     r"|InternetSlowdown_Day"
-    r"|/SiteAssets/|/_api/|/Pages/", re.I)
+    r"|/SiteAssets/", re.I)
+# NOT in CHROME: "/Pages/". It was added to skip .aspx links, but many real
+# banner images live under /news/PublishingImages/pages/News_Admin/... and
+# /pages/Environment/..., so the pattern was silently deleting content images
+# and left 165 stories looking like they had none. Anchors are filtered by
+# extension instead (ASSET_EXT below), which is what that rule was actually for.
 
 IMG_RE = re.compile(r"<img[^>]+src=([\"'])(.*?)\1", re.I)
 IFRAME_RE = re.compile(r"<iframe[^>]+src=([\"'])(.*?)\1", re.I)
@@ -240,7 +246,6 @@ def main():
     if a.ids:
         ids = [x.strip() for x in a.ids.split(",")]
     elif a.sample:
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import db as tracking
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")
@@ -337,6 +342,16 @@ def main():
                 if not e["url"] and spare:
                     e["url"] = spare.pop(0)
                     e["source"] = "page-scrape"
+
+        # One image can serve two roles. Story 2027's single page image is both
+        # its banner and its inline rich-text image; because the rich-text record
+        # claimed it via source_key it landed in `used`, so `spare` was empty and
+        # the banner stayed blank even though the image was right there.
+        if len(scraped) == 1:
+            for e in by_role.get("banner", []):
+                if not e["url"]:
+                    e["url"] = scraped[0]
+                    e["source"] = "page-scrape-shared"
 
         # hosted video comes from <video>/<source>, so it never appeared in the
         # image list — this is why every video1 role stayed unresolved.

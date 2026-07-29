@@ -345,7 +345,8 @@ def main(indir, outdir):
       [{"path": p, "item_count": c} for p, c in paths.most_common()])
 
     n = len(rows)
-    with open(os.path.join(outdir, "_coverage.txt"), "w", encoding="utf-8") as f:
+    with open(os.path.join(outdir, "_coverage.txt"), "w",
+              encoding="utf-8") as f:
         f.write(f"items: {n}\n\nRESOLVED\n")
         for k in ("region", "entity", "department", "news_type"):
             f.write(f"  {cov[k]:>5}/{n}  {100*cov[k]//n:>3}%  {k}\n")

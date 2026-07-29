@@ -16,10 +16,10 @@ Resumable: a file already on disk with a plausible size is skipped, so it can be
 interrupted and re-run. Records path, size and sha256 in the tracking DB.
 
 Usage:
-    python scripts/migrate/download_media.py             # everything resolved
-    python scripts/migrate/download_media.py --sample    # the 20-story sample
-    python scripts/migrate/download_media.py --workers 6
-    python scripts/migrate/download_media.py --verify    # re-check what is on disk
+    python scripts/migrate/download/download_media.py             # everything resolved
+    python scripts/migrate/download/download_media.py --sample    # the 20-story sample
+    python scripts/migrate/download/download_media.py --workers 6
+    python scripts/migrate/download/download_media.py --verify    # re-check what is on disk
 """
 
 import argparse
@@ -38,7 +38,8 @@ try:
 except ImportError:
     sys.exit("pip install -r requirements.txt")
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 CACHE = os.path.join(BASE, "data", "migrate", "media_urls.json")
 MEDIA_DIR = os.path.join(BASE, "assets", "News", "media")
 REPORT = os.path.join(BASE, "data", "migrate", "download_report.json")
@@ -165,7 +166,6 @@ def main():
     if a.ids:
         ids = [x.strip() for x in a.ids.split(",")]
     elif a.sample:
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import db as tracking
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")
@@ -211,7 +211,6 @@ def main():
     # ---- record everything on disk in the tracking DB
     updated = 0
     try:
-        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
         import db as tracking
         rows = []
         for fn, j in jobs.items():

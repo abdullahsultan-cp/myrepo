@@ -13,9 +13,9 @@ medium did not, the medium's URL can be guessed from the banner's — and then
 verified by fetching it. A guess that 404s is discarded, so nothing is invented.
 
 Usage:
-    python scripts/migrate/guess_media_variants.py            # report only
-    python scripts/migrate/guess_media_variants.py --limit 40 # sample first
-    python scripts/migrate/guess_media_variants.py --apply    # write to cache
+    python scripts/migrate/download/guess_media_variants.py            # report only
+    python scripts/migrate/download/guess_media_variants.py --limit 40 # sample first
+    python scripts/migrate/download/guess_media_variants.py --apply    # write to cache
 """
 
 import argparse
@@ -32,7 +32,8 @@ try:
 except ImportError:
     sys.exit("pip install -r requirements.txt")
 
-BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from paths import BASE  # noqa: E402
 CACHE = os.path.join(BASE, "data", "migrate", "media_urls.json")
 OUT = os.path.join(BASE, "data", "migrate", "variant_guesses.json")
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
@@ -167,7 +168,7 @@ def main():
         with open(CACHE, "w", encoding="utf-8") as f:
             json.dump(cache, f, ensure_ascii=False)
         print(f"  applied {len(found)} URLs to the cache")
-        print("  next: python scripts/migrate/download_media.py")
+        print("  next: python scripts/migrate/download/download_media.py")
 
 
 if __name__ == "__main__":
