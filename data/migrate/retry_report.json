@@ -1,0 +1,73 @@
+{
+  "retried": 10,
+  "recovered": 1,
+  "still_failing": [
+    {
+      "filename": "83-MediumImage.jpg",
+      "url": "http://authoring.aku.edu/aboutaku/news/PublishingImages/e-News-survey-largeimage.jpg",
+      "error": "ConnectTimeout: HTTPConnectionPool(host='authoring.aku.edu', port=80): Max retries exceeded with"
+    },
+    {
+      "filename": "1779-richtext-0046c47d25-Final-Composed-Sindh-NFE-Policy-21-02-18_NFE-Policy.pdf",
+      "url": "http://www.sindheducation.gov.pk/Contents/Menu/Final%20Composed%20Sindh%20NFE%20Policy%2021-02-18_NFE%20Policy.pdf",
+      "error": "http 403"
+    },
+    {
+      "filename": "1783-richtext-1e42251df0-TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf",
+      "url": "https://www.uicc.org/sites/main/files/atoms/files/TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf",
+      "error": "http 406"
+    },
+    {
+      "filename": "1906-richtext-5d85b50101-DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
+      "url": "http://www.thecradle.or.ke/wp-content/uploads/2016/04/DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
+      "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without"
+    },
+    {
+      "filename": "2075-richtext-1fca55556a-UNCRC-vrs-ACC.pdf?sequence=1&amp;isAllowed=y",
+      "url": "https://bradscholars.brad.ac.uk/bitstream/handle/10454/10988/UNCRC%20vrs%20ACC.pdf?sequence=1&amp%3BisAllowed=y",
+      "error": "OSError: [Errno 22] Invalid argument: 'd:\\\\AKU News\\\\aku-data-transformation-pipeline-new"
+    },
+    {
+      "filename": "2075-richtext-2a6ee2099a-UNCRC-vrs-ACC.pdf?sequence=1&isAllowed=y",
+      "url": "https://bradscholars.brad.ac.uk/bitstream/handle/10454/10988/UNCRC%20vrs%20ACC.pdf?sequence=1&isAllowed=y",
+      "error": "OSError: [Errno 22] Invalid argument: 'd:\\\\AKU News\\\\aku-data-transformation-pipeline-new"
+    },
+    {
+      "filename": "2105-richtext-81838852af-EGR2019.pdf?sequence=1&amp;isAllowed=y",
+      "url": "https://wedocs.unep.org/bitstream/handle/20.500.11822/30797/EGR2019.pdf?sequence=1&amp%3BisAllowed=y",
+      "error": "OSError: [Errno 22] Invalid argument: 'd:\\\\AKU News\\\\aku-data-transformation-pipeline-new"
+    },
+    {
+      "filename": "2105-richtext-27af6651ea-EGR2019.pdf?sequence=1&isAllowed=y",
+      "url": "https://wedocs.unep.org/bitstream/handle/20.500.11822/30797/EGR2019.pdf?sequence=1&isAllowed=y",
+      "error": "OSError: [Errno 22] Invalid argument: 'd:\\\\AKU News\\\\aku-data-transformation-pipeline-new"
+    },
+    {
+      "filename": "2414-richtext-f5c1e793a2-ec4cc6820554ab38921a94af33d16bbff96c.pdf",
+      "url": "https://pdfs.semanticscholar.org/2da6/ec4cc6820554ab38921a94af33d16bbff96c.pdf",
+      "error": "http 202"
+    }
+  ],
+  "permanent_404": [
+    "1215-extra-031d67d689-img-2.jpg",
+    "3298-BannerImage.jpg",
+    "404-extra-d042967cca-bone-tumor.jpg",
+    "1198-extra-de56e0890b-pic-62.jpg",
+    "1197-extra-83878db573-pic-61.jpg",
+    "1204-extra-9c9f11fb2f-pic-67.jpg",
+    "1199-extra-56a72e5e5d-pic-63.jpg",
+    "1206-extra-00b4208a26-pic-69.jpg",
+    "1202-extra-6b91817e41-pic-66.jpg",
+    "1208-extra-ad8ff4bbf3-pic-71.jpg",
+    "1207-extra-ec4dc3420d-pic-70.jpg",
+    "1201-extra-218ca577f3-pic-65.jpg",
+    "1243-extra-0e80cf9f2c-IED-alumni-large.jpg",
+    "1243-extra-bb1cd04424-IED-alumni-small.jpg",
+    "1210-extra-8bc1338150-pic-72.jpg",
+    "1292-extra-285a9cd504-ABUBAKER-WEB-PIC.jpg",
+    "1327-extra-14acb84be5-HDP-closing-ceremony.jpg",
+    "1399-extra-b3f3435752-Aaku-logo.jpg",
+    "2702-extra-e5b679841c-noor-shamsuddin-news.jpg"
+  ],
+  "malformed": []
+}

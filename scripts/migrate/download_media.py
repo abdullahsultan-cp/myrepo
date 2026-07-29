@@ -99,6 +99,21 @@ def name_from_url(sid, url):
     return f"{sid}-extra-{hashlib.sha1(url.encode()).hexdigest()[:10]}-{base}"
 
 
+# Characters Windows refuses in a filename. Some export filenames carry the
+# source query string — "UNCRC-vrs-ACC.pdf?sequence=1&isallowed=y" — which is a
+# legal SharePoint URL but an illegal path, and open() fails with
+# OSError errno 22 rather than anything that names the cause.
+ILLEGAL = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
+
+
+def safe_name(filename):
+    """The on-disk name for a declared file. Reversible enough to match back:
+    only the query string and illegal characters change."""
+    name = filename.split("?")[0]
+    name = ILLEGAL.sub("-", name).rstrip(". ")
+    return name[:180] or "asset"
+
+
 def plan(cache, ids, include_extras=True):
     """(filename, url, [(sharepoint_id, role)]) — one entry per distinct file.
 
@@ -164,7 +179,7 @@ def main():
 
     todo, have = [], 0
     for fn, j in jobs.items():
-        dest = os.path.join(MEDIA_DIR, fn)
+        dest = os.path.join(MEDIA_DIR, safe_name(fn))
         if os.path.exists(dest) and os.path.getsize(dest) >= MIN_BYTES:
             have += 1
             continue
@@ -200,7 +215,7 @@ def main():
         import db as tracking
         rows = []
         for fn, j in jobs.items():
-            dest = os.path.join(MEDIA_DIR, fn)
+            dest = os.path.join(MEDIA_DIR, safe_name(fn))
             if not (os.path.exists(dest) and os.path.getsize(dest) >= MIN_BYTES):
                 continue
             digest = sha256_of(dest) if (a.verify or fn in
@@ -230,10 +245,10 @@ def main():
         print(f"  (tracking DB not updated: {type(e).__name__}: {e})")
 
     on_disk = sum(1 for fn in jobs
-                  if os.path.exists(os.path.join(MEDIA_DIR, fn)))
-    total_bytes = sum(os.path.getsize(os.path.join(MEDIA_DIR, fn))
+                  if os.path.exists(os.path.join(MEDIA_DIR, safe_name(fn))))
+    total_bytes = sum(os.path.getsize(os.path.join(MEDIA_DIR, safe_name(fn)))
                       for fn in jobs
-                      if os.path.exists(os.path.join(MEDIA_DIR, fn)))
+                      if os.path.exists(os.path.join(MEDIA_DIR, safe_name(fn))))
 
     with open(REPORT, "w", encoding="utf-8") as f:
         json.dump({"stories": len(ids), "distinct_files": len(jobs),

@@ -1,0 +1,489 @@
+==== started Wed 07/29/2026  3:46:44.40 ==== 
+
+======================================================================
+  progress before
+======================================================================
+    [.........................] 0%
+    20 / 3606 pages fetched   3586 remaining   49 media URLs resolved
+  -- progress before: exit 0 in 0.0 min
+
+======================================================================
+  1/5  resolve — stories that have media
+======================================================================
+  cache has 20 stories
+  priority 'with-media': 3099 of 3606 stories have media
+  3099 stories requested, 3080 need a page fetch
+    [25/3080] 63 http=200 images=1
+    [50/3080] 89 http=200 images=1
+    [75/3080] 114 http=200 images=2
+    [100/3080] 142 http=200 images=1
+    [125/3080] 167 http=200 images=1
+    [150/3080] 195 http=200 images=1
+    [175/3080] 226 http=200 images=1
+    [200/3080] 263 http=200 images=2
+    [225/3080] 291 http=200 images=1
+    [250/3080] 317 http=200 images=1
+    [275/3080] 342 http=200 images=1
+    [300/3080] 368 http=200 images=1
+    [325/3080] 394 http=200 images=1
+    [350/3080] 421 http=200 images=1
+    [375/3080] 448 http=200 images=1
+    [400/3080] 474 http=200 images=1
+    [425/3080] 504 http=200 images=1
+    [450/3080] 528 http=200 images=1
+    [475/3080] 554 http=200 images=1
+    [500/3080] 576 http=200 images=1
+    [525/3080] 603 http=200 images=1
+    [550/3080] 627 http=200 images=1
+    [575/3080] 656 http=200 images=1
+    [600/3080] 679 http=200 images=1
+    [625/3080] 708 http=200 images=1
+    [650/3080] 733 http=200 images=1
+    [675/3080] 759 http=200 images=1
+    [700/3080] 784 http=200 images=1
+    [725/3080] 810 http=200 images=1
+    [750/3080] 835 http=200 images=1
+    [775/3080] 860 http=200 images=1
+    [800/3080] 889 http=200 images=1
+    [825/3080] 913 http=200 images=1
+    [850/3080] 940 http=200 images=1
+    [875/3080] 965 http=200 images=1
+    [900/3080] 994 http=200 images=1
+    [925/3080] 1019 http=200 images=1
+    [950/3080] 1043 http=200 images=1
+    [975/3080] 1070 http=200 images=1
+    [1000/3080] 1092 http=200 images=1
+    [1025/3080] 1118 http=200 images=1
+    [1050/3080] 1142 http=200 images=1
+    [1075/3080] 1171 http=200 images=1
+    [1100/3080] 1214 http=200 images=2
+    [1125/3080] 1247 http=200 images=2
+    [1150/3080] 1276 http=200 images=2
+    [1175/3080] 1308 http=200 images=1
+    [1200/3080] 1338 http=200 images=0
+    [1225/3080] 1372 http=200 images=1
+    [1250/3080] 1396 http=200 images=1
+    [1275/3080] 1424 http=200 images=1
+    [1300/3080] 1448 http=200 images=1
+    [1325/3080] 1479 http=200 images=1
+    [1350/3080] 1508 http=200 images=0
+    [1375/3080] 1539 http=200 images=1
+    [1400/3080] 1564 http=200 images=1
+    [1425/3080] 1596 http=200 images=1
+    [1450/3080] 1626 http=200 images=1
+    [1475/3080] 1660 http=200 images=1
+    [1500/3080] 1686 http=200 images=1
+    [1525/3080] 1714 http=200 images=1
+    [1550/3080] 1746 http=200 images=1
+    [1575/3080] 1779 http=200 images=1
+    [1600/3080] 1812 http=200 images=0
+    [1625/3080] 1840 http=200 images=1
+    [1650/3080] 1876 http=200 images=1
+    [1675/3080] 1913 http=200 images=0
+    [1700/3080] 1967 http=200 images=1
+    [1725/3080] 2006 http=200 images=2
+    [1750/3080] 2049 http=200 images=1
+    [1775/3080] 2072 http=200 images=2
+    [1800/3080] 2114 http=200 images=2
+    [1825/3080] 2154 http=200 images=0
+    [1850/3080] 2190 http=200 images=1
+    [1875/3080] 2225 http=200 images=1
+    [1900/3080] 2256 http=200 images=1
+    [1925/3080] 2292 http=200 images=0
+    [1950/3080] 2330 http=200 images=1
+    [1975/3080] 2366 http=200 images=2
+    [2000/3080] 2417 http=200 images=1
+    [2025/3080] 2446 http=200 images=1
+    [2050/3080] 2470 http=200 images=1
+    [2075/3080] 2501 http=200 images=1
+    [2100/3080] 2537 http=200 images=1
+    [2125/3080] 2565 http=200 images=1
+    [2150/3080] 2594 http=200 images=0
+    [2175/3080] 2620 http=200 images=0
+    [2200/3080] 2649 http=200 images=1
+    [2225/3080] 2680 http=200 images=1
+    [2250/3080] 2710 http=200 images=1
+    [2275/3080] 2737 http=200 images=1
+    [2300/3080] 2769 http=200 images=1
+    [2325/3080] 2797 http=200 images=1
+    [2350/3080] 2837 http=200 images=1
+    [2375/3080] 2873 http=200 images=1
+    [2400/3080] 2904 http=200 images=1
+    [2425/3080] 2934 http=200 images=1
+    [2450/3080] 2960 http=200 images=1
+    [2475/3080] 2996 http=200 images=1
+    [2500/3080] 3026 http=200 images=1
+    [2525/3080] 3059 http=200 images=1
+    [2550/3080] 3088 http=200 images=1
+    [2575/3080] 3129 http=200 images=1
+    [2600/3080] 3173 http=200 images=1
+    [2625/3080] 3204 http=200 images=1
+    [2650/3080] 3240 http=200 images=0
+    [2675/3080] 3275 http=200 images=1
+    [2700/3080] 3312 http=200 images=0
+    [2725/3080] 3354 http=200 images=1
+    [2750/3080] 3380 http=200 images=2
+    [2775/3080] 3419 http=200 images=1
+    [2800/3080] 3458 http=200 images=1
+    [2825/3080] 3496 http=200 images=5
+    [2850/3080] 3542 http=200 images=1
+    [2875/3080] 3576 http=200 images=1
+    [2900/3080] 3642 http=200 images=1
+    [2925/3080] 3677 http=200 images=1
+    [2950/3080] 3719 http=200 images=1
+    [2975/3080] 3770 http=200 images=1
+    [3000/3080] 3795 http=200 images=1
+    [3025/3080] 3832 http=200 images=1
+    [3050/3080] 3865 http=200 images=1
+    [3075/3080] 3908 http=200 images=1
+
+  pages fetched OK : 3099/3099
+  media resolved   : 3337/3621
+  -> d:\AKU News\aku-data-transformation-pipeline-news-master\data\migrate\media_urls.json
+  -- 1/5  resolve — stories that have media: exit 0 in 166.0 min
+
+======================================================================
+  2/5  resolve — everything else
+======================================================================
+  cache has 3100 stories
+  3606 stories requested, 506 need a page fetch
+    [25/506] 1292 http=200 images=1
+    [50/506] 1648 http=200 images=1
+    [75/506] 1952 http=200 images=1
+    [100/506] 2036 http=200 images=0
+    [125/506] 2162 http=200 images=2
+    [150/506] 2301 http=200 images=1
+    [175/506] 2421 http=200 images=1
+    [200/506] 2736 http=200 images=1
+    [225/506] 2879 http=200 images=1
+    [250/506] 3061 http=200 images=1
+    [275/506] 3170 http=200 images=1
+    [300/506] 3309 http=200 images=1
+    [325/506] 3398 http=200 images=1
+    [350/506] 3494 http=200 images=1
+    [375/506] 3558 http=200 images=1
+    [400/506] 3616 http=200 images=1
+    [425/506] 3663 http=200 images=1
+    [450/506] 3732 http=200 images=1
+    [475/506] 3809 http=200 images=1
+    [500/506] 3898 http=200 images=1
+
+  pages fetched OK : 3606/3606
+  media resolved   : 3337/3621
+  -> d:\AKU News\aku-data-transformation-pipeline-news-master\data\migrate\media_urls.json
+  -- 2/5  resolve — everything else: exit 0 in 29.4 min
+
+======================================================================
+  3/5  download every resolved file
+======================================================================
+  3606 stories -> 3845 distinct files
+  53 already on disk, 3792 to download
+    [25/3792] 25 ok, 0 failed
+    [50/3792] 50 ok, 0 failed
+    [75/3792] 75 ok, 0 failed
+    [100/3792] 100 ok, 0 failed
+    [125/3792] 125 ok, 0 failed
+    [150/3792] 150 ok, 0 failed
+    [175/3792] 175 ok, 0 failed
+    [200/3792] 200 ok, 0 failed
+    [225/3792] 225 ok, 0 failed
+    [250/3792] 250 ok, 0 failed
+    [275/3792] 275 ok, 0 failed
+    !! 83-MediumImage.jpg: ConnectTimeout: HTTPConnectionPool(host='authoring.aku.edu', port=80): Max retries exceeded with
+    [300/3792] 299 ok, 1 failed
+    [325/3792] 324 ok, 1 failed
+    [350/3792] 349 ok, 1 failed
+    [375/3792] 374 ok, 1 failed
+    [400/3792] 399 ok, 1 failed
+    [425/3792] 424 ok, 1 failed
+    [450/3792] 449 ok, 1 failed
+    [475/3792] 474 ok, 1 failed
+    [500/3792] 499 ok, 1 failed
+    [525/3792] 524 ok, 1 failed
+    [550/3792] 549 ok, 1 failed
+    [575/3792] 574 ok, 1 failed
+    [600/3792] 599 ok, 1 failed
+    [625/3792] 624 ok, 1 failed
+    [650/3792] 649 ok, 1 failed
+    [675/3792] 674 ok, 1 failed
+    [700/3792] 699 ok, 1 failed
+    [725/3792] 724 ok, 1 failed
+    [750/3792] 749 ok, 1 failed
+    !! 745-richtext-8f2e953931-tallmanletters.pdf: http 429
+    [775/3792] 773 ok, 2 failed
+    [800/3792] 798 ok, 2 failed
+    [825/3792] 823 ok, 2 failed
+    [850/3792] 848 ok, 2 failed
+    [875/3792] 873 ok, 2 failed
+    [900/3792] 898 ok, 2 failed
+    [925/3792] 923 ok, 2 failed
+    [950/3792] 948 ok, 2 failed
+    [975/3792] 973 ok, 2 failed
+    [1000/3792] 998 ok, 2 failed
+    [1025/3792] 1023 ok, 2 failed
+    [1050/3792] 1048 ok, 2 failed
+    [1075/3792] 1073 ok, 2 failed
+    [1100/3792] 1098 ok, 2 failed
+    [1125/3792] 1123 ok, 2 failed
+    [1150/3792] 1148 ok, 2 failed
+    [1175/3792] 1173 ok, 2 failed
+    [1200/3792] 1198 ok, 2 failed
+    !! 1215-extra-031d67d689-img-2.jpg: http 404
+    [1225/3792] 1222 ok, 3 failed
+    [1250/3792] 1247 ok, 3 failed
+    [1275/3792] 1272 ok, 3 failed
+    [1300/3792] 1297 ok, 3 failed
+    [1325/3792] 1322 ok, 3 failed
+    [1350/3792] 1347 ok, 3 failed
+    [1375/3792] 1372 ok, 3 failed
+    [1400/3792] 1397 ok, 3 failed
+    [1425/3792] 1422 ok, 3 failed
+    [1450/3792] 1447 ok, 3 failed
+    [1475/3792] 1472 ok, 3 failed
+    [1500/3792] 1497 ok, 3 failed
+    [1525/3792] 1522 ok, 3 failed
+    [1550/3792] 1547 ok, 3 failed
+    [1575/3792] 1572 ok, 3 failed
+    [1600/3792] 1597 ok, 3 failed
+    [1625/3792] 1622 ok, 3 failed
+    [1650/3792] 1647 ok, 3 failed
+    [1675/3792] 1672 ok, 3 failed
+    [1700/3792] 1697 ok, 3 failed
+    !! 1779-richtext-0046c47d25-Final-Composed-Sindh-NFE-Policy-21-02-18_NFE-Policy.pdf: http 403
+    [1725/3792] 1721 ok, 4 failed
+    !! 1783-richtext-1e42251df0-TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf: http 406
+    [1750/3792] 1745 ok, 5 failed
+    [1775/3792] 1770 ok, 5 failed
+    [1800/3792] 1795 ok, 5 failed
+    !! 1906-richtext-5d85b50101-DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without
+    [1825/3792] 1819 ok, 6 failed
+    [1850/3792] 1844 ok, 6 failed
+    [1875/3792] 1869 ok, 6 failed
+    [1900/3792] 1894 ok, 6 failed
+    [1925/3792] 1919 ok, 6 failed
+    [1950/3792] 1944 ok, 6 failed
+    !! 2075-richtext-1fca55556a-UNCRC-vrs-ACC.pdf?sequence=1&amp;isAllowed=y: OSError: [Errno 22] Invalid argument: 'd:\\AKU News\\aku-data-transformation-pipeline-new
+    !! 2075-richtext-2a6ee2099a-UNCRC-vrs-ACC.pdf?sequence=1&isAllowed=y: OSError: [Errno 22] Invalid argument: 'd:\\AKU News\\aku-data-transformation-pipeline-new
+    [1975/3792] 1967 ok, 8 failed
+    [2000/3792] 1992 ok, 8 failed
+    !! 2105-richtext-81838852af-EGR2019.pdf?sequence=1&amp;isAllowed=y: OSError: [Errno 22] Invalid argument: 'd:\\AKU News\\aku-data-transformation-pipeline-new
+    !! 2105-richtext-27af6651ea-EGR2019.pdf?sequence=1&isAllowed=y: OSError: [Errno 22] Invalid argument: 'd:\\AKU News\\aku-data-transformation-pipeline-new
+    [2025/3792] 2015 ok, 10 failed
+    [2050/3792] 2040 ok, 10 failed
+    [2075/3792] 2065 ok, 10 failed
+    [2100/3792] 2090 ok, 10 failed
+    [2125/3792] 2115 ok, 10 failed
+    [2150/3792] 2140 ok, 10 failed
+    [2175/3792] 2165 ok, 10 failed
+    !! 2414-richtext-f5c1e793a2-ec4cc6820554ab38921a94af33d16bbff96c.pdf: http 202
+    [2200/3792] 2189 ok, 11 failed
+    [2225/3792] 2214 ok, 11 failed
+    [2250/3792] 2239 ok, 11 failed
+    [2275/3792] 2264 ok, 11 failed
+    [2300/3792] 2289 ok, 11 failed
+    [2325/3792] 2314 ok, 11 failed
+    [2350/3792] 2339 ok, 11 failed
+    [2375/3792] 2364 ok, 11 failed
+    [2400/3792] 2389 ok, 11 failed
+    [2425/3792] 2414 ok, 11 failed
+    [2450/3792] 2439 ok, 11 failed
+    [2475/3792] 2464 ok, 11 failed
+    [2500/3792] 2489 ok, 11 failed
+    [2525/3792] 2514 ok, 11 failed
+    [2550/3792] 2539 ok, 11 failed
+    [2575/3792] 2564 ok, 11 failed
+    [2600/3792] 2589 ok, 11 failed
+    [2625/3792] 2614 ok, 11 failed
+    [2650/3792] 2639 ok, 11 failed
+    [2675/3792] 2664 ok, 11 failed
+    [2700/3792] 2689 ok, 11 failed
+    [2725/3792] 2714 ok, 11 failed
+    [2750/3792] 2739 ok, 11 failed
+    [2775/3792] 2764 ok, 11 failed
+    [2800/3792] 2789 ok, 11 failed
+    [2825/3792] 2814 ok, 11 failed
+    [2850/3792] 2839 ok, 11 failed
+    [2875/3792] 2864 ok, 11 failed
+    [2900/3792] 2889 ok, 11 failed
+    !! 3298-BannerImage.jpg: http 404
+    [2925/3792] 2913 ok, 12 failed
+    [2950/3792] 2938 ok, 12 failed
+    [2975/3792] 2963 ok, 12 failed
+    [3000/3792] 2988 ok, 12 failed
+    [3025/3792] 3013 ok, 12 failed
+    [3050/3792] 3038 ok, 12 failed
+    [3075/3792] 3063 ok, 12 failed
+    [3100/3792] 3088 ok, 12 failed
+    [3125/3792] 3113 ok, 12 failed
+    [3150/3792] 3138 ok, 12 failed
+    [3175/3792] 3163 ok, 12 failed
+    [3200/3792] 3188 ok, 12 failed
+    [3225/3792] 3213 ok, 12 failed
+    [3250/3792] 3238 ok, 12 failed
+    [3275/3792] 3263 ok, 12 failed
+    [3300/3792] 3288 ok, 12 failed
+    !! 404-extra-d042967cca-bone-tumor.jpg: http 404
+    !! 1198-extra-de56e0890b-pic-62.jpg: http 404
+    !! 1197-extra-83878db573-pic-61.jpg: http 404
+    !! 1204-extra-9c9f11fb2f-pic-67.jpg: http 404
+    !! 1199-extra-56a72e5e5d-pic-63.jpg: http 404
+    !! 1206-extra-00b4208a26-pic-69.jpg: http 404
+    !! 1202-extra-6b91817e41-pic-66.jpg: http 404
+    !! 1208-extra-ad8ff4bbf3-pic-71.jpg: http 404
+    !! 1207-extra-ec4dc3420d-pic-70.jpg: http 404
+    [3325/3792] 3304 ok, 21 failed
+    !! 1201-extra-218ca577f3-pic-65.jpg: http 404
+    !! 1243-extra-0e80cf9f2c-IED-alumni-large.jpg: http 404
+    !! 1243-extra-bb1cd04424-IED-alumni-small.jpg: http 404
+    !! 1210-extra-8bc1338150-pic-72.jpg: http 404
+    !! 1292-extra-285a9cd504-ABUBAKER-WEB-PIC.jpg: http 404
+    !! 1327-extra-14acb84be5-HDP-closing-ceremony.jpg: http 404
+    !! 1399-extra-b3f3435752-Aaku-logo.jpg: http 404
+    [3350/3792] 3322 ok, 28 failed
+    [3375/3792] 3347 ok, 28 failed
+    [3400/3792] 3372 ok, 28 failed
+    [3425/3792] 3397 ok, 28 failed
+    [3450/3792] 3422 ok, 28 failed
+    [3475/3792] 3447 ok, 28 failed
+    !! 2702-extra-e5b679841c-noor-shamsuddin-news.jpg: http 404
+    [3500/3792] 3471 ok, 29 failed
+    [3525/3792] 3496 ok, 29 failed
+    [3550/3792] 3521 ok, 29 failed
+    [3575/3792] 3546 ok, 29 failed
+    [3600/3792] 3571 ok, 29 failed
+    [3625/3792] 3596 ok, 29 failed
+    [3650/3792] 3621 ok, 29 failed
+    [3675/3792] 3646 ok, 29 failed
+    [3700/3792] 3671 ok, 29 failed
+    [3725/3792] 3696 ok, 29 failed
+    [3750/3792] 3721 ok, 29 failed
+    [3775/3792] 3746 ok, 29 failed
+
+==============================================================
+  distinct files   : 3845
+  on disk now      : 3816  (1738.3 MB)
+  downloaded now   : 3763
+  failed           : 29
+  DB rows updated  : 3326
+  media dir        : d:\AKU News\aku-data-transformation-pipeline-news-master\assets\News\media
+  report           : d:\AKU News\aku-data-transformation-pipeline-news-master\data\migrate\download_report.json
+
+  failure reasons:
+       19  http 404
+        4  OSError
+        1  ConnectTimeout
+        1  http 429
+        1  http 403
+        1  http 406
+        1  ConnectionError
+        1  http 202
+  -- 3/5  download every resolved file: exit 0 in 19.6 min
+
+======================================================================
+  4/5  export the asset map
+======================================================================
+  4140 rows -> d:\AKU News\aku-data-transformation-pipeline-news-master\data\migrate\asset_map.csv
+
+==================================================================
+  ASSET MAP
+==================================================================
+  declared asset uses      : 3621
+  distinct files declared  : 3610
+  on disk                  : 3326
+  still missing            : 295
+  undeclared page extras   : 519
+  bytes on disk            : 1371.1 MB
+
+  by role -> target field:
+      3072    2905 on disk   banner      -> content.banner_image
+       338     229 on disk   medium      -> body[] media_section(type=image)
+       200     191 on disk   richtext    -> inline in rich_text.content
+         7       0 on disk   thumbnail   -> content.thumbnail
+         4       1 on disk   video1      -> body[] media_section(type=video)
+
+  by kind:
+      3433  image
+       111  document
+        73  gif
+         3  video
+         1  other
+
+  by upload status:
+      3616  pending
+       519  extra
+         5  missing
+  -- 4/5  export the asset map: exit 0 in 0.0 min
+
+======================================================================
+  4/5  failure report
+======================================================================
+
+====================================================================
+  FAILURE REPORT
+====================================================================
+  stories total            : 3606
+  pages fetched OK         : 3606
+  not fetched yet          : 0
+
+  PAGE FETCH FAILURES     : 0
+
+  MEDIA WITH NO URL       : 284
+        166  role=banner
+        108  role=medium
+          7  role=thumbnail
+          3  role=video1
+
+  FAILED STORY UPLOADS    : 0
+  ASSET UPLOAD PROBLEMS   : 5
+
+  289 rows -> d:\AKU News\aku-data-transformation-pipeline-news-master\data\migrate\failures.csv
+  -- 4/5  failure report: exit 0 in 0.0 min
+
+======================================================================
+  5/5  rebuild the viewer index
+======================================================================
+  media URLs available for 3606 stories
+  folder tree -> 346 folders
+  3606 stories -> d:\AKU News\aku-data-transformation-pipeline-news-master\storyblok-viewer\public\data\index.json  (2.8 MB)
+  detail files -> d:\AKU News\aku-data-transformation-pipeline-news-master\storyblok-viewer\public\data\stories
+
+  element facets:
+     3072  Banner image
+      586  External link
+      507  No media at all
+      449  Italic text
+      382  Internal link (aku.edu)
+      338  Medium image
+      267  Bold text
+      118  Pull quote
+      117  Link to a document
+       89  Bullet list
+       81  PDF attachment
+       62  Video embed (YouTube)
+       62  GIF
+       49  Heading
+       44  Urdu / alternate language
+       38  Tweet embed
+       30  Superscript
+       23  Inline image in body
+       18  Numbered list
+       15  Gallery (3+ images)
+        7  Thumbnail image
+        4  Video file (hosted)
+        3  Iframe embed
+        2  Table
+        2  Blockquote
+        1  Word/other document
+
+  writers: 92   years: 30   entities: 19
+  -- 5/5  rebuild the viewer index: exit 0 in 0.1 min
+
+======================================================================
+  progress after
+======================================================================
+    [#########################] 100%
+    3606 / 3606 pages fetched   0 remaining   3337 media URLs resolved
+  -- progress after: exit 0 in 0.0 min
+
+  ALL DONE in 215 min
+==== finished Wed 07/29/2026  7:21:51.54 exit=0 ==== 
