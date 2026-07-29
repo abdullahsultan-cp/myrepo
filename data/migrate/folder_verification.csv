@@ -1,0 +1,473 @@
+﻿status,level,expected_full_slug,name,live_name,sb_id
+MISSING,root,global,global,,
+MISSING,news,global/news,news,,
+NAME,region,regions/afghanistan,Afghanistan,AF,203313618430723
+NAME,entity,regions/afghanistan/entities/east-africa-institute,East Africa Institute,EAI,203313705024629
+NAME,department,regions/afghanistan/entities/east-africa-institute/departments/public-health,Public Health,PH,203314308578713
+NAME,entity,regions/afghanistan/entities/institute-for-educational-development,Institute for Educational Development,IED,203313709157496
+NAME,entity,regions/afghanistan/entities/institute-for-human-development,Institute for Human Development,IHD,203313713319035
+NAME,entity,regions/afghanistan/entities/medical-college,Medical College,MC,203313709317241
+NAME,department,regions/afghanistan/entities/medical-college/departments/medical-education,Medical Education,MEDED,203314305301911
+NAME,region,regions/kenya,Kenya,KE,203313618008834
+NAME,entity,regions/kenya/entities/brain-and-mind-institute,Brain and Mind Institute,BMI,203313681837152
+NAME,department,regions/kenya/entities/brain-and-mind-institute/departments/medical-education,Medical Education,MEDED,203314221108539
+NAME,department,regions/kenya/entities/brain-and-mind-institute/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314221116732
+NAME,department,regions/kenya/entities/brain-and-mind-institute/departments/public-health,Public Health,PH,203314221886781
+NAME,entity,regions/kenya/entities/centre-for-innovation-in-medical-education,Centre for Innovation in Medical Education,CIME,203313690037354
+NAME,department,regions/kenya/entities/centre-for-innovation-in-medical-education/departments/medical-education,Medical Education,MEDED,203314283072889
+NAME,department,regions/kenya/entities/centre-for-innovation-in-medical-education/departments/nursing,Nursing,NURS,203314287730046
+NAME,entity,regions/kenya/entities/centre-of-excellence-in-women-and-child-health,Centre of Excellence in Women and Child Health,COE-WCH,203313688468585
+NAME,department,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314266439022
+NAME,department,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/departments/public-health,Public Health,PH,203314267741551
+NAME,entity,regions/kenya/entities/east-africa-institute,East Africa Institute,EAI,203313683827810
+NAME,department,regions/kenya/entities/east-africa-institute/departments/nutrition,Nutrition,NUTR,203314275675508
+NAME,department,regions/kenya/entities/east-africa-institute/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314274737523
+NAME,entity,regions/kenya/entities/environmental-responsibility,Environmental Responsibility,ENV,203313684237412
+NAME,entity,regions/kenya/entities/graduate-school-of-media-and-communications,Graduate School of Media and Communications,GSMC,203313692077163
+NAME,department,regions/kenya/entities/graduate-school-of-media-and-communications/departments/governance,Governance,GOV,203314287750527
+NAME,entity,regions/kenya/entities/institute-for-educational-development,Institute for Educational Development,IED,203313686019173
+NAME,entity,regions/kenya/entities/institute-for-human-development,Institute for Human Development,IHD,203313688386663
+NAME,department,regions/kenya/entities/institute-for-human-development/departments/nutrition,Nutrition,NUTR,203314283556218
+NAME,department,regions/kenya/entities/institute-for-human-development/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314279796087
+NAME,department,regions/kenya/entities/institute-for-human-development/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314280525176
+NAME,entity,regions/kenya/entities/institute-for-the-study-of-muslim-civilisations,Institute for the Study of Muslim Civilisations,ISMC,203313688423528
+NAME,entity,regions/kenya/entities/medical-college,Medical College,MC,203313692077164
+NAME,department,regions/kenya/entities/medical-college/departments/internal-medicine,Internal Medicine,IM,203314288672130
+NAME,department,regions/kenya/entities/medical-college/departments/medical-education,Medical Education,MEDED,203314291924362
+NAME,department,regions/kenya/entities/medical-college/departments/nursing,Nursing,NURS,203314292805003
+NAME,department,regions/kenya/entities/medical-college/departments/obstetrics-gynaecology,Obstetrics & Gynaecology,OBGYN,203314291486088
+NAME,department,regions/kenya/entities/medical-college/departments/oncology,Oncology,ONC,203314295582093
+NAME,department,regions/kenya/entities/medical-college/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314296085902
+NAME,department,regions/kenya/entities/medical-college/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314296479119
+NAME,entity,regions/kenya/entities/network-of-english-language-enhancement,Network of English Language Enhancement,ELE,203313692695662
+NAME,entity,regions/kenya/entities/networks-of-quality-teaching-and-learning,"Networks of Quality, Teaching and Learning",QTL,203313696754801
+NAME,department,regions/kenya/entities/networks-of-quality-teaching-and-learning/departments/midwifery,Midwifery,MW,203314312293786
+NAME,entity,regions/kenya/entities/school-of-nursing-and-midwifery,School of Nursing and Midwifery,SONAM,203313696783474
+NAME,department,regions/kenya/entities/school-of-nursing-and-midwifery/departments/governance,Governance,GOV,203314301570451
+NAME,department,regions/kenya/entities/school-of-nursing-and-midwifery/departments/midwifery,Midwifery,MW,203314303905172
+NAME,department,regions/kenya/entities/school-of-nursing-and-midwifery/departments/nursing,Nursing,NURS,203314303925653
+NAME,department,regions/kenya/entities/school-of-nursing-and-midwifery/departments/oncology,Oncology,ONC,203314301341074
+NAME,department,regions/kenya/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314304900502
+NAME,region,regions/pakistan,Pakistan,PK,203313617816321
+NAME,entity,regions/pakistan/entities/arusha-climate-and-environmental-research-centre,Arusha Climate and Environmental Research Centre,AERR,203313659222812
+NAME,entity,regions/pakistan/entities/brain-and-mind-institute,Brain and Mind Institute,BMI,203313663064864
+NAME,department,regions/pakistan/entities/brain-and-mind-institute/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314216901943
+NAME,department,regions/pakistan/entities/brain-and-mind-institute/departments/public-health,Public Health,PH,203314217893177
+NAME,entity,regions/pakistan/entities/centre-for-innovation-in-medical-education,Centre for Innovation in Medical Education,CIME,203313663499041
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/family-medicine,Family Medicine,FM,203314225245504
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/internal-medicine,Internal Medicine,IM,203314222791998
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/medical-education,Medical Education,MEDED,203314224753983
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/midwifery,Midwifery,MW,203314225724737
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/neurosurgery,Neurosurgery,NSURG,203314226801986
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/nursing,Nursing,NURS,203314233593161
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/obstetrics-gynaecology,Obstetrics & Gynaecology,OBGYN,203314233097544
+NAME,department,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314228907331
+NAME,entity,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research,Centre for Regenerative Medicine and Stem Cell Research,CRM,203313667320750
+NAME,department,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/departments/oncology,Oncology,ONC,203314229398852
+NAME,department,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/departments/regenerative-medicine,Regenerative Medicine,REGMED,203314229796166
+NAME,entity,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies,Centre of Excellence for Trauma and Emergencies,CETE,203313658923803
+NAME,department,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies/departments/nursing,Nursing,NURS,203314212179248
+NAME,entity,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health,Centre of Excellence in Women and Child Health,COE-WCH,203313659366173
+NAME,department,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314213063986
+NAME,department,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/departments/public-health,Public Health,PH,203314217229624
+NAME,entity,regions/pakistan/entities/environmental-responsibility,Environmental Responsibility,ENV,203313702288500
+NAME,entity,regions/pakistan/entities/faculty-of-arts-and-sciences,Faculty of Arts and Sciences,FAS,203313696291952
+NAME,department,regions/pakistan/entities/faculty-of-arts-and-sciences/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314296954256
+NAME,entity,regions/pakistan/entities/graduate-school-of-media-and-communications,Graduate School of Media and Communications,GSMC,203313667566512
+NAME,entity,regions/pakistan/entities/institute-for-educational-development,Institute for Educational Development,IED,203313671322588
+NAME,department,regions/pakistan/entities/institute-for-educational-development/departments/medical-education,Medical Education,MEDED,203314260041064
+NAME,department,regions/pakistan/entities/institute-for-educational-development/departments/midwifery,Midwifery,MW,203314259488103
+NAME,department,regions/pakistan/entities/institute-for-educational-development/departments/nursing,Nursing,NURS,203314262285674
+NAME,department,regions/pakistan/entities/institute-for-educational-development/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314262285675
+NAME,department,regions/pakistan/entities/institute-for-educational-development/departments/public-health,Public Health,PH,203314263117164
+NAME,entity,regions/pakistan/entities/institute-for-global-health-and-development,Institute for Global Health and Development,IGHD,203313668881366
+NAME,department,regions/pakistan/entities/institute-for-global-health-and-development/departments/nutrition,Nutrition,NUTR,203314246098262
+NAME,department,regions/pakistan/entities/institute-for-global-health-and-development/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314250325338
+NAME,entity,regions/pakistan/entities/institute-for-human-development,Institute for Human Development,IHD,203313672547295
+NAME,department,regions/pakistan/entities/institute-for-human-development/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314230963527
+NAME,entity,regions/pakistan/entities/institute-for-the-study-of-muslim-civilisations,Institute for the Study of Muslim Civilisations,ISMC,203313672203229
+NAME,entity,regions/pakistan/entities/medical-college,Medical College,MC,203313675500561
+NAME,department,regions/pakistan/entities/medical-college/departments/cardiology,Cardiology,CARD,203314235129163
+NAME,department,regions/pakistan/entities/medical-college/departments/family-medicine,Family Medicine,FM,203314233969994
+NAME,department,regions/pakistan/entities/medical-college/departments/medical-education,Medical Education,MEDED,203314237300044
+NAME,department,regions/pakistan/entities/medical-college/departments/neurosurgery,Neurosurgery,NSURG,203314237787469
+NAME,department,regions/pakistan/entities/medical-college/departments/nursing,Nursing,NURS,203314238098766
+NAME,department,regions/pakistan/entities/medical-college/departments/nutrition,Nutrition,NUTR,203314238750031
+NAME,department,regions/pakistan/entities/medical-college/departments/oncology,Oncology,ONC,203314241940818
+NAME,department,regions/pakistan/entities/medical-college/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314241424721
+NAME,department,regions/pakistan/entities/medical-college/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314242260307
+NAME,department,regions/pakistan/entities/medical-college/departments/public-health,Public Health,PH,203314242895188
+NAME,department,regions/pakistan/entities/medical-college/departments/regenerative-medicine,Regenerative Medicine,REGMED,203314245590357
+NAME,entity,regions/pakistan/entities/network-of-english-language-enhancement,Network of English Language Enhancement,ELE,203313673067509
+NAME,entity,regions/pakistan/entities/networks-of-quality-teaching-and-learning,"Networks of Quality, Teaching and Learning",QTL,203313675508754
+NAME,entity,regions/pakistan/entities/school-of-nursing-and-midwifery,School of Nursing and Midwifery,SONAM,203313675926548
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/geriatrics-gerontology,Geriatrics & Gerontology,GERI,203314247540056
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/medical-education,Medical Education,MEDED,203314246950231
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/midwifery,Midwifery,MW,203314250280281
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nursing,Nursing,NURS,203314251951453
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nutrition,Nutrition,NUTR,203314250661212
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/oncology,Oncology,ONC,203314254462307
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314255916388
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314258115941
+NAME,department,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/public-health,Public Health,PH,203314258165094
+NAME,entity,regions/pakistan/entities/surgery-interest-group,Surgery Interest Group,SIG,203313680194654
+NAME,region,regions/tanzania,Tanzania,TZ,203313629866761
+NAME,entity,regions/tanzania/entities/arusha-climate-and-environmental-research-centre,Arusha Climate and Environmental Research Centre,AERR,203313835568371
+NAME,entity,regions/tanzania/entities/brain-and-mind-institute,Brain and Mind Institute,BMI,203313841806587
+NAME,department,regions/tanzania/entities/brain-and-mind-institute/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314571026117
+NAME,entity,regions/tanzania/entities/centre-for-innovation-in-medical-education,Centre for Innovation in Medical Education,CIME,203313842494716
+NAME,entity,regions/tanzania/entities/east-africa-institute,East Africa Institute,EAI,203313839238392
+NAME,entity,regions/tanzania/entities/environmental-responsibility,Environmental Responsibility,ENV,203313833495792
+NAME,entity,regions/tanzania/entities/graduate-school-of-media-and-communications,Graduate School of Media and Communications,GSMC,203313837714677
+NAME,entity,regions/tanzania/entities/institute-for-educational-development,Institute for Educational Development,IED,203313837780214
+NAME,department,regions/tanzania/entities/institute-for-educational-development/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314574646983
+NAME,entity,regions/tanzania/entities/institute-for-human-development,Institute for Human Development,IHD,203313834687730
+NAME,department,regions/tanzania/entities/institute-for-human-development/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314567352000
+NAME,entity,regions/tanzania/entities/institute-for-the-study-of-muslim-civilisations,Institute for the Study of Muslim Civilisations,ISMC,203313850170628
+NAME,entity,regions/tanzania/entities/medical-college,Medical College,MC,203313851317510
+NAME,department,regions/tanzania/entities/medical-college/departments/family-medicine,Family Medicine,FM,203314583650003
+NAME,department,regions/tanzania/entities/medical-college/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314586635990
+NAME,entity,regions/tanzania/entities/network-of-english-language-enhancement,Network of English Language Enhancement,ELE,203313854323976
+NAME,entity,regions/tanzania/entities/networks-of-quality-teaching-and-learning,"Networks of Quality, Teaching and Learning",QTL,203313859153166
+NAME,entity,regions/tanzania/entities/school-of-nursing-and-midwifery,School of Nursing and Midwifery,SONAM,203313854336265
+NAME,department,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/midwifery,Midwifery,MW,203314612395761
+NAME,department,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/nursing,Nursing,NURS,203314604941038
+NAME,department,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314604388077
+NAME,department,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314608963311
+NAME,entity,regions/tanzania/entities/surgery-interest-group,Surgery Interest Group,SIG,203313850187013
+NAME,region,regions/uganda,Uganda,UG,203313625668358
+NAME,entity,regions/uganda/entities/centre-of-excellence-in-women-and-child-health,Centre of Excellence in Women and Child Health,COE-WCH,203313800891593
+NAME,entity,regions/uganda/entities/east-africa-institute,East Africa Institute,EAI,203313821052129
+NAME,entity,regions/uganda/entities/graduate-school-of-media-and-communications,Graduate School of Media and Communications,GSMC,203313825221862
+NAME,entity,regions/uganda/entities/institute-for-educational-development,Institute for Educational Development,IED,203313818074332
+NAME,entity,regions/uganda/entities/institute-for-human-development,Institute for Human Development,IHD,203313821560034
+NAME,department,regions/uganda/entities/institute-for-human-development/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314558574260
+NAME,entity,regions/uganda/entities/medical-college,Medical College,MC,203313823046884
+NAME,department,regions/uganda/entities/medical-college/departments/medical-education,Medical Education,MEDED,203314563239611
+NAME,entity,regions/uganda/entities/networks-of-quality-teaching-and-learning,"Networks of Quality, Teaching and Learning",QTL,203313818365149
+NAME,entity,regions/uganda/entities/school-of-nursing-and-midwifery,School of Nursing and Midwifery,SONAM,203313821715683
+NAME,department,regions/uganda/entities/school-of-nursing-and-midwifery/departments/midwifery,Midwifery,MW,203314562715322
+NAME,department,regions/uganda/entities/school-of-nursing-and-midwifery/departments/nursing,Nursing,NURS,203314587750106
+NAME,department,regions/uganda/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health,Paediatrics & Child Health,PAEDS,203314587147992
+NAME,region,regions/united-kingdom,United Kingdom,UK,203313629833992
+NAME,entity,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations,Institute for the Study of Muslim Civilisations,ISMC,203313951169923
+NAME,department,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/departments/governance,Governance,GOV,203314786451259
+NAME,department,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/departments/psychiatry-mental-health,Psychiatry & Mental Health,PSYCH,203314795552579
+NAME,entity,regions/united-kingdom/entities/networks-of-quality-teaching-and-learning,"Networks of Quality, Teaching and Learning",QTL,203313958440454
+NAME,entity,regions/united-kingdom/entities/school-of-nursing-and-midwifery,School of Nursing and Midwifery,SONAM,203313958460935
+NAME,department,regions/united-kingdom/entities/school-of-nursing-and-midwifery/departments/midwifery,Midwifery,MW,203314791919425
+EXTRA,,regions/afghanistan/blogs,,Blogs,203313639688977
+EXTRA,,regions/afghanistan/entities/east-africa-institute/blogs,,Blogs,203313888255268
+EXTRA,,regions/afghanistan/entities/east-africa-institute/departments/public-health/blogs,,Blogs,203314636476171
+EXTRA,,regions/afghanistan/entities/east-africa-institute/departments/public-health/events,,Events,203314637008652
+EXTRA,,regions/afghanistan/entities/east-africa-institute/events,,Events,203313887599907
+EXTRA,,regions/afghanistan/entities/east-africa-institute/news,,News,203313883389217
+EXTRA,,regions/afghanistan/entities/institute-for-educational-development/blogs,,Blogs,203313894022439
+EXTRA,,regions/afghanistan/entities/institute-for-educational-development/events,,Events,203313895947561
+EXTRA,,regions/afghanistan/entities/institute-for-human-development/blogs,,Blogs,203313908473137
+EXTRA,,regions/afghanistan/entities/institute-for-human-development/events,,Events,203313909542195
+EXTRA,,regions/afghanistan/entities/medical-college/blogs,,Blogs,203313905773872
+EXTRA,,regions/afghanistan/entities/medical-college/departments/medical-education/blogs,,Blogs,203314633461513
+EXTRA,,regions/afghanistan/entities/medical-college/departments/medical-education/events,,Events,203314632597256
+EXTRA,,regions/afghanistan/entities/medical-college/events,,Events,203313904794925
+EXTRA,,regions/afghanistan/entities/medical-college/news,,News,203313901219115
+EXTRA,,regions/afghanistan/events,,Events,203313643850516
+EXTRA,,regions/kenya/blogs,,Blogs,203313634499342
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/blogs,,Blogs,203313797651653
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/departments/medical-education/blogs,,Blogs,203314412637671
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/departments/medical-education/events,,Events,203314414710250
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/departments/psychiatry-mental-health/blogs,,Blogs,203314408603107
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/departments/psychiatry-mental-health/events,,Events,203314412621286
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/departments/public-health/blogs,,Blogs,203314417565167
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/departments/public-health/events,,Events,203314420440562
+EXTRA,,regions/kenya/entities/brain-and-mind-institute/events,,Events,203313800723656
+EXTRA,,regions/kenya/entities/centre-for-innovation-in-medical-education/blogs,,Blogs,203313830923502
+EXTRA,,regions/kenya/entities/centre-for-innovation-in-medical-education/departments/medical-education/blogs,,Blogs,203314561629879
+EXTRA,,regions/kenya/entities/centre-for-innovation-in-medical-education/departments/medical-education/events,,Events,203314566885055
+EXTRA,,regions/kenya/entities/centre-for-innovation-in-medical-education/departments/nursing/blogs,,Blogs,203314574134982
+EXTRA,,regions/kenya/entities/centre-for-innovation-in-medical-education/departments/nursing/events,,Events,203314565779134
+EXTRA,,regions/kenya/entities/centre-for-innovation-in-medical-education/events,,Events,203313838357751
+EXTRA,,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/blogs,,Blogs,203313816915163
+EXTRA,,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/departments/paediatrics-child-health/blogs,,Blogs,203314532531858
+EXTRA,,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/departments/paediatrics-child-health/events,,Events,203314536767125
+EXTRA,,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/departments/public-health/blogs,,Blogs,203314540998300
+EXTRA,,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/departments/public-health/events,,Events,203314542452382
+EXTRA,,regions/kenya/entities/centre-of-excellence-in-women-and-child-health/events,,Events,203313814289624
+EXTRA,,regions/kenya/entities/east-africa-institute/blogs,,Blogs,203313826839785
+EXTRA,,regions/kenya/entities/east-africa-institute/departments/nutrition/blogs,,Blogs,203314541952669
+EXTRA,,regions/kenya/entities/east-africa-institute/departments/nutrition/events,,Events,203314549673637
+EXTRA,,regions/kenya/entities/east-africa-institute/departments/psychiatry-mental-health/blogs,,Blogs,203314546228899
+EXTRA,,regions/kenya/entities/east-africa-institute/departments/psychiatry-mental-health/events,,Events,203314546110114
+EXTRA,,regions/kenya/entities/east-africa-institute/events,,Events,203313829362924
+EXTRA,,regions/kenya/entities/environmental-responsibility/blogs,,Blogs,203313812896982
+EXTRA,,regions/kenya/entities/environmental-responsibility/events,,Events,203313809239250
+EXTRA,,regions/kenya/entities/graduate-school-of-media-and-communications/blogs,,Blogs,203313845947648
+EXTRA,,regions/kenya/entities/graduate-school-of-media-and-communications/departments/governance/blogs,,Blogs,203314570428099
+EXTRA,,regions/kenya/entities/graduate-school-of-media-and-communications/departments/governance/events,,Events,203314571022020
+EXTRA,,regions/kenya/entities/graduate-school-of-media-and-communications/events,,Events,203313845923071
+EXTRA,,regions/kenya/entities/institute-for-educational-development/blogs,,Blogs,203313808604368
+EXTRA,,regions/kenya/entities/institute-for-educational-development/events,,Events,203313804434636
+EXTRA,,regions/kenya/entities/institute-for-human-development/blogs,,Blogs,203313830046957
+EXTRA,,regions/kenya/entities/institute-for-human-development/departments/nutrition/blogs,,Blogs,203314562178744
+EXTRA,,regions/kenya/entities/institute-for-human-development/departments/nutrition/events,,Events,203314557550259
+EXTRA,,regions/kenya/entities/institute-for-human-development/departments/paediatrics-child-health/blogs,,Blogs,203314559090357
+EXTRA,,regions/kenya/entities/institute-for-human-development/departments/paediatrics-child-health/events,,Events,203314550316711
+EXTRA,,regions/kenya/entities/institute-for-human-development/departments/psychiatry-mental-health/blogs,,Blogs,203314553298600
+EXTRA,,regions/kenya/entities/institute-for-human-development/departments/psychiatry-mental-health/events,,Events,203314554998448
+EXTRA,,regions/kenya/entities/institute-for-human-development/events,,Events,203313829350635
+EXTRA,,regions/kenya/entities/institute-for-the-study-of-muslim-civilisations/blogs,,Blogs,203313810050259
+EXTRA,,regions/kenya/entities/institute-for-the-study-of-muslim-civilisations/events,,Events,203313813376215
+EXTRA,,regions/kenya/entities/medical-college/blogs,,Blogs,203313846639873
+EXTRA,,regions/kenya/entities/medical-college/departments/internal-medicine/blogs,,Blogs,203314575818441
+EXTRA,,regions/kenya/entities/medical-college/departments/internal-medicine/events,,Events,203314578312908
+EXTRA,,regions/kenya/entities/medical-college/departments/medical-education/blogs,,Blogs,203314582572754
+EXTRA,,regions/kenya/entities/medical-college/departments/medical-education/events,,Events,203314584198868
+EXTRA,,regions/kenya/entities/medical-college/departments/nursing/blogs,,Blogs,203314591330013
+EXTRA,,regions/kenya/entities/medical-college/departments/nursing/events,,Events,203314587741913
+EXTRA,,regions/kenya/entities/medical-college/departments/obstetrics-gynaecology/blogs,,Blogs,203314582519505
+EXTRA,,regions/kenya/entities/medical-college/departments/obstetrics-gynaecology/events,,Events,203314578476749
+EXTRA,,regions/kenya/entities/medical-college/departments/oncology/blogs,,Blogs,203314591919838
+EXTRA,,regions/kenya/entities/medical-college/departments/oncology/events,,Events,203314596146915
+EXTRA,,regions/kenya/entities/medical-college/departments/paediatrics-child-health/blogs,,Blogs,203314595086049
+EXTRA,,regions/kenya/entities/medical-college/departments/paediatrics-child-health/events,,Events,203314599243495
+EXTRA,,regions/kenya/entities/medical-college/departments/psychiatry-mental-health/blogs,,Blogs,203314603798252
+EXTRA,,regions/kenya/entities/medical-college/departments/psychiatry-mental-health/events,,Events,203314603323115
+EXTRA,,regions/kenya/entities/medical-college/events,,Events,203313848012035
+EXTRA,,regions/kenya/entities/network-of-english-language-enhancement/blogs,,Blogs,203313855606026
+EXTRA,,regions/kenya/entities/network-of-english-language-enhancement/events,,Events,203313855933707
+EXTRA,,regions/kenya/entities/networks-of-quality-teaching-and-learning/blogs,,Blogs,203313863425299
+EXTRA,,regions/kenya/entities/networks-of-quality-teaching-and-learning/departments/midwifery/blogs,,Blogs,203314649067282
+EXTRA,,regions/kenya/entities/networks-of-quality-teaching-and-learning/departments/midwifery/events,,Events,203314653208340
+EXTRA,,regions/kenya/entities/networks-of-quality-teaching-and-learning/events,,Events,203313867246871
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/blogs,,Blogs,203313867492632
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/governance/blogs,,Blogs,203314619920120
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/governance/events,,Events,203314616905462
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/midwifery/blogs,,Blogs,203314624044797
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/midwifery/events,,Events,203314620985082
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/nursing/blogs,,Blogs,203314625130241
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/nursing/events,,Events,203314628710146
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/oncology/blogs,,Blogs,203314619932409
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/oncology/events,,Events,203314615762675
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health/blogs,,Blogs,203314625126144
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health/events,,Events,203314629754629
+EXTRA,,regions/kenya/entities/school-of-nursing-and-midwifery/events,,Events,203313868426521
+EXTRA,,regions/kenya/events,,Events,203313638071055
+EXTRA,,regions/pakistan/blogs,,Blogs,203313634499341
+EXTRA,,regions/pakistan/entities/arusha-climate-and-environmental-research-centre/blogs,,Blogs,203313750727826
+EXTRA,,regions/pakistan/entities/arusha-climate-and-environmental-research-centre/events,,Events,203313746148494
+EXTRA,,regions/pakistan/entities/brain-and-mind-institute/blogs,,Blogs,203313754434710
+EXTRA,,regions/pakistan/entities/brain-and-mind-institute/departments/psychiatry-mental-health/blogs,,Blogs,203314401447388
+EXTRA,,regions/pakistan/entities/brain-and-mind-institute/departments/psychiatry-mental-health/events,,Events,203314404359646
+EXTRA,,regions/pakistan/entities/brain-and-mind-institute/departments/public-health/blogs,,Blogs,203314396794322
+EXTRA,,regions/pakistan/entities/brain-and-mind-institute/departments/public-health/events,,Events,203314399657433
+EXTRA,,regions/pakistan/entities/brain-and-mind-institute/events,,Events,203313759075483
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/blogs,,Blogs,203313756028058
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/family-medicine/blogs,,Blogs,203314425130492
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/family-medicine/events,,Events,203314425597437
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/internal-medicine/blogs,,Blogs,203314413661672
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/internal-medicine/events,,Events,203314416315883
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/medical-education/blogs,,Blogs,203314424651258
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/medical-education/events,,Events,203314421538293
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/midwifery/blogs,,Blogs,203314428759554
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/midwifery/events,,Events,203314426433022
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/neurosurgery/blogs,,Blogs,203314433379846
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/neurosurgery/events,,Events,203314434350600
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/nursing/blogs,,Blogs,203314446364188
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/nursing/events,,Events,203314450742817
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/obstetrics-gynaecology/blogs,,Blogs,203314442403352
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/obstetrics-gynaecology/events,,Events,203314449473056
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/paediatrics-child-health/blogs,,Blogs,203314428730881
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/paediatrics-child-health/events,,Events,203314429775363
+EXTRA,,regions/pakistan/entities/centre-for-innovation-in-medical-education/events,,Events,203313759091868
+EXTRA,,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/blogs,,Blogs,203313764830370
+EXTRA,,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/departments/oncology/blogs,,Blogs,203314445819419
+EXTRA,,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/departments/oncology/events,,Events,203314445299226
+EXTRA,,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/departments/regenerative-medicine/blogs,,Blogs,203314437545485
+EXTRA,,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/departments/regenerative-medicine/events,,Events,203314441174549
+EXTRA,,regions/pakistan/entities/centre-for-regenerative-medicine-and-stem-cell-research/events,,Events,203313768504487
+EXTRA,,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies/blogs,,Blogs,203313738398853
+EXTRA,,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies/departments/nursing/blogs,,Blogs,203314388184524
+EXTRA,,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies/departments/nursing/events,,Events,203314388991439
+EXTRA,,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies/events,,Events,203313741966476
+EXTRA,,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/blogs,,Blogs,203313751366803
+EXTRA,,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/departments/paediatrics-child-health/blogs,,Blogs,203314387131849
+EXTRA,,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/departments/paediatrics-child-health/events,,Events,203314387680715
+EXTRA,,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/departments/public-health/blogs,,Blogs,203314404883935
+EXTRA,,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/departments/public-health/events,,Events,203314405113312
+EXTRA,,regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/events,,Events,203313747737744
+EXTRA,,regions/pakistan/entities/environmental-responsibility/blogs,,Blogs,203313876274461
+EXTRA,,regions/pakistan/entities/environmental-responsibility/events,,Events,203313879973151
+EXTRA,,regions/pakistan/entities/faculty-of-arts-and-sciences/blogs,,Blogs,203313859996945
+EXTRA,,regions/pakistan/entities/faculty-of-arts-and-sciences/departments/psychiatry-mental-health/blogs,,Blogs,203314599177958
+EXTRA,,regions/pakistan/entities/faculty-of-arts-and-sciences/departments/psychiatry-mental-health/events,,Events,203314600238825
+EXTRA,,regions/pakistan/entities/faculty-of-arts-and-sciences/events,,Events,203313865248021
+EXTRA,,regions/pakistan/entities/graduate-school-of-media-and-communications/blogs,,Blogs,203313762798751
+EXTRA,,regions/pakistan/entities/graduate-school-of-media-and-communications/events,,Events,203313760177310
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/blogs,,Blogs,203313771121833
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/medical-education/blogs,,Blogs,203314524266121
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/medical-education/events,,Events,203314528366220
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/midwifery/blogs,,Blogs,203314516991611
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/midwifery/events,,Events,203314520219262
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/nursing/blogs,,Blogs,203314529455758
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/nursing/events,,Events,203314534084244
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/paediatrics-child-health/blogs,,Blogs,203314537217687
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/paediatrics-child-health/events,,Events,203314537803416
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/public-health/blogs,,Blogs,203314525331083
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/departments/public-health/events,,Events,203314528935565
+EXTRA,,regions/pakistan/entities/institute-for-educational-development/events,,Events,203313775754414
+EXTRA,,regions/pakistan/entities/institute-for-global-health-and-development/blogs,,Blogs,203313776819376
+EXTRA,,regions/pakistan/entities/institute-for-global-health-and-development/departments/nutrition/blogs,,Blogs,203314484309583
+EXTRA,,regions/pakistan/entities/institute-for-global-health-and-development/departments/nutrition/events,,Events,203314487963219
+EXTRA,,regions/pakistan/entities/institute-for-global-health-and-development/departments/paediatrics-child-health/blogs,,Blogs,203314507578991
+EXTRA,,regions/pakistan/entities/institute-for-global-health-and-development/departments/paediatrics-child-health/events,,Events,203314500968035
+EXTRA,,regions/pakistan/entities/institute-for-global-health-and-development/events,,Events,203313779473587
+EXTRA,,regions/pakistan/entities/institute-for-human-development/blogs,,Blogs,203313784122551
+EXTRA,,regions/pakistan/entities/institute-for-human-development/departments/paediatrics-child-health/blogs,,Blogs,203314438802964
+EXTRA,,regions/pakistan/entities/institute-for-human-development/departments/paediatrics-child-health/events,,Events,203314446573085
+EXTRA,,regions/pakistan/entities/institute-for-human-development/events,,Events,203313784294584
+EXTRA,,regions/pakistan/entities/institute-for-human-development/news,,News,203313781001397
+EXTRA,,regions/pakistan/entities/institute-for-the-study-of-muslim-civilisations/blogs,,Blogs,203313780133044
+EXTRA,,regions/pakistan/entities/institute-for-the-study-of-muslim-civilisations/events,,Events,203313783721142
+EXTRA,,regions/pakistan/entities/medical-college/blogs,,Blogs,203313785863354
+EXTRA,,regions/pakistan/entities/medical-college/departments/cardiology/blogs,,Blogs,203314461953582
+EXTRA,,regions/pakistan/entities/medical-college/departments/cardiology/events,,Events,203314457771561
+EXTRA,,regions/pakistan/entities/medical-college/departments/family-medicine/blogs,,Blogs,203314454142501
+EXTRA,,regions/pakistan/entities/medical-college/departments/family-medicine/events,,Events,203314451021346
+EXTRA,,regions/pakistan/entities/medical-college/departments/medical-education/blogs,,Blogs,203314457746984
+EXTRA,,regions/pakistan/entities/medical-college/departments/medical-education/events,,Events,203314458852907
+EXTRA,,regions/pakistan/entities/medical-college/departments/neurosurgery/blogs,,Blogs,203314462371375
+EXTRA,,regions/pakistan/entities/medical-college/departments/neurosurgery/events,,Events,203314463329840
+EXTRA,,regions/pakistan/entities/medical-college/departments/nursing/blogs,,Blogs,203314463338033
+EXTRA,,regions/pakistan/entities/medical-college/departments/nursing/events,,Events,203314466049587
+EXTRA,,regions/pakistan/entities/medical-college/departments/nutrition/blogs,,Blogs,203314467626550
+EXTRA,,regions/pakistan/entities/medical-college/departments/nutrition/events,,Events,203314467307061
+EXTRA,,regions/pakistan/entities/medical-college/departments/oncology/blogs,,Blogs,203314478632520
+EXTRA,,regions/pakistan/entities/medical-college/departments/oncology/events,,Events,203314475470404
+EXTRA,,regions/pakistan/entities/medical-college/departments/paediatrics-child-health/blogs,,Blogs,203314471325247
+EXTRA,,regions/pakistan/entities/medical-college/departments/paediatrics-child-health/events,,Events,203314471493184
+EXTRA,,regions/pakistan/entities/medical-college/departments/psychiatry-mental-health/blogs,,Blogs,203314474851907
+EXTRA,,regions/pakistan/entities/medical-college/departments/psychiatry-mental-health/events,,Events,203314478628423
+EXTRA,,regions/pakistan/entities/medical-college/departments/public-health/blogs,,Blogs,203314483129933
+EXTRA,,regions/pakistan/entities/medical-college/departments/public-health/events,,Events,203314479795786
+EXTRA,,regions/pakistan/entities/medical-college/departments/regenerative-medicine/blogs,,Blogs,203314483945038
+EXTRA,,regions/pakistan/entities/medical-college/departments/regenerative-medicine/events,,Events,203314486845009
+EXTRA,,regions/pakistan/entities/medical-college/events,,Events,203313788452029
+EXTRA,,regions/pakistan/entities/network-of-english-language-enhancement/blogs,,Blogs,203313766968483
+EXTRA,,regions/pakistan/entities/network-of-english-language-enhancement/events,,Events,203313771769002
+EXTRA,,regions/pakistan/entities/networks-of-quality-teaching-and-learning/blogs,,Blogs,203313792474304
+EXTRA,,regions/pakistan/entities/networks-of-quality-teaching-and-learning/events,,Events,203313787804860
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/blogs,,Blogs,203313791986879
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/geriatrics-gerontology/blogs,,Blogs,203314499288673
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/geriatrics-gerontology/events,,Events,203314499268192
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/medical-education/blogs,,Blogs,203314492116568
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/medical-education/events,,Events,203314488020564
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/midwifery/blogs,,Blogs,203314515934842
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/midwifery/events,,Events,203314515885689
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nursing/blogs,,Blogs,203314496773726
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nursing/events,,Events,203314504609389
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nutrition/blogs,,Blogs,203314492141145
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nutrition/events,,Events,203314495614556
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/oncology/blogs,,Blogs,203314503913066
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/oncology/events,,Events,203314503945835
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health/blogs,,Blogs,203314507587184
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health/events,,Events,203314508709489
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health/blogs,,Blogs,203314509168242
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health/events,,Events,203314513301110
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/public-health/blogs,,Blogs,203314521734789
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/departments/public-health/events,,Events,203314524221064
+EXTRA,,regions/pakistan/entities/school-of-nursing-and-midwifery/events,,Events,203313793268929
+EXTRA,,regions/pakistan/entities/surgery-interest-group/blogs,,Blogs,203313802300619
+EXTRA,,regions/pakistan/entities/surgery-interest-group/events,,Events,203313804938445
+EXTRA,,regions/pakistan/events,,Events,203313634396940
+EXTRA,,regions/tanzania/blogs,,Blogs,203313680231519
+EXTRA,,regions/tanzania/entities/arusha-climate-and-environmental-research-centre/blogs,,Blogs,203314066721280
+EXTRA,,regions/tanzania/entities/arusha-climate-and-environmental-research-centre/events,,Events,203314067417602
+EXTRA,,regions/tanzania/entities/brain-and-mind-institute/blogs,,Blogs,203314088000583
+EXTRA,,regions/tanzania/entities/brain-and-mind-institute/departments/psychiatry-mental-health/blogs,,Blogs,203314891190122
+EXTRA,,regions/tanzania/entities/brain-and-mind-institute/departments/psychiatry-mental-health/events,,Events,203314895294317
+EXTRA,,regions/tanzania/entities/brain-and-mind-institute/events,,Events,203314083302366
+EXTRA,,regions/tanzania/entities/centre-for-innovation-in-medical-education/blogs,,Blogs,203314084490208
+EXTRA,,regions/tanzania/entities/centre-for-innovation-in-medical-education/events,,Events,203314084760545
+EXTRA,,regions/tanzania/entities/east-africa-institute/blogs,,Blogs,203314079882144
+EXTRA,,regions/tanzania/entities/east-africa-institute/events,,Events,203314079759263
+EXTRA,,regions/tanzania/entities/environmental-responsibility/blogs,,Blogs,203314068220419
+EXTRA,,regions/tanzania/entities/environmental-responsibility/events,,Events,203314072357584
+EXTRA,,regions/tanzania/entities/graduate-school-of-media-and-communications/blogs,,Blogs,203314071407210
+EXTRA,,regions/tanzania/entities/graduate-school-of-media-and-communications/events,,Events,203314075032273
+EXTRA,,regions/tanzania/entities/institute-for-educational-development/blogs,,Blogs,203314076015415
+EXTRA,,regions/tanzania/entities/institute-for-educational-development/departments/psychiatry-mental-health/blogs,,Blogs,203314898616175
+EXTRA,,regions/tanzania/entities/institute-for-educational-development/departments/psychiatry-mental-health/events,,Events,203314894454636
+EXTRA,,regions/tanzania/entities/institute-for-educational-development/events,,Events,203314076523320
+EXTRA,,regions/tanzania/entities/institute-for-human-development/blogs,,Blogs,203314063014291
+EXTRA,,regions/tanzania/entities/institute-for-human-development/departments/psychiatry-mental-health/blogs,,Blogs,203314887450468
+EXTRA,,regions/tanzania/entities/institute-for-human-development/departments/psychiatry-mental-health/events,,Events,203314886950755
+EXTRA,,regions/tanzania/entities/institute-for-human-development/events,,Events,203314062547346
+EXTRA,,regions/tanzania/entities/institute-for-the-study-of-muslim-civilisations/blogs,,Blogs,203314097765675
+EXTRA,,regions/tanzania/entities/institute-for-the-study-of-muslim-civilisations/events,,Events,203314100735448
+EXTRA,,regions/tanzania/entities/medical-college/blogs,,Blogs,203314092825788
+EXTRA,,regions/tanzania/entities/medical-college/departments/family-medicine/blogs,,Blogs,203314898648944
+EXTRA,,regions/tanzania/entities/medical-college/departments/family-medicine/events,,Events,203314899505010
+EXTRA,,regions/tanzania/entities/medical-college/departments/paediatrics-child-health/blogs,,Blogs,203314902753139
+EXTRA,,regions/tanzania/entities/medical-college/departments/paediatrics-child-health/events,,Events,203314904194935
+EXTRA,,regions/tanzania/entities/medical-college/events,,Events,203314093075645
+EXTRA,,regions/tanzania/entities/network-of-english-language-enhancement/blogs,,Blogs,203314101472749
+EXTRA,,regions/tanzania/entities/network-of-english-language-enhancement/events,,Events,203314104229373
+EXTRA,,regions/tanzania/entities/networks-of-quality-teaching-and-learning/blogs,,Blogs,203314106142307
+EXTRA,,regions/tanzania/entities/networks-of-quality-teaching-and-learning/events,,Events,203314108378826
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/blogs,,Blogs,203314100026788
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/midwifery/blogs,,Blogs,203314920279945
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/midwifery/events,,Events,203314920296330
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/nursing/blogs,,Blogs,203314911301501
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/nursing/events,,Events,203314915237762
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health/blogs,,Blogs,203314911989632
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health/events,,Events,203314911985535
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health/blogs,,Blogs,203314919395207
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/departments/psychiatry-mental-health/events,,Events,203314916323204
+EXTRA,,regions/tanzania/entities/school-of-nursing-and-midwifery/events,,Events,203314095770920
+EXTRA,,regions/tanzania/entities/surgery-interest-group/blogs,,Blogs,203314088901705
+EXTRA,,regions/tanzania/entities/surgery-interest-group/events,,Events,203314092141755
+EXTRA,,regions/tanzania/events,,Events,203313683836003
+EXTRA,,regions/uganda/blogs,,Blogs,203313665149756
+EXTRA,,regions/uganda/entities/centre-of-excellence-in-women-and-child-health/blogs,,Blogs,203314030696105
+EXTRA,,regions/uganda/entities/centre-of-excellence-in-women-and-child-health/events,,Events,203314033424086
+EXTRA,,regions/uganda/entities/east-africa-institute/blogs,,Blogs,203314034099991
+EXTRA,,regions/uganda/entities/east-africa-institute/events,,Events,203314034853656
+EXTRA,,regions/uganda/entities/graduate-school-of-media-and-communications/blogs,,Blogs,203314055731396
+EXTRA,,regions/uganda/entities/graduate-school-of-media-and-communications/events,,Events,203314058860842
+EXTRA,,regions/uganda/entities/institute-for-educational-development/blogs,,Blogs,203314037700479
+EXTRA,,regions/uganda/entities/institute-for-educational-development/events,,Events,203314038781824
+EXTRA,,regions/uganda/entities/institute-for-human-development/blogs,,Blogs,203314042226662
+EXTRA,,regions/uganda/entities/institute-for-human-development/departments/psychiatry-mental-health/blogs,,Blogs,203314881912669
+EXTRA,,regions/uganda/entities/institute-for-human-development/departments/psychiatry-mental-health/events,,Events,203314878652252
+EXTRA,,regions/uganda/entities/institute-for-human-development/events,,Events,203314042902503
+EXTRA,,regions/uganda/entities/institute-for-human-development/news,,News,203314041714661
+EXTRA,,regions/uganda/entities/medical-college/blogs,,Blogs,203314051496130
+EXTRA,,regions/uganda/entities/medical-college/departments/medical-education/blogs,,Blogs,203314886098786
+EXTRA,,regions/uganda/entities/medical-college/departments/medical-education/events,,Events,203314890755944
+EXTRA,,regions/uganda/entities/medical-college/events,,Events,203314054215875
+EXTRA,,regions/uganda/entities/networks-of-quality-teaching-and-learning/blogs,,Blogs,203314045950030
+EXTRA,,regions/uganda/entities/networks-of-quality-teaching-and-learning/events,,Events,203314046392399
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/blogs,,Blogs,203314050050215
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/departments/midwifery/blogs,,Blogs,203314882441054
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/departments/midwifery/events,,Events,203314883313504
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/departments/nursing/blogs,,Blogs,203314906914680
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/departments/nursing/events,,Events,203314907864955
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health/blogs,,Blogs,203314902790004
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/departments/paediatrics-child-health/events,,Events,203314906914681
+EXTRA,,regions/uganda/entities/school-of-nursing-and-midwifery/events,,Events,203314047342673
+EXTRA,,regions/uganda/events,,Events,203313667849137
+EXTRA,,regions/united-kingdom/blogs,,Blogs,203313721785470
+EXTRA,,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/blogs,,Blogs,203314137347417
+EXTRA,,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/departments/governance/blogs,,Blogs,203314923655052
+EXTRA,,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/departments/governance/events,,Events,203314924461966
+EXTRA,,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/departments/psychiatry-mental-health/blogs,,Blogs,203314927726481
+EXTRA,,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/departments/psychiatry-mental-health/events,,Events,203314927746962
+EXTRA,,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/events,,Events,203314133689582
+EXTRA,,regions/united-kingdom/entities/networks-of-quality-teaching-and-learning/blogs,,Blogs,203314154780407
+EXTRA,,regions/united-kingdom/entities/networks-of-quality-teaching-and-learning/events,,Events,203314155542280
+EXTRA,,regions/united-kingdom/entities/school-of-nursing-and-midwifery/blogs,,Blogs,203314151573220
+EXTRA,,regions/united-kingdom/entities/school-of-nursing-and-midwifery/departments/midwifery/blogs,,Blogs,203314932854678
+EXTRA,,regions/united-kingdom/entities/school-of-nursing-and-midwifery/departments/midwifery/events,,Events,203314932813717
+EXTRA,,regions/united-kingdom/entities/school-of-nursing-and-midwifery/events,,Events,203314153944822
+EXTRA,,regions/united-kingdom/entities/school-of-nursing-and-midwifery/news,,News,203314149803722
+EXTRA,,regions/united-kingdom/events,,Events,203313725885569
