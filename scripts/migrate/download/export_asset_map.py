@@ -146,7 +146,7 @@ def main():
     if a.csv and rows:
         p = os.path.join(OUT_DIR, "asset_map.csv")
         with open(p, "w", newline="", encoding="utf-8-sig") as f:
-            w = csv.DictWriter(f, fieldnames=cols)
+            w = csv.DictWriter(f, lineterminator="\n", fieldnames=cols)
             w.writeheader()
             w.writerows(rows)
         print(f"  {len(rows)} rows -> {p}")
@@ -156,7 +156,7 @@ def main():
         for r in rows:
             by_story[r["sharepoint_id"]].append(r)
         p = os.path.join(OUT_DIR, "asset_map.json")
-        with open(p, "w", encoding="utf-8") as f:
+        with open(p, "w", encoding="utf-8", newline="\n") as f:
             json.dump({"generated_rows": len(rows),
                        "media_dir": MEDIA_DIR,
                        "role_targets": ROLE_TARGET,
@@ -197,7 +197,7 @@ def main():
         add(f"    {n:>6}  {k}")
 
     with open(os.path.join(OUT_DIR, "asset_summary.txt"), "w",
-              encoding="utf-8") as f:
+              encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + "\n")
 
 

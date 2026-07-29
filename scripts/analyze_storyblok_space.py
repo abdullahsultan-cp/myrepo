@@ -193,7 +193,7 @@ def main():
         print(f"  {n:>5}  {e}")
 
     if out_json:
-        with open(out_json, "w", encoding="utf-8") as f:
+        with open(out_json, "w", encoding="utf-8", newline="\n") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
         print(f"\n  report -> {out_json}")
 

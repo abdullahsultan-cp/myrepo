@@ -332,7 +332,7 @@ def main():
 
     if a.json:
         os.makedirs(os.path.dirname(os.path.abspath(a.json)), exist_ok=True)
-        with open(a.json, "w", encoding="utf-8") as f:
+        with open(a.json, "w", encoding="utf-8", newline="\n") as f:
             json.dump({
                 "chosen": chosen,
                 "feature_counts": {k: len(v) for k, v in feature_index.items()},

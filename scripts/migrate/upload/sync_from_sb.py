@@ -115,7 +115,7 @@ def main():
             r = sb.get(f"stories/{st['id']}")
             if r.status_code == 200:
                 with open(os.path.join(SNAP_DIR, f"{sid}.json"), "w",
-                          encoding="utf-8") as f:
+                          encoding="utf-8", newline="\n") as f:
                     json.dump(r.json()["story"], f, indent=2,
                               ensure_ascii=False)
                 n += 1

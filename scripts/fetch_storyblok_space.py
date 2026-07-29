@@ -124,7 +124,7 @@ def main(outdir=None):
     def save(name, obj):
         obj = scrub(obj)
         p = os.path.join(outdir, f"{name}.json")
-        with open(p, "w", encoding="utf-8") as f:
+        with open(p, "w", encoding="utf-8", newline="\n") as f:
             json.dump(obj, f, indent=2, ensure_ascii=False)
         n = len(obj) if isinstance(obj, list) else 1
         print(f"    saved {name}.json  ({n})")

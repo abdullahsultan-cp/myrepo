@@ -56,7 +56,8 @@ def slugify(s):
 
 def w(path, header, rows):
     with open(path, "w", newline="", encoding="utf-8-sig") as f:
-        cw = csv.DictWriter(f, fieldnames=header, extrasaction="ignore")
+        cw = csv.DictWriter(f, lineterminator="\n",
+                            fieldnames=header, extrasaction="ignore")
         cw.writeheader()
         cw.writerows(rows)
     print(f"  {len(rows):>5}  {os.path.basename(path)}")

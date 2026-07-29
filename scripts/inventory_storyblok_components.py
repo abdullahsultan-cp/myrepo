@@ -295,7 +295,7 @@ def main(out_json=None):
             "html_tags_in_source": sorted(html_tags,
                                           key=lambda t: -t["total_count"]),
         }
-        with open(out_json, "w", encoding="utf-8") as f:
+        with open(out_json, "w", encoding="utf-8", newline="\n") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
         print(f"\n  report -> {out_json}")
 

@@ -386,7 +386,7 @@ def export_report(findings, output_path, files_scanned, files_with_newscontent):
         "tags": items,
     }
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(payload, f, indent=2, ensure_ascii=False)
 
 

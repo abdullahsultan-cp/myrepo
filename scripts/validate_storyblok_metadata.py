@@ -222,6 +222,6 @@ if __name__ == "__main__":
     report = validate_metadata(source_folder, stories_folder)
     print_report(report)
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(report, f, indent=2, ensure_ascii=False)
     print(f"Report exported to {output_path}")

@@ -108,7 +108,7 @@ def main():
             print(f"    {code}  {url}")
 
     with open(a.out, "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow(cols)
         w.writerows(out_rows)
 
@@ -135,7 +135,7 @@ def main():
                     exist_ok=True)
         with open(a.internal_links, "w", newline="",
                   encoding="utf-8-sig") as f:
-            w = csv.writer(f)
+            w = csv.writer(f, lineterminator="\n")
             w.writerow(lcols)
             for i, r in enumerate(lrows, 1):
                 w.writerow([i] + ["" if x is None else x for x in r])

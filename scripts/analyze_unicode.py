@@ -553,7 +553,7 @@ def export_report(findings, output_path):
         "characters": items,
     }
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(payload, f, indent=2, ensure_ascii=False)
 
 

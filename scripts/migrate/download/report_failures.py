@@ -181,7 +181,8 @@ def main():
     if a.csv:
         os.makedirs(os.path.dirname(os.path.abspath(a.csv)), exist_ok=True)
         with open(a.csv, "w", newline="", encoding="utf-8-sig") as f:
-            w = csv.DictWriter(f, fieldnames=["kind", "sharepoint_id", "detail",
+            w = csv.DictWriter(f, lineterminator="\n",
+                               fieldnames=["kind", "sharepoint_id", "detail",
                                              "url", "title"])
             w.writeheader()
             w.writerows(rows)

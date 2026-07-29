@@ -149,7 +149,7 @@ def main():
     with cf.ThreadPoolExecutor(max_workers=a.workers) as ex:
         list(ex.map(work, jobs))
 
-    with open(OUT, "w", encoding="utf-8") as f:
+    with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         json.dump({"attempted": len(jobs), "found": found}, f, indent=2,
                   ensure_ascii=False)
 
@@ -165,7 +165,7 @@ def main():
             if hit["index"] < len(lst) and not lst[hit["index"]].get("url"):
                 lst[hit["index"]]["url"] = hit["url"]
                 lst[hit["index"]]["source"] = "name-variant"
-        with open(CACHE, "w", encoding="utf-8") as f:
+        with open(CACHE, "w", encoding="utf-8", newline="\n") as f:
             json.dump(cache, f, ensure_ascii=False)
         print(f"  applied {len(found)} URLs to the cache")
         print("  next: python scripts/migrate/download/download_media.py")

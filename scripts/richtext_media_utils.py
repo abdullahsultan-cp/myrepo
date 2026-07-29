@@ -752,7 +752,7 @@ def attach_richtext_media_to_stories(
             stories_with_media_bloks += 1
             total_media_bloks_added += after_media_count - before_media_count
 
-        with open(story_path, "w", encoding="utf-8") as handle:
+        with open(story_path, "w", encoding="utf-8", newline="\n") as handle:
             dump(updated_story, handle, indent=2, ensure_ascii=False)
         updated_stories += 1
 

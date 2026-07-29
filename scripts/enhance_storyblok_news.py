@@ -175,7 +175,7 @@ if __name__ == "__main__":
         source_folder, output_folder, link_map_path, asset_map_path, config
     )
 
-    with open(report_path, "w", encoding="utf-8") as f:
+    with open(report_path, "w", encoding="utf-8", newline="\n") as f:
         dump(report, f, indent=2, ensure_ascii=False)
 
     summary = report["summary"]

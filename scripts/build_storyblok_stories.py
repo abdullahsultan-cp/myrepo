@@ -297,7 +297,7 @@ if __name__ == "__main__":
     config = load_config()
     report = build_story_files(source_folder, output_folder, config)
 
-    with open(report_path, "w", encoding="utf-8") as f:
+    with open(report_path, "w", encoding="utf-8", newline="\n") as f:
         dump(report, f, indent=2, ensure_ascii=False)
 
     summary = report["summary"]

@@ -130,7 +130,8 @@ def main(indir, outdir):
 
     p = os.path.join(outdir, "entity_abbrev.csv")
     with open(p, "w", newline="", encoding="utf-8-sig") as f:
-        cw = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        cw = csv.DictWriter(f, lineterminator="\n",
+                            fieldnames=list(rows[0].keys()))
         cw.writeheader()
         cw.writerows(rows)
     print(f"  {len(rows):>5}  {os.path.basename(p)}\n")

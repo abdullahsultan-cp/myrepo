@@ -316,7 +316,7 @@ def main():
                 print(f"    [{done[0]}/{len(todo)}] {sid} "
                       f"http={res.get('http')} images={n_img}")
             if done[0] % 200 == 0:
-                with open(OUT, "w", encoding="utf-8") as f:
+                with open(OUT, "w", encoding="utf-8", newline="\n") as f:
                     json.dump(cache, f, ensure_ascii=False)
 
     if todo:
@@ -372,7 +372,7 @@ def main():
                                                       or []) - used)
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w", encoding="utf-8") as f:
+    with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         json.dump(cache, f, ensure_ascii=False)
 
     resolved = sum(1 for s in ids for lst in

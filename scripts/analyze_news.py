@@ -27,7 +27,7 @@ def create_news_item_json(news_item, folder_path):
     news_id = news_item["Id"]
     out_path = join(abspath(dirname(__file__)), "..", "data", "news",
                     f"{news_id}.json")
-    with open(out_path, "w", encoding="utf-8") as f:
+    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
         dump(news_item, f, indent=2, default=str)
 
 

@@ -101,3 +101,7 @@ storyblok-viewer/*.pem
 
 # Ad-hoc id lists fed to --ids during a recovery pass. Throwaway by nature.
 /data/migrate/*_ids.txt
+
+# validate_dev_tree.py --csv output: a diff against whatever file was passed in,
+# meaningful only in the moment it was produced.
+/data/taxonomy/dev_tree_diff.csv

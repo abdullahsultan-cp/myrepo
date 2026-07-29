@@ -249,7 +249,7 @@ def main():
                       for fn in jobs
                       if os.path.exists(os.path.join(MEDIA_DIR, safe_name(fn))))
 
-    with open(REPORT, "w", encoding="utf-8") as f:
+    with open(REPORT, "w", encoding="utf-8", newline="\n") as f:
         json.dump({"stories": len(ids), "distinct_files": len(jobs),
                    "on_disk": on_disk, "downloaded_now": len(ok),
                    "failed": [{"filename": f_, "url": u, "error": e}

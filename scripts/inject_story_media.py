@@ -143,7 +143,7 @@ def inject_media_into_stories(stories_dir, metadata_path):
 
         story["content"] = insert_media_before_body(story.get("content") or {}, media_bloks)
 
-        with open(story_path, "w", encoding="utf-8") as handle:
+        with open(story_path, "w", encoding="utf-8", newline="\n") as handle:
             dump(story, handle, indent=2, ensure_ascii=False)
 
         updated += 1
@@ -205,6 +205,6 @@ if __name__ == "__main__":
     report = inject_media_into_stories(stories_dir, metadata_path)
     print_report(report)
 
-    with open(output_path, "w", encoding="utf-8") as handle:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
     print(f"Report exported to {output_path}")

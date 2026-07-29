@@ -89,7 +89,7 @@ def run(base_path, add_media_bloks=True, dry_run=False):
         "assets": assets,
     }
 
-    with open(output_path, "w", encoding="utf-8") as handle:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
 
     return report
@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
     output_path = join(base_path, "data", "richtext_media_attach_report.json")
     if not args.execute:
-        with open(output_path, "w", encoding="utf-8") as handle:
+        with open(output_path, "w", encoding="utf-8", newline="\n") as handle:
             dump(report, handle, indent=2, ensure_ascii=False)
         print("Dry run only. Re-run with --execute to update story files.")
     print(f"Report exported to {output_path}")

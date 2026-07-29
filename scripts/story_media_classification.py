@@ -235,14 +235,14 @@ if __name__ == "__main__":
     report = build_classification_report(stories_dir)
     print_report(report)
 
-    with open(report_path, "w", encoding="utf-8") as handle:
+    with open(report_path, "w", encoding="utf-8", newline="\n") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
 
-    with open(index_path, "w", encoding="utf-8") as handle:
+    with open(index_path, "w", encoding="utf-8", newline="\n") as handle:
         dump(build_media_index(report), handle, indent=2, ensure_ascii=False)
 
     makedirs(dirname(constants_path), exist_ok=True)
-    with open(constants_path, "w", encoding="utf-8") as handle:
+    with open(constants_path, "w", encoding="utf-8", newline="\n") as handle:
         handle.write(render_media_types_constants())
 
     if args.filters:

@@ -89,7 +89,7 @@ def clean_news_files(source_folder, output_folder, replacements):
         cleaned_item = clean_object(news_item, replacements)
 
         output_path = join(output_folder, filename)
-        with open(output_path, "w", encoding="utf-8") as f:
+        with open(output_path, "w", encoding="utf-8", newline="\n") as f:
             dump(cleaned_item, f, indent=2, ensure_ascii=False)
 
         if before_counts:

@@ -110,7 +110,7 @@ if __name__ == "__main__":
         config["sharepoint_base_url"],
     )
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(catalog, f, indent=2, ensure_ascii=False)
 
     asset_map = {
@@ -121,7 +121,7 @@ if __name__ == "__main__":
         }
         for item in catalog["assets"]
     }
-    with open(asset_map_path, "w", encoding="utf-8") as f:
+    with open(asset_map_path, "w", encoding="utf-8", newline="\n") as f:
         dump(asset_map, f, indent=2, ensure_ascii=False)
 
     summary = catalog["summary"]

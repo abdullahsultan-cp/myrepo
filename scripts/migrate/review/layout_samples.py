@@ -204,7 +204,8 @@ def main():
 
     if a.csv:
         with open(OUT, "w", newline="", encoding="utf-8-sig") as f:
-            w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            w = csv.DictWriter(f, lineterminator="\n",
+                               fieldnames=list(rows[0].keys()))
             w.writeheader()
             w.writerows(rows)
         print(f"\n  -> {OUT}")

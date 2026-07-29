@@ -365,7 +365,7 @@ def main():
         "stories": index,
     }
     p = os.path.join(out_root, "index.json")
-    with open(p, "w", encoding="utf-8") as f:
+    with open(p, "w", encoding="utf-8", newline="\n") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
 
     # ---- folder tree, for the structure page

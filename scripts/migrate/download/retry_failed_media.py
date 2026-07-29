@@ -120,7 +120,7 @@ def main():
         except Exception as e:
             print(f"  (DB not updated: {type(e).__name__})")
 
-    with open(OUT, "w", encoding="utf-8") as f:
+    with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         json.dump({"retried": len(todo), "recovered": len(ok),
                    "still_failing": still,
                    "permanent_404": [x["filename"] for x in

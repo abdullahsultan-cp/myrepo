@@ -128,9 +128,9 @@ if __name__ == "__main__":
     config = load_config()
     catalog, asset_map = upload_assets(catalog_path, asset_map_path, config)
 
-    with open(catalog_path, "w", encoding="utf-8") as f:
+    with open(catalog_path, "w", encoding="utf-8", newline="\n") as f:
         dump(catalog, f, indent=2, ensure_ascii=False)
-    with open(asset_map_path, "w", encoding="utf-8") as f:
+    with open(asset_map_path, "w", encoding="utf-8", newline="\n") as f:
         dump(asset_map, f, indent=2, ensure_ascii=False)
 
     print("Storyblok asset upload")

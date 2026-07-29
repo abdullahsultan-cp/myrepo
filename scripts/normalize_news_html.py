@@ -256,7 +256,7 @@ def aggregate_stats(counter, stats):
 
 
 def export_report(summary, output_path):
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(summary, f, indent=2, ensure_ascii=False)
 
 
@@ -291,7 +291,7 @@ def normalize_news_files(source_folder, output_folder):
             files_with_warnings.append({"file": filename, "warnings": warnings})
 
         output_path = join(output_folder, filename)
-        with open(output_path, "w", encoding="utf-8") as f:
+        with open(output_path, "w", encoding="utf-8", newline="\n") as f:
             dump(normalized_item, f, indent=2, ensure_ascii=False)
 
     return {

@@ -60,7 +60,7 @@ def main():
                 f"({LOCK}).\nTwo passes corrupt the cache. Wait, or delete the "
                 f"lock if that run is dead.")
         print(f"  stale lock ({age:.0f} min old), continuing")
-    with open(LOCK, "w", encoding="utf-8") as f:
+    with open(LOCK, "w", encoding="utf-8", newline="\n") as f:
         f.write(f"pid {os.getpid()} started {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
 
     started = time.time()

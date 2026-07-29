@@ -225,6 +225,6 @@ if __name__ == "__main__":
     report = build_mapping(metadata_path, media_dir)
     print_report(report)
 
-    with open(output_path, "w", encoding="utf-8") as handle:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as handle:
         dump(report, handle, indent=2, ensure_ascii=False)
     print(f"Report exported to {output_path}")

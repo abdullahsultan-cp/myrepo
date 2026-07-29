@@ -203,7 +203,7 @@ if __name__ == "__main__":
     output_path = join(base_path, "data", "storyblok_link_map.json")
 
     link_map = build_link_map(news_folder)
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(link_map, f, indent=2, ensure_ascii=False)
 
     summary = link_map["summary"]

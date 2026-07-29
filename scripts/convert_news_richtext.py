@@ -54,7 +54,7 @@ def categorize_warnings(warnings):
 
 
 def export_report(report, output_path):
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         dump(report, f, indent=2, ensure_ascii=False)
 
 
@@ -106,7 +106,7 @@ def convert_news_files(source_folder, output_folder):
             )
 
         output_path = join(output_folder, filename)
-        with open(output_path, "w", encoding="utf-8") as f:
+        with open(output_path, "w", encoding="utf-8", newline="\n") as f:
             dump(converted_item, f, indent=2, ensure_ascii=False)
 
     return {
