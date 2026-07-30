@@ -392,15 +392,22 @@ def entities_for(sid, region, entity, folder_ids, warn):
 
 def cmd_stories(sb, args, run_id):
     folder_cache = {}
-    parent_id = ensure_folder(sb, args.folder, folder_cache)
+    # --folder pins every story to one place, which is what the review sample
+    # wanted. Without it each story goes to its real destination, computed by the
+    # taxonomy. That folder must already exist: ensure_folder refuses to create
+    # under regions/ or global/.
+    fixed_parent = ensure_folder(sb, args.folder, folder_cache) \
+        if args.folder else None
     folder_ids = entity_folder_ids()
     print(f"  {len(folder_ids)} entity folders available for 'entities'")
+    if fixed_parent is None:
+        print("  routing each story to its own folder from the taxonomy")
 
     with tracking.connect() as c:
         c.execute("SET search_path TO migration, public")
         rows = c.execute("""SELECT sharepoint_id, title, region, entity,
                                    target_slug, sb_story_id, payload_hash,
-                                   surface_global
+                                   surface_global, coalesce(target_full_slug,'')
                             FROM story WHERE (%s OR is_sample)
                             ORDER BY sharepoint_id""",
                          (args.all_stories,)).fetchall()
@@ -412,7 +419,7 @@ def cmd_stories(sb, args, run_id):
 
     ok = fail = skipped = 0
     for (sid, title, region, entity, slug, sb_id, old_hash,
-         surface_global) in rows:
+         surface_global, target_full_slug) in rows:
         try:
             st = load_story(sid)
         except FileNotFoundError:
@@ -420,12 +427,27 @@ def cmd_stories(sb, args, run_id):
             fail += 1
             continue
 
+        slug = slug or slugify(title) or f"news-{sid}"
+        if fixed_parent is not None:
+            parent_id, folder_path = fixed_parent, args.folder
+        else:
+            if "/" not in target_full_slug:
+                print(f"  !! {sid}: no target_full_slug; run the taxonomy")
+                fail += 1
+                continue
+            folder_path = target_full_slug.rsplit("/", 1)[0]
+            slug = target_full_slug.rsplit("/", 1)[1] or slug
+            try:
+                parent_id = ensure_folder(sb, folder_path, folder_cache)
+            except SystemExit:
+                raise
+        full_slug = f"{folder_path}/{slug}"
+
         warns = []
         ents = entities_for(sid, region, entity, folder_ids, warns)
         content, warns = build(st, None, assets=assets_for(sid),
                                entities=ents, is_global=bool(surface_global),
                                warn=warns)
-        slug = slug or slugify(title) or f"news-{sid}"
         payload = {"story": {"name": content["title"][:255], "slug": slug,
                              "parent_id": parent_id, "content": content},
                    "publish": 1 if args.publish else 0}
@@ -437,14 +459,18 @@ def cmd_stories(sb, args, run_id):
             skipped += 1
             continue
 
-        # if the DB lost the id, find the story by slug before creating
+        # The DB is the primary record of what exists, but it is not the only
+        # one. If it was lost or reset, creating blind would duplicate every
+        # story, so the destination slug is checked first. This is what makes a
+        # resumed run safe.
         if not sb_id:
-            r = sb.get("stories", params={
-                "with_slug": f"{args.folder}/{slug}", "per_page": 1})
-            if r.status_code == 200:
+            r = sb.get("stories", params={"with_slug": full_slug,
+                                          "per_page": 1})
+            if r is not None and r.status_code == 200:
                 for s in r.json().get("stories") or []:
-                    if s.get("full_slug") == f"{args.folder}/{slug}":
+                    if s.get("full_slug") == full_slug and not s.get("is_folder"):
                         sb_id = s["id"]
+                        print(f"    {sid}: already in the space, updating")
                         break
 
         if sb_id:
@@ -465,7 +491,7 @@ def cmd_stories(sb, args, run_id):
                              uploaded_at=now(), error=NULL, updated_at=now()
                              WHERE sharepoint_id=%s""",
                           (story["id"], story.get("uuid"), parent_id,
-                           args.folder, story.get("full_slug"), h, sid))
+                           folder_path, story.get("full_slug"), h, sid))
                 for w in warns:
                     c.execute("""INSERT INTO event (run_id, sharepoint_id,
                                  level, stage, message)
@@ -539,7 +565,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("command", choices=["plan", "assets", "stories", "all",
                                         "verify"])
-    ap.add_argument("--folder", default="news/rabee")
+    # No default: the real migration routes each story to its own folder from
+    # the taxonomy. Passing --folder pins them all to one place instead, which
+    # is only what a review sample wants.
+    ap.add_argument("--folder", default=None,
+                    help="pin every story to this one folder (review only)")
     ap.add_argument("--limit", type=int)
     ap.add_argument("--ids")
     ap.add_argument("--all-stories", action="store_true")

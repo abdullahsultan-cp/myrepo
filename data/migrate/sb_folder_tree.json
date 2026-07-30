@@ -1,6 +1,6 @@
 {
   "space_id": "289824742951963",
-  "folder_count": 663,
+  "folder_count": 664,
   "folders": [
     {
       "id": 196550551813939,
@@ -8,6 +8,17 @@
       "full_slug": "development",
       "slug": "development",
       "name": "development",
+      "parent_id": 0,
+      "depth": 0,
+      "is_folder": true,
+      "parent_full_slug": ""
+    },
+    {
+      "id": 203397329585917,
+      "uuid": "d74b2545-4bf9-4267-9001-5f8bb3e4013e",
+      "full_slug": "global",
+      "slug": "global",
+      "name": "Global",
       "parent_id": 0,
       "depth": 0,
       "is_folder": true,
@@ -36,15 +47,15 @@
       "parent_full_slug": ""
     },
     {
-      "id": 203068490265483,
-      "uuid": "a2b496d0-0e85-436e-83d2-61e334bc8c07",
-      "full_slug": "news/rabee",
-      "slug": "rabee",
-      "name": "Rabee",
-      "parent_id": 200436757260291,
+      "id": 203409102446891,
+      "uuid": "225d2da0-3f92-4457-8a5e-ac9cf0ebc030",
+      "full_slug": "global/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 203397329585917,
       "depth": 1,
       "is_folder": true,
-      "parent_full_slug": "news"
+      "parent_full_slug": "global"
     },
     {
       "id": 201530419710255,
