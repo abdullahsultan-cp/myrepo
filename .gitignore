@@ -98,6 +98,7 @@ storyblok-viewer/*.pem
 # run_media_all.py holds this lock for the duration of a media run; a leftover
 # file means a dead run, and the README says to delete it.
 /data/migrate/.media.lock
+/data/migrate/.migration.lock
 
 # Ad-hoc id lists fed to --ids during a recovery pass. Throwaway by nature.
 /data/migrate/*_ids.txt

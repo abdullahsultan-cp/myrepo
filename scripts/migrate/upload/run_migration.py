@@ -76,17 +76,25 @@ def log(msg, *, echo=True):
 
 
 def run(label, script, args):
-    """Run one stage as its own process so a crash cannot take the run down."""
+    """Run one stage as its own process so a crash cannot take the run down.
+
+    Output is STREAMED, not captured. capture_output=True buffers everything
+    until the process exits, so the assets stage -- an hour of uploading --
+    printed nothing at all and looked hung. Reading line by line means the
+    console and the log both show progress as it happens.
+    """
     log(f"\n{'=' * 70}\n  {label}\n{'=' * 70}")
     t0 = time.time()
-    p = subprocess.run([sys.executable, "-u", os.path.join(MIGRATE, script)]
-                       + [str(a) for a in args],
-                       capture_output=True, text=True, encoding="utf-8",
-                       errors="replace")
-    for line in (p.stdout or "").splitlines():
-        log(f"    {line}", echo=True)
-    for line in (p.stderr or "").splitlines()[-25:]:
-        log(f"    !! {line}")
+    p = subprocess.Popen([sys.executable, "-u", os.path.join(MIGRATE, script)]
+                         + [str(a) for a in args],
+                         stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                         text=True, encoding="utf-8", errors="replace",
+                         bufsize=1)
+    for line in p.stdout:
+        line = line.rstrip()
+        if line:
+            log(f"    {line}")
+    p.wait()
     mins = (time.time() - t0) / 60
     log(f"  -- {label}: exit {p.returncode} in {mins:.1f} min")
     if p.returncode != 0:

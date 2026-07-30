@@ -266,7 +266,19 @@ def cmd_assets(sb, args, run_id):
     seen = {}
     folders = {}          # story folder path -> asset folder id
     ok = fail = 0
-    for aid, sid, role, fn, full_slug in rows:
+    total = len(rows)
+    t_start = time.time()
+    print(f"  {total} assets to upload")
+
+    def progress(n):
+        """Position, rate and an ETA, so a long stage is visibly alive."""
+        el = time.time() - t_start
+        rate = n / el * 60 if el > 0 else 0
+        left = (total - n) / rate if rate > 0 else 0
+        return (f"[{n}/{total} {100 * n / total:.0f}%  "
+                f"{rate:.0f}/min  ~{left:.0f} min left]")
+
+    for n, (aid, sid, role, fn, full_slug) in enumerate(rows, 1):
         # Each story's media is filed under the same hierarchy as the story, so
         # an editor looking for an article's images knows where to look. Asset
         # folders are a separate namespace from the content tree, so creating
@@ -286,6 +298,7 @@ def cmd_assets(sb, args, run_id):
                              exists_on_disk=false WHERE id=%s""", (aid,))
                 c.commit()
             fail += 1
+            print(f"    {progress(n)} MISSING on disk  {fn}")
             continue
         digest = sha256_of(path)
         if digest in seen:                       # same bytes already uploaded
@@ -298,6 +311,7 @@ def cmd_assets(sb, args, run_id):
                           (digest, a["id"], a["filename"], aid))
                 c.commit()
             ok += 1
+            print(f"    {progress(n)} reused           {fn}")
             continue
         obj, err = upload_asset(sb, path, fn, asset_folder_id=afid)
         with tracking.connect() as c:
@@ -311,7 +325,7 @@ def cmd_assets(sb, args, run_id):
                           (digest, os.path.getsize(path), obj["id"],
                            obj["filename"], aid))
                 ok += 1
-                print(f"    uploaded {fn}")
+                print(f"    {progress(n)} uploaded  {role:<10} {fn}")
             else:
                 c.execute("UPDATE asset SET status='failed', error=%s WHERE id=%s",
                           (err, aid))
