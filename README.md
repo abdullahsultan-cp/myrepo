@@ -15,6 +15,15 @@ The work splits into three stages that can be run and re-run independently:
 Everything is resumable and idempotent. Nothing in stages 1–2 touches the
 network; stage 3 does, and says so before it writes.
 
+### Start here
+
+| If you want to | Read |
+|---|---|
+| **run the migration** — one command | [RUN_MIGRATION.md](RUN_MIGRATION.md) |
+| **understand the project** — what, why, where it stands | [docs/PROJECT.md](docs/PROJECT.md) |
+| **run any stage** — every command, in order | [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md) |
+| **set up a fresh clone** — what is needed, where each piece comes from | [docs/REQUIRED_FILES.md](docs/REQUIRED_FILES.md) |
+
 ---
 
 ## Quick start
@@ -274,6 +283,10 @@ stories contain no button markup at all, only 19 CTA-styled or CTA-worded links.
 
 | Doc | Read it when |
 |---|---|
+| [`RUN_MIGRATION.md`](RUN_MIGRATION.md) | running the migration: one command, resume, reports |
+| [`docs/PROJECT.md`](docs/PROJECT.md) | you want the whole picture — problem, architecture, state |
+| [`docs/HOW_TO_RUN.md`](docs/HOW_TO_RUN.md) | every stage and command, in order, from a clone |
+| [`docs/REQUIRED_FILES.md`](docs/REQUIRED_FILES.md) | setting up: what is needed, and how to get or rebuild it |
 | `docs/MIGRATION_DECISIONS.md` | anything about structure, regions, entities, departments |
 | `docs/STORYBLOK_TARGET_SCHEMA.md` | the live component schema vs what the migration produces |
 | `docs/STORYBLOK_COMPONENTS.md` | components, media roles, rich-text schema, characters |
