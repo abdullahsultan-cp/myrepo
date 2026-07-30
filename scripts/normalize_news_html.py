@@ -86,6 +86,34 @@ def is_empty_div(tag):
     return not tag.get_text(strip=True) and not tag.find(["img", "iframe", "table", "ul", "ol"])
 
 
+# SharePoint's editor never writes <u>. It underlines by setting the style
+# attribute -- <strong style="text-decoration:underline;"> -- so stripping style
+# as presentation markup silently discards every underline in the corpus. The
+# meaning is promoted to a real <u> tag first; from there the existing tag
+# mapping carries it through to an underline mark. Colours and fonts genuinely
+# are presentation and stay stripped.
+UNDERLINE_STYLE = re.compile(r"text-decoration[^:;]*:[^;]*underline",
+                             re.IGNORECASE)
+
+
+def preserve_underline(tag, stats):
+    """Wrap a style-underlined tag's children in <u> before the style is lost."""
+    if not isinstance(tag, Tag) or tag.name.lower() == "u":
+        return
+    style = tag_attr(tag, "style") or ""
+    if not isinstance(style, str) or not UNDERLINE_STYLE.search(style):
+        return
+    if not tag.get_text(strip=True):
+        return                      # a zero-width spacer; nothing to underline
+    # Wrap the CONTENTS, not the tag: keeping <strong> outside <u> preserves
+    # both marks and leaves the tag hierarchy the rest of the pass expects.
+    inner = BeautifulSoup("", "html5lib").new_tag("u")
+    for child in list(tag.contents):
+        inner.append(child.extract())
+    tag.append(inner)
+    stats["underlines_preserved"] = stats.get("underlines_preserved", 0) + 1
+
+
 def strip_presentation_attrs(tag):
     if not isinstance(tag, Tag):
         return
@@ -227,6 +255,16 @@ def normalize_news_content_html(html):
     stats["divs_converted_to_p"] = converted
     stats["spacing_divs_removed"] = skipped_spacing
     stats["embed_wrappers_hoisted"] = embed_wrappers_hoisted
+
+    # Promote style-carried underlines to <u> before ANY inline cleanup. It has
+    # to run ahead of normalize_inline_tags, which unwraps <span> -- and <span
+    # style="text-decoration:underline"> is where most of the corpus keeps its
+    # underlines, so running after would drop them with the span. find_all is
+    # materialised first because this inserts tags while iterating.
+    for tag in list(body.find_all(True)):
+        if tag_attr(tag, "data-storyblok-embed"):
+            continue
+        preserve_underline(tag, stats)
 
     normalize_inline_tags(body)
     stats["inline_tags_normalized"] = 1

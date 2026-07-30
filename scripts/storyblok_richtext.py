@@ -49,6 +49,20 @@ MARK_TAGS = {
     "sub": "subscript",
 }
 
+# SharePoint's editor never emits <u>. It underlines by setting the style
+# attribute instead -- <strong style="text-decoration:underline;">, and the same
+# on span and a -- so the tag map above would miss every underline in the corpus.
+# The entity form appears too, because the export HTML-escapes the colon.
+UNDERLINE_STYLE = re.compile(r"text-decoration[^:;]*(?::|&#58;)[^;]*underline",
+                             re.IGNORECASE)
+
+
+def style_marks(node):
+    """Marks carried by a tag's style attribute rather than by its name."""
+    style = node.get("style") or ""
+    return [{"type": "underline"}] if UNDERLINE_STYLE.search(style) else []
+
+
 IFRAME_COMMENT_PATTERN = re.compile(r"^\s*MIGRATION:IFRAME:(.+?)\s*$")
 HTML_IFRAME_COMMENT_PATTERN = re.compile(
     r"<!--\s*MIGRATION:IFRAME:(.+?)\s*-->", re.IGNORECASE | re.DOTALL
@@ -404,6 +418,10 @@ def inline_from_child(node, warnings, active_marks):
 
     if name == "br":
         return [{"type": "hard_break"}]
+
+    # An underline can ride on any inline tag's style attribute, so it is
+    # collected before the tag's own meaning is considered.
+    active_marks = active_marks + style_marks(node)
 
     if name == "a":
         href = (node.get("href") or "").strip()

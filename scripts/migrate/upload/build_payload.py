@@ -404,14 +404,17 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
         if a:
             unplaced.append(decorate(a, m))
 
-    total_images = len(placed) + len(unplaced)
-    # ONE image -> its own blok in place. TWO OR MORE -> a single gallery at the
-    # end, so nothing ever sits side by side mid-article.
-    as_gallery = total_images >= 2
-
-    # ---- walk the body, splitting where a blok must stand on its own
+    # ---- walk the body, splitting where a blok must stand on its own.
+    #
+    # An image that the source POSITIONS stays where the source put it: an image
+    # tied to a paragraph belongs under that paragraph, never at the end. Only a
+    # RUN of adjacent images becomes a gallery, and only at that point in the
+    # article -- that is the "two side by side in the legacy page" case.
+    #
+    # Images the export declares but never positions (the medium role, and any
+    # richtext image no node references) have no paragraph to sit under, so those
+    # are the ones that collect into the gallery at the end.
     body, buf, idx = [], [], 0
-    gallery = []
 
     def flush():
         nonlocal buf, idx
@@ -423,28 +426,38 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
     first_para_taken = False
     description = ""
 
-    for node in nodes:
+    i = 0
+    while i < len(nodes):
+        node = nodes[i]
+
         # paragraph 1 becomes `description` and leaves the body entirely
         if (not first_para_taken and node.get("type") == "paragraph"
                 and plain_text(doc_of([node])).strip()):
             description = plain_text(doc_of([node])).strip()
             first_para_taken = True
+            i += 1
             continue
 
         if node.get("type") == "image":
-            a = resolve_body_image(node)
-            if not a:
+            # consume every adjacent image so a side-by-side pair groups
+            run = []
+            while i < len(nodes) and nodes[i].get("type") == "image":
+                a = resolve_body_image(nodes[i])
+                if a:
+                    run.append((a, nodes[i]))
+                i += 1
+            if not run:
                 continue
-            if as_gallery:
-                gallery.append(a)          # pulled to the end
+            flush()
+            if len(run) == 1:
+                a, n = run[0]
+                cap = rtm_by_src.get((n.get("attrs") or {}).get("src"),
+                                     {}).get("caption") or ""
+                body.append(image_blok(sid, idx, a, description=cap))
             else:
-                flush()
-                body.append(image_blok(
-                    sid, idx, a,
-                    description=(rtm_by_src.get(
-                        (node.get("attrs") or {}).get("src"), {})
-                        .get("caption") or "")))
-                idx += 1
+                body.append(media_section_gallery(sid, idx,
+                                                  [a for a, _ in run]))
+            idx += 1
             continue
 
         embeds = bloks_in(node)
@@ -467,9 +480,11 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
                     idx += 1
                 else:
                     warn.append(f"{e.get('component')} had no src; dropped")
+            i += 1
             continue
 
         buf.append(node)
+        i += 1
     flush()
 
     # ---- pull quote. The source records no position, so it follows the
@@ -492,8 +507,6 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
                     # it is the quote's image now, not a gallery member
                     unplaced = [a for a in unplaced
                                 if a.get("id") != portrait.get("id")]
-                    gallery = [a for a in gallery
-                               if a.get("id") != portrait.get("id")]
                 else:
                     body.insert(at, quote_banner_blok(
                         sid, qtext, speaker,
@@ -525,18 +538,16 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
                 title=m.get("caption") or ""))
             idx += 1
 
-    # ---- the gallery goes LAST, before the featured-news section
-    if as_gallery:
-        imgs = gallery + unplaced
-        if len(imgs) >= 2:
-            body.append(media_section_gallery(sid, idx, imgs))
-            idx += 1
-        elif imgs:
-            body.append(image_blok(sid, idx, imgs[0]))
-            idx += 1
+    # ---- the leftovers go LAST, before the featured-news section.
+    # Only images the source never positioned reach here. Anything the source
+    # tied to a paragraph was already placed under that paragraph above.
+    if len(unplaced) >= 2:
+        body.append(media_section_gallery(sid, idx, unplaced))
+        idx += 1
     elif unplaced:
-        # a single unpositioned image: put it under the opening text rather
-        # than at the very end, which is where the legacy page shows it
+        # A single unpositioned image — in practice the `medium` role. It sits
+        # under the opening text, which is where the legacy page shows it,
+        # rather than being stranded at the end on its own.
         at = 1 if len(body) > 1 else len(body)
         body.insert(at, image_blok(sid, idx, unplaced[0]))
         idx += 1

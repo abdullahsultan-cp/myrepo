@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T19:19:37.987Z",
-  "published_at": "2026-07-29T19:19:37.973Z",
+  "updated_at": "2026-07-30T04:55:17.340Z",
+  "published_at": "2026-07-30T04:55:17.325Z",
   "id": 203420376726033,
   "uuid": "f12d0963-6d43-4925-bbb4-21183ba01094",
   "is_folder": false,
@@ -52,7 +52,120 @@
                   "type": "hard_break"
                 }
               ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
             },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "8fd9c4fa-4742-bf73-7904-7b6715806d15",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419787791482,
+          "alt": "WED_speakers.jpg",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/2463094/ac1a8dc84a/3405-richtext-25644d4383-wed_speakers.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
+      },
+      {
+        "_uid": "e1b0461a-9559-0756-ccee-09bc025ca0fb",
+        "content": {
+          "type": "doc",
+          "content": [
             {
               "type": "paragraph",
               "content": [
@@ -371,7 +484,7 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "a63f0d8a-7e7f-3157-b478-6ffe2ce78dc5",
+        "_uid": "e07759b5-2bf1-5e01-acc2-6ed2eebebd34",
         "type": "gallery",
         "title": "",
         "spacing": {
@@ -452,19 +565,6 @@
         "video_title": "",
         "show_controls": true,
         "gallery_images": [
-          {
-            "id": 203419787791482,
-            "alt": "WED_speakers.jpg",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/2463094/ac1a8dc84a/3405-richtext-25644d4383-wed_speakers.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
           {
             "id": 203419869838464,
             "alt": "",
@@ -701,8 +801,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "27837c69b46a77e5d1c4293c4656d3329d8f1838",
-    "timestamp": "1785352812"
+    "token": "decba4355933480ee634f5b3c1dfd0515112587a",
+    "timestamp": "1785387339"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -738,7 +838,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203420376906993,
+  "current_version_id": 203561849963932,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

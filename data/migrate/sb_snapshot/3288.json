@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-29T19:19:36.154Z",
-  "published_at": "2026-07-29T19:19:36.140Z",
+  "updated_at": "2026-07-30T04:55:16.288Z",
+  "published_at": "2026-07-30T04:55:16.273Z",
   "id": 203420369115464,
   "uuid": "f411f5db-c594-4018-bafe-900133b7e6c1",
   "is_folder": false,
@@ -46,7 +46,120 @@
                   "type": "hard_break"
                 }
               ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
             },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "52554ef4-37e6-4e85-5959-bfcf4f4de590",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419651288178,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/180673/db371790fb/3288-richtext-24ed831f87-aku-leadership-conference.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
+      },
+      {
+        "_uid": "d14ff82f-94e2-1b9f-7dbf-9d509ab8ad68",
+        "content": {
+          "type": "doc",
+          "content": [
             {
               "type": "heading",
               "attrs": {
@@ -100,7 +213,120 @@
                   "type": "hard_break"
                 }
               ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
             },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "7fe18c86-ed8c-da7b-2ce9-5292c137e5c3",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419697769589,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/168718/9fe66b0843/3288-richtext-4aeb9659f9-aku-akuh-bmi-conference1.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
+      },
+      {
+        "_uid": "ba2752ae-f907-df48-bcab-4cb77e289d26",
+        "content": {
+          "type": "doc",
+          "content": [
             {
               "type": "heading",
               "attrs": {
@@ -166,7 +392,120 @@
                   "type": "hard_break"
                 }
               ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
             },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "9cd8062a-f226-f0d7-2d21-9c124145b680",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419713567862,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/224546/c7171fe57b/3288-richtext-8c65b33365-aku-akuh-bmi-conference-multiresearch-interaction.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
+      },
+      {
+        "_uid": "397cfe22-a5d3-320e-f5d2-819a663c03ed",
+        "content": {
+          "type": "doc",
+          "content": [
             {
               "type": "heading",
               "attrs": {
@@ -259,7 +598,120 @@
                   "type": "hard_break"
                 }
               ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
             },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "0153eb67-4aeb-c716-8e27-976c3d81b9b0",
+        "link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "image": {
+          "id": 203419638029424,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "https://a.storyblok.com/f/289824742951963/228628/8517a08916/3288-richtext-e61a8ab342-aku-akuh-bmi-conference-investment-case.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {},
+          "is_external_url": false
+        },
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "variant": "image",
+        "component": "image",
+        "cta_label": "",
+        "description": ""
+      },
+      {
+        "_uid": "2702ad5e-06b9-404d-2108-0fb5249e7dbd",
+        "content": {
+          "type": "doc",
+          "content": [
             {
               "type": "heading",
               "attrs": {
@@ -464,7 +916,7 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "a1f62740-6811-bf78-64a7-a70e6b4006ef",
+        "_uid": "1f104342-3234-116e-565a-0730a1c469a0",
         "type": "gallery",
         "title": "",
         "spacing": {
@@ -545,58 +997,6 @@
         "video_title": "",
         "show_controls": true,
         "gallery_images": [
-          {
-            "id": 203419651288178,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/180673/db371790fb/3288-richtext-24ed831f87-aku-leadership-conference.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203419697769589,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/168718/9fe66b0843/3288-richtext-4aeb9659f9-aku-akuh-bmi-conference1.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203419713567862,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/224546/c7171fe57b/3288-richtext-8c65b33365-aku-akuh-bmi-conference-multiresearch-interaction.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203419638029424,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/228628/8517a08916/3288-richtext-e61a8ab342-aku-akuh-bmi-conference-investment-case.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
           {
             "id": 203419669654643,
             "alt": "",
@@ -733,8 +1133,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "27837c69b46a77e5d1c4293c4656d3329d8f1838",
-    "timestamp": "1785352812"
+    "token": "068e13a20c8d056f6f71bf5006d0fb85265b3814",
+    "timestamp": "1785387340"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -770,7 +1170,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203420369399023,
+  "current_version_id": 203561845646745,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

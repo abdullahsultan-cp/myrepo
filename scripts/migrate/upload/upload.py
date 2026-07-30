@@ -94,8 +94,15 @@ class SB:
 
 # ------------------------------------------------------------------ folders
 
+# The content tree is owned by the front-end developer and is final. This upload
+# must never add to it: a folder it invents would sit alongside the real one,
+# look plausible, and quietly collect stories nobody asked for. So the whole tree
+# is read-only here and a missing folder is a hard stop, not something to fix.
+NO_CREATE = ("regions", "global")
+
+
 def ensure_folder(sb, path, cache):
-    """Create every missing segment of a folder path; return the leaf id."""
+    """Resolve a folder path to its leaf id. Never creates under NO_CREATE."""
     parent = 0
     walked = ""
     for seg in [p for p in path.split("/") if p]:
@@ -111,6 +118,16 @@ def ensure_folder(sb, path, cache):
                     found = st["id"]
                     break
         if found is None:
+            root = walked.split("/")[0]
+            if root in NO_CREATE:
+                sys.exit(
+                    f"\n  STOPPING: folder {walked!r} does not exist, and this\n"
+                    f"  script is not allowed to create anything under "
+                    f"{root!r}.\n"
+                    f"  The content tree belongs to the front-end developer.\n"
+                    f"  Ask for the folder, then re-run:\n"
+                    f"      python scripts/migrate/review/dump_sb_tree.py\n"
+                    f"      python scripts/migrate/review/verify_folders.py")
             r = sb.post("stories", {"story": {
                 "name": seg.replace("-", " ").title(),
                 "slug": seg, "is_folder": True, "parent_id": parent,
@@ -128,6 +145,53 @@ def ensure_folder(sb, path, cache):
     return parent
 
 
+# ------------------------------------------------------------------ asset tree
+
+def ensure_asset_folder(sb, path, cache):
+    """Mirror a story's folder path in the ASSET tree, creating as needed.
+
+    Asset folders are a separate namespace from the content tree, and creating
+    them here is explicitly allowed. Filing each story's media alongside where
+    the story itself lives is what keeps 3900 assets navigable instead of one
+    flat pile.
+
+    `path` is the story's folder path, e.g.
+        regions/pakistan/entities/medical-college/departments/cardiology/news
+    """
+    parent = 0
+    walked = ""
+    for seg in [p for p in path.split("/") if p]:
+        walked = f"{walked}/{seg}" if walked else seg
+        if walked in cache:
+            parent = cache[walked]
+            continue
+        r = sb.post("asset_folders", {"asset_folder": {
+            "name": seg, "parent_id": parent or None}})
+        if r.status_code in (200, 201):
+            fid = (r.json().get("asset_folder") or {}).get("id")
+            print(f"    asset folder created  {walked}  (id {fid})")
+        else:
+            # Already there: the API rejects a duplicate name under one parent,
+            # so look it up rather than treat it as a failure.
+            fid = find_asset_folder(sb, seg, parent)
+            if fid is None:
+                sys.exit(f"cannot create or find asset folder {walked}: "
+                         f"{r.status_code} {r.text[:200]}")
+        cache[walked] = fid
+        parent = fid
+    return parent
+
+
+def find_asset_folder(sb, name, parent_id):
+    r = sb.get("asset_folders")
+    if r.status_code != 200:
+        return None
+    for f in r.json().get("asset_folders") or []:
+        if f.get("name") == name and (f.get("parent_id") or 0) == (parent_id or 0):
+            return f["id"]
+    return None
+
+
 # ------------------------------------------------------------------ assets
 
 def sha256_of(path):
@@ -138,12 +202,14 @@ def sha256_of(path):
     return h.hexdigest()
 
 
-def upload_asset(sb, path, filename):
+def upload_asset(sb, path, filename, asset_folder_id=None):
     """Storyblok asset upload: sign, PUT to S3, finalise."""
     size = os.path.getsize(path)
     ctype = mimetypes.guess_type(filename)[0] or "application/octet-stream"
-    r = sb.post("assets", {"filename": filename, "size": str(size),
-                           "content_type": ctype})
+    body = {"filename": filename, "size": str(size), "content_type": ctype}
+    if asset_folder_id:
+        body["asset_folder_id"] = asset_folder_id
+    r = sb.post("assets", body)
     if r.status_code not in (200, 201):
         return None, f"sign failed {r.status_code} {r.text[:200]}"
     sig = r.json()
@@ -187,7 +253,8 @@ def cmd_assets(sb, args, run_id):
     with tracking.connect() as c:
         c.execute("SET search_path TO migration, public")
         rows = c.execute("""
-            SELECT a.id, a.sharepoint_id, a.role, a.source_filename
+            SELECT a.id, a.sharepoint_id, a.role, a.source_filename,
+                   coalesce(s.target_full_slug, '')
             FROM asset a JOIN story s USING (sharepoint_id)
             WHERE a.status IN ('pending','failed','missing')
               AND (%s OR s.is_sample)
@@ -195,8 +262,20 @@ def cmd_assets(sb, args, run_id):
         """, (args.all_stories,)).fetchall()
 
     seen = {}
+    folders = {}          # story folder path -> asset folder id
     ok = fail = 0
-    for aid, sid, role, fn in rows:
+    for aid, sid, role, fn, full_slug in rows:
+        # Each story's media is filed under the same hierarchy as the story, so
+        # an editor looking for an article's images knows where to look. Asset
+        # folders are a separate namespace from the content tree, so creating
+        # them is allowed where creating a content folder is not.
+        #
+        # full_slug ends with the story's own slug; the folder is everything
+        # before it, e.g. regions/pakistan/entities/medical-college/news
+        afid = None
+        story_folder = full_slug.rsplit("/", 1)[0] if "/" in full_slug else ""
+        if story_folder:
+            afid = ensure_asset_folder(sb, story_folder, folders)
         path = os.path.join(MEDIA_DIR, fn)
         if not os.path.exists(path):
             with tracking.connect() as c:
@@ -218,7 +297,7 @@ def cmd_assets(sb, args, run_id):
                 c.commit()
             ok += 1
             continue
-        obj, err = upload_asset(sb, path, fn)
+        obj, err = upload_asset(sb, path, fn, asset_folder_id=afid)
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")
             if obj:
