@@ -101,8 +101,7 @@ def html_to_storyblok_richtext(html, config=None):
     root = soup.body if soup.body else soup
     content = []
 
-    for child in root.children:
-        content.extend(convert_root_child(child, warnings, config))
+    content.extend(convert_children(list(root.children), warnings, config))
 
     content.extend(comment_bloks)
     content = [node for node in content if node is not None and not is_empty_paragraph(node)]
@@ -118,6 +117,61 @@ def is_empty_paragraph(node):
     if len(inline) == 1 and inline[0].get("type") == "text":
         return not inline[0].get("text", "").strip()
     return False
+
+
+def is_inline_tag(node):
+    """A tag that belongs inside a paragraph rather than beside one."""
+    return (isinstance(node, Tag)
+            and node.name.lower() not in BLOCK_TAGS
+            and node.name.lower() != "iframe"
+            and not node.get("data-storyblok-embed"))
+
+
+def convert_children(children, warnings, config=None):
+    """Convert a run of siblings, keeping consecutive inline content together.
+
+    SharePoint leaves the opening sentence unwrapped at the top level:
+
+        The <a href="...">College of American Pathologists</a> (CAP), an
+        internationally recognised standard ...
+        <p>With 3,000 CAP requirements ...</p>
+
+    Handling each sibling on its own split that single sentence into two
+    paragraphs -- "The " and " (CAP), an internationally ..." -- and dropped the
+    <a> entirely, because <a> is not a block tag and nothing else claimed it. The
+    link and its text vanished from the article.
+
+    So inline siblings are buffered and flushed as ONE paragraph, and only a real
+    block tag ends it.
+    """
+    config = config or DEFAULT_CONFIG
+    out, buf = [], []
+
+    def flush():
+        nonlocal buf
+        if buf:
+            paragraph = paragraph_from_inline(merge_text_nodes(buf))
+            if paragraph:
+                out.append(paragraph)
+            buf = []
+
+    for child in children:
+        # Comment subclasses NavigableString in bs4, so it is tested first.
+        if isinstance(child, Comment):
+            flush()
+            out.extend(convert_migration_comment(child, warnings, config))
+            continue
+        if isinstance(child, NavigableString):
+            if normalize_text(str(child)).strip():
+                buf.extend(inline_from_child(child, warnings, []))
+            continue
+        if is_inline_tag(child):
+            buf.extend(inline_from_child(child, warnings, []))
+            continue
+        flush()
+        out.extend(convert_root_child(child, warnings, config))
+    flush()
+    return out
 
 
 def convert_root_child(node, warnings, config=None):
@@ -149,42 +203,77 @@ def embed_blok_from_tag(tag, warnings, config=None):
 
 
 def block_nodes_from_paragraph(node, warnings, config=None):
+    """Split a paragraph that carries block content, keeping document order.
+
+    A paragraph can hold an embed, an iframe, or images. Rich text has no way to
+    place an image inside a paragraph, so the paragraph is broken into the text
+    around it and the images between -- in order, because their position in the
+    prose is the whole point.
+
+    This matters for the side-by-side case. SharePoint centres two photos in one
+    paragraph:
+
+        <p style="text-align:center;">
+          <img src=".../Dar 1.jpeg"> <img src=".../Dar (2).jpeg">
+        </p>
+
+    Both used to be dropped, because an <img> inside a paragraph had nowhere to
+    go. They now emerge as two adjacent image nodes, which is what lets the
+    payload builder recognise an adjacent run and turn it into one gallery at
+    that point in the article.
+    """
     config = config or DEFAULT_CONFIG
-    embed_divs = node.find_all("div", attrs={"data-storyblok-embed": True}, recursive=True)
+    embed_divs = node.find_all("div", attrs={"data-storyblok-embed": True},
+                               recursive=True)
     iframes = node.find_all("iframe", recursive=True)
-    if not embed_divs and not iframes:
+    images = node.find_all("img", recursive=True)
+    if not embed_divs and not iframes and not images:
         return None
 
-    nodes = []
-    for child in node.children:
-        if isinstance(child, NavigableString):
-            text = normalize_text(str(child))
-            if text.strip():
-                paragraph = paragraph_from_inline([text_node(text)])
-                if paragraph:
-                    nodes.append(paragraph)
-            continue
-        if not isinstance(child, Tag):
-            continue
+    nodes, buf = [], []
 
-        child_name = child.name.lower()
-        if child_name == "div" and child.get("data-storyblok-embed"):
-            blok = embed_blok_from_tag(child, warnings, config=config)
-            if blok:
-                nodes.append(blok)
-            continue
-        if child_name == "iframe":
-            blok = embed_blok_from_tag(child, warnings, config=config)
-            if blok:
-                nodes.append(blok)
-            continue
+    def flush():
+        """Emit whatever inline content has accumulated as one paragraph."""
+        nonlocal buf
+        if buf:
+            paragraph = paragraph_from_inline(merge_text_nodes(buf))
+            if paragraph:
+                nodes.append(paragraph)
+            buf = []
 
-        inline = collect_inline_content(child, warnings)
-        inline = merge_text_nodes(inline)
-        paragraph = paragraph_from_inline(inline)
-        if paragraph:
-            nodes.append(paragraph)
+    def walk(parent):
+        """Descend so an image wrapped in <em>/<span> is still found."""
+        for child in parent.children:
+            if isinstance(child, Comment):
+                continue
+            if isinstance(child, NavigableString):
+                if normalize_text(str(child)).strip():
+                    buf.extend(inline_from_child(child, warnings, []))
+                continue
+            if not isinstance(child, Tag):
+                continue
 
+            child_name = child.name.lower()
+            if child_name == "img":
+                flush()
+                nodes.append(convert_image_node(child, warnings))
+                continue
+            if child_name == "iframe" or (child_name == "div"
+                                          and child.get("data-storyblok-embed")):
+                flush()
+                blok = embed_blok_from_tag(child, warnings, config=config)
+                if blok:
+                    nodes.append(blok)
+                continue
+            if child.find(["img", "iframe"], recursive=True):
+                # an image nested inside formatting: keep going down rather than
+                # collapsing the tag and losing it
+                walk(child)
+                continue
+            buf.extend(inline_from_child(child, warnings, []))
+
+    walk(node)
+    flush()
     return nodes or None
 
 
@@ -200,10 +289,9 @@ def block_nodes_from_tag(node, warnings, config=None):
         return [blok] if blok else []
 
     if name == "div":
-        nodes = []
-        for child in node.children:
-            nodes.extend(convert_root_child(child, warnings, config))
-        return nodes
+        # Same grouping as the root: a div is a wrapper, and running text inside
+        # it must not be split sibling by sibling.
+        return convert_children(list(node.children), warnings, config)
 
     if name == "p":
         embed_blocks = block_nodes_from_paragraph(node, warnings, config)

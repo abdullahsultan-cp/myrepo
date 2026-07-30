@@ -46,6 +46,7 @@ import os
 import re
 import sys
 from datetime import datetime
+from urllib.parse import unquote
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from paths import BASE  # noqa: E402
@@ -125,6 +126,33 @@ def empty_multilink(url=""):
 
 def slugify(s):
     return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
+
+
+IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tif", ".tiff"}
+
+
+def kind_of(name):
+    ext = os.path.splitext((name or "").lower().split("?")[0])[1]
+    if ext == ".gif":
+        return "gif"
+    return "image" if ext in IMAGE_EXT else "other"
+
+
+LOCAL_PREFIX = re.compile(r"^\d+-[a-z0-9]+-[0-9a-f]{6,}-")
+
+
+def media_key(name):
+    """A filename reduced to something that matches across renamings.
+
+    The downloader rewrote "Dar (2).jpeg" as "3405-richtext-<hash>-Dar-2.jpeg",
+    so neither the basename nor the stem compares equal to the source. Stripping
+    the prefix and keeping only alphanumerics lands both on "dar2.jpeg".
+    """
+    base = os.path.basename(unquote((name or "").split("?")[0]))
+    base = LOCAL_PREFIX.sub("", base)
+    stem, ext = os.path.splitext(base)
+    stem = re.sub(r"[^a-z0-9]+", "", stem.lower())
+    return f"{stem}{ext.lower()}" if stem else ""
 
 
 def uid(*parts):
@@ -379,12 +407,22 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
             rtm_by_src[m["local_src"]] = m
 
     def resolve_body_image(node):
+        """Find the uploaded asset for a body image node.
+
+        The src on that node is whatever the enhance step left there -- a
+        /news-media/ path in some pipeline runs, the absolute aku.edu URL in
+        others. Three lookups, cheapest first, so a change upstream cannot
+        silently drop every inline image.
+        """
         src = (node.get("attrs") or {}).get("src") or ""
         m = rtm_by_src.get(src) or {}
-        fn = m.get("local_filename") or os.path.basename(src)
-        a = asset_for("richtext", fn)
+        a = (assets.get(("richtext", m.get("local_filename")))
+             or assets.get(("by_key", media_key(src))))
+        if not a:
+            warn.append(f"body image not resolved: {src[-70:]}")
+            return None
         return decorate(a, {"alt": (node.get("attrs") or {}).get("alt") or "",
-                            "caption": m.get("caption") or ""}) if a else None
+                            "caption": m.get("caption") or ""})
 
     placed = [n for n in nodes if n.get("type") == "image"]
 
@@ -396,13 +434,22 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
         a = decorate(asset_for("medium", m.get("filename")), m)
         if a:
             unplaced.append(a)
-    placed_srcs = {(n.get("attrs") or {}).get("src") for n in placed}
-    for src, m in rtm_by_src.items():
-        if src in placed_srcs or m.get("media_type") not in ("image", "gif"):
+    # Any uploaded richtext image the body does not reference. Derived from the
+    # ASSET RECORDS rather than from richtext_media, because that field is
+    # rewritten by a later pipeline stage and has been empty after a rebuild --
+    # trusting it silently dropped five images from story 2198.
+    used = {media_key((n.get("attrs") or {}).get("src") or "") for n in placed}
+    seen_ids = {a.get("id") for a in unplaced}
+    for (role, name), a in sorted(assets.items(),
+                                  key=lambda kv: str(kv[0][1])):
+        if role != "richtext" or not isinstance(name, str):
             continue
-        a = asset_for("richtext", m.get("local_filename") or "", quiet=True)
-        if a:
-            unplaced.append(decorate(a, m))
+        if media_key(name) in used or a.get("id") in seen_ids:
+            continue
+        if kind_of(name) not in ("image", "gif"):
+            continue
+        seen_ids.add(a.get("id"))
+        unplaced.append(a)
 
     # ---- walk the body, splitting where a blok must stand on its own.
     #
@@ -430,13 +477,19 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
     while i < len(nodes):
         node = nodes[i]
 
-        # paragraph 1 becomes `description` and leaves the body entirely
-        if (not first_para_taken and node.get("type") == "paragraph"
-                and plain_text(doc_of([node])).strip()):
-            description = plain_text(doc_of([node])).strip()
-            first_para_taken = True
-            i += 1
-            continue
+        # Paragraph 1 becomes `description` and leaves the body entirely -- but
+        # only if it is actually a paragraph of prose. 90 stories open with
+        # something that is not: an empty paragraph holding a line break, a
+        # byline ("By Dr Robert Armstrong"), or a label ("Photo gallery"). Taking
+        # those gave one story a description of "The" and others nothing at all.
+        # A non-prose opener stays in the body and the next paragraph is used.
+        if not first_para_taken and node.get("type") == "paragraph":
+            candidate = plain_text(doc_of([node])).strip()
+            if len(candidate) >= 40 and count_words(candidate) >= 6:
+                description = candidate
+                first_para_taken = True
+                i += 1
+                continue
 
         if node.get("type") == "image":
             # consume every adjacent image so a side-by-side pair groups
@@ -448,16 +501,29 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
                 i += 1
             if not run:
                 continue
-            flush()
             if len(run) == 1:
+                # A lone image stays INSIDE the rich text, between the
+                # paragraphs it belongs to. The standalone `image` blok renders
+                # it far too large for something that is really just an
+                # illustration mid-article.
                 a, n = run[0]
-                cap = rtm_by_src.get((n.get("attrs") or {}).get("src"),
-                                     {}).get("caption") or ""
-                body.append(image_blok(sid, idx, a, description=cap))
+                buf.append({
+                    "type": "image",
+                    "attrs": {
+                        "src": a.get("filename") or "",
+                        "alt": a.get("alt") or (n.get("attrs") or {}).get("alt")
+                        or "",
+                        "title": a.get("title") or "",
+                        "id": a.get("id"),
+                    },
+                })
             else:
+                # Two or more side by side: a gallery, at this point in the
+                # article rather than at the end.
+                flush()
                 body.append(media_section_gallery(sid, idx,
                                                   [a for a, _ in run]))
-            idx += 1
+                idx += 1
             continue
 
         embeds = bloks_in(node)
@@ -545,12 +611,21 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
         body.append(media_section_gallery(sid, idx, unplaced))
         idx += 1
     elif unplaced:
-        # A single unpositioned image — in practice the `medium` role. It sits
-        # under the opening text, which is where the legacy page shows it,
-        # rather than being stranded at the end on its own.
-        at = 1 if len(body) > 1 else len(body)
-        body.insert(at, image_blok(sid, idx, unplaced[0]))
-        idx += 1
+        # A single unpositioned image — in practice the `medium` role. It has no
+        # paragraph of its own to sit under, so it goes inside the opening rich
+        # text rather than being stranded at the end as a full-width blok.
+        a = unplaced[0]
+        img = {"type": "image",
+               "attrs": {"src": a.get("filename") or "",
+                         "alt": a.get("alt") or "",
+                         "title": a.get("title") or "",
+                         "id": a.get("id")}}
+        first_rt = next((b for b in body if b["component"] == "rich_text"), None)
+        if first_rt is not None:
+            first_rt["content"]["content"].append(img)
+        else:
+            body.append(rich_text_blok(sid, idx, [img]))
+            idx += 1
 
     if not body:
         body.append(rich_text_blok(sid, 0, [

@@ -1,11 +1,11 @@
 {
   "summary": {
     "files_processed": 3606,
-    "files_with_warnings": 383,
+    "files_with_warnings": 393,
     "warning_categories": {
       "story_link_resolved": 111,
-      "relative_link_unresolved": 462,
-      "sharepoint_image_absolute": 35
+      "relative_link_unresolved": 465,
+      "sharepoint_image_absolute": 78
     }
   },
   "files_with_warnings": [
@@ -120,6 +120,12 @@
       ]
     },
     {
+      "file": "1323.json",
+      "warnings": [
+        "relative_link_unresolved"
+      ]
+    },
+    {
       "file": "1327.json",
       "warnings": [
         "relative_link_unresolved"
@@ -192,6 +198,7 @@
     {
       "file": "1509.json",
       "warnings": [
+        "relative_link_unresolved",
         "relative_link_unresolved",
         "relative_link_unresolved"
       ]
@@ -371,8 +378,15 @@
       ]
     },
     {
+      "file": "1703.json",
+      "warnings": [
+        "relative_link_unresolved"
+      ]
+    },
+    {
       "file": "1711.json",
       "warnings": [
+        "relative_link_unresolved",
         "relative_link_unresolved"
       ]
     },
@@ -527,6 +541,12 @@
     },
     {
       "file": "1840.json",
+      "warnings": [
+        "relative_link_unresolved"
+      ]
+    },
+    {
+      "file": "1844.json",
       "warnings": [
         "relative_link_unresolved"
       ]
@@ -740,6 +760,12 @@
       ]
     },
     {
+      "file": "2002.json",
+      "warnings": [
+        "relative_link_unresolved"
+      ]
+    },
+    {
       "file": "2006.json",
       "warnings": [
         "relative_link_unresolved"
@@ -776,6 +802,12 @@
       "file": "2031.json",
       "warnings": [
         "relative_link_unresolved",
+        "relative_link_unresolved"
+      ]
+    },
+    {
+      "file": "2035.json",
+      "warnings": [
         "relative_link_unresolved"
       ]
     },
@@ -1043,7 +1075,7 @@
     {
       "file": "2294.json",
       "warnings": [
-        "relative_link_unresolved"
+        "sharepoint_image_absolute"
       ]
     },
     {
@@ -1094,7 +1126,18 @@
     {
       "file": "2331.json",
       "warnings": [
-        "relative_link_unresolved"
+        "sharepoint_image_absolute"
+      ]
+    },
+    {
+      "file": "2339.json",
+      "warnings": [
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute"
       ]
     },
     {
@@ -1161,7 +1204,7 @@
     {
       "file": "2419.json",
       "warnings": [
-        "relative_link_unresolved"
+        "sharepoint_image_absolute"
       ]
     },
     {
@@ -1179,7 +1222,7 @@
     {
       "file": "2428.json",
       "warnings": [
-        "relative_link_unresolved"
+        "sharepoint_image_absolute"
       ]
     },
     {
@@ -1690,6 +1733,7 @@
     {
       "file": "2892.json",
       "warnings": [
+        "sharepoint_image_absolute",
         "sharepoint_image_absolute"
       ]
     },
@@ -1737,6 +1781,7 @@
     {
       "file": "2911.json",
       "warnings": [
+        "sharepoint_image_absolute",
         "sharepoint_image_absolute"
       ]
     },
@@ -1747,9 +1792,21 @@
       ]
     },
     {
+      "file": "2931.json",
+      "warnings": [
+        "sharepoint_image_absolute"
+      ]
+    },
+    {
       "file": "2932.json",
       "warnings": [
         "story_link_resolved"
+      ]
+    },
+    {
+      "file": "2949.json",
+      "warnings": [
+        "sharepoint_image_absolute"
       ]
     },
     {
@@ -1813,6 +1870,12 @@
     },
     {
       "file": "3008.json",
+      "warnings": [
+        "sharepoint_image_absolute"
+      ]
+    },
+    {
+      "file": "3017.json",
       "warnings": [
         "sharepoint_image_absolute"
       ]
@@ -1995,7 +2058,17 @@
     {
       "file": "3175.json",
       "warnings": [
-        "story_link_resolved"
+        "story_link_resolved",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute"
+      ]
+    },
+    {
+      "file": "3194.json",
+      "warnings": [
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute"
       ]
     },
     {
@@ -2189,6 +2262,18 @@
       "file": "3405.json",
       "warnings": [
         "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
         "relative_link_unresolved"
       ]
     },
@@ -2365,7 +2450,18 @@
       "warnings": [
         "relative_link_unresolved",
         "relative_link_unresolved",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
         "story_link_resolved",
+        "sharepoint_image_absolute",
+        "sharepoint_image_absolute",
         "relative_link_unresolved"
       ]
     },

@@ -31,8 +31,10 @@ import hashlib
 import json
 import mimetypes
 import os
+import re
 import sys
 import time
+from urllib.parse import unquote
 
 
 try:
@@ -324,20 +326,51 @@ def cmd_assets(sb, args, run_id):
 
 # ------------------------------------------------------------------ stories
 
+LOCAL_PREFIX = re.compile(r"^\d+-[a-z0-9]+-[0-9a-f]{6,}-")
+
+
+def media_key(name):
+    """A filename reduced to something that matches across renamings.
+
+    The downloader rewrote "Dar (2).jpeg" as "3405-richtext-<hash>-Dar-2.jpeg",
+    so neither the basename nor the stem compares equal to the source. Stripping
+    the prefix and keeping only alphanumerics makes both sides land on
+    "dar2.jpeg", which is enough to be unique within one story.
+    """
+    base = os.path.basename(unquote((name or "").split("?")[0]))
+    base = LOCAL_PREFIX.sub("", base)
+    stem, ext = os.path.splitext(base)
+    stem = re.sub(r"[^a-z0-9]+", "", stem.lower())
+    return f"{stem}{ext.lower()}" if stem else ""
+
+
 def assets_for(sid):
     with tracking.connect() as c:
         c.execute("SET search_path TO migration, public")
         rows = c.execute("""SELECT role, source_filename, sb_asset_id,
-                                   sb_filename
+                                   sb_filename, coalesce(source_url, '')
                             FROM asset
                             WHERE sharepoint_id=%s
                               AND status IN ('uploaded','reused')""",
                          (sid,)).fetchall()
-    return {(r[0], r[1]): {"id": r[2], "filename": r[3], "alt": "", "name": "",
-                           "focus": "", "title": "", "source": "",
-                           "copyright": "", "fieldtype": "asset",
-                           "meta_data": {}, "is_external_url": False}
-            for r in rows}
+    def obj(aid, fn):
+        return {"id": aid, "filename": fn, "alt": "", "name": "", "focus": "",
+                "title": "", "source": "", "copyright": "",
+                "fieldtype": "asset", "meta_data": {}, "is_external_url": False}
+
+    out = {(r[0], r[1]): obj(r[2], r[3]) for r in rows}
+    # A body image node carries whatever src the enhance step left on it: a
+    # /news-media/ path in some runs, the absolute aku.edu URL in others. So key
+    # a second time on a normalised form of the ORIGINAL filename, which the
+    # local name still carries after its "{id}-{role}-{hash}-" prefix. Without
+    # this the lookup silently resolves to nothing and every inline image is
+    # dropped from the article.
+    for role, local_fn, aid, sb_fn, src_url in rows:
+        for cand in (src_url or "", local_fn or ""):
+            k = media_key(cand)
+            if k:
+                out.setdefault(("by_key", k), obj(aid, sb_fn))
+    return out
 
 
 def entity_folder_ids():

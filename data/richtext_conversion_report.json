@@ -4,18 +4,17 @@
     "output_folder": "D:\\AKU News\\aku-data-transformation-pipeline-news-master\\data\\storyblok_news",
     "files_processed": 3606,
     "conversion_failures": 0,
-    "files_with_warnings": 525,
+    "files_with_warnings": 430,
     "empty_content_files": 0,
     "iframe_files": 62,
-    "image_files": 23,
-    "relative_link_files": 339,
+    "image_files": 34,
+    "relative_link_files": 341,
     "warning_categories": {
-      "orphan_text_wrapped_in_paragraph": 496,
-      "unexpected_block_inside_inline": 11,
-      "relative_link": 535,
+      "unexpected_block_inside_inline": 30,
+      "relative_link": 541,
       "iframe_embedded": 66,
-      "sharepoint_image": 35,
-      "inline_image_promoted_to_block_unsupported_in_paragraph": 48
+      "sharepoint_image": 78,
+      "inline_image_promoted_to_block_unsupported_in_paragraph": 5
     }
   },
   "conversion_failures": [],
@@ -88,14 +87,24 @@
     "1967.json",
     "1995.json",
     "2160.json",
+    "2294.json",
+    "2331.json",
+    "2339.json",
+    "2419.json",
+    "2428.json",
     "2858.json",
     "2892.json",
     "2895.json",
     "2911.json",
+    "2931.json",
+    "2949.json",
     "2962.json",
     "2975.json",
     "3008.json",
+    "3017.json",
     "3112.json",
+    "3175.json",
+    "3194.json",
     "3213.json",
     "3237.json",
     "3288.json",
@@ -104,6 +113,7 @@
     "3496.json",
     "3545.json",
     "3660.json",
+    "3701.json",
     "3750.json",
     "3835.json",
     "3900.json"
@@ -123,6 +133,7 @@
     "129.json",
     "1298.json",
     "1309.json",
+    "1323.json",
     "1327.json",
     "1329.json",
     "1337.json",
@@ -159,6 +170,7 @@
     "1692.json",
     "1696.json",
     "1700.json",
+    "1703.json",
     "1711.json",
     "1714.json",
     "1717.json",
@@ -184,6 +196,7 @@
     "1828.json",
     "1833.json",
     "1840.json",
+    "1844.json",
     "1856.json",
     "186.json",
     "1863.json",
@@ -212,12 +225,14 @@
     "1969.json",
     "1985.json",
     "1991.json",
+    "2002.json",
     "2006.json",
     "2009.json",
     "2023.json",
     "2025.json",
     "2027.json",
     "2031.json",
+    "2035.json",
     "2037.json",
     "2042.json",
     "2046.json",
@@ -251,12 +266,10 @@
     "2262.json",
     "2265.json",
     "2274.json",
-    "2294.json",
     "2299.json",
     "2300.json",
     "2301.json",
     "2321.json",
-    "2331.json",
     "2340.json",
     "2350.json",
     "2355.json",
@@ -266,10 +279,8 @@
     "2405.json",
     "2410.json",
     "2417.json",
-    "2419.json",
     "242.json",
     "2424.json",
-    "2428.json",
     "2429.json",
     "2433.json",
     "2434.json",
@@ -425,6 +436,7 @@
     "3665.json",
     "3671.json",
     "3683.json",
+    "3686.json",
     "3700.json",
     "3701.json",
     "3704.json",
@@ -451,18 +463,6 @@
   ],
   "files_with_warnings": [
     {
-      "file": "1012.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1031.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1101.json",
       "warnings": [
         "unexpected_block_inside_inline:table",
@@ -476,30 +476,8 @@
       ]
     },
     {
-      "file": "1156.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1157.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1160.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000039",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000217"
       ]
@@ -511,67 +489,21 @@
       ]
     },
     {
-      "file": "1168.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1169.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1173.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1177.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
         "iframe_embedded:https://www.youtube.com/embed/PjNVJvVjmY8"
-      ]
-    },
-    {
-      "file": "1178.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
       "file": "1179.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/news/Pages/News_Listing.aspx?Tags=Paediatric%20congenital%20heart%20disease"
-      ]
-    },
-    {
-      "file": "1187.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
       "file": "1190.json",
       "warnings": [
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-001135"
-      ]
-    },
-    {
-      "file": "1192.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -598,7 +530,6 @@
     {
       "file": "1213.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000244",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000196",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000073"
@@ -609,52 +540,6 @@
       "warnings": [
         "relative_link:/news/Documents/English%20Fact%20Sheet.PDF",
         "relative_link:/news/Documents/Urdu%20Facts%20Sheets.pdf"
-      ]
-    },
-    {
-      "file": "1217.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1219.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1220.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1235.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -670,29 +555,18 @@
       ]
     },
     {
-      "file": "1267.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1268.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/CY5i87d24f4"
       ]
     },
     {
-      "file": "1272.json",
+      "file": "1280.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p"
       ]
     },
     {
@@ -741,31 +615,13 @@
     {
       "file": "1323.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/admissions/registraroffice/Pages/aku-challenge-scholarship.aspx"
       ]
     },
     {
       "file": "1327.json",
       "warnings": [
         "relative_link:/mcpk/hdp/Pages/home.aspx"
-      ]
-    },
-    {
-      "file": "1328.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -780,7 +636,6 @@
     {
       "file": "1334.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "unexpected_block_inside_inline:table",
         "unexpected_block_inside_inline:table",
         "unexpected_block_inside_inline:table",
@@ -807,12 +662,6 @@
       ]
     },
     {
-      "file": "1345.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1356.json",
       "warnings": [
         "relative_link:/news/Pages/cime-inauguration-2017.aspx"
@@ -836,52 +685,7 @@
     {
       "file": "1441.json",
       "warnings": [
-        "relative_link:/news/Pages/impacts-study-launch.aspx",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1487.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1494.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1495.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/news/Pages/impacts-study-launch.aspx"
       ]
     },
     {
@@ -903,62 +707,9 @@
     {
       "file": "1509.json",
       "warnings": [
+        "relative_link:/convocation/ke/Pages/president-speech-2018.aspx",
         "relative_link:/convocation/ke/Pages/valedictory-speech-2018.aspx",
         "relative_link:/convocation/ke/Pages/chief-guest-speech-2018.aspx"
-      ]
-    },
-    {
-      "file": "1521.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1550.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1554.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1003,12 +754,6 @@
       ]
     },
     {
-      "file": "1589.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1597.json",
       "warnings": [
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000177"
@@ -1025,12 +770,6 @@
       "warnings": [
         "relative_link:/news/Documents/TyphoidFAQs.pdf",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-001436"
-      ]
-    },
-    {
-      "file": "1613.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1081,6 +820,7 @@
         "relative_link:/ele-net/students/Pages/Courses.aspx#Language%20Accuracy%20in%20Writing%20-%20B2%E2%80%8B%E2%80%8B",
         "relative_link:/ele-net/students/Pages/Courses.aspx",
         "relative_link:/ele-net/students/Pages/Courses.aspx#Langua%E2%80%8Bge%20Accuracy%20in%20Writing%20(Online)%20-%20B2%E2%80%8B%E2%80%8B%E2%80%8B%E2%80%8B",
+        "relative_link:/ele-net/staff/Pages/Courses.aspx#Writing%20(Online)%20-%20B1",
         "relative_link:/ele-net/staff/Pages/Courses.aspx#Writing%20(Online)%20-%20B1"
       ]
     },
@@ -1100,12 +840,6 @@
       "file": "1670.json",
       "warnings": [
         "relative_link:/mcea/pgme/Pages/fellowships.aspx"
-      ]
-    },
-    {
-      "file": "1672.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1143,8 +877,7 @@
     {
       "file": "1681.json",
       "warnings": [
-        "iframe_embedded:https://www.youtube.com/embed/CIaVtna_uOo",
-        "orphan_text_wrapped_in_paragraph"
+        "iframe_embedded:https://www.youtube.com/embed/CIaVtna_uOo"
       ]
     },
     {
@@ -1154,20 +887,18 @@
       ]
     },
     {
+      "file": "1691.json",
+      "warnings": [
+        "unexpected_block_inside_inline:p"
+      ]
+    },
+    {
       "file": "1692.json",
       "warnings": [
         "relative_link:/events/africme/Pages/home.aspx",
         "relative_link:/iedea",
         "relative_link:/events/africme/Pages/africmeregister.aspx",
         "relative_link:/events/africme/Pages/africmeprogramme.aspx"
-      ]
-    },
-    {
-      "file": "1694.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1183,41 +914,36 @@
       ]
     },
     {
-      "file": "1705.json",
+      "file": "1703.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "relative_link:/ele-net/services/Pages/testing_services.aspx"
       ]
     },
     {
-      "file": "1706.json",
+      "file": "1704.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1707.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1708.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p"
       ]
     },
     {
       "file": "1711.json",
       "warnings": [
         "relative_link:/news/https://www.aku.edu/news/Pages/News_Details.aspx?nid=NEWS-001450",
-        "iframe_embedded:https://www.youtube.com/embed/gbe-0lEtSok"
+        "iframe_embedded:https://www.youtube.com/embed/gbe-0lEtSok",
+        "relative_link:/Documents/Transcript-BBCUrduDocumentary2.doc"
+      ]
+    },
+    {
+      "file": "1712.json",
+      "warnings": [
+        "unexpected_block_inside_inline:p"
       ]
     },
     {
@@ -1310,67 +1036,9 @@
       ]
     },
     {
-      "file": "1754.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1755.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "iframe_embedded:https://www.youtube.com/embed/8-TgyvWWCRM",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1756.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "1757.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "176.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
+        "iframe_embedded:https://www.youtube.com/embed/8-TgyvWWCRM"
       ]
     },
     {
@@ -1424,20 +1092,8 @@
       ]
     },
     {
-      "file": "1825.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1828.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/mcpk/Documents/Appointment%20-Asad-Latif.pdf"
       ]
     },
@@ -1456,31 +1112,19 @@
     {
       "file": "1844.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/cime/Pages/home.aspx"
+      ]
+    },
+    {
+      "file": "1850.json",
+      "warnings": [
+        "unexpected_block_inside_inline:p"
       ]
     },
     {
       "file": "1856.json",
       "warnings": [
         "relative_link:/admissions/Pages/pakistan.aspx"
-      ]
-    },
-    {
-      "file": "1857.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1588,12 +1232,6 @@
       ]
     },
     {
-      "file": "1928.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1932.json",
       "warnings": [
         "relative_link:/ccit/Pages/home.aspx"
@@ -1630,12 +1268,6 @@
       "warnings": [
         "relative_link:/news/pages/News_Details.aspx?nid=NEWS-001854",
         "relative_link:/eai/Pages/kenya.aspx"
-      ]
-    },
-    {
-      "file": "1949.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1698,51 +1330,15 @@
       ]
     },
     {
-      "file": "1992.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "1995.json",
       "warnings": [
         "sharepoint_image:/news/PublishingImages/pages/News_Admin/Beth-Shalom%20edited.jpg"
       ]
     },
     {
-      "file": "1996.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2002.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/ccit/Pages/home.aspx"
       ]
     },
     {
@@ -1800,8 +1396,7 @@
     {
       "file": "2035.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/eai/Pages/youth-skills-survey-report.aspx"
       ]
     },
     {
@@ -1815,12 +1410,6 @@
       "file": "2042.json",
       "warnings": [
         "relative_link:/eai/Documents/Report%20-%20Youth%20Entry%20Level%20Skills.pdf"
-      ]
-    },
-    {
-      "file": "2043.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -1842,25 +1431,15 @@
       ]
     },
     {
-      "file": "2058.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2064.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/eai/Documents/Report%20-%20Youth%20Entry%20Level%20Skills.pdf"
       ]
     },
     {
       "file": "207.json",
       "warnings": [
-        "iframe_embedded:https://www.youtube.com/embed/q_9oJ6qrJWE",
-        "orphan_text_wrapped_in_paragraph"
+        "iframe_embedded:https://www.youtube.com/embed/q_9oJ6qrJWE"
       ]
     },
     {
@@ -1932,23 +1511,6 @@
       ]
     },
     {
-      "file": "2121.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2130.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/P9vHa0N7wjc"
@@ -1988,22 +1550,6 @@
       "file": "2145.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/3tTEv2z1Rko"
-      ]
-    },
-    {
-      "file": "2147.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2089,8 +1635,6 @@
     {
       "file": "2223.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/eai/youth-survey/Pages/home.aspx"
       ]
     },
@@ -2098,13 +1642,6 @@
       "file": "2226.json",
       "warnings": [
         "relative_link:/mcea/medicine/Pages/home.aspx"
-      ]
-    },
-    {
-      "file": "2232.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2116,7 +1653,6 @@
     {
       "file": "2251.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/eai/Documents/Report%20-%20Youth%20Entry%20Level%20Skills.pdf"
       ]
     },
@@ -2142,8 +1678,7 @@
     {
       "file": "2294.json",
       "warnings": [
-        "relative_link:/news/PublishingImages/pages/News_Admin/EAI%20Lake%20Victoria%20Policy%20Brief.pdf",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/_layouts/15/images/icpdf.png"
       ]
     },
     {
@@ -2176,25 +1711,18 @@
     {
       "file": "2331.json",
       "warnings": [
-        "relative_link:/news/Documents/EAI%20%26%20GoHF%20MHM%20Policy%20Brief.pdf",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
-      ]
-    },
-    {
-      "file": "2334.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
+        "sharepoint_image:/_layouts/15/images/icpdf.png"
       ]
     },
     {
       "file": "2339.json",
       "warnings": [
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Lahore%20School.jpg",
+        "sharepoint_image:/news/PublishingImages/download.png",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/AKTC_Final_2010-02.eps-converted-2.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/world-monuments-fund.png",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/google%20arts%20and%20culture.png",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/University-of-Cape-Town.png"
       ]
     },
     {
@@ -2240,28 +1768,9 @@
       ]
     },
     {
-      "file": "2368.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2378.json",
       "warnings": [
         "relative_link:/coe-wch/pk/Documents/Effectiveness%20of%20supplementation%20to%20PLW.PDF"
-      ]
-    },
-    {
-      "file": "2401.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2288,16 +1797,12 @@
     {
       "file": "2419.json",
       "warnings": [
-        "relative_link:/news/PublishingImages/pages/News_Admin/EAI%20The%20Future%20of%20Agriculture%20Policy%20Brief.pdf",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/_layouts/15/images/icpdf.png"
       ]
     },
     {
       "file": "242.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/qtl/Documents/Teaching%20and%20Learning%20Enhancement%20Workshop%20for%20AKU%20Faculty%202016.pdf"
       ]
     },
@@ -2310,8 +1815,7 @@
     {
       "file": "2428.json",
       "warnings": [
-        "relative_link:/news/Documents/EAI%20The%20Future%20of%20Agriculture%20Policy%20Brief.pdf",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/_layouts/15/images/icpdf.png"
       ]
     },
     {
@@ -2323,7 +1827,6 @@
     {
       "file": "243.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "iframe_embedded:https://www.youtube.com/embed/Hc3vplO0CSo"
       ]
     },
@@ -2347,13 +1850,6 @@
       ]
     },
     {
-      "file": "2441.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2443.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/P8qGJNlj-l0"
@@ -2374,22 +1870,10 @@
     {
       "file": "248.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
         "iframe_embedded:https://www.youtube.com/embed/6tpY9IQJ0-Y",
-        "orphan_text_wrapped_in_paragraph",
         "iframe_embedded:https://www.youtube.com/embed/CNngDg0_lDQ",
         "iframe_embedded:https://www.youtube.com/embed/QVO8-zUlU38",
-        "iframe_embedded:https://www.youtube.com/embed/Gy8BqpllcF0",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "iframe_embedded:https://www.youtube.com/embed/Gy8BqpllcF0"
       ]
     },
     {
@@ -2463,12 +1947,6 @@
       ]
     },
     {
-      "file": "2583.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2586.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/G3hnu4RYwTc"
@@ -2478,32 +1956,6 @@
       "file": "2602.json",
       "warnings": [
         "relative_link:/news/Documents/nur.22072.pdf"
-      ]
-    },
-    {
-      "file": "2604.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "261.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "2611.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2569,28 +2021,16 @@
       ]
     },
     {
-      "file": "2659.json",
+      "file": "2653.json",
       "warnings": [
-        "relative_link:/uc-nbi/Pages/home.aspx"
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p"
       ]
     },
     {
-      "file": "266.json",
+      "file": "2659.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/uc-nbi/Pages/home.aspx"
       ]
     },
     {
@@ -2640,6 +2080,8 @@
     {
       "file": "2690.json",
       "warnings": [
+        "relative_link:/news/PublishingImages/ImmunisationCoverageMap.jpg",
+        "unexpected_block_inside_inline:p",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-002002"
       ]
     },
@@ -2665,20 +2107,6 @@
       "file": "2729.json",
       "warnings": [
         "relative_link:/ismc/people/Pages/jeff-tan.aspx"
-      ]
-    },
-    {
-      "file": "273.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2724,7 +2152,6 @@
     {
       "file": "278.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/news/pages/News_Details.aspx?nid=NEWS-000054",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-000039"
       ]
@@ -2775,12 +2202,6 @@
       ]
     },
     {
-      "file": "280.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2806.json",
       "warnings": [
         "relative_link:/sonampk/faculty/pages/profile.aspx?ProfileID=68",
@@ -2801,19 +2222,6 @@
       ]
     },
     {
-      "file": "2809.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "281.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2810.json",
       "warnings": [
         "relative_link:/ighd/Pages/home.aspx",
@@ -2827,60 +2235,9 @@
       ]
     },
     {
-      "file": "282.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "2824.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "2825.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2829.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/NUBmmHqd8F8"
-      ]
-    },
-    {
-      "file": "283.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2902,12 +2259,6 @@
       "file": "2838.json",
       "warnings": [
         "relative_link:/sonampk/faculty/pages/profile.aspx?ProfileID=110&Name=Sajida%20Chagani"
-      ]
-    },
-    {
-      "file": "284.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -2937,14 +2288,7 @@
     {
       "file": "2851.json",
       "warnings": [
-        "relative_link:/about/environment/Pages/plastic-free.aspx",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "2854.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
+        "relative_link:/about/environment/Pages/plastic-free.aspx"
       ]
     },
     {
@@ -3017,7 +2361,7 @@
     {
       "file": "2892.json",
       "warnings": [
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
+        "sharepoint_image:/news/PublishingImages/swiss-ambassador-02.jpg",
         "sharepoint_image:/news/PublishingImages/swiss-ambassador-03.jpg"
       ]
     },
@@ -3031,9 +2375,7 @@
     {
       "file": "290.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "iframe_embedded:https://www.youtube.com/embed/YVnrSVAalP4",
-        "orphan_text_wrapped_in_paragraph"
+        "iframe_embedded:https://www.youtube.com/embed/YVnrSVAalP4"
       ]
     },
     {
@@ -3075,7 +2417,7 @@
       "file": "2911.json",
       "warnings": [
         "sharepoint_image:/news/PublishingImages/Indonesian_CJ_web_02.jpg",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/Indonesian_CJ_web_03.jpg"
       ]
     },
     {
@@ -3085,15 +2427,9 @@
       ]
     },
     {
-      "file": "2927.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "2931.json",
       "warnings": [
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/FloodResponse_news_01_02.jpg"
       ]
     },
     {
@@ -3105,25 +2441,7 @@
     {
       "file": "2949.json",
       "warnings": [
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
-      ]
-    },
-    {
-      "file": "2950.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "2954.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "2957.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/Flood-schal-01-web-news.jpg"
       ]
     },
     {
@@ -3193,7 +2511,7 @@
     {
       "file": "3017.json",
       "warnings": [
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/GB-Chief-Minister-02-web-news.jpg"
       ]
     },
     {
@@ -3218,12 +2536,6 @@
       "file": "3039.json",
       "warnings": [
         "relative_link:/cru/Pages/home.aspx"
-      ]
-    },
-    {
-      "file": "3043.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -3311,12 +2623,6 @@
       ]
     },
     {
-      "file": "310.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3101.json",
       "warnings": [
         "relative_link:/bmi/about/Pages/cyprian-mostert.aspx"
@@ -3347,7 +2653,6 @@
     {
       "file": "3112.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "sharepoint_image:/news/PublishingImages/pages/News_Admin/IMG-20230113-WA0082.jpg"
       ]
     },
@@ -3389,12 +2694,6 @@
       ]
     },
     {
-      "file": "3169.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3174.json",
       "warnings": [
         "iframe_embedded:https://www.youtube.com/embed/SXrYvsfuqy4"
@@ -3404,9 +2703,9 @@
       "file": "3175.json",
       "warnings": [
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-003013",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/TZ%201.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/TZ%202.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/PK%201.jpg"
       ]
     },
     {
@@ -3418,8 +2717,8 @@
     {
       "file": "3194.json",
       "warnings": [
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph"
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/cleanup%201.JPG",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/group.JPG"
       ]
     },
     {
@@ -3603,13 +2902,6 @@
       ]
     },
     {
-      "file": "3353.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3365.json",
       "warnings": [
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-002724"
@@ -3628,17 +2920,6 @@
       ]
     },
     {
-      "file": "3372.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3377.json",
       "warnings": [
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-002609"
@@ -3651,31 +2932,21 @@
       ]
     },
     {
-      "file": "3382.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3405.json",
       "warnings": [
         "sharepoint_image:/news/PublishingImages/pages/News_Admin/WED_speakers.jpg",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Stalls.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/stalls%202.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Nairobi1.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Nairobi2.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Arusha1.jpeg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Arusha%202.jpeg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Nakawa%201.JPG",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Nakawa3.jpeg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Dar%201.jpeg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Dar%20(2).jpeg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/DSC_4163.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/DSC_4278.jpg",
         "relative_link:/about/environment/Pages/home.aspx"
       ]
     },
@@ -3786,7 +3057,6 @@
     {
       "file": "3567.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/leads/Pages/home.aspx"
       ]
     },
@@ -3873,6 +3143,13 @@
       ]
     },
     {
+      "file": "3686.json",
+      "warnings": [
+        "relative_link:/students/climate-solutions/Documents/PCCS%20Highlights%20Booklet.pdf",
+        "unexpected_block_inside_inline:p"
+      ]
+    },
+    {
       "file": "3700.json",
       "warnings": [
         "relative_link:/leads"
@@ -3883,18 +3160,18 @@
       "warnings": [
         "relative_link:/about/environment/Documents/AKDN%20Environment%20and%20Climate%20Commitment%20Statement.pdf",
         "relative_link:/about/environment/Pages/plastic.aspx",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/WED%20webinar%20poster.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Nairobi1.jpeg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Nairobi22.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Karachi7.JPG",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Karachi5.JPG",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Dar3.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Dar8.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Arusha2.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Arusha5.jpg",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-003281#:~:text=On%205th%20June%2C%20AKU%20hosted,practitioners%20from%20Africa%20and%20Asia.",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
-        "inline_image_promoted_to_block_unsupported_in_paragraph",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Kampala1.jpg",
+        "sharepoint_image:/news/PublishingImages/pages/News_Admin/Kampala4.jpg",
         "relative_link:/about/environment/Pages/home.aspx"
       ]
     },
@@ -3975,7 +3252,6 @@
     {
       "file": "3786.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "iframe_embedded:https://www.youtube.com/embed/NFotHN5wjXM?si=Dt5nFrkyC0XdFIMg"
       ]
     },
@@ -4007,20 +3283,6 @@
       ]
     },
     {
-      "file": "3840.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3845.json",
       "warnings": [
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-003676",
@@ -4030,27 +3292,14 @@
     {
       "file": "3862.json",
       "warnings": [
-        "orphan_text_wrapped_in_paragraph",
         "relative_link:/about/chancellor/Pages/hh-ighd.aspx",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-003729"
-      ]
-    },
-    {
-      "file": "3864.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
       "file": "3871.json",
       "warnings": [
         "relative_link:/qtl/resources/Documents/bdl-manual.pdf"
-      ]
-    },
-    {
-      "file": "3876.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -4066,42 +3315,9 @@
       ]
     },
     {
-      "file": "3887.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "3888.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "3900.json",
       "warnings": [
         "sharepoint_image:/news/PublishingImages/Data%20collection%20framework%20for%20the%20LIFECARD%20Study..jpg"
-      ]
-    },
-    {
-      "file": "3912.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     },
     {
@@ -4111,159 +3327,9 @@
       ]
     },
     {
-      "file": "410.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "499.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "533.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "535.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "536.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "537.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "543.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "544.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "545.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "546.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "549.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "551.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "552.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "685.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "70.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "702.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "75.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "786.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "788.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
-      "file": "86.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph"
-      ]
-    },
-    {
       "file": "913.json",
       "warnings": [
         "unexpected_block_inside_inline:table"
-      ]
-    },
-    {
-      "file": "94.json",
-      "warnings": [
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph",
-        "orphan_text_wrapped_in_paragraph"
       ]
     }
   ]
