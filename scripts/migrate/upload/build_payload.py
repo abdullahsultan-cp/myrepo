@@ -574,9 +574,12 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
                     unplaced = [a for a in unplaced
                                 if a.get("id") != portrait.get("id")]
                 else:
+                    # Only the quote itself is required. `date` and `category`
+                    # are left empty rather than filled from the article, which
+                    # would put a date on the quote that the source never gave
+                    # it.
                     body.insert(at, quote_banner_blok(
-                        sid, qtext, speaker,
-                        format_date(c.get("schedule_start_date")), None))
+                        sid, qtext, speaker, None, None))
         elif pq.get("type") == "embed":
             node = pq.get("content")
             src = ""

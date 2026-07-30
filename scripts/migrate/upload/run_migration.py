@@ -206,6 +206,30 @@ def reports(space_id):
         })
     w_csv(os.path.join(REPORTS, "stories.csv"), list(srows[0]), srows)
 
+    # ---- the review sheet: five columns, one row per story, nothing else.
+    # Ordered by sr_no so it can be worked through top to bottom, and every
+    # uploaded story comes first so the unfinished ones are not interleaved.
+    domain = "https://aku-dev.vercel.app"
+    cfg_path = os.path.join(BASE, "config", "storyblok.json")
+    if os.path.exists(cfg_path):
+        with open(cfg_path, encoding="utf-8") as f:
+            domain = (json.load(f).get("frontend_domain") or domain).rstrip("/")
+    links = []
+    for i, r in enumerate(
+            sorted(srows, key=lambda x: (not x["sb_story_id"],
+                                         x["sharepoint_id"])), 1):
+        links.append({
+            "sr_no": i,
+            "sharepoint_id": r["sharepoint_id"],
+            "sharepoint_link": r["sharepoint_url"],
+            "sb_editorial_link": r["storyblok_editor"],
+            "sb_live_link": (f"{domain}/{r['uploaded_full_slug']}"
+                             if r["uploaded_full_slug"] else ""),
+        })
+    w_csv(os.path.join(REPORTS, "links.csv"),
+          ["sr_no", "sharepoint_id", "sharepoint_link", "sb_editorial_link",
+           "sb_live_link"], links)
+
     # ---- per folder
     by_folder = defaultdict(lambda: {"expected": 0, "uploaded": 0,
                                      "failed": 0, "misplaced": 0})
