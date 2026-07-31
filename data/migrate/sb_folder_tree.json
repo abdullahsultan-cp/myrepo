@@ -1,6 +1,6 @@
 {
   "space_id": "289824742951963",
-  "folder_count": 664,
+  "folder_count": 666,
   "folders": [
     {
       "id": 196550551813939,
@@ -509,6 +509,17 @@
       "parent_full_slug": "regions/kenya/entities"
     },
     {
+      "id": 203626793683659,
+      "uuid": "05bb9bc6-9736-4641-a8cc-b3dee6aa67fe",
+      "full_slug": "regions/kenya/entities/hospitals",
+      "slug": "hospitals",
+      "name": "Hosp",
+      "parent_id": 203313623046917,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/kenya/entities"
+    },
+    {
       "id": 203313686019173,
       "uuid": "9bd0feae-22e2-4c6f-b4ef-25beb369dac3",
       "full_slug": "regions/kenya/entities/institute-for-educational-development",
@@ -679,6 +690,17 @@
       "full_slug": "regions/pakistan/entities/graduate-school-of-media-and-communications",
       "slug": "graduate-school-of-media-and-communications",
       "name": "GSMC",
+      "parent_id": 203313621863172,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/pakistan/entities"
+    },
+    {
+      "id": 203626227434003,
+      "uuid": "3809e9dc-f531-4d7d-a0b0-716b7ff9b413",
+      "full_slug": "regions/pakistan/entities/hospitals",
+      "slug": "hospitals",
+      "name": "Hosp",
       "parent_id": 203313621863172,
       "depth": 3,
       "is_folder": true,

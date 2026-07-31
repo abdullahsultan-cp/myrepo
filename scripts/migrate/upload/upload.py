@@ -62,14 +62,32 @@ class SB:
         self.s = requests.Session()
         self.s.headers.update({"Authorization": cfg["management_token"]})
         self.space = cfg["space_id"]
+        # A separate pooled session for the S3 uploads. requests.post() opened a
+        # fresh socket per file, leaving thousands in TIME_WAIT -- which is how a
+        # run reaches "WinError 10013, socket forbidden": Windows runs out of
+        # ephemeral ports. Pooling reuses connections instead.
+        self.s3 = requests.Session()
 
     def _call(self, method, path, *, json_body=None, params=None, tries=5,
               **kw):
         url = path if path.startswith("http") else f"{self.api}/{path}"
         last = None
         for attempt in range(tries):
-            r = self.s.request(method, url, json=json_body, params=params,
-                               timeout=120, **kw)
+            try:
+                r = self.s.request(method, url, json=json_body, params=params,
+                                   timeout=120, **kw)
+            except requests.exceptions.RequestException as e:
+                # Only 429 and 5xx were retried, so a dropped connection raised
+                # straight out and ended the run -- twice, at 95 and 8 minutes.
+                # A transient network fault is the most likely thing to happen
+                # during a three-hour job, so it is retried like any other.
+                if attempt == tries - 1:
+                    raise
+                wait = 5 * (attempt + 1)
+                print(f"      {type(e).__name__} on {method} {path}; "
+                      f"retrying in {wait}s ({attempt + 1}/{tries})")
+                time.sleep(wait)
+                continue
             if r.status_code == 429:
                 wait = int(r.headers.get("Retry-After", 2 * (attempt + 1)))
                 print(f"      rate limited; sleeping {wait}s")
@@ -215,12 +233,30 @@ def upload_asset(sb, path, filename, asset_folder_id=None):
     if r.status_code not in (200, 201):
         return None, f"sign failed {r.status_code} {r.text[:200]}"
     sig = r.json()
-    with open(path, "rb") as fh:
-        files = {**{k: (None, v) for k, v in (sig.get("fields") or {}).items()},
-                 "file": (filename, fh, ctype)}
-        up = requests.post(sig["post_url"], files=files, timeout=300)
-    if up.status_code not in (200, 201, 204):
-        return None, f"s3 failed {up.status_code} {up.text[:200]}"
+    # The S3 PUT goes straight to amazonaws.com, so it does not pass through
+    # SB._call and gets none of its retry. A single dropped connection used to
+    # raise out of here, out of cmd_assets, and end a 95-minute run --
+    # "WinError 10065, unreachable host" after 1,700 successful uploads. Retry
+    # with backoff, and reopen the file each time because the handle is consumed.
+    up = None
+    for attempt in range(5):
+        try:
+            with open(path, "rb") as fh:
+                files = {**{k: (None, v)
+                            for k, v in (sig.get("fields") or {}).items()},
+                         "file": (filename, fh, ctype)}
+                up = sb.s3.post(sig["post_url"], files=files, timeout=300)
+            break
+        except requests.exceptions.RequestException as e:
+            if attempt == 4:
+                return None, f"s3 unreachable after 5 tries: {e}"
+            wait = 3 * (attempt + 1)
+            print(f"      s3 {type(e).__name__}; retrying in {wait}s "
+                  f"({attempt + 1}/5)")
+            time.sleep(wait)
+    if up is None or up.status_code not in (200, 201, 204):
+        return None, (f"s3 failed {getattr(up, 'status_code', '?')} "
+                      f"{getattr(up, 'text', '')[:200]}")
     fin = sb.get(f"assets/{sig['id']}/finish_upload")
     if fin.status_code not in (200, 204):
         return None, f"finish failed {fin.status_code} {fin.text[:200]}"
@@ -313,7 +349,14 @@ def cmd_assets(sb, args, run_id):
             ok += 1
             print(f"    {progress(n)} reused           {fn}")
             continue
-        obj, err = upload_asset(sb, path, fn, asset_folder_id=afid)
+        # Nothing about one asset should be able to end the run. Anything the
+        # retries above did not absorb is recorded against that asset and the
+        # loop moves on; a re-run picks it up because its status is not
+        # 'uploaded'.
+        try:
+            obj, err = upload_asset(sb, path, fn, asset_folder_id=afid)
+        except Exception as e:                       # noqa: BLE001
+            obj, err = None, f"{type(e).__name__}: {e}"[:400]
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")
             if obj:
