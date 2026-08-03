@@ -1,0 +1,363 @@
+{
+  "name": "Using the Many to Spot the Few",
+  "parent_id": 203314133681389,
+  "group_id": "9e7cb35d-4362-45de-9a5c-cde5a9d4eea6",
+  "alternates": [],
+  "created_at": "2026-07-31T09:25:50.174Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:25:50.257Z",
+  "published_at": "2026-07-31T09:25:50.243Z",
+  "id": 203982234346939,
+  "uuid": "02d17ffe-bab1-46d0-82eb-2a3dedb3fcb2",
+  "is_folder": false,
+  "content": {
+    "_uid": "163a2d57-e3ae-a42e-313b-86ddd016ed90",
+    "body": [
+      {
+        "_uid": "3ce0f16a-56c6-af90-97fe-bf93b875abc9",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Many of the texts in the OpenITI/KITAB corpus contain poetic verses. Many of these verses are found in texts that carry the term ",
+                  "type": "text"
+                },
+                {
+                  "text": "dīwān ",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                },
+                {
+                  "text": "in the title; others are not. Some of these verses are annotated and tagged as verses; others are not. Regardless of where verses are found, if they are annotated according to the OpenITI mARkdown system used by OpenITI/KITAB, the tag %~% is inserted either between two of the hemistichs of a verse, or before or after a verse in case there are not two hemistichs (see also ",
+                  "type": "text"
+                },
+                {
+                  "text": "here",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://alraqmiyyat.github.io/mARkdown/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " under \"Verses of poetry\").",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In many instances, the tag is inserted manually during the course of the annotation work carried out by KITAB team members. In the vast majority of cases, however, the tag is inserted automatically by KITAB when new text files are converted to the OpenITI mARkdown format. However, if the tag %~% was inserted, the number of lines containing it is substantial and if we search our corpus for lines containing %~%, we get tens of thousands of results. ",
+                  "type": "text"
+                },
+                {
+                  "text": "Continue reading",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/2021/07/13/using-the-many-to-spot-the-few/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "Dr Lorenz Nigst",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "Research Associate, ",
+                  "type": "text"
+                },
+                {
+                  "text": "KITAB",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " Corpus Management, AKU-ISMC.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Jul 13, 2021",
+    "title": "Using the Many to Spot the Few",
+    "author": "Layal.N.Mohammad",
+    "entities": [
+      "203313951169923"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "2 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "At present, the  OpenITI / KITAB corpus  comprises 10,243 text files, 6,268 of which are unique titles. Such a large, and growing, number of texts makes quality control challenging. But at the same time, it is precisely this large number of texts that can be the basis for quantitative methods of quality control. In this blog, Dr Lorenz Nigst would like to briefly explore how we can make use of a large number of annotated lines of poetry for a simple quality check of such lines.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203692501360552,
+      "alt": "Using the Many to Spot the Few",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/102476/7270093207/2688-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "using-the-many-to-spot-the-few",
+  "path": null,
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/using-the-many-to-spot-the-few",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "661a3c689f0bfcdbac921e7271a8670e36603f2d",
+    "timestamp": "1785492910"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:25:50.243Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -1340,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203982234525886,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203982234346939,
+    "due_date": null,
+    "created_at": "2026-07-31T09:25:50.196Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203982234346939,
+      "due_date": null,
+      "created_at": "2026-07-31T09:25:50.196Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

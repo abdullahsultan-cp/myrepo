@@ -1,0 +1,286 @@
+{
+  "name": "A Ramble Through the Cluster Data, Part 1: From Pairs to Clusters",
+  "parent_id": 203314133681389,
+  "group_id": "68aefda6-d9bf-46dd-bc01-fc88c809fdde",
+  "alternates": [],
+  "created_at": "2026-07-31T09:30:50.567Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:30:50.656Z",
+  "published_at": "2026-07-31T09:30:50.643Z",
+  "id": 203983464765130,
+  "uuid": "f9e14300-9718-4632-a934-8bb42d1fb9e8",
+  "is_folder": false,
+  "content": {
+    "_uid": "9594af4f-ff16-dbf0-d7ea-95010cc468d4",
+    "body": [
+      {
+        "_uid": "b75db014-64ae-5b56-da6f-fcdb4ed6e5f8",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 4
+              },
+              "content": [
+                {
+                  "text": "Dr Mathew Barber",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://kitab-project.org/about/kitabis#mathew-barber",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Mathew is a historian working with the KITAB team to develop and improve their visualisations and applications. He specialises in Fatimid historiography (c. tenth-twelfth centuries), its later survival and broader history-writing practices in Egypt.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "May 25, 2022",
+    "title": "A Ramble Through the Cluster Data, Part 1: From Pairs to Clusters",
+    "author": "Layal.N.Mohammad",
+    "entities": [
+      "203313951169923"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "2 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "It should be no surprise to any reader of this blog that the  KITAB  project is primarily interested in studying Arabic text reuse. A large number of posts here, including several from myself, are concerned with the text reuse dataset produced by passim and what it can tell us about Arabic book history. But what if I told you that passim produced two datasets and that our work has so far relied on one? If you read our pages on passim, or our blogs, you will see that this work focuses on the study of pairs of texts. That is, how text is reused between two books; where text reuse occurs in those books; how text is rearranged, etc. This post will introduce another dataset, the cluster dataset. It will be part of a series of posts that will follow my ramble1 (more-or-less in real time) through the cluster data, giving some early insights into how it can be used to understand Arabic book history. This data set could be used to study a range of texts, but here I will take historiography as an example.  Read more",
+    "show_social": false,
+    "banner_image": {
+      "id": 203695071375598,
+      "alt": "A Ramble Through the Cluster Data, Part 1: From Pairs to Clusters",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/275514/b9081626c3/2880-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "a-ramble-through-the-cluster-data-part-1-from-pairs-to-clusters",
+  "path": null,
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/a-ramble-through-the-cluster-data-part-1-from-pairs-to-clusters",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "220a6b7eef835ee4a24166669da9f53614b157bd",
+    "timestamp": "1785492858"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:30:50.643Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -1630,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203983464969567,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203983464765130,
+    "due_date": null,
+    "created_at": "2026-07-31T09:30:50.596Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203983464765130,
+      "due_date": null,
+      "created_at": "2026-07-31T09:30:50.596Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

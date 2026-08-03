@@ -1,14 +1,14 @@
 {
   "name": "AKU Independence Day celebrations",
-  "parent_id": 200436757260291,
+  "parent_id": 203313630673674,
   "group_id": "c435b7ab-c083-48b8-9649-21b0a04f3ddf",
   "alternates": [],
   "created_at": "2026-07-29T19:19:10.504Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:02.578Z",
-  "published_at": "2026-07-30T04:55:02.567Z",
+  "updated_at": "2026-07-30T15:04:08.147Z",
+  "published_at": "2026-07-30T15:04:08.133Z",
   "id": 203420264492333,
   "uuid": "65b72d5b-2b96-452c-88ba-d10caf500efe",
   "is_folder": false,
@@ -149,14 +149,14 @@
   "published": true,
   "slug": "aku-independence-day-celebrations-760",
   "path": null,
-  "full_slug": "news/aku-independence-day-celebrations-760",
+  "full_slug": "regions/pakistan/news/aku-independence-day-celebrations-760",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313630673674,
+    "uuid": "01ce7975-80fb-42d4-81d9-0a262e4f8496",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -165,15 +165,35 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "bf5917daa3dda60eb0589f23aa56d9020bb3e581",
-    "timestamp": "1785387345"
+    "token": "45da2ea77c44897d08c5c7d6970a125ce5bcb5dd",
+    "timestamp": "1785498130"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313630673674,
+      "name": "News",
+      "parent_id": 203313617816321,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -202,7 +222,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561789580657,
+  "current_version_id": 203711480197120,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

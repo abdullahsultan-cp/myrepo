@@ -1,0 +1,324 @@
+{
+  "name": "Can Digital Humanities Be Informed by Bioinformatics? Visualising Passim Data for Multiple-Book Relationships",
+  "parent_id": 203314133681389,
+  "group_id": "1a7dafce-1c78-42d3-a89d-19029c095716",
+  "alternates": [],
+  "created_at": "2026-07-31T09:24:19.802Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:24:19.877Z",
+  "published_at": "2026-07-31T09:24:19.862Z",
+  "id": 203981864187258,
+  "uuid": "0bd13456-585b-43f8-b979-86d2389369c8",
+  "is_folder": false,
+  "content": {
+    "_uid": "95f9bdbb-2c10-6711-63b5-80184ce8b28f",
+    "body": [
+      {
+        "_uid": "7541dbc7-5479-b0da-e43f-089925fd60fd",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "To note a couple of examples: what if we wanted to investigate how one particular book was disseminated across tens or even hundreds of later works? Or, what if we wanted to know about how one particular unit of information (perhaps a narrative about a major event) circulated throughout our corpus? To help deal with these kinds of questions the team has been developing new applications for understanding multiple-book relationships. In this blog, I will take the opportunity to introduce some of the applications under development. To do so, however, this requires a short tangent on bioinformatics.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The computational analysis of text reuse has developed and advanced alongside that of genomics. This is a fact noted explicitly by David Smith, when he acknowledges that passim utilises the Smith-Waterman alignment algorithm, which is also used in the analysis of genes.[1] Text reuse and genetics are both concerned with problems in sequencing. Put simply, when biologists wish to analyse genes, they convert genetic material into a sequence of letters (A, C, G, T), each of which represent a chemical nucleotide base (adenine, cytosine, guanine, thymine). Three-letter words termed 'codons' specify the amino acids that are used by the body to build proteins.[2] There are also 'stop codons' that mark the end of the sequence. Similarities in sequences of letters between parts of a chromosome or with other chromosomes, or even similarities between the genomes of different animals, might indicate (for example) similar biological functionality. In short, important biological questions can be resolved by identifying similar sequences of letters and alignment algorithms like Smith-Waterman are used to undertake this task. ",
+                  "type": "text"
+                },
+                {
+                  "text": "Read more",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/2021/04/29/can-digital-humanities-be-informed-by-bioinformatics-visualising-passim-data-for-multiple-book-relationships/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Mathew Barber",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/ismc/people/Pages/mathew-barber.aspx",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    },
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Research Associate for KITAB at AKU-ISMC. Mathew Barber's research is concerned with the practice of history writing and remembering in the Medieval Islamicate world. He is interested in particular in history writing under the Fatimids in Egypt, the preservation and dispersal of Fatimid-era historical texts, and what this preservation (or lack thereof) means for how later historians viewed and understood the Egyptian past. He is concerned with answering such research questions using a combination of digital and traditional methods, in particular using computational text reuse detection to identify so-called 'lost' texts.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Apr 30, 2021",
+    "title": "Can Digital Humanities Be Informed by Bioinformatics? Visualising Passim Data for Multiple-Book Relationships",
+    "author": "Layal.N.Mohammad",
+    "entities": [
+      "203313951169923"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "3 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "As  KITAB 's research has shown, passim is an incredibly powerful tool for answering a variety of questions about book history and history in general. The algorithm produces a huge amount of data, which we can utilise in our research in many ways. At present, we typically investigate text reuse in the corpus at the level of relationships between pairs of books. That is, we look at statistics that tell us what percentage of one book is reused in another and we visualise alignments between two books. This approach is great for understanding how two books are related, but once we start comparing multiple books these approaches become quite cumbersome.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203692003630937,
+      "alt": "Can Digital Humanities Be Informed by Bioinformatics? Visualising Passim Data for Multiple-Book Relationships",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/124769/6ecd93ffc6/2631-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "can-digital-humanities-be-informed-by-bioinformatics-visualising-passim-data-for-multiple-book-relationships",
+  "path": null,
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/can-digital-humanities-be-informed-by-bioinformatics-visualising-passim-data-for-multiple-book-relationships",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "a3c58daf3fef8a96257c0a66b0e9a0b9629281a0",
+    "timestamp": "1785492931"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:24:19.862Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -1250,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203981864337337,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203981864187258,
+    "due_date": null,
+    "created_at": "2026-07-31T09:24:19.823Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203981864187258,
+      "due_date": null,
+      "created_at": "2026-07-31T09:24:19.823Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

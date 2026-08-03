@@ -1,0 +1,307 @@
+{
+  "name": "A Ramble Through the Cluster Data, Part 2: Quantifying and Visualising Clusters",
+  "parent_id": 203314133681389,
+  "group_id": "dc76abbd-b507-4f7d-8fd8-d732bdf260a6",
+  "alternates": [],
+  "created_at": "2026-07-31T09:31:16.793Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:31:16.880Z",
+  "published_at": "2026-07-31T09:31:16.865Z",
+  "id": 203983572186846,
+  "uuid": "cf66ec0f-2ff2-449d-9236-7468e9e7e04f",
+  "is_folder": false,
+  "content": {
+    "_uid": "0c84eb0a-4ce3-5178-07b3-786ab93a0a9c",
+    "body": [
+      {
+        "_uid": "7389590c-cd17-1b13-f4ce-b60a192baba6",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "heading",
+              "attrs": {
+                "level": 4
+              },
+              "content": [
+                {
+                  "text": "Dr Mathew Barber",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://kitab-project.org/about/kitabis#mathew-barber",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Mathew is a historian working with the ",
+                  "type": "text"
+                },
+                {
+                  "text": "KITAB",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://kitab-project.org/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " team to develop and improve their visualisations and applications. He specialises in Fatimid historiography (c. tenth-twelfth centuries), its later survival and broader history-writing practices in Egypt.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Jun 22, 2022",
+    "title": "A Ramble Through the Cluster Data, Part 2: Quantifying and Visualising Clusters",
+    "author": "Layal.N.Mohammad",
+    "entities": [
+      "203313951169923"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "2 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "In part 1, I introduced you to the cluster data set, a second  passim  data set that is slightly different from the pairwise data set that the KITAB team use in their daily research. The cluster data set brings together the pairwise alignments that overlap by more than 80% into larger clusters containing multiple book milestones. These clusters can be used to explore stemmatic relationships between texts, or may even reveal how a set of texts rely on the same lost source text. I will be using this data set in my research for the ERC team's  forthcoming volume . However, before I engage in a closer study of individual clusters and their historical importance (I will begin to explore this in part 3), it is important to understand the nature of single-link clustering and its limitations and to explore the scale of the cluster data set in general. This will guide me in identifying clusters of interest and help to contextualise my findings later on.  Read more",
+    "show_social": false,
+    "banner_image": {
+      "id": 203695260909829,
+      "alt": "A Ramble Through the Cluster Data, Part 2: Quantifying and Visualising Clusters",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/78264/6ddc0c1453/2898-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "a-ramble-through-the-cluster-data-part-2-quantifying-and-visualising-clusters",
+  "path": null,
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/a-ramble-through-the-cluster-data-part-2-quantifying-and-visualising-clusters",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "05cb05fbe63cf3089d3d4d08f2c7521654998b47",
+    "timestamp": "1785492856"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:31:16.865Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -1640,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203983572374995,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203983572186846,
+    "due_date": null,
+    "created_at": "2026-07-31T09:31:16.819Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203983572186846,
+      "due_date": null,
+      "created_at": "2026-07-31T09:31:16.819Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

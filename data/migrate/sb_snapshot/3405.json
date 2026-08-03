@@ -1,14 +1,14 @@
 {
   "name": "AKU celebrates World Environment Day 2024 with diverse global activities",
-  "parent_id": 200436757260291,
+  "parent_id": 203409102446891,
   "group_id": "098a3e61-e806-47f0-a4e1-8f052d565c43",
   "alternates": [],
   "created_at": "2026-07-29T19:19:37.902Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:17.340Z",
-  "published_at": "2026-07-30T04:55:17.325Z",
+  "updated_at": "2026-07-31T09:43:51.639Z",
+  "published_at": "2026-07-31T09:43:51.621Z",
   "id": 203420376726033,
   "uuid": "f12d0963-6d43-4925-bbb4-21183ba01094",
   "is_folder": false,
@@ -50,6 +50,57 @@
                 },
                 {
                   "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "attrs": {
+                "id": 203419787791482,
+                "alt": "WED_speakers.jpg",
+                "src": "https://a.storyblok.com/f/289824742951963/2463094/ac1a8dc84a/3405-richtext-25644d4383-wed_speakers.jpg",
+                "title": ""
+              }
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "To open the webinar, Dr. Carl Amrhein, AKU Provost, highlighted the importance of such discourse: \"",
+                  "type": "text"
+                },
+                {
+                  "text": "At AKU we are inspired by our Chancellor and Founder of AKU, His Highness the Aga Khan's vision of responsible stewardship of the environment, ensuring that the earth can sustainably support future generations. His belief that through significant partnerships, we can share our experiences with others, create awareness, increase impact, influence policy and effect societal transformation.\" ",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "Stalls at the University Centre, Karachi",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "To engage AKU employees and students, two stalls were set up in the University Centre Courtyard at Stadium Road campus in Karachi, Pakistan. The landscaping team offered diverse indoor plants for sale, while the Projects & Construction team had on offer fresh organic vegetables and fruits from trial agricultural plots on the city's outskirts. More than 500 plants were sold in only a few hours. The stalls promoted a healthy exchange of not just foods and ornamental plants, but also of ideas and information on organic farming practices and benefits of greenery. ",
+                  "type": "text"
                 }
               ]
             }
@@ -103,27 +154,8 @@
         "pattern_mobile_height": "0"
       },
       {
-        "_uid": "8fd9c4fa-4742-bf73-7904-7b6715806d15",
-        "link": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "image": {
-          "id": 203419787791482,
-          "alt": "WED_speakers.jpg",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "https://a.storyblok.com/f/289824742951963/2463094/ac1a8dc84a/3405-richtext-25644d4383-wed_speakers.jpg",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {},
-          "is_external_url": false
-        },
+        "_uid": "a63f0d8a-7e7f-3157-b478-6ffe2ce78dc5",
+        "type": "gallery",
         "title": "",
         "spacing": {
           "unit": "px",
@@ -156,58 +188,92 @@
             }
           }
         },
-        "variant": "image",
-        "component": "image",
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
         "cta_label": "",
-        "description": ""
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203420169510030,
+            "alt": "Stalls.jpg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/5222042/e9a83fb2ef/3405-richtext-9c4248d43c-stalls.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203419820510333,
+            "alt": "stalls 2.jpg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/4501507/3802e6f4f8/3405-richtext-a1a95bffcb-stalls-2.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "gallery_layout": "simple",
+        "pattern_height": "",
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": "",
+        "pattern_mobile_height": ""
       },
       {
         "_uid": "e1b0461a-9559-0756-ccee-09bc025ca0fb",
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "To open the webinar, Dr. Carl Amrhein, AKU Provost, highlighted the importance of such discourse: \"",
-                  "type": "text"
-                },
-                {
-                  "text": "At AKU we are inspired by our Chancellor and Founder of AKU, His Highness the Aga Khan's vision of responsible stewardship of the environment, ensuring that the earth can sustainably support future generations. His belief that through significant partnerships, we can share our experiences with others, create awareness, increase impact, influence policy and effect societal transformation.\" ",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "text": "Stalls at the University Centre, Karachi",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "bold"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "text": "To engage AKU employees and students, two stalls were set up in the University Centre Courtyard at Stadium Road campus in Karachi, Pakistan. The landscaping team offered diverse indoor plants for sale, while the Projects & Construction team had on offer fresh organic vegetables and fruits from trial agricultural plots on the city's outskirts. More than 500 plants were sold in only a few hours. The stalls promoted a healthy exchange of not just foods and ornamental plants, but also of ideas and information on organic farming practices and benefits of greenery. ",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -238,196 +304,6 @@
                 {
                   "text": "Microforests offer a range of environmental, social, and economic benefits. Environmentally, they contribute to biodiversity by providing habitats for various plants, insects, birds, and other wildlife. They help sequester carbon, thus mitigating climate change, and improve air quality by filtering pollutants. Microforests also enhance soil health and water retention, reducing the risk of flooding and soil erosion. Not only do microforests rehabilitate land but they also inspire a deeper connection between people and nature. In the planting of these microforests at university campuses, AKU has engaged its own students, partner institutions, and local communities.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": " ",
-                  "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "At the AKU University Centre in Nairobi, 100 trees and shrubs were planted in two locations. Students from all programmes and staff were joined by colleagues from the Aga Khan Foundation, Kenya.",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "   ",
-                  "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "At the AKU lands in Arusha, 300 trees of 25 native species were planted on 100 square meters. This plot is adjacent to the agricultural demo plots and hence will serve great value for education and engagement.",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "At AKU's newest Nakawa campus in the heart of Kampala, AKU students joined hands with a dedicated team from the Aga Khan Foundation and members of the Ismaili National Council, to plant 500 trees of over 30 different species.",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "  ",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "Over 100 saplings were planted on a 40 square meter site at the Aga Khan Hospital Dar es Salaam, where AKU students together with staff from AKU and the Aga Khan Health Services engaged in a day of partnership and celebration. Plantation also took place at a partner secondary school in Dar es Salaam.",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "           ",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "In Karachi, 500 saplings of 25 different fruit, medicinal and ornamental species were planted by students and employees of AKU at the Education City site on the outskirts of the city, making this a site for environmental research and engagement.",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ]
-                },
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "type": "hard_break"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "Successful land restoration requires a multi-faceted, multi-generational approach that aligns knowledge with engagement and action. AKU, with our AKDN and other partners, is committed to ensuring environmental protection and sustainability, to empower communities towards climate resilience, and to share our learning widely.",
-                  "type": "text"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "Discover more about AKU's environment and sustainability work ",
-                  "type": "text"
-                },
-                {
-                  "text": "here",
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "link",
-                      "attrs": {
-                        "href": "https://www.aku.edu/about/environment/Pages/home.aspx",
-                        "uuid": null,
-                        "anchor": null,
-                        "custom": {},
-                        "target": "_blank",
-                        "linktype": "url"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "text": ".",
-                  "type": "text"
-                },
-                {
-                  "type": "hard_break"
                 },
                 {
                   "type": "hard_break"
@@ -566,86 +442,8 @@
         "show_controls": true,
         "gallery_images": [
           {
-            "id": 203419869838464,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/210904/aff1a3a84f/3405-richtext-da74604b3a-arusha-2.jpeg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203419884625025,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/407734/5de09aa6c9/3405-richtext-e179e32162-arusha1.jpeg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203419898305667,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/12449083/76b01d8ef0/3405-richtext-c4507671d3-dsc_4163.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203420016069765,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/11244025/defaf184c8/3405-richtext-d75c55f7ba-dsc_4278.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203420043971718,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/200173/1d7dd1b665/3405-richtext-67349216d9-dar-2.jpeg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203420061650055,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/227240/c091e56202/3405-richtext-8c6e8cc738-dar-1.jpeg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
             "id": 203420083784840,
-            "alt": "",
+            "alt": "Nairobi.jpg",
             "name": "",
             "focus": "",
             "title": "",
@@ -658,64 +456,12 @@
           },
           {
             "id": 203420101241993,
-            "alt": "",
+            "alt": "Nairobi2.jpg",
             "name": "",
             "focus": "",
             "title": "",
             "source": "",
             "filename": "https://a.storyblok.com/f/289824742951963/731143/eb413d8594/3405-richtext-fa084ba4e8-nairobi2.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203420120730762,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/6926416/c55bfa4dfc/3405-richtext-1a4c2d5e97-nakawa-1.JPG",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203420147367051,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/729350/bb6371c32e/3405-richtext-fe978372f3-nakawa3.jpeg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203420169510030,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/5222042/e9a83fb2ef/3405-richtext-9c4248d43c-stalls.jpg",
-            "copyright": "",
-            "fieldtype": "asset",
-            "meta_data": {},
-            "is_external_url": false
-          },
-          {
-            "id": 203419820510333,
-            "alt": "",
-            "name": "",
-            "focus": "",
-            "title": "",
-            "source": "",
-            "filename": "https://a.storyblok.com/f/289824742951963/4501507/3802e6f4f8/3405-richtext-a1a95bffcb-stalls-2.jpg",
             "copyright": "",
             "fieldtype": "asset",
             "meta_data": {},
@@ -728,6 +474,904 @@
         "pattern_position": "top",
         "video_description": "",
         "pattern_mobile_height": ""
+      },
+      {
+        "_uid": "ce62c745-bca3-8def-2715-b161cac6347b",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "At the AKU University Centre in Nairobi, 100 trees and shrubs were planted in two locations. Students from all programmes and staff were joined by colleagues from the Aga Khan Foundation, Kenya.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "4be2e995-5e99-2f1b-38dc-09bf45dc6e79",
+        "type": "gallery",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203419884625025,
+            "alt": "Arusha1.jpeg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/407734/5de09aa6c9/3405-richtext-e179e32162-arusha1.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203419869838464,
+            "alt": "Arusha 2.jpeg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/210904/aff1a3a84f/3405-richtext-da74604b3a-arusha-2.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "gallery_layout": "simple",
+        "pattern_height": "",
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": "",
+        "pattern_mobile_height": ""
+      },
+      {
+        "_uid": "ed827f11-9ba7-6022-d038-cb5be87894e5",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "At the AKU lands in Arusha, 300 trees of 25 native species were planted on 100 square meters. This plot is adjacent to the agricultural demo plots and hence will serve great value for education and engagement.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "83ff8f8f-0898-e3f2-711c-34b10b2bbb49",
+        "type": "gallery",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203420120730762,
+            "alt": "Nakawa 1.JPG",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/6926416/c55bfa4dfc/3405-richtext-1a4c2d5e97-nakawa-1.JPG",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203420147367051,
+            "alt": "Nakawa 2.JPG",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/729350/bb6371c32e/3405-richtext-fe978372f3-nakawa3.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "gallery_layout": "simple",
+        "pattern_height": "",
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": "",
+        "pattern_mobile_height": ""
+      },
+      {
+        "_uid": "d0a16fc6-3482-079f-694c-961b48c75cb1",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "At AKU's newest Nakawa campus in the heart of Kampala, AKU students joined hands with a dedicated team from the Aga Khan Foundation and members of the Ismaili National Council, to plant 500 trees of over 30 different species.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "b25a2a96-04d0-d2f6-b387-2d0296000ea2",
+        "type": "gallery",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203420061650055,
+            "alt": "Dar 1.jpeg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/227240/c091e56202/3405-richtext-8c6e8cc738-dar-1.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203420043971718,
+            "alt": "Dar2.jpeg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/200173/1d7dd1b665/3405-richtext-67349216d9-dar-2.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "gallery_layout": "simple",
+        "pattern_height": "",
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": "",
+        "pattern_mobile_height": ""
+      },
+      {
+        "_uid": "71985d8c-d1e1-78af-d32b-8a3ee616cc2f",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Over 100 saplings were planted on a 40 square meter site at the Aga Khan Hospital Dar es Salaam, where AKU students together with staff from AKU and the Aga Khan Health Services engaged in a day of partnership and celebration. Plantation also took place at a partner secondary school in Dar es Salaam.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "69f13dd7-9ec9-b574-25ca-ead53ee5f405",
+        "type": "gallery",
+        "title": "",
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 80,
+              "right": 80,
+              "bottom": null
+            }
+          }
+        },
+        "cta_link": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "auto_play": false,
+        "component": "media_section",
+        "cta_label": "",
+        "highlight": "",
+        "thumbnail": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "video_url": {
+          "id": "",
+          "url": "",
+          "linktype": "story",
+          "fieldtype": "multilink",
+          "cached_url": ""
+        },
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "description": "",
+        "media_cards": [],
+        "video_title": "",
+        "show_controls": true,
+        "gallery_images": [
+          {
+            "id": 203419898305667,
+            "alt": "DSC_4163.jpg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/12449083/76b01d8ef0/3405-richtext-c4507671d3-dsc_4163.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          {
+            "id": 203420016069765,
+            "alt": "DSC_4278.jpg",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/11244025/defaf184c8/3405-richtext-d75c55f7ba-dsc_4278.jpg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          }
+        ],
+        "gallery_layout": "simple",
+        "pattern_height": "",
+        "pattern_opacity": false,
+        "pattern_position": "top",
+        "video_description": "",
+        "pattern_mobile_height": ""
+      },
+      {
+        "_uid": "7e2b5da6-1a62-7c2a-5ec2-98799e0473f0",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In Karachi, 500 saplings of 25 different fruit, medicinal and ornamental species were planted by students and employees of AKU at the Education City site on the outskirts of the city, making this a site for environmental research and engagement.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Successful land restoration requires a multi-faceted, multi-generational approach that aligns knowledge with engagement and action. AKU, with our AKDN and other partners, is committed to ensuring environmental protection and sustainability, to empower communities towards climate resilience, and to share our learning widely.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Discover more about AKU's environment and sustainability work ",
+                  "type": "text"
+                },
+                {
+                  "text": "here",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/about/environment/Pages/home.aspx",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": ".",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
       }
     ],
     "date": "Jun 05, 2024",
@@ -737,7 +1381,7 @@
     "isGlobal": false,
     "component": "news_article",
     "languages": [],
-    "read_time": "9 min read",
+    "read_time": "4 min read",
     "thumbnail": {
       "id": null,
       "alt": "",
@@ -785,14 +1429,14 @@
   "published": true,
   "slug": "aku-celebrates-world-environment-day-2024-with-diverse-global-activities",
   "path": null,
-  "full_slug": "news/aku-celebrates-world-environment-day-2024-with-diverse-global-activities",
+  "full_slug": "global/news/aku-celebrates-world-environment-day-2024-with-diverse-global-activities",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203409102446891,
+    "uuid": "225d2da0-3f92-4457-8a5e-ac9cf0ebc030",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -801,15 +1445,25 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "decba4355933480ee634f5b3c1dfd0515112587a",
-    "timestamp": "1785387339"
+    "token": "890fd7a50a34b73fdbf4f066b9f475d43cd4888d",
+    "timestamp": "1785497878"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
+      "id": 203397329585917,
+      "name": "Global",
       "parent_id": null,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "global",
+      "translated_slugs": []
+    },
+    {
+      "id": 203409102446891,
+      "name": "News",
+      "parent_id": 203397329585917,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -838,7 +1492,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561849963932,
+  "current_version_id": 203986663597741,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

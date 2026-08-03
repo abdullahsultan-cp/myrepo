@@ -1,0 +1,255 @@
+{
+  "name": "English Club",
+  "parent_id": 203313767029924,
+  "group_id": "87d205f3-5b7d-4549-b6a6-43da6b65fea6",
+  "alternates": [],
+  "created_at": "2026-07-30T15:24:24.427Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-30T15:24:24.538Z",
+  "published_at": "2026-07-30T15:24:24.525Z",
+  "id": 203716462334020,
+  "uuid": "8364120d-4a78-4d0f-a1c4-952596b11be1",
+  "is_folder": false,
+  "content": {
+    "_uid": "04aecd81-e245-f4c7-9f1b-6085565b6a3a",
+    "body": [
+      {
+        "_uid": "fe29a8c7-420c-edb6-7fbe-e0b24fb8faa5",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Practice using English in a relaxed and friendly setting",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Sep 06, 2018",
+    "title": "English Club",
+    "author": "Daniel Raynor",
+    "entities": [
+      "203313673067509"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "1 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "ELE_Net is starting an English club for AKU students to provide an opportunity to practise using English in a relaxed and friendly setting. This is part of a plan to develop a culture of using English for everyday communication and in so doing improve students' confidence and fluency when using English. Students will lead the club activities.  An ELE_Net mentor will be present in all the club meetings to guide the students. ELE_Net hopes students will be able to hold an annual show by club members. The English language Club will start soon! If you are interested in joining, sign up by emailing us at ele.net@aku.edu.",
+    "show_social": false,
+    "banner_image": {
+      "id": 203671987298233,
+      "alt": "English Club",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/775083/bfc273295f/1706-bannerimage.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "english-club",
+  "path": null,
+  "full_slug": "regions/pakistan/entities/network-of-english-language-enhancement/news/english-club",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203313767029924,
+    "uuid": "117d6059-0598-4a7c-b73e-c606f6f4ec39",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "b21b944468c12255b386e8315224f420c4d7c148",
+    "timestamp": "1785498056"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313621863172,
+      "name": "Entities",
+      "parent_id": 203313617816321,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313673067509,
+      "name": "ELE",
+      "parent_id": 203313621863172,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "network-of-english-language-enhancement",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313767029924,
+      "name": "News",
+      "parent_id": 203313673067509,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-30T15:24:24.525Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -60,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203716462637413,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203716462334020,
+    "due_date": null,
+    "created_at": "2026-07-30T15:24:24.484Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203716462334020,
+      "due_date": null,
+      "created_at": "2026-07-30T15:24:24.484Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

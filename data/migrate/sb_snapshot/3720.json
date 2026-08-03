@@ -1,0 +1,372 @@
+{
+  "name": "Smart Cough Tech to Aid Disease Diagnosis",
+  "parent_id": 203314099965347,
+  "group_id": "f55a95bd-21e1-4eed-bfaa-a05298f10619",
+  "alternates": [],
+  "created_at": "2026-07-31T09:52:01.077Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:52:01.155Z",
+  "published_at": "2026-07-31T09:52:01.142Z",
+  "id": 203988668767307,
+  "uuid": "72ed2425-9f8d-4c48-8938-2b35be580b4a",
+  "is_folder": false,
+  "content": {
+    "_uid": "72a1a489-2926-7978-c844-b3d87704b0ca",
+    "body": [
+      {
+        "_uid": "25960769-8cfd-493b-e54f-2fd75469d8fe",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Rooted in a simple but powerful idea, the project aims to develop an AI model capable of analysing cough sounds to detect conditions such as tuberculosis, asthma, pneumonia, and bronchitis. Different respiratory diseases impact the body in ways that alter the structure and acoustics of a person's cough. These differences, often too subtle for the human ear, can be recognized by machine learning algorithms trained on large, well-curated datasets.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "For Dr Kahabi, the project is deeply personal. Growing up in a rural village where access to healthcare and diagnostics was extremely limited, he witnessed firsthand the challenges faced by underserved communities. These early experiences planted the seeds for a career committed to improving health systems through innovation.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The ",
+                  "type": "text"
+                },
+                {
+                  "text": "Kikohozi ",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                },
+                {
+                  "text": "project combines scientific curiosity with practical impact. Once operational, the AI-powered tool, potentially deployed as a mobile application, could offer an accessible, non-invasive, and cost-effective method to screen for respiratory conditions, particularly in remote settings where lab tests or imaging tools are unavailable or delayed.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The journey to this milestone has been shaped by persistence. The project was first submitted for funding in 2023 but was not successful. Instead of stepping back, Dr Kahabi used the feedback to strengthen the proposal, publishing a detailed research protocol and drawing on key mentorship and support systems.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "\"If you've ever witnessed the gaps in our health systems, don't let that be just a memory; let it be your motivation,\" says Dr Kahabi. \"You don't have to be a bystander or just a consumer of innovation. Be an active contributor. Be an innovator.\"",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The Research Initiative for Scientific Excellence (RISE) programme played a critical role in refining the idea, while encouragement from Professor Eunice Ndirangu-Mugo, Dean of SONAM EA, and strategic support from Salim Virani, Vice Provost, Research helped build the project's momentum and global partnerships.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A major strength of the initiative lies in its diverse and cross-regional team. From the University of Warwick in the UK, the project brings together experts in artificial intelligence, machine learning, digital health, and public health. These include Professor Frances Griffiths, who specializes in health systems and the evaluation of digital health innovations; Dr Phillip Anyanwu, an infectious diseases and social epidemiology expert; and Dr Fayyaz Minhas, whose work focuses on the intersection of AI and healthcare.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In East Africa, the Emerging Technologies for Health Lab, led by Dr Deogratius Mzurikwao, provides technical leadership in AI development, while Dr Eunice Siaity Pallangyo, Associate Dean at SONAM, EA in Tanzania, brings a strong background and interest in implementation science, ensuring that the intervention remains grounded in real-world health systems. ",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The research will commence in selected communities and tuberculosis clinics throughout Tanzania. Backed by endorsement from the Ministry of Health, the team will collect thousands of cough samples using purpose-built recording booths designed to ensure both privacy and consistency. Alongside the audio samples, limited demographic and clinical data will be collected to support model development. To foster local innovation and capacity building, Tanzanian data scientists will also be invited to build and test their own models using the dataset.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Beyond technical outputs, the project symbolizes a shift toward context-driven digital health solutions developed by African researchers for African communities. By blending local insight with global expertise, ",
+                  "type": "text"
+                },
+                {
+                  "text": "The Kikohozi Classifier",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                },
+                {
+                  "text": " is poised to make a lasting impact on how respiratory diseases are detected and managed, not only in Tanzania but potentially across similar low-resource settings around the world.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Jun 20, 2025",
+    "title": "Smart Cough Tech to Aid Disease Diagnosis",
+    "author": "carol.oyola",
+    "entities": [
+      "203313854336265"
+    ],
+    "isGlobal": true,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "3 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "Dr Kahabi Isangula of the Aga Khan University School of Nursing and Midwifery, East Africa, has been awarded a prestigious research grant by the United Kingdom Research and Innovation-Medical Research Council (UKRI-MRC) to lead  The Kikohozi Classifier , a groundbreaking initiative using artificial intelligence to transform the diagnosis of respiratory diseases in Tanzania.  Kikohozi  is a Swahili word meaning cough.",
+    "show_social": false,
+    "banner_image": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "smart-cough-tech-to-aid-disease-diagnosis",
+  "path": null,
+  "full_slug": "regions/tanzania/entities/school-of-nursing-and-midwifery/news/smart-cough-tech-to-aid-disease-diagnosis",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314099965347,
+    "uuid": "0711f86e-ce1b-41b0-9f48-b3c13ca21858",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "6ac53b5540a129daa7bb5226d212dc3da3f38569",
+    "timestamp": "1785498044"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629866761,
+      "name": "TZ",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "tanzania",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313646426901,
+      "name": "Entities",
+      "parent_id": 203313629866761,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313854336265,
+      "name": "SONAM",
+      "parent_id": 203313646426901,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "school-of-nursing-and-midwifery",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314099965347,
+      "name": "News",
+      "parent_id": 203313854336265,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:52:01.142Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -60,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203988668931502,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203988668767307,
+    "due_date": null,
+    "created_at": "2026-07-31T09:52:01.101Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203988668767307,
+      "due_date": null,
+      "created_at": "2026-07-31T09:52:01.101Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

@@ -1,14 +1,14 @@
 {
   "name": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
-  "parent_id": 200436757260291,
+  "parent_id": 203313630673674,
   "group_id": "5fe375ee-f158-4bc6-b2d8-6d45a629041b",
   "alternates": [],
   "created_at": "2026-07-29T19:19:13.433Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:04.554Z",
-  "published_at": "2026-07-30T04:55:04.540Z",
+  "updated_at": "2026-07-30T15:13:21.609Z",
+  "published_at": "2026-07-30T15:13:21.591Z",
   "id": 203420276514195,
   "uuid": "e3b78d18-a50e-4e97-aaac-35f3f20feb2c",
   "is_folder": false,
@@ -20,15 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": " (CAP), an internationally recognised standard for clinical laboratories, has accredited the Aga Khan University Hospital's Clinical Laboratories - the first laboratory in Pakistan.",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -91,6 +82,15 @@
                   "type": "text"
                 }
               ]
+            },
+            {
+              "type": "image",
+              "attrs": {
+                "id": 203419106511934,
+                "alt": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
+                "src": "https://a.storyblok.com/f/289824742951963/143474/c559341ac6/1177-mediumimage.jpg",
+                "title": ""
+              }
             }
           ]
         },
@@ -140,65 +140,6 @@
         },
         "pattern_height": "500",
         "pattern_mobile_height": "0"
-      },
-      {
-        "_uid": "31fad168-04e3-092b-c09e-944b90e40e7f",
-        "link": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "image": {
-          "id": 203419106511934,
-          "alt": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "https://a.storyblok.com/f/289824742951963/143474/c559341ac6/1177-mediumimage.jpg",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {},
-          "is_external_url": false
-        },
-        "title": "",
-        "spacing": {
-          "unit": "px",
-          "mobile": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 24
-            },
-            "padding": {
-              "top": null,
-              "left": 20,
-              "right": 20,
-              "bottom": null
-            }
-          },
-          "desktop": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 56
-            },
-            "padding": {
-              "top": null,
-              "left": 80,
-              "right": 80,
-              "bottom": null
-            }
-          }
-        },
-        "variant": "image",
-        "component": "image",
-        "cta_label": "",
-        "description": ""
       },
       {
         "_uid": "63a8e1e8-0129-0cac-2bc0-c184dafbf31d",
@@ -498,7 +439,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "The",
+    "description": "The \n    College of American Pathologists  (CAP), an internationally recognised standard for clinical laboratories, has accredited the Aga Khan University Hospital's Clinical Laboratories - the first laboratory in Pakistan.",
     "show_social": false,
     "banner_image": {
       "id": 203419092982845,
@@ -533,14 +474,14 @@
   "published": true,
   "slug": "aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "path": null,
-  "full_slug": "news/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
+  "full_slug": "regions/pakistan/news/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313630673674,
+    "uuid": "01ce7975-80fb-42d4-81d9-0a262e4f8496",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -549,15 +490,35 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "bf5917daa3dda60eb0589f23aa56d9020bb3e581",
-    "timestamp": "1785387345"
+    "token": "fcefe18c06deec8bb2444ad6cdb1cc0809afd965",
+    "timestamp": "1785498082"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313630673674,
+      "name": "News",
+      "parent_id": 203313617816321,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -586,7 +547,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561797625209,
+  "current_version_id": 203713747087424,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

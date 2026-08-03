@@ -1,14 +1,14 @@
 {
   "name": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
-  "parent_id": 200436757260291,
+  "parent_id": 203313630673674,
   "group_id": "73ae48e6-378e-4662-b764-cc418a6e16aa",
   "alternates": [],
   "created_at": "2026-07-29T19:19:11.815Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:03.607Z",
-  "published_at": "2026-07-30T04:55:03.593Z",
+  "updated_at": "2026-07-30T15:12:58.582Z",
+  "published_at": "2026-07-30T15:12:58.567Z",
   "id": 203420269870382,
   "uuid": "9486183e-c8d4-47c9-9956-152bad0de7fe",
   "is_folder": false,
@@ -20,15 +20,6 @@
         "content": {
           "type": "doc",
           "content": [
-            {
-              "type": "paragraph",
-              "content": [
-                {
-                  "text": "About 60,000 children - one in every 100 infants born in Pakistan every year - are born with cardiovascular disease resulting in the deaths of many babies without any diagnosis. ",
-                  "type": "text"
-                }
-              ]
-            },
             {
               "type": "paragraph",
               "content": [
@@ -347,7 +338,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "One hundred members of civil society came together over a game of golf to support the Aga Khan University (AKU)'s efforts in Mending Kids' Hearts on Sunday.",
+    "description": "One hundred members of civil society came together over a game of golf to support the Aga Khan University (AKU)'s efforts in Mending Kids' Hearts on Sunday. About 60,000 children - one in every 100 infants born in Pakistan every year - are born with cardiovascular disease resulting in the deaths of many babies without any diagnosis.",
     "show_social": false,
     "banner_image": {
       "id": 203419078122556,
@@ -382,14 +373,14 @@
   "published": true,
   "slug": "aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "path": null,
-  "full_slug": "news/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
+  "full_slug": "regions/pakistan/news/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313630673674,
+    "uuid": "01ce7975-80fb-42d4-81d9-0a262e4f8496",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -398,15 +389,35 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "bf5917daa3dda60eb0589f23aa56d9020bb3e581",
-    "timestamp": "1785387345"
+    "token": "4139b1661672e8bc2e799681a03f7c7bc8aa7bdd",
+    "timestamp": "1785498105"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313630673674,
+      "name": "News",
+      "parent_id": 203313617816321,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -435,7 +446,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561793738103,
+  "current_version_id": 203713652838314,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

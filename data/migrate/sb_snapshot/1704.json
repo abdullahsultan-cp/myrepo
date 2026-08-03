@@ -1,0 +1,255 @@
+{
+  "name": "English Course for AKU Drivers",
+  "parent_id": 203313767029924,
+  "group_id": "a4b6ecb3-c158-4f51-9081-19cc55915f8a",
+  "alternates": [],
+  "created_at": "2026-07-30T15:24:22.061Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-30T15:24:22.138Z",
+  "published_at": "2026-07-30T15:24:22.122Z",
+  "id": 203716452630590,
+  "uuid": "825c3bb5-2e43-4e96-800e-71235c2497b3",
+  "is_folder": false,
+  "content": {
+    "_uid": "3ca3f30d-78ba-49f3-e202-188f57ba2261",
+    "body": [
+      {
+        "_uid": "569a5209-de73-b49f-654b-94b4ff878091",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "AKU Drivers are improving their English with ELE_net",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Sep 06, 2018",
+    "title": "English Course for AKU Drivers",
+    "author": "Daniel Raynor",
+    "entities": [
+      "203313673067509"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "1 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "AKU Drivers are improving their English with ELE_net",
+    "show_social": false,
+    "banner_image": {
+      "id": 203671940026280,
+      "alt": "English Course for AKU Drivers",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1425564/095ad4c9d0/1704-bannerimage.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "english-course-for-aku-drivers-1704",
+  "path": null,
+  "full_slug": "regions/pakistan/entities/network-of-english-language-enhancement/news/english-course-for-aku-drivers-1704",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203313767029924,
+    "uuid": "117d6059-0598-4a7c-b73e-c606f6f4ec39",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "18f1c078838c606043811ee8a8e3db04924d260e",
+    "timestamp": "1785498075"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313621863172,
+      "name": "Entities",
+      "parent_id": 203313617816321,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313673067509,
+      "name": "ELE",
+      "parent_id": 203313621863172,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "network-of-english-language-enhancement",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313767029924,
+      "name": "News",
+      "parent_id": 203313673067509,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-30T15:24:22.122Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -50,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203716452790605,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203716452630590,
+    "due_date": null,
+    "created_at": "2026-07-30T15:24:22.081Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203716452630590,
+      "due_date": null,
+      "created_at": "2026-07-30T15:24:22.081Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

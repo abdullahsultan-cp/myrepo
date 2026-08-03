@@ -1,14 +1,14 @@
 {
   "name": "Behind the scenes of the National Nutrition Survey",
-  "parent_id": 200436757260291,
+  "parent_id": 203313630673674,
   "group_id": "6ff1a1b4-a8d4-49c0-9bbc-406d4b48640c",
   "alternates": [],
   "created_at": "2026-07-29T19:19:17.867Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:06.574Z",
-  "published_at": "2026-07-30T04:55:06.558Z",
+  "updated_at": "2026-07-30T15:24:31.477Z",
+  "published_at": "2026-07-30T15:24:31.462Z",
   "id": 203420294672290,
   "uuid": "e6f11e71-5b15-4f09-ae9c-a7bd060303d3",
   "is_folder": false,
@@ -178,6 +178,34 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "Read an English transcript of the BBC Urdu documentary.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    },
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/Documents/Transcript-BBCUrduDocumentary2.doc",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "type": "paragraph",
               "content": [
@@ -392,14 +420,14 @@
   "published": true,
   "slug": "behind-the-scenes-of-the-national-nutrition-survey",
   "path": null,
-  "full_slug": "news/behind-the-scenes-of-the-national-nutrition-survey",
+  "full_slug": "regions/pakistan/news/behind-the-scenes-of-the-national-nutrition-survey",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313630673674,
+    "uuid": "01ce7975-80fb-42d4-81d9-0a262e4f8496",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -408,15 +436,35 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8c3b2a68d372ab3cde1d8cea352c97b3a6b376ea",
-    "timestamp": "1785387344"
+    "token": "92a86a77f9cb823fd1fe939d6be56af7375c6966",
+    "timestamp": "1785498026"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313630673674,
+      "name": "News",
+      "parent_id": 203313617816321,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -445,7 +493,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561805895040,
+  "current_version_id": 203716490949034,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

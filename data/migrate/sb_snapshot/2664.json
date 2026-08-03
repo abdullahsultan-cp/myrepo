@@ -1,14 +1,14 @@
 {
   "name": "The Mise-en-Scène of the Investigation in Diary of a Country Prosecutor from the 1937 Novel to the 1969 Film",
-  "parent_id": 200436757260291,
+  "parent_id": 203314133681389,
   "group_id": "8c9ce49d-5c32-4183-8640-200655bbcfcf",
   "alternates": [],
   "created_at": "2026-07-29T19:19:28.793Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:13.244Z",
-  "published_at": "2026-07-30T04:55:13.224Z",
+  "updated_at": "2026-07-31T09:25:09.994Z",
+  "published_at": "2026-07-31T09:25:09.978Z",
   "id": 203420339410559,
   "uuid": "3e3c76e1-ea10-40a0-8524-c184b5c0e977",
   "is_folder": false,
@@ -497,14 +497,14 @@
   "published": true,
   "slug": "the-mise-en-sc-ne-of-the-investigation-in-diary-of-a-country-prosecutor-from-the-1937-novel-to-the-1969-film",
   "path": null,
-  "full_slug": "news/the-mise-en-sc-ne-of-the-investigation-in-diary-of-a-country-prosecutor-from-the-1937-novel-to-the-1969-film",
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/the-mise-en-sc-ne-of-the-investigation-in-diary-of-a-country-prosecutor-from-the-1937-novel-to-the-1969-film",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -513,15 +513,55 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9e40801f236e75b4a1e2d256fc4947578ef52bda",
-    "timestamp": "1785387341"
+    "token": "db8fb2627f90c3ce9f6a1354a1b9459ebad4ada3",
+    "timestamp": "1785497934"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -550,7 +590,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561833170323,
+  "current_version_id": 203982069493816,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

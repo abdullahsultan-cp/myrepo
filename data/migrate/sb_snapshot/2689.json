@@ -1,0 +1,489 @@
+{
+  "name": "A Token Frequency Counter For OpenITI Texts",
+  "parent_id": 203314133681389,
+  "group_id": "6e5b4626-7a93-45d9-b735-f2a2509b1b80",
+  "alternates": [],
+  "created_at": "2026-07-31T09:25:51.765Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:25:51.848Z",
+  "published_at": "2026-07-31T09:25:51.832Z",
+  "id": 203982240863676,
+  "uuid": "bdf80fbf-4cab-4754-8e15-876f7e886196",
+  "is_folder": false,
+  "content": {
+    "_uid": "91add4fc-24bc-a3ab-d990-d5e421e2345e",
+    "body": [
+      {
+        "_uid": "8d4efa2c-b2bb-13cc-0338-782a8f392f04",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "One of the participants in our ",
+                  "type": "text"
+                },
+                {
+                  "text": "KITAB user group",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/2020/07/24/call-for-participation/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " asked for an easy way to find out which are the most frequently used words in a text.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "There are quite a lot of online tools that allow you to upload a file (or provide a link to a web page) and will produce a nice table with word counts.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Unfortunately, this specific user group participant works with the largest text in the KITAB corpus, Ibn al-ʿAsākir's ",
+                  "type": "text"
+                },
+                {
+                  "text": "Ta'rīkh Madīnat Dimashq",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://raw.githubusercontent.com/OpenITI/0575AH/master/data/0571IbnCasakir/0571IbnCasakir.TarikhDimashq/0571IbnCasakir.TarikhDimashq.JK000916-ara1.mARkdown",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": ", which weighs in at about 75 MB in the OpenITI version, and none of the sites I tried out was willing to accept such a large file. Others failed to produce a frequency list even with smaller books, probably because they don't deal well with Arabic.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "There are a number of other options to create frequency lists from a text, but most involve using a programming language like Python or R. Since most of our user group participants do not have any background in programming, we thought about using this question as an opportunity to show the user group how to install Python or R, and run a simple script to create the frequency list (for example, using the fantastic R.stylo library).",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "However, even showcasing something simple like this to people who do not have Python or R installed and are working on different platforms always takes quite some time, time we didn't have during our user group meeting.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "So, after getting frustrated with a number of websites that promise to convert a text into a frequency list, I decided to build such an online tool for OpenITI myself.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "This was quite straight-forward because I could build on work we have done for our ",
+                  "type": "text"
+                },
+                {
+                  "text": "openiti Python library",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://pypi.org/project/openiti/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " and other sub-projects.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The tool can be found ",
+                  "type": "text"
+                },
+                {
+                  "text": "here",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://openiti.github.io/tokenFrequency/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": ". ",
+                  "type": "text"
+                },
+                {
+                  "text": "Continue reading",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/2021/07/13/a-token-frequency-counter-for-openiti-texts/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Dr Peter Verkinderen",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "bold"
+                    },
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/ismc/people/Pages/peter-verkinderen.aspx",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "A Post-doctoral Research Fellow at AKU-ISMC's ",
+                  "type": "text"
+                },
+                {
+                  "text": "KITAB",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " working on the central regions of the Islamic lands. He studied Classics and Arabic and Islamic studies at Ghent University. His PhD dissertation, also at Ghent University, was a reconstruction of the fluvial landscape of early Islamic Lower Mesopotamia, based on (mostly Arabic) texts, satellite imagery and data from archaeological and geological research. He has worked as the Assistant Director of the Netherlands-Flemish Institute in Cairo (2009-2014) and as a Research Fellow in the ERC project \"The Early Islamic Empire at Work\" (Hamburg University, 2014-2019), where he focused on the position of Fārs (SW Iran) in the early Islamic empire. ",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Jul 14, 2021",
+    "title": "A Token Frequency Counter For OpenITI Texts",
+    "author": "Layal.N.Mohammad",
+    "entities": [
+      "203313951169923"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "2 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "Read this new blog post by AKU-ISMC's Dr Peter Verkinderen on  A Token Frequency Counter For OpenITI Texts :",
+    "show_social": false,
+    "banner_image": {
+      "id": 203692509216682,
+      "alt": "A Token Frequency Counter For OpenITI Texts",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/43464/a6bae2e187/2689-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "a-token-frequency-counter-for-openiti-texts",
+  "path": null,
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/a-token-frequency-counter-for-openiti-texts",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "143f6e5f45b562cda18ede8e621b85b7d06a8645",
+    "timestamp": "1785492908"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:25:51.832Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -1350,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203982241030341,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203982240863676,
+    "due_date": null,
+    "created_at": "2026-07-31T09:25:51.787Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203982240863676,
+      "due_date": null,
+      "created_at": "2026-07-31T09:25:51.787Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

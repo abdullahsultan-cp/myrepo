@@ -1,14 +1,14 @@
 {
   "name": "A double honour for IED's PDCN",
-  "parent_id": 200436757260291,
+  "parent_id": 203313772661931,
   "group_id": "352d3697-c100-4530-b91b-649451e51c20",
   "alternates": [],
   "created_at": "2026-07-29T19:19:19.516Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:07.507Z",
-  "published_at": "2026-07-30T04:55:07.494Z",
+  "updated_at": "2026-07-30T15:25:24.986Z",
+  "published_at": "2026-07-30T15:25:24.973Z",
   "id": 203420301414481,
   "uuid": "d9271295-22a3-4cc7-9901-bc979ab8ff80",
   "is_folder": false,
@@ -52,7 +52,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "/news-media/1752-richtext-54d6859760-EDIP-brief.pdf",
+                        "href": "https://www.aku.edu/news/https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
                         "uuid": null,
                         "anchor": null,
                         "custom": {},
@@ -73,7 +73,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "/news-media/1752-richtext-73057a5e8e-EDIP-brief.pdf",
+                        "href": "https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
                         "uuid": null,
                         "anchor": null,
                         "custom": {},
@@ -224,14 +224,14 @@
   "published": true,
   "slug": "a-double-honour-for-ied-s-pdcn",
   "path": null,
-  "full_slug": "news/a-double-honour-for-ied-s-pdcn",
+  "full_slug": "regions/pakistan/entities/institute-for-educational-development/news/a-double-honour-for-ied-s-pdcn",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313772661931,
+    "uuid": "51345b80-d8a5-42ad-939b-9a2ecd2bae4a",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -240,15 +240,55 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "3845bf470ad1659e8d02c03957de3b5d083e85ed",
-    "timestamp": "1785387343"
+    "token": "a5b2a1a2abd37dcb9e3d270b5d9859ff48ddb6a5",
+    "timestamp": "1785498009"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313621863172,
+      "name": "Entities",
+      "parent_id": 203313617816321,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313671322588,
+      "name": "IED",
+      "parent_id": 203313621863172,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-educational-development",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313772661931,
+      "name": "News",
+      "parent_id": 203313671322588,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -277,7 +317,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561809745284,
+  "current_version_id": 203716710138778,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

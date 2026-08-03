@@ -1,14 +1,14 @@
 {
   "name": "Increased investment in nursing key to achieving health for all",
-  "parent_id": 200436757260291,
+  "parent_id": 203314621026043,
   "group_id": "7ef0c59e-631a-4ef8-957b-7a101bd32353",
   "alternates": [],
   "created_at": "2026-07-29T19:19:21.762Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:08.476Z",
-  "published_at": "2026-07-30T04:55:08.461Z",
+  "updated_at": "2026-07-30T15:25:34.332Z",
+  "published_at": "2026-07-30T15:25:34.308Z",
   "id": 203420310614509,
   "uuid": "b947cb70-6f0a-4ff0-8e98-e404bfdce997",
   "is_folder": false,
@@ -232,6 +232,15 @@
                   "type": "text"
                 }
               ]
+            },
+            {
+              "type": "image",
+              "attrs": {
+                "id": 203419205004358,
+                "alt": "Increased investment in nursing key to achieving health for all",
+                "src": "https://a.storyblok.com/f/289824742951963/984668/a2746854d0/1761-bannerimage.gif",
+                "title": "The authors of the report: Dr Charlotte Refsum, (left), Lord Nigel Crisp (middle) and AKU's Professor Sharon Brownie (right) at the WISH 2018 summit."
+              }
             }
           ]
         },
@@ -281,65 +290,6 @@
         },
         "pattern_height": "500",
         "pattern_mobile_height": "0"
-      },
-      {
-        "_uid": "bf9c8785-afd2-a462-30b2-09bcc7f56372",
-        "link": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "image": {
-          "id": 203419205004358,
-          "alt": "Increased investment in nursing key to achieving health for all",
-          "name": "",
-          "focus": "",
-          "title": "The authors of the report: Dr Charlotte Refsum, (left), Lord Nigel Crisp (middle) and AKU's Professor Sharon Brownie (right) at the WISH 2018 summit.",
-          "source": "",
-          "filename": "https://a.storyblok.com/f/289824742951963/984668/a2746854d0/1761-bannerimage.gif",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {},
-          "is_external_url": false
-        },
-        "title": "",
-        "spacing": {
-          "unit": "px",
-          "mobile": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 24
-            },
-            "padding": {
-              "top": null,
-              "left": 20,
-              "right": 20,
-              "bottom": null
-            }
-          },
-          "desktop": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 56
-            },
-            "padding": {
-              "top": null,
-              "left": 80,
-              "right": 80,
-              "bottom": null
-            }
-          }
-        },
-        "variant": "image",
-        "component": "image",
-        "cta_label": "",
-        "description": ""
       }
     ],
     "date": "Nov 13, 2018",
@@ -400,14 +350,14 @@
   "published": true,
   "slug": "increased-investment-in-nursing-key-to-achieving-health-for-all",
   "path": null,
-  "full_slug": "news/increased-investment-in-nursing-key-to-achieving-health-for-all",
+  "full_slug": "regions/kenya/entities/school-of-nursing-and-midwifery/departments/midwifery/news/increased-investment-in-nursing-key-to-achieving-health-for-all",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203314621026043,
+    "uuid": "d296815c-fc07-4901-93c7-b02a138c3abc",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -416,15 +366,75 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "3845bf470ad1659e8d02c03957de3b5d083e85ed",
-    "timestamp": "1785387343"
+    "token": "7f801b0f17d4fcc1f1d55b5b4f78f7b536b185e4",
+    "timestamp": "1785497994"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313618008834,
+      "name": "KE",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "kenya",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313623046917,
+      "name": "Entities",
+      "parent_id": 203313618008834,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313696783474,
+      "name": "SONAM",
+      "parent_id": 203313623046917,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "school-of-nursing-and-midwifery",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314112454648,
+      "name": "Departments",
+      "parent_id": 203313696783474,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "departments",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314303905172,
+      "name": "MW",
+      "parent_id": 203314112454648,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "midwifery",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314621026043,
+      "name": "News",
+      "parent_id": 203314303905172,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -453,7 +463,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561813681543,
+  "current_version_id": 203716748338162,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

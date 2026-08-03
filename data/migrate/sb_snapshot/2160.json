@@ -1,14 +1,14 @@
 {
   "name": "QTL_net 'Walks the Talk' ",
-  "parent_id": 200436757260291,
+  "parent_id": 203313793457346,
   "group_id": "efeaca56-e971-4895-9a65-ed1d91da137e",
   "alternates": [],
   "created_at": "2026-07-29T19:19:24.737Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:10.243Z",
-  "published_at": "2026-07-30T04:55:10.231Z",
+  "updated_at": "2026-07-30T15:34:06.618Z",
+  "published_at": "2026-07-30T15:34:06.602Z",
   "id": 203420322800829,
   "uuid": "dd4001a7-adf4-47dd-9fd1-d6e7e84acb40",
   "is_folder": false,
@@ -55,120 +55,16 @@
                   "type": "text"
                 }
               ]
-            }
-          ]
-        },
-        "spacing": {
-          "unit": "px",
-          "mobile": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 24
             },
-            "padding": {
-              "top": null,
-              "left": 20,
-              "right": 20,
-              "bottom": null
-            }
-          },
-          "desktop": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 56
+            {
+              "type": "image",
+              "attrs": {
+                "id": 203419379379281,
+                "alt": "Graph - FSS.png",
+                "src": "https://a.storyblok.com/f/289824742951963/38910/09a8ae5a30/2160-richtext-dbdc402af4-graph-fss.png",
+                "title": ""
+              }
             },
-            "padding": {
-              "top": null,
-              "left": 176,
-              "right": 176,
-              "bottom": null
-            }
-          }
-        },
-        "component": "rich_text",
-        "bg_pattern": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "pattern_height": "500",
-        "pattern_mobile_height": "0"
-      },
-      {
-        "_uid": "5027d253-5457-f718-f99b-c485247d3965",
-        "link": {
-          "id": "",
-          "url": "",
-          "linktype": "story",
-          "fieldtype": "multilink",
-          "cached_url": ""
-        },
-        "image": {
-          "id": 203419379379281,
-          "alt": "Graph - FSS.png",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "https://a.storyblok.com/f/289824742951963/38910/09a8ae5a30/2160-richtext-dbdc402af4-graph-fss.png",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {},
-          "is_external_url": false
-        },
-        "title": "",
-        "spacing": {
-          "unit": "px",
-          "mobile": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 24
-            },
-            "padding": {
-              "top": null,
-              "left": 20,
-              "right": 20,
-              "bottom": null
-            }
-          },
-          "desktop": {
-            "margin": {
-              "top": null,
-              "left": null,
-              "right": null,
-              "bottom": 56
-            },
-            "padding": {
-              "top": null,
-              "left": 80,
-              "right": 80,
-              "bottom": null
-            }
-          }
-        },
-        "variant": "image",
-        "component": "image",
-        "cta_label": "",
-        "description": ""
-      },
-      {
-        "_uid": "38d37331-af3a-1a04-47c4-23fbfb77d463",
-        "content": {
-          "type": "doc",
-          "content": [
             {
               "type": "paragraph",
               "content": [
@@ -416,14 +312,14 @@
   "published": true,
   "slug": "qtl-net-walks-the-talk",
   "path": null,
-  "full_slug": "news/qtl-net-walks-the-talk",
+  "full_slug": "regions/pakistan/entities/networks-of-quality-teaching-and-learning/news/qtl-net-walks-the-talk",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313793457346,
+    "uuid": "b1665f7a-a844-42de-ad71-c78ce102b810",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -432,15 +328,55 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "c5ab80ce27df7b81d0a6caef2f1673471e731826",
-    "timestamp": "1785387342"
+    "token": "434cdd279acd2a731c751999e08e43bbc2b9de88",
+    "timestamp": "1785497968"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313621863172,
+      "name": "Entities",
+      "parent_id": 203313617816321,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313675508754,
+      "name": "QTL",
+      "parent_id": 203313621863172,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "networks-of-quality-teaching-and-learning",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313793457346,
+      "name": "News",
+      "parent_id": 203313675508754,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -469,7 +405,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561820931468,
+  "current_version_id": 203718846723012,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

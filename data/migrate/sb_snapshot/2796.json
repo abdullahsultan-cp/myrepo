@@ -1,0 +1,272 @@
+{
+  "name": "Oh Brethren, Where Are Ye? How to search for words and phrases in the OpenITI corpus, demonstrated with the phrase 'Ikhwan al-Safa'",
+  "parent_id": 203314133681389,
+  "group_id": "cff621b5-6d93-4b51-9c77-c1987d4f93a2",
+  "alternates": [],
+  "created_at": "2026-07-31T09:28:45.526Z",
+  "deleted_at": null,
+  "sort_by_date": null,
+  "tag_list": [],
+  "updated_at": "2026-07-31T09:28:45.613Z",
+  "published_at": "2026-07-31T09:28:45.598Z",
+  "id": 203982952605255,
+  "uuid": "e9d3cc5f-226e-4c7b-ab56-e39fae2a2f95",
+  "is_folder": false,
+  "content": {
+    "_uid": "a90b5e34-1687-9f65-3f08-91bef72f0d6c",
+    "body": [
+      {
+        "_uid": "5b3518b2-7537-16fb-9995-a73dd0086e4d",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In this blog post I will explain the method for doing this kind of search in Kate, as this text editor is available for free and functions well on both Mac and Windows. Its only disadvantage is that loading large files takes a little while, and sometimes temporarily freezes the app. The EditPad Pro method follows a similar process and is explained briefly in an appendix at the end of this blog. In the second part of the blog I briefly zoom in on some search results I have come across by using this method for the phrase 'ikhwan al-safaʾ', which was famously used by an enigmatic early scientific and philosophical community who wrote a compendium known as the Epistles of the Pure Brethren (Rasaʾil ikhwan al-safaʾ). ",
+                  "type": "text"
+                },
+                {
+                  "text": "Continue reading",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://kitab-project.org/Oh-Brethren-Where-Are-Ye-How-to-search/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      }
+    ],
+    "date": "Feb 11, 2022",
+    "title": "Oh Brethren, Where Are Ye? How to search for words and phrases in the OpenITI corpus, demonstrated with the phrase 'Ikhwan al-Safa'",
+    "author": "Layal.N.Mohammad",
+    "entities": [
+      "203313951169923"
+    ],
+    "isGlobal": false,
+    "component": "news_article",
+    "languages": [],
+    "read_time": "2 min read",
+    "thumbnail": {
+      "id": null,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {}
+    },
+    "show_share": true,
+    "description": "The OpenITI corpus is designed to facilitate many different forms of computational analysis. Within the KITAB project we spend the bulk of our time fine-tuning the methods of text reuse and the data it provides on the corpus' many textual relationships, but we are aware that this is not necessarily the primary interest in digital texts for many scholars. As the continued popularity of the Shamela library and its software suggests, one of the most important functions of a corpus of digital texts is its searchability: scholars want to be able to search for information and locate the usage of names, words and phrases across a vast corpus. In the long run, we hope to develop a complex search app by which users will be able to search the OpenITI corpus online, but our colleague Aslisho Qurboniev discovered that doing so is in fact already possible with both of the two text editors we recommend to read texts from the corpus: EditPad Pro and Kate. This is a great and easy method to do searches and it is more reliable than using Shamela. For guidance on installing these editors and the markdown highlighting scheme, see  here . (Installing the highlighting scheme is not absolutely necessary for simply searching the corpus, but it is nice to be able to fold texts and see the structural tagging to help navigation.)",
+    "show_social": false,
+    "banner_image": {
+      "id": 203693709570120,
+      "alt": "Oh Brethren, Where Are Ye? How to search for words and phrases in the OpenITI corpus, demonstrated with the phrase 'Ikhwan al-Safa'",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/73330/eac026ccf0/2796-bannerimage.jpg",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "show_similar": true,
+    "background_pattern": {
+      "id": 202607823391189,
+      "alt": "",
+      "name": "",
+      "focus": "",
+      "title": "",
+      "source": "",
+      "filename": "https://a.storyblok.com/f/289824742951963/1440x811/0305b10066/web-pattern.png",
+      "copyright": "",
+      "fieldtype": "asset",
+      "meta_data": {},
+      "is_external_url": false
+    },
+    "social_show_header": false,
+    "similar_show_header": true
+  },
+  "published": true,
+  "slug": "oh-brethren-where-are-ye-how-to-search-for-words-and-phrases-in-the-openiti-corpus-demonstrated-with-the-phrase-ikhwan-al-safa-2796",
+  "path": null,
+  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/oh-brethren-where-are-ye-how-to-search-for-words-and-phrases-in-the-openiti-corpus-demonstrated-with-the-phrase-ikhwan-al-safa-2796",
+  "default_root": null,
+  "disble_fe_editor": false,
+  "disable_fe_editor": false,
+  "parent": {
+    "id": 203314133681389,
+    "uuid": "4b4e780c-a1d8-4bb6-ace7-cfac8e2b0e07",
+    "name": "News",
+    "slug": "news",
+    "disble_fe_editor": false
+  },
+  "is_startpage": false,
+  "unpublished_changes": false,
+  "meta_data": null,
+  "imported_at": null,
+  "preview_token": {
+    "token": "a3b7e990d020cdd4983f147b7c8f50114636c65e",
+    "timestamp": "1785492881"
+  },
+  "pinned": false,
+  "breadcrumbs": [
+    {
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313629833992,
+      "name": "UK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "united-kingdom",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313655655193,
+      "name": "Entities",
+      "parent_id": 203313629833992,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313951169923,
+      "name": "ISMC",
+      "parent_id": 203313655655193,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "translated_slugs": []
+    },
+    {
+      "id": 203314133681389,
+      "name": "News",
+      "parent_id": 203313951169923,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "news",
+      "translated_slugs": []
+    }
+  ],
+  "publish_at": null,
+  "expire_at": null,
+  "first_published_at": "2026-07-31T09:28:45.598Z",
+  "last_author": {
+    "id": 131176408045053,
+    "userid": "rabee.amir@cloudprimero.com",
+    "friendly_name": "Muhammad Rabee Amir"
+  },
+  "last_author_id": 131176408045053,
+  "user_ids": [
+    131176408045053
+  ],
+  "space_role_ids": [],
+  "translated_slugs": [],
+  "localized_paths": [],
+  "position": -1500,
+  "translated_stories": [],
+  "can_not_view": false,
+  "is_scheduled": null,
+  "scheduled_dates": null,
+  "ideas": [],
+  "current_version_id": 203982952780571,
+  "variant_type": null,
+  "experiment_ids": [],
+  "stage": {
+    "workflow_id": 133596266085524,
+    "workflow_stage_id": 201481682618331,
+    "story_id": 203982952605255,
+    "due_date": null,
+    "created_at": "2026-07-31T09:28:45.553Z",
+    "language": null
+  },
+  "stages": [
+    {
+      "workflow_id": 133596266085524,
+      "workflow_stage_id": 201481682618331,
+      "story_id": 203982952605255,
+      "due_date": null,
+      "created_at": "2026-07-31T09:28:45.553Z",
+      "language": null
+    }
+  ],
+  "favourite_for_user_ids": []
+}

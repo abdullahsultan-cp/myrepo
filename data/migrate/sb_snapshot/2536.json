@@ -1,14 +1,14 @@
 {
   "name": "New estimates reveal extent of health burden of armed conflict",
-  "parent_id": 200436757260291,
+  "parent_id": 203313630673674,
   "group_id": "fb7dd6e4-f2d8-432b-b891-0021bc1a1f60",
   "alternates": [],
   "created_at": "2026-07-29T19:19:27.499Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:12.280Z",
-  "published_at": "2026-07-30T04:55:12.265Z",
+  "updated_at": "2026-07-31T09:21:35.851Z",
+  "published_at": "2026-07-31T09:21:35.824Z",
   "id": 203420334118383,
   "uuid": "a3a42a7c-3a79-4440-b5ad-033bb8684725",
   "is_folder": false,
@@ -57,6 +57,14 @@
                   "text": " Consortium synthesises existing evidence with new modelling and insights from a range of local research partners, humanitarian agencies, and civil society organisations. ",
                   "type": "text"
                 },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "type": "hard_break"
                 }
@@ -489,14 +497,14 @@
   "published": true,
   "slug": "new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
   "path": null,
-  "full_slug": "news/new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
+  "full_slug": "regions/pakistan/news/new-estimates-reveal-extent-of-health-burden-of-armed-conflict",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313630673674,
+    "uuid": "01ce7975-80fb-42d4-81d9-0a262e4f8496",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -505,15 +513,35 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "c5ab80ce27df7b81d0a6caef2f1673471e731826",
-    "timestamp": "1785387342"
+    "token": "3f44622a34ff3e46c69e4e20d98c2db5b2ebc6a0",
+    "timestamp": "1785497945"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313617816321,
+      "name": "PK",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "pakistan",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313630673674,
+      "name": "News",
+      "parent_id": 203313617816321,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -542,7 +570,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561829217681,
+  "current_version_id": 203981192310203,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

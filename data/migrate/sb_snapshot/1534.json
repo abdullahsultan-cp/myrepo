@@ -1,14 +1,14 @@
 {
   "name": "Address by the Chief Guest Professor Mwenda Ntarangwi, Commission Secretary, CUE at AKU Convocation in Kenya 2018",
-  "parent_id": 200436757260291,
+  "parent_id": 203313843334397,
   "group_id": "0e122e8a-3b0f-4ba9-bfcc-82ad2d425b93",
   "alternates": [],
   "created_at": "2026-07-29T19:19:14.779Z",
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T04:55:05.401Z",
-  "published_at": "2026-07-30T04:55:05.382Z",
+  "updated_at": "2026-07-30T15:20:39.225Z",
+  "published_at": "2026-07-30T15:20:39.205Z",
   "id": 203420282015224,
   "uuid": "15a3d953-d4f0-4c63-845e-7d6266e1cfa1",
   "is_folder": false,
@@ -24,7 +24,7 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Members of the Board of Trustees of the Aga Khan University",
+                  "text": "President Firoz Rasul",
                   "type": "text"
                 }
               ]
@@ -352,7 +352,7 @@
       },
       {
         "_uid": "2d7aca17-dc44-108b-7a60-91429de82766",
-        "date": "Feb 16, 2018",
+        "date": "",
         "quote": "Universities educate the skilled workers that organizations covet, and the informed citizens who are the bedrock of democracy. They generate new knowledge that fuels innovation, as well as the evidence policymakers need to make sound decisions.",
         "spacing": {
           "unit": "px",
@@ -442,7 +442,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "President Firoz Rasul",
+    "description": "Members of the Board of Trustees of the Aga Khan University",
     "show_social": false,
     "banner_image": {
       "id": 203419119463487,
@@ -477,14 +477,14 @@
   "published": true,
   "slug": "address-by-the-chief-guest-professor-mwenda-ntarangwi-commission-secretary-cue-at-aku-convocation-in-kenya-2018",
   "path": null,
-  "full_slug": "news/address-by-the-chief-guest-professor-mwenda-ntarangwi-commission-secretary-cue-at-aku-convocation-in-kenya-2018",
+  "full_slug": "regions/kenya/entities/medical-college/news/address-by-the-chief-guest-professor-mwenda-ntarangwi-commission-secretary-cue-at-aku-convocation-in-kenya-2018",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
   "parent": {
-    "id": 200436757260291,
-    "uuid": "1b0f8581-0af2-4aba-a314-3899e115aac1",
-    "name": "news",
+    "id": 203313843334397,
+    "uuid": "589d13fc-1a3c-490c-943d-b8b13f8f814d",
+    "name": "News",
     "slug": "news",
     "disble_fe_editor": false
   },
@@ -493,15 +493,55 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8c3b2a68d372ab3cde1d8cea352c97b3a6b376ea",
-    "timestamp": "1785387344"
+    "token": "6667084db789d070d4b1ecc90f863eb6e3077bb3",
+    "timestamp": "1785498062"
   },
   "pinned": false,
   "breadcrumbs": [
     {
-      "id": 200436757260291,
-      "name": "news",
-      "parent_id": null,
+      "id": 203313613527806,
+      "name": "Regions",
+      "parent_id": 0,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "regions",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313618008834,
+      "name": "KE",
+      "parent_id": 203313613527806,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "kenya",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313623046917,
+      "name": "Entities",
+      "parent_id": 203313618008834,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "entities",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313692077164,
+      "name": "MC",
+      "parent_id": 203313623046917,
+      "disble_fe_editor": false,
+      "disable_fe_editor": false,
+      "path": null,
+      "slug": "medical-college",
+      "translated_slugs": []
+    },
+    {
+      "id": 203313843334397,
+      "name": "News",
+      "parent_id": 203313692077164,
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
@@ -530,7 +570,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203561801061756,
+  "current_version_id": 203715539606388,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
