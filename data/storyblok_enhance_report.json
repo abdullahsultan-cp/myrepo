@@ -1,10 +1,10 @@
 {
   "summary": {
     "files_processed": 3606,
-    "files_with_warnings": 393,
+    "files_with_warnings": 394,
     "warning_categories": {
       "story_link_resolved": 111,
-      "relative_link_unresolved": 465,
+      "relative_link_unresolved": 467,
       "sharepoint_image_absolute": 78
     }
   },
@@ -72,6 +72,12 @@
     },
     {
       "file": "1246.json",
+      "warnings": [
+        "relative_link_unresolved"
+      ]
+    },
+    {
+      "file": "1280.json",
       "warnings": [
         "relative_link_unresolved"
       ]
@@ -380,6 +386,7 @@
     {
       "file": "1703.json",
       "warnings": [
+        "relative_link_unresolved",
         "relative_link_unresolved"
       ]
     },

@@ -10,9 +10,10 @@
     "image_files": 34,
     "relative_link_files": 341,
     "warning_categories": {
-      "unexpected_block_inside_inline": 30,
+      "unexpected_block_inside_inline": 11,
       "relative_link": 541,
       "iframe_embedded": 66,
+      "inline_tag_wrapping_blocks_unwrapped": 9,
       "sharepoint_image": 78,
       "inline_image_promoted_to_block_unsupported_in_paragraph": 5
     }
@@ -128,6 +129,7 @@
     "1213.json",
     "1214.json",
     "1246.json",
+    "1280.json",
     "1281.json",
     "1282.json",
     "129.json",
@@ -436,7 +438,6 @@
     "3665.json",
     "3671.json",
     "3683.json",
-    "3686.json",
     "3700.json",
     "3701.json",
     "3704.json",
@@ -563,10 +564,8 @@
     {
       "file": "1280.json",
       "warnings": [
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:strong",
+        "relative_link:/ele-net/students/Pages/Courses.aspx"
       ]
     },
     {
@@ -889,7 +888,7 @@
     {
       "file": "1691.json",
       "warnings": [
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:a"
       ]
     },
     {
@@ -916,20 +915,15 @@
     {
       "file": "1703.json",
       "warnings": [
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
+        "inline_tag_wrapping_blocks_unwrapped:strong",
+        "relative_link:/ele-net/courses/Pages/Course-levels.aspx",
         "relative_link:/ele-net/services/Pages/testing_services.aspx"
       ]
     },
     {
       "file": "1704.json",
       "warnings": [
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:strong"
       ]
     },
     {
@@ -943,7 +937,7 @@
     {
       "file": "1712.json",
       "warnings": [
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:a"
       ]
     },
     {
@@ -1118,7 +1112,7 @@
     {
       "file": "1850.json",
       "warnings": [
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:a"
       ]
     },
     {
@@ -2023,8 +2017,7 @@
     {
       "file": "2653.json",
       "warnings": [
-        "unexpected_block_inside_inline:p",
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:a"
       ]
     },
     {
@@ -2080,8 +2073,7 @@
     {
       "file": "2690.json",
       "warnings": [
-        "relative_link:/news/PublishingImages/ImmunisationCoverageMap.jpg",
-        "unexpected_block_inside_inline:p",
+        "inline_tag_wrapping_blocks_unwrapped:a",
         "relative_link:/news/Pages/News_Details.aspx?nid=NEWS-002002"
       ]
     },
@@ -3145,8 +3137,7 @@
     {
       "file": "3686.json",
       "warnings": [
-        "relative_link:/students/climate-solutions/Documents/PCCS%20Highlights%20Booklet.pdf",
-        "unexpected_block_inside_inline:p"
+        "inline_tag_wrapping_blocks_unwrapped:a"
       ]
     },
     {

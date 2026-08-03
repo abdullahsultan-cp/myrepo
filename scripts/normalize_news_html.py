@@ -226,6 +226,49 @@ def unwrap_external_class_root(soup):
     return unwrapped
 
 
+DOUBLE_BR = re.compile(r"(?:\s*<br\s*/?>\s*){2,}", re.I)
+
+
+def split_on_double_breaks(html, stats):
+    """Turn <br><br> inside a paragraph into real paragraph boundaries.
+
+    Editors writing in SharePoint pressed Enter twice rather than starting a new
+    block, so 179 articles arrive as ONE <p> holding the whole piece with
+    <br><br> between what are plainly paragraphs. That is not cosmetic: those
+    stories had a single body node, and the rule that moves paragraph 1 into
+    `description` then emptied the body completely.
+
+    Done on the serialised HTML rather than the tree. Rebuilding paragraphs by
+    moving nodes around lost the text of six stories -- 2279 came out as
+    <p><br/>x19</p> with all 4000 characters gone -- because extracting children
+    while regrouping them is easy to get subtly wrong. A boundary is a textual
+    thing here, so it is safer to cut the string and let the parser rebuild.
+
+    Only a run of TWO OR MORE breaks splits. A single <br> is a line break
+    inside a paragraph -- an address, a list of names -- and is left alone.
+    """
+    out, n = [], 0
+    for chunk in re.split(r"(<p[^>]*>.*?</p>)", html, flags=re.S | re.I):
+        if not (chunk[:2].lower() == "<p" and chunk[-4:].lower() == "</p>"):
+            out.append(chunk)
+            continue
+        open_tag = re.match(r"<p[^>]*>", chunk, re.I).group(0)
+        inner = chunk[len(open_tag):-4]
+        if not DOUBLE_BR.search(inner):
+            out.append(chunk)
+            continue
+        parts = [p for p in DOUBLE_BR.split(inner)
+                 if re.sub(r"<[^>]+>", "", p).strip()
+                 or re.search(r"<img", p, re.I)]
+        if len(parts) < 2:
+            out.append(chunk)
+            continue
+        out.append("".join(f"{open_tag}{p}</p>" for p in parts))
+        n += len(parts)
+    stats["paragraphs_split_on_double_break"] = n
+    return "".join(out)
+
+
 def normalize_news_content_html(html):
     stats = Counter()
     warnings = []
@@ -275,6 +318,9 @@ def normalize_news_content_html(html):
         strip_presentation_attrs(tag)
 
     normalized_html = "".join(str(child) for child in body.children).strip()
+    # Last, on the finished markup: by now every div is a <p>, so a converted
+    # div gets split too.
+    normalized_html = split_on_double_breaks(normalized_html, stats)
     return normalized_html, stats, warnings
 
 

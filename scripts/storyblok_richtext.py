@@ -120,11 +120,19 @@ def is_empty_paragraph(node):
 
 
 def is_inline_tag(node):
-    """A tag that belongs inside a paragraph rather than beside one."""
-    return (isinstance(node, Tag)
-            and node.name.lower() not in BLOCK_TAGS
-            and node.name.lower() != "iframe"
-            and not node.get("data-storyblok-embed"))
+    """A tag that belongs inside a paragraph rather than beside one.
+
+    A tag that WRAPS block content is not inline, whatever its name. SharePoint
+    emits <strong><p>...</p><p>...</p></strong>, which is invalid nesting;
+    treating the <strong> as inline sent its paragraphs to
+    collect_inline_content, which has nowhere to put a <p> and dropped the lot.
+    """
+    if not isinstance(node, Tag):
+        return False
+    name = node.name.lower()
+    if name in BLOCK_TAGS or name == "iframe" or node.get("data-storyblok-embed"):
+        return False
+    return not node.find(sorted(BLOCK_TAGS), recursive=True)
 
 
 def convert_children(children, warnings, config=None):
@@ -297,6 +305,13 @@ def block_nodes_from_tag(node, warnings, config=None):
         embed_blocks = block_nodes_from_paragraph(node, warnings, config)
         if embed_blocks:
             return embed_blocks
+
+    # An inline tag wrapping block content -- <strong><p>..</p></strong>. Its
+    # own meaning cannot survive the unwrap, but its paragraphs can, and losing
+    # a whole article to keep a <strong> would be the wrong trade.
+    if name not in BLOCK_TAGS and node.find(sorted(BLOCK_TAGS), recursive=True):
+        warnings.append(f"inline_tag_wrapping_blocks_unwrapped:{name}")
+        return convert_children(list(node.children), warnings, config)
 
     block = convert_block_node(node, warnings, config)
     return [block] if block else []

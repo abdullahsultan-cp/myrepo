@@ -485,7 +485,16 @@ def build(story, route, *, assets=None, entities=None, is_global=None,
         # A non-prose opener stays in the body and the next paragraph is used.
         if not first_para_taken and node.get("type") == "paragraph":
             candidate = plain_text(doc_of([node])).strip()
-            if len(candidate) >= 40 and count_words(candidate) >= 6:
+            # Taking it must not empty the body. 98 stories are a single short
+            # paragraph -- a video caption, a one-line link -- and moving that
+            # one paragraph out left nothing behind, so the article rendered
+            # from the summary alone. Something has to follow it to be taken.
+            more_follows = any(
+                n.get("type") != "paragraph"
+                or plain_text(doc_of([n])).strip()
+                for n in nodes[i + 1:])
+            if (len(candidate) >= 40 and count_words(candidate) >= 6
+                    and more_follows):
                 description = candidate
                 first_para_taken = True
                 i += 1
