@@ -1,0 +1,35 @@
+﻿old_role_string,permission_rows,new_capability,plus_functional_role,means,note
+"Contribute, Approve",23402,approver,,"publish, unpublish and schedule in scope",
+"Design, Contribute",11992,contributor,,create and edit drafts in scope; cannot make them public,"Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+View Only,7657,viewer,,"read any draft or published story in scope, and comment",
+"Design, Contribute, Approve",6208,approver,,"publish, unpublish and schedule in scope","Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Design, Contribute, Read, Limited Access, Approve",6000,approver,,"publish, unpublish and schedule in scope","Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Full Control, Limited Access",5534,admin,,"the whole space, including roles and settings",
+Approve,4992,approver,,"publish, unpublish and schedule in scope",
+Read,4749,viewer,,"read any draft or published story in scope, and comment",
+Contribute,3500,contributor,,create and edit drafts in scope; cannot make them public,
+Limited Access,2503,(none),,nothing,SharePoint plumbing — auto-granted so a user can traverse to an item granted directly. Grants nothing on its own.
+"Full Control, Limited Access, Manage Permissions",1441,admin,,"the whole space, including roles and settings",
+"Design, Contribute, Limited Access, Approve",1013,approver,,"publish, unpublish and schedule in scope","Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Design, Limited Access",609,(none),,nothing,"SharePoint plumbing — auto-granted so a user can traverse to an item granted directly. Grants nothing on its own. Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+Restricted Read,599,viewer,,"read any draft or published story in scope, and comment",
+Manage Hierarchy,593,steward,,"also create, rename and move folders inside scope",
+Full Control,568,admin,,"the whole space, including roles and settings",
+"Design, Contribute, Limited Access",225,contributor,,create and edit drafts in scope; cannot make them public,"Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+Restricted Interfaces for Translation,224,(none),translator,nothing,
+"Limited Access, Approve",148,approver,,"publish, unpublish and schedule in scope",
+"Limited Access, View Only",143,viewer,,"read any draft or published story in scope, and comment",
+Design,143,(none),,nothing,"SharePoint plumbing — auto-granted so a user can traverse to an item granted directly. Grants nothing on its own. Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Design, Contribute, View Only",130,contributor,,create and edit drafts in scope; cannot make them public,"Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Contribute, Limited Access, Approve",129,approver,,"publish, unpublish and schedule in scope",
+"Read, Limited Access",88,viewer,,"read any draft or published story in scope, and comment",
+"Contribute, Read",64,contributor,,create and edit drafts in scope; cannot make them public,
+"Design, Contribute, Approve, Manage Permissions",44,admin,,"the whole space, including roles and settings","Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Limited Access, Manage Hierarchy",11,steward,,"also create, rename and move folders inside scope",
+"Limited Access, Restricted Read",11,viewer,,"read any draft or published story in scope, and comment",
+"Contribute, Limited Access",7,contributor,,create and edit drafts in scope; cannot make them public,
+"Full Control, Edit",6,admin,,"the whole space, including roles and settings",
+"Full Control, Edit, Read",3,admin,,"the whole space, including roles and settings",
+"Design, Approve",3,approver,,"publish, unpublish and schedule in scope","Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Design, Edit, Contribute",2,contributor,,create and edit drafts in scope; cannot make them public,"Design is not carried over: on a publishing site it ships with Contribute by default, and layout in Storyblok is a developer action. Only the Designers group becomes component-developer."
+"Edit, Read",1,contributor,,create and edit drafts in scope; cannot make them public,

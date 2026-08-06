@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AKU → Storyblok · migration portal</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Surface any boot failure in the page itself: a white screen tells you
+      // nothing, and the console is not where people look first.
+      function show(msg) {
+        var r = document.getElementById('root');
+        if (r) r.innerHTML = '<pre style="padding:40px;color:#c0362f;' +
+          'font:13px ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap">' +
+          String(msg) + '</pre>';
+      }
+      window.addEventListener('error', function (e) {
+        show('Startup error:
+
+' + (e.message || e.error) +
+             '
+
+' + ((e.error && e.error.stack) || ''));
+      });
+      window.addEventListener('unhandledrejection', function (e) {
+        show('Startup error (promise):
+
+' + (e.reason && (e.reason.stack || e.reason.message) || e.reason));
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
