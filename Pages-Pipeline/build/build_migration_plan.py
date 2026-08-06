@@ -164,8 +164,8 @@ EXTRA_DEPARTMENTS = {
 #   cpe / ugme / education                      teaching programmes
 #   data-science                                a Centre under CITRIC
 # The owners are offices -- PGME PK, Graduate Programmes, DS -- not departments.
-NOT_DEPARTMENTS = {'fellowship', 'residency', 'internship', 'pgme', 'data-science',
-                   'ugme', 'education', 'med', 'mphil', 'phd', 'adv-diploma',
+NOT_DEPARTMENTS = {'fellowship', 'residency', 'internship', 'pgme',
+                   'ugme', 'education', 'mphil', 'phd', 'adv-diploma',
                    'adv-diploma-education', 'adv-diploma-hd', 'adv-diploma-hpe',
                    'cpe'}
 
@@ -205,6 +205,7 @@ CENTRES = {
     'bioinformatics': 'Centre for Bioinformatics',
     'citric': 'Clinical and Translational Research Incubator',
     'patient-safety': 'Centre for Patient Safety',
+    'data-science': 'CITRIC-Health Data Science Centre, established December 2020',
 }
 
 # A sixth kind. Some folders under a department are not units at all but the
@@ -283,6 +284,24 @@ WEB_COUNTRIES = {
         'consultancy, bespoke courses and Aptis testing offered AKU-wide'),
 }
 
+# A name means different things to different faculties, so the exclusion has to be
+# scoped. `med` is the Master of Education at IED and the Department of Medicine at
+# the Medical College -- whose owner group is called "Dept of Medicine" outright.
+# Excluding it everywhere let one faculty's degree programme suppress another
+# faculty's clinical department. Listed as: this name is not a department, EXCEPT
+# in these entities.
+NOT_DEPARTMENTS_EXCEPT = {
+    'med': {'medical-college'},
+}
+NOT_DEPARTMENTS |= set(NOT_DEPARTMENTS_EXCEPT)
+
+def excluded(ent_slug, seg):
+    """Is this name barred from being a department for THIS entity?"""
+    s = slugify(seg)
+    if s not in NOT_DEPARTMENTS:
+        return False
+    return ent_slug not in NOT_DEPARTMENTS_EXCEPT.get(s, set())
+
 def learn_departments():
     for web in sorted(webs):
         if not web or '/' not in web:
@@ -300,7 +319,7 @@ learn_departments()
 
 def is_dept_name(ent_slug, seg):
     s = slugify(seg)
-    if s in NOT_DEPARTMENTS:
+    if excluded(ent_slug, seg):
         return False
     return s in DEPT_NAMES.get(ent_slug, ()) or s in EXTRA_DEPARTMENTS.get(ent_slug, ())
 
@@ -354,7 +373,7 @@ def dest_web(web):
             # magazine off the faculty, and both are the same kind of thing.
             base.append(slugify(seg))
             kind = 'publication'
-        elif i == 0 and ent_slug and slugify(seg) not in NOT_DEPARTMENTS and (
+        elif i == 0 and ent_slug and not excluded(ent_slug, seg) and (
                 is_department(section, sub) or is_dept_name(ent_slug, seg)):
             base += ['departments', slugify(seg)]
             kind = 'department'

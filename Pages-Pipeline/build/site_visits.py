@@ -648,6 +648,17 @@ VISITED = [
      'A real department, confirmed.', 'no'),
     ('/mcpk/radiology', 'Home > Medical College, Pakistan > Department of Radiology',
      'A real department, confirmed — the last of the 23.', 'no'),
+    ('/mcpk/med', 'Home > Medical College, Pakistan > Department of Medicine. A '
+     'clinical department with specialty areas and training programmes',
+     'The Department of Medicine, not a degree. Its owner group is called "Dept '
+     'of Medicine". It read as a folder because `med` was excluded university-wide '
+     'for IED, where it means Master of Education — so the exclusion is now '
+     'scoped per entity.', 'yes'),
+    ('/mcpk/data-science', 'Home > Medical College, Pakistan > Health Data Science. '
+     '"the first Health Data Science Centre under The Clinical and Translational '
+     'Research Incubator (CITRIC)", inception December 2020',
+     'A centre, which this repo’s own comment already said — the code '
+     'just never acted on it.', 'yes'),
 ]
 
 # Fetched and found not publicly reachable. Their pages are still in AKU's migrate
