@@ -45,8 +45,11 @@ __pycache__/
 htmlcov/
 *.egg-info/
 .eggs/
-dist/
-build/
+/dist/
+# Anchored to the repo root. Unanchored, `build/` also matched
+# Pages-Pipeline/build/ and silently excluded all 17 Python files that generate
+# the pages migration — the entire source of that stage.
+/build/
 
 # --- macOS / editors ---------------------------------------------------------
 
@@ -106,3 +109,36 @@ storyblok-viewer/*.pem
 # validate_dev_tree.py --csv output: a diff against whatever file was passed in,
 # meaningful only in the moment it was produced.
 /data/taxonomy/dev_tree_diff.csv
+
+# --- Pages-Pipeline portal (Vite + React) ------------------------------------
+# Dependencies and build output: reinstall with `npm install`, rebuild with
+# `npm run build`. Nothing here is authored by hand.
+/Pages-Pipeline/portal/node_modules/
+/Pages-Pipeline/portal/dist/
+/Pages-Pipeline/portal/.vite/
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# The portal reads these at runtime; both are copied from Pages-Pipeline/build/
+# by the render step, so they are generated, not source.
+/Pages-Pipeline/portal/public/data/
+
+# Intermediates the Pages-Pipeline probes write next to themselves. Each is
+# regenerable: probe_csv.py -> join.py -> sections.py -> build_migration_plan.py.
+/Pages-Pipeline/build/*.json
+/Pages-Pipeline/build/*.txt
+
+# The generated single-file views. Each is rebuilt from plan.json by its own
+# render_*.py, so tracking them would put a megabyte of churn in every diff.
+# AKU-Tree.html is the exception: it is the file we hand to AKU, so it is tracked
+# deliberately and `render_share_tree.py` regenerates it.
+/Pages-Pipeline/AKU-Structure.html
+/Pages-Pipeline/AKU-Migration-Portal.html
+/Pages-Pipeline/AKU-Migration-Portal-legacy.html
+/Pages-Pipeline/AKU-Migration-Plan.html
+/Pages-Pipeline/AKU-Folder-Hierarchy.*
+
+# Scratch output from a one-off run, never a result.
+/scratch_sv.txt

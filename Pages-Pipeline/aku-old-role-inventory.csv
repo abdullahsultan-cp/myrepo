@@ -1,0 +1,337 @@
+﻿sharepoint_group,kind,unit,members,permission_rows,old_role_strings,old_capability,new_roles,new_role_count,folders_owned
+AKUJobOwners,owner,AKUJobOwners,152,14896,"Contribute, Approve | Design, Contribute, Approve",approver,global.students.clubs-societies.approver; global.vacancies.approver,2,3
+EventsOwners,owner,EventsOwners,150,6000,"Design, Contribute, Read, Limited Access, Approve",approver,global.events.approver,1,33
+FacultyOwners-mcpk,owner,FacultyOwners-mcpk,51,6222,"Contribute, Approve | Design, Contribute, Limited Access, Approve | Design, Contribute, Approve",approver,pakistan.medical-college.approver,1,11
+None (Direct Access),other,None (Direct Access),23,1914,"Limited Access | Design, Contribute | Read",contributor,(per person — see aku-user-roles.csv),1,164
+CW MC PK,writer,MC PK,22,1254,"Design, Contribute",contributor,pakistan.medical-college.contributor,1,29
+FAS-PK Faculty,other,FAS-PK Faculty,18,18,"Design, Contribute, Approve",approver,pakistan.faculty-of-arts-and-sciences.faculty.approver,1,1
+CW QTL,writer,QTL,14,84,"Design, Contribute",contributor,space.contributor,1,0
+BlogsOwner,owner,BlogsOwner,13,13,"Design, Contribute, Limited Access, Approve",approver,space.approver,1,1
+Viewers,reader,Viewers,13,7930,"View Only | Limited Access, View Only | Design, Contribute, View Only",contributor,space.viewer,1,164
+CW ISMC,writer,ISMC,12,204,"Design, Contribute",contributor,united-kingdom.institute-for-the-study-of-muslim-civilisations.contributor,1,4
+CW Public Affairs,writer,Public Affairs,12,7514,"Design, Contribute | Contribute | Design",contributor,space.contributor,1,156
+AKU Challenge Members,reader,AKU Challenge Members,11,11,Contribute,contributor,space.contributor,1,1
+AKU Owners,owner,AKU Owners,11,6710,"Full Control, Limited Access | Full Control, Limited Access, Manage Permissions | Full Control",admin,space.admin,1,164
+ElectiveAdminGroup,other,ElectiveAdminGroup,10,210,Contribute,contributor,global.vroom.contributor; pakistan.medical-college.contributor,2,5
+CW IHD,writer,IHD,9,81,"Design, Contribute",contributor,global.events.icehd.contributor; global.institute-for-human-development.contributor,2,3
+FacultyOwners-iedea,owner,FacultyOwners-iedea,9,837,"Contribute, Approve | Design, Contribute, Approve",approver,east-africa.institute-for-educational-development.faculty.approver,1,1
+AKU Visitors,reader,AKU Visitors,8,4880,"Read | Read, Limited Access | Contribute, Read",contributor,space.viewer,1,164
+CA Public Affairs,approver,Public Affairs,8,5202,"Approve | Design, Contribute, Approve | Limited Access, Approve",approver,space.approver,1,156
+FacultyOwners-mcea,owner,FacultyOwners-mcea,8,864,"Contribute, Approve | Contribute, Limited Access, Approve",approver,east-africa.medical-college.approver,1,2
+FacultyOwners-sea,owner,FacultyOwners-sea,8,744,"Contribute, Approve | Design, Contribute, Approve",approver,east-africa.school-of-nursing-and-midwifery.faculty.approver,1,1
+CW Anaesthesiology,writer,Anaesthesiology,7,7,"Design, Contribute",contributor,pakistan.medical-college.anaes.contributor,1,1
+CW CTU,writer,CTU,7,35,"Design, Contribute",contributor,pakistan.clinical-trials-unit.contributor,1,1
+CW DED,writer,DED,7,21,"Design, Contribute",contributor,pakistan.medical-college.ded.contributor,1,1
+CW FAS PK,writer,FAS PK,7,91,"Design, Contribute | Design, Contribute, Limited Access",contributor,pakistan.faculty-of-arts-and-sciences.contributor,1,2
+CW GSMC,writer,GSMC,7,21,"Design, Contribute",contributor,space.contributor,1,0
+CW IED EA,writer,IED EA,7,56,"Design, Contribute",contributor,east-africa.institute-for-educational-development.contributor,1,3
+CW IED PK,writer,IED PK,7,217,"Design, Contribute",contributor,pakistan.institute-for-educational-development.contributor,1,7
+IT Webteam,platform,IT Webteam,7,623,"Full Control, Limited Access",admin,space.admin,1,5
+CW COE WCH,writer,COE WCH,6,54,"Design, Contribute",contributor,global.centre-of-excellence-in-women-and-child-health.contributor,1,2
+CW DS,writer,DS,6,6,"Design, Contribute",contributor,pakistan.medical-college.data-science.contributor,1,1
+CW Dept of Medicine,writer,Dept of Medicine,6,6,"Design, Contribute",contributor,pakistan.medical-college.med.contributor,1,1
+CW HR,writer,HR,6,72,"Design, Contribute",contributor,global.careers.contributor; global.digital-flipbooks.contributor,2,3
+CW MC EA,writer,MC EA,6,114,"Design, Contribute",contributor,east-africa.medical-college.contributor; global.events.contributor,2,5
+CW Obs and Gyn,writer,Obs and Gyn,6,6,"Design, Contribute",contributor,pakistan.medical-college.obs-gyn.contributor,1,1
+CW Partnerships Office,writer,Partnerships Office,6,36,"Design, Contribute",contributor,global.geo.contributor,1,2
+CW Pathology,writer,Pathology,6,24,"Design, Contribute",contributor,pakistan.medical-college.pathology.contributor,1,1
+CW vacancies,writer,vacancies,6,6,"Full Control, Edit",admin,global.vacancies.contributor,1,1
+QTL News Writer,writer,QTL,6,552,"Design, Contribute | Contribute",contributor,space.contributor,1,0
+lifetimealumniadmins,other,lifetimealumniadmins,6,7,"Contribute, Limited Access",contributor,global.alumni.aerf.contributor,1,1
+Administrators,platform,Administrators,5,120,Full Control,admin,space.admin,1,1
+CW AH,writer,AH,5,5,"Design, Contribute",contributor,pakistan.medical-college.allied-health.contributor,1,1
+CW Emergency,writer,Emergency,5,5,"Design, Contribute",contributor,pakistan.medical-college.em.contributor,1,1
+CW IED PK Research,writer,IED PK Research,5,15,"Design, Contribute",contributor,global.events.iedpk-intl-conf.contributor; pakistan.institute-for-educational-development.research.contributor,2,2
+CW IIP,writer,IIP,5,30,"Limited Access | Design, Contribute, Limited Access",contributor,global.geo.contributor,1,2
+CW MRTC,writer,MRTC,5,25,"Design, Contribute",contributor,pakistan.medical-college.mother-and-child-health-research-and-training-centre.contributor,1,1
+CW NHSRS,writer,NHSRS,5,5,"Design, Contribute",contributor,global.events.nhsrs.contributor,1,1
+CW Psychiatry,writer,Psychiatry,5,5,"Design, Contribute",contributor,pakistan.medical-college.psychiatry.contributor,1,1
+CW SONAM EA,writer,SONAM EA,5,45,"Design, Contribute",contributor,east-africa.school-of-nursing-and-midwifery.contributor,1,3
+CW SOTL,writer,SOTL,5,5,"Design, Contribute",contributor,global.events.sotl.contributor,1,1
+CW Vroom,writer,Vroom,5,5,"Design, Contribute",contributor,global.vroom.contributor,1,1
+GSMC Writer,writer,GSMC,5,15,"Design, Contribute",contributor,space.contributor,1,0
+ISMC Writer,writer,ISMC,5,460,"Design, Contribute | Contribute",contributor,united-kingdom.institute-for-the-study-of-muslim-civilisations.contributor,1,0
+AKU Challenge Owners,owner,AKU Challenge Owners,4,5,"Full Control, Limited Access",admin,space.admin,1,1
+CRU CW,other,CRU CW,4,4,"Design, Contribute",contributor,space.contributor,1,0
+CW AERR,writer,AERR,4,32,"Design, Contribute",contributor,tanzania.arusha-climate-and-environmental-research-centre.contributor,1,1
+CW Alumni Affairs,writer,Alumni Affairs,4,52,"Design, Contribute | Design, Contribute, Limited Access",contributor,global.alumni.contributor,1,4
+CW BBS,writer,BBS,4,8,"Design, Contribute",contributor,pakistan.medical-college.bbs.contributor,1,1
+CW BMI,writer,BMI,4,36,"Design, Contribute",contributor,global.events.contributor,1,2
+CW CHS,writer,CHS,4,12,"Design, Contribute",contributor,pakistan.medical-college.chs.contributor,1,1
+CW CIME,writer,CIME,4,36,"Design, Contribute",contributor,global.centre-for-innovation-in-medical-education.contributor; global.events.simpact.contributor,2,2
+CW Convocation,writer,Convocation,4,32,"Design, Contribute",contributor,global.convocation.contributor,1,1
+CW DCPE,writer,DCPE,4,4,"Design, Contribute",contributor,pakistan.medical-college.dcpe.contributor,1,1
+CW DEI&B,writer,DEI&B,4,8,"Design, Contribute",contributor,global.deib.contributor,1,1
+CW DTEA,writer,DTEA,4,4,"Design, Contribute",contributor,global.events.dtea.contributor,1,1
+CW EAI,writer,EAI,4,32,"Design, Contribute",contributor,east-africa.east-africa-institute.contributor,1,1
+CW Emerita,writer,Emerita,4,4,"Design, Contribute",contributor,global.emeritus-prof.contributor,1,1
+CW Family Medicine,writer,Family Medicine,4,4,"Design, Contribute",contributor,pakistan.medical-college.fam-med.contributor,1,1
+CW GSMC News,writer,GSMC News,4,76,"Design, Contribute | Design, Contribute, Limited Access",contributor,space.contributor,1,0
+CW HDP,writer,HDP,4,4,"Design, Contribute",contributor,pakistan.medical-college.hdp.contributor,1,1
+CW LEADS,writer,LEADS,4,4,"Design, Contribute",contributor,global.leads.contributor,1,1
+CW PGME PK,writer,PGME PK,4,20,"Design, Contribute",contributor,pakistan.medical-college.contributor,1,4
+CW Paeds,writer,Paeds,4,4,"Design, Contribute",contributor,pakistan.medical-college.paeds.contributor,1,1
+CW Students,writer,Students,4,160,"Design, Contribute | Design, Contribute, Limited Access",contributor,global.events.parwaaz.contributor; global.students.contributor,2,6
+Comments Moderator,moderator,Comments Moderator,4,96,Full Control,admin,comment-moderator,1,1
+EAI News Writer,writer,EAI,4,368,"Contribute | Design, Contribute",contributor,east-africa.east-africa-institute.contributor,1,0
+FacultyOwners,owner,FacultyOwners,4,520,"Contribute, Approve | Approve | Design, Contribute, Approve",approver,pakistan.school-of-nursing-and-midwifery.approver,1,3
+Global Writers,writer,Global,4,368,"Design, Contribute",contributor,space.contributor,1,0
+Sonam EA News Writer,writer,Sonam EA,4,228,"Design, Contribute | Contribute",contributor,space.contributor,1,0
+Approvers,approver,,3,1794,"Approve | Limited Access, Approve",approver,space.approver,1,161
+CA DSC,approver,DSC,3,3,"Design, Contribute, Approve",approver,global.library.pk.av.approver,1,1
+CA EA Lib,approver,EA Lib,3,18,"Design, Contribute, Approve",approver,global.library.ea.approver,1,6
+CA FAS Lib,approver,FAS Lib,3,3,"Design, Contribute, Approve",approver,global.library.pk.fas.approver,1,1
+CA FHS,approver,FHS,3,3,"Design, Contribute, Approve",approver,global.library.pk.fhs.approver,1,1
+CIME News Writer,writer,CIME,3,276,Contribute,contributor,global.centre-for-innovation-in-medical-education.contributor; global.events.simpact.contributor,2,0
+COE WCH News Writer,writer,COE WCH,3,228,"Design, Contribute",contributor,global.centre-of-excellence-in-women-and-child-health.contributor,1,0
+CW BMI News,writer,BMI News,3,6,"Design, Contribute, Limited Access",contributor,space.contributor,1,0
+CW Environmental Responsibility,writer,Environmental Responsibility,3,6,"Design, Contribute",contributor,global.about.environment.contributor,1,1
+CW Governance,writer,Governance,3,15,"Design, Contribute",contributor,united-kingdom.institute-for-the-study-of-muslim-civilisations.governance-programme.contributor,1,1
+CW ISMC Research,writer,ISMC Research,3,18,"Design, Contribute",contributor,united-kingdom.institute-for-the-study-of-muslim-civilisations.research.contributor,1,1
+CW Office of the Provost,writer,Office of the Provost,3,27,"Design, Contribute",contributor,global.about.provostoffice.contributor,1,1
+CW Ophtho,writer,Ophtho,3,3,"Design, Contribute",contributor,pakistan.medical-college.ophthalmology.contributor,1,1
+CW PHC Sym,writer,PHC Sym,3,3,"Design, Contribute",contributor,global.events.phc-sym.contributor,1,1
+CW PK Chap,writer,PK Chap,3,3,"Design, Contribute",contributor,global.alumni.pk-chap.contributor,1,1
+CW PRO,writer,PRO,3,174,"Design, Contribute",contributor,space.contributor,1,0
+CW PS,writer,PS,3,3,"Design, Contribute",contributor,pakistan.medical-college.patient-safety.contributor,1,1
+CW Registrar,writer,Registrar,3,462,"Design, Contribute | Design, Contribute, Limited Access | Contribute",contributor,global.admissions.contributor; global.registrar.contributor; global.sdg-hub.contributor,3,7
+CW Research and Graduate Studies,writer,Research and Graduate Studies,3,54,"Design, Contribute",contributor,global.research.contributor,1,1
+CW SURGERY,writer,SURGERY,3,3,"Design, Contribute",contributor,pakistan.medical-college.surgery.contributor,1,1
+CW Surgical Conference,writer,Surgical Conference,3,3,"Design, Contribute",contributor,global.events.aasc.contributor,1,1
+CW news training,writer,news training,3,165,"Design, Contribute | Contribute",contributor,global.about.onwards.contributor,1,1
+FacultyOwners-iedpk,owner,FacultyOwners-iedpk,3,369,"Contribute, Approve | Approve",approver,east-africa.institute-for-educational-development.approver; pakistan.institute-for-educational-development.approver,2,3
+Global Approvers,approver,Global,3,276,"Design, Contribute, Approve",approver,space.approver,1,0
+IED EA News Writer,writer,IED EA,3,276,"Design, Contribute | Contribute",contributor,east-africa.institute-for-educational-development.contributor,1,0
+MC EA News Writers,writer,MC EA,3,171,"Design, Contribute",contributor,east-africa.medical-college.contributor; global.events.contributor,2,0
+CA ACC,approver,ACC,2,2,"Design, Contribute, Approve",approver,global.events.acc.approver,1,1
+CA BMI,approver,BMI,2,18,"Design, Contribute, Approve",approver,global.events.approver,1,2
+CA BMI News,approver,BMI News,2,4,"Design, Contribute, Limited Access, Approve",approver,space.approver,1,0
+CA COE WCH,approver,COE WCH,2,202,"Design, Contribute, Approve",approver,global.centre-of-excellence-in-women-and-child-health.approver,1,2
+CA ES,approver,ES,2,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA Emergency,approver,Emergency,2,2,"Design, Contribute, Approve",approver,pakistan.medical-college.em.approver,1,1
+CA IED EA,approver,IED EA,2,16,"Design, Contribute, Approve | Approve",approver,east-africa.institute-for-educational-development.approver,1,3
+CA IED Lib,approver,IED Lib,2,6,"Design, Contribute, Approve",approver,global.library.pk.approver,1,3
+CA IHD news,approver,IHD news,2,114,"Contribute, Approve | Design, Contribute, Approve",approver,space.approver,1,0
+CA ISMC,approver,ISMC,2,34,"Design, Contribute, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.approver,1,4
+CA LEADS,approver,LEADS,2,2,"Design, Contribute, Approve",approver,global.leads.approver,1,1
+CA Lecture Series,approver,Lecture Series,2,2,"Design, Contribute, Approve",approver,global.events.fhs-lecture-series.approver,1,1
+CA Lib Archives,approver,Lib Archives,2,2,"Design, Contribute, Approve",approver,global.library.ulo.archives.approver,1,1
+CA MHR,approver,MHR,2,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA NHSRS,approver,NHSRS,2,2,"Design, Contribute, Approve",approver,global.events.nhsrs.approver,1,1
+CA Office of the Provost,approver,Office of the Provost,2,18,"Design, Contribute, Approve",approver,global.about.provostoffice.approver,1,1
+CA PK Chap,approver,PK Chap,2,2,"Design, Contribute, Approve",approver,global.alumni.pk-chap.approver,1,1
+CA PLS,approver,PLS,2,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA RC,approver,RC,2,2,"Design, Contribute, Approve",approver,global.events.research-conference.approver,1,1
+CA SONAM EA,approver,SONAM EA,2,18,"Design, Contribute, Approve",approver,east-africa.school-of-nursing-and-midwifery.approver,1,3
+CA SONAM Strategy,approver,SONAM Strategy,2,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA SOTL,approver,SOTL,2,2,"Design, Contribute, Approve",approver,global.events.sotl.approver,1,1
+CA SURGERY,approver,SURGERY,2,2,"Design, Contribute, Approve",approver,pakistan.medical-college.surgery.approver,1,1
+CA Students,approver,Students,2,80,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,global.events.parwaaz.approver; global.students.approver,2,6
+CA Surgical Conference,approver,Surgical Conference,2,2,"Design, Contribute, Approve",approver,global.events.aasc.approver,1,1
+CA UC-NBI,approver,UC-NBI,2,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA VRW,approver,VRW,2,12,"Design, Contribute, Approve",approver,space.approver,1,0
+CA WED,approver,WED,2,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA Wellness,approver,Wellness,2,28,"Design, Contribute, Approve",approver,space.approver,1,0
+CA vacancies,approver,vacancies,2,2,"Full Control, Edit, Read",admin,global.vacancies.contributor,1,1
+CA-SRC,other,CA-SRC,2,2,"Design, Approve",approver,space.approver,1,1
+CRM Approver,approver,CRM,2,24,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,global.events.rsc-conf.approver; pakistan.centre-for-regenerative-medicine.approver,2,2
+CRM Writer,writer,CRM,2,24,"Design, Contribute | Design, Contribute, Limited Access",contributor,global.events.rsc-conf.contributor; pakistan.centre-for-regenerative-medicine.contributor,2,2
+CW 5UC,writer,5UC,2,2,"Design, Contribute",contributor,global.events.5uc.contributor,1,1
+CW ACC,writer,ACC,2,2,"Design, Contribute",contributor,global.events.acc.contributor,1,1
+CW AECHRS,writer,AECHRS,2,2,"Design, Edit, Contribute",contributor,global.events.aechrs.contributor,1,1
+CW AF,writer,AF,2,2,"Design, Contribute",contributor,pakistan.medical-college.transform-lives.contributor,1,1
+CW APN,writer,APN,2,2,"Design, Contribute",contributor,global.events.apn.contributor,1,1
+CW ARI,writer,ARI,2,2,"Design, Contribute",contributor,global.events.ari.contributor,1,1
+CW CCIT,writer,CCIT,2,10,"Design, Contribute",contributor,pakistan.medical-college.critical-creative-innovative-thinking.contributor,1,2
+CW CETE,writer,CETE,2,14,"Design, Contribute | Design, Contribute, Limited Access",contributor,pakistan.centre-of-excellence-for-trauma-and-emergencies.contributor,1,1
+CW DHRC,writer,DHRC,2,12,"Design, Contribute",contributor,pakistan.digital-health-resource-centre.contributor,1,1
+CW Data Office,writer,Data Office,2,8,"Design, Contribute | Design, Contribute, Limited Access",contributor,global.data-innovation-office.contributor,1,1
+CW EA Lib,writer,EA Lib,2,12,"Design, Contribute",contributor,global.library.ea.contributor,1,6
+CW ELE,writer,ELE,2,16,"Design, Contribute",contributor,global.ele-net.contributor,1,1
+CW GNV,writer,GNV,2,6,"Design, Contribute",contributor,space.contributor,1,0
+CW IHD news,writer,IHD news,2,114,"Design, Contribute",contributor,space.contributor,1,0
+CW MHR,writer,MHR,2,2,"Design, Contribute",contributor,space.contributor,1,0
+CW PLS,writer,PLS,2,2,"Design, Contribute",contributor,space.contributor,1,0
+CW PNOS,writer,PNOS,2,2,"Design, Contribute",contributor,global.events.pnos.contributor,1,1
+CW RC,writer,RC,2,2,"Design, Contribute",contributor,global.events.research-conference.contributor,1,1
+CW Registrar Office,writer,Registrar Office,2,2,"Design, Contribute",contributor,global.registrar.contributor,1,1
+CW Research Office,writer,Research Office,2,4,"Design, Contribute, Limited Access",contributor,space.contributor,1,0
+CW UC-NBI,writer,UC-NBI,2,2,"Design, Contribute",contributor,space.contributor,1,0
+CW WED,writer,WED,2,2,"Design, Contribute",contributor,space.contributor,1,0
+CW-SRC,other,CW-SRC,2,2,"Design, Contribute",contributor,space.contributor,1,1
+EAI News Approver,approver,EAI,2,184,"Design, Contribute, Approve | Approve | Contribute, Approve",approver,east-africa.east-africa-institute.approver,1,0
+ELE News Writer,writer,ELE,2,114,"Design, Contribute",contributor,global.ele-net.contributor,1,0
+Global news writers,other,Global,2,92,"Design, Contribute",contributor,space.contributor,1,0
+ISMC Approver,approver,ISMC,2,184,"Contribute, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.approver,1,0
+MC Events,other,MC Events,2,2,"Design, Contribute, Approve",approver,pakistan.medical-college.events.approver,1,1
+MC_PK_NEWS_Writer,writer,MC_PK_NEWS_,2,184,"Design, Contribute | Contribute",contributor,space.contributor,1,0
+Sonam PK News Approver,approver,Sonam PK,2,100,"Contribute, Approve",approver,space.approver,1,0
+CA 5UC,approver,5UC,1,1,"Design, Contribute, Approve",approver,global.events.5uc.approver,1,1
+CA AECHRS,approver,AECHRS,1,1,"Design, Contribute, Approve",approver,global.events.aechrs.approver,1,1
+CA AERR,approver,AERR,1,8,"Design, Contribute, Approve",approver,tanzania.arusha-climate-and-environmental-research-centre.approver,1,1
+CA AF,approver,AF,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.transform-lives.approver,1,1
+CA AFRICME,approver,AFRICME,1,2,"Contribute, Approve",approver,global.events.approver,1,2
+CA AH,approver,AH,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.allied-health.approver,1,1
+CA APN,approver,APN,1,1,"Design, Contribute, Approve",approver,global.events.apn.approver,1,1
+CA ARI,approver,ARI,1,1,"Design, Contribute, Approve",approver,global.events.ari.approver,1,1
+CA About,approver,About,1,8,"Design, Contribute, Approve",approver,global.about.onwards.approver,1,1
+CA Alumni Affairs,approver,Alumni Affairs,1,13,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,global.alumni.approver,1,4
+CA Anaesthesiology,approver,Anaesthesiology,1,93,"Design, Contribute, Approve | Approve",approver,pakistan.medical-college.anaes.approver,1,1
+CA BBS,approver,BBS,1,94,"Design, Contribute, Approve | Approve",approver,pakistan.medical-college.bbs.approver,1,1
+CA CCBP,approver,CCBP,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.ccbp.approver,1,1
+CA CCIT,approver,CCIT,1,5,"Design, Contribute, Approve",approver,pakistan.medical-college.critical-creative-innovative-thinking.approver,1,2
+CA CETE,approver,CETE,1,7,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,pakistan.centre-of-excellence-for-trauma-and-emergencies.approver,1,1
+CA CHS,approver,CHS,1,95,"Design, Contribute, Approve",approver,pakistan.medical-college.chs.approver,1,1
+CA CIME,approver,CIME,1,9,"Approve | Design, Contribute, Approve",approver,global.centre-for-innovation-in-medical-education.approver; global.events.simpact.approver,2,2
+CA COVID Symposium,approver,COVID Symposium,1,1,"Design, Contribute, Approve",approver,global.events.covid19-symposium.approver,1,1
+CA CTU,approver,CTU,1,97,"Design, Contribute, Approve | Approve",approver,pakistan.clinical-trials-unit.approver,1,1
+CA Cancer Centre,approver,Cancer Centre,1,6,"Design, Contribute, Approve",approver,pakistan.cancer-centre.approver,1,1
+CA Connect,approver,Connect,1,1,"Design, Contribute, Approve",approver,global.events.connect-aku-series.approver,1,1
+CA DCPE,approver,DCPE,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.dcpe.approver,1,1
+CA DED,approver,DED,1,95,"Design, Contribute, Approve",approver,pakistan.medical-college.ded.approver,1,1
+CA DEI&B,approver,DEI&B,1,2,"Design, Contribute, Approve",approver,global.deib.approver,1,1
+CA DHRC,approver,DHRC,1,6,"Design, Contribute, Approve",approver,pakistan.digital-health-resource-centre.approver,1,1
+CA DS,approver,DS,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.data-science.approver,1,1
+CA DTEA,approver,DTEA,1,1,"Design, Contribute, Approve",approver,global.events.dtea.approver,1,1
+CA Data Office,approver,Data Office,1,4,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,global.data-innovation-office.approver,1,1
+CA Dept of Medicine,approver,Dept of Medicine,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.med.approver,1,1
+CA EAI,approver,EAI,1,100,"Design, Contribute, Approve",approver,east-africa.east-africa-institute.approver,1,1
+CA ELE,approver,ELE,1,100,"Design, Contribute, Approve",approver,global.ele-net.approver,1,1
+CA ELIMU,approver,ELIMU,1,1,"Design, Contribute, Approve",approver,global.events.elimu.approver,1,1
+CA Emerita,approver,Emerita,1,1,"Design, Contribute, Approve",approver,global.emeritus-prof.approver,1,1
+CA Environmental Responsibility,approver,Environmental Responsibility,1,2,"Design, Contribute, Approve",approver,global.about.environment.approver,1,1
+CA FAS EA,approver,FAS EA,1,2,"Design, Contribute, Approve",approver,space.approver,1,0
+CA FAS PK,approver,FAS PK,1,13,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,pakistan.faculty-of-arts-and-sciences.approver,1,2
+CA FD,approver,FD,1,1,"Full Control, Edit, Read",admin,space.admin,1,0
+CA Family Medicine,approver,Family Medicine,1,93,"Design, Contribute, Approve",approver,pakistan.medical-college.fam-med.approver,1,1
+CA GNV,approver,GNV,1,3,"Design, Contribute, Approve",approver,space.approver,1,0
+CA GSMC,approver,GSMC,1,3,"Design, Contribute, Approve",approver,space.approver,1,0
+CA GSMC News,approver,GSMC News,1,19,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve",approver,space.approver,1,0
+CA GT,approver,GT,1,1,"Design, Contribute, Approve",approver,global.supportus.giving-tuesday.approver,1,1
+CA Governance,approver,Governance,1,5,"Design, Contribute, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.governance-programme.approver,1,1
+CA Graduate Programmes,approver,Graduate Programmes,1,97,"Design, Contribute, Approve | Approve",approver,pakistan.institute-for-educational-development.approver,1,5
+CA HDP,approver,HDP,1,93,"Design, Contribute, Approve",approver,pakistan.medical-college.hdp.approver,1,1
+CA HR,approver,HR,1,104,"Design, Contribute, Approve | Approve",approver,global.careers.approver; global.digital-flipbooks.approver,2,3
+CA HSRA,approver,HSRA,1,1,"Design, Contribute, Approve",approver,global.events.hsra.approver,1,1
+CA ICNM,approver,ICNM,1,1,"Design, Contribute, Approve",approver,global.events.icnm.approver,1,1
+CA ICU,approver,ICU,1,1,"Design, Contribute, Approve",approver,space.approver,1,0
+CA IED PK,approver,IED PK,1,31,"Design, Contribute, Approve | Approve",approver,pakistan.institute-for-educational-development.approver,1,7
+CA IED PK Research,approver,IED PK Research,1,3,"Design, Contribute, Approve | Approve",approver,global.events.iedpk-intl-conf.approver; pakistan.institute-for-educational-development.research.approver,2,2
+CA IGHD,approver,IGHD,1,7,"Design, Contribute, Approve",approver,space.approver,1,0
+CA IGHD News,approver,IGHD News,1,2,"Design, Contribute, Limited Access, Approve",approver,space.approver,1,0
+CA IHD,approver,IHD,1,9,"Design, Contribute, Approve",approver,global.events.icehd.approver; global.institute-for-human-development.approver,2,3
+CA IIP,approver,IIP,1,6,"Limited Access | Design, Contribute, Limited Access, Approve",approver,global.geo.approver,1,2
+CA IPC,approver,IPC,1,59,"Design, Contribute, Approve",approver,global.events.inter-professional-conf.approver,1,1
+CA ISMC Publication,approver,ISMC Publication,1,1,"Design, Contribute, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.publications.approver,1,1
+CA ISMC Research,approver,ISMC Research,1,6,"Design, Contribute, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.research.approver,1,1
+CA ISRC,approver,ISRC,1,1,"Design, Contribute, Approve",approver,global.events.isrc.approver,1,1
+CA Library,approver,Library,1,109,"Design, Contribute, Approve",approver,global.library.approver,1,14
+CA Library News,approver,Library News,1,50,"Contribute, Approve",approver,space.approver,1,0
+CA MC EA,approver,MC EA,1,19,"Design, Contribute, Approve",approver,east-africa.medical-college.approver; global.events.approver,2,5
+CA MC PK,approver,MC PK,1,57,"Design, Contribute, Approve | Approve",approver,pakistan.medical-college.approver,1,29
+CA MCA,approver,MCA,1,8,"Design, Contribute, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.muslim-civilisations-abstract-project.approver,1,1
+CA MRTC,approver,MRTC,1,5,"Design, Contribute, Approve",approver,pakistan.medical-college.mother-and-child-health-research-and-training-centre.approver,1,1
+CA MycologyConf,approver,MycologyConf,1,1,"Design, Contribute, Approve",approver,global.events.mycology-conference.approver,1,1
+CA Neuroscience Conference,approver,Neuroscience Conference,1,1,"Design, Contribute, Approve",approver,global.events.neuro-conf.approver,1,1
+CA ODOS,approver,ODOS,1,44,"Design, Contribute, Approve",approver,global.events.sports-olympiad.approver,1,2
+CA Obs and Gyn,approver,Obs and Gyn,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.obs-gyn.approver,1,1
+CA Office of the President,approver,Office of the President,1,4,"Design, Contribute, Approve | Approve",approver,global.about.approver,1,3
+CA Ophtho,approver,Ophtho,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.ophthalmology.approver,1,1
+CA PGME PK,approver,PGME PK,1,5,"Design, Contribute, Approve",approver,pakistan.medical-college.approver,1,4
+CA PHC Sym,approver,PHC Sym,1,1,"Design, Contribute, Approve",approver,global.events.phc-sym.approver,1,1
+CA PNOS,approver,PNOS,1,1,"Design, Contribute, Approve",approver,global.events.pnos.approver,1,1
+CA PRO,approver,PRO,1,58,"Design, Contribute, Approve",approver,space.approver,1,0
+CA PS,approver,PS,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.patient-safety.approver,1,1
+CA Paeds,approver,Paeds,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.paeds.approver,1,1
+CA Partnerships Office,approver,Partnerships Office,1,6,"Design, Contribute, Approve",approver,global.geo.approver,1,2
+CA Pathology,approver,Pathology,1,4,"Design, Contribute, Approve",approver,pakistan.medical-college.pathology.approver,1,1
+CA Psychiatry,approver,Psychiatry,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.psychiatry.approver,1,1
+CA QTL,approver,QTL,1,6,"Design, Contribute, Approve",approver,space.approver,1,0
+CA RD,approver,RD,1,1,Approve,approver,global.events.rare-diseases-conf.approver,1,1
+CA Registrar,approver,Registrar,1,154,"Design, Contribute, Approve | Design, Contribute, Limited Access, Approve | Contribute",approver,global.admissions.approver; global.registrar.approver; global.sdg-hub.approver,3,7
+CA Registrar Office,approver,Registrar Office,1,1,"Design, Contribute, Approve",approver,global.registrar.approver,1,1
+CA Research Office,approver,Research Office,1,2,"Design, Contribute, Limited Access, Approve",approver,space.approver,1,0
+CA Research and Graduate Studies,approver,Research and Graduate Studies,1,18,"Design, Contribute, Approve",approver,global.research.approver,1,1
+CA Resource Development,approver,Resource Development,1,19,"Design, Contribute, Approve",approver,global.supportus.approver,1,2
+CA SIG,approver,SIG,1,1,"Design, Contribute, Approve",approver,pakistan.medical-college.sig.approver,1,1
+CA SIG News,approver,SIG News,1,2,"Design, Contribute, Limited Access, Approve",approver,space.approver,1,0
+CA SONAM PK,approver,SONAM PK,1,13,"Design, Contribute, Approve | Approve",approver,global.events.inmd.approver; pakistan.school-of-nursing-and-midwifery.approver,2,4
+CA Vroom,approver,Vroom,1,1,"Design, Contribute, Approve",approver,global.vroom.approver,1,1
+CA WHD,approver,WHD,1,1,"Design, Approve",approver,global.events.whd.approver,1,1
+CA environment,approver,environment,1,2,"Design, Contribute, Limited Access, Approve",approver,space.approver,1,0
+CIME News Approver,approver,CIME,1,92,"Design, Contribute, Approve | Contribute, Approve",approver,global.centre-for-innovation-in-medical-education.approver; global.events.simpact.approver,2,0
+COE WCH News Approvers,approver,COE WCH,1,92,"Contribute, Approve | Approve",approver,global.centre-of-excellence-in-women-and-child-health.approver,1,0
+CRU CA,other,CRU CA,1,1,"Design, Contribute, Approve",approver,space.approver,1,0
+CW AFRICME,writer,AFRICME,1,2,"Design, Contribute",contributor,global.events.contributor,1,2
+CW COVID Symposium,writer,COVID Symposium,1,1,"Design, Contribute",contributor,global.events.covid19-symposium.contributor,1,1
+CW Cancer Centre,writer,Cancer Centre,1,6,"Design, Contribute",contributor,pakistan.cancer-centre.contributor,1,1
+CW Connect,writer,Connect,1,1,"Design, Contribute",contributor,global.events.connect-aku-series.contributor,1,1
+CW DSC,writer,DSC,1,1,"Design, Contribute",contributor,global.library.pk.av.contributor,1,1
+CW ELIMU,writer,ELIMU,1,1,"Design, Contribute",contributor,global.events.elimu.contributor,1,1
+CW ES,writer,ES,1,1,"Design, Contribute",contributor,space.contributor,1,0
+CW FAS EA,writer,FAS EA,1,2,"Design, Contribute",contributor,space.contributor,1,0
+CW FAS Lib,writer,FAS Lib,1,1,"Design, Contribute",contributor,global.library.pk.fas.contributor,1,1
+CW FD,writer,FD,1,1,"Edit, Read",contributor,space.contributor,1,0
+CW FHS,writer,FHS,1,1,"Design, Contribute",contributor,global.library.pk.fhs.contributor,1,1
+CW GT,writer,GT,1,1,"Design, Contribute",contributor,global.supportus.giving-tuesday.contributor,1,1
+CW Graduate Programmes,writer,Graduate Programmes,1,5,"Design, Contribute",contributor,pakistan.institute-for-educational-development.contributor,1,5
+CW HSRA,writer,HSRA,1,1,"Design, Contribute",contributor,global.events.hsra.contributor,1,1
+CW ICNM,writer,ICNM,1,1,"Design, Contribute",contributor,global.events.icnm.contributor,1,1
+CW ICU,writer,ICU,1,1,"Design, Contribute",contributor,space.contributor,1,0
+CW IED Lib,writer,IED Lib,1,3,"Design, Contribute",contributor,global.library.pk.contributor,1,3
+CW IGHD,writer,IGHD,1,7,"Design, Contribute",contributor,space.contributor,1,0
+CW IGHD News,writer,IGHD News,1,2,"Design, Contribute, Limited Access",contributor,space.contributor,1,0
+CW IPC,writer,IPC,1,59,"Design, Contribute",contributor,global.events.inter-professional-conf.contributor,1,1
+CW ISMC Publication,writer,ISMC Publication,1,1,"Design, Contribute",contributor,united-kingdom.institute-for-the-study-of-muslim-civilisations.publications.contributor,1,1
+CW ISRC,writer,ISRC,1,1,"Design, Contribute",contributor,global.events.isrc.contributor,1,1
+CW Lecture Series,writer,Lecture Series,1,1,"Design, Contribute",contributor,global.events.fhs-lecture-series.contributor,1,1
+CW Lib Archives,writer,Lib Archives,1,1,"Design, Contribute",contributor,global.library.ulo.archives.contributor,1,1
+CW Library,writer,Library,1,109,"Design, Contribute",contributor,global.library.contributor,1,14
+CW Library News,writer,Library News,1,50,Contribute,contributor,space.contributor,1,0
+CW MCA,writer,MCA,1,8,"Design, Contribute",contributor,united-kingdom.institute-for-the-study-of-muslim-civilisations.muslim-civilisations-abstract-project.contributor,1,1
+CW MycologyConf,writer,MycologyConf,1,1,"Design, Contribute",contributor,global.events.mycology-conference.contributor,1,1
+CW Neuroscience Conference,writer,Neuroscience Conference,1,1,"Design, Contribute",contributor,global.events.neuro-conf.contributor,1,1
+CW ODOS,writer,ODOS,1,44,"Design, Contribute",contributor,global.events.sports-olympiad.contributor,1,2
+CW Office of the President,writer,Office of the President,1,4,"Design, Contribute",contributor,global.about.contributor,1,3
+CW RD,writer,RD,1,1,"Design, Contribute",contributor,global.events.rare-diseases-conf.contributor,1,1
+CW Resource Development,writer,Resource Development,1,19,"Design, Contribute",contributor,global.supportus.contributor,1,2
+CW SIG,writer,SIG,1,1,"Design, Contribute",contributor,pakistan.medical-college.sig.contributor,1,1
+CW SIG News,writer,SIG News,1,2,"Design, Contribute, Limited Access",contributor,space.contributor,1,0
+CW SONAM PK,writer,SONAM PK,1,13,"Design, Contribute",contributor,global.events.inmd.contributor; pakistan.school-of-nursing-and-midwifery.contributor,2,4
+CW SONAM Strategy,writer,SONAM Strategy,1,1,"Design, Contribute",contributor,space.contributor,1,0
+CW VRW,writer,VRW,1,6,"Design, Contribute",contributor,space.contributor,1,0
+CW WHD,writer,WHD,1,1,"Design, Contribute",contributor,global.events.whd.contributor,1,1
+CW Wellness,writer,Wellness,1,14,"Design, Contribute",contributor,space.contributor,1,0
+CW environment,writer,environment,1,2,"Design, Contribute, Limited Access",contributor,space.contributor,1,0
+ELE News Approver,approver,ELE,1,57,"Design, Contribute, Approve",approver,global.ele-net.approver,1,0
+Facilities Members,reader,Facilities Members,1,1,Contribute,contributor,space.contributor,1,0
+FacultyOwners-ismc,owner,FacultyOwners-ismc,1,109,"Contribute, Approve | Limited Access, Approve | Contribute, Limited Access, Approve",approver,united-kingdom.institute-for-the-study-of-muslim-civilisations.approver,1,4
+GSMC Approver,approver,GSMC,1,3,"Design, Contribute, Approve",approver,space.approver,1,0
+IED EA News Approver,approver,IED EA,1,92,"Design, Contribute, Approve | Approve | Contribute, Approve",approver,east-africa.institute-for-educational-development.approver,1,0
+IED PK News Approver,approver,IED PK,1,92,"Contribute, Approve | Approve | Design, Contribute, Approve",approver,pakistan.institute-for-educational-development.approver,1,0
+IED PK News Writer,writer,IED PK,1,92,"Design, Contribute | Contribute",contributor,pakistan.institute-for-educational-development.contributor,1,0
+MC EA News Approvers,approver,MC EA,1,57,"Design, Contribute, Approve",approver,east-africa.medical-college.approver; global.events.approver,2,0
+MC_PK_NEWS_Approver,approver,MC_PK_NEWS_,1,92,"Contribute, Approve | Approve",approver,space.approver,1,0
+Procurement Members,reader,Procurement Members,1,1,Contribute,contributor,space.contributor,1,0
+Provost Office News Approver,approver,Provost Office,1,93,Approve,approver,global.academics.approver,1,1
+Provost Office News Writer,writer,Provost Office,1,93,Contribute,contributor,global.academics.contributor,1,1
+QTL News Approver,approver,QTL,1,92,"Contribute, Approve | Approve",approver,space.approver,1,0
+Reg Members,reader,Reg Members,1,1,Contribute,contributor,global.events.sports-olympiad.reg.contributor,1,1
+Resources Members,reader,Resources Members,1,1,Contribute,contributor,space.contributor,1,0
+Sonam EA News Approver,approver,Sonam EA,1,57,"Contribute, Approve",approver,space.approver,1,0
+Sonam PK News Writer,writer,Sonam PK,1,50,"Design, Contribute",contributor,space.contributor,1,0
+Style Resource Readers,reader,Style Resource Readers,1,610,Limited Access,(none — grants nothing),space.viewer,1,164
+Test-SupportUs Members,reader,Test-SupportUs Members,1,6,Contribute,contributor,space.contributor,1,0
+The Kenya National Education Conference Members,reader,The Kenya National Education Conference Members,1,1,Contribute,contributor,global.events.knec.contributor,1,1
+World Health Day Members,reader,World Health Day Members,1,1,Contribute,contributor,global.events.whd.contributor,1,1
+AKU Challenge Visitors,reader,AKU Challenge Visitors,0,1,Read,viewer,space.viewer,1,1
+CA ANS,approver,ANS,0,92,"Design, Contribute, Approve",approver,space.approver,1,0
+CA BScN Programme,approver,BScN Programme,0,92,"Design, Contribute, Approve",approver,space.approver,1,0
+CA Convocation,approver,Convocation,0,100,"Design, Contribute, Approve | Design, Contribute, Approve, Manage Permissions",admin,global.convocation.approver; global.convocation.contributor,2,1
+CA news training,approver,news training,0,55,"Design, Contribute, Approve",approver,global.about.onwards.approver,1,1
+CW About,writer,About,0,8,"Design, Contribute",contributor,global.about.onwards.contributor,1,1
+Designers,platform,Designers,0,609,"Design, Limited Access",(none — grants nothing),component-developer,1,163
+Hierarchy Managers,platform,Hierarchy Managers,0,604,"Manage Hierarchy | Limited Access, Manage Hierarchy",steward,space.steward,1,162
+Restricted Readers,reader,Restricted Readers,0,610,"Restricted Read | Limited Access, Restricted Read",viewer,space.viewer,1,164
+Traineeship Opportunities Members,reader,Traineeship Opportunities Members,0,1,Contribute,contributor,global.careers.traineeship.contributor,1,1
+Translation Managers,translator,Translation Managers,0,224,Restricted Interfaces for Translation,(none — grants nothing),translator,1,29

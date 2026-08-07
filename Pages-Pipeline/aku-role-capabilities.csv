@@ -1,0 +1,18 @@
+﻿action,viewer,contributor,approver,steward,admin
+Read a published story,y,y,y,y,y
+Read an unpublished draft,y,y,y,y,y
+Comment on a story,y,y,y,y,y
+Create a story,-,s,s,s,y
+Edit and save a draft,-,s,s,s,y
+Upload an asset into a story,-,s,s,s,y
+"Publish, so the public sees it",-,-,s,s,y
+Unpublish or schedule,-,-,s,s,y
+Delete a story,-,-,s,s,y
+Create or rename a folder,-,-,-,s,y
+Move a folder or its stories,-,-,-,s,y
+Delete a folder,-,-,-,-,y
+Change a component schema,-,-,-,-,y
+Edit the asset library outside a story,-,-,-,-,y
+Edit datasources or tags,-,-,-,-,y
+Create a role or change its scope,-,-,-,-,y
+Change space settings or webhooks,-,-,-,-,y

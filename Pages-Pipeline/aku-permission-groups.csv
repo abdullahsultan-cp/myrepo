@@ -1,0 +1,281 @@
+﻿storyblok_role,capability,can_publish,unit,members,folders_scoped,source_sharepoint_groups,allowed_paths,note
+5uc-editor,editor,no,5UC,2,1,CW 5UC,regions/global/events/5uc,
+5uc-publisher,publisher,yes,5UC,1,1,CA 5UC,regions/global/events/5uc,
+about-editor,editor,no,About,0,1,CW About,regions/global/about/onwards,
+about-publisher,publisher,yes,About,1,1,CA About,regions/global/about/onwards,
+acc-editor,editor,no,ACC,2,1,CW ACC,regions/global/events/acc,
+acc-publisher,publisher,yes,ACC,2,1,CA ACC,regions/global/events/acc,
+aechrs-editor,editor,no,AECHRS,2,1,CW AECHRS,regions/global/events/aechrs,
+aechrs-publisher,publisher,yes,AECHRS,1,1,CA AECHRS,regions/global/events/aechrs,
+aerr-editor,editor,no,AERR,4,1,CW AERR,regions/tanzania/entities/arusha-climate-and-environmental-research-centre,
+aerr-publisher,publisher,yes,AERR,1,1,CA AERR,regions/tanzania/entities/arusha-climate-and-environmental-research-centre,
+af-editor,editor,no,AF,2,1,CW AF,regions/pakistan/entities/medical-college/transform-lives,
+af-publisher,publisher,yes,AF,1,1,CA AF,regions/pakistan/entities/medical-college/transform-lives,
+africme-editor,editor,no,AFRICME,1,2,CW AFRICME,regions/global/events/africme; regions/global/events/knec,
+africme-publisher,publisher,yes,AFRICME,1,2,CA AFRICME,regions/global/events/africme; regions/global/events/knec,
+ah-editor,editor,no,AH,5,1,CW AH,regions/pakistan/entities/medical-college/allied-health,
+ah-publisher,publisher,yes,AH,1,1,CA AH,regions/pakistan/entities/medical-college/allied-health,
+alumni-affairs-editor,editor,no,Alumni Affairs,4,4,CW Alumni Affairs,regions/global/alumni; regions/global/alumni/aerf; regions/global/alumni/pk-chap; regions/global/alumni/update-your-info,
+alumni-affairs-publisher,publisher,yes,Alumni Affairs,1,4,CA Alumni Affairs,regions/global/alumni; regions/global/alumni/aerf; regions/global/alumni/pk-chap; regions/global/alumni/update-your-info,
+anaesthesiology-editor,editor,no,Anaesthesiology,7,1,CW Anaesthesiology,regions/pakistan/entities/medical-college/departments/anaes,
+anaesthesiology-publisher,publisher,yes,Anaesthesiology,1,1,CA Anaesthesiology,regions/pakistan/entities/medical-college/departments/anaes,
+ans-publisher,publisher,yes,ANS,0,0,CA ANS,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+apn-editor,editor,no,APN,2,1,CW APN,regions/global/events/apn,
+apn-publisher,publisher,yes,APN,1,1,CA APN,regions/global/events/apn,
+ari-editor,editor,no,ARI,2,1,CW ARI,regions/global/events/ari,
+ari-publisher,publisher,yes,ARI,1,1,CA ARI,regions/global/events/ari,
+bbs-editor,editor,no,BBS,4,1,CW BBS,regions/pakistan/entities/medical-college/departments/bbs,
+bbs-publisher,publisher,yes,BBS,1,1,CA BBS,regions/pakistan/entities/medical-college/departments/bbs,
+bmi-editor,editor,no,BMI,4,2,CW BMI,regions/global/events/bmi-conf; regions/global/events/student-mental-health,
+bmi-news-editor,editor,no,BMI News,3,0,CW BMI News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+bmi-news-publisher,publisher,yes,BMI News,2,0,CA BMI News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+bmi-publisher,publisher,yes,BMI,2,2,CA BMI,regions/global/events/bmi-conf; regions/global/events/student-mental-health,
+bscn-programme-publisher,publisher,yes,BScN Programme,0,0,CA BScN Programme,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+cancer-centre-editor,editor,no,Cancer Centre,1,1,CW Cancer Centre,regions/pakistan/cancer-centre,
+cancer-centre-publisher,publisher,yes,Cancer Centre,1,1,CA Cancer Centre,regions/pakistan/cancer-centre,
+ccbp-publisher,publisher,yes,CCBP,1,1,CA CCBP,regions/pakistan/entities/medical-college/ccbp,
+ccit-editor,editor,no,CCIT,2,2,CW CCIT,regions/pakistan/entities/medical-college/critical-creative-innovative-thinking; regions/pakistan/entities/medical-college/critical-creative-innovative-thinking/events,
+ccit-publisher,publisher,yes,CCIT,1,2,CA CCIT,regions/pakistan/entities/medical-college/critical-creative-innovative-thinking; regions/pakistan/entities/medical-college/critical-creative-innovative-thinking/events,
+cete-editor,editor,no,CETE,2,1,CW CETE,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies,
+cete-publisher,publisher,yes,CETE,1,1,CA CETE,regions/pakistan/entities/centre-of-excellence-for-trauma-and-emergencies,
+chs-editor,editor,no,CHS,4,1,CW CHS,regions/pakistan/entities/medical-college/departments/chs,
+chs-publisher,publisher,yes,CHS,1,1,CA CHS,regions/pakistan/entities/medical-college/departments/chs,
+cime-editor,editor,no,CIME,7,2,CIME News Writer; CW CIME,regions/global/entities/centre-for-innovation-in-medical-education; regions/global/events/simpact,
+cime-publisher,publisher,yes,CIME,2,2,CA CIME; CIME News Approver,regions/global/entities/centre-for-innovation-in-medical-education; regions/global/events/simpact,
+coe-wch-editor,editor,no,COE WCH,9,2,COE WCH News Writer; CW COE WCH,regions/global/entities/centre-of-excellence-in-women-and-child-health; regions/global/entities/centre-of-excellence-in-women-and-child-health/events,
+coe-wch-publisher,publisher,yes,COE WCH,3,2,CA COE WCH; COE WCH News Approvers,regions/global/entities/centre-of-excellence-in-women-and-child-health; regions/global/entities/centre-of-excellence-in-women-and-child-health/events,
+connect-editor,editor,no,Connect,1,1,CW Connect,regions/global/events/connect-aku-series,
+connect-publisher,publisher,yes,Connect,1,1,CA Connect,regions/global/events/connect-aku-series,
+convocation-editor,editor,no,Convocation,4,1,CW Convocation,regions/global/convocation,
+convocation-publisher,publisher,yes,Convocation,0,1,CA Convocation,regions/global/convocation,
+covid-symposium-editor,editor,no,COVID Symposium,1,1,CW COVID Symposium,regions/global/events/covid19-symposium,
+covid-symposium-publisher,publisher,yes,COVID Symposium,1,1,CA COVID Symposium,regions/global/events/covid19-symposium,
+crm-editor,editor,no,CRM,2,2,CRM Writer,regions/global/events/rsc-conf; regions/pakistan/entities/centre-for-regenerative-medicine,
+crm-publisher,publisher,yes,CRM,2,2,CRM Approver,regions/global/events/rsc-conf; regions/pakistan/entities/centre-for-regenerative-medicine,
+ctu-editor,editor,no,CTU,7,1,CW CTU,regions/pakistan/entities/clinical-trials-unit,
+ctu-publisher,publisher,yes,CTU,1,1,CA CTU,regions/pakistan/entities/clinical-trials-unit,
+data-office-editor,editor,no,Data Office,2,1,CW Data Office,regions/global/data-innovation-office,
+data-office-publisher,publisher,yes,Data Office,1,1,CA Data Office,regions/global/data-innovation-office,
+dcpe-editor,editor,no,DCPE,4,1,CW DCPE,regions/pakistan/entities/medical-college/departments/dcpe,
+dcpe-publisher,publisher,yes,DCPE,1,1,CA DCPE,regions/pakistan/entities/medical-college/departments/dcpe,
+ded-editor,editor,no,DED,7,1,CW DED,regions/pakistan/entities/medical-college/departments/ded,
+ded-publisher,publisher,yes,DED,1,1,CA DED,regions/pakistan/entities/medical-college/departments/ded,
+deiandb-editor,editor,no,DEI&B,4,1,CW DEI&B,regions/global/deib,
+deiandb-publisher,publisher,yes,DEI&B,1,1,CA DEI&B,regions/global/deib,
+dept-of-medicine-editor,editor,no,Dept of Medicine,6,1,CW Dept of Medicine,regions/pakistan/entities/medical-college/departments/med,
+dept-of-medicine-publisher,publisher,yes,Dept of Medicine,1,1,CA Dept of Medicine,regions/pakistan/entities/medical-college/departments/med,
+dhrc-editor,editor,no,DHRC,2,1,CW DHRC,regions/pakistan/entities/digital-health-resource-centre,
+dhrc-publisher,publisher,yes,DHRC,1,1,CA DHRC,regions/pakistan/entities/digital-health-resource-centre,
+ds-editor,editor,no,DS,6,1,CW DS,regions/pakistan/entities/medical-college/data-science,
+ds-publisher,publisher,yes,DS,1,1,CA DS,regions/pakistan/entities/medical-college/data-science,
+dsc-editor,editor,no,DSC,1,1,CW DSC,regions/global/library/pk/av,
+dsc-publisher,publisher,yes,DSC,3,1,CA DSC,regions/global/library/pk/av,
+dtea-editor,editor,no,DTEA,4,1,CW DTEA,regions/global/events/dtea,
+dtea-publisher,publisher,yes,DTEA,1,1,CA DTEA,regions/global/events/dtea,
+ea-lib-editor,editor,no,EA Lib,2,6,CW EA Lib,regions/global/library/ea; regions/global/library/ea/akuk; regions/global/library/ea/fhs-daressalaam; regions/global/library/ea/fhs-kampala; regions/global/library/ea/gsmc; regions/global/library/ea/ied-daressalaam,
+ea-lib-publisher,publisher,yes,EA Lib,3,6,CA EA Lib,regions/global/library/ea; regions/global/library/ea/akuk; regions/global/library/ea/fhs-daressalaam; regions/global/library/ea/fhs-kampala; regions/global/library/ea/gsmc; regions/global/library/ea/ied-daressalaam,
+eai-editor,editor,no,EAI,8,1,CW EAI; EAI News Writer,regions/east-africa/east-africa-institute,
+eai-publisher,publisher,yes,EAI,3,1,CA EAI; EAI News Approver,regions/east-africa/east-africa-institute,
+ele-editor,editor,no,ELE,4,1,CW ELE; ELE News Writer,regions/global/ele-net,
+ele-publisher,publisher,yes,ELE,2,1,CA ELE; ELE News Approver,regions/global/ele-net,
+elimu-editor,editor,no,ELIMU,1,1,CW ELIMU,regions/global/events/elimu,
+elimu-publisher,publisher,yes,ELIMU,1,1,CA ELIMU,regions/global/events/elimu,
+emergency-editor,editor,no,Emergency,5,1,CW Emergency,regions/pakistan/entities/medical-college/departments/em,
+emergency-publisher,publisher,yes,Emergency,2,1,CA Emergency,regions/pakistan/entities/medical-college/departments/em,
+emerita-editor,editor,no,Emerita,4,1,CW Emerita,regions/global/emeritus-prof,
+emerita-publisher,publisher,yes,Emerita,1,1,CA Emerita,regions/global/emeritus-prof,
+environment-editor,editor,no,environment,1,0,CW environment,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+environment-publisher,publisher,yes,environment,1,0,CA environment,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+environmental-responsibility-editor,editor,no,Environmental Responsibility,3,1,CW Environmental Responsibility,regions/global/about/environment,
+environmental-responsibility-publisher,publisher,yes,Environmental Responsibility,1,1,CA Environmental Responsibility,regions/global/about/environment,
+es-editor,editor,no,ES,1,0,CW ES,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+es-publisher,publisher,yes,ES,2,0,CA ES,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+family-medicine-editor,editor,no,Family Medicine,4,1,CW Family Medicine,regions/pakistan/entities/medical-college/departments/fam-med,
+family-medicine-publisher,publisher,yes,Family Medicine,1,1,CA Family Medicine,regions/pakistan/entities/medical-college/departments/fam-med,
+fas-ea-editor,editor,no,FAS EA,1,0,CW FAS EA,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+fas-ea-publisher,publisher,yes,FAS EA,1,0,CA FAS EA,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+fas-lib-editor,editor,no,FAS Lib,1,1,CW FAS Lib,regions/global/library/pk/fas,
+fas-lib-publisher,publisher,yes,FAS Lib,3,1,CA FAS Lib,regions/global/library/pk/fas,
+fas-pk-editor,editor,no,FAS PK,7,2,CW FAS PK,regions/pakistan/entities/faculty-of-arts-and-sciences; regions/pakistan/entities/faculty-of-arts-and-sciences/faculty,
+fas-pk-publisher,publisher,yes,FAS PK,1,2,CA FAS PK,regions/pakistan/entities/faculty-of-arts-and-sciences; regions/pakistan/entities/faculty-of-arts-and-sciences/faculty,
+fd-editor,editor,no,FD,1,0,CW FD,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+fd-publisher,publisher,yes,FD,1,0,CA FD,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+fhs-editor,editor,no,FHS,1,1,CW FHS,regions/global/library/pk/fhs,
+fhs-publisher,publisher,yes,FHS,3,1,CA FHS,regions/global/library/pk/fhs,
+global-editor,editor,no,Global,4,0,Global Writers,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+global-publisher,publisher,yes,Global,3,0,Global Approvers,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+gnv-editor,editor,no,GNV,2,0,CW GNV,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+gnv-publisher,publisher,yes,GNV,1,0,CA GNV,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+governance-editor,editor,no,Governance,3,1,CW Governance,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/governance-programme,
+governance-publisher,publisher,yes,Governance,1,1,CA Governance,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/governance-programme,
+graduate-programmes-editor,editor,no,Graduate Programmes,1,5,CW Graduate Programmes,regions/pakistan/entities/institute-for-educational-development/adv-diploma; regions/pakistan/entities/institute-for-educational-development/alumni; regions/pakistan/entities/institute-for-educational-development/med; regions/pakistan/entities/institute-for-educational-development/mphil; regions/pakistan/entities/institute-for-educational-development/phd,
+graduate-programmes-publisher,publisher,yes,Graduate Programmes,1,5,CA Graduate Programmes,regions/pakistan/entities/institute-for-educational-development/adv-diploma; regions/pakistan/entities/institute-for-educational-development/alumni; regions/pakistan/entities/institute-for-educational-development/med; regions/pakistan/entities/institute-for-educational-development/mphil; regions/pakistan/entities/institute-for-educational-development/phd,
+gsmc-editor,editor,no,GSMC,12,0,CW GSMC; GSMC Writer,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+gsmc-news-editor,editor,no,GSMC News,4,0,CW GSMC News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+gsmc-news-publisher,publisher,yes,GSMC News,1,0,CA GSMC News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+gsmc-publisher,publisher,yes,GSMC,2,0,CA GSMC; GSMC Approver,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+gt-editor,editor,no,GT,1,1,CW GT,regions/global/supportus/giving-tuesday,
+gt-publisher,publisher,yes,GT,1,1,CA GT,regions/global/supportus/giving-tuesday,
+hdp-editor,editor,no,HDP,4,1,CW HDP,regions/pakistan/entities/medical-college/hdp,
+hdp-publisher,publisher,yes,HDP,1,1,CA HDP,regions/pakistan/entities/medical-college/hdp,
+hr-editor,editor,no,HR,6,3,CW HR,regions/global/careers; regions/global/careers/traineeship; regions/global/digital-flipbooks,
+hr-publisher,publisher,yes,HR,1,3,CA HR,regions/global/careers; regions/global/careers/traineeship; regions/global/digital-flipbooks,
+hsra-editor,editor,no,HSRA,1,1,CW HSRA,regions/global/events/hsra,
+hsra-publisher,publisher,yes,HSRA,1,1,CA HSRA,regions/global/events/hsra,
+icnm-editor,editor,no,ICNM,1,1,CW ICNM,regions/global/events/icnm,
+icnm-publisher,publisher,yes,ICNM,1,1,CA ICNM,regions/global/events/icnm,
+icu-editor,editor,no,ICU,1,0,CW ICU,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+icu-publisher,publisher,yes,ICU,1,0,CA ICU,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ied-ea-editor,editor,no,IED EA,10,3,CW IED EA; IED EA News Writer,regions/east-africa/entities/institute-for-educational-development; regions/east-africa/entities/institute-for-educational-development/events; regions/east-africa/entities/institute-for-educational-development/faculty,
+ied-ea-publisher,publisher,yes,IED EA,3,3,CA IED EA; IED EA News Approver,regions/east-africa/entities/institute-for-educational-development; regions/east-africa/entities/institute-for-educational-development/events; regions/east-africa/entities/institute-for-educational-development/faculty,
+ied-lib-editor,editor,no,IED Lib,1,3,CW IED Lib,regions/global/library/pk/ied; regions/global/library/pk/ied-chitral; regions/global/library/pk/ied-gilgit,
+ied-lib-publisher,publisher,yes,IED Lib,2,3,CA IED Lib,regions/global/library/pk/ied; regions/global/library/pk/ied-chitral; regions/global/library/pk/ied-gilgit,
+ied-pk-editor,editor,no,IED PK,8,7,CW IED PK; IED PK News Writer,regions/pakistan/entities/institute-for-educational-development; regions/pakistan/entities/institute-for-educational-development/adv-diploma; regions/pakistan/entities/institute-for-educational-development/alumni; regions/pakistan/entities/institute-for-educational-development/med; regions/pakistan/entities/institute-for-educational-development/mphil; regions/pakistan/entities/institute-for-educational-development/phd …,
+ied-pk-publisher,publisher,yes,IED PK,2,7,CA IED PK; IED PK News Approver,regions/pakistan/entities/institute-for-educational-development; regions/pakistan/entities/institute-for-educational-development/adv-diploma; regions/pakistan/entities/institute-for-educational-development/alumni; regions/pakistan/entities/institute-for-educational-development/med; regions/pakistan/entities/institute-for-educational-development/mphil; regions/pakistan/entities/institute-for-educational-development/phd …,
+ied-pk-research-editor,editor,no,IED PK Research,5,2,CW IED PK Research,regions/global/events/iedpk-intl-conf; regions/pakistan/entities/institute-for-educational-development/research,
+ied-pk-research-publisher,publisher,yes,IED PK Research,1,2,CA IED PK Research,regions/global/events/iedpk-intl-conf; regions/pakistan/entities/institute-for-educational-development/research,
+ighd-editor,editor,no,IGHD,1,0,CW IGHD,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ighd-news-editor,editor,no,IGHD News,1,0,CW IGHD News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ighd-news-publisher,publisher,yes,IGHD News,1,0,CA IGHD News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ighd-publisher,publisher,yes,IGHD,1,0,CA IGHD,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ihd-editor,editor,no,IHD,9,3,CW IHD,regions/global/entities/institute-for-human-development; regions/global/entities/institute-for-human-development/events; regions/global/events/icehd,
+ihd-news-editor,editor,no,IHD news,2,0,CW IHD news,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ihd-news-publisher,publisher,yes,IHD news,2,0,CA IHD news,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+ihd-publisher,publisher,yes,IHD,1,3,CA IHD,regions/global/entities/institute-for-human-development; regions/global/entities/institute-for-human-development/events; regions/global/events/icehd,
+iip-editor,editor,no,IIP,5,2,CW IIP,regions/global/geo; regions/global/geo/gmp,
+iip-publisher,publisher,yes,IIP,1,2,CA IIP,regions/global/geo; regions/global/geo/gmp,
+ipc-editor,editor,no,IPC,1,1,CW IPC,regions/global/events/inter-professional-conf,
+ipc-publisher,publisher,yes,IPC,1,1,CA IPC,regions/global/events/inter-professional-conf,
+ismc-editor,editor,no,ISMC,17,4,CW ISMC; ISMC Writer,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations; regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/faculty; regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/publications; regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/research,
+ismc-publication-editor,editor,no,ISMC Publication,1,1,CW ISMC Publication,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/publications,
+ismc-publication-publisher,publisher,yes,ISMC Publication,1,1,CA ISMC Publication,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/publications,
+ismc-publisher,publisher,yes,ISMC,4,4,CA ISMC; ISMC Approver,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations; regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/faculty; regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/publications; regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/research,
+ismc-research-editor,editor,no,ISMC Research,3,1,CW ISMC Research,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/research,
+ismc-research-publisher,publisher,yes,ISMC Research,1,1,CA ISMC Research,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/research,
+isrc-editor,editor,no,ISRC,1,1,CW ISRC,regions/global/events/isrc,
+isrc-publisher,publisher,yes,ISRC,1,1,CA ISRC,regions/global/events/isrc,
+leads-editor,editor,no,LEADS,4,1,CW LEADS,regions/global/leads,
+leads-publisher,publisher,yes,LEADS,2,1,CA LEADS,regions/global/leads,
+lecture-series-editor,editor,no,Lecture Series,1,1,CW Lecture Series,regions/global/events/fhs-lecture-series,
+lecture-series-publisher,publisher,yes,Lecture Series,2,1,CA Lecture Series,regions/global/events/fhs-lecture-series,
+lib-archives-editor,editor,no,Lib Archives,1,1,CW Lib Archives,regions/global/library/ulo/archives,
+lib-archives-publisher,publisher,yes,Lib Archives,2,1,CA Lib Archives,regions/global/library/ulo/archives,
+library-editor,editor,no,Library,1,14,CW Library,regions/global/library; regions/global/library/ea; regions/global/library/ea/akuk; regions/global/library/ea/fhs-daressalaam; regions/global/library/ea/fhs-kampala; regions/global/library/ea/gsmc …,
+library-news-editor,editor,no,Library News,1,0,CW Library News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+library-news-publisher,publisher,yes,Library News,1,0,CA Library News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+library-publisher,publisher,yes,Library,1,14,CA Library,regions/global/library; regions/global/library/ea; regions/global/library/ea/akuk; regions/global/library/ea/fhs-daressalaam; regions/global/library/ea/fhs-kampala; regions/global/library/ea/gsmc …,
+mc-ea-editor,editor,no,MC EA,9,5,CW MC EA; MC EA News Writers,regions/east-africa/entities/medical-college; regions/east-africa/entities/medical-college/events; regions/east-africa/entities/medical-college/pgme; regions/global/events/breast-cancer; regions/global/events/wpsd,
+mc-ea-publisher,publisher,yes,MC EA,2,5,CA MC EA; MC EA News Approvers,regions/east-africa/entities/medical-college; regions/east-africa/entities/medical-college/events; regions/east-africa/entities/medical-college/pgme; regions/global/events/breast-cancer; regions/global/events/wpsd,
+mc-pk-editor,editor,no,MC PK,22,29,CW MC PK,regions/pakistan/entities/medical-college; regions/pakistan/entities/medical-college/allied-health; regions/pakistan/entities/medical-college/ccbp; regions/pakistan/entities/medical-college/critical-creative-innovative-thinking; regions/pakistan/entities/medical-college/critical-creative-innovative-thinking/events; regions/pakistan/entities/medical-college/data-science …,
+mc-pk-news-editor,editor,no,MC_PK_NEWS_,2,0,MC_PK_NEWS_Writer,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+mc-pk-news-publisher,publisher,yes,MC_PK_NEWS_,1,0,MC_PK_NEWS_Approver,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+mc-pk-publisher,publisher,yes,MC PK,1,29,CA MC PK,regions/pakistan/entities/medical-college; regions/pakistan/entities/medical-college/allied-health; regions/pakistan/entities/medical-college/ccbp; regions/pakistan/entities/medical-college/critical-creative-innovative-thinking; regions/pakistan/entities/medical-college/critical-creative-innovative-thinking/events; regions/pakistan/entities/medical-college/data-science …,
+mca-editor,editor,no,MCA,1,1,CW MCA,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/muslim-civilisations-abstract-project,
+mca-publisher,publisher,yes,MCA,1,1,CA MCA,regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/muslim-civilisations-abstract-project,
+mhr-editor,editor,no,MHR,2,0,CW MHR,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+mhr-publisher,publisher,yes,MHR,2,0,CA MHR,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+mrtc-editor,editor,no,MRTC,5,1,CW MRTC,regions/pakistan/entities/medical-college/mother-and-child-health-research-and-training-centre,
+mrtc-publisher,publisher,yes,MRTC,1,1,CA MRTC,regions/pakistan/entities/medical-college/mother-and-child-health-research-and-training-centre,
+mycologyconf-editor,editor,no,MycologyConf,1,1,CW MycologyConf,regions/global/events/mycology-conference,
+mycologyconf-publisher,publisher,yes,MycologyConf,1,1,CA MycologyConf,regions/global/events/mycology-conference,
+neuroscience-conference-editor,editor,no,Neuroscience Conference,1,1,CW Neuroscience Conference,regions/global/events/neuro-conf,
+neuroscience-conference-publisher,publisher,yes,Neuroscience Conference,1,1,CA Neuroscience Conference,regions/global/events/neuro-conf,
+news-training-editor,editor,no,news training,3,1,CW news training,regions/global/about/onwards,
+news-training-publisher,publisher,yes,news training,0,1,CA news training,regions/global/about/onwards,
+nhsrs-editor,editor,no,NHSRS,5,1,CW NHSRS,regions/global/events/nhsrs,
+nhsrs-publisher,publisher,yes,NHSRS,2,1,CA NHSRS,regions/global/events/nhsrs,
+obs-and-gyn-editor,editor,no,Obs and Gyn,6,1,CW Obs and Gyn,regions/pakistan/entities/medical-college/departments/obs-gyn,
+obs-and-gyn-publisher,publisher,yes,Obs and Gyn,1,1,CA Obs and Gyn,regions/pakistan/entities/medical-college/departments/obs-gyn,
+odos-editor,editor,no,ODOS,1,2,CW ODOS,regions/global/events/sports-olympiad; regions/global/events/sports-olympiad/reg,
+odos-publisher,publisher,yes,ODOS,1,2,CA ODOS,regions/global/events/sports-olympiad; regions/global/events/sports-olympiad/reg,
+office-of-the-president-editor,editor,no,Office of the President,1,3,CW Office of the President,regions/global/about/officers; regions/global/about/president; regions/global/about/trustees,
+office-of-the-president-publisher,publisher,yes,Office of the President,1,3,CA Office of the President,regions/global/about/officers; regions/global/about/president; regions/global/about/trustees,
+office-of-the-provost-editor,editor,no,Office of the Provost,3,1,CW Office of the Provost,regions/global/about/provostoffice,
+office-of-the-provost-publisher,publisher,yes,Office of the Provost,2,1,CA Office of the Provost,regions/global/about/provostoffice,
+ophtho-editor,editor,no,Ophtho,3,1,CW Ophtho,regions/pakistan/entities/medical-college/departments/ophthalmology,
+ophtho-publisher,publisher,yes,Ophtho,1,1,CA Ophtho,regions/pakistan/entities/medical-college/departments/ophthalmology,
+paeds-editor,editor,no,Paeds,4,1,CW Paeds,regions/pakistan/entities/medical-college/departments/paeds,
+paeds-publisher,publisher,yes,Paeds,1,1,CA Paeds,regions/pakistan/entities/medical-college/departments/paeds,
+partnerships-office-editor,editor,no,Partnerships Office,6,2,CW Partnerships Office,regions/global/geo; regions/global/geo/gmp,
+partnerships-office-publisher,publisher,yes,Partnerships Office,1,2,CA Partnerships Office,regions/global/geo; regions/global/geo/gmp,
+pathology-editor,editor,no,Pathology,6,1,CW Pathology,regions/pakistan/entities/medical-college/departments/pathology,
+pathology-publisher,publisher,yes,Pathology,1,1,CA Pathology,regions/pakistan/entities/medical-college/departments/pathology,
+pgme-pk-editor,editor,no,PGME PK,4,4,CW PGME PK,regions/pakistan/entities/medical-college/fellowship; regions/pakistan/entities/medical-college/internship; regions/pakistan/entities/medical-college/pgme; regions/pakistan/entities/medical-college/residency,
+pgme-pk-publisher,publisher,yes,PGME PK,1,4,CA PGME PK,regions/pakistan/entities/medical-college/fellowship; regions/pakistan/entities/medical-college/internship; regions/pakistan/entities/medical-college/pgme; regions/pakistan/entities/medical-college/residency,
+phc-sym-editor,editor,no,PHC Sym,3,1,CW PHC Sym,regions/global/events/phc-sym,
+phc-sym-publisher,publisher,yes,PHC Sym,1,1,CA PHC Sym,regions/global/events/phc-sym,
+pk-chap-editor,editor,no,PK Chap,3,1,CW PK Chap,regions/global/alumni/pk-chap,
+pk-chap-publisher,publisher,yes,PK Chap,2,1,CA PK Chap,regions/global/alumni/pk-chap,
+pls-editor,editor,no,PLS,2,0,CW PLS,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+pls-publisher,publisher,yes,PLS,2,0,CA PLS,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+pnos-editor,editor,no,PNOS,2,1,CW PNOS,regions/global/events/pnos,
+pnos-publisher,publisher,yes,PNOS,1,1,CA PNOS,regions/global/events/pnos,
+pro-editor,editor,no,PRO,3,0,CW PRO,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+pro-publisher,publisher,yes,PRO,1,0,CA PRO,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+provost-office-editor,editor,no,Provost Office,1,1,Provost Office News Writer,regions/global/academics,
+provost-office-publisher,publisher,yes,Provost Office,1,1,Provost Office News Approver,regions/global/academics,
+ps-editor,editor,no,PS,3,1,CW PS,regions/pakistan/entities/medical-college/patient-safety,
+ps-publisher,publisher,yes,PS,1,1,CA PS,regions/pakistan/entities/medical-college/patient-safety,
+psychiatry-editor,editor,no,Psychiatry,5,1,CW Psychiatry,regions/pakistan/entities/medical-college/departments/psychiatry,
+psychiatry-publisher,publisher,yes,Psychiatry,1,1,CA Psychiatry,regions/pakistan/entities/medical-college/departments/psychiatry,
+public-affairs-editor,editor,no,Public Affairs,12,0,CW Public Affairs,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+public-affairs-publisher,publisher,yes,Public Affairs,8,0,CA Public Affairs,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+qtl-editor,editor,no,QTL,20,0,CW QTL; QTL News Writer,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+qtl-publisher,publisher,yes,QTL,2,0,CA QTL; QTL News Approver,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+rc-editor,editor,no,RC,2,1,CW RC,regions/global/events/research-conference,
+rc-publisher,publisher,yes,RC,2,1,CA RC,regions/global/events/research-conference,
+rd-editor,editor,no,RD,1,1,CW RD,regions/global/events/rare-diseases-conf,
+rd-publisher,publisher,yes,RD,1,1,CA RD,regions/global/events/rare-diseases-conf,
+registrar-editor,editor,no,Registrar,3,6,CW Registrar,regions/global/admissions; regions/global/admissions/msc-apm; regions/global/admissions/msc-apn; regions/global/admissions/phd-hs; regions/global/registrar; regions/global/sdg-hub,
+registrar-office-editor,editor,no,Registrar Office,2,1,CW Registrar Office,regions/global/registrar,
+registrar-office-publisher,publisher,yes,Registrar Office,1,1,CA Registrar Office,regions/global/registrar,
+registrar-publisher,publisher,yes,Registrar,1,6,CA Registrar,regions/global/admissions; regions/global/admissions/msc-apm; regions/global/admissions/msc-apn; regions/global/admissions/phd-hs; regions/global/registrar; regions/global/sdg-hub,
+research-and-graduate-studies-editor,editor,no,Research and Graduate Studies,3,1,CW Research and Graduate Studies,regions/global/research,
+research-and-graduate-studies-publisher,publisher,yes,Research and Graduate Studies,1,1,CA Research and Graduate Studies,regions/global/research,
+research-office-editor,editor,no,Research Office,2,0,CW Research Office,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+research-office-publisher,publisher,yes,Research Office,1,0,CA Research Office,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+resource-development-editor,editor,no,Resource Development,1,2,CW Resource Development,regions/global/supportus/endowments; regions/global/supportus/giving-tuesday,
+resource-development-publisher,publisher,yes,Resource Development,1,2,CA Resource Development,regions/global/supportus/endowments; regions/global/supportus/giving-tuesday,
+sig-editor,editor,no,SIG,1,1,CW SIG,regions/pakistan/entities/medical-college/sig,
+sig-news-editor,editor,no,SIG News,1,0,CW SIG News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sig-news-publisher,publisher,yes,SIG News,1,0,CA SIG News,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sig-publisher,publisher,yes,SIG,1,1,CA SIG,regions/pakistan/entities/medical-college/sig,
+sonam-ea-editor,editor,no,SONAM EA,5,3,CW SONAM EA,regions/east-africa/entities/school-of-nursing-and-midwifery; regions/east-africa/entities/school-of-nursing-and-midwifery/events; regions/east-africa/entities/school-of-nursing-and-midwifery/faculty,
+sonam-ea-editor,editor,no,Sonam EA,4,0,Sonam EA News Writer,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sonam-ea-publisher,publisher,yes,SONAM EA,2,3,CA SONAM EA,regions/east-africa/entities/school-of-nursing-and-midwifery; regions/east-africa/entities/school-of-nursing-and-midwifery/events; regions/east-africa/entities/school-of-nursing-and-midwifery/faculty,
+sonam-ea-publisher,publisher,yes,Sonam EA,1,0,Sonam EA News Approver,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sonam-pk-editor,editor,no,SONAM PK,1,4,CW SONAM PK,regions/global/events/inmd; regions/pakistan/entities/school-of-nursing-and-midwifery; regions/pakistan/entities/school-of-nursing-and-midwifery/events; regions/pakistan/entities/school-of-nursing-and-midwifery/faculty,
+sonam-pk-editor,editor,no,Sonam PK,1,0,Sonam PK News Writer,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sonam-pk-publisher,publisher,yes,SONAM PK,1,4,CA SONAM PK,regions/global/events/inmd; regions/pakistan/entities/school-of-nursing-and-midwifery; regions/pakistan/entities/school-of-nursing-and-midwifery/events; regions/pakistan/entities/school-of-nursing-and-midwifery/faculty,
+sonam-pk-publisher,publisher,yes,Sonam PK,2,0,Sonam PK News Approver,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sonam-strategy-editor,editor,no,SONAM Strategy,1,0,CW SONAM Strategy,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sonam-strategy-publisher,publisher,yes,SONAM Strategy,2,0,CA SONAM Strategy,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+sotl-editor,editor,no,SOTL,5,1,CW SOTL,regions/global/events/sotl,
+sotl-publisher,publisher,yes,SOTL,2,1,CA SOTL,regions/global/events/sotl,
+students-editor,editor,no,Students,4,6,CW Students,regions/global/events/parwaaz; regions/global/students; regions/global/students/clubs-societies; regions/global/students/clubs-societies/pk; regions/global/students/experience; regions/global/students/experience/pk,
+students-publisher,publisher,yes,Students,2,6,CA Students,regions/global/events/parwaaz; regions/global/students; regions/global/students/clubs-societies; regions/global/students/clubs-societies/pk; regions/global/students/experience; regions/global/students/experience/pk,
+surgery-editor,editor,no,SURGERY,3,1,CW SURGERY,regions/pakistan/entities/medical-college/departments/surgery,
+surgery-publisher,publisher,yes,SURGERY,2,1,CA SURGERY,regions/pakistan/entities/medical-college/departments/surgery,
+surgical-conference-editor,editor,no,Surgical Conference,3,1,CW Surgical Conference,regions/global/events/aasc,
+surgical-conference-publisher,publisher,yes,Surgical Conference,2,1,CA Surgical Conference,regions/global/events/aasc,
+uc-nbi-editor,editor,no,UC-NBI,2,0,CW UC-NBI,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+uc-nbi-publisher,publisher,yes,UC-NBI,2,0,CA UC-NBI,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+vacancies-editor,editor,no,vacancies,6,1,CW vacancies,regions/global/vacancies,
+vacancies-publisher,publisher,yes,vacancies,2,1,CA vacancies,regions/global/vacancies,
+vroom-editor,editor,no,Vroom,5,1,CW Vroom,regions/global/vroom,
+vroom-publisher,publisher,yes,Vroom,1,1,CA Vroom,regions/global/vroom,
+vrw-editor,editor,no,VRW,1,0,CW VRW,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+vrw-publisher,publisher,yes,VRW,2,0,CA VRW,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+wed-editor,editor,no,WED,2,0,CW WED,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+wed-publisher,publisher,yes,WED,2,0,CA WED,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+wellness-editor,editor,no,Wellness,1,0,CW Wellness,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+wellness-publisher,publisher,yes,Wellness,2,0,CA Wellness,,"owns no folder at unique scope — its section inherits the site-wide roster, so scope must be set by hand"
+whd-editor,editor,no,WHD,1,1,CW WHD,regions/global/events/whd,
+whd-publisher,publisher,yes,WHD,1,1,CA WHD,regions/global/events/whd,
+central-comms-editor,editor,no,(space-wide),12,0,CW Public Affairs,whole space,the university-wide writer group; edits anywhere it is scoped
+central-comms-publisher,publisher,yes,(space-wide),8,0,CA Public Affairs,whole space,the university-wide approver group; publishes anywhere it is scoped
+comment-moderator,moderator,no,(space-wide),4,0,Comments Moderator,whole space,moderates comments only
+space-admin,admin,yes,(space-wide),23,0,AKU Owners; Administrators; IT Webteam,whole space,Full Control / Manage Permissions on the site collection
+structure-manager,structure,no,(space-wide),0,0,Hierarchy Managers,whole space,"Manage Hierarchy — may create, move and delete folders"
+translator,translator,no,(space-wide),0,0,Translation Managers,whole space,Restricted Interfaces for Translation — field-level translation only
+viewer,viewer,no,(space-wide),22,0,AKU Visitors; Viewers; Restricted Readers; Style Resource Readers,whole space,Read / View Only / Restricted Read
