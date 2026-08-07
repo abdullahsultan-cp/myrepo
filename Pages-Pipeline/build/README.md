@@ -8,9 +8,11 @@ python probe_csv.py        # permissions CSV -> sites.json      (aku.edu only)
 python join.py             # AKU-EN_1.HTM    -> pages.json      + join_report.txt
 python sections.py         # unique-scope owners -> webs.json   + sections.txt
 python build_hierarchy.py  # -> ../AKU-Folder-Hierarchy.{html,tree.txt,json}
+python probe_roles.py      # groups -> groups.json + web_owners.json
 python build_migration_plan.py   # -> plan.json + the folder/page/role CSVs
 python probe_people.py           # -> people.json
 python build_roles.py            # -> roles.json + the four role CSVs
+mkdir -p ../portal/public/data   # gitignored, so absent on a fresh clone
 cp plan.json people.json roles.json ../portal/public/data/
 ```
 

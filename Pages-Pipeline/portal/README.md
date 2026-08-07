@@ -29,13 +29,17 @@ drift from the source — which is what the previous hand-written
 ## Where the data comes from
 
 The app reads three JSON files at runtime from `public/data/`. All are generated —
-never edit them by hand:
+never edit them by hand. `public/data/` is gitignored, so a fresh clone has none of
+them and the portal boots on "Could not load the migration data" until you build
+them. These three steps each need the four that precede them; **`build/README.md`
+has the full chain**, and this is only its tail:
 
 ```bash
 cd ../build
 python build_migration_plan.py   # -> plan.json   (folders, pages, roles, live checks)
 python probe_people.py           # -> people.json (584 named people and their roles)
 python build_roles.py            # -> roles.json  (the 345 custom roles, and per person)
+mkdir -p ../portal/public/data
 cp plan.json people.json roles.json ../portal/public/data/
 ```
 
