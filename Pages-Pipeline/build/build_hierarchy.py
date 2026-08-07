@@ -15,15 +15,10 @@ that the export does not actually support.
 import json, io, os, collections, html, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT_HTML = (r"c:\Users\Cloud Primero\Desktop"
-            r"\aku-data-transformation-pipeline-news\Pages-Pipeline"
-            r"\AKU-Folder-Hierarchy.html")
-OUT_TREE = (r"c:\Users\Cloud Primero\Desktop"
-            r"\aku-data-transformation-pipeline-news\Pages-Pipeline"
-            r"\AKU-Folder-Hierarchy.tree.txt")
-OUT_JSON = (r"c:\Users\Cloud Primero\Desktop"
-            r"\aku-data-transformation-pipeline-news\Pages-Pipeline"
-            r"\AKU-Folder-Hierarchy.json")
+PP = os.path.dirname(HERE)
+OUT_HTML = os.path.join(PP, 'AKU-Folder-Hierarchy.html')
+OUT_TREE = os.path.join(PP, 'AKU-Folder-Hierarchy.tree.txt')
+OUT_JSON = os.path.join(PP, 'AKU-Folder-Hierarchy.json')
 
 webs = json.load(io.open(os.path.join(HERE, 'webs.json'), encoding='utf-8'))
 pages = json.load(io.open(os.path.join(HERE, 'pages.json'), encoding='utf-8'))

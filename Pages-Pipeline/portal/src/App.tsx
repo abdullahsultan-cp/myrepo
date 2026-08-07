@@ -49,20 +49,49 @@ export default function App() {
   }, [route])
 
   if (error) {
+    // Two unrelated failures land here and the fix for one is not the fix for the
+    // other, so the message has to tell them apart. A JSON parse error on '<'
+    // means a server DID answer — with index.html, because public/data/ is empty:
+    // those files are generated and gitignored, so a fresh clone has none. Only a
+    // fetch TypeError means no server at all, i.e. opened off the disk. Naming
+    // file:// for both sends the commonest case chasing the wrong cause.
+    const noData = error.includes('Unexpected token') || error.includes('JSON')
     return (
       <div className="boot err">
         <b>Could not load the migration data.</b>
         <p>{error}</p>
-        <p>
-          This happens when <code>dist/index.html</code> is opened straight off the disk — the
-          browser blocks reading <code>data/plan.json</code> from a <code>file://</code> page. Serve
-          it instead:
-        </p>
-        <pre>
-          cd Pages-Pipeline/portal{'\n'}
-          npm run dev{'      '}# http://localhost:5173{'\n'}
-          npm run preview{'  '}# serves the production build
-        </pre>
+        {noData ? (
+          <>
+            <p>
+              The server answered with <code>index.html</code> where{' '}
+              <code>data/plan.json</code> should be, so the datasets were never built.
+              They are generated, not committed — <code>Pages-Pipeline/build/README.md</code>{' '}
+              has the full chain:
+            </p>
+            <pre>
+              cd Pages-Pipeline/build{'\n'}
+              python probe_csv.py; python join.py; python sections.py{'\n'}
+              python build_hierarchy.py; python probe_roles.py{'\n'}
+              python build_migration_plan.py; python probe_people.py; python build_roles.py{'\n'}
+              mkdir -p ../portal/public/data{'\n'}
+              cp plan.json people.json roles.json ../portal/public/data/
+            </pre>
+          </>
+        ) : (
+          <>
+            <p>
+              Nothing served this page, so the browser blocked reading{' '}
+              <code>data/plan.json</code> from a <code>file://</code> URL. Open{' '}
+              <code>AKU-Migration-Portal.html</code> instead — it has the data baked in and
+              needs no server — or serve this build:
+            </p>
+            <pre>
+              cd Pages-Pipeline/portal{'\n'}
+              npm run dev{'      '}# http://localhost:5173{'\n'}
+              npm run preview{'  '}# serves the production build
+            </pre>
+          </>
+        )}
       </div>
     )
   }
