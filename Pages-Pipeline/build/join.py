@@ -11,10 +11,9 @@ script reports the overlap honestly rather than picking one source and pretendin
 import re, io, json, os, collections
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PP = (r"c:\Users\Cloud Primero\Desktop"
-      r"\aku-data-transformation-pipeline-news\Pages-Pipeline")
-TAX = (r"c:\Users\Cloud Primero\Desktop\aku-data-transformation-pipeline-news"
-       r"\data\taxonomy\seed\regions_entities_departments.json")
+PP = os.path.dirname(HERE)
+TAX = os.path.join(os.path.dirname(PP), 'data', 'taxonomy', 'seed',
+                   'regions_entities_departments.json')
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')
 
 # ---- A: pages -------------------------------------------------------------

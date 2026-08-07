@@ -10,9 +10,9 @@ webs) and who owns them.  Two signals matter for placement:
 import csv, collections, re, json, io, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = (r"c:\Users\Cloud Primero\Desktop\aku-data-transformation-pipeline-news"
-       r"\Pages-Pipeline\AKU - User - Permissions - Sites - Groups - "
-       r"SharePoint_2016_User_Roles_Mapping.csv")
+PP = os.path.dirname(HERE)
+SRC = os.path.join(PP, 'AKU - User - Permissions - Sites - Groups - '
+                       'SharePoint_2016_User_Roles_Mapping.csv')
 
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\')
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')

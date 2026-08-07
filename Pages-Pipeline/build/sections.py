@@ -9,10 +9,9 @@ owning entity.  Everything below filters on that.
 import csv, re, io, json, os, collections
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = r"c:\Users\Cloud Primero\Desktop\aku-data-transformation-pipeline-news"
-SRC = os.path.join(ROOT, 'Pages-Pipeline',
-                   'AKU - User - Permissions - Sites - Groups - '
-                   'SharePoint_2016_User_Roles_Mapping.csv')
+PP = os.path.dirname(HERE)
+SRC = os.path.join(PP, 'AKU - User - Permissions - Sites - Groups - '
+                       'SharePoint_2016_User_Roles_Mapping.csv')
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\')
 AKU_WIDE = {'AKU Owners', 'AKU Visitors', 'Style Resource Readers', 'Designers',
