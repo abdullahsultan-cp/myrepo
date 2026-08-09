@@ -1,7 +1,10 @@
 # Blogs-Pipeline
 
-The blogs migration. **83 posts, all analysed. Blocked on one Storyblok change
-that only the dev can make.**
+The blogs migration. **83 posts, all analysed against the live schema and the
+signed-off design. Nothing blocks the upload itself.**
+
+What is outstanding is data with nowhere to land — `Entity` above all (§2c) —
+and a download pass for 46 images that exist only on aku.edu (§5).
 
 Blogs share `pipeline/` with news and events, selected with `--type blogs`. This
 folder holds only the blogs *data*.
