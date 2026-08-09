@@ -16,6 +16,12 @@ to obtain or rebuild each.
 
 Only one thing has to come from a person: the Storyblok token.
 
+Paths below name the news pipeline. **Every other content type has the same shape
+under its own folder** — `Blogs-Pipeline/data/blogs.json`,
+`Events-Pipeline/assets/Events/media/` — and the filenames come from
+`config/types/<type>.json`. Pass `--type` to any command, or set
+`AKU_CONTENT_TYPE`.
+
 ---
 
 ## 1 · Software
@@ -243,10 +249,47 @@ tests                  33 passed
 
 ---
 
-## 8 · What is never committed
+## 8 · What is never committed, and what always is
 
-`assets/` · `config/storyblok.json` · `config/database.json` · `.venv/` · the
-six per-stage story folders.
+**Never:** `assets/` · `config/storyblok.json` · `config/database.json` ·
+`.venv/` · the six per-stage story folders.
 
 Tracked size stays ~45 MB. If `git status` ever shows thousands of files, a
 `.gitignore` rule has been lost.
+
+**Always, despite living beside ignored things:** `{Type}-Pipeline/backup/`.
+`.gitignore` names it as an explicit exception.
+
+| Path | Is |
+|---|---|
+| `backup/raw/{type}_{stamp}.json.gz` | the export as it arrived — the only record once SharePoint is retired |
+| `backup/storyblok/{type}_{stamp}.json.gz` | every story read back from the API, not assumed from what was sent |
+
+```bash
+python pipeline/migrate/review/backup.py --type news     # snapshot both ends
+python pipeline/migrate/review/backup.py --verify        # diff vs the live space
+```
+
+Take one before anything significant and another after. "Did the migration do
+this, or was it always like that?" then has an answer that is a diff rather than
+an argument.
+
+---
+
+## 9 · A different content type
+
+```bash
+python pipeline/new_type.py --list             # what exists now
+python pipeline/new_type.py articles           # profile + folders + README
+python pipeline/new_type.py articles --check   # profile vs the real export
+```
+
+The scaffold creates `config/types/articles.json` from `_TEMPLATE.json` and the
+`Articles-Pipeline/` tree. The only thing it cannot create is the export — drop
+that at the path the README it wrote names, then run `--check`.
+
+**`--check` before the first run, every time.** A `fields` entry naming a column
+the export does not have yields an empty value and no error; if that entry is
+`body`, every item migrates blank. `--check` reports each mismatch with near
+matches from the real columns. `storyblok.component` still has to be confirmed by
+hand against the live space — `pipeline/fetch_storyblok_space.py`.

@@ -24,6 +24,11 @@ STAGE 3b     upload to Storyblok                       2-4 h     resumable
 
 Stages 1 and 2 never touch the network. 3a only reads aku.edu. Only 3b writes.
 
+**Every command takes `--type`** — `news`, `blogs`, `events`, default `news`. Or
+set `AKU_CONTENT_TYPE` once and leave the flag off. Each type keeps its own data,
+assets, backups and reports, so a blogs run cannot read or overwrite a news
+artefact. `pipeline/new_type.py --list` shows what exists.
+
 ---
 
 ## Setup
@@ -194,6 +199,47 @@ Before committing to all 3,606:
 
 ---
 
+## Backups
+
+Snapshot both ends before anything significant, and again after. The question
+that keeps arising is "did the migration do this, or was it always like that?",
+and a diff answers it where argument does not.
+
+```bash
+..\.venv\Scripts\python.exe pipeline\migrate\review\backup.py --type news
+..\.venv\Scripts\python.exe pipeline\migrate\review\backup.py --verify
+```
+
+| Written to | Is |
+|---|---|
+| `{Type}-Pipeline/backup/raw/{type}_{stamp}.json.gz` | the SharePoint export as it arrived — the only record once the site is retired |
+| `{Type}-Pipeline/backup/storyblok/{type}_{stamp}.json.gz` | every story **read back from the API**, not assumed from what was sent |
+
+Both are gzipped and **committed** — `.gitignore` names them as explicitly not
+ignored. `--verify` diffs the newest snapshot against the live space and reports
+what has changed, moved or been deleted since.
+
+---
+
+## A new content type
+
+```bash
+..\.venv\Scripts\python.exe pipeline\new_type.py --list
+..\.venv\Scripts\python.exe pipeline\new_type.py articles
+#   ... put the export at Articles-Pipeline\data\articles.json ...
+..\.venv\Scripts\python.exe pipeline\new_type.py articles --check
+```
+
+`--check` compares the profile against the real export. Run it before anything
+else: a `fields` entry naming a column that does not exist yields an **empty
+value, not an error**, and `fields.body` being wrong migrates every item blank.
+Confirm `storyblok.component` by reading the live space
+(`pipeline\fetch_storyblok_space.py`) — that one cannot be checked automatically.
+
+Then the ordinary stages with `--type articles`.
+
+---
+
 ## Reviewing
 
 ```bash
@@ -236,6 +282,9 @@ Other review tools, none of which write anything:
 | refresh the folder snapshot | `pipeline\migrate\review\dump_sb_tree.py` |
 | check what is missing | `pipeline\migrate\review\audit_assets.py` |
 | reconcile after manual edits | `pipeline\migrate\upload\sync_from_sb.py --snapshot` |
+| back up both ends | `pipeline\migrate\review\backup.py --type news` |
+| see what changed since a backup | `pipeline\migrate\review\backup.py --verify` |
+| add a content type | `pipeline\new_type.py <name>` then `--check` |
 | run the tests | `python -m pytest tests\` |
 
 ---

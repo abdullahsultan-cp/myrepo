@@ -29,6 +29,7 @@ network; stage 3 does, and says so before it writes.
 | **understand the project** — what, why, where it stands | [docs/PROJECT.md](docs/PROJECT.md) |
 | **run any stage** — every command, in order | [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md) |
 | **set up a fresh clone** — what is needed, where each piece comes from | [docs/REQUIRED_FILES.md](docs/REQUIRED_FILES.md) |
+| **add a content type** — blogs, events, anything else | [Adding a content type](#adding-a-content-type) |
 
 ---
 
@@ -40,14 +41,10 @@ python -m venv .venv
 .venv\Scripts\activate          # Windows;  source .venv/bin/activate elsewhere
 pip install -r requirements.txt
 
-# 2. Content: split the export and normalise it
-python pipeline/run_pipeline.py extract-news
-python pipeline/run_pipeline.py clean-news
-python pipeline/run_pipeline.py normalize-html
-python pipeline/run_pipeline.py convert-richtext
-python pipeline/run_pipeline.py build-link-map
-python pipeline/run_pipeline.py enhance-richtext
-python pipeline/run_pipeline.py build-stories
+# 2. Content: split the export and normalise it — 7 steps, or `all`
+python pipeline/run_pipeline.py all
+#   extract-news  clean-news  normalize-html  convert-richtext
+#   build-link-map  enhance-richtext  build-stories
 
 # 3. Taxonomy: work out where every story belongs
 python pipeline/taxonomy/run_taxonomy.py
@@ -55,13 +52,15 @@ python pipeline/taxonomy/run_taxonomy.py
 # 4. Media: find every asset on the live site and download it
 python pipeline/migrate/download/run_media_all.py            # ~3.5 hours, resumable
 
-# 5. Storyblok: create the folders and the stories
+# 5. Storyblok: create the stories and their assets
 python pipeline/migrate/db.py init
 python pipeline/migrate/db.py load
 python pipeline/migrate/upload/upload.py plan               # dry run first
-python pipeline/migrate/upload/upload.py assets
-python pipeline/migrate/upload/upload.py stories
+python pipeline/migrate/upload/run_migration.py            # assets, stories, reports
 ```
+
+Every command takes `--type` (`news`, `blogs`, `events`; default `news`), or reads
+`AKU_CONTENT_TYPE`. Each type keeps its own data, assets and backups.
 
 Windows users: `pipeline/migrate/download/resume_media.cmd` runs step 4 with live
 progress behind a lock, and can be double-clicked to resume after a reboot.
@@ -205,12 +204,17 @@ python pipeline/migrate/db.py status    # progress
 
 python pipeline/migrate/upload/upload.py plan                    # what would happen
 python pipeline/migrate/upload/upload.py assets                  # from local disk
-python pipeline/migrate/upload/upload.py stories --folder news/rabee
+python pipeline/migrate/upload/upload.py stories                 # each to its own folder
 python pipeline/migrate/upload/upload.py verify                  # read back from the API
 ```
 
 Useful flags: `--all-stories` (the whole corpus, not the sample), `--ids 2198,1177`,
 `--limit N`, `--draft`.
+
+Every story routes itself from its `target_full_slug`; `--folder` exists only to
+divert a review batch into one place. **The uploader never creates a folder under
+`regions/` or `global/`** — that tree belongs to the front-end developer, and a
+missing folder is an error with instructions rather than an invented directory.
 
 **Idempotent without any Storyblok schema change.** The tracking table holds
 `sb_story_id`, so a second run PUTs instead of POSTing; if the database is lost,
@@ -221,6 +225,49 @@ After anyone edits stories in the Storyblok UI:
 ```bash
 python pipeline/migrate/upload/sync_from_sb.py --snapshot   # reconcile moves/renames
 python pipeline/migrate/upload/export_links.py --check      # SharePoint/SB review sheet
+```
+
+---
+
+## Adding a content type
+
+Adding a type is filling in a form, not copying a pipeline.
+
+```bash
+python pipeline/new_type.py --list             # what exists now
+python pipeline/new_type.py articles           # profile + folders + README
+#   ... put the export at Articles-Pipeline/data/articles.json ...
+python pipeline/new_type.py articles --check   # profile vs the real export
+```
+
+The scaffold copies `config/types/_TEMPLATE.json`, which carries a CONFIRM marker
+on every value that is a guess. Three of those guesses fail **silently**, which
+is why `--check` exists:
+
+| Wrong | What happens |
+|---|---|
+| `fields.body` | every item migrates blank — nothing errors |
+| any other `fields.*` | that field is quietly empty |
+| `storyblok.component` | rejected, or accepted into the wrong shape |
+| `hierarchy.leaf` | the upload stops, asking for a folder nobody has |
+
+`--check` reads the export and reports every profile key naming a column that
+does not exist, with near matches. It found `summary: "Summary"` in the news
+profile when the real column is `NewsSummary`. The component cannot be checked
+automatically — read the live space first:
+
+```bash
+python pipeline/fetch_storyblok_space.py
+python pipeline/inventory_storyblok_components.py
+```
+
+Then the ordinary stages, with `--type`:
+
+```bash
+python pipeline/run_pipeline.py all --type articles
+python pipeline/taxonomy/run_taxonomy.py --type articles
+python pipeline/migrate/download/run_media_all.py --type articles
+python pipeline/migrate/upload/run_migration.py --type articles
 ```
 
 ---
@@ -309,8 +356,9 @@ stories contain no button markup at all, only 19 CTA-styled or CTA-worded links.
 | `docs/STORYBLOK_COMPONENTS.md` | components, media roles, rich-text schema, characters |
 | `docs/STORYBLOK_FIELDS_NEEDED.md` | fields the front-end still has to add |
 | `pipeline/taxonomy/README.md` | running or changing the taxonomy stage |
-| `data/taxonomy/README.md` | what each output file contains |
-| `CLAUDE.md` | conventions and gotchas, for AI assistants and new joiners alike |
+| `News-Pipeline/data/taxonomy/README.md` | what each taxonomy output file contains |
+| `config/types/_TEMPLATE.json` | every per-type setting, annotated |
+| [`CLAUDE.md`](CLAUDE.md) | conventions and the bugs already paid for — for AI assistants and new joiners alike |
 
 ---
 

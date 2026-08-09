@@ -54,7 +54,10 @@ def _load_profiles():
     if not os.path.isdir(TYPES_DIR):
         return out
     for name in sorted(os.listdir(TYPES_DIR)):
-        if not name.endswith(".json"):
+        # A leading underscore marks a file that is not a type: _TEMPLATE.json is
+        # the boilerplate new_type.py copies from, and loading it would offer a
+        # content type called "TYPE".
+        if not name.endswith(".json") or name.startswith("_"):
             continue
         with open(os.path.join(TYPES_DIR, name), encoding="utf-8") as f:
             prof = _json.load(f)

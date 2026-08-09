@@ -89,6 +89,33 @@ blogs   -> regions/pakistan/entities/medical-college/departments/cardiology/blog
 events  -> regions/pakistan/entities/medical-college/departments/cardiology/events
 ```
 
+### Adding one
+
+```bash
+python pipeline/new_type.py --list             # what exists now
+python pipeline/new_type.py articles           # profile + folders + README
+#   ... put the export at Articles-Pipeline/data/articles.json ...
+python pipeline/new_type.py articles --check   # profile vs the real export
+```
+
+`new_type.py` copies `config/types/_TEMPLATE.json`, which is annotated with a
+CONFIRM marker on every value that is a guess until someone checks it. Three
+guesses fail silently rather than loudly, so `--check` exists to catch the worst
+of them:
+
+| Wrong value | Symptom |
+|---|---|
+| `fields.body` | every item migrates **blank** — no error at all |
+| `fields.*` | that field is empty, quietly |
+| `storyblok.component` | rejected, or worse, accepted into the wrong shape |
+| `hierarchy.leaf` | the upload stops, asking for a folder nobody has |
+
+`--check` reads the real export and reports which profile keys name a column that
+does not exist, suggesting near matches. It found `summary: "Summary"` in the
+news profile when the column is `NewsSummary` — after the migration had already
+run. `storyblok.component` cannot be checked automatically; read the live space
+with `pipeline/fetch_storyblok_space.py` before the first upload.
+
 ### The three stages
 
 ```
@@ -211,13 +238,18 @@ languages      article_language_link per real alternate language (Urdu, Sindhi)
 
 body, in document order from paragraph 2:
   rich_text      prose, lists, headings, links, bold/italic/underline/superscript
-  image          a single body image, in place: text / image / text
+                 a LONE image stays inside it, in place: text / image / text
   iframe         a tweet or embed, in place
   quote_banner   every pull quote
   split_section  a quote that arrives with an image
   media_section  type=video for YouTube and hosted video
-                 type=gallery for 2+ images, LAST, before featured news
+                 type=gallery for a run of 2+ images, at that point in the body
+                 one closing gallery for images the body never positioned
 ```
+
+A lone image stays *inside* the rich text rather than becoming a standalone
+`image` blok, which renders it far too large for what is really a mid-article
+illustration.
 
 **Spacing is mandatory on every blok** and there are exactly three values, read
 off the reference story. A blok without one renders with no vertical rhythm.
@@ -242,26 +274,46 @@ invisibles are stripped: U+200B was in 3,004 of 3,606 files.
 
 ## 6 · Where it stands
 
+**News is complete.** Every figure below was read back from the API after the
+run, not inferred from what was sent.
+
 | | |
 |---|---|
 | Content pipeline | ✅ 3,606 payloads built |
 | Taxonomy | ✅ 346 folders, every story routed |
 | Folder tree in Storyblok | ✅ created by the front-end developer, 149 destinations verified present |
 | Assets on disk | ✅ 3,902 files / 1.8 GB |
-| Assets in Storyblok | 50 of ~3,850 |
-| Stories in Storyblok | **20 of 3,606** — the review sample |
-| Migration runner | ✅ resumable, tested |
+| Assets in Storyblok | ✅ 2,417 uploaded, 990 reused, 214 unrecoverable |
+| Stories in Storyblok | ✅ **3,606 of 3,606**, 0 failed, 3,606 distinct ids |
+| Placement | ✅ 0 misplaced |
+| Folders created by the migration | ✅ **none** — the log says `created folder` zero times |
 
-The 20 exist so the layout could be judged before 3,606 were committed. Once
-signed off, one command does the rest: [../RUN_MIGRATION.md](../RUN_MIGRATION.md).
+```
+1,499  entity                regions/{r}/entities/{e}/news
+1,284  region                regions/{r}/news
+  573  entity-department     regions/{r}/entities/{e}/departments/{d}/news
+  250  global                global/news
+                             across 149 destination folders
+```
+
+2,092 warnings were raised. 1,846 are by design — 1,575 `no entity` (the story
+genuinely has none) and 233 `asset not uploaded` (unrecoverable media). The
+remaining 246 were actioned: 186 empty bodies fixed and re-uploaded, 54 language
+PDFs still open, 6 connection errors that retried clean.
+
+Blogs and events await their exports. Their profiles exist and route correctly,
+but `storyblok.component` and `fields` are still copied from news — confirm both
+before their first upload.
 
 ### Known and accepted
 
 - **Internal links still point at aku.edu.** 566 of them, kept as-is so they can
-  be found and replaced once every story has a Storyblok id. A second pass, by
-  design — a link cannot resolve to a story that does not exist yet.
+  be found and replaced now that every story has a Storyblok id. A second pass,
+  by design — a link cannot resolve to a story that does not exist yet.
+- **54 language PDFs** still link to aku.edu, which dies with the site. They need
+  uploading and the links re-pointing.
 - **Two tables are skipped** and rebuilt by hand: stories 1335 and 3288.
-- **~208 media are unobtainable**, listed in `reports/assets.csv`.
+- **214 media are unobtainable**, listed in `reports/assets.csv`.
 - **`Pakistan / Arusha Climate and Environmental Research Centre`** gets zero
   stories — Arusha is in Tanzania. Reviewed and kept deliberately; recorded in
   `config/tree_accepted_exceptions.csv`.

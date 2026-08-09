@@ -1,263 +1,427 @@
 # CLAUDE.md
 
-Guidance for Claude Code working in this repository.
+Guidance for Claude Code working in this repository. Most of what follows is here
+because something went wrong once.
 
-## What this is
+---
 
-Migration of AKU's SharePoint content to **Storyblok** — the content, the folder
-tree it lives in, and every referenced asset. **News is done: 3,606 stories
-live.** Blogs and events await their exports.
+## 1 · What this is
+
+Migration of AKU's SharePoint content into **Storyblok** — the content itself,
+the folder tree it lives in, and every referenced image, video and document.
+
+| Type | State |
+|---|---|
+| **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable |
+| **blogs** | profile scaffolded, awaiting its export |
+| **events** | profile scaffolded, awaiting its export |
+| **pages** | own stage — `Pages-Pipeline/`, a genuinely different shape |
+
+Space `289824742951963`. **The SharePoint site is being retired**, so anything not
+captured here is lost when it goes. That is why `backup/raw/` exists.
 
 Three stages, each independently runnable and resumable:
 
 | Stage | Turns | Into | Entry point |
 |---|---|---|---|
-| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `pipeline/run_pipeline.py --type X` |
+| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `pipeline/run_pipeline.py` |
 | **2 · Taxonomy** | City / Entity / Tags | Region → Entity → Department folders | `pipeline/taxonomy/run_taxonomy.py` |
-| **3 · Migration** | payloads + assets | live stories and assets in Storyblok | `pipeline/migrate/` |
+| **3 · Migration** | payloads + assets | live stories and assets | `pipeline/migrate/` |
 
-Four migrations, one codebase. News, blogs and events are the same job over
-different SharePoint lists; pages is a different shape with its own stage.
+---
+
+## 2 · Layout
 
 ```
-pipeline/              ONE codebase, selected with --type
-News-Pipeline/         data/ assets/ backup/    3,606 stories, LIVE
-Blogs-Pipeline/        data/ assets/ backup/    awaiting its export
-Events-Pipeline/       data/ assets/ backup/    awaiting its export
-Pages-Pipeline/        build/ portal/           a different shape
-config/types/*.json    what differs per type
+pipeline/                ONE codebase for news, blogs and events
+  run_pipeline.py          stage 1 orchestrator
+  paths_root.py            THE SEAM — resolves every path per --type
+  new_type.py              scaffold a type; --check a profile against its export
+  taxonomy/                stage 2 · Region / Entity / Department
+  migrate/
+    paths.py db.py schema.sql      shared by both flows
+    download/              stage 3a · aku.edu -> disk   (read-only, interruptible)
+    upload/                stage 3b · disk -> Storyblok (writes)
+    review/                verification and backups     (never writes to the space)
+
+News-Pipeline/           data/ assets/ backup/    3,606 stories, LIVE
+Blogs-Pipeline/          data/ assets/ backup/    awaiting export
+Events-Pipeline/         data/ assets/ backup/    awaiting export
+Pages-Pipeline/          build/ portal/           separate stage
+
+config/types/*.json      what differs per type   <- _TEMPLATE.json is the boilerplate
+config/                  credentials, region/department abbreviations, overrides
+docs/                    the specs
+tests/                   pytest
+storyblok-viewer/        Next.js preview of a payload, before uploading it
 ```
+
+**The code is shared; the data is not.** Duplicating 74 scripts per type would
+mean fixing every bug three times and watching the copies drift. Sharing them
+without separating the data would mean one `data/` folder that silently means
+"whatever ran last".
+
+---
+
+## 3 · Content types
 
 **Anything that differs between types belongs in `config/types/<type>.json`, not
-in a branch through the pipeline.** Each profile carries its own hierarchy
-(different leaf folder, possibly fewer levels), its own Storyblok component and
-body whitelist, its own layout and spacing, and its own source column names.
-Adding a type is a new JSON file.
+in a branch through the pipeline.** Adding a type is a new JSON file.
+
+| Section | Carries | Why it differs |
+|---|---|---|
+| `hierarchy` | folder patterns, `leaf` | each type lands in `news/`, `blogs/` or `events/`, and may use fewer levels |
+| `storyblok` | component, body whitelist, shared asset ids | a blog need not be a `news_article` |
+| `layout` | blok mapping and spacing | a type can render differently |
+| `fields` | source column names | a different SharePoint list names things differently |
 
 ```
-news    -> .../departments/cardiology/news
-blogs   -> .../departments/cardiology/blogs
-events  -> .../departments/cardiology/events
+news    -> regions/{region}/entities/{entity}/departments/{dept}/news
+blogs   -> .../blogs
+events  -> .../events
 ```
 
-`pipeline/paths_root.py` is the seam. Import it and every path resolves under the
-selected type, so a blogs run cannot read or overwrite a news artefact:
+```bash
+python pipeline/new_type.py --list           # what exists
+python pipeline/new_type.py articles         # scaffold profile + folders + README
+python pipeline/new_type.py articles --check # profile vs the real export
+```
+
+`--check` earns its keep: it found that news had `summary: "Summary"` when the
+real column is `NewsSummary`. That mismatch produces an **empty field, not an
+error** — the worst way to find out is after several thousand uploads. Run it
+before the first run of any new type.
+
+Use `paths_root` rather than building paths by hand:
 
 ```python
 sys.path.insert(0, <pipeline dir>)
 from paths_root import P
-open(P.SOURCE_JSON)      # News-Pipeline/data/news.json, or blogs.json, ...
+open(P.SOURCE_JSON)                                    # per type
 P.folder_for("entity", region="Kenya", entity="Medical College")
+P.component, P.layout, P.fields, P.leaf                # per type
 ```
 
-Stage 3 is split into two flows, and the directories match:
+Type selection, in precedence order: `--type`, `AKU_CONTENT_TYPE`, then `news`.
+`P.use()` also **writes the env var**, so child processes inherit the choice.
 
-```
-pipeline/migrate/paths.py  db.py  schema.sql     shared by both flows
-pipeline/migrate/download/  aku.edu -> disk      safe to interrupt
-pipeline/migrate/upload/    disk -> Storyblok    writes
-pipeline/migrate/review/    verification and backups, no writes
-```
+`run_pipeline.py` reads `--type` **straight from argv** before anything else,
+because its path constants are module-level and evaluate at import — read it in
+argparse and the flag parses cleanly and changes nothing.
 
-**Back up both ends before and after anything significant.** `backup/raw/` is the
-SharePoint export as it arrived — the site is being retired, so it is the only
-record of the original — and `backup/storyblok/` is every story read back from
-the API rather than assumed. Both are gzipped and committed.
+Files under `config/types/` whose name starts with `_` are **not** types.
+`_TEMPLATE.json` is the boilerplate; without that rule the loader offered a
+content type called "TYPE".
 
-```bash
-python pipeline/migrate/review/backup.py --type news
-python pipeline/migrate/review/backup.py --verify   # what changed since?
-```
+---
 
-Destination shape:
-
-```
-global/news/{item}                                                  250
-Regions/{region}/News/{item}                                      1,284
-Regions/{region}/Entities/{entity}/News/{item}                    1,499
-Regions/{region}/Entities/{entity}/Departments/{dept}/News/{item}   573
-```
-
-346 folders · 6 regions · 19 entities · 89 department folders.
-
-## Read before changing behaviour
-
-| Doc | For |
-|---|---|
-| `docs/MIGRATION_DECISIONS.md` | structure, regions, entities, departments, and why |
-| `docs/STORYBLOK_TARGET_SCHEMA.md` | live component schema vs the migration payload |
-| `docs/STORYBLOK_COMPONENTS.md` | components, media roles, rich text, characters |
-| `docs/STORYBLOK_FIELDS_NEEDED.md` | fields the front-end still owes us |
-| `README.md` | how to run everything |
-
-Do not re-derive facts these already record. If a number here disagrees with the
-data, trust the data and update the doc.
-
-## Environment
+## 4 · Environment
 
 - **Python 3.10+**; `requirements.txt` covers all three stages. The venv lives
   **outside** the repo at `../.venv` (Windows: `..\.venv\Scripts\python.exe`).
-- **PostgreSQL** for migration state. `config/database.json` or `PG*` vars.
-  Default `postgres@localhost/aku_news_migration`.
+- **PostgreSQL** for migration state. `config/database.json` or `PG*` vars;
+  default `postgres@localhost/aku_news_migration`. `db.py init` creates it.
 - **Node 20+** only for `storyblok-viewer/`.
-- Stage 3 needs `config/storyblok.json` (gitignored).
+- Stage 3 needs `config/storyblok.json` (gitignored — copy the `.example`).
 
-## Commands
+---
+
+## 5 · Commands
 
 ```bash
-# taxonomy
-python pipeline/taxonomy/run_taxonomy.py status | tree | <step>
-python pipeline/taxonomy/export_dev_tree.py          # tree in the front end's shape
+# stage 1 · content
+python pipeline/run_pipeline.py all [--type blogs]
+python pipeline/run_pipeline.py status
+python pipeline/run_pipeline.py build-stories        # one step
+
+# stage 2 · taxonomy
+python pipeline/taxonomy/run_taxonomy.py [status|tree|<step>]
+python pipeline/taxonomy/export_dev_tree.py          # the front end's shape
 python pipeline/taxonomy/validate_dev_tree.py their.json --csv diff.csv
 
-# media (Flow A) — one process, behind a lock
+# stage 3a · media, ONE process behind a lock
 python pipeline/migrate/download/run_media_all.py --workers 6
 python pipeline/migrate/download/media_progress.py
 python pipeline/migrate/download/report_failures.py --csv
 python pipeline/migrate/download/retry_failed_media.py
 
-# Storyblok (Flow B)
-python pipeline/migrate/db.py init | load | sample | status
+# stage 3b · upload, resumable
+python pipeline/migrate/db.py init | load | status
+python pipeline/migrate/review/dump_sb_tree.py       # refresh the folder snapshot
+python pipeline/migrate/upload/run_migration.py      # the whole thing
+python pipeline/migrate/upload/run_migration.py --reports-only
 python pipeline/migrate/upload/upload.py plan | assets | stories | verify
-python pipeline/migrate/upload/sync_from_sb.py --snapshot
 
 # backups — both ends, gzipped and committed
 python pipeline/migrate/review/backup.py --type news
 python pipeline/migrate/review/backup.py --verify
 
-# audits
+# review, none of which write to the space
+python pipeline/migrate/review/audit_assets.py --csv
+python pipeline/migrate/review/verify_folders.py --csv
+python pipeline/migrate/review/export_warnings.py
+python pipeline/migrate/review/global_and_shared.py --csv
+python pipeline/migrate/review/layout_samples.py --csv
+python pipeline/fetch_storyblok_space.py             # read-only snapshot
 python pipeline/inventory_storyblok_components.py
-python pipeline/fetch_storyblok_space.py        # read-only snapshot of the space
-python pipeline/migrate/review/layout_samples.py       # fewest pages covering every layout
 
 python -m pytest tests/
 ```
 
-## Conventions
+Full runbook: [RUN_MIGRATION.md](RUN_MIGRATION.md). Per-step reference:
+[docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md).
+
+---
+
+## 6 · Read before changing behaviour
+
+| Doc | For |
+|---|---|
+| `docs/PROJECT.md` | the whole system — stages, profiles, layout spec, results |
+| `docs/MIGRATION_DECISIONS.md` | structure, regions, entities, departments, and why |
+| `docs/STORYBLOK_TARGET_SCHEMA.md` | live component schema vs the migration payload |
+| `docs/STORYBLOK_COMPONENTS.md` | components, media roles, rich text, characters |
+| `docs/STORYBLOK_FIELDS_NEEDED.md` | fields the front-end still owes us |
+| `docs/REQUIRED_FILES.md` | what must exist before each stage runs |
+
+Do not re-derive facts these already record. If a number here disagrees with the
+data, trust the data and update the doc.
+
+---
+
+## 7 · Conventions
 
 - **Slugs**: lowercase-hyphenated; entities use the **full name**, never the
   abbreviation — `regions/pakistan/entities/medical-college/news/`.
 - **Short names are metadata, never paths.** All 155 named folders have one.
-  Entity shorts are derived from AKU approver-group names; department shorts
+  Entity shorts derive from AKU approver-group names; department
   (`config/department_abbrev.csv`) and region shorts (`config/region_abbrev.csv`,
   ISO 3166-1 alpha-2) are hand-authored because nothing in the export derives
   them. Edit the CSV and re-run `tree` — never edit `folders.json` by hand.
 - **Provenance is mandatory.** Any derived field records the rule that produced
-  it (`region_source`, `entity_source`, `department_source`). Add a new
-  derivation, add its provenance column.
-- **Fail loudly.** The seed builders exit non-zero rather than write a broken
-  file. Keep that.
+  it: `region_source`, `entity_source`, `department_source`. New derivation, new
+  provenance column.
+- **Fail loudly.** Builders exit non-zero rather than write a file they know is
+  broken.
 - **One script per step**, independently re-runnable. Do not merge steps.
-- `pipeline/paths_root.py` is the only place taxonomy directories are defined.
+- **Always `encoding="utf-8"` on `open()`.** Windows defaults to cp1252 and
+  raises on the first accented name in the corpus.
+- **Never edit generated files.** Change the source and re-run.
 - Match the surrounding style: stdlib where possible, a module docstring that
   explains *why*, comments only where the reasoning is non-obvious.
 
-## Hard-won lessons — do not relearn these
+---
 
-**One writer on `media_urls.json`.** Two resolver passes both load the cache and
-both save it; the slower one reverts the other's corrections, silently.
-`run_media_all.py` holds a lock. Never run two resolver passes at once.
+## 8 · Never do these
 
-**`--refresh` must not discard the cache.** It once skipped loading entirely, so
-a run scoped to 20 stories saved only those 20 and wiped 731 resolved entries.
-Scoping flags restrict *what is re-fetched*, never *what is kept*.
+**Never create a content folder.** `regions/` and `global/` belong to the
+front-end developer. `ensure_folder` has a hard stop (`NO_CREATE`); a missing
+folder is an error with instructions, not something to fix by inventing one.
+Asset folders (`/asset_folders`) *are* created — different namespace, explicitly
+allowed.
 
-**Do not put `/Pages/` in the chrome filter.** Real banner images live at
-`/news/PublishingImages/pages/News_Admin/…`. That pattern silently deleted
-content images and made 165 stories look like they had none. Filter anchors by
-file extension instead.
+**Never delete and re-upload a story.** Update in place. A new id breaks every
+review link already shared and loses any manual edit. `upload.py` PUTs when the
+DB holds an `sb_story_id`, and falls back to a slug lookup when it does not.
+
+**Never run two media resolvers at once.** They share `media_urls.json` and the
+slower one rewrites it from its own memory, silently reverting corrected URLs.
+`run_media_all.py` holds a lock.
+
+**Never let a scoping flag discard state.** `--refresh` once skipped loading the
+cache, so a run scoped to 20 stories saved only those 20 and wiped 731 entries.
+Scoping restricts *what is re-fetched*, never *what is kept*.
+
+**Never modify a component or a page schema.** Only the dev does that. If a
+payload does not fit, the payload is wrong.
+
+---
+
+## 9 · Hard-won lessons
+
+**Silence is not success.** `subprocess.run(capture_output=True)` held an hour of
+output until the child exited, so the assets stage printed nothing and looked
+hung. It wasn't. Stream, and show position, rate and ETA.
+
+**Retry connection errors, not just HTTP errors.** `SB._call` retried 429 and 5xx
+but let a `ConnectionError` raise straight out, ending two runs at 95 and 8
+minutes. A transient fault is the likeliest thing to happen in a three-hour job.
+
+**Pool the S3 session.** A bare `requests.post()` per file left thousands of
+sockets in `TIME_WAIT` until Windows ran out of ephemeral ports — that is what
+`WinError 10013` actually means. `sb.s3` is a pooled `requests.Session`.
+
+**Do not put `/Pages/` in the chrome filter.** Real banners live at
+`/news/PublishingImages/pages/News_Admin/…`. That pattern silently deleted content
+images and made 165 stories look empty. Anchor on file extension.
 
 **URL-encoding breaks naive filters.** `Style Library` arrives as
-`Style%20Library`, so `Style[%\s]*Library` misses it and `AKU_logo.gif` gets
-assigned as a story's banner.
+`Style%20Library`; `Style[%\s]*Library` misses it and `AKU_logo.gif` becomes a
+story's banner.
 
-**Sanitise filenames before opening them.** `UNCRC-vrs-ACC.pdf?sequence=1&isallowed=y`
-is a legal URL and an illegal Windows path; `open()` raises `OSError` errno 22,
-which names nothing. Use `safe_name()`.
+**Sanitise filenames before opening them.**
+`UNCRC-vrs-ACC.pdf?sequence=1&isallowed=y` is a legal URL and an illegal Windows
+path; `open()` raises `OSError` errno 22, which names nothing. Use `safe_name()`.
 
-**`[A-Za-z]:[/\\]` matches the `s:/` in `https://`.** It classified every
-download failure as an unfixable local path. Match `/[A-Za-z]:[/\\]`.
+**`[A-Za-z]:[/\\]` matches the `s:/` in `https://`.** It classified every download
+failure as an unfixable local path. Match `/[A-Za-z]:[/\\]`.
 
-**`media[]` and `richtext_media[]` overlap.** Dedupe by filename or every inline
-asset is counted twice.
+**Rebuild nothing by regrouping tree nodes if a string split will do.** Splitting
+paragraphs by moving BeautifulSoup children destroyed six stories — 2279 came out
+as `<p><br/>×19</p>` with all 4,000 characters gone. Cutting the serialised HTML
+cannot lose a node. Proven by an A/B run over all 3,606: text of zero stories
+changed.
 
-**Check output, do not assume it.** Every bug above was found by inspecting a
-result — a banner that was a logo, a counter that went backwards, a read time
-implying 16 wpm.
+**Converting a `for` to a `while` needs every path to advance.** A missing
+`i += 1` on the fall-through spun forever and read exactly like a hung database.
 
-## Things that are true and surprising
+**`media[]` and `richtext_media[]` overlap.** Dedupe by normalised filename or
+every inline asset is counted twice. `media_key()` folds
+`3405-richtext-<hash>-Dar-2.jpeg` and `Dar (2).jpeg` onto the same key.
 
-**No department field exists** — 41 fields in the export, none of them a
-department; none of the 33 stage-1 scripts mentions one. Departments come from
-`Tags`, so ~40 of the 89 department folders may not correspond to a real unit.
-Never present a department as authoritative.
+**Regenerating one artefact can empty another.** `richtext_media` emptied on
+regeneration and cost story 2198 its five images. Unplaced images are now derived
+from the DB asset records, not from a file that may be stale.
 
-**678 entities and 20 regions are inferred.** Check `provenance` before treating
-a placement as fact.
+**Check output, do not assume it.** Every bug above was found by looking at a
+result: a banner that was a logo, a counter that went backwards, a read time
+implying 16 wpm, a description that was the word "The".
 
-**`AERR` is not a typo** — it comes straight from the approver group `CA AERR`, so
-it is AKU's own abbreviation. Do not "correct" it to ACERC.
+---
 
-**Short names never contain whitespace.** `build_folder_tree.py` hyphenates it, so
-AKU's `COE WCH` is emitted as `COE-WCH`. Keep the source CSVs faithful to AKU's
-wording and let the builder normalise — that way a new group name with a space
-cannot leak into the JSON.
+## 10 · Facts that surprise people
 
-**Two odd placements were reviewed and deliberately kept**, so do not "fix" them:
-`Pakistan / Arusha Climate and Environmental Research Centre` (0 stories, Arusha
-is Tanzanian) and `Afghanistan / East Africa Institute` (1 story, inferred
-entity). The first is recorded in `config/tree_accepted_exceptions.csv` so
-`validate_dev_tree.py` reports it as accepted rather than as a failure.
+**No department field exists.** 41 columns, none of them a department; none of
+the 33 stage-1 scripts mentions one. The 89 department folders come from 16 tag
+labels, so a public-awareness piece tagged `Cardiac disease` files under
+Cardiology. Never present a department as authoritative.
 
-**`Entity = "Global"` means "no faculty owns this"** — it is exactly the set
+**678 entities and 20 regions are inferred**, not read. Check `provenance` before
+treating a placement as fact.
+
+**`Entity = "Global"` means "no faculty owns this"** — exactly the set with
 `LocalApproverGroup = "Global Approvers"` (2048/2048), i.e. central comms
 authored. It is not a region and never becomes an entity folder.
 
-**Nine values in the Entity column are not entities**, and route to
-`global/news`: `Global`, `News training`, `Student Affairs and Services`,
-`Office of the Provost`, `Office of the President`, `Office of the Registrar`,
-`Data Office`, `Research`, `Library`.
+**Nine values in the Entity column are not entities** and route to `global/news`:
+`Global`, `News training`, `Student Affairs and Services`, `Office of the
+Provost`, `Office of the President`, `Office of the Registrar`, `Data Office`,
+`Research`, `Library`.
 
-**`spacing` is not optional.** Every blok in the pixel-perfect demo sets the
-`spacing-field-plugin` value; without it a blok renders with no vertical rhythm.
-Values live in `build_payload.py`.
+**`spacing` is not optional** — `spacing-field-plugin`, on every blok. Three
+values, chosen by component:
 
-**`entities` is an array of UUIDs** that resolve to nothing in the space — not a
-story, folder or datasource entry. Internal to `entities-plugins`, which
-`/field_types` will not expose to a personal token. **Left empty pending the
-front-end developer.** Do not invent values.
+| Components | mobile x | desktop x |
+|---|---|---|
+| `rich_text` | 20 | **176** |
+| `quote_banner`, `media_section` (video), `brand_banner` | — | — |
+| gallery, `split_section`, `iframe`, `image`, `button` | 20 | **80** |
 
-**Read time**: 238 wpm plus 12s per image. The demo's hand-typed "28 min read"
-for 447 words implies 16 wpm — a placeholder, not a spec. `build_payload.py` and
-`storyblok-viewer/src/app/lib.ts` must agree.
+All carry margin-bottom 24 mobile / 56 desktop, unit `px`. A blok without spacing
+has no vertical rhythm at all — easiest thing to get wrong, hardest to spot in a
+payload. `button` is the one blok whose field is `Spacing`, capital S.
 
-**Assets: 3,902 files / 1.8 GB reconstructed from the live site**, 3,413 URLs
-resolved from 3,606 pages. 208 declared files are not obtainable: the page
-renders one image where the export declares two or three, plus 19 hard 404s.
-`news_media_report.json` proves all 3,421 existed when the original pipeline ran,
-so the original `assets/` bundle is the only complete source for the residual gap.
+**`entities` is a list of entity FOLDER IDS** — numeric, as strings. Not UUIDs,
+not slugs. Resolved from the live-tree snapshot: the story's own entity plus its
+`AdditionalEntity` share targets. All 60 resolved. 1,575 stories legitimately
+have none, which is a fact about the source, not a failure.
+
+**Images keep their source position.** A lone image stays *inside* the rich text —
+the standalone `image` blok renders it far too large for a mid-article
+illustration. Two or more consecutive images become a gallery **at that point**,
+not at the end. Only images the body never referenced go to a closing gallery.
+
+**`AERR` is not a typo** — it comes from the approver group `CA AERR`. Do not
+"correct" it to ACERC. Short names never contain whitespace; the builder
+hyphenates, so AKU's `COE WCH` is emitted as `COE-WCH`. Keep the source CSVs
+faithful to AKU's wording and let the builder normalise.
+
+**Two odd placements were reviewed and deliberately kept**: `Pakistan / Arusha
+Climate and Environmental Research Centre` (0 stories, Arusha is Tanzanian) and
+`Afghanistan / East Africa Institute` (1 story, inferred). The first is in
+`config/tree_accepted_exceptions.csv` so `validate_dev_tree.py` reports it as
+accepted rather than as a failure.
+
+**Read time**: 238 wpm plus 12s per image. The reference story's hand-typed
+"28 min read" for 447 words implies 16 wpm — a placeholder, not a spec.
+`build_payload.py` and `storyblok-viewer/src/app/lib.ts` must agree.
 
 **SharePoint has no buttons.** No `<button>`, no `role="button"`, no `btn` class
-anywhere in 3,606 stories — only 14 stories with call-to-action link text and 5
-with a styled box link. Buttons are a new-design decision, not migrated content.
+in 3,606 stories — only 19 with CTA-worded or CTA-styled links. Buttons are a
+new-design decision, not migrated content.
 
-## Encoding
+**179 articles are one giant paragraph** with `<br><br>` between what are plainly
+separate paragraphs. That is why the splitter exists, and it runs **last**, on the
+serialised `normalized_html`, after divs have become `<p>`.
+
+**Do not restyle inline formatting.** Link colour, bold, italic and underline come
+across as authored. `text-decoration:underline` becomes an underline mark.
+
+---
+
+## 11 · Encoding
 
 Send **UTF-8**. Do not transliterate — 711 occurrences across 98 characters are
-legitimate content (accented names, Arabic/Urdu for 44 stories, `£`, `°`,
-transliteration marks). Strip only invisibles: U+200B (was in 3,004 of 3,606
-files), U+FEFF, U+00AD. The 12 U+FFFD are unrecoverable and need a human.
-
-**Always pass `encoding="utf-8"` to `open()`.** Python's default on Windows is
-cp1252 and it raises on the first accented name in the corpus. 72 call sites
-across stage 1 were missing it; one of them was failing a test.
+legitimate content: accented names, Arabic and Urdu for 44 stories, `£`, `°`.
+Strip only invisibles: U+200B (in 3,004 of 3,606 files), U+FEFF, U+00AD. The 12
+U+FFFD are unrecoverable and need a human.
 
 On Windows, PowerShell 5.1 reads UTF-8 as ANSI — use Python for files containing
-non-ASCII, or box-drawing characters become mojibake. There is no heredoc in
-PowerShell; write long strings to a file. `Set-Content -Encoding utf8` adds a BOM.
+non-ASCII, or box-drawing becomes mojibake. There is no heredoc in PowerShell;
+write long strings to a file. `Set-Content -Encoding utf8` adds a BOM.
+`run_pipeline.py` gives every child `PYTHONIOENCODING=utf-8`, because two stages
+died on *printing* a Turkish `ğ`, not on the work.
 
-## Git
+---
+
+## 12 · Backups and git
+
+**Back up both ends before anything significant.**
+
+```
+{Type}-Pipeline/backup/raw/{type}_{stamp}.json.gz          the export as it arrived
+{Type}-Pipeline/backup/storyblok/{type}_{stamp}.json.gz    every story read back
+```
+
+The first is the only record of the original once SharePoint is retired; the
+second is what Storyblok actually holds, read from the API rather than assumed.
+Both gzipped and **committed** — `.gitignore` names them as explicitly not
+ignored. `--verify` diffs the newest snapshot against the live space.
 
 `.gitignore` excludes the six per-stage story folders (21,636 files, 167 MB) and
-`assets/` (1.7 GB) — both regenerable. Tracked size ~45 MB. Never commit
-`assets/`, `config/storyblok.json`, `config/database.json`, or `.venv`.
+`assets/` (1.7 GB) — both regenerable, the first from the export, the second from
+the live site. Tracked size ~45 MB. Never commit `assets/`,
+`config/storyblok.json`, `config/database.json`, or `.venv`.
+
+**Default branch is `master`; local work is on `main`.** Push with
+`git push origin main:master`. Two people work in this repo and there is a PR
+history — for anything large, push a branch rather than straight to master.
+
+---
+
+## 13 · Results, and what is still open
+
+Migration of news, verified by reading the space back:
+
+```
+3,606 / 3,606 stories live      0 failed      0 misplaced      3,606 distinct ids
+1,499 entity · 1,284 region · 573 entity-department · 250 global   across 149 folders
+2,417 assets uploaded · 990 reused · 214 unrecoverable
+No content folder was ever created — the log says "created folder" zero times.
+```
+
+2,092 warnings: 1,846 are by design (1,575 `no entity`, 233 `asset not
+uploaded`); the rest were actioned.
+
+Still open:
+
+- **54 language PDFs** still link to aku.edu, which dies with the site. They need
+  uploading to Storyblok and the links re-pointing.
+- **566 internal links** still point at aku.edu, kept deliberately so they can be
+  found and replaced now that every story has an id.
+- **2 tables** skipped and rebuilt by hand: stories 1335 and 3288.
+- **214 media** unrecoverable — the page renders fewer images than the export
+  declares, plus hard 404s. Listed in `reports/assets.csv`.
+- **blogs and events**: `storyblok.component` and `fields` are placeholders
+  copied from news. Confirm both against the live schema and the real export
+  before the first upload.
