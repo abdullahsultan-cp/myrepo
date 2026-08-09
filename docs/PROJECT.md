@@ -82,9 +82,20 @@ a branch through the pipeline; it is a value in a file.
 | | Lives in | Because |
 |---|---|---|
 | **Hierarchy** | `hierarchy.patterns` | each type lands in its own leaf folder — `news`, `blogs`, `events` — and may use fewer levels |
+| **Source URLs** | `source_urls` | where the type lives *on aku.edu*, which is not where it lands in Storyblok |
 | **Components** | `storyblok.component`, `body_whitelist` | a blog or an event need not be a `news_article`, and its body may allow different bloks |
 | **Layout** | `layout` | which blok each kind of source content becomes, and the spacing for each |
 | **Source columns** | `fields` | a different list names things differently; map them rather than doctoring the export |
+
+`source_urls` and `hierarchy.leaf` are the pair most easily confused. One is the
+path SharePoint serves the item under, the detail page its internal links point
+at (`news_details.aspx?nid=NEWS-1234`) and the shape of that id; the other is the
+Storyblok folder it lands in. **They are identical for news** — which is exactly
+how a hardcoded `/news` survived in `build_link_map.py` long after everything
+around it had been made generic. Get `source_urls` wrong for a new type and every
+internal cross-link silently fails to resolve, staying pointed at a site that is
+being switched off. `new_type.py --check` counts how many real links in the export
+match, so the answer is a number rather than a hope.
 
 Adding a type is a new JSON file, not a new pipeline.
 
@@ -112,14 +123,19 @@ of them:
 |---|---|
 | `fields.body` | every item migrates **blank** — no error at all |
 | `fields.*` | that field is empty, quietly |
+| `source_urls` | every internal cross-link stays pointed at aku.edu |
 | `storyblok.component` | rejected, or worse, accepted into the wrong shape |
 | `hierarchy.leaf` | the upload stops, asking for a folder nobody has |
 
 `--check` reads the real export and reports which profile keys name a column that
 does not exist, suggesting near matches. It found `summary: "Summary"` in the
 news profile when the column is `NewsSummary` — after the migration had already
-run. `storyblok.component` cannot be checked automatically; read the live space
-with `pipeline/fetch_storyblok_space.py` before the first upload.
+run. It also counts how many of the export's actual links match `source_urls`
+(news: 119 match the detail page, 149 the prefix), so a wrong guess shows up as a
+zero rather than as silence.
+
+`storyblok.component` is the one thing it cannot check; read the live space with
+`pipeline/fetch_storyblok_space.py` before the first upload.
 
 ### The three stages
 
@@ -213,7 +229,7 @@ renaming destroyed the link back to the source:
 
 **Result: 3,902 files, 1.8 GB. 3,400 of 3,610 declared files recovered (94.2%).**
 
-The remaining 210 are not recoverable: 204 never resolved because the page
+The remaining 206 are not recoverable: most never resolved because the page
 genuinely renders fewer images than the export declares, and 6 have a URL that
 now 404s. Each was re-tested individually. Only the original bundle has them.
 

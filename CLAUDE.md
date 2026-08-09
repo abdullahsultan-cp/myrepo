@@ -313,11 +313,19 @@ order. That is a 5,774-line diff that means nothing, on a file that is reviewed
 by diff. Use a list wherever output order is observable.
 
 **A path built by walking up from `__file__` breaks silently when the tree
-moves.** `Pages-Pipeline/build/join.py` reached for `../data/taxonomy/...`; the
-restructure moved that to `News-Pipeline/data/`, and the file simply was not
-there — no error, just enrichment that quietly stopped happening. Both pipelines
-now resolve paths through a module (`paths_root.py`, `Pages-Pipeline/build/paths.py`)
-so a move is one edit, not seventeen.
+moves.** Two of these survived the content-type restructure:
+`Pages-Pipeline/build/join.py` reached for `../data/taxonomy/...`, and
+`extract_storyblok_filter_constants.py` for `data/storyblok_stories`. Neither
+errored in a way anyone saw — the first quietly stopped enriching, the second
+failed at the very end of every `all` run and left the viewer's filter constants
+non-existent. Both pipelines now resolve paths through a module (`paths_root.py`,
+`Pages-Pipeline/build/paths.py`) so a move is one edit, not seventeen.
+
+**Read the exit code of the whole run, not the last thing printed.** `all`
+finishes with a wall of per-step output, and a step that fails in the middle of
+it looks identical to one that succeeded. Two known steps print
+`Validation: FAILED` **by design** — they report the 206 unrecoverable media —
+and return zero, which is what made a genuinely failing step easy to miss.
 
 **A name that says "news" in generic code is a bug waiting to happen.** Seven
 scripts and four steps carried it while running blogs and events identically. The
@@ -464,6 +472,7 @@ Still open:
 - **2 tables** skipped and rebuilt by hand: stories 1335 and 3288.
 - **214 media** unrecoverable — the page renders fewer images than the export
   declares, plus hard 404s. Listed in `reports/assets.csv`.
-- **blogs and events**: `storyblok.component` and `fields` are placeholders
-  copied from news. Confirm both against the live schema and the real export
-  before the first upload.
+- **blogs and events**: `storyblok.component`, `fields` and `source_urls` are
+  placeholders copied from or guessed off news. Confirm all three — the live
+  schema, the real export, and one real internal link — before the first upload.
+  `new_type.py --check` does the last two.

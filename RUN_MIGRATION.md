@@ -15,6 +15,14 @@ folder, reads the result back, writes the reports and takes a backup. Expect
 run the same command again. It continues from where it stopped and never creates
 anything twice.
 
+> **News has already been run: 3,606 stories are live, 0 failed.** Running it
+> again updates in place rather than duplicating — that is the point of the three
+> guards below. For another content type, add `--type blogs` (or `events`) to
+> every command on this page, and read
+> [docs/REQUIRED_FILES.md §9](docs/REQUIRED_FILES.md) first: the profile's
+> `fields` and `storyblok.component` are copied from news and are almost
+> certainly not all right.
+
 ---
 
 ## Before the first run
@@ -149,7 +157,9 @@ killed. If you are sure nothing is running, delete
 Still outstanding, deliberately:
 
 - **Internal links** still point at aku.edu. 566 of them, kept as-is so they can
-  be found and replaced once every story has a Storyblok id.
+  be found and replaced now that every story has a Storyblok id.
+- **54 language PDFs** still link to aku.edu, which dies with the site. They need
+  uploading to Storyblok and the links re-pointing.
 - **Two tables** are skipped and rebuilt by hand — stories 1335 and 3288.
-- **~208 media** are not obtainable; the page renders fewer images than the
-  export declares. `reports/assets.csv` lists them.
+- **214 media** are not obtainable; the page renders fewer images than the export
+  declares, plus a handful of hard 404s. `reports/assets.csv` lists them.

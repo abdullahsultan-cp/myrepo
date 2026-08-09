@@ -83,7 +83,20 @@ verify-richtext-media   confirm each file is on disk
 attach-richtext-media   inline media INTO the payloads
 classify-story-media    tag each story by media type
 validate-metadata       final check
+extract-viewer-filters  the review viewer's filter lists -> TS constants
+import-storyblok        upload via the Management API (stage 3b does this)
 ```
+
+**`validate-media` and `verify-richtext-media` print `Validation: FAILED` and
+that is expected.** They are reporting the 206 media references that cannot be
+recovered — the page renders fewer images than the export declares. Neither
+returns non-zero; `all` exits 0. Treat the count as the thing to watch: if it
+grows, something broke.
+
+`extract-viewer-filters` writes `storyblok-viewer/src/constants/` — 281 tags, 93
+authors, 87 publishers, 92 content writers. It had been pointing at a
+pre-restructure path and failing at the end of every `all` run, so those
+constants did not exist at all until it was fixed.
 
 Four of these were called `extract-news`, `clean-news`, `analyze-news-tags` and
 `validate-news-media`. The pipeline runs blogs and events through exactly the

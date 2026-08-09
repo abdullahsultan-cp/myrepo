@@ -127,7 +127,7 @@ the original is `/news/PublishingImages/CapBanner.jpg`. Two paths:
 - banner and medium have no `source_key`, so each story page is read once and
   its images matched by position
 
-**Recovered: 3,400 of 3,610 declared files (94.2%).** The remaining 210 are gone
+**Recovered: 3,400 of 3,610 declared files (94.2%).** The remaining 206 are gone
 for good — 204 where the page renders fewer images than the export claims, 6
 whose URL now 404s. Only the original bundle has them, so if anyone ever finds
 it, drop it in and re-run; nothing else changes.

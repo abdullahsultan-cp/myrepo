@@ -1,4 +1,4 @@
-/** Fold dist/ into one double-clickable file: Pages-Pipeline/AKU-Migration-Portal.html
+/** Fold dist/ into one double-clickable file: Pages-Pipeline/out/AKU-Migration-Portal.html
  *
  *  The portal is handed to people who will not run npm, and a served build cannot
  *  be one of them — `fetch('./data/plan.json')` from a file:// page is blocked by
@@ -16,7 +16,9 @@ import { fileURLToPath } from 'node:url'
 const HERE = path.dirname(fileURLToPath(import.meta.url))
 const DIST = path.join(HERE, 'dist')
 const DATA = path.join(HERE, 'public', 'data')
-const OUT = path.join(HERE, '..', 'AKU-Migration-Portal.html')
+// out/ holds everything generated; the deliverable belongs beside the
+// CSVs rather than loose in the Pages-Pipeline root.
+const OUT = path.join(HERE, '..', 'out', 'AKU-Migration-Portal.html')
 
 const read = f => fs.readFileSync(f, 'utf8')
 const kb = n => (n / 1024 / 1024).toFixed(2) + ' MB'

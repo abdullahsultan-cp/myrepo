@@ -7,14 +7,14 @@ drags instead of being a CSS approximation.
 cd Pages-Pipeline/portal
 npm install          # once
 npm run dev          # http://localhost:5173
-npm run build        # -> dist/, and ../AKU-Migration-Portal.html
+npm run build        # -> dist/, and ../out/AKU-Migration-Portal.html
 npm run preview      # serve the build locally
 ```
 
 ## The deliverable is one file
 
 `npm run build` ends by running `build_single.mjs`, which folds the script, the
-stylesheet and all three datasets into **`Pages-Pipeline/AKU-Migration-Portal.html`**
+stylesheet and all three datasets into **`Pages-Pipeline/out/AKU-Migration-Portal.html`**
 — about 5 MB, opens by double-click, needs no server and no network. That is the
 file to hand to anyone who is not going to run npm.
 
@@ -40,8 +40,11 @@ python build_migration_plan.py   # -> plan.json   (folders, pages, roles, live c
 python probe_people.py           # -> people.json (584 named people and their roles)
 python build_roles.py            # -> roles.json  (the 345 custom roles, and per person)
 mkdir -p ../portal/public/data
-cp plan.json people.json roles.json ../portal/public/data/
+cp ../out/work/{plan,people,roles}.json ../portal/public/data/
 ```
+
+The three JSON files land in `../out/work/`, not beside the scripts —
+`Pages-Pipeline/README.md` explains the data / build / out split.
 
 Reading them at runtime rather than importing them means you can regenerate the
 plan and refresh the browser without rebuilding the bundle.
