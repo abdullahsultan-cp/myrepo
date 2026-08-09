@@ -38,7 +38,7 @@ copy config\storyblok.example.json config\storyblok.json
 #    then set space_id and management_token
 
 # 3  tracking database
-..\.venv\Scripts\python.exe scripts\migrate\db.py init
+..\.venv\Scripts\python.exe pipeline\migrate\db.py init
 ```
 
 Details on every prerequisite and where it comes from:
@@ -48,10 +48,10 @@ Details on every prerequisite and where it comes from:
 
 ## Stage 1 · Content
 
-Turns `data/news.json` into 3,606 Storyblok payloads.
+Turns `News-Pipeline/data/news.json` into 3,606 Storyblok payloads.
 
 ```bash
-..\.venv\Scripts\python.exe scripts\run_pipeline.py all
+..\.venv\Scripts\python.exe pipeline\run_pipeline.py all
 ```
 
 That runs the steps below in order. Run them individually only when debugging —
@@ -88,7 +88,7 @@ vanish and every story uploads without pictures.
 Check it worked:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\run_pipeline.py status
+..\.venv\Scripts\python.exe pipeline\run_pipeline.py status
 ..\.venv\Scripts\python.exe -m pytest tests\
 ```
 
@@ -99,29 +99,29 @@ Check it worked:
 Works out where each story belongs and emits the folder tree.
 
 ```bash
-..\.venv\Scripts\python.exe scripts\taxonomy\run_taxonomy.py
+..\.venv\Scripts\python.exe pipeline\taxonomy\run_taxonomy.py
 ```
 
 30 seconds, no network. Produces:
 
 | File | For |
 |---|---|
-| `data/taxonomy/seed/folders.json` | **the backend** — 346 folders, parent before child |
-| `data/taxonomy/seed/regions_entities_departments.json` | **the front end** — the same tree in its nested shape |
-| `data/taxonomy/routing/news_routing.csv` | every story's destination, with provenance |
+| `News-Pipeline/data/taxonomy/seed/folders.json` | **the backend** — 346 folders, parent before child |
+| `News-Pipeline/data/taxonomy/seed/regions_entities_departments.json` | **the front end** — the same tree in its nested shape |
+| `News-Pipeline/data/taxonomy/routing/news_routing.csv` | every story's destination, with provenance |
 
 Inspect without re-running:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\taxonomy\run_taxonomy.py status
-..\.venv\Scripts\python.exe scripts\taxonomy\run_taxonomy.py tree
+..\.venv\Scripts\python.exe pipeline\taxonomy\run_taxonomy.py status
+..\.venv\Scripts\python.exe pipeline\taxonomy\run_taxonomy.py tree
 ```
 
 If the front-end developer keeps their own copy of the tree, check it agrees
 before anyone creates folders from it:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\taxonomy\validate_dev_tree.py their.json --csv diff.csv
+..\.venv\Scripts\python.exe pipeline\taxonomy\validate_dev_tree.py their.json --csv diff.csv
 ```
 
 ---
@@ -129,11 +129,11 @@ before anyone creates folders from it:
 ## Stage 3a · Download the assets
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\download\run_media_all.py --workers 6
+..\.venv\Scripts\python.exe pipeline\migrate\download\run_media_all.py --workers 6
 ```
 
 **~3.5 hours.** Fully resumable — kill it and run it again. On Windows,
-`scripts\migrate\download\resume_media.cmd` is double-clickable.
+`pipeline\migrate\download\resume_media.cmd` is double-clickable.
 
 Runs five stages behind a lock file: resolve URLs for stories with media,
 resolve the rest, download every resolved file, export the asset map and failure
@@ -146,22 +146,22 @@ once. The lock refuses a second run.
 While it runs, or afterwards:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\download\media_progress.py
-..\.venv\Scripts\python.exe scripts\migrate\download\report_failures.py
-..\.venv\Scripts\python.exe scripts\migrate\review\audit_assets.py --csv
+..\.venv\Scripts\python.exe pipeline\migrate\download\media_progress.py
+..\.venv\Scripts\python.exe pipeline\migrate\download\report_failures.py
+..\.venv\Scripts\python.exe pipeline\migrate\review\audit_assets.py --csv
 ```
 
 Recovery, if something did not resolve:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\download\retry_failed_media.py
-..\.venv\Scripts\python.exe scripts\migrate\download\guess_media_variants.py
+..\.venv\Scripts\python.exe pipeline\migrate\download\retry_failed_media.py
+..\.venv\Scripts\python.exe pipeline\migrate\download\guess_media_variants.py
 ```
 
-If `assets/News/Metadata.csv` is absent, rebuild it before stage 1's media steps:
+If `News-Pipeline/assets/News/Metadata.csv` is absent, rebuild it before stage 1's media steps:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\rebuild_metadata_csv.py --write
+..\.venv\Scripts\python.exe pipeline\migrate\rebuild_metadata_csv.py --write
 ```
 
 ---
@@ -170,11 +170,11 @@ If `assets/News/Metadata.csv` is absent, rebuild it before stage 1's media steps
 
 ```bash
 # load the tracker, and snapshot the folder tree the front end created
-..\.venv\Scripts\python.exe scripts\migrate\db.py load
-..\.venv\Scripts\python.exe scripts\migrate\review\dump_sb_tree.py
+..\.venv\Scripts\python.exe pipeline\migrate\db.py load
+..\.venv\Scripts\python.exe pipeline\migrate\review\dump_sb_tree.py
 
 # then the whole migration, in one resumable command
-..\.venv\Scripts\python.exe scripts\migrate\upload\run_migration.py
+..\.venv\Scripts\python.exe pipeline\migrate\upload\run_migration.py
 ```
 
 **Re-run `dump_sb_tree.py` whenever the developer changes the folder tree.** The
@@ -189,7 +189,7 @@ report list and every error it can stop on:
 Before committing to all 3,606:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\upload\run_migration.py --sample
+..\.venv\Scripts\python.exe pipeline\migrate\upload\run_migration.py --sample
 ```
 
 ---
@@ -197,7 +197,7 @@ Before committing to all 3,606:
 ## Reviewing
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\review\build_viewer_index.py
+..\.venv\Scripts\python.exe pipeline\migrate\review\build_viewer_index.py
 cd storyblok-viewer && npm install && npm run dev     # localhost:4000
 ```
 
@@ -209,16 +209,16 @@ Other review tools, none of which write anything:
 
 ```bash
 # the fewest pages that between them show every layout — 8 cover all 21
-..\.venv\Scripts\python.exe scripts\migrate\review\layout_samples.py --csv
+..\.venv\Scripts\python.exe pipeline\migrate\review\layout_samples.py --csv
 
 # does every folder the migration needs exist in the space?
-..\.venv\Scripts\python.exe scripts\migrate\review\verify_folders.py --csv
+..\.venv\Scripts\python.exe pipeline\migrate\review\verify_folders.py --csv
 
 # which pages are missing media, and is it our fault or the source's?
-..\.venv\Scripts\python.exe scripts\migrate\review\unresolved_media.py --csv
+..\.venv\Scripts\python.exe pipeline\migrate\review\unresolved_media.py --csv
 
 # SharePoint vs Storyblok, side by side, one row per story
-..\.venv\Scripts\python.exe scripts\migrate\upload\export_links.py
+..\.venv\Scripts\python.exe pipeline\migrate\upload\export_links.py
 ```
 
 ---
@@ -227,15 +227,15 @@ Other review tools, none of which write anything:
 
 | I want to | Command |
 |---|---|
-| run the migration | `scripts\migrate\upload\run_migration.py` |
+| run the migration | `pipeline\migrate\upload\run_migration.py` |
 | see progress, touching nothing | `run_migration.py --reports-only` |
 | resume after a stop | the same command again |
-| rebuild the payloads | `scripts\run_pipeline.py all` |
-| rebuild the folder tree | `scripts\taxonomy\run_taxonomy.py` |
-| re-download assets | `scripts\migrate\download\run_media_all.py` |
-| refresh the folder snapshot | `scripts\migrate\review\dump_sb_tree.py` |
-| check what is missing | `scripts\migrate\review\audit_assets.py` |
-| reconcile after manual edits | `scripts\migrate\upload\sync_from_sb.py --snapshot` |
+| rebuild the payloads | `pipeline\run_pipeline.py all` |
+| rebuild the folder tree | `pipeline\taxonomy\run_taxonomy.py` |
+| re-download assets | `pipeline\migrate\download\run_media_all.py` |
+| refresh the folder snapshot | `pipeline\migrate\review\dump_sb_tree.py` |
+| check what is missing | `pipeline\migrate\review\audit_assets.py` |
+| reconcile after manual edits | `pipeline\migrate\upload\sync_from_sb.py --snapshot` |
 | run the tests | `python -m pytest tests\` |
 
 ---

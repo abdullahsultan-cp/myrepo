@@ -6,7 +6,7 @@ can be created in it.
 Space: **Aga Khan University** · id `289824742951963` · region `eu` · plan
 `starter`
 Snapshot: `storyblok_space/` — regenerate with
-`python scripts/fetch_storyblok_space.py` (read-only, GET requests only).
+`python pipeline/fetch_storyblok_space.py` (read-only, GET requests only).
 
 > The snapshot is scrubbed on save: `preview_token`, `first_token`, `api_key`,
 > `real_email`, `alt_email` are stripped, and `/collaborators` is not fetched at

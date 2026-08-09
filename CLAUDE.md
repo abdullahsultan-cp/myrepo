@@ -4,40 +4,69 @@ Guidance for Claude Code working in this repository.
 
 ## What this is
 
-Migration of **3,606 AKU news stories** from SharePoint to **Storyblok** — the
-content, the folder tree they live in, and every referenced asset.
+Migration of AKU's SharePoint content to **Storyblok** — the content, the folder
+tree it lives in, and every referenced asset. **News is done: 3,606 stories
+live.** Blogs and events await their exports.
 
 Three stages, each independently runnable and resumable:
 
 | Stage | Turns | Into | Entry point |
 |---|---|---|---|
-| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `scripts/run_pipeline.py` |
-| **2 · Taxonomy** | City / Entity / Tags | Region → Entity → Department folders | `scripts/taxonomy/run_taxonomy.py` |
-| **3 · Migration** | payloads + assets | live stories and assets in Storyblok | `scripts/migrate/` |
+| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `pipeline/run_pipeline.py --type X` |
+| **2 · Taxonomy** | City / Entity / Tags | Region → Entity → Department folders | `pipeline/taxonomy/run_taxonomy.py` |
+| **3 · Migration** | payloads + assets | live stories and assets in Storyblok | `pipeline/migrate/` |
+
+Four migrations, one codebase. News, blogs and events are the same job over
+different SharePoint lists; pages is a different shape with its own stage.
+
+```
+pipeline/              ONE codebase, selected with --type
+News-Pipeline/         data/ assets/ backup/    3,606 stories, LIVE
+Blogs-Pipeline/        data/ assets/ backup/    awaiting its export
+Events-Pipeline/       data/ assets/ backup/    awaiting its export
+Pages-Pipeline/        build/ portal/           a different shape
+config/types/*.json    what differs per type
+```
+
+**Anything that differs between types belongs in `config/types/<type>.json`, not
+in a branch through the pipeline.** Each profile carries its own hierarchy
+(different leaf folder, possibly fewer levels), its own Storyblok component and
+body whitelist, its own layout and spacing, and its own source column names.
+Adding a type is a new JSON file.
+
+```
+news    -> .../departments/cardiology/news
+blogs   -> .../departments/cardiology/blogs
+events  -> .../departments/cardiology/events
+```
+
+`pipeline/paths_root.py` is the seam. Import it and every path resolves under the
+selected type, so a blogs run cannot read or overwrite a news artefact:
+
+```python
+sys.path.insert(0, <pipeline dir>)
+from paths_root import P
+open(P.SOURCE_JSON)      # News-Pipeline/data/news.json, or blogs.json, ...
+P.folder_for("entity", region="Kenya", entity="Medical College")
+```
 
 Stage 3 is split into two flows, and the directories match:
 
 ```
-scripts/migrate/paths.py  db.py  schema.sql     shared by both flows
-
-scripts/migrate/download/   Flow A · aku.edu -> disk       safe to interrupt
-    run_media_all.py orchestrates:
-    resolve_media_urls -> download_media -> export_asset_map -> report_failures
-
-scripts/migrate/upload/     Flow B · disk -> Storyblok     writes
-    db (load) -> upload assets -> upload stories -> verify -> export_links
-
-scripts/migrate/review/     QA
-    layout_samples.py  build_viewer_index.py
+pipeline/migrate/paths.py  db.py  schema.sql     shared by both flows
+pipeline/migrate/download/  aku.edu -> disk      safe to interrupt
+pipeline/migrate/upload/    disk -> Storyblok    writes
+pipeline/migrate/review/    verification and backups, no writes
 ```
 
-`paths.py` finds the repo root by walking up, so no script encodes its own depth.
-Import it before any sibling or cross-stage import — it is what puts
-`scripts/migrate/` and `scripts/` on `sys.path`:
+**Back up both ends before and after anything significant.** `backup/raw/` is the
+SharePoint export as it arrived — the site is being retired, so it is the only
+record of the original — and `backup/storyblok/` is every story read back from
+the API rather than assumed. Both are gzipped and committed.
 
-```python
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from paths import BASE  # noqa: E402
+```bash
+python pipeline/migrate/review/backup.py --type news
+python pipeline/migrate/review/backup.py --verify   # what changed since?
 ```
 
 Destination shape:
@@ -77,25 +106,29 @@ data, trust the data and update the doc.
 
 ```bash
 # taxonomy
-python scripts/taxonomy/run_taxonomy.py status | tree | <step>
-python scripts/taxonomy/export_dev_tree.py          # tree in the front end's shape
-python scripts/taxonomy/validate_dev_tree.py their.json --csv diff.csv
+python pipeline/taxonomy/run_taxonomy.py status | tree | <step>
+python pipeline/taxonomy/export_dev_tree.py          # tree in the front end's shape
+python pipeline/taxonomy/validate_dev_tree.py their.json --csv diff.csv
 
 # media (Flow A) — one process, behind a lock
-python scripts/migrate/download/run_media_all.py --workers 6
-python scripts/migrate/download/media_progress.py
-python scripts/migrate/download/report_failures.py --csv
-python scripts/migrate/download/retry_failed_media.py
+python pipeline/migrate/download/run_media_all.py --workers 6
+python pipeline/migrate/download/media_progress.py
+python pipeline/migrate/download/report_failures.py --csv
+python pipeline/migrate/download/retry_failed_media.py
 
 # Storyblok (Flow B)
-python scripts/migrate/db.py init | load | sample | status
-python scripts/migrate/upload/upload.py plan | assets | stories | verify
-python scripts/migrate/upload/sync_from_sb.py --snapshot
+python pipeline/migrate/db.py init | load | sample | status
+python pipeline/migrate/upload/upload.py plan | assets | stories | verify
+python pipeline/migrate/upload/sync_from_sb.py --snapshot
+
+# backups — both ends, gzipped and committed
+python pipeline/migrate/review/backup.py --type news
+python pipeline/migrate/review/backup.py --verify
 
 # audits
-python scripts/inventory_storyblok_components.py data/storyblok_component_inventory.json
-python scripts/fetch_storyblok_space.py        # read-only snapshot of the space
-python scripts/migrate/review/layout_samples.py       # fewest pages covering every layout
+python pipeline/inventory_storyblok_components.py
+python pipeline/fetch_storyblok_space.py        # read-only snapshot of the space
+python pipeline/migrate/review/layout_samples.py       # fewest pages covering every layout
 
 python -m pytest tests/
 ```
@@ -115,7 +148,7 @@ python -m pytest tests/
 - **Fail loudly.** The seed builders exit non-zero rather than write a broken
   file. Keep that.
 - **One script per step**, independently re-runnable. Do not merge steps.
-- `scripts/taxonomy/paths.py` is the only place taxonomy directories are defined.
+- `pipeline/paths_root.py` is the only place taxonomy directories are defined.
 - Match the surrounding style: stdlib where possible, a module docstring that
   explains *why*, comments only where the reasoning is non-obvious.
 

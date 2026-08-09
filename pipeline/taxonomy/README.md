@@ -3,8 +3,8 @@
 Derives **Region → Entity → Department** for all 3606 news items and emits the
 Storyblok folder structure.
 
-The main pipeline (`scripts/`) converts *content*. This stage decides *where each
-story goes*. It reads `data/cleaned_news/` and writes `data/taxonomy/`.
+The main pipeline (`pipeline/`) converts *content*. This stage decides *where each
+story goes*. It reads `News-Pipeline/data/cleaned/` and writes `data/taxonomy/`.
 
 Full spec and every decision: [`docs/MIGRATION_DECISIONS.md`](../../docs/MIGRATION_DECISIONS.md).
 
@@ -13,17 +13,17 @@ Full spec and every decision: [`docs/MIGRATION_DECISIONS.md`](../../docs/MIGRATI
 ## Run it
 
 ```bash
-python scripts/taxonomy/run_taxonomy.py            # all steps, in order
-python scripts/taxonomy/run_taxonomy.py status     # what exists so far
-python scripts/taxonomy/run_taxonomy.py tree       # one step by name
+python pipeline/taxonomy/run_taxonomy.py            # all steps, in order
+python pipeline/taxonomy/run_taxonomy.py status     # what exists so far
+python pipeline/taxonomy/run_taxonomy.py tree       # one step by name
 ```
 
-Input is `data/cleaned_news/`, which is gitignored. After a fresh clone:
+Input is `News-Pipeline/data/cleaned/`, which is gitignored. After a fresh clone:
 
 ```bash
-python scripts/run_pipeline.py extract-news
-python scripts/run_pipeline.py clean-news
-python scripts/taxonomy/run_taxonomy.py
+python pipeline/run_pipeline.py extract-news
+python pipeline/run_pipeline.py clean-news
+python pipeline/taxonomy/run_taxonomy.py
 ```
 
 Stdlib only — nothing here needs `requirements.txt`.

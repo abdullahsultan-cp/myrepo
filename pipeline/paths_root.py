@@ -39,14 +39,44 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Everything a content type owns. `folder` is the directory under the repo root;
 # `source` is the filename of its SharePoint export; `assets` is the subfolder
 # the media bundle unpacks into, which SharePoint capitalises.
-TYPES = {
-    "news": {"folder": "News-Pipeline", "source": "news.json",
-             "assets": "News", "label": "news story"},
-    "blogs": {"folder": "Blogs-Pipeline", "source": "blogs.json",
-              "assets": "Blogs", "label": "blog post"},
-}
+# Each content type is described by a profile in config/types/. News, blogs and
+# events are separate migrations that share code: each has its own folder
+# hierarchy in Storyblok and can use different components, so everything that
+# differs lives in a JSON file rather than in branches through the pipeline.
+# Adding a type means adding a file, not editing this one.
+import json as _json
+
+TYPES_DIR = os.path.join(ROOT, "config", "types")
+
+
+def _load_profiles():
+    out = {}
+    if not os.path.isdir(TYPES_DIR):
+        return out
+    for name in sorted(os.listdir(TYPES_DIR)):
+        if not name.endswith(".json"):
+            continue
+        with open(os.path.join(TYPES_DIR, name), encoding="utf-8") as f:
+            prof = _json.load(f)
+        t = prof.get("type") or name[:-5]
+        # The keys the rest of the code reads, kept flat for compatibility with
+        # the shape this module exposed before profiles existed.
+        prof["folder"] = prof.get("folder", f"{t.capitalize()}-Pipeline")
+        prof["source"] = prof.get("source", f"{t}.json")
+        prof["assets"] = prof.get("assets_dir", t.capitalize())
+        prof["label"] = prof.get("label", t)
+        out[t] = prof
+    return out
+
+
+TYPES = _load_profiles()
 
 DEFAULT_TYPE = "news"
+
+
+def _slug(s):
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
 
 
 class _Paths:
@@ -82,6 +112,46 @@ class _Paths:
     @property
     def label(self):
         return self.spec["label"]
+
+    @property
+    def hierarchy(self):
+        """Where this type's items land. Blogs and events differ from news."""
+        return self.spec.get("hierarchy") or {}
+
+    @property
+    def leaf(self):
+        """The folder that holds the items: news, blogs, events."""
+        return self.hierarchy.get("leaf", self.type)
+
+    @property
+    def storyblok(self):
+        """Component name and body whitelist for this type."""
+        return self.spec.get("storyblok") or {}
+
+    @property
+    def component(self):
+        return self.storyblok.get("component", "news_article")
+
+    @property
+    def layout(self):
+        """How source content maps onto components, including spacing."""
+        return self.spec.get("layout") or {}
+
+    @property
+    def fields(self):
+        """Source column names, so a differently-named export needs no editing."""
+        return self.spec.get("fields") or {}
+
+    def folder_for(self, placement, *, region=None, entity=None,
+                   department=None):
+        """The Storyblok folder path for one item, from this type's patterns."""
+        pat = (self.hierarchy.get("patterns") or {}).get(placement)
+        if not pat:
+            raise SystemExit(
+                f"{self.type}: no hierarchy pattern for placement "
+                f"{placement!r}; add one to config/types/{self.type}.json")
+        return pat.format(leaf=self.leaf, region=_slug(region),
+                          entity=_slug(entity), department=_slug(department))
 
     # ----------------------------------------------------------- top level
     @property
@@ -148,6 +218,11 @@ class _Paths:
     @property
     def MIGRATE(self):
         return os.path.join(self.DATA, "migrate")
+
+    @property
+    def BACKUP(self):
+        """Snapshots of the source export and of what is live in Storyblok."""
+        return os.path.join(self.PIPELINE, "backup")
 
     @property
     def REPORTS(self):

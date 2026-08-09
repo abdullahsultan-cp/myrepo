@@ -10,7 +10,7 @@ is what *will be uploaded* rather than what the code could emit.
 Regenerate:
 
 ```bash
-python scripts/inventory_storyblok_components.py data/storyblok_component_inventory.json
+python pipeline/inventory_storyblok_components.py data/storyblok_component_inventory.json
 ```
 
 ---

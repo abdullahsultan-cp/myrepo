@@ -156,3 +156,13 @@ dist/
 /Blogs-Pipeline/data/migrate/.media.lock
 /Blogs-Pipeline/data/migrate/.migration.lock
 /Blogs-Pipeline/data/migrate/*_ids.txt
+
+# --- Backups are COMMITTED on purpose -----------------------------------------
+# backup/raw/ is the SharePoint export as it arrived, and backup/storyblok/ is
+# every story read back from the API. The source site is being retired, so these
+# are the only record of what the content was; gzipped they are a few MB each.
+# Listed here as an explicit NOT-ignored, so a future broad rule cannot swallow
+# them by accident.
+!/News-Pipeline/backup/
+!/Blogs-Pipeline/backup/
+!/Events-Pipeline/backup/

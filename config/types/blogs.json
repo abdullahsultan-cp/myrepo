@@ -1,0 +1,131 @@
+{
+  "_comment": [
+    "The profile for blog posts. Shares the pipeline with news; everything",
+    "that differs is here.",
+    "",
+    "Component and layout are provisional until the export and the live schema are seen."
+  ],
+  "type": "blogs",
+  "label": "blog post",
+  "folder": "Blogs-Pipeline",
+  "source": "blogs.json",
+  "assets_dir": "Blogs",
+  "hierarchy": {
+    "_comment": [
+      "Blog posts land in a `blogs` folder rather than `news`.",
+      "The tree already carries one at every level, so nothing new is created.",
+      "Change the patterns here if the hierarchy differs further."
+    ],
+    "leaf": "blogs",
+    "global_root": "global",
+    "regions_root": "regions",
+    "patterns": {
+      "global": "global/{leaf}",
+      "region": "regions/{region}/{leaf}",
+      "entity": "regions/{region}/entities/{entity}/{leaf}",
+      "entity-department": "regions/{region}/entities/{entity}/departments/{department}/{leaf}"
+    }
+  },
+  "storyblok": {
+    "_comment": [
+      "CONFIRM before the first upload: the component a blog post becomes may",
+      "not be news_article, and its body whitelist may differ. Reading the",
+      "live space is the only way to know -- see",
+      "pipeline/migrate/review/dump_sb_tree.py and fetch_storyblok_space.py."
+    ],
+    "component": "news_article",
+    "body_whitelist": [
+      "rich_text",
+      "box",
+      "video",
+      "media_section",
+      "quote_banner",
+      "button",
+      "media_card",
+      "row",
+      "split_section",
+      "brand_banner",
+      "brand_logo",
+      "iframe",
+      "image"
+    ],
+    "background_pattern_asset_id": 202607823391189,
+    "quote_background_asset_id": 202908142091464
+  },
+  "layout": {
+    "_comment": [
+      "How source content maps onto components. Signed off against the",
+      "reference story; see docs/PROJECT.md section 5.",
+      "",
+      "spacing is mandatory on every blok -- three values, by component. A blok",
+      "without one renders with no vertical rhythm at all."
+    ],
+    "description_from": "first_paragraph",
+    "description_min_chars": 40,
+    "description_min_words": 6,
+    "single_image": "inline_richtext",
+    "image_run_threshold": 2,
+    "gallery_position": "in_place",
+    "unplaced_gallery_position": "end",
+    "quote": "quote_banner",
+    "quote_with_image": "split_section",
+    "embed": "iframe",
+    "youtube": "media_section_video",
+    "hosted_video": "media_section_video",
+    "tables": "skip",
+    "spacing": {
+      "text": {
+        "mobile_x": 20,
+        "desktop_x": 176
+      },
+      "full": {
+        "mobile_x": null,
+        "desktop_x": null
+      },
+      "mid": {
+        "mobile_x": 20,
+        "desktop_x": 80
+      },
+      "margin_bottom": {
+        "mobile": 24,
+        "desktop": 56
+      },
+      "by_component": {
+        "rich_text": "text",
+        "quote_banner": "full",
+        "brand_banner": "full",
+        "media_section_video": "full",
+        "media_section_gallery": "mid",
+        "split_section": "mid",
+        "iframe": "mid",
+        "image": "mid",
+        "button": "mid"
+      }
+    }
+  },
+  "fields": {
+    "_comment": [
+      "Source column names. A different SharePoint list may name these",
+      "differently; map them here rather than editing the export."
+    ],
+    "id": "Id",
+    "title": "Title",
+    "body": "NewsContent",
+    "sequence_number": "SequenceNumber",
+    "city": "City",
+    "entity": "Entity",
+    "additional_entity": "AdditionalEntity",
+    "tags": "Tags",
+    "approver_group": "LocalApproverGroup",
+    "date": "ScheduleStartDate",
+    "summary": "Summary",
+    "author": "ContentWriter",
+    "pull_quote": "PullQuote",
+    "pull_quote_author": "PullQuoteAuthor",
+    "language_links": [
+      "NewsInUrdu",
+      "SecondaryLanguage2",
+      "SecondaryLanguage3"
+    ]
+  }
+}

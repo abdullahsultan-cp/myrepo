@@ -4,7 +4,7 @@ One command does everything:
 
 ```bash
 cd "d:\AKU News\aku-data-transformation-pipeline-news-master"
-..\.venv\Scripts\python.exe scripts\migrate\upload\run_migration.py
+..\.venv\Scripts\python.exe pipeline\migrate\upload\run_migration.py
 ```
 
 It checks its prerequisites, uploads every asset, creates every story in its own
@@ -30,11 +30,11 @@ copy config\storyblok.example.json config\storyblok.json
 #    then set space_id and management_token
 
 # 3. tracking database
-..\.venv\Scripts\python.exe scripts\migrate\db.py init
-..\.venv\Scripts\python.exe scripts\migrate\db.py load
+..\.venv\Scripts\python.exe pipeline\migrate\db.py init
+..\.venv\Scripts\python.exe pipeline\migrate\db.py load
 
 # 4. snapshot the folder tree the front-end developer created
-..\.venv\Scripts\python.exe scripts\migrate\review\dump_sb_tree.py
+..\.venv\Scripts\python.exe pipeline\migrate\review\dump_sb_tree.py
 ```
 
 Step 4 matters: the migration reads that snapshot to find each story's
@@ -46,7 +46,7 @@ changes the folder tree.**
 ## The run
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\upload\run_migration.py
+..\.venv\Scripts\python.exe pipeline\migrate\upload\run_migration.py
 ```
 
 ```
@@ -85,13 +85,13 @@ Verified: clearing `sb_story_id` for a story and re-running printed
 `already in the space, updating` and left exactly one copy.
 
 A lock file stops two runs racing. If a run was killed and the lock is stale,
-delete `data/migrate/.migration.lock`.
+delete `News-Pipeline/data/migrate/.migration.lock`.
 
 ---
 
 ## What you get
 
-Everything lands in `data/migrate/`:
+Everything lands in `News-Pipeline/data/migrate/`:
 
 | File | Contents |
 |---|---|
@@ -110,7 +110,7 @@ moved it by hand.
 Progress at any time, without touching the space:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\upload\run_migration.py --reports-only
+..\.venv\Scripts\python.exe pipeline\migrate\upload\run_migration.py --reports-only
 ```
 
 ---
@@ -123,16 +123,16 @@ or `global/`; that tree belongs to the front-end developer. Ask for the missing
 folders, then:
 
 ```bash
-..\.venv\Scripts\python.exe scripts\migrate\review\dump_sb_tree.py
-..\.venv\Scripts\python.exe scripts\migrate\review\verify_folders.py
+..\.venv\Scripts\python.exe pipeline\migrate\review\dump_sb_tree.py
+..\.venv\Scripts\python.exe pipeline\migrate\review\verify_folders.py
 ```
 
 **"another migration started N min ago"** — a run is already going, or one was
 killed. If you are sure nothing is running, delete
-`data/migrate/.migration.lock`.
+`News-Pipeline/data/migrate/.migration.lock`.
 
 **"no target_full_slug"** — the taxonomy has not been built:
-`python scripts\taxonomy\run_taxonomy.py`
+`python pipeline\taxonomy\run_taxonomy.py`
 
 **Individual stories failed** — they are recorded with their error in
 `reports/stories.csv` and left `status='failed'`. Re-running retries only those.
@@ -143,7 +143,7 @@ killed. If you are sure nothing is running, delete
 
 ```bash
 # side-by-side review sheet: SharePoint vs Storyblok, one row per story
-..\.venv\Scripts\python.exe scripts\migrate\upload\export_links.py
+..\.venv\Scripts\python.exe pipeline\migrate\upload\export_links.py
 ```
 
 Still outstanding, deliberately:

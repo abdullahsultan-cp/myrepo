@@ -10,8 +10,8 @@ to obtain or rebuild each.
 |---|---|---|
 | Python + Postgres + Node | installing them | 10 min |
 | `config/storyblok.json` | copying the example, pasting a token | 2 min |
-| `data/news.json` | **already in Git** — nothing to do | — |
-| `assets/News/media/` | running the media downloader | ~3.5 h |
+| `News-Pipeline/data/news.json` | **already in Git** — nothing to do | — |
+| `News-Pipeline/assets/News/media/` | running the media downloader | ~3.5 h |
 | everything under `data/` | running the pipeline | ~10 min |
 
 Only one thing has to come from a person: the Storyblok token.
@@ -67,7 +67,7 @@ gitignored.
 
 ---
 
-## 3 · The one real input: `data/news.json`
+## 3 · The one real input: `News-Pipeline/data/news.json`
 
 **Already in Git. You do not need to obtain it.**
 
@@ -83,7 +83,7 @@ https://www.aku.edu/news/_api/web/lists/getbytitle('News')/items?$top=5000
 Accept: application/json;odata=nometadata
 ```
 
-Save the response as `data/news.json`. The pipeline accepts either a bare list
+Save the response as `News-Pipeline/data/news.json`. The pipeline accepts either a bare list
 or `{"value": [...]}`. The fields it actually needs: `Id`, `Title`,
 `NewsContent`, `SequenceNumber`, `City`, `Entity`, `Tags`,
 `LocalApproverGroup`, `ScheduleStartDate`, `NewsInUrdu`.
@@ -94,21 +94,21 @@ record.
 
 ---
 
-## 4 · The media: `assets/News/media/`
+## 4 · The media: `News-Pipeline/assets/News/media/`
 
 **Gitignored — 3,902 files, 1.8 GB. Rebuilt, not downloaded from Git.**
 
 ```bash
-python scripts/migrate/download/run_media_all.py --workers 6
+python pipeline/migrate/download/run_media_all.py --workers 6
 ```
 
 ~3.5 hours, resumable — fetched pages are skipped and files already on disk are
-not fetched twice. On Windows, `scripts/migrate/download/resume_media.cmd` is
+not fetched twice. On Windows, `pipeline/migrate/download/resume_media.cmd` is
 double-clickable and does the same thing.
 
 ### Why this is a rebuild rather than a copy
 
-The original export bundle was **`assets/News/media/` plus a `Metadata.csv`
+The original export bundle was **`News-Pipeline/assets/News/media/` plus a `Metadata.csv`
 manifest**. Both were lost before this repo existed;
 `data/news_media_report.json` proves all 3,421 files were present when the
 pipeline first ran.
@@ -130,7 +130,7 @@ it, drop it in and re-run; nothing else changes.
 slower one rewrites the file from its own memory — that silently reverted
 corrected URLs once. `run_media_all.py` holds a lock.
 
-### `assets/News/Metadata.csv`
+### `News-Pipeline/assets/News/Metadata.csv`
 
 Part of the lost bundle. It maps each story to its banner / medium / thumbnail /
 video filenames, and `inject_story_media.py` cannot run without it — no
@@ -139,7 +139,7 @@ manifest, no `media[]` array, no images on any story.
 Reconstructed from `asset_map.csv`, which carries the same facts:
 
 ```bash
-python scripts/migrate/rebuild_metadata_csv.py --write
+python pipeline/migrate/rebuild_metadata_csv.py --write
 ```
 
 3,421 references across 3,077 stories, matching the original count exactly. It
@@ -154,17 +154,17 @@ per stage — 21,636 files, 167 MB. Tracking them would put 21k churning files i
 the diff of every pipeline run.
 
 ```bash
-python scripts/run_pipeline.py all
+python pipeline/run_pipeline.py all
 ```
 
 | Folder | Stage that writes it |
 |---|---|
-| `data/news/` | `extract-news` — splits `news.json` into one file per story |
-| `data/cleaned_news/` | `clean-news` — Unicode normalised |
-| `data/normalized_news/` | `normalize-html` — SharePoint HTML → semantic HTML |
-| `data/storyblok_news/` | `convert-richtext` → rich-text JSON |
-| `data/storyblok_news_enhanced/` | `enhance-richtext` — links and assets resolved |
-| `data/storyblok_stories/` | `build-stories` + the media steps — **the payloads** |
+| `News-Pipeline/data/raw/` | `extract-news` — splits `news.json` into one file per story |
+| `News-Pipeline/data/cleaned/` | `clean-news` — Unicode normalised |
+| `News-Pipeline/data/normalized/` | `normalize-html` — SharePoint HTML → semantic HTML |
+| `News-Pipeline/data/richtext/` | `convert-richtext` → rich-text JSON |
+| `News-Pipeline/data/richtext_enhanced/` | `enhance-richtext` — links and assets resolved |
+| `News-Pipeline/data/stories/` | `build-stories` + the media steps — **the payloads** |
 
 **The media steps after `build-stories` are not optional.** `build-stories`
 writes the payload; `inject-story-media` and `attach-richtext-media` put the
@@ -176,10 +176,10 @@ order in [HOW_TO_RUN.md](HOW_TO_RUN.md).
 
 | Path | What |
 |---|---|
-| `data/news.json` | the input |
-| `data/taxonomy/` | folder tree, routing, lookups — **hand these to the backend** |
-| `data/migrate/asset_map.csv` | file → story → target field. Also rebuilds `Metadata.csv` |
-| `data/migrate/media_urls.json` | the resolver cache — 3,606 pages, expensive to rebuild |
+| `News-Pipeline/data/news.json` | the input |
+| `News-Pipeline/data/taxonomy/` | folder tree, routing, lookups — **hand these to the backend** |
+| `News-Pipeline/data/migrate/asset_map.csv` | file → story → target field. Also rebuilds `Metadata.csv` |
+| `News-Pipeline/data/migrate/media_urls.json` | the resolver cache — 3,606 pages, expensive to rebuild |
 | `data/*.json` | reports: unicode, tags, link map, media validation |
 
 ---
@@ -190,11 +190,11 @@ If you are pointing this at a *different* SharePoint list, this is the sequence
 and what each step is actually for.
 
 ```bash
-python scripts/run_pipeline.py extract-news     # split into one file per story
-python scripts/run_pipeline.py analyze-unicode  # inventory every odd character
-python scripts/run_pipeline.py clean-news       # normalise them
-python scripts/run_pipeline.py analyze-news-tags
-python scripts/run_pipeline.py normalize-html   # the important one
+python pipeline/run_pipeline.py extract-news     # split into one file per story
+python pipeline/run_pipeline.py analyze-unicode  # inventory every odd character
+python pipeline/run_pipeline.py clean-news       # normalise them
+python pipeline/run_pipeline.py analyze-news-tags
+python pipeline/run_pipeline.py normalize-html   # the important one
 ```
 
 **`analyze-unicode` before `clean-news`, always.** It writes
@@ -226,16 +226,16 @@ before recovers 27.
 ## 7 · Verifying you have everything
 
 ```bash
-python scripts/migrate/review/audit_assets.py       # every declared file vs disk
-python scripts/migrate/review/verify_folders.py     # every folder vs the space
-python scripts/taxonomy/run_taxonomy.py status
+python pipeline/migrate/review/audit_assets.py       # every declared file vs disk
+python pipeline/migrate/review/verify_folders.py     # every folder vs the space
+python pipeline/taxonomy/run_taxonomy.py status
 python -m pytest tests/
 ```
 
 A healthy clone:
 
 ```
-assets/News/media/     3,902 files, 1.87 GB
+News-Pipeline/assets/News/media/     3,902 files, 1.87 GB
 declared vs on disk    3,400 / 3,610  (94.2%)
 folders                346 expected, 149 destinations, 0 missing
 tests                  33 passed

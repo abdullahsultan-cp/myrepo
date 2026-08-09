@@ -1,15 +1,25 @@
-# The AKU news migration, end to end
+# The AKU content migration, end to end
 
 What this project is, why it is built the way it is, and where it currently
 stands. Read this first; the other docs go deeper on one area each.
 
 | | |
 |---|---|
-| **Moving** | 3,606 news stories |
-| **From** | AKU's SharePoint site (`aku.edu/news`), being retired |
+| **Moving** | news, blogs, events and pages |
+| **From** | AKU's SharePoint site, being retired |
 | **To** | Storyblok, space `289824742951963` |
-| **Plus** | ~3,900 images, GIFs, PDFs and videos |
-| **Into** | 346 folders — Region → Entity → Department |
+| **Into** | Region → Entity → Department, a different leaf folder per type |
+
+| Type | Status |
+|---|---|
+| **news** | **3,606 stories live**, plus ~3,900 images, GIFs, PDFs and videos |
+| **blogs** | awaiting its export |
+| **events** | awaiting its export |
+| **pages** | own stage — `Pages-Pipeline/` |
+
+Everything below describes news, because news is the one that has been run end
+to end. Blogs and events follow the same three stages with their own profile in
+`config/types/`; what differs is listed in §2.
 
 ---
 
@@ -42,8 +52,44 @@ a body restricted to a whitelist of components. See §5.
 
 ## 2 · Architecture
 
-Three stages. Each is independently runnable, resumable, and leaves an audit
-trail; none needs the next one to have worked.
+Four migrations, one codebase. News, blogs and events are the same job over
+different SharePoint lists; pages is a different shape and keeps its own stage.
+
+```
+pipeline/              ONE codebase, selected with --type
+News-Pipeline/         data/ assets/ backup/     3,606 stories, migrated
+Blogs-Pipeline/        data/ assets/ backup/     awaiting its export
+Events-Pipeline/       data/ assets/ backup/     awaiting its export
+Pages-Pipeline/        build/ portal/            a different shape
+config/types/*.json    what differs per type
+```
+
+**The data is separated; the code is not.** Duplicating 74 scripts per type
+would mean fixing every bug three times and watching the copies drift. Sharing
+them without separating the data would mean one `data/` folder that silently
+means "whatever ran last". `pipeline/paths_root.py` is the seam.
+
+### What differs per type, and where
+
+Each type has a profile in `config/types/`. Nothing about a type is expressed as
+a branch through the pipeline; it is a value in a file.
+
+| | Lives in | Because |
+|---|---|---|
+| **Hierarchy** | `hierarchy.patterns` | each type lands in its own leaf folder — `news`, `blogs`, `events` — and may use fewer levels |
+| **Components** | `storyblok.component`, `body_whitelist` | a blog or an event need not be a `news_article`, and its body may allow different bloks |
+| **Layout** | `layout` | which blok each kind of source content becomes, and the spacing for each |
+| **Source columns** | `fields` | a different list names things differently; map them rather than doctoring the export |
+
+Adding a type is a new JSON file, not a new pipeline.
+
+```
+news    -> regions/pakistan/entities/medical-college/departments/cardiology/news
+blogs   -> regions/pakistan/entities/medical-college/departments/cardiology/blogs
+events  -> regions/pakistan/entities/medical-college/departments/cardiology/events
+```
+
+### The three stages
 
 ```
 STAGE 1  content     SharePoint HTML  ->  Storyblok rich text + payloads
@@ -55,9 +101,9 @@ Stage 3 splits again, because the halves fail differently and run at different
 times:
 
 ```
-scripts/migrate/download/   aku.edu -> disk         safe to interrupt, read-only
-scripts/migrate/upload/     disk -> Storyblok       writes
-scripts/migrate/review/     verification, no writes
+pipeline/migrate/download/   aku.edu -> disk         safe to interrupt, read-only
+pipeline/migrate/upload/     disk -> Storyblok       writes
+pipeline/migrate/review/     verification, no writes
 ```
 
 **Two conventions hold everywhere.** Every derived field records the rule that
@@ -65,7 +111,23 @@ produced it — `region_source`, `entity_source`, `department_source` — so a
 disputed placement can be traced to either the data or a decision. And every
 builder exits non-zero rather than write a file it knows is broken.
 
----
+### Backups
+
+Both ends of the migration are snapshotted, because the question that keeps
+arising is "did the migration do this, or was it always like that?" and a diff
+answers it where argument does not.
+
+```bash
+python pipeline/migrate/review/backup.py --type news
+```
+
+* `backup/raw/` — the SharePoint export as it arrived. The site is being
+  retired, so once it is gone this is the only record of the original content.
+* `backup/storyblok/` — every story read back from the API, not assumed from
+  what was sent.
+
+`--verify` compares the newest snapshot against the live space and reports what
+has changed, moved or been deleted since.
 
 ## 3 · Where each story goes
 
@@ -105,7 +167,7 @@ Full reasoning and every rule: [MIGRATION_DECISIONS.md](MIGRATION_DECISIONS.md).
 
 ## 4 · The assets, and how they were recovered
 
-The original export bundle — `assets/News/media/` plus its `Metadata.csv`
+The original export bundle — `News-Pipeline/assets/News/media/` plus its `Metadata.csv`
 manifest — was lost before this repo existed. `news_media_report.json` proves all
 3,421 files were present when the pipeline first ran.
 

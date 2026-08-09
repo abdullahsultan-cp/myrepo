@@ -1,16 +1,22 @@
-# AKU News — SharePoint to Storyblok migration
+# AKU — SharePoint to Storyblok migration
 
-Migrates **3,606 news stories** from AKU's SharePoint site into Storyblok: the
-article content, the folder structure they live in, and every image, video and
-document they reference.
+Migrates AKU's SharePoint content into Storyblok — the article content, the
+folder structure it lives in, and every image, video and document it references.
+
+**News is done: 3,606 stories live.** Blogs and events await their exports; pages
+has its own stage.
+
+One codebase drives all of them, selected with `--type`. What differs between
+types — hierarchy, components, layout, source column names — lives in
+`config/types/*.json`, not in branches through the pipeline.
 
 The work splits into three stages that can be run and re-run independently:
 
 | Stage | Turns | Into | Entry point |
 |---|---|---|---|
-| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `scripts/run_pipeline.py` |
-| **2 · Taxonomy** | City / Entity / Tags | the Region → Entity → Department folder tree | `scripts/taxonomy/run_taxonomy.py` |
-| **3 · Migration** | payloads + assets | live stories and assets in Storyblok | `scripts/migrate/` |
+| **1 · Content** | SharePoint HTML | Storyblok rich text + story payloads | `pipeline/run_pipeline.py` |
+| **2 · Taxonomy** | City / Entity / Tags | the Region → Entity → Department folder tree | `pipeline/taxonomy/run_taxonomy.py` |
+| **3 · Migration** | payloads + assets | live stories and assets in Storyblok | `pipeline/migrate/` |
 
 Everything is resumable and idempotent. Nothing in stages 1–2 touches the
 network; stage 3 does, and says so before it writes.
@@ -35,29 +41,29 @@ python -m venv .venv
 pip install -r requirements.txt
 
 # 2. Content: split the export and normalise it
-python scripts/run_pipeline.py extract-news
-python scripts/run_pipeline.py clean-news
-python scripts/run_pipeline.py normalize-html
-python scripts/run_pipeline.py convert-richtext
-python scripts/run_pipeline.py build-link-map
-python scripts/run_pipeline.py enhance-richtext
-python scripts/run_pipeline.py build-stories
+python pipeline/run_pipeline.py extract-news
+python pipeline/run_pipeline.py clean-news
+python pipeline/run_pipeline.py normalize-html
+python pipeline/run_pipeline.py convert-richtext
+python pipeline/run_pipeline.py build-link-map
+python pipeline/run_pipeline.py enhance-richtext
+python pipeline/run_pipeline.py build-stories
 
 # 3. Taxonomy: work out where every story belongs
-python scripts/taxonomy/run_taxonomy.py
+python pipeline/taxonomy/run_taxonomy.py
 
 # 4. Media: find every asset on the live site and download it
-python scripts/migrate/download/run_media_all.py            # ~3.5 hours, resumable
+python pipeline/migrate/download/run_media_all.py            # ~3.5 hours, resumable
 
 # 5. Storyblok: create the folders and the stories
-python scripts/migrate/db.py init
-python scripts/migrate/db.py load
-python scripts/migrate/upload/upload.py plan               # dry run first
-python scripts/migrate/upload/upload.py assets
-python scripts/migrate/upload/upload.py stories
+python pipeline/migrate/db.py init
+python pipeline/migrate/db.py load
+python pipeline/migrate/upload/upload.py plan               # dry run first
+python pipeline/migrate/upload/upload.py assets
+python pipeline/migrate/upload/upload.py stories
 ```
 
-Windows users: `scripts/migrate/download/resume_media.cmd` runs step 4 with live
+Windows users: `pipeline/migrate/download/resume_media.cmd` runs step 4 with live
 progress behind a lock, and can be double-clicked to resume after a reboot.
 
 | Stage | Runtime | Network |
@@ -76,9 +82,9 @@ progress behind a lock, and can be double-clicked to resume after a reboot.
 | **Python 3.10+** | `requirements.txt` — bs4, html5lib, requests, psycopg |
 | **PostgreSQL** | any local instance; used only to track migration state |
 | **Node 20+** and pnpm/npm | only for the review viewer |
-| **`data/news.json`** | the SharePoint OData export. **In Git.** |
+| **`News-Pipeline/data/news.json`** | the SharePoint OData export. **In Git.** |
 | **Storyblok token** | `config/storyblok.json`, from `storyblok.example.json`. **Gitignored.** |
-| `assets/News/media/` | **not** required — stage 4 rebuilds it from the live site |
+| `News-Pipeline/assets/News/media/` | **not** required — stage 4 rebuilds it from the live site |
 
 ### Configuration
 
@@ -96,35 +102,46 @@ is `postgres@localhost/aku_news_migration`.
 ## Repository layout
 
 ```
-config/                Storyblok + database credentials, region_overrides.csv
-data/
-  news.json              INPUT — the SharePoint export (tracked)
-  news/ … storyblok_stories/    per-stage story JSON (GITIGNORED, regenerable)
-  taxonomy/              folder tree, per-story routing, lookups
-  migrate/               asset map, media URLs, failure reports
-assets/News/media/     every downloaded image, video and document (GITIGNORED)
-docs/                  the specs — read these before changing behaviour
+pipeline/                 ONE codebase for news, blogs and events
+  taxonomy/                 stage 2 · Region / Entity / Department
+  migrate/download/         stage 3a · aku.edu -> disk
+  migrate/upload/           stage 3b · disk -> Storyblok
+  migrate/review/           verification and backups, no writes
+  paths_root.py             the seam: resolves every path per --type
 
-scripts/               STAGE 1 · the content pipeline (33 scripts)
-scripts/taxonomy/      STAGE 2 · Region / Entity / Department
-scripts/migrate/       STAGE 3 · shared: paths.py, db.py, schema.sql
-scripts/migrate/download/   Flow A · find and fetch every asset
-scripts/migrate/upload/     Flow B · build payloads and write to Storyblok
-scripts/migrate/review/     QA · layout samples, viewer index
+News-Pipeline/            3,606 stories, migrated
+  data/                     source export + per-stage output
+  assets/News/media/        3,902 files (GITIGNORED, re-downloadable)
+  backup/                   raw export + live Storyblok snapshots
+Blogs-Pipeline/           awaiting its export
+Events-Pipeline/          awaiting its export
+Pages-Pipeline/           a different shape; own build and portal
 
-storyblok-viewer/      Next.js app for reviewing the result
-tests/                 pytest
+config/types/*.json       what differs per type
+config/                   credentials, region overrides, abbreviations
+docs/                     the specs — read before changing behaviour
+tests/                    pytest
 ```
 
 Stage 3 is split by flow because the two halves fail differently and are run at
 different times: **download** talks to aku.edu and is safe to interrupt,
 **upload** talks to Storyblok and writes. `paths.py` and `db.py` stay at the
-`migrate/` root because both flows use them — `paths.py` locates the repo root by
-walking up, so a script's directory depth never has to be encoded in its source.
+`migrate/` root because both flows use them, and `pipeline/paths_root.py`
+resolves everything per `--type`.
 
 **Gitignored on purpose:** the six per-stage story folders (21,636 files,
-167 MB) and `assets/` (3,902 files, 1.8 GB). Both are regenerable — the first
-from `data/news.json`, the second from the live site. Tracked size is ~45 MB.
+167 MB) and `assets/` (3,902 files, 1.8 GB), per type. Both are regenerable — the
+first from the source export, the second from the live site.
+
+**Backed up on purpose:** `backup/raw/` keeps the SharePoint export as it
+arrived, and `backup/storyblok/` keeps every story read back from the API. Both
+are gzipped and committed, because the site is being retired and "was it always
+like that?" needs an answer that is a diff rather than an argument.
+
+```bash
+python pipeline/migrate/review/backup.py --type news      # snapshot both ends
+python pipeline/migrate/review/backup.py --verify         # what changed since?
+```
 
 ---
 
@@ -143,7 +160,7 @@ paths:
   the story page is read once and cached
 
 ```bash
-python scripts/migrate/download/run_media_all.py --workers 6
+python pipeline/migrate/download/run_media_all.py --workers 6
 ```
 
 That runs, behind a lock file:
@@ -168,9 +185,9 @@ corrected URLs once. The lock refuses a second run rather than letting them figh
 Recovery helpers, for when something did not resolve:
 
 ```bash
-python scripts/migrate/download/retry_failed_media.py      # transient errors only
-python scripts/migrate/download/guess_media_variants.py    # derive medium from banner name
-python scripts/migrate/download/media_progress.py          # progress bar
+python pipeline/migrate/download/retry_failed_media.py      # transient errors only
+python pipeline/migrate/download/guess_media_variants.py    # derive medium from banner name
+python pipeline/migrate/download/media_progress.py          # progress bar
 ```
 
 Downloading rather than linking is deliberate: uploading straight from aku.edu
@@ -181,15 +198,15 @@ half-finished Storyblok space to clean up.
 ### Flow B · Upload to Storyblok
 
 ```bash
-python scripts/migrate/db.py init      # create the database + schema
-python scripts/migrate/db.py load      # load 3606 stories, assets, links
-python scripts/migrate/db.py sample    # flag the 20-story scenario sample
-python scripts/migrate/db.py status    # progress
+python pipeline/migrate/db.py init      # create the database + schema
+python pipeline/migrate/db.py load      # load 3606 stories, assets, links
+python pipeline/migrate/db.py sample    # flag the 20-story scenario sample
+python pipeline/migrate/db.py status    # progress
 
-python scripts/migrate/upload/upload.py plan                    # what would happen
-python scripts/migrate/upload/upload.py assets                  # from local disk
-python scripts/migrate/upload/upload.py stories --folder news/rabee
-python scripts/migrate/upload/upload.py verify                  # read back from the API
+python pipeline/migrate/upload/upload.py plan                    # what would happen
+python pipeline/migrate/upload/upload.py assets                  # from local disk
+python pipeline/migrate/upload/upload.py stories --folder news/rabee
+python pipeline/migrate/upload/upload.py verify                  # read back from the API
 ```
 
 Useful flags: `--all-stories` (the whole corpus, not the sample), `--ids 2198,1177`,
@@ -202,8 +219,8 @@ the slug is looked up before creating. A payload hash skips unchanged stories.
 After anyone edits stories in the Storyblok UI:
 
 ```bash
-python scripts/migrate/upload/sync_from_sb.py --snapshot   # reconcile moves/renames
-python scripts/migrate/upload/export_links.py --check      # SharePoint/SB review sheet
+python pipeline/migrate/upload/sync_from_sb.py --snapshot   # reconcile moves/renames
+python pipeline/migrate/upload/export_links.py --check      # SharePoint/SB review sheet
 ```
 
 ---
@@ -211,7 +228,7 @@ python scripts/migrate/upload/export_links.py --check      # SharePoint/SB revie
 ## Design review — the smallest set of pages that shows everything
 
 ```bash
-python scripts/migrate/review/layout_samples.py --csv
+python pipeline/migrate/review/layout_samples.py --csv
 ```
 
 Greedy set-cover over 21 layout-bearing features (hero, second image, gallery,
@@ -234,7 +251,7 @@ unless the design says otherwise.
 ## Review viewer
 
 ```bash
-python scripts/migrate/review/build_viewer_index.py
+python pipeline/migrate/review/build_viewer_index.py
 cd storyblok-viewer && npm install && npm run dev     # localhost:4000
 ```
 
@@ -291,7 +308,7 @@ stories contain no button markup at all, only 19 CTA-styled or CTA-worded links.
 | `docs/STORYBLOK_TARGET_SCHEMA.md` | the live component schema vs what the migration produces |
 | `docs/STORYBLOK_COMPONENTS.md` | components, media roles, rich-text schema, characters |
 | `docs/STORYBLOK_FIELDS_NEEDED.md` | fields the front-end still has to add |
-| `scripts/taxonomy/README.md` | running or changing the taxonomy stage |
+| `pipeline/taxonomy/README.md` | running or changing the taxonomy stage |
 | `data/taxonomy/README.md` | what each output file contains |
 | `CLAUDE.md` | conventions and gotchas, for AI assistants and new joiners alike |
 
