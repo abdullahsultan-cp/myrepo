@@ -5,6 +5,7 @@ from os import listdir, makedirs
 from os.path import abspath, dirname, join
 from urllib.parse import unquote
 import sys
+from fields import F  # noqa: E402
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 if SCRIPTS_DIR not in sys.path:
@@ -121,7 +122,7 @@ def enhance_richtext_node(node, url_lookup, asset_map, base_url, story_prefix, w
 def enhance_news_item(item, url_lookup, asset_map, config):
     enhanced = deepcopy(item)
     warnings = []
-    news_content = enhanced.get("NewsContent")
+    news_content = F.get(enhanced, "body")
     if isinstance(news_content, dict):
         enhanced["NewsContent"] = enhance_richtext_node(
             news_content,

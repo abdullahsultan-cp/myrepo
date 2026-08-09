@@ -5,6 +5,7 @@ from json import dump, load
 from os import listdir
 from os.path import abspath, dirname, join
 import re
+from fields import F  # noqa: E402
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
@@ -261,7 +262,7 @@ def analyze_news_content(news_content, filename, findings):
             entry["examples"].append(
                 {
                     "file": filename,
-                    "field": "NewsContent",
+                    "field": F.column("body"),
                     "snippet": snippet(news_content, info["example_match"]),
                 }
             )
@@ -278,7 +279,7 @@ def iterate_cleaned_news(folder_path):
     files_with_newscontent = 0
     for filename in json_files:
         news_item_data = load_news_data(join(folder_path, filename))
-        news_content = news_item_data.get("NewsContent")
+        news_content = F.get(news_item_data, "body")
         if analyze_news_content(news_content, filename, findings):
             files_with_newscontent += 1
 
@@ -378,7 +379,7 @@ def export_report(findings, output_path, files_scanned, files_with_newscontent):
 
     payload = {
         "summary": {
-            "field": "NewsContent",
+            "field": F.column("body"),
             "files_scanned": files_scanned,
             "files_with_newscontent": files_with_newscontent,
             "unique_tag_count": len(items),

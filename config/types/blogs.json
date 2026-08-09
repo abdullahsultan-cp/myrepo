@@ -123,27 +123,37 @@
   },
   "fields": {
     "_comment": [
-      "Source column names. A different SharePoint list may name these",
-      "differently; map them here rather than editing the export."
+      "The real column names of the AKU Blogs list, read off the export rather",
+      "than assumed. They share almost nothing with the News list: the body is",
+      "'Blog Detail', the title 'Blog Title', and there is no City column at all,",
+      "which is what news derived region from.",
+      "",
+      "Verify after any re-export:  python pipeline/new_type.py blogs --check"
     ],
-    "id": "Id",
-    "title": "Title",
-    "body": "NewsContent",
-    "sequence_number": "SequenceNumber",
-    "city": "City",
+    "id": "ID",
+    "title": "Blog Title",
+    "body": "Blog Detail",
+    "sequence_number": "FeatureSequence",
+    "city": null,
     "entity": "Entity",
-    "additional_entity": "AdditionalEntity",
+    "additional_entity": null,
     "tags": "Tags",
-    "approver_group": "LocalApproverGroup",
-    "date": "ScheduleStartDate",
-    "summary": "NewsSummary",
-    "author": "ContentWriter",
-    "pull_quote": "PullQuote",
-    "pull_quote_author": "PullQuoteAuthor",
-    "language_links": [
-      "NewsInUrdu",
-      "SecondaryLanguage2",
-      "SecondaryLanguage3"
-    ]
-  }
+    "approver_group": null,
+    "date": "Schedule Start Date",
+    "summary": "Summary",
+    "author": "AuthorName",
+    "pull_quote": "Pull Quotes",
+    "pull_quote_author": "Pull Quotes Author",
+    "language_links": null,
+    "category": "Category",
+    "banner": "Banner",
+    "embed_code": "Embed Code",
+    "embed_video": "Embed Video",
+    "is_featured": "IsFeatured",
+    "is_active": "IsActive",
+    "close_comments": "Close Comments",
+    "post_year": "Post Year"
+  },
+  "source_format": "csv",
+  "source_file": "data/source/Metadata.csv"
 }

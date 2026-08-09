@@ -5,6 +5,7 @@ from json import dump, load
 from os import listdir, makedirs
 from os.path import abspath, dirname, join
 import sys
+from fields import F  # noqa: E402
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 if SCRIPTS_DIR not in sys.path:
@@ -25,11 +26,11 @@ def load_news_data(file_path):
 
 def convert_item(news_item):
     item = deepcopy(news_item)
-    news_content = item.get("NewsContent")
+    news_content = F.get(item, "body")
     warnings = []
 
     if not isinstance(news_content, str) or not news_content.strip():
-        item["NewsContent"] = {"type": "doc", "content": []}
+        F.set(item, "body", {"type": "doc", "content": []})
         warnings.append("empty_news_content")
         return item, warnings, []
 
@@ -39,14 +40,14 @@ def convert_item(news_item):
         warnings.extend(result.warnings)
 
         if validation_errors:
-            item["NewsContent"] = None
+            F.set(item, "body", None)
             item["NewsContentRichtextError"] = "; ".join(validation_errors)
             return item, warnings, validation_errors
 
-        item["NewsContent"] = result.document
+        F.set(item, "body", result.document)
         return item, warnings, []
     except Exception as exc:
-        item["NewsContent"] = None
+        F.set(item, "body", None)
         item["NewsContentRichtextError"] = str(exc)
         return item, warnings, [str(exc)]
 

@@ -11,6 +11,7 @@ import re
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
 from storyblok_embeds import embed_placeholder_tag, detect_embed_type
+from fields import F  # noqa: E402
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
@@ -333,12 +334,12 @@ def normalize_content_html(html):
 
 def normalize_news_item(news_item):
     item = deepcopy(news_item)
-    news_content = item.get("NewsContent")
+    news_content = F.get(item, "body")
     if not isinstance(news_content, str) or not news_content.strip():
         return item, Counter(), []
 
     normalized_html, stats, warnings = normalize_content_html(news_content)
-    item["NewsContent"] = normalized_html
+    F.set(item, "body", normalized_html)
     return item, stats, warnings
 
 

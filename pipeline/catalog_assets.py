@@ -8,6 +8,7 @@ import re
 
 from storyblok_config import load_config
 from storyblok_utils import absolute_sharepoint_url
+from fields import F  # noqa: E402
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
@@ -23,7 +24,7 @@ def scan_html_assets(folder_path):
         if not filename.endswith(".json"):
             continue
         with open(join(folder_path, filename), "r", encoding="utf-8") as f:
-            html = load(f).get("NewsContent") or ""
+            html = F.get(load(f), "body") or ""
         if not isinstance(html, str):
             continue
         for match in IMAGE_PATTERN.finditer(html):
@@ -40,7 +41,7 @@ def scan_richtext_assets(folder_path):
             continue
         with open(join(folder_path, filename), "r", encoding="utf-8") as f:
             payload = load(f)
-        _walk_richtext_images(payload.get("NewsContent"), filename, assets)
+        _walk_richtext_images(F.get(payload, "body"), filename, assets)
     return assets
 
 

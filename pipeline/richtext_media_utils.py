@@ -11,6 +11,7 @@ from storyblok_utils import absolute_sharepoint_url, generate_uid
 from validate_media import classify_extension
 
 import os as _os, sys as _sys
+from fields import F  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
 from paths_root import P  # noqa: E402
 
@@ -230,7 +231,7 @@ def extract_html_references(html, story_id):
             references.append(
                 {
                     "story_id": str(story_id),
-                    "field": "NewsContent",
+                    "field": F.column("body"),
                     "kind": "image",
                     "ref": normalize_ref(src),
                 }
@@ -241,7 +242,7 @@ def extract_html_references(html, story_id):
             references.append(
                 {
                     "story_id": str(story_id),
-                    "field": "NewsContent",
+                    "field": F.column("body"),
                     "kind": "link",
                     "ref": normalize_ref(href),
                 }
@@ -333,7 +334,7 @@ def build_catalog(stories_dir, normalized_dir, media_dir, map_path=None, config=
             with open(join(normalized_dir, filename), "r",
                       encoding="utf-8") as handle:
                 item = load(handle)
-            html_refs = extract_html_references(item.get("NewsContent"), story_id)
+            html_refs = extract_html_references(F.get(item, "body"), story_id)
             raw_refs.extend(html_refs)
 
     grouped = {}

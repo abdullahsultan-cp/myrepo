@@ -4,6 +4,7 @@ from json import dump, load
 from os import listdir, makedirs
 from os.path import abspath, dirname, join
 import sys
+from fields import F  # noqa: E402
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 if SCRIPTS_DIR not in sys.path:
@@ -163,7 +164,7 @@ def reserve_slug(base_slug, sharepoint_id, used_slugs):
 def build_story_payload(item, config, used_slugs=None):
     used_slugs = used_slugs if used_slugs is not None else set()
     sharepoint_id = item.get("Id") or item.get("ID")
-    title = item.get("Title") or f"{P.leaf.title()} {sharepoint_id}"
+    title = F.get(item, "title") or f"{P.leaf.title()} {sharepoint_id}"
     slug = reserve_slug(
         slugify(title, fallback=f"{P.leaf}-{sharepoint_id}"),
         sharepoint_id,
@@ -171,57 +172,58 @@ def build_story_payload(item, config, used_slugs=None):
     )
 
     pull_quote_payload, pull_quote_mode, pull_quote_warnings = convert_pull_quote(
-        item.get("PullQuote"),
-        item.get("PullQuoteAuthor"),
+        F.get(item, "pull_quote"),
+        F.get(item, "pull_quote_author"),
         config,
     )
 
-    content = {
-        "component": config["news_component"],
-        "_uid": slugify(f"{sharepoint_id}-root", fallback="news-root"),
-        "title": title,
-        "subtitle": item.get("NewsSubTitle"),
-        "summary": item.get("NewsSummary"),
-        "body": item.get("NewsContent"),
-        "alternate_title": item.get("AlternateNewsTitle"),
-        "alternate_subtitle": item.get("AlternateNewsSubtitle"),
-        "alternate_summary": item.get("AlternateNewsSummary"),
-        "alternate_banner_caption": item.get("AlternateBannerCaption"),
-        "pull_quote": pull_quote_payload,
-        "pull_quote_author": item.get("PullQuoteAuthor"),
-        "banner_caption": item.get("BannerCaption"),
-        "medium_image_caption": item.get("MediumImageCaption"),
-        "category": lookup_taxonomy(item.get("Category")),
-        "city": lookup_taxonomy(item.get("City")),
-        "entity": lookup_taxonomy(item.get("Entity")),
-        "additional_entities": lookup_entity_list(item.get("AdditionalEntity")),
-        "author": lookup_ref(item.get("Author")),
-        "publisher": lookup_ref(item.get("Publisher")),
-        "content_writer": lookup_ref(item.get("ContentWriter")),
-        "content_approver": lookup_ref(item.get("ContentApprover")),
-        "editor": lookup_ref(item.get("Editor")),
-        "tags": lookup_tags(item.get("Tags")),
-        "global_news": item.get("GlobalNews"),
-        "locally_active": item.get("LocallyActive"),
-        "globally_active": item.get("GloballyActive"),
-        "local_approver_group": item.get("LocalApproverGroup"),
-        "global_approver_group": item.get("GlobalApproverGroup"),
-        "is_published": item.get("IsPulished"),
-        "is_globally_approved": item.get("IsGloballyApproved"),
-        "is_locally_approved": item.get("IsLocallyApproved"),
-        "is_modified_by_global": item.get("IsModifiedByGlobal"),
-        "news_in_urdu": normalize_news_in_urdu(item.get("NewsInUrdu")),
-        "contact": item.get("Contact"),
-        "secondary_language_2": item.get("SecondaryLanguage2"),
-        "secondary_language_3": item.get("SecondaryLanguage3"),
-        "schedule_start_date": item.get("ScheduleStartDate"),
-        "schedule_end_date": item.get("ScheduleEndDate"),
-        "sequence_number": item.get("SequenceNumber"),
-        "sharepoint_id": sharepoint_id,
-        "sharepoint_sequence_number": item.get("SequenceNumber"),
-        "sharepoint_modified": item.get("Modified"),
-        "sharepoint_created": item.get("Created"),
+    # The payload shape is declared in config/types/<type>.json under
+    # `content_fields`, not written out here. It used to be 44 hardcoded lines,
+    # 27 of them naming News-list columns that no other list has -- which is
+    # precisely why a blog built with this produced a payload full of nulls.
+    # Walking the declaration keeps pipeline/ generic and puts each list's
+    # peculiarities in its own profile. Order matters: it is the emitted key
+    # order, so the declaration preserves the order this code had.
+    DECODERS = {
+        "taxonomy": lookup_taxonomy,
+        "ref": lookup_ref,
+        "tags": lookup_tags,
+        "entity_list": lookup_entity_list,
+        "urdu_link": normalize_news_in_urdu,
     }
+    COMPUTED = {
+        "component": config["news_component"],
+        "uid": slugify(f"{sharepoint_id}-root", fallback=f"{P.leaf}-root"),
+        "title": title,
+        "pull_quote": pull_quote_payload,
+        "sharepoint_id": sharepoint_id,
+    }
+
+    declared = P.spec.get("content_fields")
+    if not declared:
+        raise SystemExit(
+            f"{P.type}: no `content_fields` in config/types/{P.type}.json — "
+            f"the story payload has no declared shape. Copy the block from "
+            f"news.json and change what differs.")
+
+    content = {}
+    for entry in declared:
+        key = entry.get("key")
+        # Skip only documentation entries. NOT every underscore key: `_uid` is
+        # a real Storyblok field, and filtering on the prefix silently dropped
+        # it from all 3,606 payloads.
+        if not key or key == "_comment":
+            continue
+        if "computed" in entry:
+            value = COMPUTED.get(entry["computed"])
+        elif "field" in entry:
+            value = F.get(item, entry["field"])
+        else:
+            value = item.get(entry.get("column"))
+        decode = entry.get("decode")
+        if decode:
+            value = DECODERS[decode](value)
+        content[key] = value
 
     tag_labels = [tag["label"] for tag in content["tags"] if tag.get("label")]
 
@@ -233,7 +235,7 @@ def build_story_payload(item, config, used_slugs=None):
         "parent_id": config.get("parent_folder_id", 0),
         "meta_data": {
             "sharepoint_id": sharepoint_id,
-            "sequence_number": item.get("SequenceNumber"),
+            "sequence_number": F.get(item, "sequence_number"),
             "story_uuid": story_uuid(sharepoint_id),
         },
         "content": content,
@@ -260,7 +262,8 @@ def build_story_files(source_folder, output_folder, config):
         with open(join(source_folder, filename), "r", encoding="utf-8") as f:
             item = load(f)
         sharepoint_id = item.get("Id") or item.get("ID")
-        base_slug = slugify(item.get("Title") or f"News {sharepoint_id}", fallback=f"news-{sharepoint_id}")
+        base_slug = slugify(F.get(item, "title") or f"{P.leaf.title()} {sharepoint_id}",
+                        fallback=f"{P.leaf}-{sharepoint_id}")
         story, notes = build_story_payload(item, config, used_slugs=used_slugs)
         if story["slug"] != base_slug:
             slug_collisions.append(

@@ -146,5 +146,208 @@
       "SecondaryLanguage2",
       "SecondaryLanguage3"
     ]
-  }
+  },
+  "_content_fields_comment": [
+    "The story payload, declared rather than coded. build_storyblok_stories.py",
+    "walks this list in order, so the emitted JSON key order is this order --",
+    "which is why it was generated from the previous hardcoded version rather",
+    "than retyped.",
+    "",
+    "  field:    a logical name from `fields` above, resolved per content type",
+    "  column:   a raw export column, for anything only this list has",
+    "  computed: built by the pipeline (title, uid, pull_quote, ...)",
+    "  decode:   taxonomy | ref | tags | entity_list | urdu_link",
+    "",
+    "The 27 `column` entries are News-list specific. A different list simply",
+    "declares its own, and pipeline/ needs no change."
+  ],
+  "content_fields": [
+    {
+      "key": "component",
+      "computed": "component"
+    },
+    {
+      "key": "_uid",
+      "computed": "uid"
+    },
+    {
+      "key": "title",
+      "computed": "title"
+    },
+    {
+      "key": "subtitle",
+      "column": "NewsSubTitle"
+    },
+    {
+      "key": "summary",
+      "field": "summary"
+    },
+    {
+      "key": "body",
+      "field": "body"
+    },
+    {
+      "key": "alternate_title",
+      "column": "AlternateNewsTitle"
+    },
+    {
+      "key": "alternate_subtitle",
+      "column": "AlternateNewsSubtitle"
+    },
+    {
+      "key": "alternate_summary",
+      "column": "AlternateNewsSummary"
+    },
+    {
+      "key": "alternate_banner_caption",
+      "column": "AlternateBannerCaption"
+    },
+    {
+      "key": "pull_quote",
+      "computed": "pull_quote"
+    },
+    {
+      "key": "pull_quote_author",
+      "field": "pull_quote_author"
+    },
+    {
+      "key": "banner_caption",
+      "column": "BannerCaption"
+    },
+    {
+      "key": "medium_image_caption",
+      "column": "MediumImageCaption"
+    },
+    {
+      "key": "category",
+      "decode": "taxonomy",
+      "column": "Category"
+    },
+    {
+      "key": "city",
+      "decode": "taxonomy",
+      "field": "city"
+    },
+    {
+      "key": "entity",
+      "decode": "taxonomy",
+      "field": "entity"
+    },
+    {
+      "key": "additional_entities",
+      "decode": "entity_list",
+      "field": "additional_entity"
+    },
+    {
+      "key": "author",
+      "decode": "ref",
+      "column": "Author"
+    },
+    {
+      "key": "publisher",
+      "decode": "ref",
+      "column": "Publisher"
+    },
+    {
+      "key": "content_writer",
+      "decode": "ref",
+      "field": "author"
+    },
+    {
+      "key": "content_approver",
+      "decode": "ref",
+      "column": "ContentApprover"
+    },
+    {
+      "key": "editor",
+      "decode": "ref",
+      "column": "Editor"
+    },
+    {
+      "key": "tags",
+      "decode": "tags",
+      "field": "tags"
+    },
+    {
+      "key": "global_news",
+      "column": "GlobalNews"
+    },
+    {
+      "key": "locally_active",
+      "column": "LocallyActive"
+    },
+    {
+      "key": "globally_active",
+      "column": "GloballyActive"
+    },
+    {
+      "key": "local_approver_group",
+      "field": "approver_group"
+    },
+    {
+      "key": "global_approver_group",
+      "column": "GlobalApproverGroup"
+    },
+    {
+      "key": "is_published",
+      "column": "IsPulished"
+    },
+    {
+      "key": "is_globally_approved",
+      "column": "IsGloballyApproved"
+    },
+    {
+      "key": "is_locally_approved",
+      "column": "IsLocallyApproved"
+    },
+    {
+      "key": "is_modified_by_global",
+      "column": "IsModifiedByGlobal"
+    },
+    {
+      "key": "news_in_urdu",
+      "decode": "urdu_link",
+      "column": "NewsInUrdu"
+    },
+    {
+      "key": "contact",
+      "column": "Contact"
+    },
+    {
+      "key": "secondary_language_2",
+      "column": "SecondaryLanguage2"
+    },
+    {
+      "key": "secondary_language_3",
+      "column": "SecondaryLanguage3"
+    },
+    {
+      "key": "schedule_start_date",
+      "field": "date"
+    },
+    {
+      "key": "schedule_end_date",
+      "column": "ScheduleEndDate"
+    },
+    {
+      "key": "sequence_number",
+      "field": "sequence_number"
+    },
+    {
+      "key": "sharepoint_id",
+      "computed": "sharepoint_id"
+    },
+    {
+      "key": "sharepoint_sequence_number",
+      "field": "sequence_number"
+    },
+    {
+      "key": "sharepoint_modified",
+      "column": "Modified"
+    },
+    {
+      "key": "sharepoint_created",
+      "column": "Created"
+    }
+  ]
 }
