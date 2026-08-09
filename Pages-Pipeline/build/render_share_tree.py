@@ -19,10 +19,11 @@ is labelled with a central department that does not, in fact, manage it.
 Output  Pages-Pipeline/AKU-Tree.html
 """
 import io, os, json, html, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'AKU-Tree.html')
-plan = json.load(io.open(os.path.join(HERE, 'plan.json'), encoding='utf-8'))
+
+OUT = paths.out('AKU-Tree.html')
+plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
 F, P = plan['folders'], plan['pages']
 e = html.escape
 

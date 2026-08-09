@@ -47,7 +47,14 @@ pipeline/                ONE codebase for news, blogs and events
 News-Pipeline/           data/ assets/ backup/    3,606 stories, LIVE
 Blogs-Pipeline/          data/ assets/ backup/    awaiting export
 Events-Pipeline/         data/ assets/ backup/    awaiting export
-Pages-Pipeline/          build/ portal/           separate stage
+
+Pages-Pipeline/          separate stage — structure, not content
+  data/                    the 3 real inputs
+  build/                   the code; paths.py names every path, assets/ holds
+                           what the rendered pages inline
+  out/                     deliverables handed to AKU        TRACKED
+  out/work/                intermediates between steps        gitignored
+  portal/                  the React app
 
 config/types/*.json      what differs per type   <- _TEMPLATE.json is the boilerplate
 config/                  credentials, region/department abbreviations, overrides
@@ -55,6 +62,14 @@ docs/                    the specs
 tests/                   pytest
 storyblok-viewer/        Next.js preview of a payload, before uploading it
 ```
+
+**No script in `pipeline/` is named for a content type.** Four steps and seven
+scripts said "news" for code that runs blogs and events identically — the names
+lied about what they do. The old step names still work and print a note. Anything
+genuinely per-type lives in the profile, including where the type lives on
+aku.edu (`source_urls`), which is **not** the same as where it lands in Storyblok
+(`hierarchy.leaf`); they coincide for news, which is exactly how a hardcoded
+`/news` survived in `build_link_map.py`.
 
 **The code is shared; the data is not.** Duplicating 74 scripts per type would
 mean fixing every bug three times and watching the copies drift. Sharing them
@@ -71,6 +86,7 @@ in a branch through the pipeline.** Adding a type is a new JSON file.
 | Section | Carries | Why it differs |
 |---|---|---|
 | `hierarchy` | folder patterns, `leaf` | each type lands in `news/`, `blogs/` or `events/`, and may use fewer levels |
+| `source_urls` | aku.edu prefix, detail page, id prefix | where it came FROM, which is not where it goes |
 | `storyblok` | component, body whitelist, shared asset ids | a blog need not be a `news_article` |
 | `layout` | blok mapping and spacing | a type can render differently |
 | `fields` | source column names | a different SharePoint list names things differently |
@@ -283,9 +299,35 @@ every inline asset is counted twice. `media_key()` folds
 regeneration and cost story 2198 its five images. Unplaced images are now derived
 from the DB asset records, not from a file that may be stale.
 
+**A snapshot is only a baseline if you know how it was made.** Verifying a
+rename by diffing 3,606 payloads before and after showed all 3,606 changed —
+alarming, and wrong. The *before* state had been left by a lone `build-stories`
+run, which empties `media[]`; the full run was putting the media back. The
+refactor was clean. `run_pipeline.py` now warns when a step is run alone that
+leaves the payloads worse than it found them.
+
+**Never let a set decide the order of a committed file.** `build_url_lookup`
+built its variants in a `{...}` set literal, and Python randomises string hashing
+per process — so every regeneration wrote the same 7,057 entries in a different
+order. That is a 5,774-line diff that means nothing, on a file that is reviewed
+by diff. Use a list wherever output order is observable.
+
+**A path built by walking up from `__file__` breaks silently when the tree
+moves.** `Pages-Pipeline/build/join.py` reached for `../data/taxonomy/...`; the
+restructure moved that to `News-Pipeline/data/`, and the file simply was not
+there — no error, just enrichment that quietly stopped happening. Both pipelines
+now resolve paths through a module (`paths_root.py`, `Pages-Pipeline/build/paths.py`)
+so a move is one edit, not seventeen.
+
+**A name that says "news" in generic code is a bug waiting to happen.** Seven
+scripts and four steps carried it while running blogs and events identically. The
+one place it was real — a hardcoded `/news` URL prefix — hid in plain sight
+precisely because everything around it was named the same way.
+
 **Check output, do not assume it.** Every bug above was found by looking at a
 result: a banner that was a logo, a counter that went backwards, a read time
-implying 16 wpm, a description that was the word "The".
+implying 16 wpm, a description that was the word "The", a JSON file whose diff
+was 5,774 lines of nothing.
 
 ---
 

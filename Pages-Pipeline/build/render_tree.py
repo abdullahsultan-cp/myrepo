@@ -10,10 +10,11 @@ side by side. Nothing is re-parented on a guess; a folder whose name is not one
 AKU itself uses is marked "check" instead of being moved somewhere it might belong.
 """
 import io, os, json, html, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'AKU-Structure.html')
-plan = json.load(io.open(os.path.join(HERE, 'plan.json'), encoding='utf-8'))
+
+OUT = paths.out('AKU-Structure.html')
+plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 e = html.escape
 

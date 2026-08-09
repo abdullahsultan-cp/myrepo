@@ -127,6 +127,30 @@ class _Paths:
         return self.hierarchy.get("leaf", self.type)
 
     @property
+    def source_urls(self):
+        """Where this type lives on aku.edu -- the source, not the target.
+
+        Distinct from `leaf`, which is where an item lands in Storyblok. They
+        happen to be identical for news, which is why a hardcoded "/news" sat
+        in build_link_map.py unnoticed while the rest of the pipeline was made
+        generic.
+        """
+        d = self.spec.get("source_urls") or {}
+        # detail_page is a literal filename, not a pattern: it is used both to
+        # build URLs and, escaped, to match them. Storing a regex meant it could
+        # only ever be used for matching.
+        return {
+            "prefix": d.get("prefix", f"/{self.leaf}"),
+            "detail_page": d.get("detail_page", f"{self.leaf}_details.aspx"),
+            "id_prefix": d.get("id_prefix", self.leaf.upper()),
+        }
+
+    @property
+    def story_prefix(self):
+        """The public path an item is linked at, e.g. /news/some-slug."""
+        return f"/{self.leaf}"
+
+    @property
     def storyblok(self):
         """Component name and body whitelist for this type."""
         return self.spec.get("storyblok") or {}

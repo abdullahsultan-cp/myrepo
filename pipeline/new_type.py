@@ -175,7 +175,32 @@ def check(name):
               f"{len(items)} items have content"
               + (f", {empty} are EMPTY" if empty else ""))
 
-    print(f"\n  hierarchy leaf : {P.leaf}")
+    # source_urls cannot be checked against a column, but it CAN be checked
+    # against the links the export actually contains -- which is the only thing
+    # that matters. A wrong detail_page means every internal cross-link stays
+    # pointing at aku.edu, silently, and aku.edu is being switched off.
+    su = P.source_urls
+    body_col = fields.get("body")
+    if body_col in present:
+        import re as _re
+        hrefs = []
+        for it in items:
+            hrefs += _re.findall(r'href="([^"]+)"', it.get(body_col) or "")
+        page = su["detail_page"].lower()
+        hits = sum(1 for h in hrefs if page in h.lower())
+        prefix = su["prefix"].rstrip("/").lower() + "/"
+        pre_hits = sum(1 for h in hrefs if h.lower().startswith(prefix))
+        print(f"\n  source_urls, checked against the {len(hrefs):,} links in the export")
+        print(f"    detail_page {su['detail_page']:<22} {hits:,} link(s) match")
+        print(f"    prefix      {su['prefix']:<22} {pre_hits:,} link(s) match")
+        if not hits and not pre_hits:
+            bad.append(("source_urls", [su["detail_page"], su["prefix"]]))
+            print(f"    NOTHING MATCHES. Internal cross-links will not resolve and")
+            print(f"    will be left pointing at aku.edu. Open a body field, find a")
+            print(f"    real internal link, and set these from it.")
+
+    print(f"\n  hierarchy leaf : {P.leaf}   (where it lands in Storyblok)")
+    print(f"  source prefix  : {su['prefix']}   (where it came from on aku.edu)")
     print(f"  component      : {P.component}   "
           f"{'<- still the news placeholder' if P.component == 'news_article' and name != 'news' else ''}")
     print(f"  example target : "

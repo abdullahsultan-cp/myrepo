@@ -13,10 +13,11 @@ with folders, pages and people joined. This one writes
 `AKU-Migration-Portal-legacy.html` so a re-run cannot silently overwrite it.
 """
 import io, os, json, html, collections, re
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'AKU-Migration-Portal-legacy.html')
-plan = json.load(io.open(os.path.join(HERE, 'plan.json'), encoding='utf-8'))
+
+OUT = paths.out('AKU-Migration-Portal-legacy.html')
+plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 LIVE = plan.get('live', [])
 e = html.escape
@@ -218,7 +219,7 @@ def onode(path, depth=0):
 chart_html = ('<div class="ocwrap"><div class="oc"><ul>%s</ul></div></div>'
               % ''.join(onode(p) for p in roots))
 
-PEOPLE = json.load(io.open(os.path.join(HERE, 'people.json'), encoding='utf-8'))
+PEOPLE = json.load(io.open(paths.work('people.json'), encoding='utf-8'))
 CAMPUS = {'aku': 'Karachi', 'nbi': 'Nairobi', 'dar': 'Dar es Salaam',
           'ismc': 'London', 'scholar': 'service account'}
 by_cap = collections.Counter(p['top_capability'] for p in PEOPLE)
@@ -330,8 +331,8 @@ moved_rows = ''.join(
     for x in sorted(moved, key=lambda z: (z['content_type'], z['new_path'])))
 
 # ---------------------------------------------------------------- shell
-CSS = io.open(os.path.join(HERE, 'portal.css'), encoding='utf-8').read()
-JS = io.open(os.path.join(HERE, 'portal.js'), encoding='utf-8').read()
+CSS = io.open(paths.asset('portal.css'), encoding='utf-8').read()
+JS = io.open(paths.asset('portal.js'), encoding='utf-8').read()
 
 
 def screen(sid, title, lede, body):

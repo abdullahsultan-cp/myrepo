@@ -21,8 +21,8 @@ python pipeline/taxonomy/run_taxonomy.py tree       # one step by name
 Input is `News-Pipeline/data/cleaned/`, which is gitignored. After a fresh clone:
 
 ```bash
-python pipeline/run_pipeline.py extract-news
-python pipeline/run_pipeline.py clean-news
+python pipeline/run_pipeline.py extract
+python pipeline/run_pipeline.py clean
 python pipeline/taxonomy/run_taxonomy.py
 ```
 

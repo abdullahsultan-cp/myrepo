@@ -8,9 +8,10 @@ the units it names on a landing page. Every row here was fetched, not inferred.
 to-do list: the sweep is not finished, and this file says exactly what is left so
 the next pass has no guesswork in it.
 
-Run: python site_visits.py   -> ../aku-site-visits.csv
+Run: python site_visits.py   -> ../out/aku-site-visits.csv
 """
 import csv, io, os
+import paths
 
 # url path, what AKU showed, what it settled, and whether it changed a placement
 VISITED = [
@@ -700,8 +701,7 @@ REMAINING = []
 SKIP = ['/test', '/test-supportus', '/ismc2', '/leads1', '/leads2', '/search']
 
 if __name__ == '__main__':
-    out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-                       'aku-site-visits.csv')
+    out = paths.out('aku-site-visits.csv')
     with io.open(out, 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.writer(f)
         w.writerow(['status', 'pages_behind_it', 'url', 'what_aku_showed',

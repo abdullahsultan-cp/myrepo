@@ -12,7 +12,7 @@ if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
 from storyblok_utils import generate_uid
-from validate_news_media import (
+from validate_media import (
     DOWNLOAD_FAILED,
     MEDIA_COLUMNS,
     classify_extension,
@@ -21,7 +21,10 @@ from validate_news_media import (
 
 from paths_root import P  # noqa: E402
 
-MEDIA_PUBLIC_PREFIX = "/news-media"
+# Must agree with richtext_media_utils.MEDIA_PUBLIC_PREFIX -- the two write
+# into the same rich text, so a mismatch splits one story's media across two
+# URL prefixes.
+MEDIA_PUBLIC_PREFIX = f"/{P.leaf}-media"
 MEDIA_ROLE_ORDER = (
     "Thumbnail image",
     "Banner image",

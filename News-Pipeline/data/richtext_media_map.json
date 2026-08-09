@@ -1,380 +1,28 @@
 {
   "summary": {
-    "unique_media_references": 257,
-    "missing_assets": 70,
-    "present_assets": 187,
-    "story_references": 381,
-    "stories_with_missing_media": 51,
-    "media_files_on_disk": 3609,
+    "unique_media_references": 259,
+    "missing_assets": 78,
+    "present_assets": 181,
+    "story_references": 584,
+    "stories_with_missing_media": 54,
+    "media_files_on_disk": 3902,
     "media_type_counts": {
-      "other": 169,
+      "other": 171,
       "image": 88
     },
     "sharepoint_base_url": "https://www.aku.edu",
-    "attempted": 72,
-    "downloaded": 2,
-    "failed": 70,
-    "dry_run": false,
-    "failures": [
-      {
-        "source_key": "/ismc/publications/Documents/AKU Publications Catalogue 2020-21 v5.pdf",
-        "absolute_url": "https://www.aku.edu/ismc/publications/Documents/AKU Publications Catalogue 2020-21 v5.pdf",
-        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/ismc/publications/Documents/AKU%20Publications%20Catalogue%202020-21%20v5.pdf"
-      },
-      {
-        "source_key": "http://dmc.gov.pk/documents/pdfs/DOMC Malaria Annual Report 2018.pdf",
-        "absolute_url": "http://dmc.gov.pk/documents/pdfs/DOMC Malaria Annual Report 2018.pdf",
-        "error": "HTTPSConnectionPool(host='dmc.gov.pk', port=443): Max retries exceeded with url: /documents/pdfs/DOMC%20Malaria%20Annual%20Report%202018.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://eads.giwuza.com/wp-content/uploads/2017/12/Urban-Agriculture_Report.pdf",
-        "absolute_url": "http://eads.giwuza.com/wp-content/uploads/2017/12/Urban-Agriculture_Report.pdf",
-        "error": "500 Server Error: Internal Server Error for url: https://eads.giwuza.com/wp-content/uploads/2017/12/Urban-Agriculture_Report.pdf"
-      },
-      {
-        "source_key": "http://erepository.uonbi.ac.ke/bitstream/handle/11295/7156/Chebii%20-%20Roles%20Of%20Children%E2%80%99s%20Homes%20In%20Provision%20Of%20Care%20To%20Vulnerable%20Children%20A%20Case%20Of%20Bamburi%20Division%2C%20Mombasa%20County%2C%20Kenya.pdf?sequence=1&amp;isAllowed=y",
-        "absolute_url": "http://erepository.uonbi.ac.ke/bitstream/handle/11295/7156/Chebii%20-%20Roles%20Of%20Children%E2%80%99s%20Homes%20In%20Provision%20Of%20Care%20To%20Vulnerable%20Children%20A%20Case%20Of%20Bamburi%20Division%2C%20Mombasa%20County%2C%20Kenya.pdf?sequence=1&amp;isAllowed=y",
-        "error": "HTTPSConnectionPool(host='erepository.uonbi.ac.ke', port=443): Max retries exceeded with url: /bitstream/handle/11295/7156/Chebii%20-%20Roles%20Of%20Children%E2%80%99s%20Homes%20In%20Provision%20Of%20Care%20To%20Vulnerable%20Children%20A%20Case%20Of%20Bamburi%20Division,%20Mombasa%20County,%20Kenya.pdf?sequence=1&amp;isAllowed=y (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://erepository.uonbi.ac.ke/bitstream/handle/11295/7156/Chebii%20-%20Roles%20Of%20Children%E2%80%99s%20Homes%20In%20Provision%20Of%20Care%20To%20Vulnerable%20Children%20A%20Case%20Of%20Bamburi%20Division%2C%20Mombasa%20County%2C%20Kenya.pdf?sequence=1&isAllowed=y",
-        "absolute_url": "http://erepository.uonbi.ac.ke/bitstream/handle/11295/7156/Chebii%20-%20Roles%20Of%20Children%E2%80%99s%20Homes%20In%20Provision%20Of%20Care%20To%20Vulnerable%20Children%20A%20Case%20Of%20Bamburi%20Division%2C%20Mombasa%20County%2C%20Kenya.pdf?sequence=1&isAllowed=y",
-        "error": "HTTPSConnectionPool(host='erepository.uonbi.ac.ke', port=443): Max retries exceeded with url: /bitstream/handle/11295/7156/Chebii%20-%20Roles%20Of%20Children%E2%80%99s%20Homes%20In%20Provision%20Of%20Care%20To%20Vulnerable%20Children%20A%20Case%20Of%20Bamburi%20Division,%20Mombasa%20County,%20Kenya.pdf?sequence=1&isAllowed=y (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://hec.gov.pk/english/services/universities/Ranking/2013/Documents/FinalRankingListdated2013.pdf",
-        "absolute_url": "http://hec.gov.pk/english/services/universities/Ranking/2013/Documents/FinalRankingListdated2013.pdf",
-        "error": "HTTPSConnectionPool(host='hec.gov.pk', port=443): Max retries exceeded with url: /english/services/universities/Ranking/2013/Documents/FinalRankingListdated2013.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://hec.gov.pk/english/services/universities/Ranking/2014/Documents/2014 doc.pdf",
-        "absolute_url": "http://hec.gov.pk/english/services/universities/Ranking/2014/Documents/2014 doc.pdf",
-        "error": "HTTPSConnectionPool(host='hec.gov.pk', port=443): Max retries exceeded with url: /english/services/universities/Ranking/2014/Documents/2014%20doc.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://hec.gov.pk/english/universities/Documents/Ranking_Doc (2015).pdf",
-        "absolute_url": "http://hec.gov.pk/english/universities/Documents/Ranking_Doc (2015).pdf",
-        "error": "HTTPSConnectionPool(host='hec.gov.pk', port=443): Max retries exceeded with url: /english/universities/Documents/Ranking_Doc%20(2015).pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://inequalities.sidint.net/kenya/wp-content/uploads/sites/3/2013/10/Preliminary pages.pdf",
-        "absolute_url": "http://inequalities.sidint.net/kenya/wp-content/uploads/sites/3/2013/10/Preliminary pages.pdf",
-        "error": "404 Client Error: Not Found for url: http://inequalities.sidint.net/kenya/wp-content/uploads/sites/3/2013/10/Preliminary%20pages.pdf"
-      },
-      {
-        "source_key": "http://isiarticles.com/bundles/Article/pre/pdf/131902.pdf",
-        "absolute_url": "http://isiarticles.com/bundles/Article/pre/pdf/131902.pdf",
-        "error": "HTTPConnectionPool(host='isiarticles.com', port=80): Max retries exceeded with url: /bundles/Article/pre/pdf/131902.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='isiarticles.com', port=80) at 0x10f2a4050>, 'Connection to isiarticles.com timed out. (connect timeout=120)'))"
-      },
-      {
-        "source_key": "http://kehpca.org/wp-content/uploads/KENYA-NATIONAL-CANCER-CONTROL-STRATEGY-2017-2022.pdf",
-        "absolute_url": "http://kehpca.org/wp-content/uploads/KENYA-NATIONAL-CANCER-CONTROL-STRATEGY-2017-2022.pdf",
-        "error": "404 Client Error: Not Found for url: https://kehpca.org/wp-content/uploads/KENYA-NATIONAL-CANCER-CONTROL-STRATEGY-2017-2022.pdf"
-      },
-      {
-        "source_key": "http://kenyalaw.org/kenyalawblog/wp-content/uploads/2017/01/Criminal_Justice_Report.pdf",
-        "absolute_url": "http://kenyalaw.org/kenyalawblog/wp-content/uploads/2017/01/Criminal_Justice_Report.pdf",
-        "error": "403 Client Error: Forbidden for url: http://kenyalaw.org/kenyalawblog/wp-content/uploads/2017/01/Criminal_Justice_Report.pdf"
-      },
-      {
-        "source_key": "http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/Counter-TraffickinginPersonsAct_No8of2010.pdf",
-        "absolute_url": "http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/Counter-TraffickinginPersonsAct_No8of2010.pdf",
-        "error": "403 Client Error: Forbidden for url: http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/Counter-TraffickinginPersonsAct_No8of2010.pdf"
-      },
-      {
-        "source_key": "http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/MiningAct_No12of2016.pdf",
-        "absolute_url": "http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/MiningAct_No12of2016.pdf",
-        "error": "403 Client Error: Forbidden for url: http://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/MiningAct_No12of2016.pdf"
-      },
-      {
-        "source_key": "http://kenyalaw.org/kl/fileadmin/pdfdownloads/LegalNotices/2019/LN2_2019.pdf",
-        "absolute_url": "http://kenyalaw.org/kl/fileadmin/pdfdownloads/LegalNotices/2019/LN2_2019.pdf",
-        "error": "403 Client Error: Forbidden for url: http://kenyalaw.org/kl/fileadmin/pdfdownloads/LegalNotices/2019/LN2_2019.pdf"
-      },
-      {
-        "source_key": "http://ktb.go.ke/wp-content/uploads/2019/01/Tourism-Performance-2018-Presentation-Final2.pdf",
-        "absolute_url": "http://ktb.go.ke/wp-content/uploads/2019/01/Tourism-Performance-2018-Presentation-Final2.pdf",
-        "error": "404 Client Error: Not Found for url: https://ktb.go.ke/wp-content/uploads/2019/01/Tourism-Performance-2018-Presentation-Final2.pdf"
-      },
-      {
-        "source_key": "http://library.aepam.edu.pk/Books/Pakistan Education Statistics 2016-17.pdf",
-        "absolute_url": "http://library.aepam.edu.pk/Books/Pakistan Education Statistics 2016-17.pdf",
-        "error": "HTTPConnectionPool(host='library.aepam.edu.pk', port=80): Max retries exceeded with url: /Books/Pakistan%20Education%20Statistics%202016-17.pdf (Caused by NameResolutionError(\"HTTPConnection(host='library.aepam.edu.pk', port=80): Failed to resolve 'library.aepam.edu.pk' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://sanitationandwaterforall.org/wp-content/uploads/download-manager-files/KESH POLICY_1.pdf",
-        "absolute_url": "http://sanitationandwaterforall.org/wp-content/uploads/download-manager-files/KESH POLICY_1.pdf",
-        "error": "HTTPConnectionPool(host='sanitationandwaterforall.org', port=80): Max retries exceeded with url: /wp-content/uploads/download-manager-files/KESH%20POLICY_1.pdf (Caused by NameResolutionError(\"HTTPConnection(host='sanitationandwaterforall.org', port=80): Failed to resolve 'sanitationandwaterforall.org' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://siteresources.worldbank.org/INTARD/Resources/335807-1338987609349/ARD13_DP_Scaling_Up_web.pdf",
-        "absolute_url": "http://siteresources.worldbank.org/INTARD/Resources/335807-1338987609349/ARD13_DP_Scaling_Up_web.pdf",
-        "error": "502 Server Error: Bad Gateway for url: https://siteresources.worldbank.org/INTARD/Resources/335807-1338987609349/ARD13_DP_Scaling_Up_web.pdf"
-      },
-      {
-        "source_key": "http://uis.unesco.org/sites/default/files/documents/education-2030-incheon-framework-for-action-implementation-of-sdg4-2016-en_2.pdf",
-        "absolute_url": "http://uis.unesco.org/sites/default/files/documents/education-2030-incheon-framework-for-action-implementation-of-sdg4-2016-en_2.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.uis.unesco.org/sites/default/files/documents/education-2030-incheon-framework-for-action-implementation-of-sdg4-2016-en_2.pdf"
-      },
-      {
-        "source_key": "http://usir.salford.ac.uk/id/eprint/35221/1/120515 Clever Classrooms.pdf",
-        "absolute_url": "http://usir.salford.ac.uk/id/eprint/35221/1/120515 Clever Classrooms.pdf",
-        "error": "HTTPSConnectionPool(host='salford-repository.worktribe.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='salford-repository.worktribe.com', port=443): Failed to resolve 'salford-repository.worktribe.com' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://vision2030.go.ke/inc/uploads/2018/06/Second-Medium-Term-Plan-2013-2017.pdf",
-        "absolute_url": "http://vision2030.go.ke/inc/uploads/2018/06/Second-Medium-Term-Plan-2013-2017.pdf",
-        "error": "404 Client Error: Not Found for url: https://vision2030.go.ke/inc/uploads/2018/06/Second-Medium-Term-Plan-2013-2017.pdf"
-      },
-      {
-        "source_key": "http://www.adeanet.org/youth-skills-forum/sites/default/files/au_2017_dd_roadmap_final_eng.pdf",
-        "absolute_url": "http://www.adeanet.org/youth-skills-forum/sites/default/files/au_2017_dd_roadmap_final_eng.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.adeanet.org/youth-skills-forum/sites/default/files/au_2017_dd_roadmap_final_eng.pdf"
-      },
-      {
-        "source_key": "http://www.ict.go.ke/wp-content/uploads/2019/05/Kenya-Digital-Economy-2019.pdf",
-        "absolute_url": "http://www.ict.go.ke/wp-content/uploads/2019/05/Kenya-Digital-Economy-2019.pdf",
-        "error": "HTTPSConnectionPool(host='www.ict.go.ke', port=443): Max retries exceeded with url: /wp-content/uploads/2019/05/Kenya-Digital-Economy-2019.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "http://www.iosrjournals.org/iosr-jhss/papers/Vol. 23 Issue2/Version-10/M2302108495.pdf",
-        "absolute_url": "http://www.iosrjournals.org/iosr-jhss/papers/Vol. 23 Issue2/Version-10/M2302108495.pdf",
-        "error": "HTTPConnectionPool(host='www.iosrjournals.org', port=80): Max retries exceeded with url: /iosr-jhss/papers/Vol.%2023%20Issue2/Version-10/M2302108495.pdf (Caused by ConnectTimeoutError(<HTTPConnection(host='www.iosrjournals.org', port=80) at 0x10ee37f00>, 'Connection to www.iosrjournals.org timed out. (connect timeout=120)'))"
-      },
-      {
-        "source_key": "http://www.moh.gov.rw/fileadmin/templates/Docs/Posted-National-Mental-health-Policy-1.pdf",
-        "absolute_url": "http://www.moh.gov.rw/fileadmin/templates/Docs/Posted-National-Mental-health-Policy-1.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.moh.gov.rw/fileadmin/templates/Docs/Posted-National-Mental-health-Policy-1.pdf"
-      },
-      {
-        "source_key": "http://www.ncpd.go.ke/wp-content/uploads/2016/11/Policy-Brief-37-Youth-Curbing-Early-Marriage-Improves-Prospects.pdf",
-        "absolute_url": "http://www.ncpd.go.ke/wp-content/uploads/2016/11/Policy-Brief-37-Youth-Curbing-Early-Marriage-Improves-Prospects.pdf",
-        "error": "HTTPConnectionPool(host='www.ncpd.go.ke', port=80): Max retries exceeded with url: /wp-content/uploads/2016/11/Policy-Brief-37-Youth-Curbing-Early-Marriage-Improves-Prospects.pdf (Caused by NameResolutionError(\"HTTPConnection(host='www.ncpd.go.ke', port=80): Failed to resolve 'www.ncpd.go.ke' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://www.parliament.go.ke/sites/default/files/2021-03/The Mental Health (Amendment) Bill 2020.pdf",
-        "absolute_url": "http://www.parliament.go.ke/sites/default/files/2021-03/The Mental Health (Amendment) Bill 2020.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.parliament.go.ke/sites/default/files/2021-03/The%20Mental%20Health%20(Amendment)%20Bill%202020.pdf"
-      },
-      {
-        "source_key": "http://www.sindh.gov.pk/dpt/swd/senior citizen.pdf",
-        "absolute_url": "http://www.sindh.gov.pk/dpt/swd/senior citizen.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.sindh.gov.pk:443/dpt/swd/senior%20citizen.pdf"
-      },
-      {
-        "source_key": "http://www.uwezo.net/wp-content/uploads/2016/12/UwezoKenya2015ALAReport-FINAL-EN-web.pdf",
-        "absolute_url": "http://www.uwezo.net/wp-content/uploads/2016/12/UwezoKenya2015ALAReport-FINAL-EN-web.pdf",
-        "error": "HTTPConnectionPool(host='www.uwezo.net', port=80): Max retries exceeded with url: /wp-content/uploads/2016/12/UwezoKenya2015ALAReport-FINAL-EN-web.pdf (Caused by NameResolutionError(\"HTTPConnection(host='www.uwezo.net', port=80): Failed to resolve 'www.uwezo.net' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://www.who.int/cancer/country-profiles/pak_en.pdf",
-        "absolute_url": "http://www.who.int/cancer/country-profiles/pak_en.pdf",
-        "error": "HTTPConnectionPool(host='www.who.int', port=80): Max retries exceeded with url: /cancer/country-profiles/pak_en.pdf (Caused by NameResolutionError(\"HTTPConnection(host='www.who.int', port=80): Failed to resolve 'www.who.int' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://www.who.int/gho/countries/pak.pdf?ua=1",
-        "absolute_url": "http://www.who.int/gho/countries/pak.pdf?ua=1",
-        "error": "HTTPConnectionPool(host='www.who.int', port=80): Max retries exceeded with url: /gho/countries/pak.pdf?ua=1 (Caused by NameResolutionError(\"HTTPConnection(host='www.who.int', port=80): Failed to resolve 'www.who.int' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://www.wish.org.qa/wp-content/uploads/2018/11/IMPJ6078-WISH-2018-Nursing-181026.pdf",
-        "absolute_url": "http://www.wish.org.qa/wp-content/uploads/2018/11/IMPJ6078-WISH-2018-Nursing-181026.pdf",
-        "error": "HTTPConnectionPool(host='www.wish.org.qa', port=80): Max retries exceeded with url: /wp-content/uploads/2018/11/IMPJ6078-WISH-2018-Nursing-181026.pdf (Caused by NameResolutionError(\"HTTPConnection(host='www.wish.org.qa', port=80): Failed to resolve 'www.wish.org.qa' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "http://ziziafrique.org/wp-content/uploads/2019/10/WYD-Study_Synthesis-Report_ZiziAfrique.pdf",
-        "absolute_url": "http://ziziafrique.org/wp-content/uploads/2019/10/WYD-Study_Synthesis-Report_ZiziAfrique.pdf",
-        "error": "404 Client Error: Not Found for url: https://ziziafrique.org/wp-content/uploads/2019/10/WYD-Study_Synthesis-Report_ZiziAfrique.pdf"
-      },
-      {
-        "source_key": "http://ziziafrique.org/wp-content/uploads/2019/10/WYD-Study_Youth-NEET_Dalberg.pdf",
-        "absolute_url": "http://ziziafrique.org/wp-content/uploads/2019/10/WYD-Study_Youth-NEET_Dalberg.pdf",
-        "error": "404 Client Error: Not Found for url: https://ziziafrique.org/wp-content/uploads/2019/10/WYD-Study_Youth-NEET_Dalberg.pdf"
-      },
-      {
-        "source_key": "https://africa-health.com/wp-content/uploads/2020/07/AH-2020-07-lo-res-22-milcot.pdf",
-        "absolute_url": "https://africa-health.com/wp-content/uploads/2020/07/AH-2020-07-lo-res-22-milcot.pdf",
-        "error": "404 Client Error: Not Found for url: https://africa-health.com/wp-content/uploads/2020/07/AH-2020-07-lo-res-22-milcot.pdf"
-      },
-      {
-        "source_key": "https://akumedia.aku.edu/wp-content/uploads/2020/03/Predictions-2020.pdf",
-        "absolute_url": "https://akumedia.aku.edu/wp-content/uploads/2020/03/Predictions-2020.pdf",
-        "error": "HTTPSConnectionPool(host='akumedia.aku.edu', port=443): Max retries exceeded with url: /wp-content/uploads/2020/03/Predictions-2020.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='akumedia.aku.edu', port=443) at 0x10f204e10>, 'Connection to akumedia.aku.edu timed out. (connect timeout=120)'))"
-      },
-      {
-        "source_key": "https://developmentfinance.un.org/sites/developmentfinance.un.org/files/Report_IATF_2018.pdf",
-        "absolute_url": "https://developmentfinance.un.org/sites/developmentfinance.un.org/files/Report_IATF_2018.pdf",
-        "error": "HTTPSConnectionPool(host='developmentfinance.un.org', port=443): Max retries exceeded with url: /sites/developmentfinance.un.org/files/Report_IATF_2018.pdf (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "https://dhsprogram.com/pubs/pdf/PR80/PR80.pdf",
-        "absolute_url": "https://dhsprogram.com/pubs/pdf/PR80/PR80.pdf",
-        "error": "404 Client Error: Not Found for url: https://dhsprogram.com/pubs/pdf/PR80/PR80.pdf"
-      },
-      {
-        "source_key": "https://healthbridge.ca/images/uploads/library/Summary_report_final.pdf",
-        "absolute_url": "https://healthbridge.ca/images/uploads/library/Summary_report_final.pdf",
-        "error": "404 Client Error: Not Found for url: https://healthbridge.ca/images/uploads/library/Summary_report_final.pdf"
-      },
-      {
-        "source_key": "https://hivhealthclearinghouse.unesco.org/sites/default/files/resources/ESACommitmentFINALAffirmedon7thDecember.pdf",
-        "absolute_url": "https://hivhealthclearinghouse.unesco.org/sites/default/files/resources/ESACommitmentFINALAffirmedon7thDecember.pdf",
-        "error": "HTTPSConnectionPool(host='hivhealthclearinghouse.unesco.org', port=443): Max retries exceeded with url: /sites/default/files/resources/ESACommitmentFINALAffirmedon7thDecember.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='hivhealthclearinghouse.unesco.org', port=443): Failed to resolve 'hivhealthclearinghouse.unesco.org' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "https://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/MentalHealthAct_Cap248.pdf",
-        "absolute_url": "https://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/MentalHealthAct_Cap248.pdf",
-        "error": "403 Client Error: Forbidden for url: https://kenyalaw.org/kl/fileadmin/pdfdownloads/Acts/MentalHealthAct_Cap248.pdf"
-      },
-      {
-        "source_key": "https://mediainnovationnetwork.org/wp-content/uploads/2023/05/AKU-Youth-Survey-Kenya-Final-26052023-EMBARGOED.pdf",
-        "absolute_url": "https://mediainnovationnetwork.org/wp-content/uploads/2023/05/AKU-Youth-Survey-Kenya-Final-26052023-EMBARGOED.pdf",
-        "error": "404 Client Error: Not Found for url: https://mediainnovationnetwork.org/wp-content/uploads/2023/05/AKU-Youth-Survey-Kenya-Final-26052023-EMBARGOED.pdf"
-      },
-      {
-        "source_key": "https://s25924.pcdn.co/wp-content/uploads/2018/04/unicef-child-friendly-cities-and-communities-handbook.pdf",
-        "absolute_url": "https://s25924.pcdn.co/wp-content/uploads/2018/04/unicef-child-friendly-cities-and-communities-handbook.pdf",
-        "error": "HTTPSConnectionPool(host='s25924.pcdn.co', port=443): Max retries exceeded with url: /wp-content/uploads/2018/04/unicef-child-friendly-cities-and-communities-handbook.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='s25924.pcdn.co', port=443): Failed to resolve 's25924.pcdn.co' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "https://socialprotection.or.ke/images/downloads/kenya-national-social-protection-policy.pdf",
-        "absolute_url": "https://socialprotection.or.ke/images/downloads/kenya-national-social-protection-policy.pdf",
-        "error": "HTTPSConnectionPool(host='socialprotection.or.ke', port=443): Max retries exceeded with url: /images/downloads/kenya-national-social-protection-policy.pdf (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "https://violenceagainstchildren.un.org/sites/violenceagainstchildren.un.org/files/documents/publications/5._protecting_children_from_harmful_practices_low_res.pdf",
-        "absolute_url": "https://violenceagainstchildren.un.org/sites/violenceagainstchildren.un.org/files/documents/publications/5._protecting_children_from_harmful_practices_low_res.pdf",
-        "error": "404 Client Error: Not Found for url: https://violenceagainstchildren.un.org/en/sites/violenceagainstchildren.un.org/files/5._protecting_children_from_harmful_practices_low_res.pdf"
-      },
-      {
-        "source_key": "https://wasreb.go.ke/downloads/MWONGOZOCODEOFGOVERNANCE.pdf",
-        "absolute_url": "https://wasreb.go.ke/downloads/MWONGOZOCODEOFGOVERNANCE.pdf",
-        "error": "HTTPSConnectionPool(host='wasreb.go.ke', port=443): Max retries exceeded with url: /downloads/MWONGOZOCODEOFGOVERNANCE.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='wasreb.go.ke', port=443): Failed to resolve 'wasreb.go.ke' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "https://wasreb.go.ke/downloads/Water Act 2016.pdf",
-        "absolute_url": "https://wasreb.go.ke/downloads/Water Act 2016.pdf",
-        "error": "HTTPSConnectionPool(host='wasreb.go.ke', port=443): Max retries exceeded with url: /downloads/Water%20Act%202016.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='wasreb.go.ke', port=443): Failed to resolve 'wasreb.go.ke' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "https://www.afidep.org/download/Zambia-DD-report-final-print-version.pdf",
-        "absolute_url": "https://www.afidep.org/download/Zambia-DD-report-final-print-version.pdf",
-        "error": "HTTPSConnectionPool(host='www.afidep.org', port=443): Max retries exceeded with url: /download/Zambia-DD-report-final-print-version.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='www.afidep.org', port=443): Failed to resolve 'www.afidep.org' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "https://www.agakhanlibrary.org/wp-content/uploads/2024/06/MELCom-International-1.pdf",
-        "absolute_url": "https://www.agakhanlibrary.org/wp-content/uploads/2024/06/MELCom-International-1.pdf",
-        "error": "404 Client Error: Not Found for url: https://agakhanlibrary.org/wp-content/uploads/2024/06/MELCom-International-1.pdf"
-      },
-      {
-        "source_key": "https://www.agakhanlibrary.org/wp-content/uploads/2024/06/MELCom-International-Booklet-final-100524.pdf",
-        "absolute_url": "https://www.agakhanlibrary.org/wp-content/uploads/2024/06/MELCom-International-Booklet-final-100524.pdf",
-        "error": "404 Client Error: Not Found for url: https://agakhanlibrary.org/wp-content/uploads/2024/06/MELCom-International-Booklet-final-100524.pdf"
-      },
-      {
-        "source_key": "https://www.amnestykenya.org/wp-content/uploads/2019/04/ANNUAL-REPORT-FINAL-PRINT.pdf",
-        "absolute_url": "https://www.amnestykenya.org/wp-content/uploads/2019/04/ANNUAL-REPORT-FINAL-PRINT.pdf",
-        "error": "HTTPSConnectionPool(host='www.amnestykenya.org', port=443): Max retries exceeded with url: /wp-content/uploads/2019/04/ANNUAL-REPORT-FINAL-PRINT.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='www.amnestykenya.org', port=443): Failed to resolve 'www.amnestykenya.org' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      },
-      {
-        "source_key": "https://www.health.go.ke/wp-content/uploads/2019/01/Human-Resource-for-Health-Policy-Brief-fin.pdf",
-        "absolute_url": "https://www.health.go.ke/wp-content/uploads/2019/01/Human-Resource-for-Health-Policy-Brief-fin.pdf",
-        "error": "HTTPSConnectionPool(host='www.health.go.ke', port=443): Max retries exceeded with url: /wp-content/uploads/2019/01/Human-Resource-for-Health-Policy-Brief-fin.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "https://www.healthpolicyproject.com/pubs/385_HarnessingtheDemographicDividendBrief.pdf",
-        "absolute_url": "https://www.healthpolicyproject.com/pubs/385_HarnessingtheDemographicDividendBrief.pdf",
-        "error": "HTTPSConnectionPool(host='www.healthpolicyproject.com', port=443): Max retries exceeded with url: /pubs/385_HarnessingtheDemographicDividendBrief.pdf (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.healthpolicyproject.com', port=443) at 0x10f205a90>, 'Connection to www.healthpolicyproject.com timed out. (connect timeout=120)'))"
-      },
-      {
-        "source_key": "https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf",
-        "absolute_url": "https://www.knbs.or.ke/wp-content/uploads/2022/05/2022-Economic-Survey1.pdf",
-        "error": "HTTPSConnectionPool(host='www.knbs.or.ke', port=443): Max retries exceeded with url: /wp-content/uploads/2022/05/2022-Economic-Survey1.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))"
-      },
-      {
-        "source_key": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2519065/pdf/1744-9081-4-31.pdf",
-        "absolute_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2519065/pdf/1744-9081-4-31.pdf",
-        "error": "403 Client Error: Forbidden for url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2519065/pdf/1744-9081-4-31.pdf"
-      },
-      {
-        "source_key": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5726774/pdf/nihms895341.pdf",
-        "absolute_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5726774/pdf/nihms895341.pdf",
-        "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-      },
-      {
-        "source_key": "https://www.ngeckenya.org/Downloads/Status of the Boy Child Report.pdf",
-        "absolute_url": "https://www.ngeckenya.org/Downloads/Status of the Boy Child Report.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.ngeckenya.org/Downloads/Status%20of%20the%20Boy%20Child%20Report.pdf"
-      },
-      {
-        "source_key": "https://www.nips.org.pk/abstract_files/PDHS 2017-18 - Key Findings.pdf",
-        "absolute_url": "https://www.nips.org.pk/abstract_files/PDHS 2017-18 - Key Findings.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.nips.org.pk/abstract_files/PDHS%202017-18%20-%20Key%20Findings.pdf"
-      },
-      {
-        "source_key": "https://www.occ.org.nz/assets/Uploads/Emotional-Wellbeing2.pdf",
-        "absolute_url": "https://www.occ.org.nz/assets/Uploads/Emotional-Wellbeing2.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.manamokopuna.org.nz/assets/Uploads/Emotional-Wellbeing2.pdf"
-      },
-      {
-        "source_key": "https://www.openbookpublishers.com/10.11647/obp.0208.39.pdf",
-        "absolute_url": "https://www.openbookpublishers.com/10.11647/obp.0208.39.pdf",
-        "error": "405 Client Error: Not Allowed for url: https://books.openbookpublishers.com/10.11647/obp.0208.39.pdf"
-      },
-      {
-        "source_key": "https://www.undp.org/content/dam/kenya/docs/unct/UNITED NATIONS DEVELOPMENT ASSISTANCE FRAMEWORK (UNDAF) B5 web.pdf",
-        "absolute_url": "https://www.undp.org/content/dam/kenya/docs/unct/UNITED NATIONS DEVELOPMENT ASSISTANCE FRAMEWORK (UNDAF) B5 web.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.undp.org/ke/content/dam/kenya/docs/unct/UNITED%20NATIONS%20DEVELOPMENT%20ASSISTANCE%20FRAMEWORK%20(UNDAF)%20B5%20web.pdf"
-      },
-      {
-        "source_key": "https://www.unicef.org/esaro/African_Charter_articles_in_full.pdf",
-        "absolute_url": "https://www.unicef.org/esaro/African_Charter_articles_in_full.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.unicef.org/esaro/African_Charter_articles_in_full.pdf"
-      },
-      {
-        "source_key": "https://www.unicef.org/protection/files/Kenya_CP_system_case_study.pdf",
-        "absolute_url": "https://www.unicef.org/protection/files/Kenya_CP_system_case_study.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.unicef.org/protection/files/Kenya_CP_system_case_study.pdf"
-      },
-      {
-        "source_key": "https://www.unicef.org/publications/files/Every_Child_Alive_The_urgent_need_to_end_newborn_deaths.pdf",
-        "absolute_url": "https://www.unicef.org/publications/files/Every_Child_Alive_The_urgent_need_to_end_newborn_deaths.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.unicef.org/publications/files/Every_Child_Alive_The_urgent_need_to_end_newborn_deaths.pdf"
-      },
-      {
-        "source_key": "https://www.unicef.org/sowc02/pdf/sowc2002-eng-full.pdf",
-        "absolute_url": "https://www.unicef.org/sowc02/pdf/sowc2002-eng-full.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.unicef.org/sowc02/pdf/sowc2002-eng-full.pdf"
-      },
-      {
-        "source_key": "https://www.usaid.gov/sites/default/files/documents/1864/Kenya-Nutrition-Profile-Mar2018-508.pdf",
-        "absolute_url": "https://www.usaid.gov/sites/default/files/documents/1864/Kenya-Nutrition-Profile-Mar2018-508.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.usaid.gov/sites/default/files/documents/1864/Kenya-Nutrition-Profile-Mar2018-508.pdf"
-      },
-      {
-        "source_key": "https://www.who.int/global_health_histories/seminars/kelley_presentation_medical_tourism.pdf",
-        "absolute_url": "https://www.who.int/global_health_histories/seminars/kelley_presentation_medical_tourism.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.who.int/global_health_histories/seminars/kelley_presentation_medical_tourism.pdf"
-      },
-      {
-        "source_key": "https://www.who.int/pmnch/media/membernews/2011/20121216_kenyaparliament.pdf",
-        "absolute_url": "https://www.who.int/pmnch/media/membernews/2011/20121216_kenyaparliament.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.who.int/pmnch/media/membernews/2011/20121216_kenyaparliament.pdf"
-      },
-      {
-        "source_key": "https://www.wsp.org/sites/wsp.org/files/publications/Kenya Environmental Sanitation and Hygiene Strategic Framework.pdf",
-        "absolute_url": "https://www.wsp.org/sites/wsp.org/files/publications/Kenya Environmental Sanitation and Hygiene Strategic Framework.pdf",
-        "error": "404 Client Error: Not Found for url: https://www.worldbank.org/en/programs/global-water-security-sanitation-partnership/sites/wsp.org/files/publications/Kenya%20Environmental%20Sanitation%20and%20Hygiene%20Strategic%20Framework.pdf"
-      }
-    ],
+    "attempted": 78,
+    "downloaded": 0,
+    "failed": 0,
+    "dry_run": true,
+    "failures": [],
     "mapped_assets": 187,
-    "stories_with_richtext_media": 116,
-    "stories_updated": 116
+    "stories_with_richtext_media": 116
   },
   "assets": [
     {
       "source_key": "/Documents/BMJ Nutrition and ECD Pakistan.pdf",
-      "source_ref": "/Documents/BMJ Nutrition and ECD Pakistan.pdf",
+      "source_ref": "https://www.aku.edu/Documents/BMJ Nutrition and ECD Pakistan.pdf",
       "absolute_url": "https://www.aku.edu/Documents/BMJ Nutrition and ECD Pakistan.pdf",
       "basename": "BMJ Nutrition and ECD Pakistan.pdf",
       "media_type": "other",
@@ -382,6 +30,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/BMJ Nutrition and ECD Pakistan.pdf",
+          "text": "Multisector governance for nutrition and early childhood development: overlapping agendas and differing progress in Pakistan"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -396,7 +51,7 @@
     },
     {
       "source_key": "/Documents/Governing multisectoral action for health in low and middle income countries.pdf",
-      "source_ref": "/Documents/Governing multisectoral action for health in low and middle income countries.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Governing multisectoral action for health in low and middle income countries.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Governing multisectoral action for health in low and middle income countries.pdf",
       "basename": "Governing multisectoral action for health in low and middle income countries.pdf",
       "media_type": "other",
@@ -404,6 +59,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Governing multisectoral action for health in low and middle income countries.pdf",
+          "text": "Governing Multisectoral Action for Health in Low- and Middle-Income Countries"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -418,7 +80,7 @@
     },
     {
       "source_key": "/Documents/Lenses and levels_ the why, what and how of measuring health system.pdf",
-      "source_ref": "/Documents/Lenses and levels_ the why, what and how of measuring health system.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Lenses and levels_ the why, what and how of measuring health system.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Lenses and levels_ the why, what and how of measuring health system.pdf",
       "basename": "Lenses and levels_ the why, what and how of measuring health system.pdf",
       "media_type": "other",
@@ -426,6 +88,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Lenses and levels_ the why, what and how of measuring health system.pdf",
+          "text": "Lenses and levels: the why, what and how of measuring health system drivers of women's, children's and adolescents' health with a governance focus"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -440,7 +109,7 @@
     },
     {
       "source_key": "/Documents/Nutrition - Policy Brief copy.pdf",
-      "source_ref": "/Documents/Nutrition - Policy Brief copy.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Nutrition - Policy Brief copy.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Nutrition - Policy Brief copy.pdf",
       "basename": "Nutrition - Policy Brief copy.pdf",
       "media_type": "other",
@@ -448,6 +117,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Nutrition - Policy Brief copy.pdf",
+          "text": "Action on under-nutrition in Pakistan: opportunities and barriers"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -462,7 +138,7 @@
     },
     {
       "source_key": "/Documents/Nutrition_Policy_in_the_Post-devolution Era.pdf",
-      "source_ref": "/Documents/Nutrition_Policy_in_the_Post-devolution Era.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Nutrition_Policy_in_the_Post-devolution Era.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Nutrition_Policy_in_the_Post-devolution Era.pdf",
       "basename": "Nutrition_Policy_in_the_Post-devolution Era.pdf",
       "media_type": "other",
@@ -470,6 +146,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Nutrition_Policy_in_the_Post-devolution Era.pdf",
+          "text": "Nutrition Policy in the Post-devolution Context in Pakistan: An Analysis of Provincial Opportunities and Barriers*"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -484,7 +167,7 @@
     },
     {
       "source_key": "/Documents/Political Economy Under Nutrition KP Report - Final copy.pdf",
-      "source_ref": "/Documents/Political Economy Under Nutrition KP Report - Final copy.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Political Economy Under Nutrition KP Report - Final copy.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Political Economy Under Nutrition KP Report - Final copy.pdf",
       "basename": "Political Economy Under Nutrition KP Report - Final copy.pdf",
       "media_type": "other",
@@ -492,6 +175,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Political Economy Under Nutrition KP Report - Final copy.pdf",
+          "text": "Nutirition Political Economy, Pakistan: Khyber Pakhtunkhwa Province Report"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -506,7 +196,7 @@
     },
     {
       "source_key": "/Documents/Political Economy Under Nutrition Punjab Report - Final copy.pdf",
-      "source_ref": "/Documents/Political Economy Under Nutrition Punjab Report - Final copy.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Political Economy Under Nutrition Punjab Report - Final copy.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Political Economy Under Nutrition Punjab Report - Final copy.pdf",
       "basename": "Political Economy Under Nutrition Punjab Report - Final copy.pdf",
       "media_type": "other",
@@ -514,6 +204,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Political Economy Under Nutrition Punjab Report - Final copy.pdf",
+          "text": "Nutirition Political Economy, Pakistan: Punjab Province Report"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -528,7 +225,7 @@
     },
     {
       "source_key": "/Documents/Political Economy Under Nutrition Sindh Report - Final copy.pdf",
-      "source_ref": "/Documents/Political Economy Under Nutrition Sindh Report - Final copy.pdf",
+      "source_ref": "https://www.aku.edu/Documents/Political Economy Under Nutrition Sindh Report - Final copy.pdf",
       "absolute_url": "https://www.aku.edu/Documents/Political Economy Under Nutrition Sindh Report - Final copy.pdf",
       "basename": "Political Economy Under Nutrition Sindh Report - Final copy.pdf",
       "media_type": "other",
@@ -536,6 +233,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Political Economy Under Nutrition Sindh Report - Final copy.pdf",
+          "text": "Nutirition Political Economy, Pakistan: Sindh Province Report"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -575,12 +279,11 @@
       "local_filename": "1991-richtext-759fd7b8fb-Political-Economy-Under-Nutrition-Balochistan-Report---Final-copy-2-2.pdf",
       "local_src": "/news-media/1991-richtext-759fd7b8fb-Political-Economy-Under-Nutrition-Balochistan-Report---Final-copy-2-2.pdf",
       "exists_locally": true,
-      "download_status": "downloaded",
-      "bytes": 5065185
+      "download_status": "present"
     },
     {
       "source_key": "/Documents/The Political Economy of Undernutrition  Pakistan copy.pdf",
-      "source_ref": "/Documents/The Political Economy of Undernutrition  Pakistan copy.pdf",
+      "source_ref": "https://www.aku.edu/Documents/The Political Economy of Undernutrition  Pakistan copy.pdf",
       "absolute_url": "https://www.aku.edu/Documents/The Political Economy of Undernutrition  Pakistan copy.pdf",
       "basename": "The Political Economy of Undernutrition  Pakistan copy.pdf",
       "media_type": "other",
@@ -588,6 +291,13 @@
         "1991"
       ],
       "references": [
+        {
+          "story_id": "1991",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/The Political Economy of Undernutrition  Pakistan copy.pdf",
+          "text": "The Political Economy of Undernutirtion: National Report - Pakistan"
+        },
         {
           "story_id": "1991",
           "field": "NewsContent",
@@ -602,7 +312,7 @@
     },
     {
       "source_key": "/Documents/Transcript-BBCUrduDocumentary2.doc",
-      "source_ref": "/Documents/Transcript-BBCUrduDocumentary2.doc",
+      "source_ref": "https://www.aku.edu/Documents/Transcript-BBCUrduDocumentary2.doc",
       "absolute_url": "https://www.aku.edu/Documents/Transcript-BBCUrduDocumentary2.doc",
       "basename": "Transcript-BBCUrduDocumentary2.doc",
       "media_type": "other",
@@ -610,6 +320,13 @@
         "1711"
       ],
       "references": [
+        {
+          "story_id": "1711",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/Documents/Transcript-BBCUrduDocumentary2.doc",
+          "text": "Read an English transcript of the BBC Urdu documentary."
+        },
         {
           "story_id": "1711",
           "field": "NewsContent",
@@ -624,7 +341,7 @@
     },
     {
       "source_key": "/PublishingImages/Building Materials.jpg",
-      "source_ref": "/PublishingImages/Building Materials.jpg",
+      "source_ref": "https://www.aku.edu/PublishingImages/Building Materials.jpg",
       "absolute_url": "https://www.aku.edu/PublishingImages/Building Materials.jpg",
       "basename": "Building Materials.jpg",
       "media_type": "image",
@@ -632,6 +349,13 @@
         "2198"
       ],
       "references": [
+        {
+          "story_id": "2198",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/PublishingImages/Building Materials.jpg",
+          "text": "Choice of building materials"
+        },
         {
           "story_id": "2198",
           "field": "NewsContent",
@@ -646,7 +370,7 @@
     },
     {
       "source_key": "/PublishingImages/Incorporation of Nature.jpg",
-      "source_ref": "/PublishingImages/Incorporation of Nature.jpg",
+      "source_ref": "https://www.aku.edu/PublishingImages/Incorporation of Nature.jpg",
       "absolute_url": "https://www.aku.edu/PublishingImages/Incorporation of Nature.jpg",
       "basename": "Incorporation of Nature.jpg",
       "media_type": "image",
@@ -654,6 +378,13 @@
         "2198"
       ],
       "references": [
+        {
+          "story_id": "2198",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/PublishingImages/Incorporation of Nature.jpg",
+          "text": "Incorporation of Nature"
+        },
         {
           "story_id": "2198",
           "field": "NewsContent",
@@ -668,7 +399,7 @@
     },
     {
       "source_key": "/PublishingImages/Octogram Title.jpg",
-      "source_ref": "/PublishingImages/Octogram Title.jpg",
+      "source_ref": "https://www.aku.edu/PublishingImages/Octogram Title.jpg",
       "absolute_url": "https://www.aku.edu/PublishingImages/Octogram Title.jpg",
       "basename": "Octogram Title.jpg",
       "media_type": "image",
@@ -676,6 +407,13 @@
         "2198"
       ],
       "references": [
+        {
+          "story_id": "2198",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/PublishingImages/Octogram Title.jpg",
+          "text": "Patterns and their psychological impact"
+        },
         {
           "story_id": "2198",
           "field": "NewsContent",
@@ -690,7 +428,7 @@
     },
     {
       "source_key": "/PublishingImages/octogram dado rail.jpg",
-      "source_ref": "/PublishingImages/octogram dado rail.jpg",
+      "source_ref": "https://www.aku.edu/PublishingImages/octogram dado rail.jpg",
       "absolute_url": "https://www.aku.edu/PublishingImages/octogram dado rail.jpg",
       "basename": "octogram dado rail.jpg",
       "media_type": "image",
@@ -698,6 +436,13 @@
         "2198"
       ],
       "references": [
+        {
+          "story_id": "2198",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/PublishingImages/octogram dado rail.jpg",
+          "text": "dado rail"
+        },
         {
           "story_id": "2198",
           "field": "NewsContent",
@@ -712,7 +457,7 @@
     },
     {
       "source_key": "/PublishingImages/octogram reception lobby.jpg",
-      "source_ref": "/PublishingImages/octogram reception lobby.jpg",
+      "source_ref": "https://www.aku.edu/PublishingImages/octogram reception lobby.jpg",
       "absolute_url": "https://www.aku.edu/PublishingImages/octogram reception lobby.jpg",
       "basename": "octogram reception lobby.jpg",
       "media_type": "image",
@@ -720,6 +465,13 @@
         "2198"
       ],
       "references": [
+        {
+          "story_id": "2198",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/PublishingImages/octogram reception lobby.jpg",
+          "text": "PZP reception lobby "
+        },
         {
           "story_id": "2198",
           "field": "NewsContent",
@@ -734,7 +486,7 @@
     },
     {
       "source_key": "/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
-      "source_ref": "/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
+      "source_ref": "https://www.aku.edu/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
       "absolute_url": "https://www.aku.edu/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
       "basename": "AKDN Environment and Climate Commitment Statement.pdf",
       "media_type": "other",
@@ -744,6 +496,27 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "2875",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
+          "text": "Green Building Policy"
+        },
+        {
+          "story_id": "3109",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
+          "text": "Green Building Policy"
+        },
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/about/environment/Documents/AKDN Environment and Climate Commitment Statement.pdf",
+          "text": "AKDN Environment and Climate Commitment"
+        },
         {
           "story_id": "2875",
           "field": "NewsContent",
@@ -770,7 +543,7 @@
     },
     {
       "source_key": "/bmi/Documents/Kenya-Mental-Health-Policy.pdf",
-      "source_ref": "/bmi/Documents/Kenya-Mental-Health-Policy.pdf",
+      "source_ref": "https://www.aku.edu/bmi/Documents/Kenya-Mental-Health-Policy.pdf",
       "absolute_url": "https://www.aku.edu/bmi/Documents/Kenya-Mental-Health-Policy.pdf",
       "basename": "Kenya-Mental-Health-Policy.pdf",
       "media_type": "other",
@@ -778,6 +551,13 @@
         "2767"
       ],
       "references": [
+        {
+          "story_id": "2767",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/bmi/Documents/Kenya-Mental-Health-Policy.pdf",
+          "text": "Kenya Mental Health Action Plan 2021 - 2025"
+        },
         {
           "story_id": "2767",
           "field": "NewsContent",
@@ -792,7 +572,7 @@
     },
     {
       "source_key": "/bmi/Documents/kenya_mental_health_action_plan__2021-2025_.pdf",
-      "source_ref": "/bmi/Documents/kenya_mental_health_action_plan__2021-2025_.pdf",
+      "source_ref": "https://www.aku.edu/bmi/Documents/kenya_mental_health_action_plan__2021-2025_.pdf",
       "absolute_url": "https://www.aku.edu/bmi/Documents/kenya_mental_health_action_plan__2021-2025_.pdf",
       "basename": "kenya_mental_health_action_plan__2021-2025_.pdf",
       "media_type": "other",
@@ -800,6 +580,13 @@
         "3288"
       ],
       "references": [
+        {
+          "story_id": "3288",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/bmi/Documents/kenya_mental_health_action_plan__2021-2025_.pdf",
+          "text": "Mental Health Taskforce"
+        },
         {
           "story_id": "3288",
           "field": "NewsContent",
@@ -836,7 +623,7 @@
     },
     {
       "source_key": "/bmi/events/Documents/DAC-1-Policy-Report.pdf",
-      "source_ref": "/bmi/events/Documents/DAC-1-Policy-Report.pdf",
+      "source_ref": "https://www.aku.edu/bmi/events/Documents/DAC-1-Policy-Report.pdf",
       "absolute_url": "https://www.aku.edu/bmi/events/Documents/DAC-1-Policy-Report.pdf",
       "basename": "DAC-1-Policy-Report.pdf",
       "media_type": "other",
@@ -844,6 +631,13 @@
         "3649"
       ],
       "references": [
+        {
+          "story_id": "3649",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/bmi/events/Documents/DAC-1-Policy-Report.pdf",
+          "text": "here"
+        },
         {
           "story_id": "3649",
           "field": "NewsContent",
@@ -858,7 +652,7 @@
     },
     {
       "source_key": "/bmi/events/Documents/DAC-1-Report.pdf",
-      "source_ref": "/bmi/events/Documents/DAC-1-Report.pdf",
+      "source_ref": "https://www.aku.edu/bmi/events/Documents/DAC-1-Report.pdf",
       "absolute_url": "https://www.aku.edu/bmi/events/Documents/DAC-1-Report.pdf",
       "basename": "DAC-1-Report.pdf",
       "media_type": "other",
@@ -866,6 +660,13 @@
         "3649"
       ],
       "references": [
+        {
+          "story_id": "3649",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/bmi/events/Documents/DAC-1-Report.pdf",
+          "text": "here"
+        },
         {
           "story_id": "3649",
           "field": "NewsContent",
@@ -880,7 +681,7 @@
     },
     {
       "source_key": "/bmi/events/PublishingImages/AKU_BMI_Mathare2.jpg",
-      "source_ref": "/bmi/events/PublishingImages/AKU_BMI_Mathare2.jpg",
+      "source_ref": "https://www.aku.edu/bmi/events/PublishingImages/AKU_BMI_Mathare2.jpg",
       "absolute_url": "https://www.aku.edu/bmi/events/PublishingImages/AKU_BMI_Mathare2.jpg",
       "basename": "AKU_BMI_Mathare2.jpg",
       "media_type": "image",
@@ -888,6 +689,12 @@
         "3660"
       ],
       "references": [
+        {
+          "story_id": "3660",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/bmi/events/PublishingImages/AKU_BMI_Mathare2.jpg"
+        },
         {
           "story_id": "3660",
           "field": "NewsContent",
@@ -902,7 +709,7 @@
     },
     {
       "source_key": "/coe-wch/SiteAssets/Baseline Survey Report-MHM-2020.pdf",
-      "source_ref": "/coe-wch/SiteAssets/Baseline Survey Report-MHM-2020.pdf",
+      "source_ref": "https://www.aku.edu/coe-wch/SiteAssets/Baseline Survey Report-MHM-2020.pdf",
       "absolute_url": "https://www.aku.edu/coe-wch/SiteAssets/Baseline Survey Report-MHM-2020.pdf",
       "basename": "Baseline Survey Report-MHM-2020.pdf",
       "media_type": "other",
@@ -910,6 +717,13 @@
         "2526"
       ],
       "references": [
+        {
+          "story_id": "2526",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/coe-wch/SiteAssets/Baseline Survey Report-MHM-2020.pdf",
+          "text": "To view report click here"
+        },
         {
           "story_id": "2526",
           "field": "NewsContent",
@@ -924,7 +738,7 @@
     },
     {
       "source_key": "/coe-wch/pk/Documents/Effectiveness of supplementation to PLW.PDF",
-      "source_ref": "/coe-wch/pk/Documents/Effectiveness of supplementation to PLW.PDF",
+      "source_ref": "https://www.aku.edu/coe-wch/pk/Documents/Effectiveness of supplementation to PLW.PDF",
       "absolute_url": "https://www.aku.edu/coe-wch/pk/Documents/Effectiveness of supplementation to PLW.PDF",
       "basename": "Effectiveness of supplementation to PLW.PDF",
       "media_type": "other",
@@ -932,6 +746,13 @@
         "2378"
       ],
       "references": [
+        {
+          "story_id": "2378",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/coe-wch/pk/Documents/Effectiveness of supplementation to PLW.PDF",
+          "text": "click here"
+        },
         {
           "story_id": "2378",
           "field": "NewsContent",
@@ -946,7 +767,7 @@
     },
     {
       "source_key": "/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf",
-      "source_ref": "/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf",
+      "source_ref": "https://www.aku.edu/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf",
       "absolute_url": "https://www.aku.edu/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf",
       "basename": "TPVICS_SHRUCS_Survey_2021_Report.pdf",
       "media_type": "other",
@@ -954,6 +775,13 @@
         "2861"
       ],
       "references": [
+        {
+          "story_id": "2861",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf",
+          "text": "click here"
+        },
         {
           "story_id": "2861",
           "field": "NewsContent",
@@ -968,7 +796,7 @@
     },
     {
       "source_key": "/coe-wch/pk/Documents/Third Party Verification Immunization Coverage Survey - Round Two (TPVICS R-II).pdf",
-      "source_ref": "/coe-wch/pk/Documents/Third Party Verification Immunization Coverage Survey - Round Two (TPVICS R-II).pdf",
+      "source_ref": "https://www.aku.edu/coe-wch/pk/Documents/Third Party Verification Immunization Coverage Survey - Round Two (TPVICS R-II).pdf",
       "absolute_url": "https://www.aku.edu/coe-wch/pk/Documents/Third Party Verification Immunization Coverage Survey - Round Two (TPVICS R-II).pdf",
       "basename": "Third Party Verification Immunization Coverage Survey - Round Two (TPVICS R-II).pdf",
       "media_type": "other",
@@ -976,6 +804,13 @@
         "2793"
       ],
       "references": [
+        {
+          "story_id": "2793",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/coe-wch/pk/Documents/Third Party Verification Immunization Coverage Survey - Round Two (TPVICS R-II).pdf",
+          "text": "click here"
+        },
         {
           "story_id": "2793",
           "field": "NewsContent",
@@ -990,7 +825,7 @@
     },
     {
       "source_key": "/eai/Documents/Report - Youth Entry Level Skills.pdf",
-      "source_ref": "/eai/Documents/Report - Youth Entry Level Skills.pdf",
+      "source_ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
       "absolute_url": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
       "basename": "Report - Youth Entry Level Skills.pdf",
       "media_type": "other",
@@ -1005,6 +840,104 @@
         "2251"
       ],
       "references": [
+        {
+          "story_id": "2037",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "Aga Khan University (AKU)"
+        },
+        {
+          "story_id": "2037",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "study"
+        },
+        {
+          "story_id": "2042",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "Youth Entry Level Skills report"
+        },
+        {
+          "story_id": "2064",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": " \n         East Africa Institute's Youth Entry Level Skills Report"
+        },
+        {
+          "story_id": "2112",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": " job entry level skills for youth"
+        },
+        {
+          "story_id": "2112",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "74 per cent of entry level staff in the formal sector"
+        },
+        {
+          "story_id": "2112",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "51 per cent of formal and 40 per cent  of informal"
+        },
+        {
+          "story_id": "2112",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "formal organisations enjoy 1.8 times more longevity and sustainability compared to businesses in the informal sector."
+        },
+        {
+          "story_id": "2116",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "A report"
+        },
+        {
+          "story_id": "2116",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "The 2019 Survey"
+        },
+        {
+          "story_id": "2116",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "survey findings"
+        },
+        {
+          "story_id": "2157",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "EAI's Youth Entry Level Skills Report"
+        },
+        {
+          "story_id": "2165",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": " Whole Youth Development in Kenya Report"
+        },
+        {
+          "story_id": "2251",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/Report - Youth Entry Level Skills.pdf",
+          "text": "Job Entry-Level Skills: Seizing the Moment, Securing the Future"
+        },
         {
           "story_id": "2037",
           "field": "NewsContent",
@@ -1097,7 +1030,7 @@
     },
     {
       "source_key": "/eai/Documents/The East Africa Youth Survey Report 2016.pdf",
-      "source_ref": "/eai/Documents/The East Africa Youth Survey Report 2016.pdf",
+      "source_ref": "https://www.aku.edu/eai/Documents/The East Africa Youth Survey Report 2016.pdf",
       "absolute_url": "https://www.aku.edu/eai/Documents/The East Africa Youth Survey Report 2016.pdf",
       "basename": "The East Africa Youth Survey Report 2016.pdf",
       "media_type": "other",
@@ -1105,6 +1038,13 @@
         "2090"
       ],
       "references": [
+        {
+          "story_id": "2090",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/eai/Documents/The East Africa Youth Survey Report 2016.pdf",
+          "text": "AKU East Africa Insitute's 2016 Kenya Youth Survey Report"
+        },
         {
           "story_id": "2090",
           "field": "NewsContent",
@@ -1119,7 +1059,7 @@
     },
     {
       "source_key": "/gsmc/Documents/Concept Note Sustainable Journalism in Practice.pdf",
-      "source_ref": "/gsmc/Documents/Concept Note Sustainable Journalism in Practice.pdf",
+      "source_ref": "https://www.aku.edu/gsmc/Documents/Concept Note Sustainable Journalism in Practice.pdf",
       "absolute_url": "https://www.aku.edu/gsmc/Documents/Concept Note Sustainable Journalism in Practice.pdf",
       "basename": "Concept Note Sustainable Journalism in Practice.pdf",
       "media_type": "other",
@@ -1127,6 +1067,13 @@
         "3083"
       ],
       "references": [
+        {
+          "story_id": "3083",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/gsmc/Documents/Concept Note Sustainable Journalism in Practice.pdf",
+          "text": "Fojo"
+        },
         {
           "story_id": "3083",
           "field": "NewsContent",
@@ -1141,7 +1088,7 @@
     },
     {
       "source_key": "/gsmc/Documents/The State Of Women in Media Book.pdf",
-      "source_ref": "/gsmc/Documents/The State Of Women in Media Book.pdf",
+      "source_ref": "https://www.aku.edu/gsmc/Documents/The State Of Women in Media Book.pdf",
       "absolute_url": "https://www.aku.edu/gsmc/Documents/The State Of Women in Media Book.pdf",
       "basename": "The State Of Women in Media Book.pdf",
       "media_type": "other",
@@ -1149,6 +1096,13 @@
         "3337"
       ],
       "references": [
+        {
+          "story_id": "3337",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/gsmc/Documents/The State Of Women in Media Book.pdf",
+          "text": "here."
+        },
         {
           "story_id": "3337",
           "field": "NewsContent",
@@ -1163,7 +1117,7 @@
     },
     {
       "source_key": "/iedpk/edip/Documents/EDIP-brief.pdf",
-      "source_ref": "/iedpk/edip/Documents/EDIP-brief.pdf",
+      "source_ref": "https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
       "absolute_url": "https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
       "basename": "EDIP-brief.pdf",
       "media_type": "other",
@@ -1171,6 +1125,13 @@
         "1752"
       ],
       "references": [
+        {
+          "story_id": "1752",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
+          "text": "Programme"
+        },
         {
           "story_id": "1752",
           "field": "NewsContent",
@@ -1191,7 +1152,7 @@
     },
     {
       "source_key": "/ihd/resources/Documents/Revised Policy Brief_27th June_FINAL 1458.pdf",
-      "source_ref": "/ihd/resources/Documents/Revised Policy Brief_27th June_FINAL 1458.pdf",
+      "source_ref": "https://www.aku.edu/ihd/resources/Documents/Revised Policy Brief_27th June_FINAL 1458.pdf",
       "absolute_url": "https://www.aku.edu/ihd/resources/Documents/Revised Policy Brief_27th June_FINAL 1458.pdf",
       "basename": "Revised Policy Brief_27th June_FINAL 1458.pdf",
       "media_type": "other",
@@ -1199,6 +1160,20 @@
         "2907"
       ],
       "references": [
+        {
+          "story_id": "2907",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/ihd/resources/Documents/Revised Policy Brief_27th June_FINAL 1458.pdf",
+          "text": "Protecting the Wellbeing and Strengthening the Resilience of Frontline Health Workers"
+        },
+        {
+          "story_id": "2907",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/ihd/resources/Documents/Revised Policy Brief_27th June_FINAL 1458.pdf",
+          "text": " study"
+        },
         {
           "story_id": "2907",
           "field": "NewsContent",
@@ -1213,7 +1188,7 @@
     },
     {
       "source_key": "/ismc/publications/Documents/AFAOcassionalPaperSeries_Issue4_FINAL.pdf",
-      "source_ref": "/ismc/publications/Documents/AFAOcassionalPaperSeries_Issue4_FINAL.pdf",
+      "source_ref": "https://www.aku.edu/ismc/publications/Documents/AFAOcassionalPaperSeries_Issue4_FINAL.pdf",
       "absolute_url": "https://www.aku.edu/ismc/publications/Documents/AFAOcassionalPaperSeries_Issue4_FINAL.pdf",
       "basename": "AFAOcassionalPaperSeries_Issue4_FINAL.pdf",
       "media_type": "other",
@@ -1221,6 +1196,13 @@
         "2491"
       ],
       "references": [
+        {
+          "story_id": "2491",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/ismc/publications/Documents/AFAOcassionalPaperSeries_Issue4_FINAL.pdf",
+          "text": "UK Think-Tanks, the War on Terror and the Radicalisation Debate"
+        },
         {
           "story_id": "2491",
           "field": "NewsContent",
@@ -1235,7 +1217,7 @@
     },
     {
       "source_key": "/ismc/publications/Documents/AFAOccasionalPaperSeries-Issue6.pdf",
-      "source_ref": "/ismc/publications/Documents/AFAOccasionalPaperSeries-Issue6.pdf",
+      "source_ref": "https://www.aku.edu/ismc/publications/Documents/AFAOccasionalPaperSeries-Issue6.pdf",
       "absolute_url": "https://www.aku.edu/ismc/publications/Documents/AFAOccasionalPaperSeries-Issue6.pdf",
       "basename": "AFAOccasionalPaperSeries-Issue6.pdf",
       "media_type": "other",
@@ -1243,6 +1225,13 @@
         "2765"
       ],
       "references": [
+        {
+          "story_id": "2765",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/ismc/publications/Documents/AFAOccasionalPaperSeries-Issue6.pdf",
+          "text": "One Hundred Years of Family Law Reform in Parliament, in Court, and on Screen"
+        },
         {
           "story_id": "2765",
           "field": "NewsContent",
@@ -1286,7 +1275,7 @@
     },
     {
       "source_key": "/ismc/publications/Documents/AKU-ISMC_AFA-OP_Guidelines_2019.pdf",
-      "source_ref": "/ismc/publications/Documents/AKU-ISMC_AFA-OP_Guidelines_2019.pdf",
+      "source_ref": "https://www.aku.edu/ismc/publications/Documents/AKU-ISMC_AFA-OP_Guidelines_2019.pdf",
       "absolute_url": "https://www.aku.edu/ismc/publications/Documents/AKU-ISMC_AFA-OP_Guidelines_2019.pdf",
       "basename": "AKU-ISMC_AFA-OP_Guidelines_2019.pdf",
       "media_type": "other",
@@ -1294,6 +1283,13 @@
         "2154"
       ],
       "references": [
+        {
+          "story_id": "2154",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/ismc/publications/Documents/AKU-ISMC_AFA-OP_Guidelines_2019.pdf",
+          "text": "submission guidelines"
+        },
         {
           "story_id": "2154",
           "field": "NewsContent",
@@ -1308,7 +1304,7 @@
     },
     {
       "source_key": "/mcpk/Documents/Appointment -Asad-Latif.pdf",
-      "source_ref": "/mcpk/Documents/Appointment -Asad-Latif.pdf",
+      "source_ref": "https://www.aku.edu/mcpk/Documents/Appointment -Asad-Latif.pdf",
       "absolute_url": "https://www.aku.edu/mcpk/Documents/Appointment -Asad-Latif.pdf",
       "basename": "Appointment -Asad-Latif.pdf",
       "media_type": "other",
@@ -1316,6 +1312,13 @@
         "1828"
       ],
       "references": [
+        {
+          "story_id": "1828",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/mcpk/Documents/Appointment -Asad-Latif.pdf",
+          "text": "here"
+        },
         {
           "story_id": "1828",
           "field": "NewsContent",
@@ -1330,7 +1333,7 @@
     },
     {
       "source_key": "/mcpk/paeds/SiteAssets/Pages/child-protection-service/Child Abuse and its Prevention.pdf flyer.pdf",
-      "source_ref": "/mcpk/paeds/SiteAssets/Pages/child-protection-service/Child Abuse and its Prevention.pdf flyer.pdf",
+      "source_ref": "https://www.aku.edu/mcpk/paeds/SiteAssets/Pages/child-protection-service/Child Abuse and its Prevention.pdf flyer.pdf",
       "absolute_url": "https://www.aku.edu/mcpk/paeds/SiteAssets/Pages/child-protection-service/Child Abuse and its Prevention.pdf flyer.pdf",
       "basename": "Child Abuse and its Prevention.pdf flyer.pdf",
       "media_type": "other",
@@ -1338,6 +1341,13 @@
         "3683"
       ],
       "references": [
+        {
+          "story_id": "3683",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/mcpk/paeds/SiteAssets/Pages/child-protection-service/Child Abuse and its Prevention.pdf flyer.pdf",
+          "text": "flyer"
+        },
         {
           "story_id": "3683",
           "field": "NewsContent",
@@ -1352,7 +1362,7 @@
     },
     {
       "source_key": "/news/Documents/A Strategic Review of Pakistan Nutrition Food Insecurity Report.pdf",
-      "source_ref": "/news/Documents/A Strategic Review of Pakistan Nutrition Food Insecurity Report.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/A Strategic Review of Pakistan Nutrition Food Insecurity Report.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/A Strategic Review of Pakistan Nutrition Food Insecurity Report.pdf",
       "basename": "A Strategic Review of Pakistan Nutrition Food Insecurity Report.pdf",
       "media_type": "other",
@@ -1360,6 +1370,13 @@
         "2159"
       ],
       "references": [
+        {
+          "story_id": "2159",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/A Strategic Review of Pakistan Nutrition Food Insecurity Report.pdf",
+          "text": "Click here to view report."
+        },
         {
           "story_id": "2159",
           "field": "NewsContent",
@@ -1374,7 +1391,7 @@
     },
     {
       "source_key": "/news/Documents/A Thousand No's (Poet in the City poem).pdf",
-      "source_ref": "/news/Documents/A Thousand No's (Poet in the City poem).pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/A Thousand No's (Poet in the City poem).pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/A Thousand No's (Poet in the City poem).pdf",
       "basename": "A Thousand No's (Poet in the City poem).pdf",
       "media_type": "other",
@@ -1382,6 +1399,13 @@
         "2046"
       ],
       "references": [
+        {
+          "story_id": "2046",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/A Thousand No's (Poet in the City poem).pdf",
+          "text": "A Thousand No's (Poet in the City poem)"
+        },
         {
           "story_id": "2046",
           "field": "NewsContent",
@@ -1396,7 +1420,7 @@
     },
     {
       "source_key": "/news/Documents/AKU Media Conference Brochure.pdf",
-      "source_ref": "/news/Documents/AKU Media Conference Brochure.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/AKU Media Conference Brochure.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/AKU Media Conference Brochure.pdf",
       "basename": "AKU Media Conference Brochure.pdf",
       "media_type": "other",
@@ -1404,6 +1428,13 @@
         "287"
       ],
       "references": [
+        {
+          "story_id": "287",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/AKU Media Conference Brochure.pdf",
+          "text": "Look at the eventprogramme, speaker details and abstracts."
+        },
         {
           "story_id": "287",
           "field": "NewsContent",
@@ -1418,7 +1449,7 @@
     },
     {
       "source_key": "/news/Documents/AKU- Supplier Info Form  - AKU University Centre.pdf",
-      "source_ref": "/news/Documents/AKU- Supplier Info Form  - AKU University Centre.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/AKU- Supplier Info Form  - AKU University Centre.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/AKU- Supplier Info Form  - AKU University Centre.pdf",
       "basename": "AKU- Supplier Info Form  - AKU University Centre.pdf",
       "media_type": "other",
@@ -1426,6 +1457,13 @@
         "1567"
       ],
       "references": [
+        {
+          "story_id": "1567",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/AKU- Supplier Info Form  - AKU University Centre.pdf",
+          "text": "HERE"
+        },
         {
           "story_id": "1567",
           "field": "NewsContent",
@@ -1440,7 +1478,7 @@
     },
     {
       "source_key": "/news/Documents/AKU-EA-EOI.pdf",
-      "source_ref": "/news/Documents/AKU-EA-EOI.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/AKU-EA-EOI.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/AKU-EA-EOI.pdf",
       "basename": "AKU-EA-EOI.pdf",
       "media_type": "other",
@@ -1448,6 +1486,13 @@
         "1573"
       ],
       "references": [
+        {
+          "story_id": "1573",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/AKU-EA-EOI.pdf",
+          "text": "here "
+        },
         {
           "story_id": "1573",
           "field": "NewsContent",
@@ -1462,7 +1507,7 @@
     },
     {
       "source_key": "/news/Documents/Announcement_AH.pdf",
-      "source_ref": "/news/Documents/Announcement_AH.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/Announcement_AH.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/Announcement_AH.pdf",
       "basename": "Announcement_AH.pdf",
       "media_type": "other",
@@ -1470,6 +1515,13 @@
         "1733"
       ],
       "references": [
+        {
+          "story_id": "1733",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/Announcement_AH.pdf",
+          "text": "here"
+        },
         {
           "story_id": "1733",
           "field": "NewsContent",
@@ -1528,7 +1580,7 @@
     },
     {
       "source_key": "/news/Documents/English Fact Sheet.PDF",
-      "source_ref": "/news/Documents/English Fact Sheet.PDF",
+      "source_ref": "https://www.aku.edu/news/Documents/English Fact Sheet.PDF",
       "absolute_url": "https://www.aku.edu/news/Documents/English Fact Sheet.PDF",
       "basename": "English Fact Sheet.PDF",
       "media_type": "other",
@@ -1536,6 +1588,13 @@
         "1214"
       ],
       "references": [
+        {
+          "story_id": "1214",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/English Fact Sheet.PDF",
+          "text": "English"
+        },
         {
           "story_id": "1214",
           "field": "NewsContent",
@@ -1550,7 +1609,7 @@
     },
     {
       "source_key": "/news/Documents/TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
-      "source_ref": "/news/Documents/TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
       "basename": "TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
       "media_type": "other",
@@ -1558,6 +1617,13 @@
         "3045"
       ],
       "references": [
+        {
+          "story_id": "3045",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
+          "text": "click here"
+        },
         {
           "story_id": "3045",
           "field": "NewsContent",
@@ -1572,7 +1638,7 @@
     },
     {
       "source_key": "/news/Documents/Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
-      "source_ref": "/news/Documents/Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
       "basename": "Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
       "media_type": "other",
@@ -1580,6 +1646,13 @@
         "209"
       ],
       "references": [
+        {
+          "story_id": "209",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
+          "text": "presentation"
+        },
         {
           "story_id": "209",
           "field": "NewsContent",
@@ -1594,7 +1667,7 @@
     },
     {
       "source_key": "/news/Documents/TyphoidFAQs.pdf",
-      "source_ref": "/news/Documents/TyphoidFAQs.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/TyphoidFAQs.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/TyphoidFAQs.pdf",
       "basename": "TyphoidFAQs.pdf",
       "media_type": "other",
@@ -1602,6 +1675,13 @@
         "1609"
       ],
       "references": [
+        {
+          "story_id": "1609",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/TyphoidFAQs.pdf",
+          "text": "typhoid"
+        },
         {
           "story_id": "1609",
           "field": "NewsContent",
@@ -1616,7 +1696,7 @@
     },
     {
       "source_key": "/news/Documents/Urdu Facts Sheets.pdf",
-      "source_ref": "/news/Documents/Urdu Facts Sheets.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/Urdu Facts Sheets.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/Urdu Facts Sheets.pdf",
       "basename": "Urdu Facts Sheets.pdf",
       "media_type": "other",
@@ -1624,6 +1704,13 @@
         "1214"
       ],
       "references": [
+        {
+          "story_id": "1214",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/Urdu Facts Sheets.pdf",
+          "text": "Urdu"
+        },
         {
           "story_id": "1214",
           "field": "NewsContent",
@@ -1638,7 +1725,7 @@
     },
     {
       "source_key": "/news/Documents/gender-equity.pdf",
-      "source_ref": "/news/Documents/gender-equity.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/gender-equity.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/gender-equity.pdf",
       "basename": "gender-equity.pdf",
       "media_type": "other",
@@ -1646,6 +1733,13 @@
         "2424"
       ],
       "references": [
+        {
+          "story_id": "2424",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/gender-equity.pdf",
+          "text": "here "
+        },
         {
           "story_id": "2424",
           "field": "NewsContent",
@@ -1660,7 +1754,7 @@
     },
     {
       "source_key": "/news/Documents/nur.22072.pdf",
-      "source_ref": "/news/Documents/nur.22072.pdf",
+      "source_ref": "https://www.aku.edu/news/Documents/nur.22072.pdf",
       "absolute_url": "https://www.aku.edu/news/Documents/nur.22072.pdf",
       "basename": "nur.22072.pdf",
       "media_type": "other",
@@ -1668,6 +1762,13 @@
         "2602"
       ],
       "references": [
+        {
+          "story_id": "2602",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/Documents/nur.22072.pdf",
+          "text": "To read article click here"
+        },
         {
           "story_id": "2602",
           "field": "NewsContent",
@@ -1682,7 +1783,7 @@
     },
     {
       "source_key": "/news/PublishingImages/AKU-AKUH-BMI Conference-Multiresearch-interaction.jpg",
-      "source_ref": "/news/PublishingImages/AKU-AKUH-BMI Conference-Multiresearch-interaction.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI Conference-Multiresearch-interaction.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI Conference-Multiresearch-interaction.jpg",
       "basename": "AKU-AKUH-BMI Conference-Multiresearch-interaction.jpg",
       "media_type": "image",
@@ -1690,6 +1791,12 @@
         "3288"
       ],
       "references": [
+        {
+          "story_id": "3288",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI Conference-Multiresearch-interaction.jpg"
+        },
         {
           "story_id": "3288",
           "field": "NewsContent",
@@ -1704,7 +1811,7 @@
     },
     {
       "source_key": "/news/PublishingImages/AKU-AKUH-BMI Conference1.jpg",
-      "source_ref": "/news/PublishingImages/AKU-AKUH-BMI Conference1.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI Conference1.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI Conference1.jpg",
       "basename": "AKU-AKUH-BMI Conference1.jpg",
       "media_type": "image",
@@ -1712,6 +1819,12 @@
         "3288"
       ],
       "references": [
+        {
+          "story_id": "3288",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI Conference1.jpg"
+        },
         {
           "story_id": "3288",
           "field": "NewsContent",
@@ -1726,7 +1839,7 @@
     },
     {
       "source_key": "/news/PublishingImages/AKU-AKUH-BMI-Conference-Investment-case.jpg",
-      "source_ref": "/news/PublishingImages/AKU-AKUH-BMI-Conference-Investment-case.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI-Conference-Investment-case.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI-Conference-Investment-case.jpg",
       "basename": "AKU-AKUH-BMI-Conference-Investment-case.jpg",
       "media_type": "image",
@@ -1734,6 +1847,12 @@
         "3288"
       ],
       "references": [
+        {
+          "story_id": "3288",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/AKU-AKUH-BMI-Conference-Investment-case.jpg"
+        },
         {
           "story_id": "3288",
           "field": "NewsContent",
@@ -1748,7 +1867,7 @@
     },
     {
       "source_key": "/news/PublishingImages/AKU-Leadership-Conference.jpg",
-      "source_ref": "/news/PublishingImages/AKU-Leadership-Conference.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/AKU-Leadership-Conference.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/AKU-Leadership-Conference.jpg",
       "basename": "AKU-Leadership-Conference.jpg",
       "media_type": "image",
@@ -1756,6 +1875,12 @@
         "3288"
       ],
       "references": [
+        {
+          "story_id": "3288",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/AKU-Leadership-Conference.jpg"
+        },
         {
           "story_id": "3288",
           "field": "NewsContent",
@@ -1858,7 +1983,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Ambassador-Blome-02-web-news.jpg",
-      "source_ref": "/news/PublishingImages/Ambassador-Blome-02-web-news.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Ambassador-Blome-02-web-news.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Ambassador-Blome-02-web-news.jpg",
       "basename": "Ambassador-Blome-02-web-news.jpg",
       "media_type": "image",
@@ -1866,6 +1991,12 @@
         "3008"
       ],
       "references": [
+        {
+          "story_id": "3008",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Ambassador-Blome-02-web-news.jpg"
+        },
         {
           "story_id": "3008",
           "field": "NewsContent",
@@ -1880,7 +2011,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Data collection framework for the LIFECARD Study..jpg",
-      "source_ref": "/news/PublishingImages/Data collection framework for the LIFECARD Study..jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Data collection framework for the LIFECARD Study..jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Data collection framework for the LIFECARD Study..jpg",
       "basename": "Data collection framework for the LIFECARD Study..jpg",
       "media_type": "image",
@@ -1888,6 +2019,12 @@
         "3900"
       ],
       "references": [
+        {
+          "story_id": "3900",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Data collection framework for the LIFECARD Study..jpg"
+        },
         {
           "story_id": "3900",
           "field": "NewsContent",
@@ -1902,7 +2039,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Express Tribune.jpeg",
-      "source_ref": "/news/PublishingImages/Express Tribune.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Express Tribune.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Express Tribune.jpeg",
       "basename": "Express Tribune.jpeg",
       "media_type": "image",
@@ -1910,6 +2047,13 @@
         "3127"
       ],
       "references": [
+        {
+          "story_id": "3127",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/PublishingImages/Express Tribune.jpeg",
+          "text": "Express Tribune"
+        },
         {
           "story_id": "3127",
           "field": "NewsContent",
@@ -1924,7 +2068,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Flood-response-5-01-web-news2.jpg",
-      "source_ref": "/news/PublishingImages/Flood-response-5-01-web-news2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Flood-response-5-01-web-news2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Flood-response-5-01-web-news2.jpg",
       "basename": "Flood-response-5-01-web-news2.jpg",
       "media_type": "image",
@@ -1932,6 +2076,12 @@
         "2962"
       ],
       "references": [
+        {
+          "story_id": "2962",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Flood-response-5-01-web-news2.jpg"
+        },
         {
           "story_id": "2962",
           "field": "NewsContent",
@@ -1946,7 +2096,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Flood-schal-01-web-news.jpg",
-      "source_ref": "/news/PublishingImages/Flood-schal-01-web-news.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Flood-schal-01-web-news.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Flood-schal-01-web-news.jpg",
       "basename": "Flood-schal-01-web-news.jpg",
       "media_type": "image",
@@ -1954,6 +2104,12 @@
         "2949"
       ],
       "references": [
+        {
+          "story_id": "2949",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Flood-schal-01-web-news.jpg"
+        },
         {
           "story_id": "2949",
           "field": "NewsContent",
@@ -1968,7 +2124,7 @@
     },
     {
       "source_key": "/news/PublishingImages/FloodResponse_news_01_02.jpg",
-      "source_ref": "/news/PublishingImages/FloodResponse_news_01_02.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/FloodResponse_news_01_02.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/FloodResponse_news_01_02.jpg",
       "basename": "FloodResponse_news_01_02.jpg",
       "media_type": "image",
@@ -1976,6 +2132,12 @@
         "2931"
       ],
       "references": [
+        {
+          "story_id": "2931",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/FloodResponse_news_01_02.jpg"
+        },
         {
           "story_id": "2931",
           "field": "NewsContent",
@@ -1990,7 +2152,7 @@
     },
     {
       "source_key": "/news/PublishingImages/GB-Chief-Minister-02-web-news.jpg",
-      "source_ref": "/news/PublishingImages/GB-Chief-Minister-02-web-news.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/GB-Chief-Minister-02-web-news.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/GB-Chief-Minister-02-web-news.jpg",
       "basename": "GB-Chief-Minister-02-web-news.jpg",
       "media_type": "image",
@@ -1998,6 +2160,12 @@
         "3017"
       ],
       "references": [
+        {
+          "story_id": "3017",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/GB-Chief-Minister-02-web-news.jpg"
+        },
         {
           "story_id": "3017",
           "field": "NewsContent",
@@ -2012,7 +2180,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Gairdner-award-02-web-news.jpg",
-      "source_ref": "/news/PublishingImages/Gairdner-award-02-web-news.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Gairdner-award-02-web-news.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Gairdner-award-02-web-news.jpg",
       "basename": "Gairdner-award-02-web-news.jpg",
       "media_type": "image",
@@ -2020,6 +2188,12 @@
         "2975"
       ],
       "references": [
+        {
+          "story_id": "2975",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Gairdner-award-02-web-news.jpg"
+        },
         {
           "story_id": "2975",
           "field": "NewsContent",
@@ -2056,7 +2230,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Indonesian_CJ_web_02.jpg",
-      "source_ref": "/news/PublishingImages/Indonesian_CJ_web_02.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_02.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_02.jpg",
       "basename": "Indonesian_CJ_web_02.jpg",
       "media_type": "image",
@@ -2064,6 +2238,12 @@
         "2911"
       ],
       "references": [
+        {
+          "story_id": "2911",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_02.jpg"
+        },
         {
           "story_id": "2911",
           "field": "NewsContent",
@@ -2078,7 +2258,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Indonesian_CJ_web_03.jpg",
-      "source_ref": "/news/PublishingImages/Indonesian_CJ_web_03.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_03.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_03.jpg",
       "basename": "Indonesian_CJ_web_03.jpg",
       "media_type": "image",
@@ -2086,6 +2266,12 @@
         "2911"
       ],
       "references": [
+        {
+          "story_id": "2911",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Indonesian_CJ_web_03.jpg"
+        },
         {
           "story_id": "2911",
           "field": "NewsContent",
@@ -2100,7 +2286,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Mental-health-training-of-trainers2.jpg",
-      "source_ref": "/news/PublishingImages/Mental-health-training-of-trainers2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers2.jpg",
       "basename": "Mental-health-training-of-trainers2.jpg",
       "media_type": "image",
@@ -2108,6 +2294,12 @@
         "3545"
       ],
       "references": [
+        {
+          "story_id": "3545",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers2.jpg"
+        },
         {
           "story_id": "3545",
           "field": "NewsContent",
@@ -2122,7 +2314,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Mental-health-training-of-trainers3.jpg",
-      "source_ref": "/news/PublishingImages/Mental-health-training-of-trainers3.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers3.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers3.jpg",
       "basename": "Mental-health-training-of-trainers3.jpg",
       "media_type": "image",
@@ -2130,6 +2322,12 @@
         "3545"
       ],
       "references": [
+        {
+          "story_id": "3545",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Mental-health-training-of-trainers3.jpg"
+        },
         {
           "story_id": "3545",
           "field": "NewsContent",
@@ -2144,7 +2342,7 @@
     },
     {
       "source_key": "/news/PublishingImages/News-Images1.jpg",
-      "source_ref": "/news/PublishingImages/News-Images1.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/News-Images1.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/News-Images1.jpg",
       "basename": "News-Images1.jpg",
       "media_type": "image",
@@ -2152,6 +2350,12 @@
         "3496"
       ],
       "references": [
+        {
+          "story_id": "3496",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/News-Images1.jpg"
+        },
         {
           "story_id": "3496",
           "field": "NewsContent",
@@ -2166,7 +2370,7 @@
     },
     {
       "source_key": "/news/PublishingImages/News-images2.jpg",
-      "source_ref": "/news/PublishingImages/News-images2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/News-images2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/News-images2.jpg",
       "basename": "News-images2.jpg",
       "media_type": "image",
@@ -2174,6 +2378,12 @@
         "3496"
       ],
       "references": [
+        {
+          "story_id": "3496",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/News-images2.jpg"
+        },
         {
           "story_id": "3496",
           "field": "NewsContent",
@@ -2188,7 +2398,7 @@
     },
     {
       "source_key": "/news/PublishingImages/News-images3.jpg",
-      "source_ref": "/news/PublishingImages/News-images3.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/News-images3.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/News-images3.jpg",
       "basename": "News-images3.jpg",
       "media_type": "image",
@@ -2196,6 +2406,12 @@
         "3496"
       ],
       "references": [
+        {
+          "story_id": "3496",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/News-images3.jpg"
+        },
         {
           "story_id": "3496",
           "field": "NewsContent",
@@ -2210,7 +2426,7 @@
     },
     {
       "source_key": "/news/PublishingImages/News-images6.jpg",
-      "source_ref": "/news/PublishingImages/News-images6.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/News-images6.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/News-images6.jpg",
       "basename": "News-images6.jpg",
       "media_type": "image",
@@ -2218,6 +2434,12 @@
         "3496"
       ],
       "references": [
+        {
+          "story_id": "3496",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/News-images6.jpg"
+        },
         {
           "story_id": "3496",
           "field": "NewsContent",
@@ -2232,7 +2454,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Political-Kinship.jpg",
-      "source_ref": "/news/PublishingImages/Political-Kinship.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Political-Kinship.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Political-Kinship.jpg",
       "basename": "Political-Kinship.jpg",
       "media_type": "image",
@@ -2240,6 +2462,13 @@
         "2027"
       ],
       "references": [
+        {
+          "story_id": "2027",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/PublishingImages/Political-Kinship.jpg",
+          "text": "30% discount"
+        },
         {
           "story_id": "2027",
           "field": "NewsContent",
@@ -2254,7 +2483,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Sihat-Mand-Khandan---web-news-02.jpg",
-      "source_ref": "/news/PublishingImages/Sihat-Mand-Khandan---web-news-02.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Sihat-Mand-Khandan---web-news-02.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Sihat-Mand-Khandan---web-news-02.jpg",
       "basename": "Sihat-Mand-Khandan---web-news-02.jpg",
       "media_type": "image",
@@ -2262,6 +2491,12 @@
         "2895"
       ],
       "references": [
+        {
+          "story_id": "2895",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Sihat-Mand-Khandan---web-news-02.jpg"
+        },
         {
           "story_id": "2895",
           "field": "NewsContent",
@@ -2276,7 +2511,7 @@
     },
     {
       "source_key": "/news/PublishingImages/Sihat-Mand-Khandan---web-news-03.jpg",
-      "source_ref": "/news/PublishingImages/Sihat-Mand-Khandan---web-news-03.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/Sihat-Mand-Khandan---web-news-03.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/Sihat-Mand-Khandan---web-news-03.jpg",
       "basename": "Sihat-Mand-Khandan---web-news-03.jpg",
       "media_type": "image",
@@ -2284,6 +2519,12 @@
         "2895"
       ],
       "references": [
+        {
+          "story_id": "2895",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/Sihat-Mand-Khandan---web-news-03.jpg"
+        },
         {
           "story_id": "2895",
           "field": "NewsContent",
@@ -2298,7 +2539,7 @@
     },
     {
       "source_key": "/news/PublishingImages/__________0000000000_Shahzadi.jpeg",
-      "source_ref": "/news/PublishingImages/__________0000000000_Shahzadi.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/__________0000000000_Shahzadi.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/__________0000000000_Shahzadi.jpeg",
       "basename": "__________0000000000_Shahzadi.jpeg",
       "media_type": "image",
@@ -2306,6 +2547,12 @@
         "3835"
       ],
       "references": [
+        {
+          "story_id": "3835",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/__________0000000000_Shahzadi.jpeg"
+        },
         {
           "story_id": "3835",
           "field": "NewsContent",
@@ -2320,7 +2567,7 @@
     },
     {
       "source_key": "/news/PublishingImages/_aaalac_AnimalCommittee_URC-20190411.jpg",
-      "source_ref": "/news/PublishingImages/_aaalac_AnimalCommittee_URC-20190411.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/_aaalac_AnimalCommittee_URC-20190411.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/_aaalac_AnimalCommittee_URC-20190411.jpg",
       "basename": "_aaalac_AnimalCommittee_URC-20190411.jpg",
       "media_type": "image",
@@ -2328,6 +2575,12 @@
         "3750"
       ],
       "references": [
+        {
+          "story_id": "3750",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/_aaalac_AnimalCommittee_URC-20190411.jpg"
+        },
         {
           "story_id": "3750",
           "field": "NewsContent",
@@ -2342,7 +2595,7 @@
     },
     {
       "source_key": "/news/PublishingImages/download.png",
-      "source_ref": "/news/PublishingImages/download.png",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/download.png",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/download.png",
       "basename": "download.png",
       "media_type": "image",
@@ -2350,6 +2603,12 @@
         "2339"
       ],
       "references": [
+        {
+          "story_id": "2339",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/download.png"
+        },
         {
           "story_id": "2339",
           "field": "NewsContent",
@@ -2364,7 +2623,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/AKTC_Final_2010-02.eps-converted-2.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/AKTC_Final_2010-02.eps-converted-2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/AKTC_Final_2010-02.eps-converted-2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/AKTC_Final_2010-02.eps-converted-2.jpg",
       "basename": "AKTC_Final_2010-02.eps-converted-2.jpg",
       "media_type": "image",
@@ -2372,6 +2631,12 @@
         "2339"
       ],
       "references": [
+        {
+          "story_id": "2339",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/AKTC_Final_2010-02.eps-converted-2.jpg"
+        },
         {
           "story_id": "2339",
           "field": "NewsContent",
@@ -2386,7 +2651,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Arusha 2.jpeg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Arusha 2.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha 2.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha 2.jpeg",
       "basename": "Arusha 2.jpeg",
       "media_type": "image",
@@ -2394,6 +2659,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha 2.jpeg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2408,7 +2679,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Arusha1.jpeg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Arusha1.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha1.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha1.jpeg",
       "basename": "Arusha1.jpeg",
       "media_type": "image",
@@ -2416,6 +2687,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha1.jpeg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2430,7 +2707,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Arusha2.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Arusha2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha2.jpg",
       "basename": "Arusha2.jpg",
       "media_type": "image",
@@ -2438,6 +2715,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha2.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2452,7 +2735,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Arusha5.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Arusha5.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha5.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha5.jpg",
       "basename": "Arusha5.jpg",
       "media_type": "image",
@@ -2460,6 +2743,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Arusha5.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2474,7 +2763,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/BK1A2365.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/BK1A2365.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/BK1A2365.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/BK1A2365.jpg",
       "basename": "BK1A2365.jpg",
       "media_type": "image",
@@ -2482,6 +2771,12 @@
         "3237"
       ],
       "references": [
+        {
+          "story_id": "3237",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/BK1A2365.jpg"
+        },
         {
           "story_id": "3237",
           "field": "NewsContent",
@@ -2496,7 +2791,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/BK1A2446.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/BK1A2446.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/BK1A2446.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/BK1A2446.jpg",
       "basename": "BK1A2446.jpg",
       "media_type": "image",
@@ -2504,6 +2799,12 @@
         "3237"
       ],
       "references": [
+        {
+          "story_id": "3237",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/BK1A2446.jpg"
+        },
         {
           "story_id": "3237",
           "field": "NewsContent",
@@ -2518,7 +2819,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Beth-Shalom edited.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Beth-Shalom edited.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Beth-Shalom edited.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Beth-Shalom edited.jpg",
       "basename": "Beth-Shalom edited.jpg",
       "media_type": "image",
@@ -2526,6 +2827,12 @@
         "1995"
       ],
       "references": [
+        {
+          "story_id": "1995",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Beth-Shalom edited.jpg"
+        },
         {
           "story_id": "1995",
           "field": "NewsContent",
@@ -2540,7 +2847,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/DSC_4163.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/DSC_4163.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/DSC_4163.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/DSC_4163.jpg",
       "basename": "DSC_4163.jpg",
       "media_type": "image",
@@ -2548,6 +2855,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/DSC_4163.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2562,7 +2875,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/DSC_4278.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/DSC_4278.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/DSC_4278.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/DSC_4278.jpg",
       "basename": "DSC_4278.jpg",
       "media_type": "image",
@@ -2570,6 +2883,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/DSC_4278.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2584,7 +2903,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Dar (2).jpeg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Dar (2).jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar (2).jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar (2).jpeg",
       "basename": "Dar (2).jpeg",
       "media_type": "image",
@@ -2592,6 +2911,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar (2).jpeg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2606,7 +2931,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Dar 1.jpeg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Dar 1.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar 1.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar 1.jpeg",
       "basename": "Dar 1.jpeg",
       "media_type": "image",
@@ -2614,6 +2939,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar 1.jpeg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2628,7 +2959,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Dar3.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Dar3.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar3.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar3.jpg",
       "basename": "Dar3.jpg",
       "media_type": "image",
@@ -2636,6 +2967,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar3.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2650,7 +2987,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Dar8.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Dar8.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar8.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar8.jpg",
       "basename": "Dar8.jpg",
       "media_type": "image",
@@ -2658,6 +2995,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Dar8.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2672,7 +3015,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/EA.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/EA.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/EA.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/EA.jpg",
       "basename": "EA.jpg",
       "media_type": "image",
@@ -2680,6 +3023,12 @@
         "3322"
       ],
       "references": [
+        {
+          "story_id": "3322",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/EA.jpg"
+        },
         {
           "story_id": "3322",
           "field": "NewsContent",
@@ -2738,7 +3087,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Graph - FSS.png",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Graph - FSS.png",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Graph - FSS.png",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Graph - FSS.png",
       "basename": "Graph - FSS.png",
       "media_type": "image",
@@ -2746,6 +3095,12 @@
         "2160"
       ],
       "references": [
+        {
+          "story_id": "2160",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Graph - FSS.png"
+        },
         {
           "story_id": "2160",
           "field": "NewsContent",
@@ -2760,7 +3115,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/IMG-20230113-WA0082.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/IMG-20230113-WA0082.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/IMG-20230113-WA0082.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/IMG-20230113-WA0082.jpg",
       "basename": "IMG-20230113-WA0082.jpg",
       "media_type": "image",
@@ -2768,6 +3123,12 @@
         "3112"
       ],
       "references": [
+        {
+          "story_id": "3112",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/IMG-20230113-WA0082.jpg"
+        },
         {
           "story_id": "3112",
           "field": "NewsContent",
@@ -2782,7 +3143,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/InShot_20190814_145936349.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/InShot_20190814_145936349.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/InShot_20190814_145936349.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/InShot_20190814_145936349.jpg",
       "basename": "InShot_20190814_145936349.jpg",
       "media_type": "image",
@@ -2790,6 +3151,12 @@
         "1967"
       ],
       "references": [
+        {
+          "story_id": "1967",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/InShot_20190814_145936349.jpg"
+        },
         {
           "story_id": "1967",
           "field": "NewsContent",
@@ -2804,7 +3171,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Kampala.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Kampala.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala.JPG",
       "basename": "Kampala.JPG",
       "media_type": "image",
@@ -2812,6 +3179,12 @@
         "2858"
       ],
       "references": [
+        {
+          "story_id": "2858",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala.JPG"
+        },
         {
           "story_id": "2858",
           "field": "NewsContent",
@@ -2826,7 +3199,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Kampala1.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Kampala1.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala1.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala1.jpg",
       "basename": "Kampala1.jpg",
       "media_type": "image",
@@ -2834,6 +3207,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala1.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2848,7 +3227,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Kampala4.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Kampala4.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala4.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala4.jpg",
       "basename": "Kampala4.jpg",
       "media_type": "image",
@@ -2856,6 +3235,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Kampala4.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2870,7 +3255,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Karachi5.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Karachi5.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Karachi5.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Karachi5.JPG",
       "basename": "Karachi5.JPG",
       "media_type": "image",
@@ -2878,6 +3263,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Karachi5.JPG"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2892,7 +3283,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Karachi7.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Karachi7.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Karachi7.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Karachi7.JPG",
       "basename": "Karachi7.JPG",
       "media_type": "image",
@@ -2900,6 +3291,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Karachi7.JPG"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2914,7 +3311,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Lahore School.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Lahore School.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Lahore School.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Lahore School.jpg",
       "basename": "Lahore School.jpg",
       "media_type": "image",
@@ -2922,6 +3319,12 @@
         "2339"
       ],
       "references": [
+        {
+          "story_id": "2339",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Lahore School.jpg"
+        },
         {
           "story_id": "2339",
           "field": "NewsContent",
@@ -2936,7 +3339,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Nairobi1.jpeg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Nairobi1.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi1.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi1.jpeg",
       "basename": "Nairobi1.jpeg",
       "media_type": "image",
@@ -2944,6 +3347,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi1.jpeg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -2958,7 +3367,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Nairobi1.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Nairobi1.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi1.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi1.jpg",
       "basename": "Nairobi1.jpg",
       "media_type": "image",
@@ -2966,6 +3375,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi1.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -2980,7 +3395,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Nairobi2.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Nairobi2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi2.jpg",
       "basename": "Nairobi2.jpg",
       "media_type": "image",
@@ -2988,6 +3403,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi2.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -3002,7 +3423,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Nairobi22.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Nairobi22.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi22.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi22.jpg",
       "basename": "Nairobi22.jpg",
       "media_type": "image",
@@ -3010,6 +3431,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nairobi22.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -3024,7 +3451,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Nakawa 1.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Nakawa 1.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nakawa 1.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nakawa 1.JPG",
       "basename": "Nakawa 1.JPG",
       "media_type": "image",
@@ -3032,6 +3459,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nakawa 1.JPG"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -3046,7 +3479,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Nakawa3.jpeg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Nakawa3.jpeg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nakawa3.jpeg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nakawa3.jpeg",
       "basename": "Nakawa3.jpeg",
       "media_type": "image",
@@ -3054,6 +3487,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Nakawa3.jpeg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -3068,7 +3507,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/PK 1.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/PK 1.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/PK 1.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/PK 1.jpg",
       "basename": "PK 1.jpg",
       "media_type": "image",
@@ -3076,6 +3515,12 @@
         "3175"
       ],
       "references": [
+        {
+          "story_id": "3175",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/PK 1.jpg"
+        },
         {
           "story_id": "3175",
           "field": "NewsContent",
@@ -3090,7 +3535,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/PK1.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/PK1.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/PK1.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/PK1.JPG",
       "basename": "PK1.JPG",
       "media_type": "image",
@@ -3098,6 +3543,12 @@
         "3322"
       ],
       "references": [
+        {
+          "story_id": "3322",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/PK1.JPG"
+        },
         {
           "story_id": "3322",
           "field": "NewsContent",
@@ -3112,7 +3563,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/SPS_0719.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/SPS_0719.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/SPS_0719.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/SPS_0719.JPG",
       "basename": "SPS_0719.JPG",
       "media_type": "image",
@@ -3120,6 +3571,12 @@
         "3213"
       ],
       "references": [
+        {
+          "story_id": "3213",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/SPS_0719.JPG"
+        },
         {
           "story_id": "3213",
           "field": "NewsContent",
@@ -3134,7 +3591,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/SPS_0932.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/SPS_0932.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/SPS_0932.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/SPS_0932.JPG",
       "basename": "SPS_0932.JPG",
       "media_type": "image",
@@ -3142,6 +3599,12 @@
         "3213"
       ],
       "references": [
+        {
+          "story_id": "3213",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/SPS_0932.JPG"
+        },
         {
           "story_id": "3213",
           "field": "NewsContent",
@@ -3156,7 +3619,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/Stalls.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/Stalls.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Stalls.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Stalls.jpg",
       "basename": "Stalls.jpg",
       "media_type": "image",
@@ -3164,6 +3627,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/Stalls.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -3178,7 +3647,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/TZ 1.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/TZ 1.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ 1.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ 1.jpg",
       "basename": "TZ 1.jpg",
       "media_type": "image",
@@ -3186,6 +3655,12 @@
         "3175"
       ],
       "references": [
+        {
+          "story_id": "3175",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ 1.jpg"
+        },
         {
           "story_id": "3175",
           "field": "NewsContent",
@@ -3200,7 +3675,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/TZ 2.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/TZ 2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ 2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ 2.jpg",
       "basename": "TZ 2.jpg",
       "media_type": "image",
@@ -3208,6 +3683,12 @@
         "3175"
       ],
       "references": [
+        {
+          "story_id": "3175",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ 2.jpg"
+        },
         {
           "story_id": "3175",
           "field": "NewsContent",
@@ -3222,7 +3703,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/TZ.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/TZ.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ.jpg",
       "basename": "TZ.jpg",
       "media_type": "image",
@@ -3230,6 +3711,12 @@
         "3322"
       ],
       "references": [
+        {
+          "story_id": "3322",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/TZ.jpg"
+        },
         {
           "story_id": "3322",
           "field": "NewsContent",
@@ -3244,7 +3731,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/University-of-Cape-Town.png",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/University-of-Cape-Town.png",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/University-of-Cape-Town.png",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/University-of-Cape-Town.png",
       "basename": "University-of-Cape-Town.png",
       "media_type": "image",
@@ -3252,6 +3739,12 @@
         "2339"
       ],
       "references": [
+        {
+          "story_id": "2339",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/University-of-Cape-Town.png"
+        },
         {
           "story_id": "2339",
           "field": "NewsContent",
@@ -3266,7 +3759,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/WED webinar poster.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/WED webinar poster.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/WED webinar poster.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/WED webinar poster.jpg",
       "basename": "WED webinar poster.jpg",
       "media_type": "image",
@@ -3274,6 +3767,12 @@
         "3701"
       ],
       "references": [
+        {
+          "story_id": "3701",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/WED webinar poster.jpg"
+        },
         {
           "story_id": "3701",
           "field": "NewsContent",
@@ -3288,7 +3787,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/WED_speakers.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/WED_speakers.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/WED_speakers.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/WED_speakers.jpg",
       "basename": "WED_speakers.jpg",
       "media_type": "image",
@@ -3296,6 +3795,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/WED_speakers.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -3310,7 +3815,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/cleanup 1.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/cleanup 1.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/cleanup 1.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/cleanup 1.JPG",
       "basename": "cleanup 1.JPG",
       "media_type": "image",
@@ -3318,6 +3823,12 @@
         "3194"
       ],
       "references": [
+        {
+          "story_id": "3194",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/cleanup 1.JPG"
+        },
         {
           "story_id": "3194",
           "field": "NewsContent",
@@ -3332,7 +3843,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/google arts and culture.png",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/google arts and culture.png",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/google arts and culture.png",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/google arts and culture.png",
       "basename": "google arts and culture.png",
       "media_type": "image",
@@ -3340,6 +3851,12 @@
         "2339"
       ],
       "references": [
+        {
+          "story_id": "2339",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/google arts and culture.png"
+        },
         {
           "story_id": "2339",
           "field": "NewsContent",
@@ -3354,7 +3871,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/group.JPG",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/group.JPG",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/group.JPG",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/group.JPG",
       "basename": "group.JPG",
       "media_type": "image",
@@ -3362,6 +3879,12 @@
         "3194"
       ],
       "references": [
+        {
+          "story_id": "3194",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/group.JPG"
+        },
         {
           "story_id": "3194",
           "field": "NewsContent",
@@ -3376,7 +3899,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/safety net programmes.png",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/safety net programmes.png",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/safety net programmes.png",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/safety net programmes.png",
       "basename": "safety net programmes.png",
       "media_type": "image",
@@ -3384,6 +3907,13 @@
         "2135"
       ],
       "references": [
+        {
+          "story_id": "2135",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/safety net programmes.png",
+          "text": "safety net programmes"
+        },
         {
           "story_id": "2135",
           "field": "NewsContent",
@@ -3398,7 +3928,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/stalls 2.jpg",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/stalls 2.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/stalls 2.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/stalls 2.jpg",
       "basename": "stalls 2.jpg",
       "media_type": "image",
@@ -3406,6 +3936,12 @@
         "3405"
       ],
       "references": [
+        {
+          "story_id": "3405",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/stalls 2.jpg"
+        },
         {
           "story_id": "3405",
           "field": "NewsContent",
@@ -3420,7 +3956,7 @@
     },
     {
       "source_key": "/news/PublishingImages/pages/News_Admin/world-monuments-fund.png",
-      "source_ref": "/news/PublishingImages/pages/News_Admin/world-monuments-fund.png",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/world-monuments-fund.png",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/world-monuments-fund.png",
       "basename": "world-monuments-fund.png",
       "media_type": "image",
@@ -3428,6 +3964,12 @@
         "2339"
       ],
       "references": [
+        {
+          "story_id": "2339",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/pages/News_Admin/world-monuments-fund.png"
+        },
         {
           "story_id": "2339",
           "field": "NewsContent",
@@ -3442,7 +3984,7 @@
     },
     {
       "source_key": "/news/PublishingImages/swiss-ambassador-02.jpg",
-      "source_ref": "/news/PublishingImages/swiss-ambassador-02.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/swiss-ambassador-02.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/swiss-ambassador-02.jpg",
       "basename": "swiss-ambassador-02.jpg",
       "media_type": "image",
@@ -3450,6 +3992,12 @@
         "2892"
       ],
       "references": [
+        {
+          "story_id": "2892",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/swiss-ambassador-02.jpg"
+        },
         {
           "story_id": "2892",
           "field": "NewsContent",
@@ -3464,7 +4012,7 @@
     },
     {
       "source_key": "/news/PublishingImages/swiss-ambassador-03.jpg",
-      "source_ref": "/news/PublishingImages/swiss-ambassador-03.jpg",
+      "source_ref": "https://www.aku.edu/news/PublishingImages/swiss-ambassador-03.jpg",
       "absolute_url": "https://www.aku.edu/news/PublishingImages/swiss-ambassador-03.jpg",
       "basename": "swiss-ambassador-03.jpg",
       "media_type": "image",
@@ -3472,6 +4020,12 @@
         "2892"
       ],
       "references": [
+        {
+          "story_id": "2892",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/news/PublishingImages/swiss-ambassador-03.jpg"
+        },
         {
           "story_id": "2892",
           "field": "NewsContent",
@@ -3486,7 +4040,7 @@
     },
     {
       "source_key": "/news/https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
-      "source_ref": "/news/https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
+      "source_ref": "https://www.aku.edu/news/https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
       "absolute_url": "https://www.aku.edu/news/https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
       "basename": "EDIP-brief.pdf",
       "media_type": "other",
@@ -3494,6 +4048,13 @@
         "1752"
       ],
       "references": [
+        {
+          "story_id": "1752",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/news/https://www.aku.edu/iedpk/edip/Documents/EDIP-brief.pdf",
+          "text": "Educational Development and Improvement"
+        },
         {
           "story_id": "1752",
           "field": "NewsContent",
@@ -3508,7 +4069,7 @@
     },
     {
       "source_key": "/qtl/Documents/QA_vol1_HB.pdf",
-      "source_ref": "/qtl/Documents/QA_vol1_HB.pdf",
+      "source_ref": "https://www.aku.edu/qtl/Documents/QA_vol1_HB.pdf",
       "absolute_url": "https://www.aku.edu/qtl/Documents/QA_vol1_HB.pdf",
       "basename": "QA_vol1_HB.pdf",
       "media_type": "other",
@@ -3516,6 +4077,13 @@
         "2215"
       ],
       "references": [
+        {
+          "story_id": "2215",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/qtl/Documents/QA_vol1_HB.pdf",
+          "text": "Inter-University Council for East Africa (IUCEA) Handbook: A Roadmap to Quality"
+        },
         {
           "story_id": "2215",
           "field": "NewsContent",
@@ -3530,7 +4098,7 @@
     },
     {
       "source_key": "/qtl/Documents/Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
-      "source_ref": "/qtl/Documents/Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
+      "source_ref": "https://www.aku.edu/qtl/Documents/Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
       "absolute_url": "https://www.aku.edu/qtl/Documents/Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
       "basename": "Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
       "media_type": "other",
@@ -3538,6 +4106,13 @@
         "242"
       ],
       "references": [
+        {
+          "story_id": "242",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/qtl/Documents/Teaching and Learning Enhancement Workshop for AKU Faculty 2016.pdf",
+          "text": "click here"
+        },
         {
           "story_id": "242",
           "field": "NewsContent",
@@ -3552,7 +4127,7 @@
     },
     {
       "source_key": "/qtl/Documents/Transforming Teaching A5-1.pdf",
-      "source_ref": "/qtl/Documents/Transforming Teaching A5-1.pdf",
+      "source_ref": "https://www.aku.edu/qtl/Documents/Transforming Teaching A5-1.pdf",
       "absolute_url": "https://www.aku.edu/qtl/Documents/Transforming Teaching A5-1.pdf",
       "basename": "Transforming Teaching A5-1.pdf",
       "media_type": "other",
@@ -3560,6 +4135,20 @@
         "3236"
       ],
       "references": [
+        {
+          "story_id": "3236",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/qtl/Documents/Transforming Teaching A5-1.pdf",
+          "text": "\n      "
+        },
+        {
+          "story_id": "3236",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/qtl/Documents/Transforming Teaching A5-1.pdf",
+          "text": "\"Transforming Teaching & Learning in Higher Education: Stories of Impact from the Aga Khan University\""
+        },
         {
           "story_id": "3236",
           "field": "NewsContent",
@@ -3574,7 +4163,7 @@
     },
     {
       "source_key": "/qtl/PublishingImages/SONAM EA.png",
-      "source_ref": "/qtl/PublishingImages/SONAM EA.png",
+      "source_ref": "https://www.aku.edu/qtl/PublishingImages/SONAM EA.png",
       "absolute_url": "https://www.aku.edu/qtl/PublishingImages/SONAM EA.png",
       "basename": "SONAM EA.png",
       "media_type": "image",
@@ -3582,6 +4171,12 @@
         "1957"
       ],
       "references": [
+        {
+          "story_id": "1957",
+          "field": "body",
+          "kind": "image",
+          "ref": "https://www.aku.edu/qtl/PublishingImages/SONAM EA.png"
+        },
         {
           "story_id": "1957",
           "field": "NewsContent",
@@ -3596,7 +4191,7 @@
     },
     {
       "source_key": "/qtl/resources/Documents/030_Academic Quality Framework - Polices and Procedures-Revised.pdf",
-      "source_ref": "/qtl/resources/Documents/030_Academic Quality Framework - Polices and Procedures-Revised.pdf",
+      "source_ref": "https://www.aku.edu/qtl/resources/Documents/030_Academic Quality Framework - Polices and Procedures-Revised.pdf",
       "absolute_url": "https://www.aku.edu/qtl/resources/Documents/030_Academic Quality Framework - Polices and Procedures-Revised.pdf",
       "basename": "030_Academic Quality Framework - Polices and Procedures-Revised.pdf",
       "media_type": "other",
@@ -3604,6 +4199,13 @@
         "2215"
       ],
       "references": [
+        {
+          "story_id": "2215",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/qtl/resources/Documents/030_Academic Quality Framework - Polices and Procedures-Revised.pdf",
+          "text": " AKU Academic Quality Framework (AQF)"
+        },
         {
           "story_id": "2215",
           "field": "NewsContent",
@@ -3618,7 +4220,7 @@
     },
     {
       "source_key": "/qtl/resources/Documents/bdl-manual.pdf",
-      "source_ref": "/qtl/resources/Documents/bdl-manual.pdf",
+      "source_ref": "https://www.aku.edu/qtl/resources/Documents/bdl-manual.pdf",
       "absolute_url": "https://www.aku.edu/qtl/resources/Documents/bdl-manual.pdf",
       "basename": "bdl-manual.pdf",
       "media_type": "other",
@@ -3626,6 +4228,13 @@
         "3871"
       ],
       "references": [
+        {
+          "story_id": "3871",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/qtl/resources/Documents/bdl-manual.pdf",
+          "text": "Essentials of Online Course Design and Facilitation"
+        },
         {
           "story_id": "3871",
           "field": "NewsContent",
@@ -3640,7 +4249,7 @@
     },
     {
       "source_key": "/sonampk/research/SiteAssets/Lists/Geriatrics and Gerontology/AllItems/Celebrating Grandparents.pdf",
-      "source_ref": "/sonampk/research/SiteAssets/Lists/Geriatrics and Gerontology/AllItems/Celebrating Grandparents.pdf",
+      "source_ref": "https://www.aku.edu/sonampk/research/SiteAssets/Lists/Geriatrics and Gerontology/AllItems/Celebrating Grandparents.pdf",
       "absolute_url": "https://www.aku.edu/sonampk/research/SiteAssets/Lists/Geriatrics and Gerontology/AllItems/Celebrating Grandparents.pdf",
       "basename": "Celebrating Grandparents.pdf",
       "media_type": "other",
@@ -3648,6 +4257,13 @@
         "2806"
       ],
       "references": [
+        {
+          "story_id": "2806",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/sonampk/research/SiteAssets/Lists/Geriatrics and Gerontology/AllItems/Celebrating Grandparents.pdf",
+          "text": "Download the e-book >>"
+        },
         {
           "story_id": "2806",
           "field": "NewsContent",
@@ -3684,7 +4300,7 @@
     },
     {
       "source_key": "/supportus/Documents/Breast Cancer - Case for Support V5H.pdf",
-      "source_ref": "/supportus/Documents/Breast Cancer - Case for Support V5H.pdf",
+      "source_ref": "https://www.aku.edu/supportus/Documents/Breast Cancer - Case for Support V5H.pdf",
       "absolute_url": "https://www.aku.edu/supportus/Documents/Breast Cancer - Case for Support V5H.pdf",
       "basename": "Breast Cancer - Case for Support V5H.pdf",
       "media_type": "other",
@@ -3692,6 +4308,13 @@
         "2447"
       ],
       "references": [
+        {
+          "story_id": "2447",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.aku.edu/supportus/Documents/Breast Cancer - Case for Support V5H.pdf",
+          "text": "here"
+        },
         {
           "story_id": "2447",
           "field": "NewsContent",
@@ -3743,6 +4366,13 @@
         "1941"
       ],
       "references": [
+        {
+          "story_id": "1941",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://documents.worldbank.org/curated/en/103491483646246005/pdf/ACS19141-REVISED-PUBLIC-Pov-assessment-final.pdf",
+          "text": "World Bank report "
+        },
         {
           "story_id": "1941",
           "field": "NewsContent",
@@ -3839,6 +4469,13 @@
         "1874"
       ],
       "references": [
+        {
+          "story_id": "1874",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://hdr.undp.org/sites/all/themes/hdr_theme/country-notes/KEN.pdf",
+          "text": "Human Development Index "
+        },
         {
           "story_id": "1874",
           "field": "NewsContent",
@@ -4440,6 +5077,13 @@
       "references": [
         {
           "story_id": "2047",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.fao.org/3/a-a0218e.pdf",
+          "text": "setting up and running a school garden"
+        },
+        {
+          "story_id": "2047",
           "field": "NewsContent",
           "kind": "link",
           "ref": "http://www.fao.org/3/a-a0218e.pdf"
@@ -4477,8 +5121,7 @@
       "local_filename": "2146-richtext-9e3e411be6-a-i5128e.pdf",
       "local_src": "/news-media/2146-richtext-9e3e411be6-a-i5128e.pdf",
       "exists_locally": true,
-      "download_status": "downloaded",
-      "bytes": 16446849
+      "download_status": "present"
     },
     {
       "source_key": "http://www.ict.go.ke/wp-content/uploads/2019/05/Kenya-Digital-Economy-2019.pdf",
@@ -4519,6 +5162,13 @@
         "2075"
       ],
       "references": [
+        {
+          "story_id": "2075",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.ijhssnet.com/journals/Vol_5_No_7_1_July_2015/17.pdf",
+          "text": "criticized"
+        },
         {
           "story_id": "2075",
           "field": "NewsContent",
@@ -4585,6 +5235,13 @@
       "references": [
         {
           "story_id": "745",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.ismp.org/Tools/confuseddrugnames.pdf",
+          "text": "List of Confused Drug Names"
+        },
+        {
+          "story_id": "745",
           "field": "NewsContent",
           "kind": "link",
           "ref": "http://www.ismp.org/Tools/confuseddrugnames.pdf"
@@ -4607,6 +5264,13 @@
       "references": [
         {
           "story_id": "2433",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.knchr.org/Portals/0/Reports/Disability Report.pdf",
+          "text": "Kenya National Commission on Human Rights"
+        },
+        {
+          "story_id": "2433",
           "field": "NewsContent",
           "kind": "link",
           "ref": "http://www.knchr.org/Portals/0/Reports/Disability Report.pdf"
@@ -4627,6 +5291,13 @@
         "2105"
       ],
       "references": [
+        {
+          "story_id": "2105",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.lse.ac.uk/GranthamInstitute/wp-content/uploads/2018/10/8737_vol3.pdf",
+          "text": "the National Climate Change Action Plan (NCAAP) 2018-2022"
+        },
         {
           "story_id": "2105",
           "field": "NewsContent",
@@ -4707,6 +5378,13 @@
         "2269"
       ],
       "references": [
+        {
+          "story_id": "2269",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.nhsrc.gov.pk/SiteImage/Misc/files/ClinicalManagemen.pdf",
+          "text": "guidelines "
+        },
         {
           "story_id": "2269",
           "field": "NewsContent",
@@ -4803,6 +5481,13 @@
       "references": [
         {
           "story_id": "1779",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.sindheducation.gov.pk/Contents/Menu/Final Composed Sindh NFE Policy 21-02-18_NFE Policy.pdf",
+          "text": "policy"
+        },
+        {
+          "story_id": "1779",
           "field": "NewsContent",
           "kind": "link",
           "ref": "http://www.sindheducation.gov.pk/Contents/Menu/Final Composed Sindh NFE Policy 21-02-18_NFE Policy.pdf"
@@ -4810,7 +5495,7 @@
       ],
       "local_filename": "1779-richtext-0046c47d25-Final-Composed-Sindh-NFE-Policy-21-02-18_NFE-Policy.pdf",
       "local_src": "/news-media/1779-richtext-0046c47d25-Final-Composed-Sindh-NFE-Policy-21-02-18_NFE-Policy.pdf",
-      "exists_locally": true,
+      "exists_locally": false,
       "download_status": "present"
     },
     {
@@ -4823,6 +5508,27 @@
         "1906"
       ],
       "references": [
+        {
+          "story_id": "1906",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.thecradle.or.ke/wp-content/uploads/2016/04/DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
+          "text": "Netherlands and Spain"
+        },
+        {
+          "story_id": "1906",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.thecradle.or.ke/wp-content/uploads/2016/04/DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
+          "text": "obtain"
+        },
+        {
+          "story_id": "1906",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.thecradle.or.ke/wp-content/uploads/2016/04/DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
+          "text": "methadone"
+        },
         {
           "story_id": "1906",
           "field": "NewsContent",
@@ -4844,7 +5550,7 @@
       ],
       "local_filename": "1906-richtext-5d85b50101-DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
       "local_src": "/news-media/1906-richtext-5d85b50101-DRUG-AND-THE-YOUTH-AT-THE-KENYAN-COAST.pdf",
-      "exists_locally": true,
+      "exists_locally": false,
       "download_status": "present"
     },
     {
@@ -4857,6 +5563,13 @@
         "2064"
       ],
       "references": [
+        {
+          "story_id": "2064",
+          "field": "body",
+          "kind": "link",
+          "ref": "http://www.uwezo.net/wp-content/uploads/2016/12/UwezoKenya2015ALAReport-FINAL-EN-web.pdf",
+          "text": " \n      9 out of 10 children in primary schools complete class 8, they still fail to meet basic competencies expected of children who complete class 2"
+        },
         {
           "story_id": "2064",
           "field": "NewsContent",
@@ -5069,6 +5782,20 @@
       "references": [
         {
           "story_id": "2146",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://agra.org/wp-content/uploads/2017/09/Final-AASR-2017-Aug-28.pdf",
+          "text": "70 and 90 per cent"
+        },
+        {
+          "story_id": "2146",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://agra.org/wp-content/uploads/2017/09/Final-AASR-2017-Aug-28.pdf",
+          "text": "attributed"
+        },
+        {
+          "story_id": "2146",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://agra.org/wp-content/uploads/2017/09/Final-AASR-2017-Aug-28.pdf"
@@ -5133,8 +5860,31 @@
       ],
       "local_filename": "2075-richtext-1fca55556a-UNCRC-vrs-ACC.pdf?sequence=1&amp;isAllowed=y",
       "local_src": "/news-media/2075-richtext-1fca55556a-UNCRC-vrs-ACC.pdf?sequence=1&amp;isAllowed=y",
-      "exists_locally": true,
+      "exists_locally": false,
       "download_status": "present"
+    },
+    {
+      "source_key": "https://bradscholars.brad.ac.uk/bitstream/handle/10454/10988/UNCRC vrs ACC.pdf?sequence=1&isAllowed=y",
+      "source_ref": "https://bradscholars.brad.ac.uk/bitstream/handle/10454/10988/UNCRC vrs ACC.pdf?sequence=1&isAllowed=y",
+      "absolute_url": "https://bradscholars.brad.ac.uk/bitstream/handle/10454/10988/UNCRC vrs ACC.pdf?sequence=1&isAllowed=y",
+      "basename": "UNCRC vrs ACC.pdf",
+      "media_type": "other",
+      "story_ids": [
+        "2075"
+      ],
+      "references": [
+        {
+          "story_id": "2075",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://bradscholars.brad.ac.uk/bitstream/handle/10454/10988/UNCRC vrs ACC.pdf?sequence=1&isAllowed=y",
+          "text": "failing to adequately address African's concerns"
+        }
+      ],
+      "local_filename": null,
+      "local_src": null,
+      "exists_locally": false,
+      "download_status": "pending"
     },
     {
       "source_key": "https://developmentfinance.un.org/sites/developmentfinance.un.org/files/Report_IATF_2018.pdf",
@@ -5204,6 +5954,13 @@
         "1923"
       ],
       "references": [
+        {
+          "story_id": "1923",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://downloads.unicef.org.uk/wp-content/uploads/2010/05/UNCRC_united_nations_convention_on_the_rights_of_the_child.pdf?_ga=2.154240560.902289535.1559024332-1509110640.1559024332",
+          "text": "UNCRC"
+        },
         {
           "story_id": "1923",
           "field": "NewsContent",
@@ -5286,6 +6043,13 @@
       "references": [
         {
           "story_id": "2165",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://jfsdigital.org/wp-content/uploads/2017/01/21-2-2.pdf",
+          "text": "implementing several national reforms"
+        },
+        {
+          "story_id": "2165",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://jfsdigital.org/wp-content/uploads/2017/01/21-2-2.pdf"
@@ -5306,6 +6070,13 @@
         "1946"
       ],
       "references": [
+        {
+          "story_id": "1946",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://kenya.unfpa.org/sites/default/files/pub-pdf/KCO Annual Report 2017.pdf",
+          "text": "UNFPA"
+        },
         {
           "story_id": "1946",
           "field": "NewsContent",
@@ -5359,6 +6130,20 @@
       "references": [
         {
           "story_id": "2146",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://library.faraafrica.org/wp-content/uploads/2019/10/STRATEGIES-FOR-SCALING-AGRICULTURAL-TECHNOLOGIES-IN-AFRICA.pdf",
+          "text": "reasons for failed scale-up"
+        },
+        {
+          "story_id": "2146",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://library.faraafrica.org/wp-content/uploads/2019/10/STRATEGIES-FOR-SCALING-AGRICULTURAL-TECHNOLOGIES-IN-AFRICA.pdf",
+          "text": "foster strong stakeholder partnerships around innovation platforms"
+        },
+        {
+          "story_id": "2146",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://library.faraafrica.org/wp-content/uploads/2019/10/STRATEGIES-FOR-SCALING-AGRICULTURAL-TECHNOLOGIES-IN-AFRICA.pdf"
@@ -5385,6 +6170,13 @@
         "2835"
       ],
       "references": [
+        {
+          "story_id": "2835",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://mediacouncil.or.ke/sites/default/files/downloads/2020-STATUS OF THE MEDIA REPORT (1).pdf",
+          "text": "click here"
+        },
         {
           "story_id": "2835",
           "field": "NewsContent",
@@ -5466,6 +6258,13 @@
       "references": [
         {
           "story_id": "2080",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://na.unep.net/atlas/kenya/downloads/chapters/Kenya_Screen_Chapter5-End.pdf",
+          "text": "fragile areas"
+        },
+        {
+          "story_id": "2080",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://na.unep.net/atlas/kenya/downloads/chapters/Kenya_Screen_Chapter5-End.pdf"
@@ -5488,6 +6287,13 @@
       "references": [
         {
           "story_id": "2414",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://pdfs.semanticscholar.org/2da6/ec4cc6820554ab38921a94af33d16bbff96c.pdf",
+          "text": "NORAD-UNICEF study"
+        },
+        {
+          "story_id": "2414",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://pdfs.semanticscholar.org/2da6/ec4cc6820554ab38921a94af33d16bbff96c.pdf"
@@ -5495,7 +6301,7 @@
       ],
       "local_filename": "2414-richtext-f5c1e793a2-ec4cc6820554ab38921a94af33d16bbff96c.pdf",
       "local_src": "/news-media/2414-richtext-f5c1e793a2-ec4cc6820554ab38921a94af33d16bbff96c.pdf",
-      "exists_locally": true,
+      "exists_locally": false,
       "download_status": "present"
     },
     {
@@ -5508,6 +6314,13 @@
         "1878"
       ],
       "references": [
+        {
+          "story_id": "1878",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://resourcecentre.savethechildren.net/node/13323/pdf/4-kenya-case-study-final.pdf",
+          "text": "report"
+        },
         {
           "story_id": "1878",
           "field": "NewsContent",
@@ -5590,6 +6403,13 @@
       "references": [
         {
           "story_id": "2165",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://uganda.unfpa.org/sites/default/files/pub-pdf/harnessing-a-demographic-A4 Book-email.pdf",
+          "text": "Uganda"
+        },
+        {
+          "story_id": "2165",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://uganda.unfpa.org/sites/default/files/pub-pdf/harnessing-a-demographic-A4 Book-email.pdf"
@@ -5610,6 +6430,13 @@
         "2105"
       ],
       "references": [
+        {
+          "story_id": "2105",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://unfccc.int/resource/docs/convkp/conveng.pdf",
+          "text": "UN Framework Convention on Climate Change"
+        },
         {
           "story_id": "2105",
           "field": "NewsContent",
@@ -5735,8 +6562,31 @@
       ],
       "local_filename": "2105-richtext-81838852af-EGR2019.pdf?sequence=1&amp;isAllowed=y",
       "local_src": "/news-media/2105-richtext-81838852af-EGR2019.pdf?sequence=1&amp;isAllowed=y",
-      "exists_locally": true,
+      "exists_locally": false,
       "download_status": "present"
+    },
+    {
+      "source_key": "https://wedocs.unep.org/bitstream/handle/20.500.11822/30797/EGR2019.pdf?sequence=1&isAllowed=y",
+      "source_ref": "https://wedocs.unep.org/bitstream/handle/20.500.11822/30797/EGR2019.pdf?sequence=1&isAllowed=y",
+      "absolute_url": "https://wedocs.unep.org/bitstream/handle/20.500.11822/30797/EGR2019.pdf?sequence=1&isAllowed=y",
+      "basename": "EGR2019.pdf",
+      "media_type": "other",
+      "story_ids": [
+        "2105"
+      ],
+      "references": [
+        {
+          "story_id": "2105",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://wedocs.unep.org/bitstream/handle/20.500.11822/30797/EGR2019.pdf?sequence=1&isAllowed=y",
+          "text": "U.N Environmental Programme Emissions Gap Report"
+        }
+      ],
+      "local_filename": null,
+      "local_src": null,
+      "exists_locally": false,
+      "download_status": "pending"
     },
     {
       "source_key": "https://www.afidep.org/download/Zambia-DD-report-final-print-version.pdf",
@@ -5866,6 +6716,34 @@
       "references": [
         {
           "story_id": "2433",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.developmentpathways.co.uk/wp-content/uploads/2018/10/Disability-Report-Kenya.pdf",
+          "text": "The poverty rate"
+        },
+        {
+          "story_id": "2433",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.developmentpathways.co.uk/wp-content/uploads/2018/10/Disability-Report-Kenya.pdf",
+          "text": "67 per cent of PwD"
+        },
+        {
+          "story_id": "2433",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.developmentpathways.co.uk/wp-content/uploads/2018/10/Disability-Report-Kenya.pdf",
+          "text": "highest numbers"
+        },
+        {
+          "story_id": "2433",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.developmentpathways.co.uk/wp-content/uploads/2018/10/Disability-Report-Kenya.pdf",
+          "text": "Development Pathways"
+        },
+        {
+          "story_id": "2433",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.developmentpathways.co.uk/wp-content/uploads/2018/10/Disability-Report-Kenya.pdf"
@@ -5906,6 +6784,13 @@
       "references": [
         {
           "story_id": "1985",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.govinfo.gov/content/pkg/bills-115s1862enr/pdf/bills-115s1862enr.pdf",
+          "text": "Trafficking Victims Protection Act"
+        },
+        {
+          "story_id": "1985",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.govinfo.gov/content/pkg/bills-115s1862enr/pdf/bills-115s1862enr.pdf"
@@ -5926,6 +6811,13 @@
         "1946"
       ],
       "references": [
+        {
+          "story_id": "1946",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.guttmacher.org/sites/default/files/report_pdf/sexuality-education-kenya-report.pdf",
+          "text": "Studies"
+        },
         {
           "story_id": "1946",
           "field": "NewsContent",
@@ -5949,6 +6841,20 @@
         "1943"
       ],
       "references": [
+        {
+          "story_id": "1346",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.heacademy.ac.uk/system/files/downloads/uk_professional_standards_framework.pdf",
+          "text": "(UKPSF)"
+        },
+        {
+          "story_id": "1943",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.heacademy.ac.uk/system/files/downloads/uk_professional_standards_framework.pdf",
+          "text": "(UKPSF)"
+        },
         {
           "story_id": "1346",
           "field": "NewsContent",
@@ -6037,6 +6943,13 @@
       "references": [
         {
           "story_id": "3724",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.iccp-portal.org/sites/default/files/plans/Kenya Breast Cancer Action Plan 2021-2025_compressed.pdf",
+          "text": "Breast Cancer Action Plan"
+        },
+        {
+          "story_id": "3724",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.iccp-portal.org/sites/default/files/plans/Kenya Breast Cancer Action Plan 2021-2025_compressed.pdf"
@@ -6059,6 +6972,13 @@
       "references": [
         {
           "story_id": "1995",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.ipsos.com/sites/default/files/2017-07/health-nmc-revalidation-evaluation-interim-2017.pdf",
+          "text": "a report by IPSOS Mori"
+        },
+        {
+          "story_id": "1995",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.ipsos.com/sites/default/files/2017-07/health-nmc-revalidation-evaluation-interim-2017.pdf"
@@ -6079,6 +6999,13 @@
         "745"
       ],
       "references": [
+        {
+          "story_id": "745",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.ismp.org/tools/tallmanletters.pdf",
+          "text": "tall man\""
+        },
         {
           "story_id": "745",
           "field": "NewsContent",
@@ -6352,6 +7279,13 @@
       "references": [
         {
           "story_id": "3764",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.pbc.org.pk/wp-content/uploads/Pakistans-Nursing-Workforce-Export-Potential-Challenges-and-Recommendations.pdf",
+          "text": "Pakistan's Nursing Workforce - Export Potential and Challenges"
+        },
+        {
+          "story_id": "3764",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.pbc.org.pk/wp-content/uploads/Pakistans-Nursing-Workforce-Export-Potential-Challenges-and-Recommendations.pdf"
@@ -6372,6 +7306,13 @@
         "1946"
       ],
       "references": [
+        {
+          "story_id": "1946",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.popcouncil.org/uploads/pdfs/2015STEPUP_KenyaNationalAdolSRHPolicy.pdf",
+          "text": "National Adolescent Sexual and Reproductive Health Policy"
+        },
         {
           "story_id": "1946",
           "field": "NewsContent",
@@ -6395,6 +7336,20 @@
         "2075"
       ],
       "references": [
+        {
+          "story_id": "1969",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.right-to-education.org/sites/right-to-education.org/files/resource-attachments/RTE_Right_to_Education_Country_Factsheet_Kenya_2014.pdf",
+          "text": " national number of students increased"
+        },
+        {
+          "story_id": "2075",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.right-to-education.org/sites/right-to-education.org/files/resource-attachments/RTE_Right_to_Education_Country_Factsheet_Kenya_2014.pdf",
+          "text": "Children's right to education has been acknowledged"
+        },
         {
           "story_id": "1969",
           "field": "NewsContent",
@@ -6425,6 +7380,13 @@
       "references": [
         {
           "story_id": "1985",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.state.gov/wp-content/uploads/2019/06/2019-trafficking-in-persons-report.pdf",
+          "text": "2019 Trafficking in Persons Report"
+        },
+        {
+          "story_id": "1985",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.state.gov/wp-content/uploads/2019/06/2019-trafficking-in-persons-report.pdf"
@@ -6445,6 +7407,13 @@
         "2340"
       ],
       "references": [
+        {
+          "story_id": "2340",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.thebritishacademy.ac.uk/sites/default/files/Urban Infrastructures 2019 - List of Awards.pdf",
+          "text": "British Academy's \"Urban Infrastructures of Well-Being"
+        },
         {
           "story_id": "2340",
           "field": "NewsContent",
@@ -6469,6 +7438,13 @@
       "references": [
         {
           "story_id": "1783",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.uicc.org/sites/main/files/atoms/files/TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf",
+          "text": "disease"
+        },
+        {
+          "story_id": "1783",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.uicc.org/sites/main/files/atoms/files/TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf"
@@ -6476,7 +7452,7 @@
       ],
       "local_filename": "1783-richtext-1e42251df0-TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf",
       "local_src": "/news-media/1783-richtext-1e42251df0-TheAgaKhanUniversity_2017SPARC_ProjectAbstract.pdf",
-      "exists_locally": true,
+      "exists_locally": false,
       "download_status": "present"
     },
     {
@@ -6489,6 +7465,13 @@
         "3074"
       ],
       "references": [
+        {
+          "story_id": "3074",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/wpp2022_summary_of_results.pdf",
+          "text": "population doubling by 2050"
+        },
         {
           "story_id": "3074",
           "field": "NewsContent",
@@ -6513,6 +7496,13 @@
       "references": [
         {
           "story_id": "3081",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.un.org/sexualviolenceinconflict/wp-content/uploads/2020/06/report/policy-brief-the-impact-of-covid-19-on-women/policy-brief-the-impact-of-covid-19-on-women-en-1.pdf",
+          "text": "United Nations (UN) 2020 study"
+        },
+        {
+          "story_id": "3081",
           "field": "NewsContent",
           "kind": "link",
           "ref": "https://www.un.org/sexualviolenceinconflict/wp-content/uploads/2020/06/report/policy-brief-the-impact-of-covid-19-on-women/policy-brief-the-impact-of-covid-19-on-women-en-1.pdf"
@@ -6533,6 +7523,27 @@
         "1946"
       ],
       "references": [
+        {
+          "story_id": "1946",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.unaids.org/sites/default/files/media_asset/ITGSE_en.pdf",
+          "text": "report"
+        },
+        {
+          "story_id": "1946",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.unaids.org/sites/default/files/media_asset/ITGSE_en.pdf",
+          "text": "evidence"
+        },
+        {
+          "story_id": "1946",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.unaids.org/sites/default/files/media_asset/ITGSE_en.pdf",
+          "text": "Evidence"
+        },
         {
           "story_id": "1946",
           "field": "NewsContent",
@@ -6596,6 +7607,13 @@
         "3865"
       ],
       "references": [
+        {
+          "story_id": "3865",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.uneca.org/eca-events/sites/default/files/resources/documents/alpc/clpa2025/draft_2025_call_to_action.pdf",
+          "text": "Call to Action"
+        },
         {
           "story_id": "3865",
           "field": "NewsContent",
@@ -6863,6 +7881,13 @@
         "2330"
       ],
       "references": [
+        {
+          "story_id": "2330",
+          "field": "body",
+          "kind": "link",
+          "ref": "https://www.zmo.de/fileadmin/Inhalte/Publikationen/PDFs/programmatictexts/zmo_programmatic_text_12_2018.pdf",
+          "text": "Leibniz Zentrum Moderner Orient "
+        },
         {
           "story_id": "2330",
           "field": "NewsContent",

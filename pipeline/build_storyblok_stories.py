@@ -9,7 +9,7 @@ SCRIPTS_DIR = abspath(dirname(__file__))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
-from normalize_news_html import normalize_news_content_html
+from normalize_html import normalize_content_html
 from storyblok_config import load_config
 from storyblok_embeds import pull_quote_to_blok_or_richtext
 from storyblok_richtext import html_to_storyblok_richtext
@@ -116,7 +116,7 @@ def convert_pull_quote(pull_quote, pull_quote_author, config):
 
     if mode == "richtext":
         if "<" in str(pull_quote):
-            normalized_html, _, normalize_warnings = normalize_news_content_html(str(pull_quote))
+            normalized_html, _, normalize_warnings = normalize_content_html(str(pull_quote))
             warnings.extend(normalize_warnings)
             result = html_to_storyblok_richtext(normalized_html, config=config)
             warnings.extend(result.warnings)
@@ -163,9 +163,9 @@ def reserve_slug(base_slug, sharepoint_id, used_slugs):
 def build_story_payload(item, config, used_slugs=None):
     used_slugs = used_slugs if used_slugs is not None else set()
     sharepoint_id = item.get("Id") or item.get("ID")
-    title = item.get("Title") or f"News {sharepoint_id}"
+    title = item.get("Title") or f"{P.leaf.title()} {sharepoint_id}"
     slug = reserve_slug(
-        slugify(title, fallback=f"news-{sharepoint_id}"),
+        slugify(title, fallback=f"{P.leaf}-{sharepoint_id}"),
         sharepoint_id,
         used_slugs,
     )

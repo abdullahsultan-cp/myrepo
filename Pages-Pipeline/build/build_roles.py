@@ -1,4 +1,5 @@
 """Turn SharePoint's 336 groups and 35 role strings into a hierarchy of custom
+
 Storyblok roles -- and say, per person, which ones replace what they hold today.
 
 Why this exists
@@ -42,17 +43,15 @@ Outputs (Pages-Pipeline/)
   roles.json                 the same, for the portal
 """
 import csv, io, os, re, json, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-PP = os.path.dirname(HERE)
-SRC = os.path.join(PP, 'AKU - User - Permissions - Sites - Groups - '
-                       'SharePoint_2016_User_Roles_Mapping.csv')
+SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\(.+)$')
 ROOT_DUMP = 30          # a folder listing more groups than this names no owner
 
-plan = json.load(io.open(os.path.join(HERE, 'plan.json'), encoding='utf-8'))
-groups = json.load(io.open(os.path.join(HERE, 'groups.json'), encoding='utf-8'))
+plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+groups = json.load(io.open(paths.work('groups.json'), encoding='utf-8'))
 GKIND = {g['group']: g['kind'] for g in groups}
 GUNIT = {g['group']: g['unit'] for g in groups}
 GPEOPLE = {g['group']: g['people'] for g in groups}
@@ -733,7 +732,7 @@ user_rows.sort(key=lambda r: (RANK.get(r['top_capability'], 0) * -1,
 
 # ---- write ---------------------------------------------------------------
 def write_csv(name, rows, cols):
-    with io.open(os.path.join(PP, name), 'w', encoding='utf-8-sig', newline='') as f:
+    with io.open(paths.out(name), 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction='ignore')
         w.writeheader()
         w.writerows(rows)
@@ -763,7 +762,7 @@ write_csv('aku-user-roles.csv', user_rows, USER_COLS)
 json.dump({'roles': role_rows, 'matrix': matrix_rows, 'ladder': LADDER,
            'tiers': TIERS, 'functional': FUNCTIONAL, 'means': CAP_MEANS,
            'old_groups': old_rows, 'old_strings': str_rows, 'users': user_rows},
-          io.open(os.path.join(HERE, 'roles.json'), 'w', encoding='utf-8'),
+          io.open(paths.work('roles.json'), 'w', encoding='utf-8'),
           ensure_ascii=False)
 
 by_tier = collections.Counter(r['tier'] for r in role_rows)

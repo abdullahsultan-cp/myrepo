@@ -16,11 +16,10 @@ Counts are of *unique-scope* rows only, for the reason given in sections.py:
 inherited rows repeat the AKU-wide groups into every web and witness nothing.
 """
 import csv, re, io, json, os, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(os.path.dirname(HERE),
-                   'AKU - User - Permissions - Sites - Groups - '
-                   'SharePoint_2016_User_Roles_Mapping.csv')
+
+SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\')
 
@@ -177,7 +176,7 @@ for r in rows:
     if r['suffix']:
         strong[r['suffix']].add(top)
 
-out = io.open(os.path.join(HERE, 'regions_extracted.txt'), 'w', encoding='utf-8')
+out = io.open(paths.work('regions_extracted.txt'), 'w', encoding='utf-8')
 out.write('REGION EXTRACTION — aku.edu only (%d webs, %d unique-scope groups)\n\n'
           % (len(webs), len(group_names)))
 
@@ -223,7 +222,7 @@ for r in rows:
                   % (r['path'][:38], r['title'][:40], dict(r['path_token'])))
 out.close()
 
-json.dump(rows, io.open(os.path.join(HERE, 'region_witnesses.json'), 'w',
+json.dump(rows, io.open(paths.work('region_witnesses.json'), 'w',
                         encoding='utf-8'), ensure_ascii=False, indent=1)
 print('webs', len(webs), 'regions found', sorted(strong))
 print('witness fire counts', dict(fire))

@@ -165,8 +165,8 @@ python pipeline/run_pipeline.py all
 
 | Folder | Stage that writes it |
 |---|---|
-| `News-Pipeline/data/raw/` | `extract-news` — splits `news.json` into one file per story |
-| `News-Pipeline/data/cleaned/` | `clean-news` — Unicode normalised |
+| `News-Pipeline/data/raw/` | `extract` — splits `news.json` into one file per story |
+| `News-Pipeline/data/cleaned/` | `clean` — Unicode normalised |
 | `News-Pipeline/data/normalized/` | `normalize-html` — SharePoint HTML → semantic HTML |
 | `News-Pipeline/data/richtext/` | `convert-richtext` → rich-text JSON |
 | `News-Pipeline/data/richtext_enhanced/` | `enhance-richtext` — links and assets resolved |
@@ -196,14 +196,14 @@ If you are pointing this at a *different* SharePoint list, this is the sequence
 and what each step is actually for.
 
 ```bash
-python pipeline/run_pipeline.py extract-news     # split into one file per story
+python pipeline/run_pipeline.py extract     # split into one file per story
 python pipeline/run_pipeline.py analyze-unicode  # inventory every odd character
-python pipeline/run_pipeline.py clean-news       # normalise them
-python pipeline/run_pipeline.py analyze-news-tags
+python pipeline/run_pipeline.py clean       # normalise them
+python pipeline/run_pipeline.py analyze-tags
 python pipeline/run_pipeline.py normalize-html   # the important one
 ```
 
-**`analyze-unicode` before `clean-news`, always.** It writes
+**`analyze-unicode` before `clean`, always.** It writes
 `data/unicode_report.json`, which is the list of what will be changed. Read it
 before running the clean — that is the review step, and skipping it means
 transliterating real content.

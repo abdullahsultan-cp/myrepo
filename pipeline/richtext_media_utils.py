@@ -8,10 +8,16 @@ from urllib.parse import unquote, urlparse
 
 from storyblok_config import load_config
 from storyblok_utils import absolute_sharepoint_url, generate_uid
-from validate_news_media import classify_extension
+from validate_media import classify_extension
 
-MEDIA_PUBLIC_PREFIX = "/news-media"
-MEDIA_RELATIVE_DIR = join("assets", "News", "media")
+import os as _os, sys as _sys
+_sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+from paths_root import P  # noqa: E402
+
+# Both were hardcoded to news. The public prefix is what a rich-text link is
+# rewritten to; the directory is where the file actually sits on disk.
+MEDIA_PUBLIC_PREFIX = f"/{P.leaf}-media"
+MEDIA_RELATIVE_DIR = _os.path.relpath(P.MEDIA_DIR, P.PIPELINE)
 
 DOCUMENT_EXTENSIONS = {
     ".pdf",
@@ -581,7 +587,7 @@ def build_richtext_media_blok(story_id, asset, content):
     filename = asset["local_filename"]
     title = (content.get("title") or "").strip()
     return {
-        "_uid": generate_uid(f"news-media:{story_id}:richtext:{filename}"),
+        "_uid": generate_uid(f"{P.leaf}-media:{story_id}:richtext:{filename}"),
         "component": "news_media",
         "role": "richtext",
         "filename": filename,

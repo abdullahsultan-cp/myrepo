@@ -13,17 +13,17 @@ the data is silent the row says so; nothing here is presented as authoritative
 that the export does not actually support.
 """
 import json, io, os, collections, html, re
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-PP = os.path.dirname(HERE)
-OUT_HTML = os.path.join(PP, 'AKU-Folder-Hierarchy.html')
-OUT_TREE = os.path.join(PP, 'AKU-Folder-Hierarchy.tree.txt')
-OUT_JSON = os.path.join(PP, 'AKU-Folder-Hierarchy.json')
+OUT_HTML = paths.out('AKU-Folder-Hierarchy.html')
+OUT_TREE = paths.out('AKU-Folder-Hierarchy.tree.txt')
+OUT_JSON = paths.out('AKU-Folder-Hierarchy.json')
 
-webs = json.load(io.open(os.path.join(HERE, 'webs.json'), encoding='utf-8'))
-pages = json.load(io.open(os.path.join(HERE, 'pages.json'), encoding='utf-8'))
+webs = json.load(io.open(paths.work('webs.json'), encoding='utf-8'))
+pages = json.load(io.open(paths.work('pages.json'), encoding='utf-8'))
 
 from classification import W, I, D, REGIONS, SEC  # noqa: E402
+
 
 tops = sorted({p.split('/')[0] for p in webs if p})
 missing = [t for t in tops if t not in SEC]

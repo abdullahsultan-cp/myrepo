@@ -33,7 +33,8 @@ def build_lookup_tables(link_map):
     return normalized
 
 
-def resolve_link_mark(attrs, url_lookup, base_url="/news"):
+def resolve_link_mark(attrs, url_lookup, base_url=None):
+    base_url = base_url or P.story_prefix
     href = (attrs or {}).get("href") or ""
     normalized = normalize_href(href)
     target = url_lookup.get(normalized.lower())

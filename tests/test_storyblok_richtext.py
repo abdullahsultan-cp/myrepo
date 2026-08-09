@@ -7,8 +7,8 @@ SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "pipeline"))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
-from convert_news_richtext import convert_news_item
-from normalize_news_html import normalize_news_content_html
+from convert_richtext import convert_item
+from normalize_html import normalize_content_html
 from storyblok_richtext import html_to_storyblok_richtext, validate_document
 
 # The data lives per content type now; the shared module knows where.
@@ -78,7 +78,7 @@ class StoryblokRichtextTests(unittest.TestCase):
             '<iframe class="embed-responsive-item" src="https&#58;//www.youtube.com/embed/6tpY9IQJ0-Y" '
             'frameborder="0"></iframe><br></div>'
         )
-        normalized, stats, warnings = normalize_news_content_html(html)
+        normalized, stats, warnings = normalize_content_html(html)
         self.assertIn("data-storyblok-embed", normalized)
         self.assertNotIn("<iframe", normalized.lower())
         self.assertEqual(stats["iframes_replaced"], 1)
@@ -119,7 +119,7 @@ class NormalizeHtmlTests(unittest.TestCase):
             '<div class="ExternalClassABC"><div>First paragraph.</div>'
             '<div><br></div><div>Second paragraph.</div></div>'
         )
-        normalized, stats, warnings = normalize_news_content_html(html)
+        normalized, stats, warnings = normalize_content_html(html)
         self.assertNotIn("ExternalClass", normalized)
         self.assertNotIn("<div", normalized.lower())
         self.assertIn("<p>First paragraph.</p>", normalized)
@@ -128,7 +128,7 @@ class NormalizeHtmlTests(unittest.TestCase):
 
     def test_iframe_replaced_with_embed_placeholder(self):
         html = '<p>Video</p><iframe src="https://www.youtube.com/embed/test"></iframe>'
-        normalized, stats, warnings = normalize_news_content_html(html)
+        normalized, stats, warnings = normalize_content_html(html)
         self.assertNotIn("<iframe", normalized)
         self.assertIn("data-storyblok-embed", normalized)
         self.assertEqual(stats["iframes_replaced"], 1)
@@ -138,7 +138,7 @@ class NormalizeHtmlTests(unittest.TestCase):
             '<div class="embed-responsive embed-responsive-4by3 videoWP-border">'
             '<iframe src="https://www.youtube.com/embed/test"></iframe><br></div>'
         )
-        normalized, stats, warnings = normalize_news_content_html(html)
+        normalized, stats, warnings = normalize_content_html(html)
         self.assertIn("data-storyblok-embed", normalized)
         self.assertNotIn("<iframe", normalized.lower())
         self.assertEqual(stats["iframes_replaced"], 1)
@@ -146,22 +146,22 @@ class NormalizeHtmlTests(unittest.TestCase):
 
     def test_fixture_35_normalizes_without_sharepoint_artifacts(self):
         news_item = load_fixture("35.json")
-        normalized, stats, warnings = normalize_news_content_html(news_item["NewsContent"])
+        normalized, stats, warnings = normalize_content_html(news_item["NewsContent"])
         self.assertNotIn("ExternalClass", normalized)
         self.assertNotIn("<div", normalized.lower())
 
     def test_fixture_100_normalizes(self):
         news_item = load_fixture("100.json")
-        normalized, stats, warnings = normalize_news_content_html(news_item["NewsContent"])
+        normalized, stats, warnings = normalize_content_html(news_item["NewsContent"])
         self.assertNotIn("ExternalClass", normalized)
 
 
 class EndToEndFixtureTests(unittest.TestCase):
     def convert_fixture(self, filename):
         news_item = load_fixture(filename)
-        normalized_html, _, _ = normalize_news_content_html(news_item["NewsContent"])
+        normalized_html, _, _ = normalize_content_html(news_item["NewsContent"])
         news_item["NewsContent"] = normalized_html
-        converted, warnings, errors = convert_news_item(news_item)
+        converted, warnings, errors = convert_item(news_item)
         return converted, warnings, errors
 
     def test_fixture_35_converts_to_valid_doc(self):

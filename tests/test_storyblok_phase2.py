@@ -9,7 +9,7 @@ if SCRIPTS_DIR not in sys.path:
 
 from build_link_map import build_link_map, resolve_href
 from build_storyblok_stories import build_story_payload, convert_pull_quote
-from enhance_storyblok_news import enhance_richtext_node
+from enhance_richtext import enhance_richtext_node
 from storyblok_config import load_config
 from storyblok_embeds import pull_quote_to_blok_or_richtext
 

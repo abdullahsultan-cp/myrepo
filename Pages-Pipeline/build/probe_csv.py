@@ -8,11 +8,10 @@ webs) and who owns them.  Two signals matter for placement:
     that no other column carries.
 """
 import csv, collections, re, json, io, os
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-PP = os.path.dirname(HERE)
-SRC = os.path.join(PP, 'AKU - User - Permissions - Sites - Groups - '
-                       'SharePoint_2016_User_Roles_Mapping.csv')
+
+SRC = paths.PERMISSIONS_CSV
 
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\')
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')
@@ -47,7 +46,7 @@ with io.open(SRC, encoding='utf-8-sig', newline='') as f:
         s['doms'][d] += 1
         s['scope'].add(row['Permission Scope'])
 
-with io.open(os.path.join(HERE, 'csv_probe.txt'), 'w', encoding='utf-8') as w:
+with io.open(paths.work('csv_probe.txt'), 'w', encoding='utf-8') as w:
     w.write('aku.edu sites: %d\n' % len(sites))
     for label, c, n in (('login domains', dom, 40), ('permission scope', scope, 20),
                         ('assignee type', atype, 20), ('assigned roles', roles, 25),
@@ -59,6 +58,6 @@ with io.open(os.path.join(HERE, 'csv_probe.txt'), 'w', encoding='utf-8') as w:
 json.dump({u: {'titles': sorted(s['titles']), 'groups': dict(s['groups']),
                'doms': dict(s['doms']), 'scope': sorted(s['scope']), 'rows': s['rows']}
            for u, s in sites.items()},
-          io.open(os.path.join(HERE, 'sites.json'), 'w', encoding='utf-8'),
+          io.open(paths.work('sites.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 print('sites', len(sites), 'groups', len(grp))

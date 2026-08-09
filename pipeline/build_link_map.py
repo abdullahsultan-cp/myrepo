@@ -13,8 +13,12 @@ from storyblok_utils import normalize_sequence_number, slugify, story_uuid
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from paths_root import P  # noqa: E402
 
-NEWS_DETAILS_PATTERN = re.compile(r"news_details\.aspx", re.I)
-NID_PATTERN = re.compile(r"^NEWS-\d+$", re.I)
+# The SharePoint side of the link: the detail page internal links point at,
+# and the id shape inside them (news_details.aspx?nid=NEWS-1234). Both are
+# per type -- see source_urls in config/types/<type>.json.
+DETAILS_PATTERN = re.compile(re.escape(P.source_urls["detail_page"]), re.I)
+NID_PATTERN = re.compile(rf"^{re.escape(P.source_urls['id_prefix'])}-\d+$", re.I)
+SOURCE_PREFIX = P.source_urls["prefix"].rstrip("/") + "/"
 
 
 def load_news_items(folder_path):
@@ -38,8 +42,8 @@ def build_story_index(news_items):
     for filename, item in news_items.items():
         sharepoint_id = item.get("Id") or item.get("ID")
         sequence_number = normalize_sequence_number(item.get("SequenceNumber"))
-        title = item.get("Title") or f"news-{sharepoint_id}"
-        slug = slugify(title, fallback=f"news-{sharepoint_id}")
+        title = item.get("Title") or f"{P.leaf}-{sharepoint_id}"
+        slug = slugify(title, fallback=f"{P.leaf}-{sharepoint_id}")
 
         entry = {
             "file": filename,
@@ -48,7 +52,7 @@ def build_story_index(news_items):
             "title": title,
             "slug": slug,
             "story_uuid": story_uuid(sharepoint_id),
-            "story_path": f"/news/{slug}",
+            "story_path": f"{P.story_prefix}/{slug}",
         }
 
         by_id[str(sharepoint_id)] = entry
@@ -85,11 +89,12 @@ def extract_nid(href):
     return None
 
 
-def resolve_href(href, by_sequence, by_slug=None, story_prefix="/news"):
+def resolve_href(href, by_sequence, by_slug=None, story_prefix=None):
+    story_prefix = story_prefix or P.story_prefix
     normalized = normalize_href(href)
     lower = normalized.lower()
 
-    if NEWS_DETAILS_PATTERN.search(lower):
+    if DETAILS_PATTERN.search(lower):
         sequence_number = extract_nid(normalized)
         if sequence_number and sequence_number in by_sequence:
             target = by_sequence[sequence_number]
@@ -107,8 +112,8 @@ def resolve_href(href, by_sequence, by_slug=None, story_prefix="/news"):
             "original_href": normalized,
         }
 
-    if normalized.startswith("/news/") and "Pages/" not in normalized:
-        slug = normalized.split("/news/", 1)[-1].split("?", 1)[0].strip("/")
+    if normalized.startswith(SOURCE_PREFIX) and "Pages/" not in normalized:
+        slug = normalized.split(SOURCE_PREFIX, 1)[-1].split("?", 1)[0].strip("/")
         entry = (by_slug or {}).get(slug)
         if entry:
             return {
@@ -126,31 +131,42 @@ def resolve_href(href, by_sequence, by_slug=None, story_prefix="/news"):
     }
 
 
-def build_url_lookup(by_sequence, story_prefix="/news"):
+def build_url_lookup(by_sequence, story_prefix=None):
+    story_prefix = story_prefix or P.story_prefix
+    src = P.source_urls["prefix"].rstrip("/")
+    page = P.source_urls["detail_page"]
     lookup = {}
     for sequence_number, entry in by_sequence.items():
         slug = entry["slug"]
-        variants = {
-            f"/news/Pages/News_Details.aspx?nid={sequence_number}",
-            f"/news/pages/News_Details.aspx?nid={sequence_number}",
-            f"/news/pages/news_details.aspx?nid={sequence_number.lower()}",
+        # A LIST, not a set. These are written to a JSON file that is committed,
+        # and set iteration order for strings is randomised per process, so a
+        # set here made every regeneration produce a different key order and a
+        # 5,774-line diff that meant nothing. The variants are distinct
+        # literals, so there is nothing for a set to deduplicate anyway.
+        variants = [
+            f"{src}/Pages/{page}?nid={sequence_number}",
+            f"{src}/pages/{page}?nid={sequence_number}",
+            f"{src}/pages/{page.lower()}?nid={sequence_number.lower()}",
             f"{story_prefix.rstrip('/')}/{slug}",
-        }
+        ]
         for href in variants:
             lookup[normalize_href(href).lower()] = entry
     return lookup
 
 
-def build_link_map(news_folder, story_prefix="/news"):
+def build_link_map(news_folder, story_prefix=None):
+    story_prefix = story_prefix or P.story_prefix
     news_items = load_news_items(news_folder)
     by_sequence, by_id, by_slug = build_story_index(news_items)
     url_lookup = build_url_lookup(by_sequence, story_prefix=story_prefix)
+
+    body_field = P.fields.get("body", "NewsContent")
 
     unresolved = {}
     resolved_examples = []
 
     for filename, item in news_items.items():
-        html = item.get("NewsContent") or ""
+        html = item.get(body_field) or ""
         for match in re.finditer(r'href="([^"]+)"', html):
             href = match.group(1)
             if not href.startswith("/") and not href.lower().startswith("http"):

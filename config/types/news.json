@@ -7,13 +7,11 @@
     "",
     "Copy this file to add a type, change what differs, leave the rest."
   ],
-
   "type": "news",
   "label": "news story",
   "folder": "News-Pipeline",
   "source": "news.json",
   "assets_dir": "News",
-
   "hierarchy": {
     "_comment": [
       "Where a story lands. `leaf` is the folder that actually holds the item;",
@@ -30,7 +28,24 @@
       "entity-department": "regions/{region}/entities/{entity}/departments/{department}/{leaf}"
     }
   },
-
+  "source_urls": {
+    "_comment": [
+      "CONFIRM: where this type lives on aku.edu -- the SOURCE, not the target.",
+      "",
+      "These two are easy to conflate and are not the same thing. `hierarchy.leaf`",
+      "is where an item lands in Storyblok. This is where it came from: the path",
+      "SharePoint serves it under, the detail page its internal links point at, and",
+      "the shape of the id in those links (news_details.aspx?nid=NEWS-1234).",
+      "",
+      "They coincide for news, which is exactly why the /news in build_link_map.py",
+      "went unnoticed. For blogs and events the values below are a GUESS -- check a",
+      "real internal link in the export before the first run, or every cross-link",
+      "will simply fail to resolve and be left pointing at aku.edu."
+    ],
+    "prefix": "/news",
+    "detail_page": "News_Details.aspx",
+    "id_prefix": "NEWS"
+  },
   "storyblok": {
     "_comment": [
       "The component this type becomes, and which bloks its body may contain.",
@@ -39,14 +54,23 @@
     ],
     "component": "news_article",
     "body_whitelist": [
-      "rich_text", "box", "video", "media_section", "quote_banner", "button",
-      "media_card", "row", "split_section", "brand_banner", "brand_logo",
-      "iframe", "image"
+      "rich_text",
+      "box",
+      "video",
+      "media_section",
+      "quote_banner",
+      "button",
+      "media_card",
+      "row",
+      "split_section",
+      "brand_banner",
+      "brand_logo",
+      "iframe",
+      "image"
     ],
     "background_pattern_asset_id": 202607823391189,
     "quote_background_asset_id": 202908142091464
   },
-
   "layout": {
     "_comment": [
       "How source content maps onto components. Signed off against the",
@@ -69,10 +93,22 @@
     "hosted_video": "media_section_video",
     "tables": "skip",
     "spacing": {
-      "text": {"mobile_x": 20, "desktop_x": 176},
-      "full": {"mobile_x": null, "desktop_x": null},
-      "mid": {"mobile_x": 20, "desktop_x": 80},
-      "margin_bottom": {"mobile": 24, "desktop": 56},
+      "text": {
+        "mobile_x": 20,
+        "desktop_x": 176
+      },
+      "full": {
+        "mobile_x": null,
+        "desktop_x": null
+      },
+      "mid": {
+        "mobile_x": 20,
+        "desktop_x": 80
+      },
+      "margin_bottom": {
+        "mobile": 24,
+        "desktop": 56
+      },
       "by_component": {
         "rich_text": "text",
         "quote_banner": "full",
@@ -86,7 +122,6 @@
       }
     }
   },
-
   "fields": {
     "_comment": [
       "Source column names. A different SharePoint list may name these",
@@ -106,6 +141,10 @@
     "author": "ContentWriter",
     "pull_quote": "PullQuote",
     "pull_quote_author": "PullQuoteAuthor",
-    "language_links": ["NewsInUrdu", "SecondaryLanguage2", "SecondaryLanguage3"]
+    "language_links": [
+      "NewsInUrdu",
+      "SecondaryLanguage2",
+      "SecondaryLanguage3"
+    ]
   }
 }

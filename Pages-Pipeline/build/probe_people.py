@@ -8,17 +8,16 @@ Only Unique-scope rows are grants. Inherited rows repeat the AKU-wide groups int
 every folder and would make everyone look like an administrator of everything.
 """
 import csv, re, io, json, os, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-PP = os.path.dirname(HERE)
-SRC = os.path.join(PP, 'AKU - User - Permissions - Sites - Groups - '
-                       'SharePoint_2016_User_Roles_Mapping.csv')
+
+SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\(.+)$')
 ROOT_DUMP = 30
 
-plan = json.load(io.open(os.path.join(HERE, 'plan.json'), encoding='utf-8'))
-groups = json.load(io.open(os.path.join(HERE, 'groups.json'), encoding='utf-8'))
+plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+groups = json.load(io.open(paths.work('groups.json'), encoding='utf-8'))
 GKIND = {g['group']: g['kind'] for g in groups}
 GUNIT = {g['group']: g['unit'] for g in groups}
 
@@ -163,12 +162,12 @@ RANK = {'admin': 0, 'publisher': 1, 'editor': 2, 'structure': 3, 'translator': 4
 out.sort(key=lambda p: (RANK[p['top_capability']], -len(p['folders']),
                         p['name'].lower()))
 
-json.dump(out, io.open(os.path.join(HERE, 'people.json'), 'w', encoding='utf-8'),
+json.dump(out, io.open(paths.work('people.json'), 'w', encoding='utf-8'),
           ensure_ascii=False)
 
 CAMPUS = {'aku': 'Karachi', 'nbi': 'Nairobi', 'dar': 'Dar es Salaam',
           'ismc': 'London', 'scholar': 'service account'}
-w = io.open(os.path.join(HERE, 'people_probe.txt'), 'w', encoding='utf-8')
+w = io.open(paths.work('people_probe.txt'), 'w', encoding='utf-8')
 w.write('%d named people hold at least one permission on aku.edu\n' % len(out))
 w.write('with a real folder grant: %d\n'
         % sum(1 for p in out if p['folders']))

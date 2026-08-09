@@ -9,15 +9,14 @@ and A's pages sit under sub-paths the CSV never lists as their own web.  This
 script reports the overlap honestly rather than picking one source and pretending.
 """
 import re, io, json, os, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-PP = os.path.dirname(HERE)
-TAX = os.path.join(os.path.dirname(PP), 'data', 'taxonomy', 'seed',
-                   'regions_entities_departments.json')
+
+TAX = paths.taxonomy_seed()
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')
 
 # ---- A: pages -------------------------------------------------------------
-html = io.open(os.path.join(PP, 'AKU-EN_1.HTM'), encoding='utf-8').read()
+html = io.open(paths.PAGES_HTM, encoding='utf-8').read()
 rows = re.findall(
     r'<li data-name="[^"]*">\s*<span class="pact (\w+)"[^>]*></span>'
     r'\s*<span class="pfile mono">([^<]+)</span>'
@@ -34,7 +33,7 @@ for act, fname, cat, url in rows:
                   'action': act, 'url': url})
 
 # ---- B: webs from the CSV -------------------------------------------------
-sites = json.load(io.open(os.path.join(HERE, 'sites.json'), encoding='utf-8'))
+sites = json.load(io.open(paths.work('sites.json'), encoding='utf-8'))
 csv_webs, csv_top = {}, {}
 for u, s in sites.items():
     if not u.startswith('http://aku.edu'):
@@ -49,7 +48,7 @@ page_webs = collections.Counter(p['web'] for p in pages)
 
 tax = json.load(io.open(TAX, encoding='utf-8'))
 
-out = io.open(os.path.join(HERE, 'join_report.txt'), 'w', encoding='utf-8')
+out = io.open(paths.work('join_report.txt'), 'w', encoding='utf-8')
 out.write('pages parsed .............. %d\n' % len(pages))
 out.write('distinct webs in pages .... %d\n' % len(page_webs))
 out.write('sections in pages ......... %d\n' % len(page_secs))
@@ -86,6 +85,6 @@ for s, n in page_secs.most_common():
               % (s, n, subs, t[:42], doms, grps))
 out.close()
 
-json.dump(pages, io.open(os.path.join(HERE, 'pages.json'), 'w', encoding='utf-8'),
+json.dump(pages, io.open(paths.work('pages.json'), 'w', encoding='utf-8'),
           ensure_ascii=False)
 print('pages', len(pages), 'csv webs', len(csv_webs), 'csv top', len(csv_top))

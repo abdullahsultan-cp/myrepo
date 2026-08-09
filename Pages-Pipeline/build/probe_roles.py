@@ -10,11 +10,10 @@ content writer for X and "CA <X>" the content approver, so the pair identifies
 both the owning unit and the two-step publish workflow already in use.
 """
 import csv, re, io, json, os, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(os.path.dirname(HERE),
-                   'AKU - User - Permissions - Sites - Groups - '
-                   'SharePoint_2016_User_Roles_Mapping.csv')
+
+SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\(.+)$')
 ROOT_DUMP = 30
@@ -91,7 +90,7 @@ for g, G in groups.items():
     })
 rows.sort(key=lambda r: (-r['people'], r['group']))
 
-out = io.open(os.path.join(HERE, 'roles_probe.txt'), 'w', encoding='utf-8')
+out = io.open(paths.work('roles_probe.txt'), 'w', encoding='utf-8')
 out.write('%d groups · %d distinct role strings\n' % (len(groups), len(role_totals)))
 
 out.write('\n== every distinct Assigned Roles value ==\n')
@@ -122,10 +121,10 @@ for r in rows[:40]:
                                                 for a, b in r['roles']))
 out.close()
 
-json.dump(rows, io.open(os.path.join(HERE, 'groups.json'), 'w', encoding='utf-8'),
+json.dump(rows, io.open(paths.work('groups.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 json.dump({w: sorted(g) for w, g in web_groups.items()
            if len(g) <= ROOT_DUMP},
-          io.open(os.path.join(HERE, 'web_owners.json'), 'w', encoding='utf-8'),
+          io.open(paths.work('web_owners.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 print('groups', len(groups), 'units with a writer/approver pair', len(units))

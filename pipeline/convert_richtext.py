@@ -23,7 +23,7 @@ def load_news_data(file_path):
         return load(f)
 
 
-def convert_news_item(news_item):
+def convert_item(news_item):
     item = deepcopy(news_item)
     news_content = item.get("NewsContent")
     warnings = []
@@ -82,7 +82,7 @@ def convert_news_files(source_folder, output_folder):
     for filename in json_files:
         source_path = join(source_folder, filename)
         news_item = load_news_data(source_path)
-        converted_item, warnings, errors = convert_news_item(news_item)
+        converted_item, warnings, errors = convert_item(news_item)
 
         for warning in warnings:
             all_warnings[warning.split(":", 1)[0]] += 1

@@ -62,44 +62,44 @@ NEWS_MEDIA_DIR = P.MEDIA_DIR
 
 PIPELINE_STEPS = [
     {
-        "name": "extract-news",
-        "script": "analyze_news.py",
-        "description": "Split data/news.json into individual files in data/news/",
+        "name": "extract",
+        "script": "extract_items.py",
+        "description": "Split the source export into one file per item",
         "requires": [],
         "produces": [NEWS_FOLDER_PATH],
     },
     {
         "name": "analyze-unicode",
         "script": "analyze_unicode.py",
-        "description": "Scan data/news/ and write data/unicode_report.json",
+        "description": "Inventory every non-ASCII character, for review before cleaning",
         "requires": [NEWS_FOLDER_PATH],
         "produces": [UNICODE_REPORT_PATH],
     },
     {
-        "name": "clean-news",
-        "script": "clean_news.py",
-        "description": "Normalize Unicode in data/news/ using data/unicode_report.json",
+        "name": "clean",
+        "script": "clean_items.py",
+        "description": "Normalise Unicode using the report from analyze-unicode",
         "requires": [NEWS_FOLDER_PATH, UNICODE_REPORT_PATH],
         "produces": [CLEANED_NEWS_FOLDER_PATH],
     },
     {
-        "name": "analyze-news-tags",
-        "script": "analyze_news_tags.py",
-        "description": "Inventory HTML tags in cleaned NewsContent fields",
+        "name": "analyze-tags",
+        "script": "analyze_tags.py",
+        "description": "Inventory the HTML tags present in the cleaned body field",
         "requires": [CLEANED_NEWS_FOLDER_PATH],
         "produces": [NEWSCONTENT_TAGS_REPORT_PATH],
     },
     {
         "name": "normalize-html",
-        "script": "normalize_news_html.py",
-        "description": "Normalize SharePoint HTML in data/cleaned_news/ to semantic HTML",
+        "script": "normalize_html.py",
+        "description": "Turn SharePoint editor HTML into semantic HTML",
         "requires": [CLEANED_NEWS_FOLDER_PATH],
         "produces": [NORMALIZED_NEWS_FOLDER_PATH, HTML_NORMALIZATION_REPORT_PATH],
     },
     {
         "name": "convert-richtext",
-        "script": "convert_news_richtext.py",
-        "description": "Convert normalized NewsContent HTML to Storyblok rich text JSON",
+        "script": "convert_richtext.py",
+        "description": "Convert the normalised body HTML to Storyblok rich text",
         "requires": [NORMALIZED_NEWS_FOLDER_PATH],
         "produces": [STORYBLOK_NEWS_FOLDER_PATH, RICHTEXT_CONVERSION_REPORT_PATH],
     },
@@ -113,7 +113,7 @@ PIPELINE_STEPS = [
     {
         "name": "catalog-assets",
         "script": "catalog_assets.py",
-        "description": "Catalog SharePoint images referenced in news content",
+        "description": "Catalogue the SharePoint images referenced in item bodies",
         "requires": [CLEANED_NEWS_FOLDER_PATH, STORYBLOK_NEWS_FOLDER_PATH],
         "produces": [STORYBLOK_ASSET_CATALOG_PATH, STORYBLOK_ASSET_MAP_PATH],
     },
@@ -126,7 +126,7 @@ PIPELINE_STEPS = [
     },
     {
         "name": "enhance-richtext",
-        "script": "enhance_storyblok_news.py",
+        "script": "enhance_richtext.py",
         "description": "Resolve internal story links and asset URLs in rich text JSON",
         "requires": [
             STORYBLOK_NEWS_FOLDER_PATH,
@@ -143,16 +143,16 @@ PIPELINE_STEPS = [
         "produces": [STORYBLOK_STORIES_FOLDER_PATH, STORYBLOK_STORIES_REPORT_PATH],
     },
     {
-        "name": "validate-news-media",
-        "script": "validate_news_media.py",
-        "description": "Validate Metadata.csv references against assets/News/media",
+        "name": "validate-media",
+        "script": "validate_media.py",
+        "description": "Validate Metadata.csv references against the media on disk",
         "requires": [METADATA_CSV_PATH, NEWS_MEDIA_DIR],
         "produces": [NEWS_MEDIA_REPORT_PATH],
     },
     {
         "name": "map-storyblok-media",
         "script": "map_storyblok_media.py",
-        "description": "Map storyblok_stories to assets/News/media via Metadata.csv",
+        "description": "Map each built story to its media files via Metadata.csv",
         "requires": [STORYBLOK_STORIES_FOLDER_PATH, METADATA_CSV_PATH, NEWS_MEDIA_DIR],
         "produces": [STORYBLOK_MEDIA_MAP_PATH],
     },
@@ -173,7 +173,7 @@ PIPELINE_STEPS = [
     {
         "name": "download-richtext-media",
         "script": "download_richtext_media.py",
-        "description": "Download missing rich-text media into assets/News/media and update story mappings",
+        "description": "Download missing rich-text media into the type's assets folders/media and update story mappings",
         "requires": [RICHTEXT_MEDIA_CATALOG_PATH, STORYBLOK_STORIES_FOLDER_PATH, NEWS_MEDIA_DIR],
         "produces": [
             RICHTEXT_MEDIA_CATALOG_PATH,
@@ -277,7 +277,7 @@ def validate_news_folder():
     elif not json_files:
         errors.append(
             f"No JSON files found in {relative_data_path(NEWS_FOLDER_PATH)}. "
-            "Run extract-news first."
+            "Run extract first."
         )
     return errors
 
@@ -320,7 +320,7 @@ def validate_cleaned_news_folder():
     elif not json_files:
         errors.append(
             f"No JSON files found in {relative_data_path(CLEANED_NEWS_FOLDER_PATH)}. "
-            "Run clean-news first."
+            "Run clean first."
         )
     return errors
 
@@ -393,7 +393,7 @@ def validate_step(step_name):
     for requirement in step["requires"]:
         errors.extend(validate_requirement(requirement))
 
-    if step_name == "extract-news":
+    if step_name == "extract":
         errors.extend(validate_news_json())
 
     return errors
@@ -409,10 +409,42 @@ def get_step(step_name):
 def prerequisite_commands(step_name):
     step_index = next(i for i, step in enumerate(PIPELINE_STEPS) if step["name"] == step_name)
     return [
-        f"python scripts/{PIPELINE_STEPS[i]['script']} "
-        f"or python scripts/run_pipeline.py {PIPELINE_STEPS[i]['name']}"
+        f"python pipeline/{PIPELINE_STEPS[i]['script']} "
+        f"or python pipeline/run_pipeline.py {PIPELINE_STEPS[i]['name']}"
         for i in range(step_index)
     ]
+
+
+# Steps that leave the payloads in a WORSE state than they found them if the
+# steps after them are not also run. build-stories rewrites every payload from
+# the enhanced rich text, which means it drops media[] and richtext_media[];
+# inject-story-media and attach-richtext-media put them back. Running it alone
+# silently empties the images on all 3,606 stories, and the payload still looks
+# perfectly valid -- it just has no pictures.
+#
+# This has now caught two people, including while verifying a refactor: the
+# "before" snapshot turned out to be a media-less state from an earlier lone
+# run, which made a clean rename look like it had changed all 3,606 files.
+INCOMPLETE_ALONE = {
+    "build-stories": ["inject-story-media", "attach-richtext-media"],
+}
+
+
+def warn_if_incomplete(step_name):
+    rest = INCOMPLETE_ALONE.get(step_name)
+    if not rest:
+        return
+    print()
+    print("=" * 72)
+    print(f"  '{step_name}' rewrites every payload and leaves media[] and")
+    print("  richtext_media[] EMPTY. The payloads are now valid but have no")
+    print("  images. Finish the sequence, or the next upload has none either:")
+    print()
+    for name in rest:
+        print(f"      python pipeline/run_pipeline.py {name}")
+    print()
+    print("  Or just run:  python pipeline/run_pipeline.py all")
+    print("=" * 72)
 
 
 def relative_data_path(path):
@@ -630,7 +662,7 @@ def run_script(script_name):
     print()
 
 
-def run_step(step_name):
+def run_step(step_name, standalone=True):
     errors = validate_step(step_name)
     if errors:
         fail_with_prerequisite_message(step_name, errors)
@@ -638,23 +670,42 @@ def run_step(step_name):
     step = get_step(step_name)
     run_script(step["script"])
 
+    # Only when run on its own: inside `all` the follow-up steps are coming
+    # anyway, and a warning there would be noise that teaches people to ignore it.
+    if standalone:
+        warn_if_incomplete(step_name)
+
 
 def run_all():
     for step in PIPELINE_STEPS:
-        run_step(step["name"])
+        run_step(step["name"], standalone=False)
     print("Pipeline completed successfully.")
+
+
+# The step names these replaced. Four of them said "news" for a pipeline that
+# now runs blogs and events through exactly the same code, so the names lied
+# about what the step does. The old ones keep working -- they are in RUN_MIGRATION.md,
+# in the shell history of everyone who has run this, and breaking them buys nothing.
+STEP_ALIASES = {
+    "extract-news": "extract",
+    "clean-news": "clean",
+    "analyze-news-tags": "analyze-tags",
+    "validate-news-media": "validate-media",
+}
 
 
 def build_parser():
     parser = argparse.ArgumentParser(
-        description="Run the AKU news processing pipeline in the required order."
+        description="Run the AKU content pipeline in the required order."
     )
     parser.add_argument(
         "command",
-        choices=[step["name"] for step in PIPELINE_STEPS] + ["all", "status"],
+        choices=([step["name"] for step in PIPELINE_STEPS]
+                 + ["all", "status"] + sorted(STEP_ALIASES)),
+        metavar="command",       # else argparse prints all 26, aliases included
         help=(
-            "Pipeline command. Use 'status' to inspect prerequisites, or 'all' "
-            "to run every step in order."
+            "Pipeline step to run. Use 'status' to inspect prerequisites, or "
+            "'all' to run every step in order."
         ),
     )
     parser.add_argument(
@@ -668,15 +719,21 @@ def main():
     parser = build_parser()
     args = parser.parse_args()
 
-    if args.command == "status":
+    command = args.command
+    if command in STEP_ALIASES:
+        command = STEP_ALIASES[command]
+        print(f"note: '{args.command}' is now called '{command}' -- "
+              f"the step is the same, the name no longer says news.")
+
+    if command == "status":
         print_status()
         return
 
-    if args.command == "all":
+    if command == "all":
         run_all()
         return
 
-    run_step(args.command)
+    run_step(command)
 
 
 if __name__ == "__main__":

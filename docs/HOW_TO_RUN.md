@@ -64,17 +64,17 @@ and if you do, **do not stop after `build-stories`**: the media steps that follo
 are what put images into the payloads.
 
 ```
-extract-news            split news.json into one file per story
+extract                 split the export into one file per item
 analyze-unicode         inventory every odd character      <- read the report
-clean-news              normalise them
-analyze-news-tags       HTML tag inventory
+clean                   normalise them
+analyze-tags            HTML tag inventory
 normalize-html          SharePoint HTML -> semantic HTML
 convert-richtext        -> Storyblok rich text
 build-link-map          SharePoint URL -> story lookup
 catalog-assets          inline images found in content
 enhance-richtext        resolve links and asset URLs
-build-stories           -> data/storyblok_stories/   THE PAYLOADS
-validate-news-media     Metadata.csv vs what is on disk
+build-stories           -> data/stories/            THE PAYLOADS
+validate-media          Metadata.csv vs what is on disk
 map-storyblok-media     story <-> media file mapping
 inject-story-media      banner/medium/thumbnail/video INTO the payloads
 catalog-richtext-media  inline media inventory
@@ -85,10 +85,23 @@ classify-story-media    tag each story by media type
 validate-metadata       final check
 ```
 
+Four of these were called `extract-news`, `clean-news`, `analyze-news-tags` and
+`validate-news-media`. The pipeline runs blogs and events through exactly the
+same code, so the names lied about what the step does. **The old names still
+work** — they print a one-line note and run the same step.
+
 **Why the order matters.** `build-stories` writes the payload; `inject-story-media`
 and `attach-richtext-media` fill in `media[]` and `richtext_media[]`. Running
 `build-stories` alone empties both on all 3,606 stories — the images silently
-vanish and every story uploads without pictures.
+vanish and every story uploads without pictures. The payload still validates; it
+just has no media.
+
+Running it on its own now **prints a warning naming the two steps still owed**.
+That guard exists because the trap caught someone twice, the second time while
+verifying a refactor: the "before" snapshot was a media-less state left by an
+earlier lone run, which made a clean rename look as though it had altered all
+3,606 payloads. `run_pipeline.py all` never triggers the warning, because there
+the follow-up steps are coming anyway.
 
 Check it worked:
 

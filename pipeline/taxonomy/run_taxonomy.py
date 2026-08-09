@@ -95,7 +95,7 @@ def main():
     if arg == "all":
         if not os.path.isdir(paths.NEWS_DIR):
             sys.exit(f"input missing: {paths.NEWS_DIR}\n"
-                     "Run scripts/run_pipeline.py clean-news first.")
+                     "Run pipeline/run_pipeline.py clean first.")
         for s in STEPS:
             run(s)
         print(f"\n{'=' * 70}\n  taxonomy complete")

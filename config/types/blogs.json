@@ -26,6 +26,24 @@
       "entity-department": "regions/{region}/entities/{entity}/departments/{department}/{leaf}"
     }
   },
+  "source_urls": {
+    "_comment": [
+      "CONFIRM: where this type lives on aku.edu -- the SOURCE, not the target.",
+      "",
+      "These two are easy to conflate and are not the same thing. `hierarchy.leaf`",
+      "is where an item lands in Storyblok. This is where it came from: the path",
+      "SharePoint serves it under, the detail page its internal links point at, and",
+      "the shape of the id in those links (news_details.aspx?nid=NEWS-1234).",
+      "",
+      "They coincide for news, which is exactly why the /news in build_link_map.py",
+      "went unnoticed. For blogs and events the values below are a GUESS -- check a",
+      "real internal link in the export before the first run, or every cross-link",
+      "will simply fail to resolve and be left pointing at aku.edu."
+    ],
+    "prefix": "/blogs",
+    "detail_page": "Blog_Details.aspx",
+    "id_prefix": "BLOG"
+  },
   "storyblok": {
     "_comment": [
       "CONFIRM before the first upload: the component a blog post becomes may",

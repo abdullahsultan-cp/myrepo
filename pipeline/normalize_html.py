@@ -276,7 +276,7 @@ def split_on_double_breaks(html, stats):
     return "".join(out)
 
 
-def normalize_news_content_html(html):
+def normalize_content_html(html):
     stats = Counter()
     warnings = []
 
@@ -337,7 +337,7 @@ def normalize_news_item(news_item):
     if not isinstance(news_content, str) or not news_content.strip():
         return item, Counter(), []
 
-    normalized_html, stats, warnings = normalize_news_content_html(news_content)
+    normalized_html, stats, warnings = normalize_content_html(news_content)
     item["NewsContent"] = normalized_html
     return item, stats, warnings
 

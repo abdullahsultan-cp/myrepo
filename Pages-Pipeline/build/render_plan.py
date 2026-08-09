@@ -5,10 +5,11 @@ Pages    every page's current URL and its destination path
 Roles    the Storyblok roles to create, and who belongs in each
 """
 import io, os, json, html, collections
+import paths
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(os.path.dirname(HERE), 'AKU-Migration-Plan.html')
-plan = json.load(io.open(os.path.join(HERE, 'plan.json'), encoding='utf-8'))
+
+OUT = paths.out('AKU-Migration-Plan.html')
+plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 L = plan['live']
 e = html.escape

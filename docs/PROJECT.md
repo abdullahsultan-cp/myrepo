@@ -60,9 +60,14 @@ pipeline/              ONE codebase, selected with --type
 News-Pipeline/         data/ assets/ backup/     3,606 stories, migrated
 Blogs-Pipeline/        data/ assets/ backup/     awaiting its export
 Events-Pipeline/       data/ assets/ backup/     awaiting its export
-Pages-Pipeline/        build/ portal/            a different shape
+Pages-Pipeline/        data/ build/ out/ portal/ structure, not content
 config/types/*.json    what differs per type
 ```
+
+**No script in `pipeline/` is named for a content type.** Four steps and seven
+scripts carried "news" in their names while running blogs and events through
+identical code. Renamed; the old step names still work and print a note. See
+[HOW_TO_RUN.md](HOW_TO_RUN.md).
 
 **The data is separated; the code is not.** Duplicating 74 scripts per type
 would mean fixing every bug three times and watching the copies drift. Sharing
@@ -336,4 +341,5 @@ before their first upload.
 | [STORYBLOK_TARGET_SCHEMA.md](STORYBLOK_TARGET_SCHEMA.md) | the live schema vs what we produce |
 | [STORYBLOK_COMPONENTS.md](STORYBLOK_COMPONENTS.md) | components, media roles, characters |
 | [STORYBLOK_FIELDS_NEEDED.md](STORYBLOK_FIELDS_NEEDED.md) | what the front end still owes |
+| [../Pages-Pipeline/README.md](../Pages-Pipeline/README.md) | the pages stage — a different job, and why it keeps its own |
 | [../CLAUDE.md](../CLAUDE.md) | conventions and the bugs already paid for |

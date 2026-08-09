@@ -18,8 +18,8 @@
 # data/taxonomy/ (the taxonomy stage's outputs) ARE tracked.
 #
 # To rebuild after a fresh clone:
-#     python scripts/run_pipeline.py extract-news
-#     python scripts/run_pipeline.py clean-news
+#     python pipeline/run_pipeline.py extract
+#     python pipeline/run_pipeline.py clean
 #     ... then the remaining steps, or `all`
 #
 # Delete the lines below if you would rather version them.
@@ -125,18 +125,31 @@ dist/
 # by the render step, so they are generated, not source.
 /Pages-Pipeline/portal/public/data/
 
-# Intermediates the Pages-Pipeline probes write next to themselves. Each is
-# regenerable: probe_csv.py -> join.py -> sections.py -> build_migration_plan.py.
-/Pages-Pipeline/build/*.json
-/Pages-Pipeline/build/*.txt
+# Intermediates the Pages steps pass between themselves — one folder, so the
+# rule is a directory rather than a pattern that has to guess at extensions.
+# Each is regenerable: probe_csv.py -> join.py -> sections.py ->
+# build_migration_plan.py. `build/paths.py` is the only thing that names them.
+/Pages-Pipeline/out/work/
 
 # The generated single-file views. Each is rebuilt from plan.json by its own
 # render_*.py, so tracking them would put a megabyte of churn in every diff.
-# AKU-Tree.html is the exception: it is the file we hand to AKU, so it is tracked
-# deliberately and `render_share_tree.py` regenerates it.
+/Pages-Pipeline/out/AKU-Structure.html
+/Pages-Pipeline/out/AKU-Migration-Portal.html
+/Pages-Pipeline/out/AKU-Migration-Portal-legacy.html
+/Pages-Pipeline/out/AKU-Migration-Plan.html
+/Pages-Pipeline/out/AKU-Folder-Hierarchy.*
+
+# Everything else in out/ IS tracked: the CSVs and AKU-Tree.html are the
+# deliverables handed to AKU. They live beside the ignored views because they
+# come out of the same run — which is exactly why each is named above rather
+# than the whole folder being ignored.
+
+# The pre-restructure locations. Kept so a stale working copy or an old branch
+# cannot re-commit files that have moved into data/ and out/.
+/Pages-Pipeline/build/*.json
+/Pages-Pipeline/build/*.txt
 /Pages-Pipeline/AKU-Structure.html
-/Pages-Pipeline/AKU-Migration-Portal.html
-/Pages-Pipeline/AKU-Migration-Portal-legacy.html
+/Pages-Pipeline/AKU-Migration-Portal*.html
 /Pages-Pipeline/AKU-Migration-Plan.html
 /Pages-Pipeline/AKU-Folder-Hierarchy.*
 

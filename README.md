@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 # 2. Content: split the export and normalise it — 7 steps, or `all`
 python pipeline/run_pipeline.py all
-#   extract-news  clean-news  normalize-html  convert-richtext
+#   extract  clean  normalize-html  convert-richtext
 #   build-link-map  enhance-richtext  build-stories
 
 # 3. Taxonomy: work out where every story belongs
@@ -114,7 +114,13 @@ News-Pipeline/            3,606 stories, migrated
   backup/                   raw export + live Storyblok snapshots
 Blogs-Pipeline/           awaiting its export
 Events-Pipeline/          awaiting its export
-Pages-Pipeline/           a different shape; own build and portal
+
+Pages-Pipeline/           structure, not content — its own stage
+  data/                     the 3 real inputs
+  build/                    the code; paths.py names every path
+  out/                      deliverables handed to AKU (TRACKED)
+  out/work/                 intermediates (gitignored)
+  portal/                   the React app
 
 config/types/*.json       what differs per type
 config/                   credentials, region overrides, abbreviations

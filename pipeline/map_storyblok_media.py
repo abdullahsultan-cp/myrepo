@@ -11,7 +11,7 @@ SCRIPTS_DIR = abspath(dirname(__file__))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
-from validate_news_media import (
+from validate_media import (
     DOWNLOAD_FAILED,
     MEDIA_COLUMNS,
     classify_extension,
