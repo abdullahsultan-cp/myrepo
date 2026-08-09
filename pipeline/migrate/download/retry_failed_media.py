@@ -27,6 +27,7 @@ import time
 from download_media import MEDIA_DIR, MIN_BYTES, fetch, sha256_of
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import _bootstrap  # noqa: F401,E402  -- paths_root now lives in pipeline/core/
 from paths import BASE  # noqa: E402
 
 # Paths come from the shared module so this script works for any content

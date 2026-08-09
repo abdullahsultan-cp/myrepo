@@ -4,7 +4,7 @@ import subprocess
 import sys
 from json import load
 from os import listdir
-from os.path import abspath, dirname, exists, isdir, isfile, join
+from os.path import abspath, dirname, exists, isdir, isfile, join, relpath
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 BASE_PATH = abspath(join(SCRIPTS_DIR, ".."))
@@ -13,6 +13,7 @@ BASE_PATH = abspath(join(SCRIPTS_DIR, ".."))
 # resolves under News-Pipeline/ or Blogs-Pipeline/ depending on --type, so this
 # orchestrator drives either without a second copy of anything.
 sys.path.insert(0, SCRIPTS_DIR)
+import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
 from paths_root import P, TYPES  # noqa: E402
 
 # The constants below are module-level, so they are evaluated at import -- long
@@ -409,8 +410,7 @@ def get_step(step_name):
 def prerequisite_commands(step_name):
     step_index = next(i for i, step in enumerate(PIPELINE_STEPS) if step["name"] == step_name)
     return [
-        f"python pipeline/{PIPELINE_STEPS[i]['script']} "
-        f"or python pipeline/run_pipeline.py {PIPELINE_STEPS[i]['name']}"
+        f"python pipeline/run_pipeline.py {PIPELINE_STEPS[i]['name']} "
         for i in range(step_index)
     ]
 
@@ -459,7 +459,7 @@ def print_pipeline_overview():
     for index, step in enumerate(PIPELINE_STEPS, start=1):
         print(f"{index}. {step['name']}")
         print(f"   {step['description']}")
-        print(f"   Script: scripts/{step['script']}")
+        print(f"   Script: {relpath(resolve_script(step['script']), BASE_PATH)}")
         if step["requires"]:
             print(
                 "   Requires: "
@@ -638,8 +638,23 @@ def fail_with_prerequisite_message(step_name, errors):
     sys.exit(1)
 
 
+# Steps live in a folder named for what they do. The step table names the
+# file; this finds it, so moving a step between folders needs no table edit.
+STEP_FOLDERS = ("content", "media", "analyze", "core", "")
+
+
+def resolve_script(script_name):
+    for folder in STEP_FOLDERS:
+        candidate = join(SCRIPTS_DIR, folder, script_name) if folder             else join(SCRIPTS_DIR, script_name)
+        if exists(candidate):
+            return candidate
+    raise SystemExit(
+        f"cannot find {script_name} under pipeline/. Looked in: "
+        + ", ".join(f"{f}/" for f in STEP_FOLDERS if f))
+
+
 def run_script(script_name):
-    script_path = join(SCRIPTS_DIR, script_name)
+    script_path = resolve_script(script_name)
     python_executable = sys.executable
     venv_python = join(BASE_PATH, ".venv", "bin", "python")
     if exists(venv_python):

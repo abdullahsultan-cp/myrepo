@@ -45,6 +45,7 @@ except ImportError:
 # paths puts scripts/migrate/ and scripts/ on sys.path, so this has to come
 # before the sibling and cross-stage imports below.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import _bootstrap  # noqa: F401,E402  -- paths_root now lives in pipeline/core/
 from paths import BASE, MEDIA_DIR  # noqa: E402
 
 import db as tracking  # noqa: E402

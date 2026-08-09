@@ -39,6 +39,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(
 from paths_root import P, TYPES  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import _bootstrap  # noqa: F401,E402  -- paths_root now lives in pipeline/core/
 import db as tracking  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(

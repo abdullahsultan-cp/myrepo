@@ -35,6 +35,7 @@ except ImportError:
     sys.exit("pip install -r requirements.txt")
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import _bootstrap  # noqa: F401,E402  -- paths_root now lives in pipeline/core/
 from paths import BASE  # noqa: E402
 
 from storyblok_config import load_config, management_api_base  # noqa: E402

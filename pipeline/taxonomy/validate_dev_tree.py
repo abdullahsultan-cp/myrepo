@@ -31,6 +31,7 @@ import unicodedata
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import _bootstrap  # noqa: F401,E402  -- paths_root now lives in pipeline/core/
 from paths_root import P  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))

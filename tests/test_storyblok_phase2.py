@@ -6,6 +6,9 @@ from os.path import abspath, dirname, join
 SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "pipeline"))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
+# The steps live in pipeline/{core,content,media,analyze}/ now; _bootstrap puts
+# each on sys.path so a test can import a step by its module name as before.
+import _bootstrap  # noqa: F401,E402
 
 from build_link_map import build_link_map, resolve_href
 from build_storyblok_stories import build_story_payload, convert_pull_quote
