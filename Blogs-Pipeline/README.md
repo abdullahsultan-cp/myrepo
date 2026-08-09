@@ -128,6 +128,56 @@ does not settle which variant blogs should use** — see the questions below.
 
 ---
 
+## 2b · Decisions taken
+
+| Question | Decision |
+|---|---|
+| `quote_banner` variant | **Follow the reference** — `event` variant, and fill its other fields too (`date`, `category`, `date_label`, `event_label`), not just the quote |
+| Blog 31's table | **Use `row`** rather than asking for a new table component |
+| Image placement | **As in the source, presented as in the demo** — order comes from the article, the side-by-side `row` treatment from the reference |
+| Missing values | **Ignore what we do not have** — never emit a blank field or a half-built blok |
+| Pills | Deferred — the reference is only a demo |
+
+"Ignore what we do not have" resolves several things at once: no `portrait` on
+quotes, no `author_section` at all (we have neither a biography nor a photo for
+any of the 52 authors — the name still rides in `blog_article.author` and shows
+in the byline), and no empty `description` where `Summary` is absent.
+
+**One thing it leaves open.** The `event` variant's `pill_image` and
+`background_image` are the two fields the reference sets — to the *same* asset.
+We have no per-quote image. Either they stay empty (consistent with "ignore what
+we do not have"), or the blog's own banner is reused for both. Worth one word
+when convenient; 13 blogs have no banner to reuse either way.
+
+---
+
+## 2c · What still has nowhere to go
+
+Beyond Category and Tags, these carry real data and `blog_article` has no field
+for them.
+
+| Source | Populated | Why it matters |
+|---|---|---|
+| **`Entity`** | **83/83**, 9 values | The biggest gap. `news_article` has `entities`; `blog_article` does not. Without it a blog cannot say which faculty owns it, and entity filtering will not work for blogs |
+| **`IsFeatured`** | **43 true / 40 false** | Nearly half the blogs are flagged featured. Nothing records it |
+| **`FeatureSequence`** | 45/83 — 33×`1`, 5×`2`, 4×`3`, 3×`0` | The ordering *within* featured. Useless without `IsFeatured` |
+| **`Close Comments`** | **14 blogs true** | The design appends `comment_form` to every article. These 14 had comments closed in SharePoint and there is no way to suppress it |
+| **`IsActive`** | 82 true, **1 false** | One blog is inactive. Probably should upload unpublished rather than live |
+| **`Post Year`** | 83/83, 6 values (2021–2026) | Stored as `string;#2025`. Likely derivable from `Schedule Start Date`, so possibly redundant — but it is what SharePoint filtered archives on |
+| **626 comments** | `post-comments.json` | `comment_form` is a form, not a store. There is nowhere to put existing comments |
+
+Already accounted for: `Blog Title`→`title`, `Blog Detail`→`body`,
+`Summary`→`description` (31/83), `AuthorName`→`author`,
+`Schedule Start Date`→`date`, `Banner`→`banner_image`, `Pull Quotes` +
+`Pull Quotes Author`→`quote_banner`, `Embed Code`→`iframe`/`social_embed`,
+`Embed Video`→`media_section`, `ID`→tracking key.
+
+Dead on all 83, ignore: **`Banner Image`**, **`Tagss`**.
+
+Not migrating (metadata): `Created`, `Modified`, `Created By`, `Modified By`.
+
+---
+
 ## 3 · Fields `blog_article` does not have
 
 Not blockers in the way the whitelist is, but each loses data that exists in the
@@ -152,15 +202,15 @@ id.
 
 ---
 
-## 4 · One thing genuinely missing from the space: a table
+## 4 · The one table — settled, use `row`
 
-Blog **31** contains a real 8-row schedule table — grade against teaching day, from
+Blog **31** contains a real 8-row schedule table, grade against teaching day, from
 a COVID-19 rural-education post. It is content, not layout.
 
-There is **no table component anywhere in the 97**. News hit this twice (stories
-1335 and 3288) and the answer was to skip them and rebuild by hand. With one
-occurrence, doing the same is reasonable — but it should be a decision, and the
-alternative is a small `table` component the dev may want anyway.
+There is no table component among the 97, and none is being asked for: the
+decision is to build it from `row` / `row_item`, one row per line. News hit this
+twice (stories 1335 and 3288) and had to rebuild by hand; here it is one post and
+`row` already does the job.
 
 ---
 
@@ -285,14 +335,17 @@ oversight.
 
 ## 10 · What is needed, in order
 
-**From the dev:**
+**From the dev** — none of these blocks our upload, but each loses data or
+blocks editors:
 
-1. **Fill `blog_article.body`'s component whitelist** — nothing can migrate until
-   this is done. Suggested: `rich_text, image, media_section, quote_banner,
-   split_section, iframe, video, button`.
-2. Decide on **`entities`** and a **category** field (§3).
-3. Decide on **`isGlobal`** and **`thumbnail`** (§3).
-4. Decide on a **table** component, or accept rebuilding blog 31 by hand (§4).
+1. **An `entities` field on `blog_article`** (§2c). The largest gap: `Entity` is
+   populated on 83/83 and has nowhere to go.
+2. **Fill the `body` and `row_item.body` whitelists** (§2). Not a migration
+   blocker, but until then nobody can edit a blog by hand in the UI.
+3. **A way to record `IsFeatured` / `FeatureSequence`**, or confirm featured
+   blogs are chosen in Storyblok instead and the SharePoint flags are dropped.
+4. **A way to suppress `comment_form`** on the 14 blogs with comments closed, or
+   confirm the form shows on all of them regardless.
 
 **From us, once the above is settled:**
 
