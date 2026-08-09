@@ -26,42 +26,105 @@ one, and the shape is where the work is.
 
 ---
 
-## 2 · THE BLOCKER — `blog_article.body` accepts nothing
+## 2 · `blog_article.body` — empty whitelist, but not a migration blocker
 
-The dev has built `blog_article` (id `205045811148991`). Its `body` field is:
+`blog_article` (id `205045811148991`) is **new** — it did not exist in the
+previous space snapshot. The dev built it today, along with `author_section`,
+`comment_form`, `image`, `iframe`, `social_embed` and `event_article`.
+
+Its `body` field reads:
 
 ```
 type                 bloks
 restrict_components  true
 component_whitelist  []          <- empty
+component_group_whitelist  (absent)
 ```
 
-`restrict_components: true` with an **empty whitelist means no component may be
-placed in the body at all.** Not rich text, not an image, not a quote. Every one
-of the 83 blogs would upload with a title, a banner and an empty body.
+An earlier version of this file called that a hard blocker. **It is not, for the
+migration.** The reference story `blogs/beyond-the-blame-...` sits in that same
+field with 11 bloks and renders correctly on the live site, and the Management
+API does not enforce whitelists — it is an editor-UI restriction. Our upload path
+is unaffected.
 
-For comparison, `news_article.body` whitelists 13 components.
+**It still needs filling**, because with an empty whitelist a human opening a
+migrated blog in the editor is offered nothing to insert, and so cannot fix or
+extend a post by hand. For comparison `news_article.body` whitelists 13.
 
-**Nothing else in this document can proceed until that whitelist is filled.**
+### What it should list — from the reference story and from the 83 blogs
 
-### What it needs, and why — each from the actual content
+Every component below **already exists**. None needs building.
 
-Every component below **already exists in the space**. None needs building; they
-need adding to the whitelist.
-
-| Component | Needed by | Evidence in the 83 blogs |
+| Component | Needed by | Evidence |
 |---|---|---|
-| `rich_text` | **all 83** | prose in every post; 598 `<p>`, 137 `<strong>`, 52 `<em>`, 70 links, 20 lists, 65 headings, 2 `<sup>` |
-| `image` | 15 blogs | 37 inline `<img>` — a lone image stays inside the rich text, as agreed for news |
-| `media_section` | 15 blogs + 4 | galleries for runs of 2+ images; `type=video` for YouTube |
-| `quote_banner` | 17 blogs | `Pull Quotes` populated on 17, with an author on 13 |
-| `split_section` | as needed | a pull quote that arrives with an image |
-| `iframe` | 1 blog | blog 18 carries a Facebook post embed in `Embed Code` |
-| `video` | 4 blogs | blog 18's `Embed Video`, plus YouTube links in the body of 46, 70, 71 |
-| `button` | 0 so far | none found, but it is in the news whitelist and costs nothing |
+| `rich_text` | **all 83** | 598 `<p>`, 137 `<strong>`, 52 `<em>`, 70 links, 20 lists, 65 headings |
+| `row` | the design | the reference uses it 3× — image beside text, and the pill strip |
+| `quote_banner` | 17 blogs | `Pull Quotes` populated on 17, author on 13 |
+| `author_section` | the design | closes every article in the reference |
+| `comment_form` | the design | closes every article in the reference |
+| `image` | 15 blogs | 37 inline `<img>`; in the reference always nested in a `row_item` |
+| `pill` | the design | 2 in the reference, nested in `row_item` |
+| `media_section` | 4 blogs | `type=video` for YouTube |
+| `iframe` / `social_embed` | 1 blog | blog 18's Facebook post embed |
 
-Also present in the space and worth considering: **`social_embed`** may suit the
-Facebook post better than a raw `iframe` — dev's call.
+`row_item.body` also has an empty whitelist and holds `image` and `pill` in the
+reference, so it needs the same treatment.
+
+---
+
+## 2a · The reference story, blok by blok
+
+`blogs/beyond-the-blame-rethinking-pastoralism-and-environmental-impacts`
+(story `205424528709668`) is the signed-off design. Its body:
+
+```
+ 0  rich_text                       intro prose
+ 1  row  -> row_item[image] | row_item[rich_text]     image LEFT, text right
+ 2  quote_banner                    variant=event
+ 3  rich_text
+ 4  row  -> row_item[rich_text] | row_item[image]     image RIGHT, text left
+ 5  rich_text
+ 6  row  -> row_item[pill] | row_item[pill]           "Research"  "Environment"
+ 7  rich_text                       a heading
+ 8  rich_text                       disclaimer
+ 9  author_section                  photo + bio
+10  comment_form
+```
+
+So images are **not** free-standing: each sits in a `row_item` beside a
+`rich_text`, and the sides alternate. The pills are also `row_item`s, with
+`width_mode: fit`.
+
+### `quote_banner` has three variants, and they use different fields
+
+| variant | Uses |
+|---|---|
+| `centered` | quote, attribution (gold), `date` + `category` as a meta line |
+| `attributed` | quote, attribution, **`portrait`** |
+| `event` | quote, **`pill_image`** in a decorative pill, `date`+`date_label` and `category`+`event_label` as an event card |
+
+The reference uses **`event`** and sets `pill_image` **and** `background_image`
+to the *same* asset (`203705850046717`) — that is the "image twice" you spotted.
+It is one asset id referenced in two fields, not two uploads.
+
+But the rendered page shows **none** of it: no background image, no pill photo,
+no category chip — just the quote and a gold attribution. Its content is also
+placeholder lifted from elsewhere (a medicine quote from President Sulaiman
+Shahabuddin, `category: Convocation`) on a pastoralism blog. **So the reference
+does not settle which variant blogs should use** — see the questions below.
+
+### What our data can and cannot fill
+
+| Field the design uses | Do we have it? |
+|---|---|
+| `quote` | yes — 17 blogs |
+| `attribution` | yes — 13 blogs (`Pull Quotes Author`) |
+| `portrait` (attributed) | **no** — no per-quote portrait anywhere |
+| `pill_image` (event) | **no** |
+| `date` / `category` (meta) | the blog's own date and Category, if that is wanted |
+| `author_section.bio` | **no** — export has a name, never a biography |
+| `author_section.photo` | **no** — no author photos in the bundle |
+| `pill.label` | `Category` (21) and/or `Tags` (51) |
 
 ---
 

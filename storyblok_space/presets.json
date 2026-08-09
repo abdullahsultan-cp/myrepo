@@ -1,1 +1,1296 @@
-[]
+[
+  {
+    "id": 205826647836955,
+    "name": "Programme default layout",
+    "preset": {
+      "_uid": "9fc933e4-70ae-4cdd-acc0-423abd5650c6",
+      "body": [
+        {
+          "_uid": "282f7d1f-3579-41e4-b8ee-21fd64140bde",
+          "items": [
+            {
+              "_uid": "df96e744-37f6-408e-9ee7-eecc4f66e793",
+              "cards": [],
+              "title": "Programme Overview",
+              "content": "Add an overview of the programme, its purpose and who it is designed for.",
+              "component": "info_accordion_item"
+            },
+            {
+              "_uid": "d21c0a85-fd97-461f-9091-024cfd05bef4",
+              "cards": [],
+              "title": "Curriculum",
+              "content": "Describe the curriculum, learning approach and programme structure.",
+              "component": "info_accordion_item"
+            },
+            {
+              "_uid": "b9aa1281-196d-44f0-8593-187a0aa50cc3",
+              "cards": [],
+              "title": "Admission Requirements",
+              "content": "Add eligibility and admission requirements.",
+              "component": "info_accordion_item"
+            },
+            {
+              "_uid": "0898fd3d-bd94-41eb-ab7a-fa2a4cc9eecb",
+              "cards": [],
+              "title": "Fees and Funding",
+              "content": "Add tuition fee and financial assistance information.",
+              "component": "info_accordion_item"
+            },
+            {
+              "_uid": "206d6ab1-6c2f-4eda-8c63-f2d742aabfe5",
+              "cards": [],
+              "title": "How to Apply",
+              "content": "Explain the application process and required documents.",
+              "component": "info_accordion_item"
+            },
+            {
+              "_uid": "63f35e4a-9d89-4ffa-bca0-785ff20838cc",
+              "cards": [],
+              "title": "Important Dates",
+              "content": "Add interviews, tests and other important programme dates.",
+              "component": "info_accordion_item"
+            },
+            {
+              "_uid": "de66875e-e48b-48ff-85d5-e3a241f170dd",
+              "cards": [],
+              "title": "Frequently Asked Questions",
+              "content": "Add answers to frequently asked questions about the programme.",
+              "component": "info_accordion_item"
+            }
+          ],
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              },
+              "padding": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              },
+              "padding": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 100
+              }
+            }
+          },
+          "component": "info_accordion"
+        },
+        {
+          "_uid": "8cc4a06c-6930-4b6b-81a5-742b2a879dc7",
+          "items": [
+            {
+              "_uid": "47f03a73-44d9-4084-906a-817588f4c98c",
+              "body": [
+                {
+                  "_uid": "ead8c905-135c-4a3a-b3bf-1c18965a12b3",
+                  "image": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": "",
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Faculty member",
+                  "subtitle": "",
+                  "component": "profile_card",
+                  "description": ""
+                }
+              ],
+              "width": "",
+              "height": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            },
+            {
+              "_uid": "4b7ee93e-f30a-4962-a19c-f5105289c176",
+              "body": [
+                {
+                  "_uid": "2aa242cc-cb34-4ad1-9212-ca590d0fedd0",
+                  "image": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": "",
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Faculty member",
+                  "subtitle": "",
+                  "component": "profile_card",
+                  "description": ""
+                }
+              ],
+              "width": "",
+              "height": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            },
+            {
+              "_uid": "9cb63d54-f1fd-4f12-abf9-3d0dc81f8bf1",
+              "body": [
+                {
+                  "_uid": "fd10822d-44ce-4a9a-9921-60573564eb4b",
+                  "image": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": "",
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Faculty member",
+                  "subtitle": "",
+                  "component": "profile_card",
+                  "description": ""
+                }
+              ],
+              "width": "",
+              "height": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            },
+            {
+              "_uid": "b3836e66-0e1f-4290-80bd-76f545b6d1f0",
+              "body": [
+                {
+                  "_uid": "26c73571-710b-4aae-b29f-26a652648b7b",
+                  "image": {
+                    "id": null,
+                    "alt": null,
+                    "name": "",
+                    "focus": "",
+                    "title": null,
+                    "source": null,
+                    "filename": "",
+                    "copyright": null,
+                    "fieldtype": "asset",
+                    "meta_data": {},
+                    "is_external_url": false
+                  },
+                  "title": "Faculty member",
+                  "subtitle": "",
+                  "component": "profile_card",
+                  "description": ""
+                }
+              ],
+              "width": "",
+              "height": "",
+              "radius": "",
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            }
+          ],
+          "title": "Our",
+          "width": "",
+          "height": "",
+          "radius": "",
+          "spacing": "",
+          "component": "row",
+          "highlight": "Faculty",
+          "align_items": "center",
+          "description": "",
+          "on_mobile_wrap": false,
+          "justify_content": "center",
+          "background_color": {
+            "color": "#ffffff",
+            "plugin": "native-color-picker"
+          }
+        },
+        {
+          "gap": "4",
+          "_uid": "126fbd43-44f4-4920-b4aa-f5cfb62aec2f",
+          "items": [
+            {
+              "_uid": "9f225a86-1f1e-4710-95a0-fc591bc70865",
+              "body": [
+                {
+                  "_uid": "50693acc-399b-419b-af63-88a0c7978135",
+                  "icon": "calendar",
+                  "link": {
+                    "id": "",
+                    "url": "",
+                    "linktype": "url",
+                    "fieldtype": "multilink",
+                    "cached_url": ""
+                  },
+                  "label": "Admissions",
+                  "component": "quick_action"
+                }
+              ],
+              "width": "",
+              "height": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            },
+            {
+              "_uid": "cfe7d8f3-751d-43dd-9c83-1d6c986631f0",
+              "body": [
+                {
+                  "_uid": "175165a4-6be8-4e78-8d95-48ec1dcc4c5f",
+                  "icon": "book",
+                  "link": {
+                    "id": "",
+                    "url": "",
+                    "linktype": "url",
+                    "fieldtype": "multilink",
+                    "cached_url": ""
+                  },
+                  "label": "Curriculum",
+                  "component": "quick_action"
+                }
+              ],
+              "width": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "center",
+              "justify_content": "center",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            },
+            {
+              "_uid": "09a09ce6-66a7-460f-a550-d395a0824c8a",
+              "body": [
+                {
+                  "_uid": "9ebe9e14-afb6-47c9-b610-fc109e8737ef",
+                  "icon": "award",
+                  "link": {
+                    "id": "",
+                    "url": "",
+                    "linktype": "url",
+                    "fieldtype": "multilink",
+                    "cached_url": ""
+                  },
+                  "label": "Fees & Funding",
+                  "component": "quick_action"
+                }
+              ],
+              "width": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "center",
+              "justify_content": "center",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            },
+            {
+              "_uid": "8db9586e-01e0-4a1e-8377-35f3f300550e",
+              "body": [
+                {
+                  "_uid": "f2321efb-6b67-4439-95f9-370475f5ebb1",
+                  "icon": "graduation",
+                  "link": {
+                    "id": "",
+                    "url": "",
+                    "linktype": "url",
+                    "fieldtype": "multilink",
+                    "cached_url": ""
+                  },
+                  "label": "Apply Now",
+                  "component": "quick_action"
+                }
+              ],
+              "height": "",
+              "radius": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 16,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": 20,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
+              "component": "row_item",
+              "width_mode": "fit",
+              "align_items": "center",
+              "justify_content": "center",
+              "background_color": {
+                "color": "#ffffff",
+                "plugin": "native-color-picker"
+              }
+            }
+          ],
+          "title": "Quick",
+          "height": "",
+          "radius": "",
+          "component": "row",
+          "highlight": "Actions",
+          "align_items": "center",
+          "description": "",
+          "justify_content": "center",
+          "background_color": {
+            "color": "#ffffff",
+            "plugin": "native-color-picker"
+          }
+        },
+        {
+          "_uid": "144d8339-53cd-45a9-bcd4-791a2beb010f",
+          "image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Explore a Career in",
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              },
+              "padding": {
+                "top": 32,
+                "left": null,
+                "right": null,
+                "bottom": 32
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              },
+              "padding": {
+                "top": 100,
+                "left": null,
+                "right": null,
+                "bottom": 100
+              }
+            }
+          },
+          "cta_link": {
+            "id": "",
+            "url": "",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "component": "promo_split",
+          "cta_label": "Explore careers",
+          "highlight": "Medicine",
+          "card_color": "green",
+          "description": "Discover the career opportunities available to programme graduates.",
+          "footer_link": {
+            "id": "",
+            "url": "",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "footer_logo": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "footer_label": "",
+          "desktop_layout": "overlay",
+          "footer_link_label": ""
+        },
+        {
+          "_uid": "47c136bb-f917-4435-80ce-7274d7074346",
+          "title": "Stories of",
+          "stories": [
+            {
+              "_uid": "b82de942-5374-4e4b-9522-bb366d6b4e97",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": "",
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Add a featured programme story",
+              "category": "",
+              "cta_link": {
+                "id": "",
+                "url": "",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "component": "impact_story",
+              "cta_label": "Read more",
+              "read_time": ""
+            },
+            {
+              "_uid": "9e29c0bd-fe80-4338-8b65-c02143ecf13c",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": "",
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Add a programme story",
+              "category": "",
+              "cta_link": {
+                "id": "",
+                "url": "",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "component": "impact_story",
+              "cta_label": "Read more",
+              "read_time": ""
+            },
+            {
+              "_uid": "86af8c43-0463-4cda-b417-01d138598b8d",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": "",
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "Add a programme story",
+              "category": "",
+              "cta_link": {
+                "id": "",
+                "url": "",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "component": "impact_story",
+              "cta_label": "Read more",
+              "read_time": ""
+            }
+          ],
+          "component": "impact_stories",
+          "highlight": "Impact",
+          "description": "Meet the students, alumni and faculty making a difference in their communities.",
+          "view_all_link": {
+            "id": "",
+            "url": "",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "view_all_label": "View all stories"
+        },
+        {
+          "_uid": "32ce1786-411b-4d43-a138-c73af31653ed",
+          "image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "title": "Fees and",
+          "spacing": "",
+          "variant": "banner",
+          "cta_link": {
+            "id": "",
+            "url": "",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "component": "promo_split",
+          "cta_label": "Explore fees and funding",
+          "highlight": "Financial Assistance",
+          "card_color": "green",
+          "description": "Learn about tuition fees, scholarships and financial assistance.",
+          "footer_link": {
+            "id": "",
+            "url": "",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "footer_logo": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "footer_label": "For more information",
+          "desktop_layout": "columns",
+          "footer_link_label": "Financial Assistance"
+        },
+        {
+          "_uid": "e678c49e-16f4-4e84-85fb-4bd87c244ba4",
+          "title": "",
+          "slides": [
+            {
+              "_uid": "dd6d05f0-1091-4e78-9dd2-444545df0555",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "title": "DSADSADA",
+              "cta_link": {
+                "id": "",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "subtitle": "SADSA",
+              "component": "carousel_alumni_slide",
+              "cta_label": "Discover More"
+            },
+            {
+              "_uid": "98d73799-6391-45cc-b814-8c0bca140daf",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "title": "DSADSADA",
+              "cta_link": {
+                "id": "",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "subtitle": "SADSA",
+              "component": "carousel_alumni_slide",
+              "cta_label": "Discover More"
+            },
+            {
+              "_uid": "b1370ee7-7a33-41e2-a24a-306b98c0a13b",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": null,
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {}
+              },
+              "title": "DSADSADA",
+              "cta_link": {
+                "id": "",
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "subtitle": "SADSA",
+              "component": "carousel_alumni_slide",
+              "cta_label": "Discover More"
+            }
+          ],
+          "variant": "alumni",
+          "component": "carousel_section",
+          "highlight": "",
+          "description": "",
+          "view_all_link": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "view_all_label": "",
+          "background_image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          }
+        },
+        {
+          "_uid": "c936e553-be21-4094-a44c-fc52f2030cd2",
+          "title": "Partners Around",
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              },
+              "padding": {
+                "top": 32,
+                "left": null,
+                "right": null,
+                "bottom": 32
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              },
+              "padding": {
+                "top": 56,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              }
+            }
+          },
+          "component": "global_partners",
+          "highlight": "The World",
+          "description": ""
+        },
+        {
+          "_uid": "ab42a478-92c8-435d-864b-e2d20825ce01",
+          "image": {
+            "id": 203705858361598,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/289824742951963/436855/4b69924476/3915-bannerimage.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {
+              "size": "795x398"
+            },
+            "is_external_url": false
+          },
+          "title": "Students ",
+          "layout": "reverse",
+          "bg_color": {
+            "_uid": "0c77d150-20b8-426f-ae9a-072a8ce74b98",
+            "color": "",
+            "plugin": "official-colorpicker"
+          },
+          "cta_link": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "component": "split_section",
+          "cta_label": "Apply",
+          "highlight": "Life",
+          "description": "At AKU, Student Affairs supports your academic and personal growth. Get involved through societies, events, and leadership. Prioritize your well-being with health services, counseling, wellness programs, and holistic support across our student support offices.",
+          "image_variant": "circles",
+          "decorative_images": [
+            {
+              "id": 203705850046717,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/289824742951963/235706/ec8a3df207/3913-bannerimage.jpeg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "size": "1235x492"
+              }
+            },
+            {
+              "id": 203705839204603,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/289824742951963/579825/56c5588a72/3912-bannerimage.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "size": "795x398"
+              }
+            },
+            {
+              "id": 203705830775034,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/289824742951963/81078/191f873aa6/3911-bannerimage.jpg",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "size": "795x398"
+              }
+            },
+            {
+              "id": 203705858361598,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/289824742951963/436855/4b69924476/3915-bannerimage.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "size": "795x398"
+              }
+            },
+            {
+              "id": 203705771346164,
+              "alt": "",
+              "name": "",
+              "focus": "",
+              "title": "",
+              "source": "",
+              "filename": "https://a.storyblok.com/f/289824742951963/429203/5a6f24cbb2/3903-bannerimage.png",
+              "copyright": "",
+              "fieldtype": "asset",
+              "meta_data": {
+                "size": "795x398"
+              }
+            }
+          ],
+          "secondary_cta_link": {
+            "id": "",
+            "url": "",
+            "linktype": "story",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "secondary_cta_label": "Explore Now"
+        },
+        {
+          "_uid": "feb4cdfd-e681-49f6-9a9b-7b407e7fb672",
+          "type": "image",
+          "title": "Explore AKU’s",
+          "component": "media_section",
+          "highlight": "Global Network",
+          "description": "",
+          "media_cards": [
+            {
+              "_uid": "c460050b-6891-47c5-b2c4-f997dacfb80e",
+              "link": {
+                "id": "",
+                "url": "",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": ""
+              },
+              "size": "hero",
+              "image": {
+                "id": null,
+                "alt": null,
+                "name": "",
+                "focus": "",
+                "title": null,
+                "source": null,
+                "filename": "",
+                "copyright": null,
+                "fieldtype": "asset",
+                "meta_data": {},
+                "is_external_url": false
+              },
+              "title": "",
+              "component": "media_card",
+              "cta_label": "",
+              "description": ""
+            }
+          ],
+          "gallery_images": [],
+          "pattern_position": "",
+          "pattern_mobile_height": ""
+        },
+        {
+          "_uid": "c173d72e-48ef-400f-9f2f-32f1f8cda795",
+          "logo": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "email": "",
+          "title": "Study",
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": 32,
+                "left": null,
+                "right": null,
+                "bottom": 32
+              },
+              "padding": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": 100,
+                "left": null,
+                "right": null,
+                "bottom": 100
+              },
+              "padding": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              }
+            }
+          },
+          "bg_image": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": "",
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "component": "student_affairs",
+          "highlight": "at AKU",
+          "description": "Join a learning community committed to excellence, impact and service.",
+          "social_links": []
+        },
+        {
+          "_uid": "5a3fe030-8f53-43ab-913e-61674f1dec39",
+          "type": "gallery",
+          "title": "Discover Our",
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": 32,
+                "left": null,
+                "right": null,
+                "bottom": 32
+              },
+              "padding": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": 100,
+                "left": null,
+                "right": null,
+                "bottom": 100
+              },
+              "padding": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": null
+              }
+            }
+          },
+          "cta_link": {
+            "id": "",
+            "url": "",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": ""
+          },
+          "component": "media_section",
+          "cta_label": "",
+          "highlight": "Campuses",
+          "description": "",
+          "gallery_images": [],
+          "gallery_layout": "staggered",
+          "pattern_position": ""
+        }
+      ],
+      "intro": "At Aga Khan University, our programmes combine academic excellence, practical learning and a commitment to improving quality of life. Explore the programme details, admissions requirements and opportunities below.",
+      "duration": "",
+      "component": "programme",
+      "apply_link": {
+        "id": "",
+        "url": "",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "apply_label": "Apply Now",
+      "closed_message": "The next admission cycle is scheduled for November 2026.",
+      "admission_label": "Admission",
+      "closed_cta_link": {
+        "id": "",
+        "url": "",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": ""
+      },
+      "closed_cta_label": "Notify Me",
+      "extended_message": "The submission deadline has been extended."
+    },
+    "component_id": 205108472845898,
+    "space_id": 289824742951963,
+    "created_at": "2026-08-05T14:30:46.441Z",
+    "updated_at": "2026-08-06T13:44:58.743Z",
+    "image": null,
+    "color": "#274F95",
+    "icon": "block-text-img-t",
+    "description": "Cloned from regions/pk/entities/mc/programmes/doctor-of-medicine-c6a4864e (id=206107720414732). Includes spacing and body composition.",
+    "space_environment_id": null
+  }
+]

@@ -21,19 +21,23 @@
     {
       "name": "preview",
       "location": "https://localhost:3010/"
+    },
+    {
+      "name": "preview-2",
+      "location": "https://localhost:3011/"
     }
   ],
-  "stories_count": 39,
+  "stories_count": 3643,
   "parent_id": null,
   "origin_id": null,
   "short_description": null,
   "show_environment_identification_bar": false,
   "duplication_status": null,
   "color": null,
-  "assets_count": 30,
+  "assets_count": 2502,
   "searchblok_id": null,
   "duplicatable": null,
-  "request_count_today": 1891,
+  "request_count_today": 54,
   "api_requests": 1000,
   "exceeded_requests": 0,
   "billing_address": {},
@@ -51,7 +55,7 @@
   "yearly_ai_credits_used": 9664178,
   "monthly_ai_credits_traffic": 0,
   "using_custom_ai_configuration": false,
-  "strata_available": false,
+  "org_strata_available": false,
   "has_pending_tasks": false,
   "options": {
     "is_demo": false,
@@ -955,6 +959,14 @@
       "terms": []
     },
     {
+      "key": "has_resolve_assets",
+      "origin": "SubscriptionPlan",
+      "limit": "true",
+      "limit_type": "boolean",
+      "is_available": true,
+      "terms": []
+    },
+    {
       "key": "has_restricted_ip_address_range",
       "origin": "SubscriptionPlan",
       "limit": "true",
@@ -1516,6 +1528,28 @@
     {
       "user": {
         "avatar": null,
+        "id": 102087831366571,
+        "firstname": "Kapil",
+        "lastname": "Dev",
+        "disabled": false,
+        "userid": "kapil.dev@cloudprimero.com",
+        "friendly_name": "Kapil Dev"
+      },
+      "role": "admin",
+      "user_id": 102087831366571,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 205802640866120,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
         "id": 123345796365719,
         "firstname": "Abdurrahman",
         "lastname": "Hassan",
@@ -1595,6 +1629,28 @@
       "allowed_path": "",
       "field_permissions": "",
       "id": 175816572960978,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 160433964864256,
+        "firstname": "Muhammad",
+        "lastname": "Shareyar",
+        "disabled": false,
+        "userid": "muhammad.shareyar@cloudprimero.com",
+        "friendly_name": "Muhammad Shareyar"
+      },
+      "role": "admin",
+      "user_id": 160433964864256,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 203281622791840,
       "space_role_id": null,
       "invitation": null,
       "space_role_ids": [],
@@ -1744,6 +1800,50 @@
     {
       "user": {
         "avatar": null,
+        "id": 176457902361401,
+        "firstname": "Noman",
+        "lastname": "Jawaid",
+        "disabled": false,
+        "userid": "noman.jawaid@cloudprimero.com",
+        "friendly_name": "Noman Jawaid"
+      },
+      "role": "editor",
+      "user_id": 176457902361401,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 205835262335869,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
+        "id": 178518035095306,
+        "firstname": "Ali",
+        "lastname": "Muhammad",
+        "disabled": false,
+        "userid": "ali.muhammad@cloudprimero.com",
+        "friendly_name": "Ali Muhammad"
+      },
+      "role": "admin",
+      "user_id": 178518035095306,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 203281475659423,
+      "space_role_id": null,
+      "invitation": null,
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": {
+        "avatar": null,
         "id": 183609275049673,
         "firstname": "Ali",
         "lastname": "Muhammad",
@@ -1788,97 +1888,26 @@
       "can_act_as_admin": false
     },
     {
-      "user": null,
-      "role": "editor",
-      "user_id": null,
+      "user": {
+        "avatar": null,
+        "id": 206106306640985,
+        "firstname": "Muhammad",
+        "lastname": "Shareyar",
+        "disabled": false,
+        "userid": "shareyar.nst@gmail.com",
+        "friendly_name": "Muhammad Shareyar"
+      },
+      "role": "multi",
+      "user_id": 206106306640985,
       "permissions": [],
       "allowed_path": "",
       "field_permissions": "",
-      "id": 175817708327192,
+      "id": 206477969054857,
       "space_role_id": null,
-      "invitation": {
-        "email": "mubashir.altaf@cloudprimerolabs.com",
-        "expires_at": "2026-05-19T19:24:05.208Z",
-        "is_expired": true,
-        "rid": "2b03d807-152f-439d-960e-3395d43b53a1"
-      },
-      "space_role_ids": [],
-      "space_id": 289824742951963,
-      "can_act_as_admin": false
-    },
-    {
-      "user": null,
-      "role": "editor",
-      "user_id": null,
-      "permissions": [],
-      "allowed_path": "",
-      "field_permissions": "",
-      "id": 175817916256568,
-      "space_role_id": null,
-      "invitation": {
-        "email": "hassan@cloudprimerolabs.com",
-        "expires_at": "2026-05-19T19:24:55.974Z",
-        "is_expired": true,
-        "rid": "4cfd595e-3d38-4aac-8103-cab497c50d6f"
-      },
-      "space_role_ids": [],
-      "space_id": 289824742951963,
-      "can_act_as_admin": false
-    },
-    {
-      "user": null,
-      "role": "editor",
-      "user_id": null,
-      "permissions": [],
-      "allowed_path": "",
-      "field_permissions": "",
-      "id": 175817672921363,
-      "space_role_id": null,
-      "invitation": {
-        "email": "cloudprimero.azure_gmail.com#ext#@cloudprimeroazuregmail.onmicrosoft.com",
-        "expires_at": "2026-05-19T19:23:56.567Z",
-        "is_expired": true,
-        "rid": "46660c13-fd4a-48f1-9cd7-ed2116fef995"
-      },
-      "space_role_ids": [],
-      "space_id": 289824742951963,
-      "can_act_as_admin": false
-    },
-    {
-      "user": null,
-      "role": "editor",
-      "user_id": null,
-      "permissions": [],
-      "allowed_path": "",
-      "field_permissions": "",
-      "id": 175817649525007,
-      "space_role_id": null,
-      "invitation": {
-        "email": "ali.muhammad@cloudprimerolabs.com",
-        "expires_at": "2026-05-19T19:23:50.852Z",
-        "is_expired": true,
-        "rid": "312fe2d3-bb70-4fbd-8ed0-4980dafe7d30"
-      },
-      "space_role_ids": [],
-      "space_id": 289824742951963,
-      "can_act_as_admin": false
-    },
-    {
-      "user": null,
-      "role": "editor",
-      "user_id": null,
-      "permissions": [],
-      "allowed_path": "",
-      "field_permissions": "",
-      "id": 175817679126804,
-      "space_role_id": null,
-      "invitation": {
-        "email": "arham.abbas@cloudprimerolabs.com",
-        "expires_at": "2026-05-19T19:23:58.079Z",
-        "is_expired": true,
-        "rid": "e0c95dce-54f9-4bff-afe6-d9f13933a00a"
-      },
-      "space_role_ids": [],
+      "invitation": null,
+      "space_role_ids": [
+        202967272031246
+      ],
       "space_id": 289824742951963,
       "can_act_as_admin": false
     },
@@ -2383,13 +2412,13 @@
       "permissions": [],
       "allowed_path": "",
       "field_permissions": "",
-      "id": 175817997160771,
+      "id": 175817959457086,
       "space_role_id": null,
       "invitation": {
-        "email": "alzanbagi.m@kafaa.sa",
-        "expires_at": "2026-05-19T19:25:15.725Z",
+        "email": "thinkshuraim221@outlook.com",
+        "expires_at": "2026-05-19T19:25:06.520Z",
         "is_expired": true,
-        "rid": "b47f0810-9d2d-4433-99b5-b0ac04754e43"
+        "rid": "050ef3c3-63a8-414e-bf44-facce08c6108"
       },
       "space_role_ids": [],
       "space_id": 289824742951963,
@@ -2630,13 +2659,13 @@
       "permissions": [],
       "allowed_path": "",
       "field_permissions": "",
-      "id": 175817959457086,
+      "id": 175817792975141,
       "space_role_id": null,
       "invitation": {
-        "email": "thinkshuraim221@outlook.com",
-        "expires_at": "2026-05-19T19:25:06.520Z",
+        "email": "executivemeeting@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:25.875Z",
         "is_expired": true,
-        "rid": "050ef3c3-63a8-414e-bf44-facce08c6108"
+        "rid": "a01f9d68-2b52-4729-ad27-efa15593a1ef"
       },
       "space_role_ids": [],
       "space_id": 289824742951963,
@@ -2649,13 +2678,13 @@
       "permissions": [],
       "allowed_path": "",
       "field_permissions": "",
-      "id": 175817792975141,
+      "id": 175817997160771,
       "space_role_id": null,
       "invitation": {
-        "email": "executivemeeting@cloudprimerolabs.com",
-        "expires_at": "2026-05-19T19:24:25.875Z",
+        "email": "alzanbagi.m@kafaa.sa",
+        "expires_at": "2026-05-19T19:25:15.725Z",
         "is_expired": true,
-        "rid": "a01f9d68-2b52-4729-ad27-efa15593a1ef"
+        "rid": "b47f0810-9d2d-4433-99b5-b0ac04754e43"
       },
       "space_role_ids": [],
       "space_id": 289824742951963,
@@ -2884,6 +2913,101 @@
         "expires_at": "2026-05-19T19:23:52.191Z",
         "is_expired": true,
         "rid": "cd64a2ef-0543-45a4-b4e0-e9c0d549d229"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817708327192,
+      "space_role_id": null,
+      "invitation": {
+        "email": "mubashir.altaf@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:05.208Z",
+        "is_expired": true,
+        "rid": "2b03d807-152f-439d-960e-3395d43b53a1"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817916256568,
+      "space_role_id": null,
+      "invitation": {
+        "email": "hassan@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:24:55.974Z",
+        "is_expired": true,
+        "rid": "4cfd595e-3d38-4aac-8103-cab497c50d6f"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817672921363,
+      "space_role_id": null,
+      "invitation": {
+        "email": "cloudprimero.azure_gmail.com#ext#@cloudprimeroazuregmail.onmicrosoft.com",
+        "expires_at": "2026-05-19T19:23:56.567Z",
+        "is_expired": true,
+        "rid": "46660c13-fd4a-48f1-9cd7-ed2116fef995"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817649525007,
+      "space_role_id": null,
+      "invitation": {
+        "email": "ali.muhammad@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:50.852Z",
+        "is_expired": true,
+        "rid": "312fe2d3-bb70-4fbd-8ed0-4980dafe7d30"
+      },
+      "space_role_ids": [],
+      "space_id": 289824742951963,
+      "can_act_as_admin": false
+    },
+    {
+      "user": null,
+      "role": "editor",
+      "user_id": null,
+      "permissions": [],
+      "allowed_path": "",
+      "field_permissions": "",
+      "id": 175817679126804,
+      "space_role_id": null,
+      "invitation": {
+        "email": "arham.abbas@cloudprimerolabs.com",
+        "expires_at": "2026-05-19T19:23:58.079Z",
+        "is_expired": true,
+        "rid": "e0c95dce-54f9-4bff-afe6-d9f13933a00a"
       },
       "space_role_ids": [],
       "space_id": 289824742951963,

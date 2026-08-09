@@ -368,6 +368,195 @@
     "metadata": {}
   },
   {
+    "name": "author_section",
+    "display_name": "Author Section",
+    "description": null,
+    "created_at": "2026-08-05T10:44:17.234Z",
+    "updated_at": "2026-08-05T10:44:17.234Z",
+    "id": 205770986441846,
+    "schema": {
+      "title": {
+        "type": "text",
+        "display_name": "Title",
+        "description": "Dark part of the heading (default \"About the\").",
+        "default_value": "About the",
+        "pos": 0,
+        "id": "n_iRNcSqTuiurxR4OSfP2g"
+      },
+      "highlight": {
+        "type": "text",
+        "display_name": "Title Highlight (green)",
+        "description": "Green accent word (default \"Author\").",
+        "default_value": "Author",
+        "pos": 1,
+        "id": "ZTMj5-QfTza5R83fPnuCog"
+      },
+      "bio": {
+        "type": "textarea",
+        "display_name": "Bio",
+        "description": "Author biography text.",
+        "pos": 2,
+        "id": "bGgCguQIRuuUHibpnWsjQQ"
+      },
+      "photo": {
+        "type": "asset",
+        "display_name": "Photo",
+        "description": "Author photo shown left of the bio (rounded).",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 3,
+        "id": "ViRBG7_fTMWHpYOvpXc-LQ"
+      },
+      "social_links": {
+        "type": "bloks",
+        "display_name": "Social links",
+        "description": "Author social profiles shown as white circle icons.",
+        "restrict_components": true,
+        "component_whitelist": [
+          "student_affairs_social"
+        ],
+        "maximum": 4,
+        "pos": 4,
+        "id": "naIbrBRFRkiikBuV8VNLOg"
+      }
+    },
+    "image": null,
+    "preview_field": "highlight",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Author Section",
+    "component_group_uuid": null,
+    "color": "#008F51",
+    "icon": "block-account",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "blog_article",
+    "display_name": "Blog",
+    "description": null,
+    "created_at": "2026-08-03T09:33:32.486Z",
+    "updated_at": "2026-08-05T09:57:32.059Z",
+    "id": 205045811148991,
+    "schema": {
+      "title": {
+        "type": "text",
+        "display_name": "Title",
+        "description": "Page header (Hero tertiary).",
+        "required": true,
+        "pos": 0,
+        "id": "LFreJFpWTqSmoDJ6rYaSkg"
+      },
+      "description": {
+        "type": "textarea",
+        "display_name": "Description",
+        "description": "Intro paragraph shown above the banner image.",
+        "pos": 1,
+        "id": "bfFUnUU3ShyVNozMlk4O9Q"
+      },
+      "banner_image": {
+        "type": "asset",
+        "display_name": "Banner image",
+        "description": "Full-width image shown below the description.",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 2,
+        "id": "e54800n_SxKedWS-81rxew"
+      },
+      "author": {
+        "type": "text",
+        "display_name": "Author",
+        "description": "Shown as \"By {author}\".",
+        "required": true,
+        "pos": 3,
+        "id": "6bKNNBCXS9iwJmzHrIsHmg"
+      },
+      "date": {
+        "type": "text",
+        "display_name": "Date",
+        "description": "Display date (e.g. Nov 28, 2023).",
+        "required": true,
+        "pos": 4,
+        "id": "8S4Y4rIQSbmN7XXPiHfHuA"
+      },
+      "read_time": {
+        "type": "text",
+        "display_name": "Read time",
+        "description": "e.g. 6 min read.",
+        "required": true,
+        "pos": 5,
+        "id": "hMrUfgewRamPG3Bn9ooXdg"
+      },
+      "languages": {
+        "type": "bloks",
+        "display_name": "Available in",
+        "description": "Alternate language versions of this blog.",
+        "restrict_components": true,
+        "component_whitelist": [
+          "article_language_link"
+        ],
+        "pos": 6,
+        "id": "L1m2sgB3SiqihP0M1dtHSQ"
+      },
+      "show_share": {
+        "type": "boolean",
+        "display_name": "Show share",
+        "description": "Show social share icons.",
+        "default_value": true,
+        "pos": 7,
+        "id": "B8HHIi-mTJK47ohFOuIDTQ"
+      },
+      "body": {
+        "type": "bloks",
+        "display_name": "Body",
+        "description": "Blog content. Related Cards bands are added automatically — do not add related_cards here.",
+        "restrict_components": true,
+        "component_whitelist": [],
+        "pos": 8,
+        "id": "uKZ4clJiQH6RaDVsm3o3OA",
+        "component_denylist": []
+      },
+      "show_similar": {
+        "type": "boolean",
+        "display_name": "Show similar blogs",
+        "description": "Show the Similar Blogs related-cards band (cards from code).",
+        "default_value": true,
+        "pos": 9,
+        "id": "aflRf3HqT-SMb-Fo_3WOdQ"
+      },
+      "similar_show_header": {
+        "type": "boolean",
+        "display_name": "Similar blogs — show header",
+        "description": "Show title, highlight, and description on the similar band.",
+        "default_value": true,
+        "pos": 10,
+        "id": "6uqmSdw3Q9i7IObbk7aNAg"
+      }
+    },
+    "image": null,
+    "preview_field": "title",
+    "is_root": true,
+    "preview_tmpl": null,
+    "is_nestable": false,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Blog",
+    "component_group_uuid": null,
+    "color": "#274F95",
+    "icon": "block-text-img-r",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "box",
     "display_name": "Box",
     "description": null,
@@ -696,7 +885,7 @@
     "display_name": "Brand Banner",
     "description": "Brand Banner",
     "created_at": "2026-07-13T08:49:30.979Z",
-    "updated_at": "2026-07-15T10:25:23.459Z",
+    "updated_at": "2026-08-06T13:35:30.606Z",
     "id": 197603209135484,
     "schema": {
       "title": {
@@ -713,15 +902,33 @@
         "pos": 1,
         "id": "ryuYqtNHRkWm20mA8a0o5w"
       },
-      "logos": {
-        "type": "multiasset",
-        "display_name": "Logos",
-        "description": "Accreditation / brand logos shown in a single row.",
-        "filetypes": [
-          "images"
-        ],
+      "variant": {
+        "type": "option",
+        "display_name": "Logo hover style",
+        "default_value": "hover-grayscale",
         "pos": 2,
-        "id": "xIR2OTONSVOzIohFbhvwHw"
+        "options": [
+          {
+            "name": "Hover grayscale (color on hover)",
+            "value": "hover-grayscale"
+          },
+          {
+            "name": "Normal (full colour)",
+            "value": "normal"
+          }
+        ],
+        "id": "Dja8GdbgQ5ehKbihBUsaFg"
+      },
+      "logos": {
+        "type": "bloks",
+        "display_name": "Logos",
+        "description": "Accreditation / brand logos shown in a single row. Each item takes an image and an optional link.",
+        "restrict_components": true,
+        "component_whitelist": [
+          "brand_logo"
+        ],
+        "pos": 3,
+        "id": "sdg9mZf4SI2OYbMaGEmGwg"
       }
     },
     "image": null,
@@ -733,6 +940,48 @@
     "preset_id": null,
     "real_name": "Brand Banner",
     "component_group_uuid": "3dff6d54-e381-4bb1-8193-f662c67bd12c",
+    "color": "#008F51",
+    "icon": "block-image",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "brand_logo",
+    "display_name": "Brand Logo",
+    "description": null,
+    "created_at": "2026-07-29T11:13:40.361Z",
+    "updated_at": "2026-07-30T11:58:02.173Z",
+    "id": 203300947406037,
+    "schema": {
+      "image": {
+        "type": "asset",
+        "display_name": "Logo image",
+        "filetypes": [
+          "images"
+        ],
+        "required": true,
+        "pos": 0,
+        "id": "Qz_5uqlQTaSG3TeVkE22GA"
+      },
+      "link": {
+        "type": "multilink",
+        "display_name": "Link (optional)",
+        "description": "If left empty, the logo renders without a link.",
+        "pos": 1,
+        "id": "0PQfaadKSnepFLLsjmUhdw"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Brand Logo",
+    "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
     "color": "#008F51",
     "icon": "block-image",
     "internal_tags_list": [],
@@ -1131,14 +1380,20 @@
     "display_name": "Carousel",
     "description": null,
     "created_at": "2026-06-30T08:56:46.236Z",
-    "updated_at": "2026-06-30T14:28:37.293Z",
+    "updated_at": "2026-08-06T12:25:10.406Z",
     "id": 193004364747266,
     "schema": {
       "slides": {
         "type": "bloks",
         "display_name": "Slides",
         "pos": 0,
-        "id": "jR0y_H4aShGpygqiBL6P9g"
+        "id": "jR0y_H4aShGpygqiBL6P9g",
+        "restrict_type": "",
+        "restrict_components": true,
+        "component_whitelist": [
+          "carousel_alumni_slide"
+        ],
+        "component_denylist": []
       },
       "auto_play": {
         "type": "boolean",
@@ -1357,7 +1612,7 @@
     "display_name": "Carousel Section",
     "description": null,
     "created_at": "2026-07-16T13:02:15.110Z",
-    "updated_at": "2026-07-16T13:04:31.303Z",
+    "updated_at": "2026-08-06T12:40:18.378Z",
     "id": 198727004617014,
     "schema": {
       "variant": {
@@ -1396,12 +1651,61 @@
         "display_name": "Title Highlight",
         "description": "Green portion of the title (institutes / testimonials).",
         "pos": 2,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "research"
+              },
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "alumni"
+              }
+            ]
+          }
+        ],
         "id": "Oc_hp_EOTc2q4tWnPBaD0A"
       },
       "description": {
         "type": "textarea",
         "display_name": "Description",
+        "description": "Not shown by the Testimonials variant.",
         "pos": 3,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "testimonials"
+              }
+            ]
+          }
+        ],
         "id": "dF83Gc22QQyQfU0TlDtvgw"
       },
       "background_image": {
@@ -1412,18 +1716,96 @@
           "images"
         ],
         "pos": 4,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "research"
+              }
+            ]
+          }
+        ],
         "id": "Bu9z58w6StWnXhBC4k1Kgg"
       },
       "view_all_label": {
         "type": "text",
         "display_name": "View All Label",
+        "description": "Alumni and Institutes variants only.",
         "pos": 5,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "research"
+              },
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "testimonials"
+              }
+            ]
+          }
+        ],
         "id": "jWSrreQUS2GatWkaAVbp2A"
       },
       "view_all_link": {
         "type": "multilink",
         "display_name": "View All Link",
+        "description": "Alumni and Institutes variants only.",
         "pos": 6,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "research"
+              },
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "testimonials"
+              }
+            ]
+          }
+        ],
         "id": "GrqHiBwXTp2NbXX0BOXDIQ"
       },
       "slides": {
@@ -1549,6 +1931,62 @@
     "metadata": {}
   },
   {
+    "name": "comment_form",
+    "display_name": "Comment Form",
+    "description": null,
+    "created_at": "2026-08-05T10:44:17.615Z",
+    "updated_at": "2026-08-05T10:44:17.615Z",
+    "id": 205770987998327,
+    "schema": {
+      "title": {
+        "type": "text",
+        "display_name": "Title",
+        "description": "Dark part of the heading (default \"Add a\").",
+        "default_value": "Add a",
+        "pos": 0,
+        "id": "wKxHqyNNTD6eR0uSq2GzQg"
+      },
+      "highlight": {
+        "type": "text",
+        "display_name": "Title Highlight (green)",
+        "description": "Green accent word (default \"Comment\").",
+        "default_value": "Comment",
+        "pos": 1,
+        "id": "yLrsgVw8SyqT1mbNphJEVQ"
+      },
+      "description": {
+        "type": "text",
+        "display_name": "Description",
+        "description": "Sub-line under the heading.",
+        "default_value": "Enter your details for adding comment.",
+        "pos": 2,
+        "id": "KhVBZAILSe-5Bch7x_ciQw"
+      },
+      "submit_label": {
+        "type": "text",
+        "display_name": "Submit label",
+        "default_value": "Submit",
+        "pos": 3,
+        "id": "PtzQZoG9SvSwINjTTk5eHg"
+      }
+    },
+    "image": null,
+    "preview_field": "highlight",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Comment Form",
+    "component_group_uuid": null,
+    "color": "#274F95",
+    "icon": "block-comment",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "compact_news_card",
     "display_name": "Compact News Card",
     "description": null,
@@ -1595,6 +2033,129 @@
     "component_group_uuid": "d315fb71-a888-4298-b918-0593a33c9d2a",
     "color": "#008F51",
     "icon": "block-doc",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "entity_settings",
+    "display_name": null,
+    "description": "",
+    "created_at": "2026-08-07T14:22:05.203Z",
+    "updated_at": "2026-08-07T14:53:26.108Z",
+    "id": 206532301639562,
+    "schema": {
+      "header_variant": {
+        "type": "option",
+        "pos": 1,
+        "use_uuid": true,
+        "options": [
+          {
+            "_uid": "73aa77e9-03c9-4635-88fa-e0917ba4dc1c",
+            "name": "Default",
+            "value": "default"
+          },
+          {
+            "_uid": "d6792a06-9438-4c42-b094-01ba8e80d89a",
+            "value": "sonam",
+            "name": "Sonam"
+          },
+          {
+            "_uid": "7dcc3206-7200-444f-b0b0-757f5c8289dc",
+            "value": "mc",
+            "name": "Mc"
+          }
+        ],
+        "id": "HHNLOK8wTVGfhUnd0DELww"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": true,
+    "preview_tmpl": null,
+    "is_nestable": false,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "entity_settings",
+    "component_group_uuid": "d87af764-54a6-45d6-aaa5-05b1c1105873",
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "event_article",
+    "display_name": "Event",
+    "description": null,
+    "created_at": "2026-08-04T09:49:32.435Z",
+    "updated_at": "2026-08-04T09:53:29.417Z",
+    "id": 205403637499544,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Title",
+        "description": "Page header (Hero tertiary).",
+        "required": true,
+        "id": "8YbvijtxQh6I-94k2AYiDQ"
+      },
+      "description": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Description",
+        "description": "Optional intro shown above the banner image.",
+        "id": "jHmn1dPNTrCPHyBmyq2CsQ"
+      },
+      "banner_image": {
+        "type": "asset",
+        "pos": 2,
+        "display_name": "Banner image",
+        "filetypes": [
+          "images"
+        ],
+        "id": "ZmzqeXSCSsaaDjy-UF2BGQ"
+      },
+      "body": {
+        "type": "bloks",
+        "pos": 3,
+        "display_name": "Body",
+        "description": "Event content. The Similar Events band is added automatically — do not add related_cards here.",
+        "restrict_components": true,
+        "component_whitelist": [],
+        "id": "Yp7QfxurRq6zO86I9UvkTQ",
+        "component_denylist": []
+      },
+      "show_events": {
+        "type": "boolean",
+        "pos": 4,
+        "display_name": "Show similar events",
+        "description": "Show the Similar Events related-cards band (cards from code).",
+        "default_value": true,
+        "id": "QbKKRdkLTJez7Hdp6T6xJg"
+      },
+      "show_events_header": {
+        "type": "boolean",
+        "pos": 5,
+        "display_name": "Similar events — show header",
+        "description": "Show title, highlight, and description on the band.",
+        "default_value": true,
+        "id": "Me6Ai6UwQQ6bMNQXxyrHrA"
+      }
+    },
+    "image": null,
+    "preview_field": "title",
+    "is_root": true,
+    "preview_tmpl": null,
+    "is_nestable": false,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Event",
+    "component_group_uuid": null,
+    "color": "#274F95",
+    "icon": "block-calendar",
     "internal_tags_list": [],
     "internal_tag_ids": [],
     "content_type_asset_preview": null,
@@ -2290,6 +2851,53 @@
     "metadata": {}
   },
   {
+    "name": "global_partners",
+    "display_name": null,
+    "description": "",
+    "created_at": "2026-08-06T13:05:28.201Z",
+    "updated_at": "2026-08-06T13:06:09.670Z",
+    "id": 206159577917722,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "id": "087-jNBLQXSBUQPOujb9AQ"
+      },
+      "highlight": {
+        "type": "text",
+        "pos": 1,
+        "id": "1HIUfwGvS9yA5ggc-obAqQ"
+      },
+      "description": {
+        "type": "text",
+        "pos": 2,
+        "id": "qZsonVbvTym6S0E2se2k2w"
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 3,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "0TuII_thTMewfsUHMan68Q"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "global_partners",
+    "component_group_uuid": null,
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "grid",
     "display_name": null,
     "description": null,
@@ -2323,7 +2931,7 @@
     "display_name": "Header",
     "description": null,
     "created_at": "2026-07-22T08:55:12.511Z",
-    "updated_at": "2026-07-28T09:37:39.916Z",
+    "updated_at": "2026-08-07T15:28:07.592Z",
     "id": 200789657659975,
     "schema": {
       "logo": {
@@ -2404,7 +3012,7 @@
     },
     "image": null,
     "preview_field": null,
-    "is_root": false,
+    "is_root": true,
     "preview_tmpl": null,
     "is_nestable": true,
     "all_presets": [],
@@ -2765,6 +3373,366 @@
     "metadata": {}
   },
   {
+    "name": "iframe",
+    "display_name": "Iframe",
+    "description": null,
+    "created_at": "2026-07-29T10:37:47.681Z",
+    "updated_at": "2026-07-30T11:58:02.173Z",
+    "id": 203292130036755,
+    "schema": {
+      "src": {
+        "type": "text",
+        "display_name": "Iframe URL",
+        "description": "The URL to embed, e.g. \"https://reports.aku.edu/akuh3d/\". Required.",
+        "required": true,
+        "pos": 0,
+        "id": "T0I3DqNpT62rKW5wjUyK4A"
+      },
+      "title": {
+        "type": "text",
+        "display_name": "Title (a11y)",
+        "description": "Accessible iframe title; also used as the modal label.",
+        "pos": 1,
+        "id": "-sosiVBcS-6cV2QceZ60-g"
+      },
+      "display_mode": {
+        "type": "option",
+        "display_name": "Display mode",
+        "default_value": "inline",
+        "pos": 2,
+        "options": [
+          {
+            "name": "Inline (on page)",
+            "value": "inline"
+          },
+          {
+            "name": "Lightbox (thumbnail → modal)",
+            "value": "lightbox"
+          },
+          {
+            "name": "Button (CTA → modal)",
+            "value": "button"
+          }
+        ],
+        "id": "qeMT5XJGQBaana2twqSBOA"
+      },
+      "thumbnail": {
+        "type": "asset",
+        "display_name": "Thumbnail",
+        "description": "Shown in \"Lightbox\" mode; click opens the iframe in a modal.",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 3,
+        "id": "F_iHS7vHSyugWtxjzqGEfA"
+      },
+      "show_play_overlay": {
+        "type": "boolean",
+        "display_name": "Show play overlay",
+        "description": "Centered play icon over the thumbnail (lightbox mode).",
+        "default_value": true,
+        "pos": 4,
+        "id": "6SuvxjyTRNu1X5KMUvCn1g"
+      },
+      "cta_label": {
+        "type": "text",
+        "display_name": "CTA label",
+        "description": "Button label in \"Button\" mode (default: \"Open\").",
+        "pos": 5,
+        "id": "ZRPHjdc5TIWwDz7Rx1eOdg"
+      },
+      "heading": {
+        "type": "text",
+        "display_name": "Heading",
+        "description": "Optional heading shown above the embed.",
+        "pos": 6,
+        "id": "6alEtloyQfWCymVx10PXJA"
+      },
+      "description": {
+        "type": "richtext",
+        "display_name": "Description",
+        "description": "Optional description shown above the embed.",
+        "pos": 7,
+        "id": "abV9jNoaRrqE4UQ-XGZ6tw"
+      },
+      "caption": {
+        "type": "text",
+        "display_name": "Caption",
+        "description": "Optional caption shown below the embed.",
+        "pos": 8,
+        "id": "lPzsiTr6RLCj-4URmFaeJA"
+      },
+      "content_align": {
+        "type": "option",
+        "display_name": "Content alignment",
+        "default_value": "left",
+        "pos": 9,
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ],
+        "id": "7IqOJqyNTjivpFY7THYHtg"
+      },
+      "aspect_ratio": {
+        "type": "option",
+        "display_name": "Aspect ratio",
+        "description": "Used when no fixed height is set.",
+        "default_value": "16:9",
+        "pos": 10,
+        "options": [
+          {
+            "name": "16:9",
+            "value": "16:9"
+          },
+          {
+            "name": "4:3",
+            "value": "4:3"
+          },
+          {
+            "name": "1:1",
+            "value": "1:1"
+          },
+          {
+            "name": "21:9",
+            "value": "21:9"
+          },
+          {
+            "name": "3:2",
+            "value": "3:2"
+          },
+          {
+            "name": "9:16",
+            "value": "9:16"
+          }
+        ],
+        "id": "BX8CYW6nR1C3Qjams7qKiQ"
+      },
+      "height": {
+        "type": "text",
+        "display_name": "Fixed height",
+        "description": "Optional fixed height (e.g. \"600px\", \"80vh\"); overrides aspect ratio.",
+        "pos": 11,
+        "id": "G0fMq4-zQTqKoMbd7kIDjw"
+      },
+      "rounded": {
+        "type": "boolean",
+        "display_name": "Rounded corners",
+        "default_value": true,
+        "pos": 12,
+        "id": "6RvriuHeRN6kTpFf709VuA"
+      },
+      "loading": {
+        "type": "option",
+        "display_name": "Loading",
+        "default_value": "lazy",
+        "pos": 13,
+        "options": [
+          {
+            "name": "Lazy",
+            "value": "lazy"
+          },
+          {
+            "name": "Eager",
+            "value": "eager"
+          }
+        ],
+        "id": "91lfvk0fTzOfC7IdVxSgHA"
+      },
+      "allow_fullscreen": {
+        "type": "boolean",
+        "display_name": "Allow fullscreen",
+        "default_value": true,
+        "pos": 14,
+        "id": "LVh1PeIJS06ocUWobU5INA"
+      },
+      "allow": {
+        "type": "text",
+        "display_name": "Allow attribute",
+        "description": "e.g. \"autoplay; encrypted-media; picture-in-picture\".",
+        "pos": 15,
+        "id": "Ktf62kxXTNSu3Rho7mNVsA"
+      },
+      "sandbox": {
+        "type": "text",
+        "display_name": "Sandbox attribute",
+        "description": "e.g. \"allow-scripts allow-same-origin\". Leave empty to omit.",
+        "pos": 16,
+        "id": "0iCV8_PhT5GSAPYZb4bNDw"
+      },
+      "referrer_policy": {
+        "type": "option",
+        "display_name": "Referrer policy",
+        "pos": 17,
+        "options": [
+          {
+            "name": "no-referrer",
+            "value": "no-referrer"
+          },
+          {
+            "name": "no-referrer-when-downgrade",
+            "value": "no-referrer-when-downgrade"
+          },
+          {
+            "name": "origin",
+            "value": "origin"
+          },
+          {
+            "name": "origin-when-cross-origin",
+            "value": "origin-when-cross-origin"
+          },
+          {
+            "name": "same-origin",
+            "value": "same-origin"
+          },
+          {
+            "name": "strict-origin",
+            "value": "strict-origin"
+          },
+          {
+            "name": "strict-origin-when-cross-origin",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "name": "unsafe-url",
+            "value": "unsafe-url"
+          }
+        ],
+        "id": "-gKrlqadRbONKHXUwOGvgg"
+      },
+      "show_external_link": {
+        "type": "boolean",
+        "display_name": "Show \"open in new tab\" link",
+        "default_value": false,
+        "pos": 18,
+        "id": "N9gQuNLYS-iPpi_jvRw9LA"
+      },
+      "external_link_label": {
+        "type": "text",
+        "display_name": "External link label",
+        "description": "Default: \"Open in new tab\".",
+        "pos": 19,
+        "id": "_uAxDOLgRJ6Qr1F5M1HImw"
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 20,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "TwXZk88QT3a-HYDoJao7Pg"
+      }
+    },
+    "image": null,
+    "preview_field": "title",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Iframe",
+    "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
+    "color": "#274F95",
+    "icon": "block-website",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "image",
+    "display_name": "Image",
+    "description": null,
+    "created_at": "2026-07-29T10:37:49.521Z",
+    "updated_at": "2026-07-30T11:58:02.173Z",
+    "id": 203292137577492,
+    "schema": {
+      "image": {
+        "type": "asset",
+        "display_name": "Image",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 0,
+        "id": "K2AkZ2UPRjGSSfl3AEPu6Q"
+      },
+      "variant": {
+        "type": "option",
+        "display_name": "Variant",
+        "default_value": "image",
+        "pos": 1,
+        "options": [
+          {
+            "name": "Image",
+            "value": "image"
+          },
+          {
+            "name": "Hero image",
+            "value": "hero"
+          }
+        ],
+        "id": "zp6hQfNbQ0iCffsLHDbpZw"
+      },
+      "title": {
+        "type": "text",
+        "display_name": "Title",
+        "description": "Optional overlay title. No fallback — hidden when empty.",
+        "pos": 2,
+        "id": "5tz6QppdSfmGJRvoetjS3w"
+      },
+      "description": {
+        "type": "textarea",
+        "display_name": "Description",
+        "description": "Optional overlay text. No fallback — hidden when empty.",
+        "pos": 3,
+        "id": "oVaJyK1zQLyMGhwsh1f0Qw"
+      },
+      "link": {
+        "type": "multilink",
+        "display_name": "CTA link",
+        "pos": 4,
+        "id": "pRtzZOsDSbqkSQFzKdsCmw"
+      },
+      "cta_label": {
+        "type": "text",
+        "display_name": "CTA label",
+        "description": "Optional CTA. No fallback — hidden when empty.",
+        "pos": 5,
+        "id": "l6G38xiWRpCtLcvme4ouAQ"
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 6,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "iARJysyUSb-aTYH31YyW6w"
+      }
+    },
+    "image": null,
+    "preview_field": "title",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Image",
+    "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
+    "color": "#274F95",
+    "icon": "block-image",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "impact_stories",
     "display_name": "Impact Stories",
     "description": null,
@@ -2903,7 +3871,7 @@
     "display_name": null,
     "description": "",
     "created_at": "2026-07-15T08:58:24.240Z",
-    "updated_at": "2026-07-15T10:26:41.990Z",
+    "updated_at": "2026-08-06T09:08:45.512Z",
     "id": 198313182171141,
     "schema": {
       "items": {
@@ -2916,6 +3884,13 @@
           "info_accordion_item"
         ],
         "component_denylist": []
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 1,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "rvHk5fRLRmGfiSoqTFyttw"
       }
     },
     "image": null,
@@ -2971,46 +3946,56 @@
   },
   {
     "name": "info_accordion_item",
-    "display_name": null,
+    "display_name": "Info Accordion Item",
     "description": "",
     "created_at": "2026-07-15T08:59:40.417Z",
-    "updated_at": "2026-07-15T10:26:41.990Z",
+    "updated_at": "2026-08-04T11:06:45.389Z",
     "id": 198313494200328,
     "schema": {
       "title": {
         "type": "text",
+        "display_name": "Title",
+        "required": true,
         "pos": 0,
         "id": "AI2CnVT4TZGd5HQsThm8ZA"
       },
+      "eyebrow": {
+        "type": "text",
+        "display_name": "Eyebrow (green label above title)",
+        "description": "Small green meta label shown above the title, e.g. \"Foundations · 75 min\". Optional.",
+        "pos": 1,
+        "id": "CSpZDG2QRkSw6HCL5PEZSA"
+      },
       "cards": {
         "type": "bloks",
-        "pos": 1,
-        "restrict_type": "",
+        "display_name": "Cards",
+        "description": "Highlight cards shown when this item is expanded.",
         "restrict_components": true,
         "component_whitelist": [
           "info_accordion_card"
         ],
-        "component_denylist": [],
+        "pos": 2,
         "id": "JTFi7W5AQuefuaTlkxYGeA"
       },
       "content": {
-        "type": "text",
-        "pos": 2,
+        "type": "textarea",
+        "display_name": "Content",
         "description": "Plain-text fallback content, used when no cards are added.",
-        "id": "2T7xvtqtSNyV2LyGu4JJMg"
+        "pos": 3,
+        "id": "JGRXDKItRaKqF5Fe-ErZ2g"
       }
     },
     "image": null,
-    "preview_field": null,
+    "preview_field": "title",
     "is_root": false,
     "preview_tmpl": null,
     "is_nestable": true,
     "all_presets": [],
     "preset_id": null,
-    "real_name": "info_accordion_item",
+    "real_name": "Info Accordion Item",
     "component_group_uuid": "98a9e528-fb65-4291-904e-52431114b889",
-    "color": null,
-    "icon": null,
+    "color": "#274F95",
+    "icon": "block-text-il",
     "internal_tags_list": [],
     "internal_tag_ids": [],
     "content_type_asset_preview": null,
@@ -3175,7 +4160,7 @@
     "display_name": "Layout Grid",
     "description": null,
     "created_at": "2026-07-14T12:41:55.867Z",
-    "updated_at": "2026-07-28T11:12:31.944Z",
+    "updated_at": "2026-08-05T15:22:24.485Z",
     "id": 198014221823854,
     "schema": {
       "title": {
@@ -3428,10 +4413,63 @@
         "type": "bloks",
         "display_name": "Items",
         "restrict_components": true,
-        "component_whitelist": [],
+        "component_whitelist": [
+          "card",
+          "profile_card",
+          "box",
+          "institute_card",
+          "link_card"
+        ],
         "pos": 11,
-        "id": "-iE862kMSheswumXZphkbg",
-        "component_denylist": []
+        "id": "-iE862kMSheswumXZphkbg"
+      },
+      "side_spacing": {
+        "type": "number",
+        "display_name": "Side spacing — desktop (px)",
+        "pos": 12,
+        "id": "q1ajrIkKR5W_7IZaR8Sqqw"
+      },
+      "mobile_side_spacing": {
+        "type": "number",
+        "display_name": "Side spacing — mobile (px)",
+        "pos": 13,
+        "id": "4AwZxo5yTniLyMbRkGGDAQ"
+      },
+      "margin_bottom": {
+        "type": "number",
+        "display_name": "Bottom margin — desktop (px)",
+        "pos": 14,
+        "id": "-nIoFaJ0SHuosd6q1KL-ug"
+      },
+      "mobile_margin_bottom": {
+        "type": "number",
+        "display_name": "Bottom margin — mobile (px)",
+        "pos": 15,
+        "id": "FFVjVEflRFebILIVplwDnw"
+      },
+      "padding_top": {
+        "type": "number",
+        "display_name": "Top padding — desktop (px)",
+        "pos": 16,
+        "id": "EDEcSgvKSPiEpkfOwfa__A"
+      },
+      "mobile_padding_top": {
+        "type": "number",
+        "display_name": "Top padding — mobile (px)",
+        "pos": 17,
+        "id": "1DvqDbC3SoiVBZ-Zzq0rIA"
+      },
+      "padding_bottom": {
+        "type": "number",
+        "display_name": "Bottom padding — desktop (px)",
+        "pos": 18,
+        "id": "YEWa2sLARKm79XTGGzurjw"
+      },
+      "mobile_padding_bottom": {
+        "type": "number",
+        "display_name": "Bottom padding — mobile (px)",
+        "pos": 19,
+        "id": "3WCz4kbvRtaay2A47ydHyA"
       }
     },
     "image": null,
@@ -3737,7 +4775,7 @@
     "display_name": "Media Section",
     "description": null,
     "created_at": "2026-07-15T09:18:03.821Z",
-    "updated_at": "2026-07-27T15:09:48.436Z",
+    "updated_at": "2026-08-06T12:40:18.040Z",
     "id": 198318013739056,
     "schema": {
       "type": {
@@ -3778,7 +4816,28 @@
       "description": {
         "type": "textarea",
         "display_name": "Description",
+        "description": "Shown by the gallery and video types (not image cards).",
         "pos": 3,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
         "id": "SiABv2MQTrmN97VNV65NiQ"
       },
       "cta_label": {
@@ -3786,13 +4845,91 @@
         "display_name": "CTA Label",
         "description": "Used by the gallery layout.",
         "pos": 4,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "gallery"
+              }
+            ]
+          }
+        ],
         "id": "57sVxkm_QMuVndlakITQyA"
       },
       "cta_link": {
         "type": "multilink",
         "display_name": "CTA Link",
         "pos": 5,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "gallery"
+              }
+            ]
+          }
+        ],
         "id": "K8oo_Vx7T2Gsr7PGVDGwRw"
+      },
+      "gallery_layout": {
+        "type": "option",
+        "display_name": "Gallery layout",
+        "description": "Only for the \"Gallery\" type. Staggered = overlapping rows (cropped). Simple = flex grid at natural size (no crop).",
+        "default_value": "staggered",
+        "pos": 6,
+        "options": [
+          {
+            "name": "Staggered (cropped rows)",
+            "value": "staggered"
+          },
+          {
+            "name": "Simple (grid, no crop)",
+            "value": "simple"
+          }
+        ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "gallery"
+              }
+            ]
+          }
+        ],
+        "id": "81whgMM-S4SNosyffsObQA"
       },
       "gallery_images": {
         "type": "multiasset",
@@ -3801,7 +4938,27 @@
         "filetypes": [
           "images"
         ],
-        "pos": 6,
+        "pos": 7,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "gallery"
+              }
+            ]
+          }
+        ],
         "id": "vdKx-V23S7SH2096mY6FqQ"
       },
       "media_cards": {
@@ -3812,13 +4969,53 @@
         "component_whitelist": [
           "media_card"
         ],
-        "pos": 7,
+        "pos": 8,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
         "id": "BfypDBclQGq19wSdhzM6tQ"
       },
       "video_url": {
         "type": "multilink",
         "display_name": "Video URL",
-        "pos": 8,
+        "pos": 9,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "video"
+              }
+            ]
+          }
+        ],
         "id": "M32tIFKyRe-3g6mZNy9gEw"
       },
       "thumbnail": {
@@ -3827,33 +5024,133 @@
         "filetypes": [
           "images"
         ],
-        "pos": 9,
+        "pos": 10,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "video"
+              }
+            ]
+          }
+        ],
         "id": "P2hONhF8RcOX7d505jAW-w"
       },
       "video_title": {
         "type": "text",
         "display_name": "Video title",
-        "pos": 10,
+        "pos": 11,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "video"
+              }
+            ]
+          }
+        ],
         "id": "WWlWgzFtS16rh8EKliSmuQ"
       },
       "video_description": {
         "type": "textarea",
         "display_name": "Video description",
-        "pos": 11,
+        "pos": 12,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "video"
+              }
+            ]
+          }
+        ],
         "id": "JAUXGnqmSNC3tAYfHJnJUA"
       },
       "auto_play": {
         "type": "boolean",
         "display_name": "Autoplay",
         "default_value": false,
-        "pos": 12,
+        "pos": 13,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "video"
+              }
+            ]
+          }
+        ],
         "id": "jfu_F7s5SvWiCT7QbtM9WQ"
       },
       "show_controls": {
         "type": "boolean",
         "display_name": "Show controls",
         "default_value": true,
-        "pos": 13,
+        "pos": 14,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "video"
+              }
+            ]
+          }
+        ],
         "id": "qVGkDipySumUjEGFNPNKxg"
       },
       "bg_pattern": {
@@ -3863,14 +5160,34 @@
         "filetypes": [
           "images"
         ],
-        "pos": 14,
+        "pos": 15,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
         "id": "1yIJuU_3RsuFM4HzJXHtrw"
       },
       "pattern_position": {
         "type": "option",
         "display_name": "Pattern position",
         "default_value": "top",
-        "pos": 15,
+        "pos": 16,
         "options": [
           {
             "name": "Top",
@@ -3881,20 +5198,107 @@
             "value": "bottom"
           }
         ],
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
         "id": "5KvGcGtYRd6LkaM3XwHe1w"
       },
       "pattern_opacity": {
         "type": "boolean",
         "display_name": "Dim pattern (12%)",
-        "pos": 16,
+        "pos": 17,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
         "id": "Yr8sBhnmSAmxJK6PlNERmw"
       },
-      "spacing": {
-        "type": "custom",
-        "pos": 17,
-        "field_type": "spacing-field-plugin",
-        "options": [],
-        "id": "b2Ja7GZUS8almiCrfT1vIg"
+      "pattern_height": {
+        "type": "number",
+        "display_name": "Pattern height — desktop (px)",
+        "description": "Suggested ~620 for the image-cards Figma treatment.",
+        "pos": 18,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
+        "id": "F0-MPvu7TAeTmCfGMZCaKQ"
+      },
+      "pattern_mobile_height": {
+        "type": "number",
+        "display_name": "Pattern height — mobile (px)",
+        "description": "Suggested ~200 for the image-cards Figma treatment.",
+        "pos": 19,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "type",
+                  "field_attr": "value"
+                },
+                "value": "image"
+              }
+            ]
+          }
+        ],
+        "id": "BlO3AXK4Rhi0OxiMeja-ng"
       }
     },
     "image": null,
@@ -4004,7 +5408,7 @@
     "display_name": "News",
     "description": null,
     "created_at": "2026-07-21T12:33:56.848Z",
-    "updated_at": "2026-07-28T20:49:19.535Z",
+    "updated_at": "2026-07-30T12:00:10.883Z",
     "id": 200489520547155,
     "schema": {
       "thumbnail": {
@@ -4035,7 +5439,7 @@
         "type": "text",
         "display_name": "Date",
         "description": "Display date (e.g. Nov 28, 2023).",
-        "required": true,
+        "required": false,
         "pos": 3,
         "id": "uykw66eJSeSVTCffEkBvdg"
       },
@@ -4098,7 +5502,14 @@
           "media_section",
           "quote_banner",
           "button",
-          "media_card"
+          "media_card",
+          "row",
+          "split_section",
+          "brand_banner",
+          "brand_logo",
+          "iframe",
+          "image",
+          "social_embed"
         ],
         "pos": 9,
         "id": "wPfg1KV_RlC5An0bxcU2_g",
@@ -4374,7 +5785,7 @@
     "display_name": "Pill",
     "description": null,
     "created_at": "2026-06-30T08:56:45.777Z",
-    "updated_at": "2026-07-01T12:42:17.963Z",
+    "updated_at": "2026-08-05T10:44:16.871Z",
     "id": 193004362871294,
     "schema": {
       "label": {
@@ -4425,9 +5836,45 @@
           {
             "name": "Stone",
             "value": "stone"
+          },
+          {
+            "name": "Neutral",
+            "value": "neutral"
+          },
+          {
+            "name": "Admissions open",
+            "value": "admissions_open"
+          },
+          {
+            "name": "Admissions closed",
+            "value": "admissions_closed"
+          },
+          {
+            "name": "Audience — eligible",
+            "value": "audience_eligible"
+          },
+          {
+            "name": "Audience — restricted",
+            "value": "audience_restricted"
           }
         ],
         "id": "rWGtiuzxT9q6MwOn46EqvA"
+      },
+      "custom_bg_color": {
+        "type": "custom",
+        "field_type": "native-color-picker",
+        "display_name": "Custom background color",
+        "description": "Optional — overrides the variant's background color.",
+        "pos": 2,
+        "id": "sAKCjsqdRv26Rj0TH07dRw"
+      },
+      "custom_text_color": {
+        "type": "custom",
+        "field_type": "native-color-picker",
+        "display_name": "Custom text color",
+        "description": "Optional — overrides the variant's text color.",
+        "pos": 3,
+        "id": "uRgz2-mfSD2ZAqicjzxMMg"
       }
     },
     "image": null,
@@ -4493,6 +5940,129 @@
     "component_group_uuid": "d315fb71-a888-4298-b918-0593a33c9d2a",
     "color": "#274F95",
     "icon": "block-image",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "programme",
+    "display_name": "Programme",
+    "description": "",
+    "created_at": "2026-08-03T13:48:30.751Z",
+    "updated_at": "2026-08-06T13:44:59.079Z",
+    "id": 205108472845898,
+    "schema": {
+      "admission_label": {
+        "type": "text",
+        "display_name": "Admission label",
+        "description": "Small label above the API-driven application status.",
+        "default_value": "Admission",
+        "pos": 0,
+        "id": "QoeSUPIaQqefkQGJOG_T9A"
+      },
+      "duration": {
+        "type": "text",
+        "display_name": "Duration",
+        "description": "Optional duration shown on the admission card (e.g. \"4 years\").",
+        "pos": 1,
+        "id": "es9m1veHSCKnCsPq0qF4yQ"
+      },
+      "apply_label": {
+        "type": "text",
+        "display_name": "Apply label",
+        "description": "CTA on the admission card. Title + deadline come from the programmes API.",
+        "default_value": "Apply Now",
+        "pos": 2,
+        "id": "XyptpyE3Qp-tdnYs9_sMBQ"
+      },
+      "apply_link": {
+        "type": "multilink",
+        "display_name": "Apply link",
+        "description": "Where Apply Now goes.",
+        "pos": 3,
+        "id": "XuzhotM6REOsE66jYgKW6A"
+      },
+      "extended_message": {
+        "type": "text",
+        "display_name": "Extended deadline message",
+        "default_value": "The submission deadline has been extended.",
+        "pos": 4,
+        "id": "W0PYHMZlQum5KqzqQ-xdVA"
+      },
+      "closed_message": {
+        "type": "textarea",
+        "display_name": "Closed admissions message",
+        "default_value": "The next admission cycle is scheduled for November 2026.",
+        "pos": 5,
+        "id": "ZT8IfvbGSn-M_jHxKYFfuQ"
+      },
+      "closed_cta_label": {
+        "type": "text",
+        "display_name": "Closed admissions CTA label",
+        "default_value": "Notify Me",
+        "pos": 6,
+        "id": "n930T1BcRaKrDzbkrbiZsA"
+      },
+      "closed_cta_link": {
+        "type": "multilink",
+        "display_name": "Closed admissions CTA link",
+        "pos": 7,
+        "id": "lrgZVHAbRHqciCW88iG4ZA"
+      },
+      "intro": {
+        "type": "textarea",
+        "display_name": "Intro",
+        "description": "Optional short intro beside the admission card.",
+        "default_value": "At Aga Khan University, our programmes combine academic excellence, practical learning and a commitment to improving quality of life. Explore the programme details, admissions requirements and opportunities below.",
+        "pos": 8,
+        "id": "7woHTW4aT3Oe25wiRO0JJA"
+      },
+      "body": {
+        "type": "bloks",
+        "display_name": "Body",
+        "description": "Programme page sections below the header + admission card. Title/deadline are API-driven — do not add a hero. New entries are pre-filled; the default_value pushed by scripts/storyblok/ensure-programme.js is generated there, not stored here.",
+        "restrict_components": true,
+        "component_whitelist": [
+          "info_accordion",
+          "row",
+          "promo_split",
+          "impact_stories",
+          "student_life",
+          "student_affairs",
+          "media_section",
+          "carousel_alumni_slide",
+          "carousel_section",
+          "split_section",
+          "global_partners"
+        ],
+        "pos": 9,
+        "default_value": "[{\"_uid\":\"282f7d1f-3579-41e4-b8ee-21fd64140bde\",\"items\":[{\"_uid\":\"df96e744-37f6-408e-9ee7-eecc4f66e793\",\"cards\":[],\"title\":\"Programme Overview\",\"content\":\"Add an overview of the programme, its purpose and who it is designed for.\",\"component\":\"info_accordion_item\"},{\"_uid\":\"d21c0a85-fd97-461f-9091-024cfd05bef4\",\"cards\":[],\"title\":\"Curriculum\",\"content\":\"Describe the curriculum, learning approach and programme structure.\",\"component\":\"info_accordion_item\"},{\"_uid\":\"b9aa1281-196d-44f0-8593-187a0aa50cc3\",\"cards\":[],\"title\":\"Admission Requirements\",\"content\":\"Add eligibility and admission requirements.\",\"component\":\"info_accordion_item\"},{\"_uid\":\"0898fd3d-bd94-41eb-ab7a-fa2a4cc9eecb\",\"cards\":[],\"title\":\"Fees and Funding\",\"content\":\"Add tuition fee and financial assistance information.\",\"component\":\"info_accordion_item\"},{\"_uid\":\"206d6ab1-6c2f-4eda-8c63-f2d742aabfe5\",\"cards\":[],\"title\":\"How to Apply\",\"content\":\"Explain the application process and required documents.\",\"component\":\"info_accordion_item\"},{\"_uid\":\"63f35e4a-9d89-4ffa-bca0-785ff20838cc\",\"cards\":[],\"title\":\"Important Dates\",\"content\":\"Add interviews, tests and other important programme dates.\",\"component\":\"info_accordion_item\"},{\"_uid\":\"de66875e-e48b-48ff-85d5-e3a241f170dd\",\"cards\":[],\"title\":\"Frequently Asked Questions\",\"content\":\"Add answers to frequently asked questions about the programme.\",\"component\":\"info_accordion_item\"}],\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":20,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":56}},\"desktop\":{\"margin\":{\"top\":null,\"left\":80,\"right\":80,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":100}}},\"component\":\"info_accordion\"},{\"_uid\":\"8cc4a06c-6930-4b6b-81a5-742b2a879dc7\",\"items\":[{\"_uid\":\"47f03a73-44d9-4084-906a-817588f4c98c\",\"body\":[{\"_uid\":\"ead8c905-135c-4a3a-b3bf-1c18965a12b3\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Faculty member\",\"subtitle\":\"\",\"component\":\"profile_card\",\"description\":\"\"}],\"width\":\"\",\"height\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"\",\"justify_content\":\"\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"4b7ee93e-f30a-4962-a19c-f5105289c176\",\"body\":[{\"_uid\":\"2aa242cc-cb34-4ad1-9212-ca590d0fedd0\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Faculty member\",\"subtitle\":\"\",\"component\":\"profile_card\",\"description\":\"\"}],\"width\":\"\",\"height\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"\",\"justify_content\":\"\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"9cb63d54-f1fd-4f12-abf9-3d0dc81f8bf1\",\"body\":[{\"_uid\":\"fd10822d-44ce-4a9a-9921-60573564eb4b\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Faculty member\",\"subtitle\":\"\",\"component\":\"profile_card\",\"description\":\"\"}],\"width\":\"\",\"height\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"\",\"justify_content\":\"\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"b3836e66-0e1f-4290-80bd-76f545b6d1f0\",\"body\":[{\"_uid\":\"26c73571-710b-4aae-b29f-26a652648b7b\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Faculty member\",\"subtitle\":\"\",\"component\":\"profile_card\",\"description\":\"\"}],\"width\":\"\",\"height\":\"\",\"radius\":\"\",\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"\",\"justify_content\":\"\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}}],\"title\":\"Our\",\"width\":\"\",\"height\":\"\",\"radius\":\"\",\"spacing\":\"\",\"component\":\"row\",\"highlight\":\"Faculty\",\"align_items\":\"center\",\"description\":\"\",\"on_mobile_wrap\":false,\"justify_content\":\"center\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"gap\":\"4\",\"_uid\":\"126fbd43-44f4-4920-b4aa-f5cfb62aec2f\",\"items\":[{\"_uid\":\"9f225a86-1f1e-4710-95a0-fc591bc70865\",\"body\":[{\"_uid\":\"50693acc-399b-419b-af63-88a0c7978135\",\"icon\":\"calendar\",\"link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"label\":\"Admissions\",\"component\":\"quick_action\"}],\"width\":\"\",\"height\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"cfe7d8f3-751d-43dd-9c83-1d6c986631f0\",\"body\":[{\"_uid\":\"175165a4-6be8-4e78-8d95-48ec1dcc4c5f\",\"icon\":\"book\",\"link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"label\":\"Curriculum\",\"component\":\"quick_action\"}],\"width\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"center\",\"justify_content\":\"center\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"09a09ce6-66a7-460f-a550-d395a0824c8a\",\"body\":[{\"_uid\":\"9ebe9e14-afb6-47c9-b610-fc109e8737ef\",\"icon\":\"award\",\"link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"label\":\"Fees & Funding\",\"component\":\"quick_action\"}],\"width\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"center\",\"justify_content\":\"center\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"8db9586e-01e0-4a1e-8377-35f3f300550e\",\"body\":[{\"_uid\":\"f2321efb-6b67-4439-95f9-370475f5ebb1\",\"icon\":\"graduation\",\"link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"label\":\"Apply Now\",\"component\":\"quick_action\"}],\"height\":\"\",\"radius\":\"\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":16,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":20,\"bottom\":null},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"component\":\"row_item\",\"width_mode\":\"fit\",\"align_items\":\"center\",\"justify_content\":\"center\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}}],\"title\":\"Quick\",\"height\":\"\",\"radius\":\"\",\"component\":\"row\",\"highlight\":\"Actions\",\"align_items\":\"center\",\"description\":\"\",\"justify_content\":\"center\",\"background_color\":{\"color\":\"#ffffff\",\"plugin\":\"native-color-picker\"}},{\"_uid\":\"144d8339-53cd-45a9-bcd4-791a2beb010f\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Explore a Career in\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null},\"padding\":{\"top\":32,\"left\":null,\"right\":null,\"bottom\":32}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null},\"padding\":{\"top\":100,\"left\":null,\"right\":null,\"bottom\":100}}},\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"promo_split\",\"cta_label\":\"Explore careers\",\"highlight\":\"Medicine\",\"card_color\":\"green\",\"description\":\"Discover the career opportunities available to programme graduates.\",\"footer_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"footer_logo\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"footer_label\":\"\",\"desktop_layout\":\"overlay\",\"footer_link_label\":\"\"},{\"_uid\":\"47c136bb-f917-4435-80ce-7274d7074346\",\"title\":\"Stories of\",\"stories\":[{\"_uid\":\"b82de942-5374-4e4b-9522-bb366d6b4e97\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Add a featured programme story\",\"category\":\"\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"impact_story\",\"cta_label\":\"Read more\",\"read_time\":\"\"},{\"_uid\":\"9e29c0bd-fe80-4338-8b65-c02143ecf13c\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Add a programme story\",\"category\":\"\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"impact_story\",\"cta_label\":\"Read more\",\"read_time\":\"\"},{\"_uid\":\"86af8c43-0463-4cda-b417-01d138598b8d\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Add a programme story\",\"category\":\"\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"impact_story\",\"cta_label\":\"Read more\",\"read_time\":\"\"}],\"component\":\"impact_stories\",\"highlight\":\"Impact\",\"description\":\"Meet the students, alumni and faculty making a difference in their communities.\",\"view_all_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"view_all_label\":\"View all stories\"},{\"_uid\":\"32ce1786-411b-4d43-a138-c73af31653ed\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"Fees and\",\"spacing\":\"\",\"variant\":\"banner\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"promo_split\",\"cta_label\":\"Explore fees and funding\",\"highlight\":\"Financial Assistance\",\"card_color\":\"green\",\"description\":\"Learn about tuition fees, scholarships and financial assistance.\",\"footer_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"footer_logo\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"footer_label\":\"For more information\",\"desktop_layout\":\"columns\",\"footer_link_label\":\"Financial Assistance\"},{\"_uid\":\"e678c49e-16f4-4e84-85fb-4bd87c244ba4\",\"title\":\"\",\"slides\":[{\"_uid\":\"dd6d05f0-1091-4e78-9dd2-444545df0555\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":null,\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{}},\"title\":\"DSADSADA\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"story\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"subtitle\":\"SADSA\",\"component\":\"carousel_alumni_slide\",\"cta_label\":\"Discover More\"},{\"_uid\":\"98d73799-6391-45cc-b814-8c0bca140daf\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":null,\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{}},\"title\":\"DSADSADA\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"story\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"subtitle\":\"SADSA\",\"component\":\"carousel_alumni_slide\",\"cta_label\":\"Discover More\"},{\"_uid\":\"b1370ee7-7a33-41e2-a24a-306b98c0a13b\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":null,\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{}},\"title\":\"DSADSADA\",\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"story\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"subtitle\":\"SADSA\",\"component\":\"carousel_alumni_slide\",\"cta_label\":\"Discover More\"}],\"variant\":\"alumni\",\"component\":\"carousel_section\",\"highlight\":\"\",\"description\":\"\",\"view_all_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"story\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"view_all_label\":\"\",\"background_image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":null,\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{}}},{\"_uid\":\"c936e553-be21-4094-a44c-fc52f2030cd2\",\"title\":\"Partners Around\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null},\"padding\":{\"top\":32,\"left\":null,\"right\":null,\"bottom\":32}},\"desktop\":{\"margin\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null},\"padding\":{\"top\":56,\"left\":null,\"right\":null,\"bottom\":56}}},\"component\":\"global_partners\",\"highlight\":\"The World\",\"description\":\"\"},{\"_uid\":\"ab42a478-92c8-435d-864b-e2d20825ce01\",\"image\":{\"id\":203705858361598,\"alt\":\"\",\"name\":\"\",\"focus\":\"\",\"title\":\"\",\"source\":\"\",\"filename\":\"https://a.storyblok.com/f/289824742951963/436855/4b69924476/3915-bannerimage.png\",\"copyright\":\"\",\"fieldtype\":\"asset\",\"meta_data\":{\"size\":\"795x398\"},\"is_external_url\":false},\"title\":\"Students \",\"layout\":\"reverse\",\"bg_color\":{\"_uid\":\"0c77d150-20b8-426f-ae9a-072a8ce74b98\",\"color\":\"\",\"plugin\":\"official-colorpicker\"},\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"story\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"split_section\",\"cta_label\":\"Apply\",\"highlight\":\"Life\",\"description\":\"At AKU, Student Affairs supports your academic and personal growth. Get involved through societies, events, and leadership. Prioritize your well-being with health services, counseling, wellness programs, and holistic support across our student support offices.\",\"image_variant\":\"circles\",\"decorative_images\":[{\"id\":203705850046717,\"alt\":\"\",\"name\":\"\",\"focus\":\"\",\"title\":\"\",\"source\":\"\",\"filename\":\"https://a.storyblok.com/f/289824742951963/235706/ec8a3df207/3913-bannerimage.jpeg\",\"copyright\":\"\",\"fieldtype\":\"asset\",\"meta_data\":{\"size\":\"1235x492\"}},{\"id\":203705839204603,\"alt\":\"\",\"name\":\"\",\"focus\":\"\",\"title\":\"\",\"source\":\"\",\"filename\":\"https://a.storyblok.com/f/289824742951963/579825/56c5588a72/3912-bannerimage.png\",\"copyright\":\"\",\"fieldtype\":\"asset\",\"meta_data\":{\"size\":\"795x398\"}},{\"id\":203705830775034,\"alt\":\"\",\"name\":\"\",\"focus\":\"\",\"title\":\"\",\"source\":\"\",\"filename\":\"https://a.storyblok.com/f/289824742951963/81078/191f873aa6/3911-bannerimage.jpg\",\"copyright\":\"\",\"fieldtype\":\"asset\",\"meta_data\":{\"size\":\"795x398\"}},{\"id\":203705858361598,\"alt\":\"\",\"name\":\"\",\"focus\":\"\",\"title\":\"\",\"source\":\"\",\"filename\":\"https://a.storyblok.com/f/289824742951963/436855/4b69924476/3915-bannerimage.png\",\"copyright\":\"\",\"fieldtype\":\"asset\",\"meta_data\":{\"size\":\"795x398\"}},{\"id\":203705771346164,\"alt\":\"\",\"name\":\"\",\"focus\":\"\",\"title\":\"\",\"source\":\"\",\"filename\":\"https://a.storyblok.com/f/289824742951963/429203/5a6f24cbb2/3903-bannerimage.png\",\"copyright\":\"\",\"fieldtype\":\"asset\",\"meta_data\":{\"size\":\"795x398\"}}],\"secondary_cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"story\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"secondary_cta_label\":\"Explore Now\"},{\"_uid\":\"feb4cdfd-e681-49f6-9a9b-7b407e7fb672\",\"type\":\"image\",\"title\":\"Explore AKU’s\",\"component\":\"media_section\",\"highlight\":\"Global Network\",\"description\":\"\",\"media_cards\":[{\"_uid\":\"c460050b-6891-47c5-b2c4-f997dacfb80e\",\"link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"size\":\"hero\",\"image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"title\":\"\",\"component\":\"media_card\",\"cta_label\":\"\",\"description\":\"\"}],\"gallery_images\":[],\"pattern_position\":\"\",\"pattern_mobile_height\":\"\"},{\"_uid\":\"c173d72e-48ef-400f-9f2f-32f1f8cda795\",\"logo\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"email\":\"\",\"title\":\"Study\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":32,\"left\":null,\"right\":null,\"bottom\":32},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":100,\"left\":null,\"right\":null,\"bottom\":100},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"bg_image\":{\"id\":null,\"alt\":null,\"name\":\"\",\"focus\":\"\",\"title\":null,\"source\":null,\"filename\":\"\",\"copyright\":null,\"fieldtype\":\"asset\",\"meta_data\":{},\"is_external_url\":false},\"component\":\"student_affairs\",\"highlight\":\"at AKU\",\"description\":\"Join a learning community committed to excellence, impact and service.\",\"social_links\":[]},{\"_uid\":\"5a3fe030-8f53-43ab-913e-61674f1dec39\",\"type\":\"gallery\",\"title\":\"Discover Our\",\"spacing\":{\"unit\":\"px\",\"mobile\":{\"margin\":{\"top\":32,\"left\":null,\"right\":null,\"bottom\":32},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}},\"desktop\":{\"margin\":{\"top\":100,\"left\":null,\"right\":null,\"bottom\":100},\"padding\":{\"top\":null,\"left\":null,\"right\":null,\"bottom\":null}}},\"cta_link\":{\"id\":\"\",\"url\":\"\",\"linktype\":\"url\",\"fieldtype\":\"multilink\",\"cached_url\":\"\"},\"component\":\"media_section\",\"cta_label\":\"\",\"highlight\":\"Campuses\",\"description\":\"\",\"gallery_images\":[],\"gallery_layout\":\"staggered\",\"pattern_position\":\"\"}]",
+        "id": "PjufioA3Sc-AmmYpb0oYKw",
+        "component_denylist": []
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": true,
+    "preview_tmpl": null,
+    "is_nestable": false,
+    "all_presets": [
+      {
+        "id": 205826647836955,
+        "name": "Programme default layout",
+        "component_id": 205108472845898,
+        "image": null,
+        "icon": "block-text-img-t",
+        "color": "#274F95",
+        "description": "Cloned from regions/pk/entities/mc/programmes/doctor-of-medicine-c6a4864e (id=206107720414732). Includes spacing and body composition."
+      }
+    ],
+    "preset_id": 205826647836955,
+    "real_name": "Programme",
+    "component_group_uuid": null,
+    "color": "#274F95",
+    "icon": "block-text-img-t",
     "internal_tags_list": [],
     "internal_tag_ids": [],
     "content_type_asset_preview": null,
@@ -5043,7 +6613,7 @@
     "display_name": "Promo Split",
     "description": null,
     "created_at": "2026-07-16T13:06:06.344Z",
-    "updated_at": "2026-07-28T08:59:05.357Z",
+    "updated_at": "2026-08-06T12:36:06.372Z",
     "id": 198727951751520,
     "schema": {
       "title": {
@@ -5157,6 +6727,29 @@
         "field_type": "spacing-field-plugin",
         "options": [],
         "id": "tcp8Yk8yRWunQGfUaFkBSA"
+      },
+      "variant": {
+        "type": "option",
+        "pos": 13,
+        "use_uuid": true,
+        "options": [
+          {
+            "_uid": "052b9f4d-0de3-4f86-8e02-6ddaba851722",
+            "name": "Overlay",
+            "value": "overlay"
+          },
+          {
+            "_uid": "8229a5fc-292e-4e1a-8bfb-0cacd88aef0c",
+            "value": "columns",
+            "name": "Columns"
+          },
+          {
+            "_uid": "5f46b158-0dba-4958-90f4-44e0c1bc8f99",
+            "value": "banner",
+            "name": "Banner"
+          }
+        ],
+        "id": "VxDlVRezRcy7iMrLjHlW1g"
       }
     },
     "image": null,
@@ -5279,7 +6872,7 @@
     "display_name": "Quote Banner",
     "description": "Quote Banner",
     "created_at": "2026-07-10T11:13:00.659Z",
-    "updated_at": "2026-07-27T15:06:07.897Z",
+    "updated_at": "2026-08-05T10:07:29.764Z",
     "id": 196576791190468,
     "schema": {
       "variant": {
@@ -5295,6 +6888,10 @@
           {
             "name": "Attributed",
             "value": "attributed"
+          },
+          {
+            "name": "Event",
+            "value": "event"
           }
         ],
         "id": "_7D3okqwS1ClEpvcDzFUWg"
@@ -5316,16 +6913,110 @@
       "date": {
         "type": "text",
         "display_name": "Date",
-        "description": "Centered variant meta (e.g. \"Nov 28, 2025\").",
+        "description": "Centered variant meta / event variant date card value (e.g. \"Nov 28, 2025\").",
         "pos": 3,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "attributed"
+              }
+            ]
+          }
+        ],
         "id": "JRDBSujITgeNkks961-XMQ"
       },
       "category": {
         "type": "text",
         "display_name": "Category",
-        "description": "Centered variant meta shown after the date (e.g. \"Convocation\").",
+        "description": "Centered variant meta shown after the date; event variant event-card value (e.g. \"Convocation\").",
         "pos": 4,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "attributed"
+              }
+            ]
+          }
+        ],
         "id": "Vb12c-izQNW3RoYjKloDrQ"
+      },
+      "event_label": {
+        "type": "text",
+        "display_name": "Event label",
+        "description": "Event variant: label above the category value in the meta card (defaults to \"Event\").",
+        "pos": 5,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "event"
+              }
+            ]
+          }
+        ],
+        "id": "axMNBl7aTn-LLFtz_BoaPg"
+      },
+      "date_label": {
+        "type": "text",
+        "display_name": "Date label",
+        "description": "Event variant: label above the date value in the meta card (defaults to \"Date\").",
+        "pos": 6,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "event"
+              }
+            ]
+          }
+        ],
+        "id": "kOCkfgXAQqSmW80T4BxJlQ"
       },
       "portrait": {
         "type": "asset",
@@ -5334,8 +7025,58 @@
         "filetypes": [
           "images"
         ],
-        "pos": 5,
+        "pos": 7,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "attributed"
+              }
+            ]
+          }
+        ],
         "id": "_Y7KhMVCQKO5DP6v2CeLFw"
+      },
+      "pill_image": {
+        "type": "asset",
+        "display_name": "Pill image",
+        "description": "Event variant: photo shown inside the decorative pill shape on the right.",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 8,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "variant",
+                  "field_attr": "value"
+                },
+                "value": "event"
+              }
+            ]
+          }
+        ],
+        "id": "QCeN3xH8RBOC4pinzqzftA"
       },
       "background_image": {
         "type": "asset",
@@ -5344,15 +7085,25 @@
         "filetypes": [
           "images"
         ],
-        "pos": 6,
+        "pos": 9,
         "id": "yL3XVagAQaCE_2lsG8eQKA"
+      },
+      "bg_pattern": {
+        "type": "asset",
+        "display_name": "Background pattern",
+        "description": "Alternative background image field (same effect as Background image).",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 10,
+        "id": "U1ovaztBSueRe8SWzBY5fw"
       },
       "spacing": {
         "type": "custom",
-        "pos": 7,
-        "id": "oUrnYohfRBeCMy-Qq9a_nQ",
+        "pos": 11,
         "field_type": "spacing-field-plugin",
-        "options": []
+        "options": [],
+        "id": "7sHS19XbQimaZv3gNCwhsw"
       }
     },
     "image": null,
@@ -5496,12 +7247,31 @@
     "display_name": "Row",
     "description": null,
     "created_at": "2026-07-28T09:36:15.632Z",
-    "updated_at": "2026-07-28T10:43:02.773Z",
+    "updated_at": "2026-08-06T10:02:03.663Z",
     "id": 202923112994252,
     "schema": {
+      "title": {
+        "type": "text",
+        "display_name": "Title",
+        "description": "Optional section title. When set, the row renders as a page section with side padding.",
+        "pos": 0,
+        "id": "xwq2FyCQSI-MSIIWu37GAw"
+      },
+      "highlight": {
+        "type": "text",
+        "display_name": "Title Highlight (green)",
+        "pos": 1,
+        "id": "4suEBQrVT5eCOhVw-rnMow"
+      },
+      "description": {
+        "type": "textarea",
+        "display_name": "Description",
+        "pos": 2,
+        "id": "P_YZXF12Q9mJBDIdNCoMuw"
+      },
       "items": {
         "type": "bloks",
-        "pos": 0,
+        "pos": 3,
         "display_name": "Items",
         "restrict_components": true,
         "component_whitelist": [
@@ -5512,14 +7282,21 @@
       },
       "width": {
         "type": "number",
-        "pos": 1,
+        "pos": 5,
         "display_name": "Width (px)",
         "description": "Optional fixed container width in px. Blank = full width.",
         "id": "mIZZUTxPQcyOVUuyx8Ct9w"
       },
+      "height": {
+        "type": "number",
+        "pos": 6,
+        "display_name": "Height (px)",
+        "description": "Optional fixed container height in px. Blank = auto.",
+        "id": "5ooB1X1MQvmzMng9GgLyig"
+      },
       "align_items": {
         "type": "option",
-        "pos": 3,
+        "pos": 7,
         "display_name": "Align items (cross-axis)",
         "exclude_empty_option": false,
         "options": [
@@ -5546,9 +7323,16 @@
         ],
         "id": "jzJRHzSDTXepLIPfnUUA6g"
       },
+      "spacing": {
+        "type": "custom",
+        "pos": 7,
+        "id": "e4hmscIzQ_u9Te9H7h7WtQ",
+        "field_type": "spacing-field-plugin",
+        "options": []
+      },
       "justify_content": {
         "type": "option",
-        "pos": 4,
+        "pos": 8,
         "display_name": "Justify content (main-axis)",
         "exclude_empty_option": false,
         "options": [
@@ -5579,13 +7363,207 @@
         ],
         "id": "XD6cRUe8Q12l5zjNxSCq2A"
       },
+      "on_mobile_wrap": {
+        "type": "boolean",
+        "pos": 8,
+        "id": "E2PdBwVsQc-5mA5aD18zYA"
+      },
+      "background_color": {
+        "type": "custom",
+        "field_type": "native-color-picker",
+        "pos": 9,
+        "display_name": "Background color",
+        "default_value": "{\"plugin\":\"native-color-picker\",\"color\":\"#ffffff\"}",
+        "id": "f0Lz9g1uRHmL6hmQos4jdw"
+      },
+      "radius": {
+        "type": "option",
+        "pos": 10,
+        "display_name": "Corner radius",
+        "exclude_empty_option": false,
+        "options": [
+          {
+            "name": "None",
+            "value": "none"
+          },
+          {
+            "name": "Small",
+            "value": "sm"
+          },
+          {
+            "name": "Medium",
+            "value": "md"
+          },
+          {
+            "name": "Large",
+            "value": "lg"
+          },
+          {
+            "name": "XL",
+            "value": "xl"
+          },
+          {
+            "name": "2XL",
+            "value": "2xl"
+          },
+          {
+            "name": "3XL",
+            "value": "3xl"
+          },
+          {
+            "name": "Full",
+            "value": "full"
+          }
+        ],
+        "id": "-82vJ9uHTPm15v4OVBLcvg"
+      }
+    },
+    "image": null,
+    "preview_field": "title",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Row",
+    "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "row_item",
+    "display_name": "Row Item",
+    "description": null,
+    "created_at": "2026-07-28T09:36:16.420Z",
+    "updated_at": "2026-08-06T10:05:47.878Z",
+    "id": 202923116221901,
+    "schema": {
+      "body": {
+        "type": "bloks",
+        "pos": 0,
+        "display_name": "Content",
+        "description": "Any component(s) to render inside this row item.",
+        "id": "ITdLkITMQw2tKaJWdBpV6g"
+      },
+      "width": {
+        "type": "number",
+        "pos": 1,
+        "display_name": "Width (%)",
+        "description": "Percent width on desktop (0-100). Blank = auto equal split (1 item 100%, 2 items 50/50, 3 items 33.33%). Widths over 100% total wrap to the next line.",
+        "id": "SZ2hYEbhQGuNgLiAwFgRKg"
+      },
+      "height": {
+        "type": "number",
+        "pos": 2,
+        "display_name": "Height (px)",
+        "description": "Optional fixed height in px. Blank = auto.",
+        "id": "NEAKl9yfT4WAOtwaYVFlyQ"
+      },
+      "width_mode": {
+        "type": "option",
+        "pos": 2,
+        "display_name": "Width mode",
+        "description": "How the item's desktop width is set. Auto / percentage uses the Width (%) field above. Fit content sizes the item to its content. Fill remaining grows the item to take the leftover space in the row. On mobile every item is full width.",
+        "default_value": "auto",
+        "exclude_empty_option": false,
+        "options": [
+          {
+            "name": "Auto / percentage",
+            "value": "auto"
+          },
+          {
+            "name": "Fit content",
+            "value": "fit"
+          },
+          {
+            "name": "Fill remaining",
+            "value": "fill"
+          }
+        ],
+        "id": "NHuaE8YKREy49axN2PMRZg"
+      },
+      "align_items": {
+        "type": "option",
+        "pos": 3,
+        "display_name": "Align content (horizontal)",
+        "description": "Aligns the item's content on the cross (horizontal) axis. Requires content to leave space.",
+        "exclude_empty_option": false,
+        "options": [
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          },
+          {
+            "name": "Stretch",
+            "value": "stretch"
+          },
+          {
+            "name": "Baseline",
+            "value": "baseline"
+          }
+        ],
+        "id": "dAGLWkK0Sfuf5SkO5MWhTw"
+      },
+      "justify_content": {
+        "type": "option",
+        "pos": 4,
+        "display_name": "Justify content (vertical)",
+        "description": "Distributes the item's content on the main (vertical) axis. Needs the item to be taller than its content (e.g. a taller sibling in the row).",
+        "exclude_empty_option": false,
+        "options": [
+          {
+            "name": "Start",
+            "value": "start"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "End",
+            "value": "end"
+          },
+          {
+            "name": "Space between",
+            "value": "between"
+          },
+          {
+            "name": "Space around",
+            "value": "around"
+          },
+          {
+            "name": "Space evenly",
+            "value": "evenly"
+          }
+        ],
+        "id": "5Qt4f-QKQcifPLkL1N0Iiw"
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 4,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "Byp8KngTRUiYYdUGt0fovQ"
+      },
       "background_color": {
         "type": "custom",
         "field_type": "native-color-picker",
         "pos": 5,
         "display_name": "Background color",
-        "id": "f0Lz9g1uRHmL6hmQos4jdw",
-        "options": []
+        "default_value": "{\"plugin\":\"native-color-picker\",\"color\":\"#ffffff\"}",
+        "id": "IPagamB1SRuS46zP2nnoBg"
       },
       "radius": {
         "type": "option",
@@ -5626,108 +7604,7 @@
             "value": "full"
           }
         ],
-        "id": "-82vJ9uHTPm15v4OVBLcvg"
-      },
-      "spacing": {
-        "type": "custom",
-        "pos": 7,
-        "id": "e4hmscIzQ_u9Te9H7h7WtQ",
-        "field_type": "spacing-field-plugin",
-        "options": []
-      }
-    },
-    "image": null,
-    "preview_field": null,
-    "is_root": false,
-    "preview_tmpl": null,
-    "is_nestable": true,
-    "all_presets": [],
-    "preset_id": null,
-    "real_name": "Row",
-    "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
-    "color": null,
-    "icon": null,
-    "internal_tags_list": [],
-    "internal_tag_ids": [],
-    "content_type_asset_preview": null,
-    "metadata": {}
-  },
-  {
-    "name": "row_item",
-    "display_name": "Row Item",
-    "description": null,
-    "created_at": "2026-07-28T09:36:16.420Z",
-    "updated_at": "2026-07-28T11:23:03.100Z",
-    "id": 202923116221901,
-    "schema": {
-      "body": {
-        "type": "bloks",
-        "pos": 0,
-        "display_name": "Content",
-        "description": "Any component(s) to render inside this row item.",
-        "id": "ITdLkITMQw2tKaJWdBpV6g"
-      },
-      "width": {
-        "type": "number",
-        "pos": 1,
-        "display_name": "Width (%)",
-        "description": "Percent width on desktop (0-100). Blank = auto equal split (1 item 100%, 2 items 50/50, 3 items 33.33%). Widths over 100% total wrap to the next line.",
-        "id": "SZ2hYEbhQGuNgLiAwFgRKg"
-      },
-      "background_color": {
-        "type": "custom",
-        "field_type": "native-color-picker",
-        "pos": 3,
-        "display_name": "Background color",
-        "id": "IPagamB1SRuS46zP2nnoBg"
-      },
-      "radius": {
-        "type": "option",
-        "pos": 4,
-        "display_name": "Corner radius",
-        "exclude_empty_option": false,
-        "options": [
-          {
-            "name": "None",
-            "value": "none"
-          },
-          {
-            "name": "Small",
-            "value": "sm"
-          },
-          {
-            "name": "Medium",
-            "value": "md"
-          },
-          {
-            "name": "Large",
-            "value": "lg"
-          },
-          {
-            "name": "XL",
-            "value": "xl"
-          },
-          {
-            "name": "2XL",
-            "value": "2xl"
-          },
-          {
-            "name": "3XL",
-            "value": "3xl"
-          },
-          {
-            "name": "Full",
-            "value": "full"
-          }
-        ],
         "id": "YSv3dId6Tvmh94SpicU-qg"
-      },
-      "spacing": {
-        "type": "custom",
-        "pos": 4,
-        "field_type": "spacing-field-plugin",
-        "options": [],
-        "id": "Byp8KngTRUiYYdUGt0fovQ"
       }
     },
     "image": null,
@@ -5945,11 +7822,104 @@
     "metadata": {}
   },
   {
+    "name": "social_embed",
+    "display_name": "Social Media Embed",
+    "description": null,
+    "created_at": "2026-07-30T11:56:34.761Z",
+    "updated_at": "2026-07-30T12:03:30.635Z",
+    "id": 203665386549888,
+    "schema": {
+      "variant": {
+        "type": "option",
+        "display_name": "Platform",
+        "description": "Which social network the post is from.",
+        "default_value": "twitter",
+        "required": true,
+        "pos": 0,
+        "options": [
+          {
+            "name": "Twitter / X",
+            "value": "twitter"
+          },
+          {
+            "name": "Facebook",
+            "value": "facebook"
+          },
+          {
+            "name": "Instagram",
+            "value": "instagram"
+          }
+        ],
+        "id": "9hin20hESGyVmLoZ7-N-xA"
+      },
+      "url": {
+        "type": "text",
+        "display_name": "Post URL",
+        "description": "Full permalink to the post/tweet, e.g. \"https://twitter.com/AKU/status/123\". Required.",
+        "required": true,
+        "pos": 1,
+        "id": "LZJmQEF-RK25KTgNxEk-7A"
+      },
+      "align": {
+        "type": "option",
+        "display_name": "Alignment",
+        "description": "Position of the embed within the full-width container.",
+        "default_value": "left",
+        "pos": 2,
+        "options": [
+          {
+            "name": "Left",
+            "value": "left"
+          },
+          {
+            "name": "Center",
+            "value": "center"
+          },
+          {
+            "name": "Right",
+            "value": "right"
+          }
+        ],
+        "id": "sw-BU7AIRtSgVtsVv3o4Kw"
+      },
+      "show_text": {
+        "type": "boolean",
+        "display_name": "Show post text (Facebook only)",
+        "description": "Include the caption/text with a Facebook post embed.",
+        "default_value": true,
+        "pos": 3,
+        "id": "nN87paBiS3Gjd8gABS1OFA"
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 4,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "p-IBl7SERIe_MzoQd2kqCQ"
+      }
+    },
+    "image": null,
+    "preview_field": "url",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Social Media Embed",
+    "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
+    "color": "#274F95",
+    "icon": "block-share",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "split_section",
     "display_name": "Split Section",
     "description": null,
     "created_at": "2026-07-15T10:07:33.095Z",
-    "updated_at": "2026-07-15T10:35:47.937Z",
+    "updated_at": "2026-08-06T12:40:17.714Z",
     "id": 198330175885686,
     "schema": {
       "layout": {
@@ -5973,7 +7943,28 @@
         "type": "custom",
         "field_type": "storyblok-colorpicker",
         "display_name": "Background color",
+        "description": "Rectangular photo style only — ignored by the circle collage.",
         "pos": 1,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "equals",
+                "validated_object": {
+                  "field_key": "image_variant",
+                  "field_attr": "value"
+                },
+                "value": "circles"
+              }
+            ]
+          }
+        ],
         "id": "4Kh2VvgISGaQLDVJFGjjow"
       },
       "title": {
@@ -6009,14 +8000,75 @@
         "pos": 6,
         "id": "lsiZz04kS4iZHEYrATXXSg"
       },
+      "secondary_cta_label": {
+        "type": "text",
+        "display_name": "Secondary CTA Label",
+        "description": "Optional text link next to the CTA (e.g. \"Explore Now\").",
+        "pos": 7,
+        "id": "Qcw5HqvgT7S6ZCA6vQEQQQ"
+      },
+      "secondary_cta_link": {
+        "type": "multilink",
+        "display_name": "Secondary CTA Link",
+        "pos": 8,
+        "id": "hYDCttDnTg-akMJtWwuldA"
+      },
       "image": {
         "type": "asset",
         "display_name": "Image",
+        "description": "Main photo — rectangular for the default style, circular for the circle collage.",
         "filetypes": [
           "images"
         ],
-        "pos": 7,
+        "pos": 9,
         "id": "kOYqHH5WQd2ls0LIUeL7ZA"
+      },
+      "image_variant": {
+        "type": "option",
+        "display_name": "Image style",
+        "default_value": "default",
+        "pos": 10,
+        "options": [
+          {
+            "name": "Rectangular photo (default)",
+            "value": "default"
+          },
+          {
+            "name": "Circle collage (blurred circles)",
+            "value": "circles"
+          }
+        ],
+        "id": "Fb8RfRmVR56HOCun8_oNrg"
+      },
+      "decorative_images": {
+        "type": "multiasset",
+        "display_name": "Decorative circle images",
+        "description": "Up to 5 photos shown as blurred circles around the main photo (circle collage only).",
+        "filetypes": [
+          "images"
+        ],
+        "pos": 11,
+        "conditional_settings": [
+          {
+            "modifications": [
+              {
+                "display": "hide"
+              }
+            ],
+            "rule_match": "any",
+            "rule_conditions": [
+              {
+                "validation": "not_equals",
+                "validated_object": {
+                  "field_key": "image_variant",
+                  "field_attr": "value"
+                },
+                "value": "circles"
+              }
+            ]
+          }
+        ],
+        "id": "dnRY4wUgQamhsCdj5tAjjQ"
       }
     },
     "image": null,
@@ -6619,7 +8671,7 @@
     "display_name": "Student Affairs",
     "description": null,
     "created_at": "2026-07-17T12:06:18.653Z",
-    "updated_at": "2026-07-28T09:37:39.916Z",
+    "updated_at": "2026-08-06T12:17:25.109Z",
     "id": 199067150970638,
     "schema": {
       "bg_image": {
@@ -6678,6 +8730,13 @@
         "maximum": 4,
         "pos": 6,
         "id": "sWIuZKfkTsuy-3m0uqtrYw"
+      },
+      "spacing": {
+        "type": "custom",
+        "pos": 7,
+        "field_type": "spacing-field-plugin",
+        "options": [],
+        "id": "3zh_P4bIRma4t5n1fsnuoQ"
       }
     },
     "image": null,
@@ -6771,7 +8830,7 @@
     "display_name": "Student Life",
     "description": null,
     "created_at": "2026-07-01T08:26:31.408Z",
-    "updated_at": "2026-07-10T12:19:57.643Z",
+    "updated_at": "2026-08-06T12:16:01.020Z",
     "id": 193350825612043,
     "schema": {
       "title": {
@@ -6806,13 +8865,13 @@
       },
       "video_url": {
         "type": "multilink",
-        "display_name": "Video URL (YouTube / Vimeo / file)",
+        "display_name": "Video URL",
         "pos": 5,
         "id": "h8cI-a3TRRumJbSLBSSwfw"
       },
       "thumbnail": {
         "type": "asset",
-        "display_name": "Video Thumbnail",
+        "display_name": "Video thumbnail",
         "filetypes": [
           "images"
         ],
@@ -6821,81 +8880,40 @@
       },
       "video_title": {
         "type": "text",
-        "display_name": "Video Title (accessibility)",
+        "display_name": "Video title",
         "pos": 7,
         "id": "hjomCQp8S9KiRnXRB3rH9A"
       },
       "auto_play": {
         "type": "boolean",
-        "display_name": "Auto play video",
+        "display_name": "Autoplay",
         "default_value": false,
         "pos": 8,
         "id": "hveDd6EiQDyuuO3hNxG7oQ"
       },
       "show_controls": {
         "type": "boolean",
-        "display_name": "Show video controls",
+        "display_name": "Show controls",
         "default_value": true,
         "pos": 9,
         "id": "VO7n0JS3S9CC-fsIha5s-A"
       },
       "cards": {
         "type": "bloks",
-        "display_name": "Cards",
+        "display_name": "Student life cards",
         "restrict_components": true,
         "component_whitelist": [
-          "student_life_card"
+          "card"
         ],
         "pos": 10,
         "id": "3e9w8DbtRgeoN8_bf5h9UQ"
       },
-      "side_spacing": {
-        "type": "number",
-        "display_name": "Side spacing — desktop (px)",
+      "spacing": {
+        "type": "custom",
         "pos": 11,
-        "id": "Tele3VwSS0e9XEF1mYfYaA"
-      },
-      "mobile_side_spacing": {
-        "type": "number",
-        "display_name": "Side spacing — mobile (px)",
-        "pos": 12,
-        "id": "oarhxitIQvuFg7sCA5GhxA"
-      },
-      "margin_bottom": {
-        "type": "number",
-        "display_name": "Bottom margin — desktop (px)",
-        "pos": 13,
-        "id": "1V_6e_JpRxKRoW4paD6AJw"
-      },
-      "mobile_margin_bottom": {
-        "type": "number",
-        "display_name": "Bottom margin — mobile (px)",
-        "pos": 14,
-        "id": "uns02QnFRkez77cnVWCC3Q"
-      },
-      "padding_top": {
-        "type": "number",
-        "display_name": "Top padding — desktop (px)",
-        "pos": 15,
-        "id": "VCQan3QzS2qP82ubL_44cA"
-      },
-      "mobile_padding_top": {
-        "type": "number",
-        "display_name": "Top padding — mobile (px)",
-        "pos": 16,
-        "id": "AeaRZcPVRH6CKufLe2L35A"
-      },
-      "padding_bottom": {
-        "type": "number",
-        "display_name": "Bottom padding — desktop (px)",
-        "pos": 17,
-        "id": "wi98rlv4SlqIivbYfksIow"
-      },
-      "mobile_padding_bottom": {
-        "type": "number",
-        "display_name": "Bottom padding — mobile (px)",
-        "pos": 18,
-        "id": "Wlspvt5CQsGFyHLQSNMCug"
+        "id": "aQHVNpFBQIinL_ikAhya0Q",
+        "field_type": "spacing-field-plugin",
+        "options": []
       }
     },
     "image": null,
@@ -6908,7 +8926,7 @@
     "real_name": "Student Life",
     "component_group_uuid": "ee7b1963-1df2-4c79-a7b7-a3eabd53f482",
     "color": "#008F51",
-    "icon": "block-image",
+    "icon": "block-video",
     "internal_tags_list": [],
     "internal_tag_ids": [],
     "content_type_asset_preview": null,
@@ -6994,6 +9012,224 @@
     "component_group_uuid": "3abb5d19-42ee-47f8-a2a6-fd1a8a4f307d",
     "color": "#274F95",
     "icon": "block-text-il",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "tabbed_banner",
+    "display_name": "Tabbed Banner",
+    "description": null,
+    "created_at": "2026-08-04T09:49:33.319Z",
+    "updated_at": "2026-08-04T09:49:33.319Z",
+    "id": 205403641120410,
+    "schema": {
+      "mobile_title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Mobile title",
+        "default_value": "Quick",
+        "description": "First (dark) word of the mobile \"Quick Actions\" heading.",
+        "id": "InMD62OgR2Wy6Sxr9R76-Q"
+      },
+      "mobile_title_highlight": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Mobile title highlight",
+        "default_value": "Actions",
+        "description": "Second (green) word of the mobile heading.",
+        "id": "Rv9F_e9rT5iIM3Q2CaxiVg"
+      },
+      "autoplay": {
+        "type": "boolean",
+        "pos": 2,
+        "display_name": "Auto-advance",
+        "default_value": true,
+        "description": "Cycle tabs automatically (~6s), pausing on hover.",
+        "id": "iXODGCkNRJid23LUbJzlRA"
+      },
+      "tabs": {
+        "type": "bloks",
+        "pos": 3,
+        "display_name": "Tabs",
+        "restrict_components": true,
+        "component_whitelist": [
+          "tabbed_banner_tab"
+        ],
+        "description": "Each tab is one slide — pills on desktop, Quick-Action tiles on mobile.",
+        "id": "a34w_oVvQ_--8Rt1_98-kg"
+      }
+    },
+    "image": null,
+    "preview_field": "mobile_title",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Tabbed Banner",
+    "component_group_uuid": null,
+    "color": "#274F95",
+    "icon": "block-buildboxx",
+    "internal_tags_list": [],
+    "internal_tag_ids": [],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "tabbed_banner_tab",
+    "display_name": "Tabbed Banner — Tab",
+    "description": null,
+    "created_at": "2026-08-04T09:49:33.066Z",
+    "updated_at": "2026-08-04T09:49:33.066Z",
+    "id": 205403640084121,
+    "schema": {
+      "label": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Label",
+        "description": "Tab pill (desktop) / tile (mobile) label.",
+        "required": true,
+        "id": "EM-Bqp0NSTGNDhKFrAEF3w"
+      },
+      "heading": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Heading",
+        "description": "Slide heading.",
+        "id": "w7LUXdJ5RXW6v-7jLr9U5Q"
+      },
+      "description": {
+        "type": "textarea",
+        "pos": 2,
+        "display_name": "Description",
+        "id": "AVmQCE3IQKyepjFzCVzBEA"
+      },
+      "number": {
+        "type": "text",
+        "pos": 3,
+        "display_name": "Number",
+        "description": "Index shown as e.g. 01. Blank = auto from position.",
+        "id": "MZbweLHKTQe44ypaCT14kw"
+      },
+      "image": {
+        "type": "asset",
+        "pos": 4,
+        "display_name": "Image",
+        "filetypes": [
+          "images"
+        ],
+        "id": "ztBJjhZlTM646qlLP3JyjQ"
+      },
+      "icon": {
+        "type": "option",
+        "pos": 5,
+        "display_name": "Mobile tile icon",
+        "default_value": "calendar",
+        "options": [
+          {
+            "name": "Book",
+            "value": "book"
+          },
+          {
+            "name": "Users",
+            "value": "users"
+          },
+          {
+            "name": "Partner",
+            "value": "partner"
+          },
+          {
+            "name": "Graduation",
+            "value": "graduation"
+          },
+          {
+            "name": "Calendar",
+            "value": "calendar"
+          },
+          {
+            "name": "Award",
+            "value": "award"
+          },
+          {
+            "name": "Heart",
+            "value": "heart"
+          },
+          {
+            "name": "Building",
+            "value": "building"
+          },
+          {
+            "name": "Baby",
+            "value": "baby"
+          },
+          {
+            "name": "Health",
+            "value": "health"
+          },
+          {
+            "name": "Star",
+            "value": "star"
+          }
+        ],
+        "id": "vACieNo-SVmrc8Q5aFBE3g"
+      },
+      "icon_image": {
+        "type": "asset",
+        "pos": 6,
+        "display_name": "Mobile tile icon (upload — overrides icon)",
+        "filetypes": [
+          "images"
+        ],
+        "id": "zkYtL2giTHmdJYmvogljLQ"
+      },
+      "partner_logo": {
+        "type": "asset",
+        "pos": 7,
+        "display_name": "Partner logo",
+        "filetypes": [
+          "images"
+        ],
+        "id": "N2UrEsyoQNmJVSNy-SzNqw"
+      },
+      "partner_label": {
+        "type": "text",
+        "pos": 8,
+        "display_name": "Partner label",
+        "id": "LeOvB_cdTQS2WGc8cOTQ2w"
+      },
+      "secondary_label": {
+        "type": "text",
+        "pos": 9,
+        "display_name": "Secondary label",
+        "id": "j1Je7kjKTNmeY8Z1UHhY7g"
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 10,
+        "display_name": "\"View More\" link",
+        "id": "04jHrkm7TIC9_alyIpsjnA"
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 11,
+        "display_name": "\"View More\" label",
+        "description": "Default: View More.",
+        "id": "ExMyzzO8QGK8DHZKzrwhIQ"
+      }
+    },
+    "image": null,
+    "preview_field": "label",
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "Tabbed Banner — Tab",
+    "component_group_uuid": null,
+    "color": "#274F95",
+    "icon": "block-tag",
     "internal_tags_list": [],
     "internal_tag_ids": [],
     "content_type_asset_preview": null,
