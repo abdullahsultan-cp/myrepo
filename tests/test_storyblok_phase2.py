@@ -3,7 +3,7 @@ import sys
 import unittest
 from os.path import abspath, dirname, join
 
-SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "scripts"))
+SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "pipeline"))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
@@ -13,12 +13,14 @@ from enhance_storyblok_news import enhance_richtext_node
 from storyblok_config import load_config
 from storyblok_embeds import pull_quote_to_blok_or_richtext
 
-DATA_DIR = abspath(join(dirname(__file__), "..", "data"))
+# The data lives per content type now; the shared module knows where.
+from paths_root import P  # noqa: E402
+DATA_DIR = P.DATA
 
 
 class PhaseTwoTests(unittest.TestCase):
     def test_link_map_resolves_sequence_number(self):
-        link_map = build_link_map(join(DATA_DIR, "cleaned_news"))
+        link_map = build_link_map(P.CLEANED)
         stories = link_map["stories"]
         sample = next(item for item in stories if item["sequence_number"])
         resolution = resolve_href(
@@ -91,7 +93,7 @@ class PhaseTwoTests(unittest.TestCase):
         self.assertEqual(blok["type"], "blok")
 
     def test_build_story_payload_shape(self):
-        with open(join(DATA_DIR, "cleaned_news", "35.json"), "r",
+        with open(join(P.CLEANED, "35.json"), "r",
                   encoding="utf-8") as f:
             item = json.load(f)
         item["NewsContent"] = {"type": "doc", "content": []}
@@ -104,7 +106,7 @@ class PhaseTwoTests(unittest.TestCase):
 
 
 def load_fixture_pullquote(filename):
-    with open(join(DATA_DIR, "cleaned_news", filename), "r",
+    with open(join(P.CLEANED, filename), "r",
               encoding="utf-8") as f:
         return json.load(f)["PullQuote"]
 

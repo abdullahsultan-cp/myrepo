@@ -3,7 +3,7 @@ import sys
 import unittest
 from os.path import abspath, dirname, join
 
-SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "scripts"))
+SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "pipeline"))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 
@@ -11,11 +11,13 @@ from convert_news_richtext import convert_news_item
 from normalize_news_html import normalize_news_content_html
 from storyblok_richtext import html_to_storyblok_richtext, validate_document
 
-DATA_DIR = abspath(join(dirname(__file__), "..", "data"))
+# The data lives per content type now; the shared module knows where.
+from paths_root import P  # noqa: E402
+DATA_DIR = P.DATA
 
 
 def load_fixture(name):
-    with open(join(DATA_DIR, "cleaned_news", name), "r",
+    with open(join(P.CLEANED, name), "r",
               encoding="utf-8") as f:
         return json.load(f)
 

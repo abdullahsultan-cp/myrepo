@@ -2,7 +2,7 @@ import sys
 import unittest
 from os.path import abspath, dirname, join
 
-SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "scripts"))
+SCRIPTS_DIR = abspath(join(dirname(__file__), "..", "pipeline"))
 if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 

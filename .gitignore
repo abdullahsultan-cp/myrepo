@@ -5,7 +5,7 @@
 
 # --- Local-only inputs (see README) ------------------------------------------
 
-/assets/
+/News-Pipeline/assets/
 
 # Storyblok Management API token — copy from config/storyblok.example.json
 /config/storyblok.json
@@ -24,12 +24,12 @@
 #
 # Delete the lines below if you would rather version them.
 
-/data/news/
-/data/cleaned_news/
-/data/normalized_news/
-/data/storyblok_news/
-/data/storyblok_news_enhanced/
-/data/storyblok_stories/
+/News-Pipeline/data/raw/
+/News-Pipeline/data/cleaned/
+/News-Pipeline/data/normalized/
+/News-Pipeline/data/richtext/
+/News-Pipeline/data/richtext_enhanced/
+/News-Pipeline/data/stories/
 
 # --- Python ------------------------------------------------------------------
 
@@ -100,15 +100,15 @@ storyblok-viewer/*.pem
 # --- Transient run state, not results ----------------------------------------
 # run_media_all.py holds this lock for the duration of a media run; a leftover
 # file means a dead run, and the README says to delete it.
-/data/migrate/.media.lock
-/data/migrate/.migration.lock
+/News-Pipeline/data/migrate/.media.lock
+/News-Pipeline/data/migrate/.migration.lock
 
 # Ad-hoc id lists fed to --ids during a recovery pass. Throwaway by nature.
-/data/migrate/*_ids.txt
+/News-Pipeline/data/migrate/*_ids.txt
 
 # validate_dev_tree.py --csv output: a diff against whatever file was passed in,
 # meaningful only in the moment it was produced.
-/data/taxonomy/dev_tree_diff.csv
+/News-Pipeline/data/taxonomy/dev_tree_diff.csv
 
 # --- Pages-Pipeline portal (Vite + React) ------------------------------------
 # Dependencies and build output: reinstall with `npm install`, rebuild with
@@ -142,3 +142,17 @@ dist/
 
 # Scratch output from a one-off run, never a result.
 /scratch_sv.txt
+
+# --- Blogs-Pipeline: the same rules, for the same reasons ---------------------
+# Per-stage story JSON is regenerated from blogs.json by pipeline/run_pipeline.py
+# --type blogs; the media is re-downloaded from the live site.
+/Blogs-Pipeline/data/raw/
+/Blogs-Pipeline/data/cleaned/
+/Blogs-Pipeline/data/normalized/
+/Blogs-Pipeline/data/richtext/
+/Blogs-Pipeline/data/richtext_enhanced/
+/Blogs-Pipeline/data/stories/
+/Blogs-Pipeline/assets/
+/Blogs-Pipeline/data/migrate/.media.lock
+/Blogs-Pipeline/data/migrate/.migration.lock
+/Blogs-Pipeline/data/migrate/*_ids.txt
