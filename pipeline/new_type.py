@@ -23,6 +23,13 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import _bootstrap
+
+# ensure() is what PUTS paths_root on sys.path, so it has to run before the
+# import below. The blank lines keep them in separate blocks, which is what
+# stops the import sorter merging and reordering them.
+_bootstrap.ensure()
+
 from paths_root import ROOT, TYPES, TYPES_DIR, P
 
 TEMPLATE = os.path.join(TYPES_DIR, "_TEMPLATE.json")
