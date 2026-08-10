@@ -12,15 +12,25 @@ nothing.
 
 | Path | Owner | Conflict risk |
 |---|---|---|
-| `Blogs-Pipeline/**` | whoever has blogs | none — nobody else writes here |
-| `Events-Pipeline/**` | whoever has events | none |
-| `config/types/blogs.json` · `events.json` | that type's owner | none |
+| `Blogs-Pipeline/**` · `config/types/blogs.json` | **blogs** | none — nobody else writes here |
+| `Events-Pipeline/**` · `config/types/events.json` | **events + pages** | none |
+| `Pages-Pipeline/**` | **events + pages** (same person) | none |
+| `News-Pipeline/**` · `config/types/news.json` | **news** — live, treat as read-only otherwise | none |
 | `pipeline/**` | **shared** | **high** — say so before you change it |
-| `config/types/_TEMPLATE.json` | shared | high |
+| `config/steps.json` · `config/types/_TEMPLATE.json` | shared | high |
 | `README.md` · `CLAUDE.md` · `docs/**` | shared | medium |
-| `.gitignore` · `.gitattributes` | shared | medium |
+| `.gitignore` · `.gitattributes` · `ruff.toml` | shared | medium |
 | `storyblok_space/**` | nobody — it is the front-end dev's space | resolved by re-fetching |
-| `News-Pipeline/**` | done and live; treat as read-only unless news is your job | — |
+
+**Events and pages are one person.** They are separate folders because they are
+separate jobs — pages is site structure, not content, and shares no code — but
+they never conflict with each other either way.
+
+**Ownership is by convention, not enforced on GitHub.** There is no CODEOWNERS
+file: with three people and non-overlapping folders it would be ceremony. The
+pre-push hook below is the real guard, and it runs on your machine. If the team
+grows, add `.github/CODEOWNERS` mapping `/pipeline/` to whoever should review
+shared changes.
 
 **The rule of thumb:** if the change is about *your* content type, there is a
 place for it inside your own folder. If you find yourself editing `pipeline/`
@@ -45,9 +55,10 @@ deliberate — and sometimes it is — say so once:
 AKU_ALLOW_SHARED=1 git push
 ```
 
-`.github/CODEOWNERS` does the same job on GitHub's side: a PR touching
-`pipeline/` needs the shared owner's review. Replace the placeholder usernames
-and enable "Require review from Code Owners" in branch protection.
+There is deliberately no CODEOWNERS file yet — see above. The hook is the guard,
+and it is honest about being local: anyone can bypass it with `--no-verify`, so
+it is a reminder rather than a wall. That is the right level for three people
+who talk to each other.
 
 ---
 
