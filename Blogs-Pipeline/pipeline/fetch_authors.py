@@ -50,7 +50,7 @@ import _bootstrap
 
 _bootstrap.ensure()
 
-from paths_root import P, ROOT
+from paths_root import P
 
 P.use("blogs")
 
