@@ -11,9 +11,15 @@ For each of the 83 blogs it shows two things side by side:
     a preview             what that will look like once uploaded
 
 **Everything we do not have is drawn as a labelled box saying what is absent and
-why.** Nothing is invented. A blog whose banner cell reads `DOWNLOAD_FAILED`
-shows a box saying exactly that, not a placeholder image, because a portal that
-looks finished when the data is not is worse than no portal.
+why.** Nothing is invented — no placeholder image ever stands in for a real one,
+because a portal that looks finished when the data is not is worse than no
+portal.
+
+A box is only red while something can still be done about it. The 13 blogs with
+no banner are marked `skipped`, not `missing`: SharePoint records no banner for
+them anywhere, and guessing one from the 73 unclaimed files in
+`/blogs/PublishingImages` was measured and rejected. `fetch_missing_media.py`
+carries the evidence.
 
 The layout follows the signed-off reference story
 `blogs/beyond-the-blame-rethinking-pastoralism-and-environmental-impacts`. Where
@@ -38,7 +44,6 @@ import _bootstrap
 
 _bootstrap.ensure()
 
-from fields import F
 from paths_root import ROOT, P
 
 P.use("blogs")
@@ -140,14 +145,17 @@ def plan_for(content, routing, on_disk):
     bloks = []
 
     banner = (content.get("banner") or "").strip()
-    if banner == "DOWNLOAD_FAILED":
-        bloks.append(dict(component="banner_image", state="missing", field="banner_image",
-                          note="the export wrote DOWNLOAD_FAILED — the file was never captured",
-                          fix="fetch from aku.edu before the site is switched off"))
-    elif not banner:
-        bloks.append(dict(component="banner_image", state="missing", field="banner_image",
-                          note="no Banner value in the export",
-                          fix="ask AKU, or publish without a hero"))
+    if banner in ("DOWNLOAD_FAILED", ""):
+        # Closed, not outstanding. SharePoint records no banner for these 13
+        # anywhere — the field is null on all 89 posts, there are no
+        # attachments, and the detail page renders client-side. Guessing from
+        # the 73 unclaimed files was measured at 94% precision and abstains on
+        # every one of the 13. See fetch_missing_media.py and
+        # data/banners_absent.json.
+        cell = "the export wrote DOWNLOAD_FAILED" if banner else "the Banner cell is empty"
+        bloks.append(dict(component="banner_image", state="skipped", field="banner_image",
+                          note=f"{cell}; no banner is recorded anywhere in SharePoint",
+                          fix="none — verified absent at source, publishes without a hero"))
     elif banner not in on_disk:
         bloks.append(dict(component="banner_image", state="missing", field="banner_image",
                           note=f"{banner} named but not on disk", fix="re-download"))
@@ -233,11 +241,15 @@ def plan_for(content, routing, on_disk):
             img=("../assets/Blogs/media/" + pic) if pic else "",
             bio=plain))
     else:
+        # Closed, not outstanding. Ids 4 and 5 were deleted from
+        # AuthorManagement — the live list 404s on both — and the remaining
+        # entries simply have an empty Description. The name still migrates.
+        who = content.get("author") or "(none)"
         bloks.append(dict(
-            component="author_section", state="missing",
-            note=f"author is {content.get('author') or '(none)'}"
-                 + (f", id {aid}" if aid else ""),
-            fix="no entry in AuthorManagement for this author id"))
+            component="author_section", state="skipped",
+            note=f"{who} — name only; no biography exists"
+                 + (f" (author id {aid} is not in AuthorManagement)" if aid else ""),
+            fix="none — verified absent at source; renders with the name alone"))
 
     # Fields the dev added on 10 Aug. We have the data for all four; two of them
     # are custom plugins whose value format nothing in the space demonstrates.
@@ -321,8 +333,6 @@ console.log(JSON.stringify({
 
 
 def main():
-    with open(P.SOURCE_JSON, encoding="utf-8") as f:
-        source = {str(F.get(i, "id")): i for i in json.load(f)}
     routing = {}
     rp = os.path.join(P.DATA, "taxonomy", "routing.csv")
     if os.path.exists(rp):

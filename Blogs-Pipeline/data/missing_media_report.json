@@ -1,6 +1,7 @@
 {
-  "fetched": 15,
-  "gone": 0,
+  "fetched": 0,
+  "already_had": 31,
+  "absent_ignored": 13,
   "rows": [
     {
       "blog": "15",
@@ -8,8 +9,7 @@
       "src": "/blogs/PublishingImages/Blogs-SL03.jpg",
       "url": "https://www.aku.edu/blogs/PublishingImages/Blogs-SL03.jpg",
       "filename": "Blogs-SL03.jpg",
-      "status": "ok",
-      "bytes": 100574
+      "status": "already on disk"
     },
     {
       "blog": "18",
@@ -17,8 +17,7 @@
       "src": "/test/blogs/PublishingImages/blog-1.jpg",
       "url": "https://www.aku.edu/test/blogs/PublishingImages/blog-1.jpg",
       "filename": "blog-1.jpg",
-      "status": "ok",
-      "bytes": 299443
+      "status": "already on disk"
     },
     {
       "blog": "19",
@@ -26,8 +25,7 @@
       "src": "/blogs/PublishingImages/Rufayda-building-group-photo.jpg",
       "url": "https://www.aku.edu/blogs/PublishingImages/Rufayda-building-group-photo.jpg",
       "filename": "Rufayda-building-group-photo.jpg",
-      "status": "ok",
-      "bytes": 342180
+      "status": "already on disk"
     },
     {
       "blog": "25",
@@ -35,8 +33,7 @@
       "src": "/blogs/PublishingImages/Blogs-career-perplexity-medium.jpg",
       "url": "https://www.aku.edu/blogs/PublishingImages/Blogs-career-perplexity-medium.jpg",
       "filename": "Blogs-career-perplexity-medium.jpg",
-      "status": "ok",
-      "bytes": 162016
+      "status": "already on disk"
     },
     {
       "blog": "26",
@@ -44,8 +41,7 @@
       "src": "/iedpk/blog/Lists/Photos/P-K1.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/P-K1.jpg",
       "filename": "P-K1.jpg",
-      "status": "ok",
-      "bytes": 56605
+      "status": "already on disk"
     },
     {
       "blog": "26",
@@ -53,8 +49,7 @@
       "src": "/iedpk/blog/Lists/Photos/P-K3.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/P-K3.jpg",
       "filename": "P-K3.jpg",
-      "status": "ok",
-      "bytes": 57043
+      "status": "already on disk"
     },
     {
       "blog": "26",
@@ -62,8 +57,7 @@
       "src": "/iedpk/blog/Lists/Photos/P-K2.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/P-K2.jpg",
       "filename": "P-K2.jpg",
-      "status": "ok",
-      "bytes": 38038
+      "status": "already on disk"
     },
     {
       "blog": "26",
@@ -71,8 +65,7 @@
       "src": "/iedpk/blog/Lists/Photos/DesigningP-K.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/DesigningP-K.jpg",
       "filename": "DesigningP-K.jpg",
-      "status": "ok",
-      "bytes": 59943
+      "status": "already on disk"
     },
     {
       "blog": "26",
@@ -80,8 +73,7 @@
       "src": "/iedpk/blog/Lists/Photos/GuidelinesP-K.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/GuidelinesP-K.jpg",
       "filename": "GuidelinesP-K.jpg",
-      "status": "ok",
-      "bytes": 82980
+      "status": "already on disk"
     },
     {
       "blog": "28",
@@ -89,8 +81,7 @@
       "src": "/iedpk/blog/Lists/Photos/ma2.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/ma2.jpg",
       "filename": "ma2.jpg",
-      "status": "ok",
-      "bytes": 48623
+      "status": "already on disk"
     },
     {
       "blog": "28",
@@ -98,8 +89,7 @@
       "src": "/iedpk/blog/Lists/Photos/ma3.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/ma3.jpg",
       "filename": "ma3.jpg",
-      "status": "ok",
-      "bytes": 51604
+      "status": "already on disk"
     },
     {
       "blog": "29",
@@ -107,8 +97,7 @@
       "src": "/iedpk/blog/Lists/Photos/SC1.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/SC1.jpg",
       "filename": "SC1.jpg",
-      "status": "ok",
-      "bytes": 30704
+      "status": "already on disk"
     },
     {
       "blog": "29",
@@ -116,8 +105,7 @@
       "src": "/iedpk/blog/Lists/Photos/SC2.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/SC2.jpg",
       "filename": "SC2.jpg",
-      "status": "ok",
-      "bytes": 29113
+      "status": "already on disk"
     },
     {
       "blog": "29",
@@ -125,8 +113,7 @@
       "src": "/iedpk/blog/Lists/Photos/SC5.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/SC5.jpg",
       "filename": "SC5.jpg",
-      "status": "ok",
-      "bytes": 60651
+      "status": "already on disk"
     },
     {
       "blog": "29",
@@ -134,8 +121,7 @@
       "src": "/iedpk/blog/Lists/Photos/SC4.jpg",
       "url": "https://www.aku.edu/iedpk/blog/Lists/Photos/SC4.jpg",
       "filename": "SC4.jpg",
-      "status": "ok",
-      "bytes": 36550
+      "status": "already on disk"
     },
     {
       "blog": "29",
@@ -264,6 +250,84 @@
       "url": "https://www.aku.edu/blogs/PublishingImages/SH-Blog-Picture2.png",
       "filename": "SH-Blog-Picture2.png",
       "status": "already on disk"
+    },
+    {
+      "blog": "16",
+      "kind": "banner",
+      "title": "Stephen Lyon: I owe a debt of gratitude to Pakistan",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "17",
+      "kind": "banner",
+      "title": "How the Cambridge International Project",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "18",
+      "kind": "banner",
+      "title": "Five/Seven tips to maintain your mental health",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "56",
+      "kind": "banner",
+      "title": "Rowing Club come out victorious at the 16th Annual KBC Regatta",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "70",
+      "kind": "banner",
+      "title": "How are Medical Faculty Using GenAI in Teaching and Learning ",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "71",
+      "kind": "banner",
+      "title": "How are Medical Faculty Using GenAI in Teaching and Learning",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "72",
+      "kind": "banner",
+      "title": "Unleashing the Power of AI-Generated Content: Implications for Higher Education: An EdTech",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "78",
+      "kind": "banner",
+      "title": "Entry 67 | Screen Time, Stress, and the Silent Struggle: What Our Students Are Telling Us ",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "79",
+      "kind": "banner",
+      "title": "Entry 67 | Screen Time, Stress, and the Silent Struggle: What Our Students Are Telling Us ",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "80",
+      "kind": "banner",
+      "title": "Entry 68 | The Magic of Play-Based Learning: Why It’s More Than Just a Pastime.",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "88",
+      "kind": "banner",
+      "title": "Entry 69 | Is EdTech our Friend or Foe?",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "89",
+      "kind": "banner",
+      "title": "No AI Without Talent: It's Time to Build a Pipeline",
+      "status": "absent at source — ignored"
+    },
+    {
+      "blog": "90",
+      "kind": "banner",
+      "title": "Entry 71 | Breaking the Silence Through Play – Using Educational Games to Create Awareness",
+      "status": "absent at source — ignored"
     }
   ]
 }

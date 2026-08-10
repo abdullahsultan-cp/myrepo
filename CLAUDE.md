@@ -260,6 +260,16 @@ as `<p><br/>×19</p>` with all 4,000 characters gone.
 `/news/PublishingImages/pages/News_Admin/…`. It silently deleted content images
 and made 165 stories look empty.
 
+**Measure a guess before shipping it, and prefer a gap.** Twice now the obvious
+match has been the wrong one: `stephen-lyon.jpg` sits in the same folder as post
+15 "Stephen Lyon: I owe a debt of gratitude to Pakistan", whose real banner is
+`Blogs_banner_SL.jpg`; and "Didar Ali" drew Salim Surani's photograph because
+"ali" hides inside "sALIm". Both were caught by scoring the rule against pairs
+already known to be correct — nearest-upload-time picked 43 of 69, rarest-word
+title matching was wrong 11 times out of 28. A rule that cannot be measured
+should not be run, and a rule that abstains is doing its job. **A wrong image on
+a published article is worse than no image.**
+
 **Check output, do not assume it.** Every bug above was found by looking at a
 result: a banner that was a logo, a counter that went backwards, a read time
 implying 16 wpm, a description that was the word "The".
@@ -394,6 +404,11 @@ commit.
 - **blogs**: `Entity` (83/83), `IsFeatured` (43), `FeatureSequence`,
   `Close Comments` (14), `IsActive`, `Post Year` and 626 comments have no field
   in `blog_article`
+- **13 blogs will publish with no hero.** Closed, not pending — SharePoint holds
+  no banner-to-post mapping at all (`Banner_x0020_Image` is null on all 89 posts,
+  no attachments, the detail page renders client-side). Evidence and the
+  measured reason for not guessing are in `data/banners_absent.json` and
+  `fetch_missing_media.py`
 - **54 language PDFs** still link to aku.edu, which dies with the site
 - **566 internal links** still point at aku.edu, kept deliberately so they can be
   found and replaced now that every story has an id
