@@ -338,7 +338,7 @@ const TABS = [['archive','Archive'],['story','Story'],['tax','Categories, tags &
 
 function renderTabs(){
  document.getElementById('tabs').innerHTML = TABS.map(t =>
-  '<div class="tab'+(VIEW===t[0]?' on':'')+'" onclick="go(''+t[0]+'')">'+t[1]+'</div>').join('');
+  '<div class="tab'+(VIEW===t[0]?' on':'')+'" onclick="go(\'' + t[0] + '\')">'+t[1]+'</div>').join('');
 }
 function go(v){ VIEW=v; render(); window.scrollTo({top:0}); }
 
@@ -354,7 +354,7 @@ function renderArchive(){
  document.getElementById('count').textContent = rows.length+' of '+B.length+' posts';
  document.getElementById('view').innerHTML = rows.length
   ? '<div class="grid">'+rows.map(function(b){
-     return '<div class="gc" onclick="open1(''+b.id+'')">'
+     return '<div class="gc" onclick="open1(\'' + b.id + '\')">'
       +'<div class="thumb">'+thumb(b)+'</div><div class="body">'
       +'<div class="ti">'+esc(b.title)+'</div>'
       +'<div class="mm"><span>#'+b.id+'</span>'
@@ -407,5 +407,16 @@ function render(){
  else renderStory();
 }
 function pick(id){ cur=id; renderList(); renderPanel(); }
+
+document.getElementById('q').oninput = e => { F.q = e.target.value.toLowerCase().trim(); render(); };
+document.getElementById('cat').onchange = e => { F.cat = e.target.value; render(); };
+document.getElementById('tag').onchange = e => { F.tag = e.target.value; render(); };
+document.getElementById('ent').onchange = e => { F.ent = e.target.value; render(); };
+document.getElementById('clear').onclick = () => {
+ for (const k in F) F[k] = '';
+ document.getElementById('q').value = '';
+ ['cat','tag','ent'].forEach(i => document.getElementById(i).value = '');
+ render();
+};
 render();
 </script></body></html>

@@ -249,6 +249,58 @@ def plan_for(content, routing, on_disk):
     return bloks
 
 
+def verify(path):
+    """Run the page's own JavaScript and check it produced something.
+
+    Written after the portal shipped blank: a mangled quote in one onclick made
+    the whole script a SyntaxError, so nothing ran and the page was empty. The
+    build reported success, because writing a file had worked.
+
+    Node is optional -- if it is not installed this says so and moves on rather
+    than blocking a build over a check.
+    """
+    import shutil
+    import subprocess
+    import tempfile
+
+    node = shutil.which("node")
+    if not node:
+        print("  (node not found — skipping the render check)")
+        return
+
+    with open(path, encoding="utf-8") as f:
+        page = f.read()
+    js = page.split("<script>", 1)[1].rsplit("</script>", 1)[0]
+
+    probe = """
+const els = {};
+const mk = () => ({ set innerHTML(v){this._h=v}, get innerHTML(){return this._h||''},
+  textContent:'', value:'', set oninput(v){}, set onchange(v){}, set onclick(v){} });
+global.document = { getElementById: id => (els[id] = els[id] || mk()) };
+global.window = { scrollTo(){} };
+__JS__
+const view = (els['view']||{}).innerHTML || '';
+if (!view.length) { console.error('the page rendered nothing'); process.exit(1); }
+console.log(JSON.stringify({
+  chars: view.length,
+  cards: (view.match(/class="gc"/g)||[]).length,
+  images: (view.match(/<img /g)||[]).length,
+}));
+"""
+    tmp = os.path.join(tempfile.gettempdir(), "aku_portal_probe.js")
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        f.write(probe.replace("__JS__", js))
+    done = subprocess.run([node, tmp], capture_output=True, text=True,
+                          encoding="utf-8")
+    os.remove(tmp)
+    if done.returncode != 0:
+        raise SystemExit("  the portal does not run:\n"
+                         + (done.stderr or done.stdout).strip()[-700:])
+    import json as _json
+    got = _json.loads(done.stdout.strip().splitlines()[-1])
+    print(f"  renders: {got['cards']} cards, {got['images']} images")
+
+
 def main():
     with open(P.SOURCE_JSON, encoding="utf-8") as f:
         source = {str(F.get(i, "id")): i for i in json.load(f)}
@@ -313,6 +365,7 @@ def main():
     open(OUT, "w", encoding="utf-8", newline="\n").write(
         template().replace("__DATA__", json.dumps({"blogs": blogs, "stats": stats},
                                                 ensure_ascii=False)))
+    verify(OUT)
     size = os.path.getsize(OUT) / 1024 / 1024
     print(f"  {len(blogs)} blogs -> {os.path.relpath(OUT, ROOT)}  ({size:.1f} MB)")
     print(f"    banners we have      {stats['with_banner']}/{len(blogs)}")
