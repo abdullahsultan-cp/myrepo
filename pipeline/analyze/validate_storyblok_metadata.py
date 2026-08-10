@@ -1,22 +1,22 @@
-import os
 from collections import Counter
 from json import dump, load
 from os import listdir
 from os.path import abspath, dirname, join
-import sys
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from storyblok_config import load_config
+import _bootstrap
+
+_bootstrap.ensure()
 from storyblok_metadata_map import MAPPED_FIELDS, STRUCTURED_FIELDS, editorial_keys
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 
 def is_present(value):
@@ -149,11 +149,11 @@ def validate_metadata(source_folder, stories_folder):
     field_issue_counts = Counter()
 
     for filename in json_files:
-        with open(join(source_folder, filename), "r", encoding="utf-8") as f:
+        with open(join(source_folder, filename), encoding="utf-8") as f:
             item = load(f)
         story_path = join(stories_folder, filename)
         try:
-            with open(story_path, "r", encoding="utf-8") as f:
+            with open(story_path, encoding="utf-8") as f:
                 story = load(f)
         except FileNotFoundError:
             files_with_issues.append(

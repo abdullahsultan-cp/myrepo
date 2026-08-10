@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
     "pipeline"))
-from pipeline import BlogsPipeline  # noqa: E402
+from pipeline import BlogsPipeline
 
 if __name__ == "__main__":
     p = BlogsPipeline()

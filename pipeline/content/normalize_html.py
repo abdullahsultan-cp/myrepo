@@ -1,25 +1,26 @@
-import os
-import sys
+import os as _os
+import re
+import sys as _sys
 from collections import Counter
 from copy import deepcopy
 from html import unescape
 from json import dump, load
 from os import listdir, makedirs
-from os.path import abspath, dirname, join
-import re
+from os.path import join
 
-from bs4 import BeautifulSoup, Comment, NavigableString, Tag
+from bs4 import BeautifulSoup, NavigableString, Tag
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from storyblok_embeds import embed_placeholder_tag, detect_embed_type
-from fields import F  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_embeds import detect_embed_type, embed_placeholder_tag
 
 PRESENTATION_ATTRS = {
     "class",
@@ -54,7 +55,7 @@ def tag_attr(tag, key, default=None):
 
 
 def load_news_data(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         return load(f)
 
 

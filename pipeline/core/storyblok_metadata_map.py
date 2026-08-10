@@ -1,7 +1,11 @@
 """SharePoint news field → Storyblok story mapping registry."""
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import _bootstrap
+
+_bootstrap.ensure()
 
 EDITORIAL_PREFIXES = ("odata.", "@odata.")
 

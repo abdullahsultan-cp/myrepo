@@ -1,21 +1,23 @@
-import os
-import sys
-from json import dumps, load, dump
-from os.path import abspath, dirname, join
-from os import makedirs
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
+import os as _os
+import sys as _sys
+from json import dump, dumps, load
+from os import makedirs
+from os.path import join
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from fields import F  # noqa: E402
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
+from paths_root import P
 
 
 def load_news_data(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         return load(f)
 
 

@@ -25,7 +25,6 @@ import sys
 from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paths import BASE  # noqa: E402
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
@@ -46,8 +45,11 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 ASSET_MAP = os.path.join(P.MIGRATE, "asset_map.csv")
 OUT = os.path.join(os.path.join(P.ASSETS, P.spec["assets"]), "Metadata.csv")
@@ -111,7 +113,7 @@ def main():
 
     out_rows = []
     for sid in sorted(rows, key=lambda x: int(x) if x.isdigit() else 0):
-        row = {c: "" for c in COLUMNS}
+        row = dict.fromkeys(COLUMNS, "")
         row["Id"] = sid
         row["Title"] = titles.get(sid, "")
         row.update(rows[sid])

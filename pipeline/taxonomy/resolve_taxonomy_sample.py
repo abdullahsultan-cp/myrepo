@@ -42,7 +42,7 @@ import os
 import random
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 SAMPLE_SIZE = 200
 SAMPLE_SEED = 42

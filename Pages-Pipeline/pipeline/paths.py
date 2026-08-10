@@ -82,7 +82,9 @@ def taxonomy_seed():
     # paths_root lives in pipeline/core/ since the split; _bootstrap puts every
     # pipeline folder on sys.path so this does not have to track where.
     sys.path.insert(0, os.path.join(ROOT, "pipeline"))
-    import _bootstrap  # noqa: F401
+    import _bootstrap
+    _bootstrap.ensure()
+
     from paths_root import P
     P.use("news")
     return os.path.join(P.SEED, "regions_entities_departments.json")

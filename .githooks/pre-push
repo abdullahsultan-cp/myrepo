@@ -1,0 +1,36 @@
+#!/bin/sh
+# Strict gate. Install with:  python pipeline/install_hooks.py
+#
+# Refuses the push when something outside your content type's folder changed
+# without you saying so. Set AKU_CONTENT_TYPE, or the check cannot know which
+# folder is yours.
+#
+# Deliberate shared change? Say so once:
+#     AKU_ALLOW_SHARED=1 git push
+
+set -e
+TYPE="${AKU_CONTENT_TYPE:-}"
+if [ -z "$TYPE" ]; then
+  echo "pre-push: AKU_CONTENT_TYPE is not set."
+  echo "          export AKU_CONTENT_TYPE=blogs   (or events, news, pages)"
+  exit 1
+fi
+
+PY="${AKU_PYTHON:-python}"
+
+if [ -n "$AKU_ALLOW_SHARED" ]; then
+  "$PY" pipeline/check_before_push.py --type "$TYPE" || true
+else
+  "$PY" pipeline/check_before_push.py --type "$TYPE" --strict || {
+    echo ""
+    echo "pre-push: blocked. Either move the change into your own folder"
+    echo "          (CONTRIBUTING.md section 3), or push again with:"
+    echo "              AKU_ALLOW_SHARED=1 git push"
+    exit 1
+  }
+fi
+
+"$PY" -m pytest tests/ -q || {
+  echo "pre-push: tests failed."
+  exit 1
+}

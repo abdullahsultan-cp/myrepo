@@ -1,19 +1,25 @@
-from json import dump, load
-from os.path import abspath, dirname, join
 import mimetypes
-import sys
+from json import dump, load
+from os.path import abspath, dirname
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import os as _o
+import sys as _s
+
+import _bootstrap
+
+_bootstrap.ensure()
+
 from storyblok_config import load_config
 from storyblok_utils import absolute_sharepoint_url
 
-import sys as _s, os as _o
 _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 try:
     import requests
@@ -22,7 +28,7 @@ except ImportError:
 
 
 def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return load(f)
 
 

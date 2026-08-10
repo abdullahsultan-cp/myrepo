@@ -43,7 +43,7 @@ import sys
 from collections import Counter, defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from resolve_taxonomy import DEPARTMENTS            # their vocabulary, reused
+from resolve_taxonomy import DEPARTMENTS  # their vocabulary, reused
 
 # Canonical entries in that vocabulary that are actually ENTITIES, so they must
 # never become a department. "Office of the President" is an entity with its own
@@ -245,7 +245,7 @@ def main(indir, outdir):
     print(f"  tags BLOCKED (entity, not dept): {len(blocked)}")
     for lab, canon in sorted(blocked.items(), key=lambda x: -all_tags[x[0]]):
         print(f"      {all_tags[lab]:>4}  {lab}  (would have become {canon})")
-    print(f"  sub_department           : 0  (no second level exists in Tags)")
+    print("  sub_department           : 0  (no second level exists in Tags)")
 
 
 if __name__ == "__main__":

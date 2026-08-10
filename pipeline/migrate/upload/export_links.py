@@ -23,9 +23,6 @@ import csv
 import os
 import sys
 
-
-import json
-
 # paths puts scripts/migrate/ and scripts/ on sys.path, so it comes first.
 # Walk up to the pipeline/ root rather than counting dirname() calls: the
 # scripts using this sit at two different depths (migrate/ and
@@ -44,16 +41,17 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
 
-import db as tracking  # noqa: E402
-from storyblok_config import load_config  # noqa: E402
+_bootstrap.ensure()
+import db as tracking
+
+from storyblok_config import load_config
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 SHAREPOINT_BASE = "https://www.aku.edu"
 EDITOR = "https://app.storyblok.com/#/me/spaces/{space}/stories/0/0/{story}"

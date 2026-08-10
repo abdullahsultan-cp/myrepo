@@ -42,13 +42,16 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+from paths import BASE
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
+
 STORIES = P.STORIES
 RAW = P.RAW
 ROUTING = os.path.join(P.TAXONOMY, "routing", "news_routing.csv")
@@ -180,6 +183,7 @@ def main():
     try:
         # db lives beside this file; storyblok_config one level up in scripts/
         import db as tracking
+
         from storyblok_config import load_config
         space = load_config().get("space_id") or ""
         with tracking.connect() as c:
@@ -329,7 +333,10 @@ def main():
                 url_by_srckey[m.get("filename") or ""] = "https://www.aku.edu" + \
                     re.sub(r" ", "%20", sk)
 
-        def live_url(m):
+        # Bound at definition, not captured. This is defined inside the loop
+        # and is correct today only because it is called in the same iteration;
+        # move one line and it would quietly read the next story's maps.
+        def live_url(m, url_by_file=url_by_file, url_by_srckey=url_by_srckey):
             fn = m.get("filename") or m.get("local_filename") or ""
             return url_by_file.get(fn) or url_by_srckey.get(fn) or ""
 

@@ -43,15 +43,16 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
 
-import db as tracking  # noqa: E402
+_bootstrap.ensure()
+import db as tracking
+from paths import BASE
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 OUT_DIR = os.path.join(P.MIGRATE, "reports")
 PAGE = "https://www.aku.edu/news/Pages/news_details.aspx?nid={nid}"

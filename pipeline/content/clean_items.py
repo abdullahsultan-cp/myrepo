@@ -1,20 +1,22 @@
-import os
-import sys
-from json import dump, load
-from os import listdir, makedirs
-from os.path import abspath, dirname, join
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
+import os as _os
+import sys as _sys
+from json import dump, load
+from os import listdir, makedirs
+from os.path import join
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 
 def load_replacement_map(report_path):
-    with open(report_path, "r", encoding="utf-8") as f:
+    with open(report_path, encoding="utf-8") as f:
         report = load(f)
 
     replacements = {}
@@ -92,7 +94,7 @@ def clean_news_files(source_folder, output_folder, replacements):
 
     for filename in json_files:
         source_path = join(source_folder, filename)
-        with open(source_path, "r", encoding="utf-8") as f:
+        with open(source_path, encoding="utf-8") as f:
             news_item = load(f)
 
         before_counts = count_replacements_in_object(news_item, replacements)

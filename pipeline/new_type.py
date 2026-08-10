@@ -21,10 +21,9 @@ import argparse
 import json
 import os
 import sys
-from collections import Counter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from paths_root import P, ROOT, TYPES, TYPES_DIR  # noqa: E402
+from paths_root import ROOT, TYPES, TYPES_DIR, P
 
 TEMPLATE = os.path.join(TYPES_DIR, "_TEMPLATE.json")
 
@@ -108,10 +107,10 @@ python pipeline/migrate/upload/run_migration.py --type {name}
 
     print(f"  created  config/types/{name}.json")
     print(f"  created  {prof['folder']}/  (data, assets, backup, README)")
-    print(f"\n  Next:")
+    print("\n  Next:")
     print(f"    1. put the export at {prof['folder']}/data/{prof['source']}")
     print(f"    2. python pipeline/new_type.py {name} --check")
-    print(f"    3. confirm storyblok.component against the live space")
+    print("    3. confirm storyblok.component against the live space")
     return 0
 
 
@@ -128,7 +127,7 @@ def check(name):
     src = P.SOURCE_JSON
     if not os.path.exists(src):
         print(f"  no export at {os.path.relpath(src, ROOT)}")
-        print(f"  Nothing can be checked until it is there.")
+        print("  Nothing can be checked until it is there.")
         return 1
     with open(src, encoding="utf-8") as f:
         data = json.load(f)
@@ -156,7 +155,7 @@ def check(name):
 
     if bad:
         print(f"\n  {len(bad)} field(s) name a column the export does not have.")
-        print(f"  These yield EMPTY values silently -- nothing errors.")
+        print("  These yield EMPTY values silently -- nothing errors.")
         for key, cols in bad:
             near = [c for c in sorted(present)
                     if any(w and w.lower() in c.lower()
@@ -166,7 +165,7 @@ def check(name):
                 print(f"        maybe: {near}")
         print(f"\n  Fix them in config/types/{name}.json")
     else:
-        print(f"\n  every field maps to a real column")
+        print("\n  every field maps to a real column")
 
     body_col = fields.get("body")
     if body_col in present:
@@ -195,9 +194,9 @@ def check(name):
         print(f"    prefix      {su['prefix']:<22} {pre_hits:,} link(s) match")
         if not hits and not pre_hits:
             bad.append(("source_urls", [su["detail_page"], su["prefix"]]))
-            print(f"    NOTHING MATCHES. Internal cross-links will not resolve and")
-            print(f"    will be left pointing at aku.edu. Open a body field, find a")
-            print(f"    real internal link, and set these from it.")
+            print("    NOTHING MATCHES. Internal cross-links will not resolve and")
+            print("    will be left pointing at aku.edu. Open a body field, find a")
+            print("    real internal link, and set these from it.")
 
     print(f"\n  hierarchy leaf : {P.leaf}   (where it lands in Storyblok)")
     print(f"  source prefix  : {su['prefix']}   (where it came from on aku.edu)")
@@ -214,7 +213,7 @@ def listing():
         P.use(t)
         has = "present" if os.path.exists(P.SOURCE_JSON) else "MISSING"
         print(f"  {t:<10}{P.spec['folder']:<20}{P.leaf:<9}{P.component:<15}{has}")
-    print(f"\n  profiles live in config/types/; _TEMPLATE.json is the boilerplate")
+    print("\n  profiles live in config/types/; _TEMPLATE.json is the boilerplate")
     return 0
 
 

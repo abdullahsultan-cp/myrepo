@@ -1,29 +1,30 @@
-import os
+import os as _os
+import sys as _sys
 from copy import deepcopy
 from json import dump, load
 from os import listdir, makedirs
 from os.path import abspath, dirname, join
-from urllib.parse import unquote
-import sys
-import os as _os, sys as _sys  # noqa: E402
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from fields import F  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
 from build_link_map import normalize_href
-from storyblok_config import load_config
-from storyblok_utils import absolute_sharepoint_url
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_config import load_config
+from storyblok_utils import absolute_sharepoint_url
 
 
 def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return load(f)
 
 
@@ -150,7 +151,7 @@ def enhance_news_files(source_folder, output_folder, link_map_path, asset_map_pa
     warning_categories = {}
 
     for filename in json_files:
-        with open(join(source_folder, filename), "r", encoding="utf-8") as f:
+        with open(join(source_folder, filename), encoding="utf-8") as f:
             item = load(f)
         enhanced, warnings = enhance_news_item(item, url_lookup, asset_map, config)
         if warnings:

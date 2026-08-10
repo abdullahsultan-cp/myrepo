@@ -1,22 +1,26 @@
 """Shared helpers for cataloging and downloading rich-text media references."""
 
-from hashlib import sha1
+import os as _os
 import re
+import sys as _sys
+from hashlib import sha1
 from os import listdir
 from os.path import basename, isdir, isfile, join, splitext
 from urllib.parse import unquote, urlparse
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from storyblok_config import load_config
-from storyblok_utils import absolute_sharepoint_url, generate_uid
+import os as _os
+import sys as _sys
+
+import _bootstrap
+
+_bootstrap.ensure()
 from validate_media import classify_extension
 
-import os as _os, sys as _sys
-from fields import F  # noqa: E402
-
-from paths_root import P  # noqa: E402
+from fields import F
+from paths_root import P
+from storyblok_config import load_config
+from storyblok_utils import absolute_sharepoint_url, generate_uid
 
 # Both were hardcoded to news. The public prefix is what a rich-text link is
 # rewritten to; the directory is where the file actually sits on disk.
@@ -158,7 +162,7 @@ def load_existing_map(map_path):
         return {}
     from json import load
 
-    with open(map_path, "r", encoding="utf-8") as handle:
+    with open(map_path, encoding="utf-8") as handle:
         payload = load(handle)
 
     existing = {}
@@ -324,7 +328,7 @@ def build_catalog(stories_dir, normalized_dir, media_dir, map_path=None, config=
         for filename in sorted(listdir(stories_dir)):
             if not filename.endswith(".json"):
                 continue
-            with open(join(stories_dir, filename), "r",
+            with open(join(stories_dir, filename),
                       encoding="utf-8") as handle:
                 story = load(handle)
             raw_refs.extend(collect_story_references(story, filename))
@@ -334,7 +338,7 @@ def build_catalog(stories_dir, normalized_dir, media_dir, map_path=None, config=
             if not filename.endswith(".json"):
                 continue
             story_id = filename[:-5]
-            with open(join(normalized_dir, filename), "r",
+            with open(join(normalized_dir, filename),
                       encoding="utf-8") as handle:
                 item = load(handle)
             html_refs = extract_html_references(F.get(item, "body"), story_id)
@@ -395,7 +399,7 @@ def load_download_failures(download_report_path):
         return {}
     from json import load
 
-    with open(download_report_path, "r", encoding="utf-8") as handle:
+    with open(download_report_path, encoding="utf-8") as handle:
         payload = load(handle)
 
     failures = {}
@@ -696,7 +700,7 @@ def load_attachable_assets(map_path, media_dir):
     from json import load
 
     if isfile(map_path):
-        with open(map_path, "r", encoding="utf-8") as handle:
+        with open(map_path, encoding="utf-8") as handle:
             payload = load(handle)
         assets = payload.get("assets") or []
     else:
@@ -742,7 +746,7 @@ def attach_richtext_media_to_stories(
         if not filename.endswith(".json"):
             continue
         story_path = join(stories_dir, filename)
-        with open(story_path, "r", encoding="utf-8") as handle:
+        with open(story_path, encoding="utf-8") as handle:
             story = load(handle)
 
         before_media_count = len((story.get("content") or {}).get("media") or [])

@@ -31,7 +31,9 @@ network; stage 3 does, and says so before it writes.
 | **run any stage** — every command, in order | [docs/HOW_TO_RUN.md](docs/HOW_TO_RUN.md) |
 | **set up a fresh clone** — what is needed, where each piece comes from | [docs/REQUIRED_FILES.md](docs/REQUIRED_FILES.md) |
 | **add a content type** — blogs, events, anything else | [Adding a content type](#adding-a-content-type) |
+| **understand the design** — how it fits together, and why | [ARCHITECTURE.md](ARCHITECTURE.md) |
 | **work alongside someone else** — who owns what, avoiding conflicts | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| **write code here** — the rules, and what each one cost | [CODING_STANDARDS.md](CODING_STANDARDS.md) |
 
 ---
 

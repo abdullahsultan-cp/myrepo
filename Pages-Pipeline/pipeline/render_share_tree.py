@@ -18,12 +18,15 @@ is labelled with a central department that does not, in fact, manage it.
 
 Output  Pages-Pipeline/AKU-Tree.html
 """
-import io, os, json, html, collections
+import collections
+import html
+import json
+import os
+
 import paths
 
-
 OUT = paths.out('AKU-Tree.html')
-plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
 F, P = plan['folders'], plan['pages']
 e = html.escape
 
@@ -233,7 +236,7 @@ legend = ''.join(
 
 TOTAL_PAGES = sum(1 for p in P if not p.get('do_not_migrate'))
 
-HTML = u"""<!doctype html>
+HTML = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AKU → Storyblok · the complete folder and page tree</title>
@@ -541,7 +544,7 @@ HTML = (HTML.replace('__TREE__', ''.join(out))
             .replace('__ENTITIES__', str(kind_counts.get('entity', 0)))
             .replace('__DEPTS__', str(kind_counts.get('department', 0))))
 
-io.open(OUT, 'w', encoding='utf-8').write(HTML)
+open(OUT, 'w', encoding='utf-8').write(HTML)
 print('wrote %s  %.1f MB' % (os.path.basename(OUT), os.path.getsize(OUT) / 1e6))
 print('  %s folders  %s pages  %d regions  %d entities  %d departments'
       % (format(len(F), ','), format(TOTAL_PAGES, ','),

@@ -36,9 +36,12 @@ import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import _bootstrap  # noqa: F401,E402
-from paths_root import P, TYPES, ROOT  # noqa: E402
-from fields import F  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
+from paths_root import ROOT, TYPES, P
 
 
 class ContentPipeline:
@@ -75,31 +78,44 @@ class ContentPipeline:
 
     # -------------------------------------------------------------- the steps
     def all_steps(self):
-        """The full ordered step list. Defined once, in run_pipeline."""
-        from run_pipeline import PIPELINE_STEPS
-        return list(PIPELINE_STEPS)
+        """Every shared step, before this type skips or adds anything."""
+        import steps as steps_module
+        return steps_module.for_type_unfiltered()
 
     def skip_steps(self):
         """Step names this type does not need.
 
+        Prefer declaring these as `skip_steps` in the profile -- JSON keeps the
+        decision beside the rest of the type's configuration and out of code.
+        Override here only when the answer depends on something you have to
+        compute.
+
         Blogs, for instance, carry their media inline -- the Banner column names
         the file -- so the resolve-and-download stages have nothing to do.
-        Returning them here is honest; silently running a no-op is not.
+        Saying so is honest; silently running a no-op is not.
         """
-        return set()
+        return set(P.spec.get("skip_steps") or [])
 
     def extra_steps(self):
-        """Steps this type needs that the base does not have.
+        """Steps only this type has.
 
-        Each entry has the same shape as one in PIPELINE_STEPS, and `script` may
-        name a file in this type's own pipeline folder.
+        Prefer `extra_steps` in the profile, where an entry may say
+        `"after": "<step>"` to place itself. `script` may name a file in this
+        type's own pipeline folder.
         """
         return []
 
     def steps(self):
-        """The steps this type actually runs, in order."""
-        skip = self.skip_steps()
-        out = [s for s in self.all_steps() if s["name"] not in skip]
+        """The steps this type actually runs, in order.
+
+        The profile is applied by steps.for_type(); the class hooks are applied
+        on top, so a subclass can still decide something JSON cannot express.
+        """
+        import steps as steps_module
+        out = steps_module.for_type(self.type)
+        skip = self.skip_steps() - set(P.spec.get("skip_steps") or [])
+        if skip:
+            out = [s for s in out if s["name"] not in skip]
         out.extend(self.extra_steps())
         return out
 

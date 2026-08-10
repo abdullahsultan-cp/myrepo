@@ -51,15 +51,16 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
 
-from storyblok_config import load_config, management_api_base  # noqa: E402
+_bootstrap.ensure()
+
+from storyblok_config import load_config, management_api_base
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 SEED = os.path.join(P.TAXONOMY, "seed", "folders.json")
 OUT = os.path.join(P.MIGRATE, "folder_verification.csv")
@@ -179,7 +180,7 @@ def main():
         by_level = {}
         for slug, f in missing:
             by_level.setdefault(f["level"], []).append((slug, f))
-        print(f"\n  MISSING, by level — stories routed here cannot be created:")
+        print("\n  MISSING, by level — stories routed here cannot be created:")
         for lvl in ("root", "region", "entities-root", "entity",
                     "departments-root", "department", "news"):
             sel = by_level.get(lvl) or []
@@ -194,16 +195,16 @@ def main():
                 print(f"      ... and {len(sel) - 20} more")
 
     if renamed:
-        print(f"\n  NAME differences — slug matches so the upload still works,")
-        print(f"  but the label a reader sees is not what we recorded:")
+        print("\n  NAME differences — slug matches so the upload still works,")
+        print("  but the label a reader sees is not what we recorded:")
         for target, ours_name, theirs in renamed[:25]:
             print(f"    {target}")
             print(f"        ours   {ours_name!r}")
             print(f"        live   {theirs!r}")
 
     if extra:
-        print(f"\n  EXTRA — in the space but not in our tree. Harmless unless a")
-        print(f"  story was meant to go here:")
+        print("\n  EXTRA — in the space but not in our tree. Harmless unless a")
+        print("  story was meant to go here:")
         for s in extra[:25]:
             print(f"    {s}")
         if len(extra) > 25:

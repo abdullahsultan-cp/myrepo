@@ -1,6 +1,5 @@
 """Inject Metadata.csv media as news_media bloks into storyblok_stories."""
 
-import sys
 from collections import Counter
 from csv import DictReader
 from json import dump, load
@@ -9,18 +8,21 @@ from os.path import abspath, dirname, isfile, join
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from storyblok_utils import generate_uid
+import _bootstrap
+
+_bootstrap.ensure()
 from validate_media import (
     DOWNLOAD_FAILED,
-    MEDIA_COLUMNS,
     classify_extension,
     normalize_cell,
 )
 
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_utils import generate_uid
 
 # Must agree with richtext_media_utils.MEDIA_PUBLIC_PREFIX -- the two write
 # into the same rich text, so a mismatch splits one story's media across two
@@ -133,7 +135,7 @@ def inject_media_into_stories(stories_dir, metadata_path):
         story_path = join(stories_dir, story_filename)
         sharepoint_id = story_filename[:-5]
 
-        with open(story_path, "r", encoding="utf-8") as handle:
+        with open(story_path, encoding="utf-8") as handle:
             story = load(handle)
 
         metadata_row = metadata_by_id.get(sharepoint_id)

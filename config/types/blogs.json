@@ -271,5 +271,18 @@
       "key": "sharepoint_modified",
       "column": "Modified"
     }
+  ],
+  "_skip_steps_comment": [
+    "Steps blogs does not need. News had to read all 3,606 live pages to work",
+    "out which file was a story's banner, because the export renamed",
+    "everything. Blogs name the file directly in the Banner column and all 70",
+    "are already on disk, so these two have nothing to work out.",
+    "",
+    "NOT skipped: the 37 inline body images are still SharePoint paths and do",
+    "need fetching, so the richtext-media steps stay."
+  ],
+  "skip_steps": [
+    "validate-media",
+    "map-storyblok-media"
   ]
 }

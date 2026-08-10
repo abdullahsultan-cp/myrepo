@@ -8,19 +8,21 @@ if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 # The steps live in pipeline/{core,content,media,analyze}/ now; _bootstrap puts
 # each on sys.path so a test can import a step by its module name as before.
-import _bootstrap  # noqa: F401,E402
+import _bootstrap
 
+_bootstrap.ensure()
 from convert_richtext import convert_item
 from normalize_html import normalize_content_html
-from storyblok_richtext import html_to_storyblok_richtext, validate_document
 
 # The data lives per content type now; the shared module knows where.
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_richtext import html_to_storyblok_richtext, validate_document
+
 DATA_DIR = P.DATA
 
 
 def load_fixture(name):
-    with open(join(P.CLEANED, name), "r",
+    with open(join(P.CLEANED, name),
               encoding="utf-8") as f:
         return json.load(f)
 

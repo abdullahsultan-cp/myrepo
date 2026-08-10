@@ -9,3 +9,8 @@ psycopg[binary]>=3.1
 
 # Tests
 pytest>=8.0
+
+# --- development only --------------------------------------------------------
+# Style is mechanical so nobody argues about it; see CODING_STANDARDS.md §9 and
+# ruff.toml. CI runs `ruff check .` and `ruff format --check .` on every PR.
+ruff>=0.6

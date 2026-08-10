@@ -36,7 +36,6 @@ import sys
 import time
 from urllib.parse import unquote
 
-
 try:
     import requests
 except ImportError:
@@ -61,17 +60,19 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE, MEDIA_DIR  # noqa: E402
+import _bootstrap
 
-import db as tracking  # noqa: E402
-from build_payload import build, load_story, slugify  # noqa: E402
-from storyblok_config import load_config, management_api_base  # noqa: E402
+_bootstrap.ensure()
+import db as tracking
+from build_payload import build, load_story, slugify
+from paths import MEDIA_DIR
+
+from storyblok_config import load_config, management_api_base
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 THROTTLE = 0.35          # seconds between write calls; starter plan is modest
 
@@ -377,7 +378,7 @@ def cmd_assets(sb, args, run_id):
         # 'uploaded'.
         try:
             obj, err = upload_asset(sb, path, fn, asset_folder_id=afid)
-        except Exception as e:                       # noqa: BLE001
+        except Exception as e:
             obj, err = None, f"{type(e).__name__}: {e}"[:400]
         with tracking.connect() as c:
             c.execute("SET search_path TO migration, public")
@@ -657,7 +658,6 @@ def cmd_verify(sb, args, run_id):
             issues.append("not published")
         print(f"  {'!!' if issues else 'ok'} {sid} {slug}  {nb} bloks "
               f"{comps}  {'; '.join(issues)}")
-        (bad if issues else good).__class__  # noqa
         if issues:
             bad += 1
         else:

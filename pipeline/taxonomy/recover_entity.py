@@ -34,7 +34,7 @@ import json
 import os
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 # ---------------------------------------------------------------- aliases
 # canonical entity -> exact alias strings (matched case-insensitively, whole
@@ -246,19 +246,19 @@ def main(indir, outdir):
     print(f"  entity RECOVERED       : {len(rows)}  "
           f"({100*len(rows)//max(total_noowner,1)}%)")
     print(f"  still no entity        : {len(still)}")
-    print(f"\n  by rule (in priority order):")
+    print("\n  by rule (in priority order):")
     for k in ("additional-entity", "additional-entity-first-of-many",
               "tag-exact", "tag-exact-ambiguous", "prose-name",
               "prose-name-ambiguous"):
         if by_rule.get(k):
             print(f"    {by_rule[k]:>5}  {k}")
-    print(f"\n  AdditionalEntity shape:")
+    print("\n  AdditionalEntity shape:")
     for k, v in sorted(addl_shape.items()):
         print(f"    {v:>5}  {k} real reference(s)")
-    print(f"\n  LocalApproverGroup on these items:")
+    print("\n  LocalApproverGroup on these items:")
     for k, v in approver_check.most_common(5):
         print(f"    {v:>5}  {k}")
-    print(f"\n  recovered entities:")
+    print("\n  recovered entities:")
     for k, v in by_entity.most_common():
         print(f"    {v:>5}  {k}")
 

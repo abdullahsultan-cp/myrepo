@@ -11,25 +11,15 @@ import sys
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
     "pipeline"))
-from base import ContentPipeline  # noqa: E402
+from base import ContentPipeline
 
 
 class BlogsPipeline(ContentPipeline):
     type = "blogs"
 
-    def skip_steps(self):
-        """Blogs need no media resolution or download.
-
-        News had to read all 3,606 live pages to work out which file was a
-        story's banner, because the export renamed everything. Blogs name the
-        file directly in the `Banner` column and all 70 are already on disk, so
-        these steps would do nothing but take time and hit a site that is being
-        switched off.
-
-        NOT skipped: the 37 inline body images are still SharePoint paths and do
-        need fetching -- catalog/download/verify/attach-richtext-media stay.
-        """
-        return {"validate-media", "map-storyblok-media"}
+    # skip_steps lives in config/types/blogs.json, not here: it is a fact about
+    # the blogs export rather than something that has to be computed, and JSON
+    # keeps it beside the rest of the type's configuration.
 
     # TODO once the layout is signed off:
     #

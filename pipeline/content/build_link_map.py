@@ -1,21 +1,22 @@
-import os
-import sys
+import os as _os
+import re
+import sys as _sys
 from json import dump, load
 from os import listdir
-from os.path import abspath, dirname, join
+from os.path import join
 from urllib.parse import parse_qs, unquote, urlparse
-import re
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from fields import F  # noqa: E402
-from storyblok_utils import normalize_sequence_number, slugify, story_uuid
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_utils import normalize_sequence_number, slugify, story_uuid
 
 # The SharePoint side of the link: the detail page internal links point at,
 # and the id shape inside them (news_details.aspx?nid=NEWS-1234). Both are
@@ -32,7 +33,7 @@ def load_news_items(folder_path):
             continue
         # encoding is explicit: on Windows the default is cp1252, which raises
         # on the first accented name in the corpus.
-        with open(join(folder_path, filename), "r", encoding="utf-8") as f:
+        with open(join(folder_path, filename), encoding="utf-8") as f:
             item = load(f)
         items[filename] = item
     return items

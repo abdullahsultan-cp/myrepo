@@ -1,30 +1,31 @@
-import os
-from copy import deepcopy
+import os as _os
+import sys as _sys
 from json import dump, load
 from os import listdir, makedirs
 from os.path import abspath, dirname, join
-import sys
-import os as _os, sys as _sys  # noqa: E402
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from fields import F  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
 from normalize_html import normalize_content_html
+
+# Paths come from the shared module, so this works for any
+# content type; see pipeline/paths_root.py.
+from paths_root import P
 from storyblok_config import load_config
 from storyblok_embeds import pull_quote_to_blok_or_richtext
 from storyblok_richtext import html_to_storyblok_richtext
 from storyblok_utils import slugify, story_uuid
 
-# Paths come from the shared module, so this works for any
-# content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
-
 
 def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return load(f)
 
 
@@ -213,7 +214,6 @@ def build_story_payload(item, config, used_slugs=None):
     # order, so the declaration preserves the order this code had.
     DECODERS = {
         "taxonomy": lookup_taxonomy,
-        "tags_text": split_tags,
         "ref": lookup_ref,
         "tags": lookup_tags,
         "tags_text": split_tags,
@@ -299,7 +299,7 @@ def build_story_files(source_folder, output_folder, config):
     used_slugs = set()
 
     for filename in json_files:
-        with open(join(source_folder, filename), "r", encoding="utf-8") as f:
+        with open(join(source_folder, filename), encoding="utf-8") as f:
             item = load(f)
         sharepoint_id = F.get(item, "id") or item.get("Id") or item.get("ID")
         base_slug = slugify(F.get(item, "title") or f"{P.leaf.title()} {sharepoint_id}",

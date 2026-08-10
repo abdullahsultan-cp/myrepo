@@ -42,7 +42,11 @@ Outputs (Pages-Pipeline/)
   aku-user-roles.csv         one row per person: what they hold -> what to give
   roles.json                 the same, for the portal
 """
-import csv, io, os, re, json, collections
+import collections
+import csv
+import json
+import re
+
 import paths
 
 SRC = paths.PERMISSIONS_CSV
@@ -50,8 +54,8 @@ ZW = str.maketrans('', '', '​﻿­')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\(.+)$')
 ROOT_DUMP = 30          # a folder listing more groups than this names no owner
 
-plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
-groups = json.load(io.open(paths.work('groups.json'), encoding='utf-8'))
+plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
+groups = json.load(open(paths.work('groups.json'), encoding='utf-8'))
 GKIND = {g['group']: g['kind'] for g in groups}
 GUNIT = {g['group']: g['unit'] for g in groups}
 GPEOPLE = {g['group']: g['people'] for g in groups}
@@ -480,7 +484,7 @@ for rs, n in str_counts.most_common():
 # ---- per person: what they hold today -> what to give them -------------
 people = {}
 rows = []
-with io.open(SRC, encoding='utf-8-sig', newline='') as f:
+with open(SRC, encoding='utf-8-sig', newline='') as f:
     for row in csv.DictReader(f):
         if row['Site Collection'] != 'http://aku.edu':
             continue
@@ -732,7 +736,7 @@ user_rows.sort(key=lambda r: (RANK.get(r['top_capability'], 0) * -1,
 
 # ---- write ---------------------------------------------------------------
 def write_csv(name, rows, cols):
-    with io.open(paths.out(name), 'w', encoding='utf-8-sig', newline='') as f:
+    with open(paths.out(name), 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction='ignore')
         w.writeheader()
         w.writerows(rows)
@@ -762,7 +766,7 @@ write_csv('aku-user-roles.csv', user_rows, USER_COLS)
 json.dump({'roles': role_rows, 'matrix': matrix_rows, 'ladder': LADDER,
            'tiers': TIERS, 'functional': FUNCTIONAL, 'means': CAP_MEANS,
            'old_groups': old_rows, 'old_strings': str_rows, 'users': user_rows},
-          io.open(paths.work('roles.json'), 'w', encoding='utf-8'),
+          open(paths.work('roles.json'), 'w', encoding='utf-8'),
           ensure_ascii=False)
 
 by_tier = collections.Counter(r['tier'] for r in role_rows)

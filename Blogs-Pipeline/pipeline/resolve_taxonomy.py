@@ -27,7 +27,6 @@ front-end developer.
 
 import argparse
 import csv
-import io
 import json
 import os
 import re
@@ -37,9 +36,12 @@ from collections import Counter, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(HERE)), "pipeline"))
-import _bootstrap  # noqa: F401,E402
-from paths_root import P, ROOT  # noqa: E402
-from fields import F  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from fields import F
+from paths_root import ROOT, P
 
 P.use("blogs")
 
@@ -84,7 +86,7 @@ def slug(s):
 
 def load_shortcodes():
     """entity name -> short code, and region name -> short code."""
-    with io.open(SEED, encoding="utf-8") as f:
+    with open(SEED, encoding="utf-8") as f:
         data = json.load(f)
     folders = data.get("folders") or data
     ents, regions = {}, {}
@@ -97,7 +99,7 @@ def load_shortcodes():
 
 
 def load_tree():
-    with io.open(TREE, encoding="utf-8") as f:
+    with open(TREE, encoding="utf-8") as f:
         data = json.load(f)
     folders = data.get("folders") or data
     if isinstance(folders, dict):
@@ -182,7 +184,7 @@ def main():
     out = a.out or os.path.join(P.DATA, "taxonomy")
     os.makedirs(out, exist_ok=True)
 
-    with io.open(P.SOURCE_JSON, encoding="utf-8") as f:
+    with open(P.SOURCE_JSON, encoding="utf-8") as f:
         items = json.load(f)
     by_slug, tree_entities = load_tree()
     ent_short, region_short = load_shortcodes()
@@ -192,7 +194,7 @@ def main():
     for name in ("entities", "categories"):
         path = os.path.join(P.DATA, "source", f"{name}.json")
         if os.path.exists(path):
-            with io.open(path, encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 lookups[name] = json.load(f).get("value", [])
 
     ent_count, cat_count, tag_count, region_count = (Counter() for _ in range(4))
@@ -235,7 +237,7 @@ def main():
 
     def write_csv(name, header, data):
         p = os.path.join(out, name)
-        with io.open(p, "w", encoding="utf-8-sig", newline="") as f:
+        with open(p, "w", encoding="utf-8-sig", newline="") as f:
             w = csv.writer(f)
             w.writerow(header)
             w.writerows(data)
@@ -264,13 +266,13 @@ def main():
         "unresolved": [{"id": i, "entity": e, "reason": r} for i, e, r in unresolved],
         "targets_missing_from_tree": [{"id": i, "target": t} for i, t in missing_target],
     }
-    with io.open(os.path.join(out, "summary.json"), "w", encoding="utf-8", newline="\n") as f:
+    with open(os.path.join(out, "summary.json"), "w", encoding="utf-8", newline="\n") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
     rel = os.path.relpath(out, ROOT)
     print(f"  {len(rows)} blogs -> {rel}")
-    print(f"\n  placement")
+    print("\n  placement")
     for k, n in placements.most_common():
         print(f"    {k:<14}{n}")
     print(f"\n  distinct: {len(ent_count)} entities, {len(cat_count)} categories, "

@@ -30,7 +30,7 @@ import json
 import os
 import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 # ------------------------------------------------------------------ vocab
 # Edit these. Everything downstream is derived, nothing is hardcoded elsewhere.

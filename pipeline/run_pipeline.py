@@ -13,8 +13,12 @@ BASE_PATH = abspath(join(SCRIPTS_DIR, ".."))
 # resolves under News-Pipeline/ or Blogs-Pipeline/ depending on --type, so this
 # orchestrator drives either without a second copy of anything.
 sys.path.insert(0, SCRIPTS_DIR)
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P, TYPES  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+import steps as steps_module
+from paths_root import TYPES, P
 
 # The constants below are module-level, so they are evaluated at import -- long
 # before argparse runs. --type therefore has to be read straight from argv here,
@@ -61,175 +65,12 @@ STORYBLOK_VIEWER_CONSTANTS_PATH = join(BASE_PATH, "storyblok-viewer", "src", "co
 METADATA_CSV_PATH = P.METADATA_CSV
 NEWS_MEDIA_DIR = P.MEDIA_DIR
 
-PIPELINE_STEPS = [
-    {
-        "name": "extract",
-        "script": "extract_items.py",
-        "description": "Split the source export into one file per item",
-        "requires": [],
-        "produces": [NEWS_FOLDER_PATH],
-    },
-    {
-        "name": "analyze-unicode",
-        "script": "analyze_unicode.py",
-        "description": "Inventory every non-ASCII character, for review before cleaning",
-        "requires": [NEWS_FOLDER_PATH],
-        "produces": [UNICODE_REPORT_PATH],
-    },
-    {
-        "name": "clean",
-        "script": "clean_items.py",
-        "description": "Normalise Unicode using the report from analyze-unicode",
-        "requires": [NEWS_FOLDER_PATH, UNICODE_REPORT_PATH],
-        "produces": [CLEANED_NEWS_FOLDER_PATH],
-    },
-    {
-        "name": "analyze-tags",
-        "script": "analyze_tags.py",
-        "description": "Inventory the HTML tags present in the cleaned body field",
-        "requires": [CLEANED_NEWS_FOLDER_PATH],
-        "produces": [NEWSCONTENT_TAGS_REPORT_PATH],
-    },
-    {
-        "name": "normalize-html",
-        "script": "normalize_html.py",
-        "description": "Turn SharePoint editor HTML into semantic HTML",
-        "requires": [CLEANED_NEWS_FOLDER_PATH],
-        "produces": [NORMALIZED_NEWS_FOLDER_PATH, HTML_NORMALIZATION_REPORT_PATH],
-    },
-    {
-        "name": "convert-richtext",
-        "script": "convert_richtext.py",
-        "description": "Convert the normalised body HTML to Storyblok rich text",
-        "requires": [NORMALIZED_NEWS_FOLDER_PATH],
-        "produces": [STORYBLOK_NEWS_FOLDER_PATH, RICHTEXT_CONVERSION_REPORT_PATH],
-    },
-    {
-        "name": "build-link-map",
-        "script": "build_link_map.py",
-        "description": "Build SharePoint URL to Storyblok story lookup map",
-        "requires": [CLEANED_NEWS_FOLDER_PATH],
-        "produces": [STORYBLOK_LINK_MAP_PATH],
-    },
-    {
-        "name": "catalog-assets",
-        "script": "catalog_assets.py",
-        "description": "Catalogue the SharePoint images referenced in item bodies",
-        "requires": [CLEANED_NEWS_FOLDER_PATH, STORYBLOK_NEWS_FOLDER_PATH],
-        "produces": [STORYBLOK_ASSET_CATALOG_PATH, STORYBLOK_ASSET_MAP_PATH],
-    },
-    {
-        "name": "upload-assets",
-        "script": "upload_assets.py",
-        "description": "Upload cataloged assets to Storyblok (requires API credentials)",
-        "requires": [STORYBLOK_ASSET_CATALOG_PATH],
-        "produces": [STORYBLOK_ASSET_CATALOG_PATH, STORYBLOK_ASSET_MAP_PATH],
-    },
-    {
-        "name": "enhance-richtext",
-        "script": "enhance_richtext.py",
-        "description": "Resolve internal story links and asset URLs in rich text JSON",
-        "requires": [
-            STORYBLOK_NEWS_FOLDER_PATH,
-            STORYBLOK_LINK_MAP_PATH,
-            STORYBLOK_ASSET_MAP_PATH,
-        ],
-        "produces": [STORYBLOK_NEWS_ENHANCED_FOLDER_PATH, STORYBLOK_ENHANCE_REPORT_PATH],
-    },
-    {
-        "name": "build-stories",
-        "script": "build_storyblok_stories.py",
-        "description": "Build full Storyblok story payloads including PullQuote handling",
-        "requires": [STORYBLOK_NEWS_ENHANCED_FOLDER_PATH],
-        "produces": [STORYBLOK_STORIES_FOLDER_PATH, STORYBLOK_STORIES_REPORT_PATH],
-    },
-    {
-        "name": "validate-media",
-        "script": "validate_media.py",
-        "description": "Validate Metadata.csv references against the media on disk",
-        "requires": [METADATA_CSV_PATH, NEWS_MEDIA_DIR],
-        "produces": [NEWS_MEDIA_REPORT_PATH],
-    },
-    {
-        "name": "map-storyblok-media",
-        "script": "map_storyblok_media.py",
-        "description": "Map each built story to its media files via Metadata.csv",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH, METADATA_CSV_PATH, NEWS_MEDIA_DIR],
-        "produces": [STORYBLOK_MEDIA_MAP_PATH],
-    },
-    {
-        "name": "inject-story-media",
-        "script": "inject_story_media.py",
-        "description": "Inject Metadata.csv media bloks into storyblok_stories before body",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH, METADATA_CSV_PATH],
-        "produces": [STORYBLOK_MEDIA_INJECT_REPORT_PATH],
-    },
-    {
-        "name": "catalog-richtext-media",
-        "script": "catalog_richtext_media.py",
-        "description": "Catalog PDF/image/media links in rich text missing from assets/News/media",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH, NORMALIZED_NEWS_FOLDER_PATH, NEWS_MEDIA_DIR],
-        "produces": [RICHTEXT_MEDIA_CATALOG_PATH],
-    },
-    {
-        "name": "download-richtext-media",
-        "script": "download_richtext_media.py",
-        "description": "Download missing rich-text media into the type's assets folders/media and update story mappings",
-        "requires": [RICHTEXT_MEDIA_CATALOG_PATH, STORYBLOK_STORIES_FOLDER_PATH, NEWS_MEDIA_DIR],
-        "produces": [
-            RICHTEXT_MEDIA_CATALOG_PATH,
-            RICHTEXT_MEDIA_MAP_PATH,
-            RICHTEXT_MEDIA_DOWNLOAD_REPORT_PATH,
-        ],
-    },
-    {
-        "name": "verify-richtext-media",
-        "script": "verify_richtext_media.py",
-        "description": "Verify rich-text media downloads and report downloaded vs missing assets",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH, NORMALIZED_NEWS_FOLDER_PATH, NEWS_MEDIA_DIR],
-        "produces": [RICHTEXT_MEDIA_VERIFY_REPORT_PATH],
-    },
-    {
-        "name": "attach-richtext-media",
-        "script": "attach_richtext_media.py",
-        "description": "Attach downloaded rich-text media into storyblok_stories body links and media bloks",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH, NEWS_MEDIA_DIR],
-        "produces": [RICHTEXT_MEDIA_ATTACH_REPORT_PATH],
-    },
-    {
-        "name": "classify-story-media",
-        "script": "story_media_classification.py",
-        "description": "Classify stories by thumbnail, GIF, video file, and embedded video media",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH],
-        "produces": [STORY_MEDIA_CLASSIFICATION_REPORT_PATH, STORY_MEDIA_INDEX_PATH],
-    },
-    {
-        "name": "validate-metadata",
-        "script": "validate_storyblok_metadata.py",
-        "description": "Validate SharePoint metadata coverage in storyblok_stories",
-        "requires": [CLEANED_NEWS_FOLDER_PATH, STORYBLOK_STORIES_FOLDER_PATH],
-        "produces": [STORYBLOK_METADATA_REPORT_PATH],
-    },
-    {
-        "name": "extract-viewer-filters",
-        "script": "extract_storyblok_filter_constants.py",
-        "description": "Extract tags, authors, publishers, and content writers for storyblok-viewer filters",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH],
-        "produces": [
-            join(STORYBLOK_VIEWER_CONSTANTS_PATH, "tags", "index.ts"),
-            join(STORYBLOK_VIEWER_CONSTANTS_PATH, "authors", "index.ts"),
-            join(STORYBLOK_VIEWER_CONSTANTS_PATH, "publishers", "index.ts"),
-            join(STORYBLOK_VIEWER_CONSTANTS_PATH, "contentWriters", "index.ts"),
-        ],
-    },
-    {
-        "name": "import-storyblok",
-        "script": "import_storyblok.py",
-        "description": "Import built stories to Storyblok via Management API",
-        "requires": [STORYBLOK_STORIES_FOLDER_PATH],
-        "produces": [STORYBLOK_IMPORT_REPORT_PATH],
-    },
-]
+# The step list is data, in config/steps.json, and a content type adds its own
+# in config/types/<type>.json rather than here. That matters for more than
+# tidiness: this was the one file every type had to edit to add a step, so two
+# people working on two types would both touch it and collide. See
+# pipeline/core/steps.py and CONTRIBUTING.md.
+PIPELINE_STEPS = steps_module.for_type()
 
 
 def json_files_in(folder_path):
@@ -245,7 +86,7 @@ def validate_news_json():
         return errors
 
     try:
-        with open(NEWS_JSON_PATH, "r", encoding="utf-8") as f:
+        with open(NEWS_JSON_PATH, encoding="utf-8") as f:
             data = load(f)
     except OSError as exc:
         errors.append(f"Could not read {NEWS_JSON_PATH}: {exc}")
@@ -293,7 +134,7 @@ def validate_unicode_report():
         return errors
 
     try:
-        with open(UNICODE_REPORT_PATH, "r", encoding="utf-8") as f:
+        with open(UNICODE_REPORT_PATH, encoding="utf-8") as f:
             report = load(f)
     except OSError as exc:
         errors.append(f"Could not read {UNICODE_REPORT_PATH}: {exc}")
@@ -706,7 +547,7 @@ def steps_for_type():
     try:
         from base import load
         return load(P.type).steps()
-    except Exception as exc:                      # noqa: BLE001
+    except Exception as exc:
         # A broken subclass must not take the whole pipeline down; say so and
         # fall back to the full list rather than silently running the wrong set.
         print(f"note: could not load the {P.type} pipeline class ({exc}); "

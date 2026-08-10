@@ -9,9 +9,12 @@ Group naming is AKU's own convention and carries the meaning: "CW <X>" is the
 content writer for X and "CA <X>" the content approver, so the pair identifies
 both the owning unit and the two-step publish workflow already in use.
 """
-import csv, re, io, json, os, collections
-import paths
+import collections
+import csv
+import json
+import re
 
+import paths
 
 SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
@@ -24,7 +27,7 @@ groups = collections.defaultdict(lambda: {
 web_groups = collections.defaultdict(set)
 role_totals = collections.Counter()
 
-with io.open(SRC, encoding='utf-8-sig', newline='') as f:
+with open(SRC, encoding='utf-8-sig', newline='') as f:
     for row in csv.DictReader(f):
         if row['Site Collection'] != 'http://aku.edu':
             continue
@@ -90,7 +93,7 @@ for g, G in groups.items():
     })
 rows.sort(key=lambda r: (-r['people'], r['group']))
 
-out = io.open(paths.work('roles_probe.txt'), 'w', encoding='utf-8')
+out = open(paths.work('roles_probe.txt'), 'w', encoding='utf-8')
 out.write('%d groups · %d distinct role strings\n' % (len(groups), len(role_totals)))
 
 out.write('\n== every distinct Assigned Roles value ==\n')
@@ -121,10 +124,10 @@ for r in rows[:40]:
                                                 for a, b in r['roles']))
 out.close()
 
-json.dump(rows, io.open(paths.work('groups.json'), 'w', encoding='utf-8'),
+json.dump(rows, open(paths.work('groups.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 json.dump({w: sorted(g) for w, g in web_groups.items()
            if len(g) <= ROOT_DUMP},
-          io.open(paths.work('web_owners.json'), 'w', encoding='utf-8'),
+          open(paths.work('web_owners.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 print('groups', len(groups), 'units with a writer/approver pair', len(units))

@@ -4,12 +4,15 @@ Folders  where each folder goes, and which team manages it
 Pages    every page's current URL and its destination path
 Roles    the Storyblok roles to create, and who belongs in each
 """
-import io, os, json, html, collections
+import collections
+import html
+import json
+import os
+
 import paths
 
-
 OUT = paths.out('AKU-Migration-Plan.html')
-plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 L = plan['live']
 e = html.escape
@@ -190,9 +193,9 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">'
        '<title>AKU migration plan — folders, pages, roles</title>'
        '<style>' + CSS + '</style></head><body>'
        '<header><h1>AKU → Storyblok migration plan</h1>'
-       '<p>' + '{:,}'.format(len(F)) + ' folders · ' + '{:,}'.format(len(P))
+       '<p>' + f'{len(F):,}' + ' folders · ' + f'{len(P):,}'
        + ' pages · ' + str(len(R)) + ' roles to create · '
-       + '{:,}'.format(named) + ' of ' + '{:,}'.format(len(P))
+       + f'{named:,}' + ' of ' + f'{len(P):,}'
        + ' pages have a named managing team · '
        + str(sum(1 for r in P if r['do_not_migrate']))
        + ' pages dropped after checking the live site</p></header>'
@@ -232,7 +235,7 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">'
        + '</tbody></table></div></div>'
 
        '<div class="pane" id="pages">'
-       '<p class="hint">All ' + '{:,}'.format(len(P)) + ' pages from '
+       '<p class="hint">All ' + f'{len(P):,}' + ' pages from '
        '<code>aku-university-visible-pages.csv</code>. Click a URL to open the '
        'live page and check the destination is right.</p>'
        '<div class="tw"><table><thead><tr><th>Today on aku.edu</th><th>Destination path</th>'
@@ -262,7 +265,7 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">'
 
        '</div><script>' + JS + '</script></body></html>\n')
 
-io.open(OUT, 'w', encoding='utf-8').write(doc)
+open(OUT, 'w', encoding='utf-8').write(doc)
 print('%s — %.0f KB' % (os.path.basename(OUT), len(doc.encode('utf-8')) / 1024))
 print('folder kinds:', dict(kinds))
 print('role capabilities:', dict(caps))

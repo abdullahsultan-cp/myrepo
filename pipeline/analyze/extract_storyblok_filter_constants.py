@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from os.path import abspath, dirname, join
 from pathlib import Path
 
@@ -15,10 +14,15 @@ SCRIPTS_DIR = abspath(dirname(__file__))
 # the step failed at the very end of every `all` run. Resolve through
 # paths_root like everything else, and it follows --type as well.
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P, ROOT  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import ROOT, P
 
 # SCRIPTS_DIR is pipeline/analyze/ now, so the repo root is two levels up.
 # Taken from paths_root rather than counting -- see _find_root there.

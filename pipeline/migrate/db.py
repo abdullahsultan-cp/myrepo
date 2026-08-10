@@ -41,8 +41,11 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 try:
     import psycopg

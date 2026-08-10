@@ -1,13 +1,17 @@
+import json
+import os as _os
+import re
+import sys as _sys
 from dataclasses import dataclass, field
 from html import unescape
-import json
-import re
 
 from bs4 import BeautifulSoup, Comment, NavigableString, Tag
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import _bootstrap
+
+_bootstrap.ensure()
+
 from storyblok_config import load_config
 from storyblok_embeds import embed_blok_from_src
 

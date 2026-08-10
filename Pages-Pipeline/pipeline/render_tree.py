@@ -9,12 +9,15 @@ then everything else A-Z -- which is what makes two different entities readable
 side by side. Nothing is re-parented on a guess; a folder whose name is not one
 AKU itself uses is marked "check" instead of being moved somewhere it might belong.
 """
-import io, os, json, html, collections
+import collections
+import html
+import json
+import os
+
 import paths
 
-
 OUT = paths.out('AKU-Structure.html')
-plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 e = html.escape
 
@@ -113,7 +116,7 @@ def node(path, depth=0):
     if tf:
         bits.append('%d folder%s' % (tf, '' if tf == 1 else 's'))
     if tp:
-        bits.append('%s page%s' % ('{:,}'.format(tp), '' if tp == 1 else 's'))
+        bits.append('%s page%s' % (f'{tp:,}', '' if tp == 1 else 's'))
     if not bits:
         bits.append('empty')
     meta = ' · '.join(bits)
@@ -272,7 +275,7 @@ def oc(path, depth=0):
               ('<span class="oct%s">%s</span>'
                % (' c' if central else '',
                   e('Public Affairs' if central else team))),
-              '%s' % ('{:,}'.format(tp) if tp else '—'), toggle))
+              '%s' % (f'{tp:,}' if tp else '—'), toggle))
 
     if not ch:
         return '<li>%s</li>' % box
@@ -683,7 +686,7 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">'
        + ochart + '</div></div>'
        '<script>' + JS + '</script></body></html>\n')
 
-io.open(OUT, 'w', encoding='utf-8').write(doc)
+open(OUT, 'w', encoding='utf-8').write(doc)
 print('%s — %.0f KB' % (os.path.basename(OUT), len(doc.encode('utf-8')) / 1024))
 print('folders %d · pages shown %d · marked check %d'
       % (len(F), sum(len(v) for v in pages_by_folder.values()), n_check))

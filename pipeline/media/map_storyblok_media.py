@@ -1,6 +1,5 @@
 """Map data/storyblok_stories JSON files to assets/News/media via Metadata.csv."""
 
-import sys
 from collections import Counter
 from csv import DictReader
 from json import dump, load
@@ -9,9 +8,16 @@ from os.path import abspath, dirname, isfile, join
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import os as _os
+import sys as _sys
+
+import _bootstrap
+
+_bootstrap.ensure()
 from validate_media import (
     DOWNLOAD_FAILED,
     MEDIA_COLUMNS,
@@ -19,11 +25,8 @@ from validate_media import (
     normalize_cell,
 )
 
-import os as _os
-import sys as _sys
-
-
-from paths_root import P, ROOT as _ROOT  # noqa: E402
+from paths_root import ROOT as _ROOT
+from paths_root import P
 
 # A display path recorded in the report, not one that is opened. Derived from
 # the shared module so a blogs run does not describe its media as living under
@@ -94,7 +97,7 @@ def build_storyblok_media_map(stories_dir, metadata_path, media_dir):
         story_path = join(stories_dir, story_filename)
         file_id = story_filename[:-5]
 
-        with open(story_path, "r", encoding="utf-8") as handle:
+        with open(story_path, encoding="utf-8") as handle:
             story = load(handle)
 
         sharepoint_id = story_sharepoint_id(story)

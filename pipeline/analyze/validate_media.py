@@ -1,17 +1,23 @@
 """Validate Metadata.csv references against assets/News/media and summarize file types."""
 
+import os as _o
+import sys as _s
 from collections import Counter, defaultdict
 from csv import DictReader
 from json import dump
 from os import listdir
-from os.path import abspath, dirname, isfile, join, splitext
+from os.path import isfile, join, splitext
 
-import sys as _s, os as _o
 _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 MEDIA_COLUMNS = (
     "Video1",

@@ -60,13 +60,15 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
+
 STORIES = P.STORIES
 OUT = os.path.join(P.MIGRATE, "media_urls.json")
 
@@ -141,13 +143,13 @@ def scrape(nid, tries=3):
     in the same pass instead of needing another run.
     """
     url = PAGE.format(nid=nid)
-    last = None
+    _last = None
     for attempt in range(tries):
         try:
             r = requests.get(url, headers=UA, timeout=45)
             break
         except (requests.Timeout, requests.ConnectionError) as e:
-            last = e
+            _last = e   # kept: useful when stepping through a retry loop
             if attempt == tries - 1:
                 raise
             time.sleep(1.5 * (attempt + 1))

@@ -47,13 +47,14 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 STORIES = P.STORIES
 MEDIA_DIR = P.MEDIA_DIR
@@ -179,7 +180,7 @@ def main():
         pct = 100 * n / total if total else 0
         print(f"  {s:<18} {n:>5}   {pct:5.1f}%")
 
-    print(f"\n  by kind")
+    print("\n  by kind")
     print(f"    {'kind':<10}{'declared':>10}{'on disk':>9}{'missing':>9}")
     for k in ("image", "gif", "document", "video", "other"):
         sel = [r for r in rows if r["kind"] == k]
@@ -188,7 +189,7 @@ def main():
         ok = sum(1 for r in sel if r["status"] == "ON DISK")
         print(f"    {k:<10}{len(sel):>10}{ok:>9}{len(sel) - ok:>9}")
 
-    print(f"\n  by role")
+    print("\n  by role")
     for role, n in Counter(r["role"] for r in rows).most_common():
         sel = [r for r in rows if r["role"] == role]
         ok = sum(1 for r in sel if r["status"] == "ON DISK")
@@ -199,9 +200,9 @@ def main():
     ex_bytes = sum(on_disk[f] for f in extras)
     print(f"\n  EXTRAS: {len(extras)} files on disk that no story declares "
           f"({ex_bytes / 1e6:.0f} MB)")
-    print(f"    Images the resolver found on a page beyond what the export "
-          f"listed.\n    Harmless: nothing references them, so nothing uploads "
-          f"them.")
+    print("    Images the resolver found on a page beyond what the export "
+          "listed.\n    Harmless: nothing references them, so nothing uploads "
+          "them.")
     for f in extras[:6]:
         print(f"      {f}")
 
@@ -211,7 +212,7 @@ def main():
               f" recoverable:")
         for r in retry[:15]:
             print(f"    {r['filename'][:52]:<52} {r['url'][:60]}")
-        print(f"\n    Fix: python scripts/migrate/download/download_media.py")
+        print("\n    Fix: python scripts/migrate/download/download_media.py")
 
     if a.list_missing:
         print(f"\n  NO URL ({by_status.get('NO URL', 0)}):")

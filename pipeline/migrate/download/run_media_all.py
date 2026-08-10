@@ -29,7 +29,7 @@ import time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from paths import LOCK, MIGRATE  # noqa: E402
+from paths import LOCK, MIGRATE
 
 
 def run(label, script, args):

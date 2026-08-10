@@ -15,9 +15,12 @@ witnesses agree rather than on one clever guess:
 Counts are of *unique-scope* rows only, for the reason given in sections.py:
 inherited rows repeat the AKU-wide groups into every web and witness nothing.
 """
-import csv, re, io, json, os, collections
-import paths
+import collections
+import csv
+import json
+import re
 
+import paths
 
 SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
@@ -57,7 +60,7 @@ webs = collections.defaultdict(lambda: {
 group_names = collections.Counter()
 domain_totals = collections.Counter()
 
-with io.open(SRC, encoding='utf-8-sig', newline='') as f:
+with open(SRC, encoding='utf-8-sig', newline='') as f:
     for row in csv.DictReader(f):
         if row['Site Collection'] != 'http://aku.edu':
             continue
@@ -176,7 +179,7 @@ for r in rows:
     if r['suffix']:
         strong[r['suffix']].add(top)
 
-out = io.open(paths.work('regions_extracted.txt'), 'w', encoding='utf-8')
+out = open(paths.work('regions_extracted.txt'), 'w', encoding='utf-8')
 out.write('REGION EXTRACTION — aku.edu only (%d webs, %d unique-scope groups)\n\n'
           % (len(webs), len(group_names)))
 
@@ -222,7 +225,7 @@ for r in rows:
                   % (r['path'][:38], r['title'][:40], dict(r['path_token'])))
 out.close()
 
-json.dump(rows, io.open(paths.work('region_witnesses.json'), 'w',
+json.dump(rows, open(paths.work('region_witnesses.json'), 'w',
                         encoding='utf-8'), ensure_ascii=False, indent=1)
 print('webs', len(webs), 'regions found', sorted(strong))
 print('witness fire counts', dict(fire))

@@ -449,7 +449,9 @@ died on *printing* a Turkish `ğ`, not on the work.
 
 ## 11a · Two people, two content types
 
-`CONTRIBUTING.md` is the rule set. The short version:
+[`ARCHITECTURE.md`](ARCHITECTURE.md) is the design, [`CONTRIBUTING.md`](CONTRIBUTING.md)
+the ownership rules, [`CODING_STANDARDS.md`](CODING_STANDARDS.md) the coding
+rules. The short version:
 
 **You own `<Your-Type>-Pipeline/` and `config/types/<your-type>.json`.**
 Everything in `pipeline/` is shared and can break the other person's work.
@@ -461,10 +463,18 @@ exactly **one** shared change to run end to end, and it was a real gap in the
 base rather than a blogs quirk.
 
 ```bash
+python pipeline/install_hooks.py --type blogs   # once per clone
 python pipeline/check_before_push.py --type blogs
 ```
 
-reads `git status` and says whether anything you changed is outside your folder.
+The first installs a pre-push gate that **refuses** a push touching someone
+else's folder — `AKU_ALLOW_SHARED=1 git push` when the shared change is
+deliberate. The second is the same check, advisory, any time.
+
+**The step list is data** (`config/steps.json`), and a type adds its own via
+`extra_steps` in its profile. That file used to be a Python literal inside
+`run_pipeline.py` — the one file every type had to edit to add a step, and so
+the one both people would touch.
 
 **`--type` defaults to news, which is live.** A command without it runs against
 the finished migration. `export AKU_CONTENT_TYPE=blogs`, or use

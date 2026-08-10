@@ -1,18 +1,20 @@
-import os
-import sys
-from collections import defaultdict
-from json import dump, load
-from os import listdir
-from os.path import abspath, dirname, join
-import unicodedata
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
+import os as _os
+import sys as _sys
+import unicodedata
+from collections import defaultdict
+from json import dump, load
+from os import listdir
+from os.path import join
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 # Known characters with editorial context. Detection is not limited to this list;
 # any non-ASCII or invisible/control character is still scanned and reported.
@@ -227,7 +229,7 @@ INVISIBLE_CATEGORIES = {"Cf", "Cc", "Cs"}
 
 
 def load_news_data(file_path):
-    with open(file_path, "r", encoding="utf-8") as f:
+    with open(file_path, encoding="utf-8") as f:
         return load(f)
 
 

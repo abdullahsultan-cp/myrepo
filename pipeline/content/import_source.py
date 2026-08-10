@@ -34,17 +34,19 @@ export stays untouched in `data/source/` either way.
 
 import argparse
 import csv
-import io
 import json
 import os
+import os as _os
 import re
 import sys
+import sys as _sys
 
-
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P, ROOT, add_type_argument, apply_type_argument  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import ROOT, P, add_type_argument, apply_type_argument
 
 # "Label [ID: 4]" -- a SharePoint lookup rendered for humans.
 LOOKUP = re.compile(r"^(.*?)\s*\[ID:\s*(\d+)\]\s*$", re.S)
@@ -72,12 +74,12 @@ def decode_cell(value):
 
 
 def read_csv(path):
-    with io.open(path, encoding="utf-8-sig", newline="") as f:
+    with open(path, encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
 def read_json(path):
-    with io.open(path, encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         data = json.load(f)
     if isinstance(data, dict):
         return data.get("value") or data.get("items") or []
@@ -146,7 +148,7 @@ def main():
           + (f", {blank} BLANK" if blank else "")
           + (f", {dupes} DUPLICATE" if dupes else ""))
     if blank or dupes:
-        print(f"    ids must be unique and present — every later stage keys on them")
+        print("    ids must be unique and present — every later stage keys on them")
         return 1
 
     body_col = (P.fields or {}).get("body")
@@ -166,7 +168,7 @@ def main():
         sys.exit(f"  {os.path.relpath(dest, ROOT)} exists; pass --force to replace it")
 
     os.makedirs(os.path.dirname(dest), exist_ok=True)
-    with io.open(dest, "w", encoding="utf-8", newline="\n") as f:
+    with open(dest, "w", encoding="utf-8", newline="\n") as f:
         json.dump(items, f, ensure_ascii=False, indent=2)
         f.write("\n")
     print(f"\n  wrote {os.path.relpath(dest, ROOT)}")

@@ -47,8 +47,11 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = os.path.abspath(os.path.join(HERE, "..", ".."))
@@ -82,8 +85,8 @@ def load_ours():
 
     regions, entities, depts = {}, {}, {}
     for f in folders:
-        lvl, r, e, d = (f.get("level"), f.get("region"), f.get("entity"),
-                        f.get("department"))
+        lvl, r, e, _d = (f.get("level"), f.get("region"), f.get("entity"),
+                         f.get("department"))
         val = (f["name"], f.get("short_name"))
         if lvl == "region":
             regions[f["slug"]] = val

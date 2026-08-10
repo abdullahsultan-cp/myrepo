@@ -10,8 +10,9 @@ if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 # The steps live in pipeline/{core,content,media,analyze}/ now; _bootstrap puts
 # each on sys.path so a test can import a step by its module name as before.
-import _bootstrap  # noqa: F401,E402
+import _bootstrap
 
+_bootstrap.ensure()
 from richtext_media_utils import (
     apply_story_media_updates,
     attach_richtext_media_to_stories,

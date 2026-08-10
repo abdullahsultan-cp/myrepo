@@ -28,6 +28,29 @@ to make your type work, that is the signal to stop and read §3.
 
 ---
 
+## 1a · Turn the rules on
+
+Once per clone:
+
+```bash
+python pipeline/install_hooks.py --type blogs     # or events
+export AKU_CONTENT_TYPE=blogs                     # $env:... in PowerShell
+```
+
+That points git at `.githooks/`, where the pre-push hook **refuses** a push that
+touches a file outside your folder, and runs the tests. When a shared change is
+deliberate — and sometimes it is — say so once:
+
+```bash
+AKU_ALLOW_SHARED=1 git push
+```
+
+`.github/CODEOWNERS` does the same job on GitHub's side: a PR touching
+`pipeline/` needs the shared owner's review. Replace the placeholder usernames
+and enable "Require review from Code Owners" in branch protection.
+
+---
+
 ## 2 · Branches
 
 ```bash
@@ -57,15 +80,20 @@ type's peculiarities.
 
 **Before editing `pipeline/`, check whether the change belongs to your type:**
 
-| You want to | Do this instead |
-|---|---|
-| skip a step your type does not need | `skip_steps()` in your subclass |
-| add a step only your type has | `extra_steps()` in your subclass |
-| change how one step behaves | override the hook — `normalize_html`, `extract_pull_quote`, `clean_item`, `after_payload` |
-| replace a step wholesale | drop a file of the same name in `<Type>-Pipeline/pipeline/`; `resolve_script()` prefers it |
-| map a differently-named column | `fields` in your profile |
-| change the payload shape | `content_fields` in your profile |
-| route items somewhere else | `hierarchy` in your profile |
+| You want to | Do this instead | Where |
+|---|---|---|
+| skip a step your type does not need | `"skip_steps": [...]` | your profile |
+| add a step only your type has | `"extra_steps": [{..., "after": "<step>"}]` | your profile |
+| map a differently-named column | `"fields"` | your profile |
+| change the payload shape | `"content_fields"` | your profile |
+| route items somewhere else | `"hierarchy"` | your profile |
+| say where items came from on aku.edu | `"source_urls"` | your profile |
+| change how one step behaves | override a hook — `normalize_html`, `extract_pull_quote`, `clean_item`, `after_payload` | your subclass |
+| replace a step wholesale | a file of the same name; `resolve_script()` prefers it | `<Type>-Pipeline/pipeline/` |
+
+**Prefer the profile.** JSON keeps the decision beside the rest of the type's
+configuration, and two people editing two profiles can never conflict. Reach for
+the subclass only when the answer has to be computed.
 
 That list covers almost everything. Blogs needed **one** shared change to run
 end to end — tags arriving as `"Label|GUID"` rather than SharePoint objects —

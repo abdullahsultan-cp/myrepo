@@ -1,0 +1,58 @@
+name: CI
+
+# Runs on every PR. Three questions, in the order that matters:
+#   1. do the tests pass?
+#   2. does every content type still resolve and build?
+#   3. is the code laid out the way the standards say?
+#
+# Deliberately does NOT touch Storyblok: CI has no token, and nothing here
+# should need one. Every check below works from the committed export.
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Tests
+        run: python -m pytest tests/ -q
+
+      - name: Every content type resolves
+        run: |
+          python pipeline/new_type.py --list
+          python pipeline/base.py
+          python pipeline/core/steps.py
+
+      - name: Profiles name real columns
+        # A field naming a column the export does not have yields an EMPTY
+        # value, not an error. This is the check that catches it.
+        run: |
+          python pipeline/new_type.py news --check
+          python pipeline/new_type.py blogs --check
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install ruff
+      - run: ruff check .
+
+      # `ruff format --check` is NOT enforced yet, on purpose. It would rewrite
+      # 106 of the 139 files, which is a deliberate one-commit change somebody
+      # should make on a quiet day -- not something to discover in a PR that was
+      # about one bug. Adopt it by running `ruff format .` once, committing that
+      # alone, and adding the flag here.
+      - run: ruff format --check . || echo "formatting not enforced yet — see the comment above"

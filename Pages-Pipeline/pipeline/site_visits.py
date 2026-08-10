@@ -10,7 +10,9 @@ the next pass has no guesswork in it.
 
 Run: python site_visits.py   -> ../out/aku-site-visits.csv
 """
-import csv, io, os
+import csv
+import os
+
 import paths
 
 # url path, what AKU showed, what it settled, and whether it changed a placement
@@ -702,7 +704,7 @@ SKIP = ['/test', '/test-supportus', '/ismc2', '/leads1', '/leads2', '/search']
 
 if __name__ == '__main__':
     out = paths.out('aku-site-visits.csv')
-    with io.open(out, 'w', encoding='utf-8-sig', newline='') as f:
+    with open(out, 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.writer(f)
         w.writerow(['status', 'pages_behind_it', 'url', 'what_aku_showed',
                     'what_it_settled', 'changed_a_placement'])

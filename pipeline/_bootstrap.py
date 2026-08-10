@@ -26,6 +26,24 @@ ROOT = os.path.dirname(PIPELINE)
 # are entry points with their own path handling and are not added here.
 FOLDERS = ("core", "content", "media", "analyze")
 
-for _name in (PIPELINE,) + tuple(os.path.join(PIPELINE, f) for f in FOLDERS):
-    if os.path.isdir(_name) and _name not in sys.path:
-        sys.path.insert(0, _name)
+def ensure():
+    """Put every pipeline folder on sys.path. Idempotent.
+
+    Callers write:
+
+        import _bootstrap
+        _bootstrap.ensure()
+
+    rather than relying on import side effects alone. Both work -- the module
+    does its job on import too -- but the explicit call means the import is
+    genuinely used, so `ruff check --fix` cannot delete it as unused. It had 290
+    of these in its sights, and removing one silently breaks that step with a
+    ModuleNotFoundError the next time anybody runs it.
+    """
+    for name in (PIPELINE,) + tuple(os.path.join(PIPELINE, f) for f in FOLDERS):
+        if os.path.isdir(name) and name not in sys.path:
+            sys.path.insert(0, name)
+    return PIPELINE
+
+
+ensure()

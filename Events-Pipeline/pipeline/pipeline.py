@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, os.path.join(
     os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
     "pipeline"))
-from base import ContentPipeline  # noqa: E402
+from base import ContentPipeline
 
 
 class EventsPipeline(ContentPipeline):

@@ -27,7 +27,7 @@ REPO = os.path.dirname(SCRIPTS_DIR)
 CONFIG = os.path.join(REPO, "config")
 # Delegated to the shared module so a --type switch reaches here too.
 sys.path.insert(0, SCRIPTS_DIR)
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 DATA = P.DATA
 

@@ -46,15 +46,16 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
 
-from storyblok_config import load_config, management_api_base  # noqa: E402
+_bootstrap.ensure()
+
+from storyblok_config import load_config, management_api_base
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 # Space-level, not per type: every content type reads the same tree, and a
 # copy per type is a copy per person to keep in step.

@@ -30,7 +30,8 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
+import _bootstrap
+_bootstrap.ensure()
     from paths import BASE, MEDIA_DIR
 """
 
@@ -61,13 +62,13 @@ def _find_base(start):
 # survived the split into News-Pipeline/ and pipeline/ -- so it silently fell
 # back to pipeline/ and every config path pointed at nothing.
 sys.path.insert(0, SCRIPTS)
-from paths_root import ROOT as BASE  # noqa: E402
+from paths_root import ROOT as BASE
 
 # ---------------------------------------------------------------- directories
 # Delegated to the shared module: BASE stays the repo root, but everything
 # below it belongs to whichever content type is selected.
 sys.path.insert(0, SCRIPTS)
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 DATA = P.DATA
 ASSETS = P.ASSETS

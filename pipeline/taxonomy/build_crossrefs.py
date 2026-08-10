@@ -29,9 +29,8 @@ import glob
 import html
 import json
 import os
-import re
 import sys
-from collections import Counter, defaultdict
+from collections import Counter
 
 CITY_TO_REGION = {
     "Karachi": "Pakistan", "Islamabad": "Pakistan", "Lahore": "Pakistan",

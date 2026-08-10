@@ -21,8 +21,11 @@ import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import _bootstrap  # noqa: F401,E402
-from paths_root import P, TYPES, ROOT  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import ROOT, TYPES, P
 
 # Shared, and able to break the other person's work. Ordered worst first.
 SHARED = [
@@ -115,7 +118,7 @@ def main():
     if other_type:
         problems += len(other_type)
         print(f"\n  ANOTHER CONTENT TYPE'S FOLDER ({len(other_type)})")
-        print(f"    Almost always a command run with the wrong --type.")
+        print("    Almost always a command run with the wrong --type.")
         for p, t in other_type:
             print(f"      {p}   ({t})")
         print(f"    git checkout -- <path>   then re-run with --type {mine}")
@@ -124,17 +127,17 @@ def main():
         print(f"\n  REGENERATED, probably not an intended change ({len(regen)})")
         for p, why in regen[:8]:
             print(f"      {p}\n          {why}")
-        print(f"    git checkout -- <path>   if you only re-ran something")
+        print("    git checkout -- <path>   if you only re-ran something")
 
     if shared:
         print(f"\n  SHARED ({len(shared)}) — fine if deliberate, but tell the other person")
         for p, why in shared[:10]:
             print(f"      {p:<44}{why}")
         print(f"    If this is to make {mine} work, check CONTRIBUTING.md section 3 first:")
-        print(f"    skip_steps / extra_steps / a hook / your profile usually does it.")
+        print("    skip_steps / extra_steps / a hook / your profile usually does it.")
 
     if not (problems or shared or regen):
-        print(f"\n  everything is inside your own folder — push away")
+        print("\n  everything is inside your own folder — push away")
     print()
     return 1 if (a.strict and (problems or shared)) else 0
 

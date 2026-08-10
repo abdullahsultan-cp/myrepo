@@ -16,11 +16,10 @@ gets resolved upstream stops appearing here on its own.
 
 import collections
 
-from classification import SEC, D
-from event_owners import EVENTS as EVENT_OWNERS, stale_events, STALE_BEFORE
-from site_visits import NOT_PUBLIC
 import paths
-
+from classification import SEC, D
+from event_owners import stale_events
+from site_visits import NOT_PUBLIC
 
 # Sections that read as finished on their own page but carry no year we could put
 # in DATED — a programme "under review" has no last edition, only a status.
@@ -137,7 +136,7 @@ def build(folder_rows, page_rows):
 
     # 2. Dated content with no recent edition. Derived, so resolving a date upstream
     #    removes the row without anyone editing this file.
-    stale = stale_events()
+    _stale = stale_events()   # kept for the call; the rows below derive from it
     for f in sorted(folder_rows, key=lambda r: r['new_path']):
         if not f['archive_candidate']:
             continue
@@ -235,9 +234,10 @@ def build(folder_rows, page_rows):
 
 
 if __name__ == '__main__':
-    import io, json, os
+    import json
+    import os
     HERE = os.path.dirname(os.path.abspath(__file__))
-    plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+    plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
     rows = build(plan['folders'], plan['pages'])
     by = collections.Counter(r['group'] for r in rows)
     print('open decisions %d' % len(rows))

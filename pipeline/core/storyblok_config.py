@@ -1,19 +1,20 @@
+import os as _os
+import sys as _sys
 from json import load
 from os import environ
-from os.path import abspath, dirname, exists, join
+from os.path import exists, join
 
-import os as _os, sys as _sys
-
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P as _P
+import _bootstrap
+
+_bootstrap.ensure()
 
 # ROOT is found by walking up for config/types, not by counting dirname() calls.
 # This file moved into pipeline/core/ and the "..", "config" version then pointed
 # at pipeline/config, which does not exist -- so load_config() returned a config
 # with space_id None and every call came back 401 Unauthorized.
-from paths_root import ROOT  # noqa: E402
+from paths_root import ROOT
+from paths_root import P as _P
 
 DEFAULT_CONFIG_PATH = join(ROOT, "config", "storyblok.json")
 EXAMPLE_CONFIG_PATH = join(ROOT, "config", "storyblok.example.json")
@@ -23,7 +24,7 @@ def load_config(config_path=None):
     path = config_path or environ.get("STORYBLOK_CONFIG") or DEFAULT_CONFIG_PATH
     file_config = {}
     if exists(path):
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, encoding="utf-8") as f:
             file_config = load(f)
 
     return {

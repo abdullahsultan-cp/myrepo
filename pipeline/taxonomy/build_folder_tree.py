@@ -406,10 +406,10 @@ def main(outdir):
     print(f"  folders to create : {len(folders)}")
     for k, v in lv.most_common():
         print(f"      {v:>4}  {k}")
-    print(f"\n  news placement:")
+    print("\n  news placement:")
     for k, v in Counter(r["level"] for r in routing).most_common():
         print(f"      {v:>4}  {k}")
-    print(f"\n  entity source:")
+    print("\n  entity source:")
     for k, v in entity_source.most_common():
         print(f"      {v:>4}  {k}")
     print(f"\n  share targets per story (max {max_shares[0]}):")

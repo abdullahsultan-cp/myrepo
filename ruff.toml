@@ -1,0 +1,78 @@
+# Style is mechanical here so nobody spends a minute arguing about it.
+#   ruff check .            what is wrong
+#   ruff check --fix .      fix what can be fixed
+#   ruff format .           lay it out
+
+line-length = 100
+target-version = "py310"
+extend-exclude = [
+    ".venv", "storyblok-viewer", "node_modules",
+    "*/data", "*/assets", "*/out",       # generated, not authored
+]
+
+[lint]
+select = [
+    "E", "W",     # pycodestyle
+    "F",          # pyflakes: the real bugs -- unused names, undefined names
+    "I",          # import order
+    "B",          # bugbear: mutable defaults, loop-variable capture
+    "UP",         # outdated idioms
+    "C4",         # comprehensions
+    "RUF",
+]
+ignore = [
+    "E501",    # line length: the formatter owns this, and a long URL in a
+               # comment should not be broken up to satisfy a counter
+    "E402",    # imports after code: every step does sys.path work before
+               # importing a sibling, which is the point of _bootstrap
+    "B008",
+
+    # The corpus is multilingual on purpose. 711 non-ASCII characters across 98
+    # distinct ones are real content -- accented names, Arabic and Urdu, £, ° --
+    # and the comments describing them quote them. Flagging an en-dash as
+    # "ambiguous" here is noise, and acting on it would be a content bug.
+    "RUF001", "RUF002", "RUF003",
+
+    # %-formatting. 222 occurrences, all working. Worth converting when a line
+    # is edited for another reason; not worth a 222-file diff of its own, which
+    # would bury every real change made the same week.
+    "UP031",
+
+    # Reporting scripts unpack a tuple and print two of its three parts. Naming
+    # the third _unused would be noise, and the alternative -- indexing -- reads
+    # worse than the unpack it replaced.
+    "RUF059",
+
+    # `for i, row in enumerate(...)` where only `row` is used. Renaming the
+    # index to `_` in 14 loops buys nothing a reader did not already know.
+    "B007",
+
+    # `l` and `e` as locals in short comprehensions. Real, but every occurrence
+    # is inside three lines of its use.
+    "E741",
+
+    # Style preferences with no bug behind them. Each has a handful of
+    # occurrences in code that works; converting them would touch files for no
+    # reason and bury the change that mattered that week. Drop one of these from
+    # the list when you are already editing the file it complains about.
+    "RUF005",   # [*a, b] over a + [b]
+    "C408",     # dict() over {}
+    "C416",     # a redundant comprehension
+    "C401",     # set(x for ...) over {x for ...}
+    "E702",     # two statements on one line, separated by a semicolon
+    "B905",     # zip() without strict=
+]
+
+[lint.per-file-ignores]
+# Steps are scripts. A module-level constant computed from another module is
+# normal here, and __main__ blocks legitimately shadow module names.
+"pipeline/**/__main__.py" = ["F401"]
+"tests/**" = ["F401", "F811"]
+
+[lint.isort]
+known-first-party = ["paths_root", "fields", "steps", "base", "storyblok_utils",
+                     "storyblok_config", "storyblok_richtext", "storyblok_embeds"]
+
+[format]
+quote-style = "double"
+indent-style = "space"

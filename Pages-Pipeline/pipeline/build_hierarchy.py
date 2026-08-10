@@ -12,18 +12,20 @@ CW/CA owner group, an AD-domain majority, or the section's own CSV title.  Where
 the data is silent the row says so; nothing here is presented as authoritative
 that the export does not actually support.
 """
-import json, io, os, collections, html, re
+import collections
+import html
+import json
+
 import paths
 
 OUT_HTML = paths.out('AKU-Folder-Hierarchy.html')
 OUT_TREE = paths.out('AKU-Folder-Hierarchy.tree.txt')
 OUT_JSON = paths.out('AKU-Folder-Hierarchy.json')
 
-webs = json.load(io.open(paths.work('webs.json'), encoding='utf-8'))
-pages = json.load(io.open(paths.work('pages.json'), encoding='utf-8'))
+webs = json.load(open(paths.work('webs.json'), encoding='utf-8'))
+pages = json.load(open(paths.work('pages.json'), encoding='utf-8'))
 
-from classification import W, I, D, REGIONS, SEC  # noqa: E402
-
+from classification import REGIONS, SEC, D, I, W
 
 tops = sorted({p.split('/')[0] for p in webs if p})
 missing = [t for t in tops if t not in SEC]
@@ -131,7 +133,7 @@ json.dump({'regions': [{'slug': s, **{k: v for k, v in tree[s].items()
            'orphan_webs': orphan_webs,
            'totals': {'webs': len(webs), 'pages': len(pages),
                       'sections': len(tops)}},
-          io.open(OUT_JSON, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+          open(OUT_JSON, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 
 # ---- ASCII tree ----------------------------------------------------------
 def ascii_web(node, pre, out, last, show_pages):
@@ -183,7 +185,7 @@ def build_tree_text(show_pages):
         out += ['   %s (%d pages)' % (w, len(pages_by_web[w])) for w in orphan_webs]
     return '\n'.join(out)
 
-io.open(OUT_TREE, 'w', encoding='utf-8').write(build_tree_text(True))
+open(OUT_TREE, 'w', encoding='utf-8').write(build_tree_text(True))
 print('tree written')
 
 # ---- HTML ---------------------------------------------------------------
@@ -343,12 +345,12 @@ def bar_rows(rows, unit='pages'):
         zero = ' zero' if not val else ''
         out.append(
             '<div class="brow' + zero + '" tabindex="0" data-tip="'
-            + e('%s — %s %s%s' % (label, '{:,}'.format(val), unit,
+            + e('%s — %s %s%s' % (label, f'{val:,}', unit,
                                   ' · ' + note if note else '')) + '">'
             '<span class="blab">' + e(label) + '</span>'
             '<span class="btrack"><span class="bfill" style="width:'
             + ('%.2f' % pct) + '%"></span></span>'
-            '<span class="bval">' + '{:,}'.format(val) + '</span>'
+            '<span class="bval">' + f'{val:,}' + '</span>'
             '<span class="bnote">' + e(note) + '</span></div>')
     return '<div class="bars">' + ''.join(out) + '</div>'
 
@@ -358,18 +360,18 @@ def prop_bar(segments):
     seg, leg = [], []
     for label, val, cls in segments:
         seg.append('<span class="pseg ' + cls + '" style="flex:' + str(val)
-                   + '" data-tip="' + e('%s — %s of %s' % (label, '{:,}'.format(val),
-                                                           '{:,}'.format(tot)))
+                   + '" data-tip="' + e('%s — %s of %s' % (label, f'{val:,}',
+                                                           f'{tot:,}'))
                    + '"></span>')
         leg.append('<span class="plegi"><i class="sw ' + cls + '"></i>'
-                   + e(label) + ' <b>' + '{:,}'.format(val) + '</b>'
+                   + e(label) + ' <b>' + f'{val:,}' + '</b>'
                    + '<em>' + ('%.0f%%' % (100.0 * val / tot)) + '</em></span>')
     return ('<div class="prop">' + ''.join(seg) + '</div>'
             '<div class="pleg">' + ''.join(leg) + '</div>')
 
 # ---- the tree ------------------------------------------------------------
 def n_of(n, word):
-    return '%s %s%s' % ('{:,}'.format(n), word, '' if n == 1 else 's')
+    return '%s %s%s' % (f'{n:,}', word, '' if n == 1 else 's')
 
 def n_ent_of(n):
     return '%d %s' % (n, 'entity' if n == 1 else 'entities')
@@ -850,7 +852,7 @@ def sec(idx, sid, title, lede, body):
             + body + '</div></section>')
 
 n_ent = sum(stats[s]['entities'] for s in tree)
-tiles = [('{:,}'.format(len(webs)), 'folders'),
+tiles = [(f'{len(webs):,}', 'folders'),
          (str(len(tops)), 'site sections'),
          ('6 + global', 'regions'),
          (str(n_ent), 'entity placements'),
@@ -863,7 +865,7 @@ head = ('<header class="top"><div class="wrap">'
         'region. Built by joining the SharePoint permissions export with the page '
         'inventory. Only aku.edu — hospitals.aku.edu and examinationboard.aku.edu '
         'are excluded.</p>'
-        '<div class="hero"><div class="hnum">' + '{:,}'.format(len(pages))
+        '<div class="hero"><div class="hnum">' + f'{len(pages):,}'
         + '<span>pages to move</span></div><div class="tiles">'
         + ''.join('<div class="tile"><b>' + v + '</b><span>' + l + '</span></div>'
                   for v, l in tiles)
@@ -909,14 +911,14 @@ s3 = sec('Section 3', 'confidence',
          '<div class="card"><h3 class="sub">Can the owning entity be derived '
          'automatically?</h3>' + chart_tag
          + '<p class="lede" style="margin:14px 0 0;font-size:13px">'
-         + '{:,}'.format(manual_tag) + ' pages sit under a folder that names no '
+         + f'{manual_tag:,}' + ' pages sit under a folder that names no '
          'owner — it carries the site’s whole 47-to-93 group roster instead of '
          'an owner group. They fall in these sections, and someone at AKU has to '
          'tag them:</p><ul class="mlist">' + manual_rows + '</ul></div>')
 
 s4 = sec('Section 4', 'tree', 'Browse the full tree',
-         'Every one of the ' + '{:,}'.format(len(webs)) + ' folders and '
-         + '{:,}'.format(len(pages)) + ' pages, in the shape they will take. '
+         'Every one of the ' + f'{len(webs):,}' + ' folders and '
+         + f'{len(pages):,}' + ' pages, in the shape they will take. '
          'It opens at entity level — click a row to go deeper, or search for any '
          'region, entity, folder or page. A dot beside a page means <b>move as '
          'is</b>; an amber dot means <b>update, then move</b>.',
@@ -951,14 +953,14 @@ s7 = sec('Section 7', 'sources', 'What the two source files cover',
          'Neither file is a superset of the other, which is why both were needed.',
          '<div class="duo"><div class="card"><h3 class="sub" style="margin-top:0">'
          'The permissions export</h3><p class="lede" style="font-size:13.5px">'
-         'Lists every folder — <b>' + '{:,}'.format(len(webs)) + '</b> under '
+         'Lists every folder — <b>' + f'{len(webs):,}' + '</b> under '
          'aku.edu across <b>' + str(len(tops)) + '</b> sections, with the groups '
          'that administer each one. It is the only evidence for sections holding no '
          'page: <span class="mono">/events</span> alone has 48 event microsites and '
          '<span class="mono">/research</span> 18 folders.</p></div>'
          '<div class="card"><h3 class="sub" style="margin-top:0">The page inventory'
          '</h3><p class="lede" style="font-size:13.5px">Covers <b>'
-         + '{:,}'.format(len(pages)) + '</b> pages but reaches only <b>40</b> of the '
+         + f'{len(pages):,}' + '</b> pages but reaches only <b>40</b> of the '
          + str(len(tops)) + ' sections. The other 42 appear as folders with no page '
          '— a real finding, not a gap: their content lives in SharePoint lists '
          '(news, events, blogs), not a Pages library.</p></div></div>'
@@ -996,7 +998,7 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">\n'
          'accounted for in the tree above</div></footer>\n<script>' + JS
        + '</script></body></html>\n')
 
-io.open(OUT_HTML, 'w', encoding='utf-8').write(doc)
+open(OUT_HTML, 'w', encoding='utf-8').write(doc)
 print('html %.0f KB' % (len(doc.encode('utf-8')) / 1024))
 for s in tree:
     print('%-16s ent=%-3d fn=%-3d webs=%-4d pages=%-5d'

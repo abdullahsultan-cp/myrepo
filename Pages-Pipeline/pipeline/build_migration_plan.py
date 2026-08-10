@@ -20,17 +20,20 @@ proves it is a real unit -- it has its own CW/CA owner group, the way mcpk/anaes
 is owned by "Anaesthesiology". Everything else keeps its own slug, so no path
 segment is invented.
 """
-import csv, io, os, re, json, collections, html
+import collections
+import csv
+import json
+import re
+
 import paths
 
 PAGES_CSV = paths.VISIBLE_PAGES_CSV
 
-from classification import (W, I, D, REGIONS, SEC, ENTITY_COUNTRIES,  # noqa: E402
-                            entity_basis)
-# Each event microsite's owning unit and last edition, read off its own page.
-from event_owners import (EVENTS as EVENT_OWNERS, stale_events,  # noqa: E402
+from classification import ENTITY_COUNTRIES, REGIONS, SEC, W, entity_basis
 
-                          STALE_BEFORE)
+# Each event microsite's owning unit and last edition, read off its own page.
+from event_owners import EVENTS as EVENT_OWNERS
+from event_owners import STALE_BEFORE, stale_events
 
 # Pages checked against the live site and found not to be migratable. Each was
 # fetched, not assumed: the reason is what the server actually returned.
@@ -46,9 +49,9 @@ DO_NOT_MIGRATE = {
         'HTTP 404 — already gone from the live site.',
 }
 
-webs = json.load(io.open(paths.work('webs.json'), encoding='utf-8'))
-web_owners = json.load(io.open(paths.work('web_owners.json'), encoding='utf-8'))
-groups = json.load(io.open(paths.work('groups.json'), encoding='utf-8'))
+webs = json.load(open(paths.work('webs.json'), encoding='utf-8'))
+web_owners = json.load(open(paths.work('web_owners.json'), encoding='utf-8'))
+groups = json.load(open(paths.work('groups.json'), encoding='utf-8'))
 
 GKIND = {g['group']: g['kind'] for g in groups}
 GUNIT = {g['group']: g['unit'] for g in groups}
@@ -420,7 +423,7 @@ def content_type_of(dest):
 
 # ---- pages from AKU's own list ------------------------------------------
 pages = []
-with io.open(PAGES_CSV, encoding='utf-8-sig', newline='') as f:
+with open(PAGES_CSV, encoding='utf-8-sig', newline='') as f:
     for r in csv.DictReader(f):
         url = (r['PageUrl'] or '').strip()
         if not url:
@@ -750,7 +753,7 @@ for name, cap, gs, why in SPACE:
 # is the canonical parent: the site is stating where it thinks the page lives.
 # The full live-site sweep lives in site_visits.py so it stays a checklist
 # rather than a buried literal; REMAINING there names what is still unopened.
-from site_visits import VISITED, REMAINING  # noqa: E402
+from site_visits import VISITED
 
 LIVE_CHECKS = [(u.lstrip("/"), showed, settled)
                for u, showed, settled, _changed in VISITED]
@@ -786,7 +789,7 @@ for fr in folder_rows:
 # ---- write the CSVs ----------------------------------------------------
 def write_csv(name, rows, cols):
     p = paths.out(name)
-    with io.open(p, 'w', encoding='utf-8-sig', newline='') as f:
+    with open(p, 'w', encoding='utf-8-sig', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction='ignore')
         w.writeheader()
         w.writerows(rows)
@@ -945,12 +948,13 @@ print('witnessed departments:', dept)
 # The questions no export answers. Computed from the rows above rather than
 # authored as a list, so a decision that gets resolved upstream stops appearing
 # without anyone remembering to delete it.
-from decisions import build as build_decisions  # noqa: E402
+from decisions import build as build_decisions
+
 decision_rows = build_decisions(folder_rows, page_rows)
 print('open decisions: %d (%d pages at stake)'
       % (len(decision_rows), sum(r['pages'] for r in decision_rows)))
 
 json.dump({'folders': folder_rows, 'pages': page_rows, 'roles': role_rows,
            'live': live_rows, 'decisions': decision_rows, 'columns': COLUMNS},
-          io.open(paths.work('plan.json'), 'w', encoding='utf-8'),
+          open(paths.work('plan.json'), 'w', encoding='utf-8'),
           ensure_ascii=False)

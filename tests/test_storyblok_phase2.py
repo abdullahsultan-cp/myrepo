@@ -8,16 +8,18 @@ if SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, SCRIPTS_DIR)
 # The steps live in pipeline/{core,content,media,analyze}/ now; _bootstrap puts
 # each on sys.path so a test can import a step by its module name as before.
-import _bootstrap  # noqa: F401,E402
+import _bootstrap
 
+_bootstrap.ensure()
 from build_link_map import build_link_map, resolve_href
 from build_storyblok_stories import build_story_payload, convert_pull_quote
 from enhance_richtext import enhance_richtext_node
+
+# The data lives per content type now; the shared module knows where.
+from paths_root import P
 from storyblok_config import load_config
 from storyblok_embeds import pull_quote_to_blok_or_richtext
 
-# The data lives per content type now; the shared module knows where.
-from paths_root import P  # noqa: E402
 DATA_DIR = P.DATA
 
 
@@ -96,7 +98,7 @@ class PhaseTwoTests(unittest.TestCase):
         self.assertEqual(blok["type"], "blok")
 
     def test_build_story_payload_shape(self):
-        with open(join(P.CLEANED, "35.json"), "r",
+        with open(join(P.CLEANED, "35.json"),
                   encoding="utf-8") as f:
             item = json.load(f)
         item["NewsContent"] = {"type": "doc", "content": []}
@@ -109,7 +111,7 @@ class PhaseTwoTests(unittest.TestCase):
 
 
 def load_fixture_pullquote(filename):
-    with open(join(P.CLEANED, filename), "r",
+    with open(join(P.CLEANED, filename),
               encoding="utf-8") as f:
         return json.load(f)["PullQuote"]
 

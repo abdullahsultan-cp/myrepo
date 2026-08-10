@@ -7,17 +7,20 @@ folders it applies to, and therefore the Storyblok roles to put her in.
 Only Unique-scope rows are grants. Inherited rows repeat the AKU-wide groups into
 every folder and would make everyone look like an administrator of everything.
 """
-import csv, re, io, json, os, collections
-import paths
+import collections
+import csv
+import json
+import re
 
+import paths
 
 SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '​﻿­')
 DOM = re.compile(r'i:0#\.w\|([^\\]+)\\(.+)$')
 ROOT_DUMP = 30
 
-plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
-groups = json.load(io.open(paths.work('groups.json'), encoding='utf-8'))
+plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
+groups = json.load(open(paths.work('groups.json'), encoding='utf-8'))
 GKIND = {g['group']: g['kind'] for g in groups}
 GUNIT = {g['group']: g['unit'] for g in groups}
 
@@ -72,7 +75,7 @@ SPACE_ROLE = {
 people = {}
 web_groupcount = collections.Counter()
 rows = []
-with io.open(SRC, encoding='utf-8-sig', newline='') as f:
+with open(SRC, encoding='utf-8-sig', newline='') as f:
     for row in csv.DictReader(f):
         if row['Site Collection'] != 'http://aku.edu':
             continue
@@ -162,12 +165,12 @@ RANK = {'admin': 0, 'publisher': 1, 'editor': 2, 'structure': 3, 'translator': 4
 out.sort(key=lambda p: (RANK[p['top_capability']], -len(p['folders']),
                         p['name'].lower()))
 
-json.dump(out, io.open(paths.work('people.json'), 'w', encoding='utf-8'),
+json.dump(out, open(paths.work('people.json'), 'w', encoding='utf-8'),
           ensure_ascii=False)
 
 CAMPUS = {'aku': 'Karachi', 'nbi': 'Nairobi', 'dar': 'Dar es Salaam',
           'ismc': 'London', 'scholar': 'service account'}
-w = io.open(paths.work('people_probe.txt'), 'w', encoding='utf-8')
+w = open(paths.work('people_probe.txt'), 'w', encoding='utf-8')
 w.write('%d named people hold at least one permission on aku.edu\n' % len(out))
 w.write('with a real folder grant: %d\n'
         % sum(1 for p in out if p['folders']))

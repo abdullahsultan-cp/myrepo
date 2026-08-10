@@ -12,12 +12,15 @@ same double-clickable single file — with the screens this script never grew, a
 with folders, pages and people joined. This one writes
 `AKU-Migration-Portal-legacy.html` so a re-run cannot silently overwrite it.
 """
-import io, os, json, html, collections, re
+import collections
+import html
+import json
+import os
+
 import paths
 
-
 OUT = paths.out('AKU-Migration-Portal-legacy.html')
-plan = json.load(io.open(paths.work('plan.json'), encoding='utf-8'))
+plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 LIVE = plan.get('live', [])
 e = html.escape
@@ -207,7 +210,7 @@ def onode(path, depth=0):
               ('<span class="ocx" title="%s">shared</span>'
                % e(r['also_belongs_to'])) if r.get('also_belongs_to') else '',
               ' ' + mkind, label,
-              '{:,}'.format(tp) if tp else '—',
+              f'{tp:,}' if tp else '—',
               ('<span class="octg" title="%d inside">%s</span>'
                % (len(ch), '−' if depth < 1 else '+')) if ch else ''))
     if not ch:
@@ -219,7 +222,7 @@ def onode(path, depth=0):
 chart_html = ('<div class="ocwrap"><div class="oc"><ul>%s</ul></div></div>'
               % ''.join(onode(p) for p in roots))
 
-PEOPLE = json.load(io.open(paths.work('people.json'), encoding='utf-8'))
+PEOPLE = json.load(open(paths.work('people.json'), encoding='utf-8'))
 CAMPUS = {'aku': 'Karachi', 'nbi': 'Nairobi', 'dar': 'Dar es Salaam',
           'ismc': 'London', 'scholar': 'service account'}
 by_cap = collections.Counter(p['top_capability'] for p in PEOPLE)
@@ -331,8 +334,8 @@ moved_rows = ''.join(
     for x in sorted(moved, key=lambda z: (z['content_type'], z['new_path'])))
 
 # ---------------------------------------------------------------- shell
-CSS = io.open(paths.asset('portal.css'), encoding='utf-8').read()
-JS = io.open(paths.asset('portal.js'), encoding='utf-8').read()
+CSS = open(paths.asset('portal.css'), encoding='utf-8').read()
+JS = open(paths.asset('portal.js'), encoding='utf-8').read()
 
 
 def screen(sid, title, lede, body):
@@ -343,8 +346,8 @@ def screen(sid, title, lede, body):
 tiles = ''.join(
     '<div class="tile%s"><b>%s</b><span>%s</span></div>' % (c, v, l)
     for v, l, c in [
-        ('{:,}'.format(len(live_pages)), 'pages to migrate', ' hl'),
-        ('{:,}'.format(len(F)), 'folders to create', ''),
+        (f'{len(live_pages):,}', 'pages to migrate', ' hl'),
+        (f'{len(F):,}', 'folders to create', ''),
         ('7', 'regions incl. global', ''),
         (str(sum(r['entities'] for r in region_rows)), 'entity placements', ''),
         (str(count_kind('regions', 'department')), 'departments', ''),
@@ -387,9 +390,9 @@ s_over = screen(
     'regions / pakistan / entities / medical-college / departments / anaes / home'
     '</div></div>' + region_cards
     + '<h3>Content type</h3><div class="card">'
-    '<p style="margin:0;font-size:13.5px">Of the ' + '{:,}'.format(len(live_pages))
+    '<p style="margin:0;font-size:13.5px">Of the ' + f'{len(live_pages):,}'
     + ' pages: '
-    + ', '.join('<b>%s</b> %s' % ('{:,}'.format(v), k) for k, v in by_type.most_common())
+    + ', '.join('<b>%s</b> %s' % (f'{v:,}', k) for k, v in by_type.most_common())
     + '. News, events and blogs all live in the global hubs and carry region, entity '
       'and department as tags — the same way <span class="mono">aku.edu/news</span> '
       'already filters by Entity and Tag today.</p></div>')
@@ -418,7 +421,7 @@ s_chart = screen(
 
 s_pages = screen(
     'pages', 'Every page, old link and new link',
-    'All ' + '{:,}'.format(len(live_pages)) + ' pages. The grey line is where it lives '
+    'All ' + f'{len(live_pages):,}' + ' pages. The grey line is where it lives '
     'today, the green line is where it will live. Click either one to open it.',
     '<div class="bar">'
     '<input type="search" id="q2" placeholder="Search a URL, entity, team or type…">'
@@ -558,9 +561,9 @@ s_people = screen(
     '</div><div class="plist" id="people">' + people_rows + '</div>')
 
 NAV = [('Plan', [('overview', 'Overview', ''),
-                 ('tree', 'Folder structure', '{:,}'.format(len(F))),
+                 ('tree', 'Folder structure', f'{len(F):,}'),
                  ('chart', 'Org chart', ''),
-                 ('pages', 'Pages, old &amp; new', '{:,}'.format(len(live_pages)))]),
+                 ('pages', 'Pages, old &amp; new', f'{len(live_pages):,}')]),
        ('Permissions', [('rights', 'Who can do what', ''),
                         ('roles', 'Roles to create', str(len(R))),
                         ('people', 'People', str(len(PEOPLE)))]),
@@ -580,8 +583,8 @@ doc = ('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
        '<title>AKU → Storyblok — migration portal</title><style>' + CSS
        + '</style></head><body>'
        '<aside><h1>AKU → Storyblok</h1>'
-       '<p class="sub">' + '{:,}'.format(len(live_pages)) + ' pages · '
-       + '{:,}'.format(len(F)) + ' folders · ' + str(len(R)) + ' roles</p>'
+       '<p class="sub">' + f'{len(live_pages):,}' + ' pages · '
+       + f'{len(F):,}' + ' folders · ' + str(len(R)) + ' roles</p>'
        '<nav>' + nav + '</nav>'
        '<div class="bu"><label for="bu">Base URL for the new links</label>'
        '<input id="bu" type="text" value="https://www.aku.edu" '
@@ -593,7 +596,7 @@ doc = ('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
        + s_shared + s_checks + s_gloss + '</main>'
        '<script>' + JS + '</script></body></html>')
 
-io.open(OUT, 'w', encoding='utf-8').write(doc)
+open(OUT, 'w', encoding='utf-8').write(doc)
 print('%s — %.0f KB' % (os.path.basename(OUT), len(doc.encode('utf-8')) / 1024))
 print('screens 9 · folders %d · pages %d · roles %d · shared %d · dropped %d'
       % (len(F), len(live_pages), len(R), len(shared), len(dropped)))

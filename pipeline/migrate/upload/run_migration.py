@@ -58,15 +58,16 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE, MIGRATE  # noqa: E402
+import _bootstrap
 
-import db as tracking  # noqa: E402
+_bootstrap.ensure()
+import db as tracking
+from paths import BASE, MIGRATE
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 OUT = P.MIGRATE
 REPORTS = os.path.join(OUT, "reports")
@@ -427,7 +428,7 @@ def main():
         log(f"#  assets   {after['assets']['by_status']}")
         log(f"#  folders  {after['folders']['complete']}/"
             f"{after['folders']['destinations']} complete")
-        log(f"#  reports  data/migrate/reports/")
+        log("#  reports  data/migrate/reports/")
         if s["remaining"]:
             log("#\n#  Not finished. Run the same command again to continue "
                 "where it stopped.")

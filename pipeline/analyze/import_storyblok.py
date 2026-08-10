@@ -1,21 +1,22 @@
-import os
+import time
 from json import dump, load
 from os import listdir
 from os.path import abspath, dirname, join
-import sys
-import time
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from storyblok_config import load_config, management_api_base
+import _bootstrap
+
+_bootstrap.ensure()
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_config import load_config, management_api_base
 
 try:
     import requests
@@ -24,7 +25,7 @@ except ImportError:
 
 
 def load_json(path):
-    with open(path, "r", encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         return load(f)
 
 
@@ -108,7 +109,7 @@ def import_stories(stories_folder, config, limit=None, sleep_seconds=0.2):
 
     results = []
     for filename in json_files:
-        with open(join(stories_folder, filename), "r", encoding="utf-8") as f:
+        with open(join(stories_folder, filename), encoding="utf-8") as f:
             story = load(f)
         result = import_story(
             session,

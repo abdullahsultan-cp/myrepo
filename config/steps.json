@@ -1,0 +1,273 @@
+{
+  "_comment": "generated below; see pipeline/core/steps.py",
+  "steps": [
+    {
+      "name": "extract",
+      "script": "extract_items.py",
+      "description": "Split the source export into one file per item",
+      "requires": [],
+      "produces": [
+        "dir:raw"
+      ]
+    },
+    {
+      "name": "analyze-unicode",
+      "script": "analyze_unicode.py",
+      "description": "Inventory every non-ASCII character, for review before cleaning",
+      "requires": [
+        "dir:raw"
+      ],
+      "produces": [
+        "report:unicode_report.json"
+      ]
+    },
+    {
+      "name": "clean",
+      "script": "clean_items.py",
+      "description": "Normalise Unicode using the report from analyze-unicode",
+      "requires": [
+        "dir:raw",
+        "report:unicode_report.json"
+      ],
+      "produces": [
+        "dir:cleaned"
+      ]
+    },
+    {
+      "name": "analyze-tags",
+      "script": "analyze_tags.py",
+      "description": "Inventory the HTML tags present in the cleaned body field",
+      "requires": [
+        "dir:cleaned"
+      ],
+      "produces": [
+        "report:newscontent_tags_report.json"
+      ]
+    },
+    {
+      "name": "normalize-html",
+      "script": "normalize_html.py",
+      "description": "Turn SharePoint editor HTML into semantic HTML",
+      "requires": [
+        "dir:cleaned"
+      ],
+      "produces": [
+        "dir:normalized",
+        "report:html_normalization_report.json"
+      ]
+    },
+    {
+      "name": "convert-richtext",
+      "script": "convert_richtext.py",
+      "description": "Convert the normalised body HTML to Storyblok rich text",
+      "requires": [
+        "dir:normalized"
+      ],
+      "produces": [
+        "dir:richtext",
+        "report:richtext_conversion_report.json"
+      ]
+    },
+    {
+      "name": "build-link-map",
+      "script": "build_link_map.py",
+      "description": "Build SharePoint URL to Storyblok story lookup map",
+      "requires": [
+        "dir:cleaned"
+      ],
+      "produces": [
+        "report:storyblok_link_map.json"
+      ]
+    },
+    {
+      "name": "catalog-assets",
+      "script": "catalog_assets.py",
+      "description": "Catalogue the SharePoint images referenced in item bodies",
+      "requires": [
+        "dir:cleaned",
+        "dir:richtext"
+      ],
+      "produces": [
+        "report:storyblok_asset_catalog.json",
+        "report:storyblok_asset_map.json"
+      ]
+    },
+    {
+      "name": "upload-assets",
+      "script": "upload_assets.py",
+      "description": "Upload cataloged assets to Storyblok (requires API credentials)",
+      "requires": [
+        "report:storyblok_asset_catalog.json"
+      ],
+      "produces": [
+        "report:storyblok_asset_catalog.json",
+        "report:storyblok_asset_map.json"
+      ]
+    },
+    {
+      "name": "enhance-richtext",
+      "script": "enhance_richtext.py",
+      "description": "Resolve internal story links and asset URLs in rich text JSON",
+      "requires": [
+        "dir:richtext",
+        "report:storyblok_link_map.json",
+        "report:storyblok_asset_map.json"
+      ],
+      "produces": [
+        "dir:richtext_enhanced",
+        "report:storyblok_enhance_report.json"
+      ]
+    },
+    {
+      "name": "build-stories",
+      "script": "build_storyblok_stories.py",
+      "description": "Build full Storyblok story payloads including PullQuote handling",
+      "requires": [
+        "dir:richtext_enhanced"
+      ],
+      "produces": [
+        "dir:stories",
+        "report:storyblok_stories_report.json"
+      ]
+    },
+    {
+      "name": "validate-media",
+      "script": "validate_media.py",
+      "description": "Validate Metadata.csv references against the media on disk",
+      "requires": [
+        "file:metadata_csv",
+        "dir:media"
+      ],
+      "produces": [
+        "report:news_media_report.json"
+      ]
+    },
+    {
+      "name": "map-storyblok-media",
+      "script": "map_storyblok_media.py",
+      "description": "Map each built story to its media files via Metadata.csv",
+      "requires": [
+        "dir:stories",
+        "file:metadata_csv",
+        "dir:media"
+      ],
+      "produces": [
+        "report:storyblok_media_map.json"
+      ]
+    },
+    {
+      "name": "inject-story-media",
+      "script": "inject_story_media.py",
+      "description": "Inject Metadata.csv media bloks into storyblok_stories before body",
+      "requires": [
+        "dir:stories",
+        "file:metadata_csv"
+      ],
+      "produces": [
+        "report:storyblok_media_inject_report.json"
+      ]
+    },
+    {
+      "name": "catalog-richtext-media",
+      "script": "catalog_richtext_media.py",
+      "description": "Catalog PDF/image/media links in rich text missing from assets/News/media",
+      "requires": [
+        "dir:stories",
+        "dir:normalized",
+        "dir:media"
+      ],
+      "produces": [
+        "report:richtext_media_catalog.json"
+      ]
+    },
+    {
+      "name": "download-richtext-media",
+      "script": "download_richtext_media.py",
+      "description": "Download missing rich-text media into the type's assets folders/media and update story mappings",
+      "requires": [
+        "report:richtext_media_catalog.json",
+        "dir:stories",
+        "dir:media"
+      ],
+      "produces": [
+        "report:richtext_media_catalog.json",
+        "report:richtext_media_map.json",
+        "report:richtext_media_download_report.json"
+      ]
+    },
+    {
+      "name": "verify-richtext-media",
+      "script": "verify_richtext_media.py",
+      "description": "Verify rich-text media downloads and report downloaded vs missing assets",
+      "requires": [
+        "dir:stories",
+        "dir:normalized",
+        "dir:media"
+      ],
+      "produces": [
+        "report:richtext_media_verify_report.json"
+      ]
+    },
+    {
+      "name": "attach-richtext-media",
+      "script": "attach_richtext_media.py",
+      "description": "Attach downloaded rich-text media into storyblok_stories body links and media bloks",
+      "requires": [
+        "dir:stories",
+        "dir:media"
+      ],
+      "produces": [
+        "report:richtext_media_attach_report.json"
+      ]
+    },
+    {
+      "name": "classify-story-media",
+      "script": "story_media_classification.py",
+      "description": "Classify stories by thumbnail, GIF, video file, and embedded video media",
+      "requires": [
+        "dir:stories"
+      ],
+      "produces": [
+        "report:story_media_classification_report.json",
+        "report:story_media_index.json"
+      ]
+    },
+    {
+      "name": "validate-metadata",
+      "script": "validate_storyblok_metadata.py",
+      "description": "Validate SharePoint metadata coverage in storyblok_stories",
+      "requires": [
+        "dir:cleaned",
+        "dir:stories"
+      ],
+      "produces": [
+        "report:storyblok_metadata_report.json"
+      ]
+    },
+    {
+      "name": "extract-viewer-filters",
+      "script": "extract_storyblok_filter_constants.py",
+      "description": "Extract tags, authors, publishers, and content writers for storyblok-viewer filters",
+      "requires": [
+        "dir:stories"
+      ],
+      "produces": [
+        "viewer:tags/index.ts",
+        "viewer:authors/index.ts",
+        "viewer:publishers/index.ts",
+        "viewer:contentWriters/index.ts"
+      ]
+    },
+    {
+      "name": "import-storyblok",
+      "script": "import_storyblok.py",
+      "description": "Import built stories to Storyblok via Management API",
+      "requires": [
+        "dir:stories"
+      ],
+      "produces": [
+        "report:storyblok_import_report.json"
+      ]
+    }
+  ]
+}

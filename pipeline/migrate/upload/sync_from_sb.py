@@ -22,7 +22,6 @@ import json
 import os
 import sys
 
-
 # paths puts scripts/migrate/ and scripts/ on sys.path, so it comes first.
 # Walk up to the pipeline/ root rather than counting dirname() calls: the
 # scripts using this sit at two different depths (migrate/ and
@@ -41,17 +40,18 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-from paths import BASE  # noqa: E402
+import _bootstrap
 
-import db as tracking  # noqa: E402
-from storyblok_config import load_config  # noqa: E402
-from upload import SB  # noqa: E402
+_bootstrap.ensure()
+import db as tracking
+from upload import SB
+
+from storyblok_config import load_config
 
 # Paths come from the shared module so this script works for any content
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P  # noqa: E402
+from paths_root import P
 
 SNAP_DIR = os.path.join(P.MIGRATE, "sb_snapshot")
 

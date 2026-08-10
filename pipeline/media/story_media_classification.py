@@ -1,18 +1,20 @@
 """Classify storyblok_stories by thumbnail, GIF, and video media properties."""
 
-import os
-import sys
-from json import dump, dumps, load
-from os import listdir, makedirs
-from os.path import abspath, dirname, isfile, join
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
+import os as _os
+import sys as _sys
+from json import dump, dumps, load
+from os import listdir, makedirs
+from os.path import dirname, join
 
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P, ROOT  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import ROOT, P
 
 MEDIA_FILTER_DEFINITIONS = {
     "thumbnail": {
@@ -56,7 +58,7 @@ def classify_story_media(story, story_filename):
     title = content.get("title") or story.get("name") or ""
     slug = story.get("slug") or ""
 
-    flags = {key: False for key in MEDIA_FILTER_DEFINITIONS}
+    flags = dict.fromkeys(MEDIA_FILTER_DEFINITIONS, False)
     media_items = []
     body = content.get("body") or {}
     body_json = dumps(body) if body else ""
@@ -111,10 +113,10 @@ def build_classification_report(stories_dir):
 
     stories = []
     buckets = {key: [] for key in MEDIA_FILTER_DEFINITIONS}
-    filter_counts = {key: 0 for key in MEDIA_FILTER_DEFINITIONS}
+    filter_counts = dict.fromkeys(MEDIA_FILTER_DEFINITIONS, 0)
 
     for story_filename in story_files:
-        with open(join(stories_dir, story_filename), "r",
+        with open(join(stories_dir, story_filename),
                   encoding="utf-8") as handle:
             story = load(handle)
         entry = classify_story_media(story, story_filename)

@@ -23,15 +23,19 @@ import os
 import sys
 import time
 
-
 try:
     import requests
 except ImportError:
     sys.exit("pip install -r requirements.txt")
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import _bootstrap
+
+_bootstrap.ensure()
+
 from storyblok_config import load_config, management_api_base
 
 BASE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))

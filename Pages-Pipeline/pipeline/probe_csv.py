@@ -7,9 +7,12 @@ webs) and who owns them.  Two signals matter for placement:
     dar\\ = Dar es Salaam, kbl\\ = Kabul, lon\\ = London) is a *region* witness
     that no other column carries.
 """
-import csv, collections, re, json, io, os
-import paths
+import collections
+import csv
+import json
+import re
 
+import paths
 
 SRC = paths.PERMISSIONS_CSV
 
@@ -25,7 +28,7 @@ sites = collections.defaultdict(lambda: {
     'titles': set(), 'groups': collections.Counter(),
     'doms': collections.Counter(), 'scope': set(), 'rows': 0})
 
-with io.open(SRC, encoding='utf-8-sig', newline='') as f:
+with open(SRC, encoding='utf-8-sig', newline='') as f:
     for row in csv.DictReader(f):
         if row['Site Collection'] != 'http://aku.edu':
             continue
@@ -46,7 +49,7 @@ with io.open(SRC, encoding='utf-8-sig', newline='') as f:
         s['doms'][d] += 1
         s['scope'].add(row['Permission Scope'])
 
-with io.open(paths.work('csv_probe.txt'), 'w', encoding='utf-8') as w:
+with open(paths.work('csv_probe.txt'), 'w', encoding='utf-8') as w:
     w.write('aku.edu sites: %d\n' % len(sites))
     for label, c, n in (('login domains', dom, 40), ('permission scope', scope, 20),
                         ('assignee type', atype, 20), ('assigned roles', roles, 25),
@@ -58,6 +61,6 @@ with io.open(paths.work('csv_probe.txt'), 'w', encoding='utf-8') as w:
 json.dump({u: {'titles': sorted(s['titles']), 'groups': dict(s['groups']),
                'doms': dict(s['doms']), 'scope': sorted(s['scope']), 'rows': s['rows']}
            for u, s in sites.items()},
-          io.open(paths.work('sites.json'), 'w', encoding='utf-8'),
+          open(paths.work('sites.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 print('sites', len(sites), 'groups', len(grp))

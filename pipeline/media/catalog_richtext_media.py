@@ -1,22 +1,23 @@
 """Catalog PDF/image/media links in rich text that are missing from assets/News/media."""
 
-import os
-import sys
 from json import dump
-from os.path import abspath, dirname, join
+from os.path import abspath, dirname
 
 SCRIPTS_DIR = abspath(dirname(__file__))
 
-import os as _os, sys as _sys  # noqa: E402
+import os as _os
+import sys as _sys
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import _bootstrap
+
+_bootstrap.ensure()
 from richtext_media_utils import build_catalog
-from storyblok_config import load_config
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
-
-from paths_root import P  # noqa: E402
+from paths_root import P
+from storyblok_config import load_config
 
 
 def print_report(report):

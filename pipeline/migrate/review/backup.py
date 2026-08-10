@@ -36,7 +36,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import P, TYPES  # noqa: E402
+from paths_root import TYPES, P
 
 # Walk up to the pipeline/ root rather than counting dirname() calls: the
 # scripts using this sit at two different depths (migrate/ and
@@ -55,12 +55,14 @@ while _d != os.path.dirname(_d):
         sys.path.insert(0, _d)
         break
     _d = os.path.dirname(_d)
-import _bootstrap  # noqa: F401,E402
-import db as tracking  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+import db as tracking
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(
     os.path.dirname(os.path.abspath(__file__)))))
-from storyblok_config import load_config, management_api_base  # noqa: E402
+from storyblok_config import load_config, management_api_base
 
 try:
     import requests

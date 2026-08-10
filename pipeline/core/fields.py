@@ -20,14 +20,16 @@ to gain nothing. `F.get(item, "body")` resolves to exactly `item["NewsContent"]`
 for news, so its output is unchanged byte for byte.
 """
 
-import os
+import os as _os
 import sys
+import sys as _sys
 
-
-import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P  # noqa: E402
+import _bootstrap
+
+_bootstrap.ensure()
+
+from paths_root import P
 
 
 class _Fields:
@@ -87,7 +89,7 @@ class _Fields:
 
     def describe(self):
         out = [f"{P.type}:"]
-        for k in sorted((P.fields or {})):
+        for k in sorted(P.fields or {}):
             if k.startswith("_"):
                 continue
             out.append(f"  {k:<20}{(P.fields or {})[k]}")

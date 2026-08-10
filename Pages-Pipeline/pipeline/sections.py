@@ -6,9 +6,12 @@ Only rows whose Permission Scope is "Unique" name the group that actually
 administers that web -- those are the CW/CA/News-Writer groups that identify the
 owning entity.  Everything below filters on that.
 """
-import csv, re, io, json, os, collections
-import paths
+import collections
+import csv
+import json
+import re
 
+import paths
 
 SRC = paths.PERMISSIONS_CSV
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')
@@ -22,7 +25,7 @@ webs = collections.defaultdict(lambda: {
     'title': set(), 'uniq_groups': collections.Counter(),
     'uniq_doms': collections.Counter(), 'unique': 0, 'inherited': 0})
 
-with io.open(SRC, encoding='utf-8-sig', newline='') as f:
+with open(SRC, encoding='utf-8-sig', newline='') as f:
     for row in csv.DictReader(f):
         if row['Site Collection'] != 'http://aku.edu':
             continue
@@ -43,12 +46,12 @@ with io.open(SRC, encoding='utf-8-sig', newline='') as f:
         else:
             w['inherited'] += 1
 
-pages = json.load(io.open(paths.work('pages.json'), encoding='utf-8'))
+pages = json.load(open(paths.work('pages.json'), encoding='utf-8'))
 pg_by_sec = collections.Counter(p['section'] for p in pages)
 pg_by_web = collections.Counter(p['web'] for p in pages)
 
 tops = sorted({p.split('/')[0] for p in webs if p})
-out = io.open(paths.work('sections.txt'), 'w', encoding='utf-8')
+out = open(paths.work('sections.txt'), 'w', encoding='utf-8')
 out.write('%d top-level sections\n\n' % len(tops))
 for t in tops:
     kids = sorted(p for p in webs if p == t or p.startswith(t + '/'))
@@ -71,6 +74,6 @@ json.dump({p: {'title': sorted(v['title']),
                'unique': v['unique'], 'inherited': v['inherited'],
                'pages': pg_by_web.get(p, 0)}
            for p, v in webs.items()},
-          io.open(paths.work('webs.json'), 'w', encoding='utf-8'),
+          open(paths.work('webs.json'), 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 print('tops', len(tops), 'webs', len(webs))

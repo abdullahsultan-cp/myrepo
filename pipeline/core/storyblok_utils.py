@@ -1,8 +1,12 @@
+import os as _os
 import re
+import sys as _sys
 import uuid
-import os as _os, sys as _sys  # noqa: E402
+
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+import _bootstrap
+
+_bootstrap.ensure()
 
 
 def slugify(text, fallback="item"):
