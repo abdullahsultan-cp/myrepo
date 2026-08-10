@@ -1,22 +1,34 @@
 #!/bin/sh
-# Strict gate. Install with:  python pipeline/install_hooks.py
+# Strict gate. Install with:  python pipeline/install_hooks.py --type <yours>
 #
 # Refuses the push when something outside your content type's folder changed
-# without you saying so. Set AKU_CONTENT_TYPE, or the check cannot know which
-# folder is yours.
+# without you saying so, then runs the tests.
 #
 # Deliberate shared change? Say so once:
 #     AKU_ALLOW_SHARED=1 git push
 
 set -e
-TYPE="${AKU_CONTENT_TYPE:-}"
-if [ -z "$TYPE" ]; then
-  echo "pre-push: AKU_CONTENT_TYPE is not set."
-  echo "          export AKU_CONTENT_TYPE=blogs   (or events, news, pages)"
+
+# The interpreter, in order of trust: an explicit override, the one recorded by
+# install_hooks.py, then whatever `python` means today. That last one is a poor
+# guess -- on the machine this was written on it is a system Python with no
+# pytest, so the hook failed for a reason that had nothing to do with the push.
+PY="${AKU_PYTHON:-$(git config aku.python || true)}"
+[ -z "$PY" ] && PY="python"
+if ! "$PY" -c "import pytest" >/dev/null 2>&1; then
+  echo "pre-push: $PY cannot import pytest."
+  echo "          Run:  python pipeline/install_hooks.py --type <yours>"
+  echo "          from the interpreter you actually use, or set AKU_PYTHON."
   exit 1
 fi
 
-PY="${AKU_PYTHON:-python}"
+TYPE="${AKU_CONTENT_TYPE:-$(git config aku.contentType || true)}"
+if [ -z "$TYPE" ]; then
+  echo "pre-push: which content type are you working on?"
+  echo "          export AKU_CONTENT_TYPE=blogs      (or events, news, pages)"
+  echo "          or:   python pipeline/install_hooks.py --type blogs"
+  exit 1
+fi
 
 if [ -n "$AKU_ALLOW_SHARED" ]; then
   "$PY" pipeline/check_before_push.py --type "$TYPE" || true
@@ -30,7 +42,4 @@ else
   }
 fi
 
-"$PY" -m pytest tests/ -q || {
-  echo "pre-push: tests failed."
-  exit 1
-}
+"$PY" -m pytest tests/ -q || { echo "pre-push: tests failed."; exit 1; }
