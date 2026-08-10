@@ -47,7 +47,7 @@ htmlcov/
 .eggs/
 /dist/
 # Anchored to the repo root. Unanchored, `build/` also matched
-# Pages-Pipeline/build/ and silently excluded all 17 Python files that generate
+# Pages-Pipeline/pipeline/ and silently excluded all 17 Python files that generate
 # the pages migration — the entire source of that stage.
 /build/
 
@@ -121,14 +121,14 @@ dist/
 .vite/
 *.tsbuildinfo
 
-# The portal reads these at runtime; both are copied from Pages-Pipeline/build/
+# The portal reads these at runtime; both are copied from Pages-Pipeline/pipeline/
 # by the render step, so they are generated, not source.
 /Pages-Pipeline/portal/public/data/
 
 # Intermediates the Pages steps pass between themselves — one folder, so the
 # rule is a directory rather than a pattern that has to guess at extensions.
 # Each is regenerable: probe_csv.py -> join.py -> sections.py ->
-# build_migration_plan.py. `build/paths.py` is the only thing that names them.
+# build_migration_plan.py. `pipeline/paths.py` is the only thing that names them.
 /Pages-Pipeline/out/work/
 
 # The generated single-file views. Each is rebuilt from plan.json by its own
@@ -146,8 +146,8 @@ dist/
 
 # The pre-restructure locations. Kept so a stale working copy or an old branch
 # cannot re-commit files that have moved into data/ and out/.
-/Pages-Pipeline/build/*.json
-/Pages-Pipeline/build/*.txt
+/Pages-Pipeline/pipeline/*.json
+/Pages-Pipeline/pipeline/*.txt
 /Pages-Pipeline/AKU-Structure.html
 /Pages-Pipeline/AKU-Migration-Portal*.html
 /Pages-Pipeline/AKU-Migration-Plan.html

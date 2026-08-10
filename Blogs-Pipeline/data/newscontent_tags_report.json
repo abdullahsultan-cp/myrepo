@@ -1,0 +1,1064 @@
+{
+  "summary": {
+    "field": "Blog Detail",
+    "files_scanned": 83,
+    "files_with_newscontent": 83,
+    "unique_tag_count": 21,
+    "classification_guide": {
+      "sharepoint_artifact": "Markup patterns introduced by SharePoint/Word rich-text editing. These are common cleanup targets when normalizing NewsContent to semantic HTML.",
+      "structural": "Semantic or layout HTML elements that define paragraphs, headings, lists, tables, and quoted blocks.",
+      "inline_formatting": "Inline tags used for emphasis, styling, or legacy font markup inside paragraphs.",
+      "link": "Anchor tags linking to external websites, documents, or other AKU pages.",
+      "media": "Embedded images, videos, or other rich media referenced inside the article.",
+      "embedded": "Non-visible or script/style markup embedded in HTML. Review carefully before removal.",
+      "inferred": "No explicit note exists yet for this tag. Classification was inferred from the HTML tag name."
+    },
+    "by_classification": {
+      "sharepoint_artifact": 2,
+      "structural": 12,
+      "inline_formatting": 4,
+      "link": 1,
+      "media": 1,
+      "embedded": 0,
+      "inferred": 1
+    }
+  },
+  "tags": [
+    {
+      "rank": 1,
+      "tag": "div",
+      "classification": "sharepoint_artifact",
+      "description": "Block container used by SharePoint rich-text editing. The outer ExternalClass wrapper and nested div elements structure paragraphs instead of semantic p tags.",
+      "total_count": 1053,
+      "file_count": 83,
+      "attributes": [
+        "class",
+        "style"
+      ],
+      "attribute_usage": {
+        "class": 83,
+        "style": 22
+      },
+      "files": [
+        "15.json",
+        "16.json",
+        "17.json",
+        "18.json",
+        "19.json",
+        "20.json",
+        "21.json",
+        "22.json",
+        "23.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "32.json",
+        "33.json",
+        "34.json",
+        "35.json",
+        "36.json",
+        "37.json",
+        "38.json",
+        "39.json",
+        "40.json",
+        "41.json",
+        "42.json",
+        "43.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "48.json",
+        "49.json",
+        "50.json",
+        "51.json",
+        "52.json",
+        "53.json",
+        "54.json",
+        "55.json",
+        "56.json",
+        "57.json",
+        "58.json",
+        "59.json",
+        "60.json",
+        "61.json",
+        "62.json",
+        "63.json",
+        "64.json",
+        "65.json",
+        "66.json",
+        "67.json",
+        "68.json",
+        "69.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "73.json",
+        "74.json",
+        "75.json",
+        "76.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "81.json",
+        "82.json",
+        "83.json",
+        "84.json",
+        "85.json",
+        "86.json",
+        "87.json",
+        "88.json",
+        "89.json",
+        "90.json",
+        "91.json",
+        "92.json",
+        "93.json",
+        "94.json",
+        "95.json",
+        "96.json",
+        "97.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "<div class=\"ExternalClass5422099B5D7D413FB593DA96A0FE8085\"><div><em>In the photo&#58;&#160;<em>My first Eid-u"
+        },
+        {
+          "file": "16.json",
+          "field": "Blog Detail",
+          "snippet": "<div class=\"ExternalClass7A4D814575D44A1D99F3CFB8FC77779C\"><div>I have spent decades visiting Pakistan to doc"
+        },
+        {
+          "file": "17.json",
+          "field": "Blog Detail",
+          "snippet": "<div class=\"ExternalClass6D11DB12AE174D928BE44D609708F285\"><div>I have spent decades visiting Pakistan to doc"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "tag": "br",
+      "classification": "sharepoint_artifact",
+      "description": "Line break inserted by SharePoint/Word editors, commonly used inside empty div elements to create vertical spacing between paragraphs.",
+      "total_count": 1011,
+      "file_count": 82,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 33
+      },
+      "files": [
+        "15.json",
+        "16.json",
+        "17.json",
+        "18.json",
+        "19.json",
+        "20.json",
+        "21.json",
+        "22.json",
+        "23.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "32.json",
+        "33.json",
+        "34.json",
+        "35.json",
+        "36.json",
+        "38.json",
+        "39.json",
+        "40.json",
+        "41.json",
+        "42.json",
+        "43.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "48.json",
+        "49.json",
+        "50.json",
+        "51.json",
+        "52.json",
+        "53.json",
+        "54.json",
+        "55.json",
+        "56.json",
+        "57.json",
+        "58.json",
+        "59.json",
+        "60.json",
+        "61.json",
+        "62.json",
+        "63.json",
+        "64.json",
+        "65.json",
+        "66.json",
+        "67.json",
+        "68.json",
+        "69.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "73.json",
+        "74.json",
+        "75.json",
+        "76.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "81.json",
+        "82.json",
+        "83.json",
+        "84.json",
+        "85.json",
+        "86.json",
+        "87.json",
+        "88.json",
+        "89.json",
+        "90.json",
+        "91.json",
+        "92.json",
+        "93.json",
+        "94.json",
+        "95.json",
+        "96.json",
+        "97.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "w special Eid really is.</em></em></div><div>\r\n   <br>\r\n</div><div>I have spent decades visiting Pakista"
+        },
+        {
+          "file": "16.json",
+          "field": "Blog Detail",
+          "snippet": "e ways as a consequence of our interactions.&#160;<br></div><div><br></div><div><div>I have spent decade"
+        },
+        {
+          "file": "17.json",
+          "field": "Blog Detail",
+          "snippet": "e ways as a consequence of our interactions.&#160;<br></div></div>"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "tag": "p",
+      "classification": "structural",
+      "description": "Paragraph element for body text blocks.",
+      "total_count": 598,
+      "file_count": 58,
+      "attributes": [
+        "class",
+        "dir",
+        "role",
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 97,
+        "dir": 82,
+        "role": 24,
+        "class": 1
+      },
+      "files": [
+        "20.json",
+        "22.json",
+        "23.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "32.json",
+        "33.json",
+        "34.json",
+        "35.json",
+        "36.json",
+        "37.json",
+        "38.json",
+        "39.json",
+        "40.json",
+        "41.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "48.json",
+        "52.json",
+        "53.json",
+        "54.json",
+        "55.json",
+        "56.json",
+        "57.json",
+        "58.json",
+        "59.json",
+        "60.json",
+        "61.json",
+        "62.json",
+        "63.json",
+        "66.json",
+        "67.json",
+        "68.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "73.json",
+        "75.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "81.json",
+        "82.json",
+        "83.json",
+        "84.json",
+        "87.json",
+        "88.json",
+        "89.json",
+        "90.json",
+        "93.json"
+      ],
+      "examples": [
+        {
+          "file": "20.json",
+          "field": "Blog Detail",
+          "snippet": "ect the seriousness of the crisis.&#160;<br></div><p><span style=\"white-space&#58;pre-wrap;\">&#123;pull"
+        },
+        {
+          "file": "22.json",
+          "field": "Blog Detail",
+          "snippet": "s=\"ExternalClass463CCEDC19144CED92C1418FA431B0F7\"><p>A few weeks back I received an invitation to prese"
+        },
+        {
+          "file": "23.json",
+          "field": "Blog Detail",
+          "snippet": "s=\"ExternalClassD7AB0102A13F46B7AC4DF292DC9F6AB0\"><p>I strove with none, for none was worth my strife</"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "tag": "span",
+      "classification": "inline_formatting",
+      "description": "Inline wrapper for styled text. Often carries Word/SharePoint paste metadata such as lang, style, or data-contrast attributes.",
+      "total_count": 258,
+      "file_count": 15,
+      "attributes": [
+        "data-ccp-props",
+        "data-contrast",
+        "lang",
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 186,
+        "data-contrast": 44,
+        "lang": 44,
+        "data-ccp-props": 24
+      },
+      "files": [
+        "15.json",
+        "18.json",
+        "20.json",
+        "26.json",
+        "32.json",
+        "33.json",
+        "34.json",
+        "35.json",
+        "44.json",
+        "70.json",
+        "71.json",
+        "79.json",
+        "82.json",
+        "89.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "sequence of our interactions.&#160;<br></div><div><span style=\"white-space&#58;pre-wrap;\">&#123;pullquote&#125;\r\n</span>In anthropology, we "
+        },
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "opment in a society and the planet.<br></div><div><span style=\"white-space&#58;pre-wrap;\">&#123;pullquote&#125;</span><br></div><div>As a st"
+        },
+        {
+          "file": "20.json",
+          "field": "Blog Detail",
+          "snippet": " the seriousness of the crisis.&#160;<br></div><p><span style=\"white-space&#58;pre-wrap;\">&#123;pullquote&#125;\r\n</span>The Aga Khan Univers"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "tag": "strong",
+      "classification": "inline_formatting",
+      "description": "Semantic emphasis for bold text.",
+      "total_count": 137,
+      "file_count": 31,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 1
+      },
+      "files": [
+        "15.json",
+        "18.json",
+        "26.json",
+        "31.json",
+        "36.json",
+        "37.json",
+        "41.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "48.json",
+        "50.json",
+        "64.json",
+        "66.json",
+        "67.json",
+        "73.json",
+        "74.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "84.json",
+        "86.json",
+        "88.json",
+        "89.json",
+        "90.json",
+        "92.json",
+        "93.json",
+        "94.json",
+        "97.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "<div><br></div><div style=\"text-align&#58;right;\"><strong>Join the conversation on <a href=\"https&#58;//trib"
+        },
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": ">&#123;EmbeddedCode&#125;</span></span></div><div><strong>1.&#160; &#160; Who?</strong></div><div>We are the"
+        },
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "ClassCAB91D2DF79E4BC8AE695EB0BD7F5F8B\"><p>\r\n      <strong><em>\"The success of your presentation will be judg"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "tag": "li",
+      "classification": "structural",
+      "description": "Individual list item inside ul or ol.",
+      "total_count": 77,
+      "file_count": 7,
+      "attributes": [
+        "aria-level",
+        "dir",
+        "style"
+      ],
+      "attribute_usage": {
+        "dir": 24,
+        "aria-level": 24,
+        "style": 29
+      },
+      "files": [
+        "31.json",
+        "66.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "89.json",
+        "97.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "\" /> \r\n&#160;</p><h2>References&#160;<br></h2><ul><li><p>Khan, A. (2020, November 24).&#160;<a href=\"htt"
+        },
+        {
+          "file": "66.json",
+          "field": "Blog Detail",
+          "snippet": "&#58;</p><ol style=\"list-style-type&#58;decimal;\"><li><strong>Embrace Immersive Experiences</strong>&#58"
+        },
+        {
+          "file": "70.json",
+          "field": "Blog Detail",
+          "snippet": "style=\"margin-top&#58;0px;margin-bottom&#58;0px;\"><li dir=\"ltr\" aria-level=\"1\" style=\"list-style-type&#58;disc;font-size&#58;12pt;font-family&#58;cambria, serif;color&#58;#000000;background-color&#58;transparent;vertical-align&#58;baseline;white-space&#58;pre;\"><p dir=\"ltr\" role=\"presentation\" style=\"line-heigh"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "tag": "a",
+      "classification": "link",
+      "description": "Hyperlink to external pages, documents, or in-site resources. Frequently uses target=\"_blank\" for off-site links.",
+      "total_count": 70,
+      "file_count": 26,
+      "attributes": [
+        "href",
+        "id",
+        "name",
+        "profileid",
+        "style",
+        "target",
+        "text",
+        "v"
+      ],
+      "attribute_usage": {
+        "href": 70,
+        "text": 4,
+        "v": 3,
+        "profileid": 4,
+        "name": 4,
+        "style": 2,
+        "id": 1,
+        "target": 1
+      },
+      "files": [
+        "15.json",
+        "18.json",
+        "21.json",
+        "26.json",
+        "31.json",
+        "32.json",
+        "35.json",
+        "36.json",
+        "37.json",
+        "38.json",
+        "41.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "68.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "74.json",
+        "75.json",
+        "82.json",
+        "83.json",
+        "89.json",
+        "90.json",
+        "94.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "lign&#58;right;\"><strong>Join the conversation on <a href=\"https&#58;//tribune.com.pk/article/97574/i-owe-a-debt-of-gratitude-to-pakistan\">The Express Tribune Blogs</a></strong><br></div></"
+        },
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "t the wrong moment in time, could hamper success. <a href=\"/Pages/home.aspx\">Reviewing material</a> last minute or not making t"
+        },
+        {
+          "file": "21.json",
+          "field": "Blog Detail",
+          "snippet": "nerships.<br></div><div><br></div><div>The latest <a href=\"https&#58;//www.timeshighereducation.com/rankings/impact/2022/good-health-and-well-being#%21/page/0/length/25/sort_by/rank/sort_order/asc/cols/undefined\">Times Higher Education (THE) ranking</a> of 1,100 "
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "tag": "em",
+      "classification": "inline_formatting",
+      "description": "Semantic emphasis for italic text.",
+      "total_count": 52,
+      "file_count": 17,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 1
+      },
+      "files": [
+        "15.json",
+        "19.json",
+        "25.json",
+        "26.json",
+        "31.json",
+        "32.json",
+        "42.json",
+        "44.json",
+        "45.json",
+        "48.json",
+        "64.json",
+        "72.json",
+        "83.json",
+        "84.json",
+        "88.json",
+        "90.json",
+        "97.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "ternalClass5422099B5D7D413FB593DA96A0FE8085\"><div><em>In the photo&#58;&#160;<em>My first Eid-ul-Fitr in"
+        },
+        {
+          "file": "19.json",
+          "field": "Blog Detail",
+          "snippet": "E084378D3D73A\"><div style=\"text-align&#58;right;\"><em>In the photo&#58; The under-construction Rufayda A"
+        },
+        {
+          "file": "25.json",
+          "field": "Blog Detail",
+          "snippet": "93106A4541E97\"><div style=\"text-align&#58;right;\"><em>In the photo&#58; My first batch of students. I am"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "tag": "img",
+      "classification": "media",
+      "description": "Embedded image referenced by src, usually with alt text for captions or accessibility.",
+      "total_count": 37,
+      "file_count": 15,
+      "attributes": [
+        "alt",
+        "class",
+        "height",
+        "key",
+        "src",
+        "style",
+        "width"
+      ],
+      "attribute_usage": {
+        "src": 37,
+        "alt": 37,
+        "style": 37,
+        "class": 12,
+        "key": 6,
+        "width": 1,
+        "height": 1
+      },
+      "files": [
+        "15.json",
+        "18.json",
+        "19.json",
+        "25.json",
+        "26.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "44.json",
+        "45.json",
+        "56.json",
+        "70.json",
+        "71.json",
+        "84.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": " to my family.&#160;<br></div><div><br></div><div><img src=\"/blogs/PublishingImages/Blogs-SL03.jpg\" alt=\"\" style=\"margin&#58;5px;\" /><br><em>2016&#58; Along with one of my best friend"
+        },
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "s the The 5 W's of Time Management.<br></div><div><img src=\"/test/blogs/PublishingImages/blog-1.jpg\" alt=\"\" style=\"margin&#58;0px;\" /><br></div><div>The idea of the 5 W's is not new so"
+        },
+        {
+          "file": "19.json",
+          "field": "Blog Detail",
+          "snippet": "hroughout the world.<br></div><div><br></div><div><img src=\"/blogs/PublishingImages/Rufayda-building-group-photo.jpg\" alt=\"\" style=\"margin&#58;5px;\" /><br><em>Feerasta family members along with AKU lea"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "tag": "h2",
+      "classification": "structural",
+      "description": "Secondary heading within article body content.",
+      "total_count": 26,
+      "file_count": 6,
+      "attributes": [],
+      "attribute_usage": {},
+      "files": [
+        "26.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "46.json"
+      ],
+      "examples": [
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "-align&#58;right;\">-&#160;Lilly Walters</span></p><h2>The Need of the Hour<br></h2><p>Who hasn't witness"
+        },
+        {
+          "file": "28.json",
+          "field": "Blog Detail",
+          "snippet": " reach my students? Where do I even begin?<br></p><h2>Establishing Contact&#58; The Seeming Dead-end</h2"
+        },
+        {
+          "file": "29.json",
+          "field": "Blog Detail",
+          "snippet": "s=\"ExternalClass9861AB176CB54636A453D5F77748A5FC\"><h2>The Beginning<br></h2><p><img src=\"/iedpk/blog/Lis"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "tag": "h3",
+      "classification": "structural",
+      "description": "Tertiary heading within article body content.",
+      "total_count": 19,
+      "file_count": 5,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 1
+      },
+      "files": [
+        "22.json",
+        "26.json",
+        "42.json",
+        "43.json",
+        "72.json"
+      ],
+      "examples": [
+        {
+          "file": "22.json",
+          "field": "Blog Detail",
+          "snippet": " as sustainable education's raison d'etre.<br></p><h3>Deschooling and reschooling</h3><p>Several years b"
+        },
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "valuation of P-K in health sciences.&#160;<br></p><h3>\r\n      Question for our \r\n      Readers&#58;&#160"
+        },
+        {
+          "file": "42.json",
+          "field": "Blog Detail",
+          "snippet": "al and professional pursuits.</div><div><br></div><h3>Journey into I|C|E</h3><div><br></div><div>One of "
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "tag": "ul",
+      "classification": "structural",
+      "description": "Unordered (bulleted) list container.",
+      "total_count": 19,
+      "file_count": 7,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 13
+      },
+      "files": [
+        "31.json",
+        "66.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "89.json",
+        "97.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "ant;\" /> \r\n&#160;</p><h2>References&#160;<br></h2><ul><li><p>Khan, A. (2020, November 24).&#160;<a href="
+        },
+        {
+          "file": "66.json",
+          "field": "Blog Detail",
+          "snippet": "k's world. African curators can consider&#58;</li><ul style=\"list-style-type&#58;circle;\"><li>Sound Design&#58; Incorporate soundscapes or m"
+        },
+        {
+          "file": "70.json",
+          "field": "Blog Detail",
+          "snippet": "ey are using GenAI tools are&#58;&#160;</span></p><ul style=\"margin-top&#58;0px;margin-bottom&#58;0px;\"><li dir=\"ltr\" aria-level=\"1\" style=\"list-style-typ"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "tag": "h1",
+      "classification": "structural",
+      "description": "Top-level heading within article body content.",
+      "total_count": 14,
+      "file_count": 2,
+      "attributes": [
+        "dir",
+        "style"
+      ],
+      "attribute_usage": {
+        "dir": 14,
+        "style": 14
+      },
+      "files": [
+        "70.json",
+        "71.json"
+      ],
+      "examples": [
+        {
+          "file": "70.json",
+          "field": "Blog Detail",
+          "snippet": "tute for Educational Development.&#160;</span></p><h1 dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;20pt;margin-bottom&#58;6pt;\"><span style=\"font-size&#58;12pt;font-family&#58;ca"
+        },
+        {
+          "file": "71.json",
+          "field": "Blog Detail",
+          "snippet": "tute for Educational Development.&#160;</span></p><h1 dir=\"ltr\" style=\"line-height&#58;1.38;margin-top&#58;20pt;margin-bottom&#58;6pt;\"><span style=\"font-size&#58;12pt;font-family&#58;ca"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "tag": "td",
+      "classification": "structural",
+      "description": "Table data cell.",
+      "total_count": 14,
+      "file_count": 1,
+      "attributes": [
+        "class",
+        "colspan",
+        "style"
+      ],
+      "attribute_usage": {
+        "class": 14,
+        "style": 14,
+        "colspan": 7
+      },
+      "files": [
+        "31.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "ntent-box;outline&#58;0px;text-align&#58;center;\"><td class=\"ms-rteTableEvenCol-default\" style=\"box-sizing&#58;content-box;outline&#58;0px;border-color&#58;#c6c6c6;width&#58;163px;height&#58;30px;\"><p> \r\n               <strong>Grade</strong></p></t"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "tag": "tr",
+      "classification": "structural",
+      "description": "Table row containing td or th cells.",
+      "total_count": 8,
+      "file_count": 1,
+      "attributes": [
+        "class",
+        "style"
+      ],
+      "attribute_usage": {
+        "class": 8,
+        "style": 8
+      },
+      "files": [
+        "31.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "tyle=\"box-sizing&#58;border-box;outline&#58;0px;\"><tr class=\"ms-rteTableEvenRow-default\" style=\"box-sizing&#58;content-box;outline&#58;0px;text-align&#58;center;\"><th class=\"ms-rteTableEvenCol-default\" rowspan=\"1\""
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "tag": "h4",
+      "classification": "structural",
+      "description": "Fourth-level heading within article body content.",
+      "total_count": 6,
+      "file_count": 2,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 5
+      },
+      "files": [
+        "22.json",
+        "72.json"
+      ],
+      "examples": [
+        {
+          "file": "22.json",
+          "field": "Blog Detail",
+          "snippet": "me ago, but my 'busy life' got in the way.<br></p><h4>Conclusion</h4><p>Before concluding this essay, I "
+        },
+        {
+          "file": "72.json",
+          "field": "Blog Detail",
+          "snippet": "box-sizing&#58;border-box;outline&#58;0px;\"></div><h4 style=\"box-sizing&#58;border-box;outline&#58;0px;font-weight&#58;700;font-family&#58;&quot;fauna one&quot;, &quot;helvetica neue&quot;, arial, helvetica, sans-serif;color&#58;black;margin&#58;0.5em 0px;font-size&#58;1.25em;padding&#58;0px 0px 6px;background-color&#58;#ffffff;opacity&#58;0.7 !important;\">What possibilities do AI tools (e.g., ChatGPT) off"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "tag": "sup",
+      "classification": "inline_formatting",
+      "description": "Superscript text, often used for footnotes or ordinal markers.",
+      "total_count": 2,
+      "file_count": 2,
+      "attributes": [],
+      "attribute_usage": {},
+      "files": [
+        "66.json",
+        "90.json"
+      ],
+      "examples": [
+        {
+          "file": "66.json",
+          "field": "Blog Detail",
+          "snippet": "y interesting because I witnessed this at AKU's 40<sup>th</sup> anniversary exhibition 'A Transformative "
+        },
+        {
+          "file": "90.json",
+          "field": "Blog Detail",
+          "snippet": "e-psychology-of-games-and-gamification/</a></p><p><sup>8</sup>Tucker, J. A. L., McCarthy, S. F., Bornath,"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "tag": "ol",
+      "classification": "structural",
+      "description": "Ordered (numbered) list container.",
+      "total_count": 1,
+      "file_count": 1,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 1
+      },
+      "files": [
+        "66.json"
+      ],
+      "examples": [
+        {
+          "file": "66.json",
+          "field": "Blog Detail",
+          "snippet": "se their art products in an immersive way&#58;</p><ol style=\"list-style-type&#58;decimal;\"><li><strong>Embrace Immersive Experiences</strong>"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "tag": "table",
+      "classification": "structural",
+      "description": "Tabular data layout for schedules, comparisons, or event details.",
+      "total_count": 1,
+      "file_count": 1,
+      "attributes": [
+        "cellspacing",
+        "class",
+        "style"
+      ],
+      "attribute_usage": {
+        "cellspacing": 1,
+        "class": 1,
+        "style": 1
+      },
+      "files": [
+        "31.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "&#160;The following timetable was devised&#58;</p><table cellspacing=\"0\" class=\"ms-rteTable-default\" style=\"box-sizing&#58;content-box;outline&#58;0px;border-spacing&#58;0px;border-color&#58;#c6c6c6;width&#58;345px;\"><tbody style=\"box-sizing&#58;border-box;outline&#5"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "tag": "tbody",
+      "classification": "structural",
+      "description": "Table body grouping rows within a table.",
+      "total_count": 1,
+      "file_count": 1,
+      "attributes": [
+        "style"
+      ],
+      "attribute_usage": {
+        "style": 1
+      },
+      "files": [
+        "31.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "58;0px;border-color&#58;#c6c6c6;width&#58;345px;\"><tbody style=\"box-sizing&#58;border-box;outline&#58;0px;\"><tr class=\"ms-rteTableEvenRow-default\" style=\"box-"
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "tag": "th",
+      "classification": "inferred",
+      "description": "Tag context inferred automatically. Add an explicit entry to TAG_CONTEXT if this tag needs a fixed editorial note.",
+      "total_count": 1,
+      "file_count": 1,
+      "attributes": [
+        "class",
+        "colspan",
+        "rowspan",
+        "style"
+      ],
+      "attribute_usage": {
+        "class": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "style": 1
+      },
+      "files": [
+        "31.json"
+      ],
+      "examples": [
+        {
+          "file": "31.json",
+          "field": "Blog Detail",
+          "snippet": "ntent-box;outline&#58;0px;text-align&#58;center;\"><th class=\"ms-rteTableEvenCol-default\" rowspan=\"1\" colspan=\"2\" style=\"box-sizing&#58;content-box;outline&#58;0px;border-color&#58;#c6c6c6;width&#58;524.028px;\"><p>GBELS Muhammad Khan Shar, Taluka&#58; Faiz Gunj"
+        }
+      ]
+    }
+  ]
+}

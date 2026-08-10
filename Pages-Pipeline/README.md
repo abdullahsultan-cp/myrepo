@@ -18,7 +18,7 @@ a set of CSVs and a browsable portal rather than Storyblok payloads.
 
 ```
 data/     the three real inputs — the only things a human supplies
-build/    the code, plus assets/ for what the rendered pages inline
+pipeline/ the code, plus assets/ for what the rendered pages inline
 out/      deliverables: the CSVs and HTML handed to AKU        TRACKED
 out/work/ intermediates the steps pass between themselves      gitignored
 portal/   the React app that makes all of it browsable
@@ -29,7 +29,7 @@ deliverables and a handful of views, with nothing to say which was which. The
 generated ones were committed too, so a re-run looked like hand edits. Now the
 distinction is the directory it lives in.
 
-**`build/paths.py` names every path.** Add a file there rather than joining a
+**`pipeline/paths.py` names every path.** Add a file there rather than joining a
 path inline; that module exists because a hand-built `../data/taxonomy/...` in
 `join.py` broke silently the day the repo grew a folder per content type, and
 nothing said so — the enrichment it fed simply went quiet.
@@ -55,11 +55,11 @@ pretending.
 
 ## Running it
 
-In order, from `build/`. Each step writes what the next one reads, so any step
+In order, from `pipeline/`. Each step writes what the next one reads, so any step
 can be re-run alone once its predecessor has.
 
 ```bash
-cd Pages-Pipeline/build
+cd Pages-Pipeline/pipeline
 
 python probe_csv.py              # permissions CSV  -> sites.json
 python join.py                   # + AKU-EN_1.HTM   -> pages.json, join_report.txt

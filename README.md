@@ -3,8 +3,9 @@
 Migrates AKU's SharePoint content into Storyblok — the article content, the
 folder structure it lives in, and every image, video and document it references.
 
-**News is done: 3,606 stories live.** Blogs and events await their exports; pages
-has its own stage.
+**News is done: 3,606 stories live.** Blogs are imported and converted — 83
+posts, awaiting layout sign-off. Events await their export; pages has its own
+stage.
 
 One codebase drives all of them, selected with `--type`. What differs between
 types — hierarchy, components, layout, source column names — lives in
@@ -101,23 +102,26 @@ is `postgres@localhost/aku_news_migration`.
 ## Repository layout
 
 ```
-pipeline/                 ONE codebase for news, blogs and events
+pipeline/                 ONE codebase for news, blogs and events. GENERIC.
+  core/                     the seam + shared helpers (imported, never run)
+  content/                  source export -> story payload
+  media/                    assets: catalogue, download, attach, inject
+  analyze/                  inventories and validation (reads, never writes)
   taxonomy/                 stage 2 · Region / Entity / Department
   migrate/download/         stage 3a · aku.edu -> disk
   migrate/upload/           stage 3b · disk -> Storyblok
   migrate/review/           verification and backups, no writes
-  paths_root.py             the seam: resolves every path per --type
 
 News-Pipeline/            3,606 stories, migrated
   data/                     source export + per-stage output
   assets/News/media/        3,902 files (GITIGNORED, re-downloadable)
   backup/                   raw export + live Storyblok snapshots
-Blogs-Pipeline/           awaiting its export
+Blogs-Pipeline/           83 posts, imported and converted
 Events-Pipeline/          awaiting its export
 
 Pages-Pipeline/           structure, not content — its own stage
   data/                     the 3 real inputs
-  build/                    the code; paths.py names every path
+  pipeline/                 its own code; paths.py names every path
   out/                      deliverables handed to AKU (TRACKED)
   out/work/                 intermediates (gitignored)
   portal/                   the React app
@@ -131,7 +135,7 @@ tests/                    pytest
 Stage 3 is split by flow because the two halves fail differently and are run at
 different times: **download** talks to aku.edu and is safe to interrupt,
 **upload** talks to Storyblok and writes. `paths.py` and `db.py` stay at the
-`migrate/` root because both flows use them, and `pipeline/paths_root.py`
+`migrate/` root because both flows use them, and `pipeline/core/paths_root.py`
 resolves everything per `--type`.
 
 **Gitignored on purpose:** the six per-stage story folders (21,636 files,

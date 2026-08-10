@@ -10,6 +10,7 @@ from os import makedirs
 import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+from fields import F  # noqa: E402
 from paths_root import P  # noqa: E402
 
 
@@ -33,7 +34,13 @@ def print_news_items(news_items):
         print()
 
 def create_news_item_json(news_item, folder_path):
-    news_id = news_item["Id"]
+    # The id column is "Id" in the News list and "ID" in Blogs. Asking the
+    # profile costs nothing and stops the whole run dying on a KeyError.
+    news_id = F.get(news_item, "id") or news_item.get("Id") or news_item.get("ID")
+    if news_id in (None, ""):
+        raise SystemExit(
+            f"an item has no {F.column('id')!r}; every later stage keys on it. "
+            f"Check fields.id in config/types/{P.type}.json")
     out_path = join(P.RAW, f"{news_id}.json")
     with open(out_path, "w", encoding="utf-8", newline="\n") as f:
         dump(news_item, f, indent=2, default=str)

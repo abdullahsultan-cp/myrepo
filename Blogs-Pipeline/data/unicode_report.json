@@ -1,0 +1,940 @@
+{
+  "summary": {
+    "unique_character_count": 21,
+    "classification_guide": {
+      "sharepoint_artifact": "Characters commonly introduced by SharePoint/Word rich-text editing. These are the main cleanup targets alongside zero-width spaces.",
+      "typography": "Editor typography and invisible spacing characters. Often safe to normalize when converting content to plain ASCII text.",
+      "control_whitespace": "Line breaks and tabs. Usually intentional in Contact fields, but worth reviewing in HTML fields.",
+      "data_quality": "Characters that indicate encoding or data-entry problems rather than normal editorial styling.",
+      "legitimate_content": "Valid multilingual content such as accented Latin names, transliteration marks, Arabic/Urdu poetry, and intentional symbols like £ or °. Do not strip these during routine SharePoint cleanup.",
+      "inferred": "No explicit note exists yet for this character. Classification was inferred from Unicode category and script."
+    },
+    "by_classification": {
+      "sharepoint_artifact": 7,
+      "typography": 2,
+      "control_whitespace": 2,
+      "data_quality": 1,
+      "legitimate_content": 8,
+      "inferred": 1
+    }
+  },
+  "characters": [
+    {
+      "rank": 1,
+      "character": "’",
+      "code": "\\u2019",
+      "name": "RIGHT SINGLE QUOTATION MARK",
+      "unicode_category": "Pf",
+      "classification": "sharepoint_artifact",
+      "description": "Curly apostrophe inserted by SharePoint/Word rich-text editors instead of ASCII '.",
+      "normalize_recommended": true,
+      "ascii_replacement": "'",
+      "total_count": 417,
+      "file_count": 47,
+      "fields": [
+        "Blog Detail",
+        "Blog Title",
+        "Pull Quotes",
+        "Summary"
+      ],
+      "files": [
+        "18.json",
+        "19.json",
+        "20.json",
+        "21.json",
+        "22.json",
+        "23.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "33.json",
+        "34.json",
+        "38.json",
+        "41.json",
+        "42.json",
+        "43.json",
+        "44.json",
+        "45.json",
+        "49.json",
+        "50.json",
+        "51.json",
+        "58.json",
+        "64.json",
+        "65.json",
+        "69.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "73.json",
+        "74.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "84.json",
+        "85.json",
+        "86.json",
+        "87.json",
+        "89.json",
+        "91.json",
+        "92.json",
+        "93.json",
+        "94.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "pment. I have labelled it as the The 5 W’s of Time Management.<br></div><div><img"
+        },
+        {
+          "file": "19.json",
+          "field": "Blog Detail",
+          "snippet": "l weapon you can use to change the world’. When brothers Alauddin and the late Ba"
+        },
+        {
+          "file": "20.json",
+          "field": "Blog Detail",
+          "snippet": "s and take corrective actions. This year’s theme reminds us that we only have one"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "character": "​",
+      "code": "\\u200b",
+      "name": "ZERO WIDTH SPACE",
+      "unicode_category": "Cf",
+      "classification": "sharepoint_artifact",
+      "description": "Invisible SharePoint/Word artifact. Often appears at the start of paragraphs in NewsContent and is safe to remove.",
+      "normalize_recommended": true,
+      "ascii_replacement": "",
+      "total_count": 186,
+      "file_count": 47,
+      "fields": [
+        "Author Name",
+        "AuthorName",
+        "Blog Detail",
+        "Blog Title",
+        "Pull Quotes"
+      ],
+      "files": [
+        "15.json",
+        "18.json",
+        "19.json",
+        "20.json",
+        "21.json",
+        "22.json",
+        "23.json",
+        "24.json",
+        "26.json",
+        "27.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "32.json",
+        "33.json",
+        "34.json",
+        "36.json",
+        "37.json",
+        "42.json",
+        "43.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "48.json",
+        "52.json",
+        "53.json",
+        "59.json",
+        "62.json",
+        "63.json",
+        "67.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "78.json",
+        "79.json",
+        "81.json",
+        "82.json",
+        "83.json",
+        "84.json",
+        "87.json",
+        "88.json",
+        "89.json",
+        "90.json",
+        "95.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "2099B5D7D413FB593DA96A0FE8085\"><div><em>​In the photo&#58;&#160;<em>My first Eid-"
+        },
+        {
+          "file": "18.json",
+          "field": "AuthorName",
+          "snippet": "​Leif Stenberg"
+        },
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "ffffff;\">&#123;EmbeddedCode&#125;</span>​</span>​</div><div><strong>1.&#160; &#16"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "character": "“",
+      "code": "\\u201c",
+      "name": "LEFT DOUBLE QUOTATION MARK",
+      "unicode_category": "Pi",
+      "classification": "sharepoint_artifact",
+      "description": "Curly opening double quote from SharePoint/Word instead of ASCII \".",
+      "normalize_recommended": true,
+      "ascii_replacement": "\"",
+      "total_count": 135,
+      "file_count": 41,
+      "fields": [
+        "Blog Detail",
+        "Blog Title",
+        "Pull Quotes"
+      ],
+      "files": [
+        "18.json",
+        "21.json",
+        "22.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "30.json",
+        "31.json",
+        "32.json",
+        "33.json",
+        "34.json",
+        "35.json",
+        "38.json",
+        "41.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "51.json",
+        "60.json",
+        "64.json",
+        "69.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "73.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "83.json",
+        "85.json",
+        "87.json",
+        "88.json",
+        "90.json",
+        "91.json",
+        "92.json",
+        "93.json",
+        "94.json",
+        "97.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "E53\"><div>I&#160;remember an old adage, “Time flies” or “Time flies, remember dea"
+        },
+        {
+          "file": "18.json",
+          "field": "Pull Quotes",
+          "snippet": "“We are the main characters! You must rec"
+        },
+        {
+          "file": "21.json",
+          "field": "Blog Detail",
+          "snippet": "ing the university charter in 1983&#58; “In everything we do we must look to the "
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "character": "”",
+      "code": "\\u201d",
+      "name": "RIGHT DOUBLE QUOTATION MARK",
+      "unicode_category": "Pf",
+      "classification": "sharepoint_artifact",
+      "description": "Curly closing double quote from SharePoint/Word instead of ASCII \".",
+      "normalize_recommended": true,
+      "ascii_replacement": "\"",
+      "total_count": 102,
+      "file_count": 32,
+      "fields": [
+        "Blog Detail",
+        "Blog Title",
+        "Pull Quotes"
+      ],
+      "files": [
+        "18.json",
+        "21.json",
+        "22.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "30.json",
+        "31.json",
+        "33.json",
+        "34.json",
+        "38.json",
+        "44.json",
+        "51.json",
+        "64.json",
+        "69.json",
+        "70.json",
+        "71.json",
+        "72.json",
+        "73.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "83.json",
+        "85.json",
+        "86.json",
+        "87.json",
+        "91.json",
+        "92.json",
+        "93.json",
+        "94.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "&#160;remember an old adage, “Time flies” or “Time flies, remember death”. I am n"
+        },
+        {
+          "file": "18.json",
+          "field": "Pull Quotes",
+          "snippet": "e for your own development, no one else.”"
+        },
+        {
+          "file": "21.json",
+          "field": "Blog Detail",
+          "snippet": " creatively, to innovate and to improve.”<br></div><div><br></div><div>Particular"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "character": "‘",
+      "code": "\\u2018",
+      "name": "LEFT SINGLE QUOTATION MARK",
+      "unicode_category": "Pi",
+      "classification": "sharepoint_artifact",
+      "description": "Curly opening single quote from SharePoint/Word instead of ASCII '.",
+      "normalize_recommended": true,
+      "ascii_replacement": "'",
+      "total_count": 78,
+      "file_count": 20,
+      "fields": [
+        "Blog Detail",
+        "Pull Quotes"
+      ],
+      "files": [
+        "19.json",
+        "21.json",
+        "22.json",
+        "23.json",
+        "24.json",
+        "25.json",
+        "26.json",
+        "27.json",
+        "29.json",
+        "30.json",
+        "33.json",
+        "34.json",
+        "43.json",
+        "44.json",
+        "45.json",
+        "49.json",
+        "50.json",
+        "73.json",
+        "86.json",
+        "94.json"
+      ],
+      "examples": [
+        {
+          "file": "19.json",
+          "field": "Blog Detail",
+          "snippet": "v><div><br></div><div>It is often said, ‘Education is the most powerful weapon yo"
+        },
+        {
+          "file": "21.json",
+          "field": "Blog Detail",
+          "snippet": "directly addresses in addition to SDG 3 ‘Health and Well-Being'&#58; SDG 1 ‘Pover"
+        },
+        {
+          "file": "22.json",
+          "field": "Blog Detail",
+          "snippet": " hooked&#58; I came across phrases like ‘Covid-19 has changed our assumptions’, ‘"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "character": "–",
+      "code": "\\u2013",
+      "name": "EN DASH",
+      "unicode_category": "Pd",
+      "classification": "sharepoint_artifact",
+      "description": "En dash from SharePoint/Word instead of ASCII hyphen-minus.",
+      "normalize_recommended": true,
+      "ascii_replacement": "-",
+      "total_count": 73,
+      "file_count": 26,
+      "fields": [
+        "Blog Detail",
+        "Blog Title",
+        "Pull Quotes",
+        "Summary"
+      ],
+      "files": [
+        "19.json",
+        "20.json",
+        "21.json",
+        "22.json",
+        "23.json",
+        "26.json",
+        "30.json",
+        "33.json",
+        "34.json",
+        "35.json",
+        "41.json",
+        "44.json",
+        "45.json",
+        "46.json",
+        "47.json",
+        "48.json",
+        "51.json",
+        "69.json",
+        "78.json",
+        "79.json",
+        "80.json",
+        "82.json",
+        "89.json",
+        "90.json",
+        "92.json",
+        "94.json"
+      ],
+      "examples": [
+        {
+          "file": "19.json",
+          "field": "Blog Detail",
+          "snippet": "e, and a centre of knowledge generation – transforming the lives of hundreds of s"
+        },
+        {
+          "file": "19.json",
+          "field": "Summary",
+          "snippet": "e, and a centre of knowledge generation – transforming the lives of hundreds of s"
+        },
+        {
+          "file": "20.json",
+          "field": "Blog Detail",
+          "snippet": "ecord-shattering extreme weather events –&#160; heatwaves, floods, droughts, stor"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "character": "\n",
+      "code": "\\u000a",
+      "name": "LINE FEED",
+      "unicode_category": "Cc",
+      "classification": "control_whitespace",
+      "description": "Line break in Contact, PullQuote, or pasted HTML content.",
+      "normalize_recommended": false,
+      "ascii_replacement": "\\n",
+      "total_count": 58,
+      "file_count": 10,
+      "fields": [
+        "Blog Detail",
+        "Pull Quotes"
+      ],
+      "files": [
+        "15.json",
+        "20.json",
+        "26.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "36.json",
+        "88.json",
+        "89.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "ial Eid really is.</em></em></div><div>\r\n   <br>\r\n</div><div>I have spent decades"
+        },
+        {
+          "file": "20.json",
+          "field": "Blog Detail",
+          "snippet": "ce&#58;pre-wrap;\">&#123;pullquote&#125;\r\n</span>​The Aga Khan University, in line"
+        },
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "ssCAB91D2DF79E4BC8AE695EB0BD7F5F8B\"><p>\r\n      <strong><em>​“The success of your "
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "character": "\r",
+      "code": "\\u000d",
+      "name": "CARRIAGE RETURN",
+      "unicode_category": "Cc",
+      "classification": "control_whitespace",
+      "description": "Windows-style line ending fragment in HTML or quoted text.",
+      "normalize_recommended": false,
+      "ascii_replacement": "",
+      "total_count": 58,
+      "file_count": 10,
+      "fields": [
+        "Blog Detail",
+        "Pull Quotes"
+      ],
+      "files": [
+        "15.json",
+        "20.json",
+        "26.json",
+        "28.json",
+        "29.json",
+        "30.json",
+        "31.json",
+        "36.json",
+        "88.json",
+        "89.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "cial Eid really is.</em></em></div><div>\r\n   <br>\r\n</div><div>I have spent decade"
+        },
+        {
+          "file": "20.json",
+          "field": "Blog Detail",
+          "snippet": "ace&#58;pre-wrap;\">&#123;pullquote&#125;\r\n</span>​The Aga Khan University, in lin"
+        },
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "assCAB91D2DF79E4BC8AE695EB0BD7F5F8B\"><p>\r\n      <strong><em>​“The success of your"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "character": "—",
+      "code": "\\u2014",
+      "name": "EM DASH",
+      "unicode_category": "Pd",
+      "classification": "sharepoint_artifact",
+      "description": "Em dash from SharePoint/Word instead of ASCII hyphen-minus.",
+      "normalize_recommended": true,
+      "ascii_replacement": "-",
+      "total_count": 36,
+      "file_count": 12,
+      "fields": [
+        "Blog Detail",
+        "Summary"
+      ],
+      "files": [
+        "15.json",
+        "18.json",
+        "24.json",
+        "27.json",
+        "39.json",
+        "65.json",
+        "70.json",
+        "71.json",
+        "74.json",
+        "84.json",
+        "94.json",
+        "98.json"
+      ],
+      "examples": [
+        {
+          "file": "15.json",
+          "field": "Blog Detail",
+          "snippet": "ed with in Melanesia. The idea is simple—we are the result of our interactions wi"
+        },
+        {
+          "file": "18.json",
+          "field": "Blog Detail",
+          "snippet": "lk about death, or the end of all things—but the importance of time and its prope"
+        },
+        {
+          "file": "24.json",
+          "field": "Blog Detail",
+          "snippet": "y getting under my skin (other than zinc—and that’s a joke, get it?) was the freq"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "character": "·",
+      "code": "\\u00b7",
+      "name": "MIDDLE DOT",
+      "unicode_category": "Po",
+      "classification": "inferred",
+      "description": "Punctuation character inferred from Unicode category. Review before normalizing in case it is intentional editorial content.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 16,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "46.json"
+      ],
+      "examples": [
+        {
+          "file": "46.json",
+          "field": "Blog Detail",
+          "snippet": "he previous century.&#160; &#160;</p><p>·Be open-minded and open-hearted; be auth"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "character": "…",
+      "code": "\\u2026",
+      "name": "HORIZONTAL ELLIPSIS",
+      "unicode_category": "Po",
+      "classification": "typography",
+      "description": "Ellipsis character from editors instead of three ASCII periods.",
+      "normalize_recommended": true,
+      "ascii_replacement": "...",
+      "total_count": 10,
+      "file_count": 6,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "22.json",
+        "24.json",
+        "27.json",
+        "28.json",
+        "47.json",
+        "48.json"
+      ],
+      "examples": [
+        {
+          "file": "22.json",
+          "field": "Blog Detail",
+          "snippet": "ith its concomitant lack of biodiversity…need I go on?<br></p><p>“If all the inse"
+        },
+        {
+          "file": "24.json",
+          "field": "Blog Detail",
+          "snippet": " have an important message for you today…”​<br></p><p>Thus starts the advertiseme"
+        },
+        {
+          "file": "27.json",
+          "field": "Blog Detail",
+          "snippet": "ity, reality, creativity and imagination…all partly subjective, partly objective."
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "character": "ó",
+      "code": "\\u00f3",
+      "name": "LATIN SMALL LETTER O WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 4,
+      "file_count": 2,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "26.json",
+        "90.json"
+      ],
+      "examples": [
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": " of 6 minutes and 40 seconds (Ramos-Rincón et al., 2018). It requires concise edi"
+        },
+        {
+          "file": "90.json",
+          "field": "Blog Detail",
+          "snippet": "sical training (Proff, Fatima, &amp; Limón, 2023; Ministry of Federal Education a"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "character": "á",
+      "code": "\\u00e1",
+      "name": "LATIN SMALL LETTER A WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 2,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "26.json"
+      ],
+      "examples": [
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "-de la Torre, G., Harris, M., &amp; Fernández-Sánchez, J. (2018). \r\n      <a href"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "character": "í",
+      "code": "\\u00ed",
+      "name": "LATIN SMALL LETTER I WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 2,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "26.json"
+      ],
+      "examples": [
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": ", T. S.-S., Romero-Nieto, M., Peris-García, J., Martínez-de la Torre, G., Harris,"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "character": "ı",
+      "code": "\\u0131",
+      "name": "LATIN SMALL LETTER DOTLESS I",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 2,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "86.json"
+      ],
+      "examples": [
+        {
+          "file": "86.json",
+          "field": "Blog Detail",
+          "snippet": "cultural Production and Economy” Kayabaşı and Yılmaz (2021) state that vermicompo"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "character": " ",
+      "code": "\\u202f",
+      "name": "NARROW NO-BREAK SPACE",
+      "unicode_category": "Zs",
+      "classification": "typography",
+      "description": "Invisible spacing character used by editors for typographic spacing.",
+      "normalize_recommended": true,
+      "ascii_replacement": " ",
+      "total_count": 2,
+      "file_count": 2,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "79.json",
+        "86.json"
+      ],
+      "examples": [
+        {
+          "file": "79.json",
+          "field": "Blog Detail",
+          "snippet": "/div><div><br></div><div>Dr Sadia Bhutta is working as an Associate Professor at "
+        },
+        {
+          "file": "86.json",
+          "field": "Blog Detail",
+          "snippet": "micompost in Agricultural Production and Economy” Kayabaşı and Yılmaz (2021) stat"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "character": "×",
+      "code": "\\u00d7",
+      "name": "MULTIPLICATION SIGN",
+      "unicode_category": "Sm",
+      "classification": "legitimate_content",
+      "description": "Symbol or numeric character used intentionally in content.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 1,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "26.json"
+      ],
+      "examples": [
+        {
+          "file": "26.json",
+          "field": "Blog Detail",
+          "snippet": "ear communication skills. Thus this “20 × 20” format is designed to deliver all t"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "character": "ç",
+      "code": "\\u00e7",
+      "name": "LATIN SMALL LETTER C WITH CEDILLA",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 1,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "47.json"
+      ],
+      "examples": [
+        {
+          "file": "47.json",
+          "field": "Blog Detail",
+          "snippet": "ealize how fragile she really is. Her façade of&#160;'being able to do it all sti"
+        }
+      ]
+    },
+    {
+      "rank": 19,
+      "character": "é",
+      "code": "\\u00e9",
+      "name": "LATIN SMALL LETTER E WITH ACUTE",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 1,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "22.json"
+      ],
+      "examples": [
+        {
+          "file": "22.json",
+          "field": "Blog Detail",
+          "snippet": ", and popular science/culture into the mélange. I was so inspired by his work tha"
+        }
+      ]
+    },
+    {
+      "rank": 20,
+      "character": "ş",
+      "code": "\\u015f",
+      "name": "LATIN SMALL LETTER S WITH CEDILLA",
+      "unicode_category": "Ll",
+      "classification": "legitimate_content",
+      "description": "Latin extended or accented letter used in names, places, or transliteration.",
+      "normalize_recommended": false,
+      "ascii_replacement": null,
+      "total_count": 1,
+      "file_count": 1,
+      "fields": [
+        "Blog Detail"
+      ],
+      "files": [
+        "86.json"
+      ],
+      "examples": [
+        {
+          "file": "86.json",
+          "field": "Blog Detail",
+          "snippet": "icultural Production and Economy” Kayabaşı and Yılmaz (2021) state that vermicomp"
+        }
+      ]
+    },
+    {
+      "rank": 21,
+      "character": "＆",
+      "code": "\\uff06",
+      "name": "FULLWIDTH AMPERSAND",
+      "unicode_category": "Po",
+      "classification": "data_quality",
+      "description": "Full-width ampersand in Tags instead of ASCII &.",
+      "normalize_recommended": true,
+      "ascii_replacement": "&",
+      "total_count": 1,
+      "file_count": 1,
+      "fields": [
+        "Tags"
+      ],
+      "files": [
+        "74.json"
+      ],
+      "examples": [
+        {
+          "file": "74.json",
+          "field": "Tags",
+          "snippet": "Centre of Excellence in Women ＆ Child Health|f3809b00-3b46-43fd-b8c7-5d"
+        }
+      ]
+    }
+  ]
+}

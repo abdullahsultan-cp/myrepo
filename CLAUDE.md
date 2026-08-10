@@ -13,7 +13,7 @@ the folder tree it lives in, and every referenced image, video and document.
 | Type | State |
 |---|---|
 | **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable |
-| **blogs** | profile scaffolded, awaiting its export |
+| **blogs** | 83 posts imported and converted to rich text; layout decisions taken |
 | **events** | profile scaffolded, awaiting its export |
 | **pages** | own stage — `Pages-Pipeline/`, a genuinely different shape |
 
@@ -33,25 +33,30 @@ Three stages, each independently runnable and resumable:
 ## 2 · Layout
 
 ```
-pipeline/                ONE codebase for news, blogs and events
-  run_pipeline.py          stage 1 orchestrator
-  paths_root.py            THE SEAM — resolves every path per --type
-  new_type.py              scaffold a type; --check a profile against its export
+pipeline/                ONE codebase for news, blogs and events. GENERIC.
+  run_pipeline.py          stage 1 orchestrator      <- entry point
+  new_type.py              scaffold / --check a type <- entry point
+  _bootstrap.py            puts every folder below on sys.path
+  core/                    the seam and shared helpers. IMPORTED, NEVER RUN.
+                             paths_root.py  resolves every path per --type
+                             fields.py      reads a column without knowing the list
+                             storyblok_richtext.py, storyblok_utils.py, ...
+  content/                 source export -> story payload   (stage 1)
+  media/                   assets: catalogue, download, attach, inject
+  analyze/                 inventories and validation. READS, NEVER WRITES.
   taxonomy/                stage 2 · Region / Entity / Department
-  migrate/
-    paths.py db.py schema.sql      shared by both flows
-    download/              stage 3a · aku.edu -> disk   (read-only, interruptible)
-    upload/                stage 3b · disk -> Storyblok (writes)
-    review/                verification and backups     (never writes to the space)
+  migrate/                 stage 3
+    download/                aku.edu -> disk   (read-only, interruptible)
+    upload/                  disk -> Storyblok (writes)
+    review/                  verification and backups (never writes to the space)
 
-News-Pipeline/           data/ assets/ backup/    3,606 stories, LIVE
-Blogs-Pipeline/          data/ assets/ backup/    awaiting export
-Events-Pipeline/         data/ assets/ backup/    awaiting export
+News-Pipeline/           data/ assets/ backup/ README    3,606 stories, LIVE
+Blogs-Pipeline/          data/ assets/ backup/ README    83 posts, converted
+Events-Pipeline/         data/ assets/ backup/ README    awaiting export
 
 Pages-Pipeline/          separate stage — structure, not content
   data/                    the 3 real inputs
-  build/                   the code; paths.py names every path, assets/ holds
-                           what the rendered pages inline
+  pipeline/                its own code; paths.py names every path
   out/                     deliverables handed to AKU        TRACKED
   out/work/                intermediates between steps        gitignored
   portal/                  the React app
@@ -62,6 +67,12 @@ docs/                    the specs
 tests/                   pytest
 storyblok-viewer/        Next.js preview of a payload, before uploading it
 ```
+
+**`pipeline/` is generic; everything is inherited from it.** No script there
+names a content type, a SharePoint column, or a payload key. A step asks
+`F.get(item, "body")` and the profile says which column that is; the story shape
+itself is declared in `content_fields`. Each folder has one job and a README
+saying so — `core/` is imported and never run, `analyze/` reads and never writes.
 
 **No script in `pipeline/` is named for a content type.** Four steps and seven
 scripts said "news" for code that runs blogs and events identically — the names
@@ -306,6 +317,11 @@ run, which empties `media[]`; the full run was putting the media back. The
 refactor was clean. `run_pipeline.py` now warns when a step is run alone that
 leaves the payloads worse than it found them.
 
+**A filter written for one thing will catch another.** The declarative payload
+builder skipped every key beginning with `_`, meant for `_comment` entries. `_uid`
+is a real Storyblok field, and all 3,606 payloads silently lost it — caught by the
+byte-identity check, not by reading the code.
+
 **Never let a set decide the order of a committed file.** `build_url_lookup`
 built its variants in a `{...}` set literal, and Python randomises string hashing
 per process — so every regeneration wrote the same 7,057 entries in a different
@@ -314,12 +330,12 @@ by diff. Use a list wherever output order is observable.
 
 **A path built by walking up from `__file__` breaks silently when the tree
 moves.** Two of these survived the content-type restructure:
-`Pages-Pipeline/build/join.py` reached for `../data/taxonomy/...`, and
+`Pages-Pipeline/pipeline/join.py` reached for `../data/taxonomy/...`, and
 `extract_storyblok_filter_constants.py` for `data/storyblok_stories`. Neither
 errored in a way anyone saw — the first quietly stopped enriching, the second
 failed at the very end of every `all` run and left the viewer's filter constants
 non-existent. Both pipelines now resolve paths through a module (`paths_root.py`,
-`Pages-Pipeline/build/paths.py`) so a move is one edit, not seventeen.
+`Pages-Pipeline/pipeline/paths.py`) so a move is one edit, not seventeen.
 
 **Read the exit code of the whole run, not the last thing printed.** `all`
 finishes with a wall of per-step output, and a step that fails in the middle of

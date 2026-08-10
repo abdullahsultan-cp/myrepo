@@ -9,6 +9,7 @@ import re
 import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
+from fields import F  # noqa: E402
 from storyblok_utils import normalize_sequence_number, slugify, story_uuid
 
 # Paths come from the shared module, so this works for any
@@ -43,7 +44,7 @@ def build_story_index(news_items):
     by_slug = {}
 
     for filename, item in news_items.items():
-        sharepoint_id = item.get("Id") or item.get("ID")
+        sharepoint_id = F.get(item, "id") or item.get("Id") or item.get("ID")
         sequence_number = normalize_sequence_number(item.get("SequenceNumber"))
         title = item.get("Title") or f"{P.leaf}-{sharepoint_id}"
         slug = slugify(title, fallback=f"{P.leaf}-{sharepoint_id}")

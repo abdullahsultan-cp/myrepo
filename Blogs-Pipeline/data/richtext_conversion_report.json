@@ -1,0 +1,230 @@
+{
+  "summary": {
+    "source_folder": "D:\\AKU News\\aku-data-transformation-pipeline-news-master\\Blogs-Pipeline\\data\\normalized",
+    "output_folder": "D:\\AKU News\\aku-data-transformation-pipeline-news-master\\Blogs-Pipeline\\data\\richtext",
+    "files_processed": 83,
+    "conversion_failures": 0,
+    "files_with_warnings": 22,
+    "empty_content_files": 0,
+    "iframe_files": 0,
+    "image_files": 13,
+    "relative_link_files": 12,
+    "warning_categories": {
+      "sharepoint_image": 31,
+      "relative_link": 23,
+      "unexpected_block_inside_inline": 15
+    }
+  },
+  "conversion_failures": [],
+  "files_with_iframes": [],
+  "files_with_sharepoint_images": [
+    "15.json",
+    "18.json",
+    "19.json",
+    "25.json",
+    "26.json",
+    "28.json",
+    "29.json",
+    "30.json",
+    "31.json",
+    "44.json",
+    "45.json",
+    "56.json",
+    "84.json"
+  ],
+  "files_with_relative_links": [
+    "18.json",
+    "32.json",
+    "38.json",
+    "41.json",
+    "44.json",
+    "45.json",
+    "70.json",
+    "71.json",
+    "72.json",
+    "74.json",
+    "82.json",
+    "90.json"
+  ],
+  "files_with_warnings": [
+    {
+      "file": "15.json",
+      "warnings": [
+        "sharepoint_image:/blogs/PublishingImages/Blogs-SL03.jpg"
+      ]
+    },
+    {
+      "file": "18.json",
+      "warnings": [
+        "sharepoint_image:/test/blogs/PublishingImages/blog-1.jpg",
+        "relative_link:/Pages/home.aspx"
+      ]
+    },
+    {
+      "file": "19.json",
+      "warnings": [
+        "sharepoint_image:/blogs/PublishingImages/Rufayda-building-group-photo.jpg"
+      ]
+    },
+    {
+      "file": "25.json",
+      "warnings": [
+        "sharepoint_image:/blogs/PublishingImages/Blogs-career-perplexity-medium.jpg"
+      ]
+    },
+    {
+      "file": "26.json",
+      "warnings": [
+        "sharepoint_image:/iedpk/blog/Lists/Photos/P-K1.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/P-K3.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/P-K2.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/DesigningP-K.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/GuidelinesP-K.jpg"
+      ]
+    },
+    {
+      "file": "28.json",
+      "warnings": [
+        "sharepoint_image:/iedpk/blog/Lists/Photos/ma2.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/ma3.jpg"
+      ]
+    },
+    {
+      "file": "29.json",
+      "warnings": [
+        "sharepoint_image:/iedpk/blog/Lists/Photos/SC1.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/SC2.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/SC5.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/SC4.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/SC3.jpg"
+      ]
+    },
+    {
+      "file": "30.json",
+      "warnings": [
+        "sharepoint_image:/iedpk/blog/Lists/Photos/neha2.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/neha5.jpeg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/neha1.jpeg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/neha4.jpeg"
+      ]
+    },
+    {
+      "file": "31.json",
+      "warnings": [
+        "sharepoint_image:/iedpk/blog/PublishingImages/aftab1.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/aftab2.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/aftab3.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/aftab4.jpg",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "sharepoint_image:/iedpk/blog/PublishingImages/aftab4.jpg",
+        "sharepoint_image:/iedpk/blog/Lists/Photos/aftab-bannerdn.jpg"
+      ]
+    },
+    {
+      "file": "32.json",
+      "warnings": [
+        "relative_link:/coe-wch/about/Pages/east-africa.aspx"
+      ]
+    },
+    {
+      "file": "38.json",
+      "warnings": [
+        "relative_link:/students/experience/blogs/Documents/Khabarnaama%20Vol%202%20DIGITAL%20COPY.pdf"
+      ]
+    },
+    {
+      "file": "41.json",
+      "warnings": [
+        "relative_link:/coe-wch/research/Pages/research-ea.aspx"
+      ]
+    },
+    {
+      "file": "44.json",
+      "warnings": [
+        "relative_link:/ccit/Pages/home.aspx",
+        "sharepoint_image:/blogs/PublishingImages/zalsa1.jpg",
+        "sharepoint_image:/blogs/PublishingImages/zalsa2.jpg"
+      ]
+    },
+    {
+      "file": "45.json",
+      "warnings": [
+        "relative_link:/qtl/Documents/Transforming%20Teaching%20A5-1.pdf",
+        "sharepoint_image:/blogs/PublishingImages/qtl-blog.jpg",
+        "relative_link:/qtl/programmes/Pages/teach.aspx",
+        "relative_link:/qtl/Pages/haile-debas-teachers-academy.aspx",
+        "relative_link:/qtl/Documents/Transforming%20Teaching%20A5-1.pdf"
+      ]
+    },
+    {
+      "file": "56.json",
+      "warnings": [
+        "sharepoint_image:/blogs/PublishingImages/Lists/Posts/NewPost/Rowing-CLub---KBC-Regatta.jpg"
+      ]
+    },
+    {
+      "file": "70.json",
+      "warnings": [
+        "relative_link:/Pages/home.aspx",
+        "relative_link:/mcea/Pages/biomed-faculty.aspx",
+        "relative_link:/mcpk/faculty/Pages/profile.aspx?ProfileID=153&Name=Syeda+Sadia+Fatima",
+        "relative_link:/iedpk/faculty/Pages/profile.aspx?ProfileID=29&Name=Azra+Naseem",
+        "relative_link:/admissions/Documents/policy-use-of-generative-ai.pdf"
+      ]
+    },
+    {
+      "file": "71.json",
+      "warnings": [
+        "relative_link:/Pages/home.aspx",
+        "relative_link:/mcea/Pages/biomed-faculty.aspx",
+        "relative_link:/mcpk/faculty/Pages/profile.aspx?ProfileID=153&Name=Syeda+Sadia+Fatima",
+        "relative_link:/iedpk/faculty/Pages/profile.aspx?ProfileID=29&Name=Azra+Naseem",
+        "relative_link:/admissions/Documents/policy-use-of-generative-ai.pdf"
+      ]
+    },
+    {
+      "file": "72.json",
+      "warnings": [
+        "relative_link:/qtl/pages/home.aspx"
+      ]
+    },
+    {
+      "file": "74.json",
+      "warnings": [
+        "relative_link:/coe-wch"
+      ]
+    },
+    {
+      "file": "82.json",
+      "warnings": [
+        "relative_link:/coe-wch/ea/Pages/home-1.aspx"
+      ]
+    },
+    {
+      "file": "84.json",
+      "warnings": [
+        "sharepoint_image:/blogs/PublishingImages/SH-Blog-Picture2.png"
+      ]
+    },
+    {
+      "file": "90.json",
+      "warnings": [
+        "relative_link:/iedpk/educational-resources/Pages/learning-through-play.aspx"
+      ]
+    }
+  ]
+}

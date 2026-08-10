@@ -23,7 +23,7 @@ tags when they are present and fetches `data/*.json` when they are not. One code
 path, two ways of shipping it: `dist/` for a static host, the single file for
 everyone else. Rebuilding is the only way to refresh it, so the deliverable cannot
 drift from the source — which is what the previous hand-written
-`build/render_portal.py` did. That script still runs, but now writes
+`pipeline/render_portal.py` did. That script still runs, but now writes
 `AKU-Migration-Portal-legacy.html`, so it cannot overwrite this one.
 
 ## Where the data comes from
@@ -31,7 +31,7 @@ drift from the source — which is what the previous hand-written
 The app reads three JSON files at runtime from `public/data/`. All are generated —
 never edit them by hand. `public/data/` is gitignored, so a fresh clone has none of
 them and the portal boots on "Could not load the migration data" until you build
-them. These three steps each need the four that precede them; **`build/README.md`
+them. These three steps each need the four that precede them; **`pipeline/README.md`
 has the full chain**, and this is only its tail:
 
 ```bash

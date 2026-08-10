@@ -164,7 +164,7 @@ def reserve_slug(base_slug, sharepoint_id, used_slugs):
 
 def build_story_payload(item, config, used_slugs=None):
     used_slugs = used_slugs if used_slugs is not None else set()
-    sharepoint_id = item.get("Id") or item.get("ID")
+    sharepoint_id = F.get(item, "id") or item.get("Id") or item.get("ID")
     title = F.get(item, "title") or f"{P.leaf.title()} {sharepoint_id}"
     slug = reserve_slug(
         slugify(title, fallback=f"{P.leaf}-{sharepoint_id}"),
@@ -262,7 +262,7 @@ def build_story_files(source_folder, output_folder, config):
     for filename in json_files:
         with open(join(source_folder, filename), "r", encoding="utf-8") as f:
             item = load(f)
-        sharepoint_id = item.get("Id") or item.get("ID")
+        sharepoint_id = F.get(item, "id") or item.get("Id") or item.get("ID")
         base_slug = slugify(F.get(item, "title") or f"{P.leaf.title()} {sharepoint_id}",
                         fallback=f"{P.leaf}-{sharepoint_id}")
         story, notes = build_story_payload(item, config, used_slugs=used_slugs)
