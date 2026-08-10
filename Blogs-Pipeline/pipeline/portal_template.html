@@ -127,6 +127,47 @@ select{cursor:pointer;max-width:240px} select option{background:#141b19}
  font-size:15.5px;font-style:italic;border-radius:0 9px 9px 0}
 .quote .att{display:block;font-style:normal;font-size:11.5px;color:var(--dim);margin-top:8px}
 .empty{padding:40px 20px;text-align:center;color:var(--dim);font-size:13px}
+
+/* real media, shown rather than described */
+.img{margin:14px 0;padding:0}
+.img img{width:100%;border-radius:9px;display:block;border:1px solid var(--line)}
+.img figcaption{color:var(--dim);font-size:11px;margin-top:5px;text-align:center}
+.banner img{width:100%;border-radius:9px;display:block;border:1px solid var(--line);margin-bottom:6px}
+.vid{position:relative;padding-bottom:56.25%;height:0;margin:14px 0;border-radius:9px;overflow:hidden;
+ border:1px solid var(--line)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.embed{margin:14px 0;border:1px solid var(--line);border-radius:9px;overflow:hidden;background:var(--card)}
+.embed iframe{width:100%;min-height:420px;border:0;display:block}
+
+/* tabs */
+.tabs{display:flex;gap:4px;margin:12px 0 0}
+.tab{padding:7px 14px;border-radius:8px 8px 0 0;border:1px solid var(--line);border-bottom:none;
+ background:var(--card);color:var(--mut);cursor:pointer;font-size:13px;font-weight:600}
+.tab.on{background:var(--panel);color:var(--ink);border-color:var(--line2)}
+
+/* archive grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:14px;padding:16px 0 44px}
+.gc{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+ cursor:pointer;transition:.14s;display:flex;flex-direction:column}
+.gc:hover{border-color:var(--line2);transform:translateY(-2px)}
+.gc .thumb{aspect-ratio:16/9;background:var(--card);display:flex;align-items:center;
+ justify-content:center;color:var(--dim);font-size:11px;overflow:hidden}
+.gc .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.gc .body{padding:11px 13px;flex:1;display:flex;flex-direction:column;gap:6px}
+.gc .ti{font-size:13px;font-weight:650;line-height:1.35}
+.gc .mm{color:var(--dim);font-size:11px;display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;align-items:center}
+
+/* taxonomy browser */
+.taxwrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;padding:16px 0 44px}
+.taxcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.taxcard h3{margin:0 0 12px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}
+.tl{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-radius:7px;
+ cursor:pointer;font-size:12.5px;border:1px solid transparent}
+.tl:hover{background:var(--card);border-color:var(--line)}
+.tl b{font-weight:600}
+.tl i{font-style:normal;color:var(--dim);font-size:11px}
+.tl.sel{background:var(--card);border-color:var(--line2)}
+.tl .who{color:var(--dim);font-size:10.5px;display:block;margin-top:1px}
 @media(max-width:1280px){.layout{grid-template-columns:1fr}.panel{grid-template-columns:1fr}
  .list{position:static;max-height:300px}}
 </style></head><body>
@@ -137,6 +178,7 @@ verdict. <strong>Click any card, counter, category or tag to filter.</strong> No
 where data is missing you see a box saying so, never a stand-in.</div>
 <div class="key" id="key"></div>
 <div class="stats" id="stats"></div>
+<div class="tabs" id="tabs"></div>
 <div class="bar">
  <input id="q" placeholder="search title, author, id…">
  <select id="cat"></select>
@@ -147,10 +189,7 @@ where data is missing you see a box saying so, never a stand-in.</div>
  <span class="sub" id="count" style="margin-left:auto"></span>
 </div>
 </div></header>
-<div class="wrap"><div class="layout">
- <div class="list" id="list"></div>
- <div class="panel" id="panel"></div>
-</div></div>
+<div class="wrap"><div id="view"></div></div>
 <script>
 const D = __DATA__, S = D.stats, B = D.blogs;
 const V = {ok:['ok','DONE'], missing:['get','GO GET IT'], blocked:['dev','NEEDS DEV'],
@@ -256,11 +295,24 @@ function renderPanel(){
  for(const x of b.bloks){
   const c=cls(x.state);
   if(x.component==='banner_image')
-   prev += x.state==='ok' ? '<div class="hero">banner · '+esc(x.note)+'</div>'
+   prev += x.state==='ok'
+    ? '<figure class="banner"><img src="'+esc(x.img||'')+'" alt="" loading="lazy">'
+      +'<figcaption style="color:var(--dim);font-size:11px;text-align:center">'+esc(x.note)+'</figcaption></figure>'
     : '<div class="gap '+c+'"><b>'+lab(x.state)+' — banner</b><span>'+esc(x.note)+'</span><span>'+esc(x.fix)+'</span></div>';
   else if(x.component==='rich_text') prev+='<div class="prev">'+(x.html||'')+'</div>';
   else if(x.component==='quote_banner')
    prev+='<div class="quote">'+esc(x.note)+'<span class="att">'+esc(x.extra||'no attribution in the export')+'</span></div>';
+  else if(x.component==='media_section' && x.embed){
+   // a YouTube watch/embed URL either way -> the embeddable form
+   const id=(x.embed.match(/(?:embed\/|v=|youtu\.be\/)([\w-]{6,})/)||[])[1];
+   prev += id ? '<div class="vid"><iframe src="https://www.youtube.com/embed/'+id
+     +'" allowfullscreen loading="lazy"></iframe></div>'
+    : '<div class="hero">video · '+esc(x.embed)+'</div>';
+  }
+  else if(x.component==='iframe' && x.raw){
+   // the export stores the publisher's own embed markup; show it as given
+   prev += '<div class="embed">'+x.raw+'</div>';
+  }
   else if(x.state!=='ok')
    prev+='<div class="gap '+c+'"><b>'+lab(x.state)+' — '+esc(x.component)+'</b><span>'+esc(x.note)+'</span><span>'+esc(x.fix)+'</span></div>';
   else prev+='<div class="hero">'+esc(x.component)+' · '+esc(x.note)+'</div>';
@@ -275,21 +327,85 @@ function renderPanel(){
   +' · category <code class="lk" onclick="pickCat(\''+q1(b.category)+'\')">'+esc(b.category||'—')+'</code>'
   +'<br>lands in <code>'+esc(b.target||'unresolved')+'</code>'
   +(b.target_exists==='no'?' <span class="tag dev">folder missing</span>':'')
+  +(b.share_entity?'<br>shared to entity <code>'+esc(b.share_entity)+'</code>':'')
   +'<br>tags · '+tagHtml
   +'</div><h3>every block, and whether we can fill it</h3>'+bloks+'</div>'
   +'<div class="card"><h3>what it will look like</h3>'+prev+'</div>';
 }
-function render(){ renderChrome(); renderList(); renderPanel(); }
-function pick(id){ cur=id; render(); }
-document.getElementById('q').oninput = e => { F.q=e.target.value.toLowerCase().trim(); render(); };
-document.getElementById('cat').onchange = e => { F.cat=e.target.value; render(); };
-document.getElementById('tag').onchange = e => { F.tag=e.target.value; render(); };
-document.getElementById('ent').onchange = e => { F.ent=e.target.value; render(); };
-document.getElementById('clear').onclick = () => {
- for(const k in F) F[k]='';
- document.getElementById('q').value='';
- ['cat','tag','ent'].forEach(i=>document.getElementById(i).value='');
- render();
-};
+// ------------------------------------------------------- the three views
+let VIEW = 'archive';
+const TABS = [['archive','Archive'],['story','Story'],['tax','Categories, tags & entities']];
+
+function renderTabs(){
+ document.getElementById('tabs').innerHTML = TABS.map(t =>
+  '<div class="tab'+(VIEW===t[0]?' on':'')+'" onclick="go(''+t[0]+'')">'+t[1]+'</div>').join('');
+}
+function go(v){ VIEW=v; render(); window.scrollTo({top:0}); }
+
+// thumbnail for a card: the banner if we have the file
+function thumb(b){
+ const bn = b.bloks.find(x=>x.component==='banner_image' && x.img);
+ return bn ? '<img src="'+esc(bn.img)+'" alt="" loading="lazy">'
+           : '<span>no banner</span>';
+}
+
+function renderArchive(){
+ const rows = B.filter(match);
+ document.getElementById('count').textContent = rows.length+' of '+B.length+' posts';
+ document.getElementById('view').innerHTML = rows.length
+  ? '<div class="grid">'+rows.map(function(b){
+     return '<div class="gc" onclick="open1(''+b.id+'')">'
+      +'<div class="thumb">'+thumb(b)+'</div><div class="body">'
+      +'<div class="ti">'+esc(b.title)+'</div>'
+      +'<div class="mm"><span>#'+b.id+'</span>'
+      +(b.category?'<span class="tag cat">'+esc(b.category)+'</span>':'')
+      +(b.n.get?'<span class="tag get">'+b.n.get+' get</span>':'')
+      +(b.n.dev?'<span class="tag dev">'+b.n.dev+' dev</span>':'')
+      +'</div></div></div>';
+    }).join('')+'</div>'
+  : '<div class="empty">no post matches these filters</div>';
+}
+
+function open1(id){ cur=id; VIEW='story'; render(); window.scrollTo({top:0}); }
+
+function renderStory(){
+ const rows = B.filter(match);
+ document.getElementById('count').textContent = rows.length+' of '+B.length+' posts';
+ if(rows.length && !rows.some(r=>r.id===cur)) cur = rows[0].id;
+ document.getElementById('view').innerHTML =
+  '<div class="layout"><div class="list" id="list"></div><div class="panel" id="panel"></div></div>';
+ renderList(); renderPanel();
+}
+
+// ------------------------------------- a browsable list of every value
+function renderTax(){
+ const cats = tally(b=>b.category?[b.category]:[]);
+ const tags = tally(b=>b.tags);
+ const ents = tally(b=>b.entity?[b.entity]:[]);
+ const owner = {};
+ B.forEach(b=>{ if(b.category) (owner[b.category]=owner[b.category]||new Set()).add(b.entity); });
+ const line = (v,n,pick,sel,who) =>
+  '<div class="tl'+(sel?' sel':'')+'" onclick="'+pick+'"><b>'+esc(v)+
+  (who?'<span class="who">'+esc(who)+'</span>':'')+'</b><i>'+n+'</i></div>';
+ document.getElementById('count').textContent =
+  cats.length+' categories · '+tags.length+' tags · '+ents.length+' entities';
+ document.getElementById('view').innerHTML = '<div class="taxwrap">'
+  +'<div class="taxcard"><h3>categories — '+cats.length+'</h3>'
+  + cats.map(x=>line(x[0],x[1],"pickCat('"+q1(x[0])+"');go('archive')",F.cat===x[0],
+      [...(owner[x[0]]||[])].join(' · '))).join('')+'</div>'
+  +'<div class="taxcard"><h3>tags — '+tags.length+'</h3>'
+  + tags.map(x=>line(x[0],x[1],"pickTag('"+q1(x[0])+"');go('archive')",F.tag===x[0],'')).join('')+'</div>'
+  +'<div class="taxcard"><h3>entities — '+ents.length+'</h3>'
+  + ents.map(x=>line(x[0],x[1],"pickEnt('"+q1(x[0])+"');go('archive')",F.ent===x[0],'')).join('')+'</div>'
+  +'</div>';
+}
+
+function render(){
+ renderTabs(); renderChrome();
+ if(VIEW==='archive') renderArchive();
+ else if(VIEW==='tax') renderTax();
+ else renderStory();
+}
+function pick(id){ cur=id; renderList(); renderPanel(); }
 render();
 </script></body></html>

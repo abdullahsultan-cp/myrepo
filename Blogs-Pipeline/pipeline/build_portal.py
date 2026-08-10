@@ -47,6 +47,9 @@ OUT = os.path.join(P.PIPELINE, "out", "blogs-portal.html")
 
 
 # --------------------------------------------------------------- rich text
+_ON_DISK = set()
+
+
 def render_richtext(doc):
     """Storyblok rich text -> HTML, for the preview only."""
     if not isinstance(doc, dict):
@@ -89,9 +92,18 @@ def render_richtext(doc):
             return "<br>"
         if t == "image":
             src = (n.get("attrs") or {}).get("src") or ""
-            return ('<div class="miss inline"><b>MISSING IMAGE</b>'
+            name = os.path.basename(src.split("?")[0])
+            if name in _ON_DISK:
+                # Relative from out/ to the media folder. Opened from disk the
+                # browser resolves it and the real image appears; nothing is
+                # embedded, so the file stays small.
+                rel = "../assets/Blogs/media/" + name
+                return (f'<figure class="img"><img src="{html.escape(rel)}" '
+                        f'alt="" loading="lazy">'
+                        f'<figcaption>{html.escape(name)}</figcaption></figure>')
+            return ('<div class="gap get"><b>GO GET IT — image</b>'
                     f'<span>{html.escape(src)}</span>'
-                    "<span>still on aku.edu — not downloaded</span></div>")
+                    "<span>not on disk; aku.edu did not return it</span></div>")
         return kids
 
     for n in doc.get("content") or []:
@@ -139,7 +151,8 @@ def plan_for(content, routing, on_disk):
                           note=f"{banner} named but not on disk", fix="re-download"))
     else:
         bloks.append(dict(component="banner_image", state="ok", field="banner_image",
-                          note=banner, fix=""))
+                          note=banner, fix="",
+                          img="../assets/Blogs/media/" + banner))
 
     body = content.get("body")
     chars = len(text_of(body))
@@ -179,12 +192,17 @@ def plan_for(content, routing, on_disk):
                           fix="", extra=f"— {author}" if author else "",
                           warn="" if author else "no attribution in the export"))
 
-    if (content.get("embed_video") or "").strip():
+    vid = (content.get("embed_video") or "").strip()
+    if vid:
+        # The column holds the same URL twice, comma separated, in the one blog
+        # that has it. Take the first.
+        first = vid.split(",")[0].strip()
         bloks.append(dict(component="media_section", state="ok",
-                          note="type=video · " + (content.get("embed_video") or "")[:110], fix=""))
-    if (content.get("embed_code") or "").strip():
+                          note="type=video · " + first[:100], fix="", embed=first))
+    code = (content.get("embed_code") or "").strip()
+    if code:
         bloks.append(dict(component="iframe", state="ok",
-                          note="embed · " + (content.get("embed_code") or "")[:110], fix=""))
+                          note="embed · " + code[:100], fix="", raw=code))
 
     cat = (content.get("category") or "").strip()
     tags = [t.get("label") for t in (content.get("tags") or []) if isinstance(t, dict) and t.get("label")]
@@ -241,6 +259,7 @@ def main():
         for r in csv.DictReader(open(rp, encoding="utf-8-sig")):
             routing[str(r["id"])] = r
     on_disk = set(os.listdir(P.MEDIA_DIR)) if os.path.isdir(P.MEDIA_DIR) else set()
+    _ON_DISK.update(on_disk)
 
     blogs = []
     import glob
@@ -265,6 +284,7 @@ def main():
             "target_exists": r.get("target_exists") or "",
             "placement": r.get("placement") or "",
             "reason": r.get("reason") or "",
+            "share_entity": r.get("share_entity") or "",
             "featured": str(c.get("is_featured") or "").lower() in ("true", "1"),
             "bloks": bloks,
             "missing": sum(1 for b in bloks if b["state"] == "missing"),

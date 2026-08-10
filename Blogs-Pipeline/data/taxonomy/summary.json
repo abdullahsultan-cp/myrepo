@@ -3,8 +3,7 @@
   "items": 83,
   "placements": {
     "entity": 12,
-    "global": 70,
-    "unresolved": 1
+    "global": 71
   },
   "regions": {
     "pk": 12,
@@ -19,12 +18,6 @@
     "entities": 28,
     "categories": 36
   },
-  "unresolved": [
-    {
-      "id": "84",
-      "entity": "Centre for Innovation in Medical Education",
-      "reason": "entity spans ['ke', 'pk', 'tz'] and the name does not say which"
-    }
-  ],
+  "unresolved": [],
   "targets_missing_from_tree": []
 }

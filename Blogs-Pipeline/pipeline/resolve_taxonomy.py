@@ -59,14 +59,17 @@ SEED = os.path.join(ROOT, "News-Pipeline", "data", "taxonomy", "seed", "folders.
 
 # Entity values that are not entities. The same list news uses, plus the three
 # the blogs list adds. Each routes to global rather than inventing a folder.
+# Checked against the live tree rather than assumed: a value belongs here only
+# if no entity folder exists for it anywhere. Three were wrong first time --
+# Networks of Quality, Network of English Language Enhancement and
+# Environmental Responsibility all have folders under three to five regions,
+# and news placed 66 stories under entities/qtl alone.
 NOT_ENTITIES = {
     "global", "news training", "student affairs and services",
     "office of the provost", "office of the president", "office of the registrar",
     "data office", "research", "library",
-    # blogs-only
+    # blogs-only, all confirmed to have no entity folder in the tree
     "training", "data innovation office", "critical creative innovative thinking",
-    "networks of quality, teaching and learning",
-    "network of english language enhancement", "environmental responsibility",
     "office of the dean of students",
 }
 
@@ -127,7 +130,14 @@ def split_entity(raw):
     if "," not in raw:
         return raw, None
     head, _, tail = raw.rpartition(",")
-    return head.strip(), REGION_WORDS.get(tail.strip().lower())
+    region = REGION_WORDS.get(tail.strip().lower())
+    # Only split when the tail really IS a region. Entity names contain commas
+    # of their own: "Networks of Quality, Teaching and Learning" was being cut
+    # down to "Networks of Quality", which matches no short code, so four blogs
+    # fell through to global when the entity exists and has folders.
+    if region is None and tail.strip().lower() not in REGION_WORDS:
+        return raw, None
+    return head.strip(), region
 
 
 def resolve(item, by_slug, tree_entities, ent_short, region_short):
@@ -165,9 +175,14 @@ def resolve(item, by_slug, tree_entities, ent_short, region_short):
         chosen = regions[0]
         reason.append(f"entity exists only under {chosen}")
     else:
-        reason.append(f"entity spans {sorted(regions)} and the name does not say which")
-        return dict(placement="unresolved", region="", entity=name,
-                    target="", reason="; ".join(reason))
+        # An entity with folders under several regions and nothing in its name
+        # to choose between them. Decided: land it at global and let the entity
+        # reference do the work, exactly as news handled a story owned by a
+        # body that belongs to no single country.
+        reason.append(f"entity spans {sorted(regions)}; placed at global and "
+                      f"shared to {es}")
+        return dict(placement="global", region="", entity=name, share_entity=es,
+                    target=f"global/{P.leaf}", reason="; ".join(reason))
 
     target = f"regions/{chosen}/entities/{es}/{P.leaf}"
     if target not in by_slug:
@@ -232,6 +247,7 @@ def main():
             "placement": r["placement"],
             "target_full_slug": r["target"],
             "target_exists": "yes" if r["target"] in by_slug else "no",
+            "share_entity": r.get("share_entity", ""),
             "reason": r["reason"],
         })
 
