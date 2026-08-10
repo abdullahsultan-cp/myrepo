@@ -102,7 +102,8 @@ is `postgres@localhost/aku_news_migration`.
 ## Repository layout
 
 ```
-pipeline/                 ONE codebase for news, blogs and events. GENERIC.
+pipeline/                 THE PARENT — the machinery every type inherits
+  base.py                   class ContentPipeline
   core/                     the seam + shared helpers (imported, never run)
   content/                  source export -> story payload
   media/                    assets: catalogue, download, attach, inject
@@ -113,11 +114,14 @@ pipeline/                 ONE codebase for news, blogs and events. GENERIC.
   migrate/review/           verification and backups, no writes
 
 News-Pipeline/            3,606 stories, migrated
+  pipeline/                 class NewsPipeline(ContentPipeline)
   data/                     source export + per-stage output
   assets/News/media/        3,902 files (GITIGNORED, re-downloadable)
   backup/                   raw export + live Storyblok snapshots
 Blogs-Pipeline/           83 posts, imported and converted
+  pipeline/                 class BlogsPipeline — skips 2 media steps
 Events-Pipeline/          awaiting its export
+  pipeline/                 class EventsPipeline — boilerplate
 
 Pages-Pipeline/           structure, not content — its own stage
   data/                     the 3 real inputs

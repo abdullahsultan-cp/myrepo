@@ -322,6 +322,13 @@ builder skipped every key beginning with `_`, meant for `_comment` entries. `_ui
 is a real Storyblok field, and all 3,606 payloads silently lost it — caught by the
 byte-identity check, not by reading the code.
 
+**Do not commit a snapshot you can regenerate, if it is big.**
+`storyblok_space/stories_full.json` is 44 MB of every story's body, written as a
+side effect of a schema check. Committing it produced a single 1.3-million-line
+diff that swamped everything real in the same commit, and it duplicated
+`backup/storyblok/*.json.gz`, which does the same job in 6 MB and is taken
+deliberately. Track the structural files, ignore the bulk.
+
 **Never let a set decide the order of a committed file.** `build_url_lookup`
 built its variants in a `{...}` set literal, and Python randomises string hashing
 per process — so every regeneration wrote the same 7,057 entries in a different

@@ -1,8 +1,24 @@
 # News-Pipeline
 
-**3,606 stories live in Storyblok, 0 failed.** This folder holds the news *data*;
-the code that produced it is the shared `pipeline/`, selected with `--type news`
-(the default).
+**3,606 stories live in Storyblok, 0 failed.**
+
+```
+News-Pipeline/
+  pipeline/     class NewsPipeline(ContentPipeline) — this type's own code
+  data/         the export and every per-stage output
+  assets/News/  the media
+  backup/       both ends, gzipped and committed
+```
+
+The machinery lives in the parent `pipeline/`; `pipeline/pipeline.py` here is the
+subclass. News overrides **nothing** — every difference is declared in
+`config/types/news.json` — which is exactly why it is worth having the file: when
+news does need to diverge, there is one obvious place for it.
+
+```bash
+python News-Pipeline/pipeline/run.py            # every step
+python News-Pipeline/pipeline/run.py --describe # what news overrides
+```
 
 ---
 

@@ -12,7 +12,7 @@ from os.path import abspath, dirname, isfile, join
 import os as _os, sys as _sys  # noqa: E402
 _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))))
 import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
-from paths_root import P  # noqa: E402
+from paths_root import P, ROOT  # noqa: E402
 
 MEDIA_FILTER_DEFINITIONS = {
     "thumbnail": {
@@ -229,7 +229,10 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    base_path = abspath(join(dirname(__file__), ".."))
+    # Was dirname(__file__)/.. -- which meant pipeline/ once this script
+    # moved into pipeline/media/, and it wrote the viewer constants to
+    # pipeline/storyblok-viewer/. ROOT is found, not counted.
+    base_path = ROOT
     stories_dir = P.STORIES
     report_path = P.report("story_media_classification_report.json")
     index_path = P.report("story_media_index.json")

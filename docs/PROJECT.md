@@ -13,7 +13,7 @@ stands. Read this first; the other docs go deeper on one area each.
 | Type | Status |
 |---|---|
 | **news** | **3,606 stories live**, plus ~3,900 images, GIFs, PDFs and videos |
-| **blogs** | awaiting its export |
+| **blogs** | 83 posts imported and converted to rich text |
 | **events** | awaiting its export |
 | **pages** | own stage — `Pages-Pipeline/` |
 
@@ -56,23 +56,28 @@ Four migrations, one codebase. News, blogs and events are the same job over
 different SharePoint lists; pages is a different shape and keeps its own stage.
 
 ```
-pipeline/              ONE codebase, selected with --type
-News-Pipeline/         data/ assets/ backup/     3,606 stories, migrated
-Blogs-Pipeline/        data/ assets/ backup/     awaiting its export
-Events-Pipeline/       data/ assets/ backup/     awaiting its export
-Pages-Pipeline/        data/ build/ out/ portal/ structure, not content
-config/types/*.json    what differs per type
+pipeline/                 THE PARENT — base.py holds ContentPipeline
+News-Pipeline/pipeline/   class NewsPipeline    3,606 stories, migrated
+Blogs-Pipeline/pipeline/  class BlogsPipeline   83 posts, converted
+Events-Pipeline/pipeline/ class EventsPipeline  awaiting its export
+Pages-Pipeline/pipeline/  its own 18 scripts — inherits nothing
+config/types/*.json       what differs per type, declared not coded
 ```
+
+**Every content type has its own pipeline folder, inheriting from the parent.**
+`pipeline/base.py` holds `ContentPipeline`; each `<Type>-Pipeline/pipeline/`
+holds a subclass that states only what differs. Adding a type is a small file,
+not a fork of 80 scripts.
 
 **No script in `pipeline/` is named for a content type.** Four steps and seven
 scripts carried "news" in their names while running blogs and events through
 identical code. Renamed; the old step names still work and print a note. See
 [HOW_TO_RUN.md](HOW_TO_RUN.md).
 
-**The data is separated; the code is not.** Duplicating 74 scripts per type
-would mean fixing every bug three times and watching the copies drift. Sharing
-them without separating the data would mean one `data/` folder that silently
-means "whatever ran last". `pipeline/paths_root.py` is the seam.
+**The data is separated; the shared code is not.** A type gets its own copy of a
+step only when it must behave differently — otherwise every bug would be fixed
+three times and the copies would drift. `pipeline/core/paths_root.py` is the path
+seam; `pipeline/base.py` is the behaviour seam.
 
 ### What differs per type, and where
 
@@ -135,7 +140,7 @@ run. It also counts how many of the export's actual links match `source_urls`
 zero rather than as silence.
 
 `storyblok.component` is the one thing it cannot check; read the live space with
-`pipeline/fetch_storyblok_space.py` before the first upload.
+`pipeline/analyze/fetch_storyblok_space.py` before the first upload.
 
 ### The three stages
 

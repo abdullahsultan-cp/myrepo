@@ -2,8 +2,17 @@
 
 **Awaiting its export.** Everything here is scaffolding; nothing has run.
 
-Events share `pipeline/` with news and blogs, selected with `--type events`. This
-folder holds only the events *data*.
+```
+Events-Pipeline/
+  pipeline/       class EventsPipeline(ContentPipeline) — this type's own code
+  data/          source/ is where the export goes
+  assets/Events/
+  backup/
+```
+
+The machinery lives in the parent `pipeline/`; `pipeline/pipeline.py` here is the
+subclass, currently boilerplate. Put the first override there rather than in the
+base.
 
 ---
 

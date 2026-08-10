@@ -692,9 +692,26 @@ def run_step(step_name, standalone=True):
 
 
 def run_all():
-    for step in PIPELINE_STEPS:
+    # Which steps run is the content type's decision, not this file's. The
+    # subclass in <Type>-Pipeline/pipeline/pipeline.py may skip steps that do
+    # not apply -- blogs name their banner files directly, so the media
+    # resolution stages have nothing to do.
+    for step in steps_for_type():
         run_step(step["name"], standalone=False)
     print("Pipeline completed successfully.")
+
+
+def steps_for_type():
+    """The step list for the selected type, honouring its subclass."""
+    try:
+        from base import load
+        return load(P.type).steps()
+    except Exception as exc:                      # noqa: BLE001
+        # A broken subclass must not take the whole pipeline down; say so and
+        # fall back to the full list rather than silently running the wrong set.
+        print(f"note: could not load the {P.type} pipeline class ({exc}); "
+              f"running every step")
+        return PIPELINE_STEPS
 
 
 # The step names these replaced. Four of them said "news" for a pipeline that

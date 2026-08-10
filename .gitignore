@@ -179,3 +179,19 @@ dist/
 !/News-Pipeline/backup/
 !/Blogs-Pipeline/backup/
 !/Events-Pipeline/backup/
+
+# --- Storyblok space snapshot: keep the shape, not the contents ---------------
+# `pipeline/analyze/fetch_storyblok_space.py` writes this whole folder. The
+# structural files are small and worth diffing -- components.json is how we saw
+# blog_article appear, and asset_folders.json is the tree.
+#
+# These three are not. stories_full.json alone is 44 MB of every story's body,
+# and committing it produced a single 1.3-million-line diff that swamped
+# everything real in the same commit. It is also redundant: the same content
+# lives in {Type}-Pipeline/backup/storyblok/*.json.gz at 6 MB, taken
+# deliberately rather than as a side effect of a schema check.
+#
+# Re-create any of them with:  python pipeline/analyze/fetch_storyblok_space.py
+/storyblok_space/stories_full.json
+/storyblok_space/stories.json
+/storyblok_space/assets.json

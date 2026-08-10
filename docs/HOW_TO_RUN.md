@@ -24,6 +24,18 @@ STAGE 3b     upload to Storyblok                       2-4 h     resumable
 
 Stages 1 and 2 never touch the network. 3a only reads aku.edu. Only 3b writes.
 
+**Each content type also has its own entry point**, equivalent to `--type`:
+
+```bash
+python News-Pipeline/pipeline/run.py             # every step
+python Blogs-Pipeline/pipeline/run.py --describe # what this type overrides
+```
+
+`<Type>-Pipeline/pipeline/pipeline.py` is that type's subclass of
+`ContentPipeline`. It holds only what differs — blogs skip two media steps
+because the `Banner` column names the file directly. Everything else comes from
+the parent `pipeline/`. See [`../pipeline/README.md`](../pipeline/README.md).
+
 **Every command takes `--type`** — `news`, `blogs`, `events`, default `news`. Or
 set `AKU_CONTENT_TYPE` once and leave the flag off. Each type keeps its own data,
 assets, backups and reports, so a blogs run cannot read or overwrite a news

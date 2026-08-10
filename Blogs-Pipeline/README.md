@@ -6,8 +6,45 @@ signed-off design. Nothing blocks the upload itself.**
 What is outstanding is data with nowhere to land — `Entity` above all (§2c) —
 and a download pass for 46 images that exist only on aku.edu (§5).
 
-Blogs share `pipeline/` with news and events, selected with `--type blogs`. This
-folder holds only the blogs *data*.
+```
+Blogs-Pipeline/
+  pipeline/      class BlogsPipeline(ContentPipeline) — this type's own code
+  data/         source/ holds the export as delivered
+  assets/Blogs/ the media
+  backup/
+```
+
+The machinery lives in the parent `pipeline/`; `pipeline/pipeline.py` here is the
+subclass, and it currently overrides one thing — blogs skip `validate-media` and
+`map-storyblok-media`, because the `Banner` column names the file directly and
+those steps have nothing to work out.
+
+```bash
+python Blogs-Pipeline/pipeline/run.py --describe
+```
+
+### Why this folder has no step scripts
+
+It holds a class and a runner, not copies of `normalize_html.py` and the rest.
+That is deliberate: a type gets its own copy of a step **only when it needs to
+behave differently**, and blogs so far needs exactly one difference — skipping two
+media steps — which is three lines in the class.
+
+Copying the 34 shared scripts here would mean every future bug fixed three times
+and the copies drifting apart, which is the thing the base class exists to
+prevent.
+
+When blogs *does* need its own version of a step, put the file here and it wins
+automatically — `resolve_script()` looks in this folder before the base, so no
+table edit and no change to the parent:
+
+```
+Blogs-Pipeline/pipeline/convert_richtext.py     <- would override the shared one
+```
+
+The first one is already known: blog bodies mark quotes with an inline
+`{pullquote}` marker, where news has `PullQuote` / `PullQuoteAuthor` columns. That
+becomes an `extract_pull_quote()` override, or its own step file if it grows.
 
 ---
 
