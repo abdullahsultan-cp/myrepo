@@ -48,6 +48,8 @@ OUT = os.path.join(P.PIPELINE, "out", "blogs-portal.html")
 
 # --------------------------------------------------------------- rich text
 _ON_DISK = set()
+_AUTHORS = {}        # SharePoint AuthorManagement, id -> record
+_AUTHOR_PICS = {}    # author id -> local photo filename
 
 
 def render_richtext(doc):
@@ -211,14 +213,31 @@ def plan_for(content, routing, on_disk):
                            + (f" · {len(tags)} tags" if tags else ""),
                       fix="not yet decided which becomes a pill — the reference is only a demo"))
 
-    # Not "go and get it": no biography or photo exists for any of the 52
-    # authors, anywhere -- not in the export and not on aku.edu. The decision
-    # already taken was to ignore what we do not have, so this blok is dropped
-    # rather than shipped half-empty. Shown so the choice stays visible.
-    bloks.append(dict(component="author_section", state="skipped",
-                      note=f"author name is {content.get('author') or '(none)'}",
-                      fix="dropped: no biography and no photo exists for any of the 52 authors. "
-                          "The name still shows in the byline via the author field."))
+    # This was marked "dropped, no bio exists anywhere" until someone looked at
+    # a live AKU page and saw an author section on it. The bios are real: they
+    # live in a SharePoint list called AuthorManagement that was not part of the
+    # delivered export. 76 of the 83 posts have one.
+    aid = str(content.get("author_id") or "").strip()
+    bio_html = (_AUTHORS.get(aid, {}).get("Description") or "").strip()
+    pic = _AUTHOR_PICS.get(aid)
+    if bio_html:
+        # unescape too: SharePoint stores &#160; and friends, and a raw entity
+        # in a preview reads as a typo rather than as a space.
+        plain = html.unescape(re.sub(r"<[^>]+>", " ", bio_html))
+        plain = re.sub(r"[\s ​]+", " ", plain).strip()
+        bloks.append(dict(
+            component="author_section", state="ok",
+            note=f"{content.get('author') or '(no name)'} — {plain[:150]}"
+                 + ("…" if len(plain) > 150 else ""),
+            fix="" if pic else "bio yes, photo no — only 6 author photos exist on aku.edu",
+            img=("../assets/Blogs/media/" + pic) if pic else "",
+            bio=plain))
+    else:
+        bloks.append(dict(
+            component="author_section", state="missing",
+            note=f"author is {content.get('author') or '(none)'}"
+                 + (f", id {aid}" if aid else ""),
+            fix="no entry in AuthorManagement for this author id"))
 
     # Fields the dev added on 10 Aug. We have the data for all four; two of them
     # are custom plugins whose value format nothing in the space demonstrates.
@@ -312,6 +331,15 @@ def main():
             routing[str(r["id"])] = r
     on_disk = set(os.listdir(P.MEDIA_DIR)) if os.path.isdir(P.MEDIA_DIR) else set()
     _ON_DISK.update(on_disk)
+    for name, target in (("authors.json", _AUTHORS), ("author_photos.json", _AUTHOR_PICS)):
+        path = os.path.join(P.DATA, "source", name)
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                raw = json.load(f)
+            if name == "authors.json":
+                target.update({str(a["ID"]): a for a in raw.get("value", [])})
+            else:
+                target.update(raw)
 
     blogs = []
     import glob
@@ -327,6 +355,7 @@ def main():
             "title": c.get("title") or "(untitled)",
             "slug": story.get("slug") or "",
             "author": c.get("author") or "",
+            "author_id": str(c.get("author_id") or ""),
             "date": c.get("schedule_start_date") or "",
             "category": c.get("category") or "",
             "entity": c.get("entity") or "",
@@ -361,10 +390,16 @@ def main():
         "components": dict(Counter(x["component"] for b in blogs for x in b["bloks"])),
     }
 
+    import datetime
+    stamp = datetime.datetime.now().strftime("%d %b %H:%M")
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w", encoding="utf-8", newline="\n").write(
-        template().replace("__DATA__", json.dumps({"blogs": blogs, "stats": stats},
-                                                ensure_ascii=False)))
+        template()
+        .replace("__DATA__", json.dumps({"blogs": blogs, "stats": stats},
+                                        ensure_ascii=False))
+        # A stale copy in a browser cache is indistinguishable from a broken
+        # build unless the page says which build it is.
+        .replace("__BUILD__", stamp))
     verify(OUT)
     size = os.path.getsize(OUT) / 1024 / 1024
     print(f"  {len(blogs)} blogs -> {os.path.relpath(OUT, ROOT)}  ({size:.1f} MB)")

@@ -163,7 +163,8 @@
     "is_featured": "IsFeatured",
     "is_active": "IsActive",
     "close_comments": "Close Comments",
-    "post_year": "Post Year"
+    "post_year": "Post Year",
+    "author_id": "Author Name_id"
   },
   "source_format": "csv",
   "source_file": "data/source/Metadata.csv",
@@ -211,6 +212,10 @@
     {
       "key": "author",
       "field": "author"
+    },
+    {
+      "key": "author_id",
+      "field": "author_id"
     },
     {
       "key": "banner",
@@ -294,5 +299,19 @@
   "skip_steps": [
     "validate-media",
     "map-storyblok-media"
+  ],
+  "_authors_note": [
+    "Author biographies and photos are NOT in the delivered export. They live in",
+    "a SharePoint list called AuthorManagement, which AKU did not send alongside",
+    "categories.json and entities.json -- it was found by asking the site which",
+    "lists it has.",
+    "",
+    "  data/source/authors.json        56 authors, 54 with a Description",
+    "  data/source/author_photos.json  author id -> photo file, 6 matched",
+    "",
+    "Coverage across the 83 blogs: 76 have a bio, 6 have a photo. Two author ids",
+    "used by posts (4 and 5) are not in the list at all.",
+    "",
+    "Refresh with: python Blogs-Pipeline/pipeline/fetch_authors.py"
   ]
 }
