@@ -401,9 +401,13 @@ commit.
 - **`global/blogs` does not exist** in Storyblok, and 70 of 83 blogs route there
 - **events** has no export; its profile and component are placeholders. The space
   already has an `event_article`, which is **not** `news_article`
-- **blogs**: `Entity` (83/83), `IsFeatured` (43), `FeatureSequence`,
-  `Close Comments` (14), `IsActive`, `Post Year` and 626 comments have no field
-  in `blog_article`
+- **blogs**: `IsFeatured` (43), `FeatureSequence`, `Close Comments` (14),
+  `IsActive`, `Post Year` and 626 comments have no field in `blog_article`
+- **blogs `entities` is needed by 17, not 83.** The field is a list of entity
+  FOLDER IDS — the story's own entity plus any it is shared into — not the
+  Entity column. 66 of the 83 name something that is not a faculty (`Global`,
+  `Training`, `Data Innovation Office`), so their list is legitimately empty,
+  as it is for 1,575 news stories. 12 are filed under an entity; 5 are shared
 - **13 blogs will publish with no hero.** Closed, not pending — SharePoint holds
   no banner-to-post mapping at all (`Banner_x0020_Image` is null on all 89 posts,
   no attachments, the detail page renders client-side). Evidence and the

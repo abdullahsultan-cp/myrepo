@@ -133,6 +133,49 @@ def text_of(doc):
     return " ".join(buf)
 
 
+# --------------------------------------------------------- entity folder ids
+_ENTITY_FOLDERS = {}     # (region_slug, entity_slug) -> folder id
+
+
+def load_entity_folders():
+    """{(region, entity): id} from the live-tree snapshot, as the uploader does.
+
+    Refresh with `python pipeline/migrate/review/dump_sb_tree.py` — the dev
+    renamed every folder to a short code once already.
+    """
+    if not os.path.exists(P.SPACE_TREE):
+        return
+    with open(P.SPACE_TREE, encoding="utf-8") as f:
+        tree = json.load(f)
+    for x in (tree["folders"] if isinstance(tree, dict) else tree):
+        parts = (x.get("full_slug") or "").split("/")
+        if len(parts) == 4 and parts[0] == "regions" and parts[2] == "entities":
+            _ENTITY_FOLDERS[(parts[1], parts[3])] = x["id"]
+
+
+def entity_ids_for(routing):
+    """This blog's own entity folder plus every entity it is shared into.
+
+    Mirrors `entities_for` in pipeline/migrate/upload/upload.py. A shared blog
+    names a short code with no region — `qtl` exists in five regions, which is
+    why it went global in the first place — so every region's copy is listed
+    and the reason column says which. That set is a decision, not a fact.
+    """
+    ids = []
+    if routing.get("placement") == "entity":
+        parts = (routing.get("target_full_slug") or "").split("/")
+        if len(parts) >= 4 and parts[0] == "regions" and parts[2] == "entities":
+            fid = _ENTITY_FOLDERS.get((parts[1], parts[3]))
+            if fid is not None:
+                ids.append(fid)
+    for short in (routing.get("share_entity") or "").split(";"):
+        short = short.strip()
+        if not short:
+            continue
+        ids += sorted({v for (_, ent), v in _ENTITY_FOLDERS.items() if ent == short})
+    return ids
+
+
 # ------------------------------------------------------------ the blok plan
 def plan_for(content, routing, on_disk):
     """The bloks this blog becomes, in order, each with whether we can fill it.
@@ -265,17 +308,32 @@ def plan_for(content, routing, on_disk):
                                                 if content.get("feature_sequence") else ""),
                       fix="featured-plugin — same: format unknown, and there is still no "
                           "field for FeatureSequence"))
+    # `entities` is a list of entity FOLDER IDS: the story's own entity folder
+    # plus every entity it is shared into (pipeline/migrate/upload/upload.py
+    # entities_for). It is NOT "the Entity column". 66 of the 83 name something
+    # that is not a faculty — Global, Training, Data Innovation Office — and
+    # those get an empty list, exactly as 1,575 news stories do. Only the 12
+    # filed under an entity and the 5 shared ones have anything to put in it.
     ent = (content.get("entity") or "").strip()
-    bloks.append(dict(component="field: entities", state="blocked",
-                      note=f"we have '{ent}'" if ent else "no entity",
-                      fix="blog_article still has no `entities` field — news has one. "
-                          "This is the last schema gap."))
+    ids = entity_ids_for(routing)
+    if ids:
+        bloks.append(dict(component="field: entities", state="blocked",
+                          note=f"'{ent}' -> {len(ids)} entity folder id(s): "
+                               + ", ".join(str(i) for i in ids),
+                          fix="blog_article still has no `entities` field — news "
+                              "has one. This is the last schema gap."))
+    else:
+        bloks.append(dict(component="field: entities", state="skipped",
+                          note=f"'{ent}' is not a faculty — nothing to file under"
+                               if ent else "no entity",
+                          fix="none — the list is legitimately empty, as it is "
+                              "for 1,575 news stories"))
 
     closed = str(content.get("close_comments") or "").lower() in ("true", "1", "yes")
     bloks.append(dict(component="comment_form", state="blocked" if closed else "ok",
                       note="comments were CLOSED on this post in SharePoint" if closed
                            else "the design appends this to every article",
-                      fix="blog_article has no field to suppress it" if closed else ""))
+                      fix="the dev is adding a field to suppress it" if closed else ""))
 
     return bloks
 
@@ -341,6 +399,7 @@ def main():
             routing[str(r["id"])] = r
     on_disk = set(os.listdir(P.MEDIA_DIR)) if os.path.isdir(P.MEDIA_DIR) else set()
     _ON_DISK.update(on_disk)
+    load_entity_folders()
     for name, target in (("authors.json", _AUTHORS), ("author_photos.json", _AUTHOR_PICS)):
         path = os.path.join(P.DATA, "source", name)
         if os.path.exists(path):
