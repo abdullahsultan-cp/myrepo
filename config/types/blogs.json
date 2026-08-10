@@ -69,7 +69,17 @@
     ],
     "background_pattern_asset_id": 202607823391189,
     "quote_background_asset_id": 202908142091464,
-    "_confirmed": "blog_article exists in the space (id 205045811148991); read off the live schema, not guessed"
+    "_confirmed": "blog_article exists in the space (id 205045811148991); read off the live schema, not guessed",
+    "_schema_note": [
+      "blog_article gained four fields on 10 Aug: thumbnail, isGlobal, isFeatured",
+      "and category. That closes four of the six gaps this profile was written",
+      "around; only `entities` is still absent.",
+      "",
+      "isFeatured and category are CUSTOM plugin fields (featured-plugin,",
+      "category-plugin) and no story in the space has either filled, so the value",
+      "format they expect is not knowable from the data. Ask the dev before",
+      "writing to them -- a guess here is a guess repeated 83 times."
+    ]
   },
   "layout": {
     "_comment": [

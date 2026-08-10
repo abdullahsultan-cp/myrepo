@@ -190,6 +190,25 @@ def plan_for(content, routing, on_disk):
                       note=f"author is {content.get('author') or '(none)'}",
                       fix="the export has a NAME only — no biography and no photo for any of the 52 authors"))
 
+    # Fields the dev added on 10 Aug. We have the data for all four; two of them
+    # are custom plugins whose value format nothing in the space demonstrates.
+    cat = (content.get("category") or "").strip()
+    bloks.append(dict(component="field: category", state="undecided" if cat else "missing",
+                      note=f"we have '{cat}'" if cat else "no category on this post",
+                      fix="category-plugin — no story in the space has it filled, so the "
+                          "value format is unknown. Ask the dev." if cat else ""))
+    feat = str(content.get("is_featured") or "").lower() in ("true", "1")
+    bloks.append(dict(component="field: isFeatured", state="undecided",
+                      note=f"we have {feat}" + (f", order {content.get('feature_sequence')}"
+                                                if content.get("feature_sequence") else ""),
+                      fix="featured-plugin — same: format unknown, and there is still no "
+                          "field for FeatureSequence"))
+    ent = (content.get("entity") or "").strip()
+    bloks.append(dict(component="field: entities", state="blocked",
+                      note=f"we have '{ent}'" if ent else "no entity",
+                      fix="blog_article still has no `entities` field — news has one. "
+                          "This is the last schema gap."))
+
     closed = str(content.get("close_comments") or "").lower() in ("true", "1", "yes")
     bloks.append(dict(component="comment_form", state="blocked" if closed else "ok",
                       note="comments were CLOSED on this post in SharePoint" if closed
