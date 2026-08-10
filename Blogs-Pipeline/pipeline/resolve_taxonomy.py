@@ -248,9 +248,39 @@ def main():
     write_csv("entities.csv", ["entity", "blogs", "resolves_to"],
               [[e, n, next((r["target_full_slug"] for r in rows if r["entity"] == e), "")]
                for e, n in ent_count.most_common()])
-    cat_entity = {c.get("Title"): c.get("EntityId") for c in lookups.get("categories", [])}
-    write_csv("categories.csv", ["category", "blogs", "entity_id_in_lookup"],
-              [[c, n, cat_entity.get(c, "")] for c, n in cat_count.most_common()])
+    # A category label can belong to more than one entity: "My Story" exists
+    # under three and "Education" under two, each with its own row id. Writing a
+    # single EntityId per label picked whichever happened to be last and read as
+    # fact, so every owner is listed, with its name beside the id.
+    ent_name = {str(e.get("ID")): (e.get("Title") or "").strip()
+                for e in lookups.get("entities", [])}
+    owners = defaultdict(list)
+    for c in lookups.get("categories", []):
+        owners[(c.get("Title") or "").strip()].append(str(c.get("EntityId")))
+    # NOT `rows` -- that name already holds one entry per blog, and reusing it
+    # here silently replaced the routing data three lines later.
+    cat_rows = []
+    for label, n in cat_count.most_common():
+        ids = owners.get(label, [])
+        # Two ids that are the SAME entity is a duplicate row in SharePoint's
+        # own list, not a category two faculties share. Saying "shared" for both
+        # would invent a relationship. "Pedagogy of higher education" is 15; 15.
+        distinct = sorted(set(ids), key=ids.index)
+        if len(distinct) > 1:
+            note = "shared by " + str(len(distinct)) + " entities"
+        elif len(ids) > 1:
+            note = "duplicate rows in the SharePoint list"
+        else:
+            note = ""
+        cat_rows.append([
+            label, n,
+            "; ".join(ids),
+            "; ".join(ent_name.get(i, f"(unknown id {i})") for i in distinct),
+            note,
+        ])
+    write_csv("categories.csv",
+              ["category", "blogs", "entity_ids", "entity_names", "note"],
+              cat_rows)
     write_csv("tags.csv", ["tag", "blogs"], tag_count.most_common())
     write_csv("regions.csv", ["region", "blogs"], region_count.most_common())
 
