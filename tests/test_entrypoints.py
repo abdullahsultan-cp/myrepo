@@ -21,11 +21,11 @@ PIPELINE = os.path.join(ROOT, "pipeline")
 if PIPELINE not in sys.path:
     sys.path.insert(0, PIPELINE)
 
-import _bootstrap  # noqa: E402
+import _bootstrap
 
 _bootstrap.ensure()
 
-from paths_root import TYPES  # noqa: E402
+from paths_root import TYPES
 
 # Runnable entry points. `run_pipeline` and `base` are the ones that matter
 # most; the rest are tools people reach for when something has gone wrong,
