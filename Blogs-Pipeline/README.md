@@ -48,6 +48,27 @@ becomes an `extract_pull_quote()` override, or its own step file if it grows.
 
 ---
 
+## The review portal
+
+```bash
+python Blogs-Pipeline/pipeline/build_portal.py
+open Blogs-Pipeline/out/blogs-portal.html      # double-click; no server
+```
+
+One self-contained file showing all 83 blogs as Storyblok will hold them: the
+blok sequence beside a preview. **Nothing in it is invented** — anything the
+export cannot supply is a red box saying what is absent and why, so the dev can
+see exactly what still needs deciding.
+
+```
+ok         241   we have everything the blok needs
+missing    127   cannot fill from the export
+undecided   83   awaiting a design call (the pills)
+blocked     14   data exists, no field for it (comments closed)
+```
+
+---
+
 ## 0 · Stage 1 is complete
 
 All 83 blogs are through the content pipeline and routed. Nothing here has been

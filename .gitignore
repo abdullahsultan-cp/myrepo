@@ -195,3 +195,12 @@ dist/
 /storyblok_space/stories_full.json
 /storyblok_space/stories.json
 /storyblok_space/assets.json
+
+# --- Blogs review portal ------------------------------------------------------
+# One self-contained HTML file, rebuilt from the payloads in seconds:
+#     python Blogs-Pipeline/pipeline/build_portal.py
+# TRACKED on purpose, unlike the Pages equivalent: it is half a megabyte rather
+# than five, and it is the artefact the dev and AKU actually look at, so having
+# it in the repo means anyone can open it without running anything first.
+!/Blogs-Pipeline/out/
+!/Blogs-Pipeline/out/blogs-portal.html
