@@ -127,6 +127,11 @@ select{cursor:pointer;max-width:240px} select option{background:#141b19}
  font-size:15.5px;font-style:italic;border-radius:0 9px 9px 0}
 .quote .att{display:block;font-style:normal;font-size:11.5px;color:var(--dim);margin-top:8px}
 .empty{padding:40px 20px;text-align:center;color:var(--dim);font-size:13px}
+.boot{margin:40px auto;max-width:760px;padding:22px;border-radius:12px;background:var(--card);
+ border:1px solid var(--line);color:var(--mut);font-size:13px;line-height:1.7}
+.boot b{display:block;color:var(--ink);font-size:15px;margin-bottom:6px}
+.boot pre{margin:12px 0 0;padding:12px;background:#0d1311;border:1px solid var(--devln);
+ border-radius:8px;color:#fca5a5;font-size:11.5px;overflow:auto;white-space:pre-wrap}
 
 /* real media, shown rather than described */
 .img{margin:14px 0;padding:0}
@@ -189,7 +194,12 @@ where data is missing you see a box saying so, never a stand-in.</div>
  <span class="sub" id="count" style="margin-left:auto"></span>
 </div>
 </div></header>
-<div class="wrap"><div id="view"></div></div>
+<div class="wrap"><div id="view">
+ <noscript><div class="boot"><b>JavaScript is switched off.</b>
+  This page builds itself from data baked into the file, so it needs it.</div></noscript>
+ <div class="boot" id="boot"><b>Loading 83 posts…</b>
+  If this message stays, the page failed to start — the reason will appear here.</div>
+</div></div>
 <script>
 const D = __DATA__, S = D.stats, B = D.blogs;
 const V = {ok:['ok','DONE'], missing:['get','GO GET IT'], blocked:['dev','NEEDS DEV'],
@@ -418,5 +428,19 @@ document.getElementById('clear').onclick = () => {
  ['cat','tag','ent'].forEach(i => document.getElementById(i).value = '');
  render();
 };
-render();
+
+// A blank page tells you nothing. If the script throws -- a bad quote in a
+// handler did exactly this once -- put the reason where it can be read, rather
+// than leaving an empty document and a console nobody opens.
+try {
+ render();
+} catch (err) {
+ document.getElementById('view').innerHTML =
+  '<div class="boot"><b>This page failed to start.</b>'
+  + 'The data is almost certainly fine — the script that draws it is not. '
+  + 'Rebuild with <code>python Blogs-Pipeline/pipeline/build_portal.py</code>, '
+  + 'and if that succeeds, hard-refresh this page (Ctrl+F5) to clear a cached copy.'
+  + '<pre>' + esc(err && err.stack ? err.stack : String(err)) + '</pre></div>';
+ throw err;
+}
 </script></body></html>
