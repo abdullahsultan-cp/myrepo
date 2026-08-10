@@ -137,7 +137,6 @@ def import_stories(stories_folder, config, limit=None, sleep_seconds=0.2):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     stories_folder = P.STORIES
     report_path = P.report("storyblok_import_report.json")
 

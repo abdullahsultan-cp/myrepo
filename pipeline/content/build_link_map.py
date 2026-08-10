@@ -225,7 +225,6 @@ def build_link_map(news_folder, story_prefix=None):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     news_folder = P.CLEANED
     output_path = P.report("storyblok_link_map.json")
 

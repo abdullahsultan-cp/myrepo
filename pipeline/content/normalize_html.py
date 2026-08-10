@@ -428,7 +428,6 @@ def print_report(report):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     source_folder = P.CLEANED
     output_folder = P.NORMALIZED
     report_path = P.report("html_normalization_report.json")

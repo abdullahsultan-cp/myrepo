@@ -172,7 +172,6 @@ def enhance_news_files(source_folder, output_folder, link_map_path, asset_map_pa
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     source_folder = P.RICHTEXT
     output_folder = P.RICHTEXT_ENHANCED
     link_map_path = P.report("storyblok_link_map.json")

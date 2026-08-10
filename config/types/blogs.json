@@ -51,7 +51,7 @@
       "live space is the only way to know -- see",
       "pipeline/migrate/review/dump_sb_tree.py and fetch_storyblok_space.py."
     ],
-    "component": "news_article",
+    "component": "blog_article",
     "body_whitelist": [
       "rich_text",
       "box",
@@ -68,7 +68,8 @@
       "image"
     ],
     "background_pattern_asset_id": 202607823391189,
-    "quote_background_asset_id": 202908142091464
+    "quote_background_asset_id": 202908142091464,
+    "_confirmed": "blog_article exists in the space (id 205045811148991); read off the live schema, not guessed"
   },
   "layout": {
     "_comment": [
@@ -155,5 +156,120 @@
     "post_year": "Post Year"
   },
   "source_format": "csv",
-  "source_file": "data/source/Metadata.csv"
+  "source_file": "data/source/Metadata.csv",
+  "_content_fields_comment": [
+    "The blogs story payload. Deliberately NOT a copy of news's 44 keys: the",
+    "blogs list has 26 columns, two of them empty on all 83, and none of news's",
+    "alternate-language, approver or globally-active fields exist at all.",
+    "",
+    "Declaring only what the export actually has means a null in a built payload",
+    "is a real absence rather than a column nobody mapped.",
+    "",
+    "  field:    a logical name from `fields`, resolved per content type",
+    "  column:   a raw export column",
+    "  computed: built by the pipeline"
+  ],
+  "content_fields": [
+    {
+      "key": "component",
+      "computed": "component"
+    },
+    {
+      "key": "_uid",
+      "computed": "uid"
+    },
+    {
+      "key": "title",
+      "computed": "title"
+    },
+    {
+      "key": "summary",
+      "field": "summary"
+    },
+    {
+      "key": "body",
+      "field": "body"
+    },
+    {
+      "key": "pull_quote",
+      "computed": "pull_quote"
+    },
+    {
+      "key": "pull_quote_author",
+      "field": "pull_quote_author"
+    },
+    {
+      "key": "author",
+      "field": "author"
+    },
+    {
+      "key": "banner",
+      "field": "banner"
+    },
+    {
+      "key": "category",
+      "field": "category"
+    },
+    {
+      "key": "category_id",
+      "column": "Category_id"
+    },
+    {
+      "key": "entity",
+      "field": "entity"
+    },
+    {
+      "key": "entity_id",
+      "column": "Entity_id"
+    },
+    {
+      "key": "tags",
+      "field": "tags",
+      "decode": "tags_text"
+    },
+    {
+      "key": "embed_code",
+      "field": "embed_code"
+    },
+    {
+      "key": "embed_video",
+      "field": "embed_video"
+    },
+    {
+      "key": "is_featured",
+      "field": "is_featured"
+    },
+    {
+      "key": "feature_sequence",
+      "field": "sequence_number"
+    },
+    {
+      "key": "is_active",
+      "field": "is_active"
+    },
+    {
+      "key": "close_comments",
+      "field": "close_comments"
+    },
+    {
+      "key": "post_year",
+      "field": "post_year"
+    },
+    {
+      "key": "schedule_start_date",
+      "field": "date"
+    },
+    {
+      "key": "sharepoint_id",
+      "computed": "sharepoint_id"
+    },
+    {
+      "key": "sharepoint_created",
+      "column": "Created"
+    },
+    {
+      "key": "sharepoint_modified",
+      "column": "Modified"
+    }
+  ]
 }

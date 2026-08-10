@@ -221,7 +221,6 @@ def print_report(report):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     source_folder = P.CLEANED
     stories_folder = P.STORIES
     output_path = P.report("storyblok_metadata_report.json")

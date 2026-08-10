@@ -126,7 +126,6 @@ def upload_assets(catalog_path, asset_map_path, config):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     catalog_path = P.report("storyblok_asset_catalog.json")
     asset_map_path = P.report("storyblok_asset_map.json")
 

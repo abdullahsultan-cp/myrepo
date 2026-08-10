@@ -224,7 +224,6 @@ def print_report(report):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     metadata_path = P.METADATA_CSV
     media_dir = P.MEDIA_DIR
     output_path = P.report("news_media_report.json")

@@ -1,0 +1,30 @@
+{
+  "type": "blogs",
+  "items": 83,
+  "placements": {
+    "entity": 12,
+    "global": 70,
+    "unresolved": 1
+  },
+  "regions": {
+    "pk": 12,
+    "(global)": 71
+  },
+  "distinct": {
+    "entities": 9,
+    "categories": 20,
+    "tags": 47
+  },
+  "lookup_sizes": {
+    "entities": 28,
+    "categories": 36
+  },
+  "unresolved": [
+    {
+      "id": "84",
+      "entity": "Centre for Innovation in Medical Education",
+      "reason": "entity spans ['ke', 'pk', 'tz'] and the name does not say which"
+    }
+  ],
+  "targets_missing_from_tree": []
+}

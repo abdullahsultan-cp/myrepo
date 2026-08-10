@@ -9,8 +9,14 @@ _sys.path.insert(0, _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)
 import _bootstrap  # noqa: F401,E402  -- every pipeline folder on sys.path
 from paths_root import P as _P
 
-DEFAULT_CONFIG_PATH = abspath(join(dirname(__file__), "..", "config", "storyblok.json"))
-EXAMPLE_CONFIG_PATH = abspath(join(dirname(__file__), "..", "config", "storyblok.example.json"))
+# ROOT is found by walking up for config/types, not by counting dirname() calls.
+# This file moved into pipeline/core/ and the "..", "config" version then pointed
+# at pipeline/config, which does not exist -- so load_config() returned a config
+# with space_id None and every call came back 401 Unauthorized.
+from paths_root import ROOT  # noqa: E402
+
+DEFAULT_CONFIG_PATH = join(ROOT, "config", "storyblok.json")
+EXAMPLE_CONFIG_PATH = join(ROOT, "config", "storyblok.example.json")
 
 
 def load_config(config_path=None):

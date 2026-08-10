@@ -70,6 +70,32 @@ def lookup_tags(values):
     return tags
 
 
+def split_tags(value):
+    """Tags as a delimited string -> the same shape lookup_tags returns.
+
+    News gets SharePoint taxonomy objects with a Label and a TermGuid. Blogs
+    gets "Education; COVID-19" in a single cell. Both end up as a list of
+    {label, term_guid, wss_id} so everything downstream sees one shape.
+    """
+    import re as _re
+    if isinstance(value, list):
+        return lookup_tags(value)
+    if not isinstance(value, str) or not value.strip():
+        return []
+    out = []
+    for t in _re.split(r"[;,]", value):
+        t = t.strip()
+        if not t:
+            continue
+        # SharePoint writes a taxonomy cell as "Label|GUID". Keeping the GUID in
+        # the label puts it in slugs, folder names and on the page; keeping it
+        # separately loses nothing.
+        label, _, guid = t.partition("|")
+        out.append({"label": label.strip(), "term_guid": guid.strip() or None,
+                    "wss_id": None})
+    return out
+
+
 def lookup_entity_list(values):
     if not isinstance(values, list):
         return []
@@ -187,13 +213,18 @@ def build_story_payload(item, config, used_slugs=None):
     # order, so the declaration preserves the order this code had.
     DECODERS = {
         "taxonomy": lookup_taxonomy,
+        "tags_text": split_tags,
         "ref": lookup_ref,
         "tags": lookup_tags,
+        "tags_text": split_tags,
         "entity_list": lookup_entity_list,
         "urdu_link": normalize_news_in_urdu,
     }
     COMPUTED = {
-        "component": config["news_component"],
+        # The profile decides, not the shared config. config/storyblok.json has
+        # a single `news_component` key from when there was only one type; a
+        # blog is a blog_article and says so in config/types/blogs.json.
+        "component": P.component or config["news_component"],
         "uid": slugify(f"{sharepoint_id}-root", fallback=f"{P.leaf}-root"),
         "title": title,
         "pull_quote": pull_quote_payload,
@@ -226,7 +257,15 @@ def build_story_payload(item, config, used_slugs=None):
             value = DECODERS[decode](value)
         content[key] = value
 
-    tag_labels = [tag["label"] for tag in content["tags"] if tag.get("label")]
+    # Tolerant of both shapes: a list of dicts from the SharePoint taxonomy, or
+    # a plain string. A type that forgets `decode: tags_text` gets its tags
+    # split here rather than an AttributeError three stages later.
+    raw_tags = content.get("tags")
+    if isinstance(raw_tags, str):
+        raw_tags = split_tags(raw_tags)
+        content["tags"] = raw_tags
+    tag_labels = [t["label"] for t in (raw_tags or [])
+                  if isinstance(t, dict) and t.get("label")]
 
     story = {
         "name": title,
@@ -299,7 +338,6 @@ def build_story_files(source_folder, output_folder, config):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     source_folder = P.RICHTEXT_ENHANCED
     output_folder = P.STORIES
     report_path = P.report("storyblok_stories_report.json")

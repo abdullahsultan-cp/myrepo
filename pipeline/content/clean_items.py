@@ -141,7 +141,6 @@ def print_summary(replacements, stats):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     report_path = P.report("unicode_report.json")
     source_folder = P.RAW
     output_folder = P.CLEANED

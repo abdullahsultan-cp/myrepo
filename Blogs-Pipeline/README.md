@@ -48,6 +48,70 @@ becomes an `extract_pull_quote()` override, or its own step file if it grows.
 
 ---
 
+## 0 · Stage 1 is complete
+
+All 83 blogs are through the content pipeline and routed. Nothing here has been
+uploaded.
+
+```bash
+python pipeline/content/import_source.py --type blogs   # Metadata.csv -> blogs.json
+python Blogs-Pipeline/pipeline/run.py                   # every step
+python Blogs-Pipeline/pipeline/resolve_taxonomy.py      # where each blog goes
+```
+
+| Output | |
+|---|---|
+| `data/blogs.json` | 83 items, SharePoint encodings decoded |
+| `data/raw|cleaned|normalized|richtext|richtext_enhanced/` | 83 files each |
+| `data/stories/` | **83 payloads**, `component: blog_article`, 0 missing a title or body |
+| `data/taxonomy/routing.csv` | one row per blog: entity, category, tags, region, target folder, and why |
+| `data/taxonomy/{entities,categories,tags,regions}.csv` | every value and its count |
+| `data/taxonomy/summary.json` | the counts, and everything unresolved |
+
+**Taxonomy, measured:** 9 entities, 20 categories, 47 tags, 1 region.
+
+```
+placement     global 70   entity 12   unresolved 1
+region        pk 12        (global) 71
+```
+
+### The one blocker: `global/blogs` does not exist
+
+**70 of 83 blogs route to `global/blogs`, and that folder is not in the space.**
+The tree has 156 `/blogs` folders — one under every region, entity and department
+— but `global/` contains only `global/news`. The migration will not create it;
+that tree belongs to the front-end developer.
+
+The 12 that resolve to an entity are fine: `regions/pk/entities/ied/blogs` (11)
+and `regions/pk/entities/fas/blogs` (1) both exist.
+
+**One blog is genuinely ambiguous.** Blog 84 is owned by *Centre for Innovation
+in Medical Education*, which has folders under `ke`, `pk` and `tz`, and the
+entity name does not say which. It is reported rather than guessed.
+
+### The folder tree was renamed — this affects news too
+
+The developer has renamed **every folder to a short code** since the news
+migration ran:
+
+```
+regions/pakistan/entities/medical-college/news   ->   regions/pk/entities/mc/news
+```
+
+Storyblok moved the stories with the folders, so **nothing was lost — all 3,606
+news stories are still present and 0 are missing**, verified against the live
+API. But two things follow:
+
+* every review link shared before the rename is dead;
+* `target_full_slug` in our reports and tracking database is stale, and a
+  re-run of the news migration would compute the new paths.
+
+The blogs resolver therefore works in short codes, bridging AKU's entity names
+to them through `News-Pipeline/data/taxonomy/seed/folders.json`, which carries
+both halves.
+
+---
+
 ## 1 · What arrived
 
 Delivered as `Blogs-20260809T212541Z-1-001/Blogs/`, copied in verbatim and

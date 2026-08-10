@@ -167,7 +167,6 @@ def print_report(report):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     source_folder = P.NORMALIZED
     output_folder = P.RICHTEXT
     report_path = P.report("richtext_conversion_report.json")

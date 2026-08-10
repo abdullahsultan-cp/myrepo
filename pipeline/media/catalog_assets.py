@@ -108,7 +108,6 @@ def build_asset_catalog(cleaned_folder, storyblok_folder, base_url):
 
 
 if __name__ == "__main__":
-    base_path = abspath(join(dirname(__file__), ".."))
     cleaned_folder = P.CLEANED
     storyblok_folder = P.RICHTEXT
     output_path = P.report("storyblok_asset_catalog.json")

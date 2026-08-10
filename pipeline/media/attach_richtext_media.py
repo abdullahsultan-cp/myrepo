@@ -21,7 +21,7 @@ from storyblok_config import load_config
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
 
-from paths_root import P  # noqa: E402
+from paths_root import P, ROOT  # noqa: E402
 
 
 def print_report(report):
@@ -121,7 +121,11 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    base_path = abspath(join(dirname(__file__), ".."))
+    # ROOT, not a dirname() count -- this file moved into pipeline/media/
+    # and the old expression resolved to pipeline/, so every path it
+    # printed named a directory that does not exist. The work itself was
+    # unaffected: every real path comes from P.
+    base_path = ROOT
     map_path = P.report("richtext_media_map.json")
 
     if not isfile(map_path):

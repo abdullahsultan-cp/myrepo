@@ -30,8 +30,24 @@ import re
 import sys
 from collections import Counter, defaultdict
 
+# Walk up to the pipeline/ root rather than counting dirname() calls: the
+# scripts using this sit at two different depths (migrate/ and
+# migrate/review/), and a fixed count is right for one and wrong for the
+# other -- which is exactly how this broke.
+# Two things have to be importable: this flow's own helpers (migrate/paths.py,
+# migrate/db.py) and the shared pipeline modules. The scripts using this sit at
+# two different depths -- migrate/ and migrate/review/ -- so the pipeline root is
+# found by walking up for _bootstrap.py rather than by counting dirname() calls,
+# which is right for one depth and silently wrong for the other.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-import _bootstrap  # noqa: F401,E402  -- paths_root now lives in pipeline/core/
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+_d = os.path.dirname(os.path.abspath(__file__))
+while _d != os.path.dirname(_d):
+    if os.path.exists(os.path.join(_d, "_bootstrap.py")):
+        sys.path.insert(0, _d)
+        break
+    _d = os.path.dirname(_d)
+import _bootstrap  # noqa: F401,E402
 from paths import BASE  # noqa: E402
 
 # Paths come from the shared module so this script works for any content
