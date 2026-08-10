@@ -220,6 +220,24 @@ class _Paths:
     def CONFIG(self):
         return os.path.join(ROOT, "config")          # shared across types
 
+    # ------------------------------------------------- shared, not per type
+    @property
+    def SPACE(self):
+        """Snapshots of the Storyblok space itself.
+
+        The folder tree, the components, the asset folders: these describe the
+        SPACE, not a content type, and every type reads the same one. Keeping a
+        copy per type meant blogs reaching into News-Pipeline/ for it, and two
+        people refreshing it in two places whenever the front-end developer
+        renamed a folder.
+        """
+        return os.path.join(ROOT, "storyblok_space")
+
+    @property
+    def SPACE_TREE(self):
+        """The live folder tree. Refresh with migrate/review/dump_sb_tree.py."""
+        return os.path.join(self.SPACE, "folder_tree.json")
+
     # --------------------------------------------------- stage 1: content
     @property
     def SOURCE_JSON(self):

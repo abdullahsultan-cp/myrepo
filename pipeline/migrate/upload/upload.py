@@ -460,7 +460,7 @@ def entity_folder_ids():
     snapshot; it is read here rather than re-fetched so a story upload cannot
     silently depend on a live listing call.
     """
-    p = os.path.join(P.MIGRATE, "sb_folder_tree.json")
+    p = P.SPACE_TREE
     if not os.path.exists(p):
         sys.exit("missing data/migrate/sb_folder_tree.json — run\n"
                  "  python scripts/migrate/review/dump_sb_tree.py")

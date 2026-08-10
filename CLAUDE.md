@@ -447,6 +447,36 @@ died on *printing* a Turkish `ğ`, not on the work.
 
 ---
 
+## 11a · Two people, two content types
+
+`CONTRIBUTING.md` is the rule set. The short version:
+
+**You own `<Your-Type>-Pipeline/` and `config/types/<your-type>.json`.**
+Everything in `pipeline/` is shared and can break the other person's work.
+
+Before editing `pipeline/` to make one type behave, check whether it belongs in
+that type instead: `skip_steps()`, `extra_steps()`, a hook, a file of the same
+name in `<Type>-Pipeline/pipeline/`, or a value in the profile. Blogs needed
+exactly **one** shared change to run end to end, and it was a real gap in the
+base rather than a blogs quirk.
+
+```bash
+python pipeline/check_before_push.py --type blogs
+```
+
+reads `git status` and says whether anything you changed is outside your folder.
+
+**`--type` defaults to news, which is live.** A command without it runs against
+the finished migration. `export AKU_CONTENT_TYPE=blogs`, or use
+`Blogs-Pipeline/pipeline/run.py`, which cannot be wrong.
+
+**The folder tree is space-level**, at `storyblok_space/folder_tree.json`, not
+under any one type — every type reads the same one. It used to live under
+`News-Pipeline/`, which meant blogs reached across for it and two people
+refreshed it in two places.
+
+---
+
 ## 12 · Backups and git
 
 **Back up both ends before anything significant.**

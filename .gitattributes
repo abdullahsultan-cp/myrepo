@@ -1,26 +1,52 @@
-# Normalise line endings so a Windows checkout does not show every file as
-# modified. Text is stored LF in the repo and checked out native.
+# Two people work in this repo on different content types at the same time.
+# These rules exist so that costs nothing. See CONTRIBUTING.md.
+
+# --- Line endings ------------------------------------------------------------
+# Normalise on commit. Windows checkouts still get CRLF; without this every
+# file touched on Windows shows as wholly rewritten to anyone on macOS.
 * text=auto
 
-*.py     text eol=lf
-*.md     text eol=lf
-*.json   text eol=lf
-*.csv    text eol=lf
-*.txt    text eol=lf
-*.ts     text eol=lf
-*.tsx    text eol=lf
-*.yml    text eol=lf
-*.yaml   text eol=lf
-*.sh     text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.sql   text eol=lf
+*.ts    text eol=lf
+*.tsx   text eol=lf
+*.yml   text eol=lf
 
-*.png    binary
-*.jpg    binary
-*.jpeg   binary
-*.gif    binary
-*.webp   binary
-*.svg    text eol=lf
-*.pdf    binary
-*.mp4    binary
-*.mov    binary
-*.zip    binary
-*.ico    binary
+# CSV deliverables are written utf-8-sig with \r\n for Excel. Leave them alone.
+*.csv   -text
+
+# --- Binary ------------------------------------------------------------------
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.pdf   binary
+*.gz    binary
+*.zip   binary
+
+# --- Generated: never worth a merge -----------------------------------------
+# Regenerating is always right and always cheap, so a conflict here should be
+# resolved by re-running the step, not by editing the file. `merge=ours` keeps
+# git from producing conflict markers inside a machine-written file; the command
+# in the comment is the real resolution.
+#
+#   storyblok-viewer/src/constants  <- pipeline/run_pipeline.py extract-viewer-filters
+#   */data/taxonomy/*.csv           <- the type's own resolve_taxonomy / run_taxonomy
+storyblok-viewer/src/constants/**   merge=ours linguist-generated=true
+*/data/taxonomy/*.csv               merge=ours
+*/data/taxonomy/summary.json        merge=ours
+
+# --- Snapshots of someone else's work ---------------------------------------
+# The space belongs to the front-end developer. These are read-only records of
+# what was there at a moment; a merge between two people's snapshots is
+# meaningless. Take a fresh one instead:
+#   python pipeline/migrate/review/dump_sb_tree.py
+#   python pipeline/analyze/fetch_storyblok_space.py
+storyblok_space/**                  merge=ours
+
+# --- Backups: append-only, never merged -------------------------------------
+# One gzipped file per snapshot, named with its timestamp. Two people taking a
+# backup produce two files, not a conflict.
+*/backup/**                         binary

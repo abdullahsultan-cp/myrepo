@@ -46,7 +46,7 @@ P.use("blogs")
 # The live folder tree, refreshed by pipeline/migrate/review/dump_sb_tree.py.
 # Read-only: it is the front-end developer's, and the answer to "can this blog
 # land anywhere?" has to come from what is really there.
-TREE = os.path.join(ROOT, "News-Pipeline", "data", "migrate", "sb_folder_tree.json")
+TREE = P.SPACE_TREE
 
 # The bridge between AKU's entity names and the folder slugs. The front-end
 # developer renamed every folder to a short code -- regions/pk/entities/ied, not

@@ -56,8 +56,10 @@ from storyblok_config import load_config, management_api_base  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from paths_root import P  # noqa: E402
 
-OUT_JSON = os.path.join(P.MIGRATE, "sb_folder_tree.json")
-OUT_CSV = os.path.join(P.MIGRATE, "sb_folder_tree.csv")
+# Space-level, not per type: every content type reads the same tree, and a
+# copy per type is a copy per person to keep in step.
+OUT_JSON = P.SPACE_TREE
+OUT_CSV = os.path.join(P.SPACE, "folder_tree.csv")
 
 
 def fetch_all(cfg, folders_only=True):

@@ -131,9 +131,9 @@ def preflight():
     log(f"\n{'=' * 70}\n  PRE-FLIGHT\n{'=' * 70}")
     problems = []
 
-    tree = os.path.join(OUT, "sb_folder_tree.json")
+    tree = P.SPACE_TREE
     if not os.path.exists(tree):
-        problems.append("data/migrate/sb_folder_tree.json missing — run "
+        problems.append("storyblok_space/folder_tree.json missing — run "
                         "scripts/migrate/review/dump_sb_tree.py")
     else:
         with open(tree, encoding="utf-8") as f:
