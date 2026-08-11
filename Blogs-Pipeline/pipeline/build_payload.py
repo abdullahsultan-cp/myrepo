@@ -97,7 +97,46 @@ PILL_ROW_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
 QUOTE_SPACING = spacing(edges(), edges(bottom=56), edges(), edges(bottom=56))
 WIDE_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
                        edges(bottom=56), edges(left=80, right=80))
+DISCLAIMER_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
+                             edges(bottom=56), edges(left=80, right=80))
 WHITE = {"color": "#ffff", "plugin": "native-color-picker"}
+
+# Copied verbatim from the demo blog, including the accent on the word itself
+# and including the fact that the sentence stops mid-way. It is the signed-off
+# wording; completing it would be inventing AKU's legal text.
+DISCLAIMER_LABEL = "Disclaimer"
+DISCLAIMER_BODY = (": The views and opinions expressed in this article are "
+                   "those of the author and do not necessarily reflect the "
+                   "official policy ")
+DISCLAIMER_COLOUR = "#008F51"
+
+# The 14 pill variants include four that mean something — admissions_open,
+# admissions_closed, audience_eligible, audience_restricted — and must not be
+# used for a tag. These ten are the editorial palette.
+PILL_VARIANTS = ["green", "lime", "brown", "bronze", "terracotta", "rose",
+                 "gold", "taupe", "stone", "neutral"]
+
+
+def pill_palette(all_labels):
+    """{tag: variant}. The same tag is the same colour on every blog.
+
+    Assigned by how often a tag is used, most-used first, cycling through the
+    ten variants. So the ten commonest tags are always ten different colours,
+    which is where a clash actually shows: `Education`, `Students` and
+    `Student life` appear together constantly.
+
+    Hashing the label instead — the obvious approach — gave all three of those
+    `bronze`, because 47 labels over 10 colours collide wherever they like.
+    Ordering is by (count descending, then label) so it does not depend on
+    dictionary order, and `hash()` is avoided entirely: Python randomises
+    string hashing per process, so it would recolour every tag on every
+    rebuild. That is the phantom-diff trap from build_url_lookup.
+    """
+    from collections import Counter
+    counts = Counter(all_labels)
+    ordered = sorted(counts, key=lambda label: (-counts[label], label))
+    return {label: PILL_VARIANTS[i % len(PILL_VARIANTS)]
+            for i, label in enumerate(ordered)}
 
 
 # ------------------------------------------------------------------ helpers
@@ -171,7 +210,7 @@ def asset_field(filename):
 
 
 # -------------------------------------------------------------------- bloks
-def pill_row(labels):
+def pill_row(labels, palette):
     """The tags, as the demo's row of pills.
 
     One `row_item` a pill, `width_mode: fit` so each hugs its label. Colour is
@@ -187,12 +226,32 @@ def pill_row(labels):
             "component": "row_item", "width": "", "height": "", "radius": "",
             "width_mode": "fit", "align_items": "", "justify_content": "",
             "spacing": "", "background_color": dict(WHITE),
-            "body": [{"component": "pill", "label": label, "variant": "green"}],
+            "body": [{"component": "pill", "label": label,
+                      "variant": palette.get(label, "green")}],
         } for label in labels],
     }
 
 
-def build(story, routing, authors, photos):
+def disclaimer_bloks():
+    """The rule and the notice that close every blog, as the demo has them."""
+    rule = {"component": "rich_text",
+            "content": {"type": "doc", "content": [{"type": "horizontal_rule"}]},
+            "spacing": copy.deepcopy(DISCLAIMER_SPACING),
+            "bg_pattern": {"fieldtype": "asset"},
+            "pattern_height": "", "pattern_mobile_height": ""}
+    notice = {"component": "rich_text", "content": {"type": "doc", "content": [{
+        "type": "paragraph", "attrs": {"textAlign": None}, "content": [
+            {"type": "text", "text": DISCLAIMER_LABEL,
+             "marks": [{"type": "textStyle",
+                        "attrs": {"color": DISCLAIMER_COLOUR}}]},
+            {"type": "text", "text": DISCLAIMER_BODY}]}]},
+        "spacing": copy.deepcopy(DISCLAIMER_SPACING),
+        "bg_pattern": {"fieldtype": "asset"},
+        "pattern_height": "", "pattern_mobile_height": ""}
+    return [rule, notice]
+
+
+def build(story, routing, authors, photos, palette):
     content = story["content"]
     sid = str(content.get("sharepoint_id") or "")
     body_doc = content.get("body") or {}
@@ -232,7 +291,7 @@ def build(story, routing, authors, photos):
     labels = [t["label"] for t in (content.get("tags") or [])
               if isinstance(t, dict) and t.get("label")]
     if labels:
-        bloks.append(pill_row(labels))
+        bloks.append(pill_row(labels, palette))
 
     video = (content.get("embed_video") or "").strip()
     if video:
@@ -257,6 +316,10 @@ def build(story, routing, authors, photos):
             bloks.append({"component": "social_embed", "variant": "facebook",
                           "url": unquote(plain.group(1)) if plain else url,
                           "align": "center", "show_text": True, "spacing": ""})
+
+    # The demo closes with a rule and the disclaimer, then the author, then the
+    # comment form. Same order here.
+    bloks.extend(disclaimer_bloks())
 
     author_id = str(content.get("author_id") or "").strip()
     bio = (authors.get(author_id, {}).get("Description") or "").strip()
@@ -323,12 +386,24 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
     from collections import Counter
     counts, made = Counter(), 0
+    # The palette needs every tag in the set before it can order them, so it
+    # is built in one pass first rather than per story.
+    all_labels = []
+    for name in sorted(os.listdir(P.STORIES)):
+        if not name.endswith(".json"):
+            continue
+        with open(os.path.join(P.STORIES, name), encoding="utf-8") as f:
+            tags = json.load(f).get("content", {}).get("tags") or []
+        all_labels += [t["label"] for t in tags
+                       if isinstance(t, dict) and t.get("label")]
+    palette = pill_palette(all_labels)
+
     for name in sorted(os.listdir(P.STORIES)):
         if not name.endswith(".json"):
             continue
         with open(os.path.join(P.STORIES, name), encoding="utf-8") as f:
             story = json.load(f)
-        payload = build(story, routing, authors, photos)
+        payload = build(story, routing, authors, photos, palette)
         counts.update(b["component"] for b in payload["body"])
         for field in ("description", "date", "read_time", "author"):
             if payload[field]:
