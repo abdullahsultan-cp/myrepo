@@ -51,7 +51,30 @@ import _bootstrap
 _bootstrap.ensure()
 
 from link_routing import classify, is_ours, rewrite_href
+
 from paths_root import ROOT, P
+
+
+def collect_links(node, found):
+    """{(href, link text): count} for every aku.edu link in a rich-text tree.
+
+    At module level so it closes over nothing — a nested version tripped
+    ruff's B023, the same way it did in fetch_missing_media.py.
+    """
+    if isinstance(node, dict):
+        for mark in node.get("marks") or []:
+            if mark.get("type") == "link":
+                href = (mark.get("attrs") or {}).get("href") or ""
+                if is_ours(href):
+                    key = (href, node.get("text") or "")
+                    found[key] = found.get(key, 0) + 1
+        for value in node.values():
+            if isinstance(value, (list, dict)):
+                collect_links(value, found)
+    elif isinstance(node, list):
+        for child in node:
+            collect_links(child, found)
+
 
 COLUMNS = ["type", "sharepoint_id", "story_slug", "link_text", "href", "kind",
            "status", "suggested_target", "new_target", "occurrences"]
@@ -145,23 +168,7 @@ def blogs_rows():
             content = json.load(f).get("content", {})
         sid = str(content.get("sharepoint_id") or name[:-5])
         found = {}
-
-        def walk(node, text_of):
-            if isinstance(node, dict):
-                for mark in node.get("marks") or []:
-                    if mark.get("type") == "link":
-                        href = (mark.get("attrs") or {}).get("href") or ""
-                        if is_ours(href):
-                            key = (href, node.get("text") or "")
-                            found[key] = found.get(key, 0) + 1
-                for value in node.values():
-                    if isinstance(value, (list, dict)):
-                        walk(value, text_of)
-            elif isinstance(node, list):
-                for child in node:
-                    walk(child, text_of)
-
-        walk(content.get("body"), None)
+        collect_links(content.get("body"), found)
         for (href, text), occ in found.items():
             kind, _ = classify(href)
             target, why = rewrite_href(href)
