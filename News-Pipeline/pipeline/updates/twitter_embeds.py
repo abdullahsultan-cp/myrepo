@@ -102,7 +102,7 @@ def is_tweet(src):
     return host in TWITTER_HOSTS
 
 
-def wrap(url):
+def wrap(url, align="center"):
     """A tweet in the same container the dev used, with one column."""
     return {
         "component": "row",
@@ -123,7 +123,7 @@ def wrap(url):
                 "component": "social_embed",
                 "variant": "twitter",
                 "url": url,
-                "align": "center",
+                "align": align,
                 "show_text": True,
                 # An empty string, as in the dev's own blok — the row holds the
                 # spacing, so the embed carries none of its own.
@@ -133,11 +133,17 @@ def wrap(url):
     }
 
 
-def to_social(blok):
-    if not isinstance(blok, dict) or blok.get("component") != "iframe":
-        return blok
-    src = blok.get("src") or ""
-    return wrap(src) if is_tweet(src) else blok
+def alignment(body, blok):
+    """`center` when the tweet ends the article, `right` when text follows.
+
+    Right is only correct while the embed has something beside it to hug —
+    that is why the dev's is right, sitting in the left column of a pair. A
+    tweet that ends the story has nothing to its right, so centring it is what
+    keeps it from stranding against the margin. All 38 are currently last, so
+    all 38 centre; the rule is written out anyway so the next one to land
+    mid-article does the right thing without anybody rediscovering why.
+    """
+    return "center" if body and body[-1] is blok else "right"
 
 
 def patch(content, source, ctx):
@@ -146,4 +152,19 @@ def patch(content, source, ctx):
         return {}
     if not [b for b in find_bloks(body, "iframe") if is_tweet(b.get("src"))]:
         return {}
-    return {"body": walk_bloks(body, to_social)}
+
+    def convert(blok):
+        if not isinstance(blok, dict) or blok.get("component") != "iframe":
+            return blok
+        src = blok.get("src") or ""
+        return wrap(src, alignment(body, blok)) if is_tweet(src) else blok
+
+    return {"body": walk_bloks(body, convert)}
+
+
+def to_social(blok):
+    """Kept for the tests and for a caller with no surrounding body."""
+    if not isinstance(blok, dict) or blok.get("component") != "iframe":
+        return blok
+    src = blok.get("src") or ""
+    return wrap(src) if is_tweet(src) else blok
