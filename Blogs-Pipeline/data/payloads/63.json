@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "63",
       "title": "Student Leaders welcome onboarding students at the Unified and MBBS Student Orientations",
       "description": "",
       "date": "Feb 02, 2024",
@@ -160,7 +161,15 @@
                 {
                   "component": "pill",
                   "label": "Student life",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -181,7 +190,15 @@
                 {
                   "component": "pill",
                   "label": "Students",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

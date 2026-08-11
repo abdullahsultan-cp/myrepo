@@ -17,6 +17,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "31",
       "title": "Partnering with Parents: Education in rural areas during COVID-19",
       "description": "A Head teacher gives an account of how he partnered with parents in the teaching and learning process during Covid-19 in the rural areas of Sindh",
       "date": "Jul 07, 2021",
@@ -138,14 +139,6 @@
                 "type": "paragraph",
                 "content": [
                   {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
                     "type": "text",
                     "text": "I'd joined the concerned school as a Head Teacher in 2017. I had been given a choice regarding my assignment and had chosen this school because it was located near my residence. As a head teacher it was really difficult for me to implement the SOPs, guide the parents and continue the teaching and learning process. Additionally, the parents were suffering from joblessness due to the COVID-19 lockdown as all construction work/ labour-related work was shut down. Consequently, parents were unwilling/or unable to follow SOPs in terms of purchasing masks or sanitizers for their children.  "
                   }
@@ -181,14 +174,6 @@
                   "src": "/iedpk/blog/Lists/Photos/aftab4.jpg",
                   "alt": ""
                 }
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               },
               {
                 "type": "paragraph",
@@ -524,14 +509,6 @@
                   "src": "/iedpk/blog/PublishingImages/aftab4.jpg",
                   "alt": ""
                 }
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               },
               {
                 "type": "paragraph",
@@ -879,7 +856,15 @@
                 {
                   "component": "pill",
                   "label": "Education",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -900,7 +885,15 @@
                 {
                   "component": "pill",
                   "label": "Students",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -921,7 +914,15 @@
                 {
                   "component": "pill",
                   "label": "Partnerships",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -942,7 +943,15 @@
                 {
                   "component": "pill",
                   "label": "Learning",
-                  "variant": "stone"
+                  "variant": "stone",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

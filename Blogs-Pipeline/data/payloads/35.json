@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "35",
       "title": "Introducing OSE Pakistan's Blog Section!",
       "description": "Office of Student Experience - Pakistan begin a new blog section to create a platform where news, announcements, achievements and opinions can be shared with the AKU students!",
       "date": "Dec 26, 2022",
@@ -98,14 +99,6 @@
                     "type": "text",
                     "text": "In its initial phases, the blog will be covering Friday's Food for Thought, Student Success Stories, Opinions, Post-Event Coverages, and Announcements (like this one!) throughout the semester. We look forward to hearing from you and working on this initiative together."
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
                   {
                     "type": "hard_break"
                   }
@@ -210,7 +203,15 @@
                 {
                   "component": "pill",
                   "label": "Students",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -231,7 +232,15 @@
                 {
                   "component": "pill",
                   "label": "Student life",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

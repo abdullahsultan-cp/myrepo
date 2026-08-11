@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "92",
       "title": "Delivered from the shackles of stress",
       "description": "IHD programme champions mental well-being among community health promoters",
       "date": "Nov 05, 2025",
@@ -376,7 +377,15 @@
                 {
                   "component": "pill",
                   "label": "Mental health",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "55",
       "title": "Falah's holds multiple Fundraisers for patient welfare",
       "description": "",
       "date": "Mar 31, 2024",
@@ -65,14 +66,6 @@
                     "type": "text",
                     "text": "In addition to these efforts, Falah hosted a successful blood drive at the University Center in late February, collecting over 100 bags of blood. The high turnout was composed of fellow students, faculty, and staff, as members of the AKU family came out in support of Falah's cause for patient welfare."
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
                   {
                     "type": "hard_break"
                   }
@@ -177,7 +170,15 @@
                 {
                   "component": "pill",
                   "label": "Student life",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -198,7 +199,15 @@
                 {
                   "component": "pill",
                   "label": "Students",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

@@ -139,7 +139,47 @@ def pill_palette(all_labels):
             for i, label in enumerate(ordered)}
 
 
+# The pill palette. `variant` alone does NOT colour a pill — the first upload
+# produced pills with the right variant and no colour at all, and the owner
+# fixed them by hand by adding these two fields. Only colours AKU has actually
+# chosen are used: both come from the demo blog and the owner's own correction.
+PILL_COLOURS = ["#06923E96", "#B2CEFF"]
+PILL_TEXT_COLOUR = "#000000"
+
+
+def colour_field(hexcode):
+    return {"color": hexcode, "plugin": "native-color-picker"}
+
+
 # ------------------------------------------------------------------ helpers
+def strip_blank_paragraphs(doc):
+    """Drop paragraphs holding nothing but line breaks.
+
+    SharePoint's editor left 79 of them across 30 blogs — one on blog 70 is a
+    single paragraph containing seventeen `<br>` and no words. They render as
+    a run of empty space, which is what the owner deleted by hand on the first
+    three demo stories: blog 70 went from 56 nodes to 36, all 20 of them these.
+
+    A paragraph is only dropped when it has no text AND no image. One holding a
+    lone image and nothing else is real content — images live inside the rich
+    text here — and removing it would delete a picture.
+    """
+    if not isinstance(doc, dict):
+        return doc
+    kept = []
+    for node in doc.get("content") or []:
+        if isinstance(node, dict) and node.get("type") == "paragraph":
+            kids = node.get("content") or []
+            has_text = any(isinstance(k, dict) and k.get("type") == "text"
+                           and (k.get("text") or "").strip() for k in kids)
+            has_image = any(isinstance(k, dict) and k.get("type") == "image"
+                            for k in kids)
+            if not has_text and not has_image:
+                continue
+        kept.append(node)
+    return {**doc, "content": kept}
+
+
 def text_of(node, out=None):
     out = [] if out is None else out
     if isinstance(node, dict):
@@ -227,8 +267,11 @@ def pill_row(labels, palette):
             "width_mode": "fit", "align_items": "", "justify_content": "",
             "spacing": "", "background_color": dict(WHITE),
             "body": [{"component": "pill", "label": label,
-                      "variant": palette.get(label, "green")}],
-        } for label in labels],
+                      "variant": palette.get(label, "green"),
+                      "custom_bg_color": colour_field(
+                          PILL_COLOURS[i % len(PILL_COLOURS)]),
+                      "custom_text_color": colour_field(PILL_TEXT_COLOUR)}],
+        } for i, label in enumerate(labels)],
     }
 
 
@@ -254,7 +297,7 @@ def disclaimer_bloks():
 def build(story, routing, authors, photos, palette):
     content = story["content"]
     sid = str(content.get("sharepoint_id") or "")
-    body_doc = content.get("body") or {}
+    body_doc = strip_blank_paragraphs(content.get("body") or {})
     route = routing.get(sid, {})
 
     bloks = [{"component": "rich_text", "content": body_doc,
@@ -338,6 +381,10 @@ def build(story, routing, authors, photos, palette):
 
     return {
         "component": "blog_article",
+        # Kept deliberately: the update engine matches a live blog to its
+        # export row on this, and dropping it left every blogs update plan
+        # with source=None and no way to find the story it was looking at.
+        "sharepoint_id": str(content.get("sharepoint_id") or "").strip(),
         "title": (content.get("title") or "").strip(),
         "description": (content.get("summary") or "").strip(),
         "date": pretty_date(content),

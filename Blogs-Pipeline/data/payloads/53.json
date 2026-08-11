@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "53",
       "title": "PLS Hosts Successful Brewed Tales Event and Baitbaazi",
       "description": "",
       "date": "Apr 26, 2024",
@@ -83,14 +84,6 @@
                     "type": "text",
                     "text": "The event provided a platform for artistic expression, cultural celebration, and charitable contributions, underscoring the vibrant spirit of the community at AKU."
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
                   {
                     "type": "hard_break"
                   }
@@ -195,7 +188,15 @@
                 {
                   "component": "pill",
                   "label": "Students",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -216,7 +217,15 @@
                 {
                   "component": "pill",
                   "label": "Student life",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

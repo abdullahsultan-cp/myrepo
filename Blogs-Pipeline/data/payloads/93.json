@@ -16,6 +16,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "93",
       "title": "From Frustration to Transformation",
       "description": "A Nurse's Journey to Mental Well-Being",
       "date": "Nov 05, 2025",
@@ -236,14 +237,6 @@
                     "type": "hard_break"
                   }
                 ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               }
             ]
           },
@@ -344,7 +337,15 @@
                 {
                   "component": "pill",
                   "label": "Mental health",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -365,7 +366,15 @@
                 {
                   "component": "pill",
                   "label": "Nursing",
-                  "variant": "gold"
+                  "variant": "gold",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -386,7 +395,15 @@
                 {
                   "component": "pill",
                   "label": "Education",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

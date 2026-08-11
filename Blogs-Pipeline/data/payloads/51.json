@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "51",
       "title": "Urdu Avengers and English Defenders out on an Adventure",
       "description": "Biloongra-based Storytelling to Improve Vaccine Literacy Amongst School Children in Karachi",
       "date": "Apr 17, 2024",
@@ -250,7 +251,15 @@
                 {
                   "component": "pill",
                   "label": "Education",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -271,7 +280,15 @@
                 {
                   "component": "pill",
                   "label": "Critical Creative Innovative Thinking",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

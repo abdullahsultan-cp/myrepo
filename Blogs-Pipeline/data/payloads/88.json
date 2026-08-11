@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "88",
       "title": "Entry 69 | Is EdTech our Friend or Foe?",
       "description": "",
       "date": "Aug 08, 2025",
@@ -88,14 +89,6 @@
                         "type": "italic"
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
                   }
                 ]
               }
@@ -244,7 +237,15 @@
                 {
                   "component": "pill",
                   "label": "Education",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

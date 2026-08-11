@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "52",
       "title": "My highlights during the Women Lift Health Global Conference in Tanzania",
       "description": "",
       "date": "May 07, 2024",
@@ -205,7 +206,15 @@
                 {
                   "component": "pill",
                   "label": "Medical College",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -226,7 +235,15 @@
                 {
                   "component": "pill",
                   "label": "Education",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

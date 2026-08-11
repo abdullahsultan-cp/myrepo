@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "50",
       "title": "Charting Our Digital Future: My Takeaways from the Global Digital Health Summit 2024",
       "description": "",
       "date": "Apr 04, 2024",
@@ -376,7 +377,15 @@
                 {
                   "component": "pill",
                   "label": "Critical Creative Innovative Thinking",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

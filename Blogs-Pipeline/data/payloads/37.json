@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "37",
       "title": "40 years of AKU",
       "description": "",
       "date": "Feb 12, 2023",
@@ -255,7 +256,15 @@
                 {
                   "component": "pill",
                   "label": "40 years of AKU",
-                  "variant": "gold"
+                  "variant": "gold",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

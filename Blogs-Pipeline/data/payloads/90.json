@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "90",
       "title": "Entry 71 | Breaking the Silence Through Play - Using Educational Games to Create Awareness",
       "description": "",
       "date": "Sep 28, 2025",
@@ -366,26 +367,6 @@
                   {
                     "type": "text",
                     "text": "The implications are therefore twofold. First, professional development is crucial: teachers require training in both content and pedagogy if games are to be more than a novelty. Second, curriculum space must be secured so that menstrual health and related topics are not relegated to the margins but treated as integral to students' education. When these conditions are met, classroom games can move from being isolated interventions to becoming effective tools for normalising dialogue, challenging myths, and equipping students with reliable knowledge about their health."
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": " "
-                  },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
                   }
                 ]
               },
@@ -801,7 +782,15 @@
                 {
                   "component": "pill",
                   "label": "Healthcare",
-                  "variant": "gold"
+                  "variant": "gold",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

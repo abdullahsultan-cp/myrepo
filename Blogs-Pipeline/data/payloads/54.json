@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "54",
       "title": "Falah Annual Iftar Drive 2024",
       "description": "",
       "date": "Apr 06, 2024",
@@ -68,14 +69,6 @@
                     "type": "text",
                     "text": "Falah extends a special thank you to everyone who donated and the hardworking outreach volunteers whose efforts made the Iftar drive successful. These contributions will continue to support Falah's mission of providing free medication to those in need, embodying the spirit of compassion and community spirit."
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
                   {
                     "type": "hard_break"
                   }
@@ -180,7 +173,15 @@
                 {
                   "component": "pill",
                   "label": "Student life",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -201,7 +202,15 @@
                 {
                   "component": "pill",
                   "label": "Students",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

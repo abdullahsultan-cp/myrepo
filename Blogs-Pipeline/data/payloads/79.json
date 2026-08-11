@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "79",
       "title": "Entry 67 | Screen Time, Stress, and the Silent Struggle: What Our Students Are Telling Us",
       "description": "",
       "date": "Jun 05, 2025",
@@ -493,7 +494,15 @@
                 {
                   "component": "pill",
                   "label": "Mental health",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

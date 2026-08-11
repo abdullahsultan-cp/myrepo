@@ -17,6 +17,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "82",
       "title": "Breaking the Silence: AKU's Fight Against Women's Preventable Deaths",
       "description": "",
       "date": "Jun 26, 2025",
@@ -119,14 +120,6 @@
                     "text": "."
                   }
                 ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               }
             ]
           },
@@ -227,7 +220,15 @@
                 {
                   "component": "pill",
                   "label": "Global health",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -248,7 +249,15 @@
                 {
                   "component": "pill",
                   "label": "Research",
-                  "variant": "taupe"
+                  "variant": "taupe",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -269,7 +278,15 @@
                 {
                   "component": "pill",
                   "label": "AKU",
-                  "variant": "rose"
+                  "variant": "rose",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -290,7 +307,15 @@
                 {
                   "component": "pill",
                   "label": "Partnerships",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

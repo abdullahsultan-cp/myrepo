@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "16",
       "title": "Stephen Lyon: I owe a debt of gratitude to Pakistan",
       "description": "I had a history in Pakistan that began when my mother, a medical anthropologist from the United Kingdom, dragged me and my sister to Lahore as teenagers.",
       "date": "May 24, 2022",
@@ -161,7 +162,15 @@
                 {
                   "component": "pill",
                   "label": "AKU",
-                  "variant": "rose"
+                  "variant": "rose",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

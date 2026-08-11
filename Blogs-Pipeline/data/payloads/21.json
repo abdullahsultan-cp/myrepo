@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "21",
       "title": "Sustainable Development Goals: Yes, we can!",
       "description": "The Times Higher Education ranking has placed Aga Khan University in first place in Pakistan and in the top 5% globally for its contributions to SDG 3 - good health and well-being.",
       "date": "Jun 15, 2022",
@@ -238,7 +239,15 @@
                 {
                   "component": "pill",
                   "label": "Sustainable Development Goals",
-                  "variant": "stone"
+                  "variant": "stone",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -259,7 +268,15 @@
                 {
                   "component": "pill",
                   "label": "Healthcare",
-                  "variant": "gold"
+                  "variant": "gold",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

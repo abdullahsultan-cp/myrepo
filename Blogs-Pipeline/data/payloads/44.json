@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "44",
       "title": "Inclusivity in Motion: A Night of Salsa and Inspiration",
       "description": "",
       "date": "Oct 10, 2023",
@@ -464,7 +465,15 @@
                 {
                   "component": "pill",
                   "label": "Critical Creative Innovative Thinking",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

@@ -16,6 +16,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "84",
       "title": "Simulation in Scrubs: Pakistan's Bold Leap in Healthcare Education",
       "description": "Simulation-based healthcare education has evolved in Pakistan, from isolated efforts to a national movement-gaining momentum, building networks, and driving local innovation.",
       "date": "Jul 25, 2025",
@@ -113,14 +114,6 @@
                       }
                     ]
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
                   {
                     "type": "hard_break"
                   }
@@ -280,25 +273,6 @@
                     "type": "hard_break"
                   }
                 ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               }
             ]
           },
@@ -445,7 +419,15 @@
                 {
                   "component": "pill",
                   "label": "Education",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -466,7 +448,15 @@
                 {
                   "component": "pill",
                   "label": "Healthcare",
-                  "variant": "gold"
+                  "variant": "gold",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -487,7 +477,15 @@
                 {
                   "component": "pill",
                   "label": "Simulation",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

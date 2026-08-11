@@ -17,6 +17,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "15",
       "title": "Stephen Lyon: I owe a debt of gratitude to Pakistan",
       "description": "I had a history in Pakistan that began when my mother, a medical anthropologist from the United Kingdom, dragged me and my sister to Lahore as teenagers.",
       "date": "Apr 27, 2022",
@@ -313,7 +314,15 @@
                 {
                   "component": "pill",
                   "label": "Faculty",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -334,7 +343,15 @@
                 {
                   "component": "pill",
                   "label": "Institute for the Study of Muslim Civilisations",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -355,7 +372,15 @@
                 {
                   "component": "pill",
                   "label": "Pakistan",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -376,7 +401,15 @@
                 {
                   "component": "pill",
                   "label": "People",
-                  "variant": "brown"
+                  "variant": "brown",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

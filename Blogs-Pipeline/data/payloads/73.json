@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "73",
       "title": "Entry 66 | Unspoken Wounds: Mental Health Stigma in Pakistan's Social Fabric",
       "description": "May 19, 2025 2:10 PM",
       "date": "May 06, 2025",
@@ -314,14 +315,6 @@
                     "text": "Wasserman, D., Van der Gaag, R., & Wise, J. (2020). The term \"physical distancing\" is recommended rather than \"social distancing\" during the COVID-19 pandemic for reducing feelings of rejection among people with mental health problems. European Psychiatry, 63(1). https://doi.org/10.1192/j.eurpsy.2020.60"
                   }
                 ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               }
             ]
           },
@@ -422,7 +415,15 @@
                 {
                   "component": "pill",
                   "label": "Mental health",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

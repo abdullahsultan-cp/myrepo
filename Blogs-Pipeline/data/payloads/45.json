@@ -17,6 +17,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "45",
       "title": "Creating impact through Accreditation: 'Stories from the field'",
       "description": "Professor Tashmin Khamis reflects on the impact of the Professional Standards Framework (PSF) on the institution, faculty practice and academic development.",
       "date": "Oct 17, 2023",
@@ -159,14 +160,6 @@
                   "src": "/blogs/PublishingImages/qtl-blog.jpg",
                   "alt": ""
                 }
-              },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "hard_break"
-                  }
-                ]
               },
               {
                 "type": "paragraph",
@@ -426,7 +419,15 @@
                 {
                   "component": "pill",
                   "label": "Networks of Quality",
-                  "variant": "lime"
+                  "variant": "lime",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -447,7 +448,15 @@
                 {
                   "component": "pill",
                   "label": "Teaching and Learning",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -468,7 +477,15 @@
                 {
                   "component": "pill",
                   "label": "Teaching",
-                  "variant": "neutral"
+                  "variant": "neutral",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -489,7 +506,15 @@
                 {
                   "component": "pill",
                   "label": "Learning",
-                  "variant": "stone"
+                  "variant": "stone",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

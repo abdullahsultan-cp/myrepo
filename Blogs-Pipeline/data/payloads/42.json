@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "42",
       "title": "My Decade at Aga Khan University: Unveiling the Essence of Growth and Purpose",
       "description": "",
       "date": "Jul 27, 2023",
@@ -264,7 +265,15 @@
                 {
                   "component": "pill",
                   "label": "Critical Creative Innovative Thinking",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

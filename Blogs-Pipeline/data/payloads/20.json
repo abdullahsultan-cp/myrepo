@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "20",
       "title": "Let us realise our environmental responsibility",
       "description": "Collective action to address environmental challenges can help build a more inclusive and sustainable world.",
       "date": "Jun 05, 2022",
@@ -133,14 +134,6 @@
                     "type": "text",
                     "text": "There is a tremendous opportunity for other institutions to also opt for sustainable change. Solutions are available, global momentum is building, and transformative change can be seen on the horizon. Let's make sure we can say that we were a part of building a better world for all."
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
-              {
-                "type": "paragraph",
-                "content": [
                   {
                     "type": "hard_break"
                   }
@@ -291,7 +284,15 @@
                 {
                   "component": "pill",
                   "label": "Environment",
-                  "variant": "rose"
+                  "variant": "rose",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

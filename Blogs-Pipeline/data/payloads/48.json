@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "48",
       "title": "10 Beliefs",
       "description": "",
       "date": "Jan 01, 2024",
@@ -445,7 +446,15 @@
                 {
                   "component": "pill",
                   "label": "Critical Creative Innovative Thinking",
-                  "variant": "bronze"
+                  "variant": "bronze",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

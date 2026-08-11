@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "98",
       "title": "Designing Inclusive Futures for Women and Girls",
       "description": "",
       "date": "Feb 19, 2026",
@@ -356,7 +357,15 @@
                 {
                   "component": "pill",
                   "label": "Women's Day",
-                  "variant": "rose"
+                  "variant": "rose",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -377,7 +386,15 @@
                 {
                   "component": "pill",
                   "label": "Innovation",
-                  "variant": "green"
+                  "variant": "green",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "66",
       "title": "Tips and Tricks to Keep Your Exhibition Alive",
       "description": "",
       "date": "Dec 03, 2024",
@@ -306,7 +307,15 @@
                 {
                   "component": "pill",
                   "label": "Arts",
-                  "variant": "stone"
+                  "variant": "stone",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

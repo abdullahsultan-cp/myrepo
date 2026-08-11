@@ -15,6 +15,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "65",
       "title": "Navigating Dis/Misinformation: A Media Consumer's Guide",
       "description": "Learn to spot fake news and misinformation to make informed choices",
       "date": "Sep 11, 2024",
@@ -226,7 +227,15 @@
                 {
                   "component": "pill",
                   "label": "Media",
-                  "variant": "neutral"
+                  "variant": "neutral",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             },
@@ -247,7 +256,15 @@
                 {
                   "component": "pill",
                   "label": "Graduate School of Media and Communications",
-                  "variant": "terracotta"
+                  "variant": "terracotta",
+                  "custom_bg_color": {
+                    "color": "#B2CEFF",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }

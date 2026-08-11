@@ -14,6 +14,7 @@
     },
     "content": {
       "component": "blog_article",
+      "sharepoint_id": "96",
       "title": "The DNA of Service: Mentorship, Growth, and the Spirit of Volunteerism",
       "description": "",
       "date": "Feb 04, 2026",
@@ -220,7 +221,15 @@
                 {
                   "component": "pill",
                   "label": "Volunteerism",
-                  "variant": "rose"
+                  "variant": "rose",
+                  "custom_bg_color": {
+                    "color": "#06923E96",
+                    "plugin": "native-color-picker"
+                  },
+                  "custom_text_color": {
+                    "color": "#000000",
+                    "plugin": "native-color-picker"
+                  }
                 }
               ]
             }
