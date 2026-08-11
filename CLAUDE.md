@@ -371,12 +371,32 @@ clean_text(summary)             # a plain string
 clean_richtext(doc)             # a Storyblok rich-text document
 ```
 
-**Entities must be decoded.** SharePoint stores `&#160;` for a non-breaking
-space, `&amp;`, `&quot;`, `&#58;`. Strip the tags and leave those and the reader
+**Entities must be decoded.** Strip the tags, leave the entities, and the reader
 sees the literal characters mid-sentence — *"Dr&#160;Asad I Mian"*. That reached
 **published blog biographies: 88 `&#160;`, 12 `&amp;`, 2 `&quot;`, 1 `&#58;`
 across 34 blogs.** The portal decoded them and the payload builder did not,
 which is exactly why there is now one shared function instead of two code paths.
+
+Every form counted across both exports, so nothing here is guessed:
+
+| | blogs | news | |
+|---|---|---|---|
+| `&#58;` | 2,044 | 10,998 | a colon — usually inside a URL, so a live link |
+| `&#160;` | 672 | 14,026 | non-breaking space |
+| `&quot;` | 149 | 8,041 | |
+| `&amp;` | 59 | 805 | |
+| `&#123;` `&#125;` | 38 each | 99 each | **braces — decode to `{` and `}`** |
+| `&mdash;` `&gt;` `&lt;` `&#39;` | — | 90 | |
+
+`&#123;` is the one that catches people: it decodes to `{`, so entities must be
+decoded **before** markers are matched or `&#123;pullquote&#125;` reaches the
+page intact. `clean_text` does them in that order and a test pins it.
+
+**Decoding runs once, deliberately.** `&amp;#160;` would need a second pass, but
+looping until stable destroys text that legitimately shows markup — a sentence
+containing `&amp;amp;` means to render `&amp;`. Neither export has a single
+double-encoded entity (counted, not assumed), so `looks_encoded()` reports any
+survivor instead, and `tests/test_text_clean.py` fails the build on it.
 
 **Position markers are not content.** SharePoint marks where a component belongs
 with a token left in the prose: `{pullquote}` (14 across 13 blogs),

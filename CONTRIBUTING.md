@@ -141,6 +141,15 @@ All three shipped to published blog pages and were found by a person reading
 them, not by any check. 88 entities across 34 biographies, 14 markers, 79 blank
 paragraphs.
 
+**There is a guard now.** `tests/test_text_clean.py` fails if any built payload
+under `<Type>-Pipeline/data/payloads/` still contains an entity or a marker, for
+every type. Build your payloads, run `pytest`, and it will tell you before
+Storyblok does.
+
+The entities are not a short list — `&#58;` alone appears 13,042 times across
+the two exports, usually inside a URL. `&#123;` and `&#125;` decode to `{` and
+`}`, which is why decoding must happen **before** markers are matched.
+
 **On the third: strip a paragraph only when it has no text AND no image.**
 Images live inside the rich text, so testing "has no text" alone deletes
 pictures. `tests/test_blogs_payload.py` has that case.

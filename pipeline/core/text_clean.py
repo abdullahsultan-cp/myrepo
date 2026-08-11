@@ -45,6 +45,26 @@ MARKERS = re.compile(r"\{(?:pullquote|EmbeddedCode|embeddedcode|PullQuote)\}")
 # The only characters safe to delete outright.
 INVISIBLES = dict.fromkeys(map(ord, "​﻿­"), None)
 
+# Anything still shaped like an entity after cleaning.
+ENTITY = re.compile(r"&[a-zA-Z][a-zA-Z0-9]{1,10};|&#x?[0-9a-fA-F]{1,6};")
+
+
+def looks_encoded(text):
+    """What survived cleaning and still reads as markup. Empty when clean.
+
+    Decoding happens **once**, deliberately. `&amp;#160;` decodes to `&#160;`,
+    which is still visible on the page — so why not decode until stable? Because
+    text that legitimately talks about markup would be destroyed: a sentence
+    containing `&amp;amp;` means to show `&amp;`, and a second pass turns it
+    into a bare `&`.
+
+    Neither export has a single double-encoded entity — that was counted, not
+    assumed — so looping would fix nothing real and risk something real. If one
+    ever appears, this reports it and a person decides. The payload guard in
+    tests/test_text_clean.py fails on anything this returns.
+    """
+    return ENTITY.findall(text or "")
+
 
 def clean_text(value, *, collapse=True):
     """Decode entities, drop markers and invisibles. Never transliterates.
