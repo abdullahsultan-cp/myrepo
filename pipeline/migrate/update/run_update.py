@@ -299,6 +299,15 @@ def main():
 
     changes, skipped, unmatched = [], 0, 0
     for n, st in enumerate(stories, 1):
+        # Skip BEFORE the read where we can. `--only` was filtering on the
+        # sharepoint id inside the content, which meant fetching all 3,610
+        # stories to keep 40 of them — the dry run simply timed out. The
+        # tracking table already maps story id to sharepoint id, so a scoped
+        # run costs one read per story it actually wants.
+        if only and by_sb:
+            known = by_sb.get(str(st["id"]))
+            if known is not None and known not in only:
+                continue
         if len(stories) > 200 and n % 100 == 0:
             print(f"    read {n}/{len(stories)}…")
         full = sb.get(f"stories/{st['id']}")
