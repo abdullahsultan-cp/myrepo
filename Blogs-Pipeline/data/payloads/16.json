@@ -1,0 +1,180 @@
+{
+  "story": {
+    "name": "Stephen Lyon: I owe a debt of gratitude to Pakistan",
+    "slug": "stephen-lyon-i-owe-a-debt-of-gratitude-to-pakistan-16",
+    "tag_list": [
+      "AKU"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "16",
+      "sequence_number": "1",
+      "story_uuid": "ad03fbae-5cb3-5e89-8196-d3663992d605"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "Stephen Lyon: I owe a debt of gratitude to Pakistan",
+      "description": "I had a history in Pakistan that began when my mother, a medical anthropologist from the United Kingdom, dragged me and my sister to Lahore as teenagers.",
+      "date": "May 24, 2022",
+      "read_time": "2 min read",
+      "author": "Stephen Lyon",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "I have spent decades visiting Pakistan to document the cultural patterns and changes. Over that time, I have learned to count many of those people as very dear friends. Before I turned up in the loveliest little village in the Punjab province, I had a history in Pakistan that began when my mother, a medical anthropologist from the United Kingdom, dragged me and my sister to Lahore as teenagers. Those adolescent experiences, it turns out, were the first steps in a lifetime intricately connected to Pakistan, particularly Punjab. I'm not the person I would have been had I never visited Pakistan. I like to think that those people who have put up with me for multiple decades have also been transformed in some subtle ways as a consequence of our interactions. "
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "I have spent decades visiting Pakistan to document the cultural patterns and changes. Over that time, I have learned to count many of those people as very dear friends. Before I turned up in the loveliest little village in the Punjab province, I had a history in Pakistan that began when my mother, a medical anthropologist from the United Kingdom, dragged me and my sister to Lahore as teenagers. Those adolescent experiences, it turns out, were the first steps in a lifetime intricately connected to Pakistan, particularly Punjab. I'm not the person I would have been had I never visited Pakistan. I like to think that those people who have put up with me for multiple decades have also been transformed in some subtle ways as a consequence of our interactions. "
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "AKU",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

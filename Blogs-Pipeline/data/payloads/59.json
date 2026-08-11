@@ -1,0 +1,229 @@
+{
+  "story": {
+    "name": "Student Leaders Oath-Taking Ceremony 2024",
+    "slug": "student-leaders-oath-taking-ceremony-2024",
+    "tag_list": [
+      "Student life",
+      "Students"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "59",
+      "sequence_number": "",
+      "story_uuid": "7c7c2364-74da-5d5d-b52d-57f94a284bf3"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "Student Leaders Oath-Taking Ceremony 2024",
+      "description": "",
+      "date": "Mar 13, 2024",
+      "read_time": "1 min read",
+      "author": "Office of Student Experience - Pakistan",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "59-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "During the third week of March, OSEP organised its annual oath-taking ceremony for newly elected student leaders and class representatives. The inauguration of student leaders included disseminating updated guidelines in the Standard Operating Procedures (SOPs). These guidelines outlined the representatives' roles and responsibilities in assisting their fellow students in navigating campus life."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Preceding the oath-taking ceremony were the annual student elections, during which candidates extensively campaigned to garner peer support. Through these campaigns, candidates showcased their qualifications and aspirations to represent various aspects of student life, including sports, arts and culture, and class representation."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The ceremony was a formal commitment by students to uphold their newly acquired responsibilities, as designated by OSEP. As they embarked on their journeys as leaders and student body representatives, participants pledged to fulfil their duties diligently."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "These responsibilities included creating an annual activity calendar and formulating objectives and guidelines to shape the identity and direction of their respective societies."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Student life",
+                  "variant": "green"
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Students",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "The Office of Student Experience - Pakistan​ supports students’ personal and professional development by creating an environment that fosters student engagement&#160; ​ ​​​​​​​​​",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-OSEP1786380536.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

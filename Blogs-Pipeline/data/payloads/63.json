@@ -1,0 +1,211 @@
+{
+  "story": {
+    "name": "Student Leaders welcome onboarding students at the Unified and MBBS Student Orientations",
+    "slug": "student-leaders-welcome-onboarding-students-at-the-unified-and-mbbs-student-orientations",
+    "tag_list": [
+      "Student life",
+      "Students"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "63",
+      "sequence_number": "",
+      "story_uuid": "da1a7344-c13a-5b7c-916a-af072d66b08a"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "Student Leaders welcome onboarding students at the Unified and MBBS Student Orientations",
+      "description": "",
+      "date": "Feb 02, 2024",
+      "read_time": "1 min read",
+      "author": "Office of Student Experience - Pakistan",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "63-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The Unified and MBBS Student Orientations 2024 welcomed over 500 students from various programmes across the Medical College, School of Nursing and Midwifery, and Institute for Educational Development. Organized by the Office of Student Experience - Pakistan (OSEP), the newest members of the AKU family were introduced to several departments where they shared important information regarding AKU's academic policies, guidelines, and support services. Class Representatives, Office Bearers, and Student Leaders from the 13 student societies were invited by OSEP to present their society objectives and how they contribute to life on campus."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "As the session concluded, students were invited to the courtyard, where several stalls were set up for them to explore each society. Each society brought its unique features to its stall, where it held interactive activities, distributed informational pamphlets, and answered queries from its fellow students. The session and activities showcased how student leaders and office bearers play a major role in enriching life on campus."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Student life",
+                  "variant": "green"
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Students",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "The Office of Student Experience - Pakistan​ supports students’ personal and professional development by creating an environment that fosters student engagement&#160; ​ ​​​​​​​​​",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-OSEP1786380536.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

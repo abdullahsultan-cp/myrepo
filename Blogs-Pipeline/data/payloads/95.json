@@ -1,0 +1,243 @@
+{
+  "story": {
+    "name": "International Day of Education: Who Shapes Learning?",
+    "slug": "international-day-of-education-who-shapes-learning",
+    "tag_list": [
+      "Education"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "95",
+      "sequence_number": "1",
+      "story_uuid": "2fd4d430-3583-53e8-8102-72ee7ed6c328"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "International Day of Education: Who Shapes Learning?",
+      "description": "",
+      "date": "Jan 27, 2026",
+      "read_time": "2 min read",
+      "author": "Rachel Baldwin",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "95-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "On International Day of Education, it is worth asking a simple question. Who shapes learning in our universities?"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "At Aga Khan University, the answer is clear. Our students do."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Across our campuses in Pakistan, Kenya, Uganda, and Tanzania, students are leading societies, creating peer learning spaces, organising wellness initiatives, and applying academic knowledge to real-world challenges. In doing so, they are influencing how learning is experienced beyond the classroom."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Student-led clubs and societies remain among the most effective learning environments at AKU. New societies introduced in 2025, alongside established groups, have strengthened leadership, collaboration, and practical skills development. Through health awareness initiatives, academic forums, creative platforms, and community engagement, students are translating theory into practice and learning through responsibility."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "This leadership is equally visible in peer learning and wellbeing initiatives. Mentorship programmes, Stress Awareness Week, and Suicide Prevention Day activities were shaped by strong student involvement, reinforcing the idea that academic success is closely linked to care, connection, and support. Students are also contributing to knowledge creation through symposiums, quiz-based learning activities, and interdisciplinary discussions with faculty. Beyond classrooms, initiatives such as the AKU Sports Olympiad, Rowing Regatta, and Sports Fiestas show how teamwork, leadership, and resilience are developed through experience."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "As Vice Provost Students and Head of Student Affairs, I am inspired by how our students engage with education as a shared endeavour. On this International Day of Education, we celebrate their leadership and creativity, and we reaffirm our commitment to learning shaped together across our campuses."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Education is strongest when students are trusted with responsibility. That is the kind of learning environment we must continue to build."
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Education",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "​Rachel Baldwin is the Vice Provost, Students at the Aga Khan University. She is responsible for the strategic growth, management, and evolution of all student affairs related offices and services at AKU.",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-rachel1786380537.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

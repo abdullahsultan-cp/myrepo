@@ -1,0 +1,220 @@
+{
+  "story": {
+    "name": "Volleyball tournament held between SONAM and FAS students",
+    "slug": "volleyball-tournament-held-between-sonam-and-fas-students",
+    "tag_list": [
+      "Student life",
+      "Students"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "62",
+      "sequence_number": "",
+      "story_uuid": "9c7f5fc4-0332-59f2-b47d-3e69cc34eb9d"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "Volleyball tournament held between SONAM and FAS students",
+      "description": "",
+      "date": "Feb 12, 2024",
+      "read_time": "1 min read",
+      "author": "Sports Society",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "62-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The AKU Sports Society orchestrated an exhilarating two-day Volleyball tournament on February 10th and 11th, pitting students' competitive spirits from the Faculty of Arts and Sciences (FAS) against those from the School of Nursing and Midwifery (SONAM). Held at the esteemed Sports and Rehabilitation Centre, the event drew attention to the emerging talent within both faculties."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The tournament unfolded with exciting matches between teams representing various programmes from SONAM and the inaugural class of FAS. The lively atmosphere of the Sports and Rehabilitation Centre echoed with cheers and applause as students showcased their athleticism and strategic prowess on the volleyball court. This event signalled the increasing engagement of FAS students in campus life activities."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The event served as a platform for spirited competition and fostered a sense of camaraderie and collaboration among participants. Students from diverse academic backgrounds came together to celebrate their passion for sports and engage in friendly rivalry."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Student life",
+                  "variant": "green"
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Students",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "​The AKU Sports Society &#160;organizes sporting events throughout the academic year, promoting friendly competition and fostering skills in organization and leadership. ​",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-Sports-Society1786380535.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

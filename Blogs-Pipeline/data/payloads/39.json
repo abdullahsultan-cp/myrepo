@@ -1,0 +1,235 @@
+{
+  "story": {
+    "name": "Publication and Literary Society host BaitBaazi Event",
+    "slug": "publication-and-literary-society-host-baitbaazi-event",
+    "tag_list": [
+      "Student life",
+      "Students"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "39",
+      "sequence_number": "0",
+      "story_uuid": "042646aa-1363-5bf4-904f-becb680a9ad9"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "Publication and Literary Society host BaitBaazi Event",
+      "description": "",
+      "date": "Mar 13, 2023",
+      "read_time": "1 min read",
+      "author": "Publication and Literary Society",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "39-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The Publication and Literary Society conducted a BaitBaazi at the Medical College's Quad Center on March 10, 2023. The Quad was transformed into a cosy and intimate space with warm lighting and comfortable seating for the event. Students and teachers from Medical College and School of Nursing and Midwifery gathered to support their peers and listen to their performances. Dr Tazeen Ali, Interim Dean, School of Nursing and Midwifery, attended the event as a judge for the Urdu Poetry competition."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The event started with a welcome speech emphasising the importance of self-expression and creativity. One by one, the students took the stage to recite their poems and musical performances. The lyrics covered various topics, from personal experiences to social and cultural issues. The musical performances were a mix of classical and original music by each band. Each student brought their unique voice and style to the recital, and their words captivated the audience."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The beauty of the event was not just in the poems themselves but also in the way the students delivered them. Each student brought their interpretation and emotion to their poetry, making the recital a profoundly personal and moving experience."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The BaitBaazi was a powerful reminder of the importance of creativity and self-expression at AKU. It was a beautiful celebration of the art of poetry and the incredible talent of AKU's students-a special thanks to the Publication and Literary Society for organising the event."
+                  },
+                  {
+                    "type": "hard_break"
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Student life",
+                  "variant": "green"
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Students",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "​The Publications and Literary Society​ provides a platform to help students develop and market their love of literature and language, ranging from narrative prose to the spoken word. Along with organizing competitions and activities, its flagship magazine 'Magminimus' encourages students to express themselves creatively.​",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-PLS1786380535.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

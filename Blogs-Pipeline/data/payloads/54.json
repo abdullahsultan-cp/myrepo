@@ -1,0 +1,231 @@
+{
+  "story": {
+    "name": "Falah Annual Iftar Drive 2024",
+    "slug": "falah-annual-iftar-drive-2024",
+    "tag_list": [
+      "Student life",
+      "Students"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "54",
+      "sequence_number": "2",
+      "story_uuid": "3b39a3c1-92fe-52b0-b6b2-5364427bc35c"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "Falah Annual Iftar Drive 2024",
+      "description": "",
+      "date": "Apr 06, 2024",
+      "read_time": "1 min read",
+      "author": "Falah",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "54-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Falah's annual Iftar drive at AKU proved to be a heartwarming success. Over three days, over 150 Iftar boxes were distributed to janitorial staff and guards, spreading joy and inclusivity during the holy month of Ramadan. This act of kindness was made possible through the generous donations of supporters and the dedication of Falah volunteers throughout the AKU student community. The surplus funds raised during the drive will be directed towards Falah's mission of providing free medications to those in need, further amplifying the initiative's impact."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The overwhelming support from the faculty, doctors, and student community resulted in the collection of over PKR 158,000+ for the Iftar drive. Collaborating with the Medical College, School of Nursing and Midwifery, and Faculty of Arts and Sciences Wings, the initiative has made a tangible difference in the lives of those served."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Falah extends a special thank you to everyone who donated and the hardworking outreach volunteers whose efforts made the Iftar drive successful. These contributions will continue to support Falah's mission of providing free medication to those in need, embodying the spirit of compassion and community spirit."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Student life",
+                  "variant": "green"
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Students",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "​Founded in 1993 by MBBS students, Falah​ focuses on patient welfare. A dedicated wing in the School of Nursing and Midwifery supports fundraising efforts.​",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-Falah1786380536.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}

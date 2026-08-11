@@ -1,0 +1,246 @@
+{
+  "story": {
+    "name": "PLS Hosts Successful Brewed Tales Event and Baitbaazi",
+    "slug": "pls-hosts-successful-brewed-tales-event-and-baitbaazi",
+    "tag_list": [
+      "Students",
+      "Student life"
+    ],
+    "is_startpage": false,
+    "parent_id": 0,
+    "meta_data": {
+      "sharepoint_id": "53",
+      "sequence_number": "1",
+      "story_uuid": "85948e08-387a-5bb9-a90d-1206e4cc6f2f"
+    },
+    "content": {
+      "component": "blog_article",
+      "title": "PLS Hosts Successful Brewed Tales Event and Baitbaazi",
+      "description": "",
+      "date": "Apr 26, 2024",
+      "read_time": "1 min read",
+      "author": "Publication and Literary Society",
+      "isGlobal": true,
+      "banner_image": {
+        "fieldtype": "asset",
+        "_local": "53-Banner.jpg"
+      },
+      "thumbnail": {
+        "fieldtype": "asset"
+      },
+      "languages": [],
+      "show_share": true,
+      "show_similar": true,
+      "similar_show_header": true,
+      "category": "",
+      "isFeatured": null,
+      "body": [
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The Publications and Literary Society (PLS) at AKU orchestrated the highly anticipated Brewed Tales event on April 26th. The event offered attendees an evening replete with poetry, music, and savory desi cuisine courtesy of Falah. The AKU Music Society provided captivating performances throughout the event."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The evening commenced with eloquent recitations of English and Urdu poetry, showcasing the remarkable talent of the participants. Airas Qadir emerged as the winner in both the English and Urdu categories, while Maryam Saleem and Vansh Lalwani secured runner-up positions in the Urdu and English categories, respectively."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Following the poetry recitations, the annual Baitbaazi competition unfolded. It featured spirited exchanges of poetic verses between teams from MC, SONAM, and FAS, ultimately culminating in the Faculty of Arts and Sciences being declared the winners."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Moreover, the Falah Student Society hosted food booths, with proceeds allocated to patient welfare, adding a philanthropic dimension to the event. Meanwhile, the AKU Music Society took centre stage during the interlude, delivering a captivating performance that further enriched the cultural experience for attendees."
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "The event provided a platform for artistic expression, cultural celebration, and charitable contributions, underscoring the vibrant spirit of the community at AKU."
+                  },
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "type": "hard_break"
+                  }
+                ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "",
+          "justify_content": "",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Students",
+                  "variant": "green"
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "height": "",
+              "radius": "",
+              "width_mode": "fit",
+              "align_items": "",
+              "justify_content": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "pill",
+                  "label": "Student life",
+                  "variant": "green"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "author_section",
+          "title": "About the",
+          "highlight": "Author",
+          "bio": "​The Publications and Literary Society​ provides a platform to help students develop and market their love of literature and language, ranging from narrative prose to the spoken word. Along with organizing competitions and activities, its flagship magazine 'Magminimus' encourages students to express themselves creatively.​",
+          "photo": {
+            "fieldtype": "asset",
+            "_local": "author-PLS1786380535.jpg"
+          },
+          "social_links": []
+        },
+        {
+          "component": "comment_form",
+          "title": "Add a",
+          "highlight": "Comment",
+          "description": "Enter your details for adding comment.",
+          "submit_label": "Submit"
+        }
+      ]
+    }
+  }
+}
