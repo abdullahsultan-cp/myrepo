@@ -102,12 +102,12 @@ DISCLAIMER_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
 WHITE = {"color": "#ffff", "plugin": "native-color-picker"}
 
 # Copied verbatim from the demo blog, including the accent on the word itself
-# and including the fact that the sentence stops mid-way. It is the signed-off
-# wording; completing it would be inventing AKU's legal text.
+# and its wording. The demo's copy ends without a full stop; the owner
+# confirmed the sentence is complete, so one is added and nothing else.
 DISCLAIMER_LABEL = "Disclaimer"
 DISCLAIMER_BODY = (": The views and opinions expressed in this article are "
                    "those of the author and do not necessarily reflect the "
-                   "official policy ")
+                   "official policy.")
 DISCLAIMER_COLOUR = "#008F51"
 
 # The 14 pill variants include four that mean something — admissions_open,
