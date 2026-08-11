@@ -276,9 +276,15 @@
         {
           "component": "quote_banner",
           "quote": "Mental wellbeing during pregnancy and the year after birth is critical to a range of physical, mental, and social outcomes for mothers and infants.",
-          "date": "Oct 10, 2022",
-          "category": "Health",
+          "variant": "attributed",
+          "attribution": "Professor Marleen Temmerman",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

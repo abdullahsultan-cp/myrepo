@@ -361,9 +361,15 @@
         {
           "component": "quote_banner",
           "quote": "He makes friends with everyone. He is a huge cricket fan. He loves music. But above that he loves to shop till he drops",
-          "date": "Oct 10, 2023",
-          "category": "Impact",
+          "variant": "attributed",
+          "attribution": "Shumaila Khan, Rohail's Mother",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

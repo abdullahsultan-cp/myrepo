@@ -390,9 +390,15 @@
         {
           "component": "quote_banner",
           "quote": "This month, we continue our exploration of adolescent mental health by examining the growing impact of screen time on students' well-being. Our authors conducted a small survey with Pakistani students in order to uncover the truth after reading recent research that highlights a significant rise in digital device use among young people and its strong links to increased stress, anxiety, and depression.",
-          "date": "Jun 05, 2025",
-          "category": "Mental Health Awareness",
+          "variant": "centered",
+          "attribution": "",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

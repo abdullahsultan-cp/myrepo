@@ -347,9 +347,15 @@
         {
           "component": "quote_banner",
           "quote": "\"We are the main characters! You must recognize at this point in time that on one half, you are responsible for your own development, no one else.\"",
-          "date": "May 24, 2022",
-          "category": "",
+          "variant": "attributed",
+          "attribution": "Leif Stenberg",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

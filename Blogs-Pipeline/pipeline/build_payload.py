@@ -214,11 +214,20 @@ def build(story, routing, authors, photos):
         quote = str(raw_quote).strip()
     quote = re.sub(r"\s+", " ", quote).strip()
     if quote:
-        bloks.append({"component": "quote_banner", "quote": quote,
-                      "date": pretty_date(content),
-                      "category": (content.get("category") or "").strip(),
-                      "portrait": {"fieldtype": "asset"},
-                      "spacing": copy.deepcopy(QUOTE_SPACING)})
+        # variant is centered | attributed | event. The demo uses `event`
+        # because its quote is from a convocation; a blog's is somebody
+        # speaking, so `attributed` when we know who and `centered` when we do
+        # not. `category` and `date` belong to the event variant and are left
+        # out of the other two rather than filled with the blog's own.
+        said_by = (content.get("pull_quote_author") or "").strip()
+        blok = {"component": "quote_banner", "quote": quote,
+                "variant": "attributed" if said_by else "centered",
+                "attribution": said_by,
+                "portrait": {"fieldtype": "asset"},
+                "background_image": {"fieldtype": "asset"},
+                "bg_pattern": {"fieldtype": "asset"},
+                "spacing": copy.deepcopy(QUOTE_SPACING)}
+        bloks.append(blok)
 
     labels = [t["label"] for t in (content.get("tags") or [])
               if isinstance(t, dict) and t.get("label")]

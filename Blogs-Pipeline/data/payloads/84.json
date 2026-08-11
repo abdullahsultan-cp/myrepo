@@ -342,9 +342,15 @@
         {
           "component": "quote_banner",
           "quote": "2024 may well have been simulation's tipping point in Pakistan.",
-          "date": "Jul 25, 2025",
-          "category": "Simulation-Based Education",
+          "variant": "attributed",
+          "attribution": "Dr Selina Hasan",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

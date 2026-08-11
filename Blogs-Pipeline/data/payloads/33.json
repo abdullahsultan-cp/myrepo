@@ -336,9 +336,15 @@
         {
           "component": "quote_banner",
           "quote": "This is not only relevant but also evidence-based: both the 21st century learning skills and the WHO SDGs delve into the need for innovation, creativity and entrepreneurship, among other things, at the systems level.",
-          "date": "Dec 28, 2022",
-          "category": "Hikaye",
+          "variant": "attributed",
+          "attribution": "Dr. Asad I Mian",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

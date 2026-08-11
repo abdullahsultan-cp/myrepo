@@ -418,9 +418,15 @@
         {
           "component": "quote_banner",
           "quote": "To understand life, we've got to be happy, so aligning our schooling (no matter at what stage of life) with pursuit of creative happiness is edutopia.",
-          "date": "Jun 21, 2022",
-          "category": "Hikaye",
+          "variant": "attributed",
+          "attribution": "Dr. Asad I Mian",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

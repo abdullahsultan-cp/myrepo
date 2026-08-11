@@ -223,9 +223,15 @@
         {
           "component": "quote_banner",
           "quote": "\"fully experience life, human interactions and relationships, but ultimately the strife is within - so strive for none but yourself\". Hence it may be more about converging or focusing within your own 'self' (through experiential learning) versus anyone else.",
-          "date": "Jun 21, 2022",
-          "category": "Hikaye",
+          "variant": "attributed",
+          "attribution": "Dr. Asad I Mian",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

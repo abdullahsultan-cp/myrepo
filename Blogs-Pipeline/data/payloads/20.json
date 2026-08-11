@@ -188,9 +188,15 @@
         {
           "component": "quote_banner",
           "quote": "I often think about our responsibility to leave behind a better planet for our children.",
-          "date": "Jun 05, 2022",
-          "category": "Environment",
+          "variant": "attributed",
+          "attribution": "Dr Sulaiman Shahabuddin",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

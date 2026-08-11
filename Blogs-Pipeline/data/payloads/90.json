@@ -698,9 +698,15 @@
         {
           "component": "quote_banner",
           "quote": "In the remote Kalash Valley of Chitral, nestled among the mountains of northern Pakistan, an 11-year-old girl stepped quietly into adolescence. She was younger than most of her peers when the changes began, yet like so many others, she faced them without guidance. In her community, menstruation was a subject cloaked in secrecy. No one had spoken to her about what to expect, and no one offered advice on how to manage it. Confused and frightened, she hid her symptoms from her family and friends. To cope, she tore scraps of old fabric into makeshift pads, constantly anxious that someone would notice. The physical pain she experienced forced her to miss school, but the greater burden was the silence: not knowing whom to ask, what was normal, or how to care for herself. What should have been a natural stage of growing up instead became a source of shame, absence, and quiet suffering.",
-          "date": "Sep 28, 2025",
-          "category": "Healthcare",
+          "variant": "centered",
+          "attribution": "",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

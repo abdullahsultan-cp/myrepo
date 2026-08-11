@@ -277,9 +277,15 @@
         {
           "component": "quote_banner",
           "quote": "The main reason for authoring this essay is not to hyper-critique celebrity-mediated marketing of dietary supplements. It is simply to make the reader aware of the ethical and moral situation that arises.",
-          "date": "Jun 21, 2022",
-          "category": "Hikaye",
+          "variant": "attributed",
+          "attribution": "Dr. Asad I Mian",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

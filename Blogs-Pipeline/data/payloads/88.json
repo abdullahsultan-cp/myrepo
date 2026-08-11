@@ -141,9 +141,15 @@
         {
           "component": "quote_banner",
           "quote": "This blog post explores the tension between traditional and digital education. The author contrasts Essentialism, which emphasizes a teacher-centered, rigid curriculum, with Progressivism, which advocates for student-centered, experiential learning. References Dewey, J. (1938). Experience and Education. New York: Macmillan. Holmes, W., Bialik, M., & Fadel, C. (2019). Artificial Intelligence in Education: Promises and Implications for Teaching and Learning. Boston: Center for Curriculum Redesign. Luckin, R., Holmes, W., Griffiths, M., & Forcier, L. B. (2016). Intelligence Unleashed: An Argument for AI in Education. Pearson Education.",
-          "date": "Aug 08, 2025",
-          "category": "Teaching",
+          "variant": "centered",
+          "attribution": "",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

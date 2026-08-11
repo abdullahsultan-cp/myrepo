@@ -476,9 +476,15 @@
         {
           "component": "quote_banner",
           "quote": "Kenya can lead the continent, if we act now. The window is narrow, but the opportunity is ours to seize. This is the moment to invest in AI and digital skills, empower the next generation, and secure our role as Africa's digital leader. {pullquote}",
-          "date": "Sep 01, 2025",
-          "category": "My Story",
+          "variant": "attributed",
+          "attribution": "Farhana Alarakhiya",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {

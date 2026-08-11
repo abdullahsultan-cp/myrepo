@@ -210,9 +210,15 @@
         {
           "component": "quote_banner",
           "quote": "I'm not the person I would have been had I never visited Pakistan.",
-          "date": "Apr 27, 2022",
-          "category": "My Story",
+          "variant": "attributed",
+          "attribution": "Stephen Lyon",
           "portrait": {
+            "fieldtype": "asset"
+          },
+          "background_image": {
+            "fieldtype": "asset"
+          },
+          "bg_pattern": {
             "fieldtype": "asset"
           },
           "spacing": {
