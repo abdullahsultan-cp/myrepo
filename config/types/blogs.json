@@ -313,5 +313,91 @@
     "used by posts (4 and 5) are not in the list at all.",
     "",
     "Refresh with: python Blogs-Pipeline/pipeline/fetch_authors.py"
-  ]
+  ],
+  "decisions": {
+    "_comment": [
+      "Signed off by the content owner on 2026-08-11. Each entry says what was",
+      "decided and why, so a later reader does not reopen a settled question.",
+      "Anything still 'pending' is waiting on the named party, not on us."
+    ],
+    "tags": {
+      "status": "pending",
+      "owner": "dev",
+      "note": "47 distinct values, no field on blog_article. Held until the dev confirms whether a field is coming. Data is kept in the payload either way, so nothing is lost by waiting."
+    },
+    "post_year": {
+      "status": "keep",
+      "owner": "decided",
+      "note": "NOT redundant with `date`, which was the reason to consider dropping it. 76 of 83 match the year of the publish date, but 7 do not: blogs 33, 34, 35, 46, 47, 66 and 67 are December posts filed under the FOLLOWING year. It is an editorial issue-year, not a calendar year, so deriving it from `date` would misfile those 7. No field exists yet; kept in the payload and in backup/raw."
+    },
+    "shared_entities": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Place in the regions/<region>/entities/<entity>/blogs structure and share to the rest through `entities`. The physical region is a judgement call — blogs have no City column and these five name an entity that exists in several regions. See shared_placement below."
+    },
+    "thumbnail": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Leave empty. No source exists in SharePoint and the signed-off reference story leaves it empty too."
+    },
+    "is_active": {
+      "status": "keep",
+      "owner": "decided",
+      "note": "82 of 83 are True. Blog 37, '40 years of AKU', is False — it is the only post that is switched off in SharePoint. Kept so that a deliberately unpublished post is not silently published."
+    },
+    "close_comments": {
+      "status": "pending",
+      "owner": "dev",
+      "note": "14 posts have comments closed. The dev has confirmed a suppression field is coming; until it lands comment_form cannot be hidden."
+    },
+    "feature_sequence": {
+      "status": "pending",
+      "owner": "dev",
+      "note": "45 posts carry an order (33 are '1', 5 are '2', 4 are '3', 3 are '0'). No field, and featured-plugin's value format is still undemonstrated, so ordering cannot be expressed yet."
+    },
+    "post_comments": {
+      "status": "drop",
+      "owner": "decided",
+      "note": "626 comments on the site, no field and no component. Not migrated. They remain in backup/raw/ if AKU ever asks for them."
+    },
+    "embeds": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Do not use a raw iframe. Blog 18 is the only post with either field: its Embed Video is a YouTube URL -> media_section with type=video; its Embed Code is a Facebook post -> social_embed with variant=facebook. social_embed also replaces the iframes news used for Twitter — variants are twitter, facebook, instagram."
+    }
+  },
+  "shared_placement": {
+    "_comment": [
+      "Where the five multi-region blogs physically live. `entities` still lists",
+      "EVERY region's folder for that entity, so the post is reachable from all",
+      "of them; this only decides the one folder it is stored in.",
+      "Evidence is thin and is stated per post. Change a value here and rerun",
+      "resolve_taxonomy.py — no code edit needed."
+    ],
+    "45": {
+      "region": "pk",
+      "entity": "qtl",
+      "why": "body names Pakistan only"
+    },
+    "70": {
+      "region": "ke",
+      "entity": "qtl",
+      "why": "body names Kenya and Nairobi"
+    },
+    "71": {
+      "region": "ke",
+      "entity": "qtl",
+      "why": "body names Kenya and Nairobi"
+    },
+    "72": {
+      "region": "pk",
+      "entity": "qtl",
+      "why": "body names all four regions; pk is the entity's largest by live story count (38 of 86) — WEAKEST of the five, confirm"
+    },
+    "84": {
+      "region": "pk",
+      "entity": "cime",
+      "why": "body names Pakistan and Karachi; pk holds 217 of cime's 248 live stories"
+    }
+  }
 }

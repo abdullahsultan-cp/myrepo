@@ -124,7 +124,19 @@ STAGE 2   taxonomy/         where each item belongs: region, entity, department
 STAGE 3   migrate/download/ aku.edu -> disk       reads only, interruptible
           migrate/upload/   disk -> Storyblok     WRITES
           migrate/review/   verification, reports, backups
+          |
+STAGE 4   migrate/update/   change LIVE stories   WRITES, in place
 ```
+
+**Stage 4 is not an afterthought.** Migration is not one pass: the dev hands
+over a field after the stories are up, a plugin's value format only becomes
+knowable once something in the space has it filled, a component we worked
+around gets replaced by a real one. Each of those is the same job — reach into
+published stories and change one thing without disturbing anything else — so
+there is one engine and a small **plan** per job, living in the type's own
+folder (`<Type>-Pipeline/pipeline/updates/`). A plan declares the fields it may
+touch and the engine refuses anything else. See
+[pipeline/migrate/update/README.md](pipeline/migrate/update/README.md).
 
 Stages 1 and 2 never touch the network. Stage 3a only reads. **Only 3b writes**,
 and it is split from 3a because the halves fail differently and are run at

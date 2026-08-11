@@ -101,6 +101,7 @@ type's peculiarities.
 | say where items came from on aku.edu | `"source_urls"` | your profile |
 | change how one step behaves | override a hook — `normalize_html`, `extract_pull_quote`, `clean_item`, `after_payload` | your subclass |
 | replace a step wholesale | a file of the same name; `resolve_script()` prefers it | `<Type>-Pipeline/pipeline/` |
+| change stories that are **already live** | an update plan | `<Type>-Pipeline/pipeline/updates/` |
 
 **Prefer the profile.** JSON keeps the decision beside the rest of the type's
 configuration, and two people editing two profiles can never conflict. Reach for

@@ -78,6 +78,7 @@ pipeline/                THE SHARED CODE. Knows no content type.
   migrate/                 disk <-> Storyblok. THE ONLY NETWORK CODE.
     download/                aku.edu -> disk   (read-only, interruptible)
     upload/                  disk -> Storyblok (writes)
+    update/                  change stories ALREADY LIVE, in place
     review/                  verification, reports, backups
 
 News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
@@ -120,6 +121,11 @@ python pipeline/migrate/download/run_media_all.py --workers 6
 # stage 3b · upload, resumable
 python pipeline/migrate/review/dump_sb_tree.py    # refresh the folder tree FIRST
 python pipeline/migrate/upload/run_migration.py
+
+# stage 3c · change stories that are already live
+python pipeline/migrate/update/run_update.py --list --type blogs
+python pipeline/migrate/update/run_update.py <job> --type blogs           # dry run
+python pipeline/migrate/update/run_update.py <job> --type blogs --apply   # writes
 
 # review — none of these write
 python pipeline/migrate/review/audit_assets.py --csv
@@ -186,7 +192,12 @@ error with instructions, not something to invent. Asset folders are a different
 namespace and *are* created.
 
 **Never delete and re-upload a story.** Update in place. A new id breaks every
-review link already shared and loses manual edits.
+review link already shared and loses manual edits. **Migration is not one pass**
+— the dev hands over a field after the stories are up, a plugin's value format
+only becomes knowable once something has it filled, a component we worked around
+gets replaced. All of that goes through `pipeline/migrate/update/`, which reads
+the live story, replaces only the fields the plan declared, and writes the rest
+back untouched. Write a plan; do not hand-edit and do not re-upload.
 
 **Never run two media resolvers at once.** They share `media_urls.json` and the
 slower one rewrites it from its own memory, silently reverting corrections.
@@ -413,6 +424,17 @@ commit.
   no attachments, the detail page renders client-side). Evidence and the
   measured reason for not guessing are in `data/banners_absent.json` and
   `fetch_missing_media.py`
+- **38 news stories still hold a Twitter `iframe`** that does not render. The
+  dev has added `social_embed` (variants twitter/facebook/instagram); the
+  conversion is written and dry-runs clean —
+  `run_update.py twitter_embeds --type news --apply` when you want it. The other
+  five live iframes are 3 working YouTube embeds and 2 of the dev's own test
+  stories, deliberately left alone
+- **blogs decisions are recorded** in `config/types/blogs.json` under
+  `decisions` and `shared_placement`, with the reasoning. Post Year is **kept** —
+  7 of 83 are December posts filed under the following year, so it is an
+  editorial issue-year and cannot be derived from `date`. Blog 37 is the one
+  post with `IsActive = False`
 - **54 language PDFs** still link to aku.edu, which dies with the site
 - **566 internal links** still point at aku.edu, kept deliberately so they can be
   found and replaced now that every story has an id
