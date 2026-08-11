@@ -271,16 +271,21 @@ def plan_for(content, routing, on_disk):
     aid = str(content.get("author_id") or "").strip()
     bio_html = (_AUTHORS.get(aid, {}).get("Description") or "").strip()
     pic = _AUTHOR_PICS.get(aid)
-    if bio_html:
+    if bio_html or pic:
+        # A photograph alone is worth a section — four authors have one and no
+        # biography, and their name over their face beats dropping the block.
         # unescape too: SharePoint stores &#160; and friends, and a raw entity
         # in a preview reads as a typo rather than as a space.
         plain = html.unescape(re.sub(r"<[^>]+>", " ", bio_html))
         plain = re.sub(r"[\s ​]+", " ", plain).strip()
+        who = content.get("author") or "(no name)"
         bloks.append(dict(
             component="author_section", state="ok",
-            note=f"{content.get('author') or '(no name)'} — {plain[:150]}"
-                 + ("…" if len(plain) > 150 else ""),
-            fix="" if pic else "bio yes, photo no — only 6 author photos exist on aku.edu",
+            note=(f"{who} — {plain[:150]}" + ("…" if len(plain) > 150 else ""))
+                 if plain else f"{who} — photograph, no biography",
+            fix="" if (pic and plain) else
+                ("photograph but no biography in AuthorManagement" if pic
+                 else "biography but no AuthorImage named for this author"),
             img=("../assets/Blogs/media/" + pic) if pic else "",
             bio=plain))
     else:
