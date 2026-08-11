@@ -364,6 +364,26 @@
       "status": "decided",
       "owner": "decided",
       "note": "Do not use a raw iframe. Blog 18 is the only post with either field: its Embed Video is a YouTube URL -> media_section with type=video; its Embed Code is a Facebook post -> social_embed with variant=facebook. social_embed also replaces the iframes news used for Twitter — variants are twitter, facebook, instagram."
+    },
+    "images_in_body": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Images stay INSIDE the rich text. No separate `image` blok. rich_text already carries the right padding and margin and sizes an image to the content width. The demo blog does pair images with text in a two-column `row`, but that is a hand-built editorial layout we cannot derive from 83 articles — same reason the tweet rows are one column. 31 images."
+    },
+    "headings": {
+      "status": "leave as authored",
+      "owner": "decided",
+      "note": "Do NOT demote. The demo blog uses h1 for a section heading -- 'The RISE Program' -- with the story title held separately in the `title` field, so an h1 inside the body is the convention here, not a mistake. Blogs 70 and 71 have 12 of them and they stay."
+    },
+    "storyblok_fields_without_data": {
+      "status": "rule",
+      "owner": "decided",
+      "note": "If Storyblok has a field and SharePoint has nothing for it, ignore it and migrate what we do have. Applies to thumbnail, languages, horizontal_rule, and the empty table in blog 31 -- 8 rows and every cell blank, so there is nothing to migrate. Formatting the author DID apply -- underline (13), superscript (1) -- is kept as authored."
+    },
+    "dead_links": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "SharePoint is being decommissioned, so every /... link 404s once it goes. Rule: a DOCUMENT is uploaded to Storyblok and the link points at the asset; a link to a news or blog page is rerouted to that story in Storyblok; a .aspx site page belongs to the Pages migration and is left alone. On blogs that is 5 documents, 17 site pages and ZERO story links. On news it is 76 documents, 241 news pages and 2 blog pages."
     }
   },
   "shared_placement": {
