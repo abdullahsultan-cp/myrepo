@@ -70,6 +70,8 @@ import _bootstrap
 
 _bootstrap.ensure()
 
+from text_clean import clean_richtext, clean_text, strip_html
+
 from paths_root import ROOT, P
 
 P.use("blogs")
@@ -297,7 +299,8 @@ def disclaimer_bloks():
 def build(story, routing, authors, photos, palette):
     content = story["content"]
     sid = str(content.get("sharepoint_id") or "")
-    body_doc = strip_blank_paragraphs(content.get("body") or {})
+    body_doc = strip_blank_paragraphs(
+        clean_richtext(content.get("body") or {}))
     route = routing.get(sid, {})
 
     bloks = [{"component": "rich_text", "content": body_doc,
@@ -314,7 +317,7 @@ def build(story, routing, authors, photos, palette):
         quote = " ".join(text_of(raw_quote.get("content") or raw_quote)).strip()
     elif raw_quote:
         quote = str(raw_quote).strip()
-    quote = re.sub(r"\s+", " ", quote).strip()
+    quote = clean_text(quote)
     if quote:
         # variant is centered | attributed | event. The demo uses `event`
         # because its quote is from a convocation; a blog's is somebody
@@ -367,7 +370,9 @@ def build(story, routing, authors, photos, palette):
     author_id = str(content.get("author_id") or "").strip()
     bio = (authors.get(author_id, {}).get("Description") or "").strip()
     if bio:
-        bio = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", bio)).strip()
+        # strip_html decodes entities too. Stripping tags alone shipped 88
+        # literal "&#160;" into published biographies.
+        bio = strip_html(bio)
     photo = photos.get(author_id)
     if bio or photo:
         bloks.append({"component": "author_section", "title": "About the",
@@ -385,11 +390,11 @@ def build(story, routing, authors, photos, palette):
         # export row on this, and dropping it left every blogs update plan
         # with source=None and no way to find the story it was looking at.
         "sharepoint_id": str(content.get("sharepoint_id") or "").strip(),
-        "title": (content.get("title") or "").strip(),
-        "description": (content.get("summary") or "").strip(),
+        "title": clean_text(content.get("title")),
+        "description": clean_text(content.get("summary")),
         "date": pretty_date(content),
         "read_time": read_time(body_doc),
-        "author": (content.get("author") or "").strip(),
+        "author": clean_text(content.get("author")),
         "isGlobal": route.get("placement") == "global",
         "banner_image": asset_field((content.get("banner") or "").strip()
                                     if (content.get("banner") or "").strip()

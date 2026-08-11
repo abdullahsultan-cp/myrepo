@@ -117,6 +117,34 @@ only ones that can break someone else's work.
 
 ---
 
+## 3a · Starting a new type — three faults you WILL hit
+
+Every SharePoint export carries these. They are not news quirks or blog quirks;
+they are how SharePoint stores text. `pipeline/core/text_clean.py` handles all
+three and you should call it wherever you turn source HTML into text.
+
+```python
+from text_clean import clean_richtext, clean_text, strip_html
+
+strip_html(bio)        # a field holding HTML — tags out, entities decoded
+clean_text(summary)    # a plain string
+clean_richtext(doc)    # a Storyblok rich-text document, node by node
+```
+
+| What | Looks like | If you skip it |
+|---|---|---|
+| **HTML entities** | `&#160;` `&amp;` `&quot;` | the reader sees *"Dr&#160;Asad I Mian"* |
+| **Position markers** | `{pullquote}` `{EmbeddedCode}` | `{pullquote}` appears mid-paragraph |
+| **Blank paragraphs** | a `<p>` of only `<br>` | a gap where nothing should be |
+
+All three shipped to published blog pages and were found by a person reading
+them, not by any check. 88 entities across 34 biographies, 14 markers, 79 blank
+paragraphs.
+
+**On the third: strip a paragraph only when it has no text AND no image.**
+Images live inside the rich text, so testing "has no text" alone deletes
+pictures. `tests/test_blogs_payload.py` has that case.
+
 ## 4 · The one thing that will bite you
 
 **Never commit a regenerated file just because it changed.**

@@ -71,6 +71,8 @@ pipeline/                THE SHARED CODE. Knows no content type.
                              paths_root.py  every path, per type
                              fields.py      F.get(item, "body") — no column names
                              steps.py       the step list, from config/steps.json
+                             text_clean.py  entities, markers, invisibles
+                             link_routing.py where a SharePoint link should point
   content/                 source export -> story payload
   media/                   images, video, documents
   analyze/                 inventories and validation. READS, NEVER WRITES.
@@ -355,7 +357,43 @@ across as authored.
 
 ---
 
-## 9 · Encoding
+## 9 · Text out of SharePoint — use `text_clean`, always
+
+Three faults arrive in **every** type's HTML. `pipeline/core/text_clean.py`
+handles all three; a type that derives text from HTML and does not call it will
+ship at least one of them. Events will hit these on day one.
+
+```python
+from text_clean import clean_richtext, clean_text, strip_html
+
+strip_html(bio)                 # a field holding HTML
+clean_text(summary)             # a plain string
+clean_richtext(doc)             # a Storyblok rich-text document
+```
+
+**Entities must be decoded.** SharePoint stores `&#160;` for a non-breaking
+space, `&amp;`, `&quot;`, `&#58;`. Strip the tags and leave those and the reader
+sees the literal characters mid-sentence — *"Dr&#160;Asad I Mian"*. That reached
+**published blog biographies: 88 `&#160;`, 12 `&amp;`, 2 `&quot;`, 1 `&#58;`
+across 34 blogs.** The portal decoded them and the payload builder did not,
+which is exactly why there is now one shared function instead of two code paths.
+
+**Position markers are not content.** SharePoint marks where a component belongs
+with a token left in the prose: `{pullquote}` (14 across 13 blogs),
+`{EmbeddedCode}` (1). Once the quote is a `quote_banner` and the embed a
+`social_embed`, the marker has done its job — leave it in and the reader sees
+`{pullquote}` in the middle of a paragraph.
+
+**Paragraphs of pure whitespace.** The editor leaves paragraphs holding only
+`<br>` and no words — **79 across 30 blogs**, one of them a single paragraph
+with seventeen line breaks. They render as a gap. Strip a paragraph only when it
+has no text **and no image**: images live inside the rich text, so testing "no
+text" alone silently deletes a picture.
+
+All three were found by a person looking at published pages, not by any check.
+`tests/test_blogs_payload.py` pins them down now.
+
+## 9a · Encoding
 
 Send **UTF-8**. Do not transliterate — 711 occurrences across 98 characters are
 legitimate content: accented names, Arabic and Urdu for 44 stories, `£`, `°`.
