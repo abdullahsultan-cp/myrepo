@@ -333,7 +333,7 @@
     "shared_entities": {
       "status": "decided",
       "owner": "decided",
-      "note": "Place in the regions/<region>/entities/<entity>/blogs structure and share to the rest through `entities`. The physical region is a judgement call — blogs have no City column and these five name an entity that exists in several regions. See shared_placement below."
+      "note": "Place in the regions/<region>/entities/<entity>/blogs structure where the region is known, and share to the rest through `entities`. Where the region cannot be established the post goes to global and is shared to its entity instead — that is blog 72. See shared_placement."
     },
     "thumbnail": {
       "status": "decided",
@@ -341,9 +341,9 @@
       "note": "Leave empty. No source exists in SharePoint and the signed-off reference story leaves it empty too."
     },
     "is_active": {
-      "status": "keep",
+      "status": "ignore",
       "owner": "decided",
-      "note": "82 of 83 are True. Blog 37, '40 years of AKU', is False — it is the only post that is switched off in SharePoint. Kept so that a deliberately unpublished post is not silently published."
+      "note": "Ignored on the owner's instruction. 82 of 83 are True; blog 37, '40 years of AKU', is the only False and it is published anyway. Recorded because a post switched off in SharePoint going live is a deliberate choice, not an oversight."
     },
     "close_comments": {
       "status": "pending",
@@ -390,9 +390,9 @@
       "why": "body names Kenya and Nairobi"
     },
     "72": {
-      "region": "pk",
+      "placement": "global",
       "entity": "qtl",
-      "why": "body names all four regions; pk is the entity's largest by live story count (38 of 86) — WEAKEST of the five, confirm"
+      "why": "Its body names all four regions, so no region can be established. On the owner's instruction it goes to global/blogs and is shared to qtl through `entities`, rather than being filed under a region picked on the strength of a folder count."
     },
     "84": {
       "region": "pk",

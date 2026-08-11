@@ -124,13 +124,29 @@ class TwitterPlan(unittest.TestCase):
     def frame(self, src):
         return {"body": [{"component": "iframe", "src": src}]}
 
-    def test_converts_a_tweet(self):
+    def test_converts_a_tweet_into_the_devs_container(self):
+        """iframe -> row > row_item > social_embed, as the dev built it."""
         out = self.plan.patch(self.frame("https://twitter.com/i/status/152"),
                               None, {})
-        blok = out["body"][0]
+        row = out["body"][0]
+        self.assertEqual(row["component"], "row")
+        self.assertEqual(row["align_items"], "center")
+        # the row carries the spacing; the embed inside carries none
+        self.assertEqual(row["spacing"]["desktop"]["padding"]["left"], 80)
+        self.assertEqual(row["spacing"]["mobile"]["margin"]["bottom"], 24)
+        item = row["items"][0]
+        self.assertEqual(item["component"], "row_item")
+        blok = item["body"][0]
         self.assertEqual(blok["component"], "social_embed")
         self.assertEqual(blok["variant"], "twitter")
         self.assertEqual(blok["url"], "https://twitter.com/i/status/152")
+        self.assertEqual(blok["spacing"], "")
+
+    def test_one_column_only(self):
+        """Two columns would need text we do not have; see the docstring."""
+        out = self.plan.patch(self.frame("https://twitter.com/i/status/152"),
+                              None, {})
+        self.assertEqual(len(out["body"][0]["items"]), 1)
 
     def test_leaves_youtube_and_the_devs_test_hosts_alone(self):
         for src in ("https://www.youtube.com/embed/G476R4XCwVc",
