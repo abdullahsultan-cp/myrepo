@@ -201,6 +201,24 @@ gets replaced. All of that goes through `pipeline/migrate/update/`, which reads
 the live story, replaces only the fields the plan declared, and writes the rest
 back untouched. Write a plan; do not hand-edit and do not re-upload.
 
+**Never create an asset folder without looking first.** `ensure_asset_folder`
+used to POST and only search if the post failed, on the assumption that "the API
+rejects a duplicate name under one parent". **It does not.** The cache lives in
+memory, so every fresh process rebuilt the whole tree beside the last one — the
+space reached **769 asset folders, 7 `regions` roots and 5 `global` roots**, 444
+of them redundant. It now seeds from `storyblok_space/asset_folder_tree.json`
+(`P.ASSET_TREE`, refreshed by `migrate/review/dump_asset_tree.py`) and looks up
+before it creates.
+
+**Deleting an asset folder is not a leaf operation.** Storyblok does not delete a
+folder's children with it — it **moves them to the root**. Cleaning up the
+duplicates without re-parenting first left 142 folders at the top level and
+emptied `regions/` and `global/`. Re-parent, then delete.
+
+**`204 No Content` is success.** A PUT on an asset and a DELETE on a folder both
+return it. Accepting only `(200, 201)` is how a run that moved 786 assets
+perfectly reported `0 moved, 786 failed`.
+
 **Never run two media resolvers at once.** They share `media_urls.json` and the
 slower one rewrites it from its own memory, silently reverting corrections.
 `run_media_all.py` holds a lock.

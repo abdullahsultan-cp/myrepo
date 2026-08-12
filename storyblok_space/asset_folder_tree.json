@@ -1,0 +1,2122 @@
+{
+  "count": 301,
+  "roots": [
+    "Blogs",
+    "Test",
+    "aku-media-dev",
+    "events-detail",
+    "global",
+    "regions"
+  ],
+  "duplicated_paths": 0,
+  "orphans_at_root": 0,
+  "folders": [
+    {
+      "id": 208069564584752,
+      "name": "Blogs",
+      "parent_id": null,
+      "path": "Blogs",
+      "depth": 0
+    },
+    {
+      "id": 203278803742561,
+      "name": "Test",
+      "parent_id": 0,
+      "path": "Test",
+      "depth": 0
+    },
+    {
+      "id": 203629128280321,
+      "name": "aku-media-dev",
+      "parent_id": null,
+      "path": "aku-media-dev",
+      "depth": 0
+    },
+    {
+      "id": 208081545388850,
+      "name": "events-detail",
+      "parent_id": null,
+      "path": "events-detail",
+      "depth": 0
+    },
+    {
+      "id": 203446508242522,
+      "name": "global",
+      "parent_id": null,
+      "path": "global",
+      "depth": 0
+    },
+    {
+      "id": 208098400043830,
+      "name": "news",
+      "parent_id": 203446508242522,
+      "path": "global/news",
+      "depth": 1
+    },
+    {
+      "id": 203446264723025,
+      "name": "regions",
+      "parent_id": null,
+      "path": "regions",
+      "depth": 0
+    },
+    {
+      "id": 208098832311095,
+      "name": "af",
+      "parent_id": 203446264723025,
+      "path": "regions/af",
+      "depth": 1
+    },
+    {
+      "id": 208098836001592,
+      "name": "entities",
+      "parent_id": 208098832311095,
+      "path": "regions/af/entities",
+      "depth": 2
+    },
+    {
+      "id": 208098839618361,
+      "name": "ihd",
+      "parent_id": 208098836001592,
+      "path": "regions/af/entities/ihd",
+      "depth": 3
+    },
+    {
+      "id": 208098843292474,
+      "name": "news",
+      "parent_id": 208098839618361,
+      "path": "regions/af/entities/ihd/news",
+      "depth": 4
+    },
+    {
+      "id": 208098849329979,
+      "name": "news",
+      "parent_id": 208098832311095,
+      "path": "regions/af/news",
+      "depth": 2
+    },
+    {
+      "id": 208098873008956,
+      "name": "ke",
+      "parent_id": 203446264723025,
+      "path": "regions/ke",
+      "depth": 1
+    },
+    {
+      "id": 208098876703549,
+      "name": "entities",
+      "parent_id": 208098873008956,
+      "path": "regions/ke/entities",
+      "depth": 2
+    },
+    {
+      "id": 208098880422718,
+      "name": "bmi",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/bmi",
+      "depth": 3
+    },
+    {
+      "id": 208098884113215,
+      "name": "departments",
+      "parent_id": 208098880422718,
+      "path": "regions/ke/entities/bmi/departments",
+      "depth": 4
+    },
+    {
+      "id": 208098887840576,
+      "name": "meded",
+      "parent_id": 208098884113215,
+      "path": "regions/ke/entities/bmi/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208098891506497,
+      "name": "news",
+      "parent_id": 208098887840576,
+      "path": "regions/ke/entities/bmi/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208098899657538,
+      "name": "ph",
+      "parent_id": 208098884113215,
+      "path": "regions/ke/entities/bmi/departments/ph",
+      "depth": 5
+    },
+    {
+      "id": 208098903372611,
+      "name": "news",
+      "parent_id": 208098899657538,
+      "path": "regions/ke/entities/bmi/departments/ph/news",
+      "depth": 6
+    },
+    {
+      "id": 208098920526660,
+      "name": "psych",
+      "parent_id": 208098884113215,
+      "path": "regions/ke/entities/bmi/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208098924233541,
+      "name": "news",
+      "parent_id": 208098920526660,
+      "path": "regions/ke/entities/bmi/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208099028378438,
+      "name": "news",
+      "parent_id": 208098880422718,
+      "path": "regions/ke/entities/bmi/news",
+      "depth": 4
+    },
+    {
+      "id": 208099034424135,
+      "name": "cime",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/cime",
+      "depth": 3
+    },
+    {
+      "id": 208099038139208,
+      "name": "departments",
+      "parent_id": 208099034424135,
+      "path": "regions/ke/entities/cime/departments",
+      "depth": 4
+    },
+    {
+      "id": 208099041735497,
+      "name": "meded",
+      "parent_id": 208099038139208,
+      "path": "regions/ke/entities/cime/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208099045479242,
+      "name": "news",
+      "parent_id": 208099041735497,
+      "path": "regions/ke/entities/cime/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208099051320139,
+      "name": "nurs",
+      "parent_id": 208099038139208,
+      "path": "regions/ke/entities/cime/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208099055035212,
+      "name": "news",
+      "parent_id": 208099051320139,
+      "path": "regions/ke/entities/cime/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208099061085005,
+      "name": "news",
+      "parent_id": 208099034424135,
+      "path": "regions/ke/entities/cime/news",
+      "depth": 4
+    },
+    {
+      "id": 208099091641166,
+      "name": "coe-wch",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/coe-wch",
+      "depth": 3
+    },
+    {
+      "id": 208099095438159,
+      "name": "departments",
+      "parent_id": 208099091641166,
+      "path": "regions/ke/entities/coe-wch/departments",
+      "depth": 4
+    },
+    {
+      "id": 208099099120464,
+      "name": "paeds",
+      "parent_id": 208099095438159,
+      "path": "regions/ke/entities/coe-wch/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208099102860113,
+      "name": "news",
+      "parent_id": 208099099120464,
+      "path": "regions/ke/entities/coe-wch/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208099122242386,
+      "name": "ph",
+      "parent_id": 208099095438159,
+      "path": "regions/ke/entities/coe-wch/departments/ph",
+      "depth": 5
+    },
+    {
+      "id": 208099125912403,
+      "name": "news",
+      "parent_id": 208099122242386,
+      "path": "regions/ke/entities/coe-wch/departments/ph/news",
+      "depth": 6
+    },
+    {
+      "id": 208099131908948,
+      "name": "news",
+      "parent_id": 208099091641166,
+      "path": "regions/ke/entities/coe-wch/news",
+      "depth": 4
+    },
+    {
+      "id": 208099148866389,
+      "name": "eai",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/eai",
+      "depth": 3
+    },
+    {
+      "id": 208099152614230,
+      "name": "departments",
+      "parent_id": 208099148866389,
+      "path": "regions/ke/entities/eai/departments",
+      "depth": 4
+    },
+    {
+      "id": 208099156333399,
+      "name": "nutr",
+      "parent_id": 208099152614230,
+      "path": "regions/ke/entities/eai/departments/nutr",
+      "depth": 5
+    },
+    {
+      "id": 208099159966552,
+      "name": "news",
+      "parent_id": 208099156333399,
+      "path": "regions/ke/entities/eai/departments/nutr/news",
+      "depth": 6
+    },
+    {
+      "id": 208099168039769,
+      "name": "psych",
+      "parent_id": 208099152614230,
+      "path": "regions/ke/entities/eai/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208099171611482,
+      "name": "news",
+      "parent_id": 208099168039769,
+      "path": "regions/ke/entities/eai/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208099177591643,
+      "name": "news",
+      "parent_id": 208099148866389,
+      "path": "regions/ke/entities/eai/news",
+      "depth": 4
+    },
+    {
+      "id": 208099371000668,
+      "name": "ele",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/ele",
+      "depth": 3
+    },
+    {
+      "id": 208099374805853,
+      "name": "news",
+      "parent_id": 208099371000668,
+      "path": "regions/ke/entities/ele/news",
+      "depth": 4
+    },
+    {
+      "id": 208099380720478,
+      "name": "env",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/env",
+      "depth": 3
+    },
+    {
+      "id": 208099384533855,
+      "name": "news",
+      "parent_id": 208099380720478,
+      "path": "regions/ke/entities/env/news",
+      "depth": 4
+    },
+    {
+      "id": 208099390415712,
+      "name": "gsmc",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/gsmc",
+      "depth": 3
+    },
+    {
+      "id": 208099394196321,
+      "name": "departments",
+      "parent_id": 208099390415712,
+      "path": "regions/ke/entities/gsmc/departments",
+      "depth": 4
+    },
+    {
+      "id": 208099397919586,
+      "name": "gov",
+      "parent_id": 208099394196321,
+      "path": "regions/ke/entities/gsmc/departments/gov",
+      "depth": 5
+    },
+    {
+      "id": 208099401577315,
+      "name": "news",
+      "parent_id": 208099397919586,
+      "path": "regions/ke/entities/gsmc/departments/gov/news",
+      "depth": 6
+    },
+    {
+      "id": 208099407455076,
+      "name": "news",
+      "parent_id": 208099390415712,
+      "path": "regions/ke/entities/gsmc/news",
+      "depth": 4
+    },
+    {
+      "id": 208099623928677,
+      "name": "ied",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/ied",
+      "depth": 3
+    },
+    {
+      "id": 208099627512678,
+      "name": "news",
+      "parent_id": 208099623928677,
+      "path": "regions/ke/entities/ied/news",
+      "depth": 4
+    },
+    {
+      "id": 208099646489447,
+      "name": "ihd",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/ihd",
+      "depth": 3
+    },
+    {
+      "id": 208099650294632,
+      "name": "departments",
+      "parent_id": 208099646489447,
+      "path": "regions/ke/entities/ihd/departments",
+      "depth": 4
+    },
+    {
+      "id": 208099653882729,
+      "name": "nutr",
+      "parent_id": 208099650294632,
+      "path": "regions/ke/entities/ihd/departments/nutr",
+      "depth": 5
+    },
+    {
+      "id": 208099657495402,
+      "name": "news",
+      "parent_id": 208099653882729,
+      "path": "regions/ke/entities/ihd/departments/nutr/news",
+      "depth": 6
+    },
+    {
+      "id": 208099663311723,
+      "name": "paeds",
+      "parent_id": 208099650294632,
+      "path": "regions/ke/entities/ihd/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208099667010412,
+      "name": "news",
+      "parent_id": 208099663311723,
+      "path": "regions/ke/entities/ihd/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208099684082541,
+      "name": "psych",
+      "parent_id": 208099650294632,
+      "path": "regions/ke/entities/ihd/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208099687699310,
+      "name": "news",
+      "parent_id": 208099684082541,
+      "path": "regions/ke/entities/ihd/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208099702641519,
+      "name": "news",
+      "parent_id": 208099646489447,
+      "path": "regions/ke/entities/ihd/news",
+      "depth": 4
+    },
+    {
+      "id": 208099741832048,
+      "name": "ismc",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/ismc",
+      "depth": 3
+    },
+    {
+      "id": 208099745514353,
+      "name": "news",
+      "parent_id": 208099741832048,
+      "path": "regions/ke/entities/ismc/news",
+      "depth": 4
+    },
+    {
+      "id": 208099751269234,
+      "name": "mc",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/mc",
+      "depth": 3
+    },
+    {
+      "id": 208099754906483,
+      "name": "departments",
+      "parent_id": 208099751269234,
+      "path": "regions/ke/entities/mc/departments",
+      "depth": 4
+    },
+    {
+      "id": 208099758617460,
+      "name": "im",
+      "parent_id": 208099754906483,
+      "path": "regions/ke/entities/mc/departments/im",
+      "depth": 5
+    },
+    {
+      "id": 208099762373493,
+      "name": "news",
+      "parent_id": 208099758617460,
+      "path": "regions/ke/entities/mc/departments/im/news",
+      "depth": 6
+    },
+    {
+      "id": 208099777254262,
+      "name": "meded",
+      "parent_id": 208099754906483,
+      "path": "regions/ke/entities/mc/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208099781088119,
+      "name": "news",
+      "parent_id": 208099777254262,
+      "path": "regions/ke/entities/mc/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208099873395576,
+      "name": "nurs",
+      "parent_id": 208099754906483,
+      "path": "regions/ke/entities/mc/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208099877036921,
+      "name": "news",
+      "parent_id": 208099873395576,
+      "path": "regions/ke/entities/mc/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208099882824570,
+      "name": "obgyn",
+      "parent_id": 208099754906483,
+      "path": "regions/ke/entities/mc/departments/obgyn",
+      "depth": 5
+    },
+    {
+      "id": 208100123042683,
+      "name": "news",
+      "parent_id": 208099882824570,
+      "path": "regions/ke/entities/mc/departments/obgyn/news",
+      "depth": 6
+    },
+    {
+      "id": 208100128727932,
+      "name": "onc",
+      "parent_id": 208099754906483,
+      "path": "regions/ke/entities/mc/departments/onc",
+      "depth": 5
+    },
+    {
+      "id": 208100131971965,
+      "name": "news",
+      "parent_id": 208100128727932,
+      "path": "regions/ke/entities/mc/departments/onc/news",
+      "depth": 6
+    },
+    {
+      "id": 208100141761406,
+      "name": "paeds",
+      "parent_id": 208099754906483,
+      "path": "regions/ke/entities/mc/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208100145083263,
+      "name": "news",
+      "parent_id": 208100141761406,
+      "path": "regions/ke/entities/mc/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208100161319808,
+      "name": "news",
+      "parent_id": 208099751269234,
+      "path": "regions/ke/entities/mc/news",
+      "depth": 4
+    },
+    {
+      "id": 208100220187521,
+      "name": "qtl",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/qtl",
+      "depth": 3
+    },
+    {
+      "id": 208100223488898,
+      "name": "departments",
+      "parent_id": 208100220187521,
+      "path": "regions/ke/entities/qtl/departments",
+      "depth": 4
+    },
+    {
+      "id": 208100226831235,
+      "name": "mw",
+      "parent_id": 208100223488898,
+      "path": "regions/ke/entities/qtl/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208100230194052,
+      "name": "news",
+      "parent_id": 208100226831235,
+      "path": "regions/ke/entities/qtl/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208100235633541,
+      "name": "news",
+      "parent_id": 208100220187521,
+      "path": "regions/ke/entities/qtl/news",
+      "depth": 4
+    },
+    {
+      "id": 208100270969735,
+      "name": "sonam",
+      "parent_id": 208098876703549,
+      "path": "regions/ke/entities/sonam",
+      "depth": 3
+    },
+    {
+      "id": 208100274369416,
+      "name": "departments",
+      "parent_id": 208100270969735,
+      "path": "regions/ke/entities/sonam/departments",
+      "depth": 4
+    },
+    {
+      "id": 208100277633929,
+      "name": "gov",
+      "parent_id": 208100274369416,
+      "path": "regions/ke/entities/sonam/departments/gov",
+      "depth": 5
+    },
+    {
+      "id": 208100280935306,
+      "name": "news",
+      "parent_id": 208100277633929,
+      "path": "regions/ke/entities/sonam/departments/gov/news",
+      "depth": 6
+    },
+    {
+      "id": 208100286391179,
+      "name": "mw",
+      "parent_id": 208100274369416,
+      "path": "regions/ke/entities/sonam/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208100289454988,
+      "name": "news",
+      "parent_id": 208100286391179,
+      "path": "regions/ke/entities/sonam/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208100331271053,
+      "name": "nurs",
+      "parent_id": 208100274369416,
+      "path": "regions/ke/entities/sonam/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208100334609294,
+      "name": "news",
+      "parent_id": 208100331271053,
+      "path": "regions/ke/entities/sonam/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208100361376655,
+      "name": "onc",
+      "parent_id": 208100274369416,
+      "path": "regions/ke/entities/sonam/departments/onc",
+      "depth": 5
+    },
+    {
+      "id": 208100364727184,
+      "name": "news",
+      "parent_id": 208100361376655,
+      "path": "regions/ke/entities/sonam/departments/onc/news",
+      "depth": 6
+    },
+    {
+      "id": 208100376654737,
+      "name": "news",
+      "parent_id": 208100270969735,
+      "path": "regions/ke/entities/sonam/news",
+      "depth": 4
+    },
+    {
+      "id": 208100412318610,
+      "name": "news",
+      "parent_id": 208098873008956,
+      "path": "regions/ke/news",
+      "depth": 2
+    },
+    {
+      "id": 208100521276307,
+      "name": "pk",
+      "parent_id": 203446264723025,
+      "path": "regions/pk",
+      "depth": 1
+    },
+    {
+      "id": 208100524639124,
+      "name": "entities",
+      "parent_id": 208100521276307,
+      "path": "regions/pk/entities",
+      "depth": 2
+    },
+    {
+      "id": 208100527936405,
+      "name": "bmi",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/bmi",
+      "depth": 3
+    },
+    {
+      "id": 208100531274646,
+      "name": "departments",
+      "parent_id": 208100527936405,
+      "path": "regions/pk/entities/bmi/departments",
+      "depth": 4
+    },
+    {
+      "id": 208100534666135,
+      "name": "psych",
+      "parent_id": 208100531274646,
+      "path": "regions/pk/entities/bmi/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208100537955224,
+      "name": "news",
+      "parent_id": 208100534666135,
+      "path": "regions/pk/entities/bmi/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208100549981081,
+      "name": "news",
+      "parent_id": 208100527936405,
+      "path": "regions/pk/entities/bmi/news",
+      "depth": 4
+    },
+    {
+      "id": 208100557611930,
+      "name": "cete",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/cete",
+      "depth": 3
+    },
+    {
+      "id": 208100560921499,
+      "name": "news",
+      "parent_id": 208100557611930,
+      "path": "regions/pk/entities/cete/news",
+      "depth": 4
+    },
+    {
+      "id": 208100574962588,
+      "name": "cime",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/cime",
+      "depth": 3
+    },
+    {
+      "id": 208100578325405,
+      "name": "departments",
+      "parent_id": 208100574962588,
+      "path": "regions/pk/entities/cime/departments",
+      "depth": 4
+    },
+    {
+      "id": 208100581712798,
+      "name": "fm",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/fm",
+      "depth": 5
+    },
+    {
+      "id": 208100585079711,
+      "name": "news",
+      "parent_id": 208100581712798,
+      "path": "regions/pk/entities/cime/departments/fm/news",
+      "depth": 6
+    },
+    {
+      "id": 208100590498720,
+      "name": "im",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/im",
+      "depth": 5
+    },
+    {
+      "id": 208100593841057,
+      "name": "news",
+      "parent_id": 208100590498720,
+      "path": "regions/pk/entities/cime/departments/im/news",
+      "depth": 6
+    },
+    {
+      "id": 208100601578402,
+      "name": "meded",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208100605031331,
+      "name": "news",
+      "parent_id": 208100601578402,
+      "path": "regions/pk/entities/cime/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208100630107044,
+      "name": "mw",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208100633473957,
+      "name": "news",
+      "parent_id": 208100630107044,
+      "path": "regions/pk/entities/cime/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208100645299110,
+      "name": "nsurg",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/nsurg",
+      "depth": 5
+    },
+    {
+      "id": 208100648612775,
+      "name": "news",
+      "parent_id": 208100645299110,
+      "path": "regions/pk/entities/cime/departments/nsurg/news",
+      "depth": 6
+    },
+    {
+      "id": 208100654175144,
+      "name": "nurs",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208100657562537,
+      "name": "news",
+      "parent_id": 208100654175144,
+      "path": "regions/pk/entities/cime/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208100693226410,
+      "name": "obgyn",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/obgyn",
+      "depth": 5
+    },
+    {
+      "id": 208100696642475,
+      "name": "news",
+      "parent_id": 208100693226410,
+      "path": "regions/pk/entities/cime/departments/obgyn/news",
+      "depth": 6
+    },
+    {
+      "id": 208100708631468,
+      "name": "paeds",
+      "parent_id": 208100578325405,
+      "path": "regions/pk/entities/cime/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208100711908269,
+      "name": "news",
+      "parent_id": 208100708631468,
+      "path": "regions/pk/entities/cime/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208100736992174,
+      "name": "news",
+      "parent_id": 208100574962588,
+      "path": "regions/pk/entities/cime/news",
+      "depth": 4
+    },
+    {
+      "id": 208101696267183,
+      "name": "coe-wch",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/coe-wch",
+      "depth": 3
+    },
+    {
+      "id": 208101699969968,
+      "name": "departments",
+      "parent_id": 208101696267183,
+      "path": "regions/pk/entities/coe-wch/departments",
+      "depth": 4
+    },
+    {
+      "id": 208101703488433,
+      "name": "paeds",
+      "parent_id": 208101699969968,
+      "path": "regions/pk/entities/coe-wch/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208101707023282,
+      "name": "news",
+      "parent_id": 208101703488433,
+      "path": "regions/pk/entities/coe-wch/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208101717226419,
+      "name": "ph",
+      "parent_id": 208101699969968,
+      "path": "regions/pk/entities/coe-wch/departments/ph",
+      "depth": 5
+    },
+    {
+      "id": 208101720892340,
+      "name": "news",
+      "parent_id": 208101717226419,
+      "path": "regions/pk/entities/coe-wch/departments/ph/news",
+      "depth": 6
+    },
+    {
+      "id": 208101747233717,
+      "name": "news",
+      "parent_id": 208101696267183,
+      "path": "regions/pk/entities/coe-wch/news",
+      "depth": 4
+    },
+    {
+      "id": 208101784478646,
+      "name": "crm",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/crm",
+      "depth": 3
+    },
+    {
+      "id": 208101788054455,
+      "name": "departments",
+      "parent_id": 208101784478646,
+      "path": "regions/pk/entities/crm/departments",
+      "depth": 4
+    },
+    {
+      "id": 208101791781816,
+      "name": "regmed",
+      "parent_id": 208101788054455,
+      "path": "regions/pk/entities/crm/departments/regmed",
+      "depth": 5
+    },
+    {
+      "id": 208101795349433,
+      "name": "news",
+      "parent_id": 208101791781816,
+      "path": "regions/pk/entities/crm/departments/regmed/news",
+      "depth": 6
+    },
+    {
+      "id": 208101812515770,
+      "name": "news",
+      "parent_id": 208101784478646,
+      "path": "regions/pk/entities/crm/news",
+      "depth": 4
+    },
+    {
+      "id": 208101818344379,
+      "name": "ele",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/ele",
+      "depth": 3
+    },
+    {
+      "id": 208101821752252,
+      "name": "news",
+      "parent_id": 208101818344379,
+      "path": "regions/pk/entities/ele/news",
+      "depth": 4
+    },
+    {
+      "id": 208101847888829,
+      "name": "env",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/env",
+      "depth": 3
+    },
+    {
+      "id": 208101851554750,
+      "name": "news",
+      "parent_id": 208101847888829,
+      "path": "regions/pk/entities/env/news",
+      "depth": 4
+    },
+    {
+      "id": 208101899932607,
+      "name": "fas",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/fas",
+      "depth": 3
+    },
+    {
+      "id": 208101903541184,
+      "name": "departments",
+      "parent_id": 208101899932607,
+      "path": "regions/pk/entities/fas/departments",
+      "depth": 4
+    },
+    {
+      "id": 208101907047361,
+      "name": "psych",
+      "parent_id": 208101903541184,
+      "path": "regions/pk/entities/fas/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208101910680514,
+      "name": "news",
+      "parent_id": 208101907047361,
+      "path": "regions/pk/entities/fas/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208101916529603,
+      "name": "news",
+      "parent_id": 208101899932607,
+      "path": "regions/pk/entities/fas/news",
+      "depth": 4
+    },
+    {
+      "id": 208101946819524,
+      "name": "gsmc",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/gsmc",
+      "depth": 3
+    },
+    {
+      "id": 208101950342085,
+      "name": "news",
+      "parent_id": 208101946819524,
+      "path": "regions/pk/entities/gsmc/news",
+      "depth": 4
+    },
+    {
+      "id": 208101955957702,
+      "name": "ied",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/ied",
+      "depth": 3
+    },
+    {
+      "id": 208101959521223,
+      "name": "news",
+      "parent_id": 208101955957702,
+      "path": "regions/pk/entities/ied/news",
+      "depth": 4
+    },
+    {
+      "id": 208102194987976,
+      "name": "ighd",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/ighd",
+      "depth": 3
+    },
+    {
+      "id": 208102198596553,
+      "name": "departments",
+      "parent_id": 208102194987976,
+      "path": "regions/pk/entities/ighd/departments",
+      "depth": 4
+    },
+    {
+      "id": 208102202221514,
+      "name": "nutr",
+      "parent_id": 208102198596553,
+      "path": "regions/pk/entities/ighd/departments/nutr",
+      "depth": 5
+    },
+    {
+      "id": 208102205916107,
+      "name": "news",
+      "parent_id": 208102202221514,
+      "path": "regions/pk/entities/ighd/departments/nutr/news",
+      "depth": 6
+    },
+    {
+      "id": 208102216545228,
+      "name": "paeds",
+      "parent_id": 208102198596553,
+      "path": "regions/pk/entities/ighd/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208102220358605,
+      "name": "news",
+      "parent_id": 208102216545228,
+      "path": "regions/pk/entities/ighd/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208102242161614,
+      "name": "news",
+      "parent_id": 208102194987976,
+      "path": "regions/pk/entities/ighd/news",
+      "depth": 4
+    },
+    {
+      "id": 208102281622479,
+      "name": "ihd",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/ihd",
+      "depth": 3
+    },
+    {
+      "id": 208102285259728,
+      "name": "departments",
+      "parent_id": 208102281622479,
+      "path": "regions/pk/entities/ihd/departments",
+      "depth": 4
+    },
+    {
+      "id": 208102289163217,
+      "name": "paeds",
+      "parent_id": 208102285259728,
+      "path": "regions/pk/entities/ihd/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208102293054418,
+      "name": "news",
+      "parent_id": 208102289163217,
+      "path": "regions/pk/entities/ihd/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208102305944531,
+      "name": "ismc",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/ismc",
+      "depth": 3
+    },
+    {
+      "id": 208102309786580,
+      "name": "news",
+      "parent_id": 208102305944531,
+      "path": "regions/pk/entities/ismc/news",
+      "depth": 4
+    },
+    {
+      "id": 208102315660245,
+      "name": "mc",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/mc",
+      "depth": 3
+    },
+    {
+      "id": 208102319354838,
+      "name": "departments",
+      "parent_id": 208102315660245,
+      "path": "regions/pk/entities/mc/departments",
+      "depth": 4
+    },
+    {
+      "id": 208102323012567,
+      "name": "card",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/card",
+      "depth": 5
+    },
+    {
+      "id": 208102326723544,
+      "name": "news",
+      "parent_id": 208102323012567,
+      "path": "regions/pk/entities/mc/departments/card/news",
+      "depth": 6
+    },
+    {
+      "id": 208102341727193,
+      "name": "fm",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/fm",
+      "depth": 5
+    },
+    {
+      "id": 208102345421786,
+      "name": "news",
+      "parent_id": 208102341727193,
+      "path": "regions/pk/entities/mc/departments/fm/news",
+      "depth": 6
+    },
+    {
+      "id": 208102353601499,
+      "name": "meded",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208102357353436,
+      "name": "news",
+      "parent_id": 208102353601499,
+      "path": "regions/pk/entities/mc/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208102436000733,
+      "name": "nsurg",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/nsurg",
+      "depth": 5
+    },
+    {
+      "id": 208102439760862,
+      "name": "news",
+      "parent_id": 208102436000733,
+      "path": "regions/pk/entities/mc/departments/nsurg/news",
+      "depth": 6
+    },
+    {
+      "id": 208102450492383,
+      "name": "nurs",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208102454293472,
+      "name": "news",
+      "parent_id": 208102450492383,
+      "path": "regions/pk/entities/mc/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208102464771041,
+      "name": "nutr",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/nutr",
+      "depth": 5
+    },
+    {
+      "id": 208102468453346,
+      "name": "news",
+      "parent_id": 208102464771041,
+      "path": "regions/pk/entities/mc/departments/nutr/news",
+      "depth": 6
+    },
+    {
+      "id": 208102476661731,
+      "name": "onc",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/onc",
+      "depth": 5
+    },
+    {
+      "id": 208102480348132,
+      "name": "news",
+      "parent_id": 208102476661731,
+      "path": "regions/pk/entities/mc/departments/onc/news",
+      "depth": 6
+    },
+    {
+      "id": 208102493062117,
+      "name": "paeds",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208102496842726,
+      "name": "news",
+      "parent_id": 208102493062117,
+      "path": "regions/pk/entities/mc/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208102562092007,
+      "name": "ph",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/ph",
+      "depth": 5
+    },
+    {
+      "id": 208102565946344,
+      "name": "news",
+      "parent_id": 208102562092007,
+      "path": "regions/pk/entities/mc/departments/ph/news",
+      "depth": 6
+    },
+    {
+      "id": 208102608163817,
+      "name": "psych",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208102611805162,
+      "name": "news",
+      "parent_id": 208102608163817,
+      "path": "regions/pk/entities/mc/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208102622237675,
+      "name": "regmed",
+      "parent_id": 208102319354838,
+      "path": "regions/pk/entities/mc/departments/regmed",
+      "depth": 5
+    },
+    {
+      "id": 208102625989612,
+      "name": "news",
+      "parent_id": 208102622237675,
+      "path": "regions/pk/entities/mc/departments/regmed/news",
+      "depth": 6
+    },
+    {
+      "id": 208102638932973,
+      "name": "news",
+      "parent_id": 208102315660245,
+      "path": "regions/pk/entities/mc/news",
+      "depth": 4
+    },
+    {
+      "id": 208102987854830,
+      "name": "qtl",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/qtl",
+      "depth": 3
+    },
+    {
+      "id": 208102991647727,
+      "name": "news",
+      "parent_id": 208102987854830,
+      "path": "regions/pk/entities/qtl/news",
+      "depth": 4
+    },
+    {
+      "id": 208103038399472,
+      "name": "sig",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/sig",
+      "depth": 3
+    },
+    {
+      "id": 208103042143217,
+      "name": "news",
+      "parent_id": 208103038399472,
+      "path": "regions/pk/entities/sig/news",
+      "depth": 4
+    },
+    {
+      "id": 208103048074226,
+      "name": "sonam",
+      "parent_id": 208100524639124,
+      "path": "regions/pk/entities/sonam",
+      "depth": 3
+    },
+    {
+      "id": 208103051830259,
+      "name": "departments",
+      "parent_id": 208103048074226,
+      "path": "regions/pk/entities/sonam/departments",
+      "depth": 4
+    },
+    {
+      "id": 208103055660020,
+      "name": "geri",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/geri",
+      "depth": 5
+    },
+    {
+      "id": 208103059457013,
+      "name": "news",
+      "parent_id": 208103055660020,
+      "path": "regions/pk/entities/sonam/departments/geri/news",
+      "depth": 6
+    },
+    {
+      "id": 208103072343030,
+      "name": "meded",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208103076021239,
+      "name": "news",
+      "parent_id": 208103072343030,
+      "path": "regions/pk/entities/sonam/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208103082157048,
+      "name": "mw",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208103086560249,
+      "name": "news",
+      "parent_id": 208103082157048,
+      "path": "regions/pk/entities/sonam/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208103129437178,
+      "name": "nurs",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208103133156347,
+      "name": "news",
+      "parent_id": 208103129437178,
+      "path": "regions/pk/entities/sonam/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208103168586748,
+      "name": "nutr",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/nutr",
+      "depth": 5
+    },
+    {
+      "id": 208103172232189,
+      "name": "news",
+      "parent_id": 208103168586748,
+      "path": "regions/pk/entities/sonam/departments/nutr/news",
+      "depth": 6
+    },
+    {
+      "id": 208103178376190,
+      "name": "onc",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/onc",
+      "depth": 5
+    },
+    {
+      "id": 208103182222335,
+      "name": "news",
+      "parent_id": 208103178376190,
+      "path": "regions/pk/entities/sonam/departments/onc/news",
+      "depth": 6
+    },
+    {
+      "id": 208103188182016,
+      "name": "paeds",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208103191843841,
+      "name": "news",
+      "parent_id": 208103188182016,
+      "path": "regions/pk/entities/sonam/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208103213585410,
+      "name": "ph",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/ph",
+      "depth": 5
+    },
+    {
+      "id": 208103217357827,
+      "name": "news",
+      "parent_id": 208103213585410,
+      "path": "regions/pk/entities/sonam/departments/ph/news",
+      "depth": 6
+    },
+    {
+      "id": 208103225549828,
+      "name": "psych",
+      "parent_id": 208103051830259,
+      "path": "regions/pk/entities/sonam/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208103229076485,
+      "name": "news",
+      "parent_id": 208103225549828,
+      "path": "regions/pk/entities/sonam/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208103237313542,
+      "name": "news",
+      "parent_id": 208103048074226,
+      "path": "regions/pk/entities/sonam/news",
+      "depth": 4
+    },
+    {
+      "id": 208103356007431,
+      "name": "news",
+      "parent_id": 208100521276307,
+      "path": "regions/pk/news",
+      "depth": 2
+    },
+    {
+      "id": 208104637985801,
+      "name": "tz",
+      "parent_id": 203446264723025,
+      "path": "regions/tz",
+      "depth": 1
+    },
+    {
+      "id": 208104641799178,
+      "name": "entities",
+      "parent_id": 208104637985801,
+      "path": "regions/tz/entities",
+      "depth": 2
+    },
+    {
+      "id": 208104645583883,
+      "name": "aerr",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/aerr",
+      "depth": 3
+    },
+    {
+      "id": 208104649368588,
+      "name": "news",
+      "parent_id": 208104645583883,
+      "path": "regions/tz/entities/aerr/news",
+      "depth": 4
+    },
+    {
+      "id": 208104662283277,
+      "name": "bmi",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/bmi",
+      "depth": 3
+    },
+    {
+      "id": 208104666039310,
+      "name": "departments",
+      "parent_id": 208104662283277,
+      "path": "regions/tz/entities/bmi/departments",
+      "depth": 4
+    },
+    {
+      "id": 208104669869071,
+      "name": "psych",
+      "parent_id": 208104666039310,
+      "path": "regions/tz/entities/bmi/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208104673567760,
+      "name": "news",
+      "parent_id": 208104669869071,
+      "path": "regions/tz/entities/bmi/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208104681686033,
+      "name": "cime",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/cime",
+      "depth": 3
+    },
+    {
+      "id": 208104685429778,
+      "name": "news",
+      "parent_id": 208104681686033,
+      "path": "regions/tz/entities/cime/news",
+      "depth": 4
+    },
+    {
+      "id": 208104691524627,
+      "name": "eai",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/eai",
+      "depth": 3
+    },
+    {
+      "id": 208104695325716,
+      "name": "news",
+      "parent_id": 208104691524627,
+      "path": "regions/tz/entities/eai/news",
+      "depth": 4
+    },
+    {
+      "id": 208104717505557,
+      "name": "ele",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/ele",
+      "depth": 3
+    },
+    {
+      "id": 208104721232918,
+      "name": "news",
+      "parent_id": 208104717505557,
+      "path": "regions/tz/entities/ele/news",
+      "depth": 4
+    },
+    {
+      "id": 208104736093207,
+      "name": "gsmc",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/gsmc",
+      "depth": 3
+    },
+    {
+      "id": 208104739771416,
+      "name": "news",
+      "parent_id": 208104736093207,
+      "path": "regions/tz/entities/gsmc/news",
+      "depth": 4
+    },
+    {
+      "id": 208104750535705,
+      "name": "ied",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/ied",
+      "depth": 3
+    },
+    {
+      "id": 208104754242586,
+      "name": "departments",
+      "parent_id": 208104750535705,
+      "path": "regions/tz/entities/ied/departments",
+      "depth": 4
+    },
+    {
+      "id": 208104757875739,
+      "name": "psych",
+      "parent_id": 208104754242586,
+      "path": "regions/tz/entities/ied/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208104761570332,
+      "name": "news",
+      "parent_id": 208104757875739,
+      "path": "regions/tz/entities/ied/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208104772011037,
+      "name": "news",
+      "parent_id": 208104750535705,
+      "path": "regions/tz/entities/ied/news",
+      "depth": 4
+    },
+    {
+      "id": 208104949236766,
+      "name": "ihd",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/ihd",
+      "depth": 3
+    },
+    {
+      "id": 208104953078815,
+      "name": "departments",
+      "parent_id": 208104949236766,
+      "path": "regions/tz/entities/ihd/departments",
+      "depth": 4
+    },
+    {
+      "id": 208104956830752,
+      "name": "psych",
+      "parent_id": 208104953078815,
+      "path": "regions/tz/entities/ihd/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208104960533537,
+      "name": "news",
+      "parent_id": 208104956830752,
+      "path": "regions/tz/entities/ihd/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208104966394914,
+      "name": "news",
+      "parent_id": 208104949236766,
+      "path": "regions/tz/entities/ihd/news",
+      "depth": 4
+    },
+    {
+      "id": 208104972469283,
+      "name": "ismc",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/ismc",
+      "depth": 3
+    },
+    {
+      "id": 208104976127012,
+      "name": "news",
+      "parent_id": 208104972469283,
+      "path": "regions/tz/entities/ismc/news",
+      "depth": 4
+    },
+    {
+      "id": 208104984306725,
+      "name": "mc",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/mc",
+      "depth": 3
+    },
+    {
+      "id": 208104988091430,
+      "name": "news",
+      "parent_id": 208104984306725,
+      "path": "regions/tz/entities/mc/news",
+      "depth": 4
+    },
+    {
+      "id": 208104998659111,
+      "name": "qtl",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/qtl",
+      "depth": 3
+    },
+    {
+      "id": 208105002435624,
+      "name": "news",
+      "parent_id": 208104998659111,
+      "path": "regions/tz/entities/qtl/news",
+      "depth": 4
+    },
+    {
+      "id": 208105021789225,
+      "name": "sonam",
+      "parent_id": 208104641799178,
+      "path": "regions/tz/entities/sonam",
+      "depth": 3
+    },
+    {
+      "id": 208105025356842,
+      "name": "departments",
+      "parent_id": 208105021789225,
+      "path": "regions/tz/entities/sonam/departments",
+      "depth": 4
+    },
+    {
+      "id": 208105029100587,
+      "name": "mw",
+      "parent_id": 208105025356842,
+      "path": "regions/tz/entities/sonam/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208105032942636,
+      "name": "news",
+      "parent_id": 208105029100587,
+      "path": "regions/tz/entities/sonam/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208105039017005,
+      "name": "nurs",
+      "parent_id": 208105025356842,
+      "path": "regions/tz/entities/sonam/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208105042625582,
+      "name": "news",
+      "parent_id": 208105039017005,
+      "path": "regions/tz/entities/sonam/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208105055507503,
+      "name": "paeds",
+      "parent_id": 208105025356842,
+      "path": "regions/tz/entities/sonam/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208105059148848,
+      "name": "news",
+      "parent_id": 208105055507503,
+      "path": "regions/tz/entities/sonam/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208105065108529,
+      "name": "psych",
+      "parent_id": 208105025356842,
+      "path": "regions/tz/entities/sonam/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208105069290546,
+      "name": "news",
+      "parent_id": 208105065108529,
+      "path": "regions/tz/entities/sonam/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208105077580851,
+      "name": "news",
+      "parent_id": 208105021789225,
+      "path": "regions/tz/entities/sonam/news",
+      "depth": 4
+    },
+    {
+      "id": 208105088611380,
+      "name": "news",
+      "parent_id": 208104637985801,
+      "path": "regions/tz/news",
+      "depth": 2
+    },
+    {
+      "id": 208105135219765,
+      "name": "ug",
+      "parent_id": 203446264723025,
+      "path": "regions/ug",
+      "depth": 1
+    },
+    {
+      "id": 208105138889782,
+      "name": "entities",
+      "parent_id": 208105135219765,
+      "path": "regions/ug/entities",
+      "depth": 2
+    },
+    {
+      "id": 208105142539319,
+      "name": "coe-wch",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/coe-wch",
+      "depth": 3
+    },
+    {
+      "id": 208105146168376,
+      "name": "news",
+      "parent_id": 208105142539319,
+      "path": "regions/ug/entities/coe-wch/news",
+      "depth": 4
+    },
+    {
+      "id": 208105152287801,
+      "name": "gsmc",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/gsmc",
+      "depth": 3
+    },
+    {
+      "id": 208105155982394,
+      "name": "news",
+      "parent_id": 208105152287801,
+      "path": "regions/ug/entities/gsmc/news",
+      "depth": 4
+    },
+    {
+      "id": 208105164325947,
+      "name": "ied",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/ied",
+      "depth": 3
+    },
+    {
+      "id": 208105167926332,
+      "name": "news",
+      "parent_id": 208105164325947,
+      "path": "regions/ug/entities/ied/news",
+      "depth": 4
+    },
+    {
+      "id": 208105180820541,
+      "name": "ihd",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/ihd",
+      "depth": 3
+    },
+    {
+      "id": 208105184789566,
+      "name": "departments",
+      "parent_id": 208105180820541,
+      "path": "regions/ug/entities/ihd/departments",
+      "depth": 4
+    },
+    {
+      "id": 208105188684863,
+      "name": "psych",
+      "parent_id": 208105184789566,
+      "path": "regions/ug/entities/ihd/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208105192506432,
+      "name": "news",
+      "parent_id": 208105188684863,
+      "path": "regions/ug/entities/ihd/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208105198617665,
+      "name": "mc",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/mc",
+      "depth": 3
+    },
+    {
+      "id": 208105202447426,
+      "name": "departments",
+      "parent_id": 208105198617665,
+      "path": "regions/ug/entities/mc/departments",
+      "depth": 4
+    },
+    {
+      "id": 208105206305859,
+      "name": "meded",
+      "parent_id": 208105202447426,
+      "path": "regions/ug/entities/mc/departments/meded",
+      "depth": 5
+    },
+    {
+      "id": 208105210065988,
+      "name": "news",
+      "parent_id": 208105206305859,
+      "path": "regions/ug/entities/mc/departments/meded/news",
+      "depth": 6
+    },
+    {
+      "id": 208105216107589,
+      "name": "qtl",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/qtl",
+      "depth": 3
+    },
+    {
+      "id": 208105219912774,
+      "name": "news",
+      "parent_id": 208105216107589,
+      "path": "regions/ug/entities/qtl/news",
+      "depth": 4
+    },
+    {
+      "id": 208105229222983,
+      "name": "sonam",
+      "parent_id": 208105138889782,
+      "path": "regions/ug/entities/sonam",
+      "depth": 3
+    },
+    {
+      "id": 208105233024072,
+      "name": "departments",
+      "parent_id": 208105229222983,
+      "path": "regions/ug/entities/sonam/departments",
+      "depth": 4
+    },
+    {
+      "id": 208105236894793,
+      "name": "mw",
+      "parent_id": 208105233024072,
+      "path": "regions/ug/entities/sonam/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208105240671306,
+      "name": "news",
+      "parent_id": 208105236894793,
+      "path": "regions/ug/entities/sonam/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208105269310539,
+      "name": "nurs",
+      "parent_id": 208105233024072,
+      "path": "regions/ug/entities/sonam/departments/nurs",
+      "depth": 5
+    },
+    {
+      "id": 208105273177164,
+      "name": "news",
+      "parent_id": 208105269310539,
+      "path": "regions/ug/entities/sonam/departments/nurs/news",
+      "depth": 6
+    },
+    {
+      "id": 208105279132749,
+      "name": "paeds",
+      "parent_id": 208105233024072,
+      "path": "regions/ug/entities/sonam/departments/paeds",
+      "depth": 5
+    },
+    {
+      "id": 208105283019854,
+      "name": "news",
+      "parent_id": 208105279132749,
+      "path": "regions/ug/entities/sonam/departments/paeds/news",
+      "depth": 6
+    },
+    {
+      "id": 208105293624399,
+      "name": "news",
+      "parent_id": 208105229222983,
+      "path": "regions/ug/entities/sonam/news",
+      "depth": 4
+    },
+    {
+      "id": 208105310962768,
+      "name": "news",
+      "parent_id": 208105135219765,
+      "path": "regions/ug/news",
+      "depth": 2
+    },
+    {
+      "id": 208105342141521,
+      "name": "uk",
+      "parent_id": 203446264723025,
+      "path": "regions/uk",
+      "depth": 1
+    },
+    {
+      "id": 208105345881170,
+      "name": "entities",
+      "parent_id": 208105342141521,
+      "path": "regions/uk/entities",
+      "depth": 2
+    },
+    {
+      "id": 208105349608531,
+      "name": "ismc",
+      "parent_id": 208105345881170,
+      "path": "regions/uk/entities/ismc",
+      "depth": 3
+    },
+    {
+      "id": 208105353368660,
+      "name": "departments",
+      "parent_id": 208105349608531,
+      "path": "regions/uk/entities/ismc/departments",
+      "depth": 4
+    },
+    {
+      "id": 208105356956757,
+      "name": "gov",
+      "parent_id": 208105353368660,
+      "path": "regions/uk/entities/ismc/departments/gov",
+      "depth": 5
+    },
+    {
+      "id": 208105360778326,
+      "name": "news",
+      "parent_id": 208105356956757,
+      "path": "regions/uk/entities/ismc/departments/gov/news",
+      "depth": 6
+    },
+    {
+      "id": 208105366533207,
+      "name": "psych",
+      "parent_id": 208105353368660,
+      "path": "regions/uk/entities/ismc/departments/psych",
+      "depth": 5
+    },
+    {
+      "id": 208105370276952,
+      "name": "news",
+      "parent_id": 208105366533207,
+      "path": "regions/uk/entities/ismc/departments/psych/news",
+      "depth": 6
+    },
+    {
+      "id": 208105375982681,
+      "name": "news",
+      "parent_id": 208105349608531,
+      "path": "regions/uk/entities/ismc/news",
+      "depth": 4
+    },
+    {
+      "id": 208105801315418,
+      "name": "sonam",
+      "parent_id": 208105345881170,
+      "path": "regions/uk/entities/sonam",
+      "depth": 3
+    },
+    {
+      "id": 208105805034587,
+      "name": "departments",
+      "parent_id": 208105801315418,
+      "path": "regions/uk/entities/sonam/departments",
+      "depth": 4
+    },
+    {
+      "id": 208105808733276,
+      "name": "mw",
+      "parent_id": 208105805034587,
+      "path": "regions/uk/entities/sonam/departments/mw",
+      "depth": 5
+    },
+    {
+      "id": 208105812431965,
+      "name": "news",
+      "parent_id": 208105808733276,
+      "path": "regions/uk/entities/sonam/departments/mw/news",
+      "depth": 6
+    },
+    {
+      "id": 208105818281054,
+      "name": "news",
+      "parent_id": 208105342141521,
+      "path": "regions/uk/news",
+      "depth": 2
+    }
+  ]
+}

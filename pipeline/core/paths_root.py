@@ -243,6 +243,17 @@ class _Paths:
         """The live folder tree. Refresh with migrate/review/dump_sb_tree.py."""
         return os.path.join(self.SPACE, "folder_tree.json")
 
+    @property
+    def ASSET_TREE(self):
+        """The live ASSET folder tree, shared by every content type.
+
+        Refresh with `migrate/review/dump_asset_tree.py`. The uploader seeds its
+        cache from this before creating anything, which is what stops a fresh
+        process rebuilding a tree that already exists — the space once collected
+        seven `regions` roots that way, one per run.
+        """
+        return os.path.join(self.SPACE, "asset_folder_tree.json")
+
     # --------------------------------------------------- stage 1: content
     @property
     def SOURCE_JSON(self):

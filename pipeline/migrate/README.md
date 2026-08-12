@@ -44,6 +44,21 @@ review link already shared and loses manual edits. Three guards make a re-run
 safe: the tracking DB's `sb_story_id`, a payload hash, and a slug lookup before
 anything is created.
 
+**Refresh BOTH tree snapshots before an upload run.**
+
+    dump_sb_tree.py       -> storyblok_space/folder_tree.json        P.SPACE_TREE
+    dump_asset_tree.py    -> storyblok_space/asset_folder_tree.json  P.ASSET_TREE
+
+`storyblok_space/` describes the space, not a content type: news, blogs and
+events read the same two files and none of them owns either. The asset tree
+mirrors the content tree, so a story's media sits beside the story.
+
+`dump_asset_tree.py --check` reports duplicated paths and folders orphaned at the
+root, and both should read zero. When they do not,
+`merge_asset_folders.py` then `rebuild_asset_tree.py` are the repairs — the
+first collapses duplicates, the second re-files every asset under the path its
+story actually uses, read live from the space.
+
 **Refresh the tree snapshot after the dev changes folders.**
 `review/dump_sb_tree.py` — the migration reads it to find each story's
 destination and to fill `entities`.

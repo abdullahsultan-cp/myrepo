@@ -199,10 +199,28 @@ def load_asset_folders(sb, cache):
     `global` roots**, 444 redundant folders holding 2,311 assets between them,
     one whole tree per run.
 
-    Where a path already has duplicates, the one holding the most assets wins,
-    so a rerun files new media alongside the existing media rather than adding
-    to the pile. `pipeline/migrate/review/merge_asset_folders.py` removes them.
+    Reads the committed snapshot first — `storyblok_space/asset_folder_tree.json`,
+    written by `migrate/review/dump_asset_tree.py` — so news, blogs and events
+    all start from the same picture of the tree. Falls back to the API when the
+    snapshot is missing or stale, which is why a stale one is untidy rather than
+    dangerous.
+
+    Where a path already has duplicates the lowest id wins, so every caller
+    agrees which copy is canonical.
     """
+    try:
+        from paths_root import P as _P
+        if os.path.exists(_P.ASSET_TREE):
+            with open(_P.ASSET_TREE, encoding="utf-8") as f:
+                for folder in json.load(f).get("folders") or []:
+                    if folder.get("path"):
+                        cache.setdefault(folder["path"], folder["id"])
+            if cache:
+                print(f"    {len(cache)} asset folder(s) from the snapshot")
+    except Exception as exc:                    # a snapshot is an optimisation
+        print(f"    asset tree snapshot unreadable ({type(exc).__name__}); "
+              f"asking the API instead")
+
     r = sb.get("asset_folders")
     if r is None or r.status_code != 200:
         return cache
