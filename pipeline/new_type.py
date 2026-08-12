@@ -152,7 +152,17 @@ def check(name):
     bad = []
     print(f"  {'profile key':<20}{'column':<26}found?")
     for key, col in sorted(fields.items()):
-        cols = col if isinstance(col, list) else [col]
+        # `null` is a DECLARED ABSENCE, not a mistake: blogs has no City column
+        # and events has no author, pull quote or approver group. Those entries
+        # are kept as null so the gap is visible in the profile -- so they are
+        # reported as "absent" rather than counted as a wrong column name, and
+        # never joined into a string. `", ".join([None])` raised a TypeError and
+        # took this whole command down, for blogs as well as events, which also
+        # meant the `--check` job in CI was failing.
+        if col is None:
+            print(f"  {key:<20}{'(declared absent)':<26}n/a")
+            continue
+        cols = [c for c in (col if isinstance(col, list) else [col]) if c]
         hits = [c for c in cols if c in present]
         ok = "yes" if hits else "NO"
         if not hits:
