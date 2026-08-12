@@ -25,7 +25,7 @@ ends, and why a step that cannot do its job must stop rather than guess.
 |---|---|
 | **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable. Four in-place updates since: Twitter embeds, PDF links, 4 broken hrefs, the 11 Aug restore |
 | **blogs** | 83 mapped to `blog_article`. **8 live and reviewed**, 75 waiting on the owner. `category` and `isFeatured` blocked on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
-| **events** | scaffolding only — no export yet |
+| **events** | **2,710 live and published**, 0 failed. 2,862 assets; 29 banners absent from the export. `contact` and `event_types` wait on the dev |
 | **pages** | site structure and permissions; its own stage, shares no code |
 
 Space `289824742951963`. Default branch **`master`** (there is no `main`).
@@ -85,7 +85,7 @@ pipeline/                THE SHARED CODE. Knows no content type.
 
 News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
 Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 mapped, 8 live
-Events-Pipeline/   pipeline/ data/ assets/ backup/    awaiting export
+Events-Pipeline/   pipeline/ data/ assets/ backup/    2,710 live
 Pages-Pipeline/    pipeline/ data/ out/ portal/       inherits nothing
 
 config/types/*.json      what differs per type  (_TEMPLATE.json is boilerplate)
@@ -543,8 +543,10 @@ commit.
   has either plugin filled, so there is no example of the value format. One saved
   example of each unblocks 80 and 43 posts respectively. `entities` needs only
   the field — the plan is written and the format is known from news
-- **events** has no export; its profile and component are placeholders. The space
-  already has an `event_article`, which is **not** `news_article`
+- **events** is migrated — 2,710 live and published. Left: **29 banners absent
+  from the export** (the files are on aku.edu, which is being switched off), event
+  2486's 2 assets waiting on one asset folder, and `contact` / `event_types`
+  waiting on the dev, both plans written. `Events-Pipeline/README.md` §7
 - **blogs data with no field**: `FeatureSequence` (45), `Close Comments` (14),
   `Post Year`, and 626 comments. `IsActive` is ignored on the owner's
   instruction — blog 37 is the only `False` and it publishes anyway. Every one

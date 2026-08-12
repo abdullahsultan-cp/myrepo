@@ -205,3 +205,31 @@ dist/
 !/Blogs-Pipeline/out/
 !/Blogs-Pipeline/out/blogs-portal.html
 News-Pipeline/data/rebuild_run.log
+
+# --- Events-Pipeline: the same rules, for the same reasons -------------------
+# Per-stage JSON is regenerated from events.json by pipeline/run_pipeline.py
+# --type events. data/source/ is NOT ignored: Metadata.csv and the four lookup
+# CSVs are the delivered export, and SharePoint is being retired, so they are
+# the only record of what the content was.
+/Events-Pipeline/data/raw/
+/Events-Pipeline/data/cleaned/
+/Events-Pipeline/data/normalized/
+/Events-Pipeline/data/richtext/
+/Events-Pipeline/data/richtext_enhanced/
+/Events-Pipeline/data/stories/
+/Events-Pipeline/data/migrate/.media.lock
+/Events-Pipeline/data/migrate/.migration.lock
+/Events-Pipeline/data/migrate/*_ids.txt
+
+# 2,650 files, 379 MB, delivered with the export rather than downloaded. Same
+# rule as the other two types: media does not go in git.
+/Events-Pipeline/assets/
+
+# --- Events review portal -----------------------------------------------------
+# NOT tracked, unlike the blogs one. That file is half a megabyte for 83 posts;
+# this is 13.9 MB for 2,710 events, because every body is baked in. It rebuilds
+# in about two minutes:
+#     python Events-Pipeline/pipeline/build_portal.py
+# A regenerable 14 MB artefact in a diff is exactly what CODING_STANDARDS §8
+# warns about, so it is generated on demand rather than committed.
+/Events-Pipeline/out/events-portal.html

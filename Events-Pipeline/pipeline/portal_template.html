@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<title>AKU Events — what we have, what we do not</title>
+<style>
+:root{
+ --bg:#0d1113; --panel:#141a1d; --card:#192125; --card2:#1e282d; --line:#28343a; --line2:#35454c;
+ --ink:#e9eff2; --mut:#93a2a9; --dim:#6b7a80;
+ --ok:#4ade80; --okbg:#12271c;
+ --get:#fbbf24; --getbg:#2a2110; --getln:#4d3d15;
+ --dev:#f87171; --devbg:#2a1616; --devln:#4d2222;
+ --you:#60a5fa; --youbg:#141f2e; --youln:#1e3a5c;
+ --skip:#94a3b8; --skipbg:#1b2227; --skipln:#33414a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--panel)}
+::-webkit-scrollbar-thumb{background:#31413b;border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background:#3d5049}
+a{color:#7dd3fc}
+header{background:var(--panel);border-bottom:1px solid var(--line);padding:16px 0 0}
+.wrap{max-width:1620px;margin:0 auto;padding:0 24px}
+h1{margin:0 0 5px;font-size:19px;font-weight:650;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:12.5px;max-width:1040px}
+.badge{font:400 11px/1 ui-monospace,monospace;color:var(--dim);padding:3px 8px;
+ border:1px solid var(--line2);border-radius:20px;vertical-align:3px}
+
+.key{display:grid;grid-template-columns:repeat(auto-fit,minmax(206px,1fr));gap:8px;margin:14px 0 0}
+.k{border:1px solid var(--line);border-left:4px solid;border-radius:9px;padding:9px 12px;
+ background:var(--card);cursor:pointer;transition:.13s;user-select:none}
+.k:hover{background:var(--card2);transform:translateY(-1px)}
+.k.sel{box-shadow:0 0 0 2px currentColor inset}
+.k b{font-size:12.5px;margin-bottom:1px;display:flex;justify-content:space-between;gap:8px}
+.k b i{font-style:normal;opacity:.85}
+.k span{color:var(--mut);font-size:11.5px;line-height:1.45;display:block}
+.k.ok{border-left-color:var(--ok);color:var(--ok)}     .k.ok b{color:var(--ok)}
+.k.get{border-left-color:var(--get);color:var(--get)}  .k.get b{color:var(--get)}
+.k.dev{border-left-color:var(--dev);color:var(--dev)}  .k.dev b{color:var(--dev)}
+.k.you{border-left-color:var(--you);color:var(--you)}  .k.you b{color:var(--you)}
+.k.skip{border-left-color:var(--skip);color:var(--skip)} .k.skip b{color:var(--skip)}
+
+.stats{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 12px;
+ min-width:96px;cursor:pointer;transition:.13s;user-select:none}
+.stat:hover{background:var(--card2);border-color:var(--line2)}
+.stat.sel{border-color:currentColor;box-shadow:0 0 0 1px currentColor inset}
+.stat b{display:block;font-size:18px;line-height:1.3}
+.stat span{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.05em}
+.stat.bad{color:var(--dev)} .stat.bad b{color:var(--dev)}
+.stat.warn{color:var(--get)} .stat.warn b{color:var(--get)}
+.stat.good{color:var(--ok)} .stat.good b{color:var(--ok)}
+
+.bar{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:12px 0 0;padding-bottom:14px}
+input,select{font:inherit;font-size:13px;padding:7px 11px;border:1px solid var(--line2);
+ border-radius:8px;background:var(--card);color:var(--ink)}
+input{min-width:210px} input::placeholder{color:var(--dim)}
+select{cursor:pointer;max-width:230px} select option{background:#141a1d}
+.clear{background:none;border:1px solid var(--line2);color:var(--mut);border-radius:8px;
+ padding:7px 12px;font:inherit;font-size:12.5px;cursor:pointer}
+.clear:hover{color:var(--ink);border-color:var(--dim)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.chip{background:var(--youbg);color:var(--you);border:1px solid var(--youln);border-radius:20px;
+ padding:3px 10px;font-size:11.5px;cursor:pointer}
+.chip:hover{filter:brightness(1.25)}
+.chip em{font-style:normal;opacity:.6}
+
+.layout{display:grid;grid-template-columns:330px 1fr;gap:16px;align-items:start;padding:16px 0 44px}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+ max-height:calc(100vh - 60px);overflow-y:auto;position:sticky;top:16px}
+.row{padding:9px 12px;border-bottom:1px solid var(--line);cursor:pointer}
+.row:hover{background:var(--card)}
+.row.on{background:#1b2b25;border-left:3px solid var(--ok);padding-left:9px}
+.row .t{font-size:12.5px;font-weight:600;line-height:1.35}
+.row .m{color:var(--dim);font-size:10.5px;margin-top:4px;display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+.tag{padding:1px 7px;border-radius:20px;font-size:10px;font-weight:700}
+.tag.ok{background:var(--okbg);color:var(--ok)}
+.tag.get{background:var(--getbg);color:var(--get)}
+.tag.dev{background:var(--devbg);color:var(--dev)}
+.tag.you{background:var(--youbg);color:var(--you)}
+.tag.skip{background:var(--skipbg);color:var(--skip)}
+.tag.cat{background:#1d2a24;color:#8fd3ae;cursor:pointer;font-weight:600}
+.tag.cat:hover{filter:brightness(1.3)}
+
+.panel{display:grid;grid-template-columns:minmax(340px,.86fr) 1fr;gap:15px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:17px}
+.card h2{margin:0 0 6px;font-size:16.5px;line-height:1.35}
+.card h3{margin:0 0 11px;font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}
+.meta{color:var(--mut);font-size:12px;line-height:1.85;margin-bottom:15px;
+ padding-bottom:13px;border-bottom:1px solid var(--line)}
+.meta code{background:var(--card);border:1px solid var(--line);padding:1px 6px;border-radius:5px;
+ font-size:11px;color:var(--ink)}
+.lk{cursor:pointer;border-bottom:1px dotted var(--dim)}
+.lk:hover{color:var(--ink)}
+
+.b{display:grid;grid-template-columns:1fr auto;gap:9px;align-items:start;
+ border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:9px;
+ padding:9px 11px;margin-bottom:7px;background:var(--card)}
+.b.get{border-left-color:var(--get)} .b.dev{border-left-color:var(--dev)}
+.b.you{border-left-color:var(--you)} .b.skip{border-left-color:var(--skip)}
+.b .name{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700}
+.b .note{font-size:11.5px;color:var(--mut);margin-top:3px;word-break:break-word}
+.b .fix{font-size:11px;margin-top:5px;padding-top:5px;border-top:1px dashed var(--line2);color:var(--mut)}
+.b .verdict{font-size:9.5px;font-weight:800;letter-spacing:.05em;white-space:nowrap;
+ padding:3px 8px;border-radius:20px;align-self:start}
+.b.ok  .verdict{background:var(--okbg);color:var(--ok)}
+.b.get .verdict{background:var(--getbg);color:var(--get)}
+.b.dev .verdict{background:var(--devbg);color:var(--dev)}
+.b.you .verdict{background:var(--youbg);color:var(--you)}
+.b.skip .verdict{background:var(--skipbg);color:var(--skip)}
+
+.prev{font-size:14px;line-height:1.8;color:#dae4e0}
+.prev p{margin:0 0 12px}
+.prev h1,.prev h2,.prev h3{margin:19px 0 8px;font-size:15.5px;color:var(--ink);
+ text-transform:none;letter-spacing:0}
+.prev ul,.prev ol{margin:0 0 12px;padding-left:21px}
+.prev blockquote{margin:14px 0;padding:9px 15px;border-left:3px solid var(--ok);
+ background:var(--card);font-style:italic}
+.hero{border:1px solid var(--line2);border-radius:9px;padding:20px;text-align:center;
+ color:var(--dim);font-size:11.5px;background:var(--card);margin-bottom:13px}
+.gap{border:2px dashed var(--devln);background:var(--devbg);border-radius:9px;padding:13px;margin:12px 0}
+.gap.get{border-color:var(--getln);background:var(--getbg)}
+.gap.you{border-color:var(--youln);background:var(--youbg)}
+.gap.skip{border-color:var(--skipln);background:var(--skipbg)}
+.gap b{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--dev)}
+.gap.get b{color:var(--get)} .gap.you b{color:var(--you)} .gap.skip b{color:var(--skip)}
+.gap span{display:block;color:var(--mut);font-size:11px;margin-top:4px;word-break:break-word}
+.gap .src{margin-top:8px;padding:9px;border-radius:7px;background:#0d1113;border:1px solid var(--line);
+ font-size:12px;line-height:1.6;color:#c7d3d8;max-height:220px;overflow:auto}
+.gap .src a{color:#7dd3fc}
+.empty{padding:40px 20px;text-align:center;color:var(--dim);font-size:13px}
+.boot{margin:40px auto;max-width:760px;padding:22px;border-radius:12px;background:var(--card);
+ border:1px solid var(--line);color:var(--mut);font-size:13px;line-height:1.7}
+.boot b{display:block;color:var(--ink);font-size:15px;margin-bottom:6px}
+.boot pre{margin:12px 0 0;padding:12px;background:#0d1113;border:1px solid var(--devln);
+ border-radius:8px;color:#fca5a5;font-size:11.5px;overflow:auto;white-space:pre-wrap}
+
+.img{margin:14px 0;padding:0}
+.img img{width:100%;border-radius:9px;display:block;border:1px solid var(--line)}
+.img figcaption{color:var(--dim);font-size:11px;margin-top:5px;text-align:center}
+.banner img{width:100%;border-radius:9px;display:block;border:1px solid var(--line);margin-bottom:6px}
+.vid{position:relative;padding-bottom:56.25%;height:0;margin:14px 0;border-radius:9px;overflow:hidden;
+ border:1px solid var(--line)}
+.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.tabs{display:flex;gap:4px;margin:12px 0 0;flex-wrap:wrap}
+.tab{padding:7px 14px;border-radius:8px 8px 0 0;border:1px solid var(--line);border-bottom:none;
+ background:var(--card);color:var(--mut);cursor:pointer;font-size:13px;font-weight:600}
+.tab.on{background:var(--panel);color:var(--ink);border-color:var(--line2)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:14px;padding:16px 0 44px}
+.gc{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+ cursor:pointer;transition:.14s;display:flex;flex-direction:column}
+.gc:hover{border-color:var(--line2);transform:translateY(-2px)}
+.gc .thumb{aspect-ratio:16/9;background:var(--card);display:flex;align-items:center;
+ justify-content:center;color:var(--dim);font-size:11px;overflow:hidden}
+.gc .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.gc .body{padding:11px 13px;flex:1;display:flex;flex-direction:column;gap:6px}
+.gc .ti{font-size:13px;font-weight:650;line-height:1.35}
+.gc .mm{color:var(--dim);font-size:11px;display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;align-items:center}
+.more{grid-column:1/-1;text-align:center;padding:14px}
+.more button{font:inherit;font-size:13px;padding:9px 20px;border-radius:9px;cursor:pointer;
+ background:var(--card);border:1px solid var(--line2);color:var(--ink)}
+.more button:hover{background:var(--card2)}
+
+.taxwrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;padding:16px 0 44px}
+.taxcard{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.taxcard h3{margin:0 0 12px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim)}
+.tl{display:flex;justify-content:space-between;gap:10px;padding:7px 10px;border-radius:7px;
+ cursor:pointer;font-size:12.5px;border:1px solid transparent}
+.tl:hover{background:var(--card);border-color:var(--line)}
+.tl b{font-weight:600}
+.tl i{font-style:normal;color:var(--dim);font-size:11px}
+.tl.sel{background:var(--card);border-color:var(--line2)}
+.tl .who{color:var(--dim);font-size:10.5px;display:block;margin-top:1px}
+
+/* components view */
+.comp{padding:16px 0 44px;display:grid;gap:14px}
+.cc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.cc h2{margin:0 0 3px;font-size:15px;font-family:ui-monospace,monospace}
+.cc .cmeta{color:var(--dim);font-size:11.5px;margin-bottom:14px}
+table{border-collapse:collapse;width:100%;font-size:12.5px}
+th{text-align:left;color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.06em;
+ padding:6px 10px;border-bottom:1px solid var(--line2);font-weight:700;white-space:nowrap}
+td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.n{font-family:ui-monospace,monospace;white-space:nowrap}
+td.f{font-family:ui-monospace,monospace;font-weight:600}
+.pill{padding:2px 8px;border-radius:20px;font-size:10px;font-weight:700;white-space:nowrap}
+.pill.ok{background:var(--okbg);color:var(--ok)}
+.pill.dev{background:var(--devbg);color:var(--dev)}
+.pill.you{background:var(--youbg);color:var(--you)}
+.pill.skip{background:var(--skipbg);color:var(--skip)}
+.bars{height:6px;border-radius:4px;background:var(--card2);overflow:hidden;min-width:90px;margin-top:5px}
+.bars i{display:block;height:100%;background:var(--ok)}
+tr.selrow{background:var(--card2);box-shadow:0 0 0 1px var(--you) inset}
+tbody tr:hover,table tr:hover{background:var(--card)}
+@media(max-width:1280px){.layout{grid-template-columns:1fr}.panel{grid-template-columns:1fr}
+ .list{position:static;max-height:300px}}
+</style></head><body>
+<header><div class="wrap">
+<h1>AKU Events — what we have, what we do not <span class="badge">build __BUILD__</span></h1>
+<div class="sub">All 2,710 events as Storyblok will hold them. Every row is one block or field; every one
+gets a verdict. The preview is produced by the <strong>real converter</strong> — normalize_html then
+storyblok_richtext — so it is what will actually be uploaded, not a mock-up.
+<strong>Click any card, counter, entity or tag to filter.</strong></div>
+<div class="key" id="key"></div>
+<div class="stats" id="stats"></div>
+<div class="tabs" id="tabs"></div>
+<div class="bar">
+ <input id="q" placeholder="search title, venue, id…">
+ <select id="ent"></select>
+ <select id="tg"></select>
+ <select id="ctry"></select>
+ <select id="yr"></select>
+ <button class="clear" id="clear">clear all</button>
+ <span class="chips" id="chips"></span>
+ <span class="sub" id="count" style="margin-left:auto"></span>
+</div>
+</div></header>
+<div class="wrap"><div id="view">
+ <noscript><div class="boot"><b>JavaScript is switched off.</b>
+  This page builds itself from data baked into the file, so it needs it.</div></noscript>
+ <div class="boot" id="boot"><b>Loading 2,710 events…</b>
+  If this message stays, the page failed to start — the reason will appear here.</div>
+</div></div>
+<script>
+const D = __DATA__, S = D.stats, B = D.events;
+const V = {ok:['ok','DONE'], missing:['get','GO GET IT'], blocked:['dev','NEEDS DEV'],
+           undecided:['you','NEEDS A DECISION'], skipped:['skip','SKIPPED']};
+const HELP = {
+ ok:'We have the data and somewhere to put it. Nothing to do.',
+ missing:'Exists on aku.edu, not on disk. Ours, and urgent — the site is being switched off.',
+ blocked:'We have the data; event_article has no field for it. Dev only.',
+ undecided:'We have it and somewhere to put it. Nobody has said how it should look.',
+ skipped:'Nothing to migrate — the value is absent at source.'
+};
+const esc = s => String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const q1  = s => String(s??'').replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+const cls = st => (V[st]||V.ok)[0];
+const lab = st => (V[st]||V.ok)[1];
+
+const F = {verdict:'', stat:'', ent:'', tg:'', ctry:'', yr:'', src:'', q:''};
+
+const STATS = [
+ ['events',      ()=>S.events, '', ()=>true, ''],
+ ['banners',     ()=>S.with_banner, S.with_banner<S.events?'warn':'good',
+                 b=>b.bloks.some(x=>x.component==='banner_image'&&x.state!=='ok'), 'no banner'],
+ ['to fetch',    ()=>S.banner_missing, S.banner_missing?'warn':'good',
+                 b=>b.n.get>0, 'something to fetch'],
+ ['videos',      ()=>S.with_video, '', b=>b.bloks.some(x=>x.embed), 'has a video'],
+ ['2nd images',  ()=>S.with_attachment, '',
+                 b=>b.bloks.some(x=>x.component==='media_section'&&x.state==='undecided'),
+                 'has a second image'],
+ ['folder missing',()=>S.target_missing, S.target_missing?'bad':'good',
+                 b=>b.target_exists==='no', 'routed, but the folder is not in the space'],
+ ['unrouted',    ()=>S.unresolved, S.unresolved?'warn':'good',
+                 b=>b.placement==='unresolved', 'could not be routed at all'],
+ ['entities',    ()=>S.entities, '', ()=>true, ''],
+ ['tags',        ()=>S.tags, '', ()=>true, '']
+];
+
+const tally = f => { const m=new Map(); B.forEach(b=>f(b).forEach(v=>m.set(v,(m.get(v)||0)+1)));
+                     return [...m].sort((a,b)=>b[1]-a[1]||String(a[0]).localeCompare(String(b[0]))); };
+function options(id, items, label){
+ document.getElementById(id).innerHTML = '<option value="">'+label+'</option>' +
+  items.map(x=>'<option value="'+esc(x[0])+'">'+esc(x[0])+' ('+x[1]+')</option>').join('');
+}
+options('ent',  tally(b=>b.entity?[b.entity]:[]),   'all entities');
+options('tg',   tally(b=>b.tag?[b.tag]:[]),         'all tags');
+options('ctry', tally(b=>b.country?[b.country]:[]), 'all countries');
+options('yr',   tally(b=>b.year?[b.year]:[]).sort((a,b)=>String(b[0]).localeCompare(String(a[0]))), 'all years');
+
+function counts(){ const c={}; for(const k in V) c[cls(k)] = B.filter(b=>b.n[k]).length; return c; }
+
+function renderChrome(){
+ const c = counts();
+ document.getElementById('key').innerHTML = Object.keys(V).map(k=>
+  '<div class="k '+cls(k)+(F.verdict===k?' sel':'')+'" onclick="toggle(\'verdict\',\''+k+'\')">'
+  +'<b>'+lab(k)+' <i>'+(c[cls(k)]||0)+'</i></b><span>'+HELP[k]+'</span></div>').join('');
+ document.getElementById('stats').innerHTML = STATS.map((s,i)=>
+  '<div class="stat '+s[2]+(F.stat===String(i)?' sel':'')+'" onclick="toggle(\'stat\',\''+i+'\')">'
+  +'<b>'+s[1]()+'</b><span>'+s[0]+'</span></div>').join('');
+ const chips=[];
+ if(F.verdict) chips.push(['verdict','',lab(F.verdict)]);
+ if(F.stat!=='') chips.push(['stat','',STATS[F.stat][4]||STATS[F.stat][0]]);
+ if(F.ent)  chips.push(['ent','entity',F.ent]);
+ if(F.tg)   chips.push(['tg','tag',F.tg]);
+ if(F.ctry) chips.push(['ctry','country',F.ctry]);
+ if(F.yr)   chips.push(['yr','year',F.yr]);
+ if(F.src)  chips.push(['src','uses',F.src]);
+ document.getElementById('chips').innerHTML = chips.map(x=>
+  '<span class="chip" onclick="clr(\''+x[0]+'\')">'+(x[1]?'<em>'+x[1]+'</em> ':'')+esc(x[2])+' ✕</span>').join('');
+}
+function toggle(k,v){ F[k] = (F[k]===String(v)) ? '' : String(v); shown=PAGE; render(); }
+function clr(k){ F[k]=''; if(['ent','tg','ctry','yr'].includes(k)) document.getElementById(k).value='';
+                 shown=PAGE; render(); }
+function pickEnt(v){ F.ent=v; document.getElementById('ent').value=v; shown=PAGE; render(); }
+function pickTag(v){ F.tg=v;  document.getElementById('tg').value=v;  shown=PAGE; render(); }
+
+function match(b){
+ if(F.q && !((b.title+' '+b.venue+' '+b.id+' '+b.entity).toLowerCase().includes(F.q))) return false;
+ if(F.verdict && !b.n[F.verdict]) return false;
+ if(F.stat!=='' && !STATS[F.stat][3](b)) return false;
+ if(F.ent  && b.entity!==F.ent)   return false;
+ if(F.tg   && b.tag!==F.tg)       return false;
+ if(F.ctry && b.country!==F.ctry) return false;
+ if(F.yr   && b.year!==F.yr)      return false;
+ if(F.src  && !b.srcnames.includes(F.src)) return false;
+ return true;
+}
+function pickSrc(v){ F.src = (F.src===v ? '' : v); shown=PAGE; go('archive'); }
+let cur = B[0] && B[0].id;
+const PAGE = 120; let shown = PAGE;
+
+function renderList(rows){
+ document.getElementById('list').innerHTML = rows.length ? rows.slice(0,400).map(function(b){
+  return '<div class="row '+(b.id===cur?'on':'')+'" onclick="pick(\''+b.id+'\')">'
+   +'<div class="t">'+esc(b.title)+'</div><div class="m"><span>#'+b.id+'</span>'
+   +'<span>'+esc(b.start.slice(0,10))+'</span>'
+   +(b.tag?'<span class="tag cat" onclick="event.stopPropagation();pickTag(\''+q1(b.tag)+'\')">'+esc(b.tag)+'</span>':'')
+   +(b.n.missing?'<span class="tag get">'+b.n.missing+'</span>':'')
+   +(b.n.blocked?'<span class="tag dev">'+b.n.blocked+'</span>':'')
+   +(b.n.undecided?'<span class="tag you">'+b.n.undecided+'</span>':'')
+   +'</div></div>';
+ }).join('') + (rows.length>400?'<div class="empty">first 400 shown — narrow the filters</div>':'')
+ : '<div class="empty">no event matches these filters</div>';
+}
+function renderPanel(){
+ const b=B.find(x=>x.id===cur);
+ if(!b){document.getElementById('panel').innerHTML='<div class="card"><div class="empty">nothing selected</div></div>';return;}
+ const bloks=b.bloks.map(function(x){
+  return '<div class="b '+cls(x.state)+'"><div><div class="name">'+esc(x.component)+'</div>'
+   +'<div class="note">'+esc(x.note)+'</div>'
+   +(x.fix?'<div class="fix">'+esc(x.fix)+'</div>':'')
+   +(x.warn?'<div class="fix">converter warnings · '+esc(x.warn)+'</div>':'')
+   +'</div><div class="verdict">'+lab(x.state)+'</div></div>';
+ }).join('');
+ let prev='';
+ for(const x of b.bloks){
+  const c=cls(x.state);
+  if(x.component==='banner_image')
+   prev += x.state==='ok'
+    ? '<figure class="banner"><img src="'+esc(x.img||'')+'" alt="" loading="lazy">'
+      +'<figcaption style="color:var(--dim);font-size:11px;text-align:center">'+esc(x.note)+'</figcaption></figure>'
+    : '<div class="gap '+c+'"><b>'+lab(x.state)+' — banner</b><span>'+esc(x.note)+'</span>'
+      +(x.fix?'<span>'+esc(x.fix)+'</span>':'')+'</div>';
+  else if(x.component==='rich_text') prev+='<div class="prev">'+(x.html||'')+'</div>';
+  else if(x.component==='media_section' && x.embed){
+   const id=(x.embed.match(/(?:embed\/|v=|youtu\.be\/)([\w-]{6,})/)||[])[1];
+   prev += id ? '<div class="vid"><iframe src="https://www.youtube.com/embed/'+id
+     +'" allowfullscreen loading="lazy"></iframe></div>'
+    : '<div class="hero">video · '+esc(x.embed)+'</div>';
+  }
+  else if(x.component==='media_section' && x.state==='undecided'){
+   prev += '<div class="gap you"><b>NEEDS A DECISION — second image</b>'
+    +(x.img?'<figure class="img"><img src="'+esc(x.img)+'" alt="" loading="lazy">'
+      +'<figcaption>'+esc(x.note)+'</figcaption></figure>':'<span>'+esc(x.note)+'</span>')
+    +'<span>'+esc(x.fix)+'</span></div>';
+  }
+  else if(x.state==='blocked')
+   prev+='<div class="gap dev"><b>NEEDS DEV — '+esc(x.component.replace('field: ',''))+'</b>'
+    +'<span>'+esc(x.fix)+'</span>'
+    +(x.raw?'<div class="src">'+x.raw+'</div>':'<span>'+esc(x.note)+'</span>')+'</div>';
+  else if(x.state!=='ok' && !x.component.startsWith('field:'))
+   prev+='<div class="gap '+c+'"><b>'+lab(x.state)+' — '+esc(x.component)+'</b>'
+    +'<span>'+esc(x.note)+'</span><span>'+esc(x.fix||'')+'</span></div>';
+ }
+ document.getElementById('panel').innerHTML =
+  '<div class="card"><h2>'+esc(b.title)+'</h2>'
+  +(b.subtitle?'<div class="sub" style="margin:-2px 0 8px">'+esc(b.subtitle)+'</div>':'')
+  +'<div class="meta">#'+b.id+' · '+esc(b.start||'no date')
+  +(b.end?' → '+esc(b.end):'')+(b.ongoing?' · <span class="tag you">ongoing</span>':'')
+  +'<br>entity <code class="lk" onclick="pickEnt(\''+q1(b.entity)+'\')">'+esc(b.entity||'—')+'</code>'
+  +' · tag <code class="lk" onclick="pickTag(\''+q1(b.tag)+'\')">'+esc(b.tag||'—')+'</code>'
+  +'<br>'+esc(b.city||'no city')+' · '+esc(b.country||'no country')
+  +(b.venue?'<br>venue · '+esc(b.venue):'')
+  +'<br>lands in <code>'+esc(b.target||'unresolved')+'</code>'
+  +(b.target_exists==='no'?' <span class="tag dev">folder missing</span>'
+   :b.target_exists==='n/a'?' <span class="tag you">not routed</span>':'')
+  +(b.why?'<br><span style="color:var(--dim)">'+esc(b.why)+'</span>':'')
+  +(b.url?'<br><a href="'+esc(b.url)+'" target="_blank" rel="noopener">the live SharePoint page</a>':'')
+  +'</div>'
+  +'<h3>what SharePoint holds for this event</h3>'
+  +'<table style="margin-bottom:16px"><tr><th>source</th><th>×</th><th>in</th><th>becomes</th></tr>'
+  + b.src.map(x=>'<tr onclick="pickSrc(\''+q1(x.n)+'\')" style="cursor:pointer">'
+      +'<td class="f">'+esc(x.n)+'</td><td class="n">'+(x.c>1?x.c:'')+'</td>'
+      +'<td style="color:var(--dim)">'+esc(x.in||'')+'</td>'
+      +'<td'+(/NO FIELD|only ONE/.test(x.to)?' style="color:var(--dev)"':'')+'>'
+      +esc(x.to)+'</td></tr>').join('')
+  +'</table>'
+  +'<h3>every block and field, and whether we can fill it</h3>'+bloks+'</div>'
+  +'<div class="card"><h3>what it will look like</h3>'+prev+'</div>';
+}
+
+let VIEW = 'archive';
+const TABS = [['archive','Archive'],['event','Event'],['src','SharePoint source'],
+              ['comp','Storyblok components'],['tax','Entities, tags & places']];
+function renderTabs(){
+ document.getElementById('tabs').innerHTML = TABS.map(t =>
+  '<div class="tab'+(VIEW===t[0]?' on':'')+'" onclick="go(\'' + t[0] + '\')">'+t[1]+'</div>').join('');
+}
+function go(v){ VIEW=v; render(); window.scrollTo({top:0}); }
+
+function thumb(b){
+ const bn = b.bloks.find(x=>x.component==='banner_image' && x.img);
+ return bn ? '<img src="'+esc(bn.img)+'" alt="" loading="lazy">' : '<span>no image</span>';
+}
+function renderArchive(){
+ const rows = B.filter(match);
+ document.getElementById('count').textContent = rows.length+' of '+B.length+' events';
+ const page = rows.slice(0, shown);
+ document.getElementById('view').innerHTML = rows.length
+  ? '<div class="grid">'+page.map(function(b){
+     return '<div class="gc" onclick="open1(\'' + b.id + '\')">'
+      +'<div class="thumb">'+thumb(b)+'</div><div class="body">'
+      +'<div class="ti">'+esc(b.title)+'</div>'
+      +'<div class="mm"><span>'+esc(b.start.slice(0,10))+'</span>'
+      +(b.tag?'<span class="tag cat">'+esc(b.tag)+'</span>':'')
+      +(b.n.missing?'<span class="tag get">'+b.n.missing+' get</span>':'')
+      +(b.n.blocked?'<span class="tag dev">'+b.n.blocked+' dev</span>':'')
+      +'</div></div></div>';
+    }).join('')
+    +(rows.length>shown?'<div class="more"><button onclick="more()">show '
+      +Math.min(PAGE,rows.length-shown)+' more of '+(rows.length-shown)+'</button></div>':'')
+    +'</div>'
+  : '<div class="empty">no event matches these filters</div>';
+}
+function more(){ shown += PAGE; renderArchive(); }
+function open1(id){ cur=id; VIEW='event'; render(); window.scrollTo({top:0}); }
+
+function renderEvent(){
+ const rows = B.filter(match);
+ document.getElementById('count').textContent = rows.length+' of '+B.length+' events';
+ if(rows.length && !rows.some(r=>r.id===cur)) cur = rows[0].id;
+ document.getElementById('view').innerHTML =
+  '<div class="layout"><div class="list" id="list"></div><div class="panel" id="panel"></div></div>';
+ renderList(rows); renderPanel();
+}
+
+/* ------------------------------- every SharePoint element, and where it goes */
+function renderSrc(){
+ const used = S.source, byName = {}; used.forEach(x=>byName[x.name]=x);
+ const html = used.filter(x=>x.kind==='html'), fields = used.filter(x=>x.kind==='field');
+ const unused = S.source_declared.filter(x=>!x.events);
+ document.getElementById('count').textContent =
+  used.length+' source elements in use · '+unused.length+' possible but absent';
+ const bar = n => '<div class="bars"><i style="width:'+Math.round(100*n/S.events)+'%"></i></div>';
+ const vp = st => st==='dev' ? '<span class="pill dev">NEEDS DEV</span>'
+   : st==='you' ? '<span class="pill you">DECISION</span>'
+   : st==='skip' ? '<span class="pill skip">not migrated</span>'
+   : '<span class="pill ok">mapped</span>';
+ const rows = (list, showState) => list.map(x =>
+   '<tr onclick="pickSrc(\''+q1(x.name)+'\')" style="cursor:pointer"'
+   +(F.src===x.name?' class="selrow"':'')+'>'
+   +'<td class="f">'+esc(x.name)+'</td>'
+   +'<td class="n">'+x.events.toLocaleString()+'</td>'
+   +'<td>'+bar(x.events)+'</td>'
+   +'<td class="n">'+x.total.toLocaleString()+'</td>'
+   +'<td>'+esc(x.field||'')+'</td>'
+   +'<td>'+esc(x.to)+'</td>'
+   +(showState?'<td>'+vp(x.state)+'</td>':'')+'</tr>').join('');
+
+ document.getElementById('view').innerHTML = '<div class="comp">'
+  +'<div class="cc"><h2>every SharePoint column this export actually uses</h2>'
+  +'<div class="cmeta">One row per column, with how many of the '+S.events.toLocaleString()
+  +' events carry it and what it becomes on the Storyblok side. '
+  +'<strong>Click any row to see exactly which events use it.</strong></div><table>'
+  +'<tr><th>column</th><th>events</th><th></th><th>total</th><th>in</th>'
+  +'<th>becomes</th><th>verdict</th></tr>'
+  + rows(fields, true) +'</table></div>'
+
+  +'<div class="cc"><h2>every HTML element inside the rich fields</h2>'
+  +'<div class="cmeta">Counted across EventDetail, Venue, Contact and Registration. '
+  +'These are what the converter has to handle — and the whole body of all '
+  +S.events.toLocaleString()+' events is only nine of them.</div><table>'
+  +'<tr><th>element</th><th>events</th><th></th><th>occurrences</th><th>found in</th>'
+  +'<th>becomes</th></tr>'
+  + rows(html, false) +'</table></div>'
+
+  +'<div class="cc"><h2>possible, but absent from this export</h2>'
+  +'<div class="cmeta">Things the pipeline can handle and this corpus simply does not '
+  +'contain. Listed so the absence is a fact rather than an assumption — an <img> or a '
+  +'&lt;table&gt; appearing in a later delivery would change the component ask.</div><table>'
+  +'<tr><th>name</th><th>would become</th></tr>'
+  + unused.map(x=>'<tr><td class="f">'+esc(x.name)+'</td><td>'+esc(x.to)+'</td></tr>').join('')
+  +'</table></div></div>';
+}
+
+/* ---------------------------------------------- every unique component */
+// The schemas come from build_portal.py (TARGET_SCHEMA) rather than living
+// here as a second copy. They were duplicated once and drifted within a day:
+// location went on saying 'Country' after the mapping had moved to Venue.
+const SCHEMA = S.schema;
+function renderComp(){
+ document.getElementById('count').textContent =
+  Object.keys(S.components).length+' components · '+Object.keys(S.fields).length+' fields';
+ const bar = (n,tot) => '<div class="bars"><i style="width:'+(tot?Math.round(100*n/tot):0)+'%"></i></div>';
+ let h = '<div class="comp">';
+ h += '<div class="cc"><h2>the whole component list</h2>'
+   +'<div class="cmeta">Everything the 2,710 events need. Three components, and nothing else — '
+   +'no body content in the entire corpus requires a component that does not already exist.</div><table>'
+   +'<tr><th>component</th><th>events using it</th><th></th></tr>'
+   + Object.entries(S.components).map(([k,v])=>'<tr><td class="f">'+esc(k)+'</td>'
+      +'<td class="n">'+v.toLocaleString()+'</td><td>'+bar(v,S.events)+'</td></tr>').join('')
+   +'</table></div>';
+ for(const [name,c] of Object.entries(SCHEMA)){
+  h += '<div class="cc"><h2>'+esc(name)+'</h2><div class="cmeta">id '+c.id+' · '+esc(c.kind)
+    +'<br>'+esc(c.note)+'</div><table>'
+    +'<tr><th>field</th><th>type</th><th>req</th><th>what fills it</th><th>events</th></tr>'
+    + c.fields.map(function(f){
+       const n = S.fields[f[0]]!==undefined ? S.fields[f[0]] : null;
+       const bl = S.fields_blocked[f[0]], un = S.fields_undecided[f[0]];
+       let p = '';
+       if(bl) p = '<span class="pill dev">'+bl.toLocaleString()+' blocked</span>';
+       else if(un) p = '<span class="pill you">'+un.toLocaleString()+' undecided</span>';
+       else if(n!==null) p = '<span class="pill ok">'+(S.fields_ok[f[0]]||0).toLocaleString()+'</span>';
+       return '<tr><td class="f">'+esc(f[0])+'</td><td class="n">'+esc(f[1])+'</td>'
+        +'<td>'+(f[2]?'<span class="pill dev">yes</span>':'')+'</td>'
+        +'<td>'+esc(f[3])+'</td><td>'+p+'</td></tr>';
+      }).join('')
+    +'</table></div>';
+ }
+ h += '<div class="cc"><h2>fields with real data and no home</h2>'
+   +'<div class="cmeta">These are the component request. Every one carries content on real events '
+   +'and event_article has nowhere to put it.</div><table>'
+   +'<tr><th>source column</th><th>events</th><th></th></tr>'
+   + Object.entries(S.fields_blocked).map(([k,v])=>'<tr><td class="f">'+esc(k)+'</td>'
+      +'<td class="n">'+v.toLocaleString()+'</td><td>'+bar(v,S.events)+'</td></tr>').join('')
+   +'</table></div>';
+ h += '<div class="cc"><h2>what the converter actually produces</h2>'
+   +'<div class="cmeta">Rich-text node and mark types across all '+S.events.toLocaleString()
+   +' bodies, counted from the real conversion — not from what the code could emit.</div>'
+   +'<table><tr><th>node type</th><th>count</th></tr>'
+   + Object.entries(S.richtext_nodes).map(([k,v])=>'<tr><td class="f">'+esc(k)+'</td>'
+      +'<td class="n">'+v.toLocaleString()+'</td></tr>').join('')
+   +'</table><table style="margin-top:14px"><tr><th>mark</th><th>count</th></tr>'
+   + Object.entries(S.richtext_marks).map(([k,v])=>'<tr><td class="f">'+esc(k)+'</td>'
+      +'<td class="n">'+(v||0).toLocaleString()+'</td></tr>').join('')
+   +'</table>'
+   + (Object.keys(S.conversion_warnings).length
+      ? '<table style="margin-top:14px"><tr><th>converter warning</th><th>count</th></tr>'
+        + Object.entries(S.conversion_warnings).map(([k,v])=>'<tr><td class="f">'+esc(k)+'</td>'
+           +'<td class="n">'+v.toLocaleString()+'</td></tr>').join('')+'</table>'
+      : '')
+   +'</div>';
+ h += '</div>';
+ document.getElementById('view').innerHTML = h;
+}
+
+function renderTax(){
+ const ents = tally(b=>b.entity?[b.entity]:[]);
+ const tags = tally(b=>b.tag?[b.tag]:[]);
+ const ctry = tally(b=>b.country?[b.country]:[]);
+ const city = tally(b=>b.city?[b.city]:[]);
+ const line = (v,n,pick,sel) =>
+  '<div class="tl'+(sel?' sel':'')+'" onclick="'+pick+'"><b>'+esc(v)+'</b><i>'+n+'</i></div>';
+ document.getElementById('count').textContent =
+  ents.length+' entities · '+tags.length+' tags · '+ctry.length+' countries · '+city.length+' cities';
+ document.getElementById('view').innerHTML = '<div class="taxwrap">'
+  +'<div class="taxcard"><h3>entities — '+ents.length+'</h3>'
+  + ents.map(x=>line(x[0],x[1],"pickEnt('"+q1(x[0])+"');go('archive')",F.ent===x[0])).join('')+'</div>'
+  +'<div class="taxcard"><h3>tags — '+tags.length+'</h3>'
+  + tags.map(x=>line(x[0],x[1],"pickTag('"+q1(x[0])+"');go('archive')",F.tg===x[0])).join('')+'</div>'
+  +'<div class="taxcard"><h3>countries — '+ctry.length+'</h3>'
+  + ctry.map(x=>line(x[0],x[1],"F.ctry='"+q1(x[0])+"';document.getElementById('ctry').value='"+q1(x[0])+"';go('archive')",F.ctry===x[0])).join('')+'</div>'
+  +'<div class="taxcard"><h3>cities — '+city.length+'</h3>'
+  + city.map(x=>line(x[0],x[1],"",false)).join('')+'</div>'
+  +'</div>';
+}
+
+function render(){
+ renderTabs(); renderChrome();
+ if(VIEW==='archive') renderArchive();
+ else if(VIEW==='src') renderSrc();
+ else if(VIEW==='comp') renderComp();
+ else if(VIEW==='tax') renderTax();
+ else renderEvent();
+}
+function pick(id){ cur=id; renderEvent(); }
+
+document.getElementById('q').oninput    = e => { F.q = e.target.value.toLowerCase().trim(); shown=PAGE; render(); };
+document.getElementById('ent').onchange = e => { F.ent = e.target.value;  shown=PAGE; render(); };
+document.getElementById('tg').onchange  = e => { F.tg = e.target.value;   shown=PAGE; render(); };
+document.getElementById('ctry').onchange= e => { F.ctry = e.target.value; shown=PAGE; render(); };
+document.getElementById('yr').onchange  = e => { F.yr = e.target.value;   shown=PAGE; render(); };
+document.getElementById('clear').onclick = () => {
+ for (const k in F) F[k] = '';
+ document.getElementById('q').value = '';
+ ['ent','tg','ctry','yr'].forEach(i => document.getElementById(i).value = '');
+ shown = PAGE; render();
+};
+
+// A blank page tells you nothing. If the script throws, put the reason where it
+// can be read rather than leaving an empty document and a console nobody opens.
+try {
+ render();
+} catch (err) {
+ document.getElementById('view').innerHTML =
+  '<div class="boot"><b>This page failed to start.</b>'
+  + 'The data is almost certainly fine — the script that draws it is not. '
+  + 'Rebuild with <code>python Events-Pipeline/pipeline/build_portal.py</code>, '
+  + 'then hard-refresh (Ctrl+F5) to clear a cached copy.'
+  + '<pre>' + esc(err && err.stack ? err.stack : String(err)) + '</pre></div>';
+ throw err;
+}
+</script></body></html>
