@@ -532,53 +532,6 @@
             "type": "doc",
             "content": [
               {
-                "type": "horizontal_rule"
-              }
-            ]
-          },
-          "spacing": {
-            "unit": "px",
-            "mobile": {
-              "margin": {
-                "top": null,
-                "left": null,
-                "right": null,
-                "bottom": 56
-              },
-              "padding": {
-                "top": null,
-                "left": 20,
-                "right": 20,
-                "bottom": null
-              }
-            },
-            "desktop": {
-              "margin": {
-                "top": null,
-                "left": null,
-                "right": null,
-                "bottom": 56
-              },
-              "padding": {
-                "top": null,
-                "left": 80,
-                "right": 80,
-                "bottom": null
-              }
-            }
-          },
-          "bg_pattern": {
-            "fieldtype": "asset"
-          },
-          "pattern_height": "",
-          "pattern_mobile_height": ""
-        },
-        {
-          "component": "rich_text",
-          "content": {
-            "type": "doc",
-            "content": [
-              {
                 "type": "paragraph",
                 "attrs": {
                   "textAlign": null

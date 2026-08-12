@@ -48,10 +48,21 @@ the day the dev shows us one — that is what `pipeline/migrate/update/` is for.
     author_section  76 have a biography, 80 a photograph
     comment_form    on every one
 
-The demo also pairs images with text in two-column rows and ends with a
-horizontal rule and a disclaimer. Neither is reproduced: the two-column pairing
-is a hand-built editorial layout we cannot derive from 83 articles, and no blog
-carries a disclaimer of its own.
+## Where this deliberately differs from the demo
+
+**No horizontal rule.** The demo devotes a whole `rich_text` blok to a single
+`horizontal_rule` above the disclaimer. A rich_text field holding no text is an
+empty field: it costs a blok, and it appears in the editor as something waiting
+to be filled. A separator belongs in the component's styling.
+
+**Images are not paired with text in two-column rows.** The demo does that and
+it looks better, but it is a hand-built editorial choice — which image, beside
+which paragraph — and there is nothing in 83 articles to derive it from. Images
+stay inline, where rich_text sizes them to the content width.
+
+**The one embed is paired**, because there the answer is not a judgement: it
+goes beside the paragraph that follows the opening one. Alone at the end of the
+article it read as though something were missing.
 """
 
 import argparse
@@ -324,12 +335,16 @@ def beside_text(bloks, companion):
 
 
 def disclaimer_bloks():
-    """The rule and the notice that close every blog, as the demo has them."""
-    rule = {"component": "rich_text",
-            "content": {"type": "doc", "content": [{"type": "horizontal_rule"}]},
-            "spacing": copy.deepcopy(DISCLAIMER_SPACING),
-            "bg_pattern": {"fieldtype": "asset"},
-            "pattern_height": "", "pattern_mobile_height": ""}
+    """The notice that closes every blog.
+
+    **No horizontal rule.** The demo blog has one — `body[7]`, a whole
+    `rich_text` blok whose entire content is a `horizontal_rule` — and it was
+    copied from there. The owner removed it and the reason is a rule of its own:
+    *a rich_text field holding no text is an empty field.* It costs a blok, it
+    shows up in the editor as something to fill in, and it exists to draw a
+    line. If a separator is wanted above the disclaimer it belongs in the
+    component's styling, not in the content.
+    """
     notice = {"component": "rich_text", "content": {"type": "doc", "content": [{
         "type": "paragraph", "attrs": {"textAlign": None}, "content": [
             {"type": "text", "text": DISCLAIMER_LABEL,
@@ -339,7 +354,7 @@ def disclaimer_bloks():
         "spacing": copy.deepcopy(DISCLAIMER_SPACING),
         "bg_pattern": {"fieldtype": "asset"},
         "pattern_height": "", "pattern_mobile_height": ""}
-    return [rule, notice]
+    return [notice]
 
 
 def build(story, routing, authors, photos, palette):
