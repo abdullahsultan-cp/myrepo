@@ -84,7 +84,6 @@ from storyblok_config import load_config
 P.use("blogs")
 
 DEMO = ["15", "16", "18", "20", "26", "29", "31", "45", "70", "71", "84", "97"]
-ASSET_FOLDER = "Blogs"
 
 
 def load_map():
@@ -261,17 +260,36 @@ def main():
     cfg = load_config()
     sb = SB(cfg)
     folder_cache = {}
-    asset_folder = ensure_asset_folder(sb, ASSET_FOLDER, folder_cache)
 
-    for i, name in enumerate(needed, 1):
-        obj, err = upload_asset(sb, os.path.join(media, name), name,
-                                asset_folder)
-        if err:
-            print(f"    {i}/{len(needed)} FAILED {name[:44]}: {err[:60]}")
+    # A blog's media is filed BESIDE the blog, mirroring the content tree, the
+    # same way news and events do it — `regions/pk/entities/fas/blogs`, not one
+    # flat pile. `ensure_asset_folder` seeds itself from the committed snapshot
+    # and looks up before it creates, so this cannot grow a second tree.
+    #
+    # An asset shared between blogs — an author's photograph on two of their
+    # posts — is uploaded once and lands beside whichever blog is filed first.
+    # That matches how news treats a shared asset, and moving it afterwards
+    # would only move it away from one of the two.
+    done = 0
+    for sid, story, target, parent in plan:
+        if parent is None:
             continue
-        table[name] = obj
-        save_map(table)
-        print(f"    {i}/{len(needed)} {name[:52]}")
+        wanted = [n for n in need_assets(story)
+                  if n not in table and os.path.exists(os.path.join(media, n))]
+        if not wanted:
+            continue
+        folder = ensure_asset_folder(sb, target, folder_cache)
+        for name in wanted:
+            if name in table:                  # uploaded for an earlier blog
+                continue
+            obj, err = upload_asset(sb, os.path.join(media, name), name, folder)
+            if err:
+                print(f"    FAILED {name[:44]}: {err[:60]}")
+                continue
+            table[name] = obj
+            save_map(table)
+            done += 1
+            print(f"    {done}/{len(needed)} {name[:46]:<48}-> {target[:34]}")
 
     created = updated = skipped = failed = 0
     report = []
