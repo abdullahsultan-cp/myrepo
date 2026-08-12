@@ -1,0 +1,706 @@
+{
+  "summary": {
+    "unique_media_references": 172,
+    "missing_assets": 68,
+    "present_assets": 104,
+    "story_references": 487,
+    "stories_with_missing_media": 164,
+    "media_files_on_disk": 2650,
+    "media_type_counts": {
+      "other": 169,
+      "image": 3
+    },
+    "sharepoint_base_url": "https://www.aku.edu",
+    "attempted": 172,
+    "downloaded": 104,
+    "failed": 68,
+    "dry_run": false,
+    "failures": [
+      {
+        "source_key": "/admissions/Documents/application-standalone.pdf",
+        "absolute_url": "http://www.aku.edu/admissions/Documents/application-standalone.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/application-standalone.pdf"
+      },
+      {
+        "source_key": "/admissions/Documents/hostel-accomodation-ccc-2018.pdf",
+        "absolute_url": "http://www.aku.edu/admissions/Documents/hostel-accomodation-ccc-2018.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/hostel-accomodation-ccc-2018.pdf"
+      },
+      {
+        "source_key": "/admissions/Documents/open-day-PhD.jpg",
+        "absolute_url": "http://www.aku.edu/admissions/Documents/open-day-PhD.jpg",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/open-day-PhD.jpg"
+      },
+      {
+        "source_key": "/admissions/Documents/programme-ccc-2018.pdf",
+        "absolute_url": "http://www.aku.edu/admissions/Documents/programme-ccc-2018.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/programme-ccc-2018.pdf"
+      },
+      {
+        "source_key": "/admissions/Documents/reg-form-cc-conference.pdf",
+        "absolute_url": "https://www.aku.edu/admissions/Documents/reg-form-cc-conference.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/reg-form-cc-conference.pdf"
+      },
+      {
+        "source_key": "/admissions/Documents/registration-form-ccc-2018.pdf",
+        "absolute_url": "http://www.aku.edu/admissions/Documents/registration-form-ccc-2018.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/registration-form-ccc-2018.pdf"
+      },
+      {
+        "source_key": "/events/Documents/CCIT Ignite 4.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/CCIT Ignite 4.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/CCIT%20Ignite%204.pdf"
+      },
+      {
+        "source_key": "/events/Documents/PLA Seminar on Public Libraries in Sindh March 19, 2016.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/PLA Seminar on Public Libraries in Sindh March 19, 2016.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/PLA%20Seminar%20on%20Public%20Libraries%20in%20Sindh%20March%2019,%202016.pdf"
+      },
+      {
+        "source_key": "/events/Documents/assessing-childrens-mathematical-understanding.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/assessing-childrens-mathematical-understanding.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/assessing-childrens-mathematical-understanding.pdf"
+      },
+      {
+        "source_key": "/events/Documents/effective-feedback.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/effective-feedback.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/effective-feedback.pdf"
+      },
+      {
+        "source_key": "/events/Documents/inmd-programme-details.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/inmd-programme-details.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/inmd-programme-details.pdf"
+      },
+      {
+        "source_key": "/events/Documents/inmd-workshop-details-2016.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/inmd-workshop-details-2016.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/inmd-workshop-details-2016.pdf"
+      },
+      {
+        "source_key": "/events/Documents/learning-fractions.pdf",
+        "absolute_url": "http://www.aku.edu/events/Documents/learning-fractions.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/learning-fractions.pdf"
+      },
+      {
+        "source_key": "/events/Documents/sharepoint-training.doc",
+        "absolute_url": "http://www.aku.edu/events/Documents/sharepoint-training.doc",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/sharepoint-training.doc"
+      },
+      {
+        "source_key": "/ied-pk/Outreach/Documents/registration-form-CPE.pdf",
+        "absolute_url": "http://www.aku.edu/ied-pk/Outreach/Documents/registration-form-CPE.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/ied-pk/Outreach/Documents/registration-form-CPE.pdf"
+      },
+      {
+        "source_key": "/iedpk/Docu ments/registration form CPE 2017.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/Docu ments/registration form CPE 2017.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/Docu%20ments/registration%20form%20CPE%202017.pdf"
+      },
+      {
+        "source_key": "/iedpk/Documents/registration-form-CPE.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/Documents/registration-form-CPE.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/Documents/registration-form-CPE.pdf"
+      },
+      {
+        "source_key": "/iedpk/cert-education/Documents/Application-Form-2018.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/cert-education/Documents/Application-Form-2018.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/cert-education/Documents/Application-Form-2018.pdf"
+      },
+      {
+        "source_key": "/iedpk/programmes/Documents/Curriculum-Teaching-and-Learning.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Curriculum-Teaching-and-Learning.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Curriculum-Teaching-and-Learning.pdf"
+      },
+      {
+        "source_key": "/iedpk/programmes/Documents/Educational-change.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Educational-change.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Educational-change.pdf"
+      },
+      {
+        "source_key": "/iedpk/programmes/Documents/Leadership-in-Education.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Leadership-in-Education.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Leadership-in-Education.pdf"
+      },
+      {
+        "source_key": "/iedpk/programmes/Documents/Organizational-Learning.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Organizational-Learning.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Organizational-Learning.pdf"
+      },
+      {
+        "source_key": "/iedpk/programmes/Documents/Strategic-Leadership-and-Management.pdf",
+        "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Strategic-Leadership-and-Management.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Strategic-Leadership-and-Management.pdf"
+      },
+      {
+        "source_key": "/ihd/Documents/CallForPapers_Kyambogo University_January2016Conference.pdf",
+        "absolute_url": "http://www.aku.edu/ihd/Documents/CallForPapers_Kyambogo University_January2016Conference.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/ihd/Documents/CallForPapers_Kyambogo%20University_January2016Conference.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/2nd-Annual-Surgical-Meeting-Registration-form.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/2nd-Annual-Surgical-Meeting-Registration-form.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/2nd-Annual-Surgical-Meeting-Registration-form.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/2nd-annual-surgical-meeting.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/2nd-annual-surgical-meeting.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/2nd-annual-surgical-meeting.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/3rd NRS and 10th ARR in Anaesthesia, Pain and Intensive Care-Registration Form.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/3rd NRS and 10th ARR in Anaesthesia, Pain and Intensive Care-Registration Form.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/3rd%20NRS%20and%2010th%20ARR%20in%20Anaesthesia,%20Pain%20and%20Intensive%20Care-Registration%20Form.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Abstract-Guidelines-Liaison conference-Oct562017.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Abstract-Guidelines-Liaison conference-Oct562017.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Abstract-Guidelines-Liaison%20conference-Oct562017.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Antimicrobial Resistance in Pakistan Symposium Registration form.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Antimicrobial Resistance in Pakistan Symposium Registration form.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Antimicrobial%20Resistance%20in%20Pakistan%20Symposium%20Registration%20form.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/BASIC Research Course-Registration Form.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/BASIC Research Course-Registration Form.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/BASIC%20Research%20Course-Registration%20Form.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Diabetes Recent Advances in Therapeutic Approaches for Diabetes Management-Registration Form.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Diabetes Recent Advances in Therapeutic Approaches for Diabetes Management-Registration Form.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Diabetes%20Recent%20Advances%20in%20Therapeutic%20Approaches%20for%20Diabetes%20Management-Registration%20Form.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Emergency-Radiology-reg-form.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Emergency-Radiology-reg-form.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Emergency-Radiology-reg-form.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Global-surgery-workshop-details.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Global-surgery-workshop-details.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Global-surgery-workshop-details.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018 -4.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018 -4.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018%20-4.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-1- Ultrasound Guided Central Vein Cannulation.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-1- Ultrasound Guided Central Vein Cannulation.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-1-%20Ultrasound%20Guided%20Central%20Vein%20Cannulation.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-10- An Introduction to systematic reviews.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-10- An Introduction to systematic reviews.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-10-%20An%20Introduction%20to%20systematic%20reviews.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-11- How to establish Site Specific Multi-Disciplinary Tumor boards.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-11- How to establish Site Specific Multi-Disciplinary Tumor boards.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-11-%20How%20to%20establish%20Site%20Specific%20Multi-Disciplinary%20Tumor%20boards.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-12- 21st Century learner Tips for Enhanced learning.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-12- 21st Century learner Tips for Enhanced learning.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-12-%2021st%20Century%20learner%20Tips%20for%20Enhanced%20learning.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-13- Mechanical Ventilation from Basic to Advance.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-13- Mechanical Ventilation from Basic to Advance.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-13-%20Mechanical%20Ventilation%20from%20Basic%20to%20Advance.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-15-Emotional Intelligence- A critical tool for success.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-15-Emotional Intelligence- A critical tool for success.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-15-Emotional%20Intelligence-%20A%20critical%20tool%20for%20success.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-2- TAVR-Trans catheter Aortic Valve Replacement workshop.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-2- TAVR-Trans catheter Aortic Valve Replacement workshop.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-2-%20TAVR-Trans%20catheter%20Aortic%20Valve%20Replacement%20workshop.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-5- Critical Appraisal in Journal Club – The Art and Science.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-5- Critical Appraisal in Journal Club – The Art and Science.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-5-%20Critical%20Appraisal%20in%20Journal%20Club%20%E2%80%93%20The%20Art%20and%20Science.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-6- Effective Professional Team Building.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-6- Effective Professional Team Building.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-6-%20Effective%20Professional%20Team%20Building.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-7- Hands-on SPSS for beginners.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-7- Hands-on SPSS for beginners.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-7-%20Hands-on%20SPSS%20for%20beginners.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-8- Epidemiological study designs for clinical studies.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-8- Epidemiological study designs for clinical studies.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-8-%20Epidemiological%20study%20designs%20for%20clinical%20studies.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/PGME Conf 2018-9- Protocols or synopsis writing.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-9- Protocols or synopsis writing.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-9-%20Protocols%20or%20synopsis%20writing.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Program-Learning through Assessment FCPS Microbiology Mock examination.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Program-Learning through Assessment FCPS Microbiology Mock examination.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Program-Learning%20through%20Assessment%20FCPS%20Microbiology%20Mock%20examination.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Program-Learning through assessment.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Program-Learning through assessment.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Program-Learning%20through%20assessment.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Programme-Promoting Occupational Health and Safety.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Programme-Promoting Occupational Health and Safety.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Programme-Promoting%20Occupational%20Health%20and%20Safety.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Reg-Form-Thoracic-Anaesthesia.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Reg-Form-Thoracic-Anaesthesia.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Reg-Form-Thoracic-Anaesthesia.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Registration Form-DNARNA extractionquantification and visualization of nucleic acids.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration Form-DNARNA extractionquantification and visualization of nucleic acids.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration%20Form-DNARNA%20extractionquantification%20and%20visualization%20of%20nucleic%20acids.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Registration Form-Paediatric Resuscitation Course.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration Form-Paediatric Resuscitation Course.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration%20Form-Paediatric%20Resuscitation%20Course.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Registration form-First Ian Donald International Conference.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration form-First Ian Donald International Conference.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration%20form-First%20Ian%20Donald%20International%20Conference.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Registration-Form -19th-NHSRS.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration-Form -19th-NHSRS.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration-Form%20-19th-NHSRS.pdf"
+      },
+      {
+        "source_key": "/mcpk/Documents/Workshop I and II.pdf",
+        "absolute_url": "http://www.aku.edu/mcpk/Documents/Workshop I and II.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Workshop%20I%20and%20II.pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/Call for Abstracts- SOTL Conference 2017.pdf",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/Call for Abstracts- SOTL Conference 2017.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Call%20for%20Abstracts-%20SOTL%20Conference%202017.pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/Call for papers EAQAN Conference_2017.pdf",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/Call for papers EAQAN Conference_2017.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Call%20for%20papers%20EAQAN%20Conference_2017.pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/DTL Consultation Clinics.pdf",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/DTL Consultation Clinics.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/DTL%20Consultation%20Clinics.pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/Final AKU SoTL Grant Call for Applications-08.05. 2017.pdf",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/Final AKU SoTL Grant Call for Applications-08.05. 2017.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Final%20AKU%20SoTL%20Grant%20Call%20for%20Applications-08.05.%202017.pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/SOTL-Conference-Handbook.pdf",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/SOTL-Conference-Handbook.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/SOTL-Conference-Handbook.pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/SOTLINTHE SOUTHConference Call21_8_16 (2).pdf",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/SOTLINTHE SOUTHConference Call21_8_16 (2).pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/SOTLINTHE%20SOUTHConference%20Call21_8_16%20(2).pdf"
+      },
+      {
+        "source_key": "/qtl/Documents/Seminar Series Teaching for Critical Thinking Seminar Flyer Final.docx",
+        "absolute_url": "http://www.aku.edu/qtl/Documents/Seminar Series Teaching for Critical Thinking Seminar Flyer Final.docx",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Seminar%20Series%20Teaching%20for%20Critical%20Thinking%20Seminar%20Flyer%20Final.docx"
+      },
+      {
+        "source_key": "/sonampk/Documents/Application for Visiting Student.pdf",
+        "absolute_url": "http://www.aku.edu/sonampk/Documents/Application for Visiting Student.pdf",
+        "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/sonampk/Documents/Application%20for%20Visiting%20Student.pdf"
+      },
+      {
+        "source_key": "http://d31hzlhk6di2h5.cloudfront.net/20171114/4f/1b/70/53/fad5ea57451e9895d879470e/Schedule.pdf",
+        "absolute_url": "http://d31hzlhk6di2h5.cloudfront.net/20171114/4f/1b/70/53/fad5ea57451e9895d879470e/Schedule.pdf",
+        "error": "403 Client Error: Forbidden for url: http://d31hzlhk6di2h5.cloudfront.net/20171114/4f/1b/70/53/fad5ea57451e9895d879470e/Schedule.pdf"
+      },
+      {
+        "source_key": "http://d31hzlhk6di2h5.cloudfront.net/20171114/b0/a0/bb/0d/abf42dc49ee9c5e7a63c4830/Full_Abstract-Muslims_on_the_Belt_and_Road.pdf",
+        "absolute_url": "http://d31hzlhk6di2h5.cloudfront.net/20171114/b0/a0/bb/0d/abf42dc49ee9c5e7a63c4830/Full_Abstract-Muslims_on_the_Belt_and_Road.pdf",
+        "error": "403 Client Error: Forbidden for url: http://d31hzlhk6di2h5.cloudfront.net/20171114/b0/a0/bb/0d/abf42dc49ee9c5e7a63c4830/Full_Abstract-Muslims_on_the_Belt_and_Road.pdf"
+      },
+      {
+        "source_key": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&amp;dl=0",
+        "absolute_url": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&amp;dl=0",
+        "error": "400 Client Error: Bad Request for url: https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&amp;dl=0"
+      },
+      {
+        "source_key": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&dl=0",
+        "absolute_url": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&dl=0",
+        "error": "[Errno 22] Invalid argument: 'C:\\\\Users\\\\Cloud Primero\\\\Desktop\\\\AKU-Events-Pipeline\\\\aku-data-transformation-pipeline-news\\\\Events-Pipeline\\\\assets\\\\Events\\\\media\\\\2651-richtext-3565cf269b-AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&dl=0'"
+      },
+      {
+        "source_key": "https://www.pasno.org/2ANOS.Scientific.Program.pdf",
+        "absolute_url": "https://www.pasno.org/2ANOS.Scientific.Program.pdf",
+        "error": "404 Client Error: Not Found for url: https://pasno.org/2ANOS.Scientific.Program.pdf"
+      }
+    ],
+    "mapped_assets": 104,
+    "stories_with_richtext_media": 120,
+    "stories_updated": 120
+  },
+  "failures": [
+    {
+      "source_key": "/admissions/Documents/application-standalone.pdf",
+      "absolute_url": "http://www.aku.edu/admissions/Documents/application-standalone.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/application-standalone.pdf"
+    },
+    {
+      "source_key": "/admissions/Documents/hostel-accomodation-ccc-2018.pdf",
+      "absolute_url": "http://www.aku.edu/admissions/Documents/hostel-accomodation-ccc-2018.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/hostel-accomodation-ccc-2018.pdf"
+    },
+    {
+      "source_key": "/admissions/Documents/open-day-PhD.jpg",
+      "absolute_url": "http://www.aku.edu/admissions/Documents/open-day-PhD.jpg",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/open-day-PhD.jpg"
+    },
+    {
+      "source_key": "/admissions/Documents/programme-ccc-2018.pdf",
+      "absolute_url": "http://www.aku.edu/admissions/Documents/programme-ccc-2018.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/programme-ccc-2018.pdf"
+    },
+    {
+      "source_key": "/admissions/Documents/reg-form-cc-conference.pdf",
+      "absolute_url": "https://www.aku.edu/admissions/Documents/reg-form-cc-conference.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/reg-form-cc-conference.pdf"
+    },
+    {
+      "source_key": "/admissions/Documents/registration-form-ccc-2018.pdf",
+      "absolute_url": "http://www.aku.edu/admissions/Documents/registration-form-ccc-2018.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/admissions/Documents/registration-form-ccc-2018.pdf"
+    },
+    {
+      "source_key": "/events/Documents/CCIT Ignite 4.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/CCIT Ignite 4.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/CCIT%20Ignite%204.pdf"
+    },
+    {
+      "source_key": "/events/Documents/PLA Seminar on Public Libraries in Sindh March 19, 2016.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/PLA Seminar on Public Libraries in Sindh March 19, 2016.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/PLA%20Seminar%20on%20Public%20Libraries%20in%20Sindh%20March%2019,%202016.pdf"
+    },
+    {
+      "source_key": "/events/Documents/assessing-childrens-mathematical-understanding.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/assessing-childrens-mathematical-understanding.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/assessing-childrens-mathematical-understanding.pdf"
+    },
+    {
+      "source_key": "/events/Documents/effective-feedback.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/effective-feedback.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/effective-feedback.pdf"
+    },
+    {
+      "source_key": "/events/Documents/inmd-programme-details.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/inmd-programme-details.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/inmd-programme-details.pdf"
+    },
+    {
+      "source_key": "/events/Documents/inmd-workshop-details-2016.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/inmd-workshop-details-2016.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/inmd-workshop-details-2016.pdf"
+    },
+    {
+      "source_key": "/events/Documents/learning-fractions.pdf",
+      "absolute_url": "http://www.aku.edu/events/Documents/learning-fractions.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/learning-fractions.pdf"
+    },
+    {
+      "source_key": "/events/Documents/sharepoint-training.doc",
+      "absolute_url": "http://www.aku.edu/events/Documents/sharepoint-training.doc",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/events/Documents/sharepoint-training.doc"
+    },
+    {
+      "source_key": "/ied-pk/Outreach/Documents/registration-form-CPE.pdf",
+      "absolute_url": "http://www.aku.edu/ied-pk/Outreach/Documents/registration-form-CPE.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/ied-pk/Outreach/Documents/registration-form-CPE.pdf"
+    },
+    {
+      "source_key": "/iedpk/Docu ments/registration form CPE 2017.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/Docu ments/registration form CPE 2017.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/Docu%20ments/registration%20form%20CPE%202017.pdf"
+    },
+    {
+      "source_key": "/iedpk/Documents/registration-form-CPE.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/Documents/registration-form-CPE.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/Documents/registration-form-CPE.pdf"
+    },
+    {
+      "source_key": "/iedpk/cert-education/Documents/Application-Form-2018.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/cert-education/Documents/Application-Form-2018.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/cert-education/Documents/Application-Form-2018.pdf"
+    },
+    {
+      "source_key": "/iedpk/programmes/Documents/Curriculum-Teaching-and-Learning.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Curriculum-Teaching-and-Learning.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Curriculum-Teaching-and-Learning.pdf"
+    },
+    {
+      "source_key": "/iedpk/programmes/Documents/Educational-change.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Educational-change.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Educational-change.pdf"
+    },
+    {
+      "source_key": "/iedpk/programmes/Documents/Leadership-in-Education.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Leadership-in-Education.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Leadership-in-Education.pdf"
+    },
+    {
+      "source_key": "/iedpk/programmes/Documents/Organizational-Learning.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Organizational-Learning.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Organizational-Learning.pdf"
+    },
+    {
+      "source_key": "/iedpk/programmes/Documents/Strategic-Leadership-and-Management.pdf",
+      "absolute_url": "http://www.aku.edu/iedpk/programmes/Documents/Strategic-Leadership-and-Management.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/iedpk/programmes/Documents/Strategic-Leadership-and-Management.pdf"
+    },
+    {
+      "source_key": "/ihd/Documents/CallForPapers_Kyambogo University_January2016Conference.pdf",
+      "absolute_url": "http://www.aku.edu/ihd/Documents/CallForPapers_Kyambogo University_January2016Conference.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/ihd/Documents/CallForPapers_Kyambogo%20University_January2016Conference.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/2nd-Annual-Surgical-Meeting-Registration-form.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/2nd-Annual-Surgical-Meeting-Registration-form.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/2nd-Annual-Surgical-Meeting-Registration-form.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/2nd-annual-surgical-meeting.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/2nd-annual-surgical-meeting.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/2nd-annual-surgical-meeting.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/3rd NRS and 10th ARR in Anaesthesia, Pain and Intensive Care-Registration Form.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/3rd NRS and 10th ARR in Anaesthesia, Pain and Intensive Care-Registration Form.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/3rd%20NRS%20and%2010th%20ARR%20in%20Anaesthesia,%20Pain%20and%20Intensive%20Care-Registration%20Form.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Abstract-Guidelines-Liaison conference-Oct562017.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Abstract-Guidelines-Liaison conference-Oct562017.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Abstract-Guidelines-Liaison%20conference-Oct562017.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Antimicrobial Resistance in Pakistan Symposium Registration form.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Antimicrobial Resistance in Pakistan Symposium Registration form.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Antimicrobial%20Resistance%20in%20Pakistan%20Symposium%20Registration%20form.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/BASIC Research Course-Registration Form.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/BASIC Research Course-Registration Form.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/BASIC%20Research%20Course-Registration%20Form.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Diabetes Recent Advances in Therapeutic Approaches for Diabetes Management-Registration Form.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Diabetes Recent Advances in Therapeutic Approaches for Diabetes Management-Registration Form.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Diabetes%20Recent%20Advances%20in%20Therapeutic%20Approaches%20for%20Diabetes%20Management-Registration%20Form.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Emergency-Radiology-reg-form.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Emergency-Radiology-reg-form.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Emergency-Radiology-reg-form.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Global-surgery-workshop-details.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Global-surgery-workshop-details.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Global-surgery-workshop-details.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018 -4.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018 -4.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018%20-4.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-1- Ultrasound Guided Central Vein Cannulation.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-1- Ultrasound Guided Central Vein Cannulation.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-1-%20Ultrasound%20Guided%20Central%20Vein%20Cannulation.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-10- An Introduction to systematic reviews.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-10- An Introduction to systematic reviews.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-10-%20An%20Introduction%20to%20systematic%20reviews.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-11- How to establish Site Specific Multi-Disciplinary Tumor boards.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-11- How to establish Site Specific Multi-Disciplinary Tumor boards.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-11-%20How%20to%20establish%20Site%20Specific%20Multi-Disciplinary%20Tumor%20boards.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-12- 21st Century learner Tips for Enhanced learning.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-12- 21st Century learner Tips for Enhanced learning.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-12-%2021st%20Century%20learner%20Tips%20for%20Enhanced%20learning.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-13- Mechanical Ventilation from Basic to Advance.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-13- Mechanical Ventilation from Basic to Advance.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-13-%20Mechanical%20Ventilation%20from%20Basic%20to%20Advance.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-15-Emotional Intelligence- A critical tool for success.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-15-Emotional Intelligence- A critical tool for success.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-15-Emotional%20Intelligence-%20A%20critical%20tool%20for%20success.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-2- TAVR-Trans catheter Aortic Valve Replacement workshop.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-2- TAVR-Trans catheter Aortic Valve Replacement workshop.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-2-%20TAVR-Trans%20catheter%20Aortic%20Valve%20Replacement%20workshop.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-5- Critical Appraisal in Journal Club – The Art and Science.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-5- Critical Appraisal in Journal Club – The Art and Science.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-5-%20Critical%20Appraisal%20in%20Journal%20Club%20%E2%80%93%20The%20Art%20and%20Science.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-6- Effective Professional Team Building.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-6- Effective Professional Team Building.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-6-%20Effective%20Professional%20Team%20Building.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-7- Hands-on SPSS for beginners.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-7- Hands-on SPSS for beginners.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-7-%20Hands-on%20SPSS%20for%20beginners.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-8- Epidemiological study designs for clinical studies.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-8- Epidemiological study designs for clinical studies.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-8-%20Epidemiological%20study%20designs%20for%20clinical%20studies.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/PGME Conf 2018-9- Protocols or synopsis writing.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/PGME Conf 2018-9- Protocols or synopsis writing.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/PGME%20Conf%202018-9-%20Protocols%20or%20synopsis%20writing.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Program-Learning through Assessment FCPS Microbiology Mock examination.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Program-Learning through Assessment FCPS Microbiology Mock examination.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Program-Learning%20through%20Assessment%20FCPS%20Microbiology%20Mock%20examination.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Program-Learning through assessment.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Program-Learning through assessment.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Program-Learning%20through%20assessment.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Programme-Promoting Occupational Health and Safety.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Programme-Promoting Occupational Health and Safety.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Programme-Promoting%20Occupational%20Health%20and%20Safety.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Reg-Form-Thoracic-Anaesthesia.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Reg-Form-Thoracic-Anaesthesia.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Reg-Form-Thoracic-Anaesthesia.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Registration Form-DNARNA extractionquantification and visualization of nucleic acids.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration Form-DNARNA extractionquantification and visualization of nucleic acids.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration%20Form-DNARNA%20extractionquantification%20and%20visualization%20of%20nucleic%20acids.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Registration Form-Paediatric Resuscitation Course.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration Form-Paediatric Resuscitation Course.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration%20Form-Paediatric%20Resuscitation%20Course.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Registration form-First Ian Donald International Conference.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration form-First Ian Donald International Conference.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration%20form-First%20Ian%20Donald%20International%20Conference.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Registration-Form -19th-NHSRS.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Registration-Form -19th-NHSRS.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Registration-Form%20-19th-NHSRS.pdf"
+    },
+    {
+      "source_key": "/mcpk/Documents/Workshop I and II.pdf",
+      "absolute_url": "http://www.aku.edu/mcpk/Documents/Workshop I and II.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/mcpk/Documents/Workshop%20I%20and%20II.pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/Call for Abstracts- SOTL Conference 2017.pdf",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/Call for Abstracts- SOTL Conference 2017.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Call%20for%20Abstracts-%20SOTL%20Conference%202017.pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/Call for papers EAQAN Conference_2017.pdf",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/Call for papers EAQAN Conference_2017.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Call%20for%20papers%20EAQAN%20Conference_2017.pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/DTL Consultation Clinics.pdf",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/DTL Consultation Clinics.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/DTL%20Consultation%20Clinics.pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/Final AKU SoTL Grant Call for Applications-08.05. 2017.pdf",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/Final AKU SoTL Grant Call for Applications-08.05. 2017.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Final%20AKU%20SoTL%20Grant%20Call%20for%20Applications-08.05.%202017.pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/SOTL-Conference-Handbook.pdf",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/SOTL-Conference-Handbook.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/SOTL-Conference-Handbook.pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/SOTLINTHE SOUTHConference Call21_8_16 (2).pdf",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/SOTLINTHE SOUTHConference Call21_8_16 (2).pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/SOTLINTHE%20SOUTHConference%20Call21_8_16%20(2).pdf"
+    },
+    {
+      "source_key": "/qtl/Documents/Seminar Series Teaching for Critical Thinking Seminar Flyer Final.docx",
+      "absolute_url": "http://www.aku.edu/qtl/Documents/Seminar Series Teaching for Critical Thinking Seminar Flyer Final.docx",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/qtl/Documents/Seminar%20Series%20Teaching%20for%20Critical%20Thinking%20Seminar%20Flyer%20Final.docx"
+    },
+    {
+      "source_key": "/sonampk/Documents/Application for Visiting Student.pdf",
+      "absolute_url": "http://www.aku.edu/sonampk/Documents/Application for Visiting Student.pdf",
+      "error": "404 Client Error: NOT FOUND for url: https://www.aku.edu/sonampk/Documents/Application%20for%20Visiting%20Student.pdf"
+    },
+    {
+      "source_key": "http://d31hzlhk6di2h5.cloudfront.net/20171114/4f/1b/70/53/fad5ea57451e9895d879470e/Schedule.pdf",
+      "absolute_url": "http://d31hzlhk6di2h5.cloudfront.net/20171114/4f/1b/70/53/fad5ea57451e9895d879470e/Schedule.pdf",
+      "error": "403 Client Error: Forbidden for url: http://d31hzlhk6di2h5.cloudfront.net/20171114/4f/1b/70/53/fad5ea57451e9895d879470e/Schedule.pdf"
+    },
+    {
+      "source_key": "http://d31hzlhk6di2h5.cloudfront.net/20171114/b0/a0/bb/0d/abf42dc49ee9c5e7a63c4830/Full_Abstract-Muslims_on_the_Belt_and_Road.pdf",
+      "absolute_url": "http://d31hzlhk6di2h5.cloudfront.net/20171114/b0/a0/bb/0d/abf42dc49ee9c5e7a63c4830/Full_Abstract-Muslims_on_the_Belt_and_Road.pdf",
+      "error": "403 Client Error: Forbidden for url: http://d31hzlhk6di2h5.cloudfront.net/20171114/b0/a0/bb/0d/abf42dc49ee9c5e7a63c4830/Full_Abstract-Muslims_on_the_Belt_and_Road.pdf"
+    },
+    {
+      "source_key": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&amp;dl=0",
+      "absolute_url": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&amp;dl=0",
+      "error": "400 Client Error: Bad Request for url: https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&amp;dl=0"
+    },
+    {
+      "source_key": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&dl=0",
+      "absolute_url": "https://www.dropbox.com/scl/fi/98a7mlgymca7vu6qschaf/AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&dl=0",
+      "error": "[Errno 22] Invalid argument: 'C:\\\\Users\\\\Cloud Primero\\\\Desktop\\\\AKU-Events-Pipeline\\\\aku-data-transformation-pipeline-news\\\\Events-Pipeline\\\\assets\\\\Events\\\\media\\\\2651-richtext-3565cf269b-AP-2024-Workshop-Schedule-3-4-October.pdf?rlkey=5w6021pnyyg6c630qngp5oi83&dl=0'"
+    },
+    {
+      "source_key": "https://www.pasno.org/2ANOS.Scientific.Program.pdf",
+      "absolute_url": "https://www.pasno.org/2ANOS.Scientific.Program.pdf",
+      "error": "404 Client Error: Not Found for url: https://pasno.org/2ANOS.Scientific.Program.pdf"
+    }
+  ]
+}

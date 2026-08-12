@@ -17,7 +17,7 @@ job stops rather than guessing.
 |---|---|---|
 | **news** | **3,606 stories live in Storyblok**, 0 failed. 2,417 assets uploaded | `News-Pipeline/` |
 | **blogs** | 83 mapped to `blog_article`; **8 uploaded and reviewed**, 75 waiting on the owner's go-ahead | `Blogs-Pipeline/` |
-| **events** | scaffolding only — awaiting the export from AKU | `Events-Pipeline/` |
+| **events** | **2,710 live and published** across 43 folders, 0 failed | `Events-Pipeline/` |
 | **pages** | site structure and permissions; deliverables built, under review | `Pages-Pipeline/` |
 
 Storyblok space `289824742951963`. Default branch is `master`.
@@ -92,8 +92,9 @@ News-Pipeline/               3,606 stories, live
   backup/                      the export as it arrived + Storyblok read back
 Blogs-Pipeline/              83 mapped, 8 live
   pipeline/                    class BlogsPipeline + its own taxonomy resolver
-Events-Pipeline/             awaiting its export
-  pipeline/                    class EventsPipeline — boilerplate
+Events-Pipeline/             2,710 events live
+  pipeline/                    class EventsPipeline — overrides nothing;
+                               its own build_payload / build_portal / routing
 Pages-Pipeline/              site structure — a different job
   pipeline/                    its own 18 scripts, inherits nothing
   data/  out/  portal/
@@ -330,7 +331,10 @@ the diff did not — `_uid` vanishing from all 3,606 payloads, for one.
 ## Still open
 
 - **`global/blogs` does not exist** in Storyblok, and 70 of 83 blogs route there
-- **events** has no export yet
+- **events** is migrated: 2,710 live and published. Outstanding: 29 banners absent
+  from the export (the files are on aku.edu, which is being switched off), event
+  2486's 2 assets pending an asset folder, and `contact` / `event_types` waiting on
+  the dev — both update plans are written. See `Events-Pipeline/README.md` §7
 - **54 language PDFs** still link to aku.edu, which dies with the site
 - **566 internal links** still point at aku.edu, kept deliberately so they can be
   found and replaced now that every story has an id

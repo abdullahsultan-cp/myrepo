@@ -1,0 +1,209 @@
+{
+  "summary": {
+    "source_folder": "C:\\Users\\Cloud Primero\\Desktop\\AKU-Events-Pipeline\\aku-data-transformation-pipeline-news\\Events-Pipeline\\data\\normalized",
+    "output_folder": "C:\\Users\\Cloud Primero\\Desktop\\AKU-Events-Pipeline\\aku-data-transformation-pipeline-news\\Events-Pipeline\\data\\richtext",
+    "files_processed": 2710,
+    "conversion_failures": 0,
+    "files_with_warnings": 21,
+    "empty_content_files": 0,
+    "iframe_files": 0,
+    "image_files": 0,
+    "relative_link_files": 9,
+    "warning_categories": {
+      "inline_tag_wrapping_blocks_unwrapped": 13,
+      "unexpected_block_inside_inline": 48,
+      "relative_link": 9
+    }
+  },
+  "conversion_failures": [],
+  "files_with_iframes": [],
+  "files_with_sharepoint_images": [],
+  "files_with_relative_links": [
+    "2821.json",
+    "2837.json",
+    "344.json",
+    "358.json",
+    "363.json",
+    "364.json",
+    "373.json",
+    "487.json",
+    "798.json"
+  ],
+  "files_with_warnings": [
+    {
+      "file": "1264.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:em"
+      ]
+    },
+    {
+      "file": "1389.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:em",
+        "inline_tag_wrapping_blocks_unwrapped:em"
+      ]
+    },
+    {
+      "file": "1633.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:em",
+        "inline_tag_wrapping_blocks_unwrapped:em",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p"
+      ]
+    },
+    {
+      "file": "1717.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:strong"
+      ]
+    },
+    {
+      "file": "1718.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:strong"
+      ]
+    },
+    {
+      "file": "2009.json",
+      "warnings": [
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p",
+        "unexpected_block_inside_inline:p"
+      ]
+    },
+    {
+      "file": "2385.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:strong"
+      ]
+    },
+    {
+      "file": "2633.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:strong"
+      ]
+    },
+    {
+      "file": "2821.json",
+      "warnings": [
+        "relative_link:/mcpk/events/Documents/6th%20PNOS%20Website%20Posters.pdf"
+      ]
+    },
+    {
+      "file": "2837.json",
+      "warnings": [
+        "relative_link:/events/Documents/TLEW%20Declaration%20Form%20EA%20Oct%202025.pdf"
+      ]
+    },
+    {
+      "file": "2843.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:strong"
+      ]
+    },
+    {
+      "file": "344.json",
+      "warnings": [
+        "relative_link:/qtl/Documents/Teaching%20and%20Learning%20Enhancement%20Workshop%20for%20AKU%20Faculty%202016.pdf"
+      ]
+    },
+    {
+      "file": "358.json",
+      "warnings": [
+        "relative_link:/qtl/Documents/AKU%20SoTL%20Grant%20Description%20-%202016.pdf"
+      ]
+    },
+    {
+      "file": "363.json",
+      "warnings": [
+        "relative_link:/qtl/Documents/Details%20for%20Blended%20Learning%20Faculty%20Development%20Programme%202016-2017.pdf"
+      ]
+    },
+    {
+      "file": "364.json",
+      "warnings": [
+        "relative_link:/qtl/Documents/Dr.%20Debra%20Dawson%20and%20Dr.%20Mike%20Atkinson%20Bios.pdf"
+      ]
+    },
+    {
+      "file": "373.json",
+      "warnings": [
+        "relative_link:/qtl/Documents/Teaching%20and%20Learning%20Enhancement%20Workshop%20for%20Pakistan%20AKU%20Faculty%202016.pdf"
+      ]
+    },
+    {
+      "file": "380.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:strong"
+      ]
+    },
+    {
+      "file": "487.json",
+      "warnings": [
+        "relative_link:/admissions/Documents/reg-form-cc-conference.pdf"
+      ]
+    },
+    {
+      "file": "798.json",
+      "warnings": [
+        "relative_link:/mcpk/Documents/Programme-Schedule-QC.pdf"
+      ]
+    },
+    {
+      "file": "961.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:em"
+      ]
+    },
+    {
+      "file": "988.json",
+      "warnings": [
+        "inline_tag_wrapping_blocks_unwrapped:em"
+      ]
+    }
+  ]
+}

@@ -45,6 +45,16 @@ import _bootstrap
 
 _bootstrap.ensure()
 
+# _bootstrap does not reach into migrate/upload/, and this needs one thing from
+# it: `slugify`. The uploader owns how a slug is chosen, and target_full_slug
+# here has to agree with it character for character -- a slug that merely looks
+# right turns run_migration's in_expected_place check into false alarms. So the
+# same function is imported rather than a second copy kept. This mapping has
+# already drifted three times in this project when it lived in two places.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "upload"))
+
+from build_payload import slugify  # noqa: I001
 from paths_root import P
 
 try:
@@ -58,9 +68,51 @@ SCHEMA_SQL = os.path.join(HERE, "schema.sql")
 CONFIG = os.path.join(BASE, "config", "database.json")
 
 STORIES_DIR = P.STORIES
-ROUTING_CSV = os.path.join(P.TAXONOMY, "routing", "news_routing.csv")
-STORY_PATHS = os.path.join(P.TAXONOMY, "routing", "story_paths.csv")
+
+# What the load reads differs per type, and all of it is a value rather than a
+# branch. News's taxonomy writes taxonomy/routing/news_routing.csv with columns
+# news_id / level / sb_path; events writes taxonomy/routing.csv with event_id /
+# placement / folder_path. The defaults below are news's exactly, so a profile
+# with no "tracking" block behaves as this file always has.
+TRACK = P.spec.get("tracking") or {}
+
+
+def _under_taxonomy(value, default):
+    """A path under data/taxonomy/, given as a string or a list of segments."""
+    parts = value if isinstance(value, list) else [value] if value else default
+    return os.path.join(P.TAXONOMY, *parts)
+
+
+ROUTING_CSV = _under_taxonomy(TRACK.get("routing_csv"),
+                              ["routing", "news_routing.csv"])
+STORY_PATHS = _under_taxonomy(TRACK.get("story_paths_csv"),
+                              ["routing", "story_paths.csv"])
 SCENARIOS_JSON = os.path.join(P.MIGRATE, "scenarios.json")
+
+# story-table field -> the routing CSV column it comes from. A field mapped to
+# null is not in this type's CSV and loads as NULL, which is what the schema's
+# nullable columns are for: events has no department and no shared entities.
+COLUMNS = dict({
+    "id": "news_id",
+    "published_date": "published_date",
+    "region": "region",
+    "entity": "entity",
+    "entity_short": "entity_short",
+    "department": "department",
+    "placement": "level",
+    "surface_global": "surface_global",
+    "region_source": "region_source",
+    "entity_source": "entity_source",
+    "target_folder": "folder_path",
+    "target_full_slug": "sb_path",
+}, **(TRACK.get("columns") or {}))
+
+# Where the asset rows come from inside a built payload. News keeps every file
+# in media[] and richtext_media[], both lists of objects. Events has neither for
+# its heroes -- the banner is a bare filename on content.banner -- so a source
+# may name a scalar field and the role it carries.
+ASSET_SOURCES = TRACK.get("assets") or [{"field": "media"},
+                                        {"field": "richtext_media"}]
 
 DEFAULTS = {"host": "localhost", "port": 5432, "user": "postgres",
             "password": "postgres", "dbname": "aku_news_migration"}
@@ -169,12 +221,94 @@ def collect_links(doc):
     return [(h, v["text"], v["count"]) for h, v in found.items()]
 
 
+def _col(row, key):
+    """One routing-CSV column, by the role it plays rather than its name.
+
+    A role mapped to null in the profile is absent from this type's CSV and
+    loads as NULL -- events has no department column and no shared entities.
+    """
+    name = COLUMNS.get(key)
+    return row.get(name) if name else None
+
+
+def _destination(row, sid, title):
+    """(target_full_slug, target_slug) -- where this story is meant to end up.
+
+    News's taxonomy writes the whole path, so both come straight from the CSV.
+    Events' records the destination FOLDER and nothing else, because its routing
+    decides placement only; the slug comes from the title at upload time. Left
+    at NULL the upload still works -- upload.py falls back to target_folder --
+    but everything built on top of it quietly stops meaning anything:
+
+        run_migration.py in_expected_place   uploaded == NULL, so all 2,710
+                                             report as misplaced, and that is
+                                             the check that catches a story
+                                             someone moved by hand in the UI
+        run_migration.py folders report      derived from NULL
+        export_internal_links.py             no target to point a link at
+
+    The slug MUST be the one the uploader would pick, character for character:
+    the same `slugify`, the same title string this table stores, and the same
+    `{type}-{id}` fallback for a title that slugifies to nothing. A slug that
+    merely looks right turns in_expected_place into false alarms, which is
+    worse than leaving it null.
+    """
+    full = _col(row, "target_full_slug")
+    if full:
+        return full, full.rsplit("/", 1)[-1] or None
+    folder = _col(row, "target_folder")
+    if not folder:
+        return None, None
+    slug = slugify(title)
+    if not slug:
+        slug = f"{P.type}-{sid}"                 # already carries the id
+    elif TRACK.get("slug_suffix") == "id":
+        # Titles are not unique when the events recur: 26 events are called
+        # "EdTech Lounge Online" and land in one folder. Without a suffix they
+        # share a slug, and the uploader's with_slug guard finds the first and
+        # PUTs over it -- 542 events collapsing into 201, silently.
+        slug = f"{slug}-{sid}"
+    return f"{folder}/{slug}", slug
+
+
+def _asset_rows(sid, content):
+    """Every file one payload references, as (sid, role, type, name, ...) rows.
+
+    Reads the fields named by ASSET_SOURCES. A source is either a list of media
+    objects (news's media[] / richtext_media[]) or, with "scalar": true, a field
+    holding a bare filename -- which is how events carries its banner. Getting
+    this wrong is quiet rather than loud: the load succeeds, the uploader finds
+    no rows to send, and every story publishes with an empty image field.
+    """
+    out = []
+    for src in ASSET_SOURCES:
+        value = content.get(src["field"])
+        if not value:
+            continue
+        if src.get("scalar"):
+            items = [{"filename": value, "role": src.get("role") or src["field"],
+                      "media_type": src.get("media_type") or "image"}]
+        else:
+            items = value
+        for m in items:
+            fn = m.get("filename") or m.get("src") or ""
+            if not fn:
+                continue
+            out.append((
+                int(sid), m.get("role") or src.get("role") or "richtext",
+                m.get("media_type"), fn, m.get("source_key"),
+                fn if fn.lower().startswith("http") else None,
+                m.get("caption"), m.get("alt"),
+            ))
+    return out
+
+
 def cmd_load():
     if not os.path.exists(ROUTING_CSV):
         sys.exit(f"missing {ROUTING_CSV} — run run_taxonomy.py first")
 
     with open(ROUTING_CSV, encoding="utf-8-sig") as f:
-        routes = {r["news_id"]: r for r in csv.DictReader(f)}
+        routes = {r[COLUMNS["id"]]: r for r in csv.DictReader(f)}
     shares = {}
     if os.path.exists(STORY_PATHS):
         with open(STORY_PATHS, encoding="utf-8-sig") as f:
@@ -193,28 +327,21 @@ def cmd_load():
             st = json.load(f)
         c = st.get("content") or {}
 
+        title = c.get("title") or "(untitled)"
+        full_slug, slug = _destination(r, sid, title)
         story_rows.append((
-            int(sid), c.get("sequence_number"), c.get("title") or "(untitled)",
-            r.get("published_date") or None,
-            r.get("region"), r.get("entity"), r.get("entity_short"),
-            r.get("department") or None, r.get("level"),
-            r.get("surface_global") == "True",
-            r.get("region_source"), r.get("entity_source"),
-            r.get("folder_path"),
-            (r.get("sb_path") or "").rsplit("/", 1)[-1] or None,
-            r.get("sb_path"),
+            int(sid), c.get("sequence_number"), title,
+            _col(r, "published_date") or None,
+            _col(r, "region"), _col(r, "entity"), _col(r, "entity_short"),
+            _col(r, "department") or None, _col(r, "placement"),
+            _col(r, "surface_global") == "True",
+            _col(r, "region_source"), _col(r, "entity_source"),
+            _col(r, "target_folder"),
+            slug,
+            full_slug,
         ))
 
-        for m in (c.get("media") or []) + (c.get("richtext_media") or []):
-            fn = m.get("filename") or m.get("src") or ""
-            if not fn:
-                continue
-            asset_rows.append((
-                int(sid), m.get("role") or "richtext", m.get("media_type"),
-                fn, m.get("source_key"),
-                fn if fn.lower().startswith("http") else None,
-                m.get("caption"), m.get("alt"),
-            ))
+        asset_rows.extend(_asset_rows(sid, c))
 
         body = c.get("body") if isinstance(c.get("body"), dict) else {}
         for href, text, cnt in collect_links(body):

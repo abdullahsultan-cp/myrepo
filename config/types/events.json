@@ -28,47 +28,69 @@
   },
   "source_urls": {
     "_comment": [
-      "CONFIRM: where this type lives on aku.edu -- the SOURCE, not the target.",
+      "CONFIRMED against the 1,851 links in the real export, not guessed.",
       "",
-      "These two are easy to conflate and are not the same thing. `hierarchy.leaf`",
-      "is where an item lands in Storyblok. This is where it came from: the path",
-      "SharePoint serves it under, the detail page its internal links point at, and",
-      "the shape of the id in those links (news_details.aspx?nid=NEWS-1234).",
+      "EventURL is https://www.aku.edu/events/pages/event-detail.aspx?EventID=<n>",
+      "-- a BARE INTEGER, not news's ?nid=NEWS-1234. 37 body links point at",
+      "event-detail.aspx, so cross-links between events do exist.",
       "",
-      "They coincide for news, which is exactly why the /news in build_link_map.py",
-      "went unnoticed. For blogs and events the values below are a GUESS -- check a",
-      "real internal link in the export before the first run, or every cross-link",
-      "will simply fail to resolve and be left pointing at aku.edu."
+      "id_prefix is empty because events has none. build_link_map.py's extract_nid()",
+      "only reads nid/NID/Nid and NID_PATTERN expects PREFIX-digits, so those 37",
+      "links will NOT resolve until it learns to read the id_param below. That is a",
+      "shared-code change, listed in Events-Pipeline/CLAUDE.md section 7.",
+      "",
+      "218 EventURLs point at authoring.aku.edu and 5 at vs13devw:90, a dev server."
     ],
     "prefix": "/events",
-    "detail_page": "Event_Details.aspx",
-    "id_prefix": "EVENT"
+    "detail_page": "event-detail.aspx",
+    "id_prefix": "",
+    "id_param": "EventID"
   },
   "storyblok": {
     "_comment": [
-      "CONFIRM before the first upload: the component a event becomes may",
-      "not be news_article, and its body whitelist may differ. Reading the",
-      "live space is the only way to know -- see",
-      "pipeline/migrate/review/dump_sb_tree.py and fetch_storyblok_space.py."
+      "Read off the live space on 2026-08-11, not guessed. event_article is a",
+      "root content type with 20 fields, and it is NOT news_article: it carries",
+      "event_date, event_time, start_at, end_at, deadline, mode, location, city,",
+      "entity, event_types, register_label and register_link, and it has no",
+      "author, date, read_time, languages, entities, isGlobal, thumbnail or",
+      "background_pattern.",
+      "",
+      "Re-read it with pipeline/analyze/fetch_storyblok_space.py before the first",
+      "upload -- it gained 13 fields between 4 and 10 August, so it is moving."
     ],
-    "component": "news_article",
+    "_confirmed": "event_article exists in the space (id 205403637499544), 20 fields, display name 'Event'; body whitelist read off the live schema",
+    "component": "event_article",
+    "payload_builder": "pipeline/build_payload.py",
+    "_payload_builder_comment": [
+      "Relative to Events-Pipeline/. The shared uploader builds a news_article;",
+      "event_article shares almost none of its fields. Named here rather than",
+      "discovered by filename: blogs also has a build_payload.py, but its build()",
+      "takes (story, routing, authors, photos, palette) and is driven by blogs'",
+      "own upload.py -- adopting it because the name matched would break it."
+    ],
+    "entities_field": null,
+    "_entities_field_comment": [
+      "event_article has no entities field: `entity` is plain text, and",
+      "AdditionalEntity is empty on all 2,710 so nothing is shared across",
+      "entities. Left at news's default the uploader resolves folder ids for",
+      "a field nothing reads and warns once per story -- 2,710 warnings that",
+      "bury the real ones."
+    ],
     "body_whitelist": [
       "rich_text",
       "box",
       "video",
       "media_section",
       "quote_banner",
-      "button",
-      "media_card",
-      "row",
-      "split_section",
-      "brand_banner",
-      "brand_logo",
-      "iframe",
-      "image"
+      "social_embed"
     ],
-    "background_pattern_asset_id": 202607823391189,
-    "quote_background_asset_id": 202908142091464
+    "_asset_id_note": [
+      "The two asset ids below are news's shared backdrops and DO NOT APPLY to",
+      "events: event_article has no background_pattern field and no quote field.",
+      "Kept rather than deleted so the omission is visible, not silent."
+    ],
+    "background_pattern_asset_id": null,
+    "quote_background_asset_id": null
   },
   "layout": {
     "_comment": [
@@ -109,7 +131,14 @@
         "desktop": 56
       },
       "by_component": {
-        "rich_text": "text",
+        "_comment": [
+          "rich_text is 'mid', not 'text' as news uses. Read off the live event",
+          "page events-detail/test: its rich_text bloks carry desktop padding-x",
+          "80, where news carries 176. Events puts prose in the mid-width column,",
+          "so reusing news's value would render every paragraph too narrow.",
+          "Margin-bottom is the same on both: 24 mobile / 56 desktop."
+        ],
+        "rich_text": "mid",
         "quote_banner": "full",
         "brand_banner": "full",
         "media_section_video": "full",
@@ -123,31 +152,452 @@
   },
   "fields": {
     "_comment": [
-      "Source column names. start_date/end_date/venue are a GUESS at what an",
-      "events list carries -- confirm against the real export before relying on",
-      "them; an invented column silently yields empty fields."
+      "The REAL column names of the AKU Events list, read off Metadata.csv on",
+      "2026-08-11, not scaffolded. They share almost nothing with the News list.",
+      "",
+      "Verify after any re-export:  python pipeline/new_type.py events --check",
+      "",
+      "null means the column does not exist in this export at all. Kept as null",
+      "rather than deleted so the absence is visible: there is no author, no pull",
+      "quote, no approver group, no sequence number and no alternate language",
+      "anywhere in the events list."
     ],
-    "id": "Id",
-    "title": "Title",
-    "body": "NewsContent",
-    "sequence_number": "SequenceNumber",
+    "id": "ID",
+    "title": "EventTitle",
+    "body": "EventDetail",
+    "summary": "EventSummary",
+    "date": "StartDate",
+    "start_date": "StartDate",
+    "end_date": "EndDate",
     "city": "City",
+    "country": "Country",
     "entity": "Entity",
-    "additional_entity": "AdditionalEntity",
     "tags": "Tags",
-    "approver_group": "LocalApproverGroup",
-    "date": "ScheduleStartDate",
-    "summary": "NewsSummary",
-    "author": "ContentWriter",
-    "pull_quote": "PullQuote",
-    "pull_quote_author": "PullQuoteAuthor",
-    "language_links": [
-      "NewsInUrdu",
-      "SecondaryLanguage2",
-      "SecondaryLanguage3"
+    "venue": "Venue",
+    "banner": "imageurl",
+    "attachment": "attachment_files",
+    "video": "Video",
+    "contact": "Contact",
+    "registration": "Registration",
+    "subtitle": "EventSubTitle",
+    "image_credit": "ImageCredit",
+    "event_site": "EventSite",
+    "event_subsite": "EventSubsite",
+    "other_city": "OtherCity",
+    "social_media": "SocialMedia",
+    "ongoing": "OnGoingEvent",
+    "is_active": "Is Active",
+    "source_url": "EventURL",
+    "sequence_number": null,
+    "approver_group": null,
+    "author": null,
+    "pull_quote": null,
+    "pull_quote_author": null,
+    "additional_entity": null,
+    "language_links": null
+  },
+  "decisions": {
+    "_comment": [
+      "Decided on 2026-08-11 against the real export (2,710 events) and the live",
+      "event_article schema. Each entry says what was settled and why, so a later",
+      "reader does not reopen a closed question. Anything 'pending' waits on the",
+      "named party, not on us. Same shape as config/types/blogs.json.",
+      "",
+      "The routing and image rules below are implemented in",
+      "Events-Pipeline/pipeline/build_portal.py and are NOT yet in pipeline/taxonomy/."
     ],
-    "start_date": "EventStartDate",
-    "end_date": "EventEndDate",
-    "venue": "Venue"
-  }
+    "banner_image": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "imageurl is the banner. Where it is empty and attachment_files has a file, the attachment becomes the banner - 933 events would otherwise publish with no hero while holding an unused image. Result: 2,667 of 2,710 have a hero, 12 have neither column filled, 31 are named but not on disk."
+    },
+    "second_image": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Only 32 events have BOTH imageurl and attachment_files. For those the attachment becomes an image node at the BOTTOM of the rich text, inside it rather than as a standalone image blok - news's rule, because the standalone blok renders far too large. THE POSITION IS A HOUSE CONVENTION: SharePoint records none. All 2,710 bodies contain zero <img> and none names the file. 'After the first paragraph' was tried and measured - it sat between two paragraphs only 51% of the time and was stranded at the end for 16%, because 194 bodies have a single paragraph."
+    },
+    "location": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "location <- Venue, not Country. Every event has a venue and 'where is it' means the room, not the country - the folder already says the country. Cost: Venue is HTML and location is plain text, so 639 links across 504 events flatten. 2,206 venues contain no link and map cleanly. 51 exceed 255 characters; 1 is markup only and strips to nothing."
+    },
+    "country": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Country chooses the region folder and has no visible field. It is not lost - the folder is how the page states its country."
+    },
+    "routing": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Entity folder, else region folder, else global/events. Nothing is ever created; every candidate is checked against the live tree. Region comes from Country, else City. Where no column locates an event, news rule 5 applies - an entity whose located events are >=60% in one region takes its unlocated ones there, because the tree records who OWNS an item, not where it happened. That moved 27 events. An explicit Global is never second-guessed. Result: 2,319 entity, 314 region, 77 global, 0 unrouted."
+    },
+    "entity_alias": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "'Network of Quality, Teaching and Learning' is mapped to 'Networks of Quality, Teaching and Learning' - singular/plural of one unit, both spellings in the same export, and the plural already owns the qtl folder. This maps onto an existing entity; it does not create one."
+    },
+    "city_spelling": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "'Dar es Salam' (missing an 'a', 2 rows) is recorded as a variant in the city lookup rather than corrected in the export - CODING_STANDARDS section 4."
+    },
+    "event_types": {
+      "status": "pending",
+      "owner": "dev",
+      "note": "Tags is single-valued, 16 clean values reconciling exactly with Tags.csv, no orphans either way. event_types is a custom event-types-plugin whose vocabulary is NOT knowable from the space - /field_types returns 403 to a personal token, and the one filled value seen anywhere is 'conf-workshop', which reads as Conference AND Workshop merged. So the map is probably many-to-one. Needs the 16 labels mapped to the plugin's slugs."
+    },
+    "contact": {
+      "status": "pending",
+      "owner": "dev",
+      "note": "Populated on ALL 2,710 events, 2,046 links across 1,251. event_article has no contact field at all. The single largest gap."
+    },
+    "registration": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "register_label = 'Register Now' and register_link = the URL out of the Registration column, written as an EXTERNAL multilink. Filled on 799: 768 have a real <a href>, and 31 more have a bare URL in the text, which is still SharePoint's link. 93 events carry more than one link (up to 7) and the FIRST is taken -- the one the registration sentence leads with; the rest stay in the body. The remaining 132 have Registration as prose ('Registration is Free') with no URL: BOTH fields are left empty, because no link means no button and a label on its own is dead weight. SharePoint escapes colons as &#58;, so hrefs are unescaped before writing or every link would be broken. CLOSED, not pending: the 132 with no URL are left with both fields empty and are not chased further. About 31 are fragments ('reg', blanks); the rest carry prose - 12 email addresses, 13 deadlines, 1 phone number, and a few 'Click here to register' whose <a> did not survive the export, so the destination is gone from the cell entirely. No link means no button. The Registration text itself is dropped for ALL 931 events, since event_article has no registration field; it stays in data/events.json and in the payload, so an update plan can fill it later if the dev ever adds one."
+    },
+    "unmapped_columns": {
+      "status": "pending",
+      "owner": "dev",
+      "note": "No field on event_article: EventSubTitle (1,713), ImageCredit (1,538), EventSite (147), OtherCity (107), EventSubsite (74), SocialMedia (1), OnGoingEvent (123 true)."
+    },
+    "no_source_column": {
+      "status": "pending",
+      "owner": "decided",
+      "note": "event_article has `mode` and `deadline`; the export has neither. The reference page fills both by hand. They stay empty unless AKU supplies them."
+    },
+    "archive_not_upcoming": {
+      "status": "pending",
+      "owner": "AKU",
+      "note": "ALL 2,710 events are in the past - StartDate runs 2007-10-30 to 2026-04-18 and the latest ended months ago. event_article carries register_link, register_label and show_calendar, and the space has an upcoming_events component. Publishing 'Register Now' on a 2015 workshop is wrong. Needs a decision on whether the registration UI is suppressed for past events."
+    },
+    "no_shared_entities": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "AdditionalEntity is present and EMPTY on all 2,710, so events has no cross-entity sharing to migrate - and event_article has no `entities` field to hold it anyway (entity is a plain text field). News's build_crossrefs / share_target machinery does not apply. Worth one question to AKU on whether it was never used or just not exported."
+    },
+    "dates": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "start_at and end_at are real `datetime` fields and take StartDate/EndDate with the seconds trimmed ('2015-03-09 14:30'); 124 events have no EndDate. event_date is 'Mar 09, 2015', or 'Mar 09 - Jul 10, 2015' where the event spans days. event_time takes the clock times off StartDate and EndDate as the DAILY session, including for multi-day courses -- 626 of the 670 multi-day events with times have a start earlier in the day than the end, which is what a class slot looks like: #8 is a 16-week course running 14:30-18:30 daily. Filled on 2,464 of 2,710; the 246 blanks are events whose StartDate time is 00:00, so SharePoint has no time to import. deadline = StartDate, formatted like event_date; the export has no deadline column. RULE: whatever SharePoint holds is imported as-is. Nothing is dropped or reshaped on judgement."
+    },
+    "mode": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "mode = 'In-Person' on all 2,710. The export has no mode column; event_article's own description reads 'e.g. In-Person, Online, Hybrid'."
+    },
+    "switches": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "show_calendar, show_share, show_events and show_events_header are all true on every event. Constants, not from the export, and written explicitly rather than left to the component defaults - only show_calendar defaults true in the schema, and a default can change under us. Note this means all 2,710 archived events render an Add to Calendar button; start_at/end_at exist only to drive it, per the field's own description."
+    },
+    "intro_heading": {
+      "status": "decided",
+      "owner": "decided",
+      "note": "Every event body opens with a rich_text blok holding an H1 'About this <Tag>', with the tag word in the brand green (#008F51) as a textStyle mark. Shape copied field for field off events-detail/test; the wording comes from the SharePoint Tags column, which is single-valued and clean. It sits ahead of the converted EventDetail, so every event has two or more rich_text bloks. Four tags are reworded so the heading reads as English, and the rewording is the whole heading, not just the word -- '40 years of AKU' drops 'this': Other and untagged -> 'About this Event'; '40 years of AKU' -> 'About 40 Years of AKU'; 'Grand Rounds' -> 'About this Grand Round'; 'Open day' -> 'About this Open Day'. The green covers the word after the prefix in every case."
+    },
+    "location_online": {
+      "decided": "2026-08-12",
+      "rule": "Venue says online and names no physical place -> location = \"Online\".",
+      "counts": "715 of 2,710 set to Online (473 unambiguous + 242 with extra text). 67 left alone because the word arrives inside \"Register online\" beside a real room. 1,504 were already clean.",
+      "why_not_all_782": "A literal 'contains the word online' rule would replace \"Lecture Hall 3 & CIME PBL Rooms, Medical College, AKU\" with \"Online\" on 67 events. Measured before adopting.",
+      "implemented_in": "Events-Pipeline/pipeline/build_portal.py :: location_for()"
+    },
+    "location_cta_junk": {
+      "decided": "2026-08-12",
+      "rule": "423 venues carry CTA/nav blocks and no \"online\" -- \"AKU Auditorium R E G I S T R A T I O N Register for the course Fee...\". LEFT EXACTLY AS SHAREPOINT HAS THEM.",
+      "rejected_alternative": "A cut-at-first-CTA-marker rule was written and measured: 231 of 423 shortened, 0 emptied. Not adopted -- the standing rule is to import what SharePoint has. Do not re-derive it; the evidence is in Events-Pipeline/data/venue_review.csv.",
+      "longest": "992 characters, event 2816."
+    },
+    "location_word_paste": {
+      "decided": "2026-08-12",
+      "rule": "strip_html now drops <style>/<script> CONTENTS and Word conditional comments, not just the tags.",
+      "why": "7 Venue values are Word paste. Event 242 published as \"Conference Room, Emergency Medicine Normal 0 false false false EN-US X-NONE /* Style Definitions */ table.MsoNormalTable {mso-style-name:...}\". Removing tags alone leaves the CSS text, because <style> holds text rather than markup."
+    },
+    "event_date_start_only": {
+      "decided": "2026-08-12",
+      "rule": "event_date is the START date only, never a range.",
+      "why": "An earlier version rendered the 871 multi-day events as \"Sep 20 - Sep 22, 2019\". The span is not lost: start_at and end_at are real datetime fields carrying both ends exactly."
+    },
+    "richtext_document_links": {
+      "decided": "2026-08-12",
+      "rule": "Document links in the body are rewritten to the uploaded Storyblok asset URL at payload-build time.",
+      "why": "attach-richtext-media wrote /events-media/<file> at stage 1, when nothing had been uploaded and no real URL existed. 163 documents across 120 events would otherwise 404 -- mostly the programmes and registration forms those pages exist for.",
+      "implemented_in": "Events-Pipeline/pipeline/build_payload.py :: relink_media()"
+    },
+    "text_clean_adopted": {
+      "decided": "2026-08-12, after merging origin/master",
+      "rule": "Events uses pipeline/core/text_clean.py -- clean_text for plain fields, clean_richtext for the body -- rather than its own helpers.",
+      "why": "CLAUDE.md 9 landed on master naming events directly. Measured: the export holds 79,495 HTML entities and 2,353 were reaching the built payloads (&quot; 1,420, &nbsp; 795, &amp; 80), to publish as literal text mid-sentence. Now 0, verified on all 2,710 and on the 10 live.",
+      "markers": "{pullquote} and {EmbeddedCode} do not occur in events -- counted, 0 of 2,710. The shared cleaner strips them anyway.",
+      "slugs": "Unchanged: 0 of 2,710 differ after the switch, so no story moves.",
+      "shared_change": "text_clean.strip_html now drops <style>/<script> CONTENTS and Word conditional comments, not just the tags. Contributed there rather than kept in events because news has 46 of the same blocks, which is the two-code-paths fault CLAUDE.md 9 exists to prevent.",
+      "guard": "build_payload warns if looks_encoded() finds anything surviving."
+    },
+    "payload_builder_is_declared": {
+      "decided": "2026-08-12, after merging origin/master",
+      "rule": "storyblok.payload_builder names the type's own builder. The shared uploader never discovers one by filename.",
+      "why": "The merge brought Blogs-Pipeline/pipeline/build_payload.py, whose build() is build(story, routing, authors, photos, palette) and is driven by blogs' own upload.py. Filename discovery would have adopted it for --type blogs and called it with six arguments it has never seen. Blogs is safe today only because it does not use the shared cmd_stories; that is luck, not design."
+    }
+  },
+  "source_format": "csv",
+  "source_file": "data/source/Metadata.csv",
+  "tracking": {
+    "_comment": [
+      "What pipeline/migrate/db.py reads when it loads the Postgres tracking",
+      "database. Every value here exists because events' taxonomy output and",
+      "payload shape differ from news's; db.py's own defaults are news's, so",
+      "this block is the whole of the difference.",
+      "",
+      "EVENTS CANNOT BE UPDATED WITHOUT THIS DATABASE. event_article has no",
+      "sharepoint_id field, so the story table is the only link between a live",
+      "story and its export row. See Events-Pipeline/CLAUDE.md 5a."
+    ],
+    "routing_csv": "routing.csv",
+    "story_paths_csv": null,
+    "slug_suffix": "id",
+    "_slug_suffix_comment": [
+      "Every event slug ends in its SharePoint id. Decided 2026-08-12.",
+      "",
+      "Events recur, so titles are not unique: 2,710 events share 2,373 titles.",
+      "26 are called 'EdTech Lounge Online' and all route to",
+      "regions/pk/entities/qtl/events; 19 are 'Virtual Open Day' under ismc.",
+      "Measured over all 2,710: a plain title slug gives 201 colliding paths",
+      "across 542 events. upload.py checks with_slug before creating, so the",
+      "second event finds the first and PUTs over it -- 542 would collapse",
+      "into 201 and 341 events would vanish with no error, and the",
+      "sharepoint_id -> sb_story_id mapping the update plans depend on would",
+      "become many-to-one.",
+      "",
+      "The start date was measured too and is NOT enough: 98 events share a",
+      "title AND a day. Only the id is guaranteed unique (2,710 distinct).",
+      "",
+      "Chosen over suffixing only the clashes because a slug must not depend",
+      "on what other events exist -- otherwise an edited title in a future",
+      "export silently changes a different event's public URL.",
+      "",
+      "News and blogs do not set this and keep clean title slugs; their",
+      "headlines are near-unique, which events' are not."
+    ],
+    "columns": {
+      "id": "event_id",
+      "published_date": "start_at",
+      "region": "region",
+      "entity": "entity_source",
+      "entity_short": "entity_short",
+      "department": null,
+      "placement": "placement",
+      "surface_global": null,
+      "region_source": "country_source",
+      "entity_source": "entity_source",
+      "target_folder": "folder_path",
+      "target_full_slug": null
+    },
+    "_columns_comment": [
+      "department and surface_global are null because events has neither: there",
+      "is no department signal in the export, and AdditionalEntity is empty on",
+      "all 2,710 so nothing is shared across entities.",
+      "",
+      "target_full_slug is null because routing.csv records the destination",
+      "FOLDER, not a full story path. upload.py derives the slug from the title,",
+      "which is what news does too whenever target_slug is empty."
+    ],
+    "assets": [
+      {
+        "field": "banner",
+        "role": "banner",
+        "scalar": true
+      },
+      {
+        "field": "attachment",
+        "role": "attachment",
+        "scalar": true
+      },
+      {
+        "field": "media"
+      }
+    ],
+    "_assets_comment": [
+      "News keeps every file in media[]. Events' media[] holds ONLY the 163",
+      "rich-text documents, on 120 of 2,710 stories -- the heroes are bare",
+      "filenames on content.banner and content.attachment, which is why those",
+      "two are declared scalar.",
+      "",
+      "media[] rather than richtext_media[], though they hold the same 163",
+      "files: richtext_media names them local_filename/local_src, and db.py",
+      "reads filename/src. Pointed at richtext_media the load skips all 163",
+      "without complaining -- measured, not guessed.",
+      "",
+      "Left at news's default this loads 163 rows, misses all 2,669 banners, and",
+      "still exits 0: the uploader then finds nothing to send and every event",
+      "publishes with an empty banner_image. It fails quietly, so check the",
+      "asset count after a load rather than the exit code."
+    ]
+  },
+  "skip_steps": [
+    "validate-media",
+    "map-storyblok-media",
+    "inject-story-media",
+    "extract-viewer-filters"
+  ],
+  "_skip_steps_comment": [
+    "Steps events does not need, and one it must not run.",
+    "",
+    "validate-media / map-storyblok-media / inject-story-media all read",
+    "Metadata.csv as a MEDIA MANIFEST with role and filename columns, which is what",
+    "news's was. Events' Metadata.csv is the CONTENT -- the images are named in the",
+    "imageurl and attachment_files columns instead -- so these three have nothing to",
+    "work out. Blogs skips the first two for the same reason.",
+    "",
+    "extract-viewer-filters MUST be skipped. It writes to",
+    "storyblok-viewer/src/constants/, which is NOT per type -- it is news's review",
+    "viewer. Running it with --type events would overwrite news's tag, author,",
+    "publisher and contentWriter lists with events data. Events has no author or",
+    "publisher column at all, so it would write empty files over a finished corpus.",
+    "",
+    "NOT skipped: the four richtext-media steps. The bodies contain zero <img>, but",
+    "they do carry 363 document links -- 339 PDFs, 15 docx, 3 doc, 6 jpg -- which",
+    "live on aku.edu and die with the site. Those steps are what fetches them."
+  ],
+  "_content_fields_comment": [
+    "The events story payload. Deliberately NOT a copy of news's 44 keys: the",
+    "events list has 36 columns, 4 dead on all 2,710, and none of news's alternate-",
+    "language, approver, pull-quote or globally-active fields exist at all.",
+    "",
+    "Declaring only what the export actually has means a null in a built payload is",
+    "a real absence rather than a column nobody mapped. That is the blogs rule, and",
+    "it is why there is no `pull_quote` key here -- events has no such column, so",
+    "carrying an always-null field would only invite someone to look for the data.",
+    "",
+    "Nine keys carry columns event_article has NO FIELD for -- contact, subtitle,",
+    "image_credit, registration, event_site, event_subsite, other_city,",
+    "social_media, ongoing. They are kept in the payload on purpose: when the dev",
+    "adds a field, the data is already there and only build_payload changes. Losing",
+    "it here would mean re-running stage 1 over 2,710 events to get it back.",
+    "",
+    "  field:    a logical name from `fields`, resolved per content type",
+    "  column:   a raw export column",
+    "  computed: built by the pipeline",
+    "  decode:   tags_text turns 'Course' into the {label, term_guid, wss_id} shape",
+    "            everything downstream expects"
+  ],
+  "content_fields": [
+    {
+      "key": "component",
+      "computed": "component"
+    },
+    {
+      "key": "_uid",
+      "computed": "uid"
+    },
+    {
+      "key": "title",
+      "computed": "title"
+    },
+    {
+      "key": "subtitle",
+      "field": "subtitle"
+    },
+    {
+      "key": "summary",
+      "field": "summary"
+    },
+    {
+      "key": "body",
+      "field": "body"
+    },
+    {
+      "key": "start_at",
+      "field": "start_date"
+    },
+    {
+      "key": "end_at",
+      "field": "end_date"
+    },
+    {
+      "key": "ongoing",
+      "field": "ongoing"
+    },
+    {
+      "key": "venue",
+      "field": "venue"
+    },
+    {
+      "key": "city",
+      "field": "city"
+    },
+    {
+      "key": "country",
+      "field": "country"
+    },
+    {
+      "key": "other_city",
+      "field": "other_city"
+    },
+    {
+      "key": "entity",
+      "field": "entity"
+    },
+    {
+      "key": "tags",
+      "field": "tags",
+      "decode": "tags_text"
+    },
+    {
+      "key": "banner",
+      "field": "banner"
+    },
+    {
+      "key": "attachment",
+      "field": "attachment"
+    },
+    {
+      "key": "image_credit",
+      "field": "image_credit"
+    },
+    {
+      "key": "video",
+      "field": "video"
+    },
+    {
+      "key": "contact",
+      "field": "contact"
+    },
+    {
+      "key": "registration",
+      "field": "registration"
+    },
+    {
+      "key": "event_site",
+      "field": "event_site"
+    },
+    {
+      "key": "event_subsite",
+      "field": "event_subsite"
+    },
+    {
+      "key": "social_media",
+      "field": "social_media"
+    },
+    {
+      "key": "is_active",
+      "field": "is_active"
+    },
+    {
+      "key": "source_url",
+      "field": "source_url"
+    },
+    {
+      "key": "sharepoint_id",
+      "computed": "sharepoint_id"
+    },
+    {
+      "key": "sharepoint_created",
+      "column": "Created"
+    },
+    {
+      "key": "sharepoint_modified",
+      "column": "Modified"
+    }
+  ]
 }

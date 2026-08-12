@@ -153,11 +153,29 @@ def clean_text(value, *, collapse=True):
     return re.sub(r"\s+", " ", text).strip()
 
 
+# <style> and <script> hold TEXT, not markup, so deleting the tags leaves the
+# payload behind as prose. Word's conditional comments carry the same freight.
+DROP_WHOLE = re.compile(
+    r"<!--\[if[^\]]*\]>.*?<!\[endif\]-->"          # <!--[if gte mso 9]>...
+    r"|<(style|script)\b[^>]*>.*?</\1>"            # ...and their contents
+    r"|<!--.*?-->",
+    re.I | re.S)
+
+
 def strip_html(value, *, collapse=True):
-    """Tags out, then `clean_text`. For a field that holds a fragment of HTML."""
+    """Tags out, then `clean_text`. For a field that holds a fragment of HTML.
+
+    Style and script CONTENTS go too, not just their tags. Removing the tags
+    alone leaves the stylesheet as visible prose: seven events' `Venue` came
+    out as "Conference Room, Emergency Medicine Normal 0 false false false
+    EN-US X-NONE /* Style Definitions */ table.MsoNormalTable
+    {mso-style-name:...}", and 46 Word-paste blocks sit in the news export too.
+    Same class of fault as the entities above, and here for the same reason.
+    """
     if not value:
         return ""
-    return clean_text(re.sub(r"<[^>]+>", " ", str(value)), collapse=collapse)
+    text = DROP_WHOLE.sub(" ", str(value))
+    return clean_text(re.sub(r"<[^>]+>", " ", text), collapse=collapse)
 
 
 def clean_href(href):
