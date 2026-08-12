@@ -64,7 +64,8 @@ import _bootstrap
 
 _bootstrap.ensure()
 import db as tracking
-from build_payload import build, load_story, slugify
+from build_payload import build as _shared_build
+from build_payload import load_story, slugify
 from paths import MEDIA_DIR
 
 from storyblok_config import load_config, management_api_base
@@ -73,6 +74,45 @@ from storyblok_config import load_config, management_api_base
 # type; see pipeline/paths_root.py.
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 from paths_root import P
+
+
+def _payload_builder():
+    """The build() for the selected type: its own if the profile names one.
+
+    The shared builder targets news_article. event_article shares almost none of
+    its 16 fields -- no entities, no isGlobal, no read_time, no galleries -- so
+    bending one function to serve both would mean a branch per field, which
+    ARCHITECTURE.md's second rule exists to prevent. A type may instead ship its
+    own, whose build() takes THIS signature and ignores what its component does
+    not have.
+
+    Named in the profile, never discovered by filename. Blogs also has a
+    Blogs-Pipeline/pipeline/build_payload.py, but its build() is
+    build(story, routing, authors, photos, palette) and it is driven by blogs'
+    own upload.py -- picking it up here because the name matched would call it
+    with six arguments it has never seen. A type opts in; nothing is adopted by
+    accident.
+    """
+    rel = P.storyblok.get("payload_builder")
+    if not rel:
+        return _shared_build
+    own = os.path.join(P.PIPELINE, *rel.split("/"))
+    if not os.path.exists(own):
+        sys.exit(f"{P.type}: profile names payload_builder {rel!r}, "
+                 f"but {own} does not exist")
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(f"{P.type}_build_payload", own)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    print(f"  payload builder: {os.path.relpath(own)}")
+    return mod.build
+
+
+build = _payload_builder()
+
+# Which component field holds the entity folder ids, or null for a component
+# with none. Defaults to news's, so news and blogs are unaffected.
+ENTITIES_FIELD = P.storyblok.get("entities_field", "entities")
 
 THROTTLE = 0.35          # seconds between write calls; starter plan is modest
 
@@ -378,7 +418,7 @@ def cmd_assets(sb, args, run_id):
         c.execute("SET search_path TO migration, public")
         rows = c.execute("""
             SELECT a.id, a.sharepoint_id, a.role, a.source_filename,
-                   coalesce(s.target_full_slug, '')
+                   coalesce(s.target_full_slug, ''), coalesce(s.target_folder, '')
             FROM asset a JOIN story s USING (sharepoint_id)
             WHERE a.status IN ('pending','failed','missing')
               AND (%s OR s.is_sample)
@@ -400,16 +440,24 @@ def cmd_assets(sb, args, run_id):
         return (f"[{n}/{total} {100 * n / total:.0f}%  "
                 f"{rate:.0f}/min  ~{left:.0f} min left]")
 
-    for n, (aid, sid, role, fn, full_slug) in enumerate(rows, 1):
+    for n, (aid, sid, role, fn, full_slug, target_folder) in enumerate(rows, 1):
         # Each story's media is filed under the same hierarchy as the story, so
         # an editor looking for an article's images knows where to look. Asset
         # folders are a separate namespace from the content tree, so creating
         # them is allowed where creating a content folder is not.
         #
-        # full_slug ends with the story's own slug; the folder is everything
-        # before it, e.g. regions/pakistan/entities/medical-college/news
+        # Three ways to know where the story went, in the order cmd_stories
+        # uses them: --folder pins every story to one place, so its assets
+        # follow; else full_slug ends with the story's own slug and the folder
+        # is everything before it; else the taxonomy recorded the destination
+        # folder alone, which is what events does.
         afid = None
-        story_folder = full_slug.rsplit("/", 1)[0] if "/" in full_slug else ""
+        if args.folder:
+            story_folder = args.folder
+        elif "/" in full_slug:
+            story_folder = full_slug.rsplit("/", 1)[0]
+        else:
+            story_folder = target_folder
         if story_folder:
             afid = ensure_asset_folder(sb, story_folder, folders)
         path = os.path.join(MEDIA_DIR, fn)
@@ -583,7 +631,8 @@ def cmd_stories(sb, args, run_id):
         c.execute("SET search_path TO migration, public")
         rows = c.execute("""SELECT sharepoint_id, title, region, entity,
                                    target_slug, sb_story_id, payload_hash,
-                                   surface_global, coalesce(target_full_slug,'')
+                                   surface_global, coalesce(target_full_slug,''),
+                                   coalesce(target_folder,'')
                             FROM story WHERE (%s OR is_sample)
                             ORDER BY sharepoint_id""",
                          (args.all_stories,)).fetchall()
@@ -595,7 +644,7 @@ def cmd_stories(sb, args, run_id):
 
     ok = fail = skipped = 0
     for (sid, title, region, entity, slug, sb_id, old_hash,
-         surface_global, target_full_slug) in rows:
+         surface_global, target_full_slug, target_folder) in rows:
         try:
             st = load_story(sid)
         except FileNotFoundError:
@@ -603,16 +652,23 @@ def cmd_stories(sb, args, run_id):
             fail += 1
             continue
 
-        slug = slug or slugify(title) or f"news-{sid}"
+        slug = slug or slugify(title) or f"{P.type}-{sid}"
         if fixed_parent is not None:
             parent_id, folder_path = fixed_parent, args.folder
-        else:
-            if "/" not in target_full_slug:
-                print(f"  !! {sid}: no target_full_slug; run the taxonomy")
-                fail += 1
-                continue
+        elif "/" in target_full_slug:
             folder_path = target_full_slug.rsplit("/", 1)[0]
             slug = target_full_slug.rsplit("/", 1)[1] or slug
+        elif target_folder:
+            # A taxonomy that records the destination FOLDER rather than a whole
+            # story path -- events does, because its routing decides placement
+            # and nothing else. The slug then comes from the title, which is
+            # already the fallback whenever target_slug is empty.
+            folder_path = target_folder
+        else:
+            print(f"  !! {sid}: no destination; run the taxonomy")
+            fail += 1
+            continue
+        if fixed_parent is None:
             try:
                 parent_id = ensure_folder(sb, folder_path, folder_cache)
             except SystemExit:
@@ -620,7 +676,13 @@ def cmd_stories(sb, args, run_id):
         full_slug = f"{folder_path}/{slug}"
 
         warns = []
-        ents = entities_for(sid, region, entity, folder_ids, warns)
+        # news_article carries `entities`, a list of entity FOLDER IDS. Not
+        # every component has one -- event_article's `entity` is plain text --
+        # and resolving ids for a field nothing reads warns once per story:
+        # 2,710 of them for events, which is exactly how a real warning gets
+        # missed. A profile says so with "entities_field": null.
+        ents = (entities_for(sid, region, entity, folder_ids, warns)
+                if ENTITIES_FIELD else [])
         content, warns = build(st, None, assets=assets_for(sid),
                                entities=ents, is_global=bool(surface_global),
                                warn=warns)
