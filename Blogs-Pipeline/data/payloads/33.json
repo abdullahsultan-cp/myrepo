@@ -328,7 +328,7 @@
         {
           "component": "quote_banner",
           "quote": "This is not only relevant but also evidence-based: both the 21st century learning skills and the WHO SDGs delve into the need for innovation, creativity and entrepreneurship, among other things, at the systems level.",
-          "variant": "attributed",
+          "variant": "centered",
           "attribution": "Dr. Asad I Mian",
           "portrait": {
             "fieldtype": "asset"
@@ -422,7 +422,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"

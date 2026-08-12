@@ -52,19 +52,185 @@
                     "type": "hard_break"
                   }
                 ]
+              }
+            ]
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
               },
-              {
-                "type": "paragraph",
-                "content": [
-                  {
-                    "type": "text",
-                    "text": "As a student of the University of London, I had to consider several implications of using my time effectively-using time to bring about a favourable result. Failure would be a sure thing if I did not complete my assessments or make space in my busy schedule to study and review the material. I also had to consider the length of time it would take to cover all the necessary chapters in the module that would bring about a comprehensive understanding of the topic. So time, when applied effectively brings about good results. However, as they say \"Rome was not built in a day\", so it would be suffice to say that some of us still struggle with this construct of measuring time and how it affects our daily activities."
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 176,
+                "right": 176,
+                "bottom": null
+              }
+            }
+          },
+          "bg_pattern": {
+            "fieldtype": "asset"
+          },
+          "pattern_height": null,
+          "pattern_mobile_height": null
+        },
+        {
+          "component": "row",
+          "width": "",
+          "height": null,
+          "radius": "",
+          "align_items": "center",
+          "justify_content": "center",
+          "background_color": {
+            "color": "#ffff",
+            "plugin": "native-color-picker"
+          },
+          "spacing": {
+            "unit": "px",
+            "mobile": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 20,
+                "right": 20,
+                "bottom": null
+              }
+            },
+            "desktop": {
+              "margin": {
+                "top": null,
+                "left": null,
+                "right": null,
+                "bottom": 56
+              },
+              "padding": {
+                "top": null,
+                "left": 80,
+                "right": 80,
+                "bottom": null
+              }
+            }
+          },
+          "items": [
+            {
+              "component": "row_item",
+              "width": "",
+              "radius": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "social_embed",
+                  "variant": "facebook",
+                  "url": "https://www.facebook.com/AKUGlobal/posts/2321196161353177",
+                  "align": "center",
+                  "show_text": true,
+                  "spacing": ""
+                }
+              ]
+            },
+            {
+              "component": "row_item",
+              "width": "",
+              "radius": "",
+              "width_mode": "",
+              "spacing": "",
+              "background_color": {
+                "color": "#ffff",
+                "plugin": "native-color-picker"
+              },
+              "body": [
+                {
+                  "component": "rich_text",
+                  "content": {
+                    "type": "doc",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "As a student of the University of London, I had to consider several implications of using my time effectively-using time to bring about a favourable result. Failure would be a sure thing if I did not complete my assessments or make space in my busy schedule to study and review the material. I also had to consider the length of time it would take to cover all the necessary chapters in the module that would bring about a comprehensive understanding of the topic. So time, when applied effectively brings about good results. However, as they say \"Rome was not built in a day\", so it would be suffice to say that some of us still struggle with this construct of measuring time and how it affects our daily activities."
+                          },
+                          {
+                            "type": "hard_break"
+                          }
+                        ]
+                      }
+                    ]
                   },
-                  {
-                    "type": "hard_break"
-                  }
-                ]
-              },
+                  "spacing": {
+                    "unit": "px",
+                    "mobile": {
+                      "margin": {
+                        "top": null,
+                        "left": null,
+                        "right": null,
+                        "bottom": 56
+                      },
+                      "padding": {
+                        "top": null,
+                        "left": 20,
+                        "right": 20,
+                        "bottom": null
+                      }
+                    },
+                    "desktop": {
+                      "margin": {
+                        "top": null,
+                        "left": null,
+                        "right": null,
+                        "bottom": 56
+                      },
+                      "padding": {
+                        "top": null,
+                        "left": 176,
+                        "right": 176,
+                        "bottom": null
+                      }
+                    }
+                  },
+                  "bg_pattern": {
+                    "fieldtype": "asset"
+                  },
+                  "pattern_height": null,
+                  "pattern_mobile_height": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "component": "rich_text",
+          "content": {
+            "type": "doc",
+            "content": [
               {
                 "type": "paragraph",
                 "content": [
@@ -319,7 +485,7 @@
         {
           "component": "quote_banner",
           "quote": "\"We are the main characters! You must recognize at this point in time that on one half, you are responsible for your own development, no one else.\"",
-          "variant": "attributed",
+          "variant": "centered",
           "attribution": "Leif Stenberg",
           "portrait": {
             "fieldtype": "asset"
@@ -413,7 +579,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"
@@ -442,7 +638,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"
@@ -471,7 +697,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"
@@ -539,14 +795,6 @@
               }
             }
           }
-        },
-        {
-          "component": "social_embed",
-          "variant": "facebook",
-          "url": "https://www.facebook.com/AKUGlobal/posts/2321196161353177",
-          "align": "center",
-          "show_text": true,
-          "spacing": ""
         },
         {
           "component": "rich_text",

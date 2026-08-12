@@ -266,7 +266,7 @@
         {
           "component": "quote_banner",
           "quote": "The main reason for authoring this essay is not to hyper-critique celebrity-mediated marketing of dietary supplements. It is simply to make the reader aware of the ethical and moral situation that arises.",
-          "variant": "attributed",
+          "variant": "centered",
           "attribution": "Dr. Asad I Mian",
           "portrait": {
             "fieldtype": "asset"
@@ -360,7 +360,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"
@@ -389,7 +419,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"

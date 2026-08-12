@@ -256,7 +256,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"

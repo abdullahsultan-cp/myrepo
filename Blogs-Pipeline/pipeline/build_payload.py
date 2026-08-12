@@ -267,7 +267,10 @@ def pill_row(labels, palette):
         "items": [{
             "component": "row_item", "width": "", "height": "", "radius": "",
             "width_mode": "fit", "align_items": "", "justify_content": "",
-            "spacing": "", "background_color": dict(WHITE),
+            # 10px between pills. Set by the owner on one pill as the example
+            # and applied to all: without it they run together as one bar.
+            "spacing": spacing(edges(), edges(), edges(), edges(left=10)),
+            "background_color": dict(WHITE),
             "body": [{"component": "pill", "label": label,
                       "variant": palette.get(label, "green"),
                       "custom_bg_color": colour_field(
@@ -275,6 +278,49 @@ def pill_row(labels, palette):
                       "custom_text_color": colour_field(PILL_TEXT_COLOUR)}],
         } for i, label in enumerate(labels)],
     }
+
+
+def beside_text(bloks, companion):
+    """Put `companion` in a two-column row with the article's second paragraph.
+
+    Returns a new blok list:
+
+        rich_text   the opening paragraph
+        row         companion | rich_text of the next paragraph
+        rich_text   everything after that
+
+    The split is on paragraph boundaries, so no sentence is cut and the visible
+    text is unchanged — only its arrangement. If the article has fewer than
+    three paragraphs there is nothing to pair with, and the companion is simply
+    appended rather than a layout being forced onto content too short for it.
+    """
+    first = next((i for i, b in enumerate(bloks)
+                  if b.get("component") == "rich_text"), None)
+    if first is None:
+        return bloks + [companion]
+    nodes = ((bloks[first].get("content") or {}).get("content")) or []
+    if len(nodes) < 3:
+        return bloks + [companion]
+
+    def rich(subset):
+        return {**copy.deepcopy(bloks[first]),
+                "content": {"type": "doc", "content": subset}}
+
+    row = {"component": "row", "width": "", "height": None, "radius": "",
+           "align_items": "center", "justify_content": "center",
+           "background_color": dict(WHITE),
+           "spacing": copy.deepcopy(WIDE_SPACING),
+           "items": [
+               {"component": "row_item", "width": "", "radius": "",
+                "spacing": "", "background_color": dict(WHITE),
+                "body": [companion]},
+               {"component": "row_item", "width": "", "radius": "",
+                "width_mode": "", "spacing": "",
+                "background_color": dict(WHITE),
+                "body": [rich(nodes[1:2])]},
+           ]}
+    return (bloks[:first] + [rich(nodes[:1]), row, rich(nodes[2:])]
+            + bloks[first + 1:])
 
 
 def disclaimer_bloks():
@@ -325,8 +371,12 @@ def build(story, routing, authors, photos, palette):
         # not. `category` and `date` belong to the event variant and are left
         # out of the other two rather than filled with the blog's own.
         said_by = (content.get("pull_quote_author") or "").strip()
+        # **A quote with no portrait is centered.** The owner's rule, and it
+        # applies to all 17: `attributed` lays out around a picture of the
+        # speaker, and SharePoint has none for any blog. The name still goes in
+        # `attribution` — it is displayed either way.
         blok = {"component": "quote_banner", "quote": quote,
-                "variant": "attributed" if said_by else "centered",
+                "variant": "centered",
                 "attribution": said_by,
                 "portrait": {"fieldtype": "asset"},
                 "background_image": {"fieldtype": "asset"},
@@ -359,9 +409,17 @@ def build(story, routing, authors, photos, palette):
             # Never a raw iframe: social_embed is the component for this.
             plain = re.search(r"href=([^&\"]+)", url)
             from urllib.parse import unquote
-            bloks.append({"component": "social_embed", "variant": "facebook",
+            embed_blok = {"component": "social_embed", "variant": "facebook",
                           "url": unquote(plain.group(1)) if plain else url,
-                          "align": "center", "show_text": True, "spacing": ""})
+                          "align": "center", "show_text": True, "spacing": ""}
+            # Beside the prose, not stranded after it. Left alone at the end of
+            # the article it read as though something were missing, which is
+            # what the owner rebuilt by hand: opening paragraph, then the embed
+            # in a two-column row with the paragraph that follows, then the
+            # rest. Splitting on paragraph boundaries reproduced their layout
+            # exactly — 466 / 717 / 2,051 characters — with the visible text
+            # unchanged.
+            bloks = beside_text(bloks, embed_blok)
 
     # The demo closes with a rule and the disclaimer, then the author, then the
     # comment form. Same order here.
@@ -375,8 +433,15 @@ def build(story, routing, authors, photos, palette):
         bio = strip_html(bio)
     photo = photos.get(author_id)
     if bio or photo:
-        bloks.append({"component": "author_section", "title": "About the",
-                      "highlight": "Author", "bio": bio,
+        # With a biography the heading is the demo's generic "About the
+        # Author". With only a name and a photograph — four blogs — that
+        # heading sits over a blank space and reads as a fault, so the heading
+        # becomes the person instead: "Author : Ayesha Mansoor".
+        who = clean_text(content.get("author"))
+        title, highlight = (("About the", "Author") if bio or not who
+                            else ("Author : ", who))
+        bloks.append({"component": "author_section", "title": title,
+                      "highlight": highlight, "bio": bio,
                       "photo": asset_field(photo), "social_links": []})
 
     bloks.append({"component": "comment_form", "title": "Add a",

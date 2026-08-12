@@ -364,7 +364,7 @@
         {
           "component": "quote_banner",
           "quote": "\"Does it matter whether you practice a single religion, more than one, or none? As long as you are doing God's work it does not matter whether there is religion, or lack of it, in one's day-to-day life.\"",
-          "variant": "attributed",
+          "variant": "centered",
           "attribution": "Dr. Asad I Mian",
           "portrait": {
             "fieldtype": "asset"
@@ -458,7 +458,37 @@
               "width_mode": "fit",
               "align_items": "",
               "justify_content": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": 10,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"
