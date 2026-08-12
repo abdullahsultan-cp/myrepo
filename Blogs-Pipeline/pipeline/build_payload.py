@@ -112,6 +112,13 @@ WIDE_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
                        edges(bottom=56), edges(left=80, right=80))
 DISCLAIMER_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
                              edges(bottom=56), edges(left=80, right=80))
+# The row that holds an embed beside text. Copied from the news demo's own
+# row -- news/strengthening-akus-next-generation-of-researchers -- which is the
+# only hand-built example of this layout. Note mobile margin-bottom 24, NOT the
+# 56 every other blok uses: on a phone the two columns stack, so the gap under
+# the row is already the gap between the embed and the text below it.
+EMBED_ROW_SPACING = spacing(edges(bottom=24), edges(left=20, right=20),
+                            edges(bottom=56), edges(left=80, right=80))
 WHITE = {"color": "#ffff", "plugin": "native-color-picker"}
 
 # Copied verbatim from the demo blog, including the accent on the word itself
@@ -156,7 +163,26 @@ def pill_palette(all_labels):
 # produced pills with the right variant and no colour at all, and the owner
 # fixed them by hand by adding these two fields. Only colours AKU has actually
 # chosen are used: both come from the demo blog and the owner's own correction.
-PILL_COLOURS = ["#06923E96", "#B2CEFF"]
+# One colour per tag, not two alternating. Only two pill colours exist
+# anywhere in the space -- #06923E96 and #B2CEFF -- so the other eight are
+# chosen here, and chosen to match the variant they belong to: `variant` is
+# already a colour name, so a `terracotta` pill that is not terracotta is the
+# field disagreeing with itself. AKU's two are kept where they fit.
+#
+# Change a hex and every pill with that tag changes everywhere, because the
+# variant is assigned per tag by frequency and never moves.
+PILL_COLOURS = {
+    "green":      "#06923E96",   # AKU's, from the demo blog
+    "lime":       "#B7E4A0",
+    "brown":      "#C4A484",
+    "bronze":     "#CD9575",
+    "terracotta": "#E2725B",
+    "rose":       "#F3C6D0",
+    "gold":       "#E8C86E",
+    "taupe":      "#D6CFC7",
+    "stone":      "#B2CEFF",     # AKU's other one
+    "neutral":    "#D9D9D9",
+}
 PILL_TEXT_COLOUR = "#000000"
 
 
@@ -285,9 +311,9 @@ def pill_row(labels, palette):
             "body": [{"component": "pill", "label": label,
                       "variant": palette.get(label, "green"),
                       "custom_bg_color": colour_field(
-                          PILL_COLOURS[i % len(PILL_COLOURS)]),
+                          PILL_COLOURS[palette.get(label, "green")]),
                       "custom_text_color": colour_field(PILL_TEXT_COLOUR)}],
-        } for i, label in enumerate(labels)],
+        } for label in labels],
     }
 
 
@@ -320,7 +346,7 @@ def beside_text(bloks, companion):
     row = {"component": "row", "width": "", "height": None, "radius": "",
            "align_items": "center", "justify_content": "center",
            "background_color": dict(WHITE),
-           "spacing": copy.deepcopy(WIDE_SPACING),
+           "spacing": copy.deepcopy(EMBED_ROW_SPACING),
            "items": [
                {"component": "row_item", "width": "", "radius": "",
                 "spacing": "", "background_color": dict(WHITE),

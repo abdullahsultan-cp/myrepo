@@ -38,14 +38,22 @@ resolving.
 
 ## The demo set
 
-`--demo` is eight blogs chosen to break different things, not to look good:
+`--demo` is twelve blogs chosen to break different things, not to look good.
+Between them they cover every branch in `build_payload.py`:
 
-    15  the ordinary case — banner, bio, photo, category, entity-placed
-    18  no banner, an inline image, a YouTube video AND a Facebook post
-    26  entity-placed under IED
+    15  the ordinary case — banner, biography, photo, entity-placed
+    16  NO author section at all — its author id was deleted from
+        AuthorManagement — and no banner either
+    18  no banner, an inline image, a YouTube video AND a Facebook post,
+        the embed paired beside the prose
+    20  a centred pull quote with an attribution
+    26  entity-placed under IED, five inline images
+    29  the richest ordinary blog — banner, full biography, photo, five
+        inline images, a description
     31  an empty table, and 18 blank paragraphs
     45  a pull quote, four dead SharePoint links, shared to qtl
     70  h1 section headings, 20 blank paragraphs, no banner
+    71  "Author : {Name}" — a photograph and a name but no biography
     84  global and shared to cime
     97  an article that is one giant paragraph with 18 line breaks
 """
@@ -75,7 +83,7 @@ from storyblok_config import load_config
 
 P.use("blogs")
 
-DEMO = ["15", "18", "26", "31", "45", "70", "84", "97"]
+DEMO = ["15", "16", "18", "20", "26", "29", "31", "45", "70", "71", "84", "97"]
 ASSET_FOLDER = "Blogs"
 
 

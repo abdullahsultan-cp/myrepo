@@ -90,14 +90,41 @@ class Pills(unittest.TestCase):
             self.assertTrue(pill["custom_bg_color"]["color"].startswith("#"))
             self.assertEqual(pill["custom_text_color"]["color"], "#000000")
 
-    def test_adjacent_pills_do_not_share_a_background(self):
-        row = self.m.pill_row(["a", "b"], {})
+    def test_two_different_tags_get_two_different_colours(self):
+        row = self.m.pill_row(["a", "b"], {"a": "green", "b": "terracotta"})
         self.assertNotEqual(row["items"][0]["body"][0]["custom_bg_color"]["color"],
                             row["items"][1]["body"][0]["custom_bg_color"]["color"])
 
-    def test_only_colours_aku_chose_are_used(self):
-        """No invented hexes: both come from the demo and the owner's fix."""
-        self.assertEqual(self.m.PILL_COLOURS, ["#06923E96", "#B2CEFF"])
+    def test_the_same_tag_is_the_same_colour_everywhere(self):
+        """A tag's colour comes from its variant, and the variant never moves."""
+        palette = {"Education": "green"}
+        a = self.m.pill_row(["Education"], palette)
+        b = self.m.pill_row(["Education"], palette)
+        self.assertEqual(a["items"][0]["body"][0]["custom_bg_color"],
+                         b["items"][0]["body"][0]["custom_bg_color"])
+
+    def test_every_variant_has_a_colour(self):
+        """A tag whose variant had no hex would render uncoloured again."""
+        for variant in self.m.PILL_VARIANTS:
+            with self.subTest(variant=variant):
+                self.assertIn(variant, self.m.PILL_COLOURS)
+                self.assertTrue(
+                    self.m.PILL_COLOURS[variant].startswith("#"))
+
+    def test_akus_own_two_colours_are_kept(self):
+        """#06923E96 is from the demo blog, #B2CEFF from the owner's fix.
+
+        The other eight are ours, chosen to match the variant they belong to.
+        These two are not: they came from AKU and must stay in the palette.
+        """
+        self.assertIn("#06923E96", self.m.PILL_COLOURS.values())
+        self.assertIn("#B2CEFF", self.m.PILL_COLOURS.values())
+
+    def test_pills_have_spacing_between_them(self):
+        """Without it they run together as one bar."""
+        row = self.m.pill_row(["a"], {"a": "green"})
+        pad = row["items"][0]["spacing"]["desktop"]["padding"]["left"]
+        self.assertEqual(pad, 10)
 
     def test_a_tag_keeps_its_variant_across_blogs(self):
         palette = self.m.pill_palette(["Education"] * 3 + ["Students"] * 2)
