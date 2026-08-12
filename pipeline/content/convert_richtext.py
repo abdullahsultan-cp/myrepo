@@ -17,6 +17,8 @@ SCRIPTS_DIR = abspath(dirname(__file__))
 
 # Paths come from the shared module, so this works for any
 # content type; see pipeline/paths_root.py.
+from text_clean import clean_document
+
 from paths_root import P
 from storyblok_richtext import html_to_storyblok_richtext, validate_document
 
@@ -38,6 +40,14 @@ def convert_item(news_item):
 
     try:
         result = html_to_storyblok_richtext(news_content)
+        # Cleaned HERE, in the shared step, so no content type has to remember
+        # to do it. Blogs shipped 88 literal `&#160;` and 14 `{pullquote}` to
+        # published pages precisely because this was each type's own business:
+        # the portal cleaned its copy, the payload builder did not, and nothing
+        # made them agree. Entities, SharePoint's position markers, invisible
+        # characters and broken link hrefs all go in one pass; see
+        # pipeline/core/text_clean.py for what and why.
+        result.document.update(clean_document(result.document))
         validation_errors = validate_document(result.document)
         warnings.extend(result.warnings)
 

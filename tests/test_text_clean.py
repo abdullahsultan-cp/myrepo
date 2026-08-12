@@ -181,6 +181,30 @@ class RichText(unittest.TestCase):
         self.assertEqual(len(out["content"]), 1)
         self.assertEqual(out["content"][0]["content"][0]["text"], "Real.")
 
+    def test_edge_whitespace_in_a_text_node_SURVIVES(self):
+        """The one that would have rewritten 2,449 news stories.
+
+        A text node is a fragment; the renderer concatenates it with its
+        neighbours. The space at its edge is the space between two sentences,
+        so trimming it deletes that space:
+
+            ...Conference programme. This year's SCCA...
+            ...Conference programme.This year's SCCA...
+
+        `clean_text` trims only when `collapse=True`, i.e. for a whole field.
+        """
+        doc = {"type": "doc", "content": [{"type": "paragraph", "content": [
+            {"type": "text", "text": "programme. "},
+            {"type": "text", "text": "This year"}]}]}
+        out = clean_richtext(doc)
+        joined = "".join(n["text"] for n in out["content"][0]["content"])
+        self.assertEqual(joined, "programme. This year")
+
+    def test_a_field_IS_trimmed(self):
+        """The other half: a standalone value has no neighbour to join to."""
+        self.assertEqual(clean_text("  Pre-Accreditation Candidacy  "),
+                         "Pre-Accreditation Candidacy")
+
     def test_line_breaks_inside_rich_text_are_not_collapsed(self):
         doc = {"type": "doc", "content": [
             {"type": "paragraph", "content": [

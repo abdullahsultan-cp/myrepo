@@ -124,9 +124,22 @@ def looks_encoded(text):
 def clean_text(value, *, collapse=True):
     """Decode entities, drop markers and invisibles. Never transliterates.
 
-    `collapse` folds runs of whitespace into one space, which is right for a
-    biography or a quote pulled out of HTML. Pass False where the line breaks
-    carry meaning.
+    `collapse=True` folds runs of whitespace into one space and trims the ends.
+    That is right for a whole field — a biography, a summary, a quote pulled out
+    of HTML — where the value stands alone.
+
+    **`collapse=False` also stops it trimming, and that matters more than it
+    looks.** Inside rich text a text node is a *fragment*: the renderer
+    concatenates it with its neighbours, so the space at its edge is the space
+    between two sentences. Trimming there deletes it.
+
+    That was measured, not imagined. Wiring this into the shared conversion with
+    an unconditional `.strip()` rewrote **2,449 of 3,606 news stories**, turning
+
+        ...Conference programme. This year's SCCA Conference...
+        ...Conference programme.This year's SCCA Conference...
+
+    across every article where a sentence happened to start a new text node.
     """
     if not value:
         return ""
@@ -135,9 +148,9 @@ def clean_text(value, *, collapse=True):
     # After unescaping, because &#160; only becomes U+00A0 at that point and is
     # invisible to this table — and to the whitespace collapse — until it does.
     text = text.translate(INVISIBLES)
-    if collapse:
-        text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    if not collapse:
+        return text
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def strip_html(value, *, collapse=True):

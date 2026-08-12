@@ -273,6 +273,21 @@ as `<p><br/>×19</p>` with all 4,000 characters gone.
 `/news/PublishingImages/pages/News_Admin/…`. It silently deleted content images
 and made 165 stories look empty.
 
+**A text node is a fragment, not a string. Never trim one.** Wiring the shared
+cleaner into `convert_richtext` looked harmless and would have rewritten **2,449
+of 3,606 news stories**: `clean_text` ended with `.strip()`, and inside rich text
+the renderer *concatenates* adjacent text nodes, so the space at a node's edge is
+the space between two sentences.
+
+    ...Conference programme. This year's SCCA Conference...
+    ...Conference programme.This year's SCCA Conference...
+
+`collapse=True` trims, because a biography or a summary is a whole value.
+`collapse=False` does not, because a node is half of something. Nothing was
+published — it was caught by diffing all 3,606 before applying, which is the
+only reason it is a paragraph here and not an incident. **Any change to shared
+text handling must be measured against news before it runs.**
+
 **Measure a guess before shipping it, and prefer a gap.** Twice now the obvious
 match has been the wrong one: `stephen-lyon.jpg` sits in the same folder as post
 15 "Stephen Lyon: I owe a debt of gratitude to Pakistan", whose real banner is
