@@ -42,8 +42,63 @@ import re
 # Instructions to SharePoint's renderer, left behind in the prose.
 MARKERS = re.compile(r"\{(?:pullquote|EmbeddedCode|embeddedcode|PullQuote)\}")
 
-# The only characters safe to delete outright.
-INVISIBLES = dict.fromkeys(map(ord, "​﻿­"), None)
+# Every hidden character actually present in the two exports, counted:
+#
+#   U+200B  8,187  zero width space          delete
+#   U+202F     79  narrow no-break space     becomes a normal space
+#   U+00A0     47  no-break space            becomes a normal space
+#   U+2028      6  line separator            becomes a newline
+#   U+00AD      5  soft hyphen               delete
+#   U+2009      1  thin space                becomes a normal space
+#   U+FEFF      1  zero width no-break space delete
+#
+# The rest of each block is included so the next export cannot introduce a
+# variant nobody thought of — every other Unicode space becomes a space, every
+# other zero-width goes.
+#
+# **U+200C and U+200D are deliberately NOT here.** Zero-width non-joiner and
+# joiner are not decoration: they change how Urdu, Arabic and Indic scripts
+# render, and 44 news stories carry Arabic and Urdu. Neither appears in either
+# export today; if one arrives it must survive. Filtering by Unicode category
+# `Cf` — the obvious way to catch zero-width spaces — sweeps both away with
+# them, which is why this is an explicit list and not a category test.
+#
+# Written as code points on purpose. The first version used the characters
+# themselves and was unreviewable: nobody can see that a string of invisibles
+# has picked up a plain space and LOST U+00A0, which is exactly what happened.
+# A test caught it only because clean_href skips the whitespace collapse that
+# was hiding it.
+DELETE = "".join(map(chr, (
+    0x200B,   # zero width space           8,187 in the exports
+    0xFEFF,   # zero width no-break space      1
+    0x00AD,   # soft hyphen                    5
+    0x180E,   # Mongolian vowel separator      0 — invisible, never content
+    0x2060,   # word joiner                    0
+    0x061C,   # Arabic letter mark             0
+)))
+TO_SPACE = "".join(map(chr, (
+    0x00A0,   # no-break space                47
+    0x202F,   # narrow no-break space         79
+    0x2009,   # thin space                     1
+    0x2000, 0x2001, 0x2002, 0x2003, 0x2004, 0x2005, 0x2006, 0x2007,
+    0x2008, 0x200A, 0x205F, 0x3000, 0x1680,   # the rest of the space block
+)))
+TO_NEWLINE = "".join(map(chr, (
+    0x2028,   # line separator                 6
+    0x2029,   # paragraph separator            0
+)))
+
+# Bidirectional controls. Present in neither export, and stripped if they ever
+# arrive: they reorder the characters around them and are invisible while doing
+# it, so a pasted one can silently reverse part of a sentence.
+DELETE += "".join(map(chr, (0x200E, 0x200F, 0x202A, 0x202B, 0x202C,
+                            0x202D, 0x202E, 0x2066, 0x2067, 0x2068, 0x2069)))
+
+INVISIBLES = {
+    **dict.fromkeys(map(ord, DELETE), None),
+    **dict.fromkeys(map(ord, TO_SPACE), " "),
+    **dict.fromkeys(map(ord, TO_NEWLINE), chr(10)),
+}
 
 # Anything still shaped like an entity after cleaning.
 ENTITY = re.compile(r"&[a-zA-Z][a-zA-Z0-9]{1,10};|&#x?[0-9a-fA-F]{1,6};")
@@ -76,10 +131,9 @@ def clean_text(value, *, collapse=True):
     if not value:
         return ""
     text = html.unescape(str(value))
-    # After unescaping, because &#160; only becomes a non-breaking space here
-    # and is otherwise invisible to the whitespace collapse below.
-    text = text.replace(" ", " ")
     text = MARKERS.sub("", text)
+    # After unescaping, because &#160; only becomes U+00A0 at that point and is
+    # invisible to this table — and to the whitespace collapse — until it does.
     text = text.translate(INVISIBLES)
     if collapse:
         text = re.sub(r"\s+", " ", text)
@@ -91,6 +145,61 @@ def strip_html(value, *, collapse=True):
     if not value:
         return ""
     return clean_text(re.sub(r"<[^>]+>", " ", str(value)), collapse=collapse)
+
+
+def clean_href(href):
+    """Trim what cannot belong in a URL. Nothing else is touched.
+
+    An invisible character in an href is not cosmetic — it breaks the link,
+    because the browser asks for a host that does not exist. Four live news
+    stories carry one at the end of theirs:
+
+        .../profile.aspx?ProfileID=43&Name=Stephen Lyon<U+200B>
+        https://www.aku.edu/cneaaccreditation@nln.org<U+200B>
+
+    Three of those are also wrong in a way this does NOT fix — an email address
+    glued onto the site URL where somebody meant `mailto:`. Guessing that is a
+    content decision, not a cleanup, so only the invisible goes and the rest is
+    left for a person to look at.
+
+    Note the deletions only: a no-break space becomes a normal space in prose,
+    but inside a URL it is a fault either way, and turning it into a space would
+    hide it from the next person looking for broken links.
+    """
+    if not isinstance(href, str):
+        return href
+    out = href
+    for ch in DELETE + TO_SPACE + TO_NEWLINE:
+        out = out.replace(ch, "")
+    return out.strip()
+
+
+def clean_links(node):
+    """Every link href in a rich-text tree, cleaned. Returns a copy."""
+    if isinstance(node, list):
+        return [clean_links(child) for child in node]
+    if not isinstance(node, dict):
+        return node
+    out = dict(node)
+    marks = out.get("marks")
+    if isinstance(marks, list):
+        fixed = []
+        for mark in marks:
+            if isinstance(mark, dict) and mark.get("type") == "link":
+                attrs = dict(mark.get("attrs") or {})
+                attrs["href"] = clean_href(attrs.get("href"))
+                mark = {**mark, "attrs": attrs}
+            fixed.append(mark)
+        out["marks"] = fixed
+    for key, value in out.items():
+        if isinstance(value, (list, dict)) and key != "marks":
+            out[key] = clean_links(value)
+    return out
+
+
+def clean_document(doc):
+    """Text and links in one call — what a payload builder actually wants."""
+    return clean_links(clean_richtext(doc))
 
 
 def clean_richtext(doc):

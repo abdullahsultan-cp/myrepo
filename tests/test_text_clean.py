@@ -31,7 +31,14 @@ import _bootstrap
 
 _bootstrap.ensure()
 
-from text_clean import clean_richtext, clean_text, looks_encoded, strip_html
+from text_clean import (
+    clean_href,
+    clean_links,
+    clean_richtext,
+    clean_text,
+    looks_encoded,
+    strip_html,
+)
 
 ENTITY = re.compile(r"&[a-zA-Z][a-zA-Z0-9]{1,10};|&#x?[0-9a-fA-F]{1,6};")
 MARKER = re.compile(r"\{(?:pullquote|EmbeddedCode|embeddedcode|PullQuote)\}")
@@ -79,9 +86,67 @@ class Entities(unittest.TestCase):
                     "الجامعة", "یونیورسٹی"):
             self.assertEqual(clean_text(raw), raw)
 
-    def test_invisibles_go_but_only_those_three(self):
-        self.assertEqual(clean_text("a​b﻿c­d"), "abcd")
-        self.assertEqual(clean_text("a b"), "a b", "nbsp becomes a space")
+    def test_every_hidden_character_found_in_the_exports(self):
+        """All seven, counted across blogs and news — 8,326 occurrences."""
+        deleted = {"​": "zero width space (8,187)",
+                   "﻿": "byte-order mark (1)",
+                   "­": "soft hyphen (5)"}
+        for ch, why in deleted.items():
+            with self.subTest(char=why):
+                self.assertEqual(clean_text(f"a{ch}b"), "ab")
+        spaced = {" ": "no-break space (47)",
+                  " ": "narrow no-break space (79)",
+                  " ": "thin space (1)"}
+        for ch, why in spaced.items():
+            with self.subTest(char=why):
+                self.assertEqual(clean_text(f"a{ch}b"), "a b")
+        # U+2028 cannot be written literally here: it is a line
+        # terminator in Python source and breaks this file.
+        self.assertEqual(clean_text("a" + chr(0x2028) + "b",
+                                    collapse=False), "a" + chr(10) + "b",
+                         "line separator (6) becomes a newline")
+
+    def test_urdu_and_arabic_joiners_are_NEVER_stripped(self):
+        """U+200C and U+200D change how Urdu and Arabic render.
+
+        Filtering by Unicode category `Cf` — the obvious way to catch
+        zero-width spaces — sweeps both of these away with them, and 44 news
+        stories carry Arabic and Urdu. Neither appears in the exports today;
+        the point is that if one arrives, it survives.
+        """
+        for ch in ("‌", "‍"):
+            with self.subTest(char=f"U+{ord(ch):04X}"):
+                self.assertEqual(clean_text(f"a{ch}b"), f"a{ch}b")
+
+
+class Links(unittest.TestCase):
+    """An invisible character in an href breaks the link outright."""
+
+    def test_invisibles_are_stripped_from_an_href(self):
+        self.assertEqual(clean_href("https://www.aku.edu/page​"),
+                         "https://www.aku.edu/page")
+
+    def test_a_space_in_a_url_is_removed_not_turned_into_a_space(self):
+        """In prose a no-break space becomes a space; in a URL it is a fault.
+
+        Turning it into a normal space would hide it from the next person
+        looking for broken links.
+        """
+        self.assertEqual(clean_href("https://x.test/a b"),
+                         "https://x.test/ab")
+
+    def test_a_good_href_is_left_exactly_alone(self):
+        for href in ("https://www.aku.edu/news/story", "mailto:x@aku.edu",
+                     "/qtl/Documents/a%20b.pdf", "#section"):
+            self.assertEqual(clean_href(href), href)
+
+    def test_clean_links_reaches_a_nested_mark(self):
+        doc = {"type": "doc", "content": [{"type": "paragraph", "content": [
+            {"type": "text", "text": "x", "marks": [
+                {"type": "link", "attrs": {"href": "https://a.test/b​"}}]}]}]}
+        out = clean_links(doc)
+        href = out["content"][0]["content"][0]["marks"][0]["attrs"]["href"]
+        self.assertEqual(href, "https://a.test/b")
 
 
 class Markers(unittest.TestCase):

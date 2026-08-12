@@ -70,7 +70,7 @@ import _bootstrap
 
 _bootstrap.ensure()
 
-from text_clean import clean_richtext, clean_text, strip_html
+from text_clean import clean_document, clean_text, strip_html
 
 from paths_root import ROOT, P
 
@@ -300,7 +300,7 @@ def build(story, routing, authors, photos, palette):
     content = story["content"]
     sid = str(content.get("sharepoint_id") or "")
     body_doc = strip_blank_paragraphs(
-        clean_richtext(content.get("body") or {}))
+        clean_document(content.get("body") or {}))
     route = routing.get(sid, {})
 
     bloks = [{"component": "rich_text", "content": body_doc,

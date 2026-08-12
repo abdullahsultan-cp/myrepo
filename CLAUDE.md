@@ -410,6 +410,41 @@ with seventeen line breaks. They render as a gap. Strip a paragraph only when it
 has no text **and no image**: images live inside the rich text, so testing "no
 text" alone silently deletes a picture.
 
+**Hidden characters.** Every one present in the two exports, counted — not a
+guess at what might be there:
+
+| | count | what happens |
+|---|---|---|
+| `U+200B` zero width space | **8,187** | deleted |
+| `U+202F` narrow no-break space | 79 | becomes a normal space |
+| `U+00A0` no-break space | 47 | becomes a normal space |
+| `U+2028` line separator | 6 | becomes a newline |
+| `U+00AD` soft hyphen | 5 | deleted |
+| `U+2009` thin space | 1 | becomes a normal space |
+| `U+FEFF` byte-order mark | 1 | deleted |
+
+The rest of each Unicode block is handled too, so the next export cannot
+introduce a variant nobody thought of, along with the bidirectional controls —
+invisible characters that silently reorder the text around them.
+
+**`U+200C` and `U+200D` are never stripped.** Zero-width non-joiner and joiner
+change how Urdu, Arabic and Indic scripts render, and 44 news stories carry
+Arabic and Urdu. **Filtering by Unicode category `Cf` — the obvious way to catch
+zero-width spaces — sweeps both away with them.** That is why the table is an
+explicit list of code points and not a category test.
+
+**In an href, an invisible is not cosmetic — it breaks the link.** Four live
+news stories carry one at the end of a URL, so the browser asks for a host that
+does not exist. `clean_href` deletes rather than substitutes there: a no-break
+space becomes a space in prose, but inside a URL it is a fault either way and
+turning it into a space would hide it from whoever goes looking next.
+
+**Write the table as code points.** The first version used the characters
+themselves and was unreviewable — nobody can see that a string of invisibles has
+picked up a plain space and lost `U+00A0`, which is exactly what happened, and
+only `clean_href` caught it because it skips the whitespace collapse that was
+masking the bug.
+
 All three were found by a person looking at published pages, not by any check.
 `tests/test_blogs_payload.py` pins them down now.
 
