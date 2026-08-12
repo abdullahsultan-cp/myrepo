@@ -119,6 +119,17 @@ DISCLAIMER_SPACING = spacing(edges(bottom=56), edges(left=20, right=20),
 # the row is already the gap between the embed and the text below it.
 EMBED_ROW_SPACING = spacing(edges(bottom=24), edges(left=20, right=20),
                             edges(bottom=56), edges(left=80, right=80))
+# Inside that row the two columns carry their own, and they are NOT the
+# article's. A rich_text in the body has 176px of side padding, which is right
+# for full-width prose and absurd inside a narrow column — that was the
+# remaining spacing fault. The reference gives the text column 20px of top and
+# left padding and nothing else.
+EMBED_COLUMN_SPACING = spacing(edges(), edges(), edges(), edges(top=20, left=20))
+# The embed column carries a spacing object of pure nulls rather than "". An
+# empty string and an all-null object are not the same thing to the editor: the
+# object is a spacing control that has been left alone, the string is no control
+# at all.
+EMBED_ASIDE_SPACING = spacing(edges(), edges(), edges(), edges())
 WHITE = {"color": "#ffff", "plugin": "native-color-picker"}
 
 # Copied verbatim from the demo blog, including the accent on the word itself
@@ -339,9 +350,16 @@ def beside_text(bloks, companion):
     if len(nodes) < 3:
         return bloks + [companion]
 
-    def rich(subset):
+    def rich(subset, inner_spacing=None):
         return {**copy.deepcopy(bloks[first]),
-                "content": {"type": "doc", "content": subset}}
+                "content": {"type": "doc", "content": subset},
+                "spacing": copy.deepcopy(inner_spacing
+                                         or bloks[first].get("spacing"))}
+
+    # The embed hugs the text beside it, so it aligns toward it — `right` in
+    # the left column. `center` is for an embed that ends the article with
+    # nothing next to it, which is the news case.
+    companion = {**companion, "align": "right"}
 
     row = {"component": "row", "width": "", "height": None, "radius": "",
            "align_items": "center", "justify_content": "center",
@@ -349,12 +367,12 @@ def beside_text(bloks, companion):
            "spacing": copy.deepcopy(EMBED_ROW_SPACING),
            "items": [
                {"component": "row_item", "width": "", "radius": "",
-                "spacing": "", "background_color": dict(WHITE),
+                "spacing": copy.deepcopy(EMBED_ASIDE_SPACING),
+                "background_color": dict(WHITE),
                 "body": [companion]},
                {"component": "row_item", "width": "", "radius": "",
-                "width_mode": "", "spacing": "",
-                "background_color": dict(WHITE),
-                "body": [rich(nodes[1:2])]},
+                "spacing": "", "background_color": dict(WHITE),
+                "body": [rich(nodes[1:2], EMBED_COLUMN_SPACING)]},
            ]}
     return (bloks[:first] + [rich(nodes[:1]), row, rich(nodes[2:])]
             + bloks[first + 1:])

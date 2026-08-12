@@ -139,7 +139,37 @@
               "component": "row_item",
               "width": "",
               "radius": "",
-              "spacing": "",
+              "spacing": {
+                "unit": "px",
+                "mobile": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                },
+                "desktop": {
+                  "margin": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  },
+                  "padding": {
+                    "top": null,
+                    "left": null,
+                    "right": null,
+                    "bottom": null
+                  }
+                }
+              },
               "background_color": {
                 "color": "#ffff",
                 "plugin": "native-color-picker"
@@ -149,7 +179,7 @@
                   "component": "social_embed",
                   "variant": "facebook",
                   "url": "https://www.facebook.com/AKUGlobal/posts/2321196161353177",
-                  "align": "center",
+                  "align": "right",
                   "show_text": true,
                   "spacing": ""
                 }
@@ -159,7 +189,6 @@
               "component": "row_item",
               "width": "",
               "radius": "",
-              "width_mode": "",
               "spacing": "",
               "background_color": {
                 "color": "#ffff",
@@ -192,12 +221,12 @@
                         "top": null,
                         "left": null,
                         "right": null,
-                        "bottom": 56
+                        "bottom": null
                       },
                       "padding": {
                         "top": null,
-                        "left": 20,
-                        "right": 20,
+                        "left": null,
+                        "right": null,
                         "bottom": null
                       }
                     },
@@ -206,12 +235,12 @@
                         "top": null,
                         "left": null,
                         "right": null,
-                        "bottom": 56
+                        "bottom": null
                       },
                       "padding": {
-                        "top": null,
-                        "left": 176,
-                        "right": 176,
+                        "top": 20,
+                        "left": 20,
+                        "right": null,
                         "bottom": null
                       }
                     }

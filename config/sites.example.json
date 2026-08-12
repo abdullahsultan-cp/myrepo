@@ -1,0 +1,47 @@
+{
+  "_comment": [
+    "Copy to sites.json and fill in. sites.json is gitignored: a management",
+    "token can read AND rewrite every story in its space.",
+    "",
+    "One entry per site. AKUH, AKU and AKUEB are three separate Storyblok",
+    "spaces with three separate component libraries, and each backs up to its",
+    "own repo — nothing is shared between them.",
+    "",
+    "name              the site. Also selects the environment variable that",
+    "                  overrides the token: SB_TOKEN_AKUH, SB_TOKEN_AKU,",
+    "                  SB_TOKEN_AKUEB. Use those in CI so no token is on disk.",
+    "space_id          numeric, from Settings -> General in Storyblok.",
+    "management_token  a Personal Access Token (My Account -> Personal access",
+    "                  tokens). Space-level tokens 403 on several endpoints.",
+    "region            eu | us | ca | ap | cn. The wrong region returns a 401",
+    "                  that looks exactly like a bad token.",
+    "repo              local checkout of THIS site's backup repo. It is created",
+    "                  and 'git init'ed if absent — but clone the empty GitHub",
+    "                  repo here first and the origin remote is already set.",
+    "subdir            optional, default 'storyblok'. Where in the repo the",
+    "                  snapshot is written."
+  ],
+  "sites": [
+    {
+      "name": "AKUH",
+      "space_id": "YOUR_AKUH_SPACE_ID",
+      "management_token": "YOUR_PERSONAL_ACCESS_TOKEN",
+      "region": "eu",
+      "repo": "D:/AKU News/backups/akuh-storyblok-backup"
+    },
+    {
+      "name": "AKU",
+      "space_id": "YOUR_AKU_SPACE_ID",
+      "management_token": "YOUR_PERSONAL_ACCESS_TOKEN",
+      "region": "eu",
+      "repo": "D:/AKU News/backups/aku-storyblok-backup"
+    },
+    {
+      "name": "AKUEB",
+      "space_id": "YOUR_AKUEB_SPACE_ID",
+      "management_token": "YOUR_PERSONAL_ACCESS_TOKEN",
+      "region": "eu",
+      "repo": "D:/AKU News/backups/akueb-storyblok-backup"
+    }
+  ]
+}

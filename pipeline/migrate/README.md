@@ -4,11 +4,12 @@ Split by **flow**, not by topic, because the two halves fail differently and are
 run at different times.
 
 ```
-paths.py  db.py  schema.sql     shared by both flows
+paths.py  db.py  schema.sql     shared by the migration flows
 download/    aku.edu -> disk        reads only. Safe to interrupt.
 upload/      disk -> Storyblok      WRITES.
 update/      change LIVE stories    WRITES, in place.
 review/      verification, reports, backups.  Never writes to the space.
+spaces/      whole space <-> git repo.  sb_backup reads; sb_restore WRITES.
 ```
 
 | Folder | Job | Risk if it goes wrong |
@@ -17,6 +18,19 @@ review/      verification, reports, backups.  Never writes to the space.
 | `upload/` | create and update stories and assets in Storyblok | this is the one that can damage the space |
 | `update/` | change one field on stories that are already published | contained — a plan may only touch the fields it declares, and backs up first |
 | `review/` | audits, reports, folder checks, backups | none — reads only |
+| `spaces/` | back up AKUH / AKU / AKUEB to three git repos, and restore them | backup none; restore is guarded and needs `--apply` |
+
+**`spaces/` is not part of this migration.** It backs up three whole spaces —
+AKUH, AKU and AKUEB — schema, settings, stories and asset binaries, each into its
+own GitHub repo, and puts them back. It lives here because `migrate/` is the only
+code that touches the network and that is worth keeping true. See
+[spaces/README.md](spaces/README.md).
+
+Do not confuse `spaces/sb_backup.py` with `review/backup.py`. The second
+snapshots one content type's stories as evidence of what this migration did; the
+first backs up entire spaces for disaster recovery and can restore them. Every
+file in `spaces/` carries an `sb_` prefix so the wrong one cannot be run by
+accident.
 
 **`update/` is stage 4, and it is not an afterthought.** Migration is not one
 pass: the dev hands over a field after the stories are up, a plugin's value
