@@ -190,6 +190,38 @@ def ensure_folder(sb, path, cache):
 
 # ------------------------------------------------------------------ asset tree
 
+def load_asset_folders(sb, cache):
+    """Fill `cache` with every asset folder already in the space, by path.
+
+    Called once before any folder is created. Without it a fresh process starts
+    with an empty cache and rebuilds a tree that is already there — which is
+    exactly what happened: the space accumulated **7 `regions` roots and 5
+    `global` roots**, 444 redundant folders holding 2,311 assets between them,
+    one whole tree per run.
+
+    Where a path already has duplicates, the one holding the most assets wins,
+    so a rerun files new media alongside the existing media rather than adding
+    to the pile. `pipeline/migrate/review/merge_asset_folders.py` removes them.
+    """
+    r = sb.get("asset_folders")
+    if r is None or r.status_code != 200:
+        return cache
+    folders = r.json().get("asset_folders") or []
+    by_id = {f["id"]: f for f in folders}
+
+    def path_of(folder):
+        parts, seen = [], set()
+        while folder and folder["id"] not in seen:
+            seen.add(folder["id"])
+            parts.append(folder["name"])
+            folder = by_id.get(folder.get("parent_id"))
+        return "/".join(reversed(parts))
+
+    for folder in folders:
+        cache.setdefault(path_of(folder), folder["id"])
+    return cache
+
+
 def ensure_asset_folder(sb, path, cache):
     """Mirror a story's folder path in the ASSET tree, creating as needed.
 
@@ -200,7 +232,15 @@ def ensure_asset_folder(sb, path, cache):
 
     `path` is the story's folder path, e.g.
         regions/pakistan/entities/medical-college/departments/cardiology/news
+
+    **Looks up before creating.** The previous version posted first and only
+    searched if the post failed, on the stated assumption that "the API rejects
+    a duplicate name under one parent". It does not — Storyblok creates a second
+    folder with the same name and parent quite happily, and that is how the
+    space ended up with seven `regions` trees.
     """
+    if not cache:
+        load_asset_folders(sb, cache)
     parent = 0
     walked = ""
     for seg in [p for p in path.split("/") if p]:
@@ -208,31 +248,36 @@ def ensure_asset_folder(sb, path, cache):
         if walked in cache:
             parent = cache[walked]
             continue
-        r = sb.post("asset_folders", {"asset_folder": {
-            "name": seg, "parent_id": parent or None}})
-        if r.status_code in (200, 201):
+        found = find_asset_folder(sb, seg, parent)
+        if found is not None:
+            fid = found
+        else:
+            r = sb.post("asset_folders", {"asset_folder": {
+                "name": seg, "parent_id": parent or None}})
+            if r is None or r.status_code not in (200, 201):
+                sys.exit(f"cannot create asset folder {walked}: "
+                         f"{getattr(r, 'status_code', '?')} "
+                         f"{getattr(r, 'text', '')[:200]}")
             fid = (r.json().get("asset_folder") or {}).get("id")
             print(f"    asset folder created  {walked}  (id {fid})")
-        else:
-            # Already there: the API rejects a duplicate name under one parent,
-            # so look it up rather than treat it as a failure.
-            fid = find_asset_folder(sb, seg, parent)
-            if fid is None:
-                sys.exit(f"cannot create or find asset folder {walked}: "
-                         f"{r.status_code} {r.text[:200]}")
         cache[walked] = fid
         parent = fid
     return parent
 
 
 def find_asset_folder(sb, name, parent_id):
+    """The existing folder with this name under this parent, or None.
+
+    Where duplicates exist, the lowest id wins — the first one made — so every
+    caller agrees on which copy is canonical.
+    """
     r = sb.get("asset_folders")
-    if r.status_code != 200:
+    if r is None or r.status_code != 200:
         return None
-    for f in r.json().get("asset_folders") or []:
-        if f.get("name") == name and (f.get("parent_id") or 0) == (parent_id or 0):
-            return f["id"]
-    return None
+    matches = [f["id"] for f in (r.json().get("asset_folders") or [])
+               if f.get("name") == name
+               and (f.get("parent_id") or 0) == (parent_id or 0)]
+    return min(matches) if matches else None
 
 
 # ------------------------------------------------------------------ assets
