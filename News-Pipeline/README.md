@@ -2,6 +2,22 @@
 
 **3,606 stories live in Storyblok, 0 failed.**
 
+Since going live, four things have been changed **in place** — same story ids,
+so every review link already shared still works. All through
+`pipeline/migrate/update/`, with a plan each and a backup before every run:
+
+| | |
+|---|---|
+| 38 Twitter `iframe` bloks → `social_embed` | the component the dev added; the 3 working YouTube embeds and 2 dev test stories were left alone |
+| 47 stories' PDF links → the uploaded assets | they pointed at `www.aku.edu/…`, which dies with the site |
+| 4 stories with a zero-width space inside a link href | invisible, and it broke the link outright |
+| 184 stories restored after the 11 Aug incident | see `data/migrate/incident-20260811/` |
+
+Two things are recorded and deliberately **not** acted on:
+[`DESCRIPTION_LOST_LINKS.md`](DESCRIPTION_LOST_LINKS.md) (355 links that a
+plain-text `description` cannot carry) and `data/internal_links.csv` (646
+aku.edu links awaiting the Storyblok pages they should point at).
+
 ```
 News-Pipeline/
   pipeline/     class NewsPipeline(ContentPipeline) — this type's own code

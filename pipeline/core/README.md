@@ -14,6 +14,31 @@ it is in the wrong folder.
 | `storyblok_config.py` | credentials and component names, from `config/storyblok.json` |
 | `storyblok_metadata_map.py` | SharePoint field → Storyblok path registry |
 | `richtext_media_utils.py` | shared media helpers for cataloguing and attaching |
+| `text_clean.py` | entities, position markers, invisible characters, link hrefs. **Runs inside `convert_richtext`, so no type has to call it** |
+| `link_routing.py` | where a SharePoint link should point once the site is switched off — a story, an asset, or left alone |
+| `steps.py` | the step list, read from `config/steps.json` |
+
+## `text_clean.py` — read this before writing any text handling
+
+Three faults arrive in every SharePoint export, and blogs shipped all three to
+published pages because each code path cleaned its own way: the portal decoded
+entities, the payload builder did not, and nothing made them agree.
+
+| | seen | |
+|---|---|---|
+| HTML entities | 88 `&#160;` in 34 published biographies | `&#123;` decodes to `{`, so decode **before** matching markers |
+| Position markers | `{pullquote}` ×14, `{EmbeddedCode}` ×1 | instructions to SharePoint's renderer, not words |
+| Hidden characters | 7 kinds, 8,326 occurrences | table of code points, with counts, in the module |
+
+**`U+200C` and `U+200D` are never stripped.** They change how Urdu and Arabic
+render, and filtering by Unicode category `Cf` — the obvious way to catch
+zero-width spaces — sweeps both away. Hence an explicit list.
+
+**A text node is a fragment, not a string.** `clean_text(collapse=False)` does
+not trim, because the renderer concatenates adjacent nodes and the space at a
+node's edge is the space between two sentences. An unconditional `.strip()` here
+rewrote 2,449 of 3,606 news stories in testing, turning
+*"programme. This year"* into *"programme.This year"*.
 
 `paths_root.py` finds the repo root by looking **upward for `config/types`**
 rather than counting `dirname()` calls. It has moved once already, and the

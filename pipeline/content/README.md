@@ -13,7 +13,7 @@ python pipeline/run_pipeline.py all [--type blogs]
 | `extract` | `extract_items.py` | the export → one file per item, in `data/raw/` |
 | `clean` | `clean_items.py` | → `data/cleaned/`, Unicode normalised |
 | `normalize-html` | `normalize_html.py` | SharePoint editor HTML → semantic HTML |
-| `convert-richtext` | `convert_richtext.py` | → Storyblok rich text |
+| `convert-richtext` | `convert_richtext.py` | → Storyblok rich text, **cleaned** |
 | `build-link-map` | `build_link_map.py` | SharePoint URL → story lookup |
 | `enhance-richtext` | `enhance_richtext.py` | resolves internal links and asset URLs |
 | `build-stories` | `build_storyblok_stories.py` | → `data/stories/`, **the payloads** |
@@ -22,6 +22,13 @@ python pipeline/run_pipeline.py all [--type blogs]
 the profile says which column that is. Before that, forty-five places said
 `item["NewsContent"]`, which for a blog returns `None` — no error, just an empty
 result.
+
+**`convert-richtext` cleans as it converts.** It calls
+`pipeline/core/text_clean.py`, so HTML entities, SharePoint's `{pullquote}`
+position markers, invisible characters and invisibles inside link hrefs are gone
+before any payload exists. **You do not need to call it yourself, and you should
+not re-implement it** — blogs shipped 88 literal `&#160;` to published pages
+because two code paths cleaned differently.
 
 **`build-stories` is not the last step.** It rewrites every payload and leaves
 `media[]` empty; `pipeline/media/` puts the images back. Running it alone empties

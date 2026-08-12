@@ -14,6 +14,15 @@ Measured against the live space (`storyblok_space/`, snapshot 2026-07-29):
 
 ## Blockers — the migration cannot run correctly without these
 
+> **Update — `sharepoint_id` is no longer a blocker, and neither component has
+> the field.** Storyblok stores content keys the schema does not declare, which
+> was verified rather than assumed: all 8 live blogs carry
+> `content.sharepoint_id` and read it back correctly. News went up before that
+> was known and carries none, so it is matched through the tracking database's
+> `story` table instead — `pipeline/migrate/update/run_update.py` tries the
+> payload first and falls back. Adding the field would still be tidier; nothing
+> is waiting on it.
+
 ### 1. `sharepoint_id` — no idempotency without it
 
 **Nothing in the story identifies its source.** A second run creates 3606

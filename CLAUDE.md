@@ -23,8 +23,8 @@ ends, and why a step that cannot do its job must stop rather than guess.
 
 | Type | State |
 |---|---|
-| **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable |
-| **blogs** | 83 imported, converted to rich text, routed. Not uploaded |
+| **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable. Four in-place updates since: Twitter embeds, PDF links, 4 broken hrefs, the 11 Aug restore |
+| **blogs** | 83 mapped to `blog_article`. **8 live and reviewed**, 75 waiting on the owner. `category` and `isFeatured` blocked on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
 | **events** | scaffolding only — no export yet |
 | **pages** | site structure and permissions; its own stage, shares no code |
 
@@ -84,14 +84,14 @@ pipeline/                THE SHARED CODE. Knows no content type.
     review/                  verification, reports, backups
 
 News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
-Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 converted
+Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 mapped, 8 live
 Events-Pipeline/   pipeline/ data/ assets/ backup/    awaiting export
 Pages-Pipeline/    pipeline/ data/ out/ portal/       inherits nothing
 
 config/types/*.json      what differs per type  (_TEMPLATE.json is boilerplate)
 config/steps.json        the 22 shared steps, as data
 storyblok_space/         snapshots of the space — read-only, nobody's to merge
-docs/  tests/            the specs; 37 tests
+docs/  tests/            the specs; 88 tests
 ```
 
 Each folder has a README stating its job. A file in the wrong folder is a bug in
@@ -140,7 +140,7 @@ python pipeline/new_type.py --list
 python pipeline/new_type.py articles
 python pipeline/new_type.py articles --check      # profile vs the REAL export
 
-python -m pytest tests/     # 37
+python -m pytest tests/     # 88
 ruff check .
 ```
 
@@ -517,11 +517,21 @@ commit.
 
 ## 11 · Still open
 
-- **`global/blogs` does not exist** in Storyblok, and 70 of 83 blogs route there
+- **blogs: 75 of 83 are not uploaded.** The 8 demo stories are live and reviewed;
+  the rest wait on the owner. `python Blogs-Pipeline/pipeline/upload.py --all
+  --apply` when told. `global/blogs` now exists — that entry used to say it did
+  not
+- **`category` and `isFeatured` are empty on all 83 blogs.** Nothing in the space
+  has either plugin filled, so there is no example of the value format. One saved
+  example of each unblocks 80 and 43 posts respectively. `entities` needs only
+  the field — the plan is written and the format is known from news
 - **events** has no export; its profile and component are placeholders. The space
   already has an `event_article`, which is **not** `news_article`
-- **blogs**: `IsFeatured` (43), `FeatureSequence`, `Close Comments` (14),
-  `IsActive`, `Post Year` and 626 comments have no field in `blog_article`
+- **blogs data with no field**: `FeatureSequence` (45), `Close Comments` (14),
+  `Post Year`, and 626 comments. `IsActive` is ignored on the owner's
+  instruction — blog 37 is the only `False` and it publishes anyway. Every one
+  of these decisions, with its reasoning, is in `config/types/blogs.json` under
+  `decisions`
 - **blogs `entities` is needed by 17, not 83.** The field is a list of entity
   FOLDER IDS — the story's own entity plus any it is shared into — not the
   Entity column. 66 of the 83 name something that is not a faculty (`Global`,
@@ -532,12 +542,10 @@ commit.
   no attachments, the detail page renders client-side). Evidence and the
   measured reason for not guessing are in `data/banners_absent.json` and
   `fetch_missing_media.py`
-- **38 news stories still hold a Twitter `iframe`** that does not render. The
-  dev has added `social_embed` (variants twitter/facebook/instagram); the
-  conversion is written and dry-runs clean —
-  `run_update.py twitter_embeds --type news --apply` when you want it. The other
-  five live iframes are 3 working YouTube embeds and 2 of the dev's own test
-  stories, deliberately left alone
+- **DONE, kept for the record:** the 38 Twitter iframes are now `social_embed`
+  bloks, 47 stories' PDF links point at their uploaded assets, and 4 broken
+  hrefs are fixed. The 5 iframes still in the space are 3 working YouTube
+  embeds and 2 of the dev's own test stories, deliberately left alone
 - **blogs decisions are recorded** in `config/types/blogs.json` under
   `decisions` and `shared_placement`, with the reasoning. Post Year is **kept** —
   7 of 83 are December posts filed under the following year, so it is an

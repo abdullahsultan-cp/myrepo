@@ -1,10 +1,30 @@
 # Blogs-Pipeline
 
-The blogs migration. **83 posts, all analysed against the live schema and the
-signed-off design. Nothing blocks the upload itself.**
+The blogs migration. **83 posts mapped to `blog_article`. 8 are live and have
+been reviewed; the other 75 wait on the owner's go-ahead.**
 
-What is outstanding is data with nowhere to land — `Entity` above all (§2c) —
-and a download pass for 46 images that exist only on aku.edu (§5).
+```bash
+python Blogs-Pipeline/pipeline/build_payload.py          # the 15 fields + bloks
+python Blogs-Pipeline/pipeline/upload.py --demo          # dry run
+python Blogs-Pipeline/pipeline/upload.py --demo --apply  # writes
+python Blogs-Pipeline/pipeline/upload.py --all --apply   # the rest
+```
+
+`build_payload.py` copies every shape from the signed-off demo blog rather than
+inventing one — spacing per blok, the row of tag pills, author_section's
+"About the / Author", the comment form's wording.
+
+| Filled | |
+|---|---|
+| `title` `author` `date` `read_time` `isGlobal` | 83/83 |
+| `banner_image` | 70/83 — 13 have no hero anywhere in SharePoint |
+| `description` | 31/83 — the rest have no Summary, and the demo's is empty too |
+| bloks | rich_text 83, tag pills 83, comment_form 83, author_section 80, quote_banner 17, media_section 1, social_embed 1 |
+
+**`category` and `isFeatured` are empty on all 83, deliberately.** Nothing in
+the space has either plugin filled, so there is no example of what the value
+looks like. See [PENDING_DEV.md](PENDING_DEV.md) — it lists what each
+outstanding item needs and the exact command to run when it arrives.
 
 ```
 Blogs-Pipeline/

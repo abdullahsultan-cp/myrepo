@@ -7,6 +7,7 @@ run at different times.
 paths.py  db.py  schema.sql     shared by both flows
 download/    aku.edu -> disk        reads only. Safe to interrupt.
 upload/      disk -> Storyblok      WRITES.
+update/      change LIVE stories    WRITES, in place.
 review/      verification, reports, backups.  Never writes to the space.
 ```
 
@@ -14,7 +15,16 @@ review/      verification, reports, backups.  Never writes to the space.
 |---|---|---|
 | `download/` | resolve every asset URL from the live site and fetch it | none — re-run it |
 | `upload/` | create and update stories and assets in Storyblok | this is the one that can damage the space |
+| `update/` | change one field on stories that are already published | contained — a plan may only touch the fields it declares, and backs up first |
 | `review/` | audits, reports, folder checks, backups | none — reads only |
+
+**`update/` is stage 4, and it is not an afterthought.** Migration is not one
+pass: the dev hands over a field after the stories are up, a plugin's value
+format only becomes knowable once something has it filled, a component we worked
+around gets replaced. Each of those is the same job — reach into published
+stories and change one thing without disturbing anything else. One engine, a
+small plan per job, living in the type's own folder. See
+[update/README.md](update/README.md).
 
 ---
 

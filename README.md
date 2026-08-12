@@ -16,7 +16,7 @@ job stops rather than guessing.
 | Content type | State | Folder |
 |---|---|---|
 | **news** | **3,606 stories live in Storyblok**, 0 failed. 2,417 assets uploaded | `News-Pipeline/` |
-| **blogs** | 83 posts imported, converted to rich text and routed. Not uploaded | `Blogs-Pipeline/` |
+| **blogs** | 83 mapped to `blog_article`; **8 uploaded and reviewed**, 75 waiting on the owner's go-ahead | `Blogs-Pipeline/` |
 | **events** | scaffolding only — awaiting the export from AKU | `Events-Pipeline/` |
 | **pages** | site structure and permissions; deliverables built, under review | `Pages-Pipeline/` |
 
@@ -77,18 +77,20 @@ pipeline/                    THE SHARED CODE. Knows no content type.
   check_before_push.py         did I change someone else's file?
   install_hooks.py             turn the pre-push guard on
   core/       the seam and shared helpers      IMPORTED, NEVER RUN
+                paths_root  fields  steps  text_clean  link_routing
   content/    source export -> story payload
   media/      images, video, documents
   analyze/    inventories and validation       READS, NEVER WRITES
   taxonomy/   Region / Entity / Department
   migrate/    disk <-> Storyblok               THE ONLY NETWORK CODE
+                download/ upload/ update/ review/
 
 News-Pipeline/               3,606 stories, live
   pipeline/                    class NewsPipeline — overrides nothing
   data/                        the export, and one file per story per stage
   assets/News/media/           3,902 files (gitignored, re-downloadable)
   backup/                      the export as it arrived + Storyblok read back
-Blogs-Pipeline/              83 posts, converted
+Blogs-Pipeline/              83 mapped, 8 live
   pipeline/                    class BlogsPipeline + its own taxonomy resolver
 Events-Pipeline/             awaiting its export
   pipeline/                    class EventsPipeline — boilerplate
@@ -100,7 +102,7 @@ config/types/*.json          what differs per type
 config/steps.json            the shared step list, as data
 storyblok_space/             snapshots of the space (read-only, nobody's to merge)
 docs/                        the specs
-tests/                       pytest — 37 tests
+tests/                       pytest — 88 tests
 ```
 
 Every folder has its own `README.md` saying what belongs in it.
@@ -306,7 +308,7 @@ cd storyblok-viewer && npm install && npm run dev    # localhost:4000
 ## Tests and style
 
 ```bash
-python -m pytest tests/        # 37 tests, seconds
+python -m pytest tests/        # 88 tests, seconds
 ruff check .                   # style, mechanical
 ```
 
