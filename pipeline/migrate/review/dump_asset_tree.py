@@ -29,9 +29,14 @@ events all read the same file, and none of them owns it.
 The tree mirrors the content tree: an asset lives beside the story that uses it.
 
     regions/<region>/entities/<entity>/departments/<dept>/news
-    global/news
-    Blogs                     blogs media, flat for now
-    events-detail             the dev's
+    regions/pk/entities/ied/blogs
+    global/news    global/blogs
+    events-detail             the dev's, left alone
+    Test  aku-media-dev       also the dev's, left alone
+
+`Blogs` was a flat folder holding every blog's media until the whole set went
+up; it now mirrors the content tree like the others, and the 36 assets from the
+demo runs are the only ones still sitting in it.
 
 Refresh it after any change to the folders, and **before an upload run**, the
 same way `dump_sb_tree.py` is refreshed. A stale snapshot is not dangerous — the

@@ -34,21 +34,10 @@ import os
 import sys
 from datetime import datetime, timezone
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
-from paths_root import TYPES, P
-
-# Walk up to the pipeline/ root rather than counting dirname() calls: the
-# scripts using this sit at two different depths (migrate/ and
-# migrate/review/), and a fixed count is right for one and wrong for the
-# other -- which is exactly how this broke.
-# Two things have to be importable: this flow's own helpers (migrate/paths.py,
-# migrate/db.py) and the shared pipeline modules. The scripts using this sit at
-# two different depths -- migrate/ and migrate/review/ -- so the pipeline root is
-# found by walking up for _bootstrap.py rather than by counting dirname() calls,
-# which is right for one depth and silently wrong for the other.
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Walk up for _bootstrap.py rather than counting dirname() calls. The counted
+# version reached `pipeline/` — and `paths_root` lives in `pipeline/core/`, so
+# this script could not run at all. Fifth time this exact fault has appeared;
+# `_bootstrap.ensure()` puts every folder on the path and cannot miscount.
 _d = os.path.dirname(os.path.abspath(__file__))
 while _d != os.path.dirname(_d):
     if os.path.exists(os.path.join(_d, "_bootstrap.py")):
@@ -58,10 +47,15 @@ while _d != os.path.dirname(_d):
 import _bootstrap
 
 _bootstrap.ensure()
-import db as tracking
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(
-    os.path.dirname(os.path.abspath(__file__)))))
+from paths_root import TYPES, P
+
+# This flow's own helpers (migrate/paths.py, migrate/db.py) sit beside and above
+# this file; _bootstrap.ensure() above has already put the shared pipeline
+# folders on the path.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 from storyblok_config import load_config, management_api_base
 
 try:
@@ -104,6 +98,38 @@ def backup_raw():
     return {"file": out, "count": len(items or []), "sha256": digest}
 
 
+def live_ids(session, api):
+    """[(key, storyblok id)] for THIS type's stories, from the space.
+
+    Selected by the type's own component — `blog_article`, `news_article`,
+    `event_article` — because that is the only thing that is true for every
+    type. The tracking database holds news and nothing else, so asking it for
+    "this type's stories" during a blogs run returned all 3,606 NEWS stories
+    and wrote them into `Blogs-Pipeline/backup/storyblok/`: the wrong content,
+    in the wrong place, under a name saying otherwise. A backup that quietly
+    contains somebody else's data is worse than no backup.
+
+    Keyed by `sharepoint_id` where the payload carries one — blogs and events
+    do — and by the Storyblok id where it does not, which is news.
+    """
+    component = P.storyblok.get("component")
+    out, page = [], 1
+    while True:
+        r = session.get(f"{api}/stories", timeout=90,
+                        params={"contain_component": component,
+                                "per_page": 100, "page": page})
+        if r.status_code != 200:
+            print(f"    listing stories failed: {r.status_code}")
+            return out
+        chunk = r.json().get("stories", [])
+        for story in chunk:
+            out.append((None, story["id"]))
+        if len(chunk) < 100:
+            print(f"    {len(out)} live story/stories using {component}")
+            return out
+        page += 1
+
+
 def backup_storyblok():
     """Every story this type has in the space, read back from the API."""
     cfg = load_config()
@@ -111,11 +137,7 @@ def backup_storyblok():
     s = requests.Session()
     s.headers.update({"Authorization": cfg["management_token"]})
 
-    with tracking.connect() as c:
-        c.execute("SET search_path TO migration, public")
-        rows = c.execute("""SELECT sharepoint_id, sb_story_id
-                            FROM story WHERE sb_story_id IS NOT NULL
-                            ORDER BY sharepoint_id""").fetchall()
+    rows = live_ids(s, api)
     if not rows:
         print("    nothing uploaded yet for this type")
         return None
@@ -128,9 +150,15 @@ def backup_storyblok():
             failed.append((sid, type(e).__name__))
             continue
         if r.status_code == 200:
-            stories[str(sid)] = r.json()["story"]
+            story = r.json()["story"]
+            # Key on sharepoint_id when the payload carries one, so the backup
+            # is keyed the same way the source is. News predates that field and
+            # falls back to the Storyblok id.
+            key = str((story.get("content") or {}).get("sharepoint_id")
+                      or sid or story["id"])
+            stories[key] = story
         else:
-            failed.append((sid, r.status_code))
+            failed.append((sid or sb_id, r.status_code))
         if i % 250 == 0:
             print(f"      read {i}/{len(rows)}", flush=True)
 

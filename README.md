@@ -90,7 +90,7 @@ News-Pipeline/               3,606 stories, live
   data/                        the export, and one file per story per stage
   assets/News/media/           3,902 files (gitignored, re-downloadable)
   backup/                      the export as it arrived + Storyblok read back
-Blogs-Pipeline/              83 mapped, 8 live
+Blogs-Pipeline/              83 live
   pipeline/                    class BlogsPipeline + its own taxonomy resolver
 Events-Pipeline/             2,710 events live
   pipeline/                    class EventsPipeline — overrides nothing;
@@ -103,7 +103,7 @@ config/types/*.json          what differs per type
 config/steps.json            the shared step list, as data
 storyblok_space/             snapshots of the space (read-only, nobody's to merge)
 docs/                        the specs
-tests/                       pytest — 88 tests
+tests/                       pytest — 126 tests
 ```
 
 Every folder has its own `README.md` saying what belongs in it.
@@ -309,7 +309,7 @@ cd storyblok-viewer && npm install && npm run dev    # localhost:4000
 ## Tests and style
 
 ```bash
-python -m pytest tests/        # 88 tests, seconds
+python -m pytest tests/        # 126 tests, seconds
 ruff check .                   # style, mechanical
 ```
 

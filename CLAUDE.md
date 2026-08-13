@@ -24,7 +24,7 @@ ends, and why a step that cannot do its job must stop rather than guess.
 | Type | State |
 |---|---|
 | **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable. Four in-place updates since: Twitter embeds, PDF links, 4 broken hrefs, the 11 Aug restore |
-| **blogs** | 83 mapped to `blog_article`. **8 live and reviewed**, 75 waiting on the owner. `category` and `isFeatured` blocked on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
+| **blogs** | **all 83 live and published**, 0 failed. Media filed beside each blog. `category`, `isFeatured`, `entities` and tags wait on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
 | **events** | **2,710 live and published**, 0 failed. 2,862 assets; 29 banners absent from the export. `contact` and `event_types` wait on the dev |
 | **pages** | site structure and permissions; its own stage, shares no code |
 
@@ -84,14 +84,14 @@ pipeline/                THE SHARED CODE. Knows no content type.
     review/                  verification, reports, backups
 
 News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
-Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 mapped, 8 live
+Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 live
 Events-Pipeline/   pipeline/ data/ assets/ backup/    2,710 live
 Pages-Pipeline/    pipeline/ data/ out/ portal/       inherits nothing
 
 config/types/*.json      what differs per type  (_TEMPLATE.json is boilerplate)
 config/steps.json        the 22 shared steps, as data
 storyblok_space/         snapshots of the space — read-only, nobody's to merge
-docs/  tests/            the specs; 88 tests
+docs/  tests/            the specs; 126 tests
 ```
 
 Each folder has a README stating its job. A file in the wrong folder is a bug in
@@ -140,7 +140,7 @@ python pipeline/new_type.py --list
 python pipeline/new_type.py articles
 python pipeline/new_type.py articles --check      # profile vs the REAL export
 
-python -m pytest tests/     # 88
+python -m pytest tests/     # 126
 ruff check .
 ```
 
@@ -192,6 +192,29 @@ ceremony. Full rules: [CONTRIBUTING.md](CONTRIBUTING.md).
 front-end developer. `ensure_folder` has a hard stop; a missing folder is an
 error with instructions, not something to invent. Asset folders are a different
 namespace and *are* created.
+
+**Back up immediately after anything that writes to the space. Not before —
+after.** An upload, an update run, an asset move: the moment it finishes, take
+the snapshot. Storyblok keeps **no version history**, so the read-back archive is
+the only record of what the space held, and the only thing a later "was it always
+like that?" can be settled against.
+
+```bash
+python pipeline/migrate/review/backup.py --type blogs
+python pipeline/migrate/review/backup.py --verify      # diff vs live, no write
+```
+
+It writes two files per type: `backup/raw/` is the SharePoint export as it
+arrived — the only record once the site is switched off — and
+`backup/storyblok/` is every story **read back from the API** rather than assumed
+from the payload that was sent. Both are committed; `.gitignore` names them as
+explicit exceptions.
+
+**A backup that silently contains the wrong content is worse than none.**
+`backup_storyblok` selected stories from the tracking database, which holds news
+and nothing else — so `--type blogs` archived all 3,606 **news** stories into
+`Blogs-Pipeline/backup/storyblok/`, under a filename saying blogs. It now selects
+by the type's own component, the one thing true for every type.
 
 **Never delete and re-upload a story.** Update in place. A new id breaks every
 review link already shared and loses manual edits. **Migration is not one pass**
@@ -515,7 +538,8 @@ diff /tmp/before /tmp/after && echo unchanged
 That check has caught what reading the diff did not. Also run the other types far
 enough to prove they still work, and `pytest`.
 
-**Backups**, before anything significant:
+**Backups: after anything that writes, every time.** See §6 — the rule is
+*after*, not before, because the point is a record of what the space now holds.
 
 ```bash
 python pipeline/migrate/review/backup.py --type news   # both ends, gzipped

@@ -1,15 +1,589 @@
 {
-  "created": 0,
-  "updated": 1,
+  "created": 71,
+  "updated": 12,
   "skipped": 0,
   "failed": 0,
   "rows": [
+    {
+      "blog": "15",
+      "action": "updated",
+      "slug": "regions/pk/entities/fas/blogs/stephen-lyon-i-owe-a-debt-of-gratitude-to-pakistan",
+      "storyblok_id": 208069787996143,
+      "status": 200
+    },
+    {
+      "blog": "16",
+      "action": "updated",
+      "slug": "global/blogs/stephen-lyon-i-owe-a-debt-of-gratitude-to-pakistan-16",
+      "storyblok_id": 208292009010410,
+      "status": 200
+    },
+    {
+      "blog": "17",
+      "action": "created",
+      "slug": "global/blogs/how-the-cambridge-international-project",
+      "storyblok_id": 208313505324243,
+      "status": 201
+    },
     {
       "blog": "18",
       "action": "updated",
       "slug": "global/blogs/five-seven-tips-to-maintain-your-mental-health",
       "storyblok_id": 208069792116720,
       "status": 200
+    },
+    {
+      "blog": "19",
+      "action": "created",
+      "slug": "global/blogs/celebrating-25-years-of-a-gift-that-changed-the-lives-of-nursing-and-midwifery-students",
+      "storyblok_id": 208313513266690,
+      "status": 201
+    },
+    {
+      "blog": "20",
+      "action": "updated",
+      "slug": "global/blogs/let-us-realise-our-environmental-responsibility",
+      "storyblok_id": 208292020995507,
+      "status": 200
+    },
+    {
+      "blog": "21",
+      "action": "created",
+      "slug": "global/blogs/sustainable-development-goals-yes-we-can",
+      "storyblok_id": 208313520709539,
+      "status": 201
+    },
+    {
+      "blog": "22",
+      "action": "created",
+      "slug": "global/blogs/edutopia-the-educational-utopia-that-is-not",
+      "storyblok_id": 208313533256563,
+      "status": 201
+    },
+    {
+      "blog": "23",
+      "action": "created",
+      "slug": "global/blogs/finis-strive-for-none-but-yourself",
+      "storyblok_id": 208313537488032,
+      "status": 201
+    },
+    {
+      "blog": "24",
+      "action": "created",
+      "slug": "global/blogs/there-s-more-to-life-than-zinc",
+      "storyblok_id": 208313541547411,
+      "status": 201
+    },
+    {
+      "blog": "25",
+      "action": "created",
+      "slug": "global/blogs/pay-versus-passion-a-career-perplexity-for-teenagers",
+      "storyblok_id": 208313545270976,
+      "status": 201
+    },
+    {
+      "blog": "26",
+      "action": "updated",
+      "slug": "regions/pk/entities/ied/blogs/revitalising-presentations-through-pecha-kucha",
+      "storyblok_id": 208069796569073,
+      "status": 200
+    },
+    {
+      "blog": "27",
+      "action": "created",
+      "slug": "global/blogs/jacob",
+      "storyblok_id": 208313562224870,
+      "status": 201
+    },
+    {
+      "blog": "28",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/going-the-distance",
+      "storyblok_id": 208313566288295,
+      "status": 201
+    },
+    {
+      "blog": "29",
+      "action": "updated",
+      "slug": "regions/pk/entities/ied/blogs/reflections-on-online-teaching-amidst-the-covid-pandemic",
+      "storyblok_id": 208292032370300,
+      "status": 200
+    },
+    {
+      "blog": "30",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/the-complexities-and-challenges-of-designing-play-joy-based-learner-centered-curricular",
+      "storyblok_id": 208313574959804,
+      "status": 201
+    },
+    {
+      "blog": "31",
+      "action": "updated",
+      "slug": "regions/pk/entities/ied/blogs/partnering-with-parents-education-in-rural-areas-during-covid-19",
+      "storyblok_id": 208069800955894,
+      "status": 200
+    },
+    {
+      "blog": "32",
+      "action": "created",
+      "slug": "global/blogs/a-healthy-mind-for-a-healthy-mother-and-baby-fostering-adolescent-perinatal-wellbeing",
+      "storyblok_id": 208313644044259,
+      "status": 201
+    },
+    {
+      "blog": "33",
+      "action": "created",
+      "slug": "global/blogs/innovation-in-seven-simple-steps",
+      "storyblok_id": 208313648029674,
+      "status": 201
+    },
+    {
+      "blog": "34",
+      "action": "created",
+      "slug": "global/blogs/finding-meaning-in-the-meaninglessness-nietzsche-meets-rumi",
+      "storyblok_id": 208313652137966,
+      "status": 201
+    },
+    {
+      "blog": "35",
+      "action": "created",
+      "slug": "global/blogs/introducing-ose-pakistan-s-blog-section",
+      "storyblok_id": 208313665433585,
+      "status": 201
+    },
+    {
+      "blog": "36",
+      "action": "created",
+      "slug": "global/blogs/enhancing-pregnancy-care-through-artificial-intelligence",
+      "storyblok_id": 208313704026126,
+      "status": 201
+    },
+    {
+      "blog": "37",
+      "action": "created",
+      "slug": "global/blogs/40-years-of-aku",
+      "storyblok_id": 208313708072975,
+      "status": 201
+    },
+    {
+      "blog": "38",
+      "action": "created",
+      "slug": "global/blogs/publication-and-literary-society-launch-khabarnama-volume-2",
+      "storyblok_id": 208313712214032,
+      "status": 201
+    },
+    {
+      "blog": "39",
+      "action": "created",
+      "slug": "global/blogs/publication-and-literary-society-host-baitbaazi-event",
+      "storyblok_id": 208313725181969,
+      "status": 201
+    },
+    {
+      "blog": "40",
+      "action": "created",
+      "slug": "global/blogs/hostel-management-arrange-for-chand-raat-celebrations-at-stadium-campus",
+      "storyblok_id": 208313738059804,
+      "status": 201
+    },
+    {
+      "blog": "41",
+      "action": "created",
+      "slug": "global/blogs/upholding-women-s-sexual-and-reproductive-health-and-rights-for-health-equity",
+      "storyblok_id": 208313742160101,
+      "status": 201
+    },
+    {
+      "blog": "42",
+      "action": "created",
+      "slug": "global/blogs/my-decade-at-aga-khan-university-unveiling-the-essence-of-growth-and-purpose",
+      "storyblok_id": 208313746149643,
+      "status": 201
+    },
+    {
+      "blog": "43",
+      "action": "created",
+      "slug": "global/blogs/unmasking-data-revealing-the-hidden-bias-within",
+      "storyblok_id": 208313749975308,
+      "status": 201
+    },
+    {
+      "blog": "44",
+      "action": "created",
+      "slug": "global/blogs/inclusivity-in-motion-a-night-of-salsa-and-inspiration",
+      "storyblok_id": 208313754079601,
+      "status": 201
+    },
+    {
+      "blog": "45",
+      "action": "updated",
+      "slug": "global/blogs/creating-impact-through-accreditation-stories-from-the-field",
+      "storyblok_id": 208069806571529,
+      "status": 200
+    },
+    {
+      "blog": "46",
+      "action": "created",
+      "slug": "global/blogs/leadership-of-21st-century-organizations-isn-t-a-walk-in-the-park",
+      "storyblok_id": 208313762890198,
+      "status": 201
+    },
+    {
+      "blog": "47",
+      "action": "created",
+      "slug": "global/blogs/ma",
+      "storyblok_id": 208313767408087,
+      "status": 201
+    },
+    {
+      "blog": "48",
+      "action": "created",
+      "slug": "global/blogs/10-beliefs",
+      "storyblok_id": 208313771860541,
+      "status": 201
+    },
+    {
+      "blog": "49",
+      "action": "created",
+      "slug": "global/blogs/embracing-the-flipside",
+      "storyblok_id": 208313784668934,
+      "status": 201
+    },
+    {
+      "blog": "50",
+      "action": "created",
+      "slug": "global/blogs/charting-our-digital-future-my-takeaways-from-the-global-digital-health-summit-2024",
+      "storyblok_id": 208313797714895,
+      "status": 201
+    },
+    {
+      "blog": "51",
+      "action": "created",
+      "slug": "global/blogs/urdu-avengers-and-english-defenders-out-on-an-adventure",
+      "storyblok_id": 208313802322996,
+      "status": 201
+    },
+    {
+      "blog": "52",
+      "action": "created",
+      "slug": "global/blogs/my-highlights-during-the-women-lift-health-global-conference-in-tanzania",
+      "storyblok_id": 208313806275637,
+      "status": 201
+    },
+    {
+      "blog": "53",
+      "action": "created",
+      "slug": "global/blogs/pls-hosts-successful-brewed-tales-event-and-baitbaazi",
+      "storyblok_id": 208313810289818,
+      "status": 201
+    },
+    {
+      "blog": "54",
+      "action": "created",
+      "slug": "global/blogs/falah-annual-iftar-drive-2024",
+      "storyblok_id": 208313823196515,
+      "status": 201
+    },
+    {
+      "blog": "55",
+      "action": "created",
+      "slug": "global/blogs/falah-s-holds-multiple-fundraisers-for-patient-welfare",
+      "storyblok_id": 208313827026276,
+      "status": 201
+    },
+    {
+      "blog": "56",
+      "action": "created",
+      "slug": "global/blogs/rowing-club-come-out-victorious-at-the-16th-annual-kbc-regatta",
+      "storyblok_id": 208313831093705,
+      "status": 201
+    },
+    {
+      "blog": "57",
+      "action": "created",
+      "slug": "global/blogs/aku-students-compete-at-the-2024-lums-sports-festival",
+      "storyblok_id": 208313860724570,
+      "status": 201
+    },
+    {
+      "blog": "58",
+      "action": "created",
+      "slug": "global/blogs/sonam-s-class-of-2023-bids-farewell-with-week-long-celebrations",
+      "storyblok_id": 208313864443739,
+      "status": 201
+    },
+    {
+      "blog": "59",
+      "action": "created",
+      "slug": "global/blogs/student-leaders-oath-taking-ceremony-2024",
+      "storyblok_id": 208313868134237,
+      "status": 201
+    },
+    {
+      "blog": "60",
+      "action": "created",
+      "slug": "global/blogs/aurora-celebrates-world-happiness-day",
+      "storyblok_id": 208313880889319,
+      "status": 201
+    },
+    {
+      "blog": "61",
+      "action": "created",
+      "slug": "global/blogs/student-societies-hold-icebreaking-activities-for-new-students",
+      "storyblok_id": 208313884977191,
+      "status": 201
+    },
+    {
+      "blog": "62",
+      "action": "created",
+      "slug": "global/blogs/volleyball-tournament-held-between-sonam-and-fas-students",
+      "storyblok_id": 208313897732277,
+      "status": 201
+    },
+    {
+      "blog": "63",
+      "action": "created",
+      "slug": "global/blogs/student-leaders-welcome-onboarding-students-at-the-unified-and-mbbs-student-orientations",
+      "storyblok_id": 208313901648154,
+      "status": 201
+    },
+    {
+      "blog": "64",
+      "action": "created",
+      "slug": "global/blogs/breaking-barriers-advancing-maternal-healthcare-through-accessible-ultrasound-services",
+      "storyblok_id": 208313905502491,
+      "status": 201
+    },
+    {
+      "blog": "65",
+      "action": "created",
+      "slug": "global/blogs/navigating-dis-misinformation-a-media-consumer-s-guide",
+      "storyblok_id": 208313909582109,
+      "status": 201
+    },
+    {
+      "blog": "66",
+      "action": "created",
+      "slug": "global/blogs/tips-and-tricks-to-keep-your-exhibition-alive",
+      "storyblok_id": 208313913510274,
+      "status": 201
+    },
+    {
+      "blog": "67",
+      "action": "created",
+      "slug": "global/blogs/birth-and-beyond-a-catalyst-for-change-for-teenage-mothers",
+      "storyblok_id": 208313917327747,
+      "status": 201
+    },
+    {
+      "blog": "68",
+      "action": "created",
+      "slug": "global/blogs/empowering-change",
+      "storyblok_id": 208313921169896,
+      "status": 201
+    },
+    {
+      "blog": "69",
+      "action": "created",
+      "slug": "global/blogs/midwifery-students-bring-hope-to-underserved-communities",
+      "storyblok_id": 208313950891273,
+      "status": 201
+    },
+    {
+      "blog": "70",
+      "action": "updated",
+      "slug": "global/blogs/how-are-medical-faculty-using-genai-in-teaching-and-learning",
+      "storyblok_id": 208069810782218,
+      "status": 200
+    },
+    {
+      "blog": "71",
+      "action": "updated",
+      "slug": "global/blogs/how-are-medical-faculty-using-genai-in-teaching-and-learning-71",
+      "storyblok_id": 208292052375567,
+      "status": 200
+    },
+    {
+      "blog": "72",
+      "action": "created",
+      "slug": "global/blogs/unleashing-the-power-of-ai-generated-content-implications-for-higher-education-an-edtech",
+      "storyblok_id": 208313976536914,
+      "status": 201
+    },
+    {
+      "blog": "73",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/entry-66-unspoken-wounds-mental-health-stigma-in-pakistan-s-social-fabric",
+      "storyblok_id": 208313991962466,
+      "status": 201
+    },
+    {
+      "blog": "74",
+      "action": "created",
+      "slug": "global/blogs/natural-immunity-vs-vaccines-what-1-600-pregnant-women-think",
+      "storyblok_id": 208313998192625,
+      "status": 201
+    },
+    {
+      "blog": "75",
+      "action": "created",
+      "slug": "global/blogs/preventable-deaths-a-call-to-action-for-global-health-and-well-being",
+      "storyblok_id": 208314012016661,
+      "status": 201
+    },
+    {
+      "blog": "76",
+      "action": "created",
+      "slug": "global/blogs/transformative-impact-of-electronic-health-records-ehrs-on-global-health-development",
+      "storyblok_id": 208314017284162,
+      "status": 201
+    },
+    {
+      "blog": "78",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/entry-67-screen-time-stress-and-the-silent-struggle-what-our-students-are-telling-us",
+      "storyblok_id": 208314022318147,
+      "status": 201
+    },
+    {
+      "blog": "79",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/entry-67-screen-time-stress-and-the-silent-struggle-what-our-students-are-telling-us-79",
+      "storyblok_id": 208314028224607,
+      "status": 201
+    },
+    {
+      "blog": "80",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/entry-68-the-magic-of-play-based-learning-why-it-s-more-than-just-a-pastime",
+      "storyblok_id": 208314033787021,
+      "status": 201
+    },
+    {
+      "blog": "81",
+      "action": "created",
+      "slug": "global/blogs/how-art-illuminates-mathematics-and-fosters-our-creative-nexus",
+      "storyblok_id": 208314056368635,
+      "status": 201
+    },
+    {
+      "blog": "82",
+      "action": "created",
+      "slug": "global/blogs/breaking-the-silence-aku-s-fight-against-women-s-preventable-deaths",
+      "storyblok_id": 208314060530272,
+      "status": 201
+    },
+    {
+      "blog": "83",
+      "action": "created",
+      "slug": "global/blogs/the-reflective-nurse-a-journal-that-helps-nurses-pause-process-and-grow",
+      "storyblok_id": 208314073519189,
+      "status": 201
+    },
+    {
+      "blog": "84",
+      "action": "updated",
+      "slug": "global/blogs/simulation-in-scrubs-pakistan-s-bold-leap-in-healthcare-education",
+      "storyblok_id": 208069815042060,
+      "status": 200
+    },
+    {
+      "blog": "85",
+      "action": "created",
+      "slug": "global/blogs/birds-of-a-feather-from-livestock-hills-to-bana-grass-field",
+      "storyblok_id": 208314091099523,
+      "status": 201
+    },
+    {
+      "blog": "86",
+      "action": "created",
+      "slug": "global/blogs/worms-at-work-my-visit-to-a-vermicomposting-unit",
+      "storyblok_id": 208314104256127,
+      "status": 201
+    },
+    {
+      "blog": "87",
+      "action": "created",
+      "slug": "global/blogs/what-does-it-mean-to-be-a-climate-advocate",
+      "storyblok_id": 208314108606230,
+      "status": 201
+    },
+    {
+      "blog": "88",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/entry-69-is-edtech-our-friend-or-foe",
+      "storyblok_id": 208314112968571,
+      "status": 201
+    },
+    {
+      "blog": "89",
+      "action": "created",
+      "slug": "global/blogs/no-ai-without-talent-it-s-time-to-build-a-pipeline",
+      "storyblok_id": 208314143140208,
+      "status": 201
+    },
+    {
+      "blog": "90",
+      "action": "created",
+      "slug": "regions/pk/entities/ied/blogs/entry-71-breaking-the-silence-through-play-using-educational-games-to-create-awareness",
+      "storyblok_id": 208314147527025,
+      "status": 201
+    },
+    {
+      "blog": "91",
+      "action": "created",
+      "slug": "global/blogs/people-who-read-the-clouds-the-tell-of-tanzania-s-maasai",
+      "storyblok_id": 208314152225240,
+      "status": 201
+    },
+    {
+      "blog": "92",
+      "action": "created",
+      "slug": "global/blogs/delivered-from-the-shackles-of-stress",
+      "storyblok_id": 208314165291603,
+      "status": 201
+    },
+    {
+      "blog": "93",
+      "action": "created",
+      "slug": "global/blogs/from-frustration-to-transformation",
+      "storyblok_id": 208314187160627,
+      "status": 201
+    },
+    {
+      "blog": "94",
+      "action": "created",
+      "slug": "global/blogs/from-decolonizing-to-liberating-land-in-africa-s-changing-climate",
+      "storyblok_id": 208314191666328,
+      "status": 201
+    },
+    {
+      "blog": "95",
+      "action": "created",
+      "slug": "global/blogs/international-day-of-education-who-shapes-learning",
+      "storyblok_id": 208314204765496,
+      "status": 201
+    },
+    {
+      "blog": "96",
+      "action": "created",
+      "slug": "global/blogs/the-dna-of-service-mentorship-growth-and-the-spirit-of-volunteerism",
+      "storyblok_id": 208314208808290,
+      "status": 201
+    },
+    {
+      "blog": "97",
+      "action": "updated",
+      "slug": "global/blogs/education-that-prepares-not-just-teaches-simulation-in-healthcare",
+      "storyblok_id": 208069819133965,
+      "status": 200
+    },
+    {
+      "blog": "98",
+      "action": "created",
+      "slug": "global/blogs/designing-inclusive-futures-for-women-and-girls",
+      "storyblok_id": 208314225684012,
+      "status": 201
     }
   ]
 }
