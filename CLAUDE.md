@@ -193,7 +193,7 @@ front-end developer. `ensure_folder` has a hard stop; a missing folder is an
 error with instructions, not something to invent. Asset folders are a different
 namespace and *are* created.
 
-**A portal must open from a bare clone.** Someone has to be able to `git clone`,
+**A portal must open from a bare clone** — [docs/PORTALS.md](docs/PORTALS.md). Someone has to be able to `git clone`,
 double-click the HTML, and see it work — no Python, no database, no 3.5-hour
 media download. The people who most need a portal are exactly the ones who will
 never run the pipeline. `blogs-portal.html` was committed and looked perfect on
