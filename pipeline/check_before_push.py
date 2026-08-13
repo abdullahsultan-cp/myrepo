@@ -51,9 +51,41 @@ REGENERATED = [
 NEVER = ["config/storyblok.json", "config/database.json"]
 
 
-def changed():
-    out = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT,
-                         capture_output=True, text=True, encoding="utf-8").stdout
+def _run(*args):
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True,
+                          text=True, encoding="utf-8")
+
+
+def changed(pushed=False):
+    """What to judge: the working tree, or what is about to be pushed.
+
+    `pushed=True` looks at the COMMITS between the upstream and HEAD, which is
+    the only correct question for a pre-push hook. It used to read
+    `git status --porcelain` in both cases, so the hook blocked a push because
+    of files somebody had open and uncommitted — none of which were going
+    anywhere. A guard that fires on things you are not doing gets switched off,
+    and then it is not guarding anything.
+
+    Falls back to the working tree when there is no upstream yet, which is the
+    right answer for a first push and for the manual `check_before_push.py`.
+    """
+    if pushed:
+        upstream = _run("rev-parse", "--abbrev-ref", "--symbolic-full-name",
+                        "@{u}")
+        if upstream.returncode == 0 and upstream.stdout.strip():
+            out = _run("diff", "--name-status",
+                       f"{upstream.stdout.strip()}...HEAD").stdout
+            rows = []
+            for line in out.splitlines():
+                if not line.strip():
+                    continue
+                parts = line.split("\t")
+                path = parts[-1].strip().strip('"')
+                rows.append((parts[0][:2].ljust(2),
+                             path.replace("\\", "/")))
+            return rows
+
+    out = _run("status", "--porcelain").stdout
     rows = []
     for line in out.splitlines():
         if not line.strip():
@@ -76,7 +108,9 @@ def main():
     own = os.path.basename(P.PIPELINE) + "/"
     own_profile = f"config/types/{mine}.json"
 
-    rows = changed()
+    # A pre-push run (--strict) judges the COMMITS being pushed; a manual run
+    # judges the working tree, which is what you want while still editing.
+    rows = changed(pushed=a.strict)
     if not rows:
         print("  nothing changed")
         return 0
