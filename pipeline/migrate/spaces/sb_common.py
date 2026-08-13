@@ -61,7 +61,8 @@ DEFAULT_CONFIG = (os.path.join(ROOT, "config", "sites.json") if ROOT
 
 # Scripts copied into every backup repo, so a repo can be restored with nothing
 # but itself and Python. Edited here, in one place.
-TOOL_FILES = ["sb_common.py", "sb_backup.py", "sb_restore.py"]
+TOOL_FILES = ["sb_common.py", "sb_backup.py", "sb_restore.py",
+              "sb_storage.py", "sb_portal.py", "sb_indexdb.py"]
 
 # Storyblok runs one Management API host per region. An EU token sent to the US
 # host does not say "wrong region" -- it 401s, which reads like a bad token and
@@ -167,6 +168,26 @@ def repo_paths(site):
     """(repo root, snapshot dir) for a site, both absolute."""
     repo = os.path.abspath(os.path.expanduser(site["repo"]))
     return repo, os.path.join(repo, site.get("subdir", "storyblok"))
+
+
+# An asset URL anywhere in text, and the stable part of one.
+#
+# The same asset is served under more than one host: assets.json returns the S3
+# form (s3.amazonaws.com/a.storyblok.com/f/<space>/...) while story content
+# carries the CDN form (a.storyblok.com/f/<space>/...), and paid plans can add a
+# custom domain. Only the path after /f/<space id>/ is stable, so that is the
+# key. Matching whole URLs instead silently matched 892 of ~5,800 references, and
+# would have left every image in a rebuilt space pointing at the old one.
+ASSET_URL_RE = re.compile(r"""https?://[^\s"'<>)\]]*?/f/\d+/[^\s"'<>)\]]*""")
+_AFTER_F = re.compile(r"/f/\d+/(.+)$")
+
+
+def asset_url_key(url):
+    """The part of an asset URL after /f/<space id>/, or None."""
+    if not url or "/f/" not in url:
+        return None
+    m = _AFTER_F.search(unquote(urlsplit(url).path))
+    return m.group(1) if m else None
 
 
 def sha256_file(path, chunk=1 << 20):

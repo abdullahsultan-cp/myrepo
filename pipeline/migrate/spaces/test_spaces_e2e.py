@@ -194,11 +194,14 @@ class H(BaseHTTPRequestHandler):
                                   extra={"Total": str(len(state["target_stories"]))})
         if p.endswith("/finish_upload"):
             return self._send(200, {"ok": True})
-        if p.startswith(f"/v1/spaces/{TGT}/assets/"):
-            aid = p.rsplit("/", 1)[1]
-            return self._send(200, {"asset": {
-                "id": int(aid),
-                "filename": f"{host}/f/{TGT}/new/{aid}/file.bin"}})
+        for sp in (TGT, SRC):
+            if p.startswith(f"/v1/spaces/{sp}/assets/"):
+                aid = p.rsplit("/", 1)[1]
+                if not aid.isdigit():
+                    break
+                return self._send(200, {"asset": {
+                    "id": int(aid),
+                    "filename": f"{host}/f/{sp}/new/{aid}/file.bin"}})
 
         # Asset binaries. The check is scoped to these paths on purpose: put it
         # on the fallthrough and every unmatched Management API endpoint answers
@@ -223,12 +226,17 @@ class H(BaseHTTPRequestHandler):
         if p == "/fake-s3":
             return self._send(204)
 
-        if p == f"/v1/spaces/{TGT}/assets":
+        if p in (f"/v1/spaces/{TGT}/assets", f"/v1/spaces/{SRC}/assets"):
+            space = TGT if TGT in p else SRC
+            sent = body.get("asset", body) if isinstance(body, dict) else {}
             with LOCK:
                 state["next_id"] += 1
                 new = state["next_id"]
+                # Recorded so a test can assert the folder it went into.
+                state["created"].setdefault("asset", []).append(
+                    dict(sent, id=new))
             return self._send(200, {"id": new, "post_url": f"{host}/fake-s3",
-                                    "fields": {"key": f"f/{TGT}/{new}"}})
+                                    "fields": {"key": f"f/{space}/{new}"}})
 
         m = {f"/v1/spaces/{TGT}/component_groups": ("component_group", "uuid"),
              f"/v1/spaces/{TGT}/components": ("component", None),
@@ -698,6 +706,65 @@ def main():
             "--from-rev", "HEAD")
     ck("--from-rev reads the snapshot from git",
        r.returncode == 0 and "commit HEAD" in r.stdout, r.stdout[-500:])
+
+    # ===================== RESTORE assets (deleted image -> bucket -> space)
+    # The operation this whole two-half design exists to make possible: an image
+    # is deleted in Storyblok, the bytes are still in the bucket, and the stories
+    # that used it must end up pointing at the re-uploaded copy.
+    print("\n=== restore assets: bucket -> Storyblok, and repoint stories ===")
+    with LOCK:
+        state["created"].clear(); state["puts"].clear()
+
+    r = run("sb_restore.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--mode", "assets")
+    ck("nothing to restore while every asset is present",
+       r.returncode == 0 and "nothing to restore" in r.stdout,
+       (r.stdout + r.stderr)[-700:])
+
+    # delete the png from the SPACE (the bucket keeps the bytes)
+    gone = [a for a in ASSETS if a["id"] == 9001]
+    ASSETS[:] = [a for a in ASSETS if a["id"] != 9001]
+    try:
+        r = run("sb_restore.py", "--config",
+                os.path.join(work, "sites-ext.json"), "--site", "AKUEB",
+                "--mode", "assets")
+        ck("dry run finds the asset deleted from the space",
+           r.returncode == 0 and "9001" in r.stdout, r.stdout[-900:])
+        ck("dry run says the bytes are in the bucket",
+           "in bucket" in r.stdout, r.stdout[-900:])
+        ck("dry run counts the stories that referenced it",
+           "used by 1 story" in r.stdout, r.stdout[-900:])
+        ck("dry run writes nothing", "DRY RUN" in r.stdout, r.stdout[-400:])
+        with LOCK:
+            ck("dry run really wrote nothing",
+               not state["created"] and not state["puts"], "")
+
+        r = run("sb_restore.py", "--config",
+                os.path.join(work, "sites-ext.json"), "--site", "AKUEB",
+                "--mode", "assets", "--apply")
+        print((r.stdout + r.stderr)[-900:])
+        ck("apply exits 0", r.returncode == 0, (r.stdout + r.stderr)[-700:])
+        with LOCK:
+            uploaded = list(state["created"].get("asset", []))
+            puts = [(p, b) for p, b in state["puts"]
+                    if f"/spaces/{SRC}/stories/" in p]
+        ck("the file was uploaded back to the space", len(uploaded) == 1,
+           str(uploaded)[:200])
+        ck("uploaded into the same asset folder",
+           uploaded and uploaded[0].get("asset_folder_id") == 70,
+           str(uploaded)[:200])
+        ck("exactly the one referencing story was rewritten", len(puts) == 1,
+           str([p for p, _ in puts]))
+        if puts:
+            content = json.dumps(puts[0][1].get("story", {}).get("content", {}))
+            ck("the old asset url is gone from that story",
+               OLD_PNG_URL.replace("HOST", "") .split("/f/")[1] not in content
+               or "/new/" in content, content[:300])
+            ck("the story now points at the re-uploaded file",
+               "/new/" in content, content[:300])
+    finally:
+        ASSETS.extend(gone)
+        ASSETS.sort(key=lambda a: a["id"])
 
     # ================================================== RESTORE rebuild
     print("\n=== restore rebuild ===")

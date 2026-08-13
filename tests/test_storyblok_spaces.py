@@ -527,6 +527,128 @@ class TestSha256File(unittest.TestCase):
             self.assertEqual(len(C.sha256_file(p)), 64)
 
 
+class TestCrossHostAssetUrls(unittest.TestCase):
+    """One asset is served under several hosts, and the restore must still remap.
+
+    Real AKUH data: assets.json returns the S3 form
+    (s3.amazonaws.com/a.storyblok.com/f/<space>/...) while story content carries
+    the CDN form (a.storyblok.com/f/<space>/...). Matching whole URLs therefore
+    replaced almost nothing -- a rebuilt space would have come up with every image
+    still pointing at the old space, and looked like it had worked. Only the path
+    after /f/<space id>/ is stable, so that is the join key.
+    """
+
+    S3 = "https://s3.amazonaws.com/a.storyblok.com/f/286308248262721/800x300/ab/p.jpg"
+    CDN = "https://a.storyblok.com/f/286308248262721/800x300/ab/p.jpg"
+    NEW = "https://a.storyblok.com/f/999/800x300/zz/p.jpg"
+
+    def test_key_is_the_same_across_hosts(self):
+        self.assertEqual(C.asset_url_key(self.S3), C.asset_url_key(self.CDN))
+        self.assertEqual(C.asset_url_key(self.S3), "800x300/ab/p.jpg")
+
+    def test_key_of_a_non_asset_url_is_none(self):
+        self.assertIsNone(C.asset_url_key("https://www.aku.edu/news/story"))
+        self.assertIsNone(C.asset_url_key(""))
+        self.assertIsNone(C.asset_url_key(None))
+
+    def test_a_custom_asset_domain_keys_the_same(self):
+        self.assertEqual(
+            C.asset_url_key("https://assets.aku.edu/f/286308248262721/800x300/ab/p.jpg"),
+            "800x300/ab/p.jpg")
+
+    def test_remap_rewrites_the_cdn_form_from_an_s3_keyed_map(self):
+        # The exact production case: the map comes from assets.json (S3 host),
+        # the content uses the CDN host.
+        out = remap_content({"body": {"src": self.CDN}}, {self.S3: self.NEW},
+                            {}, {})
+        self.assertEqual(out["body"]["src"], self.NEW)
+
+    def test_remap_rewrites_a_url_embedded_in_prose(self):
+        out = remap_content({"t": f"see {self.CDN} today"},
+                            {self.S3: self.NEW}, {}, {})
+        self.assertIn(self.NEW, out["t"])
+        self.assertNotIn(self.CDN, out["t"])
+
+    def test_remap_leaves_an_unknown_asset_url_alone(self):
+        other = "https://a.storyblok.com/f/286308248262721/x/qq/other.jpg"
+        out = remap_content({"a": other}, {self.S3: self.NEW}, {}, {})
+        self.assertEqual(out["a"], other)
+
+    def test_remap_handles_several_urls_in_one_string(self):
+        s3b = "https://s3.amazonaws.com/a.storyblok.com/f/286308248262721/x/cd/q.pdf"
+        cdnb = "https://a.storyblok.com/f/286308248262721/x/cd/q.pdf"
+        newb = "https://a.storyblok.com/f/999/x/yy/q.pdf"
+        out = remap_content({"t": f"{self.CDN} and {cdnb}"},
+                            {self.S3: self.NEW, s3b: newb}, {}, {})
+        self.assertIn(self.NEW, out["t"])
+        self.assertIn(newb, out["t"])
+        self.assertNotIn("286308248262721", out["t"])
+
+    def test_percent_escapes_do_not_break_the_key(self):
+        a = "https://a.storyblok.com/f/1/x/ab/My%20File.pdf"
+        b = "https://s3.amazonaws.com/a.storyblok.com/f/1/x/ab/My%20File.pdf"
+        self.assertEqual(C.asset_url_key(a), C.asset_url_key(b))
+
+
+class TestRequiredFieldPlugins(unittest.TestCase):
+    """/field_types refuses a personal access token, so the plugins the schema
+    depends on are derived from the schema instead.
+
+    AKUH needs five of them across 41 fields. They are account-level with no
+    create API, so a restore into an account missing one silently fails to save
+    every component that uses it -- which is why the list is captured rather than
+    left as a 403.
+    """
+
+    def plugins(self, components):
+        from sb_backup import required_field_plugins
+        return required_field_plugins(components)
+
+    def test_finds_a_custom_field_and_names_its_component(self):
+        got = self.plugins([{"name": "article", "schema": {
+            "seo": {"type": "custom", "field_type": "seo-metatags"}}}])
+        self.assertEqual(got["seo-metatags"]["fields"], 1)
+        self.assertEqual(got["seo-metatags"]["components"], ["article"])
+
+    def test_counts_fields_and_dedupes_components(self):
+        got = self.plugins([
+            {"name": "page", "schema": {
+                "a": {"type": "custom", "field_type": "native-color-picker"},
+                "b": {"type": "custom", "field_type": "native-color-picker"}}},
+            {"name": "banner", "schema": {
+                "c": {"type": "custom", "field_type": "native-color-picker"}}},
+        ])
+        self.assertEqual(got["native-color-picker"]["fields"], 3)
+        self.assertEqual(got["native-color-picker"]["components"],
+                         ["banner", "page"])
+
+    def test_builtin_fields_are_not_plugins(self):
+        got = self.plugins([{"name": "x", "schema": {
+            "t": {"type": "text"}, "b": {"type": "bloks"},
+            "i": {"type": "asset"}}}])
+        self.assertEqual(got, {})
+
+    def test_a_custom_field_with_no_plugin_name_is_still_reported(self):
+        # Silently dropping it would hide a dependency.
+        got = self.plugins([{"name": "x", "schema": {
+            "f": {"type": "custom"}}}])
+        self.assertIn("(unnamed)", got)
+
+    def test_survives_empty_and_malformed_schemas(self):
+        self.assertEqual(self.plugins([]), {})
+        self.assertEqual(self.plugins([{"name": "x"}]), {})
+        self.assertEqual(self.plugins([{"name": "x", "schema": {}}]), {})
+        self.assertEqual(self.plugins([{"name": "x", "schema": {"f": None}}]),
+                         {})
+
+    def test_output_is_deterministic(self):
+        comps = [{"name": "b", "schema": {"f": {"type": "custom",
+                                               "field_type": "p"}}},
+                 {"name": "a", "schema": {"g": {"type": "custom",
+                                               "field_type": "p"}}}]
+        self.assertEqual(self.plugins(comps)["p"]["components"], ["a", "b"])
+
+
 class TestWriteCsv(unittest.TestCase):
     def test_is_lf_terminated_and_reads_back_with_accents(self):
         # csv writes \r\n on Windows by default, which would diff against the

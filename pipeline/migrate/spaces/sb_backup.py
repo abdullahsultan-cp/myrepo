@@ -507,6 +507,36 @@ def write_story_manifest(outdir, stories, story_meta):
         rows)
 
 
+def required_field_plugins(components):
+    """Which custom field plugins the schema depends on, read from the schema.
+
+    /field_types rejects a personal access token, so the plugins' own definitions
+    cannot be captured -- but every component schema names the plugin each custom
+    field uses, so the *requirement* is recoverable even when the definition is
+    not. AKUH turns out to need five (sb-ai-seo, seo-metatags,
+    native-color-picker, workflow-options-field-1, storyblok-colorpicker) across
+    41 fields.
+
+    This matters at restore time: field plugins are account-level and have no
+    create API, so they must already exist on the target account or every
+    component using one will not save correctly. Knowing the list beforehand is
+    the difference between a restore that works and one that half-works quietly.
+    """
+    out = {}
+    for c in components or []:
+        for fname, f in (c.get("schema") or {}).items():
+            if (f or {}).get("type") != "custom":
+                continue
+            plug = f.get("field_type") or "(unnamed)"
+            entry = out.setdefault(plug, {"fields": 0, "components": []})
+            entry["fields"] += 1
+            if c.get("name") not in entry["components"]:
+                entry["components"].append(c["name"])
+    for entry in out.values():
+        entry["components"].sort()
+    return out
+
+
 def read_prev_sha(outdir):
     """{asset id: sha256} from the manifest the last run committed.
 
@@ -639,7 +669,8 @@ repo is a mirror, not a working copy.
 | `{sub}/assets_location.json` | where the binaries are kept |
 | `{sub}/space_roles.json`, `webhook_endpoints.json`, `workflows.json`, `releases.json`, `tasks.json`, `branches.json` | settings, for reference |
 | `{sub}/apps.json`, `app_provisions.json`, `extensions.json` | installed apps, for reference |
-| `{sub}/field_types_*.json` | custom field plugins registered |
+| `{sub}/required_field_plugins.json` | **custom field plugins the schema needs** — must exist on the target account before a restore |
+| `{sub}/field_types_*.json` | plugin definitions, when the token can read them |
 | `{sub}/_summary.json` | counts, and anything the token could not read |
 | `tools/` | the backup and restore scripts, so this repo works alone |
 
@@ -874,7 +905,7 @@ A rebuild does **not** recreate these. Take them from the JSON by hand:
 | `storyblok/releases.json`, `tasks.json`, `branches.json` | recreate if still needed |
 | `storyblok/presets.json` | recreate component presets |
 | `storyblok/apps.json`, `app_provisions.json`, `extensions.json` | **reinstall each app from the Storyblok marketplace.** Installing an app needs an OAuth flow a script cannot drive. |
-| `storyblok/field_types_*.json` | custom field plugins are **account-level** and have no create API. They must already exist on the target account, or components using them will not save correctly. |
+| `storyblok/required_field_plugins.json` | **the custom field plugins this schema depends on.** Account-level, no create API — every one listed must already exist on the target account, or each component using it will not save correctly. The file names which components need which plugin. |
 | — | **generate new access tokens** (Settings → Access tokens) and re-point the front end at them. The old tokens are deliberately not backed up: they are live credentials and this repo has a remote. |
 | `storyblok/webhook_endpoints.json` | the signing **secret** is stripped for the same reason — set a new one on each webhook and update the receiver. |
 
@@ -1241,6 +1272,16 @@ def backup(site, only, args):
             counts[res] = save(outdir, res, data)
             print(f"    {res:<20} {counts[res]}")
 
+        # What the schema needs from the account, derived from the schema
+        # itself, because /field_types will not tell us.
+        plugins = required_field_plugins(
+            load_json(os.path.join(outdir, "components.json"), []) or [])
+        counts["required_field_plugins"] = save(
+            outdir, "required_field_plugins", plugins)
+        if plugins:
+            print(f"    {'field plugins needed':<20} {len(plugins)}: "
+                  f"{', '.join(sorted(plugins))}")
+
         # Datasource entries sit behind a per-datasource query, so a
         # datasources.json on its own restores empty dropdowns.
         entries = []
@@ -1490,6 +1531,8 @@ def main():
                          "anything missing or whose checksum no longer matches. "
                          "Needed because skipping by size cannot see corruption "
                          "that kept the file's size.")
+    ap.add_argument("--no-index-db", action="store_true",
+                    help="skip building index.sqlite")
     ap.add_argument("--no-published", action="store_true",
                     help="skip the published versions and back up drafts only")
     ap.add_argument("--collaborators", action="store_true",
