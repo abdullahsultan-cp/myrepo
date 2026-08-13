@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:32:34.633Z",
-  "published_at": "2026-07-31T09:32:34.619Z",
+  "updated_at": "2026-08-12T15:08:56.751Z",
+  "published_at": "2026-08-12T15:08:56.735Z",
   "id": 203983890700063,
   "uuid": "65d1dea1-5eb5-468a-ae47-17e2c5f890bd",
   "is_folder": false,
@@ -20,6 +20,15 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Mr Shahzad Roy, popular singer, and a social activist for children, delivered a talk on the significance of empowering children - \"An enabling environment is so important for the mental and physical health of a child; teach your children that they CAN\", he remarked.",
+                  "type": "text"
+                }
+              ]
+            },
             {
               "type": "paragraph",
               "content": [
@@ -130,6 +139,7 @@
     "date": "Sep 15, 2022",
     "title": "4th Annual Research Week: Department of Paediatrics & Child Health",
     "author": "Maryam Ahmad",
+    "date_iso": "2022-09-15 00:00",
     "entities": [
       "203313675500561",
       "203313659366173"
@@ -151,7 +161,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "The Department of Paediatrics & Child Health held its 4th Annual Research Week in August with 15 diverse pre-conference workshops, an impactful inaugural session, and a full day conference.  Mr Shahzad Roy, popular singer, and a social activist for children, delivered a talk on the significance of empowering children - \"An enabling environment is so important for the mental and physical health of a child; teach your children that they CAN\", he remarked.",
+    "description": "The Department of Paediatrics & Child Health held its 4th Annual Research Week in August with 15 diverse pre-conference workshops, an impactful inaugural session, and a full day conference.",
     "show_social": false,
     "banner_image": {
       "id": 203695744250190,
@@ -186,7 +196,7 @@
   "published": true,
   "slug": "4th-annual-research-week-department-of-paediatrics-child-health",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/departments/paediatrics-child-health/news/4th-annual-research-week-department-of-paediatrics-child-health",
+  "full_slug": "regions/pk/entities/mc/departments/paeds/news/4th-annual-research-week-department-of-paediatrics-child-health",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -202,8 +212,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "bd13b3a79c01fb311dfabe9e5945fc2d8f533f9f",
-    "timestamp": "1785497872"
+    "token": "371d7aa627bf3133241e417574b6edb49d2973de",
+    "timestamp": "1786618328"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -224,7 +234,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -244,7 +254,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -264,7 +274,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "paediatrics-child-health",
+      "slug": "paeds",
       "translated_slugs": []
     },
     {
@@ -282,11 +292,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:32:34.619Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -299,7 +309,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203983890859765,
+  "current_version_id": 208313289483899,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

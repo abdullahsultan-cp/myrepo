@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:14:00.019Z",
-  "published_at": "2026-07-30T15:14:00.003Z",
+  "updated_at": "2026-08-12T14:54:31.526Z",
+  "published_at": "2026-08-12T14:54:31.512Z",
   "id": 203713904406884,
   "uuid": "e013111c-4061-4d6b-9647-6c35d1cba8e7",
   "is_folder": false,
@@ -305,16 +305,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/845260546979086336",
-        "_uid": "a80d5a1d-6669-fe14-5917-edd71d692f7a",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "1b8db619-5519-421d-bcd7-7388f88610ee",
+        "items": [
+          {
+            "_uid": "f3521660-7a42-469d-83fb-e1697597c91a",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/845260546979086336",
+                "_uid": "e6e04115-3e97-4dc4-97d1-fa286cb57a4e",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -346,37 +394,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Mar 24, 2017",
     "title": "President of Pakistan confers national awards on AKU faculty",
     "author": "Rasool Sarang",
+    "date_iso": "2017-03-24 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -430,7 +460,7 @@
   "published": true,
   "slug": "president-of-pakistan-confers-national-awards-on-aku-faculty",
   "path": null,
-  "full_slug": "regions/pakistan/news/president-of-pakistan-confers-national-awards-on-aku-faculty",
+  "full_slug": "regions/pk/news/president-of-pakistan-confers-national-awards-on-aku-faculty",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -446,8 +476,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "068ac26d332c3160c4ebb8e7dfc6cb6dc0658793",
-    "timestamp": "1785492565"
+    "token": "4a4cc36fe64549e0a8a7a03f57002e1962d267e8",
+    "timestamp": "1786616988"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -468,7 +498,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -486,11 +516,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:14:00.003Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -503,7 +533,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713904574769,
+  "current_version_id": 208309745542791,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

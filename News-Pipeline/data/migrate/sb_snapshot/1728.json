@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:24:54.445Z",
-  "published_at": "2026-07-30T15:24:54.431Z",
+  "updated_at": "2026-08-12T14:51:41.575Z",
+  "published_at": "2026-08-12T14:51:41.562Z",
   "id": 203716584968333,
   "uuid": "24766b72-a36d-4e61-b804-322f98396eab",
   "is_folder": false,
@@ -29,13 +29,12 @@
                 {
                   "text": "Membership in the NAM is considered one of the highest honors in the fields of health and medicine and recognizes individuals who have demonstrated outstanding professional achievements and commitment to service.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "The appointment of 75 new members and 10 international members was announced by the NAM at its annual meeting on October 15, 2018.",
                   "type": "text"
@@ -263,6 +262,7 @@
     "date": "Oct 15, 2018",
     "title": "Prof Zulfiqar Bhutta elected to U.S. National Academy of Medicine",
     "author": "Rasool Sarang",
+    "date_iso": "2018-10-15 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -316,7 +316,7 @@
   "published": true,
   "slug": "prof-zulfiqar-bhutta-elected-to-u-s-national-academy-of-medicine",
   "path": null,
-  "full_slug": "regions/pakistan/news/prof-zulfiqar-bhutta-elected-to-u-s-national-academy-of-medicine",
+  "full_slug": "regions/pk/news/prof-zulfiqar-bhutta-elected-to-u-s-national-academy-of-medicine",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -332,8 +332,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "88f32401c4482e41663cf818b9b3863cefe7a7ab",
-    "timestamp": "1785492502"
+    "token": "94cb43c0b567e53f67c3dd204dd2faf890dd8d40",
+    "timestamp": "1786616890"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -354,7 +354,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -372,11 +372,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:24:54.431Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -389,7 +389,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716585128576,
+  "current_version_id": 208309049446947,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

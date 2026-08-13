@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:50:42.296Z",
-  "published_at": "2026-07-30T14:50:42.282Z",
+  "updated_at": "2026-08-12T15:12:22.625Z",
+  "published_at": "2026-08-12T15:12:22.609Z",
   "id": 203708179369699,
   "uuid": "cd589f00-4a3c-4a79-aa01-f05dd07c1608",
   "is_folder": false,
@@ -24,7 +24,28 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Dr Philip Wood chaired a session on Change and Renewal in Non-Muslim Communal Outlooks in the Classical Islamic Period",
+                  "text": "Dr Wood, an expert in the intersection of political and religious ideas in the late antique Middle East, chaired a session on Change and Renewal in Non-Muslim Communal Outlooks in the Classical Islamic Period on Thursday 9th July. Concentrating on aspects of adaptation, adjustment, and modification by ",
+                  "type": "text"
+                },
+                {
+                  "text": "non-Muslim communities",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://imc.leeds.ac.uk/dbsql02/AQueryServlet?%2aid=30&%2aformId=30&%2acontext=IMC&conference=2015&sessionId=5618&chosenPaperId=&%2aservletURI=https://imc.leeds.ac.uk/dbsql02/AQueryServlet",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_self",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " in the context of life under Muslim rule, speakers looked at social and administrative change. More information about the session is available here.",
                   "type": "text"
                 }
               ]
@@ -82,6 +103,7 @@
     "date": "May 17, 2016",
     "title": "ISMC Professor Chairs International Conference Session",
     "author": "Amirali Virani",
+    "date_iso": "2016-05-17 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -102,7 +124,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Dr Wood, an expert in the intersection of political and religious ideas in the late antique Middle East, chaired a session on Change and Renewal in Non-Muslim Communal Outlooks in the Classical Islamic Period on Thursday 9th July. Concentrating on aspects of adaptation, adjustment, and modification by  non-Muslim communities  in the context of life under Muslim rule, speakers looked at social and administrative change. More information about the session is available here.",
+    "description": "Dr Philip Wood chaired a session on Change and Renewal in Non-Muslim Communal Outlooks in the Classical Islamic Period",
     "show_social": false,
     "banner_image": {
       "id": 203663629374706,
@@ -137,7 +159,7 @@
   "published": true,
   "slug": "ismc-professor-chairs-international-conference-session",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/ismc-professor-chairs-international-conference-session",
+  "full_slug": "regions/uk/entities/ismc/news/ismc-professor-chairs-international-conference-session",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +175,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "50588244256f27e9d98ee36717997c28c614f4b1",
-    "timestamp": "1785498024"
+    "token": "0bec2c9b70fd9fecaf774ff33a0570b52982ed65",
+    "timestamp": "1786618606"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +197,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -195,7 +217,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -213,11 +235,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:50:42.282Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +252,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203708179529098,
+  "current_version_id": 208314132778292,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

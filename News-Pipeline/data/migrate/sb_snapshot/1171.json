@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:13.835Z",
-  "published_at": "2026-07-30T15:13:13.820Z",
+  "updated_at": "2026-08-12T15:10:49.856Z",
+  "published_at": "2026-08-12T15:10:49.840Z",
   "id": 203713715220761,
   "uuid": "5d1cc1ab-9d43-4e5f-9d28-b60fa545573b",
   "is_folder": false,
@@ -250,16 +250,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/830491792931946496",
-        "_uid": "9bdea76f-3e3d-c858-fc60-429ce3eddc43",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "bbe87a16-a834-4e13-a4ce-517f16bed2cd",
+        "items": [
+          {
+            "_uid": "3dae3a07-fc6f-4c6b-a3fa-e2e9991572d1",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/830491792931946496",
+                "_uid": "8e3124fa-c37d-496c-81e5-03a6256a640b",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -291,37 +339,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 11, 2017",
     "title": "Ugandan minister draws attention to key health sector developments",
     "author": "Rasool Sarang",
+    "date_iso": "2017-02-11 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -375,7 +405,7 @@
   "published": true,
   "slug": "ugandan-minister-draws-attention-to-key-health-sector-developments",
   "path": null,
-  "full_slug": "regions/uganda/news/ugandan-minister-draws-attention-to-key-health-sector-developments",
+  "full_slug": "regions/ug/news/ugandan-minister-draws-attention-to-key-health-sector-developments",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -391,8 +421,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "2f9fe020acc1ef2c85f841c65603821f4cff7327",
-    "timestamp": "1785497953"
+    "token": "7b7ccc865e22b35cb68c21e782ae789ea8920d60",
+    "timestamp": "1786618481"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -413,7 +443,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "uganda",
+      "slug": "ug",
       "translated_slugs": []
     },
     {
@@ -431,11 +461,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:13:13.820Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -448,7 +478,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713715404814,
+  "current_version_id": 208313752726129,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

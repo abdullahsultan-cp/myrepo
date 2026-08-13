@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:58:06.006Z",
-  "published_at": "2026-07-30T14:58:05.992Z",
+  "updated_at": "2026-08-12T15:09:50.559Z",
+  "published_at": "2026-08-12T15:09:50.547Z",
   "id": 203709996656612,
   "uuid": "e4751eca-2419-4a93-9f23-02c96a059768",
   "is_folder": false,
@@ -161,8 +161,13 @@
       }
     ],
     "date": "Feb 08, 2012",
+    "isTop": {
+      "top": true,
+      "topAt": "2026-08-12T09:45:48.920Z"
+    },
     "title": "University governing bodies urged to cultivate quality standards",
     "author": "volunteer.pa",
+    "date_iso": "2012-02-08 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -179,6 +184,10 @@
       "copyright": "",
       "fieldtype": "asset",
       "meta_data": {}
+    },
+    "isFeatured": {
+      "featured": true,
+      "featuredAt": "2026-08-12T09:45:50.457Z"
     },
     "show_share": true,
     "description": "Governing bodies for education must recognize the need to establish quality standards for institutions, not only in Tanzania but across the EAC, for it is through these standards that university graduates will be able to move freely across national borders of the EAC in pursuit of opportunities. This was the message delivered by Honourable Lucy Nkya, Deputy Minister, Health and Social Welfare, and the Chief Guest at the seventh Aga Khan University Convocation ceremony held in Dar es Salaam.",
@@ -216,7 +225,7 @@
   "published": true,
   "slug": "university-governing-bodies-urged-to-cultivate-quality-standards",
   "path": null,
-  "full_slug": "regions/tanzania/news/university-governing-bodies-urged-to-cultivate-quality-standards",
+  "full_slug": "regions/tz/news/university-governing-bodies-urged-to-cultivate-quality-standards",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -232,8 +241,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1e2f0a31e0348e8c7de8ca50d96ca6131a7af205",
-    "timestamp": "1785497913"
+    "token": "c2e665ee30b1c162885cd28613e2994399b4aca1",
+    "timestamp": "1786618404"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -254,7 +263,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -272,11 +281,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:58:05.992Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -289,7 +298,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203709996951075,
+  "current_version_id": 208313509918970,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

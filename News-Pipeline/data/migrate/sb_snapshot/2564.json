@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:22:26.949Z",
-  "published_at": "2026-07-31T09:22:26.935Z",
+  "updated_at": "2026-08-12T14:00:04.228Z",
+  "published_at": "2026-08-12T14:00:04.213Z",
   "id": 203981401561086,
   "uuid": "2cf69673-60df-4248-860b-31a8cc3b2b5f",
   "is_folder": false,
@@ -198,16 +198,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1368511767958220800",
-        "_uid": "f2869e57-10ec-f7f8-1acf-b88e16cf205d",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "01d44844-a79a-4bed-9d13-ae09acbd462b",
+        "items": [
+          {
+            "_uid": "eb23f6ff-d694-454f-bca8-0f752d9a4689",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1368511767958220800",
+                "_uid": "810fab11-f4f0-469f-82ee-5eb0337af1fa",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -239,37 +287,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Mar 05, 2021",
     "title": "More people can die from treatable common surgical conditions",
     "author": "Rasool Sarang",
+    "date_iso": "2021-03-05 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -336,7 +366,7 @@
   "published": true,
   "slug": "more-people-can-die-from-treatable-common-surgical-conditions",
   "path": null,
-  "full_slug": "regions/pakistan/news/more-people-can-die-from-treatable-common-surgical-conditions",
+  "full_slug": "regions/pk/news/more-people-can-die-from-treatable-common-surgical-conditions",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -352,8 +382,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "abcdaed7d630586c89995b7c0473269289e14b06",
-    "timestamp": "1785492465"
+    "token": "ef43fd30c984a2e7b1b169f74cd935e6ce0b31ba",
+    "timestamp": "1786616831"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -374,7 +404,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -392,11 +422,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:22:26.935Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -409,7 +439,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203981401747053,
+  "current_version_id": 208296362666228,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:51:25.118Z",
-  "published_at": "2026-07-30T14:51:25.103Z",
+  "updated_at": "2026-08-12T15:04:53.610Z",
+  "published_at": "2026-08-12T15:04:53.591Z",
   "id": 203708354672305,
   "uuid": "b30d8be2-f5fe-4068-809e-c3a813f1ef92",
   "is_folder": false,
@@ -165,8 +165,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "https://www.aku.edu/news/Documents/Transforming Routine Immunziation - Dr Shehla Zaidi.pdf",
-                        "uuid": null,
+                        "href": "https://a.storyblok.com/f/289824742951963/12105339/2f81574f7a/209-richtext-b42e3ec929-transforming-routine-immunziation-dr-shehla-zaidi.pdf",
                         "anchor": null,
                         "custom": {},
                         "target": "_self",
@@ -231,16 +230,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/729652776167460864",
-        "_uid": "5086b614-5a41-6dfe-4fa0-76f9d0b050a1",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "0d852e38-86cb-4b79-a579-fe006df7257d",
+        "items": [
+          {
+            "_uid": "fe90a8e0-f51e-4992-a290-cfc8b98447e5",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/729652776167460864",
+                "_uid": "953a579e-abe9-4f4a-9483-508c13338bff",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -272,37 +319,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "May 19, 2016",
     "title": "Transforming government-provided routine childhood immunization",
     "author": "Afifa Batool",
+    "date_iso": "2016-05-19 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -356,7 +385,7 @@
   "published": true,
   "slug": "transforming-government-provided-routine-childhood-immunization",
   "path": null,
-  "full_slug": "regions/pakistan/news/transforming-government-provided-routine-childhood-immunization",
+  "full_slug": "regions/pk/news/transforming-government-provided-routine-childhood-immunization",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -372,8 +401,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "565fa5dbe1afd16404bbc7f0d9940022892277ac",
-    "timestamp": "1785497674"
+    "token": "2fce9b57d192eec7f4bf109b5adfedf8b6a8f3b2",
+    "timestamp": "1786617971"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -394,7 +423,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -412,11 +441,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:51:25.103Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -429,7 +458,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203708354911844,
+  "current_version_id": 208312293428564,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

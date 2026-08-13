@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:36.051Z",
-  "published_at": "2026-07-30T15:13:36.036Z",
+  "updated_at": "2026-08-12T15:07:40.215Z",
+  "published_at": "2026-08-12T15:07:40.199Z",
   "id": 203713806213437,
   "uuid": "fc2dbc7e-a7d4-44f9-b801-cda938e30d49",
   "is_folder": false,
@@ -151,16 +151,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/842041246088626176",
-        "_uid": "48a9f2b8-ed80-f9e5-9f3d-4eca35566c33",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "70307ca7-24d2-4ccb-ab8c-8b0618a1bd01",
+        "items": [
+          {
+            "_uid": "1feb84bd-3ada-4149-9309-1a699590e761",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/842041246088626176",
+                "_uid": "b7cdc8ae-6cc1-4b78-9d38-c231ef03a6f3",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -192,37 +240,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Mar 15, 2017",
     "title": "AKU launches Mombasa research office to boost education and health",
     "author": "Rasool Sarang",
+    "date_iso": "2017-03-15 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -276,7 +306,7 @@
   "published": true,
   "slug": "aku-launches-mombasa-research-office-to-boost-education-and-health",
   "path": null,
-  "full_slug": "regions/kenya/news/aku-launches-mombasa-research-office-to-boost-education-and-health",
+  "full_slug": "regions/ke/news/aku-launches-mombasa-research-office-to-boost-education-and-health",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -292,8 +322,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "678f68aefa865b33ed64bc90efd22f04daba6d16",
-    "timestamp": "1785497809"
+    "token": "075e27efa9911a832ccee2cc4b242dec457407b2",
+    "timestamp": "1786618206"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -314,7 +344,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "kenya",
+      "slug": "ke",
       "translated_slugs": []
     },
     {
@@ -332,11 +362,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:13:36.036Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -349,7 +379,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713806405791,
+  "current_version_id": 208312975987654,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

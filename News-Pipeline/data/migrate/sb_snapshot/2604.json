@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:23:34.494Z",
-  "published_at": "2026-07-31T09:23:34.481Z",
+  "updated_at": "2026-08-12T15:08:01.835Z",
+  "published_at": "2026-08-12T15:08:01.821Z",
   "id": 203981678286171,
   "uuid": "8c1c9092-4c18-4a80-b798-8e18c615f5d2",
   "is_folder": false,
@@ -38,13 +38,12 @@
                 {
                   "text": "In his speech, Chief Guest Dr Saud Anwer - a state senator for Connecticut, critical care physician and graduate of the medical college's class of 1991 - appreciated the graduating interns for striving to serve in conditions that are likely to have been as challenging as the 1914 Spanish Flu pandemic over a century ago.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "He urged the graduands to remain committed to following seven key skills throughout their lives: be a good listener, keep family first, cherish friendships, self-reflect, build optimism, serve the public and never stop learning.",
                   "type": "text"
@@ -79,17 +78,12 @@
                 {
                   "text": "She said: \"Let us all take a moment and cherish those innumerable small victories that each one of us has had over the last year that has culminated in today's celebration...There have been times when we were struggling with ourselves, we wanted to run out of so many challenging situations, but we fought and stood strong no matter what.\"",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "text": " ",
-                  "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "While congratulating the graduating class, Medical College Dean Dr Adil Haider reminded them that the day also marked a new beginning where the class would be required to recommit themselves to lifelong learning and the pursuit of excellence in the practice of medicine.",
                   "type": "text"
@@ -103,15 +97,14 @@
                   "type": "hard_break"
                 },
                 {
-                  "text": "Dr Haider said: \"As you move on in your healthcare journey, I believe that you will carry with you the skills, competencies and values you have learnt during your time at the University, so as to make a sustainable and meaningful impact on the society you (will) serve...As a healthcare professional, always remember to respond passionately to your calling even when you feel like the odds are stacked up against you! ",
+                  "text": "Dr Haider said: \"As you move on in your healthcare journey, I believe that you will carry with you the skills, competencies and values you have learnt during your time at the University, so as to make a sustainable and meaningful impact on the society you (will) serve...As a healthcare professional, always remember to respond passionately to your calling even when you feel like the odds are stacked up against you!",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "\"At the same time, be humble: acknowledge your shortcomings and address them. Arm yourself with the skills and knowledge you need to make a remarkable contribution to your chosen area of work.\"",
                   "type": "text"
@@ -179,6 +172,7 @@
     "date": "Apr 07, 2021",
     "title": "Graduating interns urged to embody seven vital life skills ",
     "author": "Ali Najib Sidiki",
+    "date_iso": "2021-04-07 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -234,7 +228,7 @@
   "published": true,
   "slug": "graduating-interns-urged-to-embody-seven-vital-life-skills",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/departments/medical-education/news/graduating-interns-urged-to-embody-seven-vital-life-skills",
+  "full_slug": "regions/pk/entities/mc/departments/meded/news/graduating-interns-urged-to-embody-seven-vital-life-skills",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -250,8 +244,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "a18299b51dc548110e1358d2a2a3a047af7a8f39",
-    "timestamp": "1785497827"
+    "token": "883ed83768029a4045c049c42fffbd5de9670768",
+    "timestamp": "1786618238"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -272,7 +266,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -292,7 +286,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -312,7 +306,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-education",
+      "slug": "meded",
       "translated_slugs": []
     },
     {
@@ -330,11 +324,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:23:34.481Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -347,7 +341,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203981678460748,
+  "current_version_id": 208313064584317,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

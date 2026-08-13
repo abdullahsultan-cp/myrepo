@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:17:33.030Z",
-  "published_at": "2026-07-30T15:17:33.014Z",
+  "updated_at": "2026-08-12T15:08:22.805Z",
+  "published_at": "2026-08-12T15:08:22.791Z",
   "id": 203714776916635,
   "uuid": "a619df30-577a-4c62-8614-2d9295ab7207",
   "is_folder": false,
@@ -24,7 +24,25 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Education and nursing graduates were honoured at a ceremony held at the Diamond Jubilee Hall in Dar es Salaam on February 9, 2011.",
+                  "text": "The Aga Khan University Tanzania Institute of Higher Education awarded 28 students a Master of Education, 47 a Bachelor of Science in Nursing and 57 students were conferred a Diploma in General Nursing.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "An award of academic excellence was presented to Prudensiana Cleophas Amlima who graduated with a Bachelor of Science degree in Nursing and Priciline Isack Mushi who graduated with a diploma in General Nursing. This award was presented to them for having demonstrated outstanding performance in their studies.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "H.E Ali Hassan Mwinyi, Retired President of the United Republic of Tanzania was the Chief Guest.",
                   "type": "text"
                 }
               ]
@@ -80,8 +98,10 @@
       }
     ],
     "date": "Jan 02, 2018",
+    "isTop": "",
     "title": "AKU Convocation 2011: Tanzania",
     "author": "Iqra Azmat",
+    "date_iso": "2018-01-02 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -99,8 +119,12 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
+    "isFeatured": {
+      "featured": true,
+      "featuredAt": "2026-08-12T09:17:05.476Z"
+    },
     "show_share": true,
-    "description": "Education and nursing graduates were honoured at a ceremony held at the Diamond Jubilee Hall in Dar es Salaam on February 9, 2011. The Aga Khan University Tanzania Institute of Higher Education awarded 28 students a Master of Education, 47 a Bachelor of Science in Nursing and 57 students were conferred a Diploma in General Nursing. An award of academic excellence was presented to Prudensiana Cleophas Amlima who graduated with a Bachelor of Science degree in Nursing and Priciline Isack Mushi who graduated with a diploma in General Nursing. This award was presented to them for having demonstrated outstanding performance in their studies. H.E Ali Hassan Mwinyi, Retired President of the United Republic of Tanzania was the Chief Guest.",
+    "description": "Education and nursing graduates were honoured at a ceremony held at the Diamond Jubilee Hall in Dar es Salaam on February 9, 2011.",
     "show_social": false,
     "banner_image": {
       "id": 203669889203264,
@@ -135,7 +159,7 @@
   "published": true,
   "slug": "aku-convocation-2011-tanzania",
   "path": null,
-  "full_slug": "regions/tanzania/news/aku-convocation-2011-tanzania",
+  "full_slug": "regions/tz/news/aku-convocation-2011-tanzania",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -151,8 +175,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9bf100d08be2aa12ee4455f53ab623b26cd6821c",
-    "timestamp": "1785497844"
+    "token": "3130f660bd15749a39b0ac5c55bbab1b6ce931eb",
+    "timestamp": "1786618271"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -173,7 +197,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -191,11 +215,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:17:33.014Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -208,7 +232,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203714777077438,
+  "current_version_id": 208313150346546,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

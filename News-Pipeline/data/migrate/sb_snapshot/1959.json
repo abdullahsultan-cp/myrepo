@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:29:53.868Z",
-  "published_at": "2026-07-30T15:29:53.852Z",
+  "updated_at": "2026-08-12T15:16:13.832Z",
+  "published_at": "2026-08-12T15:16:13.815Z",
   "id": 203717811376634,
   "uuid": "ab99dd66-9cc5-44ac-a9bc-9235143f511c",
   "is_folder": false,
@@ -16,7 +16,79 @@
     "_uid": "6fdd5031-839e-400c-b912-83efac925e7c",
     "body": [
       {
-        "_uid": "3177b62f-2047-d0e0-4370-71f81fc84d9f",
+        "_uid": "8bb8772a-12e0-1090-f26a-5c29eb529350",
+        "content": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The University continues to widen and deepen its impact on Tanzanian society by venturing into areas as diverse as agriculture, afforestation, business development, community cohesion, language skills and sport through its Community Outreach Centre (COC) in Arusha.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Launched in 2018, the COC is a hub for the local community that houses state-of-the-art educational, teaching, healthcare and recreational facilities. To date, the centre has empowered 28,000 people to launch their own businesses, adopt farming techniques that have enhanced their food security and learn key skills that have raised their quality of life.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "spacing": {
+          "unit": "px",
+          "mobile": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 24
+            },
+            "padding": {
+              "top": null,
+              "left": 20,
+              "right": 20,
+              "bottom": null
+            }
+          },
+          "desktop": {
+            "margin": {
+              "top": null,
+              "left": null,
+              "right": null,
+              "bottom": 56
+            },
+            "padding": {
+              "top": null,
+              "left": 176,
+              "right": 176,
+              "bottom": null
+            }
+          }
+        },
+        "component": "rich_text",
+        "bg_pattern": {
+          "id": null,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "source": "",
+          "filename": "",
+          "copyright": "",
+          "fieldtype": "asset",
+          "meta_data": {}
+        },
+        "pattern_height": "500",
+        "pattern_mobile_height": "0"
+      },
+      {
+        "_uid": "5cb7745f-f8c8-6340-14b2-886aaa7199f6",
         "type": "video",
         "title": "",
         "spacing": {
@@ -102,7 +174,7 @@
         "video_description": ""
       },
       {
-        "_uid": "abf263d0-2c6c-8311-be4f-e2b324bb52fc",
+        "_uid": "a118f4f1-810c-fdcd-1ce4-59881e93ad7f",
         "content": {
           "type": "doc",
           "content": [
@@ -132,27 +204,21 @@
                 {
                   "text": "A healthy environment helps a community thrive and COC staff have partnered with the community to plant 160,000 trees in the area. This drive will continue until a million trees are seeded around the centre.",
                   "type": "text"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
-                  "type": "hard_break"
-                },
-                {
-                  "text": " ",
+                  "text": "The University's commitment to the country remains strong and steadfast and it currently operates a School of Nursing and Midwifery, a Medical College and an Institute for Educational Development in Dar es Salaam. To date, AKU has graduated 1,102 skilled individuals, many of whom hold key leadership positions in clinics, hospitals, schools, universities, government and other institutions.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "text": "The University's commitment to the country remains strong and steadfast and it currently operates a School of Nursing and Midwifery, a Medical College and an Institute for Educational Development in Dar es Salaam. To date, AKU has graduated 1,102 skilled individuals, many of whom hold key leadership positions in clinics, hospitals, schools, universities, government and other institutions. ",
-                  "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "Moreover, eighty per cent of our recent Tanzanian graduates are serving in the country's public sector. AKU has also helped more than 3,600 educators, health professionals, journalists and communicators advance their careers through short courses and certificate programmes.",
                   "type": "text"
@@ -212,6 +278,7 @@
     "date": "Aug 06, 2019",
     "title": "Extending our impact in Tanzania",
     "author": "stephen.musyoka",
+    "date_iso": "2019-08-06 00:00",
     "entities": [
       "203313835568371"
     ],
@@ -232,7 +299,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Aga Khan University has had a presence in Tanzania for over 17 years: a period that has seen its graduates step up to raise the standard of healthcare and education across the country.  The University continues to widen and deepen its impact on Tanzanian society by venturing into areas as diverse as agriculture, afforestation, business development, community cohesion, language skills and sport through its Community Outreach Centre (COC) in Arusha. Launched in 2018, the COC is a hub for the local community that houses state-of-the-art educational, teaching, healthcare and recreational facilities. To date, the centre has empowered 28,000 people to launch their own businesses, adopt farming techniques that have enhanced their food security and learn key skills that have raised their quality of life.",
+    "description": "Aga Khan University has had a presence in Tanzania for over 17 years: a period that has seen its graduates step up to raise the standard of healthcare and education across the country.",
     "show_social": false,
     "banner_image": {
       "id": 203675501143210,
@@ -267,7 +334,7 @@
   "published": true,
   "slug": "extending-our-impact-in-tanzania",
   "path": null,
-  "full_slug": "regions/tanzania/entities/arusha-climate-and-environmental-research-centre/news/extending-our-impact-in-tanzania",
+  "full_slug": "regions/tz/entities/aerr/news/extending-our-impact-in-tanzania",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -283,8 +350,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "c296eb6f05d0574e3b4ed392ae9a4c7c3b37826e",
-    "timestamp": "1785498214"
+    "token": "69e9a4f4c2f937c462882a7bfbe4c2ef1ba410e3",
+    "timestamp": "1786618944"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -305,7 +372,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -325,7 +392,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "arusha-climate-and-environmental-research-centre",
+      "slug": "aerr",
       "translated_slugs": []
     },
     {
@@ -343,11 +410,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:29:53.852Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -360,7 +427,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203717811551208,
+  "current_version_id": 208315079717563,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

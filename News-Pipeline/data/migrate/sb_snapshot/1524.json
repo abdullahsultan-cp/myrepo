@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:20:27.764Z",
-  "published_at": "2026-07-30T15:20:27.749Z",
+  "updated_at": "2026-08-12T15:09:12.664Z",
+  "published_at": "2026-08-12T15:09:12.648Z",
   "id": 203715492613950,
   "uuid": "584d2c57-e7b8-4775-b6f0-71a3f9f6436e",
   "is_folder": false,
@@ -24,7 +24,28 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "A one-minute video about Anum Shiraz - a General Nursing Diploma student at Aga Khan University's School of Nursing and Midwifery in Karachi - who secured the first position in Sindh Nurses Examination Board examination 2014.",
+                  "text": "A ",
+                  "type": "text"
+                },
+                {
+                  "text": "one-minute video about Anum Shiraz",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://view.vzaar.com/3114708/video",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " - a General Nursing Diploma student at Aga Khan University's School of Nursing and Midwifery in Karachi - who secured the first position in Sindh Nurses Examination Board examination 2014.",
                   "type": "text"
                 }
               ]
@@ -82,6 +103,7 @@
     "date": "Jul 16, 2015",
     "title": "One-minute video: Road to Success",
     "author": "Ambreen Nadeem",
+    "date_iso": "2015-07-16 00:00",
     "entities": [
       "203313675926548"
     ],
@@ -102,7 +124,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "A  one-minute video about Anum Shiraz  - a General Nursing Diploma student at Aga Khan University's School of Nursing and Midwifery in Karachi - who secured the first position in Sindh Nurses Examination Board examination 2014.",
+    "description": "A one-minute video about Anum Shiraz - a General Nursing Diploma student at Aga Khan University's School of Nursing and Midwifery in Karachi - who secured the first position in Sindh Nurses Examination Board examination 2014.",
     "show_social": false,
     "banner_image": {
       "id": null,
@@ -136,7 +158,7 @@
   "published": true,
   "slug": "one-minute-video-road-to-success-1524",
   "path": null,
-  "full_slug": "regions/pakistan/entities/school-of-nursing-and-midwifery/news/one-minute-video-road-to-success-1524",
+  "full_slug": "regions/pk/entities/sonam/news/one-minute-video-road-to-success-1524",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -152,8 +174,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "be0abc2231a713f864f46f82120585a410fd5977",
-    "timestamp": "1785497884"
+    "token": "d8ac1e6d30ff710266e2eaf1ff4c1ce2ae0cc3d6",
+    "timestamp": "1786618350"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -174,7 +196,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -194,7 +216,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "school-of-nursing-and-midwifery",
+      "slug": "sonam",
       "translated_slugs": []
     },
     {
@@ -212,11 +234,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:20:27.749Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -229,7 +251,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203715492793139,
+  "current_version_id": 208313354667981,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

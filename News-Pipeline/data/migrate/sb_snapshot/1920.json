@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:29:05.688Z",
-  "published_at": "2026-07-30T15:29:05.673Z",
+  "updated_at": "2026-08-12T15:03:47.645Z",
+  "published_at": "2026-08-12T15:03:47.629Z",
   "id": 203717613887948,
   "uuid": "0a633410-deab-4d22-a643-4db18774d4e4",
   "is_folder": false,
@@ -230,16 +230,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1139202763878010880",
-        "_uid": "74f8c958-e6c3-3a86-1206-86e7ddd7e7e3",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "70421435-e8bc-4314-9ec2-bcd7aa75501d",
+        "items": [
+          {
+            "_uid": "8f974034-9df0-49d4-b178-fd3ebe93e5d7",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1139202763878010880",
+                "_uid": "68350d92-804d-4e48-b8aa-3db6511f9299",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -271,37 +319,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Jun 13, 2019",
     "title": "Ethical debate must catch up with new stem cell discoveries",
     "author": "Rasool Sarang",
+    "date_iso": "2019-06-13 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -371,8 +401,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "a733d951092326a097effa923428bc30c0a9f9ec",
-    "timestamp": "1785497623"
+    "token": "4b240b6019cd28cc2654936faa53c84d972a4066",
+    "timestamp": "1786617870"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -401,11 +431,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:29:05.673Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -418,7 +448,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203717614197337,
+  "current_version_id": 208312023362325,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

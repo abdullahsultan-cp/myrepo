@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:30:33.160Z",
-  "published_at": "2026-07-31T09:30:33.147Z",
+  "updated_at": "2026-08-12T13:59:26.279Z",
+  "published_at": "2026-08-12T13:59:26.265Z",
   "id": 203983393154748,
   "uuid": "91758875-93e7-4c06-a11a-eeee2925179d",
   "is_folder": false,
@@ -109,16 +109,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1525148893851406336",
-        "_uid": "0de676c4-a99e-3fa7-8158-9ef2e8166e5e",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "829e9c33-409c-4130-acaf-46ef7b18e63f",
+        "items": [
+          {
+            "_uid": "0219aa2d-ad9a-473b-a895-8e34102e47e1",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1525148893851406336",
+                "_uid": "84a10bb7-1551-4886-be25-5a9a80f9e28f",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -150,37 +198,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "May 13, 2022",
     "title": "AKU President hosts diplomat dinner",
     "author": "Rasool Sarang",
+    "date_iso": "2022-05-13 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -234,7 +264,7 @@
   "published": true,
   "slug": "aku-president-hosts-diplomat-dinner",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-president-hosts-diplomat-dinner",
+  "full_slug": "regions/pk/news/aku-president-hosts-diplomat-dinner",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -250,8 +280,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "dc24901ccd4093e2ba1d7642776575221c173750",
-    "timestamp": "1785492454"
+    "token": "acdfe871dc0723a307aadd7852f4c7734a88dabf",
+    "timestamp": "1786616814"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -272,7 +302,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -290,11 +320,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:30:33.147Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -307,7 +337,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203983393305869,
+  "current_version_id": 208296207238972,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

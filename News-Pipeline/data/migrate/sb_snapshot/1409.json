@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:18:05.065Z",
-  "published_at": "2026-07-30T15:18:05.050Z",
+  "updated_at": "2026-08-12T14:54:06.591Z",
+  "published_at": "2026-08-12T14:54:06.578Z",
   "id": 203714908136138,
   "uuid": "b89ac981-1183-40ac-84b7-baea66f15bcb",
   "is_folder": false,
@@ -20,6 +20,33 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The project is part of the Ambulatory Care Complex expansion plan, which envisages a series of ambulatory care buildings added along the southern end of the Stadium Road campus. The new facilities will allow Aga Khan University Hospital to dramatically expand the range of outpatient services it offers.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The proposed ACB II will accommodate a number of clinics: dentistry, ophthalmology, ENT, general surgery, gastroenterology, psychiatry, radiation therapy, medical oncology (day care expansion) and medical clinics. In addition, surgical day care facilities, including four operating rooms, will be housed in the basement level.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "ACB II will be linked to the existing Ibn Zuhr Building on all floors to accommodate future expansions to its existing oncology programmes.",
+                  "type": "text"
+                }
+              ]
+            },
             {
               "type": "paragraph",
               "content": [
@@ -82,6 +109,7 @@
     "date": "Jan 03, 2018",
     "title": "AKU begins construction on new Ambulatory Care Building",
     "author": "Iqra Azmat",
+    "date_iso": "2018-01-03 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -100,7 +128,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "\"Aga Khan University held a ground-breaking ceremony on Friday, April 16, 2010 to mark the start of construction on the US$14.5 million Ambulatory Care Building II (ACB II). The project is part of the Ambulatory Care Complex expansion plan, which envisages a series of ambulatory care buildings added along the southern end of the Stadium Road campus. The new facilities will allow Aga Khan University Hospital to dramatically expand the range of outpatient services it offers. The proposed ACB II will accommodate a number of clinics: dentistry, ophthalmology, ENT, general surgery, gastroenterology, psychiatry, radiation therapy, medical oncology (day care expansion) and medical clinics. In addition, surgical day care facilities, including four operating rooms, will be housed in the basement level. ACB II will be linked to the existing Ibn Zuhr Building on all floors to accommodate future expansions to its existing oncology programmes.",
+    "description": "\"Aga Khan University held a ground-breaking ceremony on Friday, April 16, 2010 to mark the start of construction on the US$14.5 million Ambulatory Care Building II (ACB II).",
     "show_social": false,
     "banner_image": {
       "id": 203663629374706,
@@ -135,7 +163,7 @@
   "published": true,
   "slug": "aku-begins-construction-on-new-ambulatory-care-building",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-begins-construction-on-new-ambulatory-care-building",
+  "full_slug": "regions/pk/news/aku-begins-construction-on-new-ambulatory-care-building",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -151,8 +179,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "6907874024e4b875916e9181e519a073bbb023c6",
-    "timestamp": "1785492538"
+    "token": "f2bb8e473ac43941ca23cde6793a68683eddd16e",
+    "timestamp": "1786616948"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -173,7 +201,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -191,11 +219,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:18:05.050Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -208,7 +236,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203714908305292,
+  "current_version_id": 208309643441609,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

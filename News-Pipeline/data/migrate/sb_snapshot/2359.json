@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:17:12.883Z",
-  "published_at": "2026-07-31T09:17:12.869Z",
+  "updated_at": "2026-08-12T15:03:17.084Z",
+  "published_at": "2026-08-12T15:03:17.071Z",
   "id": 203980115213178,
   "uuid": "7ca97466-f612-4226-814d-1529ae639c0d",
   "is_folder": false,
@@ -24,8 +24,40 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "by David Smith",
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "We are pleased to share a ",
                   "type": "text"
+                },
+                {
+                  "text": "new blog",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://kitab-project.org/2020/07/16/openiti-ocr-textual-criticism/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " from the KITAB team by David Smith - whose vision for what computer science and humanities can do together always inspires. He explains and situates the team's work together on OCR, which he leads on the computer science side.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +114,7 @@
     "date": "Jul 20, 2020",
     "title": "KITAB's new blog",
     "author": "Alexandra Khan",
+    "date_iso": "2020-07-20 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -102,7 +135,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "We are pleased to share a  new blog  from the KITAB team by David Smith - whose vision for what computer science and humanities can do together always inspires. He explains and situates the team's work together on OCR, which he leads on the computer science side.",
+    "description": "by David Smith",
     "show_social": false,
     "banner_image": {
       "id": 203688729779225,
@@ -137,7 +170,7 @@
   "published": true,
   "slug": "kitab-s-new-blog",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/kitab-s-new-blog",
+  "full_slug": "regions/uk/entities/ismc/news/kitab-s-new-blog",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +186,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "4c69586a7aa1437cea77f0fb971650ce5db59f44",
-    "timestamp": "1785497601"
+    "token": "b5f5444953d01ea0205df6b93cab7227cf5686fd",
+    "timestamp": "1786617803"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +208,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -195,7 +228,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -213,11 +246,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:17:12.869Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +263,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203980115368459,
+  "current_version_id": 208311898257931,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:56:14.315Z",
-  "published_at": "2026-07-31T09:56:14.301Z",
+  "updated_at": "2026-08-12T15:07:49.695Z",
+  "published_at": "2026-08-12T15:07:49.680Z",
   "id": 203989705690386,
   "uuid": "b80f0cc6-cb64-48c7-8aec-f91be985d5ae",
   "is_folder": false,
@@ -110,8 +110,10 @@
       }
     ],
     "date": "Dec 16, 2025",
+    "isTop": null,
     "title": "Digital Learning in Pakistan's Mountaintops",
     "author": "stephen.musyoka",
+    "date_iso": "2025-12-16 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -129,6 +131,7 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
+    "isFeatured": null,
     "show_share": true,
     "description": "As part of our ongoing commitment to supporting institutions across the Aga Khan Development Network (AKDN) regions, the QTL_net team facilitated an introductory workshop on Effective Use of Technology at the University of Chitral, under the University Improvement Programme. The workshop was held from November 4-6, 2025 and guided 17 faculty and staff through hands-on, student-centred activities.",
     "show_social": false,
@@ -163,8 +166,8 @@
   },
   "published": true,
   "slug": "digital-learning-in-pakistan-s-mountaintops",
-  "path": null,
-  "full_slug": "regions/tanzania/news/digital-learning-in-pakistan-s-mountaintops",
+  "path": "",
+  "full_slug": "regions/tz/news/digital-learning-in-pakistan-s-mountaintops",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -180,8 +183,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "b4e2f6bd689b35ce597006f37333e6594eef8afb",
-    "timestamp": "1785497818"
+    "token": "e22a9c3da3ed2f58b2b8e7d72339bf3ddd83fdb7",
+    "timestamp": "1786618222"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -202,7 +205,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -220,11 +223,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:56:14.301Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -237,7 +240,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203989705867584,
+  "current_version_id": 208313014805532,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

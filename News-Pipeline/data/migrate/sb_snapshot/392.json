@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:55:52.088Z",
-  "published_at": "2026-07-30T14:55:52.074Z",
+  "updated_at": "2026-08-12T15:11:08.585Z",
+  "published_at": "2026-08-12T15:11:08.570Z",
   "id": 203709448206208,
   "uuid": "dc9e5f6f-ea2f-450d-a1c7-c4bf61bebaa2",
   "is_folder": false,
@@ -89,10 +89,12 @@
       }
     ],
     "date": "Sep 05, 2013",
+    "isTop": "",
     "title": "Aga Khan University and Catholic University of Portugal reaffirm cooperation",
     "author": "volunteer.pa",
+    "date_iso": "2013-09-05 00:00",
     "entities": [],
-    "isGlobal": false,
+    "isGlobal": true,
     "component": "news_article",
     "languages": [],
     "read_time": "2 min read",
@@ -108,6 +110,7 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
+    "isFeatured": "",
     "show_share": true,
     "description": "The Aga Khan University (AKU) and the Catholic University of Portugal (CUP) on Thursday agreed to renew and expand cooperation in a number of academic fields. Under a Memorandum of Understanding signed during a brief ceremony at the Ismaili Centre Lisbon, the two academic institutions agreed to foster knowledge creation and share learning and human capacity in a wide array of areas, including in cultural studies, education and research, early childhood development, comparative law and religion, nursing education and training.",
     "show_social": false,
@@ -144,7 +147,7 @@
   "published": true,
   "slug": "aga-khan-university-and-catholic-university-of-portugal-reaffirm-cooperation",
   "path": null,
-  "full_slug": "regions/tanzania/news/aga-khan-university-and-catholic-university-of-portugal-reaffirm-cooperation",
+  "full_slug": "regions/tz/news/aga-khan-university-and-catholic-university-of-portugal-reaffirm-cooperation",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -160,8 +163,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "e2a6b5279a1348b8927e38fd8f06bbb72cb2d3d0",
-    "timestamp": "1785497966"
+    "token": "6dc856de3fae6e7e191abe39e7a82a8a0b0bdf5b",
+    "timestamp": "1786618504"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -182,7 +185,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -200,11 +203,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:55:52.074Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -217,7 +220,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203709448426390,
+  "current_version_id": 208313829497579,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

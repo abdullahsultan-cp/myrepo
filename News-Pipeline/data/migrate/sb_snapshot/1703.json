@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:24:21.022Z",
-  "published_at": "2026-07-30T15:24:21.006Z",
+  "updated_at": "2026-08-12T15:05:09.490Z",
+  "published_at": "2026-08-12T15:05:09.475Z",
   "id": 203716448010298,
   "uuid": "43e95986-706a-4f7e-9895-62208e8506cc",
   "is_folder": false,
@@ -24,7 +24,93 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Over 600 staff at AKU have taken the British Council Aptis test",
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The Aptis test assesses all four language skills: Listening, Speaking, Reading and Writing. It is an online test and it takes approximately three hours to complete. The results are given in numerical scores and in",
+                  "type": "text"
+                },
+                {
+                  "text": "CEFR bands",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/ele-net/courses/Pages/Course-levels.aspx",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    },
+                    {
+                      "type": "underline"
+                    }
+                  ]
+                },
+                {
+                  "text": ". All major international English tests such as IELTS and TOEFL benchmark against CEFR bands. The CEFR is also being increasingly used at AKU to talk about the English language ability of staff and the levels needed for different jobs.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The next Aptis test is available for AKU staff on Wednesday 31st October. Go to the ELE_net ",
+                  "type": "text"
+                },
+                {
+                  "text": "Aptis web page",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/ele-net/services/Pages/testing_services.aspx",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    },
+                    {
+                      "type": "underline"
+                    }
+                  ]
+                },
+                {
+                  "text": " for more details about the test and and how to ",
+                  "type": "text"
+                },
+                {
+                  "text": "book a seat for the test",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://docs.google.com/forms/d/e/1FAIpQLScUKx1gL5ZnYz3en13NYpOxUlF60fBZASoO3hZr3nKNlrLSWg/viewform",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_self",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": ".",
                   "type": "text"
                 }
               ]
@@ -82,6 +168,7 @@
     "date": "Sep 06, 2018",
     "title": "Test your English Level!",
     "author": "Daniel Raynor",
+    "date_iso": "2018-09-06 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -100,7 +187,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "The next Aptis test is available for AKU staff on Wednesday 31st October. Go to the ELE_net  Aptis web page  for more details about the test and and how to  book a seat for the test .",
+    "description": "Over 600 staff at AKU have taken the British Council Aptis test. The results provide a trusted assessment of English language ability. This information can be very helpful at performance reviews and for career advancement. The results also help you to identify the English language skills you need to develop most.",
     "show_social": false,
     "banner_image": {
       "id": 203671924551587,
@@ -151,8 +238,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "72970735e7793404115c92a7b1818c30a2788164",
-    "timestamp": "1785497688"
+    "token": "71e163ccd705926cc88932c6bfc94806de2a7c7a",
+    "timestamp": "1786617995"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -181,11 +268,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:24:21.006Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -198,7 +285,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716448207170,
+  "current_version_id": 208312358657517,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

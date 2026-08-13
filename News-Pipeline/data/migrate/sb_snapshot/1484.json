@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:19:38.544Z",
-  "published_at": "2026-07-30T15:19:38.531Z",
+  "updated_at": "2026-08-12T14:52:21.167Z",
+  "published_at": "2026-08-12T14:52:21.153Z",
   "id": 203715291044644,
   "uuid": "baa706e3-4d5b-4826-a43f-0085f5021eef",
   "is_folder": false,
@@ -118,6 +118,7 @@
     "date": "Mar 19, 1999",
     "title": "Tuberculosis epidemic threatens Pakistan",
     "author": "Ambreen Nadeem",
+    "date_iso": "1999-03-19 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -171,7 +172,7 @@
   "published": true,
   "slug": "tuberculosis-epidemic-threatens-pakistan",
   "path": null,
-  "full_slug": "regions/pakistan/news/tuberculosis-epidemic-threatens-pakistan",
+  "full_slug": "regions/pk/news/tuberculosis-epidemic-threatens-pakistan",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -187,8 +188,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "722ad6f313fae8ed540974678dc7af4810482271",
-    "timestamp": "1785492514"
+    "token": "aef22735a7b718434411b16fe8dd4984fb8148e6",
+    "timestamp": "1786616911"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -209,7 +210,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -227,11 +228,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:19:38.531Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -244,7 +245,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203715291204083,
+  "current_version_id": 208309211599646,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:28:58.321Z",
-  "published_at": "2026-07-31T09:28:58.307Z",
+  "updated_at": "2026-08-12T15:16:03.630Z",
+  "published_at": "2026-08-12T15:16:03.614Z",
   "id": 203983004665425,
   "uuid": "6246eca7-fb12-4fed-b936-1c2ed239a168",
   "is_folder": false,
@@ -163,16 +163,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1498285607348412419",
-        "_uid": "787462fe-e959-a7f1-f0a5-87a3162eba64",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "a281c8d9-5a1d-42ab-a9f7-d3c77f54c571",
+        "items": [
+          {
+            "_uid": "9a13486c-0aee-4348-ac6a-7a304fbb41c2",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1498285607348412419",
+                "_uid": "b5bbbc15-32bf-4499-84d5-bef9dc630029",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -204,37 +252,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 26, 2022",
     "title": "More than 660 students graduate at AKU's global convocation",
     "author": "Rasool Sarang",
+    "date_iso": "2022-02-26 00:00",
     "entities": [
       "203313667566512",
       "203313671322588",
@@ -294,7 +324,7 @@
   "published": true,
   "slug": "more-than-660-students-graduate-at-aku-s-global-convocation",
   "path": null,
-  "full_slug": "regions/pakistan/entities/graduate-school-of-media-and-communications/news/more-than-660-students-graduate-at-aku-s-global-convocation",
+  "full_slug": "regions/pk/entities/gsmc/news/more-than-660-students-graduate-at-aku-s-global-convocation",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -310,8 +340,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "d0fed46754e0cab76dd9cdb06c0f2d3be420fbc4",
-    "timestamp": "1785498205"
+    "token": "af72bc07461051e0eb2d036ee4280346c5f1d57e",
+    "timestamp": "1786618928"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -332,7 +362,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -352,7 +382,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "graduate-school-of-media-and-communications",
+      "slug": "gsmc",
       "translated_slugs": []
     },
     {
@@ -370,11 +400,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:28:58.307Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -387,7 +417,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203983004836696,
+  "current_version_id": 208315037909649,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

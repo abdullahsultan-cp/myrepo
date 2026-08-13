@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:26:53.830Z",
-  "published_at": "2026-07-30T15:26:53.815Z",
+  "updated_at": "2026-08-12T15:11:54.219Z",
+  "published_at": "2026-08-12T15:11:54.204Z",
   "id": 203717073932610,
   "uuid": "5c7c70ab-eeab-427f-a122-4869a2cf7d4f",
   "is_folder": false,
@@ -151,6 +151,7 @@
     "date": "Feb 27, 2019",
     "title": "Open Hour",
     "author": "Daniel Raynor",
+    "date_iso": "2019-02-27 00:00",
     "entities": [
       "203313673067509"
     ],
@@ -206,7 +207,7 @@
   "published": true,
   "slug": "open-hour",
   "path": null,
-  "full_slug": "regions/pakistan/entities/network-of-english-language-enhancement/news/open-hour",
+  "full_slug": "regions/pk/entities/ele/news/open-hour",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -222,8 +223,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "c4d153464b86548ce0e08296d001e8342ae0bf3c",
-    "timestamp": "1785498003"
+    "token": "655ec1f8bc09fba4542d5be01d09e1900ee2615f",
+    "timestamp": "1786618567"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -244,7 +245,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -264,7 +265,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "network-of-english-language-enhancement",
+      "slug": "ele",
       "translated_slugs": []
     },
     {
@@ -282,11 +283,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:26:53.815Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -299,7 +300,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203717074110076,
+  "current_version_id": 208314016418883,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

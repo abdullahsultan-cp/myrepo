@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:57:11.866Z",
-  "published_at": "2026-07-30T14:57:11.852Z",
+  "updated_at": "2026-08-12T15:13:27.516Z",
+  "published_at": "2026-08-12T15:13:27.503Z",
   "id": 203709775046585,
   "uuid": "4910e325-eaf2-42f8-990b-146e88f31cb3",
   "is_folder": false,
@@ -100,6 +100,7 @@
     "date": "Nov 16, 2012",
     "title": "Honouring Dr J Robert Buchanan",
     "author": "volunteer.pa",
+    "date_iso": "2012-11-16 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -155,7 +156,7 @@
   "published": true,
   "slug": "honouring-dr-j-robert-buchanan",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/departments/medical-education/news/honouring-dr-j-robert-buchanan",
+  "full_slug": "regions/pk/entities/mc/departments/meded/news/honouring-dr-j-robert-buchanan",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -171,8 +172,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "4778eff23b5938e4a768d9e5a654a32c64554e6d",
-    "timestamp": "1785498078"
+    "token": "eb3d2d356442bd2acf17bbdd52dd60df4a553c6d",
+    "timestamp": "1786618704"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -193,7 +194,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -213,7 +214,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -233,7 +234,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-education",
+      "slug": "meded",
       "translated_slugs": []
     },
     {
@@ -251,11 +252,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:57:11.852Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -268,7 +269,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203709775205655,
+  "current_version_id": 208314398588683,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

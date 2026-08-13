@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:21.609Z",
-  "published_at": "2026-07-30T15:13:21.591Z",
+  "updated_at": "2026-08-12T15:13:32.481Z",
+  "published_at": "2026-08-12T15:13:32.465Z",
   "id": 203420276514195,
   "uuid": "e3b78d18-a50e-4e97-aaac-35f3f20feb2c",
   "is_folder": false,
@@ -336,16 +336,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/836649650140557312",
-        "_uid": "0eb4cf74-418e-6f75-c394-9f329a2ee1c2",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "1b1e1f69-8a20-4610-a2e6-51f4c683a5fa",
+        "items": [
+          {
+            "_uid": "7d4fb763-5330-4bf6-a609-892988e7c8ab",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/836649650140557312",
+                "_uid": "d05c8b31-37e3-46b5-9983-6d395751630a",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -377,37 +425,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 28, 2017",
     "title": "AKU's teaching hospital becomes Pakistan's first laboratory accredited by CAP",
     "author": "Rasool Sarang",
+    "date_iso": "2017-02-28 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -474,7 +504,7 @@
   "published": true,
   "slug": "aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
+  "full_slug": "regions/pk/news/aku-s-teaching-hospital-becomes-pakistan-s-first-laboratory-accredited-by-cap",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -490,8 +520,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "fcefe18c06deec8bb2444ad6cdb1cc0809afd965",
-    "timestamp": "1785498082"
+    "token": "5672c42483766b8642e5b2cd0a4204ec8b821c4b",
+    "timestamp": "1786618711"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -512,7 +542,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -530,11 +560,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-29T19:19:13.504Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -547,7 +577,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713747087424,
+  "current_version_id": 208314418859828,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

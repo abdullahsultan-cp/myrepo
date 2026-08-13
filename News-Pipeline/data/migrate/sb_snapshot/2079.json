@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:32:32.407Z",
-  "published_at": "2026-07-30T15:32:32.392Z",
+  "updated_at": "2026-08-12T14:50:44.951Z",
+  "published_at": "2026-08-12T14:50:44.935Z",
   "id": 203718460736178,
   "uuid": "62b402b0-ccc4-49b7-b795-66d7f4103d48",
   "is_folder": false,
@@ -291,16 +291,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/971681663980843010",
-        "_uid": "e729ec1c-e75d-776d-5f6c-d10b23a438f5",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "1b5bfe98-c96e-4f87-a1bb-a9876c653d92",
+        "items": [
+          {
+            "_uid": "04cb93b6-89a8-4ee9-9134-602200ee8e92",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/971681663980843010",
+                "_uid": "d4070853-bf04-42c1-884e-7f7ae00818f0",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -332,37 +380,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Dec 03, 2019",
     "title": "Pakistan must revise approach to gender equality: experts",
     "author": "Fabeha Pervez",
+    "date_iso": "2019-12-03 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -416,7 +446,7 @@
   "published": true,
   "slug": "pakistan-must-revise-approach-to-gender-equality-experts",
   "path": null,
-  "full_slug": "regions/pakistan/news/pakistan-must-revise-approach-to-gender-equality-experts",
+  "full_slug": "regions/pk/news/pakistan-must-revise-approach-to-gender-equality-experts",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -432,8 +462,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "05ee20be7e69529485bdfc0951cd89954a25022f",
-    "timestamp": "1785492484"
+    "token": "da4f3ea5d42ff6ed24a7df30d08ce9623b9ab6bf",
+    "timestamp": "1786616861"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -454,7 +484,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -472,11 +502,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:32:32.392Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -489,7 +519,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203718460915952,
+  "current_version_id": 208308817363224,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

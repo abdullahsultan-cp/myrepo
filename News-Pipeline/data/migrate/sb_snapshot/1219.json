@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:14:09.714Z",
-  "published_at": "2026-07-30T15:14:09.695Z",
+  "updated_at": "2026-08-12T14:54:30.452Z",
+  "published_at": "2026-08-12T14:54:30.437Z",
   "id": 203713943814517,
   "uuid": "26b9c65a-a75c-4177-b4ba-c37a1316fbf8",
   "is_folder": false,
@@ -221,16 +221,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/850448074212245508",
-        "_uid": "67a718fd-bcc7-a522-6b80-c77b9b412cc4",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "0f3cbbad-2061-47cd-8102-8fa10c8c31e3",
+        "items": [
+          {
+            "_uid": "6a33c557-0457-47f6-a3ef-e48c2a780291",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/850448074212245508",
+                "_uid": "a967c54b-b955-4314-9993-bda5cfe463e9",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -262,37 +310,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Apr 07, 2017",
     "title": "Aga Khan gift creates spectacular new garden for research and learning",
     "author": "Rasool Sarang",
+    "date_iso": "2017-04-07 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -346,7 +376,7 @@
   "published": true,
   "slug": "aga-khan-gift-creates-spectacular-new-garden-for-research-and-learning",
   "path": null,
-  "full_slug": "regions/pakistan/news/aga-khan-gift-creates-spectacular-new-garden-for-research-and-learning",
+  "full_slug": "regions/pk/news/aga-khan-gift-creates-spectacular-new-garden-for-research-and-learning",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -362,8 +392,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "44be2336ae647507e9bf136208b94dc97466d339",
-    "timestamp": "1785492563"
+    "token": "9c5d5b0c690ed9014e5de93c01a85243fcbfd743",
+    "timestamp": "1786616985"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -384,7 +414,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -402,11 +432,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:14:09.695Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -419,7 +449,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713944236420,
+  "current_version_id": 208309741131392,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

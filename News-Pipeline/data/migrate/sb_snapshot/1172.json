@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:15.256Z",
-  "published_at": "2026-07-30T15:13:15.242Z",
+  "updated_at": "2026-08-12T14:54:36.566Z",
+  "published_at": "2026-08-12T14:54:36.551Z",
   "id": 203713721032988,
   "uuid": "724cea24-f4ce-422d-b64c-dbef627252e7",
   "is_folder": false,
@@ -243,16 +243,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/831155222558957569",
-        "_uid": "c836dd98-3461-4317-0d78-571ef8cb84d6",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "92e36886-a424-4353-bc3a-d5749ec98b6a",
+        "items": [
+          {
+            "_uid": "f92c3eae-5d68-4011-9622-0e3961033f7f",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/831155222558957569",
+                "_uid": "2ec1d0b0-b2f7-4d76-81f1-e6969629f43f",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -284,37 +332,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 13, 2017",
     "title": "Children, doctors and architects pitch ideas for a new children's hospital at unique hackathon",
     "author": "Muhammad Altamash",
+    "date_iso": "2017-02-13 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -368,7 +398,7 @@
   "published": true,
   "slug": "children-doctors-and-architects-pitch-ideas-for-a-new-children-s-hospital-at-unique-hackathon",
   "path": null,
-  "full_slug": "regions/pakistan/news/children-doctors-and-architects-pitch-ideas-for-a-new-children-s-hospital-at-unique-hackathon",
+  "full_slug": "regions/pk/news/children-doctors-and-architects-pitch-ideas-for-a-new-children-s-hospital-at-unique-hackathon",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -384,8 +414,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1c7ea6f1fd380419c55c64e1dc3546146d74f697",
-    "timestamp": "1785492570"
+    "token": "6ebae44346d82e53d3287d2c1d53e71a24fa710f",
+    "timestamp": "1786616995"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -406,7 +436,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -424,11 +454,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:13:15.242Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -441,7 +471,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713721237526,
+  "current_version_id": 208309766153907,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

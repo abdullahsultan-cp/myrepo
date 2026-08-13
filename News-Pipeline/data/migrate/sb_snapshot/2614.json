@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:23:48.595Z",
-  "published_at": "2026-07-31T09:23:48.580Z",
+  "updated_at": "2026-08-12T15:01:11.652Z",
+  "published_at": "2026-08-12T15:01:11.631Z",
   "id": 203981736027494,
   "uuid": "962ecb16-937a-4a18-931a-897e5ce93e51",
   "is_folder": false,
@@ -92,13 +92,12 @@
                       "type": "bold"
                     }
                   ]
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "Jonas Otterbeck",
                   "type": "text",
@@ -212,6 +211,7 @@
     "date": "Apr 13, 2021",
     "title": "Music in Muslim Contexts by Jonas Otterbeck and Mark LeVine ",
     "author": "Layal.N.Mohammad",
+    "date_iso": "2021-04-13 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -267,7 +267,7 @@
   "published": true,
   "slug": "music-in-muslim-contexts-by-jonas-otterbeck-and-mark-levine",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/music-in-muslim-contexts-by-jonas-otterbeck-and-mark-levine",
+  "full_slug": "regions/uk/entities/ismc/news/music-in-muslim-contexts-by-jonas-otterbeck-and-mark-levine",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -283,8 +283,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "92f0b634f87ee5b606bc962eb9bbabd67065686f",
-    "timestamp": "1785492946"
+    "token": "82504a2a8ed2d9d1bb505a61bce73b25cd162661",
+    "timestamp": "1786617623"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -305,7 +305,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -325,7 +325,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -343,11 +343,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:23:48.580Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -360,7 +360,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203981736197995,
+  "current_version_id": 208311384401071,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

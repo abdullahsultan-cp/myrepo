@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:51:03.391Z",
-  "published_at": "2026-07-31T09:51:03.373Z",
+  "updated_at": "2026-08-12T15:14:29.620Z",
+  "published_at": "2026-08-12T15:14:29.607Z",
   "id": 203988432133149,
   "uuid": "eb523b14-ffad-415f-b990-a68fcff7a87f",
   "is_folder": false,
@@ -192,6 +192,20 @@
               "type": "paragraph",
               "content": [
                 {
+                  "text": "Learn more in this booklet.",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
                   "type": "hard_break"
                 }
               ]
@@ -249,6 +263,7 @@
     "date": "May 19, 2025",
     "title": "AKU Celebrates Student Innovation for Water Solutions",
     "author": "Fiona.Wachera",
+    "date_iso": "2025-05-19 00:00",
     "entities": [
       "203313684237412"
     ],
@@ -303,7 +318,7 @@
   "published": true,
   "slug": "aku-celebrates-student-innovation-for-water-solutions",
   "path": null,
-  "full_slug": "regions/kenya/entities/environmental-responsibility/news/aku-celebrates-student-innovation-for-water-solutions",
+  "full_slug": "regions/ke/entities/env/news/aku-celebrates-student-innovation-for-water-solutions",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -319,8 +334,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "112ce3353221ff125651de6f0203d4cd3bb1f446",
-    "timestamp": "1785498131"
+    "token": "542daa8aa9d083c1815fb15b7fc2a080be3482af",
+    "timestamp": "1786618795"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -341,7 +356,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "kenya",
+      "slug": "ke",
       "translated_slugs": []
     },
     {
@@ -361,7 +376,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "environmental-responsibility",
+      "slug": "env",
       "translated_slugs": []
     },
     {
@@ -379,11 +394,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:51:03.373Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -396,7 +411,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203988432301232,
+  "current_version_id": 208314652930226,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

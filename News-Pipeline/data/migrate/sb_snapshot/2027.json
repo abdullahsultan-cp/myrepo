@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:31:22.133Z",
-  "published_at": "2026-07-30T15:31:22.119Z",
+  "updated_at": "2026-08-12T15:04:33.813Z",
+  "published_at": "2026-08-12T15:04:33.797Z",
   "id": 203718172934779,
   "uuid": "90ab3b6c-4476-48bf-a31c-f08ea8d9404b",
   "is_folder": false,
@@ -20,6 +20,53 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Professor Stephen Lyon",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/ismc/faculty/pages/profile.aspx?ProfileID=43&Name=Stephen Lyon",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": ", ISMC's Head of Educational Programmes has published a new book, Political Kinship in Pakistan, Descent, Marriage and Government Stability (Lanham, MD: Lexington Books).   A renowned anthropolgist and Pakistan  specialist, Professor Lyon's latest book takes an in-depth look at the impact of marriage and relationships in Pakistan.  The book is available at a ",
+                  "type": "text"
+                },
+                {
+                  "text": "30% discount",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/news/PublishingImages/Political-Kinship.jpg",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " for a limited time. Stephen has spent time living and working in Pakistani Punjabi villages and cities since 1982 and has carried out longitudinal research in the same northern Punjabi village for more than 20 years. His research integrates social network analysis, context coding, narrative thick description, and different varieties of quantitative and audiovisual data to address complex social and cultural questions of the human experience.",
+                  "type": "text"
+                }
+              ]
+            },
             {
               "type": "image",
               "attrs": {
@@ -82,6 +129,7 @@
     "date": "Oct 24, 2019",
     "title": "AKU-ISMC's Professor Lyon celebrates the publication of his new book",
     "author": "Alexandra Khan",
+    "date_iso": "2019-10-24 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -102,7 +150,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Professor Stephen Lyon , ISMC's Head of Educational Programmes has published a new book, Political Kinship in Pakistan, Descent, Marriage and Government Stability (Lanham, MD: Lexington Books).   A renowned anthropolgist and Pakistan  specialist, Professor Lyon's latest book takes an in-depth look at the impact of marriage and relationships in Pakistan.  The book is available at a  30% discount  for a limited time. Stephen has spent time living and working in Pakistani Punjabi villages and cities since 1982 and has carried out longitudinal research in the same northern Punjabi village for more than 20 years. His research integrates social network analysis, context coding, narrative thick description, and different varieties of quantitative and audiovisual data to address complex social and cultural questions of the human experience.",
+    "description": "Political Kinship in Pakistan, Descent, Marriage and Government Stability",
     "show_social": false,
     "banner_image": {
       "id": 203676543735286,
@@ -137,7 +185,7 @@
   "published": true,
   "slug": "aku-ismc-s-professor-lyon-celebrates-the-publication-of-his-new-book",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/aku-ismc-s-professor-lyon-celebrates-the-publication-of-his-new-book",
+  "full_slug": "regions/uk/entities/ismc/news/aku-ismc-s-professor-lyon-celebrates-the-publication-of-his-new-book",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +201,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "f4c10ae7120aaa12a495dd41b6e2fc8728909c89",
-    "timestamp": "1785497658"
+    "token": "9029d44354b6607d4f316d32c2e89ad1140543c5",
+    "timestamp": "1786617942"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +223,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -195,7 +243,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -213,11 +261,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:31:22.119Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +278,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203718173101749,
+  "current_version_id": 208312212503707,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

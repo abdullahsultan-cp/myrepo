@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:08:34.267Z",
-  "published_at": "2026-07-30T15:08:34.255Z",
+  "updated_at": "2026-08-12T14:55:30.668Z",
+  "published_at": "2026-08-12T14:55:30.656Z",
   "id": 203712570163214,
   "uuid": "82d8b23a-7c04-4bbe-a2e1-0bdb3af165bb",
   "is_folder": false,
@@ -24,8 +24,11 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "The Pulmonary section, Department of Medicine, at Aga Khan University Hospital will start dedicated asthma and smoking cessation clinics from November 1, 2003.",
+                  "text": "The Pulmonary section, Department of Medicine, at Aga Khan University Hospital will start dedicated asthma and smoking cessation clinics from November 1, 2003.Asthma clinics will be held on Mondays and Tuesdays every week.  Both new and follow-up cases of asthma will be seen by consultant pulmonologists. At the clinics, patients will receive information about asthma and its therapy, monitoring of peak flow reading and review of inhaler technique. Facilities for allergy skin test will also be available.Smoking cessation clinics will be held on Wednesdays and will offer advice on ways and methods to quit tobacco use, as well as aim to educate people on the harmful effects of tobacco. Expert advice will be given by consultant pulmonologists as well as provide education material.",
                   "type": "text"
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +85,7 @@
     "date": "Nov 01, 2003",
     "title": "AKUH to start clinics on asthma and smoke cessation",
     "author": "Iqra Paintern",
+    "date_iso": "2003-11-01 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -100,7 +104,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "The Pulmonary section, Department of Medicine, at Aga Khan University Hospital will start dedicated asthma and smoking cessation clinics from November 1, 2003.Asthma clinics will be held on Mondays and Tuesdays every week.  Both new and follow-up cases of asthma will be seen by consultant pulmonologists. At the clinics, patients will receive information about asthma and its therapy, monitoring of peak flow reading and review of inhaler technique. Facilities for allergy skin test will also be available.Smoking cessation clinics will be held on Wednesdays and will offer advice on ways and methods to quit tobacco use, as well as aim to educate people on the harmful effects of tobacco. Expert advice will be given by consultant pulmonologists as well as provide education material.",
+    "description": "The Pulmonary section, Department of Medicine, at Aga Khan University Hospital will start dedicated asthma and smoking cessation clinics from November 1, 2003.",
     "show_social": false,
     "banner_image": {
       "id": 203667302103475,
@@ -135,7 +139,7 @@
   "published": true,
   "slug": "akuh-to-start-clinics-on-asthma-and-smoke-cessation",
   "path": null,
-  "full_slug": "regions/pakistan/news/akuh-to-start-clinics-on-asthma-and-smoke-cessation",
+  "full_slug": "regions/pk/news/akuh-to-start-clinics-on-asthma-and-smoke-cessation",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -151,8 +155,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "bd13cb8e72cd31aa61beca292441f10e3589fcbd",
-    "timestamp": "1785492622"
+    "token": "3d4a0b35f866fcdd98ef31f4d43276e55fc219cf",
+    "timestamp": "1786617082"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -173,7 +177,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -191,11 +195,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:08:34.255Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -208,7 +212,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203712570329064,
+  "current_version_id": 208309987829818,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

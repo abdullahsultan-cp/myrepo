@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:25:01.191Z",
-  "published_at": "2026-07-30T15:25:01.177Z",
+  "updated_at": "2026-08-12T15:04:38.630Z",
+  "published_at": "2026-08-12T15:04:38.615Z",
   "id": 203716612579485,
   "uuid": "baf12d7a-45a9-445f-b449-702d8ad26916",
   "is_folder": false,
@@ -20,6 +20,15 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "After qualifying as a doctor at AKU over two decades ago, Dr Haider has had a distinguished career in public health research and surgery in the United States.",
+                  "type": "text"
+                }
+              ]
+            },
             {
               "type": "paragraph",
               "content": [
@@ -423,6 +432,7 @@
     "date": "Oct 19, 2018",
     "title": "Meet the new Dean of the Medical College",
     "author": "Rasool Sarang",
+    "date_iso": "2018-10-19 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -443,7 +453,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Dr Adil Haider, a graduate of the class of 1998, is set to return to the University as the new Dean of the Medical College in Pakistan. After qualifying as a doctor at AKU over two decades ago, Dr Haider has had a distinguished career in public health research and surgery in the United States.",
+    "description": "Dr Adil Haider, a graduate of the class of 1998, is set to return to the University as the new Dean of the Medical College in Pakistan.",
     "show_social": false,
     "banner_image": {
       "id": 203672314835016,
@@ -478,7 +488,7 @@
   "published": true,
   "slug": "meet-the-new-dean-of-the-medical-college",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/news/meet-the-new-dean-of-the-medical-college",
+  "full_slug": "regions/pk/entities/mc/news/meet-the-new-dean-of-the-medical-college",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -494,8 +504,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "0f0468569b3918b1e338678876646075c7ad2cc7",
-    "timestamp": "1785497662"
+    "token": "f9b49a18605e4635da1e99a39e24a4fb11386e32",
+    "timestamp": "1786617949"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -516,7 +526,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -536,7 +546,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -554,11 +564,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:25:01.177Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -571,7 +581,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716612752055,
+  "current_version_id": 208312232238283,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

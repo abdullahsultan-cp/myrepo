@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:41:17.599Z",
-  "published_at": "2026-07-31T09:41:17.586Z",
+  "updated_at": "2026-08-12T15:08:02.643Z",
+  "published_at": "2026-08-12T15:08:02.631Z",
   "id": 203986032769530,
   "uuid": "eeb9f42e-62db-4246-a672-8cfedc781fa7",
   "is_folder": false,
@@ -37,25 +37,23 @@
                   ]
                 },
                 {
-                  "text": " on January 5, 2024. ",
+                  "text": " on January 5, 2024.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "The final consensus on the definition of acute paediatric critical illness emerged as: an infant, child, or adolescent with an illness, injury, or post-operative state that increases the risk for or results in acute physiological instability (abnormal physiological parameters or vital organ dysfunction or failure) or a clinical support requirement (such as frequent or continuous monitoring or time-sensitive interventions) to prevent further deterioration or death.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "So far, acute paediatric critical illness has been defined by ",
                   "type": "text"
@@ -170,6 +168,7 @@
     "date": "Jan 19, 2024",
     "title": "Global effort defines paediatric critical illness",
     "author": "Saman Qureshi",
+    "date_iso": "2024-01-19 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -225,7 +224,7 @@
   "published": true,
   "slug": "global-effort-defines-paediatric-critical-illness",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/departments/paediatrics-child-health/news/global-effort-defines-paediatric-critical-illness",
+  "full_slug": "regions/pk/entities/mc/departments/paeds/news/global-effort-defines-paediatric-critical-illness",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -241,8 +240,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ac07cea2a3724834a0e204562d93172c15414ffe",
-    "timestamp": "1785497826"
+    "token": "5d68754cb28c9274747bcde096f28f256b503789",
+    "timestamp": "1786618237"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -263,7 +262,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -283,7 +282,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -303,7 +302,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "paediatrics-child-health",
+      "slug": "paeds",
       "translated_slugs": []
     },
     {
@@ -321,11 +320,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:41:17.586Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -338,7 +337,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203986032927669,
+  "current_version_id": 208313067775106,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

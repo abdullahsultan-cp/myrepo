@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:19:05.158Z",
-  "published_at": "2026-07-31T09:19:05.145Z",
+  "updated_at": "2026-08-12T15:14:08.461Z",
+  "published_at": "2026-08-12T15:14:08.449Z",
   "id": 203980575079442,
   "uuid": "01aa1520-8249-4e19-be86-dacff8a8cc4e",
   "is_folder": false,
@@ -24,7 +24,17 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "A simulation-based orientation programme was designed to improve the midwives' experiences of care in the community.",
+                  "text": "Most births in Pakistan happen at home: no frills and minimal attendance perhaps by a lady health visitor or an experienced Aunt. Midwives professionalise this service and help cut infant and maternal mortality, often working in diverse communities with ethnicity issues to contend with. Providing on-going educational activities is essential to effectively maintain skills sets, knowledge and attitudes to deal with difficult situations.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "To address this, a simulation-based orientation programme was designed to improve the midwives' experiences of care in the community. The aim was to provide participants enough skills and knowledge about social problems, and the emotional, physical, and social conditions underlying pregnancy, so that they can provide effective care.",
                   "type": "text"
                 }
               ]
@@ -82,6 +92,7 @@
     "date": "Oct 21, 2020",
     "title": "Preparing community midwives",
     "author": "Ghulam Nabie",
+    "date_iso": "2020-10-21 00:00",
     "entities": [
       "203313663499041"
     ],
@@ -102,7 +113,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Most births in Pakistan happen at home: no frills and minimal attendance perhaps by a lady health visitor or an experienced Aunt. Midwives professionalise this service and help cut infant and maternal mortality, often working in diverse communities with ethnicity issues to contend with. Providing on-going educational activities is essential to effectively maintain skills sets, knowledge and attitudes to deal with difficult situations. To address this, a simulation-based orientation programme was designed to improve the midwives' experiences of care in the community. The aim was to provide participants enough skills and knowledge about social problems, and the emotional, physical, and social conditions underlying pregnancy, so that they can provide effective care.",
+    "description": "A simulation-based orientation programme was designed to improve the midwives' experiences of care in the community.",
     "show_social": false,
     "banner_image": {
       "id": 203689555373294,
@@ -137,7 +148,7 @@
   "published": true,
   "slug": "preparing-community-midwives",
   "path": null,
-  "full_slug": "regions/pakistan/entities/centre-for-innovation-in-medical-education/departments/midwifery/news/preparing-community-midwives",
+  "full_slug": "regions/pk/entities/cime/departments/mw/news/preparing-community-midwives",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +164,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "90c478a67f9fbe9bd5e9bb149bbcc098091ac6b8",
-    "timestamp": "1785498114"
+    "token": "93ecf6ef9852f5b7e5770df9d0885fb79ca5f083",
+    "timestamp": "1786618765"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +186,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -195,7 +206,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "centre-for-innovation-in-medical-education",
+      "slug": "cime",
       "translated_slugs": []
     },
     {
@@ -215,7 +226,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "midwifery",
+      "slug": "mw",
       "translated_slugs": []
     },
     {
@@ -233,11 +244,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:19:05.145Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -250,7 +261,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203980575247323,
+  "current_version_id": 208314566299682,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

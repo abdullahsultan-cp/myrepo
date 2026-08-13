@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:29:37.935Z",
-  "published_at": "2026-07-30T15:29:37.919Z",
+  "updated_at": "2026-08-12T15:13:47.778Z",
+  "published_at": "2026-08-12T15:13:47.763Z",
   "id": 203717746090474,
   "uuid": "3ffe5c97-d168-458c-bd01-0ec321783653",
   "is_folder": false,
@@ -247,16 +247,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1155731886611845120",
-        "_uid": "ce728269-dd90-2485-d379-18f4aa521bb4",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "4e4681d4-33c2-4bf3-8c82-30abdab350ce",
+        "items": [
+          {
+            "_uid": "35802d3d-2d49-48f2-a4bc-7e081c8fd917",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1155731886611845120",
+                "_uid": "51d9ed30-d49c-4f68-b080-6be223b2ea6a",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -288,37 +336,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Jul 28, 2019",
     "title": "Pakistan announces ambitious plan to eliminate hepatitis",
     "author": "Rasool Sarang",
+    "date_iso": "2019-07-28 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -374,7 +404,7 @@
   "published": true,
   "slug": "pakistan-announces-ambitious-plan-to-eliminate-hepatitis",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/departments/public-health/news/pakistan-announces-ambitious-plan-to-eliminate-hepatitis",
+  "full_slug": "regions/pk/entities/mc/departments/ph/news/pakistan-announces-ambitious-plan-to-eliminate-hepatitis",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -390,8 +420,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "af9589d76b4549336c07dbe899c3ed5ccb597556",
-    "timestamp": "1785498095"
+    "token": "fe4c50dceb3276645d59fe19177d5f50ff4c7bcc",
+    "timestamp": "1786618732"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -412,7 +442,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -432,7 +462,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -452,7 +482,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "public-health",
+      "slug": "ph",
       "translated_slugs": []
     },
     {
@@ -470,11 +500,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:29:37.919Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -487,7 +517,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203717746281310,
+  "current_version_id": 208314481520543,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

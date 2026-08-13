@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:12:58.582Z",
-  "published_at": "2026-07-30T15:12:58.567Z",
+  "updated_at": "2026-08-12T15:13:57.534Z",
+  "published_at": "2026-08-12T15:13:57.519Z",
   "id": 203420269870382,
   "uuid": "9486183e-c8d4-47c9-9956-152bad0de7fe",
   "is_folder": false,
@@ -223,16 +223,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/825670001126469632",
-        "_uid": "c6afb823-fee7-198a-154c-2fbfec28e221",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "a33eb1b2-ee32-46e8-9606-6c7f0e321e05",
+        "items": [
+          {
+            "_uid": "2c76f802-cef6-47d8-842a-f997cc3dc39a",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/825670001126469632",
+                "_uid": "db7eab9a-0d05-46b3-8b00-6a707a7b038b",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -264,37 +312,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Jan 29, 2017",
     "title": "AKU's golf tournament set to fund additional 100 life-saving paediatric cardiac procedures",
     "author": "Rasool Sarang",
+    "date_iso": "2017-01-29 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -373,7 +403,7 @@
   "published": true,
   "slug": "aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
+  "full_slug": "regions/pk/news/aku-s-golf-tournament-set-to-fund-additional-100-life-saving-paediatric-cardiac-procedures",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -389,8 +419,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "4139b1661672e8bc2e799681a03f7c7bc8aa7bdd",
-    "timestamp": "1785498105"
+    "token": "d6c10b7815bb6b6351245a4641a5c7f72f520a33",
+    "timestamp": "1786618749"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -411,7 +441,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -429,11 +459,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-29T19:19:11.878Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -446,7 +476,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713652838314,
+  "current_version_id": 208314521440220,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

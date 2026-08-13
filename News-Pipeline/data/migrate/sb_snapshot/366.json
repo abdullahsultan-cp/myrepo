@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:55:10.177Z",
-  "published_at": "2026-07-30T14:55:10.163Z",
+  "updated_at": "2026-08-12T15:00:19.748Z",
+  "published_at": "2026-08-12T15:00:19.734Z",
   "id": 203709276583774,
   "uuid": "b766eff9-6d36-4d30-bd93-8f7247d80906",
   "is_folder": false,
@@ -20,6 +20,33 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The project started off small in late 2012 with Systems Librarian Ashraf Sharif as the Project Leader supported by Khawaja Mustafa and Qammer Naveed in Karachi, Peter Gatiti in East Africa and Walid Ghali in London; eCommons was officially unveiled in February 2014.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "eCommons allows users to search for information based on campus location, faculty or department. Once users have logged in, they can access PDF files directly from the retrieval screen for which full copyright clearances have been acquired by the authorities responsible for setting up the eCommons.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "In the year-and-a-half-long testing period, eCommons added 2,901 works and 105,819 publications were downloaded. Visitors from 152 countries accessed the portal, mostly from Pakistan, India, the UK, Philippines, Australia, Canada, Malaysia, Egypt, Nigeria and Hong Kong.",
+                  "type": "text"
+                }
+              ]
+            },
             {
               "type": "paragraph",
               "content": [
@@ -100,6 +127,7 @@
     "date": "Feb 20, 2014",
     "title": "AKU's Institutional Digital Repository goes global",
     "author": "volunteer.pa",
+    "date_iso": "2014-02-20 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -118,7 +146,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "The eCommons initiative of the Aga Khan University Libraries may not be behemoth as the more famous Google Books project or Project Gutenburg, but it can certainly compete for the ambition factor. For the first time in 30 years, AKU can lay claim to a consolidated repository of written works produced by its staff, faculty and students. The range of content goes from scientific papers, abstracts and dissertations, right down to internal newsletters and eventually even flyers. The project started off small in late 2012 with Systems Librarian Ashraf Sharif as the Project Leader supported by Khawaja Mustafa and Qammer Naveed in Karachi, Peter Gatiti in East Africa and Walid Ghali in London; eCommons was officially unveiled in February 2014. eCommons allows users to search for information based on campus location, faculty or department. Once users have logged in, they can access PDF files directly from the retrieval screen for which full copyright clearances have been acquired by the authorities responsible for setting up the eCommons. In the year-and-a-half-long testing period, eCommons added 2,901 works and 105,819 publications were downloaded. Visitors from 152 countries accessed the portal, mostly from Pakistan, India, the UK, Philippines, Australia, Canada, Malaysia, Egypt, Nigeria and Hong Kong.",
+    "description": "The eCommons initiative of the Aga Khan University Libraries may not be behemoth as the more famous Google Books project or Project Gutenburg, but it can certainly compete for the ambition factor. For the first time in 30 years, AKU can lay claim to a consolidated repository of written works produced by its staff, faculty and students. The range of content goes from scientific papers, abstracts and dissertations, right down to internal newsletters and eventually even flyers.",
     "show_social": false,
     "banner_image": {
       "id": 203663629374706,
@@ -153,7 +181,7 @@
   "published": true,
   "slug": "aku-s-institutional-digital-repository-goes-global",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-s-institutional-digital-repository-goes-global",
+  "full_slug": "regions/pk/news/aku-s-institutional-digital-repository-goes-global",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -169,8 +197,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "737351ff897f5e897ecfa6b024f14d338e5be8c3",
-    "timestamp": "1785492899"
+    "token": "ec27a57a66a12b1c7692daa7b5c288fba68334dc",
+    "timestamp": "1786617538"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -191,7 +219,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -209,11 +237,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:55:10.163Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -226,7 +254,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203709276762825,
+  "current_version_id": 208311171863119,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

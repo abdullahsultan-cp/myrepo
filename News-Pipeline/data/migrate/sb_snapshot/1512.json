@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:20:12.826Z",
-  "published_at": "2026-07-30T15:20:12.808Z",
+  "updated_at": "2026-08-12T15:08:04.610Z",
+  "published_at": "2026-08-12T15:08:04.596Z",
   "id": 203715431390555,
   "uuid": "c87d4321-38cd-4ec4-aec0-2377913d8376",
   "is_folder": false,
@@ -309,8 +309,10 @@
       }
     ],
     "date": "Feb 15, 2018",
+    "isTop": null,
     "title": "Valedictorian Speech by Sophia Sanga, AKU Convocation Tanzania 2018",
     "author": "stephen.musyoka",
+    "date_iso": "2018-02-15 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -328,9 +330,10 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
+    "isFeatured": null,
     "show_share": true,
     "description": "I would like to address our convocation ceremony, on behalf of the IED and SONAM classes. Today is our convocation ceremony, whereby our stay at this university has ended. It is a great privilege for me to address the 2017graduating cohorts who have completed their journey of Bachelors of Science in Nursing, Masters in Education respectively. Indeed, it is an historic occasion for all of us, the outgoing students and the remaining ones. This is a day of celebration. The storm is over!",
-    "show_social": false,
+    "show_social": true,
     "banner_image": {
       "id": null,
       "alt": "",
@@ -357,13 +360,13 @@
       "meta_data": {},
       "is_external_url": false
     },
-    "social_show_header": false,
+    "social_show_header": true,
     "similar_show_header": true
   },
   "published": true,
   "slug": "valedictorian-speech-by-sophia-sanga-aku-convocation-tanzania-2018",
-  "path": null,
-  "full_slug": "regions/tanzania/news/valedictorian-speech-by-sophia-sanga-aku-convocation-tanzania-2018",
+  "path": "",
+  "full_slug": "regions/tz/news/valedictorian-speech-by-sophia-sanga-aku-convocation-tanzania-2018",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -379,8 +382,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7d6fcaf5170ff78c17e15b2fda11682dfdb537c2",
-    "timestamp": "1785497830"
+    "token": "ffce5047f206622e22fb0599c9c38c8189bda7f5",
+    "timestamp": "1786618243"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -401,7 +404,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -419,11 +422,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:20:12.808Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -436,7 +439,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203715431574222,
+  "current_version_id": 208313075799184,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

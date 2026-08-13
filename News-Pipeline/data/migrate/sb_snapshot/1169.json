@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:11.178Z",
-  "published_at": "2026-07-30T15:13:11.162Z",
+  "updated_at": "2026-08-12T15:08:42.560Z",
+  "published_at": "2026-08-12T15:08:42.544Z",
   "id": 203713704333588,
   "uuid": "4be9fa51-f1da-438c-8841-2d6b7767a16c",
   "is_folder": false,
@@ -199,16 +199,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/829752926595846144",
-        "_uid": "305595ca-c1ff-bbac-be94-d0796fc4bbcd",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "befd3c1f-8e4f-4457-a6a9-a694ae5ac09d",
+        "items": [
+          {
+            "_uid": "40642894-8703-4571-9c5b-45f25518577a",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/829752926595846144",
+                "_uid": "b5df7003-8bbb-4846-a023-15f810f0dd94",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -240,37 +288,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 08, 2017",
     "title": "Ability to change society lies within you, says chief guest Lila Mkila",
     "author": "Rasool Sarang",
+    "date_iso": "2017-02-08 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -324,7 +354,7 @@
   "published": true,
   "slug": "ability-to-change-society-lies-within-you-says-chief-guest-lila-mkila",
   "path": null,
-  "full_slug": "regions/tanzania/news/ability-to-change-society-lies-within-you-says-chief-guest-lila-mkila",
+  "full_slug": "regions/tz/news/ability-to-change-society-lies-within-you-says-chief-guest-lila-mkila",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -340,8 +370,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1468b61f00e6fc61712bb8fd51f1ef68056ce3fb",
-    "timestamp": "1785497860"
+    "token": "2e21f6db450462649bd3a1d9a0708f2cb7a591a4",
+    "timestamp": "1786618305"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -362,7 +392,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -380,11 +410,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:13:11.162Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -397,7 +427,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713704529913,
+  "current_version_id": 208313231365633,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

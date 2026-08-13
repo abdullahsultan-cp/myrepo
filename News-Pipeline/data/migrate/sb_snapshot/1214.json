@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:14:01.539Z",
-  "published_at": "2026-07-30T15:14:01.513Z",
+  "updated_at": "2026-08-12T14:54:31.524Z",
+  "published_at": "2026-08-12T14:54:31.509Z",
   "id": 203713910317414,
   "uuid": "125a9a20-617f-4432-b294-7309c417bb55",
   "is_folder": false,
@@ -239,13 +239,12 @@
                 {
                   "text": "The seminar was organised by the AKU's Working Group for Women and the Centre of Excellence in Women and Child Health in partnership with the London-based Overseas Development Institute, the Nepal Institute For Social and Environmental Research, the International Centre for Diarrhoeal Disease Research, Bangladesh, the Rollins School of Public Health at Emory University, USA, and UK Aid.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "Fact sheets (",
                   "type": "text"
@@ -257,8 +256,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "https://www.aku.edu/news/Documents/English Fact Sheet.PDF",
-                        "uuid": null,
+                        "href": "https://a.storyblok.com/f/289824742951963/96502/4e2879d9fc/1214-richtext-beaea9b014-english-fact-sheet.PDF",
                         "anchor": null,
                         "custom": {},
                         "target": "_blank",
@@ -278,8 +276,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "https://www.aku.edu/news/Documents/Urdu Facts Sheets.pdf",
-                        "uuid": null,
+                        "href": "https://a.storyblok.com/f/289824742951963/3616200/6dc8f2773f/1214-richtext-25b22e05fd-urdu-facts-sheets.pdf",
                         "anchor": null,
                         "custom": {},
                         "target": "_blank",
@@ -356,6 +353,7 @@
     "date": "Mar 24, 2017",
     "title": "Regional study explores triggers of violence against women",
     "author": "Fabeha Pervez",
+    "date_iso": "2017-03-24 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -409,7 +407,7 @@
   "published": true,
   "slug": "regional-study-explores-triggers-of-violence-against-women",
   "path": null,
-  "full_slug": "regions/pakistan/news/regional-study-explores-triggers-of-violence-against-women",
+  "full_slug": "regions/pk/news/regional-study-explores-triggers-of-violence-against-women",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -425,8 +423,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "068ac26d332c3160c4ebb8e7dfc6cb6dc0658793",
-    "timestamp": "1785492565"
+    "token": "ab0d96f274de67dabc809ace94443100cc82b68d",
+    "timestamp": "1786616987"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -447,7 +445,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -465,11 +463,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:14:01.513Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -482,7 +480,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713910747451,
+  "current_version_id": 208309745362566,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

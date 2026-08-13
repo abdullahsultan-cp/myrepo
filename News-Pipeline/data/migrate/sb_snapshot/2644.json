@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:24:40.228Z",
-  "published_at": "2026-07-31T09:24:40.213Z",
+  "updated_at": "2026-08-12T15:00:47.289Z",
+  "published_at": "2026-08-12T15:00:47.273Z",
   "id": 203981947524489,
   "uuid": "b8d8632a-9608-4473-923b-c8da94dd652d",
   "is_folder": false,
@@ -55,13 +55,12 @@
                 {
                   "text": ".",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "Professor Jonas Otterbeck",
                   "type": "text",
@@ -146,6 +145,7 @@
     "date": "May 26, 2021",
     "title": "Finding the Object of Study: Islamic Studies in Practice",
     "author": "Layal.N.Mohammad",
+    "date_iso": "2021-05-26 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -201,7 +201,7 @@
   "published": true,
   "slug": "finding-the-object-of-study-islamic-studies-in-practice",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/finding-the-object-of-study-islamic-studies-in-practice",
+  "full_slug": "regions/uk/entities/ismc/news/finding-the-object-of-study-islamic-studies-in-practice",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -217,8 +217,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ef7f621e3f7fdc5938da54a0306ec6dd1e5e6589",
-    "timestamp": "1785492927"
+    "token": "a1d28e48b61e74016efd178e365b720b0467aeb1",
+    "timestamp": "1786617588"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -239,7 +239,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -259,7 +259,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -277,11 +277,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:24:40.213Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -294,7 +294,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203981947695094,
+  "current_version_id": 208311284646799,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

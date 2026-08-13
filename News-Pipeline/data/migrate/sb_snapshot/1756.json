@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:25:30.145Z",
-  "published_at": "2026-07-30T15:25:30.129Z",
+  "updated_at": "2026-08-12T14:51:34.307Z",
+  "published_at": "2026-08-12T14:51:34.293Z",
   "id": 203716731158756,
   "uuid": "21be0400-be3e-498c-badb-fb141eb1bdaa",
   "is_folder": false,
@@ -112,16 +112,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1063375839318945792",
-        "_uid": "4d8ae85d-ba54-272b-8e22-466ec2d0dfa9",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "49ee8a85-4a6d-4cd6-8d0b-16cf7ab5a375",
+        "items": [
+          {
+            "_uid": "0996fcf4-464d-4987-ab41-e0b733784bab",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1063375839318945792",
+                "_uid": "1319a6a9-ec70-4fa4-9e9f-e00f9c7336c1",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -153,37 +201,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Nov 11, 2018",
     "title": "Experts call for mandatory school preparedness for emergencies",
     "author": "Rasool Sarang",
+    "date_iso": "2018-11-11 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -250,7 +280,7 @@
   "published": true,
   "slug": "experts-call-for-mandatory-school-preparedness-for-emergencies",
   "path": null,
-  "full_slug": "regions/pakistan/news/experts-call-for-mandatory-school-preparedness-for-emergencies",
+  "full_slug": "regions/pk/news/experts-call-for-mandatory-school-preparedness-for-emergencies",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -266,8 +296,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9582975a2026f72ec5f89a428e974e8f9d407042",
-    "timestamp": "1785492500"
+    "token": "82aba1a8ae826c859fd26c398df8d9ef3a2985d7",
+    "timestamp": "1786616886"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -288,7 +318,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -306,11 +336,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:25:30.129Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -323,7 +353,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716731335627,
+  "current_version_id": 208309019668995,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

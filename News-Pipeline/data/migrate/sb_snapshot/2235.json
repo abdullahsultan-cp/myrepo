@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:35:32.878Z",
-  "published_at": "2026-07-30T15:35:32.863Z",
+  "updated_at": "2026-08-12T15:13:21.234Z",
+  "published_at": "2026-08-12T15:13:21.219Z",
   "id": 203719199955114,
   "uuid": "6f45a437-bdce-4639-8425-9506389499fa",
   "is_folder": false,
@@ -20,6 +20,18 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "This meeting was held on the subject of \"Implementation of health and health related SDGs: Current status and opportunities in Pakistan\" on January 6, 2020 at Islamabad. This was a planned collaborative activity amongst the Federal Ministry of National Health Services Regulations and Coordination (FedMONH) in partnership with the International Development Research Centre (IDRC), Sick Kids Centre for Global Child Health, Canada, Aga Khan Foundation, Canada and Centre of Excellence in Women and Child Health at the Aga Khan University, Pakistan. The event was held at the Serena Hotel, Islamabad with over 60 participants from academia, science community, civic society and government who actively contributed towards the deliberations made in the activity. The forum also benefited from participation by key people like Federal Minister of Health, and Member, National Assembly of Pakistan. The meeting was also attended by the visiting high-level delegation from the High Commissioner Canada and IDRC Representative, Canada.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
             {
               "type": "image",
               "attrs": {
@@ -82,6 +94,7 @@
     "date": "Apr 23, 2020",
     "title": "Implementation of health and health related SDGs: Current status and opportunities in Pakistan",
     "author": "Akber Ali",
+    "date_iso": "2020-04-23 00:00",
     "entities": [
       "203313659366173"
     ],
@@ -102,7 +115,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "This meeting was held on the subject of \"Implementation of health and health related SDGs: Current status and opportunities in Pakistan\" on January 6, 2020 at Islamabad. This was a planned collaborative activity amongst the Federal Ministry of National Health Services Regulations and Coordination (FedMONH) in partnership with the International Development Research Centre (IDRC), Sick Kids Centre for Global Child Health, Canada, Aga Khan Foundation, Canada and Centre of Excellence in Women and Child Health at the Aga Khan University, Pakistan. The event was held at the Serena Hotel, Islamabad with over 60 participants from academia, science community, civic society and government who actively contributed towards the deliberations made in the activity. The forum also benefited from participation by key people like Federal Minister of Health, and Member, National Assembly of Pakistan. The meeting was also attended by the visiting high-level delegation from the High Commissioner Canada and IDRC Representative, Canada.",
+    "description": "This meeting was held on the subject of \"Implementation of health and health related SDGs: Current status and opportunities in Pakistan\" on January 6, 2020 at Islamabad. This was a planned collaborative activity amongst the Federal Ministry of Nation",
     "show_social": false,
     "banner_image": {
       "id": 203679306000288,
@@ -137,7 +150,7 @@
   "published": true,
   "slug": "implementation-of-health-and-health-related-sdgs-current-status-and-opportunities-in-pakistan",
   "path": null,
-  "full_slug": "regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/news/implementation-of-health-and-health-related-sdgs-current-status-and-opportunities-in-pakistan",
+  "full_slug": "regions/pk/entities/coe-wch/news/implementation-of-health-and-health-related-sdgs-current-status-and-opportunities-in-pakistan",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +166,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9f2a48495051386bcd294e6e00bca39ccdac4ec6",
-    "timestamp": "1785498072"
+    "token": "f238ce2a2601071a363b380fba947e19a4543ccb",
+    "timestamp": "1786618694"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +188,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -195,7 +208,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "centre-of-excellence-in-women-and-child-health",
+      "slug": "coe-wch",
       "translated_slugs": []
     },
     {
@@ -213,11 +226,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:35:32.863Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +243,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203719200130704,
+  "current_version_id": 208314372837087,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

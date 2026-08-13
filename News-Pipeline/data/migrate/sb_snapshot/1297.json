@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:15:48.414Z",
-  "published_at": "2026-07-30T15:15:48.394Z",
+  "updated_at": "2026-08-12T15:06:41.234Z",
+  "published_at": "2026-08-12T15:06:41.221Z",
   "id": 203714346701309,
   "uuid": "86370ca0-e599-4f98-b3cb-f3148a93d454",
   "is_folder": false,
@@ -24,7 +24,46 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "The Aga Khan University Library, Nairobi, was honoured at the 2017 Library of the Year (Maktaba) awards in Kenya.",
+                  "text": "The award by the ",
+                  "type": "text"
+                },
+                {
+                  "text": "Kenya Library Association",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://www.kenyalibraryassociation.or.ke/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " recognizes excellence in the provision of library and information services in the country. AKU library was awarded second position in the Academic Libraries category at the awards gala, held at the Nairobi National Museum on September 22, 2017.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "AKU library was recognised for its use of modern technology to serve customers and the implementation of state of the art facilities. The library staff were presented with 200 books, a trophy and cash award.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "The Maktaba award judges determine the best libraries on the basis of currency, diversity and relevance of the library collection; innovation and creativity in service provision; and the application of modern technologies in library services. A total of 71 libraries across the country participated in this year's competition.",
                   "type": "text"
                 }
               ]
@@ -82,6 +121,7 @@
     "date": "Oct 12, 2017",
     "title": "An honour for AKU Library, Kenya",
     "author": "Sadaf Shahid",
+    "date_iso": "2017-10-12 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -100,7 +140,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "The Aga Khan University Library, Nairobi, was honoured at the 2017 Library of the Year (Maktaba) awards in Kenya. The award by the  Kenya Library Association  recognizes excellence in the provision of library and information services in the country. AKU library was awarded second position in the Academic Libraries category at the awards gala, held at the Nairobi National Museum on September 22, 2017.  AKU library was recognised for its use of modern technology to serve customers and the implementation of state of the art facilities. The library staff were presented with 200 books, a trophy and cash award. The Maktaba award judges determine the best libraries on the basis of currency, diversity and relevance of the library collection; innovation and creativity in service provision; and the application of modern technologies in library services. A total of 71 libraries across the country participated in this year's competition.",
+    "description": "The Aga Khan University Library, Nairobi, was honoured at the 2017 Library of the Year (Maktaba) awards in Kenya.",
     "show_social": false,
     "banner_image": {
       "id": 203669124721498,
@@ -151,8 +191,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "6d04402dac016cd32ab26714c480e4718833bbbb",
-    "timestamp": "1785497763"
+    "token": "5e7bb4dee7eba4f9a9432f9999215869544ae95e",
+    "timestamp": "1786618124"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -181,11 +221,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:15:48.394Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -198,7 +238,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203714348241938,
+  "current_version_id": 208312734462394,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

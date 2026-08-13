@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:26:01.335Z",
-  "published_at": "2026-07-31T09:26:01.323Z",
+  "updated_at": "2026-08-12T15:01:03.573Z",
+  "published_at": "2026-08-12T15:01:03.539Z",
   "id": 203982279730626,
   "uuid": "73d7ef9c-b98e-480f-a635-b97dd2a3f0de",
   "is_folder": false,
@@ -188,15 +188,14 @@
                   "type": "hard_break"
                 },
                 {
-                  "text": "May she rest in eternal peace. ",
+                  "text": "May she rest in eternal peace.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "Dr Adil Haider,",
                   "type": "text"
@@ -274,6 +273,7 @@
     "date": "Aug 05, 2021",
     "title": "In memoriam: Dr Jahan Ara Pal",
     "author": "Ali Najib Sidiki",
+    "date_iso": "2021-08-05 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -329,7 +329,7 @@
   "published": true,
   "slug": "in-memoriam-dr-jahan-ara-pal",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/news/in-memoriam-dr-jahan-ara-pal",
+  "full_slug": "regions/pk/entities/mc/news/in-memoriam-dr-jahan-ara-pal",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -345,8 +345,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7af6ba53a6030dd06046fe37ed5f48a09948a0bb",
-    "timestamp": "1785492941"
+    "token": "353bf64bf42621dd5e179704d05403ab861b03dd",
+    "timestamp": "1786617613"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -367,7 +367,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -387,7 +387,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -405,11 +405,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:26:01.323Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -422,7 +422,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203982279897311,
+  "current_version_id": 208311351235657,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:35:02.434Z",
-  "published_at": "2026-07-30T15:35:02.420Z",
+  "updated_at": "2026-08-12T14:50:27.743Z",
+  "published_at": "2026-08-12T14:50:27.729Z",
   "id": 203719075262802,
   "uuid": "f96537d3-6823-4b7d-b8f6-5effa037ad6c",
   "is_folder": false,
@@ -254,16 +254,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1232978070157643776",
-        "_uid": "cbfa39cc-b873-529d-cf3f-be0e3850fbc3",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "093dfc69-5bfb-403a-8116-966a62c2998c",
+        "items": [
+          {
+            "_uid": "ecf2d8f7-961a-45a2-8e96-8834bd95b1c9",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1232978070157643776",
+                "_uid": "3b0794a9-3fa7-4f08-b1c9-e93dc79c2bfa",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -295,37 +343,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Mar 31, 2020",
     "title": "Meet the doctor who treated Pakistan's first COVID19 patient",
     "author": "Rasool Sarang",
+    "date_iso": "2020-03-31 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -379,7 +409,7 @@
   "published": true,
   "slug": "meet-the-doctor-who-treated-pakistan-s-first-covid19-patient",
   "path": null,
-  "full_slug": "regions/pakistan/news/meet-the-doctor-who-treated-pakistan-s-first-covid19-patient",
+  "full_slug": "regions/pk/news/meet-the-doctor-who-treated-pakistan-s-first-covid19-patient",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -395,8 +425,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "c5375ae9f3e1141a3ea47585a2099687f5ce5452",
-    "timestamp": "1785492478"
+    "token": "ee2a6cdae81dabe51c2e7ec3dfdc3d4693a24b31",
+    "timestamp": "1786616851"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -417,7 +447,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -435,11 +465,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:35:02.420Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -452,7 +482,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203719075444098,
+  "current_version_id": 208308746997963,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

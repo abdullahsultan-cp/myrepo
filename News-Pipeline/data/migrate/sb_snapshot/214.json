@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:51:33.789Z",
-  "published_at": "2026-07-30T14:51:33.775Z",
+  "updated_at": "2026-08-12T15:04:49.596Z",
+  "published_at": "2026-08-12T15:04:49.583Z",
   "id": 203708390262454,
   "uuid": "b1fcae93-2094-4b39-a185-1dff4edfd59a",
   "is_folder": false,
@@ -24,8 +24,11 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "AKU's first-ever Mushaira.",
+                  "text": "Watch Pakistan's top poets light up the night at AKU's first-ever Mushaira. ",
                   "type": "text"
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +85,7 @@
     "date": "May 19, 2016",
     "title": "Verses of wisdom",
     "author": "Afifa Batool",
+    "date_iso": "2016-05-19 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -100,7 +104,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Watch Pakistan's top poets light up the night at AKU's first-ever Mushaira.",
+    "description": "AKU's first-ever Mushaira.",
     "show_social": false,
     "banner_image": {
       "id": 203664152151463,
@@ -135,7 +139,7 @@
   "published": true,
   "slug": "verses-of-wisdom",
   "path": null,
-  "full_slug": "regions/pakistan/news/verses-of-wisdom",
+  "full_slug": "regions/pk/news/verses-of-wisdom",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -151,8 +155,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "63b45316d4a82bc679d05b9a8c19deed7b1da783",
-    "timestamp": "1785497670"
+    "token": "9449e90eb1cf0595b6a0751706d7e9ae890f4ef7",
+    "timestamp": "1786617964"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -173,7 +177,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -191,11 +195,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:51:33.775Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -208,7 +212,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203708390440591,
+  "current_version_id": 208312277171508,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

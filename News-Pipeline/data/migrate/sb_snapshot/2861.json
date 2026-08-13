@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:30:19.783Z",
-  "published_at": "2026-07-31T09:30:19.769Z",
+  "updated_at": "2026-08-12T15:11:13.891Z",
+  "published_at": "2026-08-12T15:11:13.878Z",
   "id": 203983338329769,
   "uuid": "c7a5ee15-a71a-4af3-9498-0a3bb4cefacf",
   "is_folder": false,
@@ -24,8 +24,36 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-",
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-preventable disease in the country. To augment this effort, Pakistan started its National Immunization Support Project (NISP) in 2016 to coordinate efforts for vaccination and reduce vaccine-preventable diseases. Additionally, to address the recurring endemic poliovirus in the country, the National and Provincial Emergency Operations Centers (NEOC and PEOCs) for polio eradication identified 40 union councils as Super-High Risk Union Councils (SHRUCs) for targeted interventions. The national EPI and the co-financing partners of NISP (the World Bank; the United States Agency for International Development (USAID); Gavi, the Vaccine Alliance; and the Bill and Melinda Gates Foundation) agreed to carry out a Union Council (UC)-specific vaccination survey in these SHRUCs. To read the report ",
                   "type": "text"
+                },
+                {
+                  "text": "click here",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/coe-wch/pk/Documents/TPVICS_SHRUCS_Survey_2021_Report.pdf",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +110,7 @@
     "date": "Apr 26, 2022",
     "title": "Supplementary Immunization Coverage Survey in Super High Risk UCs of Pakistan",
     "author": "Akber Ali",
+    "date_iso": "2022-04-26 00:00",
     "entities": [
       "203313659366173"
     ],
@@ -102,7 +131,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-preventable disease in the country. To augment this effort, Pakistan started its National Immunization Support Project (NISP) in 2016 to coordinate efforts for vaccination and reduce vaccine-preventable diseases. Additionally, to address the recurring endemic poliovirus in the country, the National and Provincial Emergency Operations Centers (NEOC and PEOCs) for polio eradication identified 40 union councils as Super-High Risk Union Councils (SHRUCs) for targeted interventions. The national EPI and the co-financing partners of NISP (the World Bank; the United States Agency for International Development (USAID); Gavi, the Vaccine Alliance; and the Bill and Melinda Gates Foundation) agreed to carry out a Union Council (UC)-specific vaccination survey in these SHRUCs. To read the report  click here",
+    "description": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-",
     "show_social": false,
     "banner_image": {
       "id": 203694865285327,
@@ -137,7 +166,7 @@
   "published": true,
   "slug": "supplementary-immunization-coverage-survey-in-super-high-risk-ucs-of-pakistan",
   "path": null,
-  "full_slug": "regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/news/supplementary-immunization-coverage-survey-in-super-high-risk-ucs-of-pakistan",
+  "full_slug": "regions/pk/entities/coe-wch/news/supplementary-immunization-coverage-survey-in-super-high-risk-ucs-of-pakistan",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +182,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "8d6195f8ad371c3d1a7fd9150a17211b85261402",
-    "timestamp": "1785497972"
+    "token": "35bf08bbe0876f72a37bdfada2911e885e34d342",
+    "timestamp": "1786618513"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +204,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -195,7 +224,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "centre-of-excellence-in-women-and-child-health",
+      "slug": "coe-wch",
       "translated_slugs": []
     },
     {
@@ -213,11 +242,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:30:19.769Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +259,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203983338501311,
+  "current_version_id": 208313851243283,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

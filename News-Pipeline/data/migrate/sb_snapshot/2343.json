@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:16:46.896Z",
-  "published_at": "2026-07-31T09:16:46.880Z",
+  "updated_at": "2026-08-12T15:03:21.770Z",
+  "published_at": "2026-08-12T15:03:21.756Z",
   "id": 203980008676072,
   "uuid": "cfa6c704-ba80-47a0-9256-e6df5e87e40d",
   "is_folder": false,
@@ -24,8 +24,32 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Watch the film of Prof Jonas Otterbeck and Dr Sanaa Alimia",
+                  "text": "Watch the film of AKU-ISMC's Jonas Otterbeck and Sanaa Alimia in a celebration of  World Music Day on June 21. The duo discuss ",
                   "type": "text"
+                },
+                {
+                  "text": "Muslim Global Pop Stars: a Discussion of a New Phenomenon",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.youtube.com/watch?v=KsCcM0CTR0o&t=1892s",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " culminating in a special concert by master musicians from the Aga Khan Music Initiative.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +106,7 @@
     "date": "Jul 08, 2020",
     "title": " AKU-ISMC's Jonas Otterbeck and Sanaa Alimia Celebrate World Music Day ",
     "author": "Alexandra Khan",
+    "date_iso": "2020-07-08 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -102,7 +127,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Watch the film of AKU-ISMC's Jonas Otterbeck and Sanaa Alimia in a celebration of  World Music Day on June 21. The duo discuss  Muslim Global Pop Stars: a Discussion of a New Phenomenon  culminating in a special concert by master musicians from the Aga Khan Music Initiative.",
+    "description": "Watch the film of Prof Jonas Otterbeck and Dr Sanaa Alimia",
     "show_social": false,
     "banner_image": {
       "id": 203688610274297,
@@ -137,7 +162,7 @@
   "published": true,
   "slug": "aku-ismc-s-jonas-otterbeck-and-sanaa-alimia-celebrate-world-music-day",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/aku-ismc-s-jonas-otterbeck-and-sanaa-alimia-celebrate-world-music-day",
+  "full_slug": "regions/uk/entities/ismc/news/aku-ismc-s-jonas-otterbeck-and-sanaa-alimia-celebrate-world-music-day",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +178,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "0c5a1d727c6717da21b71c5325fb9cb6c8b52d1c",
-    "timestamp": "1785497604"
+    "token": "65e5a0f55194530b4eb9bce3386d6ce47124541c",
+    "timestamp": "1786617809"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +200,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -195,7 +220,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -213,11 +238,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:16:46.880Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +255,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203980008901013,
+  "current_version_id": 208311917427250,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

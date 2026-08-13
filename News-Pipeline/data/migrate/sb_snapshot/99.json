@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:48:33.167Z",
-  "published_at": "2026-07-30T14:48:33.154Z",
+  "updated_at": "2026-08-12T15:07:24.603Z",
+  "published_at": "2026-08-12T15:07:24.588Z",
   "id": 203707650453028,
   "uuid": "cdade93e-cb5d-4c74-97fd-473907e5b1f3",
   "is_folder": false,
@@ -142,16 +142,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/713308230408081408",
-        "_uid": "30422200-b618-cd3d-3db2-4bbabd5f1503",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "6eecdd76-0f93-40f8-9ee9-7f712c6fc5f5",
+        "items": [
+          {
+            "_uid": "a56780e6-96e0-4ec7-8036-2ba0849c2297",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/713308230408081408",
+                "_uid": "52b55f6e-b619-47d3-9561-b1c9f915e92f",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -183,37 +231,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "May 17, 2016",
     "title": "AKU hosts golf tournament for healing kids' hearts",
     "author": "Afifa Batool",
+    "date_iso": "2016-05-17 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -267,7 +297,7 @@
   "published": true,
   "slug": "aku-hosts-golf-tournament-for-healing-kids-hearts",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-hosts-golf-tournament-for-healing-kids-hearts",
+  "full_slug": "regions/pk/news/aku-hosts-golf-tournament-for-healing-kids-hearts",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -283,8 +313,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "2770e227ec172660fd6fc15b31d001c8a7d12f73",
-    "timestamp": "1785497798"
+    "token": "864c93835d8ff7aa6fe29a6983aeed2696ad2d62",
+    "timestamp": "1786618187"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -305,7 +335,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -323,11 +353,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:48:33.154Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -340,7 +370,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203707650620105,
+  "current_version_id": 208312912098135,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

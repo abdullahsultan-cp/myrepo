@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:19:51.417Z",
-  "published_at": "2026-07-30T15:19:51.401Z",
+  "updated_at": "2026-08-12T14:52:16.851Z",
+  "published_at": "2026-08-12T14:52:16.838Z",
   "id": 203715343719217,
   "uuid": "cd2c84c8-63c5-4e79-94bc-06d36334b4ac",
   "is_folder": false,
@@ -20,6 +20,15 @@
         "content": {
           "type": "doc",
           "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Khan, professor of psychiatry at the Aga Khan University, was selected as head of the Association at the 29th IASP World Congress.",
+                  "type": "text"
+                }
+              ]
+            },
             {
               "type": "paragraph",
               "content": [
@@ -218,6 +227,7 @@
     "date": "Jan 30, 2018",
     "title": "Professor Murad Moosa Khan becomes IASP's first Asian president",
     "author": "Rasool Sarang",
+    "date_iso": "2018-01-30 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -249,7 +259,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Professor Murad Moosa Khan has been elected as the president of the International Association for Suicide Prevention (IASP), the first Asian as well as the first Pakistani in the 60-year history of the Association. Khan, professor of psychiatry at the Aga Khan University, was selected as head of the Association at the 29th IASP World Congress.",
+    "description": "Professor Murad Moosa Khan has been elected as the president of the International Association for Suicide Prevention (IASP), the first Asian as well as the first Pakistani in the 60-year history of the Association.",
     "show_social": false,
     "banner_image": {
       "id": 203670146489501,
@@ -284,7 +294,7 @@
   "published": true,
   "slug": "professor-murad-moosa-khan-becomes-iasp-s-first-asian-president",
   "path": null,
-  "full_slug": "regions/pakistan/news/professor-murad-moosa-khan-becomes-iasp-s-first-asian-president",
+  "full_slug": "regions/pk/news/professor-murad-moosa-khan-becomes-iasp-s-first-asian-president",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -300,8 +310,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ab812cd48110085386aaf46cc80e1ab415fed959",
-    "timestamp": "1785492513"
+    "token": "a4a4e01dfd15b7b0cccd8d4235be43241203381b",
+    "timestamp": "1786616908"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -322,7 +332,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -340,11 +350,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:19:51.401Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -357,7 +367,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203715343899204,
+  "current_version_id": 208309193925378,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

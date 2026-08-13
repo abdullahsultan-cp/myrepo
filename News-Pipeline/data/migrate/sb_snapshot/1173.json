@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:16.616Z",
-  "published_at": "2026-07-30T15:13:16.584Z",
+  "updated_at": "2026-08-12T15:08:34.573Z",
+  "published_at": "2026-08-12T15:08:34.559Z",
   "id": 203713726513438,
   "uuid": "862e2b1e-7f15-459d-a906-94edd766a5d9",
   "is_folder": false,
@@ -268,16 +268,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/832201538948960256",
-        "_uid": "c7b5027d-2f69-3887-1742-68741a76a39f",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "46064815-b1a0-4723-a6b2-7abd89588469",
+        "items": [
+          {
+            "_uid": "3b166154-3b03-444c-9896-1ef9e820d54f",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/832201538948960256",
+                "_uid": "8ceea7ef-a29f-4b47-9a4a-a6353c04e140",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -309,37 +357,20 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 15, 2017",
+    "isTop": "",
     "title": "Aga Khan University graduands urged to utilise knowledge to transform society",
     "author": "Rasool Sarang",
+    "date_iso": "2017-02-15 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -356,6 +387,10 @@
       "copyright": "",
       "fieldtype": "asset",
       "meta_data": {}
+    },
+    "isFeatured": {
+      "featured": true,
+      "featuredAt": "2026-08-12T09:22:24.900Z"
     },
     "show_share": true,
     "description": "Graduands at the Aga Khan University's convocation ceremony in Nairobi were encouraged to use their skills and knowledge to pursue ambitious, far-reaching initiatives that would impact as many lives as possible. In her speech, Chief Guest Professor Collette Suda, Principal Secretary, State Department for University Education, Ministry of Education, explained that making an extraordinary impact requires one to go beyond one's professional obligations and day-to-day commitments by tackling the root causes of problems.",
@@ -393,7 +428,7 @@
   "published": true,
   "slug": "aga-khan-university-graduands-urged-to-utilise-knowledge-to-transform-society",
   "path": null,
-  "full_slug": "regions/tanzania/news/aga-khan-university-graduands-urged-to-utilise-knowledge-to-transform-society",
+  "full_slug": "regions/tz/news/aga-khan-university-graduands-urged-to-utilise-knowledge-to-transform-society",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -409,8 +444,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "17fa4e00d12fafa35bc777bf84bd5c637d48d390",
-    "timestamp": "1785497852"
+    "token": "9943833ea78c143b98aae8fbf5e739320a90ed8e",
+    "timestamp": "1786618290"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -431,7 +466,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -449,11 +484,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:13:16.584Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -466,7 +501,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713726726177,
+  "current_version_id": 208313198646687,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

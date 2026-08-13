@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:26:35.471Z",
-  "published_at": "2026-07-30T15:26:35.454Z",
+  "updated_at": "2026-08-12T15:08:12.932Z",
+  "published_at": "2026-08-12T15:08:12.917Z",
   "id": 203716998541618,
   "uuid": "2105f260-be05-4baf-9c5f-435da8766611",
   "is_folder": false,
@@ -169,16 +169,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1093431107226296320",
-        "_uid": "69a3f0c0-0d40-0dbc-a1d1-47016c44d7df",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "1b315608-c8e1-4d4c-b13e-e808811ee0f7",
+        "items": [
+          {
+            "_uid": "f52ed914-0e39-4fa0-bb78-5e25be9b0070",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1093431107226296320",
+                "_uid": "2e621872-3317-4775-8d62-ccdf701bbcae",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -210,37 +258,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 06, 2019",
     "title": "AKU graduates challenged to impact their communities",
     "author": "stephen.musyoka",
+    "date_iso": "2019-02-06 00:00",
     "entities": [
       "203313837780214",
       "203313854336265"
@@ -297,7 +327,7 @@
   "published": true,
   "slug": "aku-graduates-challenged-to-impact-their-communities",
   "path": null,
-  "full_slug": "regions/tanzania/entities/institute-for-educational-development/news/aku-graduates-challenged-to-impact-their-communities",
+  "full_slug": "regions/tz/entities/ied/news/aku-graduates-challenged-to-impact-their-communities",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -313,8 +343,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "9e1b28fba1212f36dbbe9b8ea51c55a14d176fa1",
-    "timestamp": "1785497836"
+    "token": "5c055d5b0929b970a5851d297323879377fcd14e",
+    "timestamp": "1786618256"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -335,7 +365,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -355,7 +385,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-educational-development",
+      "slug": "ied",
       "translated_slugs": []
     },
     {
@@ -373,11 +403,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:26:35.454Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -390,7 +420,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716998772212,
+  "current_version_id": 208313110029531,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

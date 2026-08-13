@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:32:39.287Z",
-  "published_at": "2026-07-31T09:32:39.271Z",
+  "updated_at": "2026-08-12T15:00:24.583Z",
+  "published_at": "2026-08-12T15:00:24.563Z",
   "id": 203983909738274,
   "uuid": "0f37b283-ea0e-4b00-9366-6255e3afc71f",
   "is_folder": false,
@@ -82,13 +82,12 @@
                       "type": "italic"
                     }
                   ]
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "AKU's healthcare camps and mobile units in the flood-affected areas have provided care to over 80,000 people and distributed medicines of over Rs 120 million in 22 districts of Sindh, Balochistan and Khyber Pakhtunkhwa.",
                   "type": "text"
@@ -215,6 +214,7 @@
     "date": "Sep 19, 2022",
     "title": "Karachi administration and AKU collaborate to facilitate flood-affected people",
     "author": "Rasool Sarang",
+    "date_iso": "2022-09-19 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -270,7 +270,7 @@
   "published": true,
   "slug": "karachi-administration-and-aku-collaborate-to-facilitate-flood-affected-people",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/news/karachi-administration-and-aku-collaborate-to-facilitate-flood-affected-people",
+  "full_slug": "regions/pk/entities/mc/news/karachi-administration-and-aku-collaborate-to-facilitate-flood-affected-people",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -286,8 +286,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "7087eb26a596f6b4e4d92d6fc77c486fea1b234d",
-    "timestamp": "1785492905"
+    "token": "20e7443633ab6fff3107727a2a7e303afd989170",
+    "timestamp": "1786617549"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -308,7 +308,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -328,7 +328,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -346,11 +346,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:32:39.271Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -363,7 +363,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203983909906187,
+  "current_version_id": 208311191614084,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

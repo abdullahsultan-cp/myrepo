@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:21:39.991Z",
-  "published_at": "2026-07-30T15:21:39.978Z",
+  "updated_at": "2026-08-12T15:14:17.722Z",
+  "published_at": "2026-08-12T15:14:17.707Z",
   "id": 203715788486538,
   "uuid": "b9e9a381-5aa2-46f5-900a-c7c28cfde2c4",
   "is_folder": false,
@@ -26,23 +26,21 @@
                 {
                   "text": "The main purpose of the Fair was to provide AKU staff with information on how to improve their English language skills. High levels of English are essential for employment opportunities and career advancement at AKU.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "The event attracted around 300 visitors; and there was much for them to do. Visitors could test their English levels, participate in a speaking completion, play English language games, attend workshops, and find out about the courses and services ELE_net and the British Council have to offer.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "The feedback was very positive. Many remarked on how well the event was organized and how enjoyable it was. The workshops were particularly popular ... along with the cake pops available in the refreshment area!",
                   "type": "text"
@@ -188,6 +186,7 @@
     "date": "Mar 19, 2018",
     "title": "ELE_net English Language Fair",
     "author": "Daniel Raynor",
+    "date_iso": "2018-03-19 00:00",
     "entities": [
       "203313673067509"
     ],
@@ -242,7 +241,7 @@
   "published": true,
   "slug": "ele-net-english-language-fair",
   "path": null,
-  "full_slug": "regions/pakistan/entities/network-of-english-language-enhancement/news/ele-net-english-language-fair",
+  "full_slug": "regions/pk/entities/ele/news/ele-net-english-language-fair",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -258,8 +257,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "0259380a59d36eebd7905545c79a1dab1c159bf3",
-    "timestamp": "1785498121"
+    "token": "03fc7c9d2507a09d7c58e4e05becd346f21b2c8d",
+    "timestamp": "1786618779"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -280,7 +279,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -300,7 +299,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "network-of-english-language-enhancement",
+      "slug": "ele",
       "translated_slugs": []
     },
     {
@@ -318,11 +317,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:21:39.978Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -335,7 +334,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203715788651718,
+  "current_version_id": 208314604224598,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

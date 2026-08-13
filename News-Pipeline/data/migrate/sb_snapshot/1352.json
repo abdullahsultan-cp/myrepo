@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:16:56.122Z",
-  "published_at": "2026-07-30T15:16:56.108Z",
+  "updated_at": "2026-08-12T14:54:21.542Z",
+  "published_at": "2026-08-12T14:54:21.526Z",
   "id": 203714625720932,
   "uuid": "902049e7-ce97-4e49-935b-6e8c2318bd02",
   "is_folder": false,
@@ -196,16 +196,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/937288444799315968",
-        "_uid": "eaca49d5-eb74-649d-cb64-0868e29e22fd",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "27dfdb71-0f0c-42ef-ae67-ff297f474752",
+        "items": [
+          {
+            "_uid": "28d8ae98-9060-4722-b0da-33469fdfa3d8",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/937288444799315968",
+                "_uid": "08f4364a-7e0c-469f-8b08-2cf4ccfa725c",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -237,37 +285,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Dec 03, 2017",
     "title": "Graduates urged to seize opportunities to innovate",
     "author": "Fabeha Pervez",
+    "date_iso": "2017-12-03 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -321,7 +351,7 @@
   "published": true,
   "slug": "graduates-urged-to-seize-opportunities-to-innovate",
   "path": null,
-  "full_slug": "regions/pakistan/news/graduates-urged-to-seize-opportunities-to-innovate",
+  "full_slug": "regions/pk/news/graduates-urged-to-seize-opportunities-to-innovate",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -337,8 +367,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "78b0221b0303a405ed40246f6cad9fdafe763712",
-    "timestamp": "1785492554"
+    "token": "acebc62c20ddd59c1ed2b73747b6218a67a66153",
+    "timestamp": "1786616971"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -359,7 +389,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -377,11 +407,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:16:56.108Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -394,7 +424,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203714625906125,
+  "current_version_id": 208309704623665,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

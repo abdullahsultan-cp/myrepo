@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:24:23.256Z",
-  "published_at": "2026-07-30T15:24:23.243Z",
+  "updated_at": "2026-08-12T15:14:50.879Z",
+  "published_at": "2026-08-12T15:14:50.865Z",
   "id": 203716457234497,
   "uuid": "ae59e26d-7124-46ab-8474-47331ec8f16a",
   "is_folder": false,
@@ -24,8 +24,24 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "ELE_net has been offering blended courses to address specific students' needs.",
+                  "text": "In addition to the online courses that AKU students in East Africa can take to help them develop their academic writing skills in English, ELE_net has been offering blended courses to address specific students' needs.",
                   "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "text": "In 2018, IED students in Dar es Salaam had the opportunity to take the Language Accuracy in Writing and the Integrating Academic Reading into Writing courses through a blended approach - a mix of face-to-face teaching and online study. Also, following a recent ELE_net visit to Uganda and Kenya, the Network is now remotely delivering courses specifically tailored to SONAM students in Nairobi. These include academic reading and writing, and a new English for Presentations course, which will be offered to students during the last year of their bachelor's degree.",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +98,7 @@
     "date": "Sep 06, 2018",
     "title": "ELE_net courses in East Africa",
     "author": "Daniel Raynor",
+    "date_iso": "2018-09-06 00:00",
     "entities": [
       "203313854323976"
     ],
@@ -102,7 +119,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "In addition to the online courses that AKU students in East Africa can take to help them develop their academic writing skills in English, ELE_net has been offering blended courses to address specific students' needs. In 2018, IED students in Dar es Salaam had the opportunity to take the Language Accuracy in Writing and the Integrating Academic Reading into Writing courses through a blended approach - a mix of face-to-face teaching and online study. Also, following a recent ELE_net visit to Uganda and Kenya, the Network is now remotely delivering courses specifically tailored to SONAM students in Nairobi. These include academic reading and writing, and a new English for Presentations course, which will be offered to students during the last year of their bachelor's degree.",
+    "description": "ELE_net has been offering blended courses to address specific students' needs.",
     "show_social": false,
     "banner_image": {
       "id": 203671969132466,
@@ -137,7 +154,7 @@
   "published": true,
   "slug": "ele-net-courses-in-east-africa",
   "path": null,
-  "full_slug": "regions/tanzania/entities/network-of-english-language-enhancement/news/ele-net-courses-in-east-africa",
+  "full_slug": "regions/tz/entities/ele/news/ele-net-courses-in-east-africa",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +170,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "718b532dab15f05f7768f0a56c8b06655abe8a2d",
-    "timestamp": "1785498149"
+    "token": "b3fcdc6d7ca808c6f80bac04b585473942af1d0a",
+    "timestamp": "1786618826"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +192,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -195,7 +212,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "network-of-english-language-enhancement",
+      "slug": "ele",
       "translated_slugs": []
     },
     {
@@ -213,11 +230,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:24:23.243Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +247,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716457386329,
+  "current_version_id": 208314740015373,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

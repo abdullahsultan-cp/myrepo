@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:13:34.595Z",
-  "published_at": "2026-07-30T15:13:34.579Z",
+  "updated_at": "2026-08-12T14:54:34.812Z",
+  "published_at": "2026-08-12T14:54:34.794Z",
   "id": 203713800257851,
   "uuid": "d0a30974-9bd9-439b-aa89-4f4958cda6aa",
   "is_folder": false,
@@ -162,16 +162,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/841595988921995268",
-        "_uid": "502e837f-19fc-0f62-78f4-c591266d9048",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "afb4c624-ad36-4f71-bb67-0622efb54390",
+        "items": [
+          {
+            "_uid": "65ae493f-53f7-4817-aa9a-5bf97a3bddc6",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/841595988921995268",
+                "_uid": "1d27f2ea-2409-4ec1-8f46-b5be0959e9bc",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -203,37 +251,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Mar 14, 2017",
     "title": "University hospital opens new medical centres in Punjab",
     "author": "Rasool Sarang",
+    "date_iso": "2017-03-14 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -287,7 +317,7 @@
   "published": true,
   "slug": "university-hospital-opens-new-medical-centres-in-punjab",
   "path": null,
-  "full_slug": "regions/pakistan/news/university-hospital-opens-new-medical-centres-in-punjab",
+  "full_slug": "regions/pk/news/university-hospital-opens-new-medical-centres-in-punjab",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -303,8 +333,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "e83ce9a5e4c91741ebc540cbf394bf41ee8bc2dc",
-    "timestamp": "1785492567"
+    "token": "94d38bec911e8ab575b3ff1afe7b1b225e8159b8",
+    "timestamp": "1786616991"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -325,7 +355,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -343,11 +373,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:13:34.579Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -360,7 +390,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713800446102,
+  "current_version_id": 208309758981796,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

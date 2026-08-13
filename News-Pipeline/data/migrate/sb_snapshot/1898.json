@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:28:34.923Z",
-  "published_at": "2026-07-30T15:28:34.908Z",
+  "updated_at": "2026-08-12T15:10:32.323Z",
+  "published_at": "2026-08-12T15:10:32.308Z",
   "id": 203717488026033,
   "uuid": "14536fe5-e2b6-4949-a913-0574491c555d",
   "is_folder": false,
@@ -202,16 +202,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1131787475616186374",
-        "_uid": "055db180-dbb5-78e7-4dee-493245d80afa",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "80a80251-c609-4819-b581-716933048b6a",
+        "items": [
+          {
+            "_uid": "201f40bd-9fda-44f0-a4f1-6d353e44f137",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1131787475616186374",
+                "_uid": "05894267-0d49-4b08-b192-f7ee6d52abac",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -243,37 +291,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "May 24, 2019",
     "title": "AKU's first second-generation alumni",
     "author": "Ambreen Nadeem",
+    "date_iso": "2019-05-24 00:00",
     "entities": [
       "203313675926548"
     ],
@@ -329,7 +359,7 @@
   "published": true,
   "slug": "aku-s-first-second-generation-alumni",
   "path": null,
-  "full_slug": "regions/pakistan/entities/school-of-nursing-and-midwifery/departments/nursing/news/aku-s-first-second-generation-alumni",
+  "full_slug": "regions/pk/entities/sonam/departments/nurs/news/aku-s-first-second-generation-alumni",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -345,8 +375,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "e48dd1f923f35283c6c9842d0f16e01546b78e30",
-    "timestamp": "1785497940"
+    "token": "9e3a510230a08c812d0443777a900161a1b05ae0",
+    "timestamp": "1786618457"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -367,7 +397,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -387,7 +417,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "school-of-nursing-and-midwifery",
+      "slug": "sonam",
       "translated_slugs": []
     },
     {
@@ -407,7 +437,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "nursing",
+      "slug": "nurs",
       "translated_slugs": []
     },
     {
@@ -425,11 +455,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:28:34.908Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -442,7 +472,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203717488191831,
+  "current_version_id": 208313680951803,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

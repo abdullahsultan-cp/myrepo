@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:25:52.039Z",
-  "published_at": "2026-07-30T15:25:52.026Z",
+  "updated_at": "2026-08-12T15:05:29.935Z",
+  "published_at": "2026-08-12T15:05:29.921Z",
   "id": 203716820861206,
   "uuid": "1f612dd1-8fc8-4ec9-974f-7a0dd9c1eef2",
   "is_folder": false,
@@ -24,7 +24,28 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Professor Otterbeck in the News",
+                  "text": "AKU-ISMC's Professor Jonas Otterbeck made the ",
+                  "type": "text"
+                },
+                {
+                  "text": "news ",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "http://www.kabar.kg/eng/news/professor-from-london-about-his-visit-to-kyrgyzstan/",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": "during a recent visit to Kyrgyzstan. Professor Otterbeck attended a conference in Bichkek where he shared his research on Muslim Youth in Sweden. In a wide-ranging interview he spoke about the importance of pluralism and his work at ISMC and his life-long interest in Islam.",
                   "type": "text"
                 }
               ]
@@ -82,6 +103,7 @@
     "date": "Nov 29, 2018",
     "title": "Professor Otterbeck in the Kyrgyzstan News",
     "author": "Alexandra Khan",
+    "date_iso": "2018-11-29 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -102,7 +124,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "AKU-ISMC's Professor Jonas Otterbeck made the  news  during a recent visit to Kyrgyzstan. Professor Otterbeck attended a conference in Bichkek where he shared his research on Muslim Youth in Sweden. In a wide-ranging interview he spoke about the importance of pluralism and his work at ISMC and his life-long interest in Islam.",
+    "description": "Professor Otterbeck in the News",
     "show_social": false,
     "banner_image": {
       "id": 203672980599153,
@@ -137,7 +159,7 @@
   "published": true,
   "slug": "professor-otterbeck-in-the-kyrgyzstan-news",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/professor-otterbeck-in-the-kyrgyzstan-news",
+  "full_slug": "regions/uk/entities/ismc/news/professor-otterbeck-in-the-kyrgyzstan-news",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +175,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "f7a4fe054aa7b912436cfdef4786bb9b90a5f974",
-    "timestamp": "1785497704"
+    "token": "0ce8bd7360d0854643053029ad36fe3a2bf0f1af",
+    "timestamp": "1786618022"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +197,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -195,7 +217,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -213,11 +235,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:25:52.026Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +252,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716821030056,
+  "current_version_id": 208312442400465,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

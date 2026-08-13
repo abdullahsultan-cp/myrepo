@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:56:58.305Z",
-  "published_at": "2026-07-31T09:56:58.289Z",
+  "updated_at": "2026-08-13T09:23:35.825Z",
+  "published_at": "2026-08-13T09:23:35.809Z",
   "id": 203989885795637,
   "uuid": "935beec8-f047-41b6-b9bf-4b2a941ffefc",
   "is_folder": false,
@@ -161,10 +161,13 @@
       }
     ],
     "date": "Jan 28, 2026",
+    "isTop": "",
     "title": "AKU and UN Agencies Deepen Partnership Ahead of WHS Nairobi",
     "author": "patrick.gumo",
+    "date_iso": "2026-01-28 00:00",
     "entities": [
-      "203313692077164"
+      "203313692077164",
+      "203313675926548"
     ],
     "isGlobal": true,
     "component": "news_article",
@@ -182,6 +185,7 @@
       "fieldtype": "asset",
       "meta_data": {}
     },
+    "isFeatured": "",
     "show_share": true,
     "description": "The Aga Khan University (AKU) has met with senior officials from the United Nations agencies in the health sector to advance preparations for the World Health Summit Regional Meeting (WHSRM), which Kenya will host in April 2026. The meeting focused on strengthening collaboration, aligning institutional priorities and shaping the Summit as a platform for African-led health systems reform.",
     "show_social": false,
@@ -218,7 +222,7 @@
   "published": true,
   "slug": "aku-and-un-agencies-deepen-partnership-ahead-of-whs-nairobi",
   "path": null,
-  "full_slug": "regions/kenya/entities/medical-college/departments/medical-education/news/aku-and-un-agencies-deepen-partnership-ahead-of-whs-nairobi",
+  "full_slug": "regions/ke/entities/mc/departments/meded/news/aku-and-un-agencies-deepen-partnership-ahead-of-whs-nairobi",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -234,8 +238,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "fcac85cd9dc8901b32629497eb811f544da84c1f",
-    "timestamp": "1785497706"
+    "token": "2c3a74fd18ffa2b32d2146d4a0434bb6fbe24827",
+    "timestamp": "1786618025"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -256,7 +260,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "kenya",
+      "slug": "ke",
       "translated_slugs": []
     },
     {
@@ -276,7 +280,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -296,7 +300,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-education",
+      "slug": "meded",
       "translated_slugs": []
     },
     {
@@ -314,11 +318,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:56:58.289Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -331,7 +335,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203989885989345,
+  "current_version_id": 208582310919327,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:55:11.737Z",
-  "published_at": "2026-07-30T14:55:11.724Z",
+  "updated_at": "2026-08-12T15:00:16.697Z",
+  "published_at": "2026-08-12T15:00:16.681Z",
   "id": 203709282989919,
   "uuid": "784b44b8-fea5-4f1d-aa7a-5606728f8a2e",
   "is_folder": false,
@@ -143,13 +143,12 @@
                 {
                   "text": "4.    Vaccine-preventable childhood illnesses are just an unfortunate fact of life. It is better to be immunized through disease than through vaccines.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "False: ",
                   "type": "text",
@@ -283,6 +282,7 @@
     "date": "Feb 13, 2014",
     "title": "AKU Expert Panel Dispels Myths about Vaccination",
     "author": "volunteer.pa",
+    "date_iso": "2014-02-13 00:00",
     "entities": [],
     "isGlobal": false,
     "component": "news_article",
@@ -336,7 +336,7 @@
   "published": true,
   "slug": "aku-expert-panel-dispels-myths-about-vaccination",
   "path": null,
-  "full_slug": "regions/pakistan/news/aku-expert-panel-dispels-myths-about-vaccination",
+  "full_slug": "regions/pk/news/aku-expert-panel-dispels-myths-about-vaccination",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -352,8 +352,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "bc3219a5ba60f230ed401557b44d270ad6c6b0a7",
-    "timestamp": "1785492897"
+    "token": "5e4afcfc51979e82d25356b8c3233b5605c23829",
+    "timestamp": "1786617535"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -374,7 +374,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -392,11 +392,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:55:11.724Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -409,7 +409,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203709283156688,
+  "current_version_id": 208311159353911,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

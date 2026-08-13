@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:32:22.106Z",
-  "published_at": "2026-07-30T15:32:22.093Z",
+  "updated_at": "2026-08-12T14:50:49.605Z",
+  "published_at": "2026-08-12T14:50:49.586Z",
   "id": 203718418576038,
   "uuid": "e6f5532c-a45b-4e04-ba27-33151c3af840",
   "is_folder": false,
@@ -175,16 +175,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1196381437815074822",
-        "_uid": "91542c6b-6964-df1e-efcc-6ef0d1fa6999",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "4c9dab0f-f82f-405e-939b-5c63933888d2",
+        "items": [
+          {
+            "_uid": "173d3ef0-1d63-4e1b-b080-c2f89df6e683",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1196381437815074822",
+                "_uid": "7c39ae8c-0265-41d5-b5a7-41777fd86058",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -216,37 +264,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Nov 27, 2019",
     "title": "Advance HE reaccredits AKU, the first in South Asia and East Africa",
     "author": "Rasool Sarang",
+    "date_iso": "2019-11-27 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -313,7 +343,7 @@
   "published": true,
   "slug": "advance-he-reaccredits-aku-the-first-in-south-asia-and-east-africa",
   "path": null,
-  "full_slug": "regions/pakistan/news/advance-he-reaccredits-aku-the-first-in-south-asia-and-east-africa",
+  "full_slug": "regions/pk/news/advance-he-reaccredits-aku-the-first-in-south-asia-and-east-africa",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -329,8 +359,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "1587d043f3df2a2d52b8b96192fa1d6381efecc1",
-    "timestamp": "1785492486"
+    "token": "09f294784f7cdf8d72bd9e623a776ccc28efe68d",
+    "timestamp": "1786616863"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -351,7 +381,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -369,11 +399,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:32:22.093Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -386,7 +416,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203718418743468,
+  "current_version_id": 208308836528429,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

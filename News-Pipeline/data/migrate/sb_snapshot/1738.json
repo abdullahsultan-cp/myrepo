@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:25:06.786Z",
-  "published_at": "2026-07-30T15:25:06.768Z",
+  "updated_at": "2026-08-12T15:05:41.062Z",
+  "published_at": "2026-08-12T15:05:41.045Z",
   "id": 203716635386027,
   "uuid": "e9573581-77fd-4e26-afff-ffb07ec1774c",
   "is_folder": false,
@@ -142,16 +142,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1055783010581336064",
-        "_uid": "3609a793-8e83-dd30-de0e-b2b259db9a00",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "f03e3deb-07f7-4316-8e98-6ea332a0878c",
+        "items": [
+          {
+            "_uid": "4d9e1d5c-847d-4e8d-9988-d3fc8b29e03a",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1055783010581336064",
+                "_uid": "c71cb922-071b-4c87-8057-eee8eb93b513",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -183,37 +231,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Oct 26, 2018",
     "title": "AKUH Nairobi introduces region's most advanced cancer diagnostic technology",
     "author": "Muhammad Altamash",
+    "date_iso": "2018-10-26 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -267,7 +297,7 @@
   "published": true,
   "slug": "akuh-nairobi-introduces-region-s-most-advanced-cancer-diagnostic-technology",
   "path": null,
-  "full_slug": "regions/kenya/news/akuh-nairobi-introduces-region-s-most-advanced-cancer-diagnostic-technology",
+  "full_slug": "regions/ke/news/akuh-nairobi-introduces-region-s-most-advanced-cancer-diagnostic-technology",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -283,8 +313,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "521d836f4387cd9d670d4ac697a43a3e7945a7c0",
-    "timestamp": "1785497713"
+    "token": "78f17576321f871c60cffe355c3989a0a24edb89",
+    "timestamp": "1786618038"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -305,7 +335,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "kenya",
+      "slug": "ke",
       "translated_slugs": []
     },
     {
@@ -323,11 +353,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:25:06.768Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -340,7 +370,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203716635558634,
+  "current_version_id": 208312487931751,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

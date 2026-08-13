@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:27:35.358Z",
-  "published_at": "2026-07-30T15:27:35.344Z",
+  "updated_at": "2026-08-12T15:11:53.245Z",
+  "published_at": "2026-08-12T15:11:53.229Z",
   "id": 203717244043612,
   "uuid": "e6acc233-729b-41a2-9709-d7f60a1a2a4a",
   "is_folder": false,
@@ -81,6 +81,18 @@
               "type": "paragraph",
               "content": [
                 {
+                  "text": "Learn more",
+                  "type": "text"
+                },
+                {
+                  "type": "hard_break"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
                   "type": "hard_break"
                 }
               ]
@@ -138,6 +150,7 @@
     "date": "Apr 01, 2019",
     "title": "Nursing trends",
     "author": "Shairose Ukanji",
+    "date_iso": "2019-04-01 00:00",
     "entities": [
       "203313675926548"
     ],
@@ -192,7 +205,7 @@
   "published": true,
   "slug": "nursing-trends",
   "path": null,
-  "full_slug": "regions/pakistan/entities/school-of-nursing-and-midwifery/departments/midwifery/news/nursing-trends",
+  "full_slug": "regions/pk/entities/sonam/departments/mw/news/nursing-trends",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -208,8 +221,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "770470dcee6bbf2efa6ffb79c6864cc99bc2ebd3",
-    "timestamp": "1785498002"
+    "token": "f6891ac35145d599fc9c655e55577abfe71c398d",
+    "timestamp": "1786618566"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -230,7 +243,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -250,7 +263,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "school-of-nursing-and-midwifery",
+      "slug": "sonam",
       "translated_slugs": []
     },
     {
@@ -270,7 +283,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "midwifery",
+      "slug": "mw",
       "translated_slugs": []
     },
     {
@@ -288,11 +301,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:27:35.344Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -305,7 +318,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203717244225396,
+  "current_version_id": 208314012437557,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

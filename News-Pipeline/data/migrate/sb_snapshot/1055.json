@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:10:32.241Z",
-  "published_at": "2026-07-30T15:10:32.225Z",
+  "updated_at": "2026-08-12T15:07:40.649Z",
+  "published_at": "2026-08-12T15:07:40.635Z",
   "id": 203713053356151,
   "uuid": "fee25180-6cd5-4ce7-804e-e961392beb7d",
   "is_folder": false,
@@ -100,6 +100,7 @@
     "date": "Mar 24, 2003",
     "title": "World TB Day",
     "author": "Iqra Paintern",
+    "date_iso": "2003-03-24 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -155,7 +156,7 @@
   "published": true,
   "slug": "world-tb-day",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/news/world-tb-day",
+  "full_slug": "regions/pk/entities/mc/news/world-tb-day",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -171,8 +172,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "65a2931cb758ef9854c40c5a3d0e39d2a2f90afb",
-    "timestamp": "1785497810"
+    "token": "9585050ed4f0d7763e3c381c69ff859175bfb19e",
+    "timestamp": "1786618207"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -193,7 +194,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -213,7 +214,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -231,11 +232,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:10:32.225Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -248,7 +249,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203713053526775,
+  "current_version_id": 208312977785804,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

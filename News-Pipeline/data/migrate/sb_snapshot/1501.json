@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:19:57.505Z",
-  "published_at": "2026-07-30T15:19:57.491Z",
+  "updated_at": "2026-08-12T15:08:13.807Z",
+  "published_at": "2026-08-12T15:08:13.792Z",
   "id": 203715368688437,
   "uuid": "ebc7935a-f1ea-42dc-970f-cdf3ddcd9487",
   "is_folder": false,
@@ -303,8 +303,10 @@
       }
     ],
     "date": "Feb 08, 2018",
+    "isTop": "",
     "title": "Graduates urged to cultivate innovation and research culture ",
     "author": "stephen.musyoka",
+    "date_iso": "2018-02-08 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -321,6 +323,10 @@
       "copyright": "",
       "fieldtype": "asset",
       "meta_data": {}
+    },
+    "isFeatured": {
+      "featured": true,
+      "featuredAt": "2026-08-12T09:16:47.134Z"
     },
     "show_share": true,
     "description": "Graduands at the Aga Khan University's 13th Convocation ceremony were urged to innovate and to cultivate a research culture to new approaches to long-standing problems.",
@@ -358,7 +364,7 @@
   "published": true,
   "slug": "graduates-urged-to-cultivate-innovation-and-research-culture",
   "path": null,
-  "full_slug": "regions/tanzania/news/graduates-urged-to-cultivate-innovation-and-research-culture",
+  "full_slug": "regions/tz/news/graduates-urged-to-cultivate-innovation-and-research-culture",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -374,8 +380,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "63ec0db92591307b135c62147a36bd608d8291ca",
-    "timestamp": "1785497837"
+    "token": "2ece4a4e2de1546e916e29827ebe92ce2b81f0a6",
+    "timestamp": "1786618257"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -396,7 +402,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "tanzania",
+      "slug": "tz",
       "translated_slugs": []
     },
     {
@@ -414,11 +420,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:19:57.491Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -431,7 +437,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203715368847973,
+  "current_version_id": 208313113556198,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

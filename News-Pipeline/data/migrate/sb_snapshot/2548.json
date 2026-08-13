@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:21:54.019Z",
-  "published_at": "2026-07-31T09:21:54.006Z",
+  "updated_at": "2026-08-12T14:00:05.402Z",
+  "published_at": "2026-08-12T14:00:05.387Z",
   "id": 203981266743734,
   "uuid": "fa94f963-b864-4ad2-8b4a-75f0e036cd8b",
   "is_folder": false,
@@ -165,16 +165,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1359833439860580352",
-        "_uid": "02fab45a-a558-03f1-b7e4-385cbc7655d6",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "a2234ad5-4f08-45a8-91f1-039f847ef3b8",
+        "items": [
+          {
+            "_uid": "a07e2a9c-6825-46f9-8a0c-0f0081e54cf0",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1359833439860580352",
+                "_uid": "a4cc591e-d476-4d55-a3b5-7455d2b26ef2",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -206,37 +254,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Feb 11, 2021",
     "title": "Prioritise public health to better prepare for future pandemics",
     "author": "Rasool Sarang",
+    "date_iso": "2021-02-11 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -290,7 +320,7 @@
   "published": true,
   "slug": "prioritise-public-health-to-better-prepare-for-future-pandemics",
   "path": null,
-  "full_slug": "regions/pakistan/news/prioritise-public-health-to-better-prepare-for-future-pandemics",
+  "full_slug": "regions/pk/news/prioritise-public-health-to-better-prepare-for-future-pandemics",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -306,8 +336,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "abcdaed7d630586c89995b7c0473269289e14b06",
-    "timestamp": "1785492465"
+    "token": "a7085dd61200ddd647e5272e749d6bd2e51a7b5a",
+    "timestamp": "1786616832"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -328,7 +358,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -346,11 +376,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:21:54.006Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -363,7 +393,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203981266902509,
+  "current_version_id": 208296367483136,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T15:36:14.469Z",
-  "published_at": "2026-07-30T15:36:14.455Z",
+  "updated_at": "2026-08-12T15:02:31.623Z",
+  "published_at": "2026-08-12T15:02:31.606Z",
   "id": 203719370327410,
   "uuid": "a4375905-5a7a-4568-9bf4-a212991fe65f",
   "is_folder": false,
@@ -34,8 +34,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "http://www.nhsrc.gov.pk/SiteImage/Misc/files/ClinicalManagemen.pdf",
-                        "uuid": null,
+                        "href": "https://a.storyblok.com/f/289824742951963/499158/7b813d0258/2269-richtext-1b8b83b369-clinicalmanagemen.pdf",
                         "anchor": null,
                         "custom": {},
                         "target": "_self",
@@ -141,6 +140,7 @@
     "date": "May 11, 2020",
     "title": "COVID-19: creating national treatment guidelines",
     "author": "Muhammad Altamash",
+    "date_iso": "2020-05-11 00:00",
     "entities": [
       "203313675500561"
     ],
@@ -196,7 +196,7 @@
   "published": true,
   "slug": "covid-19-creating-national-treatment-guidelines",
   "path": null,
-  "full_slug": "regions/pakistan/entities/medical-college/news/covid-19-creating-national-treatment-guidelines",
+  "full_slug": "regions/pk/entities/mc/news/covid-19-creating-national-treatment-guidelines",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -212,8 +212,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "49a850b93a5d4fe421de1db11d5bea6ae82e6e19",
-    "timestamp": "1785497566"
+    "token": "7e2bda4e6e8aec977cf951f804b77bb23af229d1",
+    "timestamp": "1786617740"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -234,7 +234,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -254,7 +254,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "medical-college",
+      "slug": "mc",
       "translated_slugs": []
     },
     {
@@ -272,11 +272,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T15:36:14.455Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -289,7 +289,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203719370500038,
+  "current_version_id": 208311711983733,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

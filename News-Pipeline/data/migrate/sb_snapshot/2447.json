@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:19:14.538Z",
-  "published_at": "2026-07-31T09:19:14.525Z",
+  "updated_at": "2026-08-12T14:00:12.953Z",
+  "published_at": "2026-08-12T14:00:12.938Z",
   "id": 203980613471258,
   "uuid": "b289c060-58a4-4697-a1cf-67a755bc6874",
   "is_folder": false,
@@ -133,8 +133,7 @@
                     {
                       "type": "link",
                       "attrs": {
-                        "href": "https://www.aku.edu/supportus/Documents/Breast Cancer - Case for Support V5H.pdf",
-                        "uuid": null,
+                        "href": "https://a.storyblok.com/f/289824742951963/1701252/efbab53962/2447-richtext-4046b95c57-breast-cancer-case-for-support-v5h.pdf",
                         "anchor": null,
                         "custom": {},
                         "target": "_blank",
@@ -201,16 +200,64 @@
         "pattern_mobile_height": "0"
       },
       {
-        "src": "https://twitter.com/i/status/1320415728961490946",
-        "_uid": "83ab66fd-9db3-bfac-517b-e1fe5aa5dd77",
-        "allow": "",
-        "title": "",
-        "height": "",
-        "caption": "",
-        "heading": "",
-        "loading": "lazy",
-        "rounded": true,
-        "sandbox": "",
+        "_uid": "3b6bf530-0ce1-44e2-a7ba-c2ae5005d234",
+        "items": [
+          {
+            "_uid": "01587fdc-431b-453e-abaf-e4cf9c3badd8",
+            "body": [
+              {
+                "url": "https://twitter.com/i/status/1320415728961490946",
+                "_uid": "a778075b-d02d-45fe-8aa9-982dfaeef322",
+                "align": "center",
+                "spacing": "",
+                "variant": "twitter",
+                "component": "social_embed",
+                "show_text": true
+              }
+            ],
+            "width": "",
+            "radius": "",
+            "spacing": {
+              "unit": "px",
+              "mobile": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              },
+              "desktop": {
+                "margin": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                },
+                "padding": {
+                  "top": null,
+                  "left": null,
+                  "right": null,
+                  "bottom": null
+                }
+              }
+            },
+            "component": "row_item",
+            "background_color": {
+              "color": "#FFFF",
+              "plugin": "native-color-picker"
+            }
+          }
+        ],
+        "width": "",
+        "height": null,
+        "radius": "",
         "spacing": {
           "unit": "px",
           "mobile": {
@@ -242,37 +289,19 @@
             }
           }
         },
-        "component": "iframe",
-        "cta_label": "",
-        "thumbnail": {
-          "id": null,
-          "alt": "",
-          "name": "",
-          "focus": "",
-          "title": "",
-          "source": "",
-          "filename": "",
-          "copyright": "",
-          "fieldtype": "asset",
-          "meta_data": {}
-        },
-        "description": {
-          "type": "doc",
-          "content": []
-        },
-        "aspect_ratio": "16:9",
-        "display_mode": "inline",
-        "content_align": "left",
-        "referrer_policy": "",
-        "allow_fullscreen": true,
-        "show_play_overlay": true,
-        "show_external_link": false,
-        "external_link_label": ""
+        "component": "row",
+        "align_items": "center",
+        "justify_content": "center",
+        "background_color": {
+          "color": "#FFFF",
+          "plugin": "native-color-picker"
+        }
       }
     ],
     "date": "Oct 25, 2020",
     "title": "Breast cancer is one of Pakistan's deadliest diseases",
     "author": "Rasool Sarang",
+    "date_iso": "2020-10-25 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -326,7 +355,7 @@
   "published": true,
   "slug": "breast-cancer-is-one-of-pakistan-s-deadliest-diseases",
   "path": null,
-  "full_slug": "regions/pakistan/news/breast-cancer-is-one-of-pakistan-s-deadliest-diseases",
+  "full_slug": "regions/pk/news/breast-cancer-is-one-of-pakistan-s-deadliest-diseases",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -342,8 +371,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "603e7b671718679ba7146bf2b44ec90adda89fc4",
-    "timestamp": "1785492467"
+    "token": "341f0f6d3267d7bef41a8f370c40107cb53858b2",
+    "timestamp": "1786616835"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -364,7 +393,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -382,11 +411,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:19:14.525Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -399,7 +428,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203980613655549,
+  "current_version_id": 208296398387554,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

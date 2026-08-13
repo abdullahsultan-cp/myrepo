@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-30T14:48:48.946Z",
-  "published_at": "2026-07-30T14:48:48.930Z",
+  "updated_at": "2026-08-12T15:06:49.659Z",
+  "published_at": "2026-08-12T15:06:49.644Z",
   "id": 203707714907721,
   "uuid": "f8112e8a-2fd4-4e9b-a401-7c7c48d8a3f5",
   "is_folder": false,
@@ -24,7 +24,28 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Nooreen Maqsood Karim, a student in AKU's Dental Hygiene Programme, applied her studies to help residents of her hometown, Hunza, improve their dental hygiene.",
+                  "text": "Click ",
+                  "type": "text"
+                },
+                {
+                  "text": "here",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://view.vzaar.com/6482301/player",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "text": " to watch her success story.",
                   "type": "text"
                 }
               ]
@@ -82,6 +103,7 @@
     "date": "May 17, 2016",
     "title": "Improving healthcare in my hometown",
     "author": "Afifa Batool",
+    "date_iso": "2016-05-17 00:00",
     "entities": [],
     "isGlobal": true,
     "component": "news_article",
@@ -100,7 +122,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Click  here  to watch her success story.",
+    "description": "Nooreen Maqsood Karim, a student in AKU's Dental Hygiene Programme, applied her studies to help residents of her hometown, Hunza, improve their dental hygiene.",
     "show_social": false,
     "banner_image": {
       "id": 203662527214441,
@@ -135,7 +157,7 @@
   "published": true,
   "slug": "improving-healthcare-in-my-hometown",
   "path": null,
-  "full_slug": "regions/pakistan/news/improving-healthcare-in-my-hometown",
+  "full_slug": "regions/pk/news/improving-healthcare-in-my-hometown",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -151,8 +173,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "776ff619d109b8d4ff40ff5a1e088cb61ca5e38b",
-    "timestamp": "1785497768"
+    "token": "55af95cbde8adffaba536d72b7104d1c20c9d1ec",
+    "timestamp": "1786618136"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -173,7 +195,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -191,11 +213,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-30T14:48:48.930Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -208,7 +230,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203707715234588,
+  "current_version_id": 208312768958994,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

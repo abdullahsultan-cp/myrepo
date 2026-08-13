@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:27:02.342Z",
-  "published_at": "2026-07-31T09:27:02.328Z",
+  "updated_at": "2026-08-12T15:00:19.851Z",
+  "published_at": "2026-08-12T15:00:19.832Z",
   "id": 203982529607159,
   "uuid": "23199bed-1b74-4dc6-a39d-8fba0568e96b",
   "is_folder": false,
@@ -523,13 +523,12 @@
                 {
                   "text": "Others, where applicable.",
                   "type": "text"
-                },
-                {
-                  "type": "hard_break"
-                },
-                {
-                  "type": "hard_break"
-                },
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
                 {
                   "text": "Please submit:",
                   "type": "text"
@@ -730,6 +729,7 @@
     "date": "Oct 18, 2021",
     "title": "2021 Winter Afghan Digital Scholarship Award",
     "author": "Layal.N.Mohammad",
+    "date_iso": "2021-10-18 00:00",
     "entities": [
       "203313951169923"
     ],
@@ -785,7 +785,7 @@
   "published": true,
   "slug": "2021-winter-afghan-digital-scholarship-award",
   "path": null,
-  "full_slug": "regions/united-kingdom/entities/institute-for-the-study-of-muslim-civilisations/news/2021-winter-afghan-digital-scholarship-award",
+  "full_slug": "regions/uk/entities/ismc/news/2021-winter-afghan-digital-scholarship-award",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -801,8 +801,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "5fe480542048e8fd985fdb2bb6227a9b18b5353f",
-    "timestamp": "1785492900"
+    "token": "51e82a9193dcc6e502e0f3ea149b4a83b2904868",
+    "timestamp": "1786617540"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -823,7 +823,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "united-kingdom",
+      "slug": "uk",
       "translated_slugs": []
     },
     {
@@ -843,7 +843,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "institute-for-the-study-of-muslim-civilisations",
+      "slug": "ismc",
       "translated_slugs": []
     },
     {
@@ -861,11 +861,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:27:02.328Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -878,7 +878,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203982529782190,
+  "current_version_id": 208311172141649,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {

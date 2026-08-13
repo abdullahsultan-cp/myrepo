@@ -7,8 +7,8 @@
   "deleted_at": null,
   "sort_by_date": null,
   "tag_list": [],
-  "updated_at": "2026-07-31T09:35:12.175Z",
-  "published_at": "2026-07-31T09:35:12.162Z",
+  "updated_at": "2026-08-12T15:10:58.187Z",
+  "published_at": "2026-08-12T15:10:58.174Z",
   "id": 203984535988114,
   "uuid": "2ce4fffe-c511-4b21-99fa-c92297e4ea1b",
   "is_folder": false,
@@ -24,8 +24,28 @@
               "type": "paragraph",
               "content": [
                 {
-                  "text": "Survey Report",
+                  "text": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-preventable disease in the country. To augment this effort, Pakistan started its National Immunization Support Project (NISP) in 2016 to coordinate efforts for vaccination and reduce vaccine-preventable diseases. Additionally, to address the recurring endemic poliovirus in the country, the National and Provincial Emergency Operations Centers (NEOC and PEOCs) for polio eradication identified 40 union councils as Super-High Risk Union Councils (SHRUCs) for targeted interventions. The national EPI and the co-financing partners of NISP (the World Bank; the United States Agency for International Development (USAID); Gavi, the Vaccine Alliance; and the Bill and Melinda Gates Foundation) agreed to carry out a Union Council (UC)-specific vaccination survey in these SHRUCs. to read the report ",
                   "type": "text"
+                },
+                {
+                  "text": "click here",
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://www.aku.edu/news/Documents/TPVICS_SHRUCS_R2_Survey_2022_Report.pdf",
+                        "uuid": null,
+                        "anchor": null,
+                        "custom": {},
+                        "target": "_blank",
+                        "linktype": "url"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "hard_break"
                 }
               ]
             }
@@ -82,6 +102,7 @@
     "date": "Feb 06, 2023",
     "title": "Supplementary Immunization Coverage Survey in Super High Risk Union Councils of Pakistan",
     "author": "Akber Ali",
+    "date_iso": "2023-02-06 00:00",
     "entities": [
       "203313659366173"
     ],
@@ -102,7 +123,7 @@
       "meta_data": {}
     },
     "show_share": true,
-    "description": "Vaccination programs are key to averting vaccine-preventable diseases. The Expanded Program on Immunization (EPI) was launched in 1994 in Pakistan. Since that time, the Program has been delivering services extensively to reduce the burden of vaccine-preventable disease in the country. To augment this effort, Pakistan started its National Immunization Support Project (NISP) in 2016 to coordinate efforts for vaccination and reduce vaccine-preventable diseases. Additionally, to address the recurring endemic poliovirus in the country, the National and Provincial Emergency Operations Centers (NEOC and PEOCs) for polio eradication identified 40 union councils as Super-High Risk Union Councils (SHRUCs) for targeted interventions. The national EPI and the co-financing partners of NISP (the World Bank; the United States Agency for International Development (USAID); Gavi, the Vaccine Alliance; and the Bill and Melinda Gates Foundation) agreed to carry out a Union Council (UC)-specific vaccination survey in these SHRUCs. to read the report  click here",
+    "description": "Survey Report",
     "show_social": false,
     "banner_image": {
       "id": 203694865285327,
@@ -137,7 +158,7 @@
   "published": true,
   "slug": "supplementary-immunization-coverage-survey-in-super-high-risk-union-councils-of-pakistan",
   "path": null,
-  "full_slug": "regions/pakistan/entities/centre-of-excellence-in-women-and-child-health/news/supplementary-immunization-coverage-survey-in-super-high-risk-union-councils-of-pakistan",
+  "full_slug": "regions/pk/entities/coe-wch/news/supplementary-immunization-coverage-survey-in-super-high-risk-union-councils-of-pakistan",
   "default_root": null,
   "disble_fe_editor": false,
   "disable_fe_editor": false,
@@ -153,8 +174,8 @@
   "meta_data": null,
   "imported_at": null,
   "preview_token": {
-    "token": "ca183d9895c512da694c61a8028c3a4c135602b7",
-    "timestamp": "1785497960"
+    "token": "dd1ad058aead771d5f8d6c9f558039f2beed5d61",
+    "timestamp": "1786618492"
   },
   "pinned": false,
   "breadcrumbs": [
@@ -175,7 +196,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "pakistan",
+      "slug": "pk",
       "translated_slugs": []
     },
     {
@@ -195,7 +216,7 @@
       "disble_fe_editor": false,
       "disable_fe_editor": false,
       "path": null,
-      "slug": "centre-of-excellence-in-women-and-child-health",
+      "slug": "coe-wch",
       "translated_slugs": []
     },
     {
@@ -213,11 +234,11 @@
   "expire_at": null,
   "first_published_at": "2026-07-31T09:35:12.162Z",
   "last_author": {
-    "id": 131176408045053,
-    "userid": "rabee.amir@cloudprimero.com",
-    "friendly_name": "Muhammad Rabee Amir"
+    "id": 176040331061898,
+    "userid": "jahanzaib.akhter@cloudprimero.com",
+    "friendly_name": "Jahanzaib Akhter"
   },
-  "last_author_id": 131176408045053,
+  "last_author_id": 176040331061898,
   "user_ids": [
     131176408045053
   ],
@@ -230,7 +251,7 @@
   "is_scheduled": null,
   "scheduled_dates": null,
   "ideas": [],
-  "current_version_id": 203984536152481,
+  "current_version_id": 208313786919590,
   "variant_type": null,
   "experiment_ids": [],
   "stage": {
