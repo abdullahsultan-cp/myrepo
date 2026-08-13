@@ -100,6 +100,65 @@ TOOL_EXTRAS = {
         "requests>=2.31\n"
         "azure-storage-blob>=12.19\n"
     ),
+    # Two ways to supply the three secrets, both templated, so nobody has to
+    # guess the shape. Committed; the filled-in versions are gitignored.
+    "tools/sites.example.json": (
+        "{\n"
+        '  "_comment": [\n'
+        '    "Copy to sites.json (gitignored) and fill in the three values",\n'
+        '    "marked PUT_..._HERE. Or use tools/env.example instead and keep",\n'
+        '    "nothing on disk. python tools/sb.py setup writes this file for",\n'
+        '    "you with the name, space_id and region already filled in.",\n'
+        '    "",\n'
+        '    "management_token   Storyblok -> My Account -> Personal access",\n'
+        '    "                   tokens. A space-level token is NOT enough:",\n'
+        '    "                   internal_tags, field_types, tasks and",\n'
+        '    "                   app_provisions all reject it.",\n'
+        '    "connection_string  Azure -> Storage account -> Access keys.",\n'
+        '    "tier               Cool is right for a backup. Not Archive:",\n'
+        '    "                   that needs hours of rehydration before a",\n'
+        '    "                   file can be read, so it cannot serve a",\n'
+        '    "                   restore."\n'
+        "  ],\n"
+        '  "sites": [\n'
+        "    {\n"
+        '      "name": "AKUH",\n'
+        '      "space_id": "PUT_THE_SPACE_ID_HERE",\n'
+        '      "region": "eu",\n'
+        '      "repo": ".",\n'
+        '      "management_token": "PUT_A_STORYBLOK_PERSONAL_ACCESS_TOKEN_HERE",\n'
+        '      "assets": {\n'
+        '        "backend": "azure",\n'
+        '        "container": "storyblok-backup",\n'
+        '        "prefix": "AKUH",\n'
+        '        "tier": "Cool",\n'
+        '        "connection_string": "PUT_THE_AZURE_CONNECTION_STRING_HERE"\n'
+        "      }\n"
+        "    }\n"
+        "  ]\n"
+        "}\n"
+    ),
+    "tools/env.example": (
+        "# The other way to supply credentials: nothing on disk at all.\n"
+        "# Set these in your shell before running, and tools/sb.py builds the\n"
+        "# config in memory. This is what a scheduled job should use.\n"
+        "#\n"
+        "# Windows PowerShell:   $env:SB_TOKEN = \"...\"\n"
+        "# cmd.exe:              set SB_TOKEN=...\n"
+        "# bash:                 export SB_TOKEN=...\n"
+        "#\n"
+        "# SB_TOKEN works for whichever repo you are in; SB_TOKEN_AKUH,\n"
+        "# SB_TOKEN_AKU or SB_TOKEN_AKUEB are per-site if you prefer.\n"
+        "\n"
+        "SB_TOKEN=a-storyblok-personal-access-token\n"
+        "AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;"
+        "AccountName=...;AccountKey=...;EndpointSuffix=core.windows.net\n"
+        "\n"
+        "# Optional; these are the defaults.\n"
+        "SB_CONTAINER=storyblok-backup\n"
+        "SB_PREFIX=AKUH\n"
+        "SB_TIER=Cool\n"
+    ),
     # CRLF on purpose: cmd.exe mis-parses a .cmd file with bare LF endings.
     "backup.cmd": (
         "@echo off\r\n"

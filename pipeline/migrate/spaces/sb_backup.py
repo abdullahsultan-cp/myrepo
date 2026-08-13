@@ -306,7 +306,29 @@ def verify_assets(assets, store, space_id, prev_sha, workers=6, quick=False):
 # stories
 # --------------------------------------------------------------------------
 
-def download_stories(api, token, stories, outdir, workers=5):
+def read_prev_stories(outdir):
+    """{story id: updated_at} from the manifest the last run committed.
+
+    What makes a repeat backup quick. The story list arrives with updated_at
+    already on it, so a story whose timestamp has not moved and whose file is
+    still on disk needs no request at all -- and on a weekly run that is nearly
+    all of them. Without this, AKU's 7,126 stories plus 7,126 published versions
+    are re-fetched in full every time, which is forty minutes to learn that
+    nothing changed.
+    """
+    path = os.path.join(outdir, "manifest_stories.csv")
+    if not os.path.exists(path):
+        return {}
+    out = {}
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            if row.get("id") and row.get("updated_at"):
+                out[row["id"]] = row["updated_at"]
+    return out
+
+
+def download_stories(api, token, stories, outdir, workers=5, prev=None,
+                     full=False):
     """One file per story, holding the full draft content.
 
     The list endpoint omits `content`, so each story needs its own GET. Named
@@ -317,6 +339,25 @@ def download_stories(api, token, stories, outdir, workers=5):
     story_dir = os.path.join(outdir, "stories")
     os.makedirs(story_dir, exist_ok=True)
     keep = {str(s["id"]) for s in stories if s.get("id") is not None}
+    prev = {} if full else (prev or {})
+
+    # Untouched since the last run, and still on disk: no request needed. This is
+    # also what makes an interrupted run cheap to continue -- whatever it already
+    # wrote is simply skipped.
+    todo, reused = [], 0
+    for st in stories:
+        sid = str(st.get("id"))
+        was = prev.get(sid)
+        if (was and st.get("updated_at") == was
+                and os.path.exists(os.path.join(story_dir, f"{sid}.json"))):
+            reused += 1
+            continue
+        todo.append(st)
+    if reused:
+        print(f"      {reused} unchanged since the last run, "
+              f"{len(todo)} to fetch", flush=True)
+    stories = todo
+
     ok, failed, errors, lock = 0, 0, [], threading.Lock()
     # Collected while each story is in hand. The manifest needs the component
     # and the asset references, and re-reading several thousand files afterwards
@@ -365,11 +406,25 @@ def download_stories(api, token, stories, outdir, workers=5):
             os.remove(os.path.join(story_dir, fn))
             removed += 1
 
-    return {"saved": ok, "failed": failed, "deleted_since_last_run": removed,
+    # The skipped stories still need their manifest row, so their component and
+    # asset count are read back off disk. Cheap: local reads, no network.
+    for sid in keep - {str(k) for k in meta}:
+        st = load_json(os.path.join(story_dir, f"{sid}.json"))
+        if not st:
+            continue
+        content = st.get("content") or {}
+        meta[int(sid)] = {"component": content.get("component") or "",
+                          "assets": len(_asset_urls(content)),
+                          "updated_at": st.get("updated_at") or "",
+                          "uuid": st.get("uuid") or ""}
+
+    return {"saved": ok, "reused": reused, "failed": failed,
+            "deleted_since_last_run": removed,
             "errors": sorted(errors)[:50], "meta": meta}
 
 
-def download_published(space_id, region, token, stories, outdir, workers=5):
+def download_published(space_id, region, token, stories, outdir, workers=5,
+                       prev=None, full=False):
     """The PUBLISHED version of every published story, beside the drafts.
 
     This is not a nicety. The Management API returns the draft, and on AKUH 231
@@ -389,6 +444,19 @@ def download_published(space_id, region, token, stories, outdir, workers=5):
     live = [s for s in stories
             if s.get("published") and not s.get("is_folder") and s.get("id")]
     keep = {str(s["id"]) for s in live}
+    prev = {} if full else (prev or {})
+    reused = 0
+    fetch = []
+    for st in live:
+        sid = str(st["id"])
+        if (prev.get(sid) == st.get("updated_at")
+                and os.path.exists(os.path.join(pub_dir, f"{sid}.json"))):
+            reused += 1
+            continue
+        fetch.append(st)
+    if reused:
+        print(f"      {reused} unchanged, {len(fetch)} to fetch", flush=True)
+    live = fetch
     ok, failed, errors, lock = 0, 0, [], threading.Lock()
 
     def one(st):
@@ -428,8 +496,8 @@ def download_published(space_id, region, token, stories, outdir, workers=5):
             os.remove(os.path.join(pub_dir, fn))
             removed += 1
 
-    return {"saved": ok, "failed": failed, "removed": removed,
-            "errors": sorted(errors)[:50]}
+    return {"saved": ok, "reused": reused, "failed": failed,
+            "removed": removed, "errors": sorted(errors)[:50]}
 
 
 # --------------------------------------------------------------------------
@@ -845,11 +913,16 @@ Then write a `sites.json` (never commit it):
 ```
 
 ```bash
-pip install requests
-python tools/sb_backup.py --config sites.json --site {name} --check
+python -m pip install -r tools/requirements.txt
+python tools/sb.py doctor
 ```
 
-`--check` writes nothing. If it prints `ok`, the credentials work.
+`doctor` writes nothing. If it says READY, the credentials work.
+
+There are two ways to supply them, both templated in `tools/`:
+`sites.example.json` (a file, gitignored once filled in) or `env.example`
+(environment variables, nothing on disk). `python tools/sb.py setup` writes the
+file for you with the name, space id and region already filled in.
 
 ---
 
@@ -876,6 +949,11 @@ which costs nothing; `--deep` reads the bytes back instead and will bill egress.
 because skipping unchanged files by size cannot see corruption that kept the
 file's size.
 
+**Every command here is safe to interrupt and re-run.** A backup skips stories
+whose `updated_at` has not moved and assets already stored at the right size, so
+continuing after Ctrl-C costs only what was actually left. `--full` forces a
+complete re-fetch if you ever need one.
+
 ---
 
 ## 2 · Repair a live space — `--mode in-place`
@@ -883,6 +961,14 @@ file's size.
 Use this when the space still exists and something is wrong: a bad edit, a broken
 import, a wrecked story. It finds each story **by its own id** and writes the
 saved content back.
+
+Shortest form:
+
+```bash
+python tools/sb.py restore-story 12345 --apply
+```
+
+The long form, with all the options:
 
 ```bash
 # What has drifted from the backup? Writes nothing.
@@ -916,6 +1002,31 @@ Publish state is mirrored from the backup, so a draft is not pushed live just
 because it was restored. `--no-publish` keeps everything as drafts.
 
 ---
+
+## 2b · An asset was deleted — `--mode assets`
+
+The most common repair, and the reason the media is kept separately. Someone
+deletes an image in Storyblok; the bytes are still in the bucket, but the asset
+row is gone and every story that used it renders a broken image.
+
+```bash
+python tools/sb.py restore-assets            # what is missing, and who used it
+python tools/sb.py restore-assets --apply
+```
+
+It uploads the file from the bucket back into the space and then rewrites every
+story that referenced it — a re-upload gets a new id and a new url, so uploading
+alone fixes nothing. Each story is read live and only the asset reference changes,
+so anything edited since the backup survives, and a story holding unpublished work
+is not republished as a side effect.
+
+To find out what a given asset is used by before touching anything:
+
+```bash
+python tools/sb.py index
+sqlite3 storyblok/index.sqlite   "SELECT s.full_slug FROM story_assets sa
+     JOIN stories s ON s.id = sa.story_id WHERE sa.asset_id = 12345;"
+```
 
 ## 3 · Rebuild a lost space — `--mode rebuild`
 
@@ -1410,8 +1521,10 @@ def backup(site, only, args):
         else:
             counts["stories"] = save(outdir, "stories", stories)
             print(f"    index: {len(stories)}; fetching draft content")
-            res = download_stories(api, token, stories, outdir, args.workers)
-            counts["stories_with_content"] = res["saved"]
+            prev_stories = read_prev_stories(outdir)
+            res = download_stories(api, token, stories, outdir, args.workers,
+                                   prev_stories, args.full)
+            counts["stories_with_content"] = res["saved"] + res["reused"]
             story_meta = res["meta"]
             if res["failed"]:
                 errors["stories_content"] = res["errors"]
@@ -1437,8 +1550,8 @@ def backup(site, only, args):
                       f"({drifted} story(ies) differ from their draft)")
                 pub = download_published(space_id, site.get("region", "eu"),
                                          delivery, stories, outdir,
-                                         args.workers)
-                counts["stories_published"] = pub["saved"]
+                                         args.workers, prev_stories, args.full)
+                counts["stories_published"] = pub["saved"] + pub["reused"]
                 counts["stories_draft_differs"] = drifted
                 if pub["failed"]:
                     errors["stories_published"] = pub["errors"]
@@ -1608,6 +1721,10 @@ def main():
                          "that kept the file's size.")
     ap.add_argument("--no-index-db", action="store_true",
                     help="skip building index.sqlite")
+    ap.add_argument("--full", action="store_true",
+                    help="re-fetch every story even if its updated_at has not "
+                         "moved. The default skips unchanged ones, which is what "
+                         "makes a repeat or interrupted run quick.")
     ap.add_argument("--no-published", action="store_true",
                     help="skip the published versions and back up drafts only")
     ap.add_argument("--collaborators", action="store_true",
