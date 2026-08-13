@@ -2,11 +2,11 @@
 
 Three sites, three Storyblok spaces, three GitHub repos:
 
-| Site | Space | Backup repo |
-|---|---|---|
-| **AKUH** | its own | `akuh-storyblok-backup` |
-| **AKU** | its own | `aku-storyblok-backup` |
-| **AKUEB** | its own | `akueb-storyblok-backup` |
+| Site | Space | Backup repo | Media |
+|---|---|---|---|
+| **AKUH** | `286308248262721` | `Cloud-Primero/akuh-backups` | `storyblok-backup/AKUH/` |
+| **AKU** | `289824742951963` | `Cloud-Primero/aku-backups` | `storyblok-backup/AKU/` |
+| **AKUEB** | `289824724335130` | `Cloud-Primero/aku-eb-backups` | `storyblok-backup/AKUEB/` |
 
 Each space is dumped complete into its own repo, with git history, and can be put
 back. Nothing is shared between the three — different component libraries,
@@ -44,7 +44,7 @@ sb_storage.py    where binaries go: a folder, or Azure Blob  imported, never run
 sb_portal.py     builds assets-portal.html                   imported, never run
 sb_backup.py     space -> repo + container    READS ONLY against Storyblok
 sb_restore.py    repo + container -> space    WRITES
-test_spaces_e2e.py   121 checks against a fake API. No network, no tokens.
+test_spaces_e2e.py   133 checks against a fake API. No network, no tokens.
 ```
 
 **The backup is in two halves.** The text — schema, settings, every story, the
@@ -103,17 +103,18 @@ repo did not migrate. Everything about it defaults to refusing.
 
 ## Setup
 
-Git LFS must be installed — asset binaries go through it.
+Normally you do not use this folder at all — work inside the backup repo, which
+carries its own copy (see the top of this file). Use this only to change the code,
+or to set up a site from scratch:
 
 ```powershell
 copy config\sites.example.json config\sites.json
-notepad config\sites.json     # space id, token, repo path, assets_dir per site
+notepad config\sites.json     # space id, token, repo path, assets block per site
 python pipeline\migrate\spaces\sb_backup.py --check
 ```
 
-Git LFS is only needed if you commit binaries into the repo — i.e. if you leave
-`assets_dir` unset. With the media on a bucket the repo is text-only and needs no
-LFS at all.
+Git LFS is **not** needed with the media on a bucket — the repo is text-only. It is
+required only if you leave the `assets` block out and commit binaries instead.
 
 Clone the three (empty, private) GitHub repos to the paths you put in
 `config/sites.json` first — then `origin` is already set and `--push` works. If a
@@ -342,6 +343,30 @@ catches a missing or replaced file but not corruption in place, which is what
 kept the size — eight bytes overwritten by eight others — so **`--repair`**
 deep-verifies first and forces a re-fetch of whatever fails. A test covers exactly
 that blind spot.
+
+## Surviving a reorganisation
+
+AKU is mid-development and whole sections — news, events, blogs — are being moved
+to their proper places. That is the case this was built to survive, and it needs no
+configuration:
+
+- **Stories are files named by id, not slug.** A move changes `full_slug` and
+  `parent_id` but not the id, so the file stays put and git records a small content
+  diff. A slug-named file would turn every move into a delete plus an add and throw
+  away that story's history.
+- `manifest_stories.csv` is one sorted line per story, so a move is a moved line.
+  `python tools/sb.py changed HEAD~1` reports exactly what moved, appeared,
+  vanished or was edited.
+- **Restore finds stories by id**, so a story that has moved is still restorable
+  without knowing where it went.
+- New components and content types are picked up automatically — nothing here
+  holds a list of what a story may be.
+- Asset URLs do not change when a story moves, so the asset mapping is unaffected.
+
+The one thing that does break history is **deleting a story and re-creating it**
+at the new location instead of moving it: the new copy has a new id, so the backup
+records one story gone and another arrived. That is the same reason this repo's
+CLAUDE.md says never to delete and re-upload.
 
 ## Draft and published are two different backups
 

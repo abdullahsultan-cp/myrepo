@@ -20,6 +20,9 @@ sb.py — the one command for a Storyblok backup repo. Run from the repo root.
     python tools/sb.py index        rebuild index.sqlite
     python tools/sb.py orphans      bucket files no longer in the space, and
                                     what they cost to keep
+    python tools/sb.py changed [rev]     what moved, appeared, vanished or was
+                                    edited since a commit (default HEAD~1).
+                                    For a space being reorganised.
     python tools/sb.py restore-story <id> [--apply]
     python tools/sb.py restore-assets [--apply]
     python tools/sb.py rebuild <empty space id> [--apply]
@@ -372,6 +375,83 @@ def cmd_rebuild(argv):
                 *argv[1:])
 
 
+def cmd_changed(argv):
+    """What moved, appeared, vanished or was edited since an earlier commit.
+
+    Built for a space under active reorganisation: AKU is mid-development and
+    whole sections -- news, events, blogs -- are being moved to their proper
+    places. A move changes a story's slug and parent but not its id, so the
+    backup handles it without losing history; this is how you SEE it happen.
+
+    Diffs manifest_stories.csv between a revision and the working tree, which is
+    the whole reason that file is one sorted line per story.
+    """
+    rev = argv[0] if argv and not argv[0].startswith("-") else "HEAD~1"
+    rel = "storyblok/manifest_stories.csv"
+
+    old = subprocess.run(["git", "-C", REPO, "show", f"{rev}:{rel}"],
+                         capture_output=True, text=True, encoding="utf-8",
+                         errors="replace")
+    if old.returncode != 0:
+        print(f"  cannot read {rel} at {rev}:\n  "
+              f"{(old.stderr or '').strip()[:200]}")
+        return 1
+
+    import csv
+    import io
+
+    def rows(text):
+        out = {}
+        for r in csv.DictReader(io.StringIO(text.lstrip("﻿"))):
+            if r.get("id"):
+                out[r["id"]] = r
+        return out
+
+    before = rows(old.stdout)
+    with open(os.path.join(REPO, rel), encoding="utf-8-sig", newline="") as f:
+        after = rows(f.read())
+
+    added = [after[i] for i in after.keys() - before.keys()]
+    gone = [before[i] for i in before.keys() - after.keys()]
+    moved, edited, republished = [], [], []
+    for i in before.keys() & after.keys():
+        b, a = before[i], after[i]
+        if b.get("full_slug") != a.get("full_slug"):
+            moved.append((b, a))
+        elif b.get("updated_at") != a.get("updated_at"):
+            edited.append(a)
+        if b.get("state") != a.get("state"):
+            republished.append((b, a))
+
+    print(f"\n  {rev} -> now\n")
+    print(f"  moved        {len(moved):>5}")
+    print(f"  added        {len(added):>5}")
+    print(f"  removed      {len(gone):>5}")
+    print(f"  edited       {len(edited):>5}")
+    print(f"  state change {len(republished):>5}")
+
+    if moved:
+        print("\n  moved:")
+        for b, a in sorted(moved, key=lambda x: x[1]["full_slug"])[:40]:
+            print(f"    {b['id']:<18} {b['full_slug']}")
+            print(f"    {'':<18}   -> {a['full_slug']}")
+        if len(moved) > 40:
+            print(f"    ... and {len(moved) - 40} more")
+        print("\n  Ids are unchanged, so each of those kept its history and is "
+              "still\n  restorable by id. Nothing was re-created.")
+    for label, items in (("added", added), ("removed", gone)):
+        if items:
+            print(f"\n  {label}:")
+            for r in sorted(items, key=lambda x: x.get("full_slug") or "")[:20]:
+                print(f"    {r['id']:<18} {r.get('full_slug')}")
+            if len(items) > 20:
+                print(f"    ... and {len(items) - 20} more")
+    if gone:
+        print("\n  Removed stories are still in git history, and their assets "
+              "are still\n  in the bucket - see `sb.py restore-assets`.")
+    return 0
+
+
 def cmd_orphans(argv):
     """Bucket files the space no longer has an asset row for.
 
@@ -426,6 +506,7 @@ COMMANDS = {
     "init": cmd_init, "setup": cmd_setup, "doctor": cmd_doctor, "backup": cmd_backup,
     "audit": cmd_audit, "verify": cmd_verify, "repair": cmd_repair,
     "index": cmd_index, "orphans": cmd_orphans,
+    "changed": cmd_changed,
     "restore-story": cmd_restore_story, "restore-assets": cmd_restore_assets,
     "rebuild": cmd_rebuild,
 }
