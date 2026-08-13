@@ -30,6 +30,12 @@
 
 /News-Pipeline/data/raw/
 /News-Pipeline/data/cleaned/
+# ...except the three the tests load. Without them `pytest` fails 7 times on a
+# fresh clone — and the pre-push hook runs pytest, so a new person cannot push
+# until they have run a 9-minute pipeline. Test fixtures are source, not output.
+!/News-Pipeline/data/cleaned/35.json
+!/News-Pipeline/data/cleaned/99.json
+!/News-Pipeline/data/cleaned/100.json
 /News-Pipeline/data/normalized/
 /News-Pipeline/data/richtext/
 /News-Pipeline/data/richtext_enhanced/
