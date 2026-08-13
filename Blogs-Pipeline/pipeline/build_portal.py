@@ -53,6 +53,31 @@ OUT = os.path.join(P.PIPELINE, "out", "blogs-portal.html")
 
 # --------------------------------------------------------------- rich text
 _ON_DISK = set()
+_UPLOADED = {}       # local filename -> the live Storyblok URL
+
+
+def media_src(name):
+    """Where the portal should point for this image.
+
+    **The uploaded URL first, the local file only as a fallback.** The portal
+    is committed so anybody can open it from a clone, but `assets/` is
+    gitignored — 26 MB of regenerable media — so a portal pointing at
+    `../assets/Blogs/media/...` arrived with 181 broken images and was useless
+    to everyone who had not run the pipeline themselves.
+
+    `data/asset_map.json` is committed and holds the a.storyblok.com URL for
+    every file that has been uploaded, so the portal now resolves through it
+    and needs nothing on disk. The local path is kept for anything not yet
+    uploaded, which is the only case where a clone cannot show the image.
+    """
+    if not name:
+        return ""
+    obj = _UPLOADED.get(name)
+    if obj and obj.get("filename"):
+        return obj["filename"]
+    return "../assets/Blogs/media/" + name
+
+
 _AUTHORS = {}        # SharePoint AuthorManagement, id -> record
 _AUTHOR_PICS = {}    # author id -> local photo filename
 
@@ -104,7 +129,7 @@ def render_richtext(doc):
                 # Relative from out/ to the media folder. Opened from disk the
                 # browser resolves it and the real image appears; nothing is
                 # embedded, so the file stays small.
-                rel = "../assets/Blogs/media/" + name
+                rel = media_src(name)
                 return (f'<figure class="img"><img src="{html.escape(rel)}" '
                         f'alt="" loading="lazy">'
                         f'<figcaption>{html.escape(name)}</figcaption></figure>')
@@ -205,7 +230,7 @@ def plan_for(content, routing, on_disk):
     else:
         bloks.append(dict(component="banner_image", state="ok", field="banner_image",
                           note=banner, fix="",
-                          img="../assets/Blogs/media/" + banner))
+                          img=media_src(banner)))
 
     body = content.get("body")
     chars = len(text_of(body))
@@ -286,7 +311,7 @@ def plan_for(content, routing, on_disk):
             fix="" if (pic and plain) else
                 ("photograph but no biography in AuthorManagement" if pic
                  else "biography but no AuthorImage named for this author"),
-            img=("../assets/Blogs/media/" + pic) if pic else "",
+            img=media_src(pic),
             bio=plain))
     else:
         # Closed, not outstanding. Ids 4 and 5 were deleted from
@@ -404,6 +429,12 @@ def main():
             routing[str(r["id"])] = r
     on_disk = set(os.listdir(P.MEDIA_DIR)) if os.path.isdir(P.MEDIA_DIR) else set()
     _ON_DISK.update(on_disk)
+    amap = os.path.join(P.DATA, "asset_map.json")
+    if os.path.exists(amap):
+        with open(amap, encoding="utf-8") as f:
+            _UPLOADED.update(json.load(f))
+        # An uploaded file is showable whether or not it is on this machine.
+        _ON_DISK.update(_UPLOADED)
     load_entity_folders()
     for name, target in (("authors.json", _AUTHORS), ("author_photos.json", _AUTHOR_PICS)):
         path = os.path.join(P.DATA, "source", name)

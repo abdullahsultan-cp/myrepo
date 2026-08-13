@@ -193,6 +193,15 @@ front-end developer. `ensure_folder` has a hard stop; a missing folder is an
 error with instructions, not something to invent. Asset folders are a different
 namespace and *are* created.
 
+**A portal must open from a bare clone.** Someone has to be able to `git clone`,
+double-click the HTML, and see it work — no Python, no database, no 3.5-hour
+media download. The people who most need a portal are exactly the ones who will
+never run the pipeline. `blogs-portal.html` was committed and looked perfect on
+the machine that built it while pointing at `../assets/Blogs/media/…`, which is
+gitignored: **181 broken images for everyone else.** Images now resolve through
+`data/asset_map.json` to their uploaded `a.storyblok.com` URL, so nothing on disk
+is needed. Test it by stashing everything untracked and opening the file.
+
 **Back up immediately after anything that writes to the space. Not before —
 after.** An upload, an update run, an asset move: the moment it finishes, take
 the snapshot. Storyblok keeps **no version history**, so the read-back archive is

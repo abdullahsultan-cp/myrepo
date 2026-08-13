@@ -154,6 +154,80 @@ the two exports, usually inside a URL. `&#123;` and `&#125;` decode to `{` and
 Images live inside the rich text, so testing "has no text" alone deletes
 pictures. `tests/test_blogs_payload.py` has that case.
 
+## 3b · Portals must work from a clone. Backups are not optional.
+
+These are the rules with the sharpest edges, because breaking either is
+invisible to the person who breaks it and obvious to everybody else.
+
+### A portal that needs the pipeline is a broken portal
+
+**Someone must be able to `git clone`, double-click the portal, and see it
+work.** No Python, no database, no 3.5-hour media download, no npm. The people
+who most need a portal — the front-end developer, the content owner — are
+exactly the people who will never run the pipeline.
+
+That failed once and nobody noticed for weeks. `blogs-portal.html` was
+committed and looked fine on the machine that built it, because it pointed at
+`../assets/Blogs/media/…` — and `assets/` is gitignored, 26 MB of regenerable
+media. Anyone else opened it to **181 broken images**.
+
+| Do | Don't |
+|---|---|
+| bake the data into the HTML as JSON | read a JSON file at runtime |
+| point images at their uploaded `a.storyblok.com` URL | point at anything under `assets/` |
+| fall back to a local path only for what is *not yet uploaded* | assume the reader has the media |
+| commit the built HTML | expect anyone to build it |
+
+`Blogs-Pipeline/pipeline/build_portal.py` resolves every image through
+`data/asset_map.json`, which is committed, so the portal needs nothing on disk.
+
+**Check it the only way that means anything:**
+
+```bash
+git stash -u && start Blogs-Pipeline/out/blogs-portal.html   # or open it
+```
+
+If an image is missing there, it is missing for everyone.
+
+### What must be committed, and why
+
+`assets/` is gitignored on purpose — it is large and re-downloadable. Everything
+that lets somebody *understand or rebuild* the migration is not.
+
+| Committed | Why |
+|---|---|
+| `backup/raw/` | the SharePoint export as it arrived. **The site is being switched off — this becomes the only record it ever existed** |
+| `backup/storyblok/` | every story read back from the API. Storyblok keeps no version history; this is the only way back |
+| `data/asset_map.json` | local filename → uploaded asset. Without it the portal has no images and a re-run duplicates uploads |
+| `data/payloads/` | what was sent, so live content can be diffed against intent |
+| `data/taxonomy/routing.csv` | where each item went and **why** |
+| `out/*-portal.html` | the deliverable people actually open |
+| `storyblok_space/*.json` | the folder and asset trees every type reads |
+
+`.gitignore` names `backup/` as an explicit exception. **Do not "tidy" it away
+because the files are big.**
+
+### Back up after every write, not before
+
+```bash
+python pipeline/migrate/review/backup.py --type <yours>
+python pipeline/migrate/review/backup.py --type <yours> --verify   # diff, no write
+```
+
+An upload, an update run, an asset move — **the moment it finishes, snapshot it.**
+Before is useless: the point is a record of what the space now holds.
+
+Two faults found in that script by running it, both worth knowing about because
+they are the shape of thing that hides:
+
+- it could not start at all — `sys.path` was built by counting `dirname()` calls
+- once running it archived **3,606 news stories into the blogs backup folder**,
+  under a filename saying blogs, because it read the story list from the
+  tracking database, which holds news and nothing else
+
+**A backup nobody has restored from is a hypothesis.** `--verify` diffs the
+archive against the live space and writes nothing; run it occasionally.
+
 ## 4 · The one thing that will bite you
 
 **Never commit a regenerated file just because it changed.**
