@@ -49,7 +49,6 @@ Two choices worth knowing about, both about keeping git history readable:
 
 import argparse
 import csv
-import hashlib
 import os
 import re
 import sys
@@ -59,8 +58,8 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sb_common import (
+    CDN_HOSTS,
     asset_path,
-    assets_root,
     fetch_list,
     folder_path_map,
     get,
@@ -72,12 +71,13 @@ from sb_common import (
     pick_sites,
     repo_paths,
     save,
-    sha256_file,
     space_api,
     token_for,
     write_csv,
     write_json,
 )
+from sb_portal import build_assets_portal
+from sb_storage import make_backend
 
 # name -> (path, key holding the list, paginated)
 #
@@ -132,71 +132,80 @@ LFS_TEXT_EXCEPTIONS = ["svg", "json", "txt", "csv", "xml", "md", "srt", "vtt"]
 # assets
 # --------------------------------------------------------------------------
 
-def download_assets(assets, root, space_id, prev_sha=None, workers=6):
-    """Fetch every binary not already on disk at the right size.
+def rel_path(asset, space_id):
+    """The asset's path relative to the storage root.
 
-    `root` is where the files go -- inside the snapshot, or a bucket mount
-    outside it. Skipping by size is what makes a second run cheap, and that is
-    the difference between a backup taken nightly and one taken once.
+    `asset_path` yields "assets/<mirrored>"; the leading segment is dropped
+    because the storage root already IS that folder -- which is what lets the
+    same relative path address a file in the repo, on a share, or as a blob.
+    """
+    rel = asset_path(asset, space_id)
+    if not rel:
+        return None
+    rel = rel.split(os.sep, 1)[1] if os.sep in rel else rel
+    return rel.replace(os.sep, "/")
 
-    A sha256 is computed as the bytes stream past, so hashing costs nothing on
-    top of the download. For a file that was skipped, the checksum is carried
-    forward from the previous manifest when the size still matches; only when
-    there is no recorded checksum is the file read back to hash it. Re-hashing
-    42 GB on every run would make the nightly job unaffordable, and a checksum
-    nobody can afford to compute is a checksum nobody has.
+
+def download_assets(assets, store, space_id, prev_sha=None, workers=6,
+                    force=None):
+    """Send every binary not already stored at the right size to `store`.
+
+    Nothing is staged for the whole space: each file streams from Storyblok
+    through a single temp file -- which is what makes the checksum trustworthy,
+    see sb_storage._hash_and_spool -- and straight into the container.
+
+    A file already stored at the right size keeps the checksum the last run
+    recorded rather than being read back. Re-hashing 42 GB nightly would make
+    the job unaffordable, and a checksum nobody can afford to compute is a
+    checksum nobody has. A stored file with no checksum on record is hashed once
+    and carried from then on.
     """
     prev_sha = prev_sha or {}
+    # What is already there, in one listing rather than a probe per file.
+    print("      listing what is already stored", flush=True)
+    present = store.list_all()
+    print(f"      {len(present)} file(s) already in storage", flush=True)
     jobs = []
     for a in assets:
-        rel, url = asset_path(a, space_id), a.get("filename")
+        rel, url = rel_path(a, space_id), a.get("filename")
         if rel and url:
-            # asset_path prefixes "assets/"; root already IS that folder.
-            rel = rel.split(os.sep, 1)[1] if os.sep in rel else rel
-            jobs.append((a, url, os.path.join(root, rel), rel))
+            jobs.append((a, url, rel))
 
     got = skipped = failed = rehashed = 0
     errors, sha, lock, total = [], {}, threading.Lock(), len(jobs)
 
     def one(job):
-        a, url, dest, rel = job
+        a, url, rel = job
         aid = a.get("id")
-        expected = a.get("content_length")
         try:
-            expected = int(expected) if expected else 0
+            expected = int(a.get("content_length") or 0)
         except (TypeError, ValueError):
             expected = 0
-
-        if os.path.exists(dest):
-            on_disk = os.path.getsize(dest)
-            if not expected or on_disk == expected:
+        try:
+            stored = present.get(rel)
+            # `force` exists because skipping by size cannot see corruption that
+            # kept the size: eight bytes overwritten by eight other bytes is a
+            # broken file the fast path will skip forever. --repair feeds the
+            # deep audit's findings in here so they are actually re-fetched.
+            if str(aid) in (force or ()):
+                stored = None
+            if stored is not None and (not expected or stored == expected):
                 known = prev_sha.get(str(aid))
                 if known:
                     return "skip", None, aid, known
-                # No checksum on record: read it once, and it is in the
-                # manifest from then on.
-                return "rehash", None, aid, sha256_file(dest)
+                digest = store.sha256(rel)
+                return "rehash", None, aid, digest
 
-        os.makedirs(os.path.dirname(dest), exist_ok=True)
-        tmp = dest + ".part"
-        try:
-            r = get(url, stream=True)          # no token: asset URLs are public
+            r = get(url, stream=True)      # no token: asset URLs are public
             if r.status_code != 200:
                 return "fail", f"{aid} {url} -> {r.status_code}", aid, None
-            h = hashlib.sha256()
-            with open(tmp, "wb") as f:
-                for chunk in r.iter_content(65536):
-                    if chunk:
-                        f.write(chunk)
-                        h.update(chunk)
-            os.replace(tmp, dest)   # never leave a half file looking complete
-            return "ok", None, aid, h.hexdigest()
+            digest, _ = store.write(rel, r.iter_content(65536),
+                                    a.get("content_type"), expected or None)
+            return "ok", None, aid, digest
         except Exception as e:
             # Broad on purpose: one unreadable asset out of thousands must be
-            # reported and skipped, not allowed to end the run. The type and
-            # message go into _summary.json so it stays visible afterwards.
-            if os.path.exists(tmp):
-                os.remove(tmp)
+            # reported and skipped, not end the run. The type and message go
+            # into _summary.json so it stays visible afterwards.
             return "fail", f"{aid} {url} -> {type(e).__name__}: {e}", aid, None
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -206,18 +215,20 @@ def download_assets(assets, root, space_id, prev_sha=None, workers=6):
             with lock:
                 if status == "ok":
                     got += 1
-                elif status == "skip":
+                elif status in ("skip", "rehash"):
                     skipped += 1
-                elif status == "rehash":
-                    skipped += 1
-                    rehashed += 1
+                    rehashed += status == "rehash"
                 else:
                     failed += 1
                     errors.append(err)
+                    # Printed now, not just collected: a later stall would
+                    # otherwise take the only record of why 14 files failed.
+                    if failed <= 20:
+                        print(f"      FAILED {err}", flush=True)
                 if digest:
                     sha[str(aid)] = digest
-            if n % 200 == 0 or n == total:
-                print(f"      {n}/{total}  downloaded {got}  "
+            if n % 100 == 0 or n == total:
+                print(f"      {n}/{total}  stored {got}  "
                       f"already had {skipped}  failed {failed}", flush=True)
 
     if rehashed:
@@ -230,38 +241,65 @@ def download_assets(assets, root, space_id, prev_sha=None, workers=6):
             "sha": sha, "errors": sorted(e for e in errors if e)[:50]}
 
 
-def verify_assets(assets, root, space_id, prev_sha):
-    """Re-hash what is on disk and compare against the recorded checksums.
+def verify_assets(assets, store, space_id, prev_sha, workers=6, quick=False):
+    """Re-read what is stored and compare against the recorded checksums.
 
-    The point of splitting the backup is that git holds the index and the bucket
-    holds the bytes. That only works if the halves can be proved to match, so
-    this exists to be run before anyone relies on a restore -- silent bit-rot or
-    a half-finished sync is exactly the failure this arrangement invites.
+    The backup is in two halves -- git holds the index, the container holds the
+    bytes -- and this is what proves they still match. Run it before relying on
+    a restore: a half-finished sync or silent bit-rot looks exactly like a
+    complete backup until something reads the files.
+
+    `quick` trusts the sha256 recorded on the blob at upload time instead of
+    reading 31 GB back out. That checks what was uploaded, not what is there
+    now, so it catches a missing or replaced file but not corruption in place.
     """
     ok = missing = mismatched = unknown = 0
-    bad = []
-    for a in assets:
-        rel = asset_path(a, space_id)
-        if not rel:
-            continue
-        rel = rel.split(os.sep, 1)[1] if os.sep in rel else rel
-        dest = os.path.join(root, rel)
+    bad, broken, lock = [], set(), threading.Lock()
+    present = store.list_all()
+    jobs = [(a, rel_path(a, space_id)) for a in assets]
+    jobs = [(a, r) for a, r in jobs if r]
+
+    def one(job):
+        a, rel = job
         aid = str(a.get("id"))
-        if not os.path.exists(dest):
-            missing += 1
-            bad.append(f"MISSING  {aid}  {rel}")
-            continue
+        if rel not in present:
+            return "missing", f"MISSING  {aid}  {rel}", aid
         want = prev_sha.get(aid)
         if not want:
-            unknown += 1
-            continue
-        if sha256_file(dest) == want:
-            ok += 1
+            return "unknown", None, aid
+        if quick and hasattr(store, "stored_sha256"):
+            got_sha = store.stored_sha256(rel)
+            if got_sha is None:
+                return "unknown", None, aid
         else:
-            mismatched += 1
-            bad.append(f"CHANGED  {aid}  {rel}")
+            got_sha = store.sha256(rel)
+        if got_sha == want:
+            return "ok", None, aid
+        return "mismatch", f"CHANGED  {aid}  {rel}", aid
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(one, j) for j in jobs]
+        for n, fut in enumerate(as_completed(futures), 1):
+            kind, msg, aid = fut.result()
+            with lock:
+                if kind == "ok":
+                    ok += 1
+                elif kind == "missing":
+                    missing += 1
+                    broken.add(aid)
+                elif kind == "mismatch":
+                    mismatched += 1
+                    broken.add(aid)
+                else:
+                    unknown += 1
+                if msg:
+                    bad.append(msg)
+            if n % 250 == 0 or n == len(jobs):
+                print(f"      checked {n}/{len(jobs)}", flush=True)
+
     return {"ok": ok, "missing": missing, "mismatched": mismatched,
-            "no_checksum": unknown, "problems": sorted(bad)[:50]}
+            "no_checksum": unknown, "problems": sorted(bad)[:50],
+            "bad_ids": sorted(broken)}
 
 
 # --------------------------------------------------------------------------
@@ -329,6 +367,69 @@ def download_stories(api, token, stories, outdir, workers=5):
 
     return {"saved": ok, "failed": failed, "deleted_since_last_run": removed,
             "errors": sorted(errors)[:50], "meta": meta}
+
+
+def download_published(space_id, region, token, stories, outdir, workers=5):
+    """The PUBLISHED version of every published story, beside the drafts.
+
+    This is not a nicety. The Management API returns the draft, and on AKUH 231
+    stories have unpublished changes -- so for those, what visitors see is not
+    what stories/<id>.json holds. Restoring drafts over a live site would publish
+    work in progress, which is a data-loss bug wearing the costume of a restore.
+
+    Reached through the Content Delivery API, which is the only place the
+    published version exists, using the space's own delivery token. That token is
+    read from the space record and never written anywhere -- save() scrubs
+    first_token, and this function does not persist it.
+    """
+    pub_dir = os.path.join(outdir, "stories_published")
+    os.makedirs(pub_dir, exist_ok=True)
+    cdn = CDN_HOSTS.get((region or "eu").lower(), CDN_HOSTS["eu"])
+
+    live = [s for s in stories
+            if s.get("published") and not s.get("is_folder") and s.get("id")]
+    keep = {str(s["id"]) for s in live}
+    ok, failed, errors, lock = 0, 0, [], threading.Lock()
+
+    def one(st):
+        sid = st["id"]
+        r = get(f"{cdn}/stories/{sid}",
+                params={"token": token, "version": "published",
+                        "cv": 0, "find_by": "id"})
+        if r.status_code == 404:
+            # Published in the index but absent from the delivery API: usually a
+            # story published then unpublished. Not an error, but recorded.
+            return f"{sid} {st.get('full_slug')} -> 404 (not live)"
+        if r.status_code != 200:
+            return f"{sid} {st.get('full_slug')} -> {r.status_code}"
+        story = (r.json() or {}).get("story")
+        if not story:
+            return f"{sid} -> empty body"
+        write_json(os.path.join(pub_dir, f"{sid}.json"), story)
+        return None
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = [pool.submit(one, s) for s in live]
+        for n, fut in enumerate(as_completed(futures), 1):
+            err = fut.result()
+            with lock:
+                if err:
+                    failed += 1
+                    errors.append(err)
+                else:
+                    ok += 1
+            if n % 250 == 0 or n == len(live):
+                print(f"      {n}/{len(live)}  saved {ok}  missing {failed}",
+                      flush=True)
+
+    removed = 0
+    for fn in os.listdir(pub_dir):
+        if fn.endswith(".json") and fn[:-5] not in keep:
+            os.remove(os.path.join(pub_dir, fn))
+            removed += 1
+
+    return {"saved": ok, "failed": failed, "removed": removed,
+            "errors": sorted(errors)[:50]}
 
 
 # --------------------------------------------------------------------------
@@ -423,7 +524,7 @@ def read_prev_sha(outdir):
     return out
 
 
-def write_asset_manifest(assets, asset_folders, space_id, outdir, root,
+def write_asset_manifest(assets, asset_folders, space_id, outdir, store,
                          external, sha):
     """Where every asset is in the space, and where its bytes actually are.
 
@@ -434,16 +535,19 @@ def write_asset_manifest(assets, asset_folders, space_id, outdir, root,
     would render broken. Better to see that here than after a restore.
     """
     apaths = folder_path_map(asset_folders or [])
+    # One listing, not one call per asset. Asking the container per file is
+    # 5,767 sequential round-trips for AKUH and 16,334 for AKUEB, which makes a
+    # finished upload look like a hung run.
+    present = store.list_all()
     arows = []
     for a in assets:
-        rel = asset_path(a, space_id)
-        rel = (rel.split(os.sep, 1)[1] if rel and os.sep in rel else rel) or ""
+        rel = rel_path(a, space_id) or ""
         arows.append([
             a.get("id"),
             os.path.basename(a.get("filename") or "") or "",
             apaths.get(a.get("asset_folder_id"), "(root)"),
-            rel.replace(os.sep, "/"),
-            "yes" if rel and os.path.exists(os.path.join(root, rel)) else "NO",
+            rel,
+            "yes" if rel and rel in present else "NO",
             sha.get(str(a.get("id")), ""),
             a.get("content_type") or "",
             a.get("content_length") or "",
@@ -460,16 +564,23 @@ def write_asset_manifest(assets, asset_folders, space_id, outdir, root,
     # Where the bytes live, recorded beside the index that points at them. The
     # absolute path is deliberately NOT committed -- it is one person's drive
     # letter, it differs per machine, and it would churn the diff.
+    # The kind of store, never the credentials or the machine-specific path: an
+    # account name and container are fine to commit, a connection string is not.
+    kind = type(store).__name__.replace("Backend", "").lower()
+    where = store.label if kind == "azure" else None
     write_json(os.path.join(outdir, "assets_location.json"), {
         "external": external,
-        "note": ("Binaries are stored outside this repository. Set assets_dir "
-                 "for this site in config/sites.json, or pass --assets-dir, to "
-                 "the location holding the paths in manifest_assets.csv."
+        "backend": kind,
+        "location": where,
+        "note": ("Binaries are stored outside this repository. Point this site's "
+                 "'assets' block in config/sites.json at the location above (or "
+                 "pass --assets-dir); the paths in manifest_assets.csv are "
+                 "relative to it."
                  if external else
                  "Binaries are committed to this repository under "
                  "storyblok/assets/, via Git LFS."),
-        "backup_file_paths_are_relative_to": ("<assets_dir>" if external
-                                              else "storyblok/assets/"),
+        "backup_file_paths_are_relative_to": (where or "<assets_dir>") if external
+        else "storyblok/assets/",
         "files": n,
     })
     return n
@@ -520,7 +631,8 @@ repo is a mirror, not a working copy.
 | `{sub}/internal_tags.json` | tags used on assets and stories |
 | `{sub}/asset_folders.json` | the asset folder tree |
 | `{sub}/stories.json` | the story index (no content) |
-| `{sub}/stories/<id>.json` | **one file per story, with its full content** |
+| `{sub}/stories/<id>.json` | **one file per story, its DRAFT content** |
+| `{sub}/stories_published/<id>.json` | the **published** content, where it differs from the draft |
 | `{sub}/assets.json` | asset metadata |
 | `{sub}/manifest_stories.csv` | **which story sits in which folder** |
 | `{sub}/manifest_assets.csv` | **every asset: folder, file path, sha256** |
@@ -534,6 +646,12 @@ repo is a mirror, not a working copy.
 Stories are named by **id**, not slug: a slug changes when the folder tree is
 reorganised, and a slug-named file would turn a rename into a delete plus an add,
 losing that story's history.
+
+**Draft and published are two different things.** `{sub}/stories/` holds what the
+editor sees; `{sub}/stories_published/` holds what visitors see. They differ for
+any story with unpublished changes, so restoring from `stories/` alone would push
+work-in-progress live. Check `state` and `unpublished_changes` in
+`manifest_stories.csv` to see which is which.
 
 ## Reading it
 
@@ -656,13 +774,25 @@ python tools/sb_backup.py --config sites.json --site {name} --check
 ## 1 · Check the backup is intact first
 
 ```bash
+# Does the backup cover the whole space? Exits non-zero if not.
+python tools/sb_backup.py --config sites.json --site {name} --audit
+
+# Deeper: read every stored file back and re-hash it. Costs egress.
+python tools/sb_backup.py --config sites.json --site {name} --audit --deep
+
+# Re-fetch anything missing or corrupted
 python tools/sb_backup.py --config sites.json --site {name} \\
-    --only assets --verify-assets --no-commit
+    --only assets --repair --no-commit
 ```
 
-Re-hashes every stored file against `manifest_assets.csv`. `missing` or `changed`
-above zero means the media half is not trustworthy — fix that before restoring,
-or you will publish broken images.
+`--audit` re-queries the live space and proves every story and asset is present.
+By default it checks media against the checksum recorded on each stored file,
+which costs nothing; `--deep` reads the bytes back instead and will bill egress.
+
+`missing` or `changed` above zero means the media half is not trustworthy — run
+`--repair` before restoring, or you will publish broken images. `--repair` exists
+because skipping unchanged files by size cannot see corruption that kept the
+file's size.
 
 ---
 
@@ -745,6 +875,15 @@ A rebuild does **not** recreate these. Take them from the JSON by hand:
 | `storyblok/presets.json` | recreate component presets |
 | `storyblok/apps.json`, `app_provisions.json`, `extensions.json` | **reinstall each app from the Storyblok marketplace.** Installing an app needs an OAuth flow a script cannot drive. |
 | `storyblok/field_types_*.json` | custom field plugins are **account-level** and have no create API. They must already exist on the target account, or components using them will not save correctly. |
+| — | **generate new access tokens** (Settings → Access tokens) and re-point the front end at them. The old tokens are deliberately not backed up: they are live credentials and this repo has a remote. |
+| `storyblok/webhook_endpoints.json` | the signing **secret** is stripped for the same reason — set a new one on each webhook and update the receiver. |
+
+### Draft or published?
+
+`--mode rebuild` creates stories from `storyblok/stories/` — the **drafts** — and
+publishes the ones that were published. If what you need back is exactly what
+visitors last saw, use `storyblok/stories_published/` instead; `state` and
+`unpublished_changes` in `manifest_stories.csv` say which stories differ.
 
 A rebuild is also **not byte-identical**: every asset gets a new URL, so the
 result is equivalent, not the same.
@@ -861,6 +1000,179 @@ def commit_and_push(repo, site, counts, push):
 
 
 # --------------------------------------------------------------------------
+# the audit -- is everything actually backed up?
+# --------------------------------------------------------------------------
+
+def audit(site, args):
+    """Re-query the live space and prove the backup covers all of it.
+
+    Deliberately not a re-read of the numbers this run just printed. A backup
+    that reports its own success is worth very little; every count here comes
+    from asking the space again and looking at what is on disk and in the
+    container. Exits non-zero on any gap, so it can gate a nightly job.
+    """
+    name, space_id = site["name"], str(site["space_id"])
+    repo, outdir = repo_paths(site)
+    token = token_for(site)
+    api = space_api(site)
+    store, external = make_backend(site, outdir, args.assets_dir)
+
+    print(f"\n{'=' * 74}\n  audit - {name}   space {space_id}\n{'=' * 74}")
+    if not os.path.isdir(outdir):
+        print(f"  !! no snapshot at {outdir}")
+        return 1
+
+    problems, lines = [], []
+
+    def row(label, want, got, extra=""):
+        ok = want == got
+        lines.append(f"  {'ok ' if ok else 'GAP'}  {label:<28} "
+                     f"space {want:>7}   backup {got:>7}   {extra}")
+        if not ok:
+            problems.append(f"{label}: space {want}, backup {got} {extra}")
+        return ok
+
+    # ---- schema and settings: present at all?
+    for res, path, key, paginated in RESOURCES:
+        live, err = fetch_list(api, path, key, paginated, token)
+        saved = load_json(os.path.join(outdir, f"{res}.json"))
+        if err:
+            lines.append(f"  --   {res:<28} unreadable ({err[:40]})")
+            continue
+        n_live = len(live) if isinstance(live, list) else 1
+        n_saved = len(saved) if isinstance(saved, list) else (0 if saved is None else 1)
+        row(res, n_live, n_saved)
+
+    # ---- stories: every id present, and every one holding real content
+    live_stories, err = fetch_list(api, "stories", "stories", True, token)
+    if err:
+        problems.append(f"cannot list stories: {err}")
+        live_stories = []
+    live_ids = {str(s["id"]) for s in live_stories if s.get("id")}
+    story_dir = os.path.join(outdir, "stories")
+    have = {f[:-5] for f in os.listdir(story_dir)
+            if f.endswith(".json")} if os.path.isdir(story_dir) else set()
+    row("stories", len(live_ids), len(have & live_ids))
+
+    absent = sorted(live_ids - have)
+    if absent:
+        problems.append(f"{len(absent)} story(ies) in the space with no backup "
+                        f"file: {absent[:10]}")
+    stale = sorted(have - live_ids)
+    if stale:
+        # Not a failure: a story deleted in the space should vanish from the
+        # backup. Worth surfacing so a botched delete is visible.
+        lines.append(f"  --   {'stories no longer live':<28} "
+                     f"{len(stale)} file(s) will be removed next run")
+
+    # Folders are stories too, and a folder's content is legitimately empty.
+    # Counting them as missing content made a complete backup fail its own audit.
+    is_folder = {str(s["id"]): bool(s.get("is_folder"))
+                 for s in live_stories if s.get("id")}
+    checkable = [sid for sid in sorted(have & live_ids) if not is_folder.get(sid)]
+    empty = 0
+    for sid in checkable:
+        st = load_json(os.path.join(story_dir, f"{sid}.json")) or {}
+        if not st.get("content"):
+            empty += 1
+    if empty:
+        problems.append(f"{empty} backed-up story(ies) have no content at all")
+    lines.append(f"  {'ok ' if not empty else 'GAP'}  "
+                 f"{'stories with content':<28} "
+                 f"{len(checkable) - empty} of {len(checkable)} "
+                 f"({len(have & live_ids) - len(checkable)} folder(s) skipped)")
+
+    # ---- published versions
+    pub_dir = os.path.join(outdir, "stories_published")
+    n_pub_live = sum(1 for s in live_stories
+                     if s.get("published") and not s.get("is_folder"))
+    n_pub_have = len([f for f in os.listdir(pub_dir)
+                      if f.endswith(".json")]) if os.path.isdir(pub_dir) else 0
+    drifted = sum(1 for s in live_stories if s.get("unpublished_changes"))
+    row("published versions", n_pub_live, n_pub_have,
+        f"({drifted} differ from their draft)")
+
+    # ---- assets: metadata and bytes
+    live_assets, err = fetch_list(api, "assets", "assets", True, token)
+    if err:
+        problems.append(f"cannot list assets: {err}")
+        live_assets = []
+    saved_assets = load_json(os.path.join(outdir, "assets.json"), []) or []
+    row("asset metadata", len(live_assets), len(saved_assets))
+
+    # Assets whose bytes are gone from Storyblok's own S3. Nothing here can fix
+    # those, and an audit that fails forever on them is an audit people stop
+    # reading -- which is how a real failure hides. Same idea as
+    # config/tree_accepted_exceptions.csv: reviewed, recorded, and reported
+    # separately rather than silently ignored.
+    accepted = {str(k): v for k, v in
+                (load_json(os.path.join(outdir, "accepted_gaps.json"), {})
+                 or {}).items()}
+
+    prev_sha = read_prev_sha(outdir)
+    if args.no_assets:
+        lines.append(f"  --   {'asset bytes':<28} not checked (--no-assets)")
+    else:
+        print(f"  checking {len(live_assets)} stored file(s)"
+              + ("  [full re-read, billed egress]" if args.deep
+                 else "  [blob metadata, no egress]"))
+        v = verify_assets(live_assets, store, space_id, prev_sha,
+                          args.workers, not args.deep)
+        # A gap that has been reviewed and recorded is not an open gap.
+        unexplained = [b for b in v["bad_ids"] if b not in accepted]
+        excused = len(v["bad_ids"]) - len(unexplained)
+        # Only the expected side is reduced by the accepted gaps. v["ok"] already
+        # counts just the files that are actually there, so subtracting them from
+        # both sides reported a one-file shortfall that did not exist.
+        row("asset bytes stored", len(live_assets) - excused,
+            v["ok"] + v["no_checksum"] + v["mismatched"])
+        lines.append(f"  {'ok ' if not v['mismatched'] else 'GAP'}  "
+                     f"{'asset checksums match':<28} "
+                     f"{v['ok']} verified, {v['mismatched']} changed, "
+                     f"{v['no_checksum']} unchecksummed")
+        if excused:
+            lines.append(f"  --   {'accepted gaps':<28} {excused} "
+                         f"(gone upstream; see accepted_gaps.json)")
+            for b in v["bad_ids"]:
+                if b in accepted:
+                    lines.append(f"       {b}: {accepted[b]}")
+        if unexplained:
+            problems.append(f"{len(unexplained)} asset(s) missing or corrupted "
+                            f"and not in accepted_gaps.json: "
+                            f"{unexplained[:8]}")
+        for p in v["problems"][:15]:
+            if not any(b in p for b in accepted):
+                lines.append(f"       {p}")
+
+    # ---- the mapping and the docs
+    for f in ("manifest_stories.csv", "manifest_assets.csv",
+              "assets_location.json", "_summary.json"):
+        present = os.path.exists(os.path.join(outdir, f))
+        lines.append(f"  {'ok ' if present else 'GAP'}  {f:<28} "
+                     f"{'present' if present else 'MISSING'}")
+        if not present:
+            problems.append(f"{f} is missing")
+    for f in ("README.md", "CLAUDE.md", "RESTORE.md", "tools/sb_restore.py"):
+        present = os.path.exists(os.path.join(repo, f))
+        lines.append(f"  {'ok ' if present else 'GAP'}  {f:<28} "
+                     f"{'present' if present else 'MISSING'}")
+        if not present:
+            problems.append(f"{f} is missing from the repo")
+
+    print("\n".join(lines))
+    print(f"\n  media: {store.label}"
+          + ("   (outside the repo)" if external else "   (in the repo)"))
+
+    if problems:
+        print(f"\n  AUDIT FAILED - {len(problems)} problem(s):")
+        for p in problems:
+            print(f"    - {p}")
+        return 1
+    print("\n  AUDIT PASSED - the backup covers the whole space")
+    return 0
+
+
+# --------------------------------------------------------------------------
 
 def check(site):
     token = token_for(site)
@@ -890,14 +1202,15 @@ def backup(site, only, args):
 
     api = space_api(site)
     want_assets = "assets" in only and not args.no_assets
-    root, external = assets_root(site, outdir, args.assets_dir)
+    store, external = make_backend(site, outdir, args.assets_dir)
     # LFS is only needed when binaries are committed. With the media on a bucket
     # the repo stays text-only, so requiring LFS would be a dependency for
     # nothing -- and would fail the run on a machine that does not have it.
     ensure_repo(repo, outdir, want_lfs=want_assets and not external)
     install_tools(repo)
     if want_assets:
-        print(f"  media -> {root}"
+        store.ensure()
+        print(f"  media -> {store.label}"
               + ("   (outside the repo, not committed)" if external
                  else "   (committed via Git LFS)"))
 
@@ -980,7 +1293,7 @@ def backup(site, only, args):
             stories = []
         else:
             counts["stories"] = save(outdir, "stories", stories)
-            print(f"    index: {len(stories)}; fetching content")
+            print(f"    index: {len(stories)}; fetching draft content")
             res = download_stories(api, token, stories, outdir, args.workers)
             counts["stories_with_content"] = res["saved"]
             story_meta = res["meta"]
@@ -989,6 +1302,30 @@ def backup(site, only, args):
             if res["deleted_since_last_run"]:
                 print(f"    removed {res['deleted_since_last_run']} story "
                       f"file(s) no longer in the space")
+
+            # The published version, which is a different thing from the draft
+            # for any story with unpublished changes. Without it a restore
+            # publishes work in progress.
+            drifted = sum(1 for s in stories if s.get("unpublished_changes"))
+            delivery = sp.get("first_token")
+            if args.no_published:
+                print("    published versions skipped (--no-published)")
+            elif not delivery:
+                # Not fatal, but it must not pass silently: the backup is then
+                # draft-only and cannot restore the live state.
+                print("    !! no delivery token on the space record - cannot "
+                      "capture published versions")
+                errors["stories_published"] = "no delivery token available"
+            else:
+                print(f"    fetching published content "
+                      f"({drifted} story(ies) differ from their draft)")
+                pub = download_published(space_id, site.get("region", "eu"),
+                                         delivery, stories, outdir,
+                                         args.workers)
+                counts["stories_published"] = pub["saved"]
+                counts["stories_draft_differs"] = drifted
+                if pub["failed"]:
+                    errors["stories_published"] = pub["errors"]
 
     asset_sha = {}
     if "assets" in only:
@@ -1005,10 +1342,30 @@ def backup(site, only, args):
             # file that is still the right size keeps its hash instead of being
             # read back off the bucket.
             prev_sha = read_prev_sha(outdir)
+
+            # /internal_tags rejects a personal access token, but every asset
+            # carries its own tags, so the list is recoverable from the metadata
+            # we already have. A 403 does not have to mean a gap.
+            if "internal_tags" in errors:
+                derived = {}
+                for a in assets:
+                    for t in (a.get("internal_tags_list") or []):
+                        if t.get("id") is not None:
+                            derived[t["id"]] = t
+                if derived:
+                    counts["internal_tags_derived"] = save(
+                        outdir, "internal_tags", sorted(derived.values(),
+                                                        key=lambda x: x["id"]))
+                    errors.pop("internal_tags", None)
+                    print(f"    internal_tags        "
+                          f"{counts['internal_tags_derived']} (derived from "
+                          f"assets; the endpoint refuses this token type)")
+
             if args.verify_assets:
                 print(f"    verifying {len(assets)} file(s) against "
                       f"{len(prev_sha)} recorded checksum(s)")
-                v = verify_assets(assets, root, space_id, prev_sha)
+                v = verify_assets(assets, store, space_id, prev_sha,
+                                  args.workers, not args.deep)
                 counts["assets_verified_ok"] = v["ok"]
                 print(f"    ok {v['ok']}   missing {v['missing']}   "
                       f"changed {v['mismatched']}   "
@@ -1022,8 +1379,16 @@ def backup(site, only, args):
                 print("    binaries skipped (--no-assets)")
                 asset_sha = prev_sha
             else:
-                res = download_assets(assets, root, space_id, prev_sha,
-                                      args.workers)
+                force = set()
+                if args.repair:
+                    print("    repair: deep-verifying before download")
+                    v = verify_assets(assets, store, space_id, prev_sha,
+                                      args.workers, quick=False)
+                    force = set(v["bad_ids"])
+                    print(f"    repair: {len(force)} file(s) missing or "
+                          f"corrupted, forcing re-fetch")
+                res = download_assets(assets, store, space_id, prev_sha,
+                                      args.workers, force)
                 counts["asset_files"] = (res["downloaded"]
                                          + res["already_present"])
                 asset_sha = res["sha"]
@@ -1044,13 +1409,29 @@ def backup(site, only, args):
             folders = load_json(
                 os.path.join(outdir, "asset_folders.json"), []) or []
             counts["manifest_assets"] = write_asset_manifest(
-                assets, folders, space_id, outdir, root, external, asset_sha)
+                assets, folders, space_id, outdir, store, external, asset_sha)
             print(f"    manifest_assets.csv     "
                   f"{counts['manifest_assets']} row(s)")
             missing = counts.get("assets", 0) - counts.get("asset_files", 0)
             if missing > 0 and not (args.no_assets or args.verify_assets):
                 print(f"    !! {missing} asset(s) have metadata but no file - "
                       f"see file_present=NO in manifest_assets.csv")
+
+            # The visual index of the same data. One self-contained file, like
+            # Blogs-Pipeline's portal, because a folder tree is the one thing
+            # nobody verifies by reading JSON.
+            rows_by_id = {}
+            with open(os.path.join(outdir, "manifest_assets.csv"),
+                      encoding="utf-8-sig", newline="") as f:
+                for r_ in csv.DictReader(f):
+                    rows_by_id[r_["id"]] = r_
+            n = build_assets_portal(
+                os.path.join(repo, "assets-portal.html"), site,
+                sp.get("name"), assets, folders,
+                folder_path_map(folders), rows_by_id, store.label, external)
+            counts["portal_rows"] = n
+            print(f"    assets-portal.html      {n} file(s) — open it to see "
+                  f"the folder tree")
 
     save(outdir, "_summary", {"site": name, "space_id": space_id,
                               "space_name": sp.get("name"),
@@ -1094,6 +1475,23 @@ def main():
                     help="re-hash the stored binaries against the checksums in "
                          "manifest_assets.csv and report drift. Downloads "
                          "nothing.")
+    ap.add_argument("--audit", action="store_true",
+                    help="re-query the live space and prove the existing backup "
+                         "covers all of it. Exits non-zero on any gap.")
+    ap.add_argument("--deep", action="store_true",
+                    help="with --audit/--verify-assets, read every stored file "
+                         "back and re-hash it. Catches corruption in place, but "
+                         "downloads the whole container -- 31 GB for AKUEB -- "
+                         "and Azure bills egress. The default reads the "
+                         "checksum recorded on each blob instead, which costs "
+                         "nothing and still catches missing or replaced files.")
+    ap.add_argument("--repair", action="store_true",
+                    help="deep-verify every stored file first, then re-fetch "
+                         "anything missing or whose checksum no longer matches. "
+                         "Needed because skipping by size cannot see corruption "
+                         "that kept the file's size.")
+    ap.add_argument("--no-published", action="store_true",
+                    help="skip the published versions and back up drafts only")
     ap.add_argument("--collaborators", action="store_true",
                     help="also capture members (contains real email addresses)")
     ap.add_argument("--activities", action="store_true",
@@ -1107,6 +1505,15 @@ def main():
     if args.check:
         print(f"\n  checking {len(sites)} site(s)\n")
         return 0 if all(check(s) for s in sites) else 1
+
+    if args.audit:
+        bad = [s["name"] for s in sites if audit(s, args) != 0]
+        print(f"\n{'=' * 74}")
+        if bad:
+            print(f"  AUDIT FAILED for: {', '.join(bad)}")
+            return 1
+        print("  all audited backups cover their space")
+        return 0
 
     only = {p.strip() for p in args.only.split(",") if p.strip()}
     unknown = only - {"schema", "stories", "assets"}

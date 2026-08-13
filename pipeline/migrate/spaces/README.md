@@ -14,10 +14,29 @@ different page designs — and no code here assumes otherwise.
 
 ```
 sb_common.py     config, HTTP with retries, scrubbing, git   imported, never run
-sb_backup.py     space -> repo    READS ONLY
-sb_restore.py    repo -> space    WRITES
-test_spaces_e2e.py   61 checks against a fake API. No network, no tokens.
+sb_storage.py    where binaries go: a folder, or Azure Blob  imported, never run
+sb_portal.py     builds assets-portal.html                   imported, never run
+sb_backup.py     space -> repo + container    READS ONLY against Storyblok
+sb_restore.py    repo + container -> space    WRITES
+test_spaces_e2e.py   121 checks against a fake API. No network, no tokens.
 ```
+
+**The backup is in two halves.** The text — schema, settings, every story, the
+mapping, the scripts and the docs — goes to the site's GitHub repo. The media goes
+to **Azure Blob**, because the three spaces hold ~42 GB against GitHub's 1 GB.
+`storyblok/manifest_assets.csv` is the join: a relative path and a **sha256** for
+every file, so the halves can be proved to match rather than assumed to.
+
+```
+"assets": {"backend": "azure", "container": "storyblok-backup",
+           "prefix": "AKUH", "tier": "Cool",
+           "connection_string": "..."}   or AZURE_STORAGE_CONNECTION_STRING
+```
+
+One container, one prefix per site. Blobs are written **Cool** — roughly half the
+price of Hot for data written once and read almost never. Not Archive: that is
+cheaper again but needs hours of rehydration, and a backup you cannot read for
+hours is not one you can restore from during an incident.
 
 ---
 
@@ -275,6 +294,54 @@ is equivalent, not the same.
 
 ---
 
+## Proving it is actually backed up
+
+```powershell
+$SB = "pipeline\migrate\spaces\sb_backup.py"
+python $SB --site AKUH --audit           # cheap: no egress. Exits non-zero on a gap
+python $SB --site AKUH --audit --deep    # reads every byte back. Bills egress
+python $SB --site AKUH --only assets --repair --no-commit   # re-fetch what is broken
+```
+
+`--audit` does not re-read the numbers the backup just printed — a backup that
+reports its own success is worth very little. It re-queries the live space and
+compares: every story id present and holding content, every published version,
+every asset's metadata and bytes, the manifests, the portal, and the docs. Any gap
+exits non-zero, so it can gate a nightly job.
+
+Two cost decisions are baked in. The default audit reads the sha256 recorded on
+each stored blob rather than downloading it, so a nightly check costs nothing; it
+catches a missing or replaced file but not corruption in place, which is what
+`--deep` is for. And skipping unchanged files by size cannot see corruption that
+kept the size — eight bytes overwritten by eight others — so **`--repair`**
+deep-verifies first and forces a re-fetch of whatever fails. A test covers exactly
+that blind spot.
+
+## Draft and published are two different backups
+
+The Management API returns **drafts**. On AKUH, 231 stories have unpublished
+changes and 365 are not published at all — so for those, what visitors see is not
+what `stories/<id>.json` holds. Restoring drafts over a live site would publish
+work in progress, which is data loss wearing the costume of a restore.
+
+So `stories_published/<id>.json` holds the published version too, fetched from the
+Content Delivery API using the space's own delivery token. That token is read from
+the space record and **never written anywhere** — `save()` scrubs `first_token`,
+and nothing persists it. If the space has no delivery token the run says so loudly
+rather than quietly producing a draft-only backup.
+
+## The portal
+
+`assets-portal.html`, at the repo root, one self-contained file per site. The left
+pane is the Storyblok asset folder tree with a file count and cumulative size per
+node; the right lists each file with its folder, its **path in the container**,
+size, type, sha256, and a stored yes/no. There is a filter box, an "only missing
+from storage" toggle, and optional thumbnails.
+
+Thumbnails point at Storyblok's public URLs, so they work while the space is alive
+and stop resolving once it is gone. That is deliberate: this is a map of the
+backup, and the structure, paths and checksums do not depend on them.
+
 ## Where the media lives — the decided arrangement
 
 Measured from the three spaces:
@@ -286,33 +353,26 @@ Measured from the three spaces:
 | AKU | 289824742951963 | 7,126 | 5,022 | 1.90 GB |
 | | | **10,345** | **27,123** | **~42 GB** |
 
-GitHub includes **1 GB** of large-file storage. So **the media goes to a bucket
-and the repo keeps the index**: set `assets_dir` per site and binaries are written
-there instead of into git, Git LFS is not used at all, and
-`storyblok/manifest_assets.csv` records every file's relative path and **sha256**.
+GitHub includes **1 GB** of large-file storage, so committing 42 GB was never an
+option: files pushed to GitHub stay in history and keep counting even once
+deleted. The media goes to **Azure Blob** — one container, one prefix per site —
+and the repo keeps the index.
 
-That checksum is the point. With the backup in two halves, it is the only way to
-prove they still match, and `--verify-assets` is what proves it:
+Checksums are computed as the bytes stream past on the way to the container, so
+hashing costs nothing on top of the upload. A file already stored at the right size
+keeps the checksum the previous run recorded rather than being read back;
+re-hashing 42 GB nightly would make the job unaffordable, and a checksum nobody
+can afford to compute is a checksum nobody has.
 
-```powershell
-python pipeline\migrate\spaces\sb_backup.py --site AKUEB `
-    --only assets --verify-assets --no-commit
-```
+Nothing is staged for the whole space. Each file streams from Storyblok through a
+single temp file and straight into the container. That one temp file is
+deliberate — the Azure SDK may retry a block, and a hash taken over a
+non-seekable stream that gets re-read is silently wrong, which is the one failure
+this whole design exists to detect.
 
-It re-hashes what is stored against the manifest and reports `missing` and
-`changed`. Run it before relying on a restore — a half-finished bucket sync
-otherwise looks exactly like a complete backup.
-
-Checksums are computed as bytes stream past during download, so hashing is free.
-A file that is skipped because its size is unchanged keeps its recorded checksum
-rather than being re-read; re-hashing 42 GB nightly would make the job
-unaffordable, and a checksum nobody can afford to compute is a checksum nobody
-has.
-
-**To commit binaries into git instead**, leave `assets_dir` out — then Git LFS is
-required and the numbers above apply. Note that large files pushed to GitHub stay
-in history and keep counting against the quota even when deleted, so that is a
-decision to make before the first push, not after.
+**Alternatives, both still supported.** `assets_dir` points at a folder, a mount or
+a share instead of Azure. Leaving both out commits binaries into the repo through
+Git LFS, which is the right choice only for a space small enough to fit the quota.
 
 ---
 

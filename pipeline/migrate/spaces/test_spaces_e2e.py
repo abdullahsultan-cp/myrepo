@@ -129,10 +129,30 @@ class H(BaseHTTPRequestHandler):
     def do_GET(self):
         p, host = self.path.split("?")[0], self._host()
 
+        # The Content Delivery API: the only place a story's PUBLISHED version
+        # exists. Returns deliberately different content from the draft, so a
+        # backup that quietly saved drafts in both places fails the test.
+        if p.startswith("/v2/cdn/stories/"):
+            sid = p.rsplit("/", 1)[1]
+            if self.path.find("token=LEAKED_TOKEN") < 0:
+                return self._send(401, {"error": "bad token"})
+            if sid not in STORIES or not STORIES[sid].get("published"):
+                return self._send(404, {"error": "not found"})
+            st = dict(self._fix(STORIES[sid]))
+            st["content"] = dict(st.get("content") or {},
+                                 title="PUBLISHED VERSION")
+            return self._send(200, {"story": st})
+
         if p == f"/v1/spaces/{SRC}":
             return self._send(200, {"space": {
                 "id": int(SRC), "name": "Fake Source", "plan": "starter",
                 "first_token": "LEAKED_TOKEN", "owner": {"email": "x@y.z"}}})
+        if p == f"/v1/spaces/{SRC}/webhook_endpoints":
+            # The real endpoint returns the HMAC signing secret, which must not
+            # reach a git remote.
+            return self._send(200, {"webhook_endpoints": [
+                {"id": 1, "name": "deploy", "endpoint": "https://ci/hook",
+                 "secret": "LEAKED_WEBHOOK_SECRET", "actions": ["story.published"]}]})
         if p == f"/v1/spaces/{TGT}":
             return self._send(200, {"space": {"id": int(TGT),
                                               "name": "Fake Target",
@@ -261,12 +281,19 @@ def main():
         "__pycache__", "sites.json", ".git"))
 
     # point the EU host at the fake server
+    # Both hosts, not just the Management API. Redirecting only REGION_HOSTS let
+    # the published-content fetch escape to the real api.storyblok.com, where it
+    # 401'd -- so the feature looked broken and the test looked like it had
+    # covered it.
     cpath = os.path.join(work, "sb_common.py")
     with open(cpath, encoding="utf-8") as f:
         src = f.read()
+    src = src.replace('"eu": "https://mapi.storyblok.com/v1"',
+                      f'"eu": "http://127.0.0.1:{port}/v1"')
+    src = src.replace('"eu": "https://api.storyblok.com/v2/cdn"',
+                      f'"eu": "http://127.0.0.1:{port}/v2/cdn"')
     with open(cpath, "w", encoding="utf-8", newline="\n") as f:
-        f.write(src.replace('"eu": "https://mapi.storyblok.com/v1"',
-                            f'"eu": "http://127.0.0.1:{port}/v1"'))
+        f.write(src)
 
     repos = {n: os.path.join(tmp, f"{n.lower()}-backup")
              for n in ("AKUH", "AKU", "AKUEB")}
@@ -412,10 +439,51 @@ def main():
             except (UnicodeDecodeError, OSError):
                 continue
             for needle in ("LEAKED_TOKEN", "LEAKED_PREVIEW", "TESTTOKEN",
-                           "x@y.z"):
+                           "x@y.z", "LEAKED_WEBHOOK_SECRET"):
                 if needle in t:
                     leaked.append(f"{fn}:{needle}")
-    ck("no credentials or owner email written", not leaked, str(leaked))
+    ck("no credentials, owner email or webhook secret written", not leaked,
+       str(leaked))
+    hooks = json.load(open(os.path.join(sb, "webhook_endpoints.json"),
+                           encoding="utf-8"))
+    ck("webhook captured but its signing secret stripped",
+       hooks and hooks[0]["endpoint"] == "https://ci/hook"
+       and "secret" not in hooks[0], str(hooks))
+
+    # ---- published versions: a draft-only backup would restore the wrong thing
+    pub_dir = os.path.join(sb, "stories_published")
+    ck("published versions captured separately", os.path.isdir(pub_dir))
+    pub_ids = sorted(f[:-5] for f in os.listdir(pub_dir)
+                     if f.endswith(".json")) if os.path.isdir(pub_dir) else []
+    ck("only published stories have a published file", pub_ids == ["101"],
+       str(pub_ids))
+    if pub_ids:
+        p101 = json.load(open(os.path.join(pub_dir, "101.json"),
+                              encoding="utf-8"))
+        d101 = json.load(open(os.path.join(sb, "stories", "101.json"),
+                              encoding="utf-8"))
+        ck("published content is the PUBLISHED one, not the draft",
+           p101["content"]["title"] == "PUBLISHED VERSION",
+           p101["content"].get("title"))
+        ck("draft is still stored separately and differs",
+           d101["content"]["title"] != p101["content"]["title"],
+           f"{d101['content'].get('title')} vs {p101['content'].get('title')}")
+        ck("the delivery token is not written into the published file",
+           "LEAKED_TOKEN" not in json.dumps(p101))
+
+    # ---- the portal
+    portal_path = os.path.join(repos["AKU"], "assets-portal.html")
+    ck("assets-portal.html written", os.path.exists(portal_path))
+    portal = open(portal_path, encoding="utf-8").read()
+    ck("portal is self-contained (no external requests for structure)",
+       "<script src" not in portal and "<link rel=\"stylesheet\"" not in portal)
+    ck("portal embeds the folder tree", '"folders"' in portal)
+    ck("portal names a real asset folder", "photos" in portal, "")
+    ck("portal carries the storage path and checksum",
+       "800x600/aaaa1111/pic.png" in portal
+       and hashlib.sha256(PNG).hexdigest() in portal, "")
+    ck("portal does not leak the management token",
+       "TESTTOKEN" not in portal and "LEAKED" not in portal)
 
     lfs = subprocess.run(["git", "-C", repos["AKU"], "lfs", "ls-files"],
                          capture_output=True, text=True).stdout
@@ -503,6 +571,52 @@ def main():
     ck("verify detects a corrupted file", "CHANGED" in r.stdout,
        r.stdout[-800:])
     ck("verify detects a deleted file", "MISSING" in r.stdout, r.stdout[-800:])
+
+    # The corruption above kept the file's size (8 bytes over 8 bytes), so the
+    # ordinary skip-by-size path will never re-fetch it. That is exactly the
+    # blind spot --repair exists to cover.
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--no-commit")
+    r2 = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+             "--site", "AKUEB", "--only", "assets", "--verify-assets",
+             "--no-commit")
+    ck("a plain re-run does NOT heal same-size corruption (known blind spot)",
+       "CHANGED" in r2.stdout, r2.stdout[-600:])
+
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--repair", "--no-commit")
+    ck("--repair reports what it is re-fetching",
+       "forcing re-fetch" in r.stdout, r.stdout[-700:])
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--verify-assets",
+            "--no-commit")
+    ck("--repair healed the corrupted and the deleted file",
+       "missing 0" in r.stdout and "changed 0" in r.stdout, r.stdout[-700:])
+
+    print("\n=== audit: proves the backup covers the live space ===")
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--audit")
+    ck("audit passes on a complete backup",
+       r.returncode == 0 and "AUDIT PASSED" in r.stdout,
+       (r.stdout + r.stderr)[-1400:])
+    ck("audit compares against the live space, not its own counts",
+       "space" in r.stdout and "backup" in r.stdout, r.stdout[-500:])
+
+    # An audit that cannot fail is worse than no audit. Delete a story file and
+    # a blob, and it must notice both.
+    victim = os.path.join(esb, "stories", "101.json")
+    shutil.move(victim, victim + ".hidden")
+    os.remove(os.path.join(bucket, "x", "cccc3333", "logo.svg"))
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--audit")
+    ck("audit FAILS when a story file is missing",
+       r.returncode != 0 and "AUDIT FAILED" in r.stdout,
+       (r.stdout + r.stderr)[-1200:])
+    ck("audit names the missing story", "101" in r.stdout, r.stdout[-900:])
+    ck("audit notices the deleted blob",
+       "no stored bytes" in r.stdout or "MISSING" in r.stdout,
+       r.stdout[-900:])
+    shutil.move(victim + ".hidden", victim)
 
     print("\n=== apps and extensions captured ===")
     ck("apps recorded as unavailable rather than skipped silently",

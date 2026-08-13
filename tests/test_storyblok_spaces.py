@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.join(ROOT, "pipeline", "migrate", "spaces"))
 
 import sb_common as C
 from sb_restore import remap_content
+from sb_storage import make_backend
 
 SPACE = "289824742951963"
 
@@ -363,41 +364,133 @@ class TestAssetUrlDiscovery(unittest.TestCase):
         self.assertEqual(self.urls({"a": None, "b": [], "c": 0}), set())
 
 
-class TestAssetsRoot(unittest.TestCase):
-    """Media goes to a bucket, so the root is configurable and must be honest
-    about whether it sits inside the repo."""
+class TestStorageBackend(unittest.TestCase):
+    """Media goes to an Azure container, so the backend is configurable and must
+    be honest about whether the bytes sit inside the repo."""
 
     def test_defaults_to_inside_the_snapshot(self):
-        p, external = C.assets_root({"name": "AKU"}, os.path.join("r", "sb"))
-        self.assertEqual(p, os.path.join("r", "sb", "assets"))
+        store, external = make_backend({"name": "AKU"},
+                                       os.path.join("r", "sb"))
         self.assertFalse(external)
+        self.assertFalse(store.external)
+        self.assertEqual(store.root, os.path.join("r", "sb", "assets"))
 
     def test_assets_dir_moves_it_outside_and_flags_that(self):
-        p, external = C.assets_root(
-            {"name": "AKUEB", "assets_dir": "/mnt/bucket/AKUEB"}, "ignored")
+        store, external = make_backend(
+            {"name": "AKUEB", "assets_dir": os.path.join("mnt", "bkt")}, "out")
         self.assertTrue(external)
-        self.assertTrue(p.endswith(os.path.join("mnt", "bucket", "AKUEB"))
-                        or "bucket" in p)
+        self.assertIn("bkt", store.root)
 
     def test_cli_override_beats_the_config(self):
-        p, external = C.assets_root(
-            {"name": "X", "assets_dir": "/from/config"}, "out", "/from/cli")
+        store, external = make_backend(
+            {"name": "X", "assets_dir": "from_config"}, "out", "from_cli")
         self.assertTrue(external)
-        self.assertIn("cli", p)
+        self.assertIn("from_cli", store.root)
 
     def test_expands_environment_variables(self):
         os.environ["SB_TEST_BUCKET"] = os.path.join("tmp", "bkt")
         try:
-            p, _ = C.assets_root({"name": "X",
-                                  "assets_dir": "$SB_TEST_BUCKET/AKUH"}, "out")
-            self.assertIn("bkt", p)
-            self.assertNotIn("$", p)
+            store, _ = make_backend(
+                {"name": "X", "assets_dir": "$SB_TEST_BUCKET/AKUH"}, "out")
+            self.assertIn("bkt", store.root)
+            self.assertNotIn("$", store.root)
         finally:
             del os.environ["SB_TEST_BUCKET"]
 
     def test_returns_an_absolute_path(self):
-        p, _ = C.assets_root({"name": "X", "assets_dir": "rel/bucket"}, "out")
-        self.assertTrue(os.path.isabs(p))
+        store, _ = make_backend({"name": "X", "assets_dir": "rel/bucket"},
+                                "out")
+        self.assertTrue(os.path.isabs(store.root))
+
+    def test_an_unknown_backend_exits_rather_than_guessing(self):
+        with self.assertRaises(SystemExit):
+            make_backend({"name": "X", "assets": {"backend": "s3"}}, "out")
+
+    def test_azure_without_a_container_exits(self):
+        with self.assertRaises(SystemExit):
+            make_backend({"name": "X", "assets": {
+                "backend": "azure", "connection_string": "x"}}, "out")
+
+    def test_azure_without_credentials_exits(self):
+        with self.assertRaises(SystemExit):
+            make_backend({"name": "X", "assets": {
+                "backend": "azure", "container": "c"}}, "out")
+
+    def test_local_roundtrip_hashes_and_stores(self):
+        import tempfile
+        payload = b"hello-storyblok" * 500
+        with tempfile.TemporaryDirectory() as d:
+            store, _ = make_backend({"name": "X", "assets_dir": d}, "out")
+            self.assertIsNone(store.size("a/b/c.bin"))
+            digest, size = store.write("a/b/c.bin", [payload[:100],
+                                                     payload[100:]])
+            self.assertEqual(size, len(payload))
+            self.assertEqual(store.size("a/b/c.bin"), len(payload))
+            self.assertEqual(store.sha256("a/b/c.bin"), digest)
+            self.assertEqual(len(digest), 64)
+
+    def test_a_truncated_download_is_refused_not_stored(self):
+        # The size Storyblok reported is the contract. Writing a short file and
+        # recording a checksum for it would make corruption look verified.
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            store, _ = make_backend({"name": "X", "assets_dir": d}, "out")
+            with self.assertRaises(OSError):
+                store.write("t.bin", [b"only-8b!"], expected=9999)
+            self.assertIsNone(store.size("t.bin"))
+
+    def test_no_temp_files_are_left_behind_on_failure(self):
+        import glob
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            store, _ = make_backend({"name": "X", "assets_dir": d}, "out")
+            before = set(glob.glob(os.path.join(tempfile.gettempdir(),
+                                                "*.sbpart")))
+            with self.assertRaises(OSError):
+                store.write("t.bin", [b"short"], expected=100)
+            after = set(glob.glob(os.path.join(tempfile.gettempdir(),
+                                              "*.sbpart")))
+            self.assertEqual(before, after)
+
+
+class TestAzureBlobTier(unittest.TestCase):
+    """The tier must be resolved to Azure's enum before it reaches upload_blob.
+
+    Handing the SDK the plain string from the config raises
+    `AttributeError: 'str' object has no attribute 'value'` on every single file,
+    which reads like a credentials or network fault and is neither. It failed 100
+    uploads in a row against the real container before this was pinned.
+    """
+
+    def tier(self, value):
+        from sb_storage import AzureBackend
+        return AzureBackend._resolve_tier(value)
+
+    def test_cool_resolves_to_the_enum(self):
+        from azure.storage.blob import StandardBlobTier
+        self.assertIs(self.tier("Cool"), StandardBlobTier.Cool)
+
+    def test_is_case_insensitive(self):
+        from azure.storage.blob import StandardBlobTier
+        self.assertIs(self.tier("cool"), StandardBlobTier.Cool)
+        self.assertIs(self.tier("HOT"), StandardBlobTier.Hot)
+
+    def test_what_it_returns_has_the_value_attribute_the_sdk_reads(self):
+        # The exact thing that broke: upload_blob does tier.value internally.
+        self.assertTrue(hasattr(self.tier("Cool"), "value"))
+        self.assertEqual(self.tier("Cool").value, "Cool")
+
+    def test_none_means_the_account_default(self):
+        self.assertIsNone(self.tier(None))
+        self.assertIsNone(self.tier(""))
+
+    def test_an_unknown_tier_exits_rather_than_failing_per_file(self):
+        with self.assertRaises(SystemExit):
+            self.tier("Glacier")
+
+    def test_an_enum_passes_straight_through(self):
+        from azure.storage.blob import StandardBlobTier
+        self.assertIs(self.tier(StandardBlobTier.Hot), StandardBlobTier.Hot)
 
 
 class TestSha256File(unittest.TestCase):

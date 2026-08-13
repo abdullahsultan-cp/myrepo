@@ -50,6 +50,7 @@ import argparse
 import json
 import os
 import sys
+import tempfile
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
@@ -59,7 +60,6 @@ from sb_common import (
     OK_STATUS,
     api_base,
     asset_path,
-    assets_root,
     call,
     fetch_list,
     get,
@@ -72,6 +72,7 @@ from sb_common import (
     token_for,
     write_json,
 )
+from sb_storage import make_backend
 
 # Written back in-place by default. Deliberately not slug, parent_id or
 # position: those move a story, and moving 4,000 stories to fix one broken body
@@ -93,12 +94,13 @@ class Snapshot:
     history can answer it.
     """
 
-    def __init__(self, repo, outdir, rev=None, assets_root=None):
+    def __init__(self, repo, outdir, rev=None, store=None):
         self.repo, self.outdir, self.rev = repo, outdir, rev
         self.prefix = os.path.relpath(outdir, repo).replace(os.sep, "/")
-        # Where the binaries actually are. With the media on a bucket this is
-        # outside the repo entirely, and the manifest's paths are relative to it.
-        self.assets_root = assets_root or os.path.join(outdir, "assets")
+        # Where the binaries actually are: a folder, a mount, or an Azure
+        # container. The manifest's paths are relative to whichever it is.
+        self.store = store
+        self._tmp = []
 
     def _git_show(self, rel):
         r = git(self.repo, "show", f"{self.rev}:{self.prefix}/{rel}",
@@ -125,23 +127,54 @@ class Snapshot:
     def story(self, sid):
         return self.read(f"stories/{sid}.json")
 
-    def asset_file(self, asset, space_id):
-        """Binaries come from the assets root, never from a git revision.
-
-        Under LFS, `git show` returns the pointer text rather than the file, so a
-        rev-based read would hand a rebuild a 130-byte text file named photo.jpg.
-        To rebuild from an old commit, check that commit out first.
+    def asset_rel(self, asset, space_id):
+        """The asset's path relative to the storage root.
 
         `asset_path` yields "assets/<mirrored>"; the leading segment is dropped
-        because assets_root already IS that folder -- which is what lets it point
-        at a bucket mount outside the repo.
+        because the storage root already IS that folder -- which is what lets one
+        path address a file in the repo, on a mount, or as a blob.
         """
         rel = asset_path(asset, space_id)
         if not rel:
             return None
         rel = rel.split(os.sep, 1)[1] if os.sep in rel else rel
-        p = os.path.join(self.assets_root, rel)
-        return p if os.path.exists(p) else None
+        return rel.replace(os.sep, "/")
+
+    def has_asset(self, asset, space_id):
+        rel = self.asset_rel(asset, space_id)
+        return bool(rel) and self.store.size(rel) is not None
+
+    def asset_file(self, asset, space_id):
+        """A local path to the asset's bytes, fetching from the container first.
+
+        Never read through a git revision: under LFS `git show` returns the
+        pointer text rather than the file, so a rev-based read would hand a
+        rebuild a 130-byte text file named photo.jpg. To rebuild from an old
+        commit, check that commit out first.
+        """
+        rel = self.asset_rel(asset, space_id)
+        if not rel:
+            return None
+        local = getattr(self.store, "_p", None)
+        if local:                                     # a folder: use it directly
+            p = local(rel)
+            return p if os.path.exists(p) else None
+        # A remote container: pull it to scratch for the upload, then clean up.
+        fd, tmp = tempfile.mkstemp(suffix="-" + os.path.basename(rel))
+        os.close(fd)
+        got = self.store.download_to(rel, tmp)
+        if not got:
+            os.path.exists(tmp) and os.unlink(tmp)
+            return None
+        self._tmp.append(tmp)
+        return tmp
+
+    def release(self, path):
+        """Drop a scratch copy once it has been uploaded."""
+        if path in self._tmp:
+            self._tmp.remove(path)
+            if os.path.exists(path):
+                os.unlink(path)
 
 
 def canonical(obj):
@@ -479,7 +512,7 @@ def restore_rebuild(site, snap, args):
     # Better to know before anything is written.
     have, absent = [], []
     for a in assets:
-        (have if snap.asset_file(a, src_space) else absent).append(a)
+        (have if snap.has_asset(a, src_space) else absent).append(a)
 
     print(f"\n  rebuild - {site['name']} backup -> space {target} ({tname})")
     print(f"  {'component groups':<22} {len(groups)}")
@@ -600,8 +633,15 @@ def restore_rebuild(site, snap, args):
 
     def one_asset(a):
         path = snap.asset_file(a, src_space)
-        new, err = upload_asset(api, token, path, a,
-                                fmap.get(a.get("asset_folder_id")))
+        if not path:
+            return a, None, "bytes not found in storage"
+        try:
+            new, err = upload_asset(api, token, path, a,
+                                    fmap.get(a.get("asset_folder_id")))
+        finally:
+            # A remote container is pulled to scratch one file at a time; without
+            # this, rebuilding AKUEB would leave 31 GB in the temp directory.
+            snap.release(path)
         if err:
             return a, None, err
         return a, new, None
@@ -782,11 +822,12 @@ def main():
     repo, outdir = repo_paths(site)
     if not os.path.isdir(outdir):
         sys.exit(f"  no snapshot at {outdir} - run sb_backup.py first")
-    root, external = assets_root(site, outdir, args.assets_dir)
-    snap = Snapshot(repo, outdir, args.from_rev, root)
+    store, external = make_backend(site, outdir, args.assets_dir)
+    snap = Snapshot(repo, outdir, args.from_rev, store)
     if external:
-        print(f"  media from {root}")
-        if not os.path.isdir(root):
+        print(f"  media from {store.label}")
+        root = getattr(store, "root", None)
+        if root and not os.path.isdir(root):
             # Only fatal for a rebuild, which uploads them. in-place never
             # touches assets, so a missing bucket must not block a content fix.
             msg = (f"  !! the media directory does not exist: {root}\n"

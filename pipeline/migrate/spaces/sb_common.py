@@ -74,6 +74,18 @@ REGION_HOSTS = {
     "cn": "https://app.storyblokchina.cn/v1",
 }
 
+# The Content Delivery API, which is a different host from the Management API and
+# the only place a story's PUBLISHED version exists. The Management API always
+# returns the draft, and the two differ for any story with unpublished changes --
+# 231 of them on AKUH.
+CDN_HOSTS = {
+    "eu": "https://api.storyblok.com/v2/cdn",
+    "us": "https://api-us.storyblok.com/v2/cdn",
+    "ca": "https://api-ca.storyblok.com/v2/cdn",
+    "ap": "https://api-ap.storyblok.com/v2/cdn",
+    "cn": "https://app.storyblokchina.cn/v2/cdn",
+}
+
 # Dropped from every payload before it is written. Storyblok returns a
 # preview_token on each story and a first_token on the space; both are live
 # credentials, and this output goes to a git remote.
@@ -81,6 +93,13 @@ SECRET_KEYS = {
     "first_token", "preview_token", "api_key", "management_token",
     "password", "real_email", "alt_email", "personal_access_token",
 }
+
+# `secret` is NOT in the set above, and must not be: it is a perfectly ordinary
+# name for a story field, and scrubbing it globally would quietly delete real
+# content. But /webhook_endpoints returns the HMAC signing secret under exactly
+# that key, and this output goes to a git remote. So it is scrubbed for that one
+# resource, by name, and RESTORE.md says the secrets must be re-set by hand.
+PER_RESOURCE_SECRET_KEYS = {"webhook_endpoints": {"secret"}}
 
 # A PUT on an asset and a DELETE on a folder both answer 204. Treating only
 # (200, 201) as success is how a run that moved everything correctly reports
@@ -148,25 +167,6 @@ def repo_paths(site):
     """(repo root, snapshot dir) for a site, both absolute."""
     repo = os.path.abspath(os.path.expanduser(site["repo"]))
     return repo, os.path.join(repo, site.get("subdir", "storyblok"))
-
-
-def assets_root(site, outdir, override=None):
-    """Where this site's binaries live, and whether that is inside the repo.
-
-    Returns (path, external). External means the media is deliberately kept out
-    of git -- on a bucket mount or a file share -- because AKUEB alone is 31 GB
-    and GitHub includes 1 GB. The repo then holds the schema, every story, and
-    manifest_assets.csv with a sha256 per file, which is what lets the two halves
-    be checked against each other rather than hoped about.
-
-    Any path works: a mounted bucket, an rclone mount, a UNC share, a plain
-    folder. Nothing here speaks S3 directly, because which provider it is has
-    not been decided and a client for the wrong one is worse than none.
-    """
-    d = override or site.get("assets_dir")
-    if not d:
-        return os.path.join(outdir, "assets"), False
-    return os.path.abspath(os.path.expanduser(os.path.expandvars(d))), True
 
 
 def sha256_file(path, chunk=1 << 20):
@@ -312,7 +312,18 @@ def write_json(path, obj):
 
 
 def save(outdir, name, obj):
+    extra = PER_RESOURCE_SECRET_KEYS.get(name)
+    if extra:
+        obj = _drop_keys(obj, extra)
     return write_json(os.path.join(outdir, f"{name}.json"), obj)
+
+
+def _drop_keys(obj, keys):
+    if isinstance(obj, list):
+        return [_drop_keys(o, keys) for o in obj]
+    if isinstance(obj, dict):
+        return {k: _drop_keys(v, keys) for k, v in obj.items() if k not in keys}
+    return obj
 
 
 def load_json(path, default=None):
