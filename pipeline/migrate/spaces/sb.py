@@ -8,6 +8,7 @@ sb.py — the one command for a Storyblok backup repo. Run from the repo root.
     python tools/sb.py init <other repo path> --name AKU --space 456
                                     stand up ANOTHER backup repo from this one:
                                     tools, wrappers, config, gitignore
+    python tools/sb.py status       where this backup stands, in one screen
     python tools/sb.py doctor       is everything in place to run?
     python tools/sb.py backup       THE ONE CLICK: schema, stories, published
                                     versions, assets to the bucket, manifests,
@@ -42,6 +43,13 @@ import os
 import re
 import subprocess
 import sys
+
+
+def load_json(path, default=None):
+    if not os.path.exists(path):
+        return default
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
@@ -379,6 +387,108 @@ def cmd_rebuild(argv):
                 *argv[1:])
 
 
+def cmd_status(argv):
+    """Where this backup stands, in one screen and a few seconds.
+
+    Deliberately cheap: counts on disk, one blob listing, one story-count and
+    one asset-count call. No downloads, so it costs nothing and can be run
+    whenever. `audit` is the thorough version.
+    """
+    site = _site_from_snapshot()
+    print(f"\n  {site['name']}   space {site['space_id']}   region "
+          f"{site['region']}")
+
+    log = subprocess.run(
+        ["git", "-C", REPO, "log", "-1", "--format=%h  %ad  %s",
+         "--date=format:%Y-%m-%d %H:%M"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace")
+    print(f"  last commit   {log.stdout.strip() or '(none yet)'}")
+    dirty = subprocess.run(["git", "-C", REPO, "status", "--porcelain"],
+                           capture_output=True, text=True).stdout.strip()
+    if dirty:
+        print(f"  uncommitted   {len(dirty.splitlines())} file(s) - "
+              f"a run may still be going, or the last one was --no-commit")
+
+    if not has_snapshot():
+        print("\n  no snapshot yet - run: python tools/sb.py backup\n")
+        return 0
+
+    def count(sub):
+        d = os.path.join(SNAP, sub)
+        return len([f for f in os.listdir(d) if f.endswith(".json")]) \
+            if os.path.isdir(d) else 0
+
+    summ = _summary()
+    counts = summ.get("counts", {})
+    assets = json.load(open(os.path.join(SNAP, "assets.json"),
+                            encoding="utf-8")) if os.path.exists(
+        os.path.join(SNAP, "assets.json")) else []
+
+    print("\n  IN THE REPO")
+    print(f"    stories (draft)     {count('stories'):>7}")
+    print(f"    published versions  {count('stories_published'):>7}")
+    print(f"    asset records       {len(assets):>7}")
+    print(f"    components          {counts.get('components', '?'):>7}")
+    print(f"    datasource entries  {counts.get('datasource_entries', '?'):>7}")
+    for extra, label in (("index.sqlite", "index"),
+                         ("manifest_stories.csv", "story map"),
+                         ("manifest_assets.csv", "asset map")):
+        there = os.path.exists(os.path.join(SNAP, extra))
+        print(f"    {label:<19} {'present' if there else 'MISSING':>7}")
+
+    cfg, data = effective_config()
+    if not cfg:
+        print()
+        return _no_config()
+
+    sys.path.insert(0, HERE)
+    from sb_backup import rel_path
+    from sb_common import fetch_list, space_api, token_for
+    from sb_storage import make_backend
+
+    s = data["sites"][0]
+    store, external = make_backend(s, SNAP)
+    if external:
+        stored = store.list_all()
+        want = {rel_path(a, str(s["space_id"])) for a in assets}
+        want.discard(None)
+        have = len(want & set(stored))
+        print(f"\n  IN THE BUCKET   {store.label}")
+        print(f"    files stored        {len(stored):>7}   "
+              f"{sum(stored.values()) / 1e9:.2f} GB")
+        print(f"    of this backup      {have:>7} of {len(want)}"
+              + ("   ** still uploading **" if have < len(want) else "   ok"))
+
+    api, token = space_api(s), token_for(s)
+    live_stories, e1 = fetch_list(api, "stories", "stories", True, token)
+    live_assets, e2 = fetch_list(api, "assets", "assets", True, token)
+    print("\n  VS THE LIVE SPACE")
+    if e1 or e2:
+        print(f"    could not read: {e1 or e2}")
+        return 1
+    ds, da = len(live_stories) - count("stories"), len(live_assets) - len(assets)
+    print(f"    stories             {len(live_stories):>7} live   "
+          + ("in sync" if ds == 0 else f"{ds:+} since this backup"))
+    print(f"    assets              {len(live_assets):>7} live   "
+          + ("in sync" if da == 0 else f"{da:+} since this backup"))
+    if ds or da:
+        print("\n    The space has moved on. That is normal for a live site -"
+              "\n    run `python tools/sb.py backup` to catch up (only the "
+              "changes are fetched).")
+
+    gaps = load_json(os.path.join(SNAP, "accepted_gaps.json"), {}) or {}
+    errs = summ.get("errors", {})
+    if gaps:
+        print(f"\n  accepted gaps   {len(gaps)} (reviewed, in "
+              f"accepted_gaps.json)")
+    if errs:
+        print(f"  not readable    {', '.join(sorted(errs))}")
+        print("                  (endpoints this token type cannot reach - "
+              "see _summary.json)")
+    print()
+    return 0
+
+
 def cmd_changed(argv):
     """What moved, appeared, vanished or was edited since an earlier commit.
 
@@ -510,7 +620,7 @@ COMMANDS = {
     "init": cmd_init, "setup": cmd_setup, "doctor": cmd_doctor, "backup": cmd_backup,
     "audit": cmd_audit, "verify": cmd_verify, "repair": cmd_repair,
     "index": cmd_index, "orphans": cmd_orphans,
-    "changed": cmd_changed,
+    "changed": cmd_changed, "status": cmd_status,
     "restore-story": cmd_restore_story, "restore-assets": cmd_restore_assets,
     "rebuild": cmd_rebuild,
 }

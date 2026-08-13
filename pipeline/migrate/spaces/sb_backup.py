@@ -53,8 +53,11 @@ import os
 import re
 import sys
 import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+
+import requests
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sb_common import (
@@ -196,12 +199,26 @@ def download_assets(assets, store, space_id, prev_sha=None, workers=6,
                 digest = store.sha256(rel)
                 return "rehash", None, aid, digest
 
-            r = get(url, stream=True)      # no token: asset URLs are public
-            if r.status_code != 200:
-                return "fail", f"{aid} {url} -> {r.status_code}", aid, None
-            digest, _ = store.write(rel, r.iter_content(65536),
-                                    a.get("content_type"), expected or None)
-            return "ok", None, aid, digest
+            # Retried around the WHOLE fetch, not just the opening request.
+            # get() already retries a request that fails to start, but these
+            # bodies stream: the connection can be reset part way through a
+            # 40 MB image long after a 200 came back, and that break happens
+            # inside iter_content where the earlier retry could not see it. It
+            # cost 21 of AKU's assets before this existed.
+            last = None
+            for attempt in range(3):
+                try:
+                    r = get(url, stream=True)   # no token: asset URLs are public
+                    if r.status_code != 200:
+                        return "fail", f"{aid} {url} -> {r.status_code}", aid, None
+                    digest, _ = store.write(rel, r.iter_content(65536),
+                                            a.get("content_type"),
+                                            expected or None)
+                    return "ok", None, aid, digest
+                except (requests.exceptions.RequestException, OSError) as e:
+                    last = e
+                    time.sleep(2 * (attempt + 1))
+            raise last
         except Exception as e:
             # Broad on purpose: one unreadable asset out of thousands must be
             # reported and skipped, not end the run. The type and message go
