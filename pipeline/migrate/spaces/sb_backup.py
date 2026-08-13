@@ -994,12 +994,36 @@ def ensure_repo(repo, outdir, want_lfs):
                 f.write(desired)
             print("    wrote .gitattributes (LFS tracking for assets/)")
 
+    # Appended to rather than only created, so a repo set up before a rule
+    # existed still gets it. A credential rule that only lands in new repos is
+    # the kind that is missing exactly where it matters.
     ignore = os.path.join(repo, ".gitignore")
-    if not os.path.exists(ignore):
-        with open(ignore, "w", encoding="utf-8", newline="\n") as f:
-            f.write("# Partial downloads from an interrupted run.\n*.part\n"
-                    "\n# Written by sb_restore.py --mode rebuild.\n"
-                    "restore_maps/\n")
+    required = [
+        ("*.part", "# Partial downloads from an interrupted run."),
+        ("restore_maps/", "# Written by sb_restore.py --mode rebuild."),
+        ("storyblok/index.sqlite",
+         "# The queryable index: wholly derived, several MB of binary that\n"
+         "# changes completely every run, and rebuilt in seconds by\n"
+         "#     python tools/sb.py index"),
+        ("tools/sites.json",
+         "# Credentials. This token can rewrite the entire space."),
+        ("tools/.sites.env.json",
+         "# Built from environment variables by tools/sb.py."),
+    ]
+    current = ""
+    if os.path.exists(ignore):
+        with open(ignore, encoding="utf-8") as f:
+            current = f.read()
+    add = [(rule, note) for rule, note in required
+           if rule not in current.split()]
+    if add:
+        with open(ignore, "a" if current else "w", encoding="utf-8",
+                  newline="\n") as f:
+            if current and not current.endswith("\n"):
+                f.write("\n")
+            for rule, note in add:
+                f.write(f"\n{note}\n{rule}\n")
+        print(f"    .gitignore: added {len(add)} rule(s)")
 
 
 def commit_and_push(repo, site, counts, push):

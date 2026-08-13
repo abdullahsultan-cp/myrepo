@@ -12,7 +12,33 @@ Each space is dumped complete into its own repo, with git history, and can be pu
 back. Nothing is shared between the three — different component libraries,
 different page designs — and no code here assumes otherwise.
 
+Each backup repo is **self-sustaining**: `tools/` holds the whole pipeline, so a
+backup or a restore needs nothing but that checkout and Python. This folder is
+just where the code is edited; every run copies the current version into the repo
+it writes to, and any set-up repo can stand up the next one:
+
+```powershell
+# inside a backup repo — no reference to this pipeline anywhere
+python tools/sb.py doctor                   # is everything in place?
+python tools/sb.py backup --push            # THE ONE CLICK
+python tools/sb.py audit                    # prove it covers the space
+python tools/sb.py orphans                  # bucket files the space dropped
+python tools/sb.py restore-story 12345 --apply
+python tools/sb.py restore-assets --apply   # deleted image: bucket -> space
+python tools/sb.py rebuild 999888 --apply
+
+# stand up a sibling repo from this one
+python tools/sb.py init ../akueb-backups --name AKUEB --space 289824724335130
 ```
+
+`backup.cmd` / `backup.sh` at the repo root are double-clickable wrappers.
+Credentials come from `tools/sites.json` (gitignored) or from the environment —
+`SB_TOKEN_<SITE>` and `AZURE_STORAGE_CONNECTION_STRING` — which is what a
+scheduled job should use so no secret is written to disk. The site, space id and
+region are read from the snapshot, so no command needs `--site`.
+
+```
+sb.py            the one command, shipped into every backup repo
 sb_common.py     config, HTTP with retries, scrubbing, git   imported, never run
 sb_storage.py    where binaries go: a folder, or Azure Blob  imported, never run
 sb_portal.py     builds assets-portal.html                   imported, never run

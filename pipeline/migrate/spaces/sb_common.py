@@ -61,8 +61,37 @@ DEFAULT_CONFIG = (os.path.join(ROOT, "config", "sites.json") if ROOT
 
 # Scripts copied into every backup repo, so a repo can be restored with nothing
 # but itself and Python. Edited here, in one place.
-TOOL_FILES = ["sb_common.py", "sb_backup.py", "sb_restore.py",
+TOOL_FILES = ["sb.py", "sb_common.py", "sb_backup.py", "sb_restore.py",
               "sb_storage.py", "sb_portal.py", "sb_indexdb.py"]
+
+# Written into every backup repo so it stands alone: the deps it needs, and a
+# double-clickable wrapper on each platform. A backup repo that needs another
+# checkout to be useful has a dependency that will be missing on the day it
+# matters.
+TOOL_EXTRAS = {
+    "tools/requirements.txt": (
+        "# Everything tools/ needs. Nothing else.\n"
+        "requests>=2.31\n"
+        "azure-storage-blob>=12.19\n"
+    ),
+    # CRLF on purpose: cmd.exe mis-parses a .cmd file with bare LF endings.
+    "backup.cmd": (
+        "@echo off\r\n"
+        "REM One click: back this space up and commit.\r\n"
+        "REM Pass --push to push, or --no-commit to only write files.\r\n"
+        "cd /d \"%~dp0\"\r\n"
+        "python tools\\sb.py backup %*\r\n"
+        "pause\r\n"
+    ),
+    "backup.sh": (
+        "#!/usr/bin/env bash\n"
+        "# One click: back this space up and commit.\n"
+        "# Pass --push to push, or --no-commit to only write files.\n"
+        "set -euo pipefail\n"
+        "cd \"$(dirname \"$0\")\"\n"
+        "exec python tools/sb.py backup \"$@\"\n"
+    ),
+}
 
 # Storyblok runs one Management API host per region. An EU token sent to the US
 # host does not say "wrong region" -- it 401s, which reads like a bad token and
@@ -486,8 +515,19 @@ def install_tools(repo):
                 open(src, "rb").read() != open(dst, "rb").read():
             shutil.copy2(src, dst)
             copied += 1
+    for rel, body in TOOL_EXTRAS.items():
+        path = os.path.join(repo, rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        current = ""
+        if os.path.exists(path):
+            with open(path, encoding="utf-8", newline="") as f:
+                current = f.read()
+        if current != body:
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                f.write(body)
+            copied += 1
     if copied:
-        print(f"    tools/: refreshed {copied} script(s)")
+        print(f"    tools/: refreshed {copied} file(s)")
     return copied
 
 
