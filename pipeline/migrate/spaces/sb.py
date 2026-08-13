@@ -131,8 +131,12 @@ def _run(script, *args):
     if not cfg:
         return _no_config()
     site = _site_from_snapshot()["name"]
-    cmd = [PY, os.path.join(HERE, script), "--config", cfg, "--site", site,
-           *args]
+    # -u because these runs take minutes to hours and the only sign of progress
+    # is what they print. Without it Python buffers the child's output whenever
+    # stdout is not a terminal, so `sb.py backup > log` shows nothing at all
+    # until the run finishes -- which looks exactly like a hang.
+    cmd = [PY, "-u", os.path.join(HERE, script), "--config", cfg,
+           "--site", site, *args]
     return subprocess.call(cmd)
 
 

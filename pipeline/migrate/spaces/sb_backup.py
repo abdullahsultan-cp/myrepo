@@ -773,7 +773,7 @@ repo is a mirror, not a working copy.
 | `{sub}/assets.json` | asset metadata |
 | `{sub}/manifest_stories.csv` | **which story sits in which folder** |
 | `{sub}/manifest_assets.csv` | **every asset: folder, file path, sha256** |
-| `{sub}/index.sqlite` | queryable view of all of the above, incl. a row per (story, asset) reference. Derived and gitignored — `python tools/sb.py index` |
+| `{sub}/index.sqlite` | **queryable view of all of the above**, incl. a row per (story, asset) reference. Committed, so you can clone and query it straight away; rebuild with `python tools/sb.py index` |
 | `{sub}/assets_location.json` | where the binaries are kept |
 | `{sub}/space_roles.json`, `webhook_endpoints.json`, `workflows.json`, `releases.json`, `tasks.json`, `branches.json` | settings, for reference |
 | `{sub}/apps.json`, `app_provisions.json`, `extensions.json` | installed apps, for reference |
@@ -1162,11 +1162,17 @@ def ensure_repo(repo, outdir, want_lfs):
     ignore = os.path.join(repo, ".gitignore")
     required = [
         ("*.part", "# Partial downloads from an interrupted run."),
+        ("__pycache__/",
+         "# Bytecode from running tools/. Changes with the Python version and\n"
+         "# has no place in a backup."),
+        ("*.pyc", None),
         ("restore_maps/", "# Written by sb_restore.py --mode rebuild."),
-        ("storyblok/index.sqlite",
-         "# The queryable index: wholly derived, several MB of binary that\n"
-         "# changes completely every run, and rebuilt in seconds by\n"
-         "#     python tools/sb.py index"),
+        # storyblok/index.sqlite is deliberately NOT here. It is derived, but it
+        # is committed so the repo can be cloned and queried without running
+        # anything first. At the weekly-or-monthly cadence these backups are
+        # actually taken by hand, a few MB per run is negligible history; the
+        # earlier decision to ignore it was reasoned from a nightly job that
+        # does not exist.
         ("tools/sites.json",
          "# Credentials. This token can rewrite the entire space."),
         ("tools/.sites.env.json",
