@@ -16,7 +16,7 @@ job stops rather than guessing.
 | Content type | State | Folder |
 |---|---|---|
 | **news** | **3,606 stories live in Storyblok**, 0 failed. 2,417 assets uploaded | `News-Pipeline/` |
-| **blogs** | 83 mapped to `blog_article`; **8 uploaded and reviewed**, 75 waiting on the owner's go-ahead | `Blogs-Pipeline/` |
+| **blogs** | **all 83 live and published**, 0 failed. `category`, `isFeatured`, `entities` and tags wait on the dev | `Blogs-Pipeline/` |
 | **events** | **2,710 live and published** across 43 folders, 0 failed | `Events-Pipeline/` |
 | **pages** | site structure and permissions; deliverables built, under review | `Pages-Pipeline/` |
 
@@ -35,6 +35,7 @@ Storyblok space `289824742951963`. Default branch is `master`.
 | **work alongside someone else** | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | **write code here** | [CODING_STANDARDS.md](CODING_STANDARDS.md) |
 | **know why the content looks like it does** | [docs/MIGRATION_DECISIONS.md](docs/MIGRATION_DECISIONS.md) |
+| **build a portal for your type** | [docs/PORTALS.md](docs/PORTALS.md) |
 | **work on one content type** | that type's own `README.md` |
 
 ---

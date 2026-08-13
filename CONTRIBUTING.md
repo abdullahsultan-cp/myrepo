@@ -159,6 +159,9 @@ pictures. `tests/test_blogs_payload.py` has that case.
 These are the rules with the sharpest edges, because breaking either is
 invisible to the person who breaks it and obvious to everybody else.
 
+**How to build one: [docs/PORTALS.md](docs/PORTALS.md).** It has the size
+budget, the reason several JSON files cannot work, and a checklist.
+
 ### A portal that needs the pipeline is a broken portal
 
 **Someone must be able to `git clone`, double-click the portal, and see it
