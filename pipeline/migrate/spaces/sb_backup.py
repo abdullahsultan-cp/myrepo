@@ -642,10 +642,49 @@ def write_repo_docs(repo, site, external):
 
     readme = f"""# {name} — Storyblok backup
 
-Automated backup of the **{name}** Storyblok space (`{space}`, region `{region}`).
-Written by `sb_backup.py`; see [RESTORE.md](RESTORE.md) to put it back.
+Complete backup of the **{name}** Storyblok space (`{space}`, region `{region}`),
+and everything needed to put it back. See [RESTORE.md](RESTORE.md) for that.
 
 **Media files are {where}.**
+
+## One command
+
+```
+python tools/sb.py doctor          is everything in place?
+python tools/sb.py backup --push   THE ONE CLICK: back up, commit, push
+python tools/sb.py audit           prove the backup covers the whole space
+```
+
+Or double-click `backup.cmd` (Windows) / run `./backup.sh`.
+
+First time in a fresh clone:
+
+```
+python -m pip install -r tools/requirements.txt
+python tools/sb.py setup           writes tools/sites.json, prefilled
+                                   — paste the two secrets into it
+python tools/sb.py doctor
+```
+
+**This repo is self-sustaining.** `tools/` holds the entire backup and restore
+pipeline, so nothing outside this checkout is needed to back up, verify or
+restore. It can even stand up a sibling repo for another space:
+
+```
+python tools/sb.py init ../other-backups --name AKUEB --space 123456
+```
+
+Everything else:
+
+```
+python tools/sb.py verify          checksums only
+python tools/sb.py repair          re-fetch anything missing or corrupted
+python tools/sb.py index           rebuild storyblok/index.sqlite
+python tools/sb.py orphans         bucket files the space no longer has
+python tools/sb.py restore-story <id> --apply
+python tools/sb.py restore-assets --apply
+python tools/sb.py rebuild <empty space id> --apply
+```
 
 Do not hand-edit anything under `{sub}/` — the next backup overwrites it. This
 repo is a mirror, not a working copy.
@@ -666,6 +705,7 @@ repo is a mirror, not a working copy.
 | `{sub}/assets.json` | asset metadata |
 | `{sub}/manifest_stories.csv` | **which story sits in which folder** |
 | `{sub}/manifest_assets.csv` | **every asset: folder, file path, sha256** |
+| `{sub}/index.sqlite` | queryable view of all of the above, incl. a row per (story, asset) reference. Derived and gitignored — `python tools/sb.py index` |
 | `{sub}/assets_location.json` | where the binaries are kept |
 | `{sub}/space_roles.json`, `webhook_endpoints.json`, `workflows.json`, `releases.json`, `tasks.json`, `branches.json` | settings, for reference |
 | `{sub}/apps.json`, `app_provisions.json`, `extensions.json` | installed apps, for reference |
@@ -741,14 +781,25 @@ here. If you find one committed, treat it as leaked and rotate it.
 
 ## Commands
 
+Use `tools/sb.py` — it finds the site and space from the snapshot, so no command
+needs `--site`:
+
 ```bash
-python tools/sb_backup.py  --site {name} --check          # verify credentials
-python tools/sb_restore.py --site {name} --mode in-place --all      # dry run
-python tools/sb_restore.py --site {name} --mode in-place --story <id> --apply
+python tools/sb.py doctor
+python tools/sb.py backup --push
+python tools/sb.py audit
+python tools/sb.py restore-story <id> --apply
+python tools/sb.py restore-assets --apply       # deleted asset: bucket -> space
+python tools/sb.py index                        # rebuild index.sqlite
 ```
 
-Both need a `sites.json` with this site's `space_id`, `management_token` and
-`repo` path. See RESTORE.md.
+Credentials: `tools/sites.json` (gitignored) or the environment
+(`SB_TOKEN_{name}`, `AZURE_STORAGE_CONNECTION_STRING`). `python tools/sb.py setup`
+writes the file prefilled. See RESTORE.md for the full procedure.
+
+**`storyblok/index.sqlite` answers the mapping questions in SQL** — which stories
+use a given asset, where its bytes are, what is in each folder. Derived, so rebuild
+it rather than trusting a stale copy.
 
 ## What is NOT in here
 
