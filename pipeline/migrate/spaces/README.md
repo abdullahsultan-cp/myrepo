@@ -61,11 +61,14 @@ repo did not migrate. Everything about it defaults to refusing.
 Git LFS must be installed — asset binaries go through it.
 
 ```powershell
-git lfs version                      # if this fails: https://git-lfs.com
 copy config\sites.example.json config\sites.json
-notepad config\sites.json            # space id, token, repo path per site
+notepad config\sites.json     # space id, token, repo path, assets_dir per site
 python pipeline\migrate\spaces\sb_backup.py --check
 ```
+
+Git LFS is only needed if you commit binaries into the repo — i.e. if you leave
+`assets_dir` unset. With the media on a bucket the repo is text-only and needs no
+LFS at all.
 
 Clone the three (empty, private) GitHub repos to the paths you put in
 `config/sites.json` first — then `origin` is already set and `--push` works. If a
@@ -107,14 +110,67 @@ storyblok/
   asset_folders.json  space_roles.json  webhook_endpoints.json
   workflows.json  workflow_stages.json  releases.json  tasks.json
   branches.json  field_types_*.json
+  apps.json  app_provisions.json  extensions.json    installed apps
   stories.json            the index
   stories/101.json        one file per story, full content
   assets.json             metadata
-  assets/800x600/aaaa1111/pic.png     every binary, via Git LFS
+  manifest_stories.csv    which story sits in which folder
+  manifest_assets.csv     every asset: folder, file path, sha256
+  assets_location.json    whether the binaries are here or on a bucket
   _summary.json           counts, and anything the token could not read
-  .gitattributes          LFS patterns — see "Why LFS breaks quietly"
+  assets/…                only when binaries are committed (Git LFS)
 tools/                    a copy of these scripts, so the repo restores alone
+README.md  CLAUDE.md  RESTORE.md    written into the repo by each run
 ```
+
+Each run also writes three documents into the backup repo, so it explains itself
+to whoever opens it under pressure — which will not be whoever set it up:
+
+- **README.md** — what every file is, and how to read the manifests
+- **CLAUDE.md** — the rules for an agent working in that repo: never hand-edit the
+  snapshot, never rewrite history, every restore is a dry run until `--apply`
+- **RESTORE.md** — the runbook: verify the backup, repair in place, rebuild a lost
+  space, and the manual steps a rebuild cannot do
+
+All three are free of counts and timestamps, so they do not rewrite themselves on
+every run and bury the real changes.
+
+### The manifests — the mapping a person can read
+
+The JSON already holds every `parent_id`, but nobody audits a 4,000-story tree by
+following id chains. Both CSVs are sorted by path, so a story that moved is one
+moved line in `git diff` rather than a changed integer buried in a story file.
+
+`manifest_stories.csv` — id, uuid, kind (story/folder), full_slug,
+**parent_folder**, name, component, state (published/draft),
+unpublished_changes, **assets_referenced**, backup_file, updated_at:
+
+```
+id     uuid      kind    full_slug          parent_folder  component     state      assets  backup_file
+10     uuid-10   folder  news               (root)                       draft              
+101    uuid-101  story   news/a             news           news_article  published  2       stories/101.json
+102    uuid-102  story   news/b             news           news_article  draft      0       stories/102.json
+```
+
+`manifest_assets.csv` — id, filename, **asset_folder**, **backup_file**,
+**file_present**, content_type, bytes, alt, url:
+
+```
+id    filename  asset_folder  backup_file                        file_present
+9001  pic.png   photos        assets/800x600/aaaa1111/pic.png    yes
+9002  doc.pdf   (root)        assets/x/bbbb2222/doc.pdf          yes
+```
+
+**`file_present` is the column that matters.** An asset with metadata but no
+binary would be recreated as an empty asset by a rebuild, and every story
+pointing at it would render a broken image. The backup prints a warning and the
+column says `NO`, so that is knowable before a restore rather than after.
+
+`assets_referenced` counts distinct asset URLs found anywhere in a story's
+content — asset fields, rich-text image nodes and URLs written into prose alike.
+It is matched on the `/f/<space id>/` path segment rather than on the host,
+because paid plans can serve assets from a custom domain and matching on the word
+"storyblok" reported zero for those spaces, silently.
 
 **One file per story, not one `stories_full.json`.** This repo already learned
 that one: committing the 44 MB single-file dump produced a 1.3-million-line diff
@@ -202,42 +258,61 @@ Captured in the snapshot for reference, but not created:
 
 - space settings, roles, webhooks, workflows and stages, releases, tasks,
   deployment branches, presets
+- **installed apps and extensions.** Captured to `apps.json`,
+  `app_provisions.json` and `extensions.json`, but installing a marketplace app
+  needs an OAuth flow a script cannot drive. Reinstall each one by hand.
 - **field-type plugins.** Account-level, not space-level, and there is no create
   API. If the source space used custom plugins — `spacing-field-plugin`, for
   instance — they must already exist on the target account or the components
   referencing them will not save correctly.
 
-Recreate those by hand from the JSON. Webhooks especially should not be
-recreated blind: they point at URLs wired to the old space.
+Recreate those by hand from the JSON; the generated `RESTORE.md` lists each with
+what to do. Webhooks especially should not be recreated blind: they point at URLs
+wired to the old space.
 
 A rebuild is **not byte-identical** — every asset gets a new URL, so the result
 is equivalent, not the same.
 
 ---
 
-## Git LFS quota — decide before the first push
+## Where the media lives — the decided arrangement
 
-GitHub gives a free account **1 GB of LFS storage and 1 GB of bandwidth per
-month**. Asset binaries count against both, and *every version of every file
-counts*. Three spaces with a couple of gigabytes of media between them will
-exceed it on the first push.
+Measured from the three spaces:
 
-Measure first:
+| Site | Space | Pages | Media files | Media size |
+|---|---|---|---|---|
+| AKUEB | 289824724335130 | 177 | 16,334 | 31.65 GB |
+| AKUH | 286308248262721 | 3,042 | 5,767 | ~8.25 GB |
+| AKU | 289824742951963 | 7,126 | 5,022 | 1.90 GB |
+| | | **10,345** | **27,123** | **~42 GB** |
+
+GitHub includes **1 GB** of large-file storage. So **the media goes to a bucket
+and the repo keeps the index**: set `assets_dir` per site and binaries are written
+there instead of into git, Git LFS is not used at all, and
+`storyblok/manifest_assets.csv` records every file's relative path and **sha256**.
+
+That checksum is the point. With the backup in two halves, it is the only way to
+prove they still match, and `--verify-assets` is what proves it:
 
 ```powershell
-python pipeline\migrate\spaces\sb_backup.py --site all --no-commit
+python pipeline\migrate\spaces\sb_backup.py --site AKUEB `
+    --only assets --verify-assets --no-commit
 ```
 
-then pick one:
+It re-hashes what is stored against the manifest and reports `missing` and
+`changed`. Run it before relying on a restore — a half-finished bucket sync
+otherwise looks exactly like a complete backup.
 
-- **buy a data pack** — $5/month per 50 GB, per account
-- **`--no-assets`** — metadata only. Small and fast, but a rebuild then comes up
-  with no images, so it is not full disaster recovery
-- **keep binaries off GitHub** — `--no-assets` plus a separate copy of
-  `storyblok/assets/` on a file share. The metadata still records exactly which
-  file belonged where
+Checksums are computed as bytes stream past during download, so hashing is free.
+A file that is skipped because its size is unchanged keeps its recorded checksum
+rather than being re-read; re-hashing 42 GB nightly would make the job
+unaffordable, and a checksum nobody can afford to compute is a checksum nobody
+has.
 
-Deleting a large file later does **not** reclaim the quota — it stays in history.
+**To commit binaries into git instead**, leave `assets_dir` out — then Git LFS is
+required and the numbers above apply. Note that large files pushed to GitHub stay
+in history and keep counting against the quota even when deleted, so that is a
+decision to make before the first push, not after.
 
 ---
 

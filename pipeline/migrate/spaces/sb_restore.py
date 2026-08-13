@@ -59,6 +59,7 @@ from sb_common import (
     OK_STATUS,
     api_base,
     asset_path,
+    assets_root,
     call,
     fetch_list,
     get,
@@ -92,9 +93,12 @@ class Snapshot:
     history can answer it.
     """
 
-    def __init__(self, repo, outdir, rev=None):
+    def __init__(self, repo, outdir, rev=None, assets_root=None):
         self.repo, self.outdir, self.rev = repo, outdir, rev
         self.prefix = os.path.relpath(outdir, repo).replace(os.sep, "/")
+        # Where the binaries actually are. With the media on a bucket this is
+        # outside the repo entirely, and the manifest's paths are relative to it.
+        self.assets_root = assets_root or os.path.join(outdir, "assets")
 
     def _git_show(self, rel):
         r = git(self.repo, "show", f"{self.rev}:{self.prefix}/{rel}",
@@ -122,16 +126,21 @@ class Snapshot:
         return self.read(f"stories/{sid}.json")
 
     def asset_file(self, asset, space_id):
-        """Binaries always come from the working tree, never from a rev.
+        """Binaries come from the assets root, never from a git revision.
 
-        Under LFS, `git show` returns the pointer text rather than the file, so
-        a rev-based read would hand a rebuild a 130-byte text file named
-        photo.jpg. To rebuild from an old commit, check that commit out first.
+        Under LFS, `git show` returns the pointer text rather than the file, so a
+        rev-based read would hand a rebuild a 130-byte text file named photo.jpg.
+        To rebuild from an old commit, check that commit out first.
+
+        `asset_path` yields "assets/<mirrored>"; the leading segment is dropped
+        because assets_root already IS that folder -- which is what lets it point
+        at a bucket mount outside the repo.
         """
         rel = asset_path(asset, space_id)
         if not rel:
             return None
-        p = os.path.join(self.outdir, rel)
+        rel = rel.split(os.sep, 1)[1] if os.sep in rel else rel
+        p = os.path.join(self.assets_root, rel)
         return p if os.path.exists(p) else None
 
 
@@ -752,6 +761,10 @@ def main():
     ap.add_argument("--into-token",
                     help="rebuild: token for the target space, if it differs "
                          "(also SB_TOKEN_TARGET)")
+    ap.add_argument("--assets-dir",
+                    help="where the binaries are kept, if outside the repo "
+                         "(bucket mount, share). Overrides assets_dir in "
+                         "sites.json. Needed by rebuild; in-place ignores it.")
     ap.add_argument("--force", action="store_true",
                     help="override the safety checks. Read what they said "
                          "first.")
@@ -769,7 +782,18 @@ def main():
     repo, outdir = repo_paths(site)
     if not os.path.isdir(outdir):
         sys.exit(f"  no snapshot at {outdir} - run sb_backup.py first")
-    snap = Snapshot(repo, outdir, args.from_rev)
+    root, external = assets_root(site, outdir, args.assets_dir)
+    snap = Snapshot(repo, outdir, args.from_rev, root)
+    if external:
+        print(f"  media from {root}")
+        if not os.path.isdir(root):
+            # Only fatal for a rebuild, which uploads them. in-place never
+            # touches assets, so a missing bucket must not block a content fix.
+            msg = (f"  !! the media directory does not exist: {root}\n"
+                   f"     mount the bucket or share, or pass --assets-dir.")
+            if args.mode == "rebuild":
+                sys.exit(msg)
+            print(msg.replace("!!", "--") + "\n     (in-place does not need it)")
 
     if args.mode == "in-place":
         return restore_in_place(site, snap, args)

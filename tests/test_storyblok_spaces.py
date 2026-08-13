@@ -288,5 +288,167 @@ class TestOkStatus(unittest.TestCase):
         self.assertIn(204, C.OK_STATUS)
 
 
+TREE = [
+    {"id": 1, "name": "regions", "parent_id": None},
+    {"id": 2, "name": "pk", "parent_id": 1},
+    {"id": 3, "name": "mc", "parent_id": 2},
+    {"id": 4, "name": "global", "parent_id": None},
+]
+
+
+class TestFolderPathMap(unittest.TestCase):
+    """The manifests answer "where does this live", which needs the full path."""
+
+    def test_builds_the_full_path(self):
+        m = C.folder_path_map(TREE)
+        self.assertEqual(m[3], "regions/pk/mc")
+        self.assertEqual(m[1], "regions")
+        self.assertEqual(m[4], "global")
+
+    def test_a_parent_id_cycle_terminates(self):
+        # Not hypothetical: this space once reached 769 asset folders with seven
+        # `regions` roots. A cycle must not hang a run with no output.
+        cyclic = [{"id": 1, "name": "a", "parent_id": 2},
+                  {"id": 2, "name": "b", "parent_id": 1}]
+        m = C.folder_path_map(cyclic)
+        self.assertEqual(len(m), 2)
+
+    def test_a_missing_parent_stops_cleanly(self):
+        m = C.folder_path_map([{"id": 9, "name": "orphan", "parent_id": 404}])
+        self.assertEqual(m[9], "orphan")
+
+    def test_can_key_on_slug_instead_of_name(self):
+        m = C.folder_path_map([{"id": 1, "slug": "news", "parent_id": None}],
+                              name_key="slug")
+        self.assertEqual(m[1], "news")
+
+
+class TestAssetUrlDiscovery(unittest.TestCase):
+    """Counting a story's assets must not depend on the asset host."""
+
+    def urls(self, content):
+        from sb_backup import _asset_urls
+        return _asset_urls(content)
+
+    def test_finds_an_asset_object_and_a_richtext_node(self):
+        u = self.urls({
+            "hero": {"filename": "https://a.storyblok.com/f/555/x/aa/p.png"},
+            "body": {"content": [{"type": "image", "attrs": {
+                "src": "https://a.storyblok.com/f/555/y/bb/q.png"}}]},
+        })
+        self.assertEqual(len(u), 2)
+
+    def test_a_custom_asset_domain_is_still_found(self):
+        # Paid plans can serve assets from their own domain. Matching on the
+        # word "storyblok" reported zero assets for those spaces, silently.
+        u = self.urls({"hero": {"filename":
+                                "https://assets.aku.edu/f/555/x/aa/p.png"}})
+        self.assertEqual(len(u), 1)
+
+    def test_two_urls_in_one_paragraph_count_as_two(self):
+        text = ("see https://a.storyblok.com/f/1/x/aa/a.pdf and "
+                "https://a.storyblok.com/f/1/y/bb/b.pdf today")
+        self.assertEqual(len(self.urls({"t": text})), 2)
+
+    def test_the_same_url_twice_counts_once(self):
+        one = "https://a.storyblok.com/f/1/x/aa/a.png"
+        self.assertEqual(len(self.urls({"a": one, "b": one})), 1)
+
+    def test_a_non_asset_url_is_ignored(self):
+        self.assertEqual(self.urls({"a": "https://www.aku.edu/news/story"}),
+                         set())
+
+    def test_survives_empty_and_none(self):
+        self.assertEqual(self.urls({}), set())
+        self.assertEqual(self.urls({"a": None, "b": [], "c": 0}), set())
+
+
+class TestAssetsRoot(unittest.TestCase):
+    """Media goes to a bucket, so the root is configurable and must be honest
+    about whether it sits inside the repo."""
+
+    def test_defaults_to_inside_the_snapshot(self):
+        p, external = C.assets_root({"name": "AKU"}, os.path.join("r", "sb"))
+        self.assertEqual(p, os.path.join("r", "sb", "assets"))
+        self.assertFalse(external)
+
+    def test_assets_dir_moves_it_outside_and_flags_that(self):
+        p, external = C.assets_root(
+            {"name": "AKUEB", "assets_dir": "/mnt/bucket/AKUEB"}, "ignored")
+        self.assertTrue(external)
+        self.assertTrue(p.endswith(os.path.join("mnt", "bucket", "AKUEB"))
+                        or "bucket" in p)
+
+    def test_cli_override_beats_the_config(self):
+        p, external = C.assets_root(
+            {"name": "X", "assets_dir": "/from/config"}, "out", "/from/cli")
+        self.assertTrue(external)
+        self.assertIn("cli", p)
+
+    def test_expands_environment_variables(self):
+        os.environ["SB_TEST_BUCKET"] = os.path.join("tmp", "bkt")
+        try:
+            p, _ = C.assets_root({"name": "X",
+                                  "assets_dir": "$SB_TEST_BUCKET/AKUH"}, "out")
+            self.assertIn("bkt", p)
+            self.assertNotIn("$", p)
+        finally:
+            del os.environ["SB_TEST_BUCKET"]
+
+    def test_returns_an_absolute_path(self):
+        p, _ = C.assets_root({"name": "X", "assets_dir": "rel/bucket"}, "out")
+        self.assertTrue(os.path.isabs(p))
+
+
+class TestSha256File(unittest.TestCase):
+    """With the media outside git, checksums are the only proof the two halves
+    still match."""
+
+    def test_matches_hashlib(self):
+        import hashlib
+        import tempfile
+        payload = b"\x89PNG\r\n\x1a\n" + b"x" * 5000
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "a.bin")
+            with open(p, "wb") as f:
+                f.write(payload)
+            self.assertEqual(C.sha256_file(p),
+                             hashlib.sha256(payload).hexdigest())
+
+    def test_reads_across_chunk_boundaries(self):
+        import hashlib
+        import tempfile
+        payload = bytes(range(256)) * 9000       # > 1 MiB, so multiple chunks
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "big.bin")
+            with open(p, "wb") as f:
+                f.write(payload)
+            self.assertEqual(C.sha256_file(p),
+                             hashlib.sha256(payload).hexdigest())
+
+    def test_empty_file_hashes(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "e.bin")
+            open(p, "wb").close()
+            self.assertEqual(len(C.sha256_file(p)), 64)
+
+
+class TestWriteCsv(unittest.TestCase):
+    def test_is_lf_terminated_and_reads_back_with_accents(self):
+        # csv writes \r\n on Windows by default, which would diff against the
+        # same data written on Linux.
+        import csv
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "m.csv")
+            C.write_csv(p, ["a", "b"], [[1, "café"], [2, "Dr Asad"]])
+            raw = open(p, "rb").read()
+            self.assertNotIn(b"\r\n", raw)
+            with open(p, encoding="utf-8-sig", newline="") as f:
+                rows = list(csv.DictReader(f))
+            self.assertEqual(rows[0]["b"], "café")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

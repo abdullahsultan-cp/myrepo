@@ -10,6 +10,8 @@ component libraries, and each one backs up to its own repo. Nothing here is
 allowed to assume they share a schema.
 """
 
+import csv
+import hashlib
 import json
 import os
 import re
@@ -146,6 +148,33 @@ def repo_paths(site):
     """(repo root, snapshot dir) for a site, both absolute."""
     repo = os.path.abspath(os.path.expanduser(site["repo"]))
     return repo, os.path.join(repo, site.get("subdir", "storyblok"))
+
+
+def assets_root(site, outdir, override=None):
+    """Where this site's binaries live, and whether that is inside the repo.
+
+    Returns (path, external). External means the media is deliberately kept out
+    of git -- on a bucket mount or a file share -- because AKUEB alone is 31 GB
+    and GitHub includes 1 GB. The repo then holds the schema, every story, and
+    manifest_assets.csv with a sha256 per file, which is what lets the two halves
+    be checked against each other rather than hoped about.
+
+    Any path works: a mounted bucket, an rclone mount, a UNC share, a plain
+    folder. Nothing here speaks S3 directly, because which provider it is has
+    not been decided and a client for the wrong one is worse than none.
+    """
+    d = override or site.get("assets_dir")
+    if not d:
+        return os.path.join(outdir, "assets"), False
+    return os.path.abspath(os.path.expanduser(os.path.expandvars(d))), True
+
+
+def sha256_file(path, chunk=1 << 20):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for block in iter(lambda: f.read(chunk), b""):
+            h.update(block)
+    return h.hexdigest()
 
 
 # --------------------------------------------------------------------------
@@ -338,6 +367,50 @@ def asset_path(asset, space_id):
     if not parts:
         return None
     return os.path.join("assets", *parts)
+
+
+# --------------------------------------------------------------------------
+# folder trees
+# --------------------------------------------------------------------------
+
+def folder_path_map(items, name_key="name"):
+    """{folder id: "a/b/c"} for anything with id / parent_id / a name.
+
+    Used for both namespaces -- asset folders and story folders -- because they
+    are the same shape and the same question: where does this thing live?
+
+    Depth is bounded rather than recursive on trust. A parent_id cycle is not
+    hypothetical in this space: asset folders once reached 769 entries with 7
+    `regions` roots, and a cycle there would hang a run with no output.
+    """
+    by_id = {i["id"]: i for i in items if i.get("id") is not None}
+    out = {}
+    for fid, item in by_id.items():
+        parts, seen, cur = [], set(), item
+        while cur is not None and cur["id"] not in seen:
+            seen.add(cur["id"])
+            parts.append(str(cur.get(name_key) or cur.get("slug") or cur["id"]))
+            parent = cur.get("parent_id")
+            cur = by_id.get(parent) if parent else None
+        out[fid] = "/".join(reversed(parts))
+    return out
+
+
+def write_csv(path, header, rows):
+    """A committed CSV, deterministic and Excel-safe.
+
+    newline="" plus an explicit \\n terminator, because csv writes \\r\\n on
+    Windows by default and the same data would then diff against a snapshot
+    taken on Linux. utf-8-sig so Excel opens accented names correctly -- these
+    files are read by people, and 711 non-ASCII characters in this corpus are
+    real content.
+    """
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(header)
+        w.writerows(rows)
+    return len(rows)
 
 
 # --------------------------------------------------------------------------

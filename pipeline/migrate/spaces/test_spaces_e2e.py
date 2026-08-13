@@ -16,6 +16,7 @@ LFS reported success while git stored the raw bytes.
     python test_pipeline.py
 """
 
+import hashlib
 import json
 import os
 import shutil
@@ -312,6 +313,95 @@ def main():
        (json.load(open(os.path.join(sb, "datasource_entries.json"),
                        encoding="utf-8")) or [{}])[0].get("name") == "Red")
 
+    # ---- the readable manifests: which story is where, where every asset went
+    import csv as _csv
+
+    def read_csv(name):
+        with open(os.path.join(sb, name), encoding="utf-8-sig",
+                  newline="") as f:
+            return list(_csv.DictReader(f))
+
+    srows = read_csv("manifest_stories.csv")
+    ck("story manifest has a row per story and folder", len(srows) == 3,
+       str([r["full_slug"] for r in srows]))
+    by_slug = {r["full_slug"]: r for r in srows}
+    ck("manifest names the folder a story sits in",
+       by_slug["news/a"]["parent_folder"] == "news",
+       str(by_slug.get("news/a")))
+    ck("manifest marks folders as folders",
+       by_slug["news"]["kind"] == "folder" and
+       by_slug["news"]["parent_folder"] == "(root)", str(by_slug["news"]))
+    ck("manifest records the component",
+       by_slug["news/a"]["component"] == "news_article",
+       by_slug["news/a"]["component"])
+    ck("manifest records published vs draft",
+       by_slug["news/a"]["state"] == "published"
+       and by_slug["news/b"]["state"] == "draft",
+       f"{by_slug['news/a']['state']} / {by_slug['news/b']['state']}")
+    ck("manifest counts the assets a story references",
+       by_slug["news/a"]["assets_referenced"] == "2",
+       by_slug["news/a"]["assets_referenced"])
+    ck("manifest points at the backup file for the story",
+       by_slug["news/a"]["backup_file"] == "stories/101.json",
+       by_slug["news/a"]["backup_file"])
+    ck("manifest is sorted by slug (stable diffs)",
+       [r["full_slug"] for r in srows]
+       == sorted(r["full_slug"] for r in srows),
+       str([r["full_slug"] for r in srows]))
+
+    arows = read_csv("manifest_assets.csv")
+    ck("asset manifest has a row per asset", len(arows) == 4, str(len(arows)))
+    a_by = {r["filename"]: r for r in arows}
+    ck("asset manifest gives the folder path in the space",
+       a_by["pic.png"]["asset_folder"] == "photos",
+       a_by["pic.png"]["asset_folder"])
+    # Always relative to the assets root, never to the repo -- that is what lets
+    # the same manifest describe media in storyblok/assets/ and media on a
+    # bucket. assets_location.json records which root applies.
+    ck("asset manifest path is relative to the assets root",
+       a_by["pic.png"]["backup_file"] == "800x600/aaaa1111/pic.png",
+       a_by["pic.png"]["backup_file"])
+    loc_in = json.load(open(os.path.join(sb, "assets_location.json"),
+                            encoding="utf-8"))
+    ck("in-repo run records assets as internal, pointing at storyblok/assets/",
+       loc_in["external"] is False
+       and loc_in["backup_file_paths_are_relative_to"] == "storyblok/assets/",
+       str(loc_in))
+    ck("asset manifest confirms every binary is present",
+       all(r["file_present"] == "yes" for r in arows),
+       str([(r["filename"], r["file_present"]) for r in arows]))
+    ck("asset manifest carries the alt text",
+       a_by["pic.png"]["alt"] == "A picture", a_by["pic.png"]["alt"])
+    ck("asset manifest records a sha256 per file",
+       all(len(r["sha256"]) == 64 for r in arows),
+       str([(r["filename"], r["sha256"][:12]) for r in arows]))
+    ck("the recorded sha256 is the real one",
+       a_by["pic.png"]["sha256"]
+       == hashlib.sha256(PNG).hexdigest(), a_by["pic.png"]["sha256"])
+    ck("manifests are LF-terminated, not CRLF",
+       b"\r\n" not in open(os.path.join(sb, "manifest_stories.csv"), "rb").read())
+
+    # ---- the documents that travel with the backup
+    for doc in ("README.md", "CLAUDE.md", "RESTORE.md"):
+        p = os.path.join(repos["AKU"], doc)
+        ck(f"{doc} written into the repo", os.path.exists(p))
+    restore_md = open(os.path.join(repos["AKU"], "RESTORE.md"),
+                      encoding="utf-8").read()
+    ck("RESTORE.md names this space id", SRC in restore_md)
+    ck("RESTORE.md covers both restore modes",
+       "--mode in-place" in restore_md and "--mode rebuild" in restore_md)
+    ck("RESTORE.md lists reinstalling apps as a manual step",
+       "marketplace" in restore_md.lower(), "")
+    ck("RESTORE.md warns that --apply is required",
+       "--apply" in restore_md)
+    claude_md = open(os.path.join(repos["AKU"], "CLAUDE.md"),
+                     encoding="utf-8").read()
+    ck("CLAUDE.md forbids hand-editing the snapshot",
+       "Never hand-edit" in claude_md)
+    ck("docs carry no timestamp (so they do not churn every run)",
+       "20" + "26-" not in restore_md.replace(SRC, ""),
+       [l for l in restore_md.splitlines() if "2026-" in l][:3])
+
     leaked = []
     for root, _, files in os.walk(repos["AKU"]):
         if ".git" in root:
@@ -347,6 +437,77 @@ def main():
     log = subprocess.run(["git", "-C", repos["AKU"], "log", "--oneline"],
                          capture_output=True, text=True).stdout
     ck("still one commit", len(log.strip().splitlines()) == 1, log)
+
+    # ============================ ASSETS OUTSIDE THE REPO (the bucket setup)
+    # This is the arrangement actually chosen: ~42 GB of media across the three
+    # spaces against GitHub's 1 GB, so the bytes go to a bucket and the repo
+    # keeps the index plus a checksum per file.
+    print("\n=== media outside the repo (bucket) ===")
+    bucket = os.path.join(tmp, "bucket", "AKUEB")
+    ext_repo = os.path.join(tmp, "akueb-external")
+    with open(os.path.join(work, "sites-ext.json"), "w", encoding="utf-8") as f:
+        json.dump({"sites": [{"name": "AKUEB", "space_id": SRC,
+                              "management_token": "TESTTOKEN", "region": "eu",
+                              "repo": ext_repo, "assets_dir": bucket}]}, f)
+    r = run("sb_backup.py", "--config",
+            os.path.join(work, "sites-ext.json"), "--site", "AKUEB")
+    ck("exit 0", r.returncode == 0, (r.stdout + r.stderr)[-1200:])
+    ck("says where the media went", "outside the repo" in r.stdout,
+       r.stdout[-700:])
+
+    esb = os.path.join(ext_repo, "storyblok")
+    ck("binaries landed in the bucket, not the repo",
+       os.path.exists(os.path.join(bucket, "800x600", "aaaa1111", "pic.png")),
+       str(os.listdir(bucket) if os.path.isdir(bucket) else "no bucket dir"))
+    ck("repo has NO assets directory",
+       not os.path.exists(os.path.join(esb, "assets")))
+    ck("repo still has the asset index",
+       os.path.exists(os.path.join(esb, "manifest_assets.csv")))
+    ck("no LFS used when media is external",
+       not subprocess.run(["git", "-C", ext_repo, "lfs", "ls-files"],
+                          capture_output=True, text=True).stdout.strip())
+    loc = json.load(open(os.path.join(esb, "assets_location.json"),
+                         encoding="utf-8"))
+    ck("assets_location.json records that media is external",
+       loc["external"] is True, str(loc))
+    ck("no absolute bucket path is committed (it differs per machine)",
+       bucket.replace("\\", "/") not in json.dumps(loc).replace("\\", "/"),
+       json.dumps(loc))
+
+    with open(os.path.join(esb, "manifest_assets.csv"),
+              encoding="utf-8-sig", newline="") as f:
+        erows = {r_["filename"]: r_ for r_ in _csv.DictReader(f)}
+    ck("manifest paths are relative to the bucket root",
+       erows["pic.png"]["backup_file"] == "800x600/aaaa1111/pic.png",
+       erows["pic.png"]["backup_file"])
+    ck("manifest confirms the bucket files are present",
+       all(r_["file_present"] == "yes" for r_ in erows.values()),
+       str([(k, v["file_present"]) for k, v in erows.items()]))
+
+    print("\n=== verify: checksums prove the two halves match ===")
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--verify-assets",
+            "--no-commit")
+    ck("verify passes on an intact bucket",
+       r.returncode == 0 and "missing 0" in r.stdout and "changed 0" in r.stdout,
+       r.stdout[-700:])
+
+    # corrupt one file and one delete: verify must catch both
+    with open(os.path.join(bucket, "800x600", "aaaa1111", "pic.png"), "r+b") as f:
+        f.seek(0)
+        f.write(b"CORRUPT!")
+    os.remove(os.path.join(bucket, "x", "bbbb2222", "doc.pdf"))
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--verify-assets",
+            "--no-commit")
+    ck("verify detects a corrupted file", "CHANGED" in r.stdout,
+       r.stdout[-800:])
+    ck("verify detects a deleted file", "MISSING" in r.stdout, r.stdout[-800:])
+
+    print("\n=== apps and extensions captured ===")
+    ck("apps recorded as unavailable rather than skipped silently",
+       "apps" in open(os.path.join(sb, "_summary.json"),
+                      encoding="utf-8").read(), "")
 
     # ================================================== RESTORE in-place
     print("\n=== restore in-place ===")

@@ -19,29 +19,40 @@
     "                  and 'git init'ed if absent — but clone the empty GitHub",
     "                  repo here first and the origin remote is already set.",
     "subdir            optional, default 'storyblok'. Where in the repo the",
-    "                  snapshot is written."
+    "                  snapshot is written.",
+    "assets_dir        optional. WHERE THE MEDIA FILES GO. Set it and binaries",
+    "                  are written there instead of into the repo, and Git LFS",
+    "                  is not used at all; the repo keeps the index and a sha256",
+    "                  per file in storyblok/manifest_assets.csv. Any path: a",
+    "                  mounted bucket, an rclone mount, a UNC share. Leave it",
+    "                  out to commit binaries into the repo through Git LFS.",
+    "                  The three spaces hold ~42 GB of media and GitHub",
+    "                  includes 1 GB, which is why this exists."
   ],
   "sites": [
     {
       "name": "AKUH",
-      "space_id": "YOUR_AKUH_SPACE_ID",
+      "space_id": "286308248262721",
       "management_token": "YOUR_PERSONAL_ACCESS_TOKEN",
       "region": "eu",
-      "repo": "D:/AKU News/backups/akuh-storyblok-backup"
+      "repo": "D:/AKU News/backups/akuh-backups",
+      "assets_dir": "SET_ME_TO_THE_BUCKET_MOUNT/AKUH"
     },
     {
       "name": "AKU",
-      "space_id": "YOUR_AKU_SPACE_ID",
+      "space_id": "289824742951963",
       "management_token": "YOUR_PERSONAL_ACCESS_TOKEN",
       "region": "eu",
-      "repo": "D:/AKU News/backups/aku-storyblok-backup"
+      "repo": "D:/AKU News/backups/aku-backups",
+      "assets_dir": "SET_ME_TO_THE_BUCKET_MOUNT/AKU"
     },
     {
       "name": "AKUEB",
-      "space_id": "YOUR_AKUEB_SPACE_ID",
+      "space_id": "289824724335130",
       "management_token": "YOUR_PERSONAL_ACCESS_TOKEN",
       "region": "eu",
-      "repo": "D:/AKU News/backups/akueb-storyblok-backup"
+      "repo": "D:/AKU News/backups/akueb-backups",
+      "assets_dir": "SET_ME_TO_THE_BUCKET_MOUNT/AKUEB"
     }
   ]
 }
