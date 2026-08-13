@@ -82,6 +82,10 @@ pipeline/                THE SHARED CODE. Knows no content type.
     upload/                  disk -> Storyblok (writes)
     update/                  change stories ALREADY LIVE, in place
     review/                  verification, reports, backups
+    spaces/                  THE OWNER'S. Whole-space backup to Azure — not
+                             part of this migration. Do not change it.
+
+<Type>-Pipeline/out/*.html   the portal — COMMITTED, opens from a clone
 
 News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
 Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 live
@@ -140,6 +144,10 @@ python pipeline/new_type.py --list
 python pipeline/new_type.py articles
 python pipeline/new_type.py articles --check      # profile vs the REAL export
 
+# portals — one HTML file each, committed, open by double-clicking
+python News-Pipeline/pipeline/build_portal.py     # 3,606 stories, 1.44 MB
+python Blogs-Pipeline/pipeline/build_portal.py    # 83
+
 python -m pytest tests/     # 126
 ruff check .
 ```
@@ -156,6 +164,12 @@ another; news is done.
 
 **You own `<Your-Type>-Pipeline/` and `config/types/<your-type>.json`.**
 `pipeline/` is shared and is the only thing that can break someone else's work.
+
+**`pipeline/migrate/spaces/` is nobody's but the owner's.** It backs the whole
+Storyblok space up to Azure — 42 GB of media against GitHub's 1 GB limit — and
+is disaster recovery for the site, not part of moving content out of SharePoint.
+Nothing inherits from it and no type imports it. The per-type backup you
+actually want is `pipeline/migrate/review/backup.py`.
 
 Before editing `pipeline/` to make one type behave, there is almost always
 somewhere better:
@@ -567,6 +581,15 @@ commit.
 ---
 
 ## 11 · Still open
+
+- **blogs `entities`** — the plan is written and the format known; it needs only
+  the field on `blog_article`. One command the day it lands:
+  `run_update.py entities --type blogs --apply`
+- **`category` and `isFeatured`** are empty on all 83 blogs. One saved example of
+  each plugin's value unblocks 80 and 43 posts
+- **events has no committed portal.** `Events-Pipeline/pipeline/build_portal.py`
+  exists; nothing in `out/`. See [docs/PORTALS.md](docs/PORTALS.md) — an index of
+  all 2,710 events is 0.49 MB, not the 23 MB a body-baking portal costs
 
 - **blogs: 75 of 83 are not uploaded.** The 8 demo stories are live and reviewed;
   the rest wait on the owner. `python Blogs-Pipeline/pipeline/upload.py --all

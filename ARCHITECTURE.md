@@ -128,6 +128,12 @@ STAGE 3   migrate/download/ aku.edu -> disk       reads only, interruptible
 STAGE 4   migrate/update/   change LIVE stories   WRITES, in place
 ```
 
+Alongside those, each type builds a **portal** — one committed HTML file that
+opens by double-clicking, with no Python, server or media download. It is how
+everyone who does not run the pipeline sees the work: the front-end developer,
+the content owner, the reviewer. `News-Pipeline/out/news-portal.html` is 3,606
+stories in 1.44 MB. Rules and the size budget: [docs/PORTALS.md](docs/PORTALS.md).
+
 **Stage 4 is not an afterthought.** Migration is not one pass: the dev hands
 over a field after the stories are up, a plugin's value format only becomes
 knowable once something in the space has it filled, a component we worked

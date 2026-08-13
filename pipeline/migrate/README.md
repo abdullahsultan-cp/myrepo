@@ -9,6 +9,7 @@ download/    aku.edu -> disk        reads only. Safe to interrupt.
 upload/      disk -> Storyblok      WRITES.
 update/      change LIVE stories    WRITES, in place.
 review/      verification, reports, backups.  Never writes to the space.
+spaces/      THE OWNER'S. Whole-space backup to Azure. Not this migration.
 spaces/      whole space <-> git repo.  sb_backup reads; sb_restore WRITES.
 ```
 
@@ -18,6 +19,7 @@ spaces/      whole space <-> git repo.  sb_backup reads; sb_restore WRITES.
 | `upload/` | create and update stories and assets in Storyblok | this is the one that can damage the space |
 | `update/` | change one field on stories that are already published | contained — a plan may only touch the fields it declares, and backs up first |
 | `review/` | audits, reports, folder checks, backups | none — reads only |
+| `spaces/` | **the owner's** — whole-space backup to Azure, NOT this migration | do not change it |
 | `spaces/` | back up AKUH / AKU / AKUEB to three git repos, and restore them | backup none; restore is guarded and needs `--apply` |
 
 **`spaces/` is not part of this migration.** It backs up three whole spaces —
