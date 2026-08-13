@@ -21,6 +21,21 @@ nothing.
 | `README.md` · `CLAUDE.md` · `docs/**` | shared | medium |
 | `.gitignore` · `.gitattributes` · `ruff.toml` | shared | medium |
 | `storyblok_space/**` | nobody — it is the front-end dev's space | resolved by re-fetching |
+| `pipeline/migrate/spaces/**` | **the repo owner — DO NOT TOUCH** | n/a |
+
+### `pipeline/migrate/spaces/` is not part of this migration
+
+It backs the **whole Storyblok space** up to Azure — every asset, checksummed —
+because the media is 42 GB and GitHub's limit is 1 GB. It is separate work with
+a separate purpose: disaster recovery for the site, not moving content out of
+SharePoint.
+
+**Nobody but the owner changes it.** It is not a shared base you inherit from,
+it does not run as part of any type's pipeline, and nothing in `News-`, `Blogs-`
+or `Events-Pipeline/` should import from it. If you think you need something in
+there, ask first — the answer is probably that you want
+`pipeline/migrate/review/backup.py`, which is the per-type backup and a
+different thing entirely.
 
 **Events and pages are one person.** They are separate folders because they are
 separate jobs — pages is site structure, not content, and shares no code — but

@@ -29,6 +29,8 @@ from paths_root import ROOT, TYPES, P
 
 # Shared, and able to break the other person's work. Ordered worst first.
 SHARED = [
+    ("pipeline/migrate/spaces/", "the OWNER'S site backup to Azure — not part of "
+     "this migration, do not change it"),
     ("pipeline/", "the base every type inherits — can break the other type"),
     ("config/types/_TEMPLATE.json", "the boilerplate every new type copies"),
     ("tests/", "shared"),
