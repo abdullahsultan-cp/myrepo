@@ -69,6 +69,32 @@ TOOL_FILES = ["sb.py", "sb_common.py", "sb_backup.py", "sb_restore.py",
 # checkout to be useful has a dependency that will be missing on the day it
 # matters.
 TOOL_EXTRAS = {
+    # Line endings, and the exception that matters. Everything generated here is
+    # written LF, and the backup depends on staying that way: if git checks files
+    # out as CRLF the next run rewrites them as LF and all 5,700 look modified,
+    # which destroys the "no commit when nothing changed" property.
+    #
+    # backup.cmd is the exception. cmd.exe mis-parses a batch file with bare LF
+    # endings, so a blanket eol=lf silently breaks the one-click wrapper on
+    # checkout -- it was written correctly and then converted.
+    ".gitattributes": (
+        "# Written by sb_backup.py — do not edit.\n"
+        "* text=auto eol=lf\n"
+        "\n"
+        "# cmd.exe needs CRLF; with LF it mis-parses the file.\n"
+        "*.cmd text eol=crlf\n"
+        "\n"
+        "# Binary, so git never tries to translate anything inside them.\n"
+        "*.sqlite binary\n"
+        "*.png binary\n"
+        "*.jpg binary\n"
+        "*.jpeg binary\n"
+        "*.gif binary\n"
+        "*.webp binary\n"
+        "*.pdf binary\n"
+        "*.mp4 binary\n"
+        "*.mov binary\n"
+    ),
     "tools/requirements.txt": (
         "# Everything tools/ needs. Nothing else.\n"
         "requests>=2.31\n"
