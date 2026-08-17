@@ -44,6 +44,16 @@ import re
 import subprocess
 import sys
 
+# sb.py's own prints buffer when stdout is a file rather than a terminal, so
+# `sb.py backup > log` showed the header and then nothing for an hour while the
+# child streamed fine. Passing -u to the child fixed half the problem; this fixes
+# the other half. Same reasoning, one layer up.
+try:
+    sys.stdout.reconfigure(line_buffering=True)
+    sys.stderr.reconfigure(line_buffering=True)
+except (AttributeError, ValueError):        # pre-3.7, or a stream without it
+    pass
+
 
 def load_json(path, default=None):
     if not os.path.exists(path):
@@ -216,7 +226,12 @@ def cmd_init(argv):
 
     gi = os.path.join(target, ".gitignore")
     have = open(gi, encoding="utf-8").read() if os.path.exists(gi) else ""
-    need = ["*.part", "restore_maps/", "storyblok/index.sqlite",
+    # NOT storyblok/index.sqlite: it is committed on purpose, so the repo can be
+    # cloned and queried without running anything. This list said otherwise and
+    # seeded two repos with a rule that silently kept their index out of git --
+    # and because .gitignore rules are only ever appended, never removed, the
+    # stale line survived the decision being reversed.
+    need = ["*.part", "restore_maps/", "__pycache__/", "*.pyc",
             "tools/sites.json", "tools/.sites.env.json"]
     missing = [n for n in need if n not in have.split()]
     if missing:
