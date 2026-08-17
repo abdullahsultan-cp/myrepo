@@ -132,7 +132,22 @@ class AzureBackend:
             from azure.storage.blob import BlobServiceClient
         except ImportError:
             sys.exit("pip install azure-storage-blob")
-        self._svc = BlobServiceClient.from_connection_string(conn)
+        # Generous timeouts and the SDK's own retries, because the link this runs
+        # over drops. The defaults are a 20-second connect timeout and little
+        # patience, and that is not a theory: AKUEB's 32 GB upload died outright
+        # on one ServiceRequestTimeoutError after 1,126 files had already gone up.
+        # A backup tool whose whole point is surviving a bad day should not be
+        # ended by a single slow handshake.
+        self._svc = BlobServiceClient.from_connection_string(
+            conn,
+            connection_timeout=60,
+            read_timeout=300,
+            retry_total=8,
+            retry_connect=8,
+            retry_read=8,
+            retry_backoff_factor=2,
+            retry_backoff_max=120,
+        )
         self.container = container
         self.prefix = (prefix or "").strip("/")
         # Cool by default, because this is write-once-read-almost-never data and
@@ -149,6 +164,28 @@ class AzureBackend:
         self._cc = self._svc.get_container_client(container)
         self.label = (f"azure://{self._svc.account_name}/{container}"
                       + (f"/{self.prefix}" if self.prefix else ""))
+
+    @staticmethod
+    def _retry(what, fn, tries=5):
+        """Retry an Azure call that the SDK's own policy did not save.
+
+        The SDK retries within a request; this covers the operation as a whole --
+        a listing that dies part way through its pages, a property read on a
+        connection that has just gone. Everything here is idempotent, so retrying
+        is free.
+        """
+        from azure.core.exceptions import AzureError
+        last = None
+        for attempt in range(tries):
+            try:
+                return fn()
+            except AzureError as e:
+                last = e
+                wait = min(5 * (attempt + 1), 60)
+                print(f"      azure {what} failed ({type(e).__name__}), "
+                      f"retrying in {wait}s", flush=True)
+                time.sleep(wait)
+        raise last
 
     @staticmethod
     def _resolve_tier(tier):
@@ -173,11 +210,14 @@ class AzureBackend:
 
     def ensure(self):
         from azure.core.exceptions import ResourceExistsError
-        try:
-            self._cc.create_container()
-            print(f"    created container {self.container}")
-        except ResourceExistsError:
-            pass
+
+        def once():
+            try:
+                self._cc.create_container()
+                print(f"    created container {self.container}")
+            except ResourceExistsError:
+                pass
+        self._retry("create_container", once)
 
     def size(self, rel):
         from azure.core.exceptions import ResourceNotFoundError
@@ -188,7 +228,7 @@ class AzureBackend:
             return None
 
     def list_all(self):
-        """{rel: size} for every blob under the prefix, in one paged listing.
+        """{rel: size} for every blob under the prefix, retried as a whole.
 
         Exists because asking per file does not scale: building the manifest with
         one get_blob_properties() per asset is 5,767 sequential round-trips for
@@ -199,13 +239,19 @@ class AzureBackend:
         hierarchical namespace enabled, so the listing includes an entry for
         every folder, and those are not files.
         """
-        out = {}
         pre = f"{self.prefix}/" if self.prefix else ""
-        for b in self._cc.list_blobs(name_starts_with=pre):
-            if not b.size:
-                continue
-            out[b.name[len(pre):] if pre else b.name] = b.size
-        return out
+
+        def once():
+            out = {}
+            for b in self._cc.list_blobs(name_starts_with=pre):
+                if not b.size:
+                    continue
+                out[b.name[len(pre):] if pre else b.name] = b.size
+            return out
+        # Rebuilt from scratch on a retry rather than resumed: a half-read
+        # listing that looked complete would report files as absent and
+        # re-upload gigabytes for nothing.
+        return self._retry("list_blobs", once)
 
     def write(self, rel, chunks, content_type=None, expected=None):
         from azure.core.exceptions import AzureError, ServiceRequestError, ServiceResponseError
@@ -225,7 +271,15 @@ class AzureBackend:
                     with open(tmp, "rb") as f:
                         self._cc.get_blob_client(self._name(rel)).upload_blob(
                             f, overwrite=True, content_settings=settings,
-                            max_concurrency=4, standard_blob_tier=self.tier,
+                            # 2, not 4. Each concurrent block is staged in
+                            # memory, and with six download workers doing the
+                            # same alongside it the process ran itself out of
+                            # room -- seven of AKUEB's files failed with
+                            # MemoryError at 1-11 MB each. The bytes are already
+                            # on local disk by this point, so the extra
+                            # parallelism was buying very little.
+                            max_concurrency=2,
+                            standard_blob_tier=self.tier,
                             connection_timeout=600,
                             # The sha256 is ours and lives in the manifest; this
                             # puts it on the blob too, so the container can be

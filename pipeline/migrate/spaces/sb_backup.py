@@ -205,8 +205,20 @@ def download_assets(assets, store, space_id, prev_sha=None, workers=6,
             # 40 MB image long after a 200 came back, and that break happens
             # inside iter_content where the earlier retry could not see it. It
             # cost 21 of AKU's assets before this existed.
+            # MemoryError is in here deliberately, and it is not paranoia: seven
+            # of AKUEB's files died on it, and they were 1-11 MB each, so it was
+            # never about their size. It is this process running out of room --
+            # six workers each holding a spooled copy while the Azure SDK stages
+            # blocks alongside them -- and it clears on its own moments later.
+            # Left uncaught it skipped straight to "failed" with no retry at all,
+            # because MemoryError is neither a RequestException nor an OSError.
+            #
+            # Five attempts rather than three because three was not enough: four
+            # more files were lost to connections reset on every one of them.
+            RETRIABLE = (requests.exceptions.RequestException, OSError,
+                         MemoryError)
             last = None
-            for attempt in range(3):
+            for attempt in range(5):
                 try:
                     r = get(url, stream=True)   # no token: asset URLs are public
                     if r.status_code != 200:
@@ -215,9 +227,9 @@ def download_assets(assets, store, space_id, prev_sha=None, workers=6,
                                             a.get("content_type"),
                                             expected or None)
                     return "ok", None, aid, digest
-                except (requests.exceptions.RequestException, OSError) as e:
+                except RETRIABLE as e:
                     last = e
-                    time.sleep(2 * (attempt + 1))
+                    time.sleep(min(3 * (attempt + 1), 20))
             raise last
         except Exception as e:
             # Broad on purpose: one unreadable asset out of thousands must be
@@ -1785,8 +1797,13 @@ def main():
              else failed).append(s["name"])
         except Exception as e:
             # One site failing must not stop the others: a backup of two spaces
-            # beats no backup at all.
+            # beats no backup at all. And say plainly that a re-run resumes,
+            # because the natural reading of "FAILED" is that the work was lost --
+            # when every story written and every file uploaded is still there and
+            # a repeat run skips all of it.
             print(f"  !! {s['name']}: {type(e).__name__}: {e}")
+            print("     Nothing already stored is lost - re-run to continue "
+                  "from where this stopped.")
             failed.append(s["name"])
 
     print(f"\n{'=' * 74}\n  ok: {', '.join(done) or 'none'}")
