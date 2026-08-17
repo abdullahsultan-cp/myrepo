@@ -310,9 +310,8 @@ class AzureBackend:
     def stored_sha256(self, rel):
         """The checksum recorded on the blob at upload time, if any.
 
-        Cheaper than re-reading 31 GB out of the container: a metadata read is
-        one small request. It proves what we uploaded, not what is there now, so
-        the full sha256() re-read is still the real integrity check.
+        One request. Fine for a handful of files -- see list_all_sha256 for the
+        whole container, which is what an audit should use.
         """
         from azure.core.exceptions import ResourceNotFoundError
         try:
@@ -320,6 +319,33 @@ class AzureBackend:
             return (p.metadata or {}).get("sha256")
         except ResourceNotFoundError:
             return None
+
+    def list_all_sha256(self):
+        """{rel: sha256} for the whole prefix, from ONE paged listing.
+
+        Azure returns blob metadata inside the listing when asked, so every
+        checksum arrives in about seventeen requests instead of one per file.
+        Asking per blob is what made AKUEB's audit appear to hang: 16,334
+        sequential metadata reads over a flaky link, to answer a question the
+        listing had already been willing to answer in full.
+
+        This is the third time the same shape of mistake has cost real time here
+        -- probe-per-item where a bulk call exists -- so the rule is worth
+        stating: if the container can answer for everything at once, ask it that
+        way.
+        """
+        pre = f"{self.prefix}/" if self.prefix else ""
+
+        def once():
+            out = {}
+            for b in self._cc.list_blobs(name_starts_with=pre,
+                                         include=["metadata"]):
+                if not b.size:
+                    continue
+                key = b.name[len(pre):] if pre else b.name
+                out[key] = (b.metadata or {}).get("sha256")
+            return out
+        return self._retry("list_blobs+metadata", once)
 
     def download_to(self, rel, dest):
         from azure.core.exceptions import ResourceNotFoundError

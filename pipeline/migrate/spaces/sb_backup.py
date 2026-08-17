@@ -285,6 +285,12 @@ def verify_assets(assets, store, space_id, prev_sha, workers=6, quick=False):
     ok = missing = mismatched = unknown = 0
     bad, broken, lock = [], set(), threading.Lock()
     present = store.list_all()
+    # In quick mode the checksums come from the same listing rather than one
+    # request per blob. 16,334 sequential metadata reads is what made AKUEB's
+    # audit look hung; the listing already carries them.
+    meta_sha = {}
+    if quick and hasattr(store, "list_all_sha256"):
+        meta_sha = store.list_all_sha256()
     jobs = [(a, rel_path(a, space_id)) for a in assets]
     jobs = [(a, r) for a, r in jobs if r]
 
@@ -296,7 +302,11 @@ def verify_assets(assets, store, space_id, prev_sha, workers=6, quick=False):
         want = prev_sha.get(aid)
         if not want:
             return "unknown", None, aid
-        if quick and hasattr(store, "stored_sha256"):
+        if quick and meta_sha:
+            got_sha = meta_sha.get(rel)
+            if got_sha is None:
+                return "unknown", None, aid
+        elif quick and hasattr(store, "stored_sha256"):
             got_sha = store.stored_sha256(rel)
             if got_sha is None:
                 return "unknown", None, aid
