@@ -578,7 +578,125 @@ def cmd_changed(argv):
     if gone:
         print("\n  Removed stories are still in git history, and their assets "
               "are still\n  in the bucket - see `sb.py restore-assets`.")
+
+    _changed_schema(rev)
     return 0
+
+
+# What identifies each record, so old and new can be lined up. Schema is fetched
+# in full every run because it is small, so change detection is purely a diff --
+# but nothing surfaced it, and a component gaining a field or a new plugin
+# appearing is exactly what someone wants told. It sat visible only to
+# `git diff`, which nobody runs on a 30,000-line JSON file.
+_SCHEMA_FILES = [
+    ("components.json", "name", "components"),
+    ("component_groups.json", "name", "component groups"),
+    ("presets.json", "name", "presets"),
+    ("datasources.json", "slug", "datasources"),
+    ("datasource_entries.json", "id", "datasource entries"),
+    ("asset_folders.json", "id", "asset folders"),
+    ("space_roles.json", "id", "roles"),
+    ("webhook_endpoints.json", "id", "webhooks"),
+    ("workflows.json", "id", "workflows"),
+    ("workflow_stages.json", "id", "workflow stages"),
+    ("releases.json", "id", "releases"),
+    ("internal_tags.json", "id", "internal tags"),
+]
+
+
+def _changed_schema(rev):
+    """Report schema and settings changes between `rev` and now."""
+    import io
+
+    def at(rel):
+        r = subprocess.run(["git", "-C", REPO, "show",
+                            f"{rev}:storyblok/{rel}"],
+                           capture_output=True, text=True, encoding="utf-8",
+                           errors="replace")
+        if r.returncode != 0:
+            return None
+        try:
+            return json.load(io.StringIO(r.stdout))
+        except ValueError:
+            return None
+
+    def now(rel):
+        p = os.path.join(SNAP, rel)
+        if not os.path.exists(p):
+            return None
+        try:
+            with open(p, encoding="utf-8") as f:
+                return json.load(f)
+        except ValueError:
+            return None
+
+    lines = []
+    for rel, key, label in _SCHEMA_FILES:
+        before, after = at(rel), now(rel)
+        if before is None or after is None:
+            continue
+        if not isinstance(before, list) or not isinstance(after, list):
+            continue
+        b = {str(x.get(key)): x for x in before if isinstance(x, dict)}
+        a = {str(x.get(key)): x for x in after if isinstance(x, dict)}
+        added = sorted(a.keys() - b.keys())
+        gone = sorted(b.keys() - a.keys())
+        # Compared as canonical JSON so a reordered key is not a change. The
+        # snapshot is written sorted for exactly this reason.
+        edited = sorted(k for k in a.keys() & b.keys()
+                        if json.dumps(a[k], sort_keys=True)
+                        != json.dumps(b[k], sort_keys=True))
+        if added or gone or edited:
+            bits = []
+            if added:
+                bits.append(f"+{len(added)}")
+            if gone:
+                bits.append(f"-{len(gone)}")
+            if edited:
+                bits.append(f"~{len(edited)}")
+            lines.append(f"    {label:<20} {' '.join(bits)}")
+            for tag, names in (("added", added), ("removed", gone),
+                               ("changed", edited)):
+                if names:
+                    shown = ", ".join(names[:6])
+                    more = f" ... +{len(names) - 6}" if len(names) > 6 else ""
+                    lines.append(f"      {tag:<8} {shown}{more}")
+
+    plug_b, plug_a = at("required_field_plugins.json"), \
+        now("required_field_plugins.json")
+    if isinstance(plug_b, dict) and isinstance(plug_a, dict):
+        new = sorted(plug_a.keys() - plug_b.keys())
+        lost = sorted(plug_b.keys() - plug_a.keys())
+        if new:
+            lines.append(f"    {'field plugins':<20} +{len(new)}")
+            lines.append(f"      added    {', '.join(new)}")
+            lines.append("      ^ these must exist on the target account "
+                         "before any rebuild")
+        if lost:
+            lines.append(f"    {'field plugins':<20} -{len(lost)}")
+            lines.append(f"      removed  {', '.join(lost)}")
+
+    sp_b, sp_a = at("space.json"), now("space.json")
+    if isinstance(sp_b, dict) and isinstance(sp_a, dict):
+        keys = sorted(k for k in set(sp_b) | set(sp_a)
+                      if json.dumps(sp_b.get(k), sort_keys=True)
+                      != json.dumps(sp_a.get(k), sort_keys=True))
+        # Counters Storyblok bumps on its own; they are noise, not a settings
+        # change, and listing them buries the ones that matter.
+        keys = [k for k in keys if k not in
+                ("updated_at", "collaborator", "collaborators",
+                 "stories_count", "assets_count", "plan_level",
+                 "billing_address", "trial_expiration_date", "duplicatable",
+                 "owner_id", "request_count_today", "traffic_limit",
+                 "has_slack_webhook", "hosted_backup", "options")]
+        if keys:
+            lines.append(f"    {'space settings':<20} ~{len(keys)}")
+            lines.append(f"      changed  {', '.join(keys[:8])}"
+                         + (f" ... +{len(keys) - 8}" if len(keys) > 8 else ""))
+
+    print("\n  SCHEMA AND SETTINGS")
+    print("\n".join(lines) if lines
+          else "    unchanged")
 
 
 def cmd_orphans(argv):
