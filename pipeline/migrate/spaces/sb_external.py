@@ -36,6 +36,7 @@ import csv
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from urllib.parse import unquote, urlsplit
 
@@ -141,11 +142,54 @@ def upload(api, token, url, folder_id, timeout=180):
     if fin.status_code not in OK_STATUS:
         return None, f"finish: {fin.status_code}"
 
-    got = get(f"{api}/assets/{new_id}", token)
-    asset = got.json().get("asset", {}) if got.status_code == 200 else {}
-    if not asset.get("filename"):
-        return None, "no url came back"
-    return asset, None
+    # finish_upload HANDS BACK the finished asset, url included. Take it.
+    #
+    # The first version ignored that and did a separate GET /assets/<id>, which
+    # returns filename=None for a while afterwards -- so 20 uploads that had
+    # completed perfectly, S3 answering 204 and finish_upload answering 200 with
+    # the url in its body, were all reported as failures. The answer was in hand
+    # and the code went asking a less reliable question.
+    try:
+        done = fin.json() or {}
+    except ValueError:
+        done = {}
+    asset = done.get("asset", done)
+    if asset.get("filename"):
+        return asset, None
+
+    # Only if it did not: the read-back, patiently.
+    for attempt in range(6):
+        got = get(f"{api}/assets/{new_id}", token)
+        asset = got.json().get("asset", {}) if got.status_code == 200 else {}
+        if asset.get("filename"):
+            return asset, None
+        time.sleep(1 + attempt)
+    return None, f"uploaded as {new_id} but no url came back"
+
+
+def existing_by_name(api, token):
+    """{(filename, size): url} for assets already in the space.
+
+    A re-run after a partial failure must not upload the same file twice. The
+    generated filename is deterministic, so an earlier attempt is recognisable --
+    and this is not hypothetical: 45 AKUH uploads succeeded while being reported
+    as failures, and without this the retry would have created 45 duplicates.
+    Size is part of the key because two different URLs can share a basename.
+    """
+    assets, err = fetch_list(api, "assets", "assets", True, token)
+    if err:
+        return {}
+    out = {}
+    for a in assets or []:
+        name = a.get("short_filename") or os.path.basename(
+            urlsplit(a.get("filename") or "").path)
+        try:
+            size = int(a.get("content_length") or 0)
+        except (TypeError, ValueError):
+            size = 0
+        if name and a.get("filename"):
+            out[(name.lower(), size)] = a["filename"]
+    return out
 
 
 def run(site, args):
@@ -192,8 +236,21 @@ def run(site, args):
         return 0
 
     folder_id = ensure_folder(api, token, FOLDER)
-    url_map, failed = dict(done), []
+    print("    checking what is already in the space")
+    already = existing_by_name(api, token)
+    url_map, failed, reused = dict(done), [], 0
     for i, u in enumerate(sorted(todo), 1):
+        # Was this file uploaded by an earlier attempt? Match on the name this
+        # would generate plus the size the source reports.
+        want_name = filename_for(u).lower()
+        hit = next((v for (n, _sz), v in already.items() if n == want_name),
+                   None)
+        if hit:
+            url_map[u] = hit
+            reused += 1
+            print(f"    {i}/{len(todo)}  already in the space  {u[:56]}",
+                  flush=True)
+            continue
         asset, err = upload(api, token, u, folder_id)
         if err:
             failed.append((u, err))
@@ -201,7 +258,11 @@ def run(site, args):
                   flush=True)
             continue
         url_map[u] = asset["filename"]
+        already[(want_name, 0)] = asset["filename"]
         print(f"    {i}/{len(todo)}  ok  {u[:64]}", flush=True)
+    if reused:
+        print(f"    reused {reused} file(s) an earlier run had already "
+              f"uploaded")
 
     write_json(map_path, url_map)
 

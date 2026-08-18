@@ -436,8 +436,20 @@ def upload_asset(api, token, local_path, asset, folder_id):
     if r3.status_code not in OK_STATUS:
         return None, f"finish_upload failed: {r3.status_code} {r3.text[:160]}"
 
-    r4 = get(f"{api}/assets/{new_id}", token)
-    new = r4.json().get("asset", {}) if r4.status_code == 200 else {"id": new_id}
+    # finish_upload returns the finished asset with its url. Use that rather than
+    # a separate GET /assets/<id>, which reports filename=None for a while after
+    # a successful upload -- that mistake made 20 completed uploads look failed
+    # in sb_external.py before it was found.
+    try:
+        body = r3.json() or {}
+    except ValueError:
+        body = {}
+    new = body.get("asset", body) if body.get("filename") \
+        or body.get("asset") else {}
+    if not new.get("filename"):
+        r4 = get(f"{api}/assets/{new_id}", token)
+        new = r4.json().get("asset", {}) if r4.status_code == 200 \
+            else {"id": new_id}
 
     # Carry over the metadata an editor typed. alt text is accessibility, not
     # decoration, and it is not recoverable from anywhere else.
