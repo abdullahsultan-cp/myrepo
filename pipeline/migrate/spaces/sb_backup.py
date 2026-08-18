@@ -56,6 +56,7 @@ import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
+from urllib.parse import urlsplit
 
 import requests
 
@@ -642,6 +643,63 @@ def required_field_plugins(components):
     for entry in out.values():
         entry["components"].sort()
     return out
+
+
+_EXT_FILE = re.compile(
+    r"\.(jpe?g|png|gif|webp|svg|avif|ico|pdf|docx?|xlsx?|pptx?"
+    r"|mp4|mov|webm|mp3|wav|zip|csv|txt)(?:[?#]|$)", re.I)
+_ANY_URL = re.compile(r"https?://[^\s\"'<>)\]}\\]+")
+
+
+def external_refs(outdir, story_meta_slugs, own_hosts=("aku.edu",)):
+    """Files a story depends on that are NOT Storyblok assets.
+
+    A page can point at a PDF on aku.edu or an image on some third-party site.
+    Those are not in the asset library, so nothing here copies them -- and on
+    AKUH, AKU and AKUEB together there are 158 such files on AKU's own domains,
+    which this repo's own notes say are being switched off. When they go, the
+    pages referencing them break and the backup cannot help, because it never
+    knew about them.
+
+    So they are at least written down: which file, on which host, referenced by
+    which story, and whether AKU owns the host. Recording a gap is not the same
+    as closing it, but an unrecorded gap is the one that surprises somebody.
+    """
+    rows, seen = [], set()
+    story_dir = os.path.join(outdir, "stories")
+    if not os.path.isdir(story_dir):
+        return 0
+    for fn in sorted(os.listdir(story_dir)):
+        if not fn.endswith(".json"):
+            continue
+        sid = fn[:-5]
+        with open(os.path.join(story_dir, fn), encoding="utf-8") as f:
+            text = f.read()
+        if "http" not in text:
+            continue
+        for url in sorted(set(_ANY_URL.findall(text))):
+            # A Storyblok asset, whatever host serves it -- s3.amazonaws.com
+            # fronts the same /f/<space>/ path, and those ARE backed up.
+            if not _EXT_FILE.search(url) or re.search(r"/f/\d+/", url):
+                continue
+            key = (sid, url)
+            if key in seen:
+                continue
+            seen.add(key)
+            host = urlsplit(url).netloc.lower()
+            rows.append([
+                host,
+                "yes" if any(h in host for h in own_hosts) else "no",
+                (os.path.splitext(urlsplit(url).path)[1] or "").lstrip(
+                    ".").lower(),
+                sid,
+                story_meta_slugs.get(sid, ""),
+                url,
+            ])
+    rows.sort(key=lambda r: (r[1] == "no", r[0], r[5], r[3]))
+    return write_csv(
+        os.path.join(outdir, "manifest_external_refs.csv"),
+        ["host", "aku_owned", "ext", "story_id", "story_slug", "url"], rows)
 
 
 def read_prev_sha(outdir):
@@ -1679,6 +1737,25 @@ def backup(site, only, args):
                 outdir, stories, story_meta)
             print(f"    manifest_stories.csv    "
                   f"{counts['manifest_stories']} row(s)")
+
+            slugs = {str(s_["id"]): s_.get("full_slug") or ""
+                     for s_ in stories if s_.get("id")}
+            n_ext = external_refs(outdir, slugs)
+            counts["external_refs"] = n_ext
+            if n_ext:
+                own = 0
+                with open(os.path.join(outdir,
+                                       "manifest_external_refs.csv"),
+                          encoding="utf-8-sig", newline="") as f:
+                    own = sum(1 for r in csv.DictReader(f)
+                              if r.get("aku_owned") == "yes")
+                print(f"    manifest_external_refs.csv  {n_ext} reference(s), "
+                      f"{own} on AKU's own hosts")
+                if own:
+                    print(f"    !! {own} reference(s) point at files on AKU "
+                          f"domains that are NOT backed up here - see the "
+                          f"csv. Nothing copies them; they die with those "
+                          f"servers.")
         if assets:
             folders = load_json(
                 os.path.join(outdir, "asset_folders.json"), []) or []
