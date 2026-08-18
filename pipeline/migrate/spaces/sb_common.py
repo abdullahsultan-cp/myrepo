@@ -62,7 +62,8 @@ DEFAULT_CONFIG = (os.path.join(ROOT, "config", "sites.json") if ROOT
 # Scripts copied into every backup repo, so a repo can be restored with nothing
 # but itself and Python. Edited here, in one place.
 TOOL_FILES = ["sb.py", "sb_common.py", "sb_backup.py", "sb_restore.py",
-              "sb_storage.py", "sb_portal.py", "sb_indexdb.py"]
+              "sb_storage.py", "sb_portal.py", "sb_indexdb.py",
+              "sb_external.py"]
 
 # Written into every backup repo so it stands alone: the deps it needs, and a
 # double-clickable wrapper on each platform. A backup repo that needs another

@@ -24,6 +24,10 @@ sb.py — the one command for a Storyblok backup repo. Run from the repo root.
     python tools/sb.py changed [rev]     what moved, appeared, vanished or was
                                     edited since a commit (default HEAD~1).
                                     For a space being reorganised.
+    python tools/sb.py external [--apply] [--third-party]
+                                    files a page points at that are NOT
+                                    Storyblok assets: download them, upload into
+                                    Storyblok, rewrite the links
     python tools/sb.py restore-story <id> [--apply]
     python tools/sb.py restore-assets [--apply]
     python tools/sb.py rebuild <empty space id> [--apply]
@@ -699,6 +703,11 @@ def _changed_schema(rev):
           else "    unchanged")
 
 
+def cmd_external(argv):
+    """Bring externally-hosted files into Storyblok and repoint the pages."""
+    return _run("sb_external.py", *argv)
+
+
 def cmd_orphans(argv):
     """Bucket files the space no longer has an asset row for.
 
@@ -753,7 +762,7 @@ COMMANDS = {
     "init": cmd_init, "setup": cmd_setup, "doctor": cmd_doctor, "backup": cmd_backup,
     "audit": cmd_audit, "verify": cmd_verify, "repair": cmd_repair,
     "index": cmd_index, "orphans": cmd_orphans,
-    "changed": cmd_changed, "status": cmd_status,
+    "changed": cmd_changed, "external": cmd_external, "status": cmd_status,
     "restore-story": cmd_restore_story, "restore-assets": cmd_restore_assets,
     "rebuild": cmd_rebuild,
 }
