@@ -45,9 +45,15 @@ PERMISSIONS_CSV = os.path.join(
 # The only page-level inventory that exists: 3,340 live page URLs.
 PAGES_HTM = os.path.join(DATA, "AKU-EN_1.HTM")
 
-# AKU's own list of what to migrate. Authoritative where it disagrees with the
-# other two.
+# AKU's first list of what to migrate, 3,340 pages. Superseded by the filtered
+# export below and kept only so page_intake.dropped() can name what AKU has
+# since taken off the list.
 VISIBLE_PAGES_CSV = os.path.join(DATA, "aku-university-visible-pages.csv")
+
+# AKU's current list, 4,591 pages: the page inventory. It carries 1,323 pages
+# the first two sources never listed and drops 72 they did, so it is the
+# inventory outright rather than a third opinion — see page_intake.
+FILTERED_PAGES_CSV = os.path.join(DATA, "aku-university-filtered.csv")
 
 
 def data(name):

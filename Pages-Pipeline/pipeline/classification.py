@@ -9,6 +9,37 @@ W = 'witnessed'   # the CSV proves it
 I = 'inferred'    # name/slug convention or AKU fact, no witness in the export
 D = 'decide'      # genuinely unresolved, needs AKU to answer
 
+# ---------------------------------------------------------------------------
+# The aku.edu root web holds 17 pages that belong to no section: home, contact,
+# campuses, the AKDN page, the legal set. They land at the Global region folder,
+# which is where content no faculty owns and no section contains goes.
+#
+# One of them is not global. `east-africa.aspx` is titled "East Africa" and is
+# that region's landing page; it sits on the root web because AKU's top
+# navigation puts it there, which places the file rather than the content. AKU
+# confirmed it belongs to the region it names.
+#
+# Keyed by file name, since the root web has no section to key on. The third
+# field is the slug it takes at the destination: East Africa is the one region
+# whose landing page never had a section of its own -- /pakistan, /kenya,
+# /tanzania, /uganda and /united-kingdom each have one, and each lands at
+# regions/<region>/home -- so calling it `home` puts it where the other five
+# already are, instead of the regions/east-africa/east-africa stutter that
+# keeping the file name would give.
+#
+# Read by build_migration_plan.py, which does the placing, and by
+# build_hierarchy.py, so the tree cannot show a page somewhere the plan does not
+# send it.
+ROOT_PAGE_DEST = {
+    'east-africa.aspx': (
+        'regions/east-africa', 'east-africa', 'home',
+        'its own title is "East Africa" and it is that region’s landing page. It '
+        'sits on the root web because AKU’s top navigation puts it there — that '
+        'places the file, not the content. Confirmed by AKU as belonging to the '
+        'East Africa region rather than to global navigation, and named `home` to '
+        'match the five regions that do have a landing section'),
+}
+
 REGIONS = [
     ('global',         'Global',          'GL', 'no faculty owns this: central comms / university-wide'),
     ('pakistan',       'Pakistan',        'PK', 'Karachi, Matiari, Chitral, Gilgit'),

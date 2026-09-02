@@ -23,13 +23,13 @@ segment is invented.
 import collections
 import csv
 import json
+import os
 import re
 
+import page_intake
+import page_owners
 import paths
-
-PAGES_CSV = paths.VISIBLE_PAGES_CSV
-
-from classification import ENTITY_COUNTRIES, REGIONS, SEC, W, entity_basis
+from classification import ENTITY_COUNTRIES, REGIONS, ROOT_PAGE_DEST, SEC, W, entity_basis
 
 # Each event microsite's owning unit and last edition, read off its own page.
 from event_owners import EVENTS as EVENT_OWNERS
@@ -47,6 +47,23 @@ DO_NOT_MIGRATE = {
         '800-word FHS library homepage.',
     'https://www.aku.edu/coe-wch/ea/Pages/home-1.aspx':
         'HTTP 404 — already gone from the live site.',
+
+    # Found by the verify_live.py sweep of AKU's filtered export and re-fetched
+    # twice each to rule out a transient failure. All five are on AKU's migrate
+    # list and none of them exist; the other 252 unreachable pages returned 401,
+    # which is a permissions question rather than a missing page, so they stay in
+    # the plan and are raised as a decision instead.
+    'https://www.aku.edu/about/officers/Pages/founding-dean-ighd.aspx':
+        'HTTP 404 on two fetches — gone from the live site.',
+    'https://www.aku.edu/bmi/about/Pages/waliyah-mughis.aspx':
+        'HTTP 404 on two fetches — gone from the live site.',
+    'https://www.aku.edu/events/rsc-conf/Pages/abstract-submission-form.aspx':
+        'HTTP 404 on two fetches — gone; the conference keeps its other '
+        'abstract-submission.aspx, which answers 200.',
+    'https://www.aku.edu/mcpk/pathology/Pages/histopathology.aspx':
+        'HTTP 404 on two fetches — gone from the live site.',
+    'https://www.aku.edu/news/Pages/testNews.aspx':
+        'HTTP 404 on two fetches — a test page, and gone.',
 }
 
 webs = json.load(open(paths.work('webs.json'), encoding='utf-8'))
@@ -94,7 +111,35 @@ def public_url(cms_path):
         parts = parts[1:]
     return 'https://www.aku.edu/' + '/'.join(parts)
 
+# Invisible characters have to be DELETED before the slug is built, not turned
+# into a separator. Fifteen page names carry a zero-width space, three of them
+# inside a word, and the generic "anything not a-z0-9 becomes a dash" rule split
+# those words in the public address:
+#
+#     zehr<U+200B>a-nigah.aspx            -> zehr-a-nigah      (Zehra Nigah)
+#     vaccinology-cou<U+200B><U+200B>rse  -> vaccinology-cou-rse
+#     lung-tumo<U+200B>rs<U+200B>.aspx    -> lung-tumo-rs
+#
+# The same class of character is deleted in `pipeline/core/text_clean.py` for
+# story text, for the same reason, and the list is written as code points rather
+# than as the characters themselves so it can be reviewed — a string of
+# invisibles is unreadable in a diff. U+200C and U+200D are here too: they carry
+# meaning in Urdu and Arabic, but a slug is ASCII either way, and dropping them
+# beats splitting a word on them.
+INVISIBLE = dict.fromkeys([
+    0x200B,  # zero width space
+    0x200C,  # zero width non-joiner
+    0x200D,  # zero width joiner
+    0x00AD,  # soft hyphen
+    0xFEFF,  # byte order mark
+    0x2060,  # word joiner
+], None)
+# These are spaces, so they become the separator a space would.
+AS_SPACE = {0x00A0: ' ', 0x202F: ' ', 0x2009: ' ', 0x2028: ' ', 0x2029: ' '}
+
+
 def slugify(s):
+    s = s.translate(INVISIBLE).translate(AS_SPACE)
     s = s.strip().lower()
     s = s.replace("'", '').replace('’', '').replace('&', 'and')
     s = re.sub(r'\.aspx$', '', s)
@@ -139,9 +184,11 @@ def is_department(section, sub_web):
     """
     return bool(units_at(sub_web) - units_at(section))
 
-# "Pages" and "SitePages" are SharePoint's own library names, not content
-# folders; two webs carry one in the middle of their path.
-LIBRARY_SEGS = {'pages', 'sitepages'}
+# SharePoint's own library names -- "Pages", "SitePages", "Documents" -- are not
+# content folders, and several webs carry one in the middle of their path.
+# page_intake strips them off a page's URL; dest_web has to skip them again for
+# webs the permissions export lists with one already in the path.
+LIBRARY_SEGS = page_intake.CONTAINER_SEGS
 
 # Departments are only witnessed by a group where a region bothered to create
 # one. Pakistan gives every clinical department its own CW/CA pair; East Africa
@@ -326,8 +373,43 @@ def is_dept_name(ent_slug, seg):
         return False
     return s in DEPT_NAMES.get(ent_slug, ()) or s in EXTRA_DEPARTMENTS.get(ent_slug, ())
 
+# The third witness, and the plainest: AKU calls the thing a department on its
+# own site. `is_department` needs the sub-web to have an owner group of its own,
+# which is how a region that bothered to create one is recognised. Two units in
+# the Medical College never got one and were filed as ordinary folders while
+# their own SharePoint title read "Department of Oncology" and "Division of
+# Woman & Child Health" -- and the breadcrumb on every page inside them says the
+# same. A team that did not get its own CW/CA pair is still a department.
+TITLED_DEPT = re.compile(r'^\s*(department|division|section)\b', re.I)
+
+def titled_department(web):
+    """Does this web's own title say it is one?"""
+    t = (webs.get(web, {}).get('title') or [''])[0]
+    return bool(TITLED_DEPT.match(t or ''))
+
 # ---- destination path for a web -----------------------------------------
+# The 17 pages at aku.edu/Pages/*.aspx -- home, contact, campuses, akdn, the
+# legal set -- sit on the root web, which is not a section: SEC mirrors the
+# permissions export's top-level sections and the root is not one of them. It is
+# still witnessed like any other web. The export lists it as `http://aku.edu`,
+# title "Home", scope Unique, owned by CW Public Affairs (13 rows) and CA Public
+# Affairs (9) -- the same central-comms pair that witnesses /about. So it lands
+# at the Global region folder itself, which is where content no faculty owns and
+# no section contains already goes.
+ROOT_DEST = 'regions/global'
+ROOT_PROV = ('the aku.edu root web, which the permissions export lists as '
+             'title "Home", scope Unique, owned by CW/CA Public Affairs — the '
+             'central-comms pair that also witnesses /about. Not a section: '
+             'these pages sit above every section, so they land at the Global '
+             'region folder itself')
+
+# Which root pages go somewhere other than Global lives in classification.py, so
+# the hierarchy and the plan cannot disagree about it.
+
+
 def dest_web(web):
+    if web == page_intake.ROOT_WEB:
+        return ROOT_DEST, 'region', 'global', '', '', W, ROOT_PROV
     segs = web.split('/')
     section = segs[0]
     region, ent_slug, ent_name, division, conf, prov = SEC[section]
@@ -339,9 +421,20 @@ def dest_web(web):
         # {global, pakistan, east-africa, ...}. It owns the content no faculty
         # owns -- including the six bodies AKU publishes as "Global Institutes &
         # Centres", which run across regions and belong to no single country.
-        if ent_slug:
+        #
+        # The entity test applies here exactly as it does to a region. It did not
+        # for a while, and /vrw slipped through: "Voices from the Roof of the
+        # World" is a four-country initiative with the University of Central
+        # Asia, on neither /academics nor /research, and it was sitting in
+        # regions/global/entities/ alongside the Brain & Mind Institute. Global
+        # is a region like any other; a project inside it is a folder, not a
+        # faculty.
+        if ent_slug and entity_basis(ent_slug)[0]:
             base = ['regions', 'global', 'entities', ent_slug]
             kind = 'entity'
+        elif ent_slug:
+            base = ['regions', 'global', ent_slug]
+            kind = 'region-folder'
         else:
             base = ['regions', 'global', slugify(section)]
             kind = 'section'
@@ -377,13 +470,20 @@ def dest_web(web):
             base.append(slugify(seg))
             kind = 'publication'
         elif i == 0 and ent_slug and not excluded(ent_slug, seg) and (
-                is_department(section, sub) or is_dept_name(ent_slug, seg)):
+                is_department(section, sub) or is_dept_name(ent_slug, seg)
+                or titled_department(sub)):
             base += ['departments', slugify(seg)]
             kind = 'department'
         else:
             base.append(slugify(seg))
             kind = 'folder'
-    return '/'.join(base), kind, region, ent_slug or '', ent_name or '', conf, prov
+    # The entity column names the faculty or institute the folder sits inside.
+    # A region-folder sits inside none — /cancer-centre, /ek-saath and /tele-icu
+    # are real units that AKU does not publish as academic units, and their path
+    # already says so. Reporting them in the entity column told a reader they
+    # were faculties, and read as "Faculty / institute: ek-saath".
+    ent_out = ent_slug if (ent_slug and entity_basis(ent_slug)[0]) else ''
+    return '/'.join(base), kind, region, ent_out, ent_name or '', conf, prov
 
 # ---- news, events and blogs are hubs, not folders per faculty ------------
 # aku.edu/news is a top-level hub whose breadcrumb is "Home > News", and it
@@ -422,23 +522,24 @@ def content_type_of(dest):
     return 'page'
 
 # ---- pages from AKU's own list ------------------------------------------
-pages = []
-with open(PAGES_CSV, encoding='utf-8-sig', newline='') as f:
-    for r in csv.DictReader(f):
-        url = (r['PageUrl'] or '').strip()
-        if not url:
-            continue
-        path = url.replace('https://www.aku.edu/', '').replace('http://www.aku.edu/', '')
-        segs = path.split('/')
-        web = '/'.join(segs[:-2]) if len(segs) >= 2 and segs[-2].lower() == 'pages' \
-            else '/'.join(segs[:-1])
-        pages.append({'file': r['FileName'].strip(), 'url': url, 'web': web,
-                      'action': (r['Action'] or '').strip()})
+# One inventory, read by page_intake: AKU's filtered export, 4,591 pages. The
+# root web's pages have section None -- placed by dest_web, not by SEC -- so they
+# are not held against the classification.
+pages = page_intake.load()
 
-unknown = sorted({p['web'].split('/')[0] for p in pages
-                  if p['web'].split('/')[0] not in SEC})
+unknown = sorted({p['section'] for p in pages
+                  if p['section'] is not None and p['section'] not in SEC})
 if unknown:
     raise SystemExit('pages reference unclassified sections: %s' % unknown)
+
+# Pages AKU's earlier list carried and this one does not. Reported, never
+# silently dropped -- a page leaving the corpus between two builds is the one
+# loss this pipeline exists to make impossible.
+DROPPED = page_intake.dropped(pages)
+
+# The team each page names on itself. Used only where the permissions export
+# names none for the web -- see page_owners for why it never overrules it.
+PAGE_OWNER = page_owners.owners()
 
 pages_by_web = collections.defaultdict(list)
 for p in pages:
@@ -540,7 +641,11 @@ for dest, srcs in webs_by_dest.items():
         'region_code': REGION_CODE[region],
         'entity': ent,
         'source_web': '; '.join(s or '(site root)' for s in srcs),
-        'title': (webs.get(web, {}).get('title') or [''])[0],
+        # A region folder keeps the region's own name. The root web is the only
+        # source web that lands on one, and SharePoint titles it "Home" — the
+        # homepage's name, not a name for the Global region.
+        'title': REGION_NAME[region] if kind == 'region' and dest == 'regions/' + region
+                 else (webs.get(web, {}).get('title') or [''])[0],
         'pages_here': sum(len(pages_by_web.get(s, [])) for s in srcs),
         'pages_subtree': subtree,
         'managed_by': '; '.join(units) if units else 'Public Affairs (central)',
@@ -620,9 +725,24 @@ for p in sorted(pages, key=lambda x: x['url'].lower()):
         while parent and parent not in dest_by_web:
             parent = parent.rsplit('/', 1)[0] if '/' in parent else ''
         dest = dest_by_web.get(parent, 'global') + '/' + slugify(web.split('/')[-1])
-    section = web.split('/')[0]
-    region, ent_slug, ent_name, division, conf, prov = SEC[section]
+    section = p['section']
+    leaf = slugify(p['file'])
+    if section is None:                    # the root web — placed by dest_web
+        region, ent_slug, ent_name, division, conf = 'global', None, None, None, W
+        # A root page AKU files under a region goes there instead, under the slug
+        # the override names — east-africa.aspx becomes that region's `home`, so
+        # it sits where the other five regions' landing pages already do.
+        override = ROOT_PAGE_DEST.get(p['file'].lower())
+        if override:
+            dest, region, leaf, _why = override
+    else:
+        region, ent_slug, ent_name, division, conf, prov = SEC[section]
+    # Same test the folder uses: a page in /cancer-centre belongs to no faculty,
+    # because AKU does not publish one there.
+    if ent_slug and not entity_basis(ent_slug)[0]:
+        ent_slug = None
     src, units = nearest_owner(web)
+    mine = PAGE_OWNER.get(page_intake.key(p['url']), [])
     dept = ''
     m = re.search(r'/departments/([^/]+)', dest)
     if m:
@@ -642,8 +762,10 @@ for p in sorted(pages, key=lambda x: x['url'].lower()):
     page_rows.append({
         'current_url': p['url'],
         'action': p['action'],
-        'new_path': home + '/' + slugify(p['file']),
-        'new_url': public_url(home + '/' + slugify(p['file'])),
+        'review_status': p['status'],
+        'new_in_export': 'new' if p['new'] else '',
+        'new_path': home + '/' + leaf,
+        'new_url': public_url(home + '/' + leaf),
         'content_type': ctype,
         'moved_from': moved_from,
         'region': region,
@@ -651,7 +773,14 @@ for p in sorted(pages, key=lambda x: x['url'].lower()):
         'entity': ent_slug or '',
         'department': dept,
         'folder': home,
-        'managed_by': '; '.join(units) if units else 'Public Affairs (central)',
+        'page_owner': '; '.join(mine),
+        # The export first. Only where it names nobody for this web does the
+        # page's own CW/CA group stand in -- 523 pages that are not central
+        # comms's work and were being recorded as though they were.
+        'managed_by': '; '.join(units) if units
+                      else ('; '.join(mine) if mine else 'Public Affairs (central)'),
+        'managed_by_source': 'permissions export' if units
+                             else ('page CW/CA' if mine else 'fallback — nobody named'),
         'countries': ENTITY_COUNTRIES.get(section, ('', ''))[0],
         'confidence': conf,
         'collision': '',
@@ -664,25 +793,91 @@ for p in sorted(pages, key=lambda x: x['url'].lower()):
 # later one keeps both rows visible; overwriting would lose a page silently.
 seen = {}
 collisions = 0
-for r in page_rows:
+# Whoever is resolved first keeps the clean address, so the order is not a
+# detail. Sorted by URL, `mcea/departments/…/home.aspx` came before
+# `mcea/Pages/home.aspx` because "d" precedes "p", and the faculty's own landing
+# page was pushed to `home-2` by one of its sub-folders. The page nearer the top
+# of the section is the more canonical one and takes the address; ties break on
+# the URL so the result does not depend on dictionary order.
+def _canonical_first(r):
+    return (page_intake.web_of(r['current_url']).count('/'),
+            r['current_url'].lower())
+
+for r in sorted(page_rows, key=_canonical_first):
     if r['do_not_migrate']:
         # resolved against the live site: it never lands, so it takes no path and
-        # cannot collide with the page that replaces it
+        # cannot collide with the page that replaces it. The address goes with the
+        # path -- leaving it behind published an address for a page that will not
+        # exist, and put 39 of them on addresses another page is taking.
         r['new_path'] = ''
+        r['new_url'] = ''
         continue
+    # Uniqueness is a property of the ADDRESS, not of the CMS path. `regions/`,
+    # `entities/` and `departments/` are scaffolding a reader never sees, so two
+    # distinct paths can be one address — and AKU has a real web called
+    # `departments`, which makes that concrete:
+    #
+    #   mcea/departments/Pages/message-from-the-chair.aspx
+    #       -> …/medical-college/departments/message-from-the-chair
+    #   mcea/Pages/message-from-the-chair.aspx
+    #       -> …/medical-college/message-from-the-chair
+    #
+    # Different folders, different paths, and one address once the scaffold is
+    # stripped. Checking the path found nothing; the reader would have found it.
     base = r['new_path']
-    if base in seen:
+    url = public_url(base)
+    if url in seen:
         collisions += 1
         n = 2
-        while '%s-%d' % (base, n) in seen:
+        while public_url('%s-%d' % (base, n)) in seen:
             n += 1
         r['new_path'] = '%s-%d' % (base, n)
-        r['collision'] = 'same slug as %s — AKU has two source pages, pick one' \
-                         % seen[base]
+        r['collision'] = 'same address as %s — AKU has two source pages, pick one' \
+                         % seen[url]
+        # Mark the page that got there first as well, by the URL it claimed:
+        # once the clash is between two DIFFERENT paths that flatten to one
+        # address, matching on the path finds nobody and only one side of the
+        # pair is flagged. AKU has to see both to choose between them.
         for other in page_rows:
-            if other['new_path'] == base:
-                other['collision'] = r['collision']
-    seen[r['new_path']] = r['current_url']
+            if other['current_url'] == seen[url]:
+                other['collision'] = ('same address as %s — AKU has two source '
+                                      'pages, pick one' % r['current_url'])
+    r['new_url'] = public_url(r['new_path'])
+    seen[r['new_url']] = r['current_url']
+
+# No two pages may end up at one address. new_path was already unique; new_url
+# was not, and nothing checked.
+_urls = collections.Counter(r['new_url'] for r in page_rows if r['new_url'])
+_clash = {u: n for u, n in _urls.items() if n > 1}
+if _clash:
+    raise SystemExit('two pages share one address: %s'
+                     % '; '.join('%s (%d)' % (u, n) for u, n in list(_clash.items())[:5]))
+
+# ---- how many pages each folder really holds ----------------------------
+# Both counts were derived from the source webs, before the pages were placed,
+# and neither survived what happens after: a page consolidated into a global hub
+# is counted at the faculty folder it left, and a folder this build synthesises
+# — `regions`, each `entities` container, every region — has no source web at
+# all and so counted nothing. `regions` reported 0 pages with 4,591 beneath it,
+# and `regions/global` reported 17 against 2,389.
+#
+# They are recomputed here from where the pages actually landed, which is the
+# only thing either column ever claimed to say, and rolled up the destination
+# tree so a parent includes its children.
+_here = collections.Counter(r['folder'] for r in page_rows)
+_sub = collections.Counter()
+for _path, _n in _here.items():
+    _parts = _path.split('/')
+    for _i in range(len(_parts)):
+        _sub['/'.join(_parts[:_i + 1])] += _n
+for r in folder_rows:
+    r['pages_here'] = _here.get(r['new_path'], 0)
+    r['pages_subtree'] = _sub.get(r['new_path'], 0)
+
+_root = sum(r['pages_here'] for r in folder_rows)
+if _root != len(page_rows):
+    raise SystemExit('page counts do not add up: folders hold %d, there are %d pages'
+                     % (_root, len(page_rows)))
 
 # ---- Storyblok roles ----------------------------------------------------
 # One role per unit per capability, scoped to the folders that unit owns. That
@@ -803,9 +998,10 @@ FOLD_COLS = ['new_path', 'parent_path', 'level', 'kind', 'region', 'region_code'
              'archive_candidate', 'own_permissions', 'permission_source',
              'confidence', 'provenance']
 PAGE_COLS = ['current_url', 'new_url', 'new_path', 'content_type', 'action',
-             'region', 'region_code', 'entity', 'department', 'folder',
-             'moved_from', 'managed_by', 'countries', 'confidence', 'collision',
-             'do_not_migrate']
+             'review_status', 'new_in_export', 'region', 'region_code', 'entity',
+             'department', 'folder', 'moved_from', 'managed_by',
+             'managed_by_source', 'page_owner', 'countries', 'confidence',
+             'collision', 'do_not_migrate']
 ROLE_COLS = ['storyblok_role', 'capability', 'can_publish', 'unit', 'members',
              'folders_scoped', 'source_sharepoint_groups', 'allowed_paths', 'note']
 
@@ -871,6 +1067,12 @@ COL_DOCS = {
         'content_type': 'page, news, event or blog. The last three live in the global '
                         'hubs and carry their unit as tags.',
         'action': 'AKU’s own call from their CSV: "Move as is" or "Update and move".',
+        'review_status': 'AKU’s FinalStatus from the same export — MIGRATE, NOT_REVIEWED '
+                         'or UNCLEAR. Where the page belongs is settled either way; this '
+                         'says whether AKU has finished looking at it.',
+        'new_in_export': '"new" when AKU’s filtered export lists the page and their '
+                         'earlier one did not — the 1,323 additions. Filter on it to '
+                         'review only what changed; blank means the page was in both.',
         'region': 'Region of the folder it lands in.',
         'region_code': 'Two-letter code, metadata only.',
         'entity': 'Entity of the folder it lands in, if any.',
@@ -880,6 +1082,12 @@ COL_DOCS = {
         'moved_from': 'Set when the page was pulled out of a faculty’s own folder into a '
                       'global hub. Its old home, for the redirect.',
         'managed_by': 'The unit that will manage it once moved.',
+        'managed_by_source': 'Which witness named that unit — the permissions export '
+                             '(a grant on its web), or the page’s own CW/CA group where '
+                             'the export names nobody. "fallback" means neither did.',
+        'page_owner': 'The content writer / approver groups set on the page itself, from '
+                      'AKU’s metadata export. Shown for every page that has them, even '
+                      'where managed_by came from the export, so the two can be compared.',
         'countries': 'Inherited from the folder, for a unit that works across several.',
         'confidence': 'Same three values as the folder map.',
         'collision': 'Two source pages want the same slug. Surfaced, not silently '
@@ -940,6 +1148,35 @@ print('pages resolved as do-not-migrate:',
 print('pages with a named managing unit: %d of %d'
       % (sum(1 for r in page_rows if 'central' not in r['managed_by']),
          len(page_rows)))
+
+# Pages AKU's earlier export listed and the current one does not. Written out
+# rather than printed alone: 72 pages leaving the corpus is a question for AKU,
+# and the answer has to survive the next build.
+with open(paths.work('dropped_pages.txt'), 'w', encoding='utf-8') as _f:
+    _f.write('Pages in %s that %s no longer lists.\n'
+             % (os.path.basename(paths.VISIBLE_PAGES_CSV),
+                os.path.basename(paths.FILTERED_PAGES_CSV)))
+    _f.write('%d pages. AKU to confirm each was retired deliberately.\n\n' % len(DROPPED))
+    for _u, _a in DROPPED:
+        _f.write('%-96s %s\n' % (_u, _a))
+print('pages the previous export listed and this one drops:', len(DROPPED))
+
+# Where the page's own CW/CA names a team the folder's owner does not include.
+# The export wins in the plan; these are written out because a few are worth a
+# second opinion rather than a rule.
+_conf = page_owners.conflicts(page_rows)
+with open(paths.work('owner_conflicts.txt'), 'w', encoding='utf-8') as _f:
+    _f.write('Pages whose own CW/CA group names a team the permissions export does '
+             'not give the folder.\n')
+    _f.write('%d pages. The export wins in the plan — these are for review, not a '
+             'blocked build.\n\n' % len(_conf))
+    for _u, _mine, _theirs, _fold in _conf:
+        _f.write('%s\n    page says   %s\n    folder says %s\n    folder      %s\n'
+                 % (_u, ', '.join(_mine), ', '.join(_theirs), _fold))
+print('pages whose own CW/CA disagrees with the folder owner:', len(_conf))
+print('pages given an owner by their own CW/CA where the export named none:',
+      sum(1 for r in page_rows if r['managed_by_source'] == 'page CW/CA'))
+
 by_kind = collections.Counter(r['kind'] for r in folder_rows)
 print('folder kinds:', dict(by_kind))
 dept = sum(1 for r in folder_rows if r['kind'] == 'department')

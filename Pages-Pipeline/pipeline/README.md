@@ -12,9 +12,34 @@ python probe_roles.py      # groups -> groups.json + web_owners.json
 python build_migration_plan.py   # -> plan.json + the folder/page/role CSVs in ../out/
 python probe_people.py           # -> people.json
 python build_roles.py            # -> roles.json + the four role CSVs
+python verify_live.py            # -> aku-live-page-verification.csv  (hits the network)
 mkdir -p ../portal/public/data   # gitignored, so absent on a fresh clone
 cp ../out/work/{plan,people,roles}.json ../portal/public/data/
 ```
+
+## Checking a placement rather than trusting it
+
+Three witnesses place a page, and only one of them speaks per page.
+
+| Witness | Covers | Read by |
+|---|---|---|
+| the permissions export — who owns its web | all 4,591 | `build_migration_plan.py` |
+| `SPPagesAKU-Metadata.csv` — the CW/CA groups set on the page itself | 3,265 | `page_owners.py` |
+| the live site — the breadcrumb AKU prints on the page | the other 1,326 | `verify_live.py` |
+
+Between them every page is checked by something other than its own URL. The
+metadata agrees with the folder owner on 2,580 of the 2,656 pages where both
+speak, and the 76 exceptions are shared apps carrying their author's group — one
+faculty-profile app copied into seven faculties — not ownership disputes.
+`verify_live.py` opened the other 1,326: **1,048 breadcrumbs confirm the
+placement and none contradict it.** 257 did not answer (252 HTTP 401, 5 HTTP 404),
+16 are the site root and have no section above them, and 4 sit in a SharePoint
+library whose breadcrumb is local to the library.
+
+`verify_live.py` caches every fetch in `out/work/live_checks.json`, so a re-run
+only fetches what it has not seen. It never re-files a page: it writes what the
+site said beside what the plan decided, and a disagreement is a question for a
+human.
 
 ## The roles
 
