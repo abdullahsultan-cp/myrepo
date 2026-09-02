@@ -735,7 +735,7 @@ function build(){
     +'<button class="btn" id="clear">Clear all filters</button></div>';
   $('#chips').innerHTML=(PRESETS[TAB]||[]).map((p,i)=>
     '<button class="chip preset" data-i="'+i+'">'+esc(p[0])+'</button>').join('')
-    +'<button class="chip" id="clear">Clear filters</button>';
+    +'<button class="chip" id="clearchip">Clear filters</button>';
   $('#cols').innerHTML=C.map((c,i)=>
     '<label><input type="checkbox" data-i="'+i+'"'+(VIS.includes(i)?' checked':'')
     +'> '+esc(L[i])+'</label>').join('')
@@ -759,7 +759,9 @@ function build(){
     }
     apply();
   });
-  $('#clear').onclick=()=>{reset();apply();};
+  const clearAll=()=>{reset();apply();};
+  $('#clear').onclick=clearAll;
+  $('#clearchip').onclick=clearAll;
   $$('#cols input').forEach(cb=>cb.onchange=()=>{
     VIS=$$('#cols input').filter(x=>x.checked).map(x=>+x.dataset.i);
     if(!VIS.length){cb.checked=true;VIS=[+cb.dataset.i];}
@@ -868,48 +870,63 @@ function treeFilter(){
   const t=$('#q').value.trim().toLowerCase();
   const reg=fv('t_region'), ent=fv('t_entity'), team=fv('t_team'), kind=fv('t_kind');
   const st=fv('t_status'), hideEmpty=$('#t_empty')&&$('#t_empty').checked;
-  const pageFilter = !!(st||t);
-  const anyFolderFilter = !!(reg||ent||team||kind);
-  let pShown=0, fShown=0;
-
+  const pageFilter=!!(st||t);
+  const anyFolder=!!(reg||ent||team||kind);
   const all=[...$('#tree').querySelectorAll('li')];
-  // Deepest first: document order puts children after parents, so reversing it
-  // means a folder is judged only once its own children are settled.
-  all.slice().reverse().forEach(li=>{
-    if(li.classList.contains('pg')){
-      let ok=true;
-      if(t&&!li.dataset.s.includes(t)) ok=false;
-      if(ok&&st){
-        if(st==='new') ok=li.dataset.new==='1';
-        else if(st==='dnm') ok=li.dataset.dnm==='1';
-        else if(st==='unlisted') ok=li.dataset.unlisted==='1';
-        else if(st==='listed') ok=li.dataset.unlisted!=='1';
-        else if(st==='401'||st==='404'||st==='200') ok=li.dataset.http===st;
-        else ok=li.dataset.rev===st;
-      }
-      li.classList.toggle('hide',!ok);
-      if(ok) pShown++;
-      return;
-    }
-    let ok=true;
-    if(reg&&li.dataset.r!==reg) ok=false;
-    if(ok&&ent&&li.dataset.e!==ent) ok=false;
-    if(ok&&team&&li.dataset.m!==team) ok=false;
-    if(ok&&kind&&li.dataset.k!==kind) ok=false;
-    const kids=[...li.querySelectorAll(':scope > ul > li')];
-    const liveKid=kids.some(c=>!c.classList.contains('hide'));
-    // A folder matching the search itself stays, so you can find an empty one
-    // by name; but once a PAGE filter is on, a folder with nothing under it is
-    // noise, and so is an empty folder when "hide empty" is ticked.
-    const selfHit=t&&li.dataset.s.includes(t);
-    let show = ok && (liveKid || selfHit || (!pageFilter && !hideEmpty));
-    if(ok&&!liveKid&&!selfHit&&hideEmpty) show=false;
-    if(ok&&!liveKid&&!selfHit&&pageFilter) show=false;
-    li.classList.toggle('hide',!show);
-    if(show){ fShown++; if(t||st||anyFolderFilter) li.classList.remove('cl'); }
+
+  /* 1. Top-down — which folders are inside the part of the tree the folder
+        filters pick out. Scope INHERITS: everything under Kenya is Kenya, and
+        `regions` and each `entities` container carry no region or faculty of
+        their own. Testing every folder on its own value hid those containers
+        and took every match below with them, so Kenya returned an empty tree.
+        Parents come first in document order, so a child can read its parent. */
+  all.forEach(li=>{
+    if(li.classList.contains('pg')) return;
+    const par=li.parentElement.closest('li');
+    let self=true;
+    if(reg&&li.dataset.r!==reg) self=false;
+    if(ent&&li.dataset.e!==ent) self=false;
+    if(team&&li.dataset.m!==team) self=false;
+    if(kind&&li.dataset.k!==kind) self=false;
+    li.dataset.inscope=(self||(par&&par.dataset.inscope==='1'))?'1':'0';
   });
-  $('#count').innerHTML='<b>'+fShown.toLocaleString()+'</b> folders &middot; <b>'
-    +pShown.toLocaleString()+'</b> pages';
+
+  /* 2. Pages — judged on the page filters, and only inside that scope. A page
+        is not exempt from "region = Kenya" just because pages have no region of
+        their own; it belongs to the folder holding it. */
+  all.forEach(li=>{
+    if(!li.classList.contains('pg')) return;
+    const par=li.parentElement.closest('li');
+    let ok=!par||par.dataset.inscope==='1';
+    if(ok&&t&&!li.dataset.s.includes(t)) ok=false;
+    if(ok&&st){
+      if(st==='new') ok=li.dataset.new==='1';
+      else if(st==='dnm') ok=li.dataset.dnm==='1';
+      else if(st==='unlisted') ok=li.dataset.unlisted==='1';
+      else if(st==='listed') ok=li.dataset.unlisted!=='1';
+      else if(st==='401'||st==='404'||st==='200') ok=li.dataset.http===st;
+      else ok=li.dataset.rev===st;
+    }
+    li.classList.toggle('hide',!ok);
+  });
+
+  /* 3. Bottom-up — a folder stays if anything under it stayed, which is what
+        keeps the path to a match visible, or if it is in scope and nothing was
+        asked of its pages. Deepest first, so children are settled. */
+  all.slice().reverse().forEach(li=>{
+    if(li.classList.contains('pg')) return;
+    const live=[...li.querySelectorAll(':scope > ul > li')]
+                 .some(c=>!c.classList.contains('hide'));
+    const show=live||(li.dataset.inscope==='1'&&!pageFilter&&!hideEmpty);
+    li.classList.toggle('hide',!show);
+    if(show&&(pageFilter||anyFolder)) li.classList.remove('cl');
+  });
+
+  let f=0,p=0;
+  all.forEach(li=>{ if(li.classList.contains('hide')) return;
+    li.classList.contains('pg')?p++:f++; });
+  $('#count').innerHTML='<b>'+f.toLocaleString()+'</b> folder'+(f===1?'':'s')
+    +' &middot; <b>'+p.toLocaleString()+'</b> page'+(p===1?'':'s');
   countActive();
 }
 function fv(id){const el=document.getElementById(id);return el?el.value:'';}
