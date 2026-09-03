@@ -16,6 +16,7 @@ LFS reported success while git stored the raw bytes.
     python test_pipeline.py
 """
 
+import hashlib
 import json
 import os
 import shutil
@@ -128,10 +129,30 @@ class H(BaseHTTPRequestHandler):
     def do_GET(self):
         p, host = self.path.split("?")[0], self._host()
 
+        # The Content Delivery API: the only place a story's PUBLISHED version
+        # exists. Returns deliberately different content from the draft, so a
+        # backup that quietly saved drafts in both places fails the test.
+        if p.startswith("/v2/cdn/stories/"):
+            sid = p.rsplit("/", 1)[1]
+            if self.path.find("token=LEAKED_TOKEN") < 0:
+                return self._send(401, {"error": "bad token"})
+            if sid not in STORIES or not STORIES[sid].get("published"):
+                return self._send(404, {"error": "not found"})
+            st = dict(self._fix(STORIES[sid]))
+            st["content"] = dict(st.get("content") or {},
+                                 title="PUBLISHED VERSION")
+            return self._send(200, {"story": st})
+
         if p == f"/v1/spaces/{SRC}":
             return self._send(200, {"space": {
                 "id": int(SRC), "name": "Fake Source", "plan": "starter",
                 "first_token": "LEAKED_TOKEN", "owner": {"email": "x@y.z"}}})
+        if p == f"/v1/spaces/{SRC}/webhook_endpoints":
+            # The real endpoint returns the HMAC signing secret, which must not
+            # reach a git remote.
+            return self._send(200, {"webhook_endpoints": [
+                {"id": 1, "name": "deploy", "endpoint": "https://ci/hook",
+                 "secret": "LEAKED_WEBHOOK_SECRET", "actions": ["story.published"]}]})
         if p == f"/v1/spaces/{TGT}":
             return self._send(200, {"space": {"id": int(TGT),
                                               "name": "Fake Target",
@@ -173,11 +194,14 @@ class H(BaseHTTPRequestHandler):
                                   extra={"Total": str(len(state["target_stories"]))})
         if p.endswith("/finish_upload"):
             return self._send(200, {"ok": True})
-        if p.startswith(f"/v1/spaces/{TGT}/assets/"):
-            aid = p.rsplit("/", 1)[1]
-            return self._send(200, {"asset": {
-                "id": int(aid),
-                "filename": f"{host}/f/{TGT}/new/{aid}/file.bin"}})
+        for sp in (TGT, SRC):
+            if p.startswith(f"/v1/spaces/{sp}/assets/"):
+                aid = p.rsplit("/", 1)[1]
+                if not aid.isdigit():
+                    break
+                return self._send(200, {"asset": {
+                    "id": int(aid),
+                    "filename": f"{host}/f/{sp}/new/{aid}/file.bin"}})
 
         # Asset binaries. The check is scoped to these paths on purpose: put it
         # on the fallthrough and every unmatched Management API endpoint answers
@@ -202,12 +226,17 @@ class H(BaseHTTPRequestHandler):
         if p == "/fake-s3":
             return self._send(204)
 
-        if p == f"/v1/spaces/{TGT}/assets":
+        if p in (f"/v1/spaces/{TGT}/assets", f"/v1/spaces/{SRC}/assets"):
+            space = TGT if TGT in p else SRC
+            sent = body.get("asset", body) if isinstance(body, dict) else {}
             with LOCK:
                 state["next_id"] += 1
                 new = state["next_id"]
+                # Recorded so a test can assert the folder it went into.
+                state["created"].setdefault("asset", []).append(
+                    dict(sent, id=new))
             return self._send(200, {"id": new, "post_url": f"{host}/fake-s3",
-                                    "fields": {"key": f"f/{TGT}/{new}"}})
+                                    "fields": {"key": f"f/{space}/{new}"}})
 
         m = {f"/v1/spaces/{TGT}/component_groups": ("component_group", "uuid"),
              f"/v1/spaces/{TGT}/components": ("component", None),
@@ -260,12 +289,19 @@ def main():
         "__pycache__", "sites.json", ".git"))
 
     # point the EU host at the fake server
+    # Both hosts, not just the Management API. Redirecting only REGION_HOSTS let
+    # the published-content fetch escape to the real api.storyblok.com, where it
+    # 401'd -- so the feature looked broken and the test looked like it had
+    # covered it.
     cpath = os.path.join(work, "sb_common.py")
     with open(cpath, encoding="utf-8") as f:
         src = f.read()
+    src = src.replace('"eu": "https://mapi.storyblok.com/v1"',
+                      f'"eu": "http://127.0.0.1:{port}/v1"')
+    src = src.replace('"eu": "https://api.storyblok.com/v2/cdn"',
+                      f'"eu": "http://127.0.0.1:{port}/v2/cdn"')
     with open(cpath, "w", encoding="utf-8", newline="\n") as f:
-        f.write(src.replace('"eu": "https://mapi.storyblok.com/v1"',
-                            f'"eu": "http://127.0.0.1:{port}/v1"'))
+        f.write(src)
 
     repos = {n: os.path.join(tmp, f"{n.lower()}-backup")
              for n in ("AKUH", "AKU", "AKUEB")}
@@ -312,6 +348,95 @@ def main():
        (json.load(open(os.path.join(sb, "datasource_entries.json"),
                        encoding="utf-8")) or [{}])[0].get("name") == "Red")
 
+    # ---- the readable manifests: which story is where, where every asset went
+    import csv as _csv
+
+    def read_csv(name):
+        with open(os.path.join(sb, name), encoding="utf-8-sig",
+                  newline="") as f:
+            return list(_csv.DictReader(f))
+
+    srows = read_csv("manifest_stories.csv")
+    ck("story manifest has a row per story and folder", len(srows) == 3,
+       str([r["full_slug"] for r in srows]))
+    by_slug = {r["full_slug"]: r for r in srows}
+    ck("manifest names the folder a story sits in",
+       by_slug["news/a"]["parent_folder"] == "news",
+       str(by_slug.get("news/a")))
+    ck("manifest marks folders as folders",
+       by_slug["news"]["kind"] == "folder" and
+       by_slug["news"]["parent_folder"] == "(root)", str(by_slug["news"]))
+    ck("manifest records the component",
+       by_slug["news/a"]["component"] == "news_article",
+       by_slug["news/a"]["component"])
+    ck("manifest records published vs draft",
+       by_slug["news/a"]["state"] == "published"
+       and by_slug["news/b"]["state"] == "draft",
+       f"{by_slug['news/a']['state']} / {by_slug['news/b']['state']}")
+    ck("manifest counts the assets a story references",
+       by_slug["news/a"]["assets_referenced"] == "2",
+       by_slug["news/a"]["assets_referenced"])
+    ck("manifest points at the backup file for the story",
+       by_slug["news/a"]["backup_file"] == "stories/101.json",
+       by_slug["news/a"]["backup_file"])
+    ck("manifest is sorted by slug (stable diffs)",
+       [r["full_slug"] for r in srows]
+       == sorted(r["full_slug"] for r in srows),
+       str([r["full_slug"] for r in srows]))
+
+    arows = read_csv("manifest_assets.csv")
+    ck("asset manifest has a row per asset", len(arows) == 4, str(len(arows)))
+    a_by = {r["filename"]: r for r in arows}
+    ck("asset manifest gives the folder path in the space",
+       a_by["pic.png"]["asset_folder"] == "photos",
+       a_by["pic.png"]["asset_folder"])
+    # Always relative to the assets root, never to the repo -- that is what lets
+    # the same manifest describe media in storyblok/assets/ and media on a
+    # bucket. assets_location.json records which root applies.
+    ck("asset manifest path is relative to the assets root",
+       a_by["pic.png"]["backup_file"] == "800x600/aaaa1111/pic.png",
+       a_by["pic.png"]["backup_file"])
+    loc_in = json.load(open(os.path.join(sb, "assets_location.json"),
+                            encoding="utf-8"))
+    ck("in-repo run records assets as internal, pointing at storyblok/assets/",
+       loc_in["external"] is False
+       and loc_in["backup_file_paths_are_relative_to"] == "storyblok/assets/",
+       str(loc_in))
+    ck("asset manifest confirms every binary is present",
+       all(r["file_present"] == "yes" for r in arows),
+       str([(r["filename"], r["file_present"]) for r in arows]))
+    ck("asset manifest carries the alt text",
+       a_by["pic.png"]["alt"] == "A picture", a_by["pic.png"]["alt"])
+    ck("asset manifest records a sha256 per file",
+       all(len(r["sha256"]) == 64 for r in arows),
+       str([(r["filename"], r["sha256"][:12]) for r in arows]))
+    ck("the recorded sha256 is the real one",
+       a_by["pic.png"]["sha256"]
+       == hashlib.sha256(PNG).hexdigest(), a_by["pic.png"]["sha256"])
+    ck("manifests are LF-terminated, not CRLF",
+       b"\r\n" not in open(os.path.join(sb, "manifest_stories.csv"), "rb").read())
+
+    # ---- the documents that travel with the backup
+    for doc in ("README.md", "CLAUDE.md", "RESTORE.md"):
+        p = os.path.join(repos["AKU"], doc)
+        ck(f"{doc} written into the repo", os.path.exists(p))
+    restore_md = open(os.path.join(repos["AKU"], "RESTORE.md"),
+                      encoding="utf-8").read()
+    ck("RESTORE.md names this space id", SRC in restore_md)
+    ck("RESTORE.md covers both restore modes",
+       "--mode in-place" in restore_md and "--mode rebuild" in restore_md)
+    ck("RESTORE.md lists reinstalling apps as a manual step",
+       "marketplace" in restore_md.lower(), "")
+    ck("RESTORE.md warns that --apply is required",
+       "--apply" in restore_md)
+    claude_md = open(os.path.join(repos["AKU"], "CLAUDE.md"),
+                     encoding="utf-8").read()
+    ck("CLAUDE.md forbids hand-editing the snapshot",
+       "Never hand-edit" in claude_md)
+    ck("docs carry no timestamp (so they do not churn every run)",
+       "20" + "26-" not in restore_md.replace(SRC, ""),
+       [l for l in restore_md.splitlines() if "2026-" in l][:3])
+
     leaked = []
     for root, _, files in os.walk(repos["AKU"]):
         if ".git" in root:
@@ -322,10 +447,51 @@ def main():
             except (UnicodeDecodeError, OSError):
                 continue
             for needle in ("LEAKED_TOKEN", "LEAKED_PREVIEW", "TESTTOKEN",
-                           "x@y.z"):
+                           "x@y.z", "LEAKED_WEBHOOK_SECRET"):
                 if needle in t:
                     leaked.append(f"{fn}:{needle}")
-    ck("no credentials or owner email written", not leaked, str(leaked))
+    ck("no credentials, owner email or webhook secret written", not leaked,
+       str(leaked))
+    hooks = json.load(open(os.path.join(sb, "webhook_endpoints.json"),
+                           encoding="utf-8"))
+    ck("webhook captured but its signing secret stripped",
+       hooks and hooks[0]["endpoint"] == "https://ci/hook"
+       and "secret" not in hooks[0], str(hooks))
+
+    # ---- published versions: a draft-only backup would restore the wrong thing
+    pub_dir = os.path.join(sb, "stories_published")
+    ck("published versions captured separately", os.path.isdir(pub_dir))
+    pub_ids = sorted(f[:-5] for f in os.listdir(pub_dir)
+                     if f.endswith(".json")) if os.path.isdir(pub_dir) else []
+    ck("only published stories have a published file", pub_ids == ["101"],
+       str(pub_ids))
+    if pub_ids:
+        p101 = json.load(open(os.path.join(pub_dir, "101.json"),
+                              encoding="utf-8"))
+        d101 = json.load(open(os.path.join(sb, "stories", "101.json"),
+                              encoding="utf-8"))
+        ck("published content is the PUBLISHED one, not the draft",
+           p101["content"]["title"] == "PUBLISHED VERSION",
+           p101["content"].get("title"))
+        ck("draft is still stored separately and differs",
+           d101["content"]["title"] != p101["content"]["title"],
+           f"{d101['content'].get('title')} vs {p101['content'].get('title')}")
+        ck("the delivery token is not written into the published file",
+           "LEAKED_TOKEN" not in json.dumps(p101))
+
+    # ---- the portal
+    portal_path = os.path.join(repos["AKU"], "assets-portal.html")
+    ck("assets-portal.html written", os.path.exists(portal_path))
+    portal = open(portal_path, encoding="utf-8").read()
+    ck("portal is self-contained (no external requests for structure)",
+       "<script src" not in portal and "<link rel=\"stylesheet\"" not in portal)
+    ck("portal embeds the folder tree", '"folders"' in portal)
+    ck("portal names a real asset folder", "photos" in portal, "")
+    ck("portal carries the storage path and checksum",
+       "800x600/aaaa1111/pic.png" in portal
+       and hashlib.sha256(PNG).hexdigest() in portal, "")
+    ck("portal does not leak the management token",
+       "TESTTOKEN" not in portal and "LEAKED" not in portal)
 
     lfs = subprocess.run(["git", "-C", repos["AKU"], "lfs", "ls-files"],
                          capture_output=True, text=True).stdout
@@ -347,6 +513,123 @@ def main():
     log = subprocess.run(["git", "-C", repos["AKU"], "log", "--oneline"],
                          capture_output=True, text=True).stdout
     ck("still one commit", len(log.strip().splitlines()) == 1, log)
+
+    # ============================ ASSETS OUTSIDE THE REPO (the bucket setup)
+    # This is the arrangement actually chosen: ~42 GB of media across the three
+    # spaces against GitHub's 1 GB, so the bytes go to a bucket and the repo
+    # keeps the index plus a checksum per file.
+    print("\n=== media outside the repo (bucket) ===")
+    bucket = os.path.join(tmp, "bucket", "AKUEB")
+    ext_repo = os.path.join(tmp, "akueb-external")
+    with open(os.path.join(work, "sites-ext.json"), "w", encoding="utf-8") as f:
+        json.dump({"sites": [{"name": "AKUEB", "space_id": SRC,
+                              "management_token": "TESTTOKEN", "region": "eu",
+                              "repo": ext_repo, "assets_dir": bucket}]}, f)
+    r = run("sb_backup.py", "--config",
+            os.path.join(work, "sites-ext.json"), "--site", "AKUEB")
+    ck("exit 0", r.returncode == 0, (r.stdout + r.stderr)[-1200:])
+    ck("says where the media went", "outside the repo" in r.stdout,
+       r.stdout[-700:])
+
+    esb = os.path.join(ext_repo, "storyblok")
+    ck("binaries landed in the bucket, not the repo",
+       os.path.exists(os.path.join(bucket, "800x600", "aaaa1111", "pic.png")),
+       str(os.listdir(bucket) if os.path.isdir(bucket) else "no bucket dir"))
+    ck("repo has NO assets directory",
+       not os.path.exists(os.path.join(esb, "assets")))
+    ck("repo still has the asset index",
+       os.path.exists(os.path.join(esb, "manifest_assets.csv")))
+    ck("no LFS used when media is external",
+       not subprocess.run(["git", "-C", ext_repo, "lfs", "ls-files"],
+                          capture_output=True, text=True).stdout.strip())
+    loc = json.load(open(os.path.join(esb, "assets_location.json"),
+                         encoding="utf-8"))
+    ck("assets_location.json records that media is external",
+       loc["external"] is True, str(loc))
+    ck("no absolute bucket path is committed (it differs per machine)",
+       bucket.replace("\\", "/") not in json.dumps(loc).replace("\\", "/"),
+       json.dumps(loc))
+
+    with open(os.path.join(esb, "manifest_assets.csv"),
+              encoding="utf-8-sig", newline="") as f:
+        erows = {r_["filename"]: r_ for r_ in _csv.DictReader(f)}
+    ck("manifest paths are relative to the bucket root",
+       erows["pic.png"]["backup_file"] == "800x600/aaaa1111/pic.png",
+       erows["pic.png"]["backup_file"])
+    ck("manifest confirms the bucket files are present",
+       all(r_["file_present"] == "yes" for r_ in erows.values()),
+       str([(k, v["file_present"]) for k, v in erows.items()]))
+
+    print("\n=== verify: checksums prove the two halves match ===")
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--verify-assets",
+            "--no-commit")
+    ck("verify passes on an intact bucket",
+       r.returncode == 0 and "missing 0" in r.stdout and "changed 0" in r.stdout,
+       r.stdout[-700:])
+
+    # corrupt one file and one delete: verify must catch both
+    with open(os.path.join(bucket, "800x600", "aaaa1111", "pic.png"), "r+b") as f:
+        f.seek(0)
+        f.write(b"CORRUPT!")
+    os.remove(os.path.join(bucket, "x", "bbbb2222", "doc.pdf"))
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--verify-assets",
+            "--no-commit")
+    ck("verify detects a corrupted file", "CHANGED" in r.stdout,
+       r.stdout[-800:])
+    ck("verify detects a deleted file", "MISSING" in r.stdout, r.stdout[-800:])
+
+    # The corruption above kept the file's size (8 bytes over 8 bytes), so the
+    # ordinary skip-by-size path will never re-fetch it. That is exactly the
+    # blind spot --repair exists to cover.
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--no-commit")
+    r2 = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+             "--site", "AKUEB", "--only", "assets", "--verify-assets",
+             "--no-commit")
+    ck("a plain re-run does NOT heal same-size corruption (known blind spot)",
+       "CHANGED" in r2.stdout, r2.stdout[-600:])
+
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--repair", "--no-commit")
+    ck("--repair reports what it is re-fetching",
+       "forcing re-fetch" in r.stdout, r.stdout[-700:])
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--only", "assets", "--verify-assets",
+            "--no-commit")
+    ck("--repair healed the corrupted and the deleted file",
+       "missing 0" in r.stdout and "changed 0" in r.stdout, r.stdout[-700:])
+
+    print("\n=== audit: proves the backup covers the live space ===")
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--audit")
+    ck("audit passes on a complete backup",
+       r.returncode == 0 and "AUDIT PASSED" in r.stdout,
+       (r.stdout + r.stderr)[-1400:])
+    ck("audit compares against the live space, not its own counts",
+       "space" in r.stdout and "backup" in r.stdout, r.stdout[-500:])
+
+    # An audit that cannot fail is worse than no audit. Delete a story file and
+    # a blob, and it must notice both.
+    victim = os.path.join(esb, "stories", "101.json")
+    shutil.move(victim, victim + ".hidden")
+    os.remove(os.path.join(bucket, "x", "cccc3333", "logo.svg"))
+    r = run("sb_backup.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--audit")
+    ck("audit FAILS when a story file is missing",
+       r.returncode != 0 and "AUDIT FAILED" in r.stdout,
+       (r.stdout + r.stderr)[-1200:])
+    ck("audit names the missing story", "101" in r.stdout, r.stdout[-900:])
+    ck("audit notices the deleted blob",
+       "no stored bytes" in r.stdout or "MISSING" in r.stdout,
+       r.stdout[-900:])
+    shutil.move(victim + ".hidden", victim)
+
+    print("\n=== apps and extensions captured ===")
+    ck("apps recorded as unavailable rather than skipped silently",
+       "apps" in open(os.path.join(sb, "_summary.json"),
+                      encoding="utf-8").read(), "")
 
     # ================================================== RESTORE in-place
     print("\n=== restore in-place ===")
@@ -423,6 +706,65 @@ def main():
             "--from-rev", "HEAD")
     ck("--from-rev reads the snapshot from git",
        r.returncode == 0 and "commit HEAD" in r.stdout, r.stdout[-500:])
+
+    # ===================== RESTORE assets (deleted image -> bucket -> space)
+    # The operation this whole two-half design exists to make possible: an image
+    # is deleted in Storyblok, the bytes are still in the bucket, and the stories
+    # that used it must end up pointing at the re-uploaded copy.
+    print("\n=== restore assets: bucket -> Storyblok, and repoint stories ===")
+    with LOCK:
+        state["created"].clear(); state["puts"].clear()
+
+    r = run("sb_restore.py", "--config", os.path.join(work, "sites-ext.json"),
+            "--site", "AKUEB", "--mode", "assets")
+    ck("nothing to restore while every asset is present",
+       r.returncode == 0 and "nothing to restore" in r.stdout,
+       (r.stdout + r.stderr)[-700:])
+
+    # delete the png from the SPACE (the bucket keeps the bytes)
+    gone = [a for a in ASSETS if a["id"] == 9001]
+    ASSETS[:] = [a for a in ASSETS if a["id"] != 9001]
+    try:
+        r = run("sb_restore.py", "--config",
+                os.path.join(work, "sites-ext.json"), "--site", "AKUEB",
+                "--mode", "assets")
+        ck("dry run finds the asset deleted from the space",
+           r.returncode == 0 and "9001" in r.stdout, r.stdout[-900:])
+        ck("dry run says the bytes are in the bucket",
+           "in bucket" in r.stdout, r.stdout[-900:])
+        ck("dry run counts the stories that referenced it",
+           "used by 1 story" in r.stdout, r.stdout[-900:])
+        ck("dry run writes nothing", "DRY RUN" in r.stdout, r.stdout[-400:])
+        with LOCK:
+            ck("dry run really wrote nothing",
+               not state["created"] and not state["puts"], "")
+
+        r = run("sb_restore.py", "--config",
+                os.path.join(work, "sites-ext.json"), "--site", "AKUEB",
+                "--mode", "assets", "--apply")
+        print((r.stdout + r.stderr)[-900:])
+        ck("apply exits 0", r.returncode == 0, (r.stdout + r.stderr)[-700:])
+        with LOCK:
+            uploaded = list(state["created"].get("asset", []))
+            puts = [(p, b) for p, b in state["puts"]
+                    if f"/spaces/{SRC}/stories/" in p]
+        ck("the file was uploaded back to the space", len(uploaded) == 1,
+           str(uploaded)[:200])
+        ck("uploaded into the same asset folder",
+           uploaded and uploaded[0].get("asset_folder_id") == 70,
+           str(uploaded)[:200])
+        ck("exactly the one referencing story was rewritten", len(puts) == 1,
+           str([p for p, _ in puts]))
+        if puts:
+            content = json.dumps(puts[0][1].get("story", {}).get("content", {}))
+            ck("the old asset url is gone from that story",
+               OLD_PNG_URL.replace("HOST", "") .split("/f/")[1] not in content
+               or "/new/" in content, content[:300])
+            ck("the story now points at the re-uploaded file",
+               "/new/" in content, content[:300])
+    finally:
+        ASSETS.extend(gone)
+        ASSETS.sort(key=lambda a: a["id"])
 
     # ================================================== RESTORE rebuild
     print("\n=== restore rebuild ===")

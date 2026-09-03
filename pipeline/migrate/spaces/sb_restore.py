@@ -3,6 +3,7 @@
 sb_restore.py — put a backup taken by sb_backup.py back into Storyblok.
 
     --mode in-place     repair a space that is still there
+    --mode assets       put deleted assets back and repoint the stories
     --mode rebuild      recreate the space from scratch, in an empty one
 
 BOTH MODES ARE A DRY RUN UNLESS YOU PASS --apply. Nothing is written without
@@ -21,6 +22,18 @@ in-place
 
         python sb_restore.py --site AKU --mode in-place --story 12345 \
             --from-rev HEAD~5 --apply
+
+assets
+    Someone deleted an image in Storyblok. The bytes are still in the bucket, but
+    the asset row is gone and every story that used it renders a broken image.
+    Re-uploading alone does not fix that -- the file comes back with a new id and
+    a new url, and the stories still point at the old one. So this uploads from
+    the bucket AND rewrites every story that referenced it, reading each story
+    live so nothing edited since the backup is clobbered.
+
+        python $SB --site AKUH --mode assets                    # what is missing
+        python $SB --site AKUH --mode assets --apply
+        python $SB --site AKUH --mode assets --asset 1234 --apply
 
 rebuild
     For a space that is gone or being cloned. Creates component groups,
@@ -50,15 +63,18 @@ import argparse
 import json
 import os
 import sys
+import tempfile
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from sb_common import (
+    ASSET_URL_RE,
     OK_STATUS,
     api_base,
     asset_path,
+    asset_url_key,
     call,
     fetch_list,
     get,
@@ -71,6 +87,7 @@ from sb_common import (
     token_for,
     write_json,
 )
+from sb_storage import make_backend
 
 # Written back in-place by default. Deliberately not slug, parent_id or
 # position: those move a story, and moving 4,000 stories to fix one broken body
@@ -92,9 +109,13 @@ class Snapshot:
     history can answer it.
     """
 
-    def __init__(self, repo, outdir, rev=None):
+    def __init__(self, repo, outdir, rev=None, store=None):
         self.repo, self.outdir, self.rev = repo, outdir, rev
         self.prefix = os.path.relpath(outdir, repo).replace(os.sep, "/")
+        # Where the binaries actually are: a folder, a mount, or an Azure
+        # container. The manifest's paths are relative to whichever it is.
+        self.store = store
+        self._tmp = []
 
     def _git_show(self, rel):
         r = git(self.repo, "show", f"{self.rev}:{self.prefix}/{rel}",
@@ -121,18 +142,54 @@ class Snapshot:
     def story(self, sid):
         return self.read(f"stories/{sid}.json")
 
-    def asset_file(self, asset, space_id):
-        """Binaries always come from the working tree, never from a rev.
+    def asset_rel(self, asset, space_id):
+        """The asset's path relative to the storage root.
 
-        Under LFS, `git show` returns the pointer text rather than the file, so
-        a rev-based read would hand a rebuild a 130-byte text file named
-        photo.jpg. To rebuild from an old commit, check that commit out first.
+        `asset_path` yields "assets/<mirrored>"; the leading segment is dropped
+        because the storage root already IS that folder -- which is what lets one
+        path address a file in the repo, on a mount, or as a blob.
         """
         rel = asset_path(asset, space_id)
         if not rel:
             return None
-        p = os.path.join(self.outdir, rel)
-        return p if os.path.exists(p) else None
+        rel = rel.split(os.sep, 1)[1] if os.sep in rel else rel
+        return rel.replace(os.sep, "/")
+
+    def has_asset(self, asset, space_id):
+        rel = self.asset_rel(asset, space_id)
+        return bool(rel) and self.store.size(rel) is not None
+
+    def asset_file(self, asset, space_id):
+        """A local path to the asset's bytes, fetching from the container first.
+
+        Never read through a git revision: under LFS `git show` returns the
+        pointer text rather than the file, so a rev-based read would hand a
+        rebuild a 130-byte text file named photo.jpg. To rebuild from an old
+        commit, check that commit out first.
+        """
+        rel = self.asset_rel(asset, space_id)
+        if not rel:
+            return None
+        local = getattr(self.store, "_p", None)
+        if local:                                     # a folder: use it directly
+            p = local(rel)
+            return p if os.path.exists(p) else None
+        # A remote container: pull it to scratch for the upload, then clean up.
+        fd, tmp = tempfile.mkstemp(suffix="-" + os.path.basename(rel))
+        os.close(fd)
+        got = self.store.download_to(rel, tmp)
+        if not got:
+            os.path.exists(tmp) and os.unlink(tmp)
+            return None
+        self._tmp.append(tmp)
+        return tmp
+
+    def release(self, path):
+        """Drop a scratch copy once it has been uploaded."""
+        if path in self._tmp:
+            self._tmp.remove(path)
+            if os.path.exists(path):
+                os.unlink(path)
 
 
 def canonical(obj):
@@ -296,13 +353,25 @@ def remap_content(content, url_map, asset_id_map, uuid_map):
     string replacement will ever fix it. Doing only the tidy object pass is how
     a rebuilt space renders with half its images missing.
     """
+    # Keyed on the stable part of each URL, never the whole thing. Storyblok
+    # serves one asset under several hosts -- assets.json gives the S3 form,
+    # story content carries the CDN form -- so exact-string matching replaced
+    # almost nothing and left a rebuilt space pointing at the old one's images.
+    by_key = {}
+    for old, new in (url_map or {}).items():
+        k = asset_url_key(old)
+        if k:
+            by_key[k] = new
+
     def fix_str(s):
         if "/f/" not in s:
             return s
-        for old, new in url_map.items():
-            if old in s:
-                s = s.replace(old, new)
-        return s
+
+        def swap(m):
+            new = by_key.get(asset_url_key(m.group(0)))
+            return new if new else m.group(0)
+
+        return ASSET_URL_RE.sub(swap, s)
 
     def fix_objects(obj):
         if isinstance(obj, list):
@@ -367,8 +436,20 @@ def upload_asset(api, token, local_path, asset, folder_id):
     if r3.status_code not in OK_STATUS:
         return None, f"finish_upload failed: {r3.status_code} {r3.text[:160]}"
 
-    r4 = get(f"{api}/assets/{new_id}", token)
-    new = r4.json().get("asset", {}) if r4.status_code == 200 else {"id": new_id}
+    # finish_upload returns the finished asset with its url. Use that rather than
+    # a separate GET /assets/<id>, which reports filename=None for a while after
+    # a successful upload -- that mistake made 20 completed uploads look failed
+    # in sb_external.py before it was found.
+    try:
+        body = r3.json() or {}
+    except ValueError:
+        body = {}
+    new = body.get("asset", body) if body.get("filename") \
+        or body.get("asset") else {}
+    if not new.get("filename"):
+        r4 = get(f"{api}/assets/{new_id}", token)
+        new = r4.json().get("asset", {}) if r4.status_code == 200 \
+            else {"id": new_id}
 
     # Carry over the metadata an editor typed. alt text is accessibility, not
     # decoration, and it is not recoverable from anywhere else.
@@ -470,7 +551,7 @@ def restore_rebuild(site, snap, args):
     # Better to know before anything is written.
     have, absent = [], []
     for a in assets:
-        (have if snap.asset_file(a, src_space) else absent).append(a)
+        (have if snap.has_asset(a, src_space) else absent).append(a)
 
     print(f"\n  rebuild - {site['name']} backup -> space {target} ({tname})")
     print(f"  {'component groups':<22} {len(groups)}")
@@ -591,8 +672,15 @@ def restore_rebuild(site, snap, args):
 
     def one_asset(a):
         path = snap.asset_file(a, src_space)
-        new, err = upload_asset(api, token, path, a,
-                                fmap.get(a.get("asset_folder_id")))
+        if not path:
+            return a, None, "bytes not found in storage"
+        try:
+            new, err = upload_asset(api, token, path, a,
+                                    fmap.get(a.get("asset_folder_id")))
+        finally:
+            # A remote container is pulled to scratch one file at a time; without
+            # this, rebuilding AKUEB would leave 31 GB in the temp directory.
+            snap.release(path)
         if err:
             return a, None, err
         return a, new, None
@@ -727,13 +815,189 @@ def restore_rebuild(site, snap, args):
 
 
 # --------------------------------------------------------------------------
+# assets — put a deleted file back and repoint the stories that used it
+# --------------------------------------------------------------------------
+
+def restore_assets(site, snap, args):
+    """Re-upload assets that have gone from the space, then fix the references.
+
+    The case this exists for: someone deletes an image in Storyblok. The bytes are
+    still in the bucket, but the asset row is gone and every story that used it
+    renders a broken image. Putting the file back gives it a NEW id and a NEW url,
+    so re-uploading alone fixes nothing -- the stories still point at the old one.
+
+    So this does both halves:
+
+        bucket -> Storyblok        upload, into the same asset folder
+        old url -> new url         rewrite every story that referenced it
+
+    The rewrite reads each story LIVE and changes only the asset reference, rather
+    than writing the backed-up copy over it. Anything edited since the backup is
+    left alone, which is the same promise in-place makes: never clobber work you
+    were not asked to touch.
+    """
+    api, token = space_api(site), token_for(site)
+    src_space = str(site["space_id"])
+
+    backup_assets = snap.read("assets.json", []) or []
+    live, err = fetch_list(api, "assets", "assets", True, token)
+    if err:
+        sys.exit(f"  !! cannot list live assets: {err}")
+    live_ids = {a["id"] for a in live if a.get("id") is not None}
+
+    if args.asset:
+        wanted = [a for a in backup_assets if a.get("id") in set(args.asset)]
+        unknown = set(args.asset) - {a.get("id") for a in wanted}
+        if unknown:
+            sys.exit(f"  !! not in this backup: {sorted(unknown)}")
+    else:
+        wanted = [a for a in backup_assets if a.get("id") not in live_ids]
+
+    print(f"\n  asset restore - {site['name']} space {src_space}")
+    print(f"  media from {snap.store.label}")
+    print(f"  backup holds {len(backup_assets)}, space has {len(live)}")
+
+    if not wanted:
+        print("\n  nothing to restore - every backed-up asset is still in the "
+              "space")
+        return 0
+
+    # Which stories referenced each one. Scanned from the backup, because the
+    # live story may already have had the reference stripped by an editor.
+    refs = _reference_map(snap, src_space, {a["id"] for a in wanted})
+
+    folders = snap.read("asset_folders.json", []) or []
+    fmap = {f["id"]: f.get("name") for f in folders}
+
+    ready, no_bytes = [], []
+    for a in wanted:
+        (ready if snap.has_asset(a, src_space) else no_bytes).append(a)
+
+    already = [a for a in wanted if a.get("id") in live_ids]
+    print(f"\n  {len(wanted)} asset(s) to restore"
+          + (f", {len(already)} of which are still present (forced by --asset)"
+             if already else ""))
+    for a in wanted[:30]:
+        aid = a["id"]
+        n = len(refs.get(aid, []))
+        state = "in bucket" if snap.has_asset(a, src_space) else "NO BYTES"
+        print(f"    {aid:<18} {os.path.basename(a.get('filename') or ''):<44} "
+              f"{state:<10} used by {n} story(ies)"
+              f"  folder={fmap.get(a.get('asset_folder_id')) or '(root)'}")
+    if len(wanted) > 30:
+        print(f"    ... and {len(wanted) - 30} more")
+
+    if no_bytes:
+        print(f"\n  !! {len(no_bytes)} have no bytes in storage and cannot be "
+              f"restored: {[a['id'] for a in no_bytes][:10]}")
+
+    total_refs = sum(len(refs.get(a['id'], [])) for a in ready)
+    print(f"\n  would upload {len(ready)} file(s) and rewrite {total_refs} "
+          f"story reference(s)")
+    if not args.apply:
+        print("  DRY RUN - nothing written. Add --apply.")
+        return 0
+
+    url_map, id_map, errors = {}, {}, []
+    print(f"\n  uploading {len(ready)}")
+    for i, a in enumerate(ready, 1):
+        path = snap.asset_file(a, src_space)
+        if not path:
+            errors.append(f"asset {a['id']}: bytes vanished between check and "
+                          f"upload")
+            continue
+        try:
+            new, err = upload_asset(api, token, path, a,
+                                    a.get("asset_folder_id"))
+        finally:
+            snap.release(path)
+        if err:
+            errors.append(f"asset {a['id']}: {err}")
+            continue
+        id_map[a["id"]] = new.get("id")
+        if a.get("filename") and new.get("filename"):
+            url_map[a["filename"]] = new["filename"]
+        print(f"    {i}/{len(ready)}  {a['id']} -> {new.get('id')}", flush=True)
+
+    # ---- repoint the stories, reading each one live
+    touched = set()
+    for aid in id_map:
+        touched.update(refs.get(aid, []))
+    print(f"\n  rewriting {len(touched)} story(ies)")
+    fixed, skipped = 0, 0
+    for sid in sorted(touched):
+        r = get(f"{api}/stories/{sid}", token)
+        if r.status_code != 200:
+            errors.append(f"story {sid}: {r.status_code} reading it back")
+            continue
+        story = r.json().get("story") or {}
+        before = story.get("content") or {}
+        after = remap_content(before, url_map, id_map, {})
+        if canonical(before) == canonical(after):
+            skipped += 1
+            continue
+        body = {"story": {"content": after}, "force_update": "1"}
+        if story.get("published") and not story.get("unpublished_changes"):
+            # Only republish something that was already live and clean. A story
+            # holding unpublished edits must not be pushed live as a side effect
+            # of fixing an image.
+            body["publish"] = 1
+        rr = call("PUT", f"{api}/stories/{sid}", token, body=body)
+        if rr.status_code in OK_STATUS:
+            fixed += 1
+        else:
+            errors.append(f"story {sid}: {rr.status_code} {rr.text[:120]}")
+
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
+    repo, _ = repo_paths(site)
+    mpath = os.path.join(repo, "restore_maps", f"assets-{stamp}.json")
+    write_json(mpath, {"space": src_space, "asset_id": id_map,
+                       "asset_url": url_map, "stories_rewritten": fixed,
+                       "errors": errors})
+
+    print(f"\n  uploaded {len(id_map)}   stories rewritten {fixed}"
+          f"   already correct {skipped}   problems {len(errors)}")
+    print(f"    map -> {mpath}")
+    for e in errors[:20]:
+        print(f"      {e}")
+    return 1 if errors else 0
+
+
+def _reference_map(snap, space_id, asset_ids):
+    """{asset id: [story id, ...]} by scanning the backed-up story content.
+
+    Keyed on the path after /f/<space>/ rather than the whole url: assets.json
+    returns the S3 host and story content the CDN host, so a whole-url match finds
+    almost nothing.
+    """
+    by_key = {}
+    for a in snap.read("assets.json", []) or []:
+        if a.get("id") in asset_ids:
+            k = asset_url_key(a.get("filename"))
+            if k:
+                by_key[k] = a["id"]
+    out = {}
+    for sid in snap.story_ids():
+        st = snap.story(sid)
+        blob = canonical(st.get("content") if st else None)
+        if "/f/" not in blob:
+            continue
+        for url in set(ASSET_URL_RE.findall(blob)):
+            aid = by_key.get(asset_url_key(url))
+            if aid is not None:
+                out.setdefault(aid, []).append(sid)
+    return out
+
+
+# --------------------------------------------------------------------------
 
 def main():
     ap = argparse.ArgumentParser(
         description="Restore a Storyblok backup taken by sb_backup.py.")
     ap.add_argument("--site", required=True, help="AKUH | AKU | AKUEB")
     ap.add_argument("--config", help="path to sites.json (also SB_SITES)")
-    ap.add_argument("--mode", required=True, choices=["in-place", "rebuild"])
+    ap.add_argument("--mode", required=True,
+                    choices=["in-place", "rebuild", "assets"])
     ap.add_argument("--apply", action="store_true",
                     help="actually write. Without this, it is a dry run.")
     ap.add_argument("--story", type=int, action="append",
@@ -752,6 +1016,14 @@ def main():
     ap.add_argument("--into-token",
                     help="rebuild: token for the target space, if it differs "
                          "(also SB_TOKEN_TARGET)")
+    ap.add_argument("--asset", type=int, action="append",
+                    help="assets mode: restore this asset id even if it is "
+                         "still present (repeatable). Default is every asset in "
+                         "the backup that is missing from the space.")
+    ap.add_argument("--assets-dir",
+                    help="where the binaries are kept, if outside the repo "
+                         "(bucket mount, share). Overrides assets_dir in "
+                         "sites.json. Needed by rebuild; in-place ignores it.")
     ap.add_argument("--force", action="store_true",
                     help="override the safety checks. Read what they said "
                          "first.")
@@ -769,10 +1041,25 @@ def main():
     repo, outdir = repo_paths(site)
     if not os.path.isdir(outdir):
         sys.exit(f"  no snapshot at {outdir} - run sb_backup.py first")
-    snap = Snapshot(repo, outdir, args.from_rev)
+    store, external = make_backend(site, outdir, args.assets_dir)
+    snap = Snapshot(repo, outdir, args.from_rev, store)
+    if external:
+        print(f"  media from {store.label}")
+        root = getattr(store, "root", None)
+        if root and not os.path.isdir(root):
+            # Only fatal for a rebuild, which uploads them. in-place never
+            # touches assets, so a missing bucket must not block a content fix.
+            msg = (f"  !! the media directory does not exist: {root}\n"
+                   f"     mount the bucket or share, or pass --assets-dir.")
+            if args.mode == "rebuild":
+                sys.exit(msg)
+            print(msg.replace("!!", "--") + "\n     (in-place does not need it)")
 
     if args.mode == "in-place":
         return restore_in_place(site, snap, args)
+
+    if args.mode == "assets":
+        return restore_assets(site, snap, args)
 
     if not args.into:
         sys.exit("--mode rebuild needs --into <target space id>")

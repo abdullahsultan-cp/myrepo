@@ -145,9 +145,14 @@ dist/
 # render_*.py, so tracking them would put a megabyte of churn in every diff.
 /Pages-Pipeline/out/AKU-Structure.html
 /Pages-Pipeline/out/AKU-Migration-Portal.html
-/Pages-Pipeline/out/AKU-Migration-Portal-legacy.html
-/Pages-Pipeline/out/AKU-Migration-Plan.html
 /Pages-Pipeline/out/AKU-Folder-Hierarchy.*
+
+# AKU-Migration-Plan.html is the exception, for the same reason AKU-Tree.html is
+# tracked: it is the file AKU is handed, and docs/PORTALS.md requires a portal to
+# open from a bare clone — clone, double-click, it works. It is self-contained
+# (no CDN, no fonts, no fetch), so nothing else has to come with it. The churn is
+# the price of the rule.
+!/Pages-Pipeline/out/AKU-Migration-Plan.html
 
 # Everything else in out/ IS tracked: the CSVs and AKU-Tree.html are the
 # deliverables handed to AKU. They live beside the ignored views because they

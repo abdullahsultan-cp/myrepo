@@ -10,6 +10,8 @@ component libraries, and each one backs up to its own repo. Nothing here is
 allowed to assume they share a schema.
 """
 
+import csv
+import hashlib
 import json
 import os
 import re
@@ -59,7 +61,123 @@ DEFAULT_CONFIG = (os.path.join(ROOT, "config", "sites.json") if ROOT
 
 # Scripts copied into every backup repo, so a repo can be restored with nothing
 # but itself and Python. Edited here, in one place.
-TOOL_FILES = ["sb_common.py", "sb_backup.py", "sb_restore.py"]
+TOOL_FILES = ["sb.py", "sb_common.py", "sb_backup.py", "sb_restore.py",
+              "sb_storage.py", "sb_portal.py", "sb_indexdb.py",
+              "sb_external.py"]
+
+# Written into every backup repo so it stands alone: the deps it needs, and a
+# double-clickable wrapper on each platform. A backup repo that needs another
+# checkout to be useful has a dependency that will be missing on the day it
+# matters.
+TOOL_EXTRAS = {
+    # Line endings, and the exception that matters. Everything generated here is
+    # written LF, and the backup depends on staying that way: if git checks files
+    # out as CRLF the next run rewrites them as LF and all 5,700 look modified,
+    # which destroys the "no commit when nothing changed" property.
+    #
+    # backup.cmd is the exception. cmd.exe mis-parses a batch file with bare LF
+    # endings, so a blanket eol=lf silently breaks the one-click wrapper on
+    # checkout -- it was written correctly and then converted.
+    ".gitattributes": (
+        "# Written by sb_backup.py — do not edit.\n"
+        "* text=auto eol=lf\n"
+        "\n"
+        "# cmd.exe needs CRLF; with LF it mis-parses the file.\n"
+        "*.cmd text eol=crlf\n"
+        "\n"
+        "# Binary, so git never tries to translate anything inside them.\n"
+        "*.sqlite binary\n"
+        "*.png binary\n"
+        "*.jpg binary\n"
+        "*.jpeg binary\n"
+        "*.gif binary\n"
+        "*.webp binary\n"
+        "*.pdf binary\n"
+        "*.mp4 binary\n"
+        "*.mov binary\n"
+    ),
+    "tools/requirements.txt": (
+        "# Everything tools/ needs. Nothing else.\n"
+        "requests>=2.31\n"
+        "azure-storage-blob>=12.19\n"
+    ),
+    # Two ways to supply the three secrets, both templated, so nobody has to
+    # guess the shape. Committed; the filled-in versions are gitignored.
+    "tools/sites.example.json": (
+        "{\n"
+        '  "_comment": [\n'
+        '    "Copy to sites.json (gitignored) and fill in the three values",\n'
+        '    "marked PUT_..._HERE. Or use tools/env.example instead and keep",\n'
+        '    "nothing on disk. python tools/sb.py setup writes this file for",\n'
+        '    "you with the name, space_id and region already filled in.",\n'
+        '    "",\n'
+        '    "management_token   Storyblok -> My Account -> Personal access",\n'
+        '    "                   tokens. A space-level token is NOT enough:",\n'
+        '    "                   internal_tags, field_types, tasks and",\n'
+        '    "                   app_provisions all reject it.",\n'
+        '    "connection_string  Azure -> Storage account -> Access keys.",\n'
+        '    "tier               Cool is right for a backup. Not Archive:",\n'
+        '    "                   that needs hours of rehydration before a",\n'
+        '    "                   file can be read, so it cannot serve a",\n'
+        '    "                   restore."\n'
+        "  ],\n"
+        '  "sites": [\n'
+        "    {\n"
+        '      "name": "AKUH",\n'
+        '      "space_id": "PUT_THE_SPACE_ID_HERE",\n'
+        '      "region": "eu",\n'
+        '      "repo": ".",\n'
+        '      "management_token": "PUT_A_STORYBLOK_PERSONAL_ACCESS_TOKEN_HERE",\n'
+        '      "assets": {\n'
+        '        "backend": "azure",\n'
+        '        "container": "storyblok-backup",\n'
+        '        "prefix": "AKUH",\n'
+        '        "tier": "Cool",\n'
+        '        "connection_string": "PUT_THE_AZURE_CONNECTION_STRING_HERE"\n'
+        "      }\n"
+        "    }\n"
+        "  ]\n"
+        "}\n"
+    ),
+    "tools/env.example": (
+        "# The other way to supply credentials: nothing on disk at all.\n"
+        "# Set these in your shell before running, and tools/sb.py builds the\n"
+        "# config in memory. This is what a scheduled job should use.\n"
+        "#\n"
+        "# Windows PowerShell:   $env:SB_TOKEN = \"...\"\n"
+        "# cmd.exe:              set SB_TOKEN=...\n"
+        "# bash:                 export SB_TOKEN=...\n"
+        "#\n"
+        "# SB_TOKEN works for whichever repo you are in; SB_TOKEN_AKUH,\n"
+        "# SB_TOKEN_AKU or SB_TOKEN_AKUEB are per-site if you prefer.\n"
+        "\n"
+        "SB_TOKEN=a-storyblok-personal-access-token\n"
+        "AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;"
+        "AccountName=...;AccountKey=...;EndpointSuffix=core.windows.net\n"
+        "\n"
+        "# Optional; these are the defaults.\n"
+        "SB_CONTAINER=storyblok-backup\n"
+        "SB_PREFIX=AKUH\n"
+        "SB_TIER=Cool\n"
+    ),
+    # CRLF on purpose: cmd.exe mis-parses a .cmd file with bare LF endings.
+    "backup.cmd": (
+        "@echo off\r\n"
+        "REM One click: back this space up and commit.\r\n"
+        "REM Pass --push to push, or --no-commit to only write files.\r\n"
+        "cd /d \"%~dp0\"\r\n"
+        "python tools\\sb.py backup %*\r\n"
+        "pause\r\n"
+    ),
+    "backup.sh": (
+        "#!/usr/bin/env bash\n"
+        "# One click: back this space up and commit.\n"
+        "# Pass --push to push, or --no-commit to only write files.\n"
+        "set -euo pipefail\n"
+        "cd \"$(dirname \"$0\")\"\n"
+        "exec python tools/sb.py backup \"$@\"\n"
+    ),
+}
 
 # Storyblok runs one Management API host per region. An EU token sent to the US
 # host does not say "wrong region" -- it 401s, which reads like a bad token and
@@ -72,6 +190,18 @@ REGION_HOSTS = {
     "cn": "https://app.storyblokchina.cn/v1",
 }
 
+# The Content Delivery API, which is a different host from the Management API and
+# the only place a story's PUBLISHED version exists. The Management API always
+# returns the draft, and the two differ for any story with unpublished changes --
+# 231 of them on AKUH.
+CDN_HOSTS = {
+    "eu": "https://api.storyblok.com/v2/cdn",
+    "us": "https://api-us.storyblok.com/v2/cdn",
+    "ca": "https://api-ca.storyblok.com/v2/cdn",
+    "ap": "https://api-ap.storyblok.com/v2/cdn",
+    "cn": "https://app.storyblokchina.cn/v2/cdn",
+}
+
 # Dropped from every payload before it is written. Storyblok returns a
 # preview_token on each story and a first_token on the space; both are live
 # credentials, and this output goes to a git remote.
@@ -79,6 +209,13 @@ SECRET_KEYS = {
     "first_token", "preview_token", "api_key", "management_token",
     "password", "real_email", "alt_email", "personal_access_token",
 }
+
+# `secret` is NOT in the set above, and must not be: it is a perfectly ordinary
+# name for a story field, and scrubbing it globally would quietly delete real
+# content. But /webhook_endpoints returns the HMAC signing secret under exactly
+# that key, and this output goes to a git remote. So it is scrubbed for that one
+# resource, by name, and RESTORE.md says the secrets must be re-set by hand.
+PER_RESOURCE_SECRET_KEYS = {"webhook_endpoints": {"secret"}}
 
 # A PUT on an asset and a DELETE on a folder both answer 204. Treating only
 # (200, 201) as success is how a run that moved everything correctly reports
@@ -146,6 +283,34 @@ def repo_paths(site):
     """(repo root, snapshot dir) for a site, both absolute."""
     repo = os.path.abspath(os.path.expanduser(site["repo"]))
     return repo, os.path.join(repo, site.get("subdir", "storyblok"))
+
+
+# An asset URL anywhere in text, and the stable part of one.
+#
+# The same asset is served under more than one host: assets.json returns the S3
+# form (s3.amazonaws.com/a.storyblok.com/f/<space>/...) while story content
+# carries the CDN form (a.storyblok.com/f/<space>/...), and paid plans can add a
+# custom domain. Only the path after /f/<space id>/ is stable, so that is the
+# key. Matching whole URLs instead silently matched 892 of ~5,800 references, and
+# would have left every image in a rebuilt space pointing at the old one.
+ASSET_URL_RE = re.compile(r"""https?://[^\s"'<>)\]]*?/f/\d+/[^\s"'<>)\]]*""")
+_AFTER_F = re.compile(r"/f/\d+/(.+)$")
+
+
+def asset_url_key(url):
+    """The part of an asset URL after /f/<space id>/, or None."""
+    if not url or "/f/" not in url:
+        return None
+    m = _AFTER_F.search(unquote(urlsplit(url).path))
+    return m.group(1) if m else None
+
+
+def sha256_file(path, chunk=1 << 20):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for block in iter(lambda: f.read(chunk), b""):
+            h.update(block)
+    return h.hexdigest()
 
 
 # --------------------------------------------------------------------------
@@ -283,7 +448,18 @@ def write_json(path, obj):
 
 
 def save(outdir, name, obj):
+    extra = PER_RESOURCE_SECRET_KEYS.get(name)
+    if extra:
+        obj = _drop_keys(obj, extra)
     return write_json(os.path.join(outdir, f"{name}.json"), obj)
+
+
+def _drop_keys(obj, keys):
+    if isinstance(obj, list):
+        return [_drop_keys(o, keys) for o in obj]
+    if isinstance(obj, dict):
+        return {k: _drop_keys(v, keys) for k, v in obj.items() if k not in keys}
+    return obj
 
 
 def load_json(path, default=None):
@@ -341,6 +517,50 @@ def asset_path(asset, space_id):
 
 
 # --------------------------------------------------------------------------
+# folder trees
+# --------------------------------------------------------------------------
+
+def folder_path_map(items, name_key="name"):
+    """{folder id: "a/b/c"} for anything with id / parent_id / a name.
+
+    Used for both namespaces -- asset folders and story folders -- because they
+    are the same shape and the same question: where does this thing live?
+
+    Depth is bounded rather than recursive on trust. A parent_id cycle is not
+    hypothetical in this space: asset folders once reached 769 entries with 7
+    `regions` roots, and a cycle there would hang a run with no output.
+    """
+    by_id = {i["id"]: i for i in items if i.get("id") is not None}
+    out = {}
+    for fid, item in by_id.items():
+        parts, seen, cur = [], set(), item
+        while cur is not None and cur["id"] not in seen:
+            seen.add(cur["id"])
+            parts.append(str(cur.get(name_key) or cur.get("slug") or cur["id"]))
+            parent = cur.get("parent_id")
+            cur = by_id.get(parent) if parent else None
+        out[fid] = "/".join(reversed(parts))
+    return out
+
+
+def write_csv(path, header, rows):
+    """A committed CSV, deterministic and Excel-safe.
+
+    newline="" plus an explicit \\n terminator, because csv writes \\r\\n on
+    Windows by default and the same data would then diff against a snapshot
+    taken on Linux. utf-8-sig so Excel opens accented names correctly -- these
+    files are read by people, and 711 non-ASCII characters in this corpus are
+    real content.
+    """
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8-sig", newline="") as f:
+        w = csv.writer(f, lineterminator="\n")
+        w.writerow(header)
+        w.writerows(rows)
+    return len(rows)
+
+
+# --------------------------------------------------------------------------
 # git
 # --------------------------------------------------------------------------
 
@@ -381,8 +601,19 @@ def install_tools(repo):
                 open(src, "rb").read() != open(dst, "rb").read():
             shutil.copy2(src, dst)
             copied += 1
+    for rel, body in TOOL_EXTRAS.items():
+        path = os.path.join(repo, rel.replace("/", os.sep))
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        current = ""
+        if os.path.exists(path):
+            with open(path, encoding="utf-8", newline="") as f:
+                current = f.read()
+        if current != body:
+            with open(path, "w", encoding="utf-8", newline="") as f:
+                f.write(body)
+            copied += 1
     if copied:
-        print(f"    tools/: refreshed {copied} script(s)")
+        print(f"    tools/: refreshed {copied} file(s)")
     return copied
 
 

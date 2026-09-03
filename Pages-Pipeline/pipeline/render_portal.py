@@ -10,7 +10,9 @@ say the word and it becomes a Vite project instead.
 SUPERSEDED. `portal/` is that Vite project, and `npm run build` there now emits the
 same double-clickable single file — with the screens this script never grew, and
 with folders, pages and people joined. This one writes
-`AKU-Migration-Portal-legacy.html` so a re-run cannot silently overwrite it.
+AKU-Migration-Portal.html. It wrote to a `-legacy` name for a while so a
+re-run could not clobber the hand-shared August build; that build was three
+months and 1,251 pages out of date and has been retired, so the guard is gone.
 """
 import collections
 import html
@@ -19,7 +21,7 @@ import os
 
 import paths
 
-OUT = paths.out('AKU-Migration-Portal-legacy.html')
+OUT = paths.out('AKU-Migration-Portal.html')
 plan = json.load(open(paths.work('plan.json'), encoding='utf-8'))
 F, P, R = plan['folders'], plan['pages'], plan['roles']
 LIVE = plan.get('live', [])

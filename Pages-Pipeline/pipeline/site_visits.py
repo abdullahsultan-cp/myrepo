@@ -666,6 +666,13 @@ VISITED = [
 
 # Fetched and found not publicly reachable. Their pages are still in AKU's migrate
 # list, so somebody has to decide: publish, migrate as private, or drop.
+#
+# The HTTP code and the label are what the live fetch returned and do not change
+# with a new export. The page count is transcribed from AKU's list, and their
+# filtered export moved 14 of these off zero -- every "empty stub" turns out to
+# carry its home page, and six event microsites that looked like nothing at stake
+# hold between one and four pages each. decisions.py re-derives the count on every
+# run and stops the build when the two disagree, which is how these were found.
 NOT_PUBLIC = [
     ('/cancer-centre', 401, 25, 'a named Pakistan unit on the Pakistan landing page'),
     ('/mcpk/bioinformatics', 401, 2, 'Centre for Bioinformatics'),
@@ -674,21 +681,24 @@ NOT_PUBLIC = [
     ('/crm/ethics', 401, 19, 'Centre for Regenerative Medicine — Ethics'),
     ('/iedpk/transform-lives', 401, 3, 'IED Pakistan — Transform Lives'),
     ('/dhrc', 401, 13, 'Digital Health Resource Centre'),
-    ('/vroom', 401, 0, 'Vroom'),
-    ('/mcke', 401, 0, 'Medical College, Kenya — the empty stub'),
-    ('/mctz', 401, 0, 'Medical College, Tanzania — the empty stub'),
-    ('/iedtz', 401, 0, 'Institute for Educational Development, Tanzania — the empty stub'),
-    ('/sonamke', 401, 0, 'School of Nursing and Midwifery, Kenya — the empty stub'),
-    ('/sonamtz', 401, 0, 'School of Nursing and Midwifery, Tanzania — the empty stub'),
-    ('/akuchallenge', 404, 0, 'AKU Challenge — gone from the live site'),
-    ('/events/acc', 401, 0, 'Annual Cardiovascular Conference'),
-    ('/events/whd', 401, 0, 'World Hepatitis Day'),
-    ('/events/pls', 401, 0, 'Public Lecture Series'),
-    ('/events/neuro-conf', 401, 0, 'Neuroscience Conference'),
-    ('/events/pnos', 401, 0, 'Annual Pakistan Pediatric Neuro-oncology Symposium'),
-    ('/events/rare-diseases-conf', 401, 0, 'Rare Diseases Conference'),
+    ('/vroom', 401, 9, 'Vroom'),
+    ('/mcke', 401, 1, 'Medical College, Kenya — the stub, home page only'),
+    ('/mctz', 401, 1, 'Medical College, Tanzania — the stub, home page only'),
+    ('/iedtz', 401, 1, 'Institute for Educational Development, Tanzania — the stub, '
+                       'home page only'),
+    ('/sonamke', 401, 1, 'School of Nursing and Midwifery, Kenya — the stub, home '
+                         'page only'),
+    ('/sonamtz', 401, 1, 'School of Nursing and Midwifery, Tanzania — the stub, home '
+                         'page only'),
+    ('/akuchallenge', 404, 2, 'AKU Challenge — gone from the live site'),
+    ('/events/acc', 401, 3, 'Annual Cardiovascular Conference'),
+    ('/events/whd', 401, 3, 'World Hepatitis Day'),
+    ('/events/pls', 401, 1, 'Public Lecture Series'),
+    ('/events/neuro-conf', 401, 1, 'Neuroscience Conference'),
+    ('/events/pnos', 401, 2, 'Annual Pakistan Pediatric Neuro-oncology Symposium'),
+    ('/events/rare-diseases-conf', 401, 4, 'Rare Diseases Conference'),
     ('/apply-online', 404, 0, 'Apply Online — gone from the live site'),
-    ('/akupreuniversity', 404, 0, 'AKU PreUni — gone from the live site'),
+    ('/akupreuniversity', 404, 2, 'AKU PreUni — gone from the live site'),
     ('/cancer-centre/information-hub', 401, 8, 'Cancer Centre — Information Hub'),
 ]
 

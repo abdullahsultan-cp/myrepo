@@ -25,7 +25,7 @@ OUT_JSON = paths.out('AKU-Folder-Hierarchy.json')
 webs = json.load(open(paths.work('webs.json'), encoding='utf-8'))
 pages = json.load(open(paths.work('pages.json'), encoding='utf-8'))
 
-from classification import REGIONS, SEC, D, I, W
+from classification import REGIONS, ROOT_PAGE_DEST, SEC, D, I, W
 
 tops = sorted({p.split('/')[0] for p in webs if p})
 missing = [t for t in tops if t not in SEC]
@@ -36,6 +36,10 @@ if missing or extra:
 pages_by_web = collections.defaultdict(list)
 for p in pages:
     pages_by_web[p['web']].append(p)
+
+# How many pages AKU's filtered export added over their earlier one. Stated in
+# both trees rather than left for a reviewer to count off the badges.
+n_new = sum(1 for p in pages if p.get('new'))
 
 # Two webs hold pages that no permission row mentions -- library/pk/fhs/SitePages
 # and mrtc-pk/research/Pages/Projects.  Dropping them would lose 14 real pages,
@@ -146,14 +150,22 @@ def ascii_web(node, pre, out, last, show_pages):
         ascii_web(c, pre2, out, i == len(kids) - 1 and not (show_pages and node['pages']), show_pages)
     if show_pages:
         for j, p in enumerate(node['pages']):
-            out.append('%s%s %s' % (pre2, '└─' if j == len(node['pages']) - 1 else '├─', p['file']))
+            out.append('%s%s %s%s' % (pre2, '└─' if j == len(node['pages']) - 1 else '├─',
+                                      p['file'], '   [NEW]' if p.get('new') else ''))
 
 def build_tree_text(show_pages):
     out = ['AKU.EDU — folder hierarchy (%d webs · %d pages · %d sections)'
-           % (len(webs), len(pages), len(tops)), '']
+           % (len(webs), len(pages), len(tops)),
+           '%d pages marked [NEW] are in AKU\'s filtered export and were not in '
+           'their earlier one.' % n_new if n_new else '', '']
     out.append('/   (site root — http://aku.edu, "%s"%s)'
                % (root_web['title'] if root_web else '?',
                   ', %d pages' % root_web['pages'] if root_web and root_web['pages'] else ''))
+    if show_pages:
+        for p in sorted(pages_by_web.get('', []), key=lambda x: x['file'].lower()):
+            _g = ROOT_PAGE_DEST.get(p['file'].lower())
+            out.append('│   %s%s%s' % (p['file'], '   [NEW]' if p.get('new') else '',
+                                       '   -> %s' % _g[0] if _g else ''))
     keys = list(tree)
     for ri, slug in enumerate(keys):
         R = tree[slug]
@@ -384,13 +396,36 @@ def t_row(cls, label, meta, data, extra='', kids='', open_=False):
             + '<span class="meta">' + meta + '</span></div>'
             + ('<ul>' + kids + '</ul>' if kids else '') + '</li>')
 
+# AKU's four dispositions. The newer export added the last two: a page nobody
+# has looked at yet is a different thing from one they have decided to move, and
+# the tree should not colour it as though the call had been made.
+ACTION_TITLE = {'asis': 'Move as is', 'upd': 'Update, then move',
+                'unrev': 'Not reviewed by AKU yet', 'unclear': 'AKU marked it unclear'}
+
 def t_page(p):
-    return ('<li class="t-page"><div class="row" data-n="' + e(p['file'].lower())
+    # `new` marks a page AKU's filtered export added and the earlier one never
+    # listed. It goes in data-n as the word "new" too, so the existing search box
+    # finds them without a second mechanism.
+    isnew = p.get('new')
+    # A root page the plan sends somewhere other than Global says so here, or the
+    # tree would show it staying put.
+    goes = ROOT_PAGE_DEST.get(p['file'].lower()) if not p.get('web') else None
+    # Searchable text: the file name, the web that holds it, and the word "new"
+    # for the ones this export added. The box is a free-text search, so a broad
+    # match is what it is for — unlike a dropdown labelled with one region,
+    # which has to mean that region exactly.
+    return ('<li class="t-page' + (' is-new' if isnew else '')
+            + '"><div class="row" data-n="' + e(p['file'].lower())
+            + ' ' + e((p.get('web') or 'site-root').lower())
+            + (' new' if isnew else '')
             + '"><span class="tw leafmark"></span><span class="dot ' + p['action']
-            + '" title="' + ('Move as is' if p['action'] == 'asis'
-                             else 'Update, then move')
+            + '" title="' + ACTION_TITLE.get(p['action'], p['action'])
             + '"></span><span class="lbl mono">' + e(p['file']) + '</span>'
-            '<span class="meta">' + e(p['cat']) + '</span>'
+            + ('<span class="tag-new" title="not in AKU’s earlier export">new</span>'
+               if isnew else '')
+            + ('<span class="tag-moves" title="' + e(goes[3]) + '">&rarr; '
+               + e(goes[0]) + '</span>' if goes else '')
+            + '<span class="meta">' + e(p['cat']) + '</span>'
             '<a class="go" href="' + e(p['url']) + '" target="_blank" '
             'rel="noopener">open ↗</a></div></li>')
 
@@ -458,11 +493,17 @@ for slug in tree:
         '<span class="code">' + e(R['code']) + '</span>'
         '<span class="path">' + e(slug) + '/</span>', groups, open_=True))
 
+# The root web's own pages -- home, contact, campuses, the legal set -- hang off
+# the root itself. They sit above every section, so there is no region node they
+# could belong to, and leaving them out would drop 17 pages from the tree.
+root_pages = sorted(pages_by_web.get('', []), key=lambda x: x['file'].lower())
+
 tree_view = ('<ul class="tree"><li class="t-root"><div class="row" '
              'data-n="root aku.edu home"><span class="tw"></span>'
              '<span class="lbl mono">aku.edu</span><span class="meta">site root · '
              + n_of(len(webs), 'folder') + ' · ' + n_of(len(pages), 'page')
              + '</span></div><ul>'
+             + ''.join(t_page(p) for p in root_pages)
              + ''.join(tree_items) + '</ul></li></ul>')
 
 # ---- charts ---------------------------------------------------------------
@@ -727,6 +768,21 @@ li.collapsed>.row>.tw::before{transform:rotate(-45deg);left:2px;top:2px}
 .tree .go{font-size:11px;color:var(--brand2);text-decoration:none;margin-left:8px}
 .tree .dot{width:7px;height:7px;border-radius:50%;flex:none;background:var(--base)}
 .tree .dot.upd{background:var(--inf)}
+.tree .dot.unrev{background:transparent;box-shadow:inset 0 0 0 1.5px var(--mut)}
+.tree .dot.unclear{background:var(--mut)}
+/* Pages this export added, and a rollup on every folder above them, so a
+   reviewer can find the additions without opening 628 folders. */
+.tree .tag-new{margin-left:7px;padding:1px 6px;border-radius:9px;font-size:10px;
+  font-weight:700;letter-spacing:.03em;text-transform:uppercase;
+  background:var(--ok,#0a7d4b);color:#fff;flex:none}
+.tree .cnt-new{margin-left:7px;padding:1px 6px;border-radius:9px;font-size:10.5px;
+  font-weight:660;background:rgba(10,125,75,.12);color:var(--ok,#0a7d4b);
+  border:1px solid rgba(10,125,75,.3);flex:none}
+.tree .tag-moves{margin-left:7px;padding:1px 6px;border-radius:9px;font-size:10.5px;
+  font-weight:660;background:rgba(0,0,0,.05);color:var(--brand2);
+  border:1px solid var(--ring);flex:none}
+.tree.newonly li:not(.has-new):not(.is-new){display:none}
+.btn.on{border-color:var(--brand2);color:var(--brand2);font-weight:660}
 .t-root>.row{background:var(--brand);color:#fff;margin-bottom:4px}
 .t-root>.row .lbl{font-weight:660;font-size:15px}
 .t-root>.row .meta{color:rgba(255,255,255,.8)}
@@ -813,11 +869,20 @@ function depth(li){let d=0,p=li.parentElement;
   while(p){if(p.tagName==='LI')d++;p=p.parentElement;}return d;}
 function setDepth(n){nodes.forEach(li=>{if(li.querySelector(':scope > ul'))
   li.classList.toggle('collapsed',depth(li)>=n);});}
-function level(n){q.value='';hits.textContent='';
+function level(n){q.value='';hits.textContent='';clearNewOnly();
   nodes.forEach(li=>li.classList.remove('hide'));setDepth(n);}
+/* The depth buttons and the search box each show the whole tree again, so the
+   new-only filter has to come off with them -- left on, it silently hides most
+   of what the reviewer just asked to see. Defined before the button exists so
+   level() and search() can both call it. */
+function clearNewOnly(){const t=document.querySelector('.tree');
+  if(!t||!t.classList.contains('newonly'))return;
+  t.classList.remove('newonly');
+  document.getElementById('LN').classList.remove('on');}
 function search(t){
   t=t.trim().toLowerCase();
   if(!t){level(3);return;}
+  clearNewOnly();
   [...nodes].reverse().forEach(li=>{           // deepest first
     const self=li.querySelector(':scope > .row').dataset.n.includes(t);
     const kid=kids(li).some(c=>!c.classList.contains('hide'));
@@ -839,8 +904,35 @@ let tm;q.addEventListener('input',()=>{clearTimeout(tm);tm=setTimeout(()=>search
 document.getElementById('L1').onclick=()=>level(1);
 document.getElementById('L2').onclick=()=>level(3);
 document.getElementById('L3').onclick=()=>level(4);
-document.getElementById('L9').onclick=()=>{q.value='';hits.textContent='';
+document.getElementById('L9').onclick=()=>{q.value='';hits.textContent='';clearNewOnly();
   nodes.forEach(li=>{li.classList.remove('hide');li.classList.remove('collapsed');});};
+
+/* Pages this export added carry .is-new from the builder. Every folder above one
+   gets a count badge and .has-new, computed here rather than in Python: the
+   rollup then cannot disagree with the tree it is describing, and the three node
+   builders stay as they were. */
+const tree=document.querySelector('.tree');
+nodes.forEach(li=>{
+  if(li.classList.contains('t-page'))return;
+  const n=li.querySelectorAll('li.is-new').length;
+  if(!n)return;
+  li.classList.add('has-new');
+  const b=document.createElement('span');
+  b.className='cnt-new';
+  b.textContent='+'+n+' new';
+  b.title=n+' page'+(n===1?'':'s')+' here that AKU\\u2019s earlier export did not list';
+  li.querySelector(':scope > .row').appendChild(b);
+});
+const bN=document.getElementById('LN');
+bN.onclick=()=>{
+  const on=tree.classList.toggle('newonly');
+  bN.classList.toggle('on',on);
+  q.value='';
+  nodes.forEach(li=>li.classList.remove('hide'));
+  if(on){nodes.forEach(li=>li.classList.remove('collapsed'));
+         hits.textContent=document.querySelectorAll('.tree li.is-new').length+' new pages';}
+  else{hits.textContent='';setDepth(3);}
+};
 setDepth(3);
 """
 
@@ -921,12 +1013,20 @@ s4 = sec('Section 4', 'tree', 'Browse the full tree',
          + f'{len(pages):,}' + ' pages, in the shape they will take. '
          'It opens at entity level — click a row to go deeper, or search for any '
          'region, entity, folder or page. A dot beside a page means <b>move as '
-         'is</b>; an amber dot means <b>update, then move</b>.',
+         'is</b>; an amber dot means <b>update, then move</b>; a hollow dot means '
+         'AKU has <b>not reviewed it yet</b>, and a grey one that they marked it '
+         '<b>unclear</b>. '
+         + ('<b>' + f'{n_new:,}' + ' pages</b> carry a green <b>new</b> tag: AKU’s '
+            'filtered export lists them and their earlier one did not. Every folder '
+            'above one shows how many it holds, and <b>New pages only</b> narrows the '
+            'tree to just those. The other ' + f'{len(pages) - n_new:,}' + ' were in '
+            'both exports and have not moved.' if n_new else ''),
          '<div class="tbar"><input id="q" type="search" placeholder="Search a '
          'region, entity, folder or page…" autocomplete="off"><span id="hits">'
          '</span><button class="btn" id="L1">Regions</button>'
          '<button class="btn" id="L2">Entities</button>'
          '<button class="btn" id="L3">Folders</button>'
+         '<button class="btn" id="LN">New pages only</button>'
          '<button class="btn" id="L9">Expand all</button></div>'
          '<div id="treeview">' + tree_view + '</div>')
 
@@ -1004,7 +1104,10 @@ for s in tree:
     print('%-16s ent=%-3d fn=%-3d webs=%-4d pages=%-5d'
           % (s, stats[s]['entities'], stats[s]['functions'],
              stats[s]['webs'], stats[s]['pages']))
-placed_p = sum(stats[s]['pages'] for s in tree)
+# The site root is a web with pages of its own, and both sides of the accounting
+# have to say so: its 17 pages belong to no region, so summing the regions alone
+# would report them lost.
+placed_p = sum(stats[s]['pages'] for s in tree) + (root_web['pages'] if root_web else 0)
 placed_w = sum(stats[s]['webs'] for s in tree) + (1 if root_web else 0)
 print('TOTAL pages placed', placed_p, 'of', len(pages))
 print('TOTAL webs placed', placed_w, 'of', len(webs), '(incl. site root)')

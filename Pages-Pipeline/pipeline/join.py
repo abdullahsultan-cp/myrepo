@@ -1,6 +1,11 @@
 """Join the two Pages-Pipeline sources into one section inventory.
 
-Source A  AKU-EN_1.HTM  -> 3,340 live page URLs (the only page-level inventory).
+Source A  aku-university-filtered.csv -> 4,591 page URLs, read through
+          page_intake. This replaced AKU-EN_1.HTM, which listed 3,340: the two
+          disagree by 1,323 pages, and running the hierarchy off one while the
+          migration plan runs off the other would have the tree and the plan
+          describing different websites. The HTM is still parsed, but only to
+          report what the newer export has since dropped.
 Source B  the permissions CSV -> 612 aku.edu webs, their real titles, and the
           owner groups / AD domains that witness region + entity.
 
@@ -12,27 +17,53 @@ import collections
 import json
 import re
 
+import page_intake
 import paths
 
 TAX = paths.taxonomy_seed()
 ZW = str.maketrans('', '', '\u200b\ufeff\u00ad')
 
 # ---- A: pages -------------------------------------------------------------
+# AKU's disposition, in the two words their export uses, mapped to the codes the
+# tree renders as dots. The newer export added two the HTM never had: a page AKU
+# has not reviewed yet is not the same as one they have decided to move.
+ACTION_CODE = {
+    'move as is': 'asis',
+    'update and move': 'upd',
+    'not reviewed': 'unrev',
+    'unclear': 'unclear',
+}
+
+# The HTM is no longer the inventory, but it is the only source that ever
+# carried a category per page, so it is still parsed for that one column.
 html = open(paths.PAGES_HTM, encoding='utf-8').read()
-rows = re.findall(
-    r'<li data-name="[^"]*">\s*<span class="pact (\w+)"[^>]*></span>'
-    r'\s*<span class="pfile mono">([^<]+)</span>'
-    r'\s*<span class="pcat">([^<]*)</span>'
-    r'\s*<a class="visit" href="(https://www\.aku\.edu/[^"]+)"', html)
+CAT = {}
+for act, fname, cat, url in re.findall(
+        r'<li data-name="[^"]*">\s*<span class="pact (\w+)"[^>]*></span>'
+        r'\s*<span class="pfile mono">([^<]+)</span>'
+        r'\s*<span class="pcat">([^<]*)</span>'
+        r'\s*<a class="visit" href="(https://www\.aku\.edu/[^"]+)"', html):
+    CAT[page_intake.key(url)] = cat
+
 pages = []
-for act, fname, cat, url in rows:
-    path = url.replace('https://www.aku.edu/', '')
-    segs = path.split('/')
-    # .../Pages/<file>.aspx  — everything before /Pages/ is the web path
-    web = segs[:-2] if len(segs) >= 2 and segs[-2].lower() == 'pages' else segs[:-1]
-    pages.append({'section': web[0], 'sub': '/'.join(web[1:]),
-                  'web': '/'.join(web), 'file': fname, 'cat': cat,
-                  'action': act, 'url': url})
+for p in page_intake.load():
+    web = p['web']
+    segs = web.split('/') if web else []
+    pages.append({
+        # The root web has no section. '' rather than None: this feeds JSON and
+        # then a tree that groups by section, and a None key sorts against str.
+        'section': segs[0] if segs else '',
+        'sub': '/'.join(segs[1:]),
+        'web': web,
+        'file': p['file'],
+        'cat': CAT.get(p['key'], ''),
+        'action': ACTION_CODE.get(p['action'].lower(), 'unrev'),
+        'status': p['status'],
+        'new': p['new'],
+        'url': p['url'],
+    })
+
+dropped = page_intake.dropped()
 
 # ---- B: webs from the CSV -------------------------------------------------
 sites = json.load(open(paths.work('sites.json'), encoding='utf-8'))
@@ -52,6 +83,10 @@ tax = json.load(open(TAX, encoding='utf-8'))
 
 out = open(paths.work('join_report.txt'), 'w', encoding='utf-8')
 out.write('pages parsed .............. %d\n' % len(pages))
+out.write('  new in this export ...... %d\n' % sum(1 for p in pages if p['new']))
+out.write('  at the site root ........ %d\n' % sum(1 for p in pages if not p['web']))
+out.write('dropped since AKU-EN_1.HTM  %d  (see dropped_pages.txt)\n' % len(dropped))
+out.write('with a category from the HTM %d\n' % sum(1 for p in pages if p['cat']))
 out.write('distinct webs in pages .... %d\n' % len(page_webs))
 out.write('sections in pages ......... %d\n' % len(page_secs))
 out.write('CSV webs .................. %d\n' % len(csv_webs))

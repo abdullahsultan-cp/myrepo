@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.join(ROOT, "pipeline", "migrate", "spaces"))
 
 import sb_common as C
 from sb_restore import remap_content
+from sb_storage import make_backend
 
 SPACE = "289824742951963"
 
@@ -286,6 +287,382 @@ class TestOkStatus(unittest.TestCase):
         # only (200, 201) is how a run that moved 786 assets perfectly reported
         # 0 moved, 786 failed.
         self.assertIn(204, C.OK_STATUS)
+
+
+TREE = [
+    {"id": 1, "name": "regions", "parent_id": None},
+    {"id": 2, "name": "pk", "parent_id": 1},
+    {"id": 3, "name": "mc", "parent_id": 2},
+    {"id": 4, "name": "global", "parent_id": None},
+]
+
+
+class TestFolderPathMap(unittest.TestCase):
+    """The manifests answer "where does this live", which needs the full path."""
+
+    def test_builds_the_full_path(self):
+        m = C.folder_path_map(TREE)
+        self.assertEqual(m[3], "regions/pk/mc")
+        self.assertEqual(m[1], "regions")
+        self.assertEqual(m[4], "global")
+
+    def test_a_parent_id_cycle_terminates(self):
+        # Not hypothetical: this space once reached 769 asset folders with seven
+        # `regions` roots. A cycle must not hang a run with no output.
+        cyclic = [{"id": 1, "name": "a", "parent_id": 2},
+                  {"id": 2, "name": "b", "parent_id": 1}]
+        m = C.folder_path_map(cyclic)
+        self.assertEqual(len(m), 2)
+
+    def test_a_missing_parent_stops_cleanly(self):
+        m = C.folder_path_map([{"id": 9, "name": "orphan", "parent_id": 404}])
+        self.assertEqual(m[9], "orphan")
+
+    def test_can_key_on_slug_instead_of_name(self):
+        m = C.folder_path_map([{"id": 1, "slug": "news", "parent_id": None}],
+                              name_key="slug")
+        self.assertEqual(m[1], "news")
+
+
+class TestAssetUrlDiscovery(unittest.TestCase):
+    """Counting a story's assets must not depend on the asset host."""
+
+    def urls(self, content):
+        from sb_backup import _asset_urls
+        return _asset_urls(content)
+
+    def test_finds_an_asset_object_and_a_richtext_node(self):
+        u = self.urls({
+            "hero": {"filename": "https://a.storyblok.com/f/555/x/aa/p.png"},
+            "body": {"content": [{"type": "image", "attrs": {
+                "src": "https://a.storyblok.com/f/555/y/bb/q.png"}}]},
+        })
+        self.assertEqual(len(u), 2)
+
+    def test_a_custom_asset_domain_is_still_found(self):
+        # Paid plans can serve assets from their own domain. Matching on the
+        # word "storyblok" reported zero assets for those spaces, silently.
+        u = self.urls({"hero": {"filename":
+                                "https://assets.aku.edu/f/555/x/aa/p.png"}})
+        self.assertEqual(len(u), 1)
+
+    def test_two_urls_in_one_paragraph_count_as_two(self):
+        text = ("see https://a.storyblok.com/f/1/x/aa/a.pdf and "
+                "https://a.storyblok.com/f/1/y/bb/b.pdf today")
+        self.assertEqual(len(self.urls({"t": text})), 2)
+
+    def test_the_same_url_twice_counts_once(self):
+        one = "https://a.storyblok.com/f/1/x/aa/a.png"
+        self.assertEqual(len(self.urls({"a": one, "b": one})), 1)
+
+    def test_a_non_asset_url_is_ignored(self):
+        self.assertEqual(self.urls({"a": "https://www.aku.edu/news/story"}),
+                         set())
+
+    def test_survives_empty_and_none(self):
+        self.assertEqual(self.urls({}), set())
+        self.assertEqual(self.urls({"a": None, "b": [], "c": 0}), set())
+
+
+class TestStorageBackend(unittest.TestCase):
+    """Media goes to an Azure container, so the backend is configurable and must
+    be honest about whether the bytes sit inside the repo."""
+
+    def test_defaults_to_inside_the_snapshot(self):
+        store, external = make_backend({"name": "AKU"},
+                                       os.path.join("r", "sb"))
+        self.assertFalse(external)
+        self.assertFalse(store.external)
+        self.assertEqual(store.root, os.path.join("r", "sb", "assets"))
+
+    def test_assets_dir_moves_it_outside_and_flags_that(self):
+        store, external = make_backend(
+            {"name": "AKUEB", "assets_dir": os.path.join("mnt", "bkt")}, "out")
+        self.assertTrue(external)
+        self.assertIn("bkt", store.root)
+
+    def test_cli_override_beats_the_config(self):
+        store, external = make_backend(
+            {"name": "X", "assets_dir": "from_config"}, "out", "from_cli")
+        self.assertTrue(external)
+        self.assertIn("from_cli", store.root)
+
+    def test_expands_environment_variables(self):
+        os.environ["SB_TEST_BUCKET"] = os.path.join("tmp", "bkt")
+        try:
+            store, _ = make_backend(
+                {"name": "X", "assets_dir": "$SB_TEST_BUCKET/AKUH"}, "out")
+            self.assertIn("bkt", store.root)
+            self.assertNotIn("$", store.root)
+        finally:
+            del os.environ["SB_TEST_BUCKET"]
+
+    def test_returns_an_absolute_path(self):
+        store, _ = make_backend({"name": "X", "assets_dir": "rel/bucket"},
+                                "out")
+        self.assertTrue(os.path.isabs(store.root))
+
+    def test_an_unknown_backend_exits_rather_than_guessing(self):
+        with self.assertRaises(SystemExit):
+            make_backend({"name": "X", "assets": {"backend": "s3"}}, "out")
+
+    def test_azure_without_a_container_exits(self):
+        with self.assertRaises(SystemExit):
+            make_backend({"name": "X", "assets": {
+                "backend": "azure", "connection_string": "x"}}, "out")
+
+    def test_azure_without_credentials_exits(self):
+        with self.assertRaises(SystemExit):
+            make_backend({"name": "X", "assets": {
+                "backend": "azure", "container": "c"}}, "out")
+
+    def test_local_roundtrip_hashes_and_stores(self):
+        import tempfile
+        payload = b"hello-storyblok" * 500
+        with tempfile.TemporaryDirectory() as d:
+            store, _ = make_backend({"name": "X", "assets_dir": d}, "out")
+            self.assertIsNone(store.size("a/b/c.bin"))
+            digest, size = store.write("a/b/c.bin", [payload[:100],
+                                                     payload[100:]])
+            self.assertEqual(size, len(payload))
+            self.assertEqual(store.size("a/b/c.bin"), len(payload))
+            self.assertEqual(store.sha256("a/b/c.bin"), digest)
+            self.assertEqual(len(digest), 64)
+
+    def test_a_truncated_download_is_refused_not_stored(self):
+        # The size Storyblok reported is the contract. Writing a short file and
+        # recording a checksum for it would make corruption look verified.
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            store, _ = make_backend({"name": "X", "assets_dir": d}, "out")
+            with self.assertRaises(OSError):
+                store.write("t.bin", [b"only-8b!"], expected=9999)
+            self.assertIsNone(store.size("t.bin"))
+
+    def test_no_temp_files_are_left_behind_on_failure(self):
+        import glob
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            store, _ = make_backend({"name": "X", "assets_dir": d}, "out")
+            before = set(glob.glob(os.path.join(tempfile.gettempdir(),
+                                                "*.sbpart")))
+            with self.assertRaises(OSError):
+                store.write("t.bin", [b"short"], expected=100)
+            after = set(glob.glob(os.path.join(tempfile.gettempdir(),
+                                              "*.sbpart")))
+            self.assertEqual(before, after)
+
+
+class TestAzureBlobTier(unittest.TestCase):
+    """The tier must be resolved to Azure's enum before it reaches upload_blob.
+
+    Handing the SDK the plain string from the config raises
+    `AttributeError: 'str' object has no attribute 'value'` on every single file,
+    which reads like a credentials or network fault and is neither. It failed 100
+    uploads in a row against the real container before this was pinned.
+    """
+
+    def tier(self, value):
+        from sb_storage import AzureBackend
+        return AzureBackend._resolve_tier(value)
+
+    def test_cool_resolves_to_the_enum(self):
+        from azure.storage.blob import StandardBlobTier
+        self.assertIs(self.tier("Cool"), StandardBlobTier.Cool)
+
+    def test_is_case_insensitive(self):
+        from azure.storage.blob import StandardBlobTier
+        self.assertIs(self.tier("cool"), StandardBlobTier.Cool)
+        self.assertIs(self.tier("HOT"), StandardBlobTier.Hot)
+
+    def test_what_it_returns_has_the_value_attribute_the_sdk_reads(self):
+        # The exact thing that broke: upload_blob does tier.value internally.
+        self.assertTrue(hasattr(self.tier("Cool"), "value"))
+        self.assertEqual(self.tier("Cool").value, "Cool")
+
+    def test_none_means_the_account_default(self):
+        self.assertIsNone(self.tier(None))
+        self.assertIsNone(self.tier(""))
+
+    def test_an_unknown_tier_exits_rather_than_failing_per_file(self):
+        with self.assertRaises(SystemExit):
+            self.tier("Glacier")
+
+    def test_an_enum_passes_straight_through(self):
+        from azure.storage.blob import StandardBlobTier
+        self.assertIs(self.tier(StandardBlobTier.Hot), StandardBlobTier.Hot)
+
+
+class TestSha256File(unittest.TestCase):
+    """With the media outside git, checksums are the only proof the two halves
+    still match."""
+
+    def test_matches_hashlib(self):
+        import hashlib
+        import tempfile
+        payload = b"\x89PNG\r\n\x1a\n" + b"x" * 5000
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "a.bin")
+            with open(p, "wb") as f:
+                f.write(payload)
+            self.assertEqual(C.sha256_file(p),
+                             hashlib.sha256(payload).hexdigest())
+
+    def test_reads_across_chunk_boundaries(self):
+        import hashlib
+        import tempfile
+        payload = bytes(range(256)) * 9000       # > 1 MiB, so multiple chunks
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "big.bin")
+            with open(p, "wb") as f:
+                f.write(payload)
+            self.assertEqual(C.sha256_file(p),
+                             hashlib.sha256(payload).hexdigest())
+
+    def test_empty_file_hashes(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "e.bin")
+            open(p, "wb").close()
+            self.assertEqual(len(C.sha256_file(p)), 64)
+
+
+class TestCrossHostAssetUrls(unittest.TestCase):
+    """One asset is served under several hosts, and the restore must still remap.
+
+    Real AKUH data: assets.json returns the S3 form
+    (s3.amazonaws.com/a.storyblok.com/f/<space>/...) while story content carries
+    the CDN form (a.storyblok.com/f/<space>/...). Matching whole URLs therefore
+    replaced almost nothing -- a rebuilt space would have come up with every image
+    still pointing at the old space, and looked like it had worked. Only the path
+    after /f/<space id>/ is stable, so that is the join key.
+    """
+
+    S3 = "https://s3.amazonaws.com/a.storyblok.com/f/286308248262721/800x300/ab/p.jpg"
+    CDN = "https://a.storyblok.com/f/286308248262721/800x300/ab/p.jpg"
+    NEW = "https://a.storyblok.com/f/999/800x300/zz/p.jpg"
+
+    def test_key_is_the_same_across_hosts(self):
+        self.assertEqual(C.asset_url_key(self.S3), C.asset_url_key(self.CDN))
+        self.assertEqual(C.asset_url_key(self.S3), "800x300/ab/p.jpg")
+
+    def test_key_of_a_non_asset_url_is_none(self):
+        self.assertIsNone(C.asset_url_key("https://www.aku.edu/news/story"))
+        self.assertIsNone(C.asset_url_key(""))
+        self.assertIsNone(C.asset_url_key(None))
+
+    def test_a_custom_asset_domain_keys_the_same(self):
+        self.assertEqual(
+            C.asset_url_key("https://assets.aku.edu/f/286308248262721/800x300/ab/p.jpg"),
+            "800x300/ab/p.jpg")
+
+    def test_remap_rewrites_the_cdn_form_from_an_s3_keyed_map(self):
+        # The exact production case: the map comes from assets.json (S3 host),
+        # the content uses the CDN host.
+        out = remap_content({"body": {"src": self.CDN}}, {self.S3: self.NEW},
+                            {}, {})
+        self.assertEqual(out["body"]["src"], self.NEW)
+
+    def test_remap_rewrites_a_url_embedded_in_prose(self):
+        out = remap_content({"t": f"see {self.CDN} today"},
+                            {self.S3: self.NEW}, {}, {})
+        self.assertIn(self.NEW, out["t"])
+        self.assertNotIn(self.CDN, out["t"])
+
+    def test_remap_leaves_an_unknown_asset_url_alone(self):
+        other = "https://a.storyblok.com/f/286308248262721/x/qq/other.jpg"
+        out = remap_content({"a": other}, {self.S3: self.NEW}, {}, {})
+        self.assertEqual(out["a"], other)
+
+    def test_remap_handles_several_urls_in_one_string(self):
+        s3b = "https://s3.amazonaws.com/a.storyblok.com/f/286308248262721/x/cd/q.pdf"
+        cdnb = "https://a.storyblok.com/f/286308248262721/x/cd/q.pdf"
+        newb = "https://a.storyblok.com/f/999/x/yy/q.pdf"
+        out = remap_content({"t": f"{self.CDN} and {cdnb}"},
+                            {self.S3: self.NEW, s3b: newb}, {}, {})
+        self.assertIn(self.NEW, out["t"])
+        self.assertIn(newb, out["t"])
+        self.assertNotIn("286308248262721", out["t"])
+
+    def test_percent_escapes_do_not_break_the_key(self):
+        a = "https://a.storyblok.com/f/1/x/ab/My%20File.pdf"
+        b = "https://s3.amazonaws.com/a.storyblok.com/f/1/x/ab/My%20File.pdf"
+        self.assertEqual(C.asset_url_key(a), C.asset_url_key(b))
+
+
+class TestRequiredFieldPlugins(unittest.TestCase):
+    """/field_types refuses a personal access token, so the plugins the schema
+    depends on are derived from the schema instead.
+
+    AKUH needs five of them across 41 fields. They are account-level with no
+    create API, so a restore into an account missing one silently fails to save
+    every component that uses it -- which is why the list is captured rather than
+    left as a 403.
+    """
+
+    def plugins(self, components):
+        from sb_backup import required_field_plugins
+        return required_field_plugins(components)
+
+    def test_finds_a_custom_field_and_names_its_component(self):
+        got = self.plugins([{"name": "article", "schema": {
+            "seo": {"type": "custom", "field_type": "seo-metatags"}}}])
+        self.assertEqual(got["seo-metatags"]["fields"], 1)
+        self.assertEqual(got["seo-metatags"]["components"], ["article"])
+
+    def test_counts_fields_and_dedupes_components(self):
+        got = self.plugins([
+            {"name": "page", "schema": {
+                "a": {"type": "custom", "field_type": "native-color-picker"},
+                "b": {"type": "custom", "field_type": "native-color-picker"}}},
+            {"name": "banner", "schema": {
+                "c": {"type": "custom", "field_type": "native-color-picker"}}},
+        ])
+        self.assertEqual(got["native-color-picker"]["fields"], 3)
+        self.assertEqual(got["native-color-picker"]["components"],
+                         ["banner", "page"])
+
+    def test_builtin_fields_are_not_plugins(self):
+        got = self.plugins([{"name": "x", "schema": {
+            "t": {"type": "text"}, "b": {"type": "bloks"},
+            "i": {"type": "asset"}}}])
+        self.assertEqual(got, {})
+
+    def test_a_custom_field_with_no_plugin_name_is_still_reported(self):
+        # Silently dropping it would hide a dependency.
+        got = self.plugins([{"name": "x", "schema": {
+            "f": {"type": "custom"}}}])
+        self.assertIn("(unnamed)", got)
+
+    def test_survives_empty_and_malformed_schemas(self):
+        self.assertEqual(self.plugins([]), {})
+        self.assertEqual(self.plugins([{"name": "x"}]), {})
+        self.assertEqual(self.plugins([{"name": "x", "schema": {}}]), {})
+        self.assertEqual(self.plugins([{"name": "x", "schema": {"f": None}}]),
+                         {})
+
+    def test_output_is_deterministic(self):
+        comps = [{"name": "b", "schema": {"f": {"type": "custom",
+                                               "field_type": "p"}}},
+                 {"name": "a", "schema": {"g": {"type": "custom",
+                                               "field_type": "p"}}}]
+        self.assertEqual(self.plugins(comps)["p"]["components"], ["a", "b"])
+
+
+class TestWriteCsv(unittest.TestCase):
+    def test_is_lf_terminated_and_reads_back_with_accents(self):
+        # csv writes \r\n on Windows by default, which would diff against the
+        # same data written on Linux.
+        import csv
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "m.csv")
+            C.write_csv(p, ["a", "b"], [[1, "café"], [2, "Dr Asad"]])
+            raw = open(p, "rb").read()
+            self.assertNotIn(b"\r\n", raw)
+            with open(p, encoding="utf-8-sig", newline="") as f:
+                rows = list(csv.DictReader(f))
+            self.assertEqual(rows[0]["b"], "café")
 
 
 if __name__ == "__main__":

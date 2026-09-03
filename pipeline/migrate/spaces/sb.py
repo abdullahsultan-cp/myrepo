@@ -1,0 +1,785 @@
+#!/usr/bin/env python3
+"""
+sb.py — the one command for a Storyblok backup repo. Run from the repo root.
+
+    python tools/sb.py setup        write tools/sites.json, prefilled from the
+                                    snapshot; you paste two secrets
+    python tools/sb.py setup --name AKUEB --space 123    ...for a fresh repo
+    python tools/sb.py init <other repo path> --name AKU --space 456
+                                    stand up ANOTHER backup repo from this one:
+                                    tools, wrappers, config, gitignore
+    python tools/sb.py status       where this backup stands, in one screen
+    python tools/sb.py doctor       is everything in place to run?
+    python tools/sb.py backup       THE ONE CLICK: schema, stories, published
+                                    versions, assets to the bucket, manifests,
+                                    portal, index, commit
+    python tools/sb.py backup --push          ...and push
+    python tools/sb.py audit        prove the backup covers the whole space
+    python tools/sb.py audit --deep      ...re-reading every byte (costs egress)
+    python tools/sb.py verify       checksums only
+    python tools/sb.py repair       re-fetch anything missing or corrupted
+    python tools/sb.py index        rebuild index.sqlite
+    python tools/sb.py orphans      bucket files no longer in the space, and
+                                    what they cost to keep
+    python tools/sb.py changed [rev]     what moved, appeared, vanished or was
+                                    edited since a commit (default HEAD~1).
+                                    For a space being reorganised.
+    python tools/sb.py external [--apply] [--third-party]
+                                    files a page points at that are NOT
+                                    Storyblok assets: download them, upload into
+                                    Storyblok, rewrite the links
+    python tools/sb.py restore-story <id> [--apply]
+    python tools/sb.py restore-assets [--apply]
+    python tools/sb.py rebuild <empty space id> [--apply]
+
+This repo is self-contained: tools/ holds the whole pipeline, so a backup can be
+taken or restored with nothing but this checkout and Python. Nothing here needs
+the project the scripts were authored in.
+
+Which site and space this is comes from storyblok/_summary.json, so no command
+needs --site. Credentials come from tools/sites.json, or from the environment
+(SB_TOKEN / SB_TOKEN_<SITE> and AZURE_STORAGE_CONNECTION_STRING) which is what a
+scheduled job should use.
+"""
+
+import json
+import os
+import re
+import subprocess
+import sys
+
+# sb.py's own prints buffer when stdout is a file rather than a terminal, so
+# `sb.py backup > log` showed the header and then nothing for an hour while the
+# child streamed fine. Passing -u to the child fixed half the problem; this fixes
+# the other half. Same reasoning, one layer up.
+try:
+    sys.stdout.reconfigure(line_buffering=True)
+    sys.stderr.reconfigure(line_buffering=True)
+except (AttributeError, ValueError):        # pre-3.7, or a stream without it
+    pass
+
+
+def load_json(path, default=None):
+    if not os.path.exists(path):
+        return default
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(HERE)
+SNAP = os.path.join(REPO, "storyblok")
+CONFIG = os.path.join(HERE, "sites.json")
+PY = sys.executable
+
+DEPS = ["requests>=2.31", "azure-storage-blob>=12.19"]
+
+
+def _summary():
+    p = os.path.join(SNAP, "_summary.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _site_from_snapshot():
+    """Name, space id and region for this repo.
+
+    From the snapshot when there is one, else from tools/sites.json, else guessed
+    from the directory name. A fresh repo has no snapshot yet -- that is the
+    normal state before the first backup, not an error -- and reading only the
+    snapshot made it report the space as "?" while holding the answer in its own
+    config.
+    """
+    s = _summary()
+    out = {"name": s.get("site") or "",
+           "space_id": str(s.get("space_id") or ""),
+           "region": s.get("region") or ""}
+    if not (out["name"] and out["space_id"]) and os.path.exists(CONFIG):
+        try:
+            with open(CONFIG, encoding="utf-8") as f:
+                first = (json.load(f).get("sites") or [{}])[0]
+            out["name"] = out["name"] or first.get("name") or ""
+            sid = str(first.get("space_id") or "")
+            if "PUT_" not in sid:
+                out["space_id"] = out["space_id"] or sid
+            out["region"] = out["region"] or first.get("region") or ""
+        except (ValueError, OSError):
+            pass
+    out["name"] = out["name"] or os.path.basename(REPO).split("-")[0].upper()
+    out["region"] = out["region"] or "eu"
+    return out
+
+
+def has_snapshot():
+    return os.path.isdir(os.path.join(SNAP, "stories"))
+
+
+def _env_token(name):
+    key = "SB_TOKEN_" + re.sub(r"[^A-Z0-9]", "_", name.upper())
+    return os.environ.get(key) or os.environ.get("SB_TOKEN")
+
+
+def effective_config():
+    """The config to run with: the file if present, else built from the
+    environment. Returns (path, dict) — path is None when nothing usable exists."""
+    if os.path.exists(CONFIG):
+        with open(CONFIG, encoding="utf-8") as f:
+            return CONFIG, json.load(f)
+
+    site = _site_from_snapshot()
+    token = _env_token(site["name"])
+    conn = os.environ.get("AZURE_STORAGE_CONNECTION_STRING")
+    if not token:
+        return None, None
+    site["management_token"] = token
+    site["repo"] = REPO
+    if conn:
+        site["assets"] = {
+            "backend": "azure", "connection_string": conn,
+            "container": os.environ.get("SB_CONTAINER", "storyblok-backup"),
+            "prefix": os.environ.get("SB_PREFIX", site["name"]),
+            "tier": os.environ.get("SB_TIER", "Cool")}
+    # Written beside the scripts and gitignored, because the child scripts take a
+    # path rather than a dict.
+    tmp = os.path.join(HERE, ".sites.env.json")
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        json.dump({"sites": [site]}, f, indent=2)
+    return tmp, {"sites": [site]}
+
+
+def _run(script, *args):
+    cfg, _ = effective_config()
+    if not cfg:
+        return _no_config()
+    site = _site_from_snapshot()["name"]
+    # -u because these runs take minutes to hours and the only sign of progress
+    # is what they print. Without it Python buffers the child's output whenever
+    # stdout is not a terminal, so `sb.py backup > log` shows nothing at all
+    # until the run finishes -- which looks exactly like a hang.
+    cmd = [PY, "-u", os.path.join(HERE, script), "--config", cfg,
+           "--site", site, *args]
+    return subprocess.call(cmd)
+
+
+def _no_config():
+    site = _site_from_snapshot()
+    print(f"""
+  No credentials.
+
+  Either run:      python tools/sb.py setup
+  or set:          SB_TOKEN_{re.sub(r'[^A-Z0-9]', '_', site['name'].upper())}   (a Storyblok personal access token)
+                   AZURE_STORAGE_CONNECTION_STRING                (where the media lives)
+
+  The environment form is what a scheduled job should use, so no secret is ever
+  written to disk.
+""".rstrip())
+    return 2
+
+
+# --------------------------------------------------------------------------
+
+def cmd_init(argv):
+    """Seed another backup repo from this one: tools, wrappers, config skeleton.
+
+    Without this a fresh repo cannot bootstrap, because tools/ only arrives when
+    a backup runs — so the first backup of a new space would need the project
+    these scripts were authored in. Any set-up repo can now stand up the next
+    one, which is what makes the three of them independent of anything else.
+    """
+    if not argv:
+        print("  usage: python tools/sb.py init <path to the other repo> "
+              "[--name AKUEB] [--space 123]")
+        return 2
+    target = os.path.abspath(os.path.expanduser(argv[0]))
+    opts = dict(zip(argv[1::2], argv[2::2]))
+    name = opts.get("--name") or os.path.basename(target).split("-")[0].upper()
+    space = opts.get("--space", "")
+    region = opts.get("--region", "eu")
+
+    tdir = os.path.join(target, "tools")
+    os.makedirs(tdir, exist_ok=True)
+    import shutil
+    copied = 0
+    for fn in sorted(os.listdir(HERE)):
+        if fn.endswith(".py") or fn == "requirements.txt":
+            shutil.copy2(os.path.join(HERE, fn), os.path.join(tdir, fn))
+            copied += 1
+    for fn in ("backup.cmd", "backup.sh"):
+        src = os.path.join(REPO, fn)
+        if os.path.exists(src):
+            shutil.copy2(src, os.path.join(target, fn))
+            copied += 1
+
+    cfg = os.path.join(tdir, "sites.json")
+    if not os.path.exists(cfg):
+        with open(cfg, "w", encoding="utf-8", newline="\n") as f:
+            json.dump({"sites": [{
+                "name": name,
+                "space_id": space or "PUT_THE_SPACE_ID_HERE",
+                "region": region,
+                "repo": ".",
+                "management_token": "PUT_A_STORYBLOK_PERSONAL_ACCESS_TOKEN_HERE",
+                "assets": {"backend": "azure",
+                           "container": "storyblok-backup",
+                           "prefix": name, "tier": "Cool",
+                           "connection_string":
+                               "PUT_THE_AZURE_CONNECTION_STRING_HERE"},
+            }]}, f, indent=2)
+            f.write("\n")
+
+    gi = os.path.join(target, ".gitignore")
+    have = open(gi, encoding="utf-8").read() if os.path.exists(gi) else ""
+    # NOT storyblok/index.sqlite: it is committed on purpose, so the repo can be
+    # cloned and queried without running anything. This list said otherwise and
+    # seeded two repos with a rule that silently kept their index out of git --
+    # and because .gitignore rules are only ever appended, never removed, the
+    # stale line survived the decision being reversed.
+    need = ["*.part", "restore_maps/", "__pycache__/", "*.pyc",
+            "tools/sites.json", "tools/.sites.env.json"]
+    missing = [n for n in need if n not in have.split()]
+    if missing:
+        with open(gi, "a" if have else "w", encoding="utf-8",
+                  newline="\n") as f:
+            f.write(("\n" if have and not have.endswith("\n") else "")
+                    + "\n".join(missing) + "\n")
+
+    print(f"""
+  Seeded {target}
+
+    {copied} file(s) copied, plus tools/sites.json and .gitignore
+
+  There, do:
+
+    python -m pip install -r tools/requirements.txt
+    notepad tools\\sites.json        # space id + the two secrets
+    python tools/sb.py doctor
+    python tools/sb.py backup --push
+
+  That repo now needs nothing but itself.
+""".rstrip())
+    return 0
+
+
+def cmd_setup(argv):
+    site = _site_from_snapshot()
+    opts = dict(zip(argv[0::2], argv[1::2]))
+    # A fresh repo has no snapshot to read the space from, so it can be given.
+    name = opts.get("--name") or site["name"]
+    space = opts.get("--space") or site["space_id"]
+    region = opts.get("--region") or site["region"]
+    if os.path.exists(CONFIG):
+        print(f"  {CONFIG} already exists — edit it, or delete it and re-run.")
+        return 1
+    skeleton = {"sites": [{
+        "name": name,
+        "space_id": space or "PUT_THE_SPACE_ID_HERE",
+        "region": region,
+        "repo": ".",
+        "management_token": "PUT_A_STORYBLOK_PERSONAL_ACCESS_TOKEN_HERE",
+        "assets": {
+            "backend": "azure",
+            "container": "storyblok-backup",
+            "prefix": name,
+            "tier": "Cool",
+            "connection_string": "PUT_THE_AZURE_CONNECTION_STRING_HERE",
+        },
+    }]}
+    with open(CONFIG, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(skeleton, f, indent=2)
+        f.write("\n")
+    print(f"""
+  Wrote {os.path.relpath(CONFIG, REPO)}
+
+  Site, space id and region were filled in from the snapshot. Two secrets left:
+
+    management_token   Storyblok -> My Account -> Personal access tokens.
+                       A space-level token is not enough; several endpoints
+                       reject it.
+    connection_string  Azure -> Storage account -> Access keys.
+
+  It is gitignored. Then:
+
+    python -m pip install {' '.join(DEPS)}
+    python tools/sb.py doctor
+    python tools/sb.py backup
+""".rstrip())
+    return 0
+
+
+def cmd_doctor(argv):
+    site = _site_from_snapshot()
+    print(f"\n  {site['name']}  space {site['space_id'] or '?'}  "
+          f"region {site['region']}")
+    ok = True
+
+    print(f"\n  {'python':<22} {sys.version.split()[0]}")
+    for dep, mod in (("requests", "requests"),
+                     ("azure-storage-blob", "azure.storage.blob")):
+        try:
+            __import__(mod)
+            print(f"  {dep:<22} installed")
+        except ImportError:
+            print(f"  {dep:<22} MISSING   python -m pip install {dep}")
+            ok = False
+
+    # A repo with no snapshot is not broken, it is new. Reporting NOT READY for
+    # that told people their fresh repo could not take its first backup, which
+    # was both wrong and discouraging.
+    fresh = not has_snapshot()
+    if fresh:
+        print(f"\n  {'snapshot':<22} none yet - this will be the first backup")
+    else:
+        for name, path in (("snapshot", SNAP),
+                           ("stories", os.path.join(SNAP, "stories")),
+                           ("manifests", os.path.join(SNAP,
+                                                     "manifest_assets.csv")),
+                           ("restore docs", os.path.join(REPO, "RESTORE.md"))):
+            there = os.path.exists(path)
+            print(f"  {name:<22} {'present' if there else 'MISSING'}")
+            ok &= there
+
+    cfg, data = effective_config()
+    if not cfg:
+        print(f"  {'credentials':<22} MISSING")
+        _no_config()
+        return 1
+    src = "tools/sites.json" if cfg == CONFIG else "the environment"
+    print(f"  {'credentials':<22} from {src}")
+    placeholder = "PUT_" in json.dumps(data)
+    if placeholder:
+        print(f"  {'':<22} !! still has PUT_..._HERE placeholders")
+        ok = False
+
+    if not placeholder:
+        print()
+        rc = _run("sb_backup.py", "--check")
+        ok &= rc == 0
+    if ok:
+        print("\n  READY" + ("  -  run:  python tools/sb.py backup --push"
+                             if fresh else ""))
+    else:
+        print("\n  NOT READY")
+    print()
+    return 0 if ok else 1
+
+
+def cmd_backup(argv):
+    return _run("sb_backup.py", *argv)
+
+
+def cmd_audit(argv):
+    return _run("sb_backup.py", "--audit", *argv)
+
+
+def cmd_verify(argv):
+    return _run("sb_backup.py", "--only", "assets", "--verify-assets",
+                "--no-commit", *argv)
+
+
+def cmd_repair(argv):
+    return _run("sb_backup.py", "--only", "assets", "--repair", "--no-commit",
+                *argv)
+
+
+def cmd_index(argv):
+    return subprocess.call([PY, os.path.join(HERE, "sb_indexdb.py"), SNAP])
+
+
+def cmd_restore_story(argv):
+    if not argv or not argv[0].isdigit():
+        print("  usage: python tools/sb.py restore-story <story id> [--apply]")
+        return 2
+    return _run("sb_restore.py", "--mode", "in-place", "--story", argv[0],
+                *argv[1:])
+
+
+def cmd_restore_assets(argv):
+    return _run("sb_restore.py", "--mode", "assets", *argv)
+
+
+def cmd_rebuild(argv):
+    if not argv or not argv[0].isdigit():
+        print("  usage: python tools/sb.py rebuild <empty space id> [--apply]")
+        return 2
+    return _run("sb_restore.py", "--mode", "rebuild", "--into", argv[0],
+                *argv[1:])
+
+
+def cmd_status(argv):
+    """Where this backup stands, in one screen and a few seconds.
+
+    Deliberately cheap: counts on disk, one blob listing, one story-count and
+    one asset-count call. No downloads, so it costs nothing and can be run
+    whenever. `audit` is the thorough version.
+    """
+    site = _site_from_snapshot()
+    print(f"\n  {site['name']}   space {site['space_id']}   region "
+          f"{site['region']}")
+
+    log = subprocess.run(
+        ["git", "-C", REPO, "log", "-1", "--format=%h  %ad  %s",
+         "--date=format:%Y-%m-%d %H:%M"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace")
+    print(f"  last commit   {log.stdout.strip() or '(none yet)'}")
+    dirty = subprocess.run(["git", "-C", REPO, "status", "--porcelain"],
+                           capture_output=True, text=True).stdout.strip()
+    if dirty:
+        print(f"  uncommitted   {len(dirty.splitlines())} file(s) - "
+              f"a run may still be going, or the last one was --no-commit")
+
+    if not has_snapshot():
+        print("\n  no snapshot yet - run: python tools/sb.py backup\n")
+        return 0
+
+    def count(sub):
+        d = os.path.join(SNAP, sub)
+        return len([f for f in os.listdir(d) if f.endswith(".json")]) \
+            if os.path.isdir(d) else 0
+
+    summ = _summary()
+    counts = summ.get("counts", {})
+    assets = json.load(open(os.path.join(SNAP, "assets.json"),
+                            encoding="utf-8")) if os.path.exists(
+        os.path.join(SNAP, "assets.json")) else []
+
+    print("\n  IN THE REPO")
+    print(f"    stories (draft)     {count('stories'):>7}")
+    print(f"    published versions  {count('stories_published'):>7}")
+    print(f"    asset records       {len(assets):>7}")
+    print(f"    components          {counts.get('components', '?'):>7}")
+    print(f"    datasource entries  {counts.get('datasource_entries', '?'):>7}")
+    for extra, label in (("index.sqlite", "index"),
+                         ("manifest_stories.csv", "story map"),
+                         ("manifest_assets.csv", "asset map")):
+        there = os.path.exists(os.path.join(SNAP, extra))
+        print(f"    {label:<19} {'present' if there else 'MISSING':>7}")
+
+    cfg, data = effective_config()
+    if not cfg:
+        print()
+        return _no_config()
+
+    sys.path.insert(0, HERE)
+    from sb_backup import rel_path
+    from sb_common import fetch_list, space_api, token_for
+    from sb_storage import make_backend
+
+    s = data["sites"][0]
+    store, external = make_backend(s, SNAP)
+    if external:
+        stored = store.list_all()
+        want = {rel_path(a, str(s["space_id"])) for a in assets}
+        want.discard(None)
+        have = len(want & set(stored))
+        print(f"\n  IN THE BUCKET   {store.label}")
+        print(f"    files stored        {len(stored):>7}   "
+              f"{sum(stored.values()) / 1e9:.2f} GB")
+        print(f"    of this backup      {have:>7} of {len(want)}"
+              + ("   ** still uploading **" if have < len(want) else "   ok"))
+
+    api, token = space_api(s), token_for(s)
+    live_stories, e1 = fetch_list(api, "stories", "stories", True, token)
+    live_assets, e2 = fetch_list(api, "assets", "assets", True, token)
+    print("\n  VS THE LIVE SPACE")
+    if e1 or e2:
+        print(f"    could not read: {e1 or e2}")
+        return 1
+    ds, da = len(live_stories) - count("stories"), len(live_assets) - len(assets)
+    print(f"    stories             {len(live_stories):>7} live   "
+          + ("in sync" if ds == 0 else f"{ds:+} since this backup"))
+    print(f"    assets              {len(live_assets):>7} live   "
+          + ("in sync" if da == 0 else f"{da:+} since this backup"))
+    if ds or da:
+        print("\n    The space has moved on. That is normal for a live site -"
+              "\n    run `python tools/sb.py backup` to catch up (only the "
+              "changes are fetched).")
+
+    gaps = load_json(os.path.join(SNAP, "accepted_gaps.json"), {}) or {}
+    errs = summ.get("errors", {})
+    if gaps:
+        print(f"\n  accepted gaps   {len(gaps)} (reviewed, in "
+              f"accepted_gaps.json)")
+    if errs:
+        print(f"  not readable    {', '.join(sorted(errs))}")
+        print("                  (endpoints this token type cannot reach - "
+              "see _summary.json)")
+    print()
+    return 0
+
+
+def cmd_changed(argv):
+    """What moved, appeared, vanished or was edited since an earlier commit.
+
+    Built for a space under active reorganisation: AKU is mid-development and
+    whole sections -- news, events, blogs -- are being moved to their proper
+    places. A move changes a story's slug and parent but not its id, so the
+    backup handles it without losing history; this is how you SEE it happen.
+
+    Diffs manifest_stories.csv between a revision and the working tree, which is
+    the whole reason that file is one sorted line per story.
+    """
+    rev = argv[0] if argv and not argv[0].startswith("-") else "HEAD~1"
+    rel = "storyblok/manifest_stories.csv"
+
+    old = subprocess.run(["git", "-C", REPO, "show", f"{rev}:{rel}"],
+                         capture_output=True, text=True, encoding="utf-8",
+                         errors="replace")
+    if old.returncode != 0:
+        print(f"  cannot read {rel} at {rev}:\n  "
+              f"{(old.stderr or '').strip()[:200]}")
+        return 1
+
+    import csv
+    import io
+
+    def rows(text):
+        out = {}
+        for r in csv.DictReader(io.StringIO(text.lstrip("﻿"))):
+            if r.get("id"):
+                out[r["id"]] = r
+        return out
+
+    before = rows(old.stdout)
+    with open(os.path.join(REPO, rel), encoding="utf-8-sig", newline="") as f:
+        after = rows(f.read())
+
+    added = [after[i] for i in after.keys() - before.keys()]
+    gone = [before[i] for i in before.keys() - after.keys()]
+    moved, edited, republished = [], [], []
+    for i in before.keys() & after.keys():
+        b, a = before[i], after[i]
+        if b.get("full_slug") != a.get("full_slug"):
+            moved.append((b, a))
+        elif b.get("updated_at") != a.get("updated_at"):
+            edited.append(a)
+        if b.get("state") != a.get("state"):
+            republished.append((b, a))
+
+    print(f"\n  {rev} -> now\n")
+    print(f"  moved        {len(moved):>5}")
+    print(f"  added        {len(added):>5}")
+    print(f"  removed      {len(gone):>5}")
+    print(f"  edited       {len(edited):>5}")
+    print(f"  state change {len(republished):>5}")
+
+    if moved:
+        print("\n  moved:")
+        for b, a in sorted(moved, key=lambda x: x[1]["full_slug"])[:40]:
+            print(f"    {b['id']:<18} {b['full_slug']}")
+            print(f"    {'':<18}   -> {a['full_slug']}")
+        if len(moved) > 40:
+            print(f"    ... and {len(moved) - 40} more")
+        print("\n  Ids are unchanged, so each of those kept its history and is "
+              "still\n  restorable by id. Nothing was re-created.")
+    for label, items in (("added", added), ("removed", gone)):
+        if items:
+            print(f"\n  {label}:")
+            for r in sorted(items, key=lambda x: x.get("full_slug") or "")[:20]:
+                print(f"    {r['id']:<18} {r.get('full_slug')}")
+            if len(items) > 20:
+                print(f"    ... and {len(items) - 20} more")
+    if gone:
+        print("\n  Removed stories are still in git history, and their assets "
+              "are still\n  in the bucket - see `sb.py restore-assets`.")
+
+    _changed_schema(rev)
+    return 0
+
+
+# What identifies each record, so old and new can be lined up. Schema is fetched
+# in full every run because it is small, so change detection is purely a diff --
+# but nothing surfaced it, and a component gaining a field or a new plugin
+# appearing is exactly what someone wants told. It sat visible only to
+# `git diff`, which nobody runs on a 30,000-line JSON file.
+_SCHEMA_FILES = [
+    ("components.json", "name", "components"),
+    ("component_groups.json", "name", "component groups"),
+    ("presets.json", "name", "presets"),
+    ("datasources.json", "slug", "datasources"),
+    ("datasource_entries.json", "id", "datasource entries"),
+    ("asset_folders.json", "id", "asset folders"),
+    ("space_roles.json", "id", "roles"),
+    ("webhook_endpoints.json", "id", "webhooks"),
+    ("workflows.json", "id", "workflows"),
+    ("workflow_stages.json", "id", "workflow stages"),
+    ("releases.json", "id", "releases"),
+    ("internal_tags.json", "id", "internal tags"),
+]
+
+
+def _changed_schema(rev):
+    """Report schema and settings changes between `rev` and now."""
+    import io
+
+    def at(rel):
+        r = subprocess.run(["git", "-C", REPO, "show",
+                            f"{rev}:storyblok/{rel}"],
+                           capture_output=True, text=True, encoding="utf-8",
+                           errors="replace")
+        if r.returncode != 0:
+            return None
+        try:
+            return json.load(io.StringIO(r.stdout))
+        except ValueError:
+            return None
+
+    def now(rel):
+        p = os.path.join(SNAP, rel)
+        if not os.path.exists(p):
+            return None
+        try:
+            with open(p, encoding="utf-8") as f:
+                return json.load(f)
+        except ValueError:
+            return None
+
+    lines = []
+    for rel, key, label in _SCHEMA_FILES:
+        before, after = at(rel), now(rel)
+        if before is None or after is None:
+            continue
+        if not isinstance(before, list) or not isinstance(after, list):
+            continue
+        b = {str(x.get(key)): x for x in before if isinstance(x, dict)}
+        a = {str(x.get(key)): x for x in after if isinstance(x, dict)}
+        added = sorted(a.keys() - b.keys())
+        gone = sorted(b.keys() - a.keys())
+        # Compared as canonical JSON so a reordered key is not a change. The
+        # snapshot is written sorted for exactly this reason.
+        edited = sorted(k for k in a.keys() & b.keys()
+                        if json.dumps(a[k], sort_keys=True)
+                        != json.dumps(b[k], sort_keys=True))
+        if added or gone or edited:
+            bits = []
+            if added:
+                bits.append(f"+{len(added)}")
+            if gone:
+                bits.append(f"-{len(gone)}")
+            if edited:
+                bits.append(f"~{len(edited)}")
+            lines.append(f"    {label:<20} {' '.join(bits)}")
+            for tag, names in (("added", added), ("removed", gone),
+                               ("changed", edited)):
+                if names:
+                    shown = ", ".join(names[:6])
+                    more = f" ... +{len(names) - 6}" if len(names) > 6 else ""
+                    lines.append(f"      {tag:<8} {shown}{more}")
+
+    plug_b, plug_a = at("required_field_plugins.json"), \
+        now("required_field_plugins.json")
+    if isinstance(plug_b, dict) and isinstance(plug_a, dict):
+        new = sorted(plug_a.keys() - plug_b.keys())
+        lost = sorted(plug_b.keys() - plug_a.keys())
+        if new:
+            lines.append(f"    {'field plugins':<20} +{len(new)}")
+            lines.append(f"      added    {', '.join(new)}")
+            lines.append("      ^ these must exist on the target account "
+                         "before any rebuild")
+        if lost:
+            lines.append(f"    {'field plugins':<20} -{len(lost)}")
+            lines.append(f"      removed  {', '.join(lost)}")
+
+    sp_b, sp_a = at("space.json"), now("space.json")
+    if isinstance(sp_b, dict) and isinstance(sp_a, dict):
+        keys = sorted(k for k in set(sp_b) | set(sp_a)
+                      if json.dumps(sp_b.get(k), sort_keys=True)
+                      != json.dumps(sp_a.get(k), sort_keys=True))
+        # Counters Storyblok bumps on its own; they are noise, not a settings
+        # change, and listing them buries the ones that matter.
+        keys = [k for k in keys if k not in
+                ("updated_at", "collaborator", "collaborators",
+                 "stories_count", "assets_count", "plan_level",
+                 "billing_address", "trial_expiration_date", "duplicatable",
+                 "owner_id", "request_count_today", "traffic_limit",
+                 "has_slack_webhook", "hosted_backup", "options")]
+        if keys:
+            lines.append(f"    {'space settings':<20} ~{len(keys)}")
+            lines.append(f"      changed  {', '.join(keys[:8])}"
+                         + (f" ... +{len(keys) - 8}" if len(keys) > 8 else ""))
+
+    print("\n  SCHEMA AND SETTINGS")
+    print("\n".join(lines) if lines
+          else "    unchanged")
+
+
+def cmd_external(argv):
+    """Bring externally-hosted files into Storyblok and repoint the pages."""
+    return _run("sb_external.py", *argv)
+
+
+def cmd_orphans(argv):
+    """Bucket files the space no longer has an asset row for.
+
+    Keeping them is the point -- that is what makes a deleted asset recoverable.
+    But they are also the part of the bill nobody is watching, so the size is
+    worth seeing. Reports only; nothing here deletes.
+    """
+    sys.path.insert(0, HERE)
+    from sb_backup import rel_path
+    from sb_storage import make_backend
+
+    cfg, data = effective_config()
+    if not cfg:
+        return _no_config()
+    site = data["sites"][0]
+    store, external = make_backend(site, SNAP)
+    if not external:
+        print("  media is inside this repo, not a bucket - nothing to report")
+        return 0
+
+    with open(os.path.join(SNAP, "assets.json"), encoding="utf-8") as f:
+        assets = json.load(f)
+    live = {rel_path(a, str(site["space_id"])) for a in assets}
+    live.discard(None)
+
+    print(f"\n  {store.label}\n  listing…")
+    stored = store.list_all()
+    orphan = {k: v for k, v in stored.items() if k not in live}
+    total = sum(stored.values())
+    orph_bytes = sum(orphan.values())
+
+    def gb(n):
+        return f"{n / 1e9:.2f} GB"
+
+    print(f"\n  in the bucket        {len(stored):>7} files   {gb(total)}")
+    print(f"  still in the space   {len(stored) - len(orphan):>7} files   "
+          f"{gb(total - orph_bytes)}")
+    print(f"  no longer in space   {len(orphan):>7} files   {gb(orph_bytes)}")
+    if orphan:
+        print(f"\n  Those {len(orphan)} are recoverable with "
+              f"`sb.py restore-assets`, which is why they are kept.")
+        print(f"  At Cool-tier rates {gb(orph_bytes)} is roughly "
+              f"${orph_bytes / 1e9 * 0.01:.2f}/month.")
+        for k in sorted(orphan)[:15]:
+            print(f"      {k}")
+        if len(orphan) > 15:
+            print(f"      ... and {len(orphan) - 15} more")
+    return 0
+
+
+COMMANDS = {
+    "init": cmd_init, "setup": cmd_setup, "doctor": cmd_doctor, "backup": cmd_backup,
+    "audit": cmd_audit, "verify": cmd_verify, "repair": cmd_repair,
+    "index": cmd_index, "orphans": cmd_orphans,
+    "changed": cmd_changed, "external": cmd_external, "status": cmd_status,
+    "restore-story": cmd_restore_story, "restore-assets": cmd_restore_assets,
+    "rebuild": cmd_rebuild,
+}
+
+
+def main():
+    argv = sys.argv[1:]
+    if not argv or argv[0] in ("-h", "--help", "help"):
+        print(__doc__.strip())
+        return 0
+    cmd = argv[0]
+    if cmd not in COMMANDS:
+        print(f"  unknown command {cmd!r}\n")
+        print(f"  one of: {', '.join(sorted(COMMANDS))}")
+        return 2
+    return COMMANDS[cmd](argv[1:])
+
+
+if __name__ == "__main__":
+    sys.exit(main())
