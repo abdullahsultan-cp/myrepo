@@ -1,0 +1,2064 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AKU &middot; Storyblok component testing</title>
+<style>
+:root{
+  --bg:#f7f7f5; --panel:#fff; --ink:#1c1c1a; --sub:#6b6b64; --line:#e4e3de;
+  --accent:#0f6b5c; --accent-soft:#e4f2ef;
+  --warn:#8a5a00; --warn-soft:#fbeed4;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#15161a; --panel:#1c1e24; --ink:#eceef0; --sub:#9a9ea6;
+    --line:#2b2e36; --accent:#5fd6b8; --accent-soft:#173330;
+    --warn:#e0b04a; --warn-soft:#3a2f12; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+header.page{padding:32px 40px 20px;border-bottom:1px solid var(--line)}
+header.page h1{margin:0 0 6px;font-size:22px}
+header.page p{margin:0;color:var(--sub);max-width:70ch}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;padding:16px 40px;
+  border-bottom:1px solid var(--line);position:sticky;top:0;
+  background:var(--bg);z-index:5}
+nav.toc a{font-size:12px;color:var(--sub);text-decoration:none;
+  padding:4px 9px;border:1px solid var(--line);border-radius:100px;
+  background:var(--panel)}
+nav.toc a:hover{color:var(--ink);border-color:var(--accent)}
+main{padding:8px 40px 80px;max-width:1100px;margin:0 auto}
+h2.part{margin:40px 0 4px;font-size:18px}
+p.part-note{color:var(--sub);margin:0 0 20px;max-width:80ch}
+.blok{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:18px 20px;margin:0 0 16px}
+.blok-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.blok-head h3{margin:0;font-size:15px}
+.blok-head code{font-size:12px;color:var(--accent);font-weight:600}
+.src{color:var(--sub);font-size:12px;margin:6px 0 14px}
+.tag{font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;
+  padding:2px 8px;border-radius:100px;white-space:nowrap}
+.tag-live{background:var(--accent-soft);color:var(--accent)}
+.tag-schema{background:var(--warn-soft);color:var(--warn)}
+.tag-root{background:var(--accent-soft);color:var(--accent)}
+.tag-nestable{background:var(--line);color:var(--sub)}
+.preview{border-top:1px dashed var(--line);padding-top:14px}
+.meta{color:var(--sub);font-size:12px;margin:10px 0 0}
+.rt h2{font-size:16px;margin:0 0 8px}
+.rt p{margin:0 0 10px}
+.rt blockquote{margin:0;padding:10px 16px;border-left:3px solid var(--accent);
+  color:var(--sub)}
+img{max-width:100%;display:block;border-radius:6px}
+.img-inline{max-width:320px}
+.img-hero{width:100%;max-height:280px;object-fit:cover}
+.iframe-mock{position:relative;max-width:480px}
+.iframe-mock img{max-height:260px;object-fit:cover;width:100%}
+.play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  width:52px;height:52px;border-radius:50%;background:rgba(0,0,0,.55);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:18px}
+.src-label{position:absolute;bottom:8px;left:8px;background:rgba(0,0,0,.6);
+  color:#fff;font-size:11px;padding:2px 8px;border-radius:4px}
+.video-card{position:relative;max-width:420px}
+.video-card img{max-height:220px;object-fit:cover;width:100%}
+.gallery-simple{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.gallery-staggered{display:grid;grid-template-columns:2fr 1fr 1fr;gap:6px}
+.gallery-staggered img:first-child{grid-row:span 2}
+.gallery-simple img,.gallery-staggered img{height:110px;
+  object-fit:cover;width:100%}
+.quote-card{background-size:cover;background-position:center;padding:24px;
+  border-radius:8px;max-width:520px;color:#1c1c1a}
+.quote-card .q{font-size:15px;font-style:italic;margin:0 0 8px}
+.quote-card .attrib{font-weight:600;margin:0}
+.quote-card .cat{color:var(--sub);font-size:12px;margin:4px 0 0}
+.quote-portrait{width:56px;height:56px;border-radius:50%;
+  object-fit:cover;margin-bottom:10px}
+.split{display:flex;gap:18px;align-items:center;max-width:560px}
+.split img{width:160px;border-radius:8px;flex:none}
+.split-reverse{flex-direction:row-reverse}
+.split-text p{margin:0 0 8px}
+.split-text .attrib{font-weight:600;color:var(--accent)}
+.btn{border:none;border-radius:6px;padding:11px 22px;font-size:13px;
+  font-weight:600;cursor:default}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-secondary{background:transparent;color:var(--accent);
+  border:1.5px solid var(--accent)}
+.brand-row{display:flex;gap:24px;align-items:center;padding:12px 0}
+.brand-row img{width:60px;height:auto}
+.brand-gray img{filter:grayscale(1);opacity:.6}
+.social-card{border:1px solid var(--line);border-radius:8px;padding:14px 16px;
+  max-width:340px}
+.social-card .platform{font-weight:700;text-transform:capitalize;
+  color:var(--accent)}
+.pill{display:inline-block;background:var(--accent-soft);color:var(--accent);
+  padding:4px 12px;border-radius:100px;font-size:12px;font-weight:600}
+.root-cards{display:flex;gap:12px;flex-wrap:wrap}
+.root-card{border:1px solid var(--line);border-radius:8px;padding:12px 16px;
+  min-width:160px}
+.root-card h4{margin:0 0 4px;font-size:13px}
+.root-card p{margin:0;color:var(--sub);font-size:12px}
+
+/* Part 2 */
+.group{margin:0 0 28px}
+.group-title{font-size:13px;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--sub);border-bottom:1px solid var(--line);padding-bottom:6px;
+  margin:0 0 10px}
+.group-count{font-weight:400;color:var(--sub)}
+.component-card{background:var(--panel);border:1px solid var(--line);
+  border-radius:8px;margin:0 0 8px;padding:0}
+.component-card summary{cursor:pointer;padding:10px 14px;font-size:13px;
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.component-card summary .cname{font-weight:600}
+.component-card summary code{color:var(--accent);font-size:11.5px}
+.field-count{margin-left:auto;color:var(--sub);font-size:11.5px}
+.field-table{width:100%;border-collapse:collapse;font-size:12px;
+  margin:0 14px 14px;width:calc(100% - 28px)}
+.field-table th{text-align:left;color:var(--sub);font-weight:500;
+  border-bottom:1px solid var(--line);padding:5px 8px}
+.field-table td{padding:5px 8px;border-bottom:1px solid var(--line)}
+.field-table code{color:var(--accent)}
+</style>
+</head>
+<body>
+<header class="page">
+  <h1>Component testing</h1>
+  <p>Every blok this migration pipeline builds, every variant its schema
+  allows, and the full 97-component space schema for reference &mdash;
+  generated by <code>Testing/Component-Testing/build.py</code> from
+  <code>storyblok_space/components.json</code> and the reference story
+  <code>News-Pipeline/data/migrate/demo/200437344487526.json</code>. This is a
+  payload-shape mockup for visual QA, not the live site design &mdash; the real
+  templates live in the dev's own front-end app.</p>
+</header>
+<nav class="toc"><a href="#rich_text">rich_text</a><a href="#image">image</a><a href="#iframe">iframe</a><a href="#media_section">media_section</a><a href="#quote_banner">quote_banner</a><a href="#split_section">split_section</a><a href="#button">button</a><a href="#brand_banner">brand_banner</a><a href="#social_embed">social_embed</a><a href="#article_language_link">article_language_link</a><a href="#root types">root types</a><a href="#part2">full space schema</a></nav>
+<main>
+  <h2 class="part">Part 1 &middot; what this pipeline builds</h2>
+  <p class="part-note">Green tag = seen in a real, live payload (the
+  reference story or a published run). Amber tag = a variant the schema
+  allows but this pipeline has never produced &mdash; shown so this is a
+  complete catalog, not a claim of production coverage.</p>
+  
+    <article class="blok" id="rich_text-default">
+      <header class="blok-head">
+        <h3>rich_text <code>default</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">pipeline/migrate/upload/build_payload.py &middot; rich_text_blok()</p>
+      <div class="preview">
+      <div class="rt">
+        <h2>A heading, as it comes out of SharePoint</h2>
+        <p>Launched under AKU's Research Strategic Plan, the RISE Programme is
+        an Early Career Research Academy designed to equip faculty with the
+        essential skills needed for a successful research career &mdash;
+        <a href="#">a link</a>, some <strong>bold</strong> and
+        <em>italic</em>, and a superscript<sup>1</sup>.</p>
+        <ul><li>Grant success</li><li>Collaboration across regions</li>
+        <li>Career development</li></ul>
+        <blockquote>&ldquo;Far more than writing successful grants.&rdquo;
+        &mdash; Prof. Salim S. Virani</blockquote>
+      </div>
+      <p class="meta">spacing = SPACING_TEXT (mobile 20px / desktop
+      176px &mdash; the narrow reading column) &middot; bg_pattern, pattern_height,
+      pattern_mobile_height available, usually empty</p></div>
+    </article>
+    <article class="blok" id="image-variant=image">
+      <header class="blok-head">
+        <h3>image <code>variant=image</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &middot; image_blok() &mdash; a lone body image, kept inside the flow</p>
+      <div class="preview"><img class="img-inline" src="https://a.storyblok.com/f/289824742951963/366x427/10b4a15217/saman_barkat.png" alt="body image"><p class="meta">spacing = SPACING_MID (20px / 80px)</p></div>
+    </article>
+    <article class="blok" id="image-variant=hero">
+      <header class="blok-head">
+        <h3>image <code>variant=hero</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not used by this pipeline &mdash; the standalone blok renders too large for an inline illustration (see build_payload.py comment)</p>
+      <div class="preview"><img class="img-hero" src="https://a.storyblok.com/f/289824742951963/2000x1324/ae04c901e5/photo_29.jpg" alt="hero image"></div>
+    </article>
+    <article class="blok" id="iframe-inline / 16:9">
+      <header class="blok-head">
+        <h3>iframe <code>inline / 16:9</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &middot; iframe_blok() &mdash; a tweet or other embed, in place</p>
+      <div class="preview">
+      <div class="iframe-mock">
+        <img src="https://a.storyblok.com/f/289824742951963/2560x1707/229e9b326a/instititue.png" alt="">
+        <div class="play">&#9658;</div>
+        <span class="src-label">src: https://aku-dev.vercel.app/</span>
+      </div>
+      <p class="meta">display_mode=inline &middot; aspect_ratio=16:9 &middot;
+      content_align=left &middot; spacing = SPACING_MID</p>
+      <p class="meta">other schema options &mdash; not seen live:
+      display_mode: lightbox, button &middot;
+      aspect_ratio: 4:3, 1:1, 21:9, 3:2, 9:16 &middot;
+      content_align: center, right</p></div>
+    </article>
+    <article class="blok" id="media_section-type=video">
+      <header class="blok-head">
+        <h3>media_section <code>type=video</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &middot; media_section_video()</p>
+      <div class="preview">
+      <div class="video-card">
+        <img src="https://a.storyblok.com/f/289824742951963/2560x1707/229e9b326a/instititue.png" alt="">
+        <div class="play">&#9658;</div>
+      </div>
+      <p class="meta">video_url = youtube.com/watch?v=9dDpy3jwn4c (or a
+      hosted file) &middot; spacing = SPACING_FULL (no side padding)</p></div>
+    </article>
+    <article class="blok" id="media_section-type=gallery, gallery_layout=simple">
+      <header class="blok-head">
+        <h3>media_section <code>type=gallery, gallery_layout=simple</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &middot; media_section_gallery() &mdash; 2+ images, appended at the point they occur, or at the end if unpositioned</p>
+      <div class="preview"><div class="gallery-simple"><img src="https://a.storyblok.com/f/289824742951963/2463094/b298c53b1d/3405-richtext-25644d4383-wed_speakers.jpg" alt=""><img src="https://a.storyblok.com/f/289824742951963/6926416/22a1c04449/3405-richtext-1a4c2d5e97-nakawa-1.JPG" alt=""><img src="https://a.storyblok.com/f/289824742951963/731143/87e178a16c/3405-richtext-fa084ba4e8-nairobi2.jpg" alt=""><img src="https://a.storyblok.com/f/289824742951963/166016/5e477b3e07/3405-richtext-483b2c4339-nairobi1.jpg" alt=""><img src="https://a.storyblok.com/f/289824742951963/227240/1086c1da3b/3405-richtext-8c6e8cc738-dar-1.jpeg" alt=""></div><p class="meta">spacing = SPACING_MID</p></div>
+    </article>
+    <article class="blok" id="media_section-type=gallery, gallery_layout=staggered">
+      <header class="blok-head">
+        <h3>media_section <code>type=gallery, gallery_layout=staggered</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema default, not emitted &mdash; this pipeline always sets gallery_layout explicitly to "simple"</p>
+      <div class="preview"><div class="gallery-staggered"><img src="https://a.storyblok.com/f/289824742951963/2463094/b298c53b1d/3405-richtext-25644d4383-wed_speakers.jpg" alt=""><img src="https://a.storyblok.com/f/289824742951963/6926416/22a1c04449/3405-richtext-1a4c2d5e97-nakawa-1.JPG" alt=""><img src="https://a.storyblok.com/f/289824742951963/731143/87e178a16c/3405-richtext-fa084ba4e8-nairobi2.jpg" alt=""><img src="https://a.storyblok.com/f/289824742951963/166016/5e477b3e07/3405-richtext-483b2c4339-nairobi1.jpg" alt=""><img src="https://a.storyblok.com/f/289824742951963/227240/1086c1da3b/3405-richtext-8c6e8cc738-dar-1.jpeg" alt=""></div></div>
+    </article>
+    <article class="blok" id="media_section-type=image">
+      <header class="blok-head">
+        <h3>media_section <code>type=image</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not used &mdash; the pipeline uses the standalone image blok for a single picture instead</p>
+      <div class="preview"><img class="img-hero" src="https://a.storyblok.com/f/289824742951963/2000x1324/ae04c901e5/photo_29.jpg" alt=""></div>
+    </article>
+    <article class="blok" id="quote_banner-variant=centered">
+      <header class="blok-head">
+        <h3>quote_banner <code>variant=centered</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &middot; quote_banner_blok() &mdash; every pull quote with no accompanying image</p>
+      <div class="preview">
+      <div class="quote-card" style="background-image:url(https://a.storyblok.com/f/289824742951963/375x184/c65753b5c0/quote-backgroung.png)">
+        <p class="q">&ldquo;In the practice of medicine, knowledge and
+        ethics must walk hand in hand.&rdquo;</p>
+        <p class="attrib">&mdash; President Sulaiman Shahabuddin</p>
+        <p class="cat">Convocation</p>
+      </div>
+      <p class="meta">date, category and portrait left empty unless the
+      source gives them &middot; spacing = SPACING_FULL</p></div>
+    </article>
+    <article class="blok" id="quote_banner-variant=attributed">
+      <header class="blok-head">
+        <h3>quote_banner <code>variant=attributed</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not produced by this pipeline</p>
+      <div class="preview">
+      <div class="quote-card" style="background-image:url(https://a.storyblok.com/f/289824742951963/375x184/c65753b5c0/quote-backgroung.png)">
+        <img class="quote-portrait" src="https://a.storyblok.com/f/289824742951963/366x427/10b4a15217/saman_barkat.png" alt="">
+        <p class="q">Sample attributed quote text.</p>
+        <p class="attrib">&mdash; Someone, Some Title</p>
+      </div></div>
+    </article>
+    <article class="blok" id="quote_banner-variant=event">
+      <header class="blok-head">
+        <h3>quote_banner <code>variant=event</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not produced by this pipeline &mdash; has its own event_label / date_label fields</p>
+      <div class="preview">
+      <div class="quote-card" style="background-image:url(https://a.storyblok.com/f/289824742951963/375x184/c65753b5c0/quote-backgroung.png)">
+        <p class="q">Sample event quote text.</p>
+        <p class="attrib">event_label &middot; date_label</p>
+      </div></div>
+    </article>
+    <article class="blok" id="split_section-layout=default, image_variant=default">
+      <header class="blok-head">
+        <h3>split_section <code>layout=default, image_variant=default</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &middot; split_section_blok() &mdash; a pull quote WITH an image: quote left, portrait right</p>
+      <div class="preview">
+      <div class="split">
+        <img src="https://a.storyblok.com/f/289824742951963/366x427/10b4a15217/saman_barkat.png" alt="">
+        <div class="split-text">
+          <p>&ldquo;I am thankful to ELE_net and the team to support us at
+          every step possible.&rdquo;</p>
+          <p class="attrib">Saman Barkat</p>
+        </div>
+      </div></div>
+    </article>
+    <article class="blok" id="split_section-layout=reverse">
+      <header class="blok-head">
+        <h3>split_section <code>layout=reverse</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not produced by this pipeline</p>
+      <div class="preview">
+      <div class="split split-reverse">
+        <div class="split-text">
+          <p>Same content, image and text swap sides.</p>
+        </div>
+        <img src="https://a.storyblok.com/f/289824742951963/366x427/10b4a15217/saman_barkat.png" alt="">
+      </div></div>
+    </article>
+    <article class="blok" id="button-variant=primary, icon=none">
+      <header class="blok-head">
+        <h3>button <code>variant=primary, icon=none</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">reference story &middot; label="TEST"</p>
+      <div class="preview"><button class="btn btn-primary">TEST</button><p class="meta">field is <code>Spacing</code> (capital S) &mdash; the one blok that spells it differently &middot; 20px / 80px</p></div>
+    </article>
+    <article class="blok" id="button-variant=secondary, icon=arrow-right">
+      <header class="blok-head">
+        <h3>button <code>variant=secondary, icon=arrow-right</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not produced by this pipeline</p>
+      <div class="preview"><button class="btn btn-secondary">Learn more &rarr;</button></div>
+    </article>
+    <article class="blok" id="brand_banner + brand_logo-variant=normal">
+      <header class="blok-head">
+        <h3>brand_banner + brand_logo <code>variant=normal</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">reference story &middot; variant=normal, 5 logos</p>
+      <div class="preview"><div class="brand-row brand-normal"><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""></div><p class="meta">spacing = SPACING_FULL (no padding)</p></div>
+    </article>
+    <article class="blok" id="brand_banner + brand_logo-variant=hover-grayscale">
+      <header class="blok-head">
+        <h3>brand_banner + brand_logo <code>variant=hover-grayscale</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema default, not produced by this pipeline</p>
+      <div class="preview"><div class="brand-row brand-gray"><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""><img src="https://a.storyblok.com/f/289824742951963/91x113/000957a952/isqua.png" alt=""></div></div>
+    </article>
+    <article class="blok" id="social_embed-variant=twitter">
+      <header class="blok-head">
+        <h3>social_embed <code>variant=twitter</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">the shared change: iframe -> social_embed for a tweet (pipeline/migrate/update/_template.py)</p>
+      <div class="preview">
+      <div class="social-card social-twitter">
+        <span class="platform">twitter</span>
+        <p>url &middot; align=center &middot; show_text=true</p>
+      </div></div>
+    </article>
+    <article class="blok" id="social_embed-variant=facebook">
+      <header class="blok-head">
+        <h3>social_embed <code>variant=facebook</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not produced by this pipeline</p>
+      <div class="preview">
+      <div class="social-card social-facebook">
+        <span class="platform">facebook</span>
+        <p>url &middot; align=center &middot; show_text=true</p>
+      </div></div>
+    </article>
+    <article class="blok" id="social_embed-variant=instagram">
+      <header class="blok-head">
+        <h3>social_embed <code>variant=instagram</code></h3>
+        <span class="tag tag-schema">schema only &mdash; not yet produced by this pipeline</span>
+      </header>
+      <p class="src">schema option, not produced by this pipeline</p>
+      <div class="preview">
+      <div class="social-card social-instagram">
+        <span class="platform">instagram</span>
+        <p>url &middot; align=center &middot; show_text=true</p>
+      </div></div>
+    </article>
+    <article class="blok" id="article_language_link-default">
+      <header class="blok-head">
+        <h3>article_language_link <code>default</code></h3>
+        <span class="tag tag-live">seen in a real payload</span>
+      </header>
+      <p class="src">build_payload.py &mdash; one per real alternate language</p>
+      <div class="preview"><span class="pill">urdu &rarr; PDF, uploaded to Storyblok</span><p class="meta">one per real alternate language; "Photo gallery" and similar labels are dropped, not mislabelled as a translation</p></div>
+    </article>
+    <article class="blok">
+      <header class="blok-head"><h3>the three root article types</h3></header>
+      <p class="src">each is a component in its own right (is_root=true) that
+      assembles the bloks above into `body` &mdash; see
+      pipeline/migrate/upload/build_payload.py</p>
+      <div class="root-cards">
+      <div class="root-card">
+        <h4>news_article</h4>
+        <p>3,606 live &middot; News-Pipeline</p>
+      </div>
+      <div class="root-card">
+        <h4>blog_article</h4>
+        <p>83 live &middot; Blogs-Pipeline</p>
+      </div>
+      <div class="root-card">
+        <h4>event_article</h4>
+        <p>2,710 live &middot; Events-Pipeline</p>
+      </div></div>
+    </article>
+
+  <h2 class="part" id="part2">Part 2 &middot; every component in the space
+  (97)</h2>
+  <p class="part-note">Auto-generated from storyblok_space/components.json,
+  grouped the way the dev grouped them in Storyblok. Field tables only &mdash;
+  most of these (header, footer, hero, carousels, programme pages, ...) are
+  page-builder components no pipeline in this repo touches, and there is no
+  CSS here to render them against. Re-run build.py after
+  pipeline/migrate/spaces/dump refreshes components.json to keep this in
+  sync.</p>
+  
+        <section class="group">
+          <h3 class="group-title">Globals
+          <span class="group-count">1</span></h3>
+          
+      <details class="component-card" id="c-entity_settings">
+        <summary><span class="cname">entity_settings</span>
+        <code>entity_settings</code> <span class="tag tag-root">root</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>header_variant</code></td><td>option</td>
+      <td>default, sonam, mc</td><td></td></tr><tr><td><code>Header</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>Footer</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">Hero
+          <span class="group-count">2</span></h3>
+          
+      <details class="component-card" id="c-hero">
+        <summary><span class="cname">Hero</span>
+        <code>hero</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">7 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>primary, secondary, tertiary</td><td>primary</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>subtitle</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>slides</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-hero_slide">
+        <summary><span class="cname">Hero Slide</span>
+        <code>hero_slide</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">7 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>subtitle</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>video</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>video_url</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">accordian
+          <span class="group-count">7</span></h3>
+          
+      <details class="component-card" id="c-info_accordion">
+        <summary><span class="cname">info_accordion</span>
+        <code>info_accordion</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>items</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-info_accordion_item">
+        <summary><span class="cname">Info Accordion Item</span>
+        <code>info_accordion_item</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>eyebrow</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cards</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>content</code></td><td>textarea</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programme_accordion">
+        <summary><span class="cname">Programme Accordion</span>
+        <code>programme_accordion</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">8 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>entity</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>offered_in</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>programme_type</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>admission_status</code></td><td>option</td>
+      <td>open, closed</td><td>open</td></tr><tr><td><code>admission_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>icon_variant</code></td><td>option</td>
+      <td>responsive, chevron, plus</td><td>responsive</td></tr><tr><td><code>items</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programme_accordion_item">
+        <summary><span class="cname">Programme Accordion Item</span>
+        <code>programme_accordion_item</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>deadline</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programme_filter">
+        <summary><span class="cname">Programme Filter</span>
+        <code>programme_filter</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>field_key</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>options</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programme_filter_option">
+        <summary><span class="cname">Programme Filter Option</span>
+        <code>programme_filter_option</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>value</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programme_item">
+        <summary><span class="cname">Programme Item</span>
+        <code>programme_item</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">17 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>admissions_status</code></td><td>option</td>
+      <td>open, closed</td><td>open</td></tr><tr><td><code>entity</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>entity_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>offered_in</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>offered_in_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>programme_type</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>programme_type_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>deadline</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>content</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>filter_entity</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>filter_programme_type</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>filter_country</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">banner
+          <span class="group-count">5</span></h3>
+          
+      <details class="component-card" id="c-brand_banner">
+        <summary><span class="cname">Brand Banner</span>
+        <code>brand_banner</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>variant</code></td><td>option</td>
+      <td>hover-grayscale, normal</td><td>hover-grayscale</td></tr><tr><td><code>logos</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-quote_banner">
+        <summary><span class="cname">Quote Banner</span>
+        <code>quote_banner</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">11 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>centered, attributed, event</td><td>centered</td></tr><tr><td><code>quote</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>attribution</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>category</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>event_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>portrait</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>background_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>bg_pattern</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-search_strip">
+        <summary><span class="cname">Search Strip</span>
+        <code>search_strip</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">8 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>default, compact</td><td>default</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>tabs</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>default_tab</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>keyword_options</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>search_placeholder</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>search_button_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pattern_image</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-strip_banner">
+        <summary><span class="cname">Strip Banner</span>
+        <code>strip_banner</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">17 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>default, stay_connected, newsletter, ecommons</td><td>default</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>show_socials</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>social_links</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>show_input_news_variant</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>input_placeholder</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-strip_banner_social_link">
+        <summary><span class="cname">Strip Banner Social Link</span>
+        <code>strip_banner_social_link</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>platform</code></td><td>option</td>
+      <td>facebook, youtube, twitter, linkedin, instagram, custom</td><td>facebook</td></tr><tr><td><code>icon</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">cards
+          <span class="group-count">14</span></h3>
+          
+      <details class="component-card" id="c-article_card">
+        <summary><span class="cname">Article Card</span>
+        <code>article_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">10 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>category</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>reading_minutes</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pill_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pill_variant</code></td><td>option</td>
+      <td>stone, green, lime, brown, bronze, terracotta, rose, gold, taupe</td><td>stone</td></tr><tr><td><code>tag_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>tag_variant</code></td><td>option</td>
+      <td>green, lime, brown, bronze, terracotta, rose, gold, taupe, stone</td><td>green</td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-card">
+        <summary><span class="cname">Card</span>
+        <code>card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">19 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>news, article, event, topic, link, profile, stat, tile, highlight</td><td>news</td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>subtitle</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>category</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>location</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>meta</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>number</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>icon</code></td><td>option</td>
+      <td>star, book, calendar, graduation, award, heart, users, building, baby, health</td><td>star</td></tr><tr><td><code>pill_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pill_variant</code></td><td>option</td>
+      <td>green, lime, brown, bronze, terracotta, rose, gold, taupe, stone</td><td>green</td></tr><tr><td><code>tag_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>tag_variant</code></td><td>option</td>
+      <td>green, lime, brown, bronze, terracotta, rose, gold, taupe, stone</td><td>bronze</td></tr><tr><td><code>icon_image</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-compact_news_card">
+        <summary><span class="cname">Compact News Card</span>
+        <code>compact_news_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-event_card">
+        <summary><span class="cname">Event Card</span>
+        <code>event_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">9 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>pill_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pill_variant</code></td><td>option</td>
+      <td>green, lime, brown, bronze, terracotta, rose, gold, taupe, stone</td><td>green</td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>entity</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>event_type</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>location</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-highlight_card">
+        <summary><span class="cname">Highlight Card</span>
+        <code>highlight_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>icon</code></td><td>option</td>
+      <td>star, book, calendar, graduation, award, heart, users, building, baby, health, partner</td><td>star</td></tr><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>icon_image</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-info_accordion_card">
+        <summary><span class="cname">info_accordion_card</span>
+        <code>info_accordion_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-institute_card">
+        <summary><span class="cname">Institute Card</span>
+        <code>institute_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>Visit Website</td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-link_card">
+        <summary><span class="cname">Link Card</span>
+        <code>link_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>See More</td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-media_card">
+        <summary><span class="cname">Media Card</span>
+        <code>media_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">6 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>Read more</td></tr><tr><td><code>size</code></td><td>option</td>
+      <td>default, hero</td><td>default</td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-news_card">
+        <summary><span class="cname">News Card</span>
+        <code>news_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>Read More</td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-profile_card">
+        <summary><span class="cname">Profile Card</span>
+        <code>profile_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>subtitle</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-stats_card">
+        <summary><span class="cname">Stats Card</span>
+        <code>stats_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>number</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>label</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>icon</code></td><td>option</td>
+      <td>, star, book, calendar, graduation, award, heart, users, building, baby, health, partner</td><td></td></tr><tr><td><code>icon_image</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-student_life_card">
+        <summary><span class="cname">Student Life Card</span>
+        <code>student_life_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-topic_card">
+        <summary><span class="cname">Topic Card</span>
+        <code>topic_card</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">carousel
+          <span class="group-count">5</span></h3>
+          
+      <details class="component-card" id="c-carousel_alumni_slide">
+        <summary><span class="cname">Carousel Alumni Slide</span>
+        <code>carousel_alumni_slide</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>subtitle</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>Discover More</td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-carousel_institute_slide">
+        <summary><span class="cname">Carousel Institute Slide</span>
+        <code>carousel_institute_slide</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-carousel_research_slide">
+        <summary><span class="cname">Carousel Research Slide</span>
+        <code>carousel_research_slide</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>body</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-carousel_section">
+        <summary><span class="cname">Carousel Section</span>
+        <code>carousel_section</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">8 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>research, alumni, institutes, testimonials</td><td>research</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>background_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>view_all_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>view_all_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>slides</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-carousel_testimonial_slide">
+        <summary><span class="cname">Carousel Testimonial Slide</span>
+        <code>carousel_testimonial_slide</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>name</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>role</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>quote</code></td><td>textarea</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">common
+          <span class="group-count">36</span></h3>
+          
+      <details class="component-card" id="c-article_language_link">
+        <summary><span class="cname">Article Language Link</span>
+        <code>article_language_link</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-article_meta">
+        <summary><span class="cname">Article Meta</span>
+        <code>article_meta</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">18 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>author</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>read_time</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>languages</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_share</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>bg_pattern</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>pattern_position</code></td><td>option</td>
+      <td>top, bottom</td><td>top</td></tr><tr><td><code>pattern_opacity</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>pattern_height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>pattern_mobile_height</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-box">
+        <summary><span class="cname">Box</span>
+        <code>box</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">22 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>display</code></td><td>option</td>
+      <td>block, flex, grid, inline-flex</td><td>block</td></tr><tr><td><code>direction</code></td><td>option</td>
+      <td>row, column, row-reverse, column-reverse</td><td></td></tr><tr><td><code>justify</code></td><td>option</td>
+      <td>start, center, end, between, around, evenly, stretch</td><td></td></tr><tr><td><code>align</code></td><td>option</td>
+      <td>start, center, end, stretch, baseline</td><td></td></tr><tr><td><code>gap</code></td><td>option</td>
+      <td>0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16</td><td>4</td></tr><tr><td><code>wrap</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>enable_horizontal_spacing</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>enable_vertical_spacing</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>bg_pattern</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>pattern_position</code></td><td>option</td>
+      <td>top, bottom</td><td>top</td></tr><tr><td><code>pattern_opacity</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>pattern_height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>pattern_mobile_height</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-brand_logo">
+        <summary><span class="cname">Brand Logo</span>
+        <code>brand_logo</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-button">
+        <summary><span class="cname">Button</span>
+        <code>button</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>variant</code></td><td>option</td>
+      <td>primary, secondary</td><td>primary</td></tr><tr><td><code>icon</code></td><td>option</td>
+      <td>none, arrow-right</td><td>none</td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>Spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-carousel">
+        <summary><span class="cname">Carousel</span>
+        <code>carousel</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">6 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>slides</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>auto_play</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>interval</code></td><td>number</td>
+      <td></td><td>6</td></tr><tr><td><code>loop</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>show_dots</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>show_arrows</code></td><td>boolean</td>
+      <td></td><td>False</td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-chairs_grid">
+        <summary><span class="cname">chairs_grid</span>
+        <code>chairs_grid</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>photos</code></td><td>multiasset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-feature">
+        <summary><span class="cname">feature</span>
+        <code>feature</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">1 field
+        </span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>name</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-footer">
+        <summary><span class="cname">Footer</span>
+        <code>footer</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">7 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>logo</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>copyright_text</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>columns</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>social_icons</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>bottom_links</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>affiliations</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>affiliations_mobile</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-footer_affiliation">
+        <summary><span class="cname">Footer Affiliation</span>
+        <code>footer_affiliation</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>file</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>caption</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>mob_caption</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-footer_column">
+        <summary><span class="cname">Footer Column</span>
+        <code>footer_column</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>links</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-footer_link">
+        <summary><span class="cname">Footer Link</span>
+        <code>footer_link</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-footer_social">
+        <summary><span class="cname">Footer Social</span>
+        <code>footer_social</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>icon</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-global">
+        <summary><span class="cname">Global</span>
+        <code>global</code> <span class="tag tag-root">root</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>header</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>footer</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-header">
+        <summary><span class="cname">Header</span>
+        <code>header</code> <span class="tag tag-root">root</span><span class="tag tag-nestable">nestable</span>
+        <span class="field-count">10 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>logo</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>mobile_logo_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>logo_image_alt_text</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>logo_text</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>subtitle_text</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>logo_dropdown</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>nav_items</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>search_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>Donate Now</td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-header_nav_item">
+        <summary><span class="cname">Header Nav Item</span>
+        <code>header_nav_item</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">8 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>has_dropdown</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>dropdown_left_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>dropdown_left_description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>dropdown_left_cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>dropdown_left_cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>dropdown_columns</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-iframe">
+        <summary><span class="cname">Iframe</span>
+        <code>iframe</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">21 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>src</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>display_mode</code></td><td>option</td>
+      <td>inline, lightbox, button</td><td>inline</td></tr><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>show_play_overlay</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>heading</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>richtext</td>
+      <td></td><td></td></tr><tr><td><code>caption</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>content_align</code></td><td>option</td>
+      <td>left, center, right</td><td>left</td></tr><tr><td><code>aspect_ratio</code></td><td>option</td>
+      <td>16:9, 4:3, 1:1, 21:9, 3:2, 9:16</td><td>16:9</td></tr><tr><td><code>height</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>rounded</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>loading</code></td><td>option</td>
+      <td>lazy, eager</td><td>lazy</td></tr><tr><td><code>allow_fullscreen</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>allow</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>sandbox</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>referrer_policy</code></td><td>option</td>
+      <td>no-referrer, no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url</td><td></td></tr><tr><td><code>show_external_link</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>external_link_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-image">
+        <summary><span class="cname">Image</span>
+        <code>image</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">7 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>variant</code></td><td>option</td>
+      <td>image, hero</td><td>image</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-impact_stories">
+        <summary><span class="cname">Impact Stories</span>
+        <code>impact_stories</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">6 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>view_all_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>view_all_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>stories</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-impact_story">
+        <summary><span class="cname">Impact Story</span>
+        <code>impact_story</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">6 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>category</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>read_time</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>Read more</td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-layout_grid">
+        <summary><span class="cname">Layout Grid</span>
+        <code>layout_grid</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">20 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>layout</code></td><td>option</td>
+      <td>grid, flex</td><td>grid</td></tr><tr><td><code>cols</code></td><td>option</td>
+      <td>1, 2, 3, 4, 5, 6</td><td>3</td></tr><tr><td><code>mobile_cols</code></td><td>option</td>
+      <td>1, 2, 3, 4</td><td>1</td></tr><tr><td><code>gap</code></td><td>option</td>
+      <td>0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16</td><td>6</td></tr><tr><td><code>direction</code></td><td>option</td>
+      <td>row, column, row-reverse, column-reverse</td><td>row</td></tr><tr><td><code>justify</code></td><td>option</td>
+      <td>start, center, end, between, around, evenly, stretch</td><td></td></tr><tr><td><code>align</code></td><td>option</td>
+      <td>start, center, end, stretch, baseline</td><td></td></tr><tr><td><code>wrap</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>items</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-logo_dropdown_item">
+        <summary><span class="cname">Logo Dropdown Item</span>
+        <code>logo_dropdown_item</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>logo</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-nav_dropdown_column">
+        <summary><span class="cname">Nav Dropdown Column</span>
+        <code>nav_dropdown_column</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>heading</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>links</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-nav_dropdown_link">
+        <summary><span class="cname">Nav Dropdown Link</span>
+        <code>nav_dropdown_link</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>has_submenu</code></td><td>boolean</td>
+      <td></td><td>False</td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-news_article">
+        <summary><span class="cname">News</span>
+        <code>news_article</code> <span class="tag tag-root">root</span>
+        <span class="field-count">17 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>author</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>read_time</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>languages</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_share</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>banner_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_similar</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>similar_show_header</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>show_social</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>social_show_header</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>background_pattern</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>entities</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>isGlobal</code></td><td>boolean</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-pill">
+        <summary><span class="cname">Pill</span>
+        <code>pill</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>variant</code></td><td>option</td>
+      <td>green, lime, brown, bronze, terracotta, rose, gold, taupe, stone, neutral, admissions_open, admissions_closed, audience_eligible, audience_restricted</td><td>green</td></tr><tr><td><code>custom_bg_color</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>custom_text_color</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-quick_action">
+        <summary><span class="cname">Quick Action</span>
+        <code>quick_action</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>icon</code></td><td>option</td>
+      <td>book, users, partner, graduation, calendar, award, heart, building, baby, health, star</td><td>book</td></tr><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>icon_image</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-related_cards">
+        <summary><span class="cname">Related Cards</span>
+        <code>related_cards</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">6 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>show_header</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-rich_text">
+        <summary><span class="cname">Rich Text</span>
+        <code>rich_text</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>content</code></td><td>richtext</td>
+      <td></td><td></td></tr><tr><td><code>bg_pattern</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>pattern_height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>pattern_mobile_height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-row">
+        <summary><span class="cname">Row</span>
+        <code>row</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>items</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>width</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>align_items</code></td><td>option</td>
+      <td>start, center, end, stretch, baseline</td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>justify_content</code></td><td>option</td>
+      <td>start, center, end, between, around, evenly</td><td></td></tr><tr><td><code>on_mobile_wrap</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>background_color</code></td><td>custom</td>
+      <td></td><td>{&quot;plugin&quot;:&quot;native-color-picker&quot;,&quot;color&quot;:&quot;#ffffff&quot;}</td></tr><tr><td><code>radius</code></td><td>option</td>
+      <td>none, sm, md, lg, xl, 2xl, 3xl, full</td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-row_item">
+        <summary><span class="cname">Row Item</span>
+        <code>row_item</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">9 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>width</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>width_mode</code></td><td>option</td>
+      <td>auto, fit, fill</td><td>auto</td></tr><tr><td><code>align_items</code></td><td>option</td>
+      <td>start, center, end, stretch, baseline</td><td></td></tr><tr><td><code>justify_content</code></td><td>option</td>
+      <td>start, center, end, between, around, evenly</td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>background_color</code></td><td>custom</td>
+      <td></td><td>{&quot;plugin&quot;:&quot;native-color-picker&quot;,&quot;color&quot;:&quot;#ffffff&quot;}</td></tr><tr><td><code>radius</code></td><td>option</td>
+      <td>none, sm, md, lg, xl, 2xl, 3xl, full</td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-social_embed">
+        <summary><span class="cname">Social Media Embed</span>
+        <code>social_embed</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>variant</code></td><td>option</td>
+      <td>twitter, facebook, instagram</td><td>twitter</td></tr><tr><td><code>url</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>align</code></td><td>option</td>
+      <td>left, center, right</td><td>left</td></tr><tr><td><code>show_text</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-student_affairs">
+        <summary><span class="cname">Student Affairs</span>
+        <code>student_affairs</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">8 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>bg_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>logo</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>email</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>social_links</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-student_affairs_social">
+        <summary><span class="cname">Student Affairs Social</span>
+        <code>student_affairs_social</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">3 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>platform</code></td><td>option</td>
+      <td>facebook, instagram, spotify, linktree, custom</td><td>facebook</td></tr><tr><td><code>url</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>icon</code></td><td>asset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-tab">
+        <summary><span class="cname">Tab</span>
+        <code>tab</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>value</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-video">
+        <summary><span class="cname">Video</span>
+        <code>video</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>video_url</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>auto_play</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>show_controls</code></td><td>boolean</td>
+      <td></td><td>True</td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">sections
+          <span class="group-count">16</span></h3>
+          
+      <details class="component-card" id="c-events">
+        <summary><span class="cname">Events</span>
+        <code>events</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">14 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>events</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-featured_news">
+        <summary><span class="cname">Featured News</span>
+        <code>featured_news</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">11 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>hero_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>hero_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>hero_date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>hero_pill_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>hero_pill_variant</code></td><td>option</td>
+      <td>brown, green</td><td>green</td></tr><tr><td><code>hero_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>side_items</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_all_label</code></td><td>text</td>
+      <td></td><td>Show All</td></tr><tr><td><code>show_all_link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-institutes">
+        <summary><span class="cname">List of Institutes</span>
+        <code>institutes</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cards</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-media_coverage">
+        <summary><span class="cname">Media Coverage</span>
+        <code>media_coverage</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td>View All</td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>video_url</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>video_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>video_category</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>video_date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>auto_play</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>show_controls</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>news_items</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-media_section">
+        <summary><span class="cname">Media Section</span>
+        <code>media_section</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">20 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>type</code></td><td>option</td>
+      <td>gallery, video, image</td><td>gallery</td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>gallery_layout</code></td><td>option</td>
+      <td>staggered, simple</td><td>staggered</td></tr><tr><td><code>gallery_images</code></td><td>multiasset</td>
+      <td></td><td></td></tr><tr><td><code>media_cards</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>video_url</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>video_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>video_description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>auto_play</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>show_controls</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>bg_pattern</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>pattern_position</code></td><td>option</td>
+      <td>top, bottom</td><td>top</td></tr><tr><td><code>pattern_opacity</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>pattern_height</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>pattern_mobile_height</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-news_filters">
+        <summary><span class="cname">News Filters</span>
+        <code>news_filters</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">6 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>search_placeholder</code></td><td>text</td>
+      <td></td><td>Search by keywords</td></tr><tr><td><code>news_type_label</code></td><td>text</td>
+      <td></td><td>News Type</td></tr><tr><td><code>country_label</code></td><td>text</td>
+      <td></td><td>Country</td></tr><tr><td><code>date_label</code></td><td>text</td>
+      <td></td><td>Select Date</td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-news_grid">
+        <summary><span class="cname">News Grid</span>
+        <code>news_grid</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">2 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>items_per_page</code></td><td>number</td>
+      <td></td><td>6</td></tr><tr><td><code>articles</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programmes">
+        <summary><span class="cname">Programmes</span>
+        <code>programmes</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">17 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>search_placeholder</code></td><td>text</td>
+      <td></td><td>Search by keywords</td></tr><tr><td><code>entity_filter_label</code></td><td>text</td>
+      <td></td><td>Academic Entity</td></tr><tr><td><code>programme_type_filter_label</code></td><td>text</td>
+      <td></td><td>Programme Type</td></tr><tr><td><code>country_filter_label</code></td><td>text</td>
+      <td></td><td>Country</td></tr><tr><td><code>show_more_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>icon_variant</code></td><td>option</td>
+      <td>responsive, chevron, plus</td><td>responsive</td></tr><tr><td><code>programmes</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-promo_split">
+        <summary><span class="cname">Promo Split</span>
+        <code>promo_split</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">14 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>desktop_layout</code></td><td>option</td>
+      <td>overlay, columns</td><td>overlay</td></tr><tr><td><code>card_color</code></td><td>option</td>
+      <td>green, blue</td><td>green</td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>footer_logo</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>footer_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>footer_link_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>footer_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>variant</code></td><td>option</td>
+      <td>overlay, columns, banner</td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-schools_teaching">
+        <summary><span class="cname">Schools &amp; Teaching</span>
+        <code>schools_teaching</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cards</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-split_section">
+        <summary><span class="cname">Split Section</span>
+        <code>split_section</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>layout</code></td><td>option</td>
+      <td>default, reverse</td><td>default</td></tr><tr><td><code>bg_color</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>secondary_cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>secondary_cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>image_variant</code></td><td>option</td>
+      <td>default, circles</td><td>default</td></tr><tr><td><code>decorative_images</code></td><td>multiasset</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-stats">
+        <summary><span class="cname">Stats</span>
+        <code>stats</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">11 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>stats</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-stories_of_impact">
+        <summary><span class="cname">Stories of Impact</span>
+        <code>stories_of_impact</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">20 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>research_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>research_highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>research_description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>research_cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>research_cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>collage_images</code></td><td>multiasset</td>
+      <td></td><td></td></tr><tr><td><code>family_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>family_highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>family_description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>family_cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>family_cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>quick_actions</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-student_life">
+        <summary><span class="cname">Student Life</span>
+        <code>student_life</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>cta_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>video_url</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>video_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>auto_play</code></td><td>boolean</td>
+      <td></td><td>False</td></tr><tr><td><code>show_controls</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>cards</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-top_news">
+        <summary><span class="cname">Top News</span>
+        <code>top_news</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">8 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>featured_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pill_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>pill_variant</code></td><td>option</td>
+      <td>brown, green</td><td>brown</td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-upcoming_events">
+        <summary><span class="cname">Upcoming Events</span>
+        <code>upcoming_events</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">30 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>featured_tag_label</code></td><td>text</td>
+      <td></td><td>Featured</td></tr><tr><td><code>featured_pill_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_pill_variant</code></td><td>option</td>
+      <td>green, lime, brown</td><td>green</td></tr><tr><td><code>featured_eyebrow</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>featured_date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_time</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_location</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>featured_institute</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>register_label</code></td><td>text</td>
+      <td></td><td>Register now</td></tr><tr><td><code>register_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>calendar_label</code></td><td>text</td>
+      <td></td><td>Add to calendar</td></tr><tr><td><code>calendar_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>share_label</code></td><td>text</td>
+      <td></td><td>Share</td></tr><tr><td><code>share_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>featured_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>items_per_page</code></td><td>number</td>
+      <td></td><td>3</td></tr><tr><td><code>events</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_side_spacing</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_margin_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_top</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr><tr><td><code>mobile_padding_bottom</code></td><td>number</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+        <section class="group">
+          <h3 class="group-title">ungrouped
+          <span class="group-count">11</span></h3>
+          
+      <details class="component-card" id="c-author_section">
+        <summary><span class="cname">Author Section</span>
+        <code>author_section</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">5 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td>About the</td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td>Author</td></tr><tr><td><code>bio</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>photo</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>social_links</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-blog_article">
+        <summary><span class="cname">Blog</span>
+        <code>blog_article</code> <span class="tag tag-root">root</span>
+        <span class="field-count">15 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>thumbnail</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>banner_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>author</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>date</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>read_time</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>languages</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_share</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_similar</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>similar_show_header</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>isGlobal</code></td><td>boolean</td>
+      <td></td><td></td></tr><tr><td><code>isFeatured</code></td><td>custom</td>
+      <td></td><td></td></tr><tr><td><code>category</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-comment_form">
+        <summary><span class="cname">Comment Form</span>
+        <code>comment_form</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td>Add a</td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td>Comment</td></tr><tr><td><code>description</code></td><td>text</td>
+      <td></td><td>Enter your details for adding comment.</td></tr><tr><td><code>submit_label</code></td><td>text</td>
+      <td></td><td>Submit</td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-event_article">
+        <summary><span class="cname">Event</span>
+        <code>event_article</code> <span class="tag tag-root">root</span>
+        <span class="field-count">7 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>banner_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr><tr><td><code>show_events</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>show_events_header</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>event_types</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-global_partners">
+        <summary><span class="cname">global_partners</span>
+        <code>global_partners</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>title</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>highlight</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>spacing</code></td><td>custom</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-grid">
+        <summary><span class="cname">grid</span>
+        <code>grid</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">1 field
+        </span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>columns</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-page">
+        <summary><span class="cname">page</span>
+        <code>page</code> <span class="tag tag-root">root</span>
+        <span class="field-count">1 field
+        </span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-programme">
+        <summary><span class="cname">Programme</span>
+        <code>programme</code> <span class="tag tag-root">root</span>
+        <span class="field-count">10 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>admission_label</code></td><td>text</td>
+      <td></td><td>Admission</td></tr><tr><td><code>duration</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>apply_label</code></td><td>text</td>
+      <td></td><td>Apply Now</td></tr><tr><td><code>apply_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>extended_message</code></td><td>text</td>
+      <td></td><td>The submission deadline has been extended.</td></tr><tr><td><code>closed_message</code></td><td>textarea</td>
+      <td></td><td>The next admission cycle is scheduled for November 2026.</td></tr><tr><td><code>closed_cta_label</code></td><td>text</td>
+      <td></td><td>Notify Me</td></tr><tr><td><code>closed_cta_link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>intro</code></td><td>textarea</td>
+      <td></td><td>At Aga Khan University, our programmes combine academic excellence, practical learning and a commitment to improving quality of life. Explore the programme details, admissions requirements and opportunities below.</td></tr><tr><td><code>body</code></td><td>bloks</td>
+      <td></td><td>[{&quot;_uid&quot;:&quot;282f7d1f-3579-41e4-b8ee-21fd64140bde&quot;,&quot;items&quot;:[{&quot;_uid&quot;:&quot;df96e744-37f6-408e-9ee7-eecc4f66e793&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;Programme Overview&quot;,&quot;content&quot;:&quot;Add an overview of the programme, its purpose and who it is designed for.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;},{&quot;_uid&quot;:&quot;d21c0a85-fd97-461f-9091-024cfd05bef4&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;Curriculum&quot;,&quot;content&quot;:&quot;Describe the curriculum, learning approach and programme structure.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;},{&quot;_uid&quot;:&quot;b9aa1281-196d-44f0-8593-187a0aa50cc3&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;Admission Requirements&quot;,&quot;content&quot;:&quot;Add eligibility and admission requirements.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;},{&quot;_uid&quot;:&quot;0898fd3d-bd94-41eb-ab7a-fa2a4cc9eecb&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;Fees and Funding&quot;,&quot;content&quot;:&quot;Add tuition fee and financial assistance information.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;},{&quot;_uid&quot;:&quot;206d6ab1-6c2f-4eda-8c63-f2d742aabfe5&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;How to Apply&quot;,&quot;content&quot;:&quot;Explain the application process and required documents.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;},{&quot;_uid&quot;:&quot;63f35e4a-9d89-4ffa-bca0-785ff20838cc&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;Important Dates&quot;,&quot;content&quot;:&quot;Add interviews, tests and other important programme dates.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;},{&quot;_uid&quot;:&quot;de66875e-e48b-48ff-85d5-e3a241f170dd&quot;,&quot;cards&quot;:[],&quot;title&quot;:&quot;Frequently Asked Questions&quot;,&quot;content&quot;:&quot;Add answers to frequently asked questions about the programme.&quot;,&quot;component&quot;:&quot;info_accordion_item&quot;}],&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:20,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:56}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:80,&quot;right&quot;:80,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:100}}},&quot;component&quot;:&quot;info_accordion&quot;},{&quot;_uid&quot;:&quot;8cc4a06c-6930-4b6b-81a5-742b2a879dc7&quot;,&quot;items&quot;:[{&quot;_uid&quot;:&quot;47f03a73-44d9-4084-906a-817588f4c98c&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;ead8c905-135c-4a3a-b3bf-1c18965a12b3&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Faculty member&quot;,&quot;subtitle&quot;:&quot;&quot;,&quot;component&quot;:&quot;profile_card&quot;,&quot;description&quot;:&quot;&quot;}],&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;&quot;,&quot;justify_content&quot;:&quot;&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;4b7ee93e-f30a-4962-a19c-f5105289c176&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;2aa242cc-cb34-4ad1-9212-ca590d0fedd0&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Faculty member&quot;,&quot;subtitle&quot;:&quot;&quot;,&quot;component&quot;:&quot;profile_card&quot;,&quot;description&quot;:&quot;&quot;}],&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;&quot;,&quot;justify_content&quot;:&quot;&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;9cb63d54-f1fd-4f12-abf9-3d0dc81f8bf1&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;fd10822d-44ce-4a9a-9921-60573564eb4b&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Faculty member&quot;,&quot;subtitle&quot;:&quot;&quot;,&quot;component&quot;:&quot;profile_card&quot;,&quot;description&quot;:&quot;&quot;}],&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;&quot;,&quot;justify_content&quot;:&quot;&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;b3836e66-0e1f-4290-80bd-76f545b6d1f0&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;26c73571-710b-4aae-b29f-26a652648b7b&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Faculty member&quot;,&quot;subtitle&quot;:&quot;&quot;,&quot;component&quot;:&quot;profile_card&quot;,&quot;description&quot;:&quot;&quot;}],&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;&quot;,&quot;justify_content&quot;:&quot;&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}}],&quot;title&quot;:&quot;Our&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:&quot;&quot;,&quot;component&quot;:&quot;row&quot;,&quot;highlight&quot;:&quot;Faculty&quot;,&quot;align_items&quot;:&quot;center&quot;,&quot;description&quot;:&quot;&quot;,&quot;on_mobile_wrap&quot;:false,&quot;justify_content&quot;:&quot;center&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;gap&quot;:&quot;4&quot;,&quot;_uid&quot;:&quot;126fbd43-44f4-4920-b4aa-f5cfb62aec2f&quot;,&quot;items&quot;:[{&quot;_uid&quot;:&quot;9f225a86-1f1e-4710-95a0-fc591bc70865&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;50693acc-399b-419b-af63-88a0c7978135&quot;,&quot;icon&quot;:&quot;calendar&quot;,&quot;link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;label&quot;:&quot;Admissions&quot;,&quot;component&quot;:&quot;quick_action&quot;}],&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;cfe7d8f3-751d-43dd-9c83-1d6c986631f0&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;175165a4-6be8-4e78-8d95-48ec1dcc4c5f&quot;,&quot;icon&quot;:&quot;book&quot;,&quot;link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;label&quot;:&quot;Curriculum&quot;,&quot;component&quot;:&quot;quick_action&quot;}],&quot;width&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;center&quot;,&quot;justify_content&quot;:&quot;center&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;09a09ce6-66a7-460f-a550-d395a0824c8a&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;9ebe9e14-afb6-47c9-b610-fc109e8737ef&quot;,&quot;icon&quot;:&quot;award&quot;,&quot;link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;label&quot;:&quot;Fees &amp; Funding&quot;,&quot;component&quot;:&quot;quick_action&quot;}],&quot;width&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;center&quot;,&quot;justify_content&quot;:&quot;center&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;8db9586e-01e0-4a1e-8377-35f3f300550e&quot;,&quot;body&quot;:[{&quot;_uid&quot;:&quot;f2321efb-6b67-4439-95f9-370475f5ebb1&quot;,&quot;icon&quot;:&quot;graduation&quot;,&quot;link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;label&quot;:&quot;Apply Now&quot;,&quot;component&quot;:&quot;quick_action&quot;}],&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:16,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:20,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;component&quot;:&quot;row_item&quot;,&quot;width_mode&quot;:&quot;fit&quot;,&quot;align_items&quot;:&quot;center&quot;,&quot;justify_content&quot;:&quot;center&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}}],&quot;title&quot;:&quot;Quick&quot;,&quot;height&quot;:&quot;&quot;,&quot;radius&quot;:&quot;&quot;,&quot;component&quot;:&quot;row&quot;,&quot;highlight&quot;:&quot;Actions&quot;,&quot;align_items&quot;:&quot;center&quot;,&quot;description&quot;:&quot;&quot;,&quot;justify_content&quot;:&quot;center&quot;,&quot;background_color&quot;:{&quot;color&quot;:&quot;#ffffff&quot;,&quot;plugin&quot;:&quot;native-color-picker&quot;}},{&quot;_uid&quot;:&quot;144d8339-53cd-45a9-bcd4-791a2beb010f&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Explore a Career in&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:32,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:32}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:100,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:100}}},&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;promo_split&quot;,&quot;cta_label&quot;:&quot;Explore careers&quot;,&quot;highlight&quot;:&quot;Medicine&quot;,&quot;card_color&quot;:&quot;green&quot;,&quot;description&quot;:&quot;Discover the career opportunities available to programme graduates.&quot;,&quot;footer_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;footer_logo&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;footer_label&quot;:&quot;&quot;,&quot;desktop_layout&quot;:&quot;overlay&quot;,&quot;footer_link_label&quot;:&quot;&quot;},{&quot;_uid&quot;:&quot;47c136bb-f917-4435-80ce-7274d7074346&quot;,&quot;title&quot;:&quot;Stories of&quot;,&quot;stories&quot;:[{&quot;_uid&quot;:&quot;b82de942-5374-4e4b-9522-bb366d6b4e97&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Add a featured programme story&quot;,&quot;category&quot;:&quot;&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;impact_story&quot;,&quot;cta_label&quot;:&quot;Read more&quot;,&quot;read_time&quot;:&quot;&quot;},{&quot;_uid&quot;:&quot;9e29c0bd-fe80-4338-8b65-c02143ecf13c&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Add a programme story&quot;,&quot;category&quot;:&quot;&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;impact_story&quot;,&quot;cta_label&quot;:&quot;Read more&quot;,&quot;read_time&quot;:&quot;&quot;},{&quot;_uid&quot;:&quot;86af8c43-0463-4cda-b417-01d138598b8d&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Add a programme story&quot;,&quot;category&quot;:&quot;&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;impact_story&quot;,&quot;cta_label&quot;:&quot;Read more&quot;,&quot;read_time&quot;:&quot;&quot;}],&quot;component&quot;:&quot;impact_stories&quot;,&quot;highlight&quot;:&quot;Impact&quot;,&quot;description&quot;:&quot;Meet the students, alumni and faculty making a difference in their communities.&quot;,&quot;view_all_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;view_all_label&quot;:&quot;View all stories&quot;},{&quot;_uid&quot;:&quot;32ce1786-411b-4d43-a138-c73af31653ed&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Fees and&quot;,&quot;spacing&quot;:&quot;&quot;,&quot;variant&quot;:&quot;banner&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;promo_split&quot;,&quot;cta_label&quot;:&quot;Explore fees and funding&quot;,&quot;highlight&quot;:&quot;Financial Assistance&quot;,&quot;card_color&quot;:&quot;green&quot;,&quot;description&quot;:&quot;Learn about tuition fees, scholarships and financial assistance.&quot;,&quot;footer_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;footer_logo&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;footer_label&quot;:&quot;For more information&quot;,&quot;desktop_layout&quot;:&quot;columns&quot;,&quot;footer_link_label&quot;:&quot;Financial Assistance&quot;},{&quot;_uid&quot;:&quot;e678c49e-16f4-4e84-85fb-4bd87c244ba4&quot;,&quot;title&quot;:&quot;&quot;,&quot;slides&quot;:[{&quot;_uid&quot;:&quot;dd6d05f0-1091-4e78-9dd2-444545df0555&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:null,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{}},&quot;title&quot;:&quot;DSADSADA&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;story&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;subtitle&quot;:&quot;SADSA&quot;,&quot;component&quot;:&quot;carousel_alumni_slide&quot;,&quot;cta_label&quot;:&quot;Discover More&quot;},{&quot;_uid&quot;:&quot;98d73799-6391-45cc-b814-8c0bca140daf&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:null,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{}},&quot;title&quot;:&quot;DSADSADA&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;story&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;subtitle&quot;:&quot;SADSA&quot;,&quot;component&quot;:&quot;carousel_alumni_slide&quot;,&quot;cta_label&quot;:&quot;Discover More&quot;},{&quot;_uid&quot;:&quot;b1370ee7-7a33-41e2-a24a-306b98c0a13b&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:null,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{}},&quot;title&quot;:&quot;DSADSADA&quot;,&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;story&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;subtitle&quot;:&quot;SADSA&quot;,&quot;component&quot;:&quot;carousel_alumni_slide&quot;,&quot;cta_label&quot;:&quot;Discover More&quot;}],&quot;variant&quot;:&quot;alumni&quot;,&quot;component&quot;:&quot;carousel_section&quot;,&quot;highlight&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;view_all_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;story&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;view_all_label&quot;:&quot;&quot;,&quot;background_image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:null,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{}}},{&quot;_uid&quot;:&quot;c936e553-be21-4094-a44c-fc52f2030cd2&quot;,&quot;title&quot;:&quot;Partners Around&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:32,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:32}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null},&quot;padding&quot;:{&quot;top&quot;:56,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:56}}},&quot;component&quot;:&quot;global_partners&quot;,&quot;highlight&quot;:&quot;The World&quot;,&quot;description&quot;:&quot;&quot;},{&quot;_uid&quot;:&quot;ab42a478-92c8-435d-864b-e2d20825ce01&quot;,&quot;image&quot;:{&quot;id&quot;:203705858361598,&quot;alt&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;filename&quot;:&quot;https://a.storyblok.com/f/289824742951963/436855/4b69924476/3915-bannerimage.png&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{&quot;size&quot;:&quot;795x398&quot;},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;Students &quot;,&quot;layout&quot;:&quot;reverse&quot;,&quot;bg_color&quot;:{&quot;_uid&quot;:&quot;0c77d150-20b8-426f-ae9a-072a8ce74b98&quot;,&quot;color&quot;:&quot;&quot;,&quot;plugin&quot;:&quot;official-colorpicker&quot;},&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;story&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;split_section&quot;,&quot;cta_label&quot;:&quot;Apply&quot;,&quot;highlight&quot;:&quot;Life&quot;,&quot;description&quot;:&quot;At AKU, Student Affairs supports your academic and personal growth. Get involved through societies, events, and leadership. Prioritize your well-being with health services, counseling, wellness programs, and holistic support across our student support offices.&quot;,&quot;image_variant&quot;:&quot;circles&quot;,&quot;decorative_images&quot;:[{&quot;id&quot;:203705850046717,&quot;alt&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;filename&quot;:&quot;https://a.storyblok.com/f/289824742951963/235706/ec8a3df207/3913-bannerimage.jpeg&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{&quot;size&quot;:&quot;1235x492&quot;}},{&quot;id&quot;:203705839204603,&quot;alt&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;filename&quot;:&quot;https://a.storyblok.com/f/289824742951963/579825/56c5588a72/3912-bannerimage.png&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{&quot;size&quot;:&quot;795x398&quot;}},{&quot;id&quot;:203705830775034,&quot;alt&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;filename&quot;:&quot;https://a.storyblok.com/f/289824742951963/81078/191f873aa6/3911-bannerimage.jpg&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{&quot;size&quot;:&quot;795x398&quot;}},{&quot;id&quot;:203705858361598,&quot;alt&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;filename&quot;:&quot;https://a.storyblok.com/f/289824742951963/436855/4b69924476/3915-bannerimage.png&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{&quot;size&quot;:&quot;795x398&quot;}},{&quot;id&quot;:203705771346164,&quot;alt&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:&quot;&quot;,&quot;source&quot;:&quot;&quot;,&quot;filename&quot;:&quot;https://a.storyblok.com/f/289824742951963/429203/5a6f24cbb2/3903-bannerimage.png&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{&quot;size&quot;:&quot;795x398&quot;}}],&quot;secondary_cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;story&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;secondary_cta_label&quot;:&quot;Explore Now&quot;},{&quot;_uid&quot;:&quot;feb4cdfd-e681-49f6-9a9b-7b407e7fb672&quot;,&quot;type&quot;:&quot;image&quot;,&quot;title&quot;:&quot;Explore AKU’s&quot;,&quot;component&quot;:&quot;media_section&quot;,&quot;highlight&quot;:&quot;Global Network&quot;,&quot;description&quot;:&quot;&quot;,&quot;media_cards&quot;:[{&quot;_uid&quot;:&quot;c460050b-6891-47c5-b2c4-f997dacfb80e&quot;,&quot;link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;size&quot;:&quot;hero&quot;,&quot;image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;title&quot;:&quot;&quot;,&quot;component&quot;:&quot;media_card&quot;,&quot;cta_label&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;}],&quot;gallery_images&quot;:[],&quot;pattern_position&quot;:&quot;&quot;,&quot;pattern_mobile_height&quot;:&quot;&quot;},{&quot;_uid&quot;:&quot;c173d72e-48ef-400f-9f2f-32f1f8cda795&quot;,&quot;logo&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;email&quot;:&quot;&quot;,&quot;title&quot;:&quot;Study&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:32,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:32},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:100,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:100},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;bg_image&quot;:{&quot;id&quot;:null,&quot;alt&quot;:null,&quot;name&quot;:&quot;&quot;,&quot;focus&quot;:&quot;&quot;,&quot;title&quot;:null,&quot;source&quot;:null,&quot;filename&quot;:&quot;&quot;,&quot;copyright&quot;:null,&quot;fieldtype&quot;:&quot;asset&quot;,&quot;meta_data&quot;:{},&quot;is_external_url&quot;:false},&quot;component&quot;:&quot;student_affairs&quot;,&quot;highlight&quot;:&quot;at AKU&quot;,&quot;description&quot;:&quot;Join a learning community committed to excellence, impact and service.&quot;,&quot;social_links&quot;:[]},{&quot;_uid&quot;:&quot;5a3fe030-8f53-43ab-913e-61674f1dec39&quot;,&quot;type&quot;:&quot;gallery&quot;,&quot;title&quot;:&quot;Discover Our&quot;,&quot;spacing&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;mobile&quot;:{&quot;margin&quot;:{&quot;top&quot;:32,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:32},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}},&quot;desktop&quot;:{&quot;margin&quot;:{&quot;top&quot;:100,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:100},&quot;padding&quot;:{&quot;top&quot;:null,&quot;left&quot;:null,&quot;right&quot;:null,&quot;bottom&quot;:null}}},&quot;cta_link&quot;:{&quot;id&quot;:&quot;&quot;,&quot;url&quot;:&quot;&quot;,&quot;linktype&quot;:&quot;url&quot;,&quot;fieldtype&quot;:&quot;multilink&quot;,&quot;cached_url&quot;:&quot;&quot;},&quot;component&quot;:&quot;media_section&quot;,&quot;cta_label&quot;:&quot;&quot;,&quot;highlight&quot;:&quot;Campuses&quot;,&quot;description&quot;:&quot;&quot;,&quot;gallery_images&quot;:[],&quot;gallery_layout&quot;:&quot;staggered&quot;,&quot;pattern_position&quot;:&quot;&quot;}]</td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-tabbed_banner">
+        <summary><span class="cname">Tabbed Banner</span>
+        <code>tabbed_banner</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">4 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>mobile_title</code></td><td>text</td>
+      <td></td><td>Quick</td></tr><tr><td><code>mobile_title_highlight</code></td><td>text</td>
+      <td></td><td>Actions</td></tr><tr><td><code>autoplay</code></td><td>boolean</td>
+      <td></td><td>True</td></tr><tr><td><code>tabs</code></td><td>bloks</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-tabbed_banner_tab">
+        <summary><span class="cname">Tabbed Banner — Tab</span>
+        <code>tabbed_banner_tab</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">12 field
+        s</span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>heading</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>description</code></td><td>textarea</td>
+      <td></td><td></td></tr><tr><td><code>number</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>icon</code></td><td>option</td>
+      <td>book, users, partner, graduation, calendar, award, heart, building, baby, health, star</td><td>calendar</td></tr><tr><td><code>icon_image</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>partner_logo</code></td><td>asset</td>
+      <td></td><td></td></tr><tr><td><code>partner_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>secondary_label</code></td><td>text</td>
+      <td></td><td></td></tr><tr><td><code>link</code></td><td>multilink</td>
+      <td></td><td></td></tr><tr><td><code>link_label</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+      <details class="component-card" id="c-teaser">
+        <summary><span class="cname">teaser</span>
+        <code>teaser</code> <span class="tag tag-nestable">nestable</span>
+        <span class="field-count">1 field
+        </span></summary>
+        <table class="field-table"><thead><tr><th>field</th>
+      <th>type</th><th>options</th><th>default</th></tr></thead>
+      <tbody><tr><td><code>headline</code></td><td>text</td>
+      <td></td><td></td></tr></tbody></table>
+      </details>
+        </section>
+</main>
+</body>
+</html>
