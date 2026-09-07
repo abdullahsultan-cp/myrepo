@@ -105,10 +105,33 @@ def public_url(cms_path):
     The CMS path carries structure a visitor does not need -- `regions/`,
     `entities/`, `departments/` are there so editors and permissions have
     something to hang on. Strip them for the public link.
+
+    A trailing `home` goes the same way. SharePoint serves `X/Pages/home.aspx`
+    AT `X/`, so keeping the segment would publish the university homepage at
+    `aku.edu/home` and every faculty front door one level below where the
+    reader expects it. The page still LIVES at `<folder>/home` in Storyblok --
+    this is the address only, exactly as it is for the three scaffold segments,
+    so no folder and page ever share a slug. The front end strips the same
+    four.
     """
-    parts = [x for x in cms_path.split('/') if x not in SCAFFOLD]
+    parts = cms_path.split('/')
+    if len(parts) > 1 and parts[-1] == 'home':
+        parts = parts[:-1]
+    # A scaffold segment is invisible only while it is an INTERMEDIATE level.
+    # As the last segment it is the thing being addressed, and dropping it
+    # hands the address to something else: `departments` is a real AKU web with
+    # its own list page, so stripping it unconditionally sent
+    # `mcpk/Pages/departments.aspx` to `aku.edu/pakistan/medical-college` — the
+    # faculty's front door — and pushed the Medical College's own home page to
+    # `medical-college/home-2`. The reader would have found the department list
+    # where the faculty homepage belongs.
+    parts = [x for i, x in enumerate(parts)
+             if x not in SCAFFOLD or i == len(parts) - 1]
     if parts and parts[0] == 'global':
         parts = parts[1:]
+    # Nothing left means the site root. `regions/global/home` is the university
+    # homepage, and it is the one page whose address is `aku.edu/` itself —
+    # guarding against the empty join is what published it at `aku.edu/home`.
     return 'https://www.aku.edu/' + '/'.join(parts)
 
 # Invisible characters have to be DELETED before the slug is built, not turned
@@ -787,6 +810,137 @@ for p in sorted(pages, key=lambda x: x['url'].lower()):
         'do_not_migrate': DO_NOT_MIGRATE.get(p['url'], '') or superseded,
     })
 
+# ---- one landing page per folder ----------------------------------------
+# Storyblok has no separate notion of a folder: a folder IS a story, so a folder
+# and a page cannot share a slug under one parent. AKU's site breaks that in two
+# ways at once, and neither was caught before, because the collision check above
+# compares a page against another PAGE and never against a folder:
+#
+#   1. a page named for a folder that already exists — `mcpk/Pages/departments.aspx`
+#      wants the exact path of the folder holding 544 department pages;
+#   2. a folder with two landing pages — its own `home.aspx` and a `default.aspx`,
+#      or a `home.aspx` in the sub-web plus a same-named page one level up. Both
+#      want the folder's bare address once a trailing `home` is stripped.
+#
+# 10 folders hit the first, 17 the second. AKU's instruction is that nothing is
+# dropped, so this does not choose one page and discard the other: the winner
+# becomes the folder's landing page at `<folder>/home` and the loser keeps its
+# content at `<folder>/<leaf>-archive`, with a remark saying which superseded it.
+#
+# Which one wins is MEASURED, not assumed. The obvious rule — "the page inside
+# the sub-web is the canonical one" — is wrong 4 times in 10: `mcpk/bbs/Pages/
+# Research.aspx` was edited in December 2025 while the sub-web's own home page
+# has not been touched since June 2016. The ranking below is the evidence, in
+# the order it is worth trusting.
+FOLDER_PATHS = {r['new_path'] for r in folder_rows}
+
+# SharePoint's own record of each page: when it was last edited, and which
+# version it reached. A version below 1.0 has never been published — the CHS
+# educational-programmes page is at 0.29 and returns 401, so it is a draft
+# somebody abandoned, not the section's front door.
+SP_META = {}
+try:
+    with open(paths.data('SPPagesAKU-Metadata.csv'), encoding='utf-8-sig') as fh:
+        for _r in csv.DictReader(fh):
+            _u = page_intake.key(_r.get('Original Page URL') or '')
+            if not _u:
+                continue
+            try:
+                _v = float(_r.get('Version') or 0)
+            except ValueError:
+                _v = 0.0
+            SP_META[_u] = (_r.get('Modified Date', ''), _v)
+except FileNotFoundError:
+    pass
+
+# What the live site returns. Optional on purpose: verify_live.py runs AFTER
+# this step, so a first build on a fresh clone has no such file and must still
+# produce a plan. Where it is missing the ranking falls back to the SharePoint
+# metadata, which is a real input in data/ and always present.
+LIVE_HTTP = {}
+try:
+    with open(paths.out('aku-live-page-verification.csv'), encoding='utf-8-sig') as fh:
+        for _r in csv.DictReader(fh):
+            LIVE_HTTP[page_intake.key(_r['current_url'])] = _r.get('http', '')
+except FileNotFoundError:
+    pass
+
+
+def _mdy(s):
+    """SharePoint writes 7/9/2024 1:02 PM. Sort on the date, not the string."""
+    m = re.match(r'\s*(\d{1,2})/(\d{1,2})/(\d{4})', s or '')
+    return (int(m.group(3)), int(m.group(1)), int(m.group(2))) if m else (0, 0, 0)
+
+
+def landing_rank(row):
+    """How strongly this page claims to be its folder's front door. Higher wins.
+
+    Read top to bottom: a page the server will not serve cannot be a front
+    door whatever its dates say; a draft that never reached 1.0 is not one
+    either; after that the most recently edited page is the live one.
+    """
+    k = page_intake.key(row['current_url'])
+    http = LIVE_HTTP.get(k, '')
+    modified, version = SP_META.get(k, ('', 0.0))
+    return (1 if http == '200' else 0,          # the server serves it
+            0 if http in ('401', '404') else 1,  # ... and does not refuse it
+            1 if version >= 1.0 else 0,          # published, not an abandoned draft
+            _mdy(modified),                      # most recently edited
+            version,
+            row['current_url'].lower())          # a tie must not depend on dict order
+
+
+def _archive_leaf(row, taken):
+    """`research` -> `research-archive`, and `-archive-2` only if that is taken."""
+    leaf = row['new_path'].rsplit('/', 1)[1]
+    base = leaf + '-archive'
+    cand, n = base, 2
+    while cand in taken:
+        cand, n = '%s-%d' % (base, n), n + 1
+    return cand
+
+
+live_rows = [r for r in page_rows if not r['do_not_migrate']]
+by_folder = collections.defaultdict(list)
+for r in live_rows:
+    by_folder[r['new_path'].rsplit('/', 1)[0]].append(r)
+
+landings = 0
+for folder in sorted(FOLDER_PATHS):
+    inside = by_folder.get(folder, [])
+    # Every page that wants this folder's bare address: the ones already named
+    # `home` or `default` inside it, and any page whose own path IS the folder.
+    rivals = [r for r in inside
+              if r['new_path'].rsplit('/', 1)[1] in ('home', 'default')]
+    rivals += [r for r in live_rows if r['new_path'] == folder]
+    if len(rivals) < 2 and not any(r['new_path'] == folder for r in rivals):
+        continue
+    rivals.sort(key=landing_rank, reverse=True)
+    winner, losers = rivals[0], rivals[1:]
+    taken = {r['new_path'].rsplit('/', 1)[1] for r in inside} | {'home'}
+    for r in losers:
+        leaf = _archive_leaf(r, taken)
+        taken.add(leaf)
+        r['new_path'] = folder + '/' + leaf
+        # The folder column has to move with the page. It was set from the page's
+        # ORIGINAL destination, and leaving it behind put 10 pages a level away
+        # from the folder claiming them -- which is also what the per-folder page
+        # counts are rolled up from.
+        r['folder'] = folder
+        r['collision'] = ('superseded as the front door of %s by %s — kept, '
+                          'not dropped' % (folder, winner['current_url']))
+        landings += 1
+    if winner['new_path'] != folder + '/home':
+        winner['collision'] = ('the front door of %s, chosen over %s'
+                               % (folder, '; '.join(r['current_url'] for r in losers))
+                               if losers else '')
+        winner['new_path'] = folder + '/home'
+        winner['folder'] = folder
+        landings += 1
+for r in live_rows:
+    r['new_url'] = public_url(r['new_path'])
+print('landing pages resolved: %d rows moved' % landings)
+
 # Two source pages can slugify to one destination -- AKU has both
 # crm/about/executive-committee.aspx and executive.committee.aspx, and both a
 # Pages/home.aspx and a SitePages/Home.aspx under library/pk/fhs. Suffixing the
@@ -852,6 +1006,48 @@ _clash = {u: n for u, n in _urls.items() if n > 1}
 if _clash:
     raise SystemExit('two pages share one address: %s'
                      % '; '.join('%s (%d)' % (u, n) for u, n in list(_clash.items())[:5]))
+
+# ---- a page with no owner inherits its FACULTY, not central comms -------
+# 351 pages had nobody named: the permissions export lists no owner group for
+# their web, and the page carries no CW/CA of its own. They all fell back to
+# "Public Affairs (central)", which reads as a decision and is not one.
+#
+# Walking the folder tree for a better answer looks obvious and is a trap. Every
+# ancestor of these pages is ALSO unowned, and the first named one is
+# `regions/global` — owned by the Registrar, because that is what the aku.edu
+# ROOT web's permission rows say. Inheriting that would have handed the
+# Registrar all 2,300 global pages, including News and Blogs.
+#
+# So the rule stops at the faculty. 105 of the 351 sit inside a real entity
+# folder — the Graduate School of Media & Communications alone has 36, and
+# SONAM Uganda 50 — and a faculty owns what is published under its own name
+# whether or not SharePoint ever recorded a group for it. The other 246 are
+# global hubs, About AKU, event microsites and procurement, where central comms
+# genuinely is the answer and stays.
+FOLDER_BY_PATH = {r['new_path']: r for r in folder_rows}
+
+
+def nearest_entity(path):
+    parts = path.split('/')
+    for i in range(len(parts), 0, -1):
+        f = FOLDER_BY_PATH.get('/'.join(parts[:i]))
+        if f and f['kind'] == 'entity':
+            return f
+    return None
+
+
+adopted = 0
+for r in page_rows:
+    if not r['managed_by_source'].startswith('fallback'):
+        continue
+    f = nearest_entity(r['folder'])
+    if not f:
+        continue
+    r['managed_by'] = f['title']
+    r['managed_by_source'] = ('the faculty it sits under — the export names no '
+                              'owner group for that faculty')
+    adopted += 1
+print('pages given their faculty as owner where nobody was named: %d' % adopted)
 
 # ---- how many pages each folder really holds ----------------------------
 # Both counts were derived from the source webs, before the pages were placed,

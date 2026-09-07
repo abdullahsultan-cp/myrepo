@@ -7,15 +7,69 @@ so any step can be re-run alone once its predecessor has run.
 python probe_csv.py        # permissions CSV -> sites.json      (aku.edu only)
 python join.py             # AKU-EN_1.HTM    -> pages.json      + join_report.txt
 python sections.py         # unique-scope owners -> webs.json   + sections.txt
-python build_hierarchy.py  # -> ../out/AKU-Folder-Hierarchy.{html,tree.txt,json}
+python build_hierarchy.py  # -> the accounting check + ../out/AKU-Folder-Hierarchy.{tree.txt,json}
 python probe_roles.py      # groups -> groups.json + web_owners.json
 python build_migration_plan.py   # -> plan.json + the folder/page/role CSVs in ../out/
 python probe_people.py           # -> people.json
 python build_roles.py            # -> roles.json + the four role CSVs
 python verify_live.py            # -> aku-live-page-verification.csv  (hits the network)
+python build_master_sheet.py     # -> aku-master-{pages,folders}.csv   THE deliverable
+python build_assignments.py      # -> aku-page-assignments.csv        the work sheet
+python audit_hierarchy.py        # -> the audit  (reads only, fails on a regression)
 mkdir -p ../portal/public/data   # gitignored, so absent on a fresh clone
 cp ../out/work/{plan,people,roles}.json ../portal/public/data/
 ```
+
+## Is the result a legal tree?
+
+`audit_hierarchy.py` asks the question none of the build steps do: not "is each
+page placed" but "is the tree that came out something Storyblok can hold". It
+reads `plan.json`, writes `aku-hierarchy-audit.csv` (one row per check), and
+changes nothing. **16 of the 20 checks pass; the remaining 4 are questions for
+AKU, not faults.** Four of the passes were a defect and three open questions
+until 7 Sep 2026, and they are worth reading as a set, because each one was
+invisible to every other step.
+
+### A folder and a page cannot share a slug
+
+In Storyblok a folder IS a story, so `regions/.../medical-college/departments`
+cannot be both the folder holding 544 department pages and a page called
+"Departments". AKU's site has both, in **10 places**. Nothing caught it: the
+collision check in `build_migration_plan.py` compares a page against another
+PAGE and never against a folder.
+
+Fixed by making the page the folder's landing page. Which of the two rival pages
+wins is **measured** — live HTTP status, then SharePoint version (below 1.0 is a
+draft that was never published), then last-modified date. The obvious rule, "the
+page inside the sub-web is the canonical one", is **wrong 4 times in 10**:
+`mcpk/bbs/Pages/Research.aspx` was edited in December 2025 while the sub-web's
+own `home.aspx` has not been touched since June 2016.
+
+### Nothing is dropped
+
+AKU's rule. The loser of each front door keeps its content at
+`<folder>/<leaf>-archive` with a remark naming the page that superseded it — 25
+pages. The same rule covers the 17 folders that held both a `home` and a
+`default` page.
+
+### A trailing `home` is not part of the address
+
+SharePoint serves `X/Pages/home.aspx` AT `X/`, so keeping the segment published
+the university homepage at `aku.edu/home` and every faculty front door one level
+below where a reader expects it. `public_url()` strips it, exactly as it already
+strips `regions`, `entities` and `departments`. The page still LIVES at
+`<folder>/home`, so no folder and page ever share a slug. **The front end has to
+strip the same four** — that is the one thing here that is not ours to change.
+
+### A scaffold segment is invisible only in the middle
+
+Stripping `departments` unconditionally was wrong, and it took the fix above to
+expose it: `mcpk/Pages/departments.aspx` landed on
+`aku.edu/pakistan/medical-college` — the **faculty's own front door** — and
+pushed the Medical College homepage to `medical-college/home-2`. A scaffold
+segment as the LAST segment is the thing being addressed, not structure, so it
+stays. The reader would have found the department list where the faculty
+homepage belongs.
 
 ## Checking a placement rather than trusting it
 
@@ -111,4 +165,6 @@ as settled.
 The classification table `SEC` in `build_hierarchy.py` is the single place a
 placement changes. It asserts against the CSV on every run: add a section to
 aku.edu and the build refuses to proceed until `SEC` covers it. Do not hand-edit
-the generated `AKU-Folder-Hierarchy.*` files.
+the generated `AKU-Folder-Hierarchy.*` intermediates. Its HTML page is retired
+— see the note beside `OUT_HTML` in that file, and read the tree in
+`AKU-Tree.html` instead.

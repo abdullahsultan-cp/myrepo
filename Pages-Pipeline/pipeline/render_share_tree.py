@@ -189,16 +189,23 @@ def render(path, depth, parent_countries=''):
             out.append('<div class="pl">')
             for p in pgs:
                 old, new = strip_host(p['current_url']), strip_host(p['new_url'])
+                # The old slug links straight to the page as it is today. The new
+                # one carries its path in data-p and gets an href only once a
+                # reviewer says where the new site lives -- every destination
+                # here is a www.aku.edu address, which is the site being
+                # REPLACED, so linking it there would send them back to the page
+                # they are comparing against.
                 out.append(
                     '<div class="pg" data-s="%s"><span class="d %s"></span>'
                     '<span class="pn">%s</span>'
-                    '<code class="o">%s</code><span class="ar">→</span>'
-                    '<code class="w">%s</code>'
+                    '<a class="o" href="https://www.aku.edu/%s">%s</a>'
+                    '<span class="ar">→</span>'
+                    '<a class="w" data-p="%s">%s</a>'
                     '<span class="ac%s">%s</span></div>'
                     % (e((old + ' ' + new).lower()),
                        e(p.get('content_type') or 'page'),
                        e(p['new_path'].split('/')[-1]),
-                       e(old), e(new),
+                       e(old.lstrip('/')), e(old), e(new), e(new),
                        ' u' if p.get('action') == 'Update and move' else '',
                        'update first' if p.get('action') == 'Update and move'
                        else 'move as is'))
@@ -238,6 +245,7 @@ TOTAL_PAGES = sum(1 for p in P if not p.get('do_not_migrate'))
 
 HTML = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
+<base target="_blank">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AKU → Storyblok · the complete folder and page tree</title>
 <style>
@@ -333,8 +341,15 @@ border-radius:5px}
 code{font:12px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;
 padding:1px 5px;border-radius:4px;background:var(--card);
 border:1px solid var(--line)}
-code.o{color:var(--mut)}
-code.w{color:var(--brand)}
+code.o,a.o{color:var(--mut)}
+code.w,a.w{color:var(--brand)}
+a.o,a.w[href]{text-decoration:none;border-bottom:1px dotted currentColor}
+a.o:hover,a.w[href]:hover{border-bottom-style:solid}
+a.w:not([href]){cursor:default;border-bottom:none}
+#base{width:250px;padding:7px 11px;border-radius:8px;border:1px dashed var(--line);
+background:var(--card);color:var(--ink);font:inherit;font-size:12px}
+#base:focus{border-style:solid;border-color:var(--brand);outline:none}
+#base.set{border-style:solid;border-color:var(--brand)}
 .ar{color:var(--mut)}
 .ac{margin-left:auto;font-size:10.5px;text-transform:uppercase;
 letter-spacing:.4px;color:var(--mut);flex:none}
@@ -410,6 +425,7 @@ folder above it administers this one too.</i></div>
 <button onclick="all(0)" class="pri">Collapse all</button>
 <label><input type="checkbox" id="np" onchange="pgs()"> Folders only</label>
 <label><input type="checkbox" id="he" onchange="empt()"> Hide empty folders</label>
+<input type="url" id="base" spellcheck="false" title="Paste the new site's address and every green slug becomes a link you can open. Kept in this browser only." placeholder="New site base URL&hellip;">
 <span class="hits" id="hits">__FOLDERS__ folders &middot; __PAGES__ pages</span>
 </div>
 
@@ -420,9 +436,34 @@ folder above it administers this one too.</i></div>
 The team on the right is the team that administers that folder; where a folder
 does not set its own permissions it says <b>inherits</b> and names the folder it
 inherits from. Slugs are shown as paths only &mdash; the domain is added when the
-destination is chosen.</footer>
+destination is chosen &mdash; paste one into the box above and every green slug
+becomes a link you can open. The grey slug always opens the page as it is today
+on aku.edu.</footer>
 </div>
 <script>
+/* ---- where the new site lives -------------------------------------------
+   Paste a base URL and every destination slug becomes a real link against it.
+   Kept in this browser only: it is one reviewer's staging host, not a fact
+   about the migration, and it must not travel in the committed file.
+   localStorage throws outright in some locked-down browsers, so both the read
+   and the write are guarded and the page works with neither. */
+var BASE='';
+try{ BASE=localStorage.getItem('aku_base')||''; }catch(e){}
+function paintDest(){
+  var a=document.querySelectorAll('#tree a.w'), i;
+  for(i=0;i<a.length;i++){
+    if(BASE) a[i].setAttribute('href',BASE+a[i].getAttribute('data-p'));
+    else a[i].removeAttribute('href');
+  }
+}
+function setBase(v){
+  BASE=(v||'').trim();
+  while(BASE.slice(-1)==='/') BASE=BASE.slice(0,-1);
+  try{ localStorage.setItem('aku_base',BASE); }catch(e){}
+  document.getElementById('base').className=BASE?'set':'';
+  paintDest();
+}
+
 var T=document.getElementById('tree'),Q=document.getElementById('q'),
     H=document.getElementById('hits'),HE=document.getElementById('he'),
     NP_OFF=document.getElementById('np'),
@@ -488,6 +529,12 @@ function hidden(n){
 }
 
 var timer=null;
+var B=document.getElementById('base'), bt;
+B.value=BASE; B.className=BASE?'set':'';
+B.addEventListener('input',function(){clearTimeout(bt);
+  bt=setTimeout(function(){setBase(B.value);},350);});
+paintDest();
+
 Q.addEventListener('input',function(){
   clearTimeout(timer);timer=setTimeout(search,140);
 });

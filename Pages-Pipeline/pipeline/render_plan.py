@@ -444,6 +444,14 @@ cursor:pointer;font-size:13px;color:var(--ink2);font-weight:550}
 .tab.on{background:var(--card);color:var(--brand2)}
 #q{flex:1;min-width:210px;padding:9px 12px;border:1px solid var(--ring);
 border-radius:8px;font-size:13px;background:var(--card);color:var(--ink)}
+#base{width:250px;padding:9px 12px;border:1px dashed var(--ring);
+border-radius:8px;font-size:12px;background:var(--card);color:var(--ink);
+font-family:ui-monospace,Menlo,Consolas,monospace}
+#base:focus{border-style:solid;border-color:var(--brand2);outline:none}
+#base.set{border-style:solid;border-color:var(--ok,#2e7d32)}
+a.nm,a.dest[href]{text-decoration:none;border-bottom:1px dotted currentColor}
+a.nm:hover,a.dest[href]:hover{border-bottom-style:solid;color:var(--brand2)}
+a.dest:not([href]){cursor:default;border-bottom:none}
 select,.btn{padding:8px 10px;border:1px solid var(--ring);border-radius:8px;
 font-size:12.5px;background:var(--card);color:var(--ink);cursor:pointer}
 .btn:hover{border-color:var(--brand2);color:var(--brand2)}
@@ -577,6 +585,35 @@ JS = r"""
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 let TAB='hierarchy', SORT={col:null,dir:1}, SHOWN=0, VIEW=[], VIS=[];
 const STEP=300;
+
+/* ---- where the new site lives ---------------------------------------------
+   Nobody can know this at build time: the destination addresses are all
+   www.aku.edu, which is the site being REPLACED, so linking them there would
+   send every reviewer back to the page they are trying to compare against.
+   Paste a base URL and every destination in the tree and the tables becomes a
+   real link against it. Kept in this browser only -- it is one reviewer's
+   staging host, not a fact about the migration, and it must not travel in the
+   committed file. localStorage can throw outright in a locked-down browser, so
+   both the read and the write are guarded and the page works with neither. */
+let BASE='';
+try{ BASE=localStorage.getItem('aku_base')||''; }catch(e){}
+function setBase(v){
+  BASE=(v||'').trim().replace(/\/+$/,'');
+  try{ localStorage.setItem('aku_base',BASE); }catch(e){}
+  const el=$('#base'); if(el) el.classList.toggle('set',!!BASE);
+  paintDest();
+}
+
+/* Destinations are rendered once, as anchors carrying their path in data-p and
+   NO href. This turns them on and off in place. Re-rendering instead would mean
+   calling buildTree() again, which re-attaches its click listener and makes
+   every folder toggle twice. */
+function paintDest(){
+  $$('[data-p]').forEach(a=>{
+    if(BASE) a.setAttribute('href',BASE+a.dataset.p);
+    else a.removeAttribute('href');
+  });
+}
 const BADGE={'Proven by the export':'ok','Inferred — please confirm':'inf',
   'Needs your decision':'dec','Confirmed — matches the live page':'ok',
   'Could not open it (not public)':'inf','New in this list':'new',
@@ -664,9 +701,20 @@ function cell(c,v,row){
     return '<span class="tree" style="padding-left:'+(d*15)+'px">'
       +(d?'<span class="tw"></span>':'')+esc(v.split('/').pop())+'</span>';
   }
-  if(c==='current_url'||c==='new_url')
+  /* The page today always links to aku.edu, because that is where it still is.
+     The destination has nowhere to point until someone says where the new site
+     lives -- so until they do it is text, and the moment they paste a base URL
+     it becomes a link. Anything else would publish 4,591 links to a host that
+     does not answer. */
+  if(c==='current_url')
     return '<a class="mono" href="'+esc(v)+'" target="_blank" rel="noopener">'
       +esc(v.replace('https://www.aku.edu',''))+'</a>';
+  if(c==='new_url'){
+    const path=v.replace('https://www.aku.edu','');
+    return '<a class="mono dest" data-p="'+esc(path)+'"'+(BASE?' href="'
+      +esc(BASE+path)+'"':'')+' target="_blank" rel="noopener">'
+      +esc(path)+'</a>';
+  }
   if(BADGE[v]) return '<span class="b '+BADGE[v]+'">'+esc(v)+'</span>';
   if(c==='new_path'||c==='folder'||c==='moved_from'||c==='source_web'
      ||c==='storyblok_role') return '<span class="mono">'+esc(v)+'</span>';
@@ -686,6 +734,7 @@ function draw(){
     h+='</tr>';
   }
   $('#tbody').insertAdjacentHTML('beforeend',h);
+  paintDest();
   SHOWN=end;
   $('#more').hidden=SHOWN>=VIEW.length;
   if(SHOWN<VIEW.length)
@@ -842,9 +891,12 @@ function tnode(n,depth){
         +'" data-new="'+g[2]+'" data-dnm="'+(g[3]?1:0)+'" data-http="'+esc(g[4]||'')
         +'" data-rev="'+esc(g[5]||'')+'" data-unlisted="'+(g[6]||0)+'">'
         +'<div class="row2"><span class="tw2"></span>'
-        +'<span class="nm">'+esc(g[0].split('/').pop())+'</span>'
+        +'<a class="nm" href="https://www.aku.edu/'+esc(g[0])+'" target="_blank" '
+        +'rel="noopener" title="'+esc(g[0])+'">'+esc(g[0].split('/').pop())+'</a>'
         +(g[2]?'<span class="nw">new</span>':'')+(g[6]?'<span class="nl">not listed</span>':'')
-        +'<span class="arrow">&rarr;</span><span class="dest">'+esc(g[1])+'</span>'
+        +'<span class="arrow">&rarr;</span>'
+        +'<a class="dest" data-p="'+esc(g[1])+'"'+(BASE?' href="'+esc(BASE+g[1])
+          +'"':'')+' target="_blank" rel="noopener">'+esc(g[1])+'</a>'
         +(g[4]==='401'?'<span class="err" title="Not publicly reachable — HTTP 401">401</span>':'')
         +(g[4]==='404'?'<span class="err g" title="Gone from the live site — HTTP 404">404</span>':'')
         +(g[3]?'<span class="dnm" title="'+esc(g[3])+'">not migrating</span>':'')
@@ -858,6 +910,7 @@ function buildTree(){
   if($('#tree').dataset.done) return;
   $('#tree').innerHTML='<ul>'+TREE.map(n=>tnode(n,0)).join('')+'</ul>';
   $('#tree').dataset.done='1';
+  paintDest();
   $('#tree').addEventListener('click',ev=>{
     const li=ev.target.closest('li.fold'); if(!li) return;
     li.classList.toggle('cl');
@@ -936,6 +989,12 @@ function countActive(){
   $$('#pop input[type=checkbox]').forEach(c=>{if(c.checked)n++;});
   $('#fcount').innerHTML=n?'<span class="badge">'+n+'</span>':'';
 }
+
+let bt;
+$('#base').value=BASE;
+$('#base').classList.toggle('set',!!BASE);
+$('#base').addEventListener('input',e=>{clearTimeout(bt);
+  bt=setTimeout(()=>setBase(e.target.value),350);});
 
 let tm;
 $('#q').addEventListener('input',()=>{clearTimeout(tm);
@@ -1026,6 +1085,10 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">'
        '<button class="tab" data-p="pages">All pages</button>'
        '<button class="tab" data-p="folders">All folders</button></div>'
        '<input id="q" type="search" placeholder="Search a folder or a page…">'
+       '<input id="base" type="url" spellcheck="false" '
+       'title="Paste the new site&#39;s address and every destination below '
+       'becomes a link you can open. Kept in this browser only." '
+       'placeholder="New site base URL — e.g. https://aku-new.vercel.app">'
        '<button class="btn" id="moref">Filters<span id="fcount"></span></button>'
        '<button class="btn" id="colsb">Columns</button>'
        '<button class="btn pri" id="export">&#11015; Download</button>'

@@ -1098,8 +1098,24 @@ doc = ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="utf-8">\n'
          'accounted for in the tree above</div></footer>\n<script>' + JS
        + '</script></body></html>\n')
 
-open(OUT_HTML, 'w', encoding='utf-8').write(doc)
-print('html %.0f KB' % (len(doc.encode('utf-8')) / 1024))
+# AKU-Folder-Hierarchy.html is RETIRED as of 7 Sep 2026 and is no longer
+# written. Two deliverables already showed this same tree: AKU-Tree.html, built
+# from plan.json and so unable to disagree with it, and the Hierarchy tab of
+# AKU-Migration-Plan.html. This page was built BEFORE the plan, from the source
+# webs, so its numbers were a different basis -- 611 source webs against the
+# plan's 628 destination folders -- and its prose had drifted out of step with
+# its own tables, claiming 19 open questions above a section listing 2. Being
+# gitignored, a stale copy could only ever mislead whoever built it, which is
+# what happened.
+#
+# The page is still ASSEMBLED, and deliberately: `decisions`, `stats`, `tree`
+# and the tag counts are computed by that code and are what the accounting check
+# at the bottom of this file tests. Deleting the 900 lines would take the check
+# with them, and the check is the reason this step exists -- it fails the build
+# if any web or page would land nowhere. Read the tree in AKU-Tree.html and the
+# numbers in out/aku-master-pages.csv.
+print('html assembled, %.0f KB — not written, this page is retired'
+      % (len(doc.encode('utf-8')) / 1024))
 for s in tree:
     print('%-16s ent=%-3d fn=%-3d webs=%-4d pages=%-5d'
           % (s, stats[s]['entities'], stats[s]['functions'],
