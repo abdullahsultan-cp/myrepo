@@ -1,0 +1,4076 @@
+{
+  "meta": {
+    "generated": "2026-09-08",
+    "spaceId": "289824742951963",
+    "naming": "short codes -- the space is named this way and 6,399 stories are already filed under it; the front end expands short to long for the public URL",
+    "seedTemplate": {
+      "region": [
+        "blogs",
+        "entities",
+        "events",
+        "news"
+      ],
+      "entity": [
+        "blogs",
+        "departments",
+        "events",
+        "news"
+      ],
+      "department": [
+        "blogs",
+        "events",
+        "news"
+      ]
+    },
+    "seedTemplateReadFrom": "regions/test, the folder the dev created to show the shape",
+    "actions": {
+      "keep": "exists, in the right place -- do nothing",
+      "adopt": "exists in Storyblok, the DB has no row -- write the id in",
+      "create": "the pages plan needs it and it is not there -- create it and seed its leaves"
+    },
+    "renames": "none. The space short code wins, so no folder is renamed and no story moves. Where the pages plan uses a different slug it is listed under \"aliases\" -- one folder, two names.",
+    "containerFolders": "the entities folder under a region and the departments folder under an entity are seeded by the backend when the row gets its first child. They are reported per node as entitiesFolder and departmentsFolder, not as work.",
+    "counts": {
+      "department.create": 21,
+      "department.keep": 89,
+      "entity.adopt": 2,
+      "entity.create": 13,
+      "entity.keep": 61,
+      "region.adopt": 1,
+      "region.keep": 7
+    },
+    "totals": {
+      "regions": 8,
+      "entities": 76,
+      "departments": 110,
+      "aliases": 4
+    },
+    "excludedAsScaffold": [
+      {
+        "path": "regions/gl/entities/test",
+        "level": "entity",
+        "wouldHaveBeen": "adopt",
+        "storyblokFolderId": "217856738947370"
+      },
+      {
+        "path": "regions/test/entities/testent",
+        "level": "entity",
+        "wouldHaveBeen": "adopt",
+        "storyblokFolderId": "217857410999022"
+      }
+    ]
+  },
+  "aliases": [
+    {
+      "level": "entity",
+      "title": "Centre for Regenerative Medicine",
+      "dbId": "d0ff574c-debf-45a5-95bb-785ac0da8b44",
+      "shortName": "CRM",
+      "slug": "crm",
+      "path": "regions/pk/entities/crm",
+      "storyblokFolderId": "203313667320750",
+      "pagesPlanSlug": "centre-for-regenerative-medicine",
+      "why": "the pages plan calls this centre-for-regenerative-medicine; the space has had regions/pk/entities/crm since July and the stories are filed there. Kept as-is. File pages planned for centre-for-regenerative-medicine into this folder."
+    },
+    {
+      "level": "department",
+      "title": "Family Medicine",
+      "dbId": "dfedadb1-e5e1-42c4-93d9-9c3eda71b8f5",
+      "shortName": "FM",
+      "slug": "fm",
+      "path": "regions/pk/entities/mc/departments/fm",
+      "storyblokFolderId": "203314233969994",
+      "pagesPlanSlug": "fam-med",
+      "why": "the pages plan calls this fam-med; the space calls it fm and 3 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for fam-med into this folder."
+    },
+    {
+      "level": "department",
+      "title": "Oncology",
+      "dbId": "82bf8aa7-7603-436f-a18a-d06681b66d86",
+      "shortName": "ONC",
+      "slug": "onc",
+      "path": "regions/pk/entities/mc/departments/onc",
+      "storyblokFolderId": "203314241940818",
+      "pagesPlanSlug": "onco",
+      "why": "the pages plan calls this onco; the space calls it onc and 10 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for onco into this folder."
+    },
+    {
+      "level": "department",
+      "title": "Psychiatry & Mental Health",
+      "dbId": "69fd7177-0614-4181-b349-ba1695443fab",
+      "shortName": "PSYCH",
+      "slug": "psych",
+      "path": "regions/pk/entities/mc/departments/psych",
+      "storyblokFolderId": "203314242260307",
+      "pagesPlanSlug": "psychiatry",
+      "why": "the pages plan calls this psychiatry; the space calls it psych and 4 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for psychiatry into this folder."
+    }
+  ],
+  "regions": [
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "Afghanistan",
+      "shortName": "AF",
+      "slug": "af",
+      "path": "regions/af",
+      "storyblokFolderId": "203313618430723",
+      "dbId": "68b7e6eb-027c-4279-bce1-56efbbeacb12",
+      "stories": 15,
+      "pages": 0,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "East Africa Institute",
+          "shortName": "EAI",
+          "slug": "eai",
+          "path": "regions/af/entities/eai",
+          "storyblokFolderId": "203313705024629",
+          "dbId": "0cfca436-3d81-4b0b-90e2-acc7796d342b",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/af/entities/eai/departments/ph",
+              "storyblokFolderId": "203314308578713",
+              "dbId": "ca6d7544-43a2-469b-9de3-4544aa766362",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314112999417",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Educational Development",
+          "shortName": "IED",
+          "slug": "ied",
+          "path": "regions/af/entities/ied",
+          "storyblokFolderId": "203313709157496",
+          "dbId": "65397b86-b68b-411d-8d97-7688765b3965",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Human Development",
+          "shortName": "IHD",
+          "slug": "ihd",
+          "path": "regions/af/entities/ihd",
+          "storyblokFolderId": "203313713319035",
+          "dbId": "b6596ddc-5e89-46c8-9a0a-c53b0bba922b",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Medical College",
+          "shortName": "MC",
+          "slug": "mc",
+          "path": "regions/af/entities/mc",
+          "storyblokFolderId": "203313709317241",
+          "dbId": "114ba7f3-a911-4154-8b6e-4fc6ae3b477a",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/af/entities/mc/departments/meded",
+              "storyblokFolderId": "203314305301911",
+              "dbId": "f7059dd8-4a40-49a1-99f1-3bec648e399b",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314117300519",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "203313626012423",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "East Africa",
+      "shortName": "EA",
+      "slug": "ea",
+      "path": "regions/ea",
+      "storyblokFolderId": "206177164327560",
+      "dbId": "7e2936c0-1212-4175-bfa8-fd527818732a",
+      "stories": 0,
+      "pages": 436,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Faculty of Arts and Sciences, East Africa",
+          "shortName": "FAS",
+          "slug": "fas",
+          "path": "regions/ea/entities/fas",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 2,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Institute for Educational Development, East Africa",
+          "shortName": "IED",
+          "slug": "ied",
+          "path": "regions/ea/entities/ied",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 43,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Medical College, East Africa",
+          "shortName": "MC",
+          "slug": "mc",
+          "path": "regions/ea/entities/mc",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 334,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Anaesthesiology",
+              "shortName": "ANAES",
+              "slug": "anaes",
+              "path": "regions/ea/entities/mc/departments/anaes",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 13,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Family Medicine",
+              "shortName": "FAM-MED",
+              "slug": "fam-med",
+              "path": "regions/ea/entities/mc/departments/fam-med",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 12,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Medicine",
+              "shortName": "MEDICINE",
+              "slug": "medicine",
+              "path": "regions/ea/entities/mc/departments/medicine",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 91,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Obstetrics & Gynaecology",
+              "shortName": "OBS-GYN",
+              "slug": "obs-gyn",
+              "path": "regions/ea/entities/mc/departments/obs-gyn",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 26,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Paediatrics",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/ea/entities/mc/departments/paeds",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 25,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Pathology",
+              "shortName": "PATHOLOGY",
+              "slug": "pathology",
+              "path": "regions/ea/entities/mc/departments/pathology",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 38,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Radiology",
+              "shortName": "RADIOLOGY",
+              "slug": "radiology",
+              "path": "regions/ea/entities/mc/departments/radiology",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 30,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Surgery",
+              "shortName": "SURGERY",
+              "slug": "surgery",
+              "path": "regions/ea/entities/mc/departments/surgery",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 8,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "School of Nursing & Midwifery, East Africa",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/ea/entities/sonam",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 56,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "206177166277257",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "adopt",
+      "level": "region",
+      "title": "Global",
+      "shortName": "GL",
+      "slug": "gl",
+      "path": "regions/gl",
+      "storyblokFolderId": "203397329585917",
+      "dbId": null,
+      "stories": 398,
+      "pages": 2389,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "remark": "the folder exists in Storyblok; write its id into the DB",
+      "entities": [
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Brain & Mind Institute",
+          "shortName": "BMI",
+          "slug": "bmi",
+          "path": "regions/gl/entities/bmi",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 153,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Centre for Innovation in Medical Education",
+          "shortName": "CIME",
+          "slug": "cime",
+          "path": "regions/gl/entities/cime",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 78,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Centre of Excellence in Women and Child Health",
+          "shortName": "COE-WCH",
+          "slug": "coe-wch",
+          "path": "regions/gl/entities/coe-wch",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 39,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Institute for Global Health & Development",
+          "shortName": "IGHD",
+          "slug": "ighd",
+          "path": "regions/gl/entities/ighd",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 43,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Institute for Human Development",
+          "shortName": "IHD",
+          "slug": "ihd",
+          "path": "regions/gl/entities/ihd",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 9,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "School of Nursing & Midwifery Strategic Planning",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/gl/entities/sonam",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 4,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": false,
+        "storyblokFolderId": null,
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "Kenya",
+      "shortName": "KE",
+      "slug": "ke",
+      "path": "regions/ke",
+      "storyblokFolderId": "203313618008834",
+      "dbId": "b0343ec0-4d15-425b-a106-0a7dd5ebba99",
+      "stories": 878,
+      "pages": 98,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Brain and Mind Institute",
+          "shortName": "BMI",
+          "slug": "bmi",
+          "path": "regions/ke/entities/bmi",
+          "storyblokFolderId": "203313681837152",
+          "dbId": "8af0884b-3bcc-4532-83a3-76295d4aa255",
+          "stories": 73,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/ke/entities/bmi/departments/meded",
+              "storyblokFolderId": "203314221108539",
+              "dbId": "2cbea800-6db5-4232-ab6a-aa1e3e974295",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/ke/entities/bmi/departments/ph",
+              "storyblokFolderId": "203314221886781",
+              "dbId": "f33676bd-dfab-4a06-b0d1-0974d788743d",
+              "stories": 9,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/ke/entities/bmi/departments/psych",
+              "storyblokFolderId": "203314221116732",
+              "dbId": "7da7e350-9cab-4942-85d2-8e0dff4abd75",
+              "stories": 36,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314029262477",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre for Innovation in Medical Education",
+          "shortName": "CIME",
+          "slug": "cime",
+          "path": "regions/ke/entities/cime",
+          "storyblokFolderId": "203313690037354",
+          "dbId": "81345017-b743-4292-8d5e-a51ff4a77a04",
+          "stories": 16,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/ke/entities/cime/departments/meded",
+              "storyblokFolderId": "203314283072889",
+              "dbId": "00b1e6ce-7871-4370-8db9-bb9de5ff0ebb",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/ke/entities/cime/departments/nurs",
+              "storyblokFolderId": "203314287730046",
+              "dbId": "45a717bb-0931-444c-8913-a5412449f183",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314071550571",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Clinical Research Unit, Kenya",
+          "shortName": "CLINICAL-RESEARCH-UNIT",
+          "slug": "clinical-research-unit",
+          "path": "regions/ke/entities/clinical-research-unit",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 7,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre of Excellence in Women and Child Health",
+          "shortName": "COE-WCH",
+          "slug": "coe-wch",
+          "path": "regions/ke/entities/coe-wch",
+          "storyblokFolderId": "203313688468585",
+          "dbId": "ab3aec8f-7ccf-4223-bef0-05988b8c34d8",
+          "stories": 28,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/ke/entities/coe-wch/departments/paeds",
+              "storyblokFolderId": "203314266439022",
+              "dbId": "bced4598-5f69-4961-9716-84bc304e2ca7",
+              "stories": 9,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/ke/entities/coe-wch/departments/ph",
+              "storyblokFolderId": "203314267741551",
+              "dbId": "ebd1468d-a177-4a1f-abf8-fda7d929826f",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314046617680",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "East Africa Institute",
+          "shortName": "EAI",
+          "slug": "eai",
+          "path": "regions/ke/entities/eai",
+          "storyblokFolderId": "203313683827810",
+          "dbId": "960a5a0c-3edf-4495-bb39-90e8fd882a1d",
+          "stories": 68,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nutrition",
+              "shortName": "NUTR",
+              "slug": "nutr",
+              "path": "regions/ke/entities/eai/departments/nutr",
+              "storyblokFolderId": "203314275675508",
+              "dbId": "dc2de7cb-82a9-4ba7-8ac0-1ae31d4d6fc3",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/ke/entities/eai/departments/psych",
+              "storyblokFolderId": "203314274737523",
+              "dbId": "862977c5-18e8-4794-b2eb-fd29341dea29",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314059049260",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Network of English Language Enhancement",
+          "shortName": "ELE",
+          "slug": "ele",
+          "path": "regions/ke/entities/ele",
+          "storyblokFolderId": "203313692695662",
+          "dbId": "6b4a92f6-5420-40e0-bd6e-02651c6d46c3",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Environmental Responsibility",
+          "shortName": "ENV",
+          "slug": "env",
+          "path": "regions/ke/entities/env",
+          "storyblokFolderId": "203313684237412",
+          "dbId": "cd7c62ca-41e5-4a28-a29d-c452e3d62925",
+          "stories": 3,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Graduate School of Media and Communications",
+          "shortName": "GSMC",
+          "slug": "gsmc",
+          "path": "regions/ke/entities/gsmc",
+          "storyblokFolderId": "203313692077163",
+          "dbId": "3bd8736c-2537-4db4-8a5d-a16ecc1c7c92",
+          "stories": 191,
+          "pages": 82,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Governance",
+              "shortName": "GOV",
+              "slug": "gov",
+              "path": "regions/ke/entities/gsmc/departments/gov",
+              "storyblokFolderId": "203314287750527",
+              "dbId": "13739e09-fbf7-43eb-8798-e185fdb158c1",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314087595078",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "adopt",
+          "level": "entity",
+          "title": "hospitals",
+          "shortName": "HOSPITALS",
+          "slug": "hospitals",
+          "path": "regions/ke/entities/hospitals",
+          "storyblokFolderId": "203626793683659",
+          "dbId": null,
+          "stories": 0,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "remark": "an entity folder with no row in the backend DB -- add one rather than leaving it unmanaged",
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Educational Development",
+          "shortName": "IED",
+          "slug": "ied",
+          "path": "regions/ke/entities/ied",
+          "storyblokFolderId": "203313686019173",
+          "dbId": "0f7e884e-8ef9-46f0-80c8-8924caf9d144",
+          "stories": 15,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Human Development",
+          "shortName": "IHD",
+          "slug": "ihd",
+          "path": "regions/ke/entities/ihd",
+          "storyblokFolderId": "203313688386663",
+          "dbId": "39b414bd-398e-4f2f-92f8-d654d13f16a3",
+          "stories": 60,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nutrition",
+              "shortName": "NUTR",
+              "slug": "nutr",
+              "path": "regions/ke/entities/ihd/departments/nutr",
+              "storyblokFolderId": "203314283556218",
+              "dbId": "7ee31573-ccc6-4c06-ab01-2e4e90ee9c21",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/ke/entities/ihd/departments/paeds",
+              "storyblokFolderId": "203314279796087",
+              "dbId": "09cc60af-49c0-4102-9ab7-4fbec791323a",
+              "stories": 6,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/ke/entities/ihd/departments/psych",
+              "storyblokFolderId": "203314280525176",
+              "dbId": "0cfb6bfe-de4b-4e6d-844f-4b480d7f5569",
+              "stories": 4,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314063722901",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for the Study of Muslim Civilisations",
+          "shortName": "ISMC",
+          "slug": "ismc",
+          "path": "regions/ke/entities/ismc",
+          "storyblokFolderId": "203313688423528",
+          "dbId": "c0bed304-2464-4af6-90cd-327a230a49e0",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Medical College",
+          "shortName": "MC",
+          "slug": "mc",
+          "path": "regions/ke/entities/mc",
+          "storyblokFolderId": "203313692077164",
+          "dbId": "289d4d43-e03a-4562-8a9e-24eba3de3da5",
+          "stories": 172,
+          "pages": 1,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Internal Medicine",
+              "shortName": "IM",
+              "slug": "im",
+              "path": "regions/ke/entities/mc/departments/im",
+              "storyblokFolderId": "203314288672130",
+              "dbId": "638dad16-f258-4bb7-b22f-070f3069c4c7",
+              "stories": 5,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `med`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/ke/entities/mc/departments/meded",
+              "storyblokFolderId": "203314291924362",
+              "dbId": "442158ed-2152-48cd-ab38-2f971bd8769c",
+              "stories": 50,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/ke/entities/mc/departments/nurs",
+              "storyblokFolderId": "203314292805003",
+              "dbId": "b29eec27-3248-4277-8f59-41bd4fc34664",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Obstetrics & Gynaecology",
+              "shortName": "OBGYN",
+              "slug": "obgyn",
+              "path": "regions/ke/entities/mc/departments/obgyn",
+              "storyblokFolderId": "203314291486088",
+              "dbId": "117cb9f3-d5c9-4651-bcfc-41560c13c77d",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `obs-gyn`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Oncology",
+              "shortName": "ONC",
+              "slug": "onc",
+              "path": "regions/ke/entities/mc/departments/onc",
+              "storyblokFolderId": "203314295582093",
+              "dbId": "5ad58d84-e994-4f4b-97af-1f3276825cf1",
+              "stories": 7,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `onco`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/ke/entities/mc/departments/paeds",
+              "storyblokFolderId": "203314296085902",
+              "dbId": "2e9c6be9-a43b-45af-a8ba-2951656f1a80",
+              "stories": 10,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/ke/entities/mc/departments/psych",
+              "storyblokFolderId": "203314296479119",
+              "dbId": "fd64cf98-0d4c-454c-87ab-a814544b6916",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314095828265",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Networks of Quality, Teaching and Learning",
+          "shortName": "QTL",
+          "slug": "qtl",
+          "path": "regions/ke/entities/qtl",
+          "storyblokFolderId": "203313696754801",
+          "dbId": "d03b2067-edee-4876-ae0d-1b5fda32b104",
+          "stories": 42,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/ke/entities/qtl/departments/mw",
+              "storyblokFolderId": "203314312293786",
+              "dbId": "42255615-cdbf-42e0-86d1-a1409a9ae8d7",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314109833007",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "School of Nursing and Midwifery",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/ke/entities/sonam",
+          "storyblokFolderId": "203313696783474",
+          "dbId": "7689cebb-7ee6-4d3c-805c-2ec04d19c779",
+          "stories": 97,
+          "pages": 1,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Governance",
+              "shortName": "GOV",
+              "slug": "gov",
+              "path": "regions/ke/entities/sonam/departments/gov",
+              "storyblokFolderId": "203314301570451",
+              "dbId": "88cc867d-5e19-4d1a-961c-e759935c6b02",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/ke/entities/sonam/departments/mw",
+              "storyblokFolderId": "203314303905172",
+              "dbId": "0bd4ff42-905e-41f2-a83e-ff47cc7ff424",
+              "stories": 19,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/ke/entities/sonam/departments/nurs",
+              "storyblokFolderId": "203314303925653",
+              "dbId": "7dd36b1a-da44-4036-a72f-63a414b9aed9",
+              "stories": 23,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Oncology",
+              "shortName": "ONC",
+              "slug": "onc",
+              "path": "regions/ke/entities/sonam/departments/onc",
+              "storyblokFolderId": "203314301341074",
+              "dbId": "b45f3fb1-196d-4dc4-838e-d63fcae2cd40",
+              "stories": 4,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `onco`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/ke/entities/sonam/departments/psych",
+              "storyblokFolderId": "203314304900502",
+              "dbId": "184c0d71-38a7-4471-8281-f1ecb491fe7e",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314112454648",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "203313623046917",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "Pakistan",
+      "shortName": "PK",
+      "slug": "pk",
+      "path": "regions/pk",
+      "storyblokFolderId": "203313617816321",
+      "dbId": "5691bff3-fea6-4521-a3b4-bf2354dafb14",
+      "stories": 4212,
+      "pages": 1461,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Arusha Climate and Environmental Research Centre",
+          "shortName": "AERR",
+          "slug": "aerr",
+          "path": "regions/pk/entities/aerr",
+          "storyblokFolderId": "203313659222812",
+          "dbId": "4ade5036-9dfd-4afd-b538-4f10b6c0abf9",
+          "stories": 0,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Brain and Mind Institute",
+          "shortName": "BMI",
+          "slug": "bmi",
+          "path": "regions/pk/entities/bmi",
+          "storyblokFolderId": "203313663064864",
+          "dbId": "3f5ebd34-502b-47a4-86e6-af3208a1fca4",
+          "stories": 12,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/pk/entities/bmi/departments/ph",
+              "storyblokFolderId": "203314217893177",
+              "dbId": "9cbe575c-67e3-49a3-a3d1-a10b66168530",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/pk/entities/bmi/departments/psych",
+              "storyblokFolderId": "203314216901943",
+              "dbId": "966fd337-6477-4ebb-9de6-fbf44276cc84",
+              "stories": 4,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314008867998",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre of Excellence for Trauma and Emergencies",
+          "shortName": "CETE",
+          "slug": "cete",
+          "path": "regions/pk/entities/cete",
+          "storyblokFolderId": "203313658923803",
+          "dbId": "3a59dc41-847c-48bd-8735-f92a32748ea7",
+          "stories": 8,
+          "pages": 58,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/pk/entities/cete/departments/nurs",
+              "storyblokFolderId": "203314212179248",
+              "dbId": "2a69f813-9756-42bf-9b95-861c8ca57c64",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203313997075149",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre for Innovation in Medical Education",
+          "shortName": "CIME",
+          "slug": "cime",
+          "path": "regions/pk/entities/cime",
+          "storyblokFolderId": "203313663499041",
+          "dbId": "d715dc39-2ed3-42ad-9660-26fad8721d5c",
+          "stories": 244,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Family Medicine",
+              "shortName": "FM",
+              "slug": "fm",
+              "path": "regions/pk/entities/cime/departments/fm",
+              "storyblokFolderId": "203314225245504",
+              "dbId": "bfd46f55-cbc8-493a-bd00-084468d3b251",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `fam-med`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Internal Medicine",
+              "shortName": "IM",
+              "slug": "im",
+              "path": "regions/pk/entities/cime/departments/im",
+              "storyblokFolderId": "203314222791998",
+              "dbId": "3cc8c600-8bf6-49a0-a442-9da760ca19c6",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `med`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/pk/entities/cime/departments/meded",
+              "storyblokFolderId": "203314224753983",
+              "dbId": "8d84a5d2-827f-4947-8a9d-a530b9993c89",
+              "stories": 8,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/pk/entities/cime/departments/mw",
+              "storyblokFolderId": "203314225724737",
+              "dbId": "6cb9dd95-ceaf-40f7-a07b-2d95b21a83bd",
+              "stories": 5,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Neurosurgery",
+              "shortName": "NSURG",
+              "slug": "nsurg",
+              "path": "regions/pk/entities/cime/departments/nsurg",
+              "storyblokFolderId": "203314226801986",
+              "dbId": "d4dd3253-7d8c-473e-aac8-1277c375d3e5",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/pk/entities/cime/departments/nurs",
+              "storyblokFolderId": "203314233593161",
+              "dbId": "3c349ee4-330b-4d9c-a298-16a39b114c93",
+              "stories": 15,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Obstetrics & Gynaecology",
+              "shortName": "OBGYN",
+              "slug": "obgyn",
+              "path": "regions/pk/entities/cime/departments/obgyn",
+              "storyblokFolderId": "203314233097544",
+              "dbId": "1db52744-946d-4736-94b0-053695af4ca8",
+              "stories": 4,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `obs-gyn`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/cime/departments/paeds",
+              "storyblokFolderId": "203314228907331",
+              "dbId": "aa01c029-b7be-4dd3-9539-4416df29c093",
+              "stories": 10,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314012570889",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Clinical Trials Unit",
+          "shortName": "CLINICAL-TRIALS-UNIT",
+          "slug": "clinical-trials-unit",
+          "path": "regions/pk/entities/clinical-trials-unit",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 18,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre of Excellence in Women and Child Health",
+          "shortName": "COE-WCH",
+          "slug": "coe-wch",
+          "path": "regions/pk/entities/coe-wch",
+          "storyblokFolderId": "203313659366173",
+          "dbId": "0fc37713-dd4d-4498-bbd9-c6f5cdf9fd36",
+          "stories": 29,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/coe-wch/departments/paeds",
+              "storyblokFolderId": "203314213063986",
+              "dbId": "98bc8147-c845-4b7d-bc59-f901c5034b62",
+              "stories": 5,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/pk/entities/coe-wch/departments/ph",
+              "storyblokFolderId": "203314217229624",
+              "dbId": "9969605d-4044-4b78-8d7b-0d51598302b0",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314004841568",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre for Regenerative Medicine",
+          "shortName": "CRM",
+          "slug": "crm",
+          "path": "regions/pk/entities/crm",
+          "storyblokFolderId": "203313667320750",
+          "dbId": "d0ff574c-debf-45a5-95bb-785ac0da8b44",
+          "stories": 0,
+          "pages": 93,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "pagesPlanSlug": "centre-for-regenerative-medicine",
+          "renameDeclined": "the pages plan calls this centre-for-regenerative-medicine; the space has had regions/pk/entities/crm since July and the stories are filed there. Kept as-is. File pages planned for centre-for-regenerative-medicine into this folder.",
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": true,
+            "storyblokFolderId": "203314016781647",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre for Regenerative Medicine and Stem Cell Research",
+          "shortName": "CRM",
+          "slug": "crm",
+          "path": "regions/pk/entities/crm",
+          "storyblokFolderId": "203313667320750",
+          "dbId": "d0ff574c-debf-45a5-95bb-785ac0da8b44",
+          "stories": 47,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Oncology",
+              "shortName": "ONC",
+              "slug": "onc",
+              "path": "regions/pk/entities/crm/departments/onc",
+              "storyblokFolderId": "203314229398852",
+              "dbId": "fff41a8e-f5e5-41b1-a79c-a81258c8846f",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `onco`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Regenerative Medicine",
+              "shortName": "REGMED",
+              "slug": "regmed",
+              "path": "regions/pk/entities/crm/departments/regmed",
+              "storyblokFolderId": "203314229796166",
+              "dbId": "0ebd1edf-e3db-4747-8827-98480aeeef52",
+              "stories": 13,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314016781647",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "create",
+          "level": "entity",
+          "title": "Digital Health Resource Centre",
+          "shortName": "DIGITAL-HEALTH-RESOURCE-CENTRE",
+          "slug": "digital-health-resource-centre",
+          "path": "regions/pk/entities/digital-health-resource-centre",
+          "storyblokFolderId": null,
+          "dbId": null,
+          "stories": 0,
+          "pages": 13,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Network of English Language Enhancement",
+          "shortName": "ELE",
+          "slug": "ele",
+          "path": "regions/pk/entities/ele",
+          "storyblokFolderId": "203313673067509",
+          "dbId": "2510de00-7898-4382-ab6a-f2504da732d3",
+          "stories": 40,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Environmental Responsibility",
+          "shortName": "ENV",
+          "slug": "env",
+          "path": "regions/pk/entities/env",
+          "storyblokFolderId": "203313702288500",
+          "dbId": "cf0193d3-3288-4f2a-a541-c2a7a3b46e0a",
+          "stories": 9,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Faculty of Arts and Sciences",
+          "shortName": "FAS",
+          "slug": "fas",
+          "path": "regions/pk/entities/fas",
+          "storyblokFolderId": "203313696291952",
+          "dbId": "c4804892-41f7-4841-9d62-a384fa3685a2",
+          "stories": 60,
+          "pages": 15,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/pk/entities/fas/departments/psych",
+              "storyblokFolderId": "203314296954256",
+              "dbId": "b24240fa-1e68-4b6b-9d84-b333f8a1589f",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314108325577",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Graduate School of Media and Communications",
+          "shortName": "GSMC",
+          "slug": "gsmc",
+          "path": "regions/pk/entities/gsmc",
+          "storyblokFolderId": "203313667566512",
+          "dbId": "2c710447-0287-4b77-b61f-289db88b049d",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "adopt",
+          "level": "entity",
+          "title": "hospitals",
+          "shortName": "HOSPITALS",
+          "slug": "hospitals",
+          "path": "regions/pk/entities/hospitals",
+          "storyblokFolderId": "203626227434003",
+          "dbId": null,
+          "stories": 0,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "remark": "an entity folder with no row in the backend DB -- add one rather than leaving it unmanaged",
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Educational Development",
+          "shortName": "IED",
+          "slug": "ied",
+          "path": "regions/pk/entities/ied",
+          "storyblokFolderId": "203313671322588",
+          "dbId": "a793b698-97bf-4114-8579-64086056a294",
+          "stories": 724,
+          "pages": 137,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/pk/entities/ied/departments/meded",
+              "storyblokFolderId": "203314260041064",
+              "dbId": "58a6f778-6611-4887-9680-5410ef9e5e50",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/pk/entities/ied/departments/mw",
+              "storyblokFolderId": "203314259488103",
+              "dbId": "a9ceaab1-ae2b-4aa7-8ef0-e16fe678ac0f",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/pk/entities/ied/departments/nurs",
+              "storyblokFolderId": "203314262285674",
+              "dbId": "ce25460f-387f-43aa-b4e7-0bd1c1b28523",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/ied/departments/paeds",
+              "storyblokFolderId": "203314262285675",
+              "dbId": "24d1afc7-acb9-4d4d-8e51-2c39cefdf809",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/pk/entities/ied/departments/ph",
+              "storyblokFolderId": "203314263117164",
+              "dbId": "0d5ef0e5-2d58-4035-8aa8-92c3c8717238",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314025104947",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Global Health and Development",
+          "shortName": "IGHD",
+          "slug": "ighd",
+          "path": "regions/pk/entities/ighd",
+          "storyblokFolderId": "203313668881366",
+          "dbId": "c3b076e8-d742-496f-beda-3823d39993b7",
+          "stories": 55,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nutrition",
+              "shortName": "NUTR",
+              "slug": "nutr",
+              "path": "regions/pk/entities/ighd/departments/nutr",
+              "storyblokFolderId": "203314246098262",
+              "dbId": "ad357d9c-97e2-4207-9dae-a18b0f6c93c9",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/ighd/departments/paeds",
+              "storyblokFolderId": "203314250325338",
+              "dbId": "fa53ccd3-0854-483b-a813-2be04446bf09",
+              "stories": 9,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314025621054",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Human Development",
+          "shortName": "IHD",
+          "slug": "ihd",
+          "path": "regions/pk/entities/ihd",
+          "storyblokFolderId": "203313672547295",
+          "dbId": "45dac873-4d3c-4cf1-97e9-fb04c16cab27",
+          "stories": 4,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/ihd/departments/paeds",
+              "storyblokFolderId": "203314230963527",
+              "dbId": "a81bc3b7-c055-4c22-889f-af41d6377401",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314025829951",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for the Study of Muslim Civilisations",
+          "shortName": "ISMC",
+          "slug": "ismc",
+          "path": "regions/pk/entities/ismc",
+          "storyblokFolderId": "203313672203229",
+          "dbId": "bb8662e2-047c-481a-b4e1-16c04333dbe2",
+          "stories": 3,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Medical College",
+          "shortName": "MC",
+          "slug": "mc",
+          "path": "regions/pk/entities/mc",
+          "storyblokFolderId": "203313675500561",
+          "dbId": "2735ad50-7f51-4f04-8ee5-ee4eecdd33e2",
+          "stories": 1150,
+          "pages": 961,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Anaesthesiology",
+              "shortName": "ANAES",
+              "slug": "anaes",
+              "path": "regions/pk/entities/mc/departments/anaes",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 8,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Biological & Biomedical Sciences",
+              "shortName": "BBS",
+              "slug": "bbs",
+              "path": "regions/pk/entities/mc/departments/bbs",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 9,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Cardiology",
+              "shortName": "CARD",
+              "slug": "card",
+              "path": "regions/pk/entities/mc/departments/card",
+              "storyblokFolderId": "203314235129163",
+              "dbId": "85649863-3a24-4217-aa5b-2d440349bba9",
+              "stories": 8,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Community Health Sciences",
+              "shortName": "CHS",
+              "slug": "chs",
+              "path": "regions/pk/entities/mc/departments/chs",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 39,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Continuing Professional Education",
+              "shortName": "DCPE",
+              "slug": "dcpe",
+              "path": "regions/pk/entities/mc/departments/dcpe",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 4,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department for Educational Development",
+              "shortName": "DED",
+              "slug": "ded",
+              "path": "regions/pk/entities/mc/departments/ded",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 29,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Emergency Medicine",
+              "shortName": "EM",
+              "slug": "em",
+              "path": "regions/pk/entities/mc/departments/em",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 9,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Family Medicine",
+              "shortName": "FM",
+              "slug": "fm",
+              "path": "regions/pk/entities/mc/departments/fm",
+              "storyblokFolderId": "203314233969994",
+              "dbId": "dfedadb1-e5e1-42c4-93d9-9c3eda71b8f5",
+              "stories": 3,
+              "pages": 4,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "pagesPlanSlug": "fam-med",
+              "renameDeclined": "the pages plan calls this fam-med; the space calls it fm and 3 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for fam-med into this folder.",
+              "remark": "the new tree calls this `fam-med`"
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Medicine",
+              "shortName": "MED",
+              "slug": "med",
+              "path": "regions/pk/entities/mc/departments/med",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 11,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/pk/entities/mc/departments/meded",
+              "storyblokFolderId": "203314237300044",
+              "dbId": "7267bd90-74b8-4098-ae4b-aaae01d2ed64",
+              "stories": 46,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Neurosurgery",
+              "shortName": "NSURG",
+              "slug": "nsurg",
+              "path": "regions/pk/entities/mc/departments/nsurg",
+              "storyblokFolderId": "203314237787469",
+              "dbId": "9d3ef3d7-a377-435a-89a6-1bb2fe06880b",
+              "stories": 5,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/pk/entities/mc/departments/nurs",
+              "storyblokFolderId": "203314238098766",
+              "dbId": "41c59514-c64d-47c7-8f25-d43d6aa2bd14",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nutrition",
+              "shortName": "NUTR",
+              "slug": "nutr",
+              "path": "regions/pk/entities/mc/departments/nutr",
+              "storyblokFolderId": "203314238750031",
+              "dbId": "97809eb4-5a70-42c0-90ca-b820da6692d2",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Obstetrics & Gynaecology",
+              "shortName": "OBS-GYN",
+              "slug": "obs-gyn",
+              "path": "regions/pk/entities/mc/departments/obs-gyn",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 8,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Oncology",
+              "shortName": "ONC",
+              "slug": "onc",
+              "path": "regions/pk/entities/mc/departments/onc",
+              "storyblokFolderId": "203314241940818",
+              "dbId": "82bf8aa7-7603-436f-a18a-d06681b66d86",
+              "stories": 10,
+              "pages": 4,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "pagesPlanSlug": "onco",
+              "renameDeclined": "the pages plan calls this onco; the space calls it onc and 10 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for onco into this folder.",
+              "remark": "the new tree calls this `onco`"
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Ophthalmology & Visual Sciences",
+              "shortName": "OPHTHALMOLOGY",
+              "slug": "ophthalmology",
+              "path": "regions/pk/entities/mc/departments/ophthalmology",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 5,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/mc/departments/paeds",
+              "storyblokFolderId": "203314241424721",
+              "dbId": "6c12feb0-ac34-45a9-8ad4-ffc8d5064934",
+              "stories": 36,
+              "pages": 117,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Pathology & Laboratory Medicine",
+              "shortName": "PATHOLOGY",
+              "slug": "pathology",
+              "path": "regions/pk/entities/mc/departments/pathology",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 266,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/pk/entities/mc/departments/ph",
+              "storyblokFolderId": "203314242895188",
+              "dbId": "340bc863-67eb-4cc2-99dc-09b4b18bfead",
+              "stories": 16,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/pk/entities/mc/departments/psych",
+              "storyblokFolderId": "203314242260307",
+              "dbId": "69fd7177-0614-4181-b349-ba1695443fab",
+              "stories": 4,
+              "pages": 5,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "pagesPlanSlug": "psychiatry",
+              "renameDeclined": "the pages plan calls this psychiatry; the space calls it psych and 4 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for psychiatry into this folder.",
+              "remark": "the new tree calls this `psychiatry`"
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Radiology",
+              "shortName": "RADIOLOGY",
+              "slug": "radiology",
+              "path": "regions/pk/entities/mc/departments/radiology",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 1,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Regenerative Medicine",
+              "shortName": "REGMED",
+              "slug": "regmed",
+              "path": "regions/pk/entities/mc/departments/regmed",
+              "storyblokFolderId": "203314245590357",
+              "dbId": "50ca5337-28b0-4884-ba75-ba1c3840ebc7",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Department of Surgery",
+              "shortName": "SURGERY",
+              "slug": "surgery",
+              "path": "regions/pk/entities/mc/departments/surgery",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 23,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "create",
+              "level": "department",
+              "title": "Division of Woman & Child Health",
+              "shortName": "WCH",
+              "slug": "wch",
+              "path": "regions/pk/entities/mc/departments/wch",
+              "storyblokFolderId": null,
+              "dbId": null,
+              "stories": 0,
+              "pages": 2,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314026985025",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Networks of Quality, Teaching and Learning",
+          "shortName": "QTL",
+          "slug": "qtl",
+          "path": "regions/pk/entities/qtl",
+          "storyblokFolderId": "203313675508754",
+          "dbId": "984acca7-6401-418a-b79a-8230b4e25bea",
+          "stories": 123,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Surgery Interest Group",
+          "shortName": "SIG",
+          "slug": "sig",
+          "path": "regions/pk/entities/sig",
+          "storyblokFolderId": "203313680194654",
+          "dbId": "db993e4d-bc6d-4955-9c5c-50e8934e36c7",
+          "stories": 27,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "School of Nursing and Midwifery",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/pk/entities/sonam",
+          "storyblokFolderId": "203313675926548",
+          "dbId": "a6a03fbd-7b9e-4ab7-b14e-32c943742610",
+          "stories": 270,
+          "pages": 115,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Geriatrics & Gerontology",
+              "shortName": "GERI",
+              "slug": "geri",
+              "path": "regions/pk/entities/sonam/departments/geri",
+              "storyblokFolderId": "203314247540056",
+              "dbId": "ad410001-e6fc-4d8b-a022-1b827a7d3fa8",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/pk/entities/sonam/departments/meded",
+              "storyblokFolderId": "203314246950231",
+              "dbId": "2c0ed3ab-c648-42c5-8cf7-180ae98e7a48",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/pk/entities/sonam/departments/mw",
+              "storyblokFolderId": "203314250280281",
+              "dbId": "c47929c6-5f9a-42e9-bb9a-4131aec79001",
+              "stories": 25,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/pk/entities/sonam/departments/nurs",
+              "storyblokFolderId": "203314251951453",
+              "dbId": "03f76d5f-80b3-4a7e-b1db-fc02248a3945",
+              "stories": 31,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nutrition",
+              "shortName": "NUTR",
+              "slug": "nutr",
+              "path": "regions/pk/entities/sonam/departments/nutr",
+              "storyblokFolderId": "203314250661212",
+              "dbId": "ff784efe-eda9-416c-a3ee-43587ec843ef",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Oncology",
+              "shortName": "ONC",
+              "slug": "onc",
+              "path": "regions/pk/entities/sonam/departments/onc",
+              "storyblokFolderId": "203314254462307",
+              "dbId": "d1084ad4-6b7b-42ab-9b79-ceedbe1ad7e4",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `onco`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/pk/entities/sonam/departments/paeds",
+              "storyblokFolderId": "203314255916388",
+              "dbId": "911135b6-5682-461f-91a3-1e1d7fc26bcd",
+              "stories": 12,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Public Health",
+              "shortName": "PH",
+              "slug": "ph",
+              "path": "regions/pk/entities/sonam/departments/ph",
+              "storyblokFolderId": "203314258165094",
+              "dbId": "0e9268d7-b81e-42dc-8f68-6e563b095cb8",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/pk/entities/sonam/departments/psych",
+              "storyblokFolderId": "203314258115941",
+              "dbId": "351b6272-0436-4fcb-88ef-9e65ff4fbf9f",
+              "stories": 7,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314029852327",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "203313621863172",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "Tanzania",
+      "shortName": "TZ",
+      "slug": "tz",
+      "path": "regions/tz",
+      "storyblokFolderId": "203313629866761",
+      "dbId": "2f4eb2f4-b3da-4511-9b3f-e5f3d3711871",
+      "stories": 283,
+      "pages": 53,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Arusha Climate and Environmental Research Centre",
+          "shortName": "AERR",
+          "slug": "aerr",
+          "path": "regions/tz/entities/aerr",
+          "storyblokFolderId": "203313835568371",
+          "dbId": "fe8ff625-ec5e-4dd3-be51-8699622baf13",
+          "stories": 30,
+          "pages": 49,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Brain and Mind Institute",
+          "shortName": "BMI",
+          "slug": "bmi",
+          "path": "regions/tz/entities/bmi",
+          "storyblokFolderId": "203313841806587",
+          "dbId": "67e97c1d-22e6-4693-b364-067d3b29c7eb",
+          "stories": 2,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/tz/entities/bmi/departments/psych",
+              "storyblokFolderId": "203314571026117",
+              "dbId": "9fa25fb9-0a3a-4866-9799-232c85e24d2f",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314284911996",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre for Innovation in Medical Education",
+          "shortName": "CIME",
+          "slug": "cime",
+          "path": "regions/tz/entities/cime",
+          "storyblokFolderId": "203313842494716",
+          "dbId": "ff4369e4-1e0d-45bc-8921-3187a87f2dd0",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "East Africa Institute",
+          "shortName": "EAI",
+          "slug": "eai",
+          "path": "regions/tz/entities/eai",
+          "storyblokFolderId": "203313839238392",
+          "dbId": "e5db1604-720a-4594-9337-2eb7c4ff57d8",
+          "stories": 7,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Network of English Language Enhancement",
+          "shortName": "ELE",
+          "slug": "ele",
+          "path": "regions/tz/entities/ele",
+          "storyblokFolderId": "203313854323976",
+          "dbId": "bbf02644-141b-4059-8d51-ad28a07fe727",
+          "stories": 5,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Environmental Responsibility",
+          "shortName": "ENV",
+          "slug": "env",
+          "path": "regions/tz/entities/env",
+          "storyblokFolderId": "203313833495792",
+          "dbId": "2256ec09-e1b5-48a1-a200-afb503a1c1cc",
+          "stories": 2,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Graduate School of Media and Communications",
+          "shortName": "GSMC",
+          "slug": "gsmc",
+          "path": "regions/tz/entities/gsmc",
+          "storyblokFolderId": "203313837714677",
+          "dbId": "3644d7f0-bb75-4c85-963e-0e59f5c947eb",
+          "stories": 8,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Educational Development",
+          "shortName": "IED",
+          "slug": "ied",
+          "path": "regions/tz/entities/ied",
+          "storyblokFolderId": "203313837780214",
+          "dbId": "088bc706-a85d-48ef-80f1-d82aa16f7db2",
+          "stories": 131,
+          "pages": 1,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/tz/entities/ied/departments/psych",
+              "storyblokFolderId": "203314574646983",
+              "dbId": "97396c06-4582-4665-93cb-4a4c3c69b900",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314283945339",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Human Development",
+          "shortName": "IHD",
+          "slug": "ihd",
+          "path": "regions/tz/entities/ihd",
+          "storyblokFolderId": "203313834687730",
+          "dbId": "605e9c8f-f136-4068-8ca7-cbbaef2f6ae6",
+          "stories": 8,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/tz/entities/ihd/departments/psych",
+              "storyblokFolderId": "203314567352000",
+              "dbId": "e55ccb59-20f5-4b68-b3c5-587b18bd8491",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314279402870",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for the Study of Muslim Civilisations",
+          "shortName": "ISMC",
+          "slug": "ismc",
+          "path": "regions/tz/entities/ismc",
+          "storyblokFolderId": "203313850170628",
+          "dbId": "d5fbb36b-03fc-4a40-857e-b7c8a95ddb0c",
+          "stories": 4,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Medical College",
+          "shortName": "MC",
+          "slug": "mc",
+          "path": "regions/tz/entities/mc",
+          "storyblokFolderId": "203313851317510",
+          "dbId": "35f65681-a4e5-4874-aa36-46fec8fe5aae",
+          "stories": 12,
+          "pages": 1,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Family Medicine",
+              "shortName": "FM",
+              "slug": "fm",
+              "path": "regions/tz/entities/mc/departments/fm",
+              "storyblokFolderId": "203314583650003",
+              "dbId": "192164bf-0ee5-4da2-b0f7-c864009e4768",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `fam-med`, which it does not place under this entity -- kept as it is"
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/tz/entities/mc/departments/paeds",
+              "storyblokFolderId": "203314586635990",
+              "dbId": "7f2c678f-5054-4270-afa2-1d9c069290bf",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314288643457",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Networks of Quality, Teaching and Learning",
+          "shortName": "QTL",
+          "slug": "qtl",
+          "path": "regions/tz/entities/qtl",
+          "storyblokFolderId": "203313859153166",
+          "dbId": "8cfab12c-aaa0-4f71-9718-f94848faddbc",
+          "stories": 12,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Surgery Interest Group",
+          "shortName": "SIG",
+          "slug": "sig",
+          "path": "regions/tz/entities/sig",
+          "storyblokFolderId": "203313850187013",
+          "dbId": "5e59b575-2163-4b2e-82f0-0506f5fe8c8c",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "School of Nursing and Midwifery",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/tz/entities/sonam",
+          "storyblokFolderId": "203313854336265",
+          "dbId": "af191964-415f-444f-8d9b-92cec0a9efac",
+          "stories": 23,
+          "pages": 1,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/tz/entities/sonam/departments/mw",
+              "storyblokFolderId": "203314612395761",
+              "dbId": "fa34b399-7ea3-4f15-8de7-3596a919271f",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/tz/entities/sonam/departments/nurs",
+              "storyblokFolderId": "203314604941038",
+              "dbId": "e251b1b2-b40a-478c-a35b-03dd82686f64",
+              "stories": 9,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/tz/entities/sonam/departments/paeds",
+              "storyblokFolderId": "203314604388077",
+              "dbId": "32f33262-cf00-4285-9bf6-61a35c7b85a0",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/tz/entities/sonam/departments/psych",
+              "storyblokFolderId": "203314608963311",
+              "dbId": "8f8a9ab2-ab0b-4ed1-9c3d-cffb092be1a6",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314293230988",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "203313646426901",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "Uganda",
+      "shortName": "UG",
+      "slug": "ug",
+      "path": "regions/ug",
+      "storyblokFolderId": "203313625668358",
+      "dbId": "4d712192-feac-43a5-ae13-d0abf03d7637",
+      "stories": 90,
+      "pages": 51,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Centre of Excellence in Women and Child Health",
+          "shortName": "COE-WCH",
+          "slug": "coe-wch",
+          "path": "regions/ug/entities/coe-wch",
+          "storyblokFolderId": "203313800891593",
+          "dbId": "1d605dd4-7644-48e0-8c23-cc62a5814208",
+          "stories": 2,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "East Africa Institute",
+          "shortName": "EAI",
+          "slug": "eai",
+          "path": "regions/ug/entities/eai",
+          "storyblokFolderId": "203313821052129",
+          "dbId": "cf34491b-75ae-42a7-8214-8c34a8c749b9",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Graduate School of Media and Communications",
+          "shortName": "GSMC",
+          "slug": "gsmc",
+          "path": "regions/ug/entities/gsmc",
+          "storyblokFolderId": "203313825221862",
+          "dbId": "dfb7e765-64c4-4c79-9a49-4da77638b8d1",
+          "stories": 9,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Educational Development",
+          "shortName": "IED",
+          "slug": "ied",
+          "path": "regions/ug/entities/ied",
+          "storyblokFolderId": "203313818074332",
+          "dbId": "654341e9-a861-4c4b-bb4b-a3a92c684408",
+          "stories": 7,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for Human Development",
+          "shortName": "IHD",
+          "slug": "ihd",
+          "path": "regions/ug/entities/ihd",
+          "storyblokFolderId": "203313821560034",
+          "dbId": "46d41f09-d9f3-457f-b9d8-863a4417c89b",
+          "stories": 5,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/ug/entities/ihd/departments/psych",
+              "storyblokFolderId": "203314558574260",
+              "dbId": "4da4e7e5-4175-444f-a929-f28384d913c0",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314263666029",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Medical College",
+          "shortName": "MC",
+          "slug": "mc",
+          "path": "regions/ug/entities/mc",
+          "storyblokFolderId": "203313823046884",
+          "dbId": "543558e8-41f7-472c-b93f-fa27de1ec3e1",
+          "stories": 2,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Medical Education",
+              "shortName": "MEDED",
+              "slug": "meded",
+              "path": "regions/ug/entities/mc/departments/meded",
+              "storyblokFolderId": "203314563239611",
+              "dbId": "de9f794d-0657-46cc-a8ea-5df4d71a2718",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314270817650",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Networks of Quality, Teaching and Learning",
+          "shortName": "QTL",
+          "slug": "qtl",
+          "path": "regions/ug/entities/qtl",
+          "storyblokFolderId": "203313818365149",
+          "dbId": "c61095fa-5e6c-4ee9-b576-4735e872afd5",
+          "stories": 1,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "School of Nursing and Midwifery",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/ug/entities/sonam",
+          "storyblokFolderId": "203313821715683",
+          "dbId": "23ffce39-e696-4e26-bc90-0ef44b032fe4",
+          "stories": 38,
+          "pages": 50,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/ug/entities/sonam/departments/mw",
+              "storyblokFolderId": "203314562715322",
+              "dbId": "9138319b-7709-4f43-b030-4fd67bcf9b13",
+              "stories": 13,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Nursing",
+              "shortName": "NURS",
+              "slug": "nurs",
+              "path": "regions/ug/entities/sonam/departments/nurs",
+              "storyblokFolderId": "203314587750106",
+              "dbId": "ec06a74f-c775-41d7-be18-ae6770d75ad8",
+              "stories": 8,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Paediatrics & Child Health",
+              "shortName": "PAEDS",
+              "slug": "paeds",
+              "path": "regions/ug/entities/sonam/departments/paeds",
+              "storyblokFolderId": "203314587147992",
+              "dbId": "771c0f83-4894-48d3-a18b-0c5f339bea54",
+              "stories": 3,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314267827568",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "203313646430998",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    },
+    {
+      "action": "keep",
+      "level": "region",
+      "title": "United Kingdom",
+      "shortName": "UK",
+      "slug": "uk",
+      "path": "regions/uk",
+      "storyblokFolderId": "203313629833992",
+      "dbId": "996da0e4-3086-41c1-bc3e-8e06d70cd35f",
+      "stories": 523,
+      "pages": 103,
+      "autoSeeded": [
+        "blogs",
+        "events",
+        "news"
+      ],
+      "entities": [
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Institute for the Study of Muslim Civilisations",
+          "shortName": "ISMC",
+          "slug": "ismc",
+          "path": "regions/uk/entities/ismc",
+          "storyblokFolderId": "203313951169923",
+          "dbId": "6d3b7ec8-afa0-4388-8b7b-7e5c2f5d1ec9",
+          "stories": 511,
+          "pages": 102,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Governance",
+              "shortName": "GOV",
+              "slug": "gov",
+              "path": "regions/uk/entities/ismc/departments/gov",
+              "storyblokFolderId": "203314786451259",
+              "dbId": "a5db3b1c-1250-4c97-ade3-cf17742152a4",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            },
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Psychiatry & Mental Health",
+              "shortName": "PSYCH",
+              "slug": "psych",
+              "path": "regions/uk/entities/ismc/departments/psych",
+              "storyblokFolderId": "203314795552579",
+              "dbId": "8350258c-dea5-450b-b1ca-7c6ac9824f28",
+              "stories": 1,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ],
+              "remark": "same unit as the new tree's `psychiatry`, which it does not place under this entity -- kept as it is"
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314354797996",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "Networks of Quality, Teaching and Learning",
+          "shortName": "QTL",
+          "slug": "qtl",
+          "path": "regions/uk/entities/qtl",
+          "storyblokFolderId": "203313958440454",
+          "dbId": "42f576c0-e6d6-4c9f-8813-d529656ade07",
+          "stories": 2,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [],
+          "departmentsFolder": {
+            "needed": false,
+            "exists": false,
+            "storyblokFolderId": null,
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        },
+        {
+          "action": "keep",
+          "level": "entity",
+          "title": "School of Nursing and Midwifery",
+          "shortName": "SONAM",
+          "slug": "sonam",
+          "path": "regions/uk/entities/sonam",
+          "storyblokFolderId": "203313958460935",
+          "dbId": "63383500-f6be-4a16-b73c-f466c218950d",
+          "stories": 2,
+          "pages": 0,
+          "autoSeeded": [
+            "blogs",
+            "events",
+            "news"
+          ],
+          "departments": [
+            {
+              "action": "keep",
+              "level": "department",
+              "title": "Midwifery",
+              "shortName": "MW",
+              "slug": "mw",
+              "path": "regions/uk/entities/sonam/departments/mw",
+              "storyblokFolderId": "203314791919425",
+              "dbId": "2352a091-e004-418f-b2f7-dfd263523b3b",
+              "stories": 2,
+              "pages": 0,
+              "autoSeeded": [
+                "blogs",
+                "events",
+                "news"
+              ]
+            }
+          ],
+          "departmentsFolder": {
+            "needed": true,
+            "exists": true,
+            "storyblokFolderId": "203314363129268",
+            "seededBy": "backend, when the entity gets its first department"
+          }
+        }
+      ],
+      "entitiesFolder": {
+        "needed": true,
+        "exists": true,
+        "storyblokFolderId": "203313655655193",
+        "seededBy": "backend, when the region gets its first entity"
+      }
+    }
+  ]
+}

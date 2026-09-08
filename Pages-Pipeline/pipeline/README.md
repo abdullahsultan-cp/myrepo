@@ -15,7 +15,12 @@ python build_roles.py            # -> roles.json + the four role CSVs
 python verify_live.py            # -> aku-live-page-verification.csv  (hits the network)
 python build_master_sheet.py     # -> aku-master-{pages,folders}.csv   THE deliverable
 python build_assignments.py      # -> aku-page-assignments.csv        the work sheet
+python build_backend_tree.py     # -> AKU-Backend-Tree.json           the backend hand-off
 python audit_hierarchy.py        # -> the audit  (reads only, fails on a regression)
+python build_folder_json.py      # -> ../out/AKU-Folder-Structure.json   the tree, typed, to seed a DB
+python build_hierarchy_map.py    # -> ../out/aku-hierarchy-map.csv + AKU-Hierarchy-Map.json   old -> new
+python render_hierarchy_map.py   # -> ../out/AKU-Hierarchy-Map.html   the map, one file, shareable
+
 mkdir -p ../portal/public/data   # gitignored, so absent on a fresh clone
 cp ../out/work/{plan,people,roles}.json ../portal/public/data/
 ```
