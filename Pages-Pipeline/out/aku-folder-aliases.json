@@ -1,0 +1,109 @@
+{
+  "notes": {
+    "generated": "2026-09-09",
+    "spaceId": "289824742951963",
+    "naming": "short codes -- the space is named this way and 6,399 stories are already filed under it; the front end expands short to long for the public URL",
+    "seedTemplate": {
+      "region": [
+        "blogs",
+        "entities",
+        "events",
+        "news"
+      ],
+      "entity": [
+        "blogs",
+        "departments",
+        "events",
+        "news"
+      ],
+      "department": [
+        "blogs",
+        "events",
+        "news"
+      ]
+    },
+    "seedTemplateReadFrom": "regions/test, the folder the dev created to show the shape",
+    "actions": {
+      "keep": "exists, in the right place -- do nothing",
+      "adopt": "exists in Storyblok, the DB has no row -- write the id in",
+      "create": "the pages plan needs it and it is not there -- create it and seed its leaves"
+    },
+    "renames": "none. The space short code wins, so no folder is renamed and no story moves. Where the pages plan uses a different slug it is listed under \"aliases\" -- one folder, two names.",
+    "containerFolders": "the entities folder under a region and the departments folder under an entity are seeded by the backend when the row gets its first child. They are reported per node as entitiesFolder and departmentsFolder, not as work.",
+    "counts": {
+      "department.create": 21,
+      "department.keep": 89,
+      "entity.adopt": 2,
+      "entity.create": 13,
+      "entity.keep": 60,
+      "region.adopt": 1,
+      "region.keep": 7
+    },
+    "totals": {
+      "regions": 8,
+      "entities": 75,
+      "departments": 110,
+      "aliases": 4
+    },
+    "excludedAsScaffold": [
+      {
+        "path": "regions/gl/entities/test",
+        "level": "entity",
+        "wouldHaveBeen": "adopt",
+        "storyblokFolderId": "217856738947370"
+      },
+      {
+        "path": "regions/test/entities/testent",
+        "level": "entity",
+        "wouldHaveBeen": "adopt",
+        "storyblokFolderId": "217857410999022"
+      }
+    ]
+  },
+  "aliases": [
+    {
+      "level": "entity",
+      "title": "Centre for Regenerative Medicine",
+      "dbId": "d0ff574c-debf-45a5-95bb-785ac0da8b44",
+      "shortName": "CRM",
+      "slug": "crm",
+      "path": "regions/pk/entities/crm",
+      "storyblokFolderId": "203313667320750",
+      "pagesPlanSlug": "centre-for-regenerative-medicine",
+      "why": "the pages plan calls this centre-for-regenerative-medicine; the space has had regions/pk/entities/crm since July and the stories are filed there. Kept as-is. File pages planned for centre-for-regenerative-medicine into this folder."
+    },
+    {
+      "level": "department",
+      "title": "Family Medicine",
+      "dbId": "dfedadb1-e5e1-42c4-93d9-9c3eda71b8f5",
+      "shortName": "FM",
+      "slug": "fm",
+      "path": "regions/pk/entities/mc/departments/fm",
+      "storyblokFolderId": "203314233969994",
+      "pagesPlanSlug": "fam-med",
+      "why": "the pages plan calls this fam-med; the space calls it fm and 3 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for fam-med into this folder."
+    },
+    {
+      "level": "department",
+      "title": "Oncology",
+      "dbId": "82bf8aa7-7603-436f-a18a-d06681b66d86",
+      "shortName": "ONC",
+      "slug": "onc",
+      "path": "regions/pk/entities/mc/departments/onc",
+      "storyblokFolderId": "203314241940818",
+      "pagesPlanSlug": "onco",
+      "why": "the pages plan calls this onco; the space calls it onc and 10 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for onco into this folder."
+    },
+    {
+      "level": "department",
+      "title": "Psychiatry & Mental Health",
+      "dbId": "69fd7177-0614-4181-b349-ba1695443fab",
+      "shortName": "PSYCH",
+      "slug": "psych",
+      "path": "regions/pk/entities/mc/departments/psych",
+      "storyblokFolderId": "203314242260307",
+      "pagesPlanSlug": "psychiatry",
+      "why": "the pages plan calls this psychiatry; the space calls it psych and 4 stories are filed there. Kept as-is -- renaming would lengthen the short code and move live stories for no reader benefit. File pages planned for psychiatry into this folder."
+    }
+  ]
+}

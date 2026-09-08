@@ -37,7 +37,15 @@ tree to find them.
 Inputs   out/aku-hierarchy-map.csv            the join, with actions
          data/backend/{regions,region_entities,entity_departments}.json
          ../storyblok_space/folder_tree.json  refresh it first
-Output   out/AKU-Backend-Tree.json
+Outputs  out/AKU-Backend-Tree.json   the tree, and ONLY the tree -- a bare JSON
+                                     array of regions. This is the file the
+                                     backend dev is sent.
+         out/aku-folder-aliases.json where the pages plan spells a folder out in
+                                     full and the space uses a short code. Not
+                                     the backend's problem: it is for whoever
+                                     creates the pages, who would otherwise look
+                                     for `.../departments/fam-med`, not find it,
+                                     and create the duplicate this avoided.
 """
 import collections
 import csv
@@ -276,9 +284,47 @@ def node(row):
 
 
 # ---- nest it ------------------------------------------------------------
-by_path = {path_of(r): node(r) for r in OWNED}
+# Keyed by the node's FINAL path, not the path it arrived with. An aliased node
+# is rewritten to point at the folder that already exists, so it lands on a key
+# something else already holds -- and keying by the arrival path let both
+# through: `regions/pk/entities/centre-for-regenerative-medicine` and
+# `regions/pk/entities/crm` became two entity nodes with ONE dbId, one folder
+# id, and the same parent.
+#
+# The backend dev's dry run caught it, merged first-seen, and carried on. It
+# only survived because his merge kept the departments; first-seen here was the
+# alias node, which has none, so a merge that took the first node wholesale
+# would have silently dropped Oncology and Regenerative Medicine from CRM.
+# Merging is this file's job, not his.
+def merge(into, other):
+    """Fold an aliased node into the real one. The real one keeps its content."""
+    # Whichever has departments is the one the join actually populated.
+    keep, alias = (into, other) if len(into.get('departments') or []) >= \
+        len(other.get('departments') or []) else (other, into)
+    for field in ('pagesPlanSlug', 'renameDeclined'):
+        if field in alias and field not in keep:
+            keep[field] = alias[field]
+    # The DB title is the authority on what the unit is called. An alias node
+    # carries the pages plan's shorter name for it.
+    if alias.get('pages') and not keep.get('pages'):
+        keep['pages'] = alias['pages']
+    return keep
+
+
+by_path = {}
+for _r in OWNED:
+    _n = node(_r)
+    _key = _n['path']
+    by_path[_key] = merge(by_path[_key], _n) if _key in by_path else _n
+
+_dupe = collections.Counter(n['path'] for n in by_path.values())
+_dupe = [p for p, c in _dupe.items() if c > 1]
+if _dupe:
+    raise SystemExit('two nodes claim one path after merging, which means the '
+                     'backend would receive one folder twice: %s' % '; '.join(_dupe))
 regions, entities, orphans = [], {}, []
 for path, n in sorted(by_path.items()):
+    path = n['path']
     if n['level'] == 'region':
         n['entities'] = []
         regions.append(n)
@@ -344,8 +390,12 @@ aliases = [{'level': n['level'], 'title': n['title'], 'dbId': n['dbId'],
 aliases.sort(key=lambda m: m['path'])
 
 counts = collections.Counter((n['level'], n['action']) for n in by_path.values())
-doc = {
-    'meta': {
+# The notes that used to ride along in a `meta` key. They are ABOUT the file
+# rather than part of it, and a seeding script has to step over them to reach
+# the tree, so they live beside it instead -- same information, nothing for the
+# dev to skip.
+notes = {
+    'about': {
         'generated': datetime.date.today().isoformat(),
         'spaceId': SPACE_ID,
         'naming': 'short codes -- the space is named this way and 6,399 stories '
@@ -377,13 +427,11 @@ doc = {
             'aliases': len(aliases),
         },
     },
-    'aliases': aliases,
-    'regions': regions,
 }
-# Named rather than silently absent: somebody comparing this against the space
-# will notice two entities missing and should find the reason here.
+# Named rather than silently absent: somebody comparing the tree against the
+# space will notice two entities missing and should find the reason here.
 if EXCLUDED:
-    doc['meta']['excludedAsScaffold'] = [
+    notes['about']['excludedAsScaffold'] = [
         {'path': r['to_path'] or r['from_path'],
          'level': r['level'],
          'wouldHaveBeen': r['action'],
@@ -392,17 +440,24 @@ if EXCLUDED:
 if orphans:
     # Not dropped. A node whose parent is missing is the one thing here that
     # cannot be applied, so it is named rather than silently absent.
-    doc['unplaced'] = orphans
+    notes['about']['unplaced'] = orphans
 
-out = paths.out('AKU-Backend-Tree.json')
-with open(out, 'w', encoding='utf-8', newline='\n') as fh:
-    json.dump(doc, fh, indent=2, ensure_ascii=False)
-    fh.write('\n')
+def write(name, payload):
+    with open(paths.out(name), 'w', encoding='utf-8', newline='\n') as fh:
+        json.dump(payload, fh, indent=2, ensure_ascii=False)
+        fh.write('\n')
 
-print('AKU-Backend-Tree.json')
-print('  regions %d | entities %d | departments %d'
-      % (doc['meta']['totals']['regions'], doc['meta']['totals']['entities'],
-         doc['meta']['totals']['departments']))
+
+# The tree, on its own. No wrapper object, no keys to step over: the top level
+# is the list of regions, each with entities[], each with departments[].
+write('AKU-Backend-Tree.json', regions)
+write('aku-folder-aliases.json', {'notes': notes['about'], 'aliases': aliases})
+
+print('AKU-Backend-Tree.json      a bare array of %d regions -- send this one'
+      % len(regions))
+print('  entities %d | departments %d'
+      % (notes['about']['totals']['entities'],
+         notes['about']['totals']['departments']))
 print()
 print('  %-12s %s' % ('level', 'action'))
 for (lvl, act), n in sorted(counts.items()):
