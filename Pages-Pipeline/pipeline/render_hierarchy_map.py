@@ -214,7 +214,7 @@ def main():
     tiles = ['<button class="tile" aria-pressed="false" data-action="%s">'
              '<span class="n">%s</span><span class="l">%s</span>'
              '<span class="w">%s</span></button>'
-             % (name, '{:,}'.format(counts.get(name, 0)), name, e(does))
+             % (name, f'{counts.get(name, 0):,}', name, e(does))
              for name, _, does in ACTIONS]
 
     levels = ''.join('<option value="%s">%s (%d)</option>' % (k, k, v)

@@ -23,7 +23,7 @@ If you have just picked this up, read this section and nothing else first.
 | | state |
 |---|---|
 | **The plan** | **done.** 628 folders, 4,548 of 4,591 pages have a destination. 19 of 20 structural checks pass; the 20th is AKU's own open questions |
-| **The folder tree — backend's half** | **done and verified.** region / entity / department, all 193 nodes present in the space, every `news`/`blogs`/`events` leaf, 0 duplicates |
+| **The folder tree — backend's half** | **applied 9 Sep and verified against the API.** 8 regions, 75 entities, 110 departments — 0 missing, every `news`/`blogs`/`events` leaf present, 0 duplicates, 0 renames, 0 stories moved |
 | **The folder tree — our half** | **ready to run, not run.** 438 section folders. `create_section_folders.py`, dry-run clean |
 | **The pages themselves** | **not started, and the content is not even downloaded.** See the warning below |
 | **Who does what** | 1,459 pages assigned to 9 people; 3,132 unassigned |

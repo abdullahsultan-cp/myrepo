@@ -3,10 +3,10 @@
 Two trees describe the same university.
 
   OLD  what exists today: the backend's `regions` / `region_entities` /
-       `entity_departments` tables, which agree exactly with the live Storyblok
-       space -- 7 regions, 60 entities, 89 departments, every id resolving --
-       plus the 470 `news`/`blogs`/`events` leaves the backend seeds under each
-       of those and the 6,399 stories inside them.
+       `entity_departments` tables and the folders they own in the live space --
+       8 regions, 75 entities, 110 departments since the dev applied the seed on
+       9 Sep -- plus the `news`/`blogs`/`events` leaves seeded under each of
+       those and the 6,399 stories inside them.
 
   NEW  what the pages migration needs: `out/aku-folder-map.csv`, 628 folders
        carrying 4,591 SharePoint pages -- the same regions and entities, but
@@ -18,33 +18,44 @@ answer to "what happens to this folder" is a line you can read rather than a
 diff of two trees. Nothing is dropped: a node with no counterpart still gets a
 row, with the reason in `remark`.
 
-The decisions it encodes, all AKU's, taken 8 Sep 2026:
+The decisions it encodes, all AKU's, taken 8-9 Sep 2026:
 
   * **Short codes win.** `regions/pk/entities/mc`, as the space is named now and
     as 6,399 stories are already filed. The pages plan's long slugs
     (`regions/pakistan/entities/medical-college`) are translated on the way in;
     the front end expands short -> long for the public URL.
   * **The `entities/` level stays**, and `departments/` under it.
-  * **Region, entity and department folders are created by the backend**, which
-    seeds `news`, `blogs` and `events` inside each one. Sections do not get
-    those three -- `about` has no news of its own.
+  * **Region, entity and department folders are the backend's**, which seeds
+    `news`, `blogs` and `events` inside each one. Sections do not get those
+    three -- `about` has no news of its own.
   * **No empty folders.** A pages folder holding no page anywhere beneath it is
-    `skip`, not `create`: 92 of them, plus the 24 `staging/*` test folders,
+    `skip`, not `create`: 74 of them, plus the 24 `staging/*` test folders,
     which are `ignore`.
-  * **A department is renamed only where the new tree actually has it.** `fm`
-    and `fam-med` are one unit under two spellings, but renaming all three `fm`
-    folders would move 6 stories to satisfy a plan that only mentions the one
-    under `pk/mc`. So the rename is scoped to the entity the new tree names, and
-    every other occurrence keeps its name and says so in `remark`.
+  * **Nothing is renamed and no story moves.** Where the pages plan spells a
+    folder differently -- `fam-med` for `fm`, `onco` for `onc`, `psychiatry` for
+    `psych`, `centre-for-regenerative-medicine` for `crm` -- the plan's address
+    is rewritten onto the folder that already holds the stories, children and
+    all. The four are read from `out/aku-folder-aliases.json`. Renaming would
+    have made the short code longer and moved live story URLs for no reader
+    benefit.
 
 Actions, and what each means to whoever applies this:
 
   keep    exists, stays where it is                      nothing to do
   adopt   exists in Storyblok, the DB does not know it    write the id down
   create  the new tree needs it, it is not there yet      create it
-  rename  same folder, new slug -- stories move with it   rename, then re-check links
   skip    in the new tree, but empty                      do not create
   ignore  exists, belongs to nobody's plan                leave alone, decide later
+
+The `create` rows are exactly the 438 folders in `aku-section-folders.csv`, which
+is asserted rather than hoped for: the two are produced from the same plan by
+different code, so a difference means one of them is wrong.
+
+**`adopt` is inflated until the DB dumps are refreshed.** 38 of the 43 are the
+nodes the dev created on 9 Sep; `data/backend/*.json` is the dump from the day
+before, so the map cannot see that his database now has rows for them. Re-dump
+the three tables and those become `keep`. The 5 that are real: `regions`,
+`hospitals` in ke and pk, and `sonam/programmes`.
 
 Inputs   data/backend/{regions,region_entities,entity_departments}.json
          ../storyblok_space/folder_tree.json          (refresh it first)
@@ -65,20 +76,26 @@ import paths
 
 SPACE_ID = '289824742951963'
 
-# The five department pairs that are one unit under two spellings -- news on the
-# left (from `Tags`, so "Psychiatry & Mental Health"), SharePoint on the right
-# (a real department web, so "Department of Psychiatry"). Applied only where the
-# new tree names the right-hand side under the same entity; see the docstring.
-DEPT_ALIAS = {
-    'fm': 'fam-med',
-    'onc': 'onco',
-    'psych': 'psychiatry',
-    'obgyn': 'obs-gyn',
-    'im': 'med',
-}
+# One folder under two names. AKU settled this on 9 Sep 2026: the space's short
+# code wins, nothing is renamed, and a page planned for the other spelling is
+# filed into the folder that already holds the stories. The four are recorded
+# once, in out/aku-folder-aliases.json -- read from there rather than restated
+# here, because a second copy of a decision is a second thing to get wrong.
+ALIAS_FILE = 'aku-folder-aliases.json'
 
 # What the backend creates inside every region, entity and department.
 LEAVES = ('news', 'blogs', 'events')
+
+# The dev's own scaffold, excluded by PATH and never offered as work. He built
+# `regions/test` to show us the seed shape, and both of these classify as
+# genuine entity folders with no DB row -- so handing them back as `adopt` is how
+# a Test region gets seeded into the backend database. Matching the word "test"
+# is not the rule: there is a real `regions/pk/announce/test`, and AKU publishes
+# pages about testing.
+SCAFFOLD_PATHS = (
+    'regions/test',
+    'regions/gl/entities/test',
+)
 
 # Roots that are nobody's plan: the dev's own, and the test trees.
 KNOWN_STRAY_ROOTS = {
@@ -98,7 +115,7 @@ KNOWN_STRAY_ROOTS = {
 def backend(name):
     """One of the three DB dumps. The export wraps rows in a `select ...` key."""
     with open(os.path.join(paths.DATA, 'backend', name), encoding='utf-8') as fh:
-        return list(json.load(fh).values())[0]
+        return next(iter(json.load(fh).values()))
 
 
 def out_rows(name):
@@ -184,23 +201,19 @@ def translate(rows, entity_shorts):
     return short
 
 
-def rename_targets(pages_rows, short, live):
-    """`{live department path: new slug}` for the renames the new tree implies.
+def alias_paths():
+    """`{the pages plan's address: the folder that already exists}`.
 
-    A live `fm` folder is renamed only when the new tree has `fam-med` under the
-    same region and entity. That is the whole rule, and it is why 3 folders move
-    and not 27.
+    Read from `out/aku-folder-aliases.json`, so the map cannot disagree with the
+    seed the backend applied. Four entries: `centre-for-regenerative-medicine`
+    is `crm`, `fam-med` is `fm`, `onco` is `onc`, `psychiatry` is `psych`.
     """
-    wanted = {short[r['new_path']] for r in pages_rows
-              if r['kind'] == 'department'}
+    with open(paths.out(ALIAS_FILE), encoding='utf-8') as fh:
+        alias = json.load(fh)['aliases']
     out = {}
-    for path in live:
-        parts = path.split('/')
-        if len(parts) != 6 or parts[4] != 'departments':
-            continue
-        alias = DEPT_ALIAS.get(parts[5])
-        if alias and '/'.join(parts[:5] + [alias]) in wanted:
-            out[path] = alias
+    for a in alias:
+        parent = a['path'].rsplit('/', 1)[0]
+        out['%s/%s' % (parent, a['pagesPlanSlug'])] = (a['path'], a['why'])
     return out
 
 
@@ -224,7 +237,16 @@ def build():
     pages_rows = out_rows('aku-folder-map.csv')
     entity_shorts = short_names()
     short = translate(pages_rows, entity_shorts)
-    renames = rename_targets(pages_rows, short, live)
+
+    # An aliased folder takes its children with it: a page planned for
+    # `centre-for-regenerative-medicine/about` belongs under `crm/about`, or the
+    # map would ask for a second folder beside the one holding the stories.
+    alias = alias_paths()
+    for src, target in list(short.items()):
+        for plan_path, (real_path, _why) in alias.items():
+            if target == plan_path or target.startswith(plan_path + '/'):
+                short[src] = real_path + target[len(plan_path):]
+                break
 
     regions = backend('regions.json')
     entities = backend('region_entities.json')
@@ -233,7 +255,6 @@ def build():
     entity_by_id = {e['id']: e for e in entities}
 
     nodes = collections.OrderedDict()
-    renamed_paths = {}
 
     def add(node):
         nodes.setdefault(node['to_path'], node)
@@ -296,52 +317,35 @@ def build():
         old = 'regions/%s/entities/%s/departments/%s' % (
             r['shortName'].lower(), e['shortName'].lower(),
             d['shortName'].lower())
-        alias = renames.get(old)
-        new = old.rsplit('/', 1)[0] + '/' + alias if alias else old
-        if alias:
-            renamed_paths[old] = new
-        other = DEPT_ALIAS.get(d['shortName'].lower())
-        add(Node('department', new, from_source='backend.entity_departments',
+        twin = next((why for plan, (real, why) in alias.items()
+                     if real == old), '')
+        add(Node('department', old, from_source='backend.entity_departments',
                  from_path=old, from_title=d['title'],
                  from_short=d['shortName'], from_db_id=d['id'],
                  from_sb_id=int(d['storyblokFolderId'])
                  if d['storyblokFolderId'] else None,
-                 to_title=d['title'], to_short=(alias or d['shortName'].lower()).upper(),
-                 action='rename' if alias else 'keep',
-                 stories=subtree_stories(old),
-                 moves_stories=subtree_stories(old) if alias else 0,
-                 remark='the new tree calls this `%s`' % alias if alias else
-                 ('same unit as the new tree\'s `%s`, which it does not place '
-                  'under this entity -- kept as it is' % other) if other else ''))
-
-    # A renamed department takes its children with it -- `fm/news` holds 3
-    # stories and has to end up under `fam-med`, not beside it. Storyblok moves
-    # a folder's children when the folder is renamed, so the map must say the
-    # same thing or a leaf would look like a stray.
-    def rewrite(path):
-        for old, new in sorted(renamed_paths.items(), key=lambda kv: -len(kv[0])):
-            if path == old or path.startswith(old + '/'):
-                return new + path[len(old):]
-        return path
+                 to_title=d['title'], to_short=d['shortName'],
+                 action='keep', stories=subtree_stories(old), remark=twin))
 
     taken = {n['from_path'] for n in nodes.values() if n['from_path']}
 
     # --- 2 · the leaves the backend seeds ----------------------------------
+    # A leaf inside the dev's scaffold is scaffold too. Reported the same way as
+    # its parent, or `regions/test/news` reads as a folder we keep.
     for path in sorted(p for p in live if p.split('/')[-1] in LEAVES):
-        target = rewrite(path)
-        if path in taken or target in nodes:
+        if path in taken or path in nodes:
             continue
         parent = path.rsplit('/', 1)[0]
         if parent not in live:
             continue
-        add(Node('leaf', target, from_source='storyblok',
+        scaffold = any(path.startswith(s + '/') for s in SCAFFOLD_PATHS)
+        add(Node('leaf', path, from_source='storyblok',
                  from_path=path, from_title=path.split('/')[-1],
                  from_sb_id=live[path], to_title=path.split('/')[-1],
-                 action='rename' if target != path else 'keep',
+                 action='ignore' if scaffold else 'keep',
                  stories=stories.get(path, 0),
-                 moves_stories=stories.get(path, 0) if target != path else 0,
-                 remark='moves with its department'
-                 if target != path else 'seeded by the backend with its parent'))
+                 remark='the dev\'s own scaffold' if scaffold else
+                 'seeded by the backend with its parent'))
 
     # --- 3 · the new tree: the pages plan ----------------------------------
     for row in pages_rows:
@@ -383,11 +387,12 @@ def build():
     # is deleted. And genuine strays, which are named and left alone.
     taken = {n['from_path'] for n in nodes.values() if n['from_path']}
     for path in sorted(live):
-        target = rewrite(path)
-        if path in taken or target in nodes:
+        if path in taken or path in nodes:
             continue
         parts = path.split('/')
-        if len(parts) == 4 and parts[2] == 'entities':
+        scaffold = any(path == s or path.startswith(s + '/')
+                       for s in SCAFFOLD_PATHS)
+        if len(parts) == 4 and parts[2] == 'entities' and not scaffold:
             add(Node('entity', path, from_source='storyblok', from_path=path,
                      from_title=parts[3], from_short=parts[3].upper(),
                      from_sb_id=live[path], to_title=parts[3],
@@ -395,6 +400,13 @@ def build():
                      stories=subtree_stories(path),
                      remark='an entity folder with no row in the backend DB -- '
                             'add one rather than leaving it unmanaged'))
+            continue
+        if scaffold:
+            add(Node('stray', path, from_source='storyblok', from_path=path,
+                     from_title=parts[-1], from_sb_id=live[path],
+                     action='ignore', stories=stories.get(path, 0),
+                     remark='the dev\'s own scaffold, showing us the seed '
+                            'shape -- never work, and never seeded into the DB'))
             continue
         if parts[-1] == 'programmes':
             add(Node('container', path, from_source='storyblok',
@@ -457,6 +469,17 @@ def main():
     rows = list(nodes.values())
     by_action = collections.Counter(n['action'] for n in rows)
     by_level = collections.Counter(n['level'] for n in rows)
+
+    # `create` and aku-section-folders.csv are two answers to the same question,
+    # reached by different code from the same plan. If they ever disagree, one of
+    # them is wrong and the run stops rather than shipping a map that promises
+    # folders the creation script will not make.
+    sections = {r['path'] for r in out_rows('aku-section-folders.csv')}
+    created = {n['to_path'] for n in rows if n['action'] == 'create'}
+    assert created == sections, (
+        'create disagrees with aku-section-folders.csv: %d only in the map, '
+        '%d only in the section list' % (len(created - sections),
+                                         len(sections - created)))
 
     with open(paths.out('aku-hierarchy-map.csv'), 'w', encoding='utf-8',
               newline='') as fh:

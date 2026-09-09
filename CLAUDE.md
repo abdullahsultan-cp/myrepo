@@ -26,7 +26,7 @@ ends, and why a step that cannot do its job must stop rather than guess.
 | **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable. Four in-place updates since: Twitter embeds, PDF links, 4 broken hrefs, the 11 Aug restore |
 | **blogs** | **all 83 live and published**, 0 failed. Media filed beside each blog. `category`, `isFeatured`, `entities` and tags wait on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
 | **events** | **2,710 live and published**, 0 failed. 2,862 assets; 29 banners absent from the export. `contact` and `event_types` wait on the dev |
-| **pages** | **structure done, content not started.** The tree is finished and legal — 628 folders, 4,548 of 4,591 pages placed, 19 of 20 checks pass — and the backend has seeded its half (193/193 verified). 438 section folders are ours and ready to create. **No page's HTML has been downloaded yet**, and aku.edu is being switched off. Read `Pages-Pipeline/README.md` START HERE first. Its own stage, shares no code |
+| **pages** | **structure done, content not started.** The tree is finished and legal — 628 folders, 4,548 of 4,591 pages placed, 19 of 20 checks pass. **The backend applied its half on 9 Sep: 8 regions, 75 entities, 110 departments, every `news`/`blogs`/`events` leaf — verified against the API, 0 missing, 0 duplicates, 0 stories moved.** The 438 section folders are ours and still to create. **No page's HTML has been downloaded yet**, and aku.edu is being switched off. Read `Pages-Pipeline/README.md` START HERE first. Its own stage, shares no code |
 
 Space `289824742951963`. Default branch **`master`** (there is no `main`).
 
@@ -96,6 +96,10 @@ Pages-Pipeline/    pipeline/ data/ out/ portal/       inherits nothing
   out/aku-page-assignments.csv    the work sheet: who migrates what, status per page
   out/aku-progress.csv            how far each person has got, read back from the sheet
   out/AKU-Backend-Tree.json       the backend seed — a bare array of regions
+  out/aku-folder-aliases.json     one folder, two names — the four, with reasons
+  out/AKU-Hierarchy-Map.html      old tree beside new, 1,411 rows, filterable
+  out/aku-hierarchy-map.csv       the same rows for a spreadsheet
+  out/aku-section-folders.csv     the 438 folders WE create, in creation order
   out/aku-hierarchy-audit.csv     is the result a legal tree? one row per check
   out/FOR-THE-FRONTEND-DEV.md     the one change the front end owes us
   data/backend/*.json             the backend's own three tables, dumped
@@ -158,7 +162,11 @@ python build_master_sheet.py     # -> aku-master-{pages,folders}.csv   THE deliv
 python build_assignments.py      # -> the work sheet + progress. Re-run after the
                                  #    team updates it: typed statuses are CARRIED,
                                  #    never overwritten
-python build_hierarchy_map.py    # -> the old tree joined to the new one
+python build_hierarchy_map.py    # -> the old tree joined to the new one. Asserts
+                                 #    `create` == aku-section-folders.csv, so the
+                                 #    map cannot promise a folder the creation
+                                 #    script will not make
+python render_hierarchy_map.py   # -> AKU-Hierarchy-Map.html   map + hierarchy views
 python build_backend_tree.py     # -> AKU-Backend-Tree.json    the backend hand-off
 python create_section_folders.py # -> the 438 sections WE create.  DRY RUN unless --apply
 python audit_hierarchy.py        # -> 20 checks. Reads only; fails on a regression
@@ -545,11 +553,16 @@ across as authored.
 
 **The pages plan and the space speak different languages.** The plan uses full
 slugs (`regions/pakistan/entities/medical-college`); the space uses short codes
-(`regions/pk/entities/mc`) and holds **703 folders under `regions/`**. Four
-folders are one folder under two names, listed in `out/aku-folder-aliases.json`:
-`crm`/`centre-for-regenerative-medicine`, `fm`/`fam-med`, `onc`/`onco`,
-`psych`/`psychiatry`. Nothing was renamed — all four renames would have made the
-short code LONGER and moved live story URLs for no reader benefit.
+(`regions/pk/entities/mc`) and holds **846 folders under `regions/`** since the
+seed was applied. Four folders are one folder under two names, listed in
+`out/aku-folder-aliases.json`: `crm`/`centre-for-regenerative-medicine`,
+`fm`/`fam-med`, `onc`/`onco`, `psych`/`psychiatry`. Nothing was renamed — all
+four renames would have made the short code LONGER and moved live story URLs for
+no reader benefit. **An alias takes its children with it**: a page planned for
+`centre-for-regenerative-medicine/about` belongs under `crm/about`, and
+`build_hierarchy_map.py` rewrites the whole subtree rather than the last segment,
+because asking for the folder by its other name is how a second one gets built
+beside the one holding the stories.
 
 **The backend seeds region, entity and department folders, and the shape differs
 per level.** Read off the dev's own `regions/test`, not assumed:
@@ -562,7 +575,9 @@ per level.** Read off the dev's own `regions/test`, not assumed:
 
 `entities` and `departments` are **conditional**: the backend creates them when
 a row gets its first child, which is what `isDepartmentFolderCreated` has been
-recording all along. 32 of 60 entities have one.
+recording all along. 33 of the 75 entities have one. The seed added exactly one,
+`ea/mc` — `pk/mc` has had its since July, and those two are the only entities
+the pages plan gives real SharePoint departments to.
 
 **A folder's landing page is a story called `home` inside it**, because the
 folder cannot hold content of its own. 467 pages are one. The trailing segment
@@ -808,13 +823,32 @@ follows is the standing list; the README says what to do about it, in order.
   a level too deep and `aku.edu/` has no homepage. Spec, copy-paste rule and 9
   test cases: `Pages-Pipeline/out/FOR-THE-FRONTEND-DEV.md`, verified against all
   4,548 placed pages with 0 mismatches
-- **The backend seed is dry-run clean and ready to apply.** Expected on a real
-  run: 8 regions, 75 entities, 110 departments · 34 folders created · 3 rows
-  adopted · **0 renames, 0 stories moved**. One thing for the dev to confirm
-  first: his step [5] reports `0 folder(s) already exist` when there are 703
-  under `regions/`. It did not affect the dry run — the rest of his logic reads
-  `storyblokFolderId` off the nodes — but if that listing is his guard against
-  creating a folder twice, it is protecting nothing
+- **The backend seed is APPLIED, 9 Sep 2026 — nothing left for the dev to
+  create.** Verified against the API, not assumed: 8 regions, 75 entities, 110
+  departments all present, **0 missing**, every `news`/`blogs`/`events` leaf
+  present, **0 renames and 0 stories moved**. The diff was 169 folders added, 4
+  moved (`regions/global` → `regions/gl`, the owner's own change), 0 deleted.
+  The alias decision held under the run: `pk/mc` got `med`, `obs-gyn` and 11
+  others and did **not** get `fam-med`/`onco`/`psychiatry`, so no duplicate was
+  built beside a folder holding stories. Still worth the dev confirming: his
+  step [5] reports `0 folder(s) already exist` when there are 846 under
+  `regions/`. It did not bite — the rest of his logic reads `storyblokFolderId`
+  off the nodes — but if that listing is his guard against creating a folder
+  twice, it is protecting nothing on the next run
+- **`data/backend/*.json` is the 8 Sep dump, taken before the seed.** So
+  `build_hierarchy_map.py` reports 41 `adopt` rows, and **36 of them are stale**
+  — folders created on 9 Sep, whose DB rows the dump cannot see. Re-dump the
+  three tables and they become `keep`. Five predate it and need reading
+  individually: `regions` (the root, which no table names), `regions/gl` (the
+  row was added after the dump), `hospitals` in ke and pk (**live entity folders
+  with no DB row at all** — the only genuinely unmanaged structure in the
+  space), and `sonam/programmes`
+- **Three new entities carry long slugs in a short-code tree**, because the news
+  taxonomy has no short name for them: `pk/entities/clinical-trials-unit`,
+  `pk/entities/digital-health-resource-centre`,
+  `ke/entities/clinical-research-unit`. They hold 0 stories and 0 pages today,
+  so renaming them to `ctu` / `dhrc` / `cru` is free now and expensive once
+  pages land inside. AKU's call, not taken yet
 - **3,132 of the 4,591 pages are unassigned**: all of global (About AKU,
   research, library, careers, the news/events/blogs hubs), Pakistan
   region-level, and every page in East Africa, Kenya, Tanzania and the UK
