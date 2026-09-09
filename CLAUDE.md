@@ -26,7 +26,7 @@ ends, and why a step that cannot do its job must stop rather than guess.
 | **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable. Four in-place updates since: Twitter embeds, PDF links, 4 broken hrefs, the 11 Aug restore |
 | **blogs** | **all 83 live and published**, 0 failed. Media filed beside each blog. `category`, `isFeatured`, `entities` and tags wait on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
 | **events** | **2,710 live and published**, 0 failed. 2,862 assets; 29 banners absent from the export. `contact` and `event_types` wait on the dev |
-| **pages** | **the tree is finished and legal**: 628 folders, 4,548 of 4,591 pages placed, 19 of 20 structural checks pass. 3,982 to build, 609 placed but not buildable, 1,459 assigned to 9 people. The backend seed is handed over and dry-run clean. Its own stage, shares no code |
+| **pages** | **structure done, content not started.** The tree is finished and legal — 628 folders, 4,548 of 4,591 pages placed, 19 of 20 checks pass — and the backend has seeded its half (193/193 verified). 438 section folders are ours and ready to create. **No page's HTML has been downloaded yet**, and aku.edu is being switched off. Read `Pages-Pipeline/README.md` START HERE first. Its own stage, shares no code |
 
 Space `289824742951963`. Default branch **`master`** (there is no `main`).
 
@@ -91,7 +91,8 @@ News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
 Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 live
 Events-Pipeline/   pipeline/ data/ assets/ backup/    2,710 live
 Pages-Pipeline/    pipeline/ data/ out/ portal/       inherits nothing
-  out/aku-master-pages.csv        5,233 rows — START HERE. Every page, nothing hidden
+  README.md                       THE RUNBOOK — read its START HERE before touching pages
+  out/aku-master-pages.csv        5,233 rows — every page, nothing hidden
   out/aku-page-assignments.csv    the work sheet: who migrates what, status per page
   out/aku-progress.csv            how far each person has got, read back from the sheet
   out/AKU-Backend-Tree.json       the backend seed — a bare array of regions
@@ -159,7 +160,16 @@ python build_assignments.py      # -> the work sheet + progress. Re-run after th
                                  #    never overwritten
 python build_hierarchy_map.py    # -> the old tree joined to the new one
 python build_backend_tree.py     # -> AKU-Backend-Tree.json    the backend hand-off
+python create_section_folders.py # -> the 438 sections WE create.  DRY RUN unless --apply
 python audit_hierarchy.py        # -> 20 checks. Reads only; fails on a regression
+
+# pages · the one step that WRITES to the space. Refresh the snapshot first,
+# prove it on five, back up the moment it finishes.
+python pipeline/migrate/review/dump_sb_tree.py
+python Pages-Pipeline/pipeline/create_section_folders.py --apply --limit 5
+python Pages-Pipeline/pipeline/create_section_folders.py --apply
+python pipeline/migrate/review/dump_sb_tree.py
+python pipeline/migrate/review/backup.py --type news
 
 # portals — one HTML file each, committed, open by double-clicking
 python News-Pipeline/pipeline/build_portal.py     # 3,606 stories, 1.44 MB
@@ -770,6 +780,28 @@ commit.
 
 ### pages
 
+**Read `Pages-Pipeline/README.md` — its START HERE section is the runbook.** What
+follows is the standing list; the README says what to do about it, in order.
+
+- **NOBODY HAS DOWNLOADED A SINGLE PAGE'S CONTENT, and aku.edu is being switched
+  off.** This stage knows where all 4,591 pages GO and, for none of them, what is
+  IN them. Checked rather than assumed: `aku-university-filtered.csv` is
+  `PageUrl, Action, Type, Webpart, FinalStatus, References`;
+  `SPPagesAKU-Metadata.csv` is titles and dates; `AKU-EN_1.HTM` is a URL list;
+  `aku-live-page-verification.csv` is status, breadcrumb and title. No body in
+  any of them, and `out/work/live_checks.json` is gitignored and absent.
+  `verify_live.py` already walks all 4,591 URLs, handles 401/404 and is
+  resumable — it reads the breadcrumb and `<title>` and throws the HTML away.
+  Extending it to keep the body is the highest-value thing left in this stage,
+  and it gets harder the day the site goes dark.
+- **438 section folders are ours to create and the script is ready.**
+  `create_section_folders.py`, dry-run clean, `--apply` to write. The backend
+  owns region/entity/department and auto-seeds `news`/`blogs`/`events`; every
+  other folder is ours. `--limit 5` first, and take the snapshot and the backup
+  the moment it finishes.
+- **Nothing creates the pages themselves yet.** Destinations are final and
+  proved unique; the content step is unwritten. What is already decided about it
+  is in the README, Step 3, so it is not decided twice.
 - **The front end owes one change**, and nothing works right until it lands:
   strip a trailing `home` from the public address, alongside the `regions`,
   `entities` and `departments` it already strips. Without it 467 front doors sit

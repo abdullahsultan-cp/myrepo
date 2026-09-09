@@ -199,8 +199,18 @@ for path, row, _ in mine:
         'order': len(plan) + 1,
         'path': path,
         'slug': path.rsplit('/', 1)[-1],
-        'name': (row['to_title'] or row['from_title'] or '').strip()
-                or path.rsplit('/', 1)[-1].replace('-', ' ').title(),
+        # The space names a folder from its SLUG, Title Cased, and the two
+        # sources agree on it: the dev's own `programmes` folder is
+        # "Programmes", the backend's seeded leaves are "Blogs"/"Events"/"News",
+        # and `upload.py` line 215 builds the same string. The backend uses an
+        # UPPERCASE slug (`FAS`, `ANAES`) but only for its own three levels, and
+        # a section is not one of those.
+        #
+        # The pages plan's long title -- "About AKU" for `about` -- is kept in
+        # `plan_title` rather than used, so it is one column away if AKU ever
+        # wants the readable version instead.
+        'name': path.rsplit('/', 1)[-1].replace('-', ' ').title(),
+        'plan_title': (row['to_title'] or row['from_title'] or '').strip(),
         'depth': path.count('/'),
         'parent_path': parent_path,
         'parent_id': BY_PATH.get(parent_path, ''),
@@ -211,9 +221,9 @@ for path, row, _ in mine:
         'storyblok_id': '',
     })
 
-COLS = ['order', 'path', 'slug', 'name', 'depth', 'parent_path', 'parent_id',
-        'parent_made_by_this_run', 'pages_in_subtree', 'managed_by',
-        'source_web', 'storyblok_id']
+COLS = ['order', 'path', 'slug', 'name', 'plan_title', 'depth', 'parent_path',
+        'parent_id', 'parent_made_by_this_run', 'pages_in_subtree',
+        'managed_by', 'source_web', 'storyblok_id']
 
 # The order is the whole correctness argument -- 212 of the 438 have a parent
 # this run creates first -- so it is proved here rather than trusted. Sorting by
