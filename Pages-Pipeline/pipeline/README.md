@@ -16,6 +16,7 @@ python verify_live.py            # -> aku-live-page-verification.csv  (hits the 
 python build_master_sheet.py     # -> aku-master-{pages,folders}.csv   THE deliverable
 python build_assignments.py      # -> aku-page-assignments.csv        the work sheet
 python build_backend_tree.py     # -> AKU-Backend-Tree.json           the backend hand-off
+python create_section_folders.py # -> the 438 sections WE create   (--apply writes)
 python audit_hierarchy.py        # -> the audit  (reads only, fails on a regression)
 python build_folder_json.py      # -> ../out/AKU-Folder-Structure.json   the tree, typed, to seed a DB
 python build_hierarchy_map.py    # -> ../out/aku-hierarchy-map.csv + AKU-Hierarchy-Map.json   old -> new

@@ -1,6 +1,6 @@
 {
   "space_id": "289824742951963",
-  "folder_count": 725,
+  "folder_count": 875,
   "folders": [
     {
       "id": 205042012946919,
@@ -333,6 +333,17 @@
       "parent_full_slug": "pakistan/clinical-trials-unit"
     },
     {
+      "id": 217890509292441,
+      "uuid": "7df2e9c2-3c0a-44ad-b56b-6e15c9c6628e",
+      "full_slug": "pakistan/clinical-trials-unit/news-events",
+      "slug": "news-events",
+      "name": "News & Events",
+      "parent_id": 217781753720417,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/clinical-trials-unit"
+    },
+    {
       "id": 217773128396202,
       "uuid": "5c908103-2980-4ab2-892f-3d48c7be6ed1",
       "full_slug": "pakistan/faculty-of-arts-and-sciences/about-us",
@@ -344,11 +355,66 @@
       "parent_full_slug": "pakistan/faculty-of-arts-and-sciences"
     },
     {
+      "id": 217865375757553,
+      "uuid": "99c7f7ad-08dc-43cc-be4c-511c259e0839",
+      "full_slug": "pakistan/faculty-of-arts-and-sciences/faculty",
+      "slug": "faculty",
+      "name": "Faculty",
+      "parent_id": 217773024075175,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/faculty-of-arts-and-sciences"
+    },
+    {
+      "id": 217940623943669,
+      "uuid": "df4120cc-74fd-419c-94e0-ae6dfdb5e355",
+      "full_slug": "pakistan/faculty-of-arts-and-sciences/faculty-of-arts-and-sciences",
+      "slug": "faculty-of-arts-and-sciences",
+      "name": "Faculty of Arts and Sciences",
+      "parent_id": 217773024075175,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/faculty-of-arts-and-sciences"
+    },
+    {
+      "id": 217866037668708,
+      "uuid": "24c9295a-7348-4aed-b8c8-f3e15c33fa98",
+      "full_slug": "pakistan/faculty-of-arts-and-sciences/study",
+      "slug": "study",
+      "name": "Study",
+      "parent_id": 217773024075175,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/faculty-of-arts-and-sciences"
+    },
+    {
       "id": 217765613389635,
       "uuid": "08944a8b-8c85-48c6-9caa-2f31831e2f32",
       "full_slug": "pakistan/institute-for-educational-development/about",
       "slug": "about",
       "name": "About",
+      "parent_id": 217765544884034,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/institute-for-educational-development"
+    },
+    {
+      "id": 218132686918645,
+      "uuid": "30a359f1-cfc5-4e41-a035-6cff479b55d3",
+      "full_slug": "pakistan/institute-for-educational-development/advanced-diploma",
+      "slug": "advanced-diploma",
+      "name": " Advanced Diploma",
+      "parent_id": 217765544884034,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/institute-for-educational-development"
+    },
+    {
+      "id": 218141020570644,
+      "uuid": "03276c67-9f0e-48af-9733-6209dc4616ed",
+      "full_slug": "pakistan/institute-for-educational-development/alumni",
+      "slug": "alumni",
+      "name": "Alumni",
       "parent_id": 217765544884034,
       "depth": 2,
       "is_folder": true,
@@ -817,6 +883,17 @@
       "parent_full_slug": "regions/uk"
     },
     {
+      "id": 217866129374069,
+      "uuid": "765d7437-b192-420a-b928-4bac4ae0291c",
+      "full_slug": "pakistan/faculty-of-arts-and-sciences/study/undergraduate-programmes",
+      "slug": "undergraduate-programmes",
+      "name": "Undergraduate Programmes",
+      "parent_id": 217866037668708,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/faculty-of-arts-and-sciences/study"
+    },
+    {
       "id": 203313705024629,
       "uuid": "952bb321-db36-48e2-8143-b0b12673652c",
       "full_slug": "regions/af/entities/eai",
@@ -861,6 +938,116 @@
       "parent_full_slug": "regions/af/entities"
     },
     {
+      "id": 218130821438468,
+      "uuid": "140b8503-0f0b-4ea3-92da-b030f3f9fb55",
+      "full_slug": "regions/ea/entities/fas",
+      "slug": "fas",
+      "name": "FAS",
+      "parent_id": 206177166277257,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities"
+    },
+    {
+      "id": 218130830642185,
+      "uuid": "240e2eb5-80ac-4e42-85b2-d79b54363861",
+      "full_slug": "regions/ea/entities/ied",
+      "slug": "ied",
+      "name": "IED",
+      "parent_id": 206177166277257,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities"
+    },
+    {
+      "id": 218130839587853,
+      "uuid": "589e825e-c30c-4f9f-87ac-6b37f4931ef4",
+      "full_slug": "regions/ea/entities/mc",
+      "slug": "mc",
+      "name": "MC",
+      "parent_id": 206177166277257,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities"
+    },
+    {
+      "id": 218130978266213,
+      "uuid": "fed7ce6e-3ddd-48ec-8e71-b9309a9ab970",
+      "full_slug": "regions/ea/entities/sonam",
+      "slug": "sonam",
+      "name": "SONAM",
+      "parent_id": 206177166277257,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities"
+    },
+    {
+      "id": 218130988285033,
+      "uuid": "3c04b3c8-b022-480e-912f-5da8d0b57ac1",
+      "full_slug": "regions/gl/entities/bmi",
+      "slug": "bmi",
+      "name": "BMI",
+      "parent_id": 217824673942053,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities"
+    },
+    {
+      "id": 218130997238896,
+      "uuid": "30163e48-8cd5-4962-bc18-2b4f6f419777",
+      "full_slug": "regions/gl/entities/cime",
+      "slug": "cime",
+      "name": "CIME",
+      "parent_id": 217824673942053,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities"
+    },
+    {
+      "id": 218131023273082,
+      "uuid": "91984943-a34e-4d25-96b3-f32eeff82930",
+      "full_slug": "regions/gl/entities/coe-wch",
+      "slug": "coe-wch",
+      "name": "COE-WCH",
+      "parent_id": 217824673942053,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities"
+    },
+    {
+      "id": 218131032079488,
+      "uuid": "5cff8491-4be4-4659-89c7-445f7229c2dd",
+      "full_slug": "regions/gl/entities/ighd",
+      "slug": "ighd",
+      "name": "IGHD",
+      "parent_id": 217824673942053,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities"
+    },
+    {
+      "id": 218131051011324,
+      "uuid": "20036a73-1d27-4b94-b1b5-00de0b87753a",
+      "full_slug": "regions/gl/entities/ihd",
+      "slug": "ihd",
+      "name": "IHD",
+      "parent_id": 217824673942053,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities"
+    },
+    {
+      "id": 218131059219947,
+      "uuid": "37c4ef97-35b1-45ec-8621-319573970eb8",
+      "full_slug": "regions/gl/entities/sonam",
+      "slug": "sonam",
+      "name": "SONAM",
+      "parent_id": 217824673942053,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities"
+    },
+    {
       "id": 217856738947370,
       "uuid": "45918020-b689-4cc6-b3d4-7f5c3df71a8c",
       "full_slug": "regions/gl/entities/test",
@@ -888,6 +1075,17 @@
       "full_slug": "regions/ke/entities/cime",
       "slug": "cime",
       "name": "CIME",
+      "parent_id": 203313623046917,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities"
+    },
+    {
+      "id": 218131068333746,
+      "uuid": "85a94e35-d9c0-4138-8f32-10d811fbe228",
+      "full_slug": "regions/ke/entities/clinical-research-unit",
+      "slug": "clinical-research-unit",
+      "name": "CLINICAL-RESEARCH-UNIT",
       "parent_id": 203313623046917,
       "depth": 3,
       "is_folder": true,
@@ -1081,6 +1279,17 @@
       "parent_full_slug": "regions/pk/entities"
     },
     {
+      "id": 218131077095327,
+      "uuid": "4880277c-956c-4a08-8406-6f674855a2a9",
+      "full_slug": "regions/pk/entities/clinical-trials-unit",
+      "slug": "clinical-trials-unit",
+      "name": "CLINICAL-TRIALS-UNIT",
+      "parent_id": 203313621863172,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities"
+    },
+    {
       "id": 203313659366173,
       "uuid": "c38881a9-b116-4275-afe1-df99ae7245bd",
       "full_slug": "regions/pk/entities/coe-wch",
@@ -1097,6 +1306,17 @@
       "full_slug": "regions/pk/entities/crm",
       "slug": "crm",
       "name": "CRM",
+      "parent_id": 203313621863172,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities"
+    },
+    {
+      "id": 218131085820009,
+      "uuid": "72b03fb4-1caf-40b2-a8a5-eaa4447b14fe",
+      "full_slug": "regions/pk/entities/digital-health-resource-centre",
+      "slug": "digital-health-resource-centre",
+      "name": "DIGITAL-HEALTH-RESOURCE-CENTRE",
       "parent_id": 203313621863172,
       "depth": 3,
       "is_folder": true,
@@ -1686,6 +1906,347 @@
       "parent_full_slug": "regions/af/entities/mc"
     },
     {
+      "id": 218130825927687,
+      "uuid": "685fce01-01b1-45bd-8ade-9993ed75d794",
+      "full_slug": "regions/ea/entities/fas/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130821438468,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/fas"
+    },
+    {
+      "id": 218130826652680,
+      "uuid": "a48d1464-c5d5-40d9-a88f-b09613229a98",
+      "full_slug": "regions/ea/entities/fas/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130821438468,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/fas"
+    },
+    {
+      "id": 218130824559622,
+      "uuid": "d91ee0ff-dec5-449e-843b-cfe5e9ef93a9",
+      "full_slug": "regions/ea/entities/fas/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130821438468,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/fas"
+    },
+    {
+      "id": 218130833619978,
+      "uuid": "4e2c1845-660a-4cb2-ae6d-d83e51b75ec1",
+      "full_slug": "regions/ea/entities/ied/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130830642185,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/ied"
+    },
+    {
+      "id": 218130834803724,
+      "uuid": "ef4637c0-208b-4cec-89ab-d444eddb7cde",
+      "full_slug": "regions/ea/entities/ied/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130830642185,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/ied"
+    },
+    {
+      "id": 218130833624075,
+      "uuid": "85ce712f-75ab-44de-9e53-6b849b84601f",
+      "full_slug": "regions/ea/entities/ied/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130830642185,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/ied"
+    },
+    {
+      "id": 218130848394288,
+      "uuid": "330536ca-a858-4924-96ac-93585b3ec1bf",
+      "full_slug": "regions/ea/entities/mc/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130839587853,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc"
+    },
+    {
+      "id": 218130853874737,
+      "uuid": "09c3bb6a-c142-4ce8-bc0d-6827b634ca80",
+      "full_slug": "regions/ea/entities/mc/departments",
+      "slug": "departments",
+      "name": "Departments",
+      "parent_id": 218130839587853,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc"
+    },
+    {
+      "id": 218130847890477,
+      "uuid": "0a8cf438-b4d7-4584-92c9-52ef2e95f805",
+      "full_slug": "regions/ea/entities/mc/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130839587853,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc"
+    },
+    {
+      "id": 218130848386095,
+      "uuid": "8a848e21-ad42-41e3-964d-fb2a21a53027",
+      "full_slug": "regions/ea/entities/mc/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130839587853,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc"
+    },
+    {
+      "id": 218130982235239,
+      "uuid": "fb9ad9cd-699c-40b7-bcca-9fb85238c457",
+      "full_slug": "regions/ea/entities/sonam/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130978266213,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/sonam"
+    },
+    {
+      "id": 218130983304296,
+      "uuid": "60fca617-e7b7-4475-9e12-2ba942d91d4d",
+      "full_slug": "regions/ea/entities/sonam/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130978266213,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/sonam"
+    },
+    {
+      "id": 218130981555302,
+      "uuid": "c0bd0d3f-b2ae-46e4-b2d2-828d6d032aa9",
+      "full_slug": "regions/ea/entities/sonam/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130978266213,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/sonam"
+    },
+    {
+      "id": 218130991488108,
+      "uuid": "c04001f5-3615-40b3-9295-35e1461d9633",
+      "full_slug": "regions/gl/entities/bmi/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130988285033,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/bmi"
+    },
+    {
+      "id": 218130991967343,
+      "uuid": "e23e4827-063e-4901-b9be-7bd2c44d05c2",
+      "full_slug": "regions/gl/entities/bmi/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130988285033,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/bmi"
+    },
+    {
+      "id": 218130991496301,
+      "uuid": "60f8010d-bfc9-4aa5-bbad-e729ada88572",
+      "full_slug": "regions/gl/entities/bmi/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130988285033,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/bmi"
+    },
+    {
+      "id": 218131000880247,
+      "uuid": "e95d07c5-757f-4788-b20d-9756c30def7a",
+      "full_slug": "regions/gl/entities/cime/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130997238896,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/cime"
+    },
+    {
+      "id": 218131004570744,
+      "uuid": "822eca43-965b-4683-992d-85b879c0e715",
+      "full_slug": "regions/gl/entities/cime/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130997238896,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/cime"
+    },
+    {
+      "id": 218131000360053,
+      "uuid": "7f702386-bf4e-4e99-9868-c69e9b497b37",
+      "full_slug": "regions/gl/entities/cime/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130997238896,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/cime"
+    },
+    {
+      "id": 218131026193532,
+      "uuid": "a63cacd9-45de-416b-bb5b-b0d7a59f6bf9",
+      "full_slug": "regions/gl/entities/coe-wch/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131023273082,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/coe-wch"
+    },
+    {
+      "id": 218131027180669,
+      "uuid": "55e5ef61-aeb7-4e8a-adf7-fb862b7e05a1",
+      "full_slug": "regions/gl/entities/coe-wch/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131023273082,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/coe-wch"
+    },
+    {
+      "id": 218131025943675,
+      "uuid": "867a5c44-a865-4526-b30f-bcf698a461a9",
+      "full_slug": "regions/gl/entities/coe-wch/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131023273082,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/coe-wch"
+    },
+    {
+      "id": 218131040386180,
+      "uuid": "77364bfa-505a-43d3-a2db-f4308c86964a",
+      "full_slug": "regions/gl/entities/ighd/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131032079488,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/ighd"
+    },
+    {
+      "id": 218131040603269,
+      "uuid": "578e8bca-c03c-4c73-9cd4-8c295286bae7",
+      "full_slug": "regions/gl/entities/ighd/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131032079488,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/ighd"
+    },
+    {
+      "id": 218131040132227,
+      "uuid": "a498ae0a-7af0-4a75-9e0e-77c72ccfcd99",
+      "full_slug": "regions/gl/entities/ighd/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131032079488,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/ighd"
+    },
+    {
+      "id": 218131054222689,
+      "uuid": "2d57ae5b-d10e-422e-8ad8-e482ce0471a1",
+      "full_slug": "regions/gl/entities/ihd/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131051011324,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/ihd"
+    },
+    {
+      "id": 218131054689635,
+      "uuid": "b6d6b0b7-2026-4d46-a7c2-9fc2d4df2231",
+      "full_slug": "regions/gl/entities/ihd/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131051011324,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/ihd"
+    },
+    {
+      "id": 218131053694299,
+      "uuid": "4250a0e3-10b6-476c-8bef-5f0bd213e7e7",
+      "full_slug": "regions/gl/entities/ihd/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131051011324,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/ihd"
+    },
+    {
+      "id": 218131062320701,
+      "uuid": "2196d9d9-9d25-4ea7-befc-42e9fa79bfa9",
+      "full_slug": "regions/gl/entities/sonam/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131059219947,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/sonam"
+    },
+    {
+      "id": 218131064942190,
+      "uuid": "86ff6c46-565e-44fa-9461-a3ca4389447f",
+      "full_slug": "regions/gl/entities/sonam/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131059219947,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/sonam"
+    },
+    {
+      "id": 218131062320700,
+      "uuid": "822b78dd-b817-4593-986a-9fb80ab785ea",
+      "full_slug": "regions/gl/entities/sonam/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131059219947,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/gl/entities/sonam"
+    },
+    {
       "id": 217856743457073,
       "uuid": "2c0b1348-ec75-467d-93d8-5614b6d6b9c2",
       "full_slug": "regions/gl/entities/test/blogs",
@@ -1805,6 +2366,39 @@
       "depth": 4,
       "is_folder": true,
       "parent_full_slug": "regions/ke/entities/cime"
+    },
+    {
+      "id": 218131070721781,
+      "uuid": "4e6b3a6d-33c9-4e95-a605-740ce2cac09b",
+      "full_slug": "regions/ke/entities/clinical-research-unit/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131068333746,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities/clinical-research-unit"
+    },
+    {
+      "id": 218131072524023,
+      "uuid": "ffcefed5-1d43-40d4-961b-c515f630a112",
+      "full_slug": "regions/ke/entities/clinical-research-unit/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131068333746,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities/clinical-research-unit"
+    },
+    {
+      "id": 218131070709492,
+      "uuid": "952bfb9d-ab09-40e4-b742-d90f4cc490ac",
+      "full_slug": "regions/ke/entities/clinical-research-unit/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131068333746,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities/clinical-research-unit"
     },
     {
       "id": 203313816915163,
@@ -2003,6 +2597,39 @@
       "depth": 4,
       "is_folder": true,
       "parent_full_slug": "regions/ke/entities/gsmc"
+    },
+    {
+      "id": 218144338093503,
+      "uuid": "2a54af2e-196a-4ce5-83db-46450c28e6a0",
+      "full_slug": "regions/ke/entities/hospitals/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 203626793683659,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities/hospitals"
+    },
+    {
+      "id": 218144338572738,
+      "uuid": "0525dc1d-0c96-4399-b74b-55761eade355",
+      "full_slug": "regions/ke/entities/hospitals/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 203626793683659,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities/hospitals"
+    },
+    {
+      "id": 218144338351552,
+      "uuid": "1aa120f8-3bcd-435a-b362-3cdd5d78b582",
+      "full_slug": "regions/ke/entities/hospitals/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 203626793683659,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/ke/entities/hospitals"
     },
     {
       "id": 203313808604368,
@@ -2412,6 +3039,39 @@
       "parent_full_slug": "regions/pk/entities/cime"
     },
     {
+      "id": 218131079389145,
+      "uuid": "92e891f5-a0ce-44ff-9668-876c07d14706",
+      "full_slug": "regions/pk/entities/clinical-trials-unit/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131077095327,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/clinical-trials-unit"
+    },
+    {
+      "id": 218131080900614,
+      "uuid": "78c0e9ad-a57c-4d75-824e-b6f2cda3736e",
+      "full_slug": "regions/pk/entities/clinical-trials-unit/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131077095327,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/clinical-trials-unit"
+    },
+    {
+      "id": 218131079983066,
+      "uuid": "c621842e-d657-4056-a016-9f2c827daf60",
+      "full_slug": "regions/pk/entities/clinical-trials-unit/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131077095327,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/clinical-trials-unit"
+    },
+    {
       "id": 203313751366803,
       "uuid": "d6169ec5-c89f-4672-a263-025c4d7cf25e",
       "full_slug": "regions/pk/entities/coe-wch/blogs",
@@ -2498,6 +3158,39 @@
       "depth": 4,
       "is_folder": true,
       "parent_full_slug": "regions/pk/entities/crm"
+    },
+    {
+      "id": 218131089252559,
+      "uuid": "34182241-c52f-497e-b181-bc10cfd6ffc4",
+      "full_slug": "regions/pk/entities/digital-health-resource-centre/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131085820009,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/digital-health-resource-centre"
+    },
+    {
+      "id": 218131089518800,
+      "uuid": "ad9a0b1e-cde5-41b5-ac9e-b5cb3b5ab699",
+      "full_slug": "regions/pk/entities/digital-health-resource-centre/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131085820009,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/digital-health-resource-centre"
+    },
+    {
+      "id": 218131088740558,
+      "uuid": "2fe05ea1-8802-4bb3-b8cb-3ebcd48db7fa",
+      "full_slug": "regions/pk/entities/digital-health-resource-centre/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131085820009,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/digital-health-resource-centre"
     },
     {
       "id": 203313766968483,
@@ -2652,6 +3345,39 @@
       "depth": 4,
       "is_folder": true,
       "parent_full_slug": "regions/pk/entities/gsmc"
+    },
+    {
+      "id": 218144341996995,
+      "uuid": "80d3d035-ca77-492a-b846-fc413ba162a4",
+      "full_slug": "regions/pk/entities/hospitals/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 203626227434003,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/hospitals"
+    },
+    {
+      "id": 218144342480324,
+      "uuid": "20cc0a31-6eaf-402d-bf0c-b75287433306",
+      "full_slug": "regions/pk/entities/hospitals/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 203626227434003,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/hospitals"
+    },
+    {
+      "id": 218144338556353,
+      "uuid": "378e342c-99ea-456c-9d8e-9738ffd17b62",
+      "full_slug": "regions/pk/entities/hospitals/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 203626227434003,
+      "depth": 4,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/hospitals"
     },
     {
       "id": 205119851344542,
@@ -4040,6 +4766,94 @@
       "parent_full_slug": "regions/af/entities/mc/departments"
     },
     {
+      "id": 218130862324787,
+      "uuid": "6f6f83fb-ef24-49a9-9d92-72d09845c788",
+      "full_slug": "regions/ea/entities/mc/departments/anaes",
+      "slug": "anaes",
+      "name": "ANAES",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130870635575,
+      "uuid": "77baf7b9-54fd-4be1-a4cb-be0a24f82b99",
+      "full_slug": "regions/ea/entities/mc/departments/fam-med",
+      "slug": "fam-med",
+      "name": "FAM-MED",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130884058172,
+      "uuid": "9d78206f-b1b2-44ed-b2d8-c0107fb8519b",
+      "full_slug": "regions/ea/entities/mc/departments/medicine",
+      "slug": "medicine",
+      "name": "MEDICINE",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130903084103,
+      "uuid": "81340c2f-d89e-4d95-9487-fc07e239c11c",
+      "full_slug": "regions/ea/entities/mc/departments/obs-gyn",
+      "slug": "obs-gyn",
+      "name": "OBS-GYN",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130913000525,
+      "uuid": "0b842625-dd9c-49c6-b29d-6033ab8cb7b4",
+      "full_slug": "regions/ea/entities/mc/departments/paeds",
+      "slug": "paeds",
+      "name": "PAEDS",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130937674839,
+      "uuid": "85634d70-2cd4-4eb9-bcde-ec2a192e64e9",
+      "full_slug": "regions/ea/entities/mc/departments/pathology",
+      "slug": "pathology",
+      "name": "PATHOLOGY",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130947570779,
+      "uuid": "1509e333-9dca-4e7e-a402-85bcb5c6d87f",
+      "full_slug": "regions/ea/entities/mc/departments/radiology",
+      "slug": "radiology",
+      "name": "RADIOLOGY",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
+      "id": 218130956504160,
+      "uuid": "182cc42c-51c5-41cd-bf98-bdbc7aae7409",
+      "full_slug": "regions/ea/entities/mc/departments/surgery",
+      "slug": "surgery",
+      "name": "SURGERY",
+      "parent_id": 218130853874737,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments"
+    },
+    {
       "id": 203314221108539,
       "uuid": "71917e71-87a6-45a7-9e36-742cbee114c2",
       "full_slug": "regions/ke/entities/bmi/departments/meded",
@@ -4590,6 +5404,28 @@
       "parent_full_slug": "regions/pk/entities/ihd/departments"
     },
     {
+      "id": 218131094122835,
+      "uuid": "c65a3dde-0941-4a7d-969e-32139d711b55",
+      "full_slug": "regions/pk/entities/mc/departments/anaes",
+      "slug": "anaes",
+      "name": "ANAES",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131103912438,
+      "uuid": "f9bfd7c4-b207-4337-a7dc-d6372c0315f5",
+      "full_slug": "regions/pk/entities/mc/departments/bbs",
+      "slug": "bbs",
+      "name": "BBS",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
       "id": 203314235129163,
       "uuid": "c195e325-5c9c-411a-acb2-8f6a56bd158f",
       "full_slug": "regions/pk/entities/mc/departments/card",
@@ -4601,11 +5437,66 @@
       "parent_full_slug": "regions/pk/entities/mc/departments"
     },
     {
+      "id": 218131113198077,
+      "uuid": "8605ab05-84e6-46cb-bd69-fac70d28d054",
+      "full_slug": "regions/pk/entities/mc/departments/chs",
+      "slug": "chs",
+      "name": "CHS",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131123237378,
+      "uuid": "1890c78b-ae14-4ae3-8b74-2799eea5e9cc",
+      "full_slug": "regions/pk/entities/mc/departments/dcpe",
+      "slug": "dcpe",
+      "name": "DCPE",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131160183306,
+      "uuid": "88de10da-eefe-4796-9331-f48465c78771",
+      "full_slug": "regions/pk/entities/mc/departments/ded",
+      "slug": "ded",
+      "name": "DED",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131169690128,
+      "uuid": "9f9ea68d-441b-4ef0-9cb7-43f301620f54",
+      "full_slug": "regions/pk/entities/mc/departments/em",
+      "slug": "em",
+      "name": "EM",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
       "id": 203314233969994,
       "uuid": "def62e3f-5286-4e61-90ae-29278f54a347",
       "full_slug": "regions/pk/entities/mc/departments/fm",
       "slug": "fm",
       "name": "FM",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131178529301,
+      "uuid": "5646bb31-ee2f-4f84-9cf6-4221e72ca381",
+      "full_slug": "regions/pk/entities/mc/departments/med",
+      "slug": "med",
+      "name": "MED",
       "parent_id": 203314026985025,
       "depth": 5,
       "is_folder": true,
@@ -4656,6 +5547,17 @@
       "parent_full_slug": "regions/pk/entities/mc/departments"
     },
     {
+      "id": 218131205116445,
+      "uuid": "67c90bd8-12a4-4e46-acb6-b01e4f4c7fad",
+      "full_slug": "regions/pk/entities/mc/departments/obs-gyn",
+      "slug": "obs-gyn",
+      "name": "OBS-GYN",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
       "id": 203314241940818,
       "uuid": "7ed5109e-a65e-4183-8d49-2fb43de39392",
       "full_slug": "regions/pk/entities/mc/departments/onc",
@@ -4667,11 +5569,33 @@
       "parent_full_slug": "regions/pk/entities/mc/departments"
     },
     {
+      "id": 218131228340775,
+      "uuid": "fe9041ac-005a-4cfb-acb3-6f8d014118c0",
+      "full_slug": "regions/pk/entities/mc/departments/ophthalmology",
+      "slug": "ophthalmology",
+      "name": "OPHTHALMOLOGY",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
       "id": 203314241424721,
       "uuid": "7b56dd8b-68eb-406e-ba94-d149ddedaa9c",
       "full_slug": "regions/pk/entities/mc/departments/paeds",
       "slug": "paeds",
       "name": "PAEDS",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131236909614,
+      "uuid": "ee3909fa-1bdc-4a12-9521-19cc0a514411",
+      "full_slug": "regions/pk/entities/mc/departments/pathology",
+      "slug": "pathology",
+      "name": "PATHOLOGY",
       "parent_id": 203314026985025,
       "depth": 5,
       "is_folder": true,
@@ -4700,11 +5624,44 @@
       "parent_full_slug": "regions/pk/entities/mc/departments"
     },
     {
+      "id": 218131257008694,
+      "uuid": "cee9c145-c62c-48a9-9554-d5f95fb3f334",
+      "full_slug": "regions/pk/entities/mc/departments/radiology",
+      "slug": "radiology",
+      "name": "RADIOLOGY",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
       "id": 203314245590357,
       "uuid": "2c34a61b-8ca7-4fbc-aae0-783dd4d42a74",
       "full_slug": "regions/pk/entities/mc/departments/regmed",
       "slug": "regmed",
       "name": "REGMED",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131265798714,
+      "uuid": "bd829e55-829b-4c79-9bc8-07cd902d8315",
+      "full_slug": "regions/pk/entities/mc/departments/surgery",
+      "slug": "surgery",
+      "name": "SURGERY",
+      "parent_id": 203314026985025,
+      "depth": 5,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments"
+    },
+    {
+      "id": 218131275977281,
+      "uuid": "0ee7e32c-14c2-4b1a-9d37-6dbbf0609027",
+      "full_slug": "regions/pk/entities/mc/departments/wch",
+      "slug": "wch",
+      "name": "WCH",
       "parent_id": 203314026985025,
       "depth": 5,
       "is_folder": true,
@@ -5072,6 +6029,270 @@
       "depth": 6,
       "is_folder": true,
       "parent_full_slug": "regions/af/entities/mc/departments/meded"
+    },
+    {
+      "id": 218130864651317,
+      "uuid": "164b408c-e02d-43a8-8869-fc2464018f5a",
+      "full_slug": "regions/ea/entities/mc/departments/anaes/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130862324787,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/anaes"
+    },
+    {
+      "id": 218130865990710,
+      "uuid": "d04aa3ca-ef03-4c6d-9fdd-94eb3ea02ee5",
+      "full_slug": "regions/ea/entities/mc/departments/anaes/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130862324787,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/anaes"
+    },
+    {
+      "id": 218130864639028,
+      "uuid": "91779334-44dc-445a-9018-86374759a9c3",
+      "full_slug": "regions/ea/entities/mc/departments/anaes/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130862324787,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/anaes"
+    },
+    {
+      "id": 218130878180410,
+      "uuid": "7bfaeb84-a61a-4694-a78e-5885c76190f6",
+      "full_slug": "regions/ea/entities/mc/departments/fam-med/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130870635575,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/fam-med"
+    },
+    {
+      "id": 218130878696507,
+      "uuid": "29333b73-2c83-4777-8f9b-3b4ea784d7fb",
+      "full_slug": "regions/ea/entities/mc/departments/fam-med/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130870635575,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/fam-med"
+    },
+    {
+      "id": 218130878147641,
+      "uuid": "47292479-1331-49f8-90a1-ef78af27fa68",
+      "full_slug": "regions/ea/entities/mc/departments/fam-med/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130870635575,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/fam-med"
+    },
+    {
+      "id": 218130887056447,
+      "uuid": "bef4ae8b-c15d-4551-870c-6e469bf45086",
+      "full_slug": "regions/ea/entities/mc/departments/medicine/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130884058172,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/medicine"
+    },
+    {
+      "id": 218130895645764,
+      "uuid": "2cae88a1-99e7-4172-8bab-b79eb013be20",
+      "full_slug": "regions/ea/entities/mc/departments/medicine/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130884058172,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/medicine"
+    },
+    {
+      "id": 218130887056446,
+      "uuid": "9e8c0aa7-17d7-4b69-a3be-c8e05297e83f",
+      "full_slug": "regions/ea/entities/mc/departments/medicine/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130884058172,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/medicine"
+    },
+    {
+      "id": 218130906422345,
+      "uuid": "89691005-1233-4481-a0c1-1d2f4d0ff092",
+      "full_slug": "regions/ea/entities/mc/departments/obs-gyn/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130903084103,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/obs-gyn"
+    },
+    {
+      "id": 218130907774027,
+      "uuid": "af77da34-c082-499c-b4f6-1aad3938ad15",
+      "full_slug": "regions/ea/entities/mc/departments/obs-gyn/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130903084103,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/obs-gyn"
+    },
+    {
+      "id": 218130905803848,
+      "uuid": "24b94f79-1302-42b8-825f-e1ef249b2278",
+      "full_slug": "regions/ea/entities/mc/departments/obs-gyn/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130903084103,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/obs-gyn"
+    },
+    {
+      "id": 218130932239442,
+      "uuid": "78f065fe-d92f-473f-8426-00525335886b",
+      "full_slug": "regions/ea/entities/mc/departments/paeds/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130913000525,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/paeds"
+    },
+    {
+      "id": 218130932386899,
+      "uuid": "3954d55f-8322-416f-ad12-3840a031e86b",
+      "full_slug": "regions/ea/entities/mc/departments/paeds/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130913000525,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/paeds"
+    },
+    {
+      "id": 218130920803407,
+      "uuid": "c7cc004e-7a1d-4a96-bdf8-e63e432f3dcc",
+      "full_slug": "regions/ea/entities/mc/departments/paeds/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130913000525,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/paeds"
+    },
+    {
+      "id": 218130941074521,
+      "uuid": "508f472f-82bc-4ab4-82d2-4486ce6d476a",
+      "full_slug": "regions/ea/entities/mc/departments/pathology/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130937674839,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/pathology"
+    },
+    {
+      "id": 218130941320282,
+      "uuid": "686047bb-4122-40d5-8a7f-81e161d55f54",
+      "full_slug": "regions/ea/entities/mc/departments/pathology/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130937674839,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/pathology"
+    },
+    {
+      "id": 218130941000792,
+      "uuid": "29b914f1-5f12-421f-af39-63a4a54a1682",
+      "full_slug": "regions/ea/entities/mc/departments/pathology/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130937674839,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/pathology"
+    },
+    {
+      "id": 218130950208606,
+      "uuid": "229feb19-f8ea-47b3-9a55-fc8250d0ce92",
+      "full_slug": "regions/ea/entities/mc/departments/radiology/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130947570779,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/radiology"
+    },
+    {
+      "id": 218130952866911,
+      "uuid": "d84675b6-9ce7-487f-8d02-05520cafdb6d",
+      "full_slug": "regions/ea/entities/mc/departments/radiology/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130947570779,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/radiology"
+    },
+    {
+      "id": 218130950196317,
+      "uuid": "e99d5ade-0fe4-4418-acfa-ea36b369a2cb",
+      "full_slug": "regions/ea/entities/mc/departments/radiology/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130947570779,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/radiology"
+    },
+    {
+      "id": 218130960022626,
+      "uuid": "2ad0e0df-1c72-4b3f-8c63-c8f2eafd0803",
+      "full_slug": "regions/ea/entities/mc/departments/surgery/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218130956504160,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/surgery"
+    },
+    {
+      "id": 218130960673891,
+      "uuid": "6acb3c7c-b7a3-4357-baf8-e33e9bf094fb",
+      "full_slug": "regions/ea/entities/mc/departments/surgery/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218130956504160,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/surgery"
+    },
+    {
+      "id": 218130960006241,
+      "uuid": "eed07c83-e0e8-4f69-9161-12ca533854f8",
+      "full_slug": "regions/ea/entities/mc/departments/surgery/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218130956504160,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/ea/entities/mc/departments/surgery"
     },
     {
       "id": 203314412637671,
@@ -6724,6 +7945,72 @@
       "parent_full_slug": "regions/pk/entities/ihd/departments/paeds"
     },
     {
+      "id": 218131097563584,
+      "uuid": "614e6068-be22-4d49-8e2b-a18710815a85",
+      "full_slug": "regions/pk/entities/mc/departments/anaes/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131094122835,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/anaes"
+    },
+    {
+      "id": 218131098362310,
+      "uuid": "38afa938-c0f2-46e5-b2d6-f04ec896f980",
+      "full_slug": "regions/pk/entities/mc/departments/anaes/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131094122835,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/anaes"
+    },
+    {
+      "id": 218131098075585,
+      "uuid": "2a1883c1-5a1f-490a-97c3-bb987ff27db5",
+      "full_slug": "regions/pk/entities/mc/departments/anaes/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131094122835,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/anaes"
+    },
+    {
+      "id": 218131106959866,
+      "uuid": "51b50300-4d89-4273-b112-006865a612a5",
+      "full_slug": "regions/pk/entities/mc/departments/bbs/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131103912438,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/bbs"
+    },
+    {
+      "id": 218131107742204,
+      "uuid": "0aaf5fb2-d426-4a37-9f11-5eee0d94191c",
+      "full_slug": "regions/pk/entities/mc/departments/bbs/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131103912438,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/bbs"
+    },
+    {
+      "id": 218131106980347,
+      "uuid": "e31af2fa-dcc8-497e-bd2d-92de603e7c8e",
+      "full_slug": "regions/pk/entities/mc/departments/bbs/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131103912438,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/bbs"
+    },
+    {
       "id": 203314461953582,
       "uuid": "7731111e-e3af-48fa-9de0-c9cf22e611b7",
       "full_slug": "regions/pk/entities/mc/departments/card/blogs",
@@ -6757,6 +8044,138 @@
       "parent_full_slug": "regions/pk/entities/mc/departments/card"
     },
     {
+      "id": 218131115979264,
+      "uuid": "3b1e21a8-89c0-4467-a683-c647fc9d1b47",
+      "full_slug": "regions/pk/entities/mc/departments/chs/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131113198077,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/chs"
+    },
+    {
+      "id": 218131120157185,
+      "uuid": "3739fd1d-f756-42f9-bb4b-7463f6654589",
+      "full_slug": "regions/pk/entities/mc/departments/chs/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131113198077,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/chs"
+    },
+    {
+      "id": 218131115966975,
+      "uuid": "75114444-2071-4b52-906b-77e7c798692e",
+      "full_slug": "regions/pk/entities/mc/departments/chs/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131113198077,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/chs"
+    },
+    {
+      "id": 218131126161924,
+      "uuid": "f9fdd7e0-5fce-408d-afaf-945469b95278",
+      "full_slug": "regions/pk/entities/mc/departments/dcpe/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131123237378,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/dcpe"
+    },
+    {
+      "id": 218131141669382,
+      "uuid": "67d48a9a-4e19-4fba-afe1-eac3a2b5346c",
+      "full_slug": "regions/pk/entities/mc/departments/dcpe/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131123237378,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/dcpe"
+    },
+    {
+      "id": 218131126145539,
+      "uuid": "0ac2b8da-117a-4958-8fbe-bb97a138c98a",
+      "full_slug": "regions/pk/entities/mc/departments/dcpe/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131123237378,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/dcpe"
+    },
+    {
+      "id": 218131163419147,
+      "uuid": "df9a81b3-8fae-4afa-8154-03796088d523",
+      "full_slug": "regions/pk/entities/mc/departments/ded/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131160183306,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/ded"
+    },
+    {
+      "id": 218131163836941,
+      "uuid": "e6c26fd5-76a1-4827-9e41-2859e0f1590d",
+      "full_slug": "regions/pk/entities/mc/departments/ded/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131160183306,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/ded"
+    },
+    {
+      "id": 218131163419148,
+      "uuid": "feac0a0d-1434-4291-8ec3-f679718d3965",
+      "full_slug": "regions/pk/entities/mc/departments/ded/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131160183306,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/ded"
+    },
+    {
+      "id": 218131173564947,
+      "uuid": "4c705d77-bed3-41fa-98cc-eca31b5f75aa",
+      "full_slug": "regions/pk/entities/mc/departments/em/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131169690128,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/em"
+    },
+    {
+      "id": 218131173081618,
+      "uuid": "c2f5a01b-3bea-4648-bc0a-644323db233c",
+      "full_slug": "regions/pk/entities/mc/departments/em/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131169690128,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/em"
+    },
+    {
+      "id": 218131173065233,
+      "uuid": "54aa84f1-4883-4bf4-87d5-da6f9fa3cbb7",
+      "full_slug": "regions/pk/entities/mc/departments/em/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131169690128,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/em"
+    },
+    {
       "id": 203314454142501,
       "uuid": "5fdc5015-2162-442a-9e54-576ec5d57f75",
       "full_slug": "regions/pk/entities/mc/departments/fm/blogs",
@@ -6788,6 +8207,39 @@
       "depth": 6,
       "is_folder": true,
       "parent_full_slug": "regions/pk/entities/mc/departments/fm"
+    },
+    {
+      "id": 218131181937175,
+      "uuid": "2093cbc7-41f8-4ac9-a91b-c66536f5d6a3",
+      "full_slug": "regions/pk/entities/mc/departments/med/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131178529301,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/med"
+    },
+    {
+      "id": 218131182649880,
+      "uuid": "2aae8c14-7732-4a24-b2c6-2619cbac129c",
+      "full_slug": "regions/pk/entities/mc/departments/med/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131178529301,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/med"
+    },
+    {
+      "id": 218131186414105,
+      "uuid": "30b3eb1f-635f-4a0c-919c-5a81dc0ecb59",
+      "full_slug": "regions/pk/entities/mc/departments/med/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131178529301,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/med"
     },
     {
       "id": 203314457746984,
@@ -6922,6 +8374,39 @@
       "parent_full_slug": "regions/pk/entities/mc/departments/nutr"
     },
     {
+      "id": 218131207926303,
+      "uuid": "166c69cd-4770-4caa-9dd4-39e6dde62a25",
+      "full_slug": "regions/pk/entities/mc/departments/obs-gyn/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131205116445,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/obs-gyn"
+    },
+    {
+      "id": 218131209482785,
+      "uuid": "a68ce0bf-bf95-45c3-8c76-cba193c32036",
+      "full_slug": "regions/pk/entities/mc/departments/obs-gyn/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131205116445,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/obs-gyn"
+    },
+    {
+      "id": 218131208438304,
+      "uuid": "5b3d3071-f8db-429f-b2d6-1eb1c5d00c1d",
+      "full_slug": "regions/pk/entities/mc/departments/obs-gyn/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131205116445,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/obs-gyn"
+    },
+    {
       "id": 203314478632520,
       "uuid": "8073d110-ba99-43df-9c90-5c045920b496",
       "full_slug": "regions/pk/entities/mc/departments/onc/blogs",
@@ -6955,6 +8440,39 @@
       "parent_full_slug": "regions/pk/entities/mc/departments/onc"
     },
     {
+      "id": 218131231429161,
+      "uuid": "8c18e6df-967a-49c6-953d-8a33f7e87c8c",
+      "full_slug": "regions/pk/entities/mc/departments/ophthalmology/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131228340775,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/ophthalmology"
+    },
+    {
+      "id": 218131232653867,
+      "uuid": "e756d3df-c56b-480e-a1ec-b17df340e31e",
+      "full_slug": "regions/pk/entities/mc/departments/ophthalmology/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131228340775,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/ophthalmology"
+    },
+    {
+      "id": 218131231441450,
+      "uuid": "deddc45c-980d-447d-b7b8-f1d77f31d814",
+      "full_slug": "regions/pk/entities/mc/departments/ophthalmology/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131228340775,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/ophthalmology"
+    },
+    {
       "id": 203314471325247,
       "uuid": "406c28ab-8d5b-4511-9702-06bf495fc281",
       "full_slug": "regions/pk/entities/mc/departments/paeds/blogs",
@@ -6986,6 +8504,39 @@
       "depth": 6,
       "is_folder": true,
       "parent_full_slug": "regions/pk/entities/mc/departments/paeds"
+    },
+    {
+      "id": 218131254534707,
+      "uuid": "b3fc58ff-8eba-4e8c-b91f-76d5f4a8588b",
+      "full_slug": "regions/pk/entities/mc/departments/pathology/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131236909614,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/pathology"
+    },
+    {
+      "id": 218131241599537,
+      "uuid": "201044bb-900f-4a85-b74c-b8471224010d",
+      "full_slug": "regions/pk/entities/mc/departments/pathology/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131236909614,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/pathology"
+    },
+    {
+      "id": 218131239588400,
+      "uuid": "69e9be4f-9530-4e0b-8c9e-c9d132976044",
+      "full_slug": "regions/pk/entities/mc/departments/pathology/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131236909614,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/pathology"
     },
     {
       "id": 203314483129933,
@@ -7054,6 +8605,39 @@
       "parent_full_slug": "regions/pk/entities/mc/departments/psych"
     },
     {
+      "id": 218131260277304,
+      "uuid": "7a808ff3-2128-44cd-9e09-de7bdaa3e971",
+      "full_slug": "regions/pk/entities/mc/departments/radiology/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131257008694,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/radiology"
+    },
+    {
+      "id": 218131262714425,
+      "uuid": "92e62f2f-202a-4a29-82a1-0b12b4829252",
+      "full_slug": "regions/pk/entities/mc/departments/radiology/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131257008694,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/radiology"
+    },
+    {
+      "id": 218131259748919,
+      "uuid": "5f9cf09a-9956-4aa4-b23c-60fecfa26c6c",
+      "full_slug": "regions/pk/entities/mc/departments/radiology/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131257008694,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/radiology"
+    },
+    {
       "id": 203314483945038,
       "uuid": "8230517c-c352-4d41-9389-f6693fb95eb0",
       "full_slug": "regions/pk/entities/mc/departments/regmed/blogs",
@@ -7085,6 +8669,72 @@
       "depth": 6,
       "is_folder": true,
       "parent_full_slug": "regions/pk/entities/mc/departments/regmed"
+    },
+    {
+      "id": 218131268756028,
+      "uuid": "cc9fb051-7626-4de7-b2ca-4634d61c89ba",
+      "full_slug": "regions/pk/entities/mc/departments/surgery/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131265798714,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/surgery"
+    },
+    {
+      "id": 218131272688191,
+      "uuid": "efd28ea3-f480-46a7-9001-2527aaa948e8",
+      "full_slug": "regions/pk/entities/mc/departments/surgery/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131265798714,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/surgery"
+    },
+    {
+      "id": 218131268776509,
+      "uuid": "112ab8ea-3f2c-4f79-9948-df8b3a4f1f31",
+      "full_slug": "regions/pk/entities/mc/departments/surgery/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131265798714,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/surgery"
+    },
+    {
+      "id": 218131278123589,
+      "uuid": "62f5d57d-d20c-4093-8632-f7ceb9f7dcd2",
+      "full_slug": "regions/pk/entities/mc/departments/wch/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218131275977281,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/wch"
+    },
+    {
+      "id": 218131279675974,
+      "uuid": "7761aa26-377a-44b6-ba6d-e07a9b0c1be0",
+      "full_slug": "regions/pk/entities/mc/departments/wch/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218131275977281,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/wch"
+    },
+    {
+      "id": 218131278103108,
+      "uuid": "23985687-74bf-4702-802d-4aaf0c7bcc40",
+      "full_slug": "regions/pk/entities/mc/departments/wch/news",
+      "slug": "news",
+      "name": "News",
+      "parent_id": 218131275977281,
+      "depth": 6,
+      "is_folder": true,
+      "parent_full_slug": "regions/pk/entities/mc/departments/wch"
     },
     {
       "id": 203314499288673,
