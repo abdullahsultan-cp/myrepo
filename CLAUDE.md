@@ -26,7 +26,7 @@ ends, and why a step that cannot do its job must stop rather than guess.
 | **news** | **3,606 stories live**, 0 failed. 2,417 assets uploaded, 990 reused, 214 unrecoverable. Four in-place updates since: Twitter embeds, PDF links, 4 broken hrefs, the 11 Aug restore |
 | **blogs** | **all 83 live and published**, 0 failed. Media filed beside each blog. `category`, `isFeatured`, `entities` and tags wait on the dev — see `Blogs-Pipeline/PENDING_DEV.md` |
 | **events** | **2,710 live and published**, 0 failed. 2,862 assets; 29 banners absent from the export. `contact` and `event_types` wait on the dev |
-| **pages** | site structure and permissions; its own stage, shares no code |
+| **pages** | **the tree is finished and legal**: 628 folders, 4,548 of 4,591 pages placed, 19 of 20 structural checks pass. 3,982 to build, 609 placed but not buildable, 1,459 assigned to 9 people. The backend seed is handed over and dry-run clean. Its own stage, shares no code |
 
 Space `289824742951963`. Default branch **`master`** (there is no `main`).
 
@@ -91,6 +91,13 @@ News-Pipeline/     pipeline/ data/ assets/ backup/    3,606 live
 Blogs-Pipeline/    pipeline/ data/ assets/ backup/    83 live
 Events-Pipeline/   pipeline/ data/ assets/ backup/    2,710 live
 Pages-Pipeline/    pipeline/ data/ out/ portal/       inherits nothing
+  out/aku-master-pages.csv        5,233 rows — START HERE. Every page, nothing hidden
+  out/aku-page-assignments.csv    the work sheet: who migrates what, status per page
+  out/aku-progress.csv            how far each person has got, read back from the sheet
+  out/AKU-Backend-Tree.json       the backend seed — a bare array of regions
+  out/aku-hierarchy-audit.csv     is the result a legal tree? one row per check
+  out/FOR-THE-FRONTEND-DEV.md     the one change the front end owes us
+  data/backend/*.json             the backend's own three tables, dumped
 
 config/types/*.json      what differs per type  (_TEMPLATE.json is boilerplate)
 config/steps.json        the 22 shared steps, as data
@@ -143,6 +150,16 @@ python pipeline/migrate/review/backup.py --type news [--verify]
 python pipeline/new_type.py --list
 python pipeline/new_type.py articles
 python pipeline/new_type.py articles --check      # profile vs the REAL export
+
+# pages · a separate stage. Run in order from Pages-Pipeline/pipeline/
+python build_migration_plan.py   # -> plan.json + the folder/page/role CSVs
+python build_master_sheet.py     # -> aku-master-{pages,folders}.csv   THE deliverable
+python build_assignments.py      # -> the work sheet + progress. Re-run after the
+                                 #    team updates it: typed statuses are CARRIED,
+                                 #    never overwritten
+python build_hierarchy_map.py    # -> the old tree joined to the new one
+python build_backend_tree.py     # -> AKU-Backend-Tree.json    the backend hand-off
+python audit_hierarchy.py        # -> 20 checks. Reads only; fails on a regression
 
 # portals — one HTML file each, committed, open by double-clicking
 python News-Pipeline/pipeline/build_portal.py     # 3,606 stories, 1.44 MB
@@ -275,6 +292,32 @@ cache, so a run scoped to 20 stories saved only those 20 and wiped 731 entries.
 **Never modify a component or page schema.** Only the dev does that. If a payload
 does not fit, the payload is wrong.
 
+**Never drop a page from the pages sheet.** AKU's instruction, 7 Sep 2026: a row
+taken out is a page nobody can look up again once SharePoint is switched off.
+Anything wrong with it goes in the `remark` column instead — `HTTP 404`, `AKU:
+Not Reviewed`, `duplicate hub copy`. Filtering and hiding happen in the viewer,
+never by deleting rows. That is why the sheet is 5,233 rows and not 3,982.
+
+**Placing a page is not building it.** Two columns, because they are two facts:
+`destination_path` says where it belongs, `build` says whether we can make it.
+547 pages return HTTP 401 — AKU never made them public — and 538 carry that as
+the reason they cannot be built; the other 9 are superseded and say so instead.
+Their place is RESERVED and `build = no`. Collapsing the two columns is how a
+page ends up either silently absent or silently empty.
+
+**Never assume a folder in the space is named the way the plan names it.** The
+dev renamed everything to short codes; `regions/pk/entities/mc` is what the
+space holds and what 6,399 stories are filed under. A `create` action for a
+folder that already exists under its short code builds a SECOND one beside the
+original, which is the one holding the content. `build_backend_tree.py` stops
+the build on a suspect rather than shipping it.
+
+**Never hand the dev's test scaffold back as work.** `regions/test/entities/
+testent` and `regions/gl/entities/test` classify as genuine entities to adopt,
+so seeding them would have created a **Test region in the backend database**.
+Excluded by explicit PATH, not by matching the word "test" — there is a real
+`regions/pk/announce/test`, and AKU publishes pages about testing.
+
 ---
 
 ## 7 · Hard-won lessons
@@ -362,9 +405,65 @@ title matching was wrong 11 times out of 28. A rule that cannot be measured
 should not be run, and a rule that abstains is doing its job. **A wrong image on
 a published article is worse than no image.**
 
+**In Storyblok a folder IS a story, so a folder and a page cannot share a slug.**
+AKU's site has both in **10 places** — `mcpk/Pages/departments.aspx` wants the
+exact path of the folder holding 544 department pages. Nothing caught it for
+weeks: the collision check compared a page against another PAGE and never
+against a folder. Uniqueness is a property of the whole namespace, not of the
+half you happened to iterate.
+
+**A scaffold segment is invisible only in the MIDDLE of a path.** `regions`,
+`entities` and `departments` are stripped from the public address, and stripping
+`departments` unconditionally sent `mcpk/Pages/departments.aspx` to
+`aku.edu/pakistan/medical-college` — the **faculty's own front door** — pushing
+the Medical College homepage to `medical-college/home-2`. As the LAST segment it
+is the thing being addressed. The reader would have found the department list
+where the faculty homepage belongs. It only surfaced when a second fix made the
+two addresses collide; before that it was live and silent.
+
+**The obvious canonical rule was wrong 4 times in 10.** Choosing between two
+rival landing pages, "the page inside the sub-web is the canonical one" looks
+self-evident and fails: `mcpk/bbs/Pages/Research.aspx` was edited in December
+2025 while the sub-web's own `home.aspx` has not been touched since June 2016.
+Rank on evidence instead — live HTTP status, then SharePoint version (below 1.0
+never published), then modified date.
+
+**A zero-width space makes one name into three.** 135 of AKU's page titles carry
+`U+200B`. It is invisible on screen and sorts as a different string, so nine
+pages called "Dean's Communiqué" came out as three groups that looked identical
+and would not group. Pages has its own `page_titles.py` for this — it shares no
+code with `pipeline/core/text_clean.py` by design, and the code point list is
+the same list.
+
+**`Pages` is a segment of every single SharePoint URL.** Disambiguating repeated
+page names by their parent folder collided for 14 pages called "Events": all
+qualified to `(Pages)`, then `(events/Pages)`, then `(home.aspx)` — three
+different candidates, all the same string. Drop the scaffolding before using a
+path as an identifier.
+
+**Key a node by where it ENDS UP, not where it arrived.** An aliased entity is
+rewritten to point at the folder that already exists, and keying the dictionary
+on the arrival path let both through: two entity nodes for one institute, same
+`dbId`, same folder id, same parent. **The backend dev's dry run found it, not
+us** — and it survived only because his merge happened to keep the departments.
+First-seen was the alias node, which has none, so a merge taking the first node
+wholesale would have silently dropped Oncology and Regenerative Medicine from
+CRM. Merging is the producer's job, not the consumer's.
+
+**A guard is decoration until you watch it fire.** The duplicate-entity check
+was verified by deleting the alias it protects and confirming exit 1 with the
+pair named. Same for the `public_url` drift check in `audit_hierarchy.py`.
+
+**`ruff` earns its place on generated code.** It caught JavaScript regexes
+(`/^\s+|\s+$/g` and `/\/+$/`) sitting inside a non-raw Python string in
+`render_share_tree.py` — they worked by accident and would break on a future
+Python — and a leftover `doc` reference that would have crashed
+`build_backend_tree.py` the first time any node ended up without a parent.
+
 **Check output, do not assume it.** Every bug above was found by looking at a
 result: a banner that was a logo, a counter that went backwards, a read time
-implying 16 wpm, a description that was the word "The".
+implying 16 wpm, a description that was the word "The", a department list page
+sitting on a faculty's front door.
 
 ---
 
@@ -433,6 +532,40 @@ from inside the entity name (`Institute for Educational Development, Pakistan`).
 
 **Do not restyle inline formatting.** Link colour, bold, italic and underline come
 across as authored.
+
+**The pages plan and the space speak different languages.** The plan uses full
+slugs (`regions/pakistan/entities/medical-college`); the space uses short codes
+(`regions/pk/entities/mc`) and holds **703 folders under `regions/`**. Four
+folders are one folder under two names, listed in `out/aku-folder-aliases.json`:
+`crm`/`centre-for-regenerative-medicine`, `fm`/`fam-med`, `onc`/`onco`,
+`psych`/`psychiatry`. Nothing was renamed — all four renames would have made the
+short code LONGER and moved live story URLs for no reader benefit.
+
+**The backend seeds region, entity and department folders, and the shape differs
+per level.** Read off the dev's own `regions/test`, not assumed:
+
+| level | seeded inside it |
+|---|---|
+| region | `blogs` `entities` `events` `news` |
+| entity | `blogs` `departments` `events` `news` |
+| department | `blogs` `events` `news` — no `departments` below it |
+
+`entities` and `departments` are **conditional**: the backend creates them when
+a row gets its first child, which is what `isDepartmentFolderCreated` has been
+recording all along. 32 of 60 entities have one.
+
+**A folder's landing page is a story called `home` inside it**, because the
+folder cannot hold content of its own. 467 pages are one. The trailing segment
+is stripped from the public address the same way `regions`/`entities`/
+`departments` are — otherwise the university homepage publishes at
+`aku.edu/home` instead of `aku.edu/`. **The front end has to strip the same
+four**, and that is the one part of this that is not ours to change.
+
+**547 of the 4,591 pages return HTTP 401.** AKU never made them public, so
+nobody can read the content to migrate it — 538 carry login-only as the reason
+they cannot be built, the other 9 are superseded and carry that instead. They keep their place in the
+hierarchy and `build = no`; when AKU hands them over they drop into the path
+already planned, with no replanning.
 
 ---
 
@@ -634,3 +767,35 @@ commit.
 - **Two tables** skipped and rebuilt by hand: news stories 1335 and 3288
 - **`ruff format`** is not enforced — it would rewrite 106 of 139 files, which
   belongs in its own deliberate commit
+
+### pages
+
+- **The front end owes one change**, and nothing works right until it lands:
+  strip a trailing `home` from the public address, alongside the `regions`,
+  `entities` and `departments` it already strips. Without it 467 front doors sit
+  a level too deep and `aku.edu/` has no homepage. Spec, copy-paste rule and 9
+  test cases: `Pages-Pipeline/out/FOR-THE-FRONTEND-DEV.md`, verified against all
+  4,548 placed pages with 0 mismatches
+- **The backend seed is dry-run clean and ready to apply.** Expected on a real
+  run: 8 regions, 75 entities, 110 departments · 34 folders created · 3 rows
+  adopted · **0 renames, 0 stories moved**. One thing for the dev to confirm
+  first: his step [5] reports `0 folder(s) already exist` when there are 703
+  under `regions/`. It did not affect the dry run — the rest of his logic reads
+  `storyblokFolderId` off the nodes — but if that listing is his guard against
+  creating a folder twice, it is protecting nothing
+- **3,132 of the 4,591 pages are unassigned**: all of global (About AKU,
+  research, library, careers, the news/events/blogs hubs), Pakistan
+  region-level, and every page in East Africa, Kenya, Tanzania and the UK
+- **46 open decisions are AKU's**, covering 396 pages — 97 behind a login, 171
+  finished conferences, 3 placement calls. All are in the sheet with a remark,
+  so none of them block building
+- **Two people have mostly-blocked assignments.** Noman Jawaid has 40 of 92
+  login-only (his Ethics folder is 17 of 19 blocked); Fazila has 6 of 15. They
+  will run out of work before the others
+- **`gl/*` will duplicate six institutes by design.** CIME exists under
+  ke/pk/tz, IHD under af/ke/pk/tz/ug, and the plan creates global folders for
+  all six for cross-region content. Confirmed intentional 8 Sep 2026: stick to
+  the AKU tree and mould the old work to it
+- **Pages has no test coverage.** No test in the 126 references `Pages-Pipeline`
+  at all. Declined 8 Sep 2026; recorded because it is a real gap, not an
+  oversight
