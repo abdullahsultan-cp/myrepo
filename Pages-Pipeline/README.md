@@ -14,6 +14,16 @@ a set of CSVs and a browsable portal rather than Storyblok payloads.
 
 ---
 
+> **Looking for the page CONTENT build?** This file is about the *structure* —
+> the folder tree, the placements, the role model. Turning archived aku.edu HTML
+> into Storyblok stories for Medical College, Pakistan is a later stage and has
+> its own three files: [MC-PK-STATUS.md](MC-PK-STATUS.md) (where it stands),
+> [MC-PK-RULES.md](MC-PK-RULES.md) (every conversion rule and why) and
+> [MC-PK-RUNBOOK.md](MC-PK-RUNBOOK.md) (setup and command order).
+> [CLAUDE.md](CLAUDE.md) indexes all of it.
+
+---
+
 # START HERE
 
 If you have just picked this up, read this section and nothing else first.
