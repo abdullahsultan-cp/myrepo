@@ -139,7 +139,24 @@ dist/
 # rule is a directory rather than a pattern that has to guess at extensions.
 # Each is regenerable: probe_csv.py -> join.py -> sections.py ->
 # build_migration_plan.py. `pipeline/paths.py` is the only thing that names them.
-/Pages-Pipeline/out/work/
+# NOTE the trailing `/*`, not `/`. Git does not descend into an excluded
+# DIRECTORY, so a `!` rule inside one never fires; excluding the CONTENTS lets
+# the exceptions below work.
+/Pages-Pipeline/out/work/*
+
+# ...EXCEPT the content-build inputs, which are NOT regenerable. aku.edu is
+# being switched off, and three of these exist nowhere else once it is:
+#   legacy_html/      the archived pages themselves (120 files, 12 MB)
+#   page_widgets.json 97 accordion/gallery/tile/tab sets pulled from SharePoint's
+#                     REST API -- none of it appears in the HTML
+#   page_asset_map.json  source URL -> uploaded asset, 1,160 entries. Without it
+#                     a rerun uploads every picture again as a duplicate
+#   build_list_v2.json   the working set build_pages.py rebuilds
+# legacy_images/ stays ignored: 854 MB, and every file is already in Storyblok.
+!/Pages-Pipeline/out/work/legacy_html/
+!/Pages-Pipeline/out/work/page_widgets.json
+!/Pages-Pipeline/out/work/page_asset_map.json
+!/Pages-Pipeline/out/work/build_list_v2.json
 
 # The generated single-file views. Each is rebuilt from plan.json by its own
 # render_*.py, so tracking them would put a megabyte of churn in every diff.
