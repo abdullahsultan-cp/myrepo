@@ -1,7 +1,18 @@
 {
   "space_id": "289824742951963",
-  "folder_count": 1314,
+  "folder_count": 1341,
   "folders": [
+    {
+      "id": 218846503875416,
+      "uuid": "ae1278f4-1801-48b8-80a3-c5dff699953f",
+      "full_slug": "Uganda",
+      "slug": "Uganda",
+      "name": "Migration Team",
+      "parent_id": 0,
+      "depth": 0,
+      "is_folder": true,
+      "parent_full_slug": ""
+    },
     {
       "id": 205042012946919,
       "uuid": "07397784-1104-4046-be9c-02a3727eedb2",
@@ -58,17 +69,6 @@
       "parent_full_slug": ""
     },
     {
-      "id": 217538121424619,
-      "uuid": "f4e51fa6-8775-4c37-9ad9-40571e0aee2c",
-      "full_slug": "region",
-      "slug": "region",
-      "name": "region",
-      "parent_id": 0,
-      "depth": 0,
-      "is_folder": true,
-      "parent_full_slug": ""
-    },
-    {
       "id": 203313613527806,
       "uuid": "c5611977-7e40-46a9-a74a-daf07530f347",
       "full_slug": "regions",
@@ -89,6 +89,17 @@
       "depth": 0,
       "is_folder": true,
       "parent_full_slug": ""
+    },
+    {
+      "id": 218854372707532,
+      "uuid": "b7fe6c0e-9992-4638-a9ec-0fd5520b9cc8",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery",
+      "slug": "school-of-nursing-and-midwifery",
+      "name": "school-of-nursing-and-midwifery",
+      "parent_id": 218846503875416,
+      "depth": 1,
+      "is_folder": true,
+      "parent_full_slug": "Uganda"
     },
     {
       "id": 213535497864803,
@@ -190,15 +201,15 @@
       "parent_full_slug": "pakistan"
     },
     {
-      "id": 217538165817068,
-      "uuid": "f02b2da6-09a5-444e-9838-edb9a4415d19",
-      "full_slug": "region/ea",
-      "slug": "ea",
-      "name": "ea",
-      "parent_id": 217538121424619,
+      "id": 218525583671804,
+      "uuid": "2c6d3d12-20f4-428e-9bfa-5bb0b5059c19",
+      "full_slug": "pakistan/pakistan",
+      "slug": "pakistan",
+      "name": "Pakistan",
+      "parent_id": 217765228873499,
       "depth": 1,
       "is_folder": true,
-      "parent_full_slug": "region"
+      "parent_full_slug": "pakistan"
     },
     {
       "id": 203313618430723,
@@ -311,6 +322,72 @@
       "parent_full_slug": "regions"
     },
     {
+      "id": 218854424374479,
+      "uuid": "0f7c27d0-f826-42d1-9305-84d1b56720c9",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery/about",
+      "slug": "about",
+      "name": "about",
+      "parent_id": 218854372707532,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "Uganda/school-of-nursing-and-midwifery"
+    },
+    {
+      "id": 218868812311025,
+      "uuid": "07a0403d-de91-4471-a222-4151be848235",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery/alumni",
+      "slug": "alumni",
+      "name": "Alumni",
+      "parent_id": 218854372707532,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "Uganda/school-of-nursing-and-midwifery"
+    },
+    {
+      "id": 219002779632550,
+      "uuid": "e638c18e-a07f-4d31-b5d8-92cc7a87edd7",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery/faculty",
+      "slug": "faculty",
+      "name": "faculty",
+      "parent_id": 218854372707532,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "Uganda/school-of-nursing-and-midwifery"
+    },
+    {
+      "id": 218995658158147,
+      "uuid": "86e1ac4f-e6be-43d8-bba2-093dc9fb96a9",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery/partners",
+      "slug": "partners",
+      "name": "partners",
+      "parent_id": 218854372707532,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "Uganda/school-of-nursing-and-midwifery"
+    },
+    {
+      "id": 218895261495412,
+      "uuid": "2df12999-5696-458f-8041-9b83283b646b",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery/programmes",
+      "slug": "programmes",
+      "name": "programmes",
+      "parent_id": 218854372707532,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "Uganda/school-of-nursing-and-midwifery"
+    },
+    {
+      "id": 218854584634580,
+      "uuid": "67470ef1-b6c2-46ae-8cf9-2632292dcd8f",
+      "full_slug": "Uganda/school-of-nursing-and-midwifery/research",
+      "slug": "research",
+      "name": "Research",
+      "parent_id": 218854372707532,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "Uganda/school-of-nursing-and-midwifery"
+    },
+    {
       "id": 217818233060999,
       "uuid": "5172ce08-554e-4d5c-8153-5a5335d01174",
       "full_slug": "pakistan/centre-for-regenerative-medicine/about",
@@ -320,6 +397,105 @@
       "depth": 2,
       "is_folder": true,
       "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218939802693766,
+      "uuid": "d0b71bbe-b3fc-4687-98d1-b196b3b1534d",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/ethics",
+      "slug": "ethics",
+      "name": "ethics",
+      "parent_id": 217789868855145,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218213687267855,
+      "uuid": "06135217-80de-4068-8e61-f47197bfdd98",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/events",
+      "slug": "events",
+      "name": "events",
+      "parent_id": 217789868855145,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218941211271338,
+      "uuid": "cef869d1-6365-41b7-97cc-3e0a12d6c08d",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/facilities",
+      "slug": "facilities",
+      "name": "facilities",
+      "parent_id": 217789868855145,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218229610984520,
+      "uuid": "e45c8197-fa2b-48b2-8315-ba729218d013",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/people",
+      "slug": "people",
+      "name": "people",
+      "parent_id": 217789868855145,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218566531498056,
+      "uuid": "7f5801b2-1a8e-4063-90e3-be1c9eec301b",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/research",
+      "slug": "research",
+      "name": "research",
+      "parent_id": 217789868855145,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218937380964277,
+      "uuid": "0c406e10-16fb-42c4-8308-c6853d628f5e",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/resources",
+      "slug": "resources",
+      "name": "resources",
+      "parent_id": 217789868855145,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine"
+    },
+    {
+      "id": 218504502535616,
+      "uuid": "c47511b4-c97c-45c6-b7f2-70b10bc16e4b",
+      "full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies/about",
+      "slug": "about",
+      "name": "About ",
+      "parent_id": 217781468565066,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies"
+    },
+    {
+      "id": 218554421877276,
+      "uuid": "1dbd1139-67c1-4dd9-87e0-b3dbd40dd7dd",
+      "full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies/programmes",
+      "slug": "programmes",
+      "name": "Programmes",
+      "parent_id": 217781468565066,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies"
+    },
+    {
+      "id": 218554783005220,
+      "uuid": "5fe69a71-69c2-435a-bb46-46495c0544d0",
+      "full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies/research",
+      "slug": "research",
+      "name": "Research",
+      "parent_id": 217781468565066,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies"
     },
     {
       "id": 217819632116701,
@@ -338,6 +514,17 @@
       "full_slug": "pakistan/clinical-trials-unit/news-events",
       "slug": "news-events",
       "name": "News & Events",
+      "parent_id": 217781753720417,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/clinical-trials-unit"
+    },
+    {
+      "id": 218181623494141,
+      "uuid": "9129bcf5-b081-40f4-a69a-9217a3edf2d8",
+      "full_slug": "pakistan/clinical-trials-unit/our-services",
+      "slug": "our-services",
+      "name": "Our Services",
       "parent_id": 217781753720417,
       "depth": 2,
       "is_folder": true,
@@ -432,15 +619,92 @@
       "parent_full_slug": "pakistan/institute-for-educational-development"
     },
     {
-      "id": 217538197090029,
-      "uuid": "d89c6611-0a41-49b4-a04e-91d99e8e2b75",
-      "full_slug": "region/ea/mbbs",
-      "slug": "mbbs",
-      "name": "mbbs",
-      "parent_id": 217538165817068,
+      "id": 218241309596365,
+      "uuid": "94641e65-1ea6-4366-a62b-3a592cbaad61",
+      "full_slug": "pakistan/institute-for-educational-development/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 217765544884034,
       "depth": 2,
       "is_folder": true,
-      "parent_full_slug": "region/ea"
+      "parent_full_slug": "pakistan/institute-for-educational-development"
+    },
+    {
+      "id": 218480988919163,
+      "uuid": "423df2d5-d28a-4009-86ee-23866a077c0d",
+      "full_slug": "pakistan/medical-college-pakistan/about",
+      "slug": "about",
+      "name": "About",
+      "parent_id": 217814675481163,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan"
+    },
+    {
+      "id": 218465762760497,
+      "uuid": "9f78aaf1-4fb7-496c-b0df-1f4a84bc6873",
+      "full_slug": "pakistan/medical-college-pakistan/allied-health",
+      "slug": "allied-health",
+      "name": "Allied Health",
+      "parent_id": 217814675481163,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan"
+    },
+    {
+      "id": 218207326797819,
+      "uuid": "9c6777d9-6197-444c-8ea1-d113adf34007",
+      "full_slug": "pakistan/medical-college-pakistan/critical-creative-innovative-thinking",
+      "slug": "critical-creative-innovative-thinking",
+      "name": "Critical Creative Innovative Thinking",
+      "parent_id": 217814675481163,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan"
+    },
+    {
+      "id": 218467049138557,
+      "uuid": "fd5c5bbe-9239-4c6c-a1c1-dda97ecd6cda",
+      "full_slug": "pakistan/medical-college-pakistan/data-science",
+      "slug": "data-science",
+      "name": "Data Science",
+      "parent_id": 217814675481163,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan"
+    },
+    {
+      "id": 218496825200764,
+      "uuid": "15137de3-8418-434d-8174-706a94f21ee4",
+      "full_slug": "pakistan/medical-college-pakistan/fellowship",
+      "slug": "fellowship",
+      "name": "Fellowship",
+      "parent_id": 217814675481163,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan"
+    },
+    {
+      "id": 218221845972479,
+      "uuid": "b12d7b84-61fd-4a6c-9cb0-08c47846977a",
+      "full_slug": "pakistan/medical-college-pakistan/patient-safety",
+      "slug": "patient-safety",
+      "name": "patient safety",
+      "parent_id": 217814675481163,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan"
+    },
+    {
+      "id": 218525863301810,
+      "uuid": "c3458369-ed68-435e-b377-ee41dd5ca29e",
+      "full_slug": "pakistan/pakistan/school-of-nursing-and-midwifery",
+      "slug": "school-of-nursing-and-midwifery",
+      "name": "School of Nursing and Midwifery",
+      "parent_id": 218525583671804,
+      "depth": 2,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/pakistan"
     },
     {
       "id": 203313639688977,
@@ -1015,17 +1279,6 @@
       "parent_full_slug": "regions/pk"
     },
     {
-      "id": 218174256127248,
-      "uuid": "a73a82b2-e4d7-44d3-8277-4e4ff9a57dd5",
-      "full_slug": "regions/pk/ek-saath",
-      "slug": "ek-saath",
-      "name": "Ek Saath",
-      "parent_id": 203313617816321,
-      "depth": 2,
-      "is_folder": true,
-      "parent_full_slug": "regions/pk"
-    },
-    {
       "id": 203313621863172,
       "uuid": "e5960601-0e02-46b7-906c-2547de90ff76",
       "full_slug": "regions/pk/entities",
@@ -1246,15 +1499,59 @@
       "parent_full_slug": "regions/uk"
     },
     {
-      "id": 217866129374069,
-      "uuid": "765d7437-b192-420a-b928-4bac4ae0291c",
-      "full_slug": "pakistan/faculty-of-arts-and-sciences/study/undergraduate-programmes",
-      "slug": "undergraduate-programmes",
-      "name": "Undergraduate Programmes",
-      "parent_id": 217866037668708,
+      "id": 218582221190653,
+      "uuid": "6dde7861-2e7e-442c-a2ed-40d0bff8ff2f",
+      "full_slug": "pakistan/centre-for-regenerative-medicine/about/ethics",
+      "slug": "ethics",
+      "name": "ethics",
+      "parent_id": 217818233060999,
       "depth": 3,
       "is_folder": true,
-      "parent_full_slug": "pakistan/faculty-of-arts-and-sciences/study"
+      "parent_full_slug": "pakistan/centre-for-regenerative-medicine/about"
+    },
+    {
+      "id": 218553331861543,
+      "uuid": "9d2a116d-8631-4424-a2a8-96061431178a",
+      "full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies/about/team",
+      "slug": "team",
+      "name": "Team",
+      "parent_id": 218504502535616,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/centre-of-excellence-for-trauma-emergencies/about"
+    },
+    {
+      "id": 218469382130602,
+      "uuid": "e75fdc25-cb62-4a08-ac9b-5959d7bd96fe",
+      "full_slug": "pakistan/medical-college-pakistan/critical-creative-innovative-thinking/blogs",
+      "slug": "blogs",
+      "name": "Blogs",
+      "parent_id": 218207326797819,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan/critical-creative-innovative-thinking"
+    },
+    {
+      "id": 218208089718902,
+      "uuid": "73f9b8dd-22d0-4058-861d-84ffda6bb9e3",
+      "full_slug": "pakistan/medical-college-pakistan/critical-creative-innovative-thinking/events",
+      "slug": "events",
+      "name": "Events",
+      "parent_id": 218207326797819,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/medical-college-pakistan/critical-creative-innovative-thinking"
+    },
+    {
+      "id": 218526150615750,
+      "uuid": "2e2e20ec-18f3-43da-9955-b9617c839b79",
+      "full_slug": "pakistan/pakistan/school-of-nursing-and-midwifery/about",
+      "slug": "about",
+      "name": "About",
+      "parent_id": 218525863301810,
+      "depth": 3,
+      "is_folder": true,
+      "parent_full_slug": "pakistan/pakistan/school-of-nursing-and-midwifery"
     },
     {
       "id": 203313705024629,
@@ -2414,9 +2711,9 @@
     {
       "id": 217856738947370,
       "uuid": "45918020-b689-4cc6-b3d4-7f5c3df71a8c",
-      "full_slug": "regions/gl/entities/test",
-      "slug": "test",
-      "name": "Test",
+      "full_slug": "regions/gl/entities/test2",
+      "slug": "test2",
+      "name": "Test2",
       "parent_id": 217824673942053,
       "depth": 3,
       "is_folder": true,
@@ -5186,35 +5483,35 @@
     {
       "id": 217856743457073,
       "uuid": "2c0b1348-ec75-467d-93d8-5614b6d6b9c2",
-      "full_slug": "regions/gl/entities/test/blogs",
+      "full_slug": "regions/gl/entities/test2/blogs",
       "slug": "blogs",
       "name": "Blogs",
       "parent_id": 217856738947370,
       "depth": 4,
       "is_folder": true,
-      "parent_full_slug": "regions/gl/entities/test"
+      "parent_full_slug": "regions/gl/entities/test2"
     },
     {
       "id": 217856744812852,
       "uuid": "e01a819c-ec8e-48bf-b239-a9415c28d260",
-      "full_slug": "regions/gl/entities/test/events",
+      "full_slug": "regions/gl/entities/test2/events",
       "slug": "events",
       "name": "Events",
       "parent_id": 217856738947370,
       "depth": 4,
       "is_folder": true,
-      "parent_full_slug": "regions/gl/entities/test"
+      "parent_full_slug": "regions/gl/entities/test2"
     },
     {
       "id": 217856741658926,
       "uuid": "c6d63d4e-d703-4e2a-9c01-aae6de7dfc1f",
-      "full_slug": "regions/gl/entities/test/news",
+      "full_slug": "regions/gl/entities/test2/news",
       "slug": "news",
       "name": "News",
       "parent_id": 217856738947370,
       "depth": 4,
       "is_folder": true,
-      "parent_full_slug": "regions/gl/entities/test"
+      "parent_full_slug": "regions/gl/entities/test2"
     },
     {
       "id": 218175589551679,

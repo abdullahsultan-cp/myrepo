@@ -32,6 +32,7 @@ import hashlib
 import json
 import os
 import sys
+import time
 from datetime import datetime, timezone
 
 # Walk up for _bootstrap.py rather than counting dirname() calls. The counted
@@ -130,6 +131,40 @@ def live_ids(session, api):
         page += 1
 
 
+def read_story(session, url, tries=6):
+    """GET one story, honouring the rate limiter. Returns the response or None.
+
+    This used to be a bare `session.get()`. A `429` was therefore recorded as a
+    permanent failure and the story simply left out of the archive — **49 of
+    3,860 news stories on 15 Sep, then 59 on the retry**, with the script still
+    exiting 0. Every other caller in this repo has retried 429 and 5xx since
+    `SB._call` was written; the backup, the one thing that must be complete,
+    never got it.
+
+    A backup with a silent hole in it is worse than no backup: Storyblok keeps
+    no version history, so the archive is the only record of what the space
+    held, and nobody can settle "was it always like that?" against a file that
+    quietly dropped the story being asked about.
+    """
+    for attempt in range(tries):
+        try:
+            r = session.get(url, timeout=90)
+        except requests.exceptions.RequestException:
+            if attempt == tries - 1:
+                raise
+            time.sleep(3 * (attempt + 1))
+            continue
+        if r.status_code == 429:
+            wait = int(r.headers.get("Retry-After", 2 * (attempt + 1)))
+            time.sleep(wait)
+            continue
+        if r.status_code >= 500 and attempt < tries - 1:
+            time.sleep(1.5 * (attempt + 1))
+            continue
+        return r
+    return r
+
+
 def backup_storyblok():
     """Every story this type has in the space, read back from the API."""
     cfg = load_config()
@@ -145,7 +180,7 @@ def backup_storyblok():
     stories, failed = {}, []
     for i, (sid, sb_id) in enumerate(rows, 1):
         try:
-            r = s.get(f"{api}/stories/{sb_id}", timeout=90)
+            r = read_story(s, f"{api}/stories/{sb_id}")
         except requests.exceptions.RequestException as e:
             failed.append((sid, type(e).__name__))
             continue
@@ -203,7 +238,7 @@ def verify():
 
     changed, gone, same = [], [], 0
     for sid, old in snap["stories"].items():
-        r = s.get(f"{api}/stories/{old['id']}", timeout=90)
+        r = read_story(s, f"{api}/stories/{old['id']}")
         if r.status_code == 404:
             gone.append(sid)
             continue

@@ -1,12 +1,13 @@
 ﻿id,uuid,full_slug,slug,name,parent_id,parent_full_slug,depth
+218846503875416,ae1278f4-1801-48b8-80a3-c5dff699953f,Uganda,Uganda,Migration Team,0,,0
 205042012946919,07397784-1104-4046-be9c-02a3727eedb2,blogs,blogs,blogs,0,,0
 196550551813939,42b1d6bc-cc29-48cb-a059-96ea36b9d7e0,development,development,development,0,,0
 205404061614243,5e0f47cc-c6c8-4ab2-a220-e5533ed6ffac,events-detail,events-detail,events-detail,0,,0
 200436757260291,1b0f8581-0af2-4aba-a314-3899e115aac1,news,news,news,0,,0
 217765228873499,c380250f-b6c0-4cbe-9135-2d5f2f8fd0d3,pakistan,pakistan,Migration Team,0,,0
-217538121424619,f4e51fa6-8775-4c37-9ad9-40571e0aee2c,region,region,region,0,,0
 203313613527806,c5611977-7e40-46a9-a74a-daf07530f347,regions,regions,Regions,0,,0
 216112263468119,3f69f9a8-7052-4f30-856c-9acb0283a086,testing,testing,Testing,0,,0
+218854372707532,b7fe6c0e-9992-4638-a9ec-0fd5520b9cc8,Uganda/school-of-nursing-and-midwifery,school-of-nursing-and-midwifery,school-of-nursing-and-midwifery,218846503875416,Uganda,1
 213535497864803,6e162dc7-c180-4023-b441-3173884b0b12,development/development-updated-comps,development-updated-comps,development-updated-comps,196550551813939,development,1
 201530419710255,1048b2ca-ddae-43d1-b82b-b626277522be,news/test,test,test,200436757260291,news,1
 217789868855145,b2092df9-ad6c-4239-9e20-f06c02035649,pakistan/centre-for-regenerative-medicine,centre-for-regenerative-medicine,Centre for Regenerative Medicine,217765228873499,pakistan,1
@@ -16,7 +17,7 @@
 217773024075175,a3e00dac-846f-485c-a2f0-28fbeb7b877f,pakistan/faculty-of-arts-and-sciences,faculty-of-arts-and-sciences,Faculty of Arts and Sciences,217765228873499,pakistan,1
 217765544884034,8733ec71-0b3d-4544-9f48-6d0c2447fd97,pakistan/institute-for-educational-development,institute-for-educational-development,Institute For Educational Development,217765228873499,pakistan,1
 217814675481163,f3b729b3-5701-4672-8b81-846fed83b990,pakistan/medical-college-pakistan,medical-college-pakistan," Medical College, Pakistan",217765228873499,pakistan,1
-217538165817068,f02b2da6-09a5-444e-9838-edb9a4415d19,region/ea,ea,ea,217538121424619,region,1
+218525583671804,2c6d3d12-20f4-428e-9bfa-5bb0b5059c19,pakistan/pakistan,pakistan,Pakistan,217765228873499,pakistan,1
 203313618430723,8fd8b805-5661-4a23-8fc7-b5d2eab8df5e,regions/af,af,AF,203313613527806,regions,1
 206177164327560,b757eb48-34b9-4b95-b145-7d7a118ed48f,regions/ea,ea,EA,203313613527806,regions,1
 203397329585917,d74b2545-4bf9-4267-9001-5f8bb3e4013e,regions/gl,gl,GL,203313613527806,regions,1
@@ -27,9 +28,25 @@
 203313629866761,d0a071ab-ad29-4311-8a5a-0bb1799ef85f,regions/tz,tz,TZ,203313613527806,regions,1
 203313625668358,7d1b0497-e5d2-4eb3-b183-2c4885477502,regions/ug,ug,UG,203313613527806,regions,1
 203313629833992,69e35fdb-b5f0-4b1a-9b17-2988717fe0b4,regions/uk,uk,UK,203313613527806,regions,1
+218854424374479,0f7c27d0-f826-42d1-9305-84d1b56720c9,Uganda/school-of-nursing-and-midwifery/about,about,about,218854372707532,Uganda/school-of-nursing-and-midwifery,2
+218868812311025,07a0403d-de91-4471-a222-4151be848235,Uganda/school-of-nursing-and-midwifery/alumni,alumni,Alumni,218854372707532,Uganda/school-of-nursing-and-midwifery,2
+219002779632550,e638c18e-a07f-4d31-b5d8-92cc7a87edd7,Uganda/school-of-nursing-and-midwifery/faculty,faculty,faculty,218854372707532,Uganda/school-of-nursing-and-midwifery,2
+218995658158147,86e1ac4f-e6be-43d8-bba2-093dc9fb96a9,Uganda/school-of-nursing-and-midwifery/partners,partners,partners,218854372707532,Uganda/school-of-nursing-and-midwifery,2
+218895261495412,2df12999-5696-458f-8041-9b83283b646b,Uganda/school-of-nursing-and-midwifery/programmes,programmes,programmes,218854372707532,Uganda/school-of-nursing-and-midwifery,2
+218854584634580,67470ef1-b6c2-46ae-8cf9-2632292dcd8f,Uganda/school-of-nursing-and-midwifery/research,research,Research,218854372707532,Uganda/school-of-nursing-and-midwifery,2
 217818233060999,5172ce08-554e-4d5c-8153-5a5335d01174,pakistan/centre-for-regenerative-medicine/about,about,About,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218939802693766,d0b71bbe-b3fc-4687-98d1-b196b3b1534d,pakistan/centre-for-regenerative-medicine/ethics,ethics,ethics,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218213687267855,06135217-80de-4068-8e61-f47197bfdd98,pakistan/centre-for-regenerative-medicine/events,events,events,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218941211271338,cef869d1-6365-41b7-97cc-3e0a12d6c08d,pakistan/centre-for-regenerative-medicine/facilities,facilities,facilities,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218229610984520,e45c8197-fa2b-48b2-8315-ba729218d013,pakistan/centre-for-regenerative-medicine/people,people,people,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218566531498056,7f5801b2-1a8e-4063-90e3-be1c9eec301b,pakistan/centre-for-regenerative-medicine/research,research,research,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218937380964277,0c406e10-16fb-42c4-8308-c6853d628f5e,pakistan/centre-for-regenerative-medicine/resources,resources,resources,217789868855145,pakistan/centre-for-regenerative-medicine,2
+218504502535616,c47511b4-c97c-45c6-b7f2-70b10bc16e4b,pakistan/centre-of-excellence-for-trauma-emergencies/about,about,About ,217781468565066,pakistan/centre-of-excellence-for-trauma-emergencies,2
+218554421877276,1dbd1139-67c1-4dd9-87e0-b3dbd40dd7dd,pakistan/centre-of-excellence-for-trauma-emergencies/programmes,programmes,Programmes,217781468565066,pakistan/centre-of-excellence-for-trauma-emergencies,2
+218554783005220,5fe69a71-69c2-435a-bb46-46495c0544d0,pakistan/centre-of-excellence-for-trauma-emergencies/research,research,Research,217781468565066,pakistan/centre-of-excellence-for-trauma-emergencies,2
 217819632116701,cfe4cec7-3251-478a-a6d5-394b53e262ea,pakistan/clinical-trials-unit/about,about,About,217781753720417,pakistan/clinical-trials-unit,2
 217890509292441,7df2e9c2-3c0a-44ad-b56b-6e15c9c6628e,pakistan/clinical-trials-unit/news-events,news-events,News & Events,217781753720417,pakistan/clinical-trials-unit,2
+218181623494141,9129bcf5-b081-40f4-a69a-9217a3edf2d8,pakistan/clinical-trials-unit/our-services,our-services,Our Services,217781753720417,pakistan/clinical-trials-unit,2
 218163911500913,ebcb1e40-e6fd-4b6f-b895-6fd5b48951e2,pakistan/clinical-trials-unit/resources,resources,Resources,217781753720417,pakistan/clinical-trials-unit,2
 217773128396202,5c908103-2980-4ab2-892f-3d48c7be6ed1,pakistan/faculty-of-arts-and-sciences/about-us,about-us,About Us,217773024075175,pakistan/faculty-of-arts-and-sciences,2
 217865375757553,99c7f7ad-08dc-43cc-be4c-511c259e0839,pakistan/faculty-of-arts-and-sciences/faculty,faculty,Faculty,217773024075175,pakistan/faculty-of-arts-and-sciences,2
@@ -38,7 +55,14 @@
 217765613389635,08944a8b-8c85-48c6-9caa-2f31831e2f32,pakistan/institute-for-educational-development/about,about,About,217765544884034,pakistan/institute-for-educational-development,2
 218132686918645,30a359f1-cfc5-4e41-a035-6cff479b55d3,pakistan/institute-for-educational-development/advanced-diploma,advanced-diploma, Advanced Diploma,217765544884034,pakistan/institute-for-educational-development,2
 218141020570644,03276c67-9f0e-48af-9733-6209dc4616ed,pakistan/institute-for-educational-development/alumni,alumni,Alumni,217765544884034,pakistan/institute-for-educational-development,2
-217538197090029,d89c6611-0a41-49b4-a04e-91d99e8e2b75,region/ea/mbbs,mbbs,mbbs,217538165817068,region/ea,2
+218241309596365,94641e65-1ea6-4366-a62b-3a592cbaad61,pakistan/institute-for-educational-development/blogs,blogs,Blogs,217765544884034,pakistan/institute-for-educational-development,2
+218480988919163,423df2d5-d28a-4009-86ee-23866a077c0d,pakistan/medical-college-pakistan/about,about,About,217814675481163,pakistan/medical-college-pakistan,2
+218465762760497,9f78aaf1-4fb7-496c-b0df-1f4a84bc6873,pakistan/medical-college-pakistan/allied-health,allied-health,Allied Health,217814675481163,pakistan/medical-college-pakistan,2
+218207326797819,9c6777d9-6197-444c-8ea1-d113adf34007,pakistan/medical-college-pakistan/critical-creative-innovative-thinking,critical-creative-innovative-thinking,Critical Creative Innovative Thinking,217814675481163,pakistan/medical-college-pakistan,2
+218467049138557,fd5c5bbe-9239-4c6c-a1c1-dda97ecd6cda,pakistan/medical-college-pakistan/data-science,data-science,Data Science,217814675481163,pakistan/medical-college-pakistan,2
+218496825200764,15137de3-8418-434d-8174-706a94f21ee4,pakistan/medical-college-pakistan/fellowship,fellowship,Fellowship,217814675481163,pakistan/medical-college-pakistan,2
+218221845972479,b12d7b84-61fd-4a6c-9cb0-08c47846977a,pakistan/medical-college-pakistan/patient-safety,patient-safety,patient safety,217814675481163,pakistan/medical-college-pakistan,2
+218525863301810,c3458369-ed68-435e-b377-ee41dd5ca29e,pakistan/pakistan/school-of-nursing-and-midwifery,school-of-nursing-and-midwifery,School of Nursing and Midwifery,218525583671804,pakistan/pakistan,2
 203313639688977,0cc9b969-e563-431f-b5d9-8b3045a2cf05,regions/af/blogs,blogs,Blogs,203313618430723,regions/af,2
 203313626012423,08685a1a-8503-4a71-8a71-8f191869415e,regions/af/entities,entities,Entities,203313618430723,regions/af,2
 203313643850516,df8c0dd6-69b2-4951-b6b4-50faea8d68a6,regions/af/events,events,Events,203313618430723,regions/af,2
@@ -91,7 +115,6 @@
 207607354320002,b272e646-4986-4563-8c4d-32efe8aa7aed,regions/pk/announce,announce,Announce,203313617816321,regions/pk,2
 203313634499341,d181fcbc-2253-42f1-9ca0-ced4f646dd26,regions/pk/blogs,blogs,Blogs,203313617816321,regions/pk,2
 218174250876175,3b8046a8-65d6-44b3-853e-327d53775510,regions/pk/cancer-centre,cancer-centre,Cancer Centre,203313617816321,regions/pk,2
-218174256127248,a73a82b2-e4d7-44d3-8277-4e4ff9a57dd5,regions/pk/ek-saath,ek-saath,Ek Saath,203313617816321,regions/pk,2
 203313621863172,e5960601-0e02-46b7-906c-2547de90ff76,regions/pk/entities,entities,Entities,203313617816321,regions/pk,2
 203313634396940,98760b45-3160-46e1-b232-648e57aadae7,regions/pk/events,events,Events,203313617816321,regions/pk,2
 203313630673674,01ce7975-80fb-42d4-81d9-0a262e4f8496,regions/pk/news,news,News,203313617816321,regions/pk,2
@@ -112,7 +135,11 @@
 203313655655193,1af13bc5-7127-4f1f-8571-c1814a88ff2d,regions/uk/entities,entities,Entities,203313629833992,regions/uk,2
 203313725885569,962a19e5-a7f6-4692-8474-bdb661612509,regions/uk/events,events,Events,203313629833992,regions/uk,2
 203313721199741,d102b14e-f662-4b3a-a125-e8d28531b4f9,regions/uk/news,news,News,203313629833992,regions/uk,2
-217866129374069,765d7437-b192-420a-b928-4bac4ae0291c,pakistan/faculty-of-arts-and-sciences/study/undergraduate-programmes,undergraduate-programmes,Undergraduate Programmes,217866037668708,pakistan/faculty-of-arts-and-sciences/study,3
+218582221190653,6dde7861-2e7e-442c-a2ed-40d0bff8ff2f,pakistan/centre-for-regenerative-medicine/about/ethics,ethics,ethics,217818233060999,pakistan/centre-for-regenerative-medicine/about,3
+218553331861543,9d2a116d-8631-4424-a2a8-96061431178a,pakistan/centre-of-excellence-for-trauma-emergencies/about/team,team,Team,218504502535616,pakistan/centre-of-excellence-for-trauma-emergencies/about,3
+218469382130602,e75fdc25-cb62-4a08-ac9b-5959d7bd96fe,pakistan/medical-college-pakistan/critical-creative-innovative-thinking/blogs,blogs,Blogs,218207326797819,pakistan/medical-college-pakistan/critical-creative-innovative-thinking,3
+218208089718902,73f9b8dd-22d0-4058-861d-84ffda6bb9e3,pakistan/medical-college-pakistan/critical-creative-innovative-thinking/events,events,Events,218207326797819,pakistan/medical-college-pakistan/critical-creative-innovative-thinking,3
+218526150615750,2e2e20ec-18f3-43da-9955-b9617c839b79,pakistan/pakistan/school-of-nursing-and-midwifery/about,about,About,218525863301810,pakistan/pakistan/school-of-nursing-and-midwifery,3
 203313705024629,952bb321-db36-48e2-8143-b0b12673652c,regions/af/entities/eai,eai,EAI,203313626012423,regions/af/entities,3
 203313709157496,c96916c3-4792-4971-ba78-d72b78386030,regions/af/entities/ied,ied,IED,203313626012423,regions/af/entities,3
 203313713319035,40801351-5e9c-48b2-a1ac-5dcb08e20181,regions/af/entities/ihd,ihd,IHD,203313626012423,regions/af/entities,3
@@ -218,7 +245,7 @@
 218131032079488,5cff8491-4be4-4659-89c7-445f7229c2dd,regions/gl/entities/ighd,ighd,IGHD,217824673942053,regions/gl/entities,3
 218131051011324,20036a73-1d27-4b94-b1b5-00de0b87753a,regions/gl/entities/ihd,ihd,IHD,217824673942053,regions/gl/entities,3
 218131059219947,37c4ef97-35b1-45ec-8621-319573970eb8,regions/gl/entities/sonam,sonam,SONAM,217824673942053,regions/gl/entities,3
-217856738947370,45918020-b689-4cc6-b3d4-7f5c3df71a8c,regions/gl/entities/test,test,Test,217824673942053,regions/gl/entities,3
+217856738947370,45918020-b689-4cc6-b3d4-7f5c3df71a8c,regions/gl/entities/test2,test2,Test2,217824673942053,regions/gl/entities,3
 218174749695361,ac99e848-9f6d-4870-8e80-5f2fdd560781,regions/gl/events/5uc,5uc,5Uc,207988862266816,regions/gl/events,3
 218174761545090,0605927b-7a3b-4fcc-a77c-a158a1d130ab,regions/gl/events/aasc,aasc,Aasc,207988862266816,regions/gl/events,3
 218174766525827,9a243575-8c69-4195-bac4-e620fde6e2c6,regions/gl/events/acc,acc,Acc,207988862266816,regions/gl/events,3
@@ -470,9 +497,9 @@
 218131062320701,2196d9d9-9d25-4ea7-befc-42e9fa79bfa9,regions/gl/entities/sonam/blogs,blogs,Blogs,218131059219947,regions/gl/entities/sonam,4
 218131064942190,86ff6c46-565e-44fa-9461-a3ca4389447f,regions/gl/entities/sonam/events,events,Events,218131059219947,regions/gl/entities/sonam,4
 218131062320700,822b78dd-b817-4593-986a-9fb80ab785ea,regions/gl/entities/sonam/news,news,News,218131059219947,regions/gl/entities/sonam,4
-217856743457073,2c0b1348-ec75-467d-93d8-5614b6d6b9c2,regions/gl/entities/test/blogs,blogs,Blogs,217856738947370,regions/gl/entities/test,4
-217856744812852,e01a819c-ec8e-48bf-b239-a9415c28d260,regions/gl/entities/test/events,events,Events,217856738947370,regions/gl/entities/test,4
-217856741658926,c6d63d4e-d703-4e2a-9c01-aae6de7dfc1f,regions/gl/entities/test/news,news,News,217856738947370,regions/gl/entities/test,4
+217856743457073,2c0b1348-ec75-467d-93d8-5614b6d6b9c2,regions/gl/entities/test2/blogs,blogs,Blogs,217856738947370,regions/gl/entities/test2,4
+217856744812852,e01a819c-ec8e-48bf-b239-a9415c28d260,regions/gl/entities/test2/events,events,Events,217856738947370,regions/gl/entities/test2,4
+217856741658926,c6d63d4e-d703-4e2a-9c01-aae6de7dfc1f,regions/gl/entities/test2/news,news,News,217856738947370,regions/gl/entities/test2,4
 218175589551679,61db2483-25dc-4fed-9f7f-3fa2b82ddb89,regions/gl/events/cds2009/summit-photos,summit-photos,Summit Photos,218174804307340,regions/gl/events/cds2009,4
 218175594384960,f0606490-4fd3-41b4-ad19-f0636c0245fc,regions/gl/events/sports-olympiad/reg,reg,Reg,218174967471537,regions/gl/events/sports-olympiad,4
 218175599189569,d5cbca55-ec08-4bdf-8577-bf11a81e6f9d,regions/gl/events/sports-olympiad/registration,registration,Registration,218174967471537,regions/gl/events/sports-olympiad,4

@@ -1,0 +1,49 @@
+action,path,target,depth,assets,note
+exclude,regions/gl/entities/test2,,3,0,dev scaffold
+exclude,regions/gl/entities/test2/blogs,,4,0,dev scaffold
+exclude,regions/gl/entities/test2/events,,4,0,dev scaffold
+exclude,regions/gl/entities/test2/news,,4,0,dev scaffold
+exclude,regions/global2,,1,0,dev scaffold
+exclude,regions/global2/blogs,,2,0,dev scaffold
+exclude,regions/global2/entities,,2,0,dev scaffold
+exclude,regions/global2/events,,2,0,dev scaffold
+exclude,regions/global2/news,,2,0,dev scaffold
+exclude,regions/test,,1,0,dev scaffold
+exclude,regions/test/blogs,,2,0,dev scaffold
+exclude,regions/test/entities,,2,0,dev scaffold
+exclude,regions/test/entities/testent,,3,0,dev scaffold
+exclude,regions/test/entities/testent/blogs,,4,0,dev scaffold
+exclude,regions/test/entities/testent/departments,,4,0,dev scaffold
+exclude,regions/test/entities/testent/departments/testdep,,5,0,dev scaffold
+exclude,regions/test/entities/testent/departments/testdep/blogs,,6,0,dev scaffold
+exclude,regions/test/entities/testent/departments/testdep/events,,6,0,dev scaffold
+exclude,regions/test/entities/testent/departments/testdep/news,,6,0,dev scaffold
+exclude,regions/test/entities/testent/events,,4,0,dev scaffold
+exclude,regions/test/entities/testent/news,,4,0,dev scaffold
+exclude,regions/test/events,,2,0,dev scaffold
+exclude,regions/test/news,,2,0,dev scaffold
+move,"Migration/ Medical College, Pakistan",regions/pk/entities/mc,,717,
+move,"Migration/ Medical College, Pakistan/About",regions/pk/entities/mc/about,,30,
+move,"Migration/ Medical College, Pakistan/Allied Health",regions/pk/entities/mc/allied-health,,8,
+move,"Migration/ Medical College, Pakistan/CBCB",regions/pk/entities/mc/cbcb,,0,
+move,"Migration/ Medical College, Pakistan/CCBP",regions/pk/entities/mc/ccbp,,28,
+move,"Migration/ Medical College, Pakistan/CCIT",regions/pk/entities/mc/critical-creative-innovative-thinking,,19,
+move,"Migration/ Medical College, Pakistan/Data Science",regions/pk/entities/mc/data-science,,0,
+move,"Migration/ Medical College, Pakistan/cgsc",regions/pk/entities/mc/cgsc,,0,
+move,"Migration/ Medical College, Pakistan/mc",regions/pk/entities/mc,,0,
+move,Migration/Centre for Regenerative Medicine,regions/pk/entities/crm,,76,
+move,Migration/Centre of Excellence for Trauma & Emergencies,regions/pk/entities/cete,,56,
+move,Migration/Clinical Trials Unit,regions/pk/entities/clinical-trials-unit,,67,
+move,Migration/Institute for Educational Development,regions/pk/entities/ied,,207,
+move,global/blogs,regions/gl/blogs,,97,
+move,global/events,regions/gl/events,,66,
+move,global/news,regions/gl/news,,193,
+leave,Blogs,,,36,not in scope
+leave,Migration,,,1,not in scope
+leave,Test,,,9,not in scope
+leave,aku-media-dev,,,1,not in scope
+leave,events-detail,,,11,not in scope
+leave,imported-external,,,74,not in scope
+leave,(root),,,206,no folder
+orphan,regions/pk/entities/ied/educational resources,,4,2,no content folder
+orphan,regions/pk/entities/ied/focus area,,4,5,no content folder
