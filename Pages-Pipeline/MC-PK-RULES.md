@@ -24,10 +24,16 @@ The one exception is his own: a **row** owning its spacing carries
 `spacing_preset: "section"` while the thing inside it carries `"zero"`. That
 pairing appears in his button rows and in the footer row (§6).
 
-**Never touch another person's pages.** Only stories whose `last_author` is
-Muhammad Rabee Amir. Abdullah Sultan's and Jahanzaib Akhter's are off limits.
-Five of Rabee's own show `System Administrator` because he re-saved them in the
-editor — they are still his.
+**Never touch another person's pages, and do not use `last_author` to decide
+which are which.** `regions/pk/entities/mc/` holds 1,300 stories and only **75**
+are Rabee's: 840 are Abdullah Sultan's, 325 Jahanzaib Akhter's, 58 were last
+saved by `System Administrator` and are not his, and 2 carry his name but are
+`news_article` stories from the news migration.
+
+The authoritative list is **`out/rabee-pages-links-v2.csv`** — 75 rows with
+`storyblok_path` and `story_id`. An ownership test on `last_author` fails both
+ways: it skips the 5 of his that read `System Administrator` because he re-saved
+them in the editor, and it picks up 2 news stories that are not pages.
 
 ---
 
