@@ -519,7 +519,7 @@ def outcomes(seed, heading, intro, labels):
     return {'_uid': bp.uid(seed), 'component': 'sub_inner_group', 'variant': 'outcomes',
             'title': t, 'highlight': h, 'description': intro,
             'columns': '3' if max(len(x) for x in labels) < 40 else '2',
-            'align': 'center', 'spacing_preset': PRESET,
+            'spacing_preset': PRESET,
             'outcome_items': [{'_uid': bp.uid(f'{seed}-{i}'),
                                'component': 'sub_inner_group_outcome_item', 'label': lb}
                               for i, lb in enumerate(labels)]}

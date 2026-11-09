@@ -307,6 +307,9 @@ def main():
                                 'teaching_impact', 'carousel_section', 'hero')]))
     # Country cards are generic `card` bloks inside teaching_impact on every
     # students/* page: a team-wide design the site renders. Not a problem.
+    # fields the space has since removed (sub_inner_group.align, 10 Nov 2026)
+    # are dropped, not reported: the editor cannot show them anyway
+    body = content['body'] = schema.sanitize(body)
     probs = [p for p in schema.problems(body) if not CARD_SCHEMA.search(p)]
     missing = unresolved_images(body)
 

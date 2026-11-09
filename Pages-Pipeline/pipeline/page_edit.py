@@ -137,6 +137,7 @@ class Page:
     # ---------------------------------------------------------------- save --
     def save(self, body, force=False, skip_words=()):
         """Check the new body against the old page, then write <sid>.after.json."""
+        body = self.schema.sanitize(body)            # fields the space has since removed
         fp.tidy_links(body)
         fp.tidy_titles(body)
         probs = [p for p in self.schema.problems(body) if not fp.CARD_SCHEMA.search(p)]

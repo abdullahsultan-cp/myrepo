@@ -313,7 +313,8 @@ def sub_group(uid, key, pairs, title=''):
     t, h = split_heading(title) if title else ('', '')
     linked = pairs and all(h_ for _, h_ in pairs)
     base = {'_uid': uid(key), 'component': 'sub_inner_group', 'title': t, 'highlight': h,
-            'description': '', 'align': 'center', 'spacing_preset': 'section',
+            # no `align`: the space removed it from sub_inner_group (10 Nov 2026)
+            'description': '', 'spacing_preset': 'section',
             # one item in two columns leaves half the row empty: he set 1
             # (Environment Club, Swimming Saves Lives, 9 Nov 2026)
             'columns': '1' if len(pairs or []) == 1 else '2'}

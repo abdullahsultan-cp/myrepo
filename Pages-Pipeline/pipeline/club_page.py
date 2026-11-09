@@ -101,7 +101,9 @@ for b in out:
         print('committee', [(g['title'], [it['title'] for it in g['items']]) for g in b['groups']])
     if b['component'] == 'sub_inner_group':
         print('events', [x['label'] for x in b['outcome_items']])
-probs = [p for p in B.Schema('../out/work/components_live.json').problems(out) if 'teaching_impact.cards' not in p]
+_sch = B.Schema('../out/work/components_live.json')
+out = _sch.sanitize(out)
+probs = [p for p in _sch.problems(out) if 'teaching_impact.cards' not in p]
 print([b['component'] for b in out], '| schema (excluding the shared country cards):', probs)
 if probs:
     raise SystemExit(1)

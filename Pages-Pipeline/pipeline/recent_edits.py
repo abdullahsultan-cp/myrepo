@@ -23,9 +23,16 @@ import fix_page as fp
 from create_pages import SB
 
 
+NOISE = ('_uid', '_editable', 'plugin', 'focus', 'backgroundColor', 'id', 'meta_data', 'is_external_url')
+
+
 def strip(x):
+    """Comparable form: what the editor rewrites on every save, without anyone
+    choosing to (colour-picker plugin name, null attrs, image focus points,
+    asset metadata), and empty values, are not corrections."""
     if isinstance(x, dict):
-        return {k: strip(v) for k, v in x.items() if k not in ('_uid', '_editable')}
+        out = {k: strip(v) for k, v in x.items() if k not in NOISE}
+        return {k: v for k, v in out.items() if v not in (None, '', {}, [])}
     if isinstance(x, list):
         return [strip(v) for v in x]
     return x
@@ -43,8 +50,11 @@ def main():
     cutoff = time.time() - a.days * 86400
     latest = {}
     for f in glob.glob(os.path.join(fp.BACKUP, 'fix_*_AFTER_*.json.gz')):
-        m = re.search(r'fix_(\d+)_AFTER_', f)
-        if m and os.path.getmtime(f) >= cutoff and (m.group(1) not in latest or f > latest[m.group(1)]):
+        # the time is read from the NAME: a fresh clone stamps every file "now"
+        m = re.search(r'fix_(\d+)_AFTER_(\d{8}-\d{6})', f)
+        if not m or time.mktime(time.strptime(m.group(2), '%Y%m%d-%H%M%S')) < cutoff:
+            continue
+        if m.group(1) not in latest or f > latest[m.group(1)]:
             latest[m.group(1)] = f
     sb = SB()
     changed = 0
@@ -57,28 +67,30 @@ def main():
         now = r.json()['story']
         if now['updated_at'] == mine['updated_at']:
             continue
-        changed += 1
         who = (now.get('last_author') or {}).get('friendly_name')
-        print(f"\n=== {now['full_slug']}  ({sid})  edited {now['updated_at']} by {who}")
         A = mine['content'].get('body') or []
         Bn = now['content'].get('body') or []
-        print('  ours:', ' | '.join(b['component'] for b in A))
-        print('  now :', ' | '.join(b['component'] for b in Bn))
         ours = {b['_uid']: b for b in A}
         theirs = {b['_uid'] for b in Bn}
-        for b in A:
-            if b['_uid'] not in theirs:
-                print(f"  REMOVED  {b['component']}  {short(b)}")
+        lines = [f"  REMOVED  {b['component']}  {short(b)}" for b in A if b['_uid'] not in theirs]
         for b in Bn:
             o = ours.get(b['_uid'])
             if o is None:
-                print(f"  ADDED    {b['component']}  {short(b, 300)}")
+                lines.append(f"  ADDED    {b['component']}  {short(b, 300)}")
                 continue
             for k in sorted(set(o) | set(b)):
                 if k in ('_uid', '_editable') or strip(o.get(k)) == strip(b.get(k)):
                     continue
-                print(f"  CHANGED  {b['component']}.{k}\n           was {short(o.get(k))}\n           now {short(b.get(k))}")
-    print(f'\n{len(latest)} page(s) fixed in the last {a.days:g} day(s); {changed} edited since.')
+                lines.append(f"  CHANGED  {b['component']}.{k}\n           was {short(o.get(k))}"
+                             f"\n           now {short(b.get(k))}")
+        if not lines:
+            continue                          # re-saved only: nothing chosen differently
+        changed += 1
+        print(f"\n=== {now['full_slug']}  ({sid})  edited {now['updated_at']} by {who}")
+        print('  ours:', ' | '.join(b['component'] for b in A))
+        print('  now :', ' | '.join(b['component'] for b in Bn))
+        print('\n'.join(lines))
+    print(f'\n{len(latest)} page(s) fixed in the last {a.days:g} day(s); {changed} corrected by hand since.')
 
 
 if __name__ == '__main__':
