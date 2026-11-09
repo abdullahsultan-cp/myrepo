@@ -147,6 +147,14 @@ or the schema check fails.
 | contact banner titled "Contact" | "Contact Us" |
 | club pages (`club_page.py`) | country cards kept, `spacing_preset: section` |
 
+**Reference pages he built himself** (copy block settings from these when in
+doubt): linked-resource directory → online-books (story 225944478088452);
+grouped publications → `alumni/aerf/terms-conditions`; one rich_text per
+section with the empty line → Services (225950148456106). The navigator's
+eyebrow is the sidebar's root item. Uganda club pages: `club_page.py`
+(committee from the old table, names split on "|"; the template's
+flow-cytometry text in the old accordion is junk).
+
 **Reporting back**: plain words, block by block — what the page holds now,
 what moved, any heading you made up, that every word and link is kept (or
 what is not and why), unpublished, backups saved, and anything odd on the old

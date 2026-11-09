@@ -15,7 +15,7 @@ one place.
   a list of linked bullets    -> sub_inner_group, variant links, one item each
                                  ("Free Resources")
   anything else under a head  -> its OWN rich_text: H1, centred, not bold, the
-                                 last word #008F51, an empty line after it,
+                                 last phrase #008F51, an empty line after it,
                                  paragraphs centred
   a short intro before a publications block goes in that block's `description`
 

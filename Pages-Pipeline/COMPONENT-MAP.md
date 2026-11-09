@@ -60,7 +60,7 @@ These are Abdullah's rules, taken from his own corrections on the library pages
 | a short line ending in ":" or an empty heading right before the entries | that block's `title`/`highlight` and `description` |
 | bullet list of plain text | `sub_inner_group` **outcomes**, one item per bullet, titled with the heading |
 | bullet list or table of links ("Free Resources") | `sub_inner_group` **links**, one item per link |
-| any other headed section | its own `rich_text`: H1, centred, not bold, last word `#008F51`, then an empty line, with the paragraphs centred |
+| any other headed section | its own `rich_text`: H1, centred, not bold, last meaningful phrase `#008F51` (see Title + highlight), then an empty line, with the paragraphs centred |
 | side navigation | `library_navigator` rebuilt from the page's **own** side nav. Copied ones linked to the wrong library on most IED/Chitral/Gilgit pages |
 
 The script writes no invented text. Where a block needs a heading or a
@@ -105,7 +105,7 @@ two-line description the old page does not have, a person writes it.
 | 3+ bold questions ending in "?" | `info_accordion`, one item per question | 24/28 **auto** |
 | `ReadAccordion` / `ReadTabs` widget | `info_accordion` | 12/16 **auto** |
 | accordion panel | `info_accordion_item` > **`cards`** > `info_accordion_card` (`variant: rich_text`, `color: default`), item `columns: "1"` | 413 **auto** |
-| heading + plain list (no links, 2–14 items) | `sub_inner_group`, `variant: outcomes`, `columns: 2`, `align: center` | 31/45, not in speeches **auto** |
+| heading + plain list (no links, 2–14 items) | `sub_inner_group`, `variant: outcomes`, `columns: 2` (1 for a single item; the space removed `align`, 10 Nov 2026) | 31/45, not in speeches **auto** |
 | YouTube / Vimeo / dacast iframe | `media_section` `type: video` where the iframe sat. Never a `video` blok | 22 vs 0 **auto** |
 | other iframes (prezi, flipbuilder) | `iframe` blok, inline 16:9 | 7/7 **auto** |
 | `galleryapp` widget | `media_section` gallery, all images | 6/7 **auto** |
@@ -115,9 +115,13 @@ two-line description the old page does not have, a person writes it.
 | reference lists, chief guests, awards | `faculty_publications` | person |
 | `.boringbox` numbers | `stats` > `stats_card` | person |
 
-**Title + highlight.** A heading is cut in two: `highlight` is the last word
-(68%) or a whole name ("Aga Khan", "Class of 2015"), and `title` keeps its
-trailing space. **auto** for split_section and sub_inner_group.
+**Title + highlight.** A heading is cut in two, and `title` keeps its trailing
+space. The hand-built pages put the last word in `highlight` (68%), but
+Abdullah re-split those by hand (10 Nov 2026): the highlight is the last
+meaningful PHRASE -- after a colon, after a mid-title "(NIH)", after the last
+"and", else the last 2-4 words not opening on the/of/for... ("About **Our
+Policies**", "Activities Since **May 2022**"); two words -> the last; a name
+("Aga Khan", "Class of 2015") stays whole. `house_style.split_heading`.
 
 ## End of the page: navigation and section chrome
 

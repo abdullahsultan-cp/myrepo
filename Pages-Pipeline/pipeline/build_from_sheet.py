@@ -286,8 +286,8 @@ KEEP_TOGETHER = re.compile(r'(?:\bAga Khan|\bClass of \d{4}|\b[A-Z][a-z]+ [A-Z]\
 def split_heading(text):
     """"Address by His Highness the Aga Khan" -> ("Address by His Highness the ", "Aga Khan").
 
-    title + highlight is ONE heading cut in two: the highlight is the last word
-    in 68% of 432 measured pairs, and "Aga Khan" / "Class of 2015" stay whole.
+    title + highlight is ONE heading cut in two. The hand-built pages used the
+    last word (68% of 432 pairs); "Aga Khan" / "Class of 2015" stay whole.
     The title keeps its trailing space (341 of 432).
     """
     t = clean(text)
@@ -296,10 +296,9 @@ def split_heading(text):
     m = KEEP_TOGETHER.search(t)
     if m and m.start() > 0:
         return t[:m.start()], t[m.start():]
-    head, _, last = t.rpartition(' ')
-    if not head:
-        return t, ''
-    return head + ' ', last
+    # Otherwise the house rule: the last meaningful phrase, as Abdullah
+    # re-split the last-word ones by hand (10 Nov 2026) -- one rule, in house_style.
+    return hs.split_heading(t)
 
 
 def split_section(seed, title, nodes, src, layout='reverse'):
