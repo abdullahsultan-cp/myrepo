@@ -14,6 +14,12 @@ What it keeps from the story as it is:
   * the content type (page / speech_article / event_article) -- never changed
   * the story's name, slug and folder
   * the hero, if the page has one (its title is cleaned of zero-width spaces)
+  * its shared section blocks (country cards, contact banner) when the build
+    has none of that kind
+
+What it tidies on the way: site-relative links made absolute, 'tel:' links
+made dialable, zero-width spaces out of every title. The legacy left sidebar
+always becomes a library_navigator (build_from_sheet).
 
 It refuses to write when:
   * the story changed since it was read (someone is editing it)
@@ -118,6 +124,107 @@ def unresolved_images(x, out=None):
     return out
 
 
+# The shared country cards (teaching_impact) are NOT carried: Abdullah deleted
+# them from every page fixed with them (Wellness UG, Experience KE, Mission &
+# Vision, 9 Nov 2026). club_page.py keeps them on the club pages.
+SHARED = ('carousel_section', 'strip_banner')
+CARD_SCHEMA = re.compile(r'teaching_impact\.cards\[\d+\]: card not allowed')
+
+
+def carry_shared(body, story_body):
+    """The story's own shared section blocks (institutes carousel, contact
+    banner), when the build has none of that kind -- they were dropped on pages
+    whose siblings do not carry them (Counselling and Wellness Uganda lost its
+    contact banner). They go after the content, before the navigator."""
+    have = {b.get('component') for b in body}
+    add = [copy.deepcopy(b) for b in story_body if b.get('component') in SHARED
+           and b.get('component') not in have]
+    if not add:
+        return body, []
+    k = next((i for i, b in enumerate(body) if b.get('component') in
+              ('library_navigator', 'quick_actions')), len(body))
+    return body[:k] + add + body[k:], [b['component'] for b in add]
+
+
+def words(x):
+    return set(re.findall(r'[a-z0-9@.]+', bp.flat_text(x).lower() if isinstance(x, dict) and 'type' in x
+                          else json.dumps(x, ensure_ascii=False).lower()))
+
+
+def drop_contact_text(body):
+    """A 'Contact Us' text section whose every word is already in the page's
+    contact banner (strip_banner) says it twice. Returns the body, and whether
+    one went."""
+    banner = next((b for b in body if b.get('component') == 'strip_banner'), None)
+    if not banner:
+        return body, False
+    have = words(banner)
+    have |= {re.sub(r'\D', '', w) for w in have}            # phone numbers, digits only
+    for b in body:
+        if b.get('component') != 'rich_text':
+            continue
+        ns = b['content'].get('content') or []
+        heads = [hs.text_of(n) for n in ns if n.get('type') == 'heading']
+        if not heads or not heads[0].lower().startswith('contact'):
+            continue
+        rest = [n for n in ns if n.get('type') != 'heading']
+        ws = set().union(*[words(n) for n in rest]) if rest else set()
+        ws = {w.strip('.') for w in ws} - {'', 'phone', 'number', 'email', 'address', 'e', 't', 'tel'}
+        if all(w in have or re.sub(r'\D', '', w) in have and re.sub(r'\D', '', w) for w in ws):
+            return [x for x in body if x is not b], True
+    return body, False
+
+
+def tidy_links(x):
+    """Every link the page writes: site-relative hrefs made absolute (a bare
+    '/about/...' resolves against the NEW site and 404s), 'tel: +256 77...'
+    made a dialable 'tel:+25677...'. Returns how many were changed."""
+    n = 0
+
+    def fix(u):
+        u2 = u
+        if u.startswith('/') and not u.startswith('//'):
+            u2 = sheet.absolute(u)
+        elif u.lower().startswith('tel:'):
+            u2 = 'tel:' + re.sub(r'[^\d+]', '', u[4:])
+        return u2
+
+    def walk(v):
+        nonlocal n
+        if isinstance(v, dict):
+            if v.get('type') == 'link' and isinstance(v.get('attrs'), dict) and v['attrs'].get('href'):
+                new = fix(v['attrs']['href'])
+                if new != v['attrs']['href']:
+                    v['attrs']['href'], n = new, n + 1
+            if v.get('fieldtype') == 'multilink' and v.get('linktype') == 'url' and v.get('url'):
+                new = fix(v['url'])
+                if new != v['url']:
+                    v['url'] = v['cached_url'] = new
+                    n += 1
+            for w in v.values():
+                walk(w)
+        elif isinstance(v, list):
+            for w in v:
+                walk(w)
+    walk(x)
+    return n
+
+
+def tidy_titles(x):
+    """Zero-width spaces out of every title/highlight/label/name ('About
+    Counselling a​nd Wellness'). Spacing is left alone: a highlight's
+    leading space is how the title and highlight join."""
+    if isinstance(x, dict):
+        for k in ('title', 'highlight', 'label', 'name', 'short_name', 'eyebrow'):
+            if isinstance(x.get(k), str):
+                x[k] = x[k].translate(hs.INVISIBLE)
+        for v in x.values():
+            tidy_titles(v)
+    elif isinstance(x, list):
+        for v in x:
+            tidy_titles(v)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('story')
@@ -160,6 +267,11 @@ def main():
         keep = copy.deepcopy(old_hero)
         keep['title'] = hs.clean(keep.get('title')) or body[0]['title']
         body[0] = keep
+    body, carried = carry_shared(body, content.get('body') or [])
+    body = [b for b in body if b.get('component') != 'teaching_impact']
+    body, contact_dup = drop_contact_text(body)
+    relinked = tidy_links(body)
+    tidy_titles(body)
     content['body'] = body
     if root != 'page' and p['content'].get('title') and not hs.clean(content.get('title')):
         content['title'] = p['content']['title']
@@ -170,12 +282,26 @@ def main():
     got = len(bp.payload_text([b for b in body if b.get('component') not in
                                ('library_navigator', 'quick_actions', 'strip_banner',
                                 'teaching_impact', 'carousel_section', 'hero')]))
-    probs = schema.problems(body)
+    # Country cards are generic `card` bloks inside teaching_impact on every
+    # students/* page: a team-wide design the site renders. Not a problem.
+    probs = [p for p in schema.problems(body) if not CARD_SCHEMA.search(p)]
     missing = unresolved_images(body)
 
     print(f"\nnow     {outline(st['content'].get('body') or [])}")
     print(f'after   {outline(body)}')
     print(f'text    old page {src:,} chars -> built {got:,}')
+    if carried:
+        print(f"kept    from the story: {', '.join(carried)}")
+    if any(b.get('component') == 'teaching_impact' for b in st['content'].get('body') or []):
+        print('dropped the shared country cards (teaching_impact) -- house style')
+    if contact_dup:
+        print('dropped a "Contact Us" text section -- every word is in the contact banner')
+    if relinked:
+        print(f'links   {relinked} made absolute / dialable')
+    nav = next((b for b in body if b.get('component') == 'library_navigator'), None)
+    if nav:
+        print(f"        library_navigator: {len(nav.get('libraries') or [])} entries, "
+              f"{sum(len(x.get('pages') or []) for x in nav.get('libraries') or [])} sub-pages")
     for b in body:
         if b.get('component') == 'faculty_publications':
             n = len(b.get('groups') or b.get('items') or [])

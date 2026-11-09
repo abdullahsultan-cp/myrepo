@@ -902,20 +902,35 @@ def build(row, ref, schema, html_dir, widgets, house=True):
 
     # Chrome at the end: quick_actions, then the copied section blocks.
     chrome = ref.chrome(folder, exclude_slug=f'{folder}/{slug}')
-    links = ([] if 'library_navigator' in chrome else nav) + related
+    # House style: the legacy left sidebar is ALWAYS a library_navigator built
+    # from this page's own sidebar, never quick_actions (Abdullah, QTL Teaching
+    # Tips, 6 Nov 2026) -- whether or not the siblings carry one. Copied
+    # navigators pointed at the WRONG library on most IED/Chitral/Gilgit pages;
+    # a sibling's is used for its settings only, the links come from this page.
+    lib = None
+    if house or 'library_navigator' in chrome:
+        tmpl = (fresh_uids(chrome['library_navigator'], f'{serial}-lib')
+                if 'library_navigator' in chrome
+                else {'_uid': bp.uid(f'{serial}-lib'), 'component': 'library_navigator'})
+        lib = hs.rebuild_navigator(tmpl, BeautifulSoup(raw, 'html.parser'),
+                                   lambda k: bp.uid(f'{serial}-lib-{k}'), sheet.absolute)
+        if not lib.get('libraries'):
+            lib = None                   # no sidebar on this page
+    links = ([] if lib else nav) + related
     qa = quick_actions(serial, links, ref, '/convocation/' in url.lower())
     tail = []
     if qa:
         tail.append(qa)
     for comp in ('teaching_impact', 'carousel_section', 'strip_banner'):
+        # House style: no copied country cards. Abdullah deleted the shared
+        # teaching_impact from every page fixed with it (Wellness UG,
+        # Experience KE, Mission & Vision, 9 Nov 2026).
+        if comp == 'teaching_impact' and house:
+            continue
         if comp in chrome:
             tail.append(fresh_uids(chrome[comp], f'{serial}-{comp}'))
-    if 'library_navigator' in chrome:
-        # Copied navigators pointed at the WRONG library on most IED/Chitral/
-        # Gilgit pages; the structure is copied, the links come from this page.
-        lib = fresh_uids(chrome['library_navigator'], f'{serial}-lib')
-        tail.append(hs.rebuild_navigator(lib, BeautifulSoup(raw, 'html.parser'),
-                                         lambda k: bp.uid(f'{serial}-lib-{k}'), sheet.absolute))
+    if lib:
+        tail.append(lib)
     body += tail
 
     common = {'enable_pattern': True, 'pattern_spacing': 'section',

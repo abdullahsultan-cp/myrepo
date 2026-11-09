@@ -117,6 +117,12 @@ python club_page.py <sid>                                  # Uganda/Kenya club p
 | email | plain url multilink `mailto:x` (not linktype email) |
 | dacast video | keep an `iframe` blok — `media_section` video does not play dacast. YouTube/Vimeo → `media_section` |
 | photo of a person | only a confirmed AKU-source photo; otherwise the placeholder avatar (asset 208069654188076) |
+| typed "•" paragraphs (no real list) | made a real list first (`normalise`), then the list rules above |
+| text, then "...including:" and a list | text stays text; the list becomes outcomes with the ':' line as description |
+| 2+ "**Vision:** text" paragraphs | named sections → grouped publications; an untitled block of 2–3 short names is titled by them ("Vision, Mission & Values") |
+| shared country cards (`teaching_impact`) | **not added** — he deleted them from every page fixed with them. Only `club_page.py` keeps them |
+| "Contact Us" text already in the contact banner | dropped (`strip_banner` holds it) |
+| site-relative links, `tel: +256 77…` | made absolute / `tel:+25677…` (`fix_page.tidy_links`) |
 
 **Never drop a hyperlink.** If an old link is wrong, find the right target (the
 admissions hubs `/admissions/Pages/{kenya,tanzania,pakistan,graduate}.aspx` list

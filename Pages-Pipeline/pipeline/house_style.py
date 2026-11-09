@@ -283,6 +283,85 @@ def section_text(uid, key, title, nodes, preset='section'):
             'content': {'type': 'doc', 'content': body + centred([copy.deepcopy(n) for n in nodes])}}
 
 
+# ------------------------------------------------------------ normalise -----
+BULLET = re.compile(r'^\s*[•·▪●◦\-–]\s+')
+
+
+def _drop_bullet(n):
+    """The typed bullet and the space after it, which SharePoint often split
+    over separate runs: '•', '<span> </span>', 'Addictions'."""
+    n = copy.deepcopy(n)
+    kids, dropped = n.get('content') or [], False
+    for k in kids:
+        if k.get('type') != 'text':
+            continue
+        if not dropped:
+            k['text'] = re.sub(r'^\s*[•·▪●◦\-–]', '', k['text'], count=1)
+            dropped = True
+        k['text'] = k['text'].lstrip()
+        if k['text']:
+            break
+    n['content'] = [k for k in kids if not (k.get('type') == 'text' and not k['text'])]
+    return n
+
+
+def _label_split(n):
+    """'**Vision:** The office...' -> ('Vision', node with name + break + text), else None."""
+    if n.get('type') != 'paragraph':
+        return None
+    kids = [k for k in n.get('content') or [] if not (k.get('type') == 'text' and not k['text'].strip())]
+    if len(kids) < 2 or kids[0].get('type') != 'text' or 'bold' not in marks(kids[0]):
+        return None
+    lab = clean(kids[0]['text'])
+    rest_txt = clean(''.join(k.get('text', '') for k in kids[1:]))
+    if lab.endswith(':'):
+        name, carry = lab[:-1].strip(), ''
+    elif rest_txt.startswith(':'):
+        name, carry = lab, ':'
+    else:
+        return None
+    if not name or len(name) > 40 or len(name.split()) > 4 or not rest_txt.lstrip(':').strip():
+        return None
+    rest = copy.deepcopy(kids[1:])
+    if carry:                                   # "**Mission**: text" -> drop the colon
+        rest[0]['text'] = rest[0]['text'].lstrip().lstrip(':')
+    rest[0]['text'] = rest[0]['text'].lstrip()
+    return name, {**n, 'content': [{'type': 'text', 'text': name, 'marks': [{'type': 'bold'}]},
+                                   {'type': 'hard_break'}] + rest}
+
+
+def normalise(nodes):
+    """Shapes SharePoint editors typed by hand -> the shapes layout() reads.
+
+      * runs of 2+ paragraphs opening with a typed "•" -> one bullet_list
+        (Counselling and Wellness Uganda: 13 "• Anxiety" paragraphs)
+      * runs of 2+ "**Vision:** text" paragraphs -> a bold name and a line
+        break, so each is a named section (Student Experience Kenya: Vision,
+        Mission, Values). One alone is a run-in phrase and stays prose.
+    """
+    out, i = [], 0
+    while i < len(nodes):
+        n = nodes[i]
+        j = i
+        while j < len(nodes) and nodes[j].get('type') == 'paragraph' and BULLET.match(text_of(nodes[j])):
+            j += 1
+        if j - i >= 2:
+            out.append({'type': 'bullet_list', 'content': [
+                {'type': 'list_item', 'content': [_drop_bullet(x)]} for x in nodes[i:j]]})
+            i = j
+            continue
+        j = i
+        while j < len(nodes) and _label_split(nodes[j]):
+            j += 1
+        if j - i >= 2:
+            out += [_label_split(x)[1] for x in nodes[i:j]]
+            i = j
+            continue
+        out.append(n)
+        i += 1
+    return out
+
+
 # --------------------------------------------------------------- layout -----
 def plain_only(nodes):
     return all(n.get('type') in ('paragraph', 'blockquote') for n in nodes)
@@ -293,7 +372,7 @@ def layout(nodes, uid, allowed=None):
     def ok(c):
         return not allowed or c in allowed
 
-    nodes = strip_invisibles(copy.deepcopy(nodes))
+    nodes = normalise(strip_invisibles(copy.deepcopy(nodes)))
     segs = segment(nodes)
     out = []
     pubs = None                          # the publications block being filled
@@ -324,6 +403,13 @@ def layout(nodes, uid, allowed=None):
                 g = pubs['groups'][0]          # one group alone is just a section
                 out[out.index(pubs)] = section_text(uid, pubs['_uid'] + '-1', g['title'],
                                                     g['items'][0]['description']['content'])
+            elif pubs['variant'] == 'grouped' and not pubs['title'] and 2 <= len(pubs['groups']) <= 3 \
+                    and all(len(g['title'].split()) <= 2 for g in pubs['groups']):
+                # untitled "Vision / Mission / Values" -> titled by its own
+                # names, as he titled it by hand ("Vision, Mission & Values")
+                names = [g['title'] for g in pubs['groups']]
+                t = ', '.join(names[:-1]) + ' & ' + names[-1]
+                pubs['title'], pubs['highlight'] = split_heading(t)
             pubs = None
 
     for i, s in enumerate(segs):
@@ -341,6 +427,29 @@ def layout(nodes, uid, allowed=None):
             if lists and len(lists) == len(intro) and ok('sub_inner_group'):
                 for k, n in enumerate(lists):
                     out.append(sub_group(uid, f'intro-list-{i}-{k}', list_items(n)))
+                continue
+            # Text, then "...including but not limited to:" and a plain list:
+            # the text stays text, the list becomes outcomes with the ':' line
+            # as its description (Counselling and Wellness Uganda). A list with
+            # links inside its sentences stays in the text -- outcomes would
+            # lose them.
+            if lists and ok('sub_inner_group') and \
+                    not any(inline_link(li) for n in lists for li in n.get('content') or []):
+                buf = []
+                for k, n in enumerate(intro):
+                    if n.get('type') not in ('bullet_list', 'ordered_list'):
+                        buf.append(n)
+                        continue
+                    lead = buf.pop() if buf and buf[-1].get('type') == 'paragraph' and \
+                        text_of(buf[-1]).endswith(':') and len(text_of(buf[-1])) <= 300 else None
+                    if buf:
+                        out.append(section_text(uid, f'intro-{i}-{k}', '', buf))
+                    buf = []
+                    sg = sub_group(uid, f'intro-list-{i}-{k}', list_items(n))
+                    sg['description'] = text_of(lead) if lead else ''
+                    out.append(sg)
+                if buf:
+                    out.append(section_text(uid, f'intro-{i}-end', '', buf))
                 continue
             out.append(section_text(uid, f'intro-{i}', '', intro))
             continue
@@ -396,6 +505,25 @@ def layout(nodes, uid, allowed=None):
                                                 if c.get('type') == 'paragraph'] or li.get('content') or [])
                                       for n in lists for k, li in enumerate(n.get('content') or [])]}]
             out.append(p)
+            continue
+        # A named entry in a running grouped block whose text ends "...are:"
+        # and a plain list: the text joins the group, the list follows as
+        # outcomes with the ':' line as its description (Experience Kenya:
+        # Vision, Mission, Values -- then "The ... Values are:" and five values).
+        paras = [n for n in body if n.get('type') == 'paragraph']
+        if lists and not tables and pubs is not None and pubs['variant'] == 'grouped' \
+                and kind == 'name' and ok('sub_inner_group') and len(paras) >= 2 \
+                and len(lists) + len(paras) == len(body) \
+                and body[-1] in lists and text_of(paras[-1]).endswith(':') \
+                and not any(inline_link(li) for n in lists for li in n.get('content') or []):
+            pubs['groups'].append({'_uid': uid(f'grp-{i}'), 'component': 'faculty_publication_group',
+                                   'title': title, 'link': link(href),
+                                   'items': [pub_item(uid, f'grp-{i}-0', '', '', paras[:-1])]})
+            close()
+            pairs = [p for n in lists for p in list_items(n)]
+            sg = sub_group(uid, f'sig-{i}', pairs)
+            sg['description'] = text_of(paras[-1])
+            out.append(sg)
             continue
         if (lists or tables) and ok('sub_inner_group') and \
                 len(lists) + len(tables) == len([n for n in body if n.get('type') != 'paragraph']):
