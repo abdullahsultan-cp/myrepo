@@ -37,6 +37,7 @@ import gzip
 import json
 import os
 import re
+import sys
 import time
 
 import build_from_sheet as B
@@ -51,6 +52,26 @@ from create_pages import SB
 
 FIX = paths.work('fix')
 BACKUP = os.path.join(os.path.dirname(paths.OUT), 'backup', 'storyblok', 'fixes')
+COMPONENTS = paths.work('components_live.json')
+# Windows consoles default to cp1252 and die on the first curly quote.
+for _s in (sys.stdout, sys.stderr):
+    if hasattr(_s, 'reconfigure'):
+        _s.reconfigure(encoding='utf-8', errors='replace')
+
+
+def ensure_components(sb, max_age_days=7):
+    """The live component schemas, fetched when absent or a week old -- a new
+    laptop has no out/work/ (gitignored), and the schema check needs them."""
+    fresh = os.path.exists(COMPONENTS) and time.time() - os.path.getmtime(COMPONENTS) < max_age_days * 86400
+    if fresh:
+        return COMPONENTS
+    r = sb.call('GET', 'components')
+    r.raise_for_status()
+    os.makedirs(os.path.dirname(COMPONENTS), exist_ok=True)
+    json.dump(r.json()['components'], open(COMPONENTS, 'w', encoding='utf-8', newline='\n'),
+              indent=1, ensure_ascii=False)
+    print(f'fetched {len(r.json()["components"])} live component schemas -> {COMPONENTS}')
+    return COMPONENTS
 
 
 def story_id(arg):
@@ -218,6 +239,8 @@ def tidy_titles(x):
         for k in ('title', 'highlight', 'label', 'name', 'short_name', 'eyebrow'):
             if isinstance(x.get(k), str):
                 x[k] = x[k].translate(hs.INVISIBLE)
+        if x.get('component') == 'strip_banner' and hs.clean(x.get('title')) == 'Contact':
+            x['title'] = 'Contact Us'                # he renamed it by hand (TISC)
         for v in x.values():
             tidy_titles(v)
     elif isinstance(x, list):
@@ -257,7 +280,7 @@ def main():
     bp.HTML_DIR = B.PREP_DIR
     row = {'Serial No.': sid, 'Old URL': a.old_url, 'Storyblok Path': st['full_slug'],
            'Page Name': st['name'], '_root': root}
-    schema = B.Schema(paths.work('components_live.json'))
+    schema = B.Schema(ensure_components(sb))
     p = B.build(row, B.Reference(ref_path), schema, os.path.join(FIX, 'html'), widgets)
 
     content = copy.deepcopy(st['content'])

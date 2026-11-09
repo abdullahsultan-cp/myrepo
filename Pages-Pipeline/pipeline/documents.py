@@ -30,6 +30,7 @@ import copy
 import gzip
 import hashlib
 import json
+import sys
 import os
 import re
 import time
@@ -38,6 +39,9 @@ import urllib.parse
 import paths
 import requests
 import upload_page_media as um
+for _s in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
+    if hasattr(_s, 'reconfigure'):
+        _s.reconfigure(encoding='utf-8', errors='replace')
 
 MAP = paths.work('document_asset_map.json')
 DOC_DIR = paths.work('legacy_documents')

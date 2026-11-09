@@ -157,6 +157,9 @@ dist/
 !/Pages-Pipeline/out/work/page_widgets.json
 !/Pages-Pipeline/out/work/page_asset_map.json
 !/Pages-Pipeline/out/work/build_list_v2.json
+# documents.py: aku.edu PDF -> Storyblok asset already uploaded; carried to a
+# new laptop so no PDF is uploaded twice
+!/Pages-Pipeline/out/work/document_asset_map.json
 
 # The generated single-file views. Each is rebuilt from plan.json by its own
 # render_*.py, so tracking them would put a megabyte of churn in every diff.

@@ -23,6 +23,9 @@ import build_from_sheet as B  # noqa: E402
 import build_pages as bp  # noqa: E402
 import house_style as hs  # noqa: E402
 import sheet  # noqa: E402
+for _s in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
+    if hasattr(_s, 'reconfigure'):
+        _s.reconfigure(encoding='utf-8', errors='replace')
 
 F = '../out/work/fix/'
 SID = sys.argv[1]
@@ -82,7 +85,11 @@ if ev_head:
     if events:
         out.append(hs.sub_group(uid, 'events', [(e, '') for e in events], hs.clean(ev_head.get_text(' ')) or 'Signature Events'))
 
-out += [copy.deepcopy(b) for b in body if b['component'] == 'teaching_impact']
+for b in body:
+    if b['component'] == 'teaching_impact':
+        b = copy.deepcopy(b)
+        b['spacing_preset'] = b.get('spacing_preset') or 'section'   # he set it by hand
+        out.append(b)
 nav = hs.rebuild_navigator({'_uid': uid('lib'), 'component': 'library_navigator'}, soup, uid, sheet.absolute)
 if nav.get('libraries'):
     out.append(nav)

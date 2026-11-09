@@ -9,6 +9,12 @@ because that is what makes a rule stick.
 working context: what the project is, what is true that will surprise you, and
 what has already gone wrong.
 
+> **Given an old aku.edu URL and a Storyblok editor URL?** That is a page fix:
+> follow the `fix-aku-page` skill (`.claude/skills/fix-aku-page/SKILL.md`) and
+> [Pages-Pipeline/CLAUDE.md](Pages-Pipeline/CLAUDE.md) §0a. New laptop:
+> `pip install -r requirements.txt`, then from `Pages-Pipeline/pipeline/`
+> `python setup_check.py --token sb_pat_...`.
+
 ---
 
 ## 1 · What this is

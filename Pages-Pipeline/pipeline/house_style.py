@@ -80,11 +80,57 @@ def trim_breaks(n):
 
 
 # --------------------------------------------------------------- headings ---
+FUNCTION_WORDS = {'a', 'an', 'the', 'of', 'for', 'to', 'in', 'on', 'at', 'by', 'with', 'from',
+                  'and', '&', 'or', 'across', 'about', 'into', 'over', 'under', 'since'}
+
+
 def split_heading(t):
-    """"Library Membership" -> ("Library ", "Membership"); one word -> (word, "")."""
+    """A title -> (plain part, green highlight).
+
+    The highlight is the title's last meaningful PHRASE, not its last word --
+    how Abdullah re-split the ones written last-word-only (9 Nov 2026):
+      "About Our Policies"            -> "About " + "Our Policies"
+      "Research Policies Pakistan"    -> "Research " + "Policies Pakistan"
+      "Research Magazine 2025"        -> "Research " + "Magazine 2025"
+      "Activities Since May 2022"     -> "Activities Since " + "May 2022"
+      "Financial Policies and Procedures for Extramural Grants"
+                                      -> after the "and"
+      "Guidelines concerning ... (NIH) Financial Conflict of Interest (FCOI) Policy"
+                                      -> after the first "(...)"
+      "Knowledge creation ...: Research with a conscience" -> after the colon
+    Short titles keep the old shape: "Library Membership" -> "Library " +
+    "Membership"; "About the Magazine" -> "About the " + "Magazine". One word
+    -> (word, "").
+    """
     t = clean(t)
-    head, _, last = t.rpartition(' ')
-    return (head + ' ', last) if head else (t, '')
+    w = t.split(' ')
+    n = len(w)
+    if n < 2:
+        return t, ''
+
+    def at(k):                      # highlight starts at word k
+        k = max(1, min(k, n - 1))
+        return ' '.join(w[:k]) + ' ', ' '.join(w[k:])
+    # 1. after a colon, when both sides have words
+    for k in range(n - 1):
+        if w[k].endswith(':') and k + 1 < n:
+            return at(k + 1)
+    if n >= 5:
+        # 2. after the first parenthesis closed mid-title ("(NIH) Financial ...")
+        for k in range(1, n - 2):
+            if w[k].endswith(')') and w[k + 1][:1].isupper():
+                return at(k + 1)
+        # 3. after the last "and"/"&", when what follows is a phrase of its own
+        for k in range(n - 2, 0, -1):
+            if w[k].lower() in ('and', '&') and 2 <= n - k - 1 <= 6:
+                return at(k + 1)
+    if n == 2:
+        return at(1)
+    # 4. the last half (2-4 words), never opening on a function word
+    k = n - min(4, max(2, n // 2))
+    while k < n - 1 and w[k].lower() in FUNCTION_WORDS:
+        k += 1
+    return at(k)
 
 
 def house_heading(title):
@@ -267,7 +313,10 @@ def sub_group(uid, key, pairs, title=''):
     t, h = split_heading(title) if title else ('', '')
     linked = pairs and all(h_ for _, h_ in pairs)
     base = {'_uid': uid(key), 'component': 'sub_inner_group', 'title': t, 'highlight': h,
-            'description': '', 'align': 'center', 'columns': '2', 'spacing_preset': 'section'}
+            'description': '', 'align': 'center', 'spacing_preset': 'section',
+            # one item in two columns leaves half the row empty: he set 1
+            # (Environment Club, Swimming Saves Lives, 9 Nov 2026)
+            'columns': '1' if len(pairs or []) == 1 else '2'}
     if linked:
         return {**base, 'variant': 'links',
                 'items': [{'_uid': uid(f'{key}-{i}'), 'component': 'sub_inner_group_item',

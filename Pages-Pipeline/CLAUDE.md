@@ -75,28 +75,47 @@ Abdullah sends pairs: an old aku.edu URL and the Storyblok editor URL of the
 story that should match it. The job is to make the story hold everything the old
 page held, laid out in the house style below. Space `289824742951963`.
 
+### On a new laptop (once)
+
+```
+git clone <repo> && cd <repo>
+pip install -r requirements.txt
+cd Pages-Pipeline/pipeline
+python setup_check.py --token sb_pat_...    # writes config/storyblok.json (gitignored), fetches schemas, tests aku.edu
+```
+Then open the repo in Claude Code and paste the two links. The project skill
+`.claude/skills/fix-aku-page/SKILL.md` carries the whole procedure; this
+section is the reference behind it. Nothing else is needed from the old laptop:
+`out/work/` is rebuilt on demand, the PDF asset map is tracked, every rule is
+in this file and `house_style.py`.
+
 ### The loop
 
 ```
 cd Pages-Pipeline/pipeline
-python fix_page.py <editor-url-or-id> <old-url>            # dry run: saves out/work/fix/<sid>.before.json + html/<sid>.html
+python recent_edits.py --days 3                            # FIRST: what he corrected by hand since our writes
+python fix_page.py <editor-url-or-id> <old-url>            # dry run: before.json, html/<sid>.html, after.json
 python fix_page.py <editor-url-or-id> <old-url> --apply    # write, UNPUBLISHED
-#   or, when the generic build is not right: a small per-page script that reads
-#   <sid>.before.json, edits the body and writes <sid>.after.json, then
-python apply_fix.py <sid> [--publish]                      # PUT in place + backups
+python club_page.py <sid>                                  # student club pages (one fixed layout) ...
+python apply_fix.py <sid> [--publish]                      # ... or after a page_edit script: PUT in place + backups
 python documents.py <sid> [--apply]                        # aku.edu PDFs -> Storyblok assets
-python club_page.py <sid>                                  # Uganda/Kenya club pages (one fixed layout)
 ```
 
+A hand-shaped fix (he asked for cards, a parallax, a specific layout) is a
+ten-line script in `out/work/fix/` built on `page_edit.Page` -- see its
+docstring. `Page.save()` refuses when a word or link of the old page is lost
+or the schema check fails.
+
 - **Write unpublished.** Publish only when he says so, for that page.
-- **He edits in the editor while you work.** Re-read the story right before
-  building; `apply_fix.py` refuses if `updated_at` moved since `before.json`.
+- **He edits in the editor while you work, and after.** Re-read the story right
+  before building; `apply_fix.py` refuses if `updated_at` moved since
+  `before.json`. **His later edits are corrections**: `recent_edits.py` lists
+  them; fold each new pattern into `house_style.py` and the table below.
 - **Backups after every write** go to `backup/storyblok/fixes/fix_<sid>_{BEFORE,AFTER}_<ts>.json.gz`.
 - **Mostly-right story → targeted edit,** not a full rebuild.
 - **Verify before writing:** every word and every link of the old page is in
-  the new body (word/link diff), and `build_from_sheet.Schema.problems()` is
-  empty. Shared country cards (`teaching_impact` with generic `card` bloks) are
-  a team design: keep them and exclude `teaching_impact.cards` from the check.
+  the new body, and `build_from_sheet.Schema.problems()` is empty (ignoring
+  `teaching_impact.cards`, generic cards the site renders).
 - **Per-page scripts and work files live in `out/work/fix/`** (gitignored).
   Only reusable code goes in `pipeline/`.
 
@@ -104,7 +123,7 @@ python club_page.py <sid>                                  # Uganda/Kenya club p
 
 | old page has | build |
 |---|---|
-| a headed section of prose | **one `rich_text` per section**: heading level 1, not bold, centred; multi-word heading has its **last word in `#008F51`** (textStyle mark); an **empty paragraph after the heading**; paragraphs centred |
+| a headed section of prose | **one `rich_text` per section**: heading level 1, not bold, centred; multi-word heading has its **last meaningful phrase in `#008F51`** (textStyle mark; `split_heading`: after a colon / a mid-title "(...)" / the last "and", else the last 2-4 words not opening on "the/of/for..." — "About **Our Policies**", "Activities Since **May 2022**"; two words → last word); an **empty paragraph after the heading**; paragraphs centred |
 | short top text with no heading | give it a main heading in the same style |
 | plain bullets | `sub_inner_group` `variant: outcomes`, one item per bullet, titled after the section |
 | bullets that are links | `sub_inner_group` `variant: links` |
@@ -123,6 +142,15 @@ python club_page.py <sid>                                  # Uganda/Kenya club p
 | shared country cards (`teaching_impact`) | **not added** — he deleted them from every page fixed with them. Only `club_page.py` keeps them |
 | "Contact Us" text already in the contact banner | dropped (`strip_banner` holds it) |
 | site-relative links, `tel: +256 77…` | made absolute / `tel:+25677…` (`fix_page.tidy_links`) |
+| a list with one item | `columns: 1` |
+| a video with a title | the title as its own house heading (`rich_text`) above; the `iframe` title empty, `spacing_preset: section` |
+| contact banner titled "Contact" | "Contact Us" |
+| club pages (`club_page.py`) | country cards kept, `spacing_preset: section` |
+
+**Reporting back**: plain words, block by block — what the page holds now,
+what moved, any heading you made up, that every word and link is kept (or
+what is not and why), unpublished, backups saved, and anything odd on the old
+page (wrong links, duplicates). Then wait for the next pair.
 
 **Never drop a hyperlink.** If an old link is wrong, find the right target (the
 admissions hubs `/admissions/Pages/{kenya,tanzania,pakistan,graduate}.aspx` list
@@ -198,6 +226,9 @@ Abdullah's sheet builder and page fixer (§0a):
 | `pipeline/house_style.py` | the house-style rules in §0a — section text, lists, publications, navigator, card text |
 | `pipeline/fix_page.py` | rebuild ONE existing story from its old page. Dry run unless `--apply`; refuses on content loss, schema problems or a stale story |
 | `pipeline/apply_fix.py` | write `out/work/fix/<sid>.after.json` in place, stale check, backups |
+| `pipeline/page_edit.py` | `Page`: the live story + old page for a hand-shaped fix; `save()` checks every word, link and the schema |
+| `pipeline/recent_edits.py` | what he changed by hand after our writes — his corrections, i.e. new house rules |
+| `pipeline/setup_check.py` | new laptop: token, packages, schemas, work folders, aku.edu — `--token` writes the config |
 | `pipeline/club_page.py` | student club pages: about, executive committee, signature events, cards, navigator |
 | `pipeline/documents.py` | aku.edu PDFs → Storyblok assets, relinked |
 | `pipeline/score_against_reference.py` | score built pages against the hand-built ones |

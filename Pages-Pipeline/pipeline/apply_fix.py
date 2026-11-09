@@ -12,6 +12,9 @@ import time
 
 sys.path.insert(0, os.getcwd())
 from create_pages import SB  # noqa: E402
+for _s in (sys.stdout, sys.stderr):  # Windows consoles default to cp1252
+    if hasattr(_s, 'reconfigure'):
+        _s.reconfigure(encoding='utf-8', errors='replace')
 
 SID = sys.argv[1]
 PUBLISH = 1 if '--publish' in sys.argv else 0
