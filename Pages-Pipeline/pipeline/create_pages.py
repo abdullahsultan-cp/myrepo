@@ -101,8 +101,20 @@ def folder_index(sb):
 
 
 def existing_in(sb, folder_id):
-    r = sb.call('GET', f'stories/?with_parent={folder_id}&per_page=100')
-    return {s['slug']: s['id'] for s in (r.json().get('stories') or [])}
+    """Every story directly in a folder, ALL pages of it.
+
+    One page of 100 was read before; regions/gl/convocation/pk holds more, so
+    seven of its existing stories looked absent and would have been created a
+    second time beside the originals.
+    """
+    out, page = {}, 1
+    while True:
+        r = sb.call('GET', f'stories/?with_parent={folder_id}&per_page=100&page={page}')
+        batch = r.json().get('stories') or []
+        out.update({s['slug']: s['id'] for s in batch})
+        if len(batch) < 100:
+            return out
+        page += 1
 
 
 def main():
@@ -115,9 +127,14 @@ def main():
     ap.add_argument('--protect', default='',
                     help='comma-separated full_slugs never to overwrite -- pages '
                          'someone has corrected by hand since the payload was built')
+    ap.add_argument('--payloads', default='page_payloads.json',
+                    help='file in out/work/ -- sheet_payloads.json for build_from_sheet.py')
+    ap.add_argument('--update-existing', action='store_true',
+                    help='sheet payloads only: overwrite a story that already exists. '
+                         'Off by default -- it is probably someone\'s hand-built page')
     a = ap.parse_args()
 
-    pages = json.load(open(paths.work('page_payloads.json'), encoding='utf-8'))
+    pages = json.load(open(paths.work(a.payloads), encoding='utf-8'))
     amap_path = paths.work('page_asset_map.json')
     amap = json.load(open(amap_path, encoding='utf-8')) if os.path.exists(amap_path) else {}
     if a.skip_dupes:
@@ -144,13 +161,31 @@ def main():
             print(f"  PROTECTED - left alone: {p['folder']}/{p['slug']}")
             skipped += 1
             continue
+        if p.get('content_lost'):
+            # build_from_sheet.py's retention guard: the payload carries under
+            # 70% of the page's text. Writing it publishes a hollow page.
+            print(f"  REFUSED - content lost ({p['content_lost']}): "
+                  f"{p['folder']}/{p['slug']}")
+            skipped += 1
+            continue
         fid = folders[p['folder']]
         if fid not in seen:
             seen[fid] = existing_in(sb, fid)
         missing = set()
         bloks = wire_assets(copy.deepcopy(p['bloks']), amap, missing)
-        content = {'component': 'page', 'body': bloks}
+        # A build_from_sheet payload says its own content type and root fields
+        # (speech_article, event_article, enable_pattern ...); a build_pages
+        # one is a bare `page`.
+        content = {**p.get('content', {'component': 'page'}), 'body': bloks}
         exists = seen[fid].get(p['slug'])
+        if exists and 'content' in p and not a.update_existing:
+            # A sheet row whose story already exists was very likely built by
+            # hand -- 530 of the 5 Nov sheet were. Updating "in place" would
+            # replace that work with the script's guess.
+            print(f"  EXISTS - left alone (--update-existing to overwrite): "
+                  f"{p['folder']}/{p['slug']}")
+            skipped += 1
+            continue
         note = f"  [{len(missing)} image(s) NOT uploaded]" if missing else ''
         action = 'UPDATE' if exists else 'create'
         print(f"  {action:<6} {p['folder']}/{p['slug']}")

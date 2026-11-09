@@ -227,9 +227,11 @@ def upload(sb, path, filename, folder_id):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--apply', action='store_true', help='actually upload')
+    ap.add_argument('--payloads', default='page_payloads.json',
+                    help='file in out/work/ -- sheet_payloads.json for build_from_sheet.py')
     a = ap.parse_args()
 
-    pages = json.load(open(paths.work('page_payloads.json'), encoding='utf-8'))
+    pages = json.load(open(paths.work(a.payloads), encoding='utf-8'))
     os.makedirs(IMG_DIR, exist_ok=True)
 
     # src -> the section it belongs to (first page that references it wins)

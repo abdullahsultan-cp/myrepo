@@ -179,6 +179,13 @@ python Pages-Pipeline/pipeline/create_section_folders.py --apply
 python pipeline/migrate/review/dump_sb_tree.py
 python pipeline/migrate/review/backup.py --type news
 
+# pages · fix ONE existing story from its old aku.edu page (house style:
+# Pages-Pipeline/CLAUDE.md §0a). From Pages-Pipeline/pipeline/. Writes unpublished.
+python fix_page.py <editor-url-or-id> <old-url>            # dry run
+python fix_page.py <editor-url-or-id> <old-url> --apply
+python apply_fix.py <sid>                                  # after a per-page edit
+python documents.py <sid> --apply                          # aku.edu PDFs -> assets
+
 # portals — one HTML file each, committed, open by double-clicking
 python News-Pipeline/pipeline/build_portal.py     # 3,606 stories, 1.44 MB
 python Blogs-Pipeline/pipeline/build_portal.py    # 83
